@@ -1,0 +1,497 @@
+{
+  "401801da8a4439b3dc0cf5c2f150c72e169a6d16": [
+    "CloudAppSecurityDocs\\activity-filters.md"
+  ],
+  "bd612cfcecae2eb9c5a81d59250585fb9f4adb01": [
+    "CloudAppSecurityDocs\\anomaly-detection-policy.md"
+  ],
+  "520017dab0301fe2a64c7b82d5e14c71efb2522f": [
+    "CloudAppSecurityDocs\\built-in-report-reference.md"
+  ],
+  "481ca3d68e5e7aea006eeff443ec521a374e6e11": [
+    "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md"
+  ],
+  "a43f96ec1d0f6047570677f07281b3e5ad42a40e": [
+    "CloudAppSecurityDocs\\cloud-discovery-policies.md"
+  ],
+  "9672336d69f19875d160eb414bf3ca2c525692e1": [
+    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
+  ],
+  "4b9ab028bb45f77513217dd3784cefc73e984962": [
+    "CloudAppSecurityDocs\\connect-aws-to-microsoft-cloud-app-security.md"
+  ],
+  "849408f84e2a80022623c11f7951e921a95625b6": [
+    "CloudAppSecurityDocs\\connect-box-to-microsoft-cloud-app-security.md"
+  ],
+  "105003dfbd8afbb10cdb2058e2da180d4b49e294": [
+    "CloudAppSecurityDocs\\connect-dropbox-to-microsoft-cloud-app-security.md"
+  ],
+  "0f38f61be8a0db4a28d3c7df614807ace69bb38e": [
+    "CloudAppSecurityDocs\\connect-google-apps-to-microsoft-cloud-app-security.md"
+  ],
+  "25adba6d9c2586d3fed162673008cd4212e22401": [
+    "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
+  ],
+  "51b7e5246703c4a48214dc98e7d9247fee746c77": [
+    "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
+  ],
+  "104a023cb210ff8d23d2ce57f41c0f511446bc57": [
+    "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
+  ],
+  "30ddba23a0c481cb434e9239950cce90c52efc4f": [
+    "CloudAppSecurityDocs\\connect-servicenow-to-microsoft-cloud-app-security.md"
+  ],
+  "ea1854d6bf32e01afe6183409b68ded32ee37dd1": [
+    "CloudAppSecurityDocs\\content-inspection.md"
+  ],
+  "9dc74c35f32c9a3dff251d6e0ac6b35a3591f4b9": [
+    "CloudAppSecurityDocs\\control.md"
+  ],
+  "10b4a9575951007dbee9003fd061fb5aaa2d3823": [
+    "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
+  ],
+  "669d1c1942e8c7e930cd2421e9b56821eff04d12": [
+    "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
+  ],
+  "cc6a6e4b41b6660462c9c873469a1e8c9af97c4e": [
+    "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
+  ],
+  "b5887c21fe93262cd9982b0d99bf3301b4ef3f0f": [
+    "CloudAppSecurityDocs\\data-protection-policies.md"
+  ],
+  "d554863f40160b8a1363e604d00869d607852680": [
+    "CloudAppSecurityDocs\\deploy.md"
+  ],
+  "e74cd96f9bf8537f230dcb58715492bc6fccd2f0": [
+    "CloudAppSecurityDocs\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md"
+  ],
+  "1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1": [
+    "CloudAppSecurityDocs\\file-filters.md"
+  ],
+  "1b131e3918a7623995656f03ba98aca698e3b0c9": [
+    "CloudAppSecurityDocs\\general-setup.md"
+  ],
+  "8b454edde557c408b644c9bff6f7bf6136ba9819": [
+    "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
+  ],
+  "052ca8e20e75fcae7687d17687d7dd1a645ae5e6": [
+    "CloudAppSecurityDocs\\governance-actions.md"
+  ],
+  "1b95273f4f639ebd4bc1d0200fed97b9c1acb02d": [
+    "CloudAppSecurityDocs\\includes\\adallom_md.md"
+  ],
+  "2e7cec9538ebefe236d29dfaa1d2abcbbce98b9c": [
+    "CloudAppSecurityDocs\\includes\\adallom1_md.md"
+  ],
+  "b61ffbf820d94f41afb0f595700cf95ad6180445": [
+    "CloudAppSecurityDocs\\index.md"
+  ],
+  "186643ab8efa7391b06a09dd2cddbb22ba583e71": [
+    "CloudAppSecurityDocs\\investigate.md"
+  ],
+  "8fd13ae3b7d8d7ffcb7dfea604239d245145e1f8": [
+    "CloudAppSecurityDocs\\media\\access-from-o365.png"
+  ],
+  "d69c28e744f2638cb57302d0aea82e58a161c72b": [
+    "CloudAppSecurityDocs\\media\\activity-policy-menu.png"
+  ],
+  "009863332fd6041c118b72968c19436d94a66475": [
+    "CloudAppSecurityDocs\\media\\activity-policy-ref2.png"
+  ],
+  "667b6ac190b6ba8aad87c53aca4f8592b884b2fc": [
+    "CloudAppSecurityDocs\\media\\activity-policy-ref3.png"
+  ],
+  "93a463e256ccbae6bddc52140509f876947ca886": [
+    "CloudAppSecurityDocs\\media\\activity-policy-ref6.png"
+  ],
+  "9df97882c99fdc57c8a514af345e0b0dee4188ad": [
+    "CloudAppSecurityDocs\\media\\activity-ref1.png"
+  ],
+  "87a19b315294e4fc1c4922768c573d4d7e8a8bff": [
+    "CloudAppSecurityDocs\\media\\alert-menu.png"
+  ],
+  "7d9e5ff27460c75d7e14554b85253f04e0260665": [
+    "CloudAppSecurityDocs\\media\\alerts.png"
+  ],
+  "d2edb707730c3dc946d46ee4621bc414cacb0e9a": [
+    "CloudAppSecurityDocs\\media\\anomaly-detection-ips.png"
+  ],
+  "ad1917a0d4fd344c8f47a9ea337f58c3e9dfcf50": [
+    "CloudAppSecurityDocs\\media\\anomaly-detection-policy-menu.png"
+  ],
+  "73d76b25e0ee2afa434e5be899acb6d9bf50c8ad": [
+    "CloudAppSecurityDocs\\media\\app-discovery-policy-example.png"
+  ],
+  "cd5be9c63943f5590ee720ca5565366d5bd83997": [
+    "CloudAppSecurityDocs\\media\\app-discovery-policy-menu.png"
+  ],
+  "c7dac30f7e6960e3731a6fae97ed9b1f5dbbea0f": [
+    "CloudAppSecurityDocs\\media\\apply-to-filter.png"
+  ],
+  "d4b9806986748ae261d97f688c44952564626bed": [
+    "CloudAppSecurityDocs\\media\\architecture.png"
+  ],
+  "9fc5880bc7124f4c06fd071b462c9a75c18d9a88": [
+    "CloudAppSecurityDocs\\media\\arrow-icon.png"
+  ],
+  "dccf72b8c58dff3007146b9b2adf5a2c082d5b5f": [
+    "CloudAppSecurityDocs\\media\\aws-attach-user-policy.png"
+  ],
+  "ace47d617261d2228ec83b96e884113002c81f42": [
+    "CloudAppSecurityDocs\\media\\aws-cloudtrail.png"
+  ],
+  "42c1e74f52e37c90c2f7468fe29e92fb654d062b": [
+    "CloudAppSecurityDocs\\media\\aws-cloudtrail-config.png"
+  ],
+  "d3ac5f053338beeeead9a9752bf442087cff6361": [
+    "CloudAppSecurityDocs\\media\\aws-create-user.png"
+  ],
+  "54af83492753a0b0d11121283bb1979273fd940b": [
+    "CloudAppSecurityDocs\\media\\aws-dl-cred.png"
+  ],
+  "bffc35aef3016377beac49756adb1b893337c94b": [
+    "CloudAppSecurityDocs\\media\\aws-identity-and-access.png"
+  ],
+  "7576a0e01265ad64d2cecf683979a05fc20712bb": [
+    "CloudAppSecurityDocs\\media\\aws-include-global-svc.png"
+  ],
+  "c7c5c549d578403504b59d52bebced4c1530df7e": [
+    "CloudAppSecurityDocs\\media\\aws-review-policy.png"
+  ],
+  "6a154ac28688ed92d4234b7161aa4dade910e845": [
+    "CloudAppSecurityDocs\\media\\aws-users.png"
+  ],
+  "d869d1b1e00026238cdba793d7d97f976e7689fa": [
+    "CloudAppSecurityDocs\\media\\backup-console.png"
+  ],
+  "0eac72d1b1ba8e16899fba200ac104092537641a": [
+    "CloudAppSecurityDocs\\media\\box-apps.png"
+  ],
+  "0893937162ba0eeb15f63932e810a42b88ac7245": [
+    "CloudAppSecurityDocs\\media\\box-business-settings.png"
+  ],
+  "fd75f2a1c800712eec871823bcb34aa1e0324231": [
+    "CloudAppSecurityDocs\\media\\box-settings-except-for.png"
+  ],
+  "5864fdbe5d6d51e264de5117c9dfa13311965826": [
+    "CloudAppSecurityDocs\\media\\cloud-discovery-anomaly-detection-policy-menu.png"
+  ],
+  "c5db0087a68f22c31373da07d7ea90d8d4b06e7b": [
+    "CloudAppSecurityDocs\\media\\cloud-discovery-dashboard.png"
+  ],
+  "ce3877e1df8387ea03552f43292fc2f551858291": [
+    "CloudAppSecurityDocs\\media\\connect-0365.png"
+  ],
+  "a587f2770c1a12ce62be5a91b7d017e43fbce519": [
+    "CloudAppSecurityDocs\\media\\connect-aws.png"
+  ],
+  "59e7110005c03d9fb7b63546cf16def1ef58b640": [
+    "CloudAppSecurityDocs\\media\\connect-box.png"
+  ],
+  "a87df86a13be24613f310daea0a8e7e78037be94": [
+    "CloudAppSecurityDocs\\media\\connect-dropbox.png"
+  ],
+  "86ac752492b8782d968cd6dec1fa07f2c2036b01": [
+    "CloudAppSecurityDocs\\media\\connect-google-apps.png"
+  ],
+  "5cc79beddd74ac05818515fde74fd110f2ecec7d": [
+    "CloudAppSecurityDocs\\media\\connect-okta.png"
+  ],
+  "25863638dd305a46997061321a03d7f12ad0ad0c": [
+    "CloudAppSecurityDocs\\media\\connect-salesforce.png"
+  ],
+  "ed1d3c9ae9f7831d84c7534236f57808df372023": [
+    "CloudAppSecurityDocs\\media\\connect-servicenow.png"
+  ],
+  "4b8a94007179ddb6c23670c1fd42dcc8e36b49c5": [
+    "CloudAppSecurityDocs\\media\\content-matches-ccn.png"
+  ],
+  "fce0249c0ea89aa05707622fef2de4cf5062b3f5": [
+    "CloudAppSecurityDocs\\media\\create-activity-policy-from-investigation.png"
+  ],
+  "ad66a899a4863e5556567404a656252a6e50be58": [
+    "CloudAppSecurityDocs\\media\\create-custom-continuous-report.png"
+  ],
+  "ed1b3287216711f02e43ddcce0c208581d735404": [
+    "CloudAppSecurityDocs\\media\\create-file-from-investigation.png"
+  ],
+  "ea240023b4cdf51077640a71732193ef0c5a04be": [
+    "CloudAppSecurityDocs\\media\\create-new-snapshot-report.png"
+  ],
+  "227ae4f705ea62160d057d0db932234cfb588b54": [
+    "CloudAppSecurityDocs\\media\\create-policy-from-template.png"
+  ],
+  "db6c7de0a7682d7fdf881261464ea76ee910bff4": [
+    "CloudAppSecurityDocs\\media\\custom-user-settings.png"
+  ],
+  "af893c3b0838b360be7fbd8aa2ab918b8ca63a81": [
+    "CloudAppSecurityDocs\\media\\dashboard.png"
+  ],
+  "eda6dd8ed81225aedba704e664b081d2af15b524": [
+    "CloudAppSecurityDocs\\media\\delete-data.png"
+  ],
+  "e36b8185c0f7f436b4e6579cc04f017d3bbccb34": [
+    "CloudAppSecurityDocs\\media\\discovery-data-sources.png"
+  ],
+  "e775bcbf81d454e25c9318af0a8782e5ab1a303e": [
+    "CloudAppSecurityDocs\\media\\discovery-hyperv-virtual-machine.png"
+  ],
+  "22d56d938e7a432566f466009d3e35e369ebce9a": [
+    "CloudAppSecurityDocs\\media\\discovery-icon.png"
+  ],
+  "ddcf522da004db289e23910869fe9b20a8a6a359": [
+    "CloudAppSecurityDocs\\media\\discovery-settings-tab.png"
+  ],
+  "6492d7a396799318948de3136226c86a81e1b57d": [
+    "CloudAppSecurityDocs\\media\\example-policy-risky-ips.png"
+  ],
+  "a8240dec8bc82440aff2c3c436695f4f3600c576": [
+    "CloudAppSecurityDocs\\media\\exclude-user.png"
+  ],
+  "02990f8fc4f6ae3a6dcc877798b2b63d91805c89": [
+    "CloudAppSecurityDocs\\media\\file-governance-drop-down.png"
+  ],
+  "f4eb9acf6c70754fd2e26aa5a38845cced730012": [
+    "CloudAppSecurityDocs\\media\\file-policy-edit-and-preview-results.png"
+  ],
+  "5fa35273775b4d3c84b4bcd006ac10a918a4fc99": [
+    "CloudAppSecurityDocs\\media\\general-settings.png"
+  ],
+  "68d440681740ff7e416d223249ff10f4ad3a61ae": [
+    "CloudAppSecurityDocs\\media\\google1.png"
+  ],
+  "0395394ed97bcb776856c51d891552944db9a372": [
+    "CloudAppSecurityDocs\\media\\google11-warning.png"
+  ],
+  "4d8a3f1f678bcafbfc2c3f12e42649575391f3df": [
+    "CloudAppSecurityDocs\\media\\google15.png"
+  ],
+  "57ce2d6df0638b821b1b98b92cbe8a6e2949d029": [
+    "CloudAppSecurityDocs\\media\\google16.png"
+  ],
+  "4bc5de11d6527e2e12bf62bd35a67b18eeea218c": [
+    "CloudAppSecurityDocs\\media\\google17.png"
+  ],
+  "b6bac3139bb52e682371bdafcc804a1de8fb6b88": [
+    "CloudAppSecurityDocs\\media\\google19.png"
+  ],
+  "315167a500b52aad1486b14dfe0a5377327a9c39": [
+    "CloudAppSecurityDocs\\media\\google2.png"
+  ],
+  "10599afde531f18436cb79edbccf09fefc45d3f8": [
+    "CloudAppSecurityDocs\\media\\google20.png"
+  ],
+  "481d50d965a989177c29e2e6e5a21edf7ab2c421": [
+    "CloudAppSecurityDocs\\media\\google22.png"
+  ],
+  "944288841d7d4e12f64ca3d021d58d54d276d349": [
+    "CloudAppSecurityDocs\\media\\google24.png"
+  ],
+  "ca3b9b69d060fa2c2536f04b556ac129af18ecda": [
+    "CloudAppSecurityDocs\\media\\google25.png"
+  ],
+  "715cd36196659d5b6b9397dbb91a501246162a6e": [
+    "CloudAppSecurityDocs\\media\\google27.png"
+  ],
+  "2e43d9d35754ba092f4754607310c6744915fa90": [
+    "CloudAppSecurityDocs\\media\\google29.png"
+  ],
+  "753a3605ce43060ff566e466bf9d32f6a724338e": [
+    "CloudAppSecurityDocs\\media\\google3.png"
+  ],
+  "115757fdd0a0545ad322bcd2bfc6e8fb00d1d5c2": [
+    "CloudAppSecurityDocs\\media\\google31.png"
+  ],
+  "bd71e500bddfd4d937417c14a1fd06ca08cb3990": [
+    "CloudAppSecurityDocs\\media\\google5.png"
+  ],
+  "c77b7f07a7c9b9e58d138d0118b5e34cd5b848fa": [
+    "CloudAppSecurityDocs\\media\\google8.png"
+  ],
+  "243483348595a123fe342e09dde9b55c4314e9f9": [
+    "CloudAppSecurityDocs\\media\\google-api-access.png"
+  ],
+  "851c0e5273ec54fac767f65919b2885f00134926": [
+    "CloudAppSecurityDocs\\media\\google-api-ref.png"
+  ],
+  "8c24faa913c8e492d42f5d66b2fc650d8f09b886": [
+    "CloudAppSecurityDocs\\media\\google-apps-authorization-request.png"
+  ],
+  "08fdb85b0fb28982a5b0042e9e744d34f44ed5fc": [
+    "CloudAppSecurityDocs\\media\\google-apps-configuration-in-cloud-app-security.png"
+  ],
+  "1de92a694ede1e01a2f43e5149f22e7b566a41da": [
+    "CloudAppSecurityDocs\\media\\google-apps-credentials-service-account.png"
+  ],
+  "48287e97c2a85fd416be32b0cc8e84aa094507ba": [
+    "CloudAppSecurityDocs\\media\\google-apps-security.png"
+  ],
+  "0e65bdf8a0de69ec00e542fafb16851d07e6d456": [
+    "CloudAppSecurityDocs\\media\\google-menu.png"
+  ],
+  "c8b61d00842897eb25d9c45708770d59371c33a8": [
+    "CloudAppSecurityDocs\\media\\high-download-rate-example.png"
+  ],
+  "99d1f71c6cfb08f1bf924e0db423b4791d98d814": [
+    "CloudAppSecurityDocs\\media\\investigate-app.png"
+  ],
+  "e24623a414a855a68ad62dc17d6d72819cbef439": [
+    "CloudAppSecurityDocs\\media\\investigate-icon.png"
+  ],
+  "5fc640feafc2d2a5da0a27bff0a1b9282dd2a233": [
+    "CloudAppSecurityDocs\\media\\mail-setting-menu.png"
+  ],
+  "da213b9e1dff686164a4457055e0c956182bacff": [
+    "CloudAppSecurityDocs\\media\\mail-settings-config.png"
+  ],
+  "aaa38c2c50a058df6de9a22b80e320ba3250a024": [
+    "CloudAppSecurityDocs\\media\\manage-admin-access.png"
+  ],
+  "172821e9a5a9c065014f9a2c079e114fbe49ec8d": [
+    "CloudAppSecurityDocs\\media\\mark-as-sanctioned.png"
+  ],
+  "711da33481ce5960ce624cd3819a6d334e003229": [
+    "CloudAppSecurityDocs\\media\\master-time-zone.png"
+  ],
+  "38d6ff3434c3b21636ce80e54cc39d32d0377f6d": [
+    "CloudAppSecurityDocs\\media\\multiple-failed-log-on-attempts-policy-example.png"
+  ],
+  "851b6b941d0dbe51413eccc641fe220f18db1a8f": [
+    "CloudAppSecurityDocs\\media\\new-discovery-anomaly-policy.png"
+  ],
+  "95cc2802d3244716435a4e19a4af13827474d0b4": [
+    "CloudAppSecurityDocs\\media\\newipaddress-range.png"
+  ],
+  "753e36c08ce29d164238b55232244f223e34c342": [
+    "CloudAppSecurityDocs\\media\\new-policy-from-search-button.png"
+  ],
+  "65bd59ce5f4632c9761c475571d6d824ad82667e": [
+    "CloudAppSecurityDocs\\media\\new-snapshot-report.png"
+  ],
+  "505d4d9582571342d6e19a8c602d235df43a0f53": [
+    "CloudAppSecurityDocs\\media\\notification-settings.png"
+  ],
+  "c25c633174546f352eb2e4f8b3bf24208711eb61": [
+    "CloudAppSecurityDocs\\media\\o365-admin-centers-icon.png"
+  ],
+  "0ae46c69fc6fee912e8838b8f17e332d1923ee32": [
+    "CloudAppSecurityDocs\\media\\o365-connected.png"
+  ],
+  "8b53aef161ccf8e8f0b83095dde6d5fca8460e4a": [
+    "CloudAppSecurityDocs\\media\\o365-test-connection.png"
+  ],
+  "8a6fbf222b6c468d5db1b844bcdc9a612a3f0fc5": [
+    "CloudAppSecurityDocs\\media\\okta-api.png"
+  ],
+  "c44b6394c8b8fb185b958afb689bce5b0cf311d0": [
+    "CloudAppSecurityDocs\\media\\okta-createtoken.jpg"
+  ],
+  "333490a5f2f66d59e891a4fa8c1a5530e6d433a5": [
+    "CloudAppSecurityDocs\\media\\okta-token-popup.png"
+  ],
+  "1e40b3e66a14ba648c3d3c19b76aa7b99d360aa2": [
+    "CloudAppSecurityDocs\\media\\okta-token-value.png"
+  ],
+  "b6cab9ffc78dc7d233d4c6b4a21c1570dacfa7e3": [
+    "CloudAppSecurityDocs\\media\\pci-content-matches.png"
+  ],
+  "f16b0bb2717e00aca47c9bc5dece714baf257d2d": [
+    "CloudAppSecurityDocs\\media\\pci-matches.png"
+  ],
+  "857e1ec6a94d91b8799f012f3a5762ba392fae1c": [
+    "CloudAppSecurityDocs\\media\\policy_create-alerts.png"
+  ],
+  "b3bb446dab01bacaa7a1a69bc14145dee272d94c": [
+    "CloudAppSecurityDocs\\media\\policy_file-filters-trash.png"
+  ],
+  "75a452b29b829150ae10cd2230a1f6ca5210552d": [
+    "CloudAppSecurityDocs\\media\\policy_file-type-filters.png"
+  ],
+  "d58a0920cfc36d2a9b7a31790620604aea809eb5": [
+    "CloudAppSecurityDocs\\media\\processing-log-file-menu-bar.png"
+  ],
+  "09e62f190fd1522525132ff46f0a917e523500aa": [
+    "CloudAppSecurityDocs\\media\\protect-icon.png"
+  ],
+  "db3ed958be7e166b1692351e3e98736cedbca542": [
+    "CloudAppSecurityDocs\\media\\retry-icon.png"
+  ],
+  "33970c61504b00823184e70877e55805feaaa75c": [
+    "CloudAppSecurityDocs\\media\\salesforce-api-enabled.png"
+  ],
+  "ad2ff456412928ea2ef09da8b12e432f730214f1": [
+    "CloudAppSecurityDocs\\media\\salesforce-crm-content-user.png"
+  ],
+  "c9b4cf91cca98d070dc3b4819daa3d6c36abee2e": [
+    "CloudAppSecurityDocs\\media\\salesforce-edit-profile.png"
+  ],
+  "c93b52ed2b9216d9f9f893c79fe69097cf2759a2": [
+    "CloudAppSecurityDocs\\media\\salesforce-logon.png"
+  ],
+  "cd633f80d18f12b01ee2aa89d5c59c34c617b523": [
+    "CloudAppSecurityDocs\\media\\salesforce-manageusers-profiles.png"
+  ],
+  "ad281010a513bcdaa6e6f30f111e68bfeca77393": [
+    "CloudAppSecurityDocs\\media\\salesforce-menu-users.png"
+  ],
+  "b66ef0d36ca03b4a7ac264c51bde28b1985ee454": [
+    "CloudAppSecurityDocs\\media\\salesforce-setup.png"
+  ],
+  "3a707a4a6da1ea7364f793dcbbf1dfe132be4654": [
+    "CloudAppSecurityDocs\\media\\sanction-three-dots.png"
+  ],
+  "c081507e9ce464df766d8b834d86dc1cd9840b71": [
+    "CloudAppSecurityDocs\\media\\score.png"
+  ],
+  "067ba9a0f6df770a26e869a1cfbb9d4b95d33cb6": [
+    "CloudAppSecurityDocs\\media\\sensitivity-slider.png"
+  ],
+  "e7264ddc572d4efc9bdcc9df02fef29faed719d4": [
+    "CloudAppSecurityDocs\\media\\servicenow-account.png"
+  ],
+  "4107a1a7ccae4c6029c835691ef062b132b44ba9": [
+    "CloudAppSecurityDocs\\media\\servicenow-update-password.png"
+  ],
+  "d35c49e3b401bcdffc5bbc206d8de4c1f6b260ee": [
+    "CloudAppSecurityDocs\\media\\settings-icon.png"
+  ],
+  "a5dd4791bff8e2ff0d23c43f37bdc9ef28796827": [
+    "CloudAppSecurityDocs\\media\\snapshot-report-managment.png"
+  ],
+  "571320985b341376beb8bbc8ee83f5f548f117ca": [
+    "CloudAppSecurityDocs\\media\\timezone-language.png"
+  ],
+  "af3585cbf123ba826efbdb79339c84a2dcb740c8": [
+    "CloudAppSecurityDocs\\monitor-alerts.md"
+  ],
+  "6f204a955d3186013691fe876e185286a55dd8af": [
+    "CloudAppSecurityDocs\\release-notes.md"
+  ],
+  "cfca549e1e16ca83972876626771a55d698530a2": [
+    "CloudAppSecurityDocs\\set-up-cloud-discovery.md"
+  ],
+  "b4a73c596c7fc91e75c6304d208f01b0423517e7": [
+    "CloudAppSecurityDocs\\TOC.md"
+  ],
+  "7446c3eb17befdf473c8841a0d92524c029f67df": [
+    "CloudAppSecurityDocs\\troubleshooting.md"
+  ],
+  "61492a0126bff93c2a61d5d1317784ca96687df7": [
+    "CloudAppSecurityDocs\\troubleshooting-api-connectors-using-error-messages.md"
+  ],
+  "2d0b2cebdfa15cccc5888660da498446d620b64f": [
+    "CloudAppSecurityDocs\\troubleshooting-cloud-discovery.md"
+  ],
+  "a88691fbe6c23fa537133c077402d8e9e1121047": [
+    "CloudAppSecurityDocs\\user-activity-policies.md"
+  ],
+  "d2ece0e3a47dc0febbb1314c496045abdc5c8d61": [
+    "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
+  ],
+  "4b9bf05e43966ff39dacc58a082c7b8eb3627eda": [
+    "CloudAppSecurityDocs\\working-with-cloud-discovery-data.md"
+  ],
+  "77468efb5d4cb62f560c11e624545fc8abe8c99e": [
+    "CloudAppSecurityDocs\\working-with-the-regex-engine.md"
+  ]
+}
