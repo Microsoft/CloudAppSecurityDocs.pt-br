@@ -972,9 +972,9 @@
       "ArchiveFileCommit": "fe7c1c6dfe45c76dd17592ce30940e96f0ae3d26",
       "ArchiveFileDateTime": "2016-10-29T00:53:21.3452168Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.pt-br.xlf",
+      "BilingualFileCommit": "721f08e620b8b1372a2409bcd7f0c5698df3a632",
+      "BilingualDateTime": "2016-11-03T08:09:41.767601Z",
       "BilingualException": null
     },
     "2e7cec9538ebefe236d29dfaa1d2abcbbce98b9c": {
@@ -1010,9 +1010,9 @@
       "ArchiveFileCommit": "fe7c1c6dfe45c76dd17592ce30940e96f0ae3d26",
       "ArchiveFileDateTime": "2016-10-29T00:53:21.3452168Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.pt-br.xlf",
+      "BilingualFileCommit": "721f08e620b8b1372a2409bcd7f0c5698df3a632",
+      "BilingualDateTime": "2016-11-03T08:09:41.767601Z",
       "BilingualException": null
     },
     "b61ffbf820d94f41afb0f595700cf95ad6180445": {
