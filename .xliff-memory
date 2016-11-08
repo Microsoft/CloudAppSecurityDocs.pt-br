@@ -456,7 +456,7 @@
       "TranslationType": 1,
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:01:19.054688Z",
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\c7e6f441932135ca20d4c6747c5e4ab7eb58331f.ca4d2de370342419ee51cf2d60d4ebcdb9d7afa2.xml",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5.9b2c82712ff7670b0e989be897dd0fd41dd71826.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     },
@@ -547,6 +547,76 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:01:19.0703101Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\6e3913969e7c7ef949c149dc1d2e7a1befe0c85c.6e0ccc90e8c15f3d431ebf9c6ba089c39058dc1f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "CloudAppSecurityDocs\\governance-actions.md.84194427cdbdd5ffcccbad3ba33e059f4ead17d9.HT": {
+      "SourceFilename": "CloudAppSecurityDocs\\governance-actions.md",
+      "XliffHash": "84194427cdbdd5ffcccbad3ba33e059f4ead17d9",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\e67fecd17b26314720a34691f83464c59a244ea6.748cb4d4895644a7e74a400cf446df67bddc784c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "CloudAppSecurityDocs\\activity-filters.md.c1411ea1b4215ed57e990c0f8742eaaf985f991a.HT": {
+      "SourceFilename": "CloudAppSecurityDocs\\activity-filters.md",
+      "XliffHash": "c1411ea1b4215ed57e990c0f8742eaaf985f991a",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\92507e352a88cd0c5ff4a7bc9f66b94defd864ff.55f7d8c609c1f0dab866f3313b6ba7d549402052.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md.d386897df3d0bc9bf4b2dc1a5e4d7e56d71ea21c.HT": {
+      "SourceFilename": "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md",
+      "XliffHash": "d386897df3d0bc9bf4b2dc1a5e4d7e56d71ea21c",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\c6103fffd99295eb37ad575680b4169cbbac42df.19725f1d9576ccabc17528200ac8f6ceb9a919fa.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "CloudAppSecurityDocs\\manage-app-permissions.md.b35ff67d59821bac7253546655e276c69f9d5275.HT": {
+      "SourceFilename": "CloudAppSecurityDocs\\manage-app-permissions.md",
+      "XliffHash": "b35ff67d59821bac7253546655e276c69f9d5275",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\81a6663f16264177966492ac4a1ec9e00f6d1a76.38ec964f307c547249ca48d7121f6e8d892162c0.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "CloudAppSecurityDocs\\azip-integration.md.62596cef1ee27d2c2f5db227870807ff0134816f.HT": {
+      "SourceFilename": "CloudAppSecurityDocs\\azip-integration.md",
+      "XliffHash": "62596cef1ee27d2c2f5db227870807ff0134816f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\1fda4411d17acf90338263df9df147ed0075881c.c0fd85aed95195c040b36c1e90f85881be7efa3f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "CloudAppSecurityDocs\\TOC.md.ac847c82f05a2c83359ec3ba71596d1c9ae59097.HT": {
+      "SourceFilename": "CloudAppSecurityDocs\\TOC.md",
+      "XliffHash": "ac847c82f05a2c83359ec3ba71596d1c9ae59097",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\93dc54bc2e38d880561c15a0f167f8246e1a6741.491027ebccccdc815fd34059fdbf035e1540c392.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "CloudAppSecurityDocs\\user-activity-policies.md.499c803f5da9361b91471218cb4fe71fd6010f32.HT": {
+      "SourceFilename": "CloudAppSecurityDocs\\user-activity-policies.md",
+      "XliffHash": "499c803f5da9361b91471218cb4fe71fd6010f32",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\e66cc36b7ff2591c9eff2b7399e7aba7304fd960.bb87d7b9ae4ed08e64786327702803fc589d3a48.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     }
