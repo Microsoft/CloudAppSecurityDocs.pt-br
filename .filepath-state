@@ -98,6 +98,9 @@
   "1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1": [
     "CloudAppSecurityDocs\\file-filters.md"
   ],
+  "b617a488dec97deb7c1e1d89cbaa62e496e18891": [
+    "CloudAppSecurityDocs\\general-setup.md"
+  ],
   "5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f": [
     "CloudAppSecurityDocs\\general-setup.md"
   ],
@@ -949,6 +952,9 @@
   ],
   "7b619a7416d3fac7cde8d1d4737b77131d1ddeb9": [
     "CloudAppSecurityDocs\\media\\file-log-filter-basic.PNG"
+  ],
+  "d1e6d944f998ff2aa2ef74836fd1f4eb3cdd48ee": [
+    "CloudAppSecurityDocs\\azip-integration.md"
   ],
   "1fda4411d17acf90338263df9df147ed0075881c": [
     "CloudAppSecurityDocs\\azip-integration.md"
