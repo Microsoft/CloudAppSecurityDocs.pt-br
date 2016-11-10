@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: d2ece0e3a47dc0febbb1314c496045abdc5c8d61
+ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
+ms.openlocfilehash: c6df59d7c5ced9dc378463bc5bef411259294c47
 
 
 ---
@@ -91,6 +91,6 @@ As políticas permitem que você defina a maneira como deseja que os usuários s
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

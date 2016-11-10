@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
+ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
+ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
 
 
 ---
@@ -24,11 +24,6 @@ ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
 Os conectores de aplicativos aproveitam as APIs de provedores de aplicativo para proporcionar maior visibilidade e controle com o Cloud App Security sobre os aplicativos aos quais você se conecta.  
   
 O Cloud App Security aproveita as APIs fornecidas pelo provedor de nuvem, cada serviço tem sua própria estrutura e limitações de API. Ele trabalhou com os serviços para otimizar o uso das APIs de para garantir o melhor desempenho. Considerando as diferentes limitações que os serviços impõem sobre as APIs (como as limitações, limites de API, janelas de API de mudança de tempo dinâmicas etc.), os mecanismos do Cloud App Security aproveitam a capacidade permitida. Algumas operações, como a verificação de todos os arquivos no locatário, exigem uma grande quantidade de APIs e, portanto, são distribuídas por um período mais longo. Espere algumas que algumas políticas sejam executadas por várias horas ou vários dias.  
-  
-**ExpressRoute**  
-  
-O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para latência, desempenho e segurança aprimorados. Não há nenhuma etapa de configuração necessária do lado do cliente.  
-Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da ExpressRoute e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
 ## <a name="how-it-works"></a>Como funciona  
 O Cloud App Security é implantado com privilégios de administrador do sistema para permitir o acesso completo a todos os objetos em seu ambiente.  
@@ -71,10 +66,9 @@ Dependendo do aplicativo ao qual você está se conectando (consulte a tabela ab
      Capacidade de remover tokens.  
   
 A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com os conectores de aplicativo:  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**Listar contas**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Privilégios**|✔|✔|Sem suporte pelo provedor|✔|✔|✔|✔||  
@@ -121,6 +115,12 @@ Para usar conectores de aplicativos, você precisa ter certeza de que tem o segu
 |ServiceNow|Eureka e superior|Função de Administrador +RestAPI|  
 |Salesforce||Administrador|  
   
+
+**ExpressRoute**  
+  
+O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para latência, desempenho e segurança aprimorados. Não há nenhuma etapa de configuração necessária do lado do cliente.  
+Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da ExpressRoute e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+  
 ## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +129,6 @@ Para usar conectores de aplicativos, você precisa ter certeza de que tem o segu
    
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

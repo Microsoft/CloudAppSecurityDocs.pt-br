@@ -14,8 +14,8 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: bd612cfcecae2eb9c5a81d59250585fb9f4adb01
+ms.sourcegitcommit: 002e0b82296162ee13fa378c4641cc8f21547237
+ms.openlocfilehash: ca51d36a6d899124d3d4eb84ded1972ad9c8bab4
 
 
 ---
@@ -76,6 +76,6 @@ Há duas maneiras de controlar o número de alertas disparados pela política:
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

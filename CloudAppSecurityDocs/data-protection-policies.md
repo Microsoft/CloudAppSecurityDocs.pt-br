@@ -14,8 +14,8 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: b5887c21fe93262cd9982b0d99bf3301b4ef3f0f
+ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
+ms.openlocfilehash: ed0701c4513f9501e0b2e5a7b0b7931f5d76a628
 
 
 ---
@@ -125,6 +125,6 @@ Cada política é composta pelas seguintes partes:
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
