@@ -8,6 +8,9 @@
   "401801da8a4439b3dc0cf5c2f150c72e169a6d16": [
     "CloudAppSecurityDocs\\activity-filters.md"
   ],
+  "ca51d36a6d899124d3d4eb84ded1972ad9c8bab4": [
+    "CloudAppSecurityDocs\\anomaly-detection-policy.md"
+  ],
   "bd612cfcecae2eb9c5a81d59250585fb9f4adb01": [
     "CloudAppSecurityDocs\\anomaly-detection-policy.md"
   ],
@@ -1012,5 +1015,8 @@
   ],
   "8b84a3b54929be3b21ee88b75fb30f1a7af348aa": [
     "CloudAppSecurityDocs\\media\\enable-azip.png"
+  ],
+  "6f4a84503654560407fdaabd68577ad3d864ac8d": [
+    "README.md"
   ]
 }

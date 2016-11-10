@@ -256,7 +256,7 @@
       "TranslationType": 1,
       "IsArchived": true,
       "ArchivedDateTime": "2016-10-29T00:53:21.3452168Z",
-      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\bd612cfcecae2eb9c5a81d59250585fb9f4adb01.dc0aedd90d968df38439872dde1dc43d3e904ed5.xml",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ca51d36a6d899124d3d4eb84ded1972ad9c8bab4.556a51b8c87104c5f82a405e89d8b1d834f42dd0.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     },
@@ -617,6 +617,16 @@
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\e66cc36b7ff2591c9eff2b7399e7aba7304fd960.bb87d7b9ae4ed08e64786327702803fc589d3a48.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "README.md.315843cb01dee69d98772cd3945cdc7d7e341448.HT": {
+      "SourceFilename": "README.md",
+      "XliffHash": "315843cb01dee69d98772cd3945cdc7d7e341448",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\6f4a84503654560407fdaabd68577ad3d864ac8d.f0532b086882c9a8d3726bc708e546a9e542426d.xml",
       "LocXliff": null,
       "LocXliffCommit": null
     }

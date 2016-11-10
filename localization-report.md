@@ -3,11 +3,11 @@
 ## Summary
  Property | Value 
  -------- | ----- 
- Total Files | 204
+ Total Files | 205
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 33
+[ Handoff Success Files ](#handoff-success-list)| 35
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 152
+[ Archive Success Files ](#archive-success-list)| 151
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 2
@@ -19,6 +19,7 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [CloudAppSecurityDocs\activity-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/97f270813beae64bf0572ac9e806290e4c2fcd22/CloudAppSecurityDocs/activity-filters.md) | HandedOffSuccess | [Details](#92507e352a88cd0c5ff4a7bc9f66b94defd864ff4)
+ [CloudAppSecurityDocs\anomaly-detection-policy.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/002e0b82296162ee13fa378c4641cc8f21547237/CloudAppSecurityDocs/anomaly-detection-policy.md) | HandedOffSuccess | [Details](#ca51d36a6d899124d3d4eb84ded1972ad9c8bab45)
  [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/4ddfce677376f370e332938059e741af613853db/CloudAppSecurityDocs/azip-integration.md) | HandedOffSuccess | [Details](#1fda4411d17acf90338263df9df147ed0075881c6)
  [CloudAppSecurityDocs\configure-automatic-log-upload-for-continuous-reports.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/97f270813beae64bf0572ac9e806290e4c2fcd22/CloudAppSecurityDocs/configure-automatic-log-upload-for-continuous-reports.md) | HandedOffSuccess | [Details](#c6103fffd99295eb37ad575680b4169cbbac42df10)
  [CloudAppSecurityDocs\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/14de5a6b28c6593250a1a7827905fb0f8a6482b5/CloudAppSecurityDocs/enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) | HandedOffSuccess | [Details](#3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c526)
@@ -51,13 +52,13 @@
  [CloudAppSecurityDocs\media\multiple-failed-log-on-attempts-policy-example.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e7efcbe212d8a5e7abc51bb101bbe036d39f3458/CloudAppSecurityDocs/media/multiple-failed-log-on-attempts-policy-example.png) | HandedOffSuccess | [Details](#80b1590f0daae7c0f34dc180f30187abaaad8b7b153)
  [CloudAppSecurityDocs\TOC.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/f5ce3248da30909dc6c9851d134894e5eda73dc1/CloudAppSecurityDocs/TOC.md) | HandedOffSuccess | [Details](#93dc54bc2e38d880561c15a0f167f8246e1a6741196)
  [CloudAppSecurityDocs\user-activity-policies.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/97f270813beae64bf0572ac9e806290e4c2fcd22/CloudAppSecurityDocs/user-activity-policies.md) | HandedOffSuccess | [Details](#e66cc36b7ff2591c9eff2b7399e7aba7304fd960200)
+ [README.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/4b1288ab9430d26badba943231c7c91bba03cc08/README.md) | HandedOffSuccess | [Details](#6f4a84503654560407fdaabd68577ad3d864ac8d204)
 
 ## <a name='archive-failed-list'></a> Archive Failed File List
 
 ## <a name='archive-success-list'></a> Archive Success File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [CloudAppSecurityDocs\anomaly-detection-policy.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/anomaly-detection-policy.md) | ArchivedSuccess | [Details](#bd612cfcecae2eb9c5a81d59250585fb9f4adb015)
  [CloudAppSecurityDocs\built-in-report-reference.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/built-in-report-reference.md) | ArchivedSuccess | [Details](#520017dab0301fe2a64c7b82d5e14c71efb2522f7)
  [CloudAppSecurityDocs\cloud-discovery-anomaly-detection-policy.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/cloud-discovery-anomaly-detection-policy.md) | ArchivedSuccess | [Details](#132b4d296b26dd187418734b40d08ecb243692da8)
  [CloudAppSecurityDocs\cloud-discovery-policies.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/cloud-discovery-policies.md) | ArchivedSuccess | [Details](#a43f96ec1d0f6047570677f07281b3e5ad42a40e9)
@@ -223,26 +224,26 @@
 ## <a name='ignored-list'></a> Ignored File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [.gitignore](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/.gitignore) | Ignored | [Details](#c10370458c119ad27aa62f45e4be8450b5531aa40)
- [.localization-config](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/.localization-config) | Ignored | [Details](#5b0f69ca0c203c2a9e4a1e5bd6d9d0389e4f534f1)
- [.openpublishing.build.ps1](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/.openpublishing.build.ps1) | Ignored | [Details](#76e70a82820249a9c1e8a4e9b7adfaed712412df2)
- [.openpublishing.publish.config.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/.openpublishing.publish.config.json) | Ignored | [Details](#b9bda19fbee400a679560d769466f4696418c9a13)
- [CloudAppSecurityDocs\docfx.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/docfx.json) | Ignored | [Details](#1fe1aa00719807f054ad8628450c89e2ce8252b225)
- [CloudAppSecurityDocs\media\actions.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/actions.png) | Ignored | [Details](#6038e19fca45eb7a4727a4723d32f388628511aa37)
- [CloudAppSecurityDocs\media\activity-policy-ref2.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/activity-policy-ref2.png) | Ignored | [Details](#2c14ab033344aed593201db98d236fac0cc3257442)
- [CloudAppSecurityDocs\media\activity-policy-ref3.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/activity-policy-ref3.png) | Ignored | [Details](#3a89f1f631818f55d107c8007bcd3c071378f28c43)
- [CloudAppSecurityDocs\media\activity-ref1.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/activity-ref1.png) | Ignored | [Details](#cfc084fc67746c1a84b80494218d162d029a072045)
- [CloudAppSecurityDocs\media\aws-custom-policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/aws-custom-policy.png) | Ignored | [Details](#9de39c462f6c6b7be1b58c791e9f250c4e135a0163)
- [CloudAppSecurityDocs\media\connect-exchange.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/connect-exchange.png) | Ignored | [Details](#86a876dd32f95540d2f25a1bfe3b2ec86eb58d9c91)
- [CloudAppSecurityDocs\media\exchange-online-configuration.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/exchange-online-configuration.png) | Ignored | [Details](#4ac09ee319e1d0b8a5d6e8187495af273e7fca5e112)
- [CloudAppSecurityDocs\media\policy_dlp.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/policy_dlp.png) | Ignored | [Details](#ef151430d353e8a924ad97de96db61f3def2ca02170)
- [CloudAppSecurityDocs\media\policy_file-type-filters.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/policy_file-type-filters.png) | Ignored | [Details](#17f79a0a9c22f1f0ef1eb2150e7ee14cec7ee46e172)
- [CloudAppSecurityDocs\media\policy-engine.jpg](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/policy-engine.jpg) | Ignored | [Details](#9f324cb56aae23298c40f10836f55aea330226cc168)
- [CloudAppSecurityDocs\media\proxy_policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/proxy_policy.png) | Ignored | [Details](#0a11b26a2c6a0a3ad3e4bb114db269fde23808ef175)
- [CloudAppSecurityDocs\media\work-process.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/work-process.png) | Ignored | [Details](#853b003149ac31a1e66eb6911dc53276a6cfdb2f192)
+ [.gitignore](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/.gitignore) | Ignored | [Details](#c10370458c119ad27aa62f45e4be8450b5531aa40)
+ [.localization-config](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/.localization-config) | Ignored | [Details](#5b0f69ca0c203c2a9e4a1e5bd6d9d0389e4f534f1)
+ [.openpublishing.build.ps1](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/.openpublishing.build.ps1) | Ignored | [Details](#76e70a82820249a9c1e8a4e9b7adfaed712412df2)
+ [.openpublishing.publish.config.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/.openpublishing.publish.config.json) | Ignored | [Details](#a5c5a976c952b6523db101d830c7ede87440b7693)
+ [CloudAppSecurityDocs\docfx.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/docfx.json) | Ignored | [Details](#1fe1aa00719807f054ad8628450c89e2ce8252b225)
+ [CloudAppSecurityDocs\media\actions.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/actions.png) | Ignored | [Details](#6038e19fca45eb7a4727a4723d32f388628511aa37)
+ [CloudAppSecurityDocs\media\activity-policy-ref2.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/activity-policy-ref2.png) | Ignored | [Details](#2c14ab033344aed593201db98d236fac0cc3257442)
+ [CloudAppSecurityDocs\media\activity-policy-ref3.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/activity-policy-ref3.png) | Ignored | [Details](#3a89f1f631818f55d107c8007bcd3c071378f28c43)
+ [CloudAppSecurityDocs\media\activity-ref1.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/activity-ref1.png) | Ignored | [Details](#cfc084fc67746c1a84b80494218d162d029a072045)
+ [CloudAppSecurityDocs\media\aws-custom-policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/aws-custom-policy.png) | Ignored | [Details](#9de39c462f6c6b7be1b58c791e9f250c4e135a0163)
+ [CloudAppSecurityDocs\media\connect-exchange.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/connect-exchange.png) | Ignored | [Details](#86a876dd32f95540d2f25a1bfe3b2ec86eb58d9c91)
+ [CloudAppSecurityDocs\media\exchange-online-configuration.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/exchange-online-configuration.png) | Ignored | [Details](#4ac09ee319e1d0b8a5d6e8187495af273e7fca5e112)
+ [CloudAppSecurityDocs\media\policy_dlp.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/policy_dlp.png) | Ignored | [Details](#ef151430d353e8a924ad97de96db61f3def2ca02170)
+ [CloudAppSecurityDocs\media\policy_file-type-filters.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/policy_file-type-filters.png) | Ignored | [Details](#17f79a0a9c22f1f0ef1eb2150e7ee14cec7ee46e172)
+ [CloudAppSecurityDocs\media\policy-engine.jpg](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/policy-engine.jpg) | Ignored | [Details](#9f324cb56aae23298c40f10836f55aea330226cc168)
+ [CloudAppSecurityDocs\media\proxy_policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/proxy_policy.png) | Ignored | [Details](#0a11b26a2c6a0a3ad3e4bb114db269fde23808ef175)
+ [CloudAppSecurityDocs\media\work-process.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/work-process.png) | Ignored | [Details](#853b003149ac31a1e66eb6911dc53276a6cfdb2f192)
 
 ## Item Details
-##### <a name='c10370458c119ad27aa62f45e4be8450b5531aa40'></a> Source: [.gitignore](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/.gitignore)
+##### <a name='c10370458c119ad27aa62f45e4be8450b5531aa40'></a> Source: [.gitignore](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/.gitignore)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -254,7 +255,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='5b0f69ca0c203c2a9e4a1e5bd6d9d0389e4f534f1'></a> Source: [.localization-config](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/.localization-config)
+##### <a name='5b0f69ca0c203c2a9e4a1e5bd6d9d0389e4f534f1'></a> Source: [.localization-config](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/.localization-config)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -266,7 +267,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='76e70a82820249a9c1e8a4e9b7adfaed712412df2'></a> Source: [.openpublishing.build.ps1](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/.openpublishing.build.ps1)
+##### <a name='76e70a82820249a9c1e8a4e9b7adfaed712412df2'></a> Source: [.openpublishing.build.ps1](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/.openpublishing.build.ps1)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -278,7 +279,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b9bda19fbee400a679560d769466f4696418c9a13'></a> Source: [.openpublishing.publish.config.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/.openpublishing.publish.config.json)
+##### <a name='a5c5a976c952b6523db101d830c7ede87440b7693'></a> Source: [.openpublishing.publish.config.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/.openpublishing.publish.config.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -302,14 +303,14 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='bd612cfcecae2eb9c5a81d59250585fb9f4adb015'></a> Source: [CloudAppSecurityDocs\anomaly-detection-policy.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/anomaly-detection-policy.md)
-* Status: ArchivedSuccess
+##### <a name='ca51d36a6d899124d3d4eb84ded1972ad9c8bab45'></a> Source: [CloudAppSecurityDocs\anomaly-detection-policy.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/002e0b82296162ee13fa378c4641cc8f21547237/CloudAppSecurityDocs/anomaly-detection-policy.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/b7297c0ace4f35621ecfb3b416f23f4aed7c32c8/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.pt-br.xlf)
-* Handoff Datetime: 2016-10-28 07:06:31
+* Handoff File: [anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/ce35879f93f66b89f3afd4ab7653eeaee6b95b9e/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.pt-br.xlf)
+* Handoff Datetime: 2016-11-10 00:56:07
 * Handoff Reason: Include
-* Archive File: [anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/fe7c1c6dfe45c76dd17592ce30940e96f0ae3d26/ol-archive/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.pt-br.xlf)
-* Archive Datetime: 2016-10-29 00:53:21
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
@@ -542,7 +543,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1fe1aa00719807f054ad8628450c89e2ce8252b225'></a> Source: [CloudAppSecurityDocs\docfx.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/docfx.json)
+##### <a name='1fe1aa00719807f054ad8628450c89e2ce8252b225'></a> Source: [CloudAppSecurityDocs\docfx.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/docfx.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -691,7 +692,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6038e19fca45eb7a4727a4723d32f388628511aa37'></a> Source: [CloudAppSecurityDocs\media\actions.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/actions.png)
+##### <a name='6038e19fca45eb7a4727a4723d32f388628511aa37'></a> Source: [CloudAppSecurityDocs\media\actions.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/actions.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -768,7 +769,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='2c14ab033344aed593201db98d236fac0cc3257442'></a> Source: [CloudAppSecurityDocs\media\activity-policy-ref2.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/activity-policy-ref2.png)
+##### <a name='2c14ab033344aed593201db98d236fac0cc3257442'></a> Source: [CloudAppSecurityDocs\media\activity-policy-ref2.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/activity-policy-ref2.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -780,7 +781,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='3a89f1f631818f55d107c8007bcd3c071378f28c43'></a> Source: [CloudAppSecurityDocs\media\activity-policy-ref3.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/activity-policy-ref3.png)
+##### <a name='3a89f1f631818f55d107c8007bcd3c071378f28c43'></a> Source: [CloudAppSecurityDocs\media\activity-policy-ref3.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/activity-policy-ref3.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -805,7 +806,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cfc084fc67746c1a84b80494218d162d029a072045'></a> Source: [CloudAppSecurityDocs\media\activity-ref1.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/activity-ref1.png)
+##### <a name='cfc084fc67746c1a84b80494218d162d029a072045'></a> Source: [CloudAppSecurityDocs\media\activity-ref1.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/activity-ref1.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1025,7 +1026,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9de39c462f6c6b7be1b58c791e9f250c4e135a0163'></a> Source: [CloudAppSecurityDocs\media\aws-custom-policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/aws-custom-policy.png)
+##### <a name='9de39c462f6c6b7be1b58c791e9f250c4e135a0163'></a> Source: [CloudAppSecurityDocs\media\aws-custom-policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/aws-custom-policy.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1388,7 +1389,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='86a876dd32f95540d2f25a1bfe3b2ec86eb58d9c91'></a> Source: [CloudAppSecurityDocs\media\connect-exchange.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/connect-exchange.png)
+##### <a name='86a876dd32f95540d2f25a1bfe3b2ec86eb58d9c91'></a> Source: [CloudAppSecurityDocs\media\connect-exchange.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/connect-exchange.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -1660,7 +1661,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4ac09ee319e1d0b8a5d6e8187495af273e7fca5e112'></a> Source: [CloudAppSecurityDocs\media\exchange-online-configuration.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/exchange-online-configuration.png)
+##### <a name='4ac09ee319e1d0b8a5d6e8187495af273e7fca5e112'></a> Source: [CloudAppSecurityDocs\media\exchange-online-configuration.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/exchange-online-configuration.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -2400,7 +2401,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ef151430d353e8a924ad97de96db61f3def2ca02170'></a> Source: [CloudAppSecurityDocs\media\policy_dlp.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/policy_dlp.png)
+##### <a name='ef151430d353e8a924ad97de96db61f3def2ca02170'></a> Source: [CloudAppSecurityDocs\media\policy_dlp.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/policy_dlp.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -2425,7 +2426,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='17f79a0a9c22f1f0ef1eb2150e7ee14cec7ee46e172'></a> Source: [CloudAppSecurityDocs\media\policy_file-type-filters.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/policy_file-type-filters.png)
+##### <a name='17f79a0a9c22f1f0ef1eb2150e7ee14cec7ee46e172'></a> Source: [CloudAppSecurityDocs\media\policy_file-type-filters.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/policy_file-type-filters.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -2437,7 +2438,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='9f324cb56aae23298c40f10836f55aea330226cc168'></a> Source: [CloudAppSecurityDocs\media\policy-engine.jpg](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/policy-engine.jpg)
+##### <a name='9f324cb56aae23298c40f10836f55aea330226cc168'></a> Source: [CloudAppSecurityDocs\media\policy-engine.jpg](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/policy-engine.jpg)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -2475,7 +2476,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0a11b26a2c6a0a3ad3e4bb114db269fde23808ef175'></a> Source: [CloudAppSecurityDocs\media\proxy_policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/proxy_policy.png)
+##### <a name='0a11b26a2c6a0a3ad3e4bb114db269fde23808ef175'></a> Source: [CloudAppSecurityDocs\media\proxy_policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/proxy_policy.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -2695,7 +2696,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='853b003149ac31a1e66eb6911dc53276a6cfdb2f192'></a> Source: [CloudAppSecurityDocs\media\work-process.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/media/work-process.png)
+##### <a name='853b003149ac31a1e66eb6911dc53276a6cfdb2f192'></a> Source: [CloudAppSecurityDocs\media\work-process.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/148af9cec129391ac34c883598a8b29783239cb9/CloudAppSecurityDocs/media/work-process.png)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -2835,6 +2836,18 @@
 * Handoff Reason: Include
 * Archive File: [working-with-the-regex-engine.ca593a4d7946d556e005afffad5262b5dc64a0e4.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/fe7c1c6dfe45c76dd17592ce30940e96f0ae3d26/ol-archive/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/working-with-the-regex-engine.ca593a4d7946d556e005afffad5262b5dc64a0e4.pt-br.xlf)
 * Archive Datetime: 2016-10-29 00:53:21
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='6f4a84503654560407fdaabd68577ad3d864ac8d204'></a> Source: [README.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/4b1288ab9430d26badba943231c7c91bba03cc08/README.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [README.8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/ce35879f93f66b89f3afd4ab7653eeaee6b95b9e/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/README.8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d.pt-br.xlf)
+* Handoff Datetime: 2016-11-10 00:56:07
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
