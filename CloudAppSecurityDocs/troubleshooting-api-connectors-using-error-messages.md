@@ -1,0 +1,64 @@
+---
+title: "Solução de problemas de conectores de API usando mensagens de erro | Microsoft Docs"
+description: "Este tópico fornece uma lista de mensagens de erro do Conector de API, bem como recomendações de solução para cada uma."
+keywords: 
+author: rkarlin
+ms.author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod: 
+ms.service: cloud-app-security
+ms.technology: 
+ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
+ms.reviewer: reutam
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
+ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
+
+
+---
+
+# <a name="troubleshooting-api-connectors-using-error-messages"></a>Solução de problemas de conectores de API usando mensagens de erro
+|Mensagem de erro|Aplicativo relevante|Descrição|Resolução|
+|----|----|----|----|
+|HttpRequestFailure: O servidor retornou: 400 Solicitação inválida: {"error":{"code":"AF20012","message":"A ID de locatário especificada (insira Tenant_ID aqui) está configurada incorretamente no sistema."|Office 365 |Não foi encontrada nenhuma licença atribuída do Office 365. |Atribua pelo menos uma licença do Office 365 ao seu locatário.| 
+|AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Caixa|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
+|BoxRestException: Falha ao analisar a resposta.|Caixa|Erro interno|Clique no link “Teste agora” novamente para testar a conexão com o Box.|
+|ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"Invalid refresh token"}'|Caixa|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
+|BoxServerException: O usuário não pode acessar esse recurso sem ter uma conta enterprise|Caixa|A conta do Box não é uma conta da empresa.|Atualize sua licença do Box para a versão Enterprise e siga o processo para conectar o Box ao Cloud App Security novamente.|
+|BoxServerException: não autorizado – Não é possível autorizar com este serviço|Caixa|O Administrador do Box excluiu o aplicativo do Cloud App Security no Box.|Siga o processo para conectar o Box ao Cloud App Security novamente.|
+|HttpRequestFailure: o servidor retornou: 401 não autorizado|Okta|O token Okta não é válido.|Siga o processo para conectar o Okta ao Cloud App Security novamente.|
+|IOException:|Okta|Erro interno|Contate o suporte|
+|HttpRequestFailure: o servidor retornou: 404 não encontrado|Okta|Erro interno|Contate o suporte|
+|SocketTimeoutException: tempo limite de leitura excedido|Salesforce|Erro interno|Clique no link “Teste agora” novamente para testar a conexão com o Salesforce.|
+|HttpRequestFailure: o servidor retornou: 400 solicitação inválida|Salesforce|A conexão com o Salesforce não foi concluída ou expirou.|Siga o processo para conectar o Salesforce ao Cloud App Security novamente.|
+|HttpRequestFailure: o servidor retornou: 401 não autorizado|Office 365|Problema interno|Clique no link “Testar agora” novamente|
+|TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error ao validar as credenciais. AADSTS70008: O código de autorização ou token de atualização fornecido expirou. Envie uma nova solicitação de autorização interativa para esse usuário e recurso.|Office 365|Token expirado|Siga o processo para conectar o Office 365 ao Cloud App Security novamente.|
+|SocketTimeoutException: tempo limite de leitura excedido|Office 365|Erro interno|Clique no link “Testar agora” novamente|
+|NullPointerException|Office 365|Erro interno|Contate o suporte|
+|IgniteException|Office 365|O domínio ou o usuário não são válidos|Redefina suas configurações e siga o processo para conectar o Office 365 ao Cloud App Security novamente.|
+|ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Erro ao validar as credenciais. AADSTS70008: O código de autorização ou token de atualização fornecido expirou. Envie uma nova solicitação de autorização interativa para esse usuário e recurso.|Office 365|O domínio ou o usuário não são válidos|Redefina suas configurações e siga o processo para conectar o Office 365 ao Cloud App Security novamente.|
+|HttpRequestFailure: o servidor retornou: 400 solicitação inválida|Office 365|Erro interno|Clique no link “Teste agora” dentro de alguns minutos; se não funcionar, siga o processo para conectar o Office 365 ao Cloud App Security novamente.|
+|GoogleJsonResponseException: 401 Não autorizado|Google Apps|Acesso negado Você não está autorizado a ler registros de atividade. O usuário de logon no Google Apps deve ser um administrador.|Siga o processo para conectar o Google Apps ao Cloud App Security novamente usando uma conta de administrador.|
+|GoogleJsonResponseException: 403 Proibido|Google Apps|Foi encontrado um problema ao executar a API do Google Apps.|Se você acabou de implantar o Conector de Aplicativos do Cloud App Security para o Google Apps, verifique o seguinte: se você clicou em Unlimited, certifique-se de que sua conta do Google Apps realmente seja ilimitada. Caso contrário, execute o Conector de Aplicativos novamente e desmarque a opção de conta ilimitada. Verifique se os escopos definidos durante a instalação estão corretos. Se essa não for uma nova implantação e você receber esse erro, pode ser que você tenha atingido o limite de API para o dia e os eventos do Google Apps serão renovados no dia seguinte.|
+|TokenResponseException: 400 Solicitação inválida|Google Apps|A conexão com o Google Apps não foi concluída ou expirou.|Siga o processo para conectar o Google Apps ao Cloud App Security novamente.|
+|RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: O servidor retornou: 403 Proibido|ServiceNow|As permissões estão incorretas|Siga o processo para conectar o ServiceNow ao Cloud App Security novamente usando uma conta de administrador.|
+|HttpRequestFailure: o servidor retornou: 401 não autorizado|Exchange Online|Usuário ou senha incorretos|Verifique se o nome de usuário e a senha estão corretos e siga o processo para conectar o Exchange Online ao Cloud App Security novamente.|
+|HttpRequestFailure: o servidor retornou: 404 não encontrado|Exchange Online|O usuário que você está usando para fazer logon no Exchange Online não tem uma caixa de correio principal no Exchange Online (por exemplo, um usuário que não existe no Azure AD ou um usuário existe no Azure AD, mas não tem uma licença do Exchange Online).|Siga o processo para conectar o Exchange Online ao Cloud App Security novamente usando uma nova conta de administrador.|
+|NullPointerException|AWS|Erro interno|Contate o suporte|
+|HttpRequestFailure: O servidor retornou: 500 Erro interno do servidor|Todos os aplicativos|Ocorreu um erro no aplicativo.|Verificar o status do aplicativo|
+|Tempo limite do serviço excedido|Todos os aplicativos|Foi detectado um tempo limite excedido de conexão entre o Cloud App Security e o aplicativo. Isso pode ocorrer devido a um problema com o aplicativo.|Tente novamente mais tarde.|
+
+## <a name="see-also"></a>Veja também  
+[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
+[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+  
+  
+
+
+<!--HONumber=Oct16_HO4-->
+
+
