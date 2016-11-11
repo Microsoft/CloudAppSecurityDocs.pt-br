@@ -207,8 +207,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-10-29T00:53:21.392068Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1.3c423ce3682eb9cfd2aa7fbef0c65a56e0db7eb6.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.pt-br.xlf",
+      "LocXliffCommit": "65a27afd9ca4cb6cb4175c23ca5c9a8d4444f832"
     },
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md.b700d992d444abbb093153eb85ee6b6376b42558.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md",
@@ -347,8 +347,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-10-29T00:53:21.3452168Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\186643ab8efa7391b06a09dd2cddbb22ba583e71.1a1d4038c0531cbea204769f679afd5492c952df.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.pt-br.xlf",
+      "LocXliffCommit": "65a27afd9ca4cb6cb4175c23ca5c9a8d4444f832"
     },
     "CloudAppSecurityDocs\\release-notes.md.ad92bd4b8edba7e1cf794efa63ddade5fc16f107.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\release-notes.md",
@@ -397,8 +397,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-10-29T00:53:21.4233389Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\1b131e3918a7623995656f03ba98aca698e3b0c9.23688b7e6b1e188e70bff61ac14b0f5a8c65a04e.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.pt-br.xlf",
+      "LocXliffCommit": "65a27afd9ca4cb6cb4175c23ca5c9a8d4444f832"
     },
     "CloudAppSecurityDocs\\working-with-the-regex-engine.md.7038e2bbabce88af21a13fda36141d8eb0d4f1cc.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\working-with-the-regex-engine.md",
