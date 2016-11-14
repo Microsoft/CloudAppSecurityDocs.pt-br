@@ -649,6 +649,16 @@
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\d1e6d944f998ff2aa2ef74836fd1f4eb3cdd48ee.75802a901c2f824d8da2c3e7bc9a469bc7422a5a.xml",
       "LocXliff": null,
       "LocXliffCommit": null
+    },
+    "CloudAppSecurityDocs\\release-notes.md.9985260c4775870dcc71f8d641e72fbb72a12d80.HT": {
+      "SourceFilename": "CloudAppSecurityDocs\\release-notes.md",
+      "XliffHash": "9985260c4775870dcc71f8d641e72fbb72a12d80",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\a94f0d9e386d98b329d2c60dbc3b29f813ba050c.b10dc5ac00f9df47f55d18cc2565a7111135d3b7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
     }
   }
 }

@@ -1,37 +1,29 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2879a9c52c14c4740d48ce765474fd197881f718/CloudAppSecurityDocs/azip-integration.md) | HandedOffSuccess | [Details](#d1e6d944f998ff2aa2ef74836fd1f4eb3cdd48ee6)
- [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2d39b26629579905ea30f3f769ca2a16121d51d1/CloudAppSecurityDocs/general-setup.md) | HandedOffSuccess | [Details](#b617a488dec97deb7c1e1d89cbaa62e496e1889128)
+ [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/04c43da18865c1381f8159b70273ad1951221c95/CloudAppSecurityDocs/release-notes.md) | HandedOffSuccess | [Details](#a94f0d9e386d98b329d2c60dbc3b29f813ba050c195)
 
 ## Item Details
-##### <a name='d1e6d944f998ff2aa2ef74836fd1f4eb3cdd48ee6'></a> Source: [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2879a9c52c14c4740d48ce765474fd197881f718/CloudAppSecurityDocs/azip-integration.md)
+##### <a name='a94f0d9e386d98b329d2c60dbc3b29f813ba050c195'></a> Source: [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/04c43da18865c1381f8159b70273ad1951221c95/CloudAppSecurityDocs/release-notes.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [azip-integration.bb192bd1d331da60f814da44b801cf4714502352.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/5db77b4dd22bb51d92ece19cc9ce7a72ac62380c/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/azip-integration.bb192bd1d331da60f814da44b801cf4714502352.pt-br.xlf)
-* Handoff Datetime: 2016-11-10 21:22:12
+* Handoff File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/be2d1e0521254cacb08ab0d0d1a0de2cf51feaa4/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.pt-br.xlf)
+* Handoff Datetime: 2016-11-14 21:07:40
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='b617a488dec97deb7c1e1d89cbaa62e496e1889128'></a> Source: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2d39b26629579905ea30f3f769ca2a16121d51d1/CloudAppSecurityDocs/general-setup.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/5db77b4dd22bb51d92ece19cc9ce7a72ac62380c/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.pt-br.xlf)
-* Handoff Datetime: 2016-11-10 21:22:12
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.pt-br/blob/79020904e275c8c4a5e364869d0b37db9a4cd4b1/CloudAppSecurityDocs/release-notes.md)
+* Current Handback File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/1dc7d018cb054c599f46ae319418b8c7b49ec458/ol-handback/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.pt-br.xlf)
+* Current Handback Datetime: 2016-11-10 17:00:30
+* Bilingual File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/1dc7d018cb054c599f46ae319418b8c7b49ec458/ol-handback/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.pt-br.xlf)
+* Bilingual Datetime: 2016-11-10 17:16:40
 * [Back to Top](#report-top)
 
 
