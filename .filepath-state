@@ -68,6 +68,9 @@
   "ea1854d6bf32e01afe6183409b68ded32ee37dd1": [
     "CloudAppSecurityDocs\\content-inspection.md"
   ],
+  "5a051fc106661fc2266587ac5dbbb8bbdabd88bc": [
+    "CloudAppSecurityDocs\\control.md"
+  ],
   "9dc74c35f32c9a3dff251d6e0ac6b35a3591f4b9": [
     "CloudAppSecurityDocs\\control.md"
   ],
@@ -82,6 +85,9 @@
   ],
   "669d1c1942e8c7e930cd2421e9b56821eff04d12": [
     "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
+  ],
+  "d07f8cfebd5654036078d474656a6e73e24d93d0": [
+    "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
   ],
   "cc6a6e4b41b6660462c9c873469a1e8c9af97c4e": [
     "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
@@ -107,6 +113,9 @@
   "1b131e3918a7623995656f03ba98aca698e3b0c9": [
     "CloudAppSecurityDocs\\general-setup.md"
   ],
+  "2e9307b5166566efa65f4766c0331c6aa15118e9": [
+    "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
+  ],
   "8b454edde557c408b644c9bff6f7bf6136ba9819": [
     "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
   ],
@@ -127,6 +136,9 @@
   ],
   "b61ffbf820d94f41afb0f595700cf95ad6180445": [
     "CloudAppSecurityDocs\\index.md"
+  ],
+  "fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e": [
+    "CloudAppSecurityDocs\\investigate.md"
   ],
   "186643ab8efa7391b06a09dd2cddbb22ba583e71": [
     "CloudAppSecurityDocs\\investigate.md"
@@ -898,6 +910,9 @@
   ],
   "a88691fbe6c23fa537133c077402d8e9e1121047": [
     "CloudAppSecurityDocs\\user-activity-policies.md"
+  ],
+  "690e58cd598ee9a6dd329e19cd65129df160e009": [
+    "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
   ],
   "c6df59d7c5ced9dc378463bc5bef411259294c47": [
     "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
