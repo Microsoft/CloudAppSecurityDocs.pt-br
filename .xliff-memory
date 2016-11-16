@@ -587,8 +587,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-10T01:24:34.3805885Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\81a6663f16264177966492ac4a1ec9e00f6d1a76.38ec964f307c547249ca48d7121f6e8d892162c0.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf",
+      "LocXliffCommit": "96a91abd5a10b9f3dae0e6a2d4ff8d62a740d38b"
     },
     "CloudAppSecurityDocs\\azip-integration.md.62596cef1ee27d2c2f5db227870807ff0134816f.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\azip-integration.md",
@@ -597,8 +597,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-10T01:24:34.3805885Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\1fda4411d17acf90338263df9df147ed0075881c.c0fd85aed95195c040b36c1e90f85881be7efa3f.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\azip-integration.bb192bd1d331da60f814da44b801cf4714502352.pt-br.xlf",
+      "LocXliffCommit": "96a91abd5a10b9f3dae0e6a2d4ff8d62a740d38b"
     },
     "CloudAppSecurityDocs\\TOC.md.ac847c82f05a2c83359ec3ba71596d1c9ae59097.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\TOC.md",
@@ -627,8 +627,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-10T01:24:34.3962133Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\6f4a84503654560407fdaabd68577ad3d864ac8d.f0532b086882c9a8d3726bc708e546a9e542426d.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\README.8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d.pt-br.xlf",
+      "LocXliffCommit": "96a91abd5a10b9f3dae0e6a2d4ff8d62a740d38b"
     },
     "CloudAppSecurityDocs\\general-setup.md.486a10e139cdcb5d89080f1eec3b1cb6127c5d5c.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\general-setup.md",
