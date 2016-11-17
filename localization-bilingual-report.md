@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [CloudAppSecurityDocs\manage-app-permissions.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/manage-app-permissions.md) | InSyncHandedBackSuccess | [Details](#9a139df8dd337bf3c3feb17c44a22fdc45476c3f35)
 
 ## Item Details
+##### <a name='9a139df8dd337bf3c3feb17c44a22fdc45476c3f35'></a> Source: [CloudAppSecurityDocs\manage-app-permissions.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/manage-app-permissions.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [CloudAppSecurityDocs\manage-app-permissions.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.pt-br/blob/e4ebe36f8cb883561cfd97b0d17e155a4b17a2c6/CloudAppSecurityDocs/manage-app-permissions.md)
+* Handoff File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/851457bb62fc97de1659996c6dc9b83e4040d2cf/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf)
+* Handoff Datetime: 2016-11-16 20:44:54
+* Handoff Reason: Include
+* Archive File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/5ac84283bff7b40b8a79fb2e9f6d5c45da123562/ol-archive/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf)
+* Archive Datetime: 2016-11-17 01:26:40
+* Handback File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/6d2cd2908577f3ad72625c10ba5402b9d7cf2e2e/ol-handback/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf)
+* Handback Datetime: 2016-11-17 02:03:38
+* Bilingual File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/6d2cd2908577f3ad72625c10ba5402b9d7cf2e2e/ol-handback/Microsoft/CloudAppSecurityDocs-pr.pt-br/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.pt-br.xlf)
+* Bilingual Datetime: 2016-11-17 02:06:23
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
