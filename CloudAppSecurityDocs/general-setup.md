@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1b131e3918a7623995656f03ba98aca698e3b0c9
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
 
 
 ---
@@ -38,7 +38,7 @@ O procedimento a seguir fornece instruções para configurar o [!INCLUDE[Adallom
   
 -   Para executar o portal do Cloud App Security, use o Internet Explorer 11, Microsoft Edge (mais recente), Google Chrome (mais recente), Mozilla Firefox (mais recente) ou Apple Safari (mais recente).  
   
--   **ExpressRoute**  
+-   ExpressRoute  
   
      O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para latência, desempenho e segurança aprimorados. Não há nenhuma etapa de configuração necessária do lado do cliente.  
     Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
@@ -91,7 +91,7 @@ Também é possível fornecer um **logotipo** que será exibido em notificaçõe
   
 ![gerenciar o acesso administrativo](./media/manage-admin-access.png "manage admin access")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a> Personalizar as configurações de administração  
+##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Personalizar as configurações de administração  
 Para configurar suas preferências como um administrador do Cloud App Security, clique em seu nome na barra de menus do portal e selecione **Configurações de usuário** para definir o seguinte:  
   
 1.  Clique em **Configurações de conta**. Aqui você pode personalizar o idioma do portal para sua própria exibição. Você pode defini-lo para exibir o portal em um idioma padrão ou pode definir um idioma diferente para si mesmo.  
@@ -103,11 +103,12 @@ Para configurar suas preferências como um administrador do Cloud App Security, 
 > [!NOTE] 
 > O número máximo de alertas que serão enviados por meio de mensagem de texto é 10 por número de telefone por dia. Observe que o dia é calculado de acordo com o fuso horário UTC. 
   
-     ![notification settings](./media/notification-settings.png "notification settings")  
+  ![configurações de notificação](./media/notification-settings.png "notification settings")  
   
-     When you are done, click **Save**.  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a> Organizar os dados de acordo com suas necessidades  
+3. Quando terminar, clique em **Salvar**.  
+  
+##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> Organizar os dados de acordo com suas necessidades  
 Para identificar facilmente os endereços IP conhecidos, como seus endereços IP do escritório físico, é necessário definir intervalos de endereço IP, o que permite que você marque e categorize apropriadamente e personalize a forma como os logs e alertas são exibidos e investigados.   
 Cada grupo de intervalos de IP pode ser categorizado com base em uma lista predefinida de categorias de IP ou marcado com suas próprias marcas de IP criadas. Além disso, essa configuração permite que você substitua as informações de geolocalização com base no seu conhecimento de rede interno.  
   
@@ -151,7 +152,7 @@ Na barra de menus, clique no ícone de configurações ![ícone de configuraçõ
   
      ![intervalo de newipaddress](./media/newipaddress-range.png "newipaddress range")  
   
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a> Personalizar sua experiência  
+##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> Personalizar sua experiência  
 Na barra de menus, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "settings icon") e selecione **Configurações de email** para definir os parâmetros para notificações de email enviadas do Cloud App Security para administradores que solicitam alertas e notificações enviadas para os usuários finais sobre violações em que estão envolvidos.  
   
 ![menu de configuração de email](./media/mail-setting-menu.png "mail setting menu")  
@@ -251,6 +252,6 @@ O Cloud App Security é combinado a com o Azure Active Directory para atividades
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
