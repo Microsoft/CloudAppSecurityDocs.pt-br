@@ -2,12 +2,6 @@
   "92507e352a88cd0c5ff4a7bc9f66b94defd864ff": [
     "CloudAppSecurityDocs\\activity-filters.md"
   ],
-  "59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a": [
-    "CloudAppSecurityDocs\\activity-filters.md"
-  ],
-  "401801da8a4439b3dc0cf5c2f150c72e169a6d16": [
-    "CloudAppSecurityDocs\\activity-filters.md"
-  ],
   "ca51d36a6d899124d3d4eb84ded1972ad9c8bab4": [
     "CloudAppSecurityDocs\\anomaly-detection-policy.md"
   ],
@@ -24,12 +18,6 @@
     "CloudAppSecurityDocs\\cloud-discovery-policies.md"
   ],
   "c6103fffd99295eb37ad575680b4169cbbac42df": [
-    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
-  ],
-  "046cc96c15f76e4196c60f9864c835f4e6595dfa": [
-    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
-  ],
-  "9672336d69f19875d160eb414bf3ca2c525692e1": [
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
   ],
   "4b9ab028bb45f77513217dd3784cefc73e984962": [
@@ -129,9 +117,6 @@
     "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
   ],
   "e67fecd17b26314720a34691f83464c59a244ea6": [
-    "CloudAppSecurityDocs\\governance-actions.md"
-  ],
-  "052ca8e20e75fcae7687d17687d7dd1a645ae5e6": [
     "CloudAppSecurityDocs\\governance-actions.md"
   ],
   "1b95273f4f639ebd4bc1d0200fed97b9c1acb02d": [
@@ -905,12 +890,6 @@
   "93dc54bc2e38d880561c15a0f167f8246e1a6741": [
     "CloudAppSecurityDocs\\TOC.md"
   ],
-  "5488120792de84065932030030cbaad10743dfc1": [
-    "CloudAppSecurityDocs\\TOC.md"
-  ],
-  "b4a73c596c7fc91e75c6304d208f01b0423517e7": [
-    "CloudAppSecurityDocs\\TOC.md"
-  ],
   "7446c3eb17befdf473c8841a0d92524c029f67df": [
     "CloudAppSecurityDocs\\troubleshooting.md"
   ],
@@ -921,9 +900,6 @@
     "CloudAppSecurityDocs\\troubleshooting-cloud-discovery.md"
   ],
   "e66cc36b7ff2591c9eff2b7399e7aba7304fd960": [
-    "CloudAppSecurityDocs\\user-activity-policies.md"
-  ],
-  "a88691fbe6c23fa537133c077402d8e9e1121047": [
     "CloudAppSecurityDocs\\user-activity-policies.md"
   ],
   "690e58cd598ee9a6dd329e19cd65129df160e009": [
