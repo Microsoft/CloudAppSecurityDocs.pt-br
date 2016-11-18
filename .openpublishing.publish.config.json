@@ -32,6 +32,12 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pt-br",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/Microsoft/CloudAppSecurityDocs-pr",
+      "branch": "live"
     }
-  ]
+  ],
+  "need_generate_pdf_url_template": false
 }
