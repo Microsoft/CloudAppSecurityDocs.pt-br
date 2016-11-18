@@ -1,5 +1,5 @@
 # [Compreender e Explorar](what-is-cloud-app-security.md)
-## [O que é o Cloud App Discover](what-is-cloud-app-security.md)
+## [O que é CAS?](what-is-cloud-app-security.md)
 ## [Notas de versão](release-notes.md)
 # [Introdução](getting-started-with-cloud-app-security.md)
 ## [Configuração geral](general-setup.md)
@@ -7,7 +7,6 @@
 ### [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)
-# [Implantar](deploy.md)
 ## [Habilitar ações de visibilidade, proteção e governança instantâneas para seus aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Conectar o Box ao Microsoft Cloud App Security](connect-box-to-microsoft-cloud-app-security.md)
 ### [Conectar o Google Apps ao Microsoft Cloud App Security](connect-google-apps-to-microsoft-cloud-app-security.md)
@@ -28,15 +27,17 @@
 # [Usar](daily-activities-to-protect-your-cloud-environment.md)
 ## [Investigar](investigate.md)
 ### [Referência de relatório interno](built-in-report-reference.md)
-### [Filtros de arquivos](file-filters.md)
-### [Filtros de atividade](activity-filters.md)
+### [Arquivos](file-filters.md)
+### [Atividades](activity-filters.md)
 ### [Alertas](monitor-alerts.md)
+### [Integrar à Proteção de Informações do Azure](azip-integration.md)
 ## [Controle](control.md)
-## [Ações de governança](governance-actions.md)
+### [Gerenciar permissões de aplicativo](manage-app-permissions.md)
+## [Log de governança](governance-actions.md)
 # [Solucionar problemas](troubleshooting.md)
 ## [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solução de problemas de conectores de API usando mensagens de erro](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
