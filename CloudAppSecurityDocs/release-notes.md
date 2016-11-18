@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,30 @@ ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
 
 
 ---
 
 # <a name="release-notes"></a>Notas de versão
+
+## <a name="cloud-app-security-release-83"></a>Cloud App Security versão 83
+Lançado em 30 de outubro de 2016
+
+**Novos recursos**
+-   Para simplificar a filtragem no [log de atividades](activity-filters.md) e [arquivo de log](file-filters.md), filtros semelhantes foram consolidados. Use os filtros de atividade: objeto Atividade, Endereço IP e Usuário. Use o filtro de arquivo Colaboradores para localizar exatamente o que você precisa.
+-   Na gaveta do log de atividades, em **Origem**, você pode clicar no link de **Exibir dados brutos** para baixar os dados brutos usados para gerar o log de atividades, de modo a analisar mais detalhadamente os eventos de aplicativo. 
+-   Adição de suporte para atividades extras de logon no Okta. [Visualização privada]
+-   Adição de suporte para atividades extras de logon no Salesforce. 
+
+**Melhorias**
+-   Melhor utilização de relatórios de instantâneo e solução de problemas do Cloud Discovery.
+-   Maior visibilidade da lista de alertas em vários aplicativos.
+-   Melhor utilização na criação de novos relatórios contínuos do Cloud Discovery.
+-   Melhor utilização do log Governança.
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Cloud App Security versão 82
 Lançado em 9 de outubro de 2016
@@ -198,6 +215,6 @@ Lançamento: 15 de maio de 2016
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

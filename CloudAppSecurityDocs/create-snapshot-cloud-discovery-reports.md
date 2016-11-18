@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
 
 
 ---
@@ -48,17 +48,16 @@ Para criar um relatório de instantâneo:
 Após o processamento dos arquivos de log ser concluído, você receberá um email para avisar que ele está pronto. 
   
 9. Uma faixa de notificação aparecerá na barra de status na parte superior do portal para atualizar o status de processamento dos arquivos de log.  
-  
 ![barra de menus do arquivo de log de processamento](./media/processing-log-file-menu-bar.png) 
-  
-     After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully.  
    
-10. Neste ponto, você pode exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.   
+10. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, você pode exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.   
   
      ![Guia Configurações de descoberta](./media/discovery-settings-tab.png)
 11. Em seguia, selecione **Gerenciar relatórios de instantâneo** e seu relatório de instantâneo.
  
 ![gerenciamento de relatório de instantâneo](./media/snapshot-report-managment.png)
+
+  
       
 ## <a name="see-also"></a>Veja também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
@@ -69,6 +68,6 @@ Após o processamento dos arquivos de log ser concluído, você receberá um ema
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

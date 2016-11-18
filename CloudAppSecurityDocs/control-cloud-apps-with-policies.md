@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 10b4a9575951007dbee9003fd061fb5aaa2d3823
+ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
+ms.openlocfilehash: 36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4
 
 
 ---
@@ -26,15 +26,18 @@ As políticas permitem que você defina a maneira como deseja que os usuários s
 Por exemplo, se houver uma ameaça de violação de dados que deseja colocar em quarentena, você precisará de um tipo diferente de política em vigor do que se você deseja bloquear o uso de um aplicativo de nuvem arriscado por sua organização.  
   
 ## <a name="policy-types"></a>Tipos de política  
+Quando você observa a página **Política**, as várias políticas e os modelos podem ser diferenciados pelo tipo e ícone para ver quais políticas estarão disponíveis. As políticas disponíveis dependem da fonte de dados e do que foi habilitado no Cloud App Security para sua organização, por exemplo, se você carregou os logs do Cloud Discovery, as políticas relacionadas ao Cloud Discovery serão exibidas.
+
 Os seguintes tipos de políticas podem ser criados:  
   
-|Tipo de política|Uso|  
-|-----------------|---------|  
-|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|  
-|Política de detecção de anomalias|As políticas de detecção de anomalias permitem que você procure atividades incomuns na sua nuvem com base nos fatores de risco definidos aqui para alertar você quando acontecer algo que seja diferente da linha de base da sua organização ou da atividade regular do usuário.|  
-|Política de detecção de anomalias do Cloud Discovery|As políticas de detecção de anomalias do Cloud Discovery analisam os logs usados para descobrir aplicativos de nuvem e pesquisa ocorrências incomuns. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico.|  
-|Política de descoberta de aplicativo|As políticas de descoberta de aplicativo permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização.|  
-|Política de arquivos|As políticas de arquivos permitem que você examine seus aplicativos de nuvem quanto a tipos de arquivo ou arquivos especificados (compartilhados, compartilhados com domínios externos), dados (informações proprietárias, PII, informações de cartão de crédito etc.) e aplique ações de governança aos arquivos (as ações de governança são específicas do aplicativo de nuvem).|  
+|Ícone Tipo de política|Tipo de política|Uso|  
+|-----|-----------------|---------|  
+|![ícone de política de atividade](./media/activity_policy.png)|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|  
+|![ícone de política de detecção de anomalias](./media/anomaly_detection_policy.png)|Política de detecção de anomalias|As políticas de detecção de anomalias permitem que você procure atividades incomuns na sua nuvem com base nos fatores de risco definidos aqui para alertar você quando acontecer algo que seja diferente da linha de base da sua organização ou da atividade regular do usuário.|  
+|![ícone de política do cloud discovery](./media/discovery_policy.png)|Política de descoberta de aplicativo|As políticas de descoberta de aplicativo permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização.|  
+|![ícone de política de detecção de anomalias](./media/anomaly_detection_policy.png)|Política de detecção de anomalias do Cloud Discovery|As políticas de detecção de anomalias do Cloud Discovery analisam os logs usados para descobrir aplicativos de nuvem e pesquisa ocorrências incomuns. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico.|  
+|![ícone de política de campo](./media/field_policy.png)|Política de campo|As políticas de campo permitem verificar os aplicativos de nuvem em busca de campos no seu ambiente de nuvem que podem conter dados confidenciais como postagens, mensagens de bate-papo, descrições e campos de texto longo.|  
+|![ícone de política de arquivos](./media/file_policy.png)|Política de arquivos|As políticas de arquivos permitem que você examine seus aplicativos de nuvem quanto a tipos de arquivo ou arquivos especificados (compartilhados, compartilhados com domínios externos), dados (informações proprietárias, PII, informações de cartão de crédito etc.) e aplique ações de governança aos arquivos (as ações de governança são específicas do aplicativo de nuvem).|  
   
 ## <a name="identifying-risk"></a>Identificando o risco  
 O Cloud App Security ajuda a mitigar diferentes riscos na nuvem. Você pode configurar qualquer política e alerta a ser associado a um dos seguintes riscos:  
@@ -153,6 +156,6 @@ Depois de criar várias políticas, pode surgir uma situação na qual as polít
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
