@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
+ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
     <section id="hero-content">
       <h1>Documentação do Cloud App Security</h1>
       <h2>Saiba como configurar e trabalhar com o Cloud App Security para que sua organização possa aproveitar os benefícios dos aplicativos de nuvem enquanto mantêm o controle por meio da maior visibilidade da atividade e maior proteção sobre dados importantes da empresa. </h2>
-      <h3>Começando a usar o Cloud App Security? <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">Visite nosso site do produto &rarr;</a></h3>
+      <h3>Começando a usar o Cloud App Security? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Visite nosso site do produto &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>Pronto para interagir?</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">Compre agora mesmo</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">Compre agora mesmo</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>Configuração geral</h3>
-                    <p>Execute as etapas básicas de configuração do Cloud App Security.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Configurar o Cloud Discovery</h3>
                     <p>Use o recurso de Cloud Discovery para obter visibilidade do uso do aplicativo de nuvem e TI sombra na sua organização.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>Configurar upload automático de log</h3>
-                    <p>Configure o upload de log automático para obter relatórios contínuos de Cloud Discovery.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>Implantar</p>
-                </div>
-                <p class="description column-two-thirds">Habilite a visibilidade avançada de conexão de API e implante políticas para reger seus aplicativos.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>Habilitar conectores de API</h3>
-                    <p>Habilite os conectores de API para obter visibilidade avançada dos aplicativos, incluindo o Office 365, Google Apps, Box, Dropbox e muito mais.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Conectar o Office 365 ao Cloud App Security</h3>
-                    <p>Conecte o Cloud App Security à sua conta do Microsoft Office 365 existente usando a API do conector de aplicativos.</p>
+                    <h3>Conectar aplicativos</h3>
+                    <p>Conecte aplicativos de nuvem ao Cloud App Security para maior visibilidade e controle.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>Controlar aplicativos de nuvem com políticas</h3>
-                    <p>Configure políticas para controlar e reger o uso da nuvem da sua organização.</p>
+                    <p>Configure políticas para monitorar e controlar o uso do aplicativo de nuvem em sua organização.</p>
                   </a>
                 </li>
               </ul>
@@ -233,14 +195,14 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
         <aside class="alert alert-social">
       <p>Manter-se atualizado no Cloud App Security <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Site oficial do Cloud App Security</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Suporte assistido do Cloud App Security</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Site oficial do Cloud App Security</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Suporte assistido do Cloud App Security</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 
