@@ -11,9 +11,6 @@
   "132b4d296b26dd187418734b40d08ecb243692da": [
     "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md"
   ],
-  "481ca3d68e5e7aea006eeff443ec521a374e6e11": [
-    "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md"
-  ],
   "a43f96ec1d0f6047570677f07281b3e5ad42a40e": [
     "CloudAppSecurityDocs\\cloud-discovery-policies.md"
   ],
@@ -56,13 +53,7 @@
   "36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4": [
     "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
   ],
-  "10b4a9575951007dbee9003fd061fb5aaa2d3823": [
-    "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
-  ],
   "650bf424d77f6cbcf11e24058ec54278cfd579f5": [
-    "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
-  ],
-  "669d1c1942e8c7e930cd2421e9b56821eff04d12": [
     "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
   ],
   "d07f8cfebd5654036078d474656a6e73e24d93d0": [
@@ -849,9 +840,6 @@
     "CloudAppSecurityDocs\\release-notes.md"
   ],
   "d95ddaef15cbb11f005156f272578f49f012e16d": [
-    "CloudAppSecurityDocs\\release-notes.md"
-  ],
-  "6f204a955d3186013691fe876e185286a55dd8af": [
     "CloudAppSecurityDocs\\release-notes.md"
   ],
   "cfca549e1e16ca83972876626771a55d698530a2": [
