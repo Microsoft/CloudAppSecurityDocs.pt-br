@@ -507,8 +507,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:01:19.0703101Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\95dab01c101b6e6171c7985b6571ddb6b4ff5923.640531528fc05e10902dc01a6ef7c6678a224be0.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.pt-br.xlf",
+      "LocXliffCommit": "e644a8f6459b2021b76f56c18fc323c40ea42ba9"
     },
     "CloudAppSecurityDocs\\general-setup.md.28f90338e7cad5e977be93d9737fe963b5464158.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\general-setup.md",
@@ -517,8 +517,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:01:19.054688Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f.5bd4c72f8245d4eb349dba0c40bb3969e30a51c7.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\ht\\general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.pt-br.xlf",
+      "LocXliffCommit": "e644a8f6459b2021b76f56c18fc323c40ea42ba9"
     },
     "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md.d02a7a4d318828b8ca41c896f49dbf59f5873a9e.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md",
