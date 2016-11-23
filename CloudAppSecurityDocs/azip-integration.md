@@ -10,17 +10,17 @@ ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
+ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ddfce677376f370e332938059e741af613853db
-ms.openlocfilehash: 1fda4411d17acf90338263df9df147ed0075881c
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
 
 
 ---
 
-# <a name="azure-information-protection-integration-private-preview"></a>Integração com a Proteção de Informações do Azure – **VISUALIZAÇÃO PRIVADA**
+# <a name="azure-information-protection-integration---private-preview"></a>Integração com a Proteção de Informações do Azure – **VISUALIZAÇÃO PRIVADA**
 
 O Cloud App Security permite investigar arquivos e definir políticas com base nos rótulos de arquivo da Proteção de Informações do Azure, permitindo maior visibilidade e controle dos dados confidenciais na nuvem. Para habilitar isso, defina uma política no Cloud App Security para verificar os arquivos com a inspeção de conteúdo habilitada. Além disso, como parte do modo de visualização privada do Cloud App Security, você pode disparar alertas em atividades relacionadas a arquivos confidenciais. A integração com a Proteção de Informações do Azure permite que você:
 -   Quantifique a exposição de dados confidenciais em seus aplicativos em nuvem.
@@ -29,7 +29,7 @@ O Cloud App Security permite investigar arquivos e definir políticas com base n
 
 > [!NOTE] Por padrão, os arquivos são examinados por rótulos somente quando há uma política de arquivo que os examina com a inspeção de conteúdo habilitada. Para examinar rótulos de todos os arquivos sem as políticas de arquivo, habilite o exame automático.
 
-## <a name="terminology-overview"></a>Visão geral da terminologia:
+## <a name="terminology-overview"></a>Visão geral da terminologia
 -   O rótulo de classificação da Proteção de Informações do Azure – um atributo automaticamente adicionado aos arquivos em sua organização, com base em uma política ou, manualmente, definido por usuários finais.
 -   Externo – um rótulo definido por alguém externo à sua organização.
 -   Marca de arquivo – a apresentação do rótulo de classificação no Cloud App Security. Este campo é mostrado para cada arquivo na tabela de arquivos e pode ser usado em filtros.
@@ -63,7 +63,7 @@ Ou, para arquivos que foram marcados com qualquer rótulo de arquivo:
 
 ![todos os filtros de rótulos de arquivo](./media/azip-file-tags-all-filter.png)
 
-## <a name="enable-automatic-scan-coming-soon"></a>Habilitar exame automático (em breve)
+## <a name="enable-automatic-scan"></a>Habilitar exame automático
 Para habilitar exames automáticos de rótulos de arquivo para novos arquivos do Office 365:
 
 1. No Office 365, vá até a página **Configurações gerais**.
@@ -72,7 +72,7 @@ Para habilitar exames automáticos de rótulos de arquivo para novos arquivos do
 ![habilitar a Proteção de Informações do Azure](./media/enable-azip.png)
  
 
-## <a name="internal-and-external-tags-coming-soon"></a>Rótulos internos e externos (em breve)
+## <a name="internal-and-external-tags"></a>Rótulos internos e externos
 Por padrão, o Cloud App Security examinará rótulos de classificação que foram definidos em sua organização, bem como aqueles externos que foram definidos por outras organizações. 
 
 Para ignorá-los, em **Configuração de segurança do Azure** selecione **Ignorar rótulos de classificação da Proteção de Informações do Azure de outros locatários**.
@@ -119,6 +119,6 @@ Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.c
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

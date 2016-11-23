@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
+ms.sourcegitcommit: 2d39b26629579905ea30f3f769ca2a16121d51d1
+ms.openlocfilehash: b617a488dec97deb7c1e1d89cbaa62e496e18891
 
 
 ---
@@ -37,11 +37,6 @@ O procedimento a seguir fornece instruções para configurar o [!INCLUDE[Adallom
 -   Para configurar o Cloud App Security, você deve ser um Administrador Global, um Administrador de Conformidade ou um Administrador de Segurança no Azure Active Directory ou Office 365. É importante entender que um usuário que está atribuído a uma função de administrador terá as mesmas permissões em todos os aplicativos de nuvem que sua organização tenha assinado, independentemente de você atribuir a função no portal do Office 365, no Portal Clássico do Azure ou usando o módulo do Azure AD para Windows PowerShell. Para obter mais informações, consulte [Atribuir funções de administrador no Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) e [Atribuindo funções de administrador no Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
   
 -   Para executar o portal do Cloud App Security, use o Internet Explorer 11, Microsoft Edge (mais recente), Google Chrome (mais recente), Mozilla Firefox (mais recente) ou Apple Safari (mais recente).  
-  
--   ExpressRoute  
-  
-     O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para latência, desempenho e segurança aprimorados. Não há nenhuma etapa de configuração necessária do lado do cliente.  
-    Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
 ## <a name="set-up-the-portal"></a>Configurar o portal  
   
@@ -241,9 +236,14 @@ Configure o seguinte:
      Em seguida, clique em **Enviar um email de teste** para enviar um email de teste para você mesmo para ver um exemplo do modelo que você criou.  
      O email será enviado para a conta usada para fazer logon no portal. No email de teste, você poderá ver os campos de metadados, o modelo, o assunto do email, o título no corpo do email e o conteúdo.  
   
-## <a name="single-signon"></a>Logon único  
+## <a name="single-sign-on"></a>Logon único  
 O Cloud App Security é combinado a com o Azure Active Directory para atividades relacionadas ao licenciamento, provisionamento e autenticação. Para obter informações sobre como gerenciar o logon único, consulte a [Lista de compatibilidade de federação do Azure Active Directory: provedores de identidade de terceiros que podem ser usados para implementar o logon único](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
-  
+
+
+> [!NOTE] 
+> Se você usa o ExpressRoute, o Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para latência, desempenho e segurança aprimorados. Não há nenhuma etapa de configuração necessária do lado do cliente.  
+    Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da ExpressRoute e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+    
 ## <a name="see-also"></a>Veja também  
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -252,6 +252,6 @@ O Cloud App Security é combinado a com o Azure Active Directory para atividades
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
