@@ -47,9 +47,6 @@
   "5a051fc106661fc2266587ac5dbbb8bbdabd88bc": [
     "CloudAppSecurityDocs\\control.md"
   ],
-  "9dc74c35f32c9a3dff251d6e0ac6b35a3591f4b9": [
-    "CloudAppSecurityDocs\\control.md"
-  ],
   "36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4": [
     "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
   ],
@@ -57,9 +54,6 @@
     "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
   ],
   "d07f8cfebd5654036078d474656a6e73e24d93d0": [
-    "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
-  ],
-  "cc6a6e4b41b6660462c9c873469a1e8c9af97c4e": [
     "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
   ],
   "ed0701c4513f9501e0b2e5a7b0b7931f5d76a628": [
@@ -74,13 +68,7 @@
   "b617a488dec97deb7c1e1d89cbaa62e496e18891": [
     "CloudAppSecurityDocs\\general-setup.md"
   ],
-  "5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f": [
-    "CloudAppSecurityDocs\\general-setup.md"
-  ],
   "2e9307b5166566efa65f4766c0331c6aa15118e9": [
-    "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
-  ],
-  "8b454edde557c408b644c9bff6f7bf6136ba9819": [
     "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
   ],
   "e67fecd17b26314720a34691f83464c59a244ea6": [
@@ -96,9 +84,6 @@
     "CloudAppSecurityDocs\\index.md"
   ],
   "fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e": [
-    "CloudAppSecurityDocs\\investigate.md"
-  ],
-  "186643ab8efa7391b06a09dd2cddbb22ba583e71": [
     "CloudAppSecurityDocs\\investigate.md"
   ],
   "53f98a5fdbf84c20c0efe94e935738a95f7d2e3b": [
@@ -836,12 +821,6 @@
   "3161fd1c61779ba943d8269d2ec979050ee0ae1f": [
     "CloudAppSecurityDocs\\release-notes.md"
   ],
-  "a94f0d9e386d98b329d2c60dbc3b29f813ba050c": [
-    "CloudAppSecurityDocs\\release-notes.md"
-  ],
-  "d95ddaef15cbb11f005156f272578f49f012e16d": [
-    "CloudAppSecurityDocs\\release-notes.md"
-  ],
   "cfca549e1e16ca83972876626771a55d698530a2": [
     "CloudAppSecurityDocs\\set-up-cloud-discovery.md"
   ],
@@ -861,9 +840,6 @@
     "CloudAppSecurityDocs\\user-activity-policies.md"
   ],
   "690e58cd598ee9a6dd329e19cd65129df160e009": [
-    "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
-  ],
-  "c6df59d7c5ced9dc378463bc5bef411259294c47": [
     "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
   ],
   "4b9bf05e43966ff39dacc58a082c7b8eb3627eda": [
@@ -902,12 +878,6 @@
   "48a661014e9dc2ef67bf798e5082811aff4b6acf": [
     "CloudAppSecurityDocs\\media\\discovery_policy.png"
   ],
-  "05ed59125dc85b72831023a499dca70b6b5590b3": [
-    "CloudAppSecurityDocs\\media\\field_policy.png"
-  ],
-  "40b0de487b607d429672741a20bf89a1180b1654": [
-    "CloudAppSecurityDocs\\media\\field_policy.png"
-  ],
   "2d9051b178490c08f20b711239a26f184e7cd8ce": [
     "CloudAppSecurityDocs\\media\\file_policy.png"
   ],
@@ -921,12 +891,6 @@
     "CloudAppSecurityDocs\\media\\file-log-filter-basic.PNG"
   ],
   "104dbdbc22d748e924f42c92ba2607e970f03b9e": [
-    "CloudAppSecurityDocs\\azip-integration.md"
-  ],
-  "d1e6d944f998ff2aa2ef74836fd1f4eb3cdd48ee": [
-    "CloudAppSecurityDocs\\azip-integration.md"
-  ],
-  "1fda4411d17acf90338263df9df147ed0075881c": [
     "CloudAppSecurityDocs\\azip-integration.md"
   ],
   "9a139df8dd337bf3c3feb17c44a22fdc45476c3f": [
