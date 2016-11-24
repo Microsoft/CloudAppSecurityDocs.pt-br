@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: f65d64b240eb26f13a70143f5fb84a4f84f4cb6d
 
 
 ---
@@ -97,45 +97,7 @@ Você também pode definir a política para ser executada em arquivos específic
   
 ![aplicar para filtrar](./media/apply-to-filter.png "apply to filter")  
   
-### <a name="governance-actions"></a>Ações de governança  
-  
--   Notificações  
-  
-    -   Alertas – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade.  
-  
-    -   Notificação de email do usuário – mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários do arquivo em violação.  
-  
-    -   Copiar gerente – com base na integração de diretório do usuário, as notificações de email também podem ser enviadas para o gerente da pessoa que violar uma política.  
-  
--   Notificar usuários específicos – lista específica de endereços de email que receberão essas notificações.  
-  
--   Notificar último editor do arquivo – envia notificações para a última pessoa que modificou o arquivo.  
-  
--   Ações de governança em aplicativos  
-  
-     Ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo.  
-  
-    -   Alterar o compartilhamento  
-  
-        -   Remover o compartilhamento público – permite o acesso apenas aos parceiros nomeados, por exemplo: remover acesso público para Google Apps e Remover o link compartilhado direto para o Box.  
-  
-        -   Remover usuários externos – permite o acesso somente aos usuários da empresa.  
-  
-        -   Tornar privado – somente o proprietário pode acessar o arquivo, todos os compartilhamentos são removidos.  
-  
-        -   Remover um parceiro – remove um parceiro específico do arquivo.  
-  
-    -   Quarentena  
-  
-        -   Colocar em quarentena do usuário – Permite o autoatendimento movendo o arquivo para uma pasta de quarentena controlada pelo usuário  
-  
-        -   Colocar em quarentena do administrador – o arquivo é movido para a quarentena na unidade do administrador e o administrador precisa aprová-lo.  
-  
--   Lixeira – move o arquivo para a pasta da lixeira.
-  
-![alertas de policy_create](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
+
 ## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -144,6 +106,6 @@ Você também pode definir a política para ser executada em arquivos específic
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 
