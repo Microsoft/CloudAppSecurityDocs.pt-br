@@ -1,4 +1,7 @@
 {
+  "40fd28f568aa9af32f9e2399435f48372ea62413": [
+    "CloudAppSecurityDocs\\activity-filters.md"
+  ],
   "342d9fcc84f9fb4b250578b653578403a06605f1": [
     "CloudAppSecurityDocs\\activity-filters.md"
   ],
@@ -7,6 +10,9 @@
   ],
   "ca51d36a6d899124d3d4eb84ded1972ad9c8bab4": [
     "CloudAppSecurityDocs\\anomaly-detection-policy.md"
+  ],
+  "c7db3995c314dbc07cc1e0e2807476299d4446f7": [
+    "CloudAppSecurityDocs\\built-in-report-reference.md"
   ],
   "520017dab0301fe2a64c7b82d5e14c71efb2522f": [
     "CloudAppSecurityDocs\\built-in-report-reference.md"
@@ -17,11 +23,17 @@
   "a43f96ec1d0f6047570677f07281b3e5ad42a40e": [
     "CloudAppSecurityDocs\\cloud-discovery-policies.md"
   ],
+  "96575cfc6bc3d736b40503049816ccc191fbf3e8": [
+    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
+  ],
   "2a079813677020b1181648394c818edd5f294786": [
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
   ],
   "c6103fffd99295eb37ad575680b4169cbbac42df": [
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
+  ],
+  "a56257b7c149c3ea054f200ef88df0ab41b7e25b": [
+    "CloudAppSecurityDocs\\connect-aws-to-microsoft-cloud-app-security.md"
   ],
   "d78f324cc8fba6c45a49c1260c157fb4f4feaab7": [
     "CloudAppSecurityDocs\\connect-aws-to-microsoft-cloud-app-security.md"
@@ -29,11 +41,17 @@
   "4b9ab028bb45f77513217dd3784cefc73e984962": [
     "CloudAppSecurityDocs\\connect-aws-to-microsoft-cloud-app-security.md"
   ],
+  "4aa741a90e356d440598eb9302dbd49f3b445c6c": [
+    "CloudAppSecurityDocs\\connect-box-to-microsoft-cloud-app-security.md"
+  ],
   "1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6": [
     "CloudAppSecurityDocs\\connect-box-to-microsoft-cloud-app-security.md"
   ],
   "849408f84e2a80022623c11f7951e921a95625b6": [
     "CloudAppSecurityDocs\\connect-box-to-microsoft-cloud-app-security.md"
+  ],
+  "a2b9a7e9cf254c52465922af4b0e3a0256e60c5d": [
+    "CloudAppSecurityDocs\\connect-dropbox-to-microsoft-cloud-app-security.md"
   ],
   "e6c450215330f2b4cb1f52156aa5f80653d522fc": [
     "CloudAppSecurityDocs\\connect-dropbox-to-microsoft-cloud-app-security.md"
@@ -41,11 +59,17 @@
   "105003dfbd8afbb10cdb2058e2da180d4b49e294": [
     "CloudAppSecurityDocs\\connect-dropbox-to-microsoft-cloud-app-security.md"
   ],
+  "b28eaa521980cb7ec8eee94f0168ca07286533e7": [
+    "CloudAppSecurityDocs\\connect-google-apps-to-microsoft-cloud-app-security.md"
+  ],
   "f5329d2cb2a95f59079b8a5797d24d444a9d94b5": [
     "CloudAppSecurityDocs\\connect-google-apps-to-microsoft-cloud-app-security.md"
   ],
   "0f38f61be8a0db4a28d3c7df614807ace69bb38e": [
     "CloudAppSecurityDocs\\connect-google-apps-to-microsoft-cloud-app-security.md"
+  ],
+  "e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2": [
+    "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
   ],
   "1565d094f9cbce883ce9bb5300ee5e1f7752d4dd": [
     "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
@@ -53,11 +77,17 @@
   "31abf4ad6ee9326894592e1a98b3232bd4c03787": [
     "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
   ],
+  "1e82f94cb8423bdaa3dcdc8d4a4f04179089546c": [
+    "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
+  ],
   "f5f355a42321e4467ce3ef487c48508522a286ab": [
     "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
   ],
   "3fd8ada1ce622da339368c64ecc8b1d319b9c333": [
     "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
+  ],
+  "af663e48d24a869b8a30b429accf8001a8584bb1": [
+    "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
   ],
   "9a076831c8d93e3af34541b3e881181d829bf348": [
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
@@ -65,17 +95,26 @@
   "28ce67bd096d82e3775a281359fc100e2c214715": [
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
   ],
+  "7935006b6b28ed93601ca60adf3c1a408440eae7": [
+    "CloudAppSecurityDocs\\connect-servicenow-to-microsoft-cloud-app-security.md"
+  ],
   "38f87fce6925b380c5b02e1c5ae4daa83d4d45a2": [
     "CloudAppSecurityDocs\\connect-servicenow-to-microsoft-cloud-app-security.md"
   ],
   "30ddba23a0c481cb434e9239950cce90c52efc4f": [
     "CloudAppSecurityDocs\\connect-servicenow-to-microsoft-cloud-app-security.md"
   ],
+  "19d5b0624233da2af64cf35bd2e7ef8ca118c638": [
+    "CloudAppSecurityDocs\\content-inspection.md"
+  ],
   "ea1854d6bf32e01afe6183409b68ded32ee37dd1": [
     "CloudAppSecurityDocs\\content-inspection.md"
   ],
   "5a051fc106661fc2266587ac5dbbb8bbdabd88bc": [
     "CloudAppSecurityDocs\\control.md"
+  ],
+  "9a6645b115c45e25241ebf60f7ebfd3476151371": [
+    "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
   ],
   "df5d9b927e3cb51d2b8a2910329cfc4824c168b0": [
     "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
@@ -86,11 +125,17 @@
   "650bf424d77f6cbcf11e24058ec54278cfd579f5": [
     "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
   ],
+  "f4cf027220a7f4329a72d662f6ccf4d9ab02ede4": [
+    "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
+  ],
   "5defb9bde515be712bc64ce84be42b2120935ed8": [
     "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
   ],
   "d07f8cfebd5654036078d474656a6e73e24d93d0": [
     "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
+  ],
+  "12d9ef74f923c430fbfb547635786dc4c4300499": [
+    "CloudAppSecurityDocs\\data-protection-policies.md"
   ],
   "24498fd5935ab8919231c284ca41b00ffb27e769": [
     "CloudAppSecurityDocs\\data-protection-policies.md"
@@ -98,11 +143,20 @@
   "ed0701c4513f9501e0b2e5a7b0b7931f5d76a628": [
     "CloudAppSecurityDocs\\data-protection-policies.md"
   ],
+  "4cfad222fb78e0bfc106fab64f6cc22d3819c1c8": [
+    "CloudAppSecurityDocs\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md"
+  ],
   "3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5": [
     "CloudAppSecurityDocs\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md"
   ],
+  "8fca376e5d414192bdb7c99a7741c97ebcaf3892": [
+    "CloudAppSecurityDocs\\file-filters.md"
+  ],
   "f65d64b240eb26f13a70143f5fb84a4f84f4cb6d": [
     "CloudAppSecurityDocs\\file-filters.md"
+  ],
+  "912d3c5065722469c436446ba67511ffc6e44d77": [
+    "CloudAppSecurityDocs\\general-setup.md"
   ],
   "57d01e08546885881da38835961cf6384c1c788e": [
     "CloudAppSecurityDocs\\general-setup.md"
@@ -110,11 +164,17 @@
   "b617a488dec97deb7c1e1d89cbaa62e496e18891": [
     "CloudAppSecurityDocs\\general-setup.md"
   ],
+  "57ba1ea49d009dd10797609885463948f359e11e": [
+    "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
+  ],
   "7137b7f362718f36a416d3c8e33040d208a92126": [
     "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
   ],
   "2e9307b5166566efa65f4766c0331c6aa15118e9": [
     "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
+  ],
+  "43069f7a9f91dc34f4ce3ebb52ca399441bbb1f1": [
+    "CloudAppSecurityDocs\\governance-actions.md"
   ],
   "d1b13f6c3cf3a466296285e53fddbc4faffbb359": [
     "CloudAppSecurityDocs\\governance-actions.md"
@@ -133,6 +193,9 @@
   ],
   "d35e70624ffa969c086ece8d67e209d7b168f674": [
     "CloudAppSecurityDocs\\index.md"
+  ],
+  "f1b32304a8218316f744defa4632b3e8a6af771d": [
+    "CloudAppSecurityDocs\\investigate.md"
   ],
   "fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e": [
     "CloudAppSecurityDocs\\investigate.md"
@@ -299,6 +362,9 @@
   "c5db0087a68f22c31373da07d7ea90d8d4b06e7b": [
     "CloudAppSecurityDocs\\media\\cloud-discovery-dashboard.png"
   ],
+  "e21b48956d803e10c08bf8a5345df747c60d3b04": [
+    "CloudAppSecurityDocs\\media\\connect-0365.png"
+  ],
   "fef76a9733fa5f22a62d62bc3f82050b01253f12": [
     "CloudAppSecurityDocs\\media\\connect-0365.png"
   ],
@@ -307,6 +373,9 @@
   ],
   "ce3877e1df8387ea03552f43292fc2f551858291": [
     "CloudAppSecurityDocs\\media\\connect-0365.png"
+  ],
+  "459e428082aaaafa31efb666441f23856aa4c628": [
+    "CloudAppSecurityDocs\\media\\connect-aws.png"
   ],
   "03c12329fb7789c6c637b3241d793e2f60518460": [
     "CloudAppSecurityDocs\\media\\connect-aws.png"
@@ -317,6 +386,9 @@
   "a587f2770c1a12ce62be5a91b7d017e43fbce519": [
     "CloudAppSecurityDocs\\media\\connect-aws.png"
   ],
+  "7a7a6c492f3f1ed9a3570ce8f866bd7fb04c1351": [
+    "CloudAppSecurityDocs\\media\\connect-box.png"
+  ],
   "0fc2b5d8250ccff43de2847da151ba91642b8340": [
     "CloudAppSecurityDocs\\media\\connect-box.png"
   ],
@@ -325,6 +397,9 @@
   ],
   "59e7110005c03d9fb7b63546cf16def1ef58b640": [
     "CloudAppSecurityDocs\\media\\connect-box.png"
+  ],
+  "f1d48be550f1fb5eea8ce8bda79dd93204a0e655": [
+    "CloudAppSecurityDocs\\media\\connect-dropbox.png"
   ],
   "b03e0bbba3e5eb43b4b6fd9e725a37251050931c": [
     "CloudAppSecurityDocs\\media\\connect-dropbox.png"
@@ -335,11 +410,17 @@
   "a87df86a13be24613f310daea0a8e7e78037be94": [
     "CloudAppSecurityDocs\\media\\connect-dropbox.png"
   ],
+  "d69e4e832facd8711495b07e679e78d544c10a45": [
+    "CloudAppSecurityDocs\\media\\connect-google-apps.png"
+  ],
   "2ed81afef65cee5b4ae4341edf152e9ca504c83f": [
     "CloudAppSecurityDocs\\media\\connect-google-apps.png"
   ],
   "86ac752492b8782d968cd6dec1fa07f2c2036b01": [
     "CloudAppSecurityDocs\\media\\connect-google-apps.png"
+  ],
+  "b578ec6ad70cc77f5ad2f06e9b8007c318eb129c": [
+    "CloudAppSecurityDocs\\media\\connect-okta.png"
   ],
   "2bdecee9b062ced86185d826c0af8bd3844c0443": [
     "CloudAppSecurityDocs\\media\\connect-okta.png"
@@ -386,11 +467,17 @@
   "ad66a899a4863e5556567404a656252a6e50be58": [
     "CloudAppSecurityDocs\\media\\create-custom-continuous-report.png"
   ],
+  "91752dd6679c8a74034e621a111b7f3a5b365204": [
+    "CloudAppSecurityDocs\\media\\create-file-from-investigation.png"
+  ],
   "1cd9d16ee66b0aecceb430aee2ef2b4cf40e54e6": [
     "CloudAppSecurityDocs\\media\\create-file-from-investigation.png"
   ],
   "ed1b3287216711f02e43ddcce0c208581d735404": [
     "CloudAppSecurityDocs\\media\\create-file-from-investigation.png"
+  ],
+  "4ec61e885e21f50fef9a5d89dd2e175bb1b750d2": [
+    "CloudAppSecurityDocs\\media\\create-new-snapshot-report.png"
   ],
   "e86b1ee29cfdd258ac4fa0bac58ec202ece4d47b": [
     "CloudAppSecurityDocs\\media\\create-new-snapshot-report.png"
@@ -415,6 +502,9 @@
   ],
   "af893c3b0838b360be7fbd8aa2ab918b8ca63a81": [
     "CloudAppSecurityDocs\\media\\dashboard.png"
+  ],
+  "f1ba10bee3ea22cea28002ce0ada57db113d60db": [
+    "CloudAppSecurityDocs\\media\\delete-data.png"
   ],
   "3e9d9f654ffad2af8601739a3fcae9c041f11e67": [
     "CloudAppSecurityDocs\\media\\delete-data.png"
@@ -629,6 +719,9 @@
   "0e65bdf8a0de69ec00e542fafb16851d07e6d456": [
     "CloudAppSecurityDocs\\media\\google-menu.png"
   ],
+  "de594b6671d5e0deadcd20ee7ede06d64d72c1b4": [
+    "CloudAppSecurityDocs\\media\\high-download-rate-example.png"
+  ],
   "a128010582566dc1ad02cd2f1f6e6ef8f4df3fed": [
     "CloudAppSecurityDocs\\media\\high-download-rate-example.png"
   ],
@@ -673,6 +766,9 @@
   ],
   "aaa38c2c50a058df6de9a22b80e320ba3250a024": [
     "CloudAppSecurityDocs\\media\\manage-admin-access.png"
+  ],
+  "0043c48d972698511276decf663d8cd04de8728e": [
+    "CloudAppSecurityDocs\\media\\mark-as-sanctioned.png"
   ],
   "fa665815ab2802e55646b7c07d98739aaabd6ab5": [
     "CloudAppSecurityDocs\\media\\mark-as-sanctioned.png"
@@ -854,6 +950,9 @@
   "3a707a4a6da1ea7364f793dcbbf1dfe132be4654": [
     "CloudAppSecurityDocs\\media\\sanction-three-dots.png"
   ],
+  "7a23792e1b81455a6b2ab7123d8c26f556701286": [
+    "CloudAppSecurityDocs\\media\\score.png"
+  ],
   "4e2e239439eba766ca20836d3562444a0d51d41b": [
     "CloudAppSecurityDocs\\media\\score.png"
   ],
@@ -887,6 +986,9 @@
   "d35c49e3b401bcdffc5bbc206d8de4c1f6b260ee": [
     "CloudAppSecurityDocs\\media\\settings-icon.png"
   ],
+  "e116979e04148438b2ed061299f0fb2ebf5c7b76": [
+    "CloudAppSecurityDocs\\media\\snapshot-report-managment.png"
+  ],
   "06c05a99fdbea0c15f0774d280abfe8bc82c4a29": [
     "CloudAppSecurityDocs\\media\\snapshot-report-managment.png"
   ],
@@ -902,14 +1004,26 @@
   "571320985b341376beb8bbc8ee83f5f548f117ca": [
     "CloudAppSecurityDocs\\media\\timezone-language.png"
   ],
+  "ee4b4e7a43603654eb415ff225a4ae3d8b139383": [
+    "CloudAppSecurityDocs\\monitor-alerts.md"
+  ],
   "af3585cbf123ba826efbdb79339c84a2dcb740c8": [
     "CloudAppSecurityDocs\\monitor-alerts.md"
+  ],
+  "cbe341faf692772ac5461e038233e9b1a6b2694f": [
+    "CloudAppSecurityDocs\\release-notes.md"
   ],
   "3161fd1c61779ba943d8269d2ec979050ee0ae1f": [
     "CloudAppSecurityDocs\\release-notes.md"
   ],
+  "e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50": [
+    "CloudAppSecurityDocs\\set-up-cloud-discovery.md"
+  ],
   "cfca549e1e16ca83972876626771a55d698530a2": [
     "CloudAppSecurityDocs\\set-up-cloud-discovery.md"
+  ],
+  "427ae6b4856da220d5c16ce323d10f24e8090f26": [
+    "CloudAppSecurityDocs\\TOC.md"
   ],
   "cb526fedc12519c05bfca8b411adb158d44c1887": [
     "CloudAppSecurityDocs\\TOC.md"
@@ -917,8 +1031,14 @@
   "93dc54bc2e38d880561c15a0f167f8246e1a6741": [
     "CloudAppSecurityDocs\\TOC.md"
   ],
+  "cba191731133ab8b61d78e2e82d9fc8d96626331": [
+    "CloudAppSecurityDocs\\troubleshooting.md"
+  ],
   "7446c3eb17befdf473c8841a0d92524c029f67df": [
     "CloudAppSecurityDocs\\troubleshooting.md"
+  ],
+  "71e2a213ddf6f625037b11373e55aa270c3b1785": [
+    "CloudAppSecurityDocs\\troubleshooting-api-connectors-using-error-messages.md"
   ],
   "61492a0126bff93c2a61d5d1317784ca96687df7": [
     "CloudAppSecurityDocs\\troubleshooting-api-connectors-using-error-messages.md"
@@ -926,14 +1046,23 @@
   "2d0b2cebdfa15cccc5888660da498446d620b64f": [
     "CloudAppSecurityDocs\\troubleshooting-cloud-discovery.md"
   ],
+  "68961bf66a0c0bb3b668e681502ccf10bc673197": [
+    "CloudAppSecurityDocs\\user-activity-policies.md"
+  ],
   "e66cc36b7ff2591c9eff2b7399e7aba7304fd960": [
     "CloudAppSecurityDocs\\user-activity-policies.md"
+  ],
+  "2c2b7daf418b5d83dbeb60fd847849d91eab844b": [
+    "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
   ],
   "d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4": [
     "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
   ],
   "690e58cd598ee9a6dd329e19cd65129df160e009": [
     "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
+  ],
+  "e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2": [
+    "CloudAppSecurityDocs\\working-with-cloud-discovery-data.md"
   ],
   "4b9bf05e43966ff39dacc58a082c7b8eb3627eda": [
     "CloudAppSecurityDocs\\working-with-cloud-discovery-data.md"
@@ -983,6 +1112,9 @@
   "7b619a7416d3fac7cde8d1d4737b77131d1ddeb9": [
     "CloudAppSecurityDocs\\media\\file-log-filter-basic.PNG"
   ],
+  "bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07": [
+    "CloudAppSecurityDocs\\azip-integration.md"
+  ],
   "104dbdbc22d748e924f42c92ba2607e970f03b9e": [
     "CloudAppSecurityDocs\\azip-integration.md"
   ],
@@ -998,14 +1130,26 @@
   "9b0be385f25c0e4b54a201bf9a95c07ef09b3dc5": [
     "CloudAppSecurityDocs\\media\\approve-app.png"
   ],
+  "179df58badd5c0129cc8ca1f763c6bdc8df63d84": [
+    "CloudAppSecurityDocs\\media\\azip-confidentiality-policy.png"
+  ],
   "fda26955a242637823c41bc5796e11e39695e159": [
     "CloudAppSecurityDocs\\media\\azip-confidentiality-policy.png"
+  ],
+  "ea4873b7c4329f13039cf468974b1443420e8c47": [
+    "CloudAppSecurityDocs\\media\\azip-file-drawer.png"
   ],
   "e4555735f7e8038670b9c217fc17f314a62bcc59": [
     "CloudAppSecurityDocs\\media\\azip-file-drawer.png"
   ],
+  "6961b28278dba437dbf16ad11783f8ab42b829e2": [
+    "CloudAppSecurityDocs\\media\\azip-file-tags-all-filter.png"
+  ],
   "43c01bee24ee83a9fbe445bbc400163a400565ee": [
     "CloudAppSecurityDocs\\media\\azip-file-tags-all-filter.png"
+  ],
+  "ad3b5860d82f17a623d8fe3697eb219c80dbafd8": [
+    "CloudAppSecurityDocs\\media\\azip-file-tags-filter.png"
   ],
   "72d1fac469ad95f2f8329f5e3205270994d19797": [
     "CloudAppSecurityDocs\\media\\azip-file-tags-filter.png"
@@ -1013,14 +1157,23 @@
   "5cdcbaaba0ab18fe77bb4b769fb9cc7263497efe": [
     "CloudAppSecurityDocs\\media\\azip-ignore.png"
   ],
+  "ee9b11be328244d145419af461adac7c278bf342": [
+    "CloudAppSecurityDocs\\media\\azip-restricted-data-policy.png"
+  ],
   "f140e4afcf1d4ec63d207a717e43180cc4d780af": [
     "CloudAppSecurityDocs\\media\\azip-restricted-data-policy.png"
   ],
   "9b3dc0360754e39bffb5365c45b201ed02fe018c": [
     "CloudAppSecurityDocs\\media\\azip-screen.png"
   ],
+  "7259243f2302865b34af75da321046da8234b672": [
+    "CloudAppSecurityDocs\\media\\azip-tags-in-cas.png"
+  ],
   "832740e66bcc2d017e38af0d3142bdf4ded4a683": [
     "CloudAppSecurityDocs\\media\\azip-tags-in-cas.png"
+  ],
+  "23ee7b8c8c9ddc409af7ba89dd4a22241f7964b5": [
+    "CloudAppSecurityDocs\\media\\azip-tags-list.png"
   ],
   "f375a5368d3037bfca62aebd701bdfa17f472d7a": [
     "CloudAppSecurityDocs\\media\\azip-tags-list.png"
@@ -1031,6 +1184,9 @@
   "ed9877a54369f34fbd437f1f7f6ce10d23e0d4c4": [
     "CloudAppSecurityDocs\\media\\ban-app-icon.png"
   ],
+  "bb908fb96a6798ce34dfaa7472d74e40fca254cb": [
+    "CloudAppSecurityDocs\\media\\cas-compared-azip.png"
+  ],
   "fb1beca257d110ace2fcb072b73314ac3c45ad10": [
     "CloudAppSecurityDocs\\media\\cas-compared-azip.png"
   ],
@@ -1039,5 +1195,11 @@
   ],
   "6f4a84503654560407fdaabd68577ad3d864ac8d": [
     "README.md"
+  ],
+  "4ccd5ec2e001eabed06ff3ccf3368a12ee87f08b": [
+    "CloudAppSecurityDocs\\media\\file-drawer.png"
+  ],
+  "65e1957f413ff72b4ddfc76dc01e9514c721104c": [
+    "CloudAppSecurityDocs\\troubleshooting-content-inspection.md"
   ]
 }
