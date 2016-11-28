@@ -1074,8 +1074,8 @@
       "SourceFilename": "CloudAppSecurityDocs\\activity-filters.md",
       "XliffHash": "d2228f6e64934956098cb92e7817a2ecd0a405a6",
       "TranslationType": 1,
-      "IsArchived": false,
-      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "IsArchived": true,
+      "ArchivedDateTime": "2016-11-28T21:23:30.4839717Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.pt-br\\live\\40fd28f568aa9af32f9e2399435f48372ea62413.b3e6088a5d6bb2df57938bded96d3a1a1719aeca.xml",
       "LocXliff": null,
       "LocXliffCommit": null
