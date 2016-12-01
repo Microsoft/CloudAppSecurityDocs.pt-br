@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
-ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: 8a0e20692fbfe0054f8c5816bfe29fd1ac737820
 
 
 ---
@@ -145,7 +145,7 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>Log de governança</h3>
+                    <h3>Governança</h3>
                     <p>Use o Log de governança para obter um registro de status de cada tarefa que você definir no Cloud App Security para execução, incluindo tarefas manuais e automáticas.</p>
                   </a>
                 </li>
@@ -196,13 +196,13 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
         <aside class="alert alert-social">
       <p>Manter-se atualizado no Cloud App Security <ol class="action-list">
         <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Site oficial do Cloud App Security</a></li>
-        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Suporte assistido do Cloud App Security</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Suporte assistido do Cloud App Security</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
