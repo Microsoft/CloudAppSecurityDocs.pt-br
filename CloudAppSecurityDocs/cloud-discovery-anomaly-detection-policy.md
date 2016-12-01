@@ -69,6 +69,6 @@ Há duas maneiras de controlar o número de alertas disparados pela política:
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 
