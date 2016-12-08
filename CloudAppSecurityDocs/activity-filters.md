@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -68,7 +68,10 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 
 -   ISP Registrado – o ISP do qual a atividade foi executada.   
 
--  Origem — pesquise pela origem na qual a atividade foi detectada, por exemplo, Conector de aplicativos. 
+-  Origem — pesquise pela origem na qual a atividade foi detectada. A origem pode ser um dos seguintes:
+  - Conector de aplicativo — logs provenientes diretamente do conector de API do aplicativo.
+  - Análise de conector de aplicativo — melhorias de segurança do Cloud App Security com base na verificação de informação do conector de API.
+  
 
 -   Usuário — o usuário que executou a atividade, que pode ser filtrado no domínio, grupo, nome ou na organização. Para filtrar atividades sem nenhum usuário específico, você pode usar o operador 'não está definido'.  
     -   Domínio do usuário — pesquise um domínio de usuário específico.
@@ -94,34 +97,9 @@ Você pode exibir mais informações sobre cada atividade clicando na própria a
 
 ![gaveta atividade](./media/activity-drawer.png "activity drawer")  
   
+Para obter uma lista de ações de governança disponíveis, consulte [Parâmetros de correspondência de atividade](governance-actions.md#activity-match-parameters).
 
 
-## <a name="activity-match-parameters"></a>Parâmetros de correspondência de atividade  
-Especifique o número de repetições de atividade necessário para corresponder à política, por exemplo, definir uma política para alertar quando um usuário executa dez tentativas de logon sem sucesso em um período de dois minutos.  
-A configuração padrão, **Parâmetros de correspondência de atividade**, gera uma correspondência para cada atividade que atende a todos os filtros de atividade.   
-Usando **Atividade repetida**, você pode definir o número de atividades repetidas, a duração do período em que as atividades são contadas e até mesmo especificar que todas as atividades devem ser executadas pelo mesmo usuário e no mesmo aplicativo de nuvem.  
-  
-### <a name="actions"></a>Ações  
-Notificações  
-  
--   Alertas – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade.  
-  
--   Notificação de email do usuário – mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários do arquivo em violação.  
-  
--   Copiar gerente – com base na integração de diretório do usuário, as notificações de email também podem ser enviadas para o gerente da pessoa que violar uma política.  
-  
--   Notificar usuários adicionais – lista específica de endereços de email que receberão essas notificações.  
-  
-Ações de governança em aplicativos  
-  
--   Ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo.  
-  
--   Suspender usuário – suspende o usuário do aplicativo.  
-  
--   Revogar senha – revoga a senha do usuário e o força a definir uma nova senha em seu próximo logon.  
-  
-     ![referência de política de atividade 6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -130,6 +108,6 @@ Ações de governança em aplicativos
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 
