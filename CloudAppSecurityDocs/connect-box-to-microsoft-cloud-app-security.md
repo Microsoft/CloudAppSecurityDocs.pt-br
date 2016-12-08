@@ -1,5 +1,5 @@
 ---
-title: Conectar o Box ao Microsoft Cloud App Security | Microsoft Docs
+title: Conectar o Box | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo do Box ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -45,13 +45,13 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
     > [!NOTE]  
     >  Se você for um cliente Adallom existente e a URL do seu console for para o Adallom e não para o Cloud App Security, use este número de série do aplicativo: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
   
-2.  No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos sancionados**.  
+2.  No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
-3.  Na linha Box, clique em **Conectar** na coluna **Status do Conector de Aplicativos** ou clique no botão **Conectar um Aplicativo** e selecione **Box**.  
+3.  Na página **Conectores de aplicativos**, clique no botão de sinal de mais e selecione **Box**.  
   
      ![conectar o box](./media/connect-box.png "connect box")  
   
-4.  Na página **Configurações do Box**, na guia **API**, clique em **Seguir esse link**.  
+4.  Na janela pop-up **Configurações do Box**, clique em **Seguir esse link**.  
   
 5.  Isso abre a página de logon do Box. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Box da sua equipe.  
   
@@ -77,6 +77,6 @@ Após conectar o Box, o Cloud App Security realizará uma verificação completa
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

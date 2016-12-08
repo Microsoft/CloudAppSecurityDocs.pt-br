@@ -1,11 +1,11 @@
 ---
-title: "Log de governança | Microsoft Docs"
-description: "Este tópico lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security."
+title: "Governança | Microsoft Docs"
+description: "Este tópico lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security e as mensagens de log que as rastreiam."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,15 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759c4e09af65ce54c2e3ecaa2f1fccd2fded91d1
-ms.openlocfilehash: e67fecd17b26314720a34691f83464c59a244ea6
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 43069f7a9f91dc34f4ce3ebb52ca399441bbb1f1
 
 
 ---
 
-# <a name="governance-log"></a>Log de governança
+# <a name="govern"></a>Governança
+
+## <a name="governance-log"></a>Log de governança
 O log de governança fornece um registro de status de cada tarefa que você definir no Cloud App Security para execução, incluindo tarefas manuais e automáticas. Essas tarefas incluem aquelas que podem ser definidas em políticas, as ações de governança que definidas em arquivos e usuários e qualquer outra ação definida para execução no Cloud App Security. O Log de governança também fornece informações sobre o êxito ou falha dessas ações. Você pode optar por repetir ou reverter algumas das ações de governança do log de governança. 
 
 Veja a seguir a lista completa de ações que o portal do Cloud App Security permite que você execute. Elas são habilitadas em vários locais por todo o console, conforme descrito na coluna **Localização**. Cada ação de governança realizada é relacionada no Log de Governança.
@@ -68,9 +70,80 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Configurações > Configurações do Cloud Discovery > Carregar logs manualmente/Carregar logs automaticamente|Cloud Discovery|Analisar dados do Cloud Discovery|Notificação de que todos os dados de log foram analisados.|Descoberta|
 
 
+## <a name="file-governance-actions"></a>Ações de governança de arquivo  
+As seguintes ações de governança podem ser executadas em um usuário, arquivo específico ou a partir uma política específica.
+  
+-   Notificações  
+  
+    -   Alertas – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade.  
+  
+    -   Notificação de email do usuário – mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários do arquivo em violação.  
+  
+    -   Copiar gerente – com base na integração de diretório do usuário, as notificações de email também podem ser enviadas para o gerente da pessoa que violar uma política.  
+  
+-   Notificar usuários específicos – lista específica de endereços de email que receberão essas notificações.  
+  
+-   Notificar último editor do arquivo – envia notificações para a última pessoa que modificou o arquivo.  
+  
+-   Ações de governança em aplicativos  
+  
+     Ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo.  
+  
+    -   Alterar o compartilhamento  
+  
+        -   Remover o compartilhamento público – permite o acesso apenas aos parceiros nomeados, por exemplo: remover acesso público para Google Apps e Remover o link compartilhado direto para o Box.  
+  
+        -   Remover usuários externos – permite o acesso somente aos usuários da empresa.  
+  
+        -   Tornar privado – somente o proprietário pode acessar o arquivo, todos os compartilhamentos são removidos.  
+  
+        -   Remover um parceiro – remove um parceiro específico do arquivo.  
+  
+    -   Quarentena  
+  
+        -   Colocar em quarentena do usuário – Permite o autoatendimento movendo o arquivo para uma pasta de quarentena controlada pelo usuário  
+  
+        -   Colocar em quarentena do administrador – o arquivo é movido para a quarentena na unidade do administrador e o administrador precisa aprová-lo.  
+  
+-   Lixeira – move o arquivo para a pasta da lixeira.
+  
+![alertas de policy_create](./media/policy_create-alerts.png "policy_create alerts")  
+  
+ 
+## <a name="activity-match-parameters"></a>Parâmetros de correspondência de atividade  
+Especifique o número de repetições de atividade necessário para corresponder à política, por exemplo, definir uma política para alertar quando um usuário executa dez tentativas de logon sem sucesso em um período de dois minutos.  
+A configuração padrão, **Parâmetros de correspondência de atividade**, gera uma correspondência para cada atividade que atende a todos os filtros de atividade.   
+Usando **Atividade repetida**, você pode definir o número de atividades repetidas, a duração do período em que as atividades são contadas e até mesmo especificar que todas as atividades devem ser executadas pelo mesmo usuário e no mesmo aplicativo de nuvem.  
+  
+### <a name="actions"></a>Ações  
+Notificações  
+  
+-   Alertas – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade.  
+  
+-   Notificação de email do usuário – mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários do arquivo em violação.  
+  
+-   Copiar gerente – com base na integração de diretório do usuário, as notificações de email também podem ser enviadas para o gerente da pessoa que violar uma política.  
+  
+-   Notificar usuários adicionais – lista específica de endereços de email que receberão essas notificações.  
+  
+Ações de governança em aplicativos  
+  
+-   Ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo.  
+  
+-   Suspender usuário – suspende o usuário do aplicativo.  
+  
+-   Revogar senha – revoga a senha do usuário e o força a definir uma nova senha em seu próximo logon.  
+  
+     ![referência de política de atividade 6](./media/activity-policy-ref6.png "activity policy ref6")  
+  
 
+## <a name="governance-conflicts"></a>Conflitos de governança
 
+Após a criação de várias políticas, pode surgir uma situação na qual as ações de governança em várias políticas se sobreponham. Nesse caso, o Cloud App Security processará as ações de governança da seguinte maneira:
 
+- Se duas políticas contiverem ações contidas umas nas outras (por exemplo, **Remover compartilhamentos externos** incluída em **Tornar particular**), o Cloud App Security resolverá o conflito e a ação mais forte será imposta.
+- Se as ações forem completamente não relacionadas (por exemplo, **Notificar proprietário** e **Tornar particular**). Ambas as ações serão executadas.
+- Se houver conflito entre as ações, (por exemplo **Alterar o proprietário para o usuário A** e **Alterar o proprietário para o usuário B**), resultados diferentes poderão ocorrer em cada correspondência. É importante alterar suas políticas para evitar conflitos, pois eles podem resultar em alterações indesejadas na unidade que serão difíceis de detectar.
 
 
 
@@ -82,6 +155,6 @@ Para obter informações sobre como as ações de governança são tratadas quan
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

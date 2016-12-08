@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4
+ms.sourcegitcommit: 37661b255147b3f43c5bfd8b5f6459bd4c25ac95
+ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
 
 
 ---
@@ -36,7 +36,6 @@ Os seguintes tipos de políticas podem ser criados:
 |![ícone de política de detecção de anomalias](./media/anomaly_detection_policy.png)|Política de detecção de anomalias|As políticas de detecção de anomalias permitem que você procure atividades incomuns na sua nuvem com base nos fatores de risco definidos aqui para alertar você quando acontecer algo que seja diferente da linha de base da sua organização ou da atividade regular do usuário.|  
 |![ícone de política do cloud discovery](./media/discovery_policy.png)|Política de descoberta de aplicativo|As políticas de descoberta de aplicativo permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização.|  
 |![ícone de política de detecção de anomalias](./media/anomaly_detection_policy.png)|Política de detecção de anomalias do Cloud Discovery|As políticas de detecção de anomalias do Cloud Discovery analisam os logs usados para descobrir aplicativos de nuvem e pesquisa ocorrências incomuns. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico.|  
-|![ícone de política de campo](./media/field_policy.png)|Política de campo|As políticas de campo permitem verificar os aplicativos de nuvem em busca de campos no seu ambiente de nuvem que podem conter dados confidenciais como postagens, mensagens de bate-papo, descrições e campos de texto longo.|  
 |![ícone de política de arquivos](./media/file_policy.png)|Política de arquivos|As políticas de arquivos permitem que você examine seus aplicativos de nuvem quanto a tipos de arquivo ou arquivos especificados (compartilhados, compartilhados com domínios externos), dados (informações proprietárias, PII, informações de cartão de crédito etc.) e aplique ações de governança aos arquivos (as ações de governança são específicas do aplicativo de nuvem).|  
   
 ## <a name="identifying-risk"></a>Identificando o risco  
@@ -54,7 +53,7 @@ O Cloud App Security ajuda a mitigar diferentes riscos na nuvem. Você pode conf
   
      Monitore alterações de configuração, incluindo manipulação de configuração remota.  
   
--   **Cloud Discovery:** aplicativos novos não sancionados estão sendo usados em sua organização? Você tem um problema de aplicativos de TI Invisível sendo usados sobre os quais não tem conhecimento?  
+-   **Cloud Discovery:** aplicativos novos estão sendo usados em sua organização? Você tem um problema de aplicativos de TI Invisível sendo usados sobre os quais não tem conhecimento?  
   
      A classificação geral do risco para cada aplicativo de nuvem com base nas normas e certificações do setor e  
     práticas recomendadas permite que você monitore o número de usuários, atividades, volume de tráfego e horas de uso típico para  
@@ -107,13 +106,14 @@ Para criar uma política de um **modelo de política**, faça o seguinte:
   
 Como alternativa, você pode **criar uma política durante a investigação**. Se você estiver investigando **Log de atividades**, **Arquivos** ou **Contas** e analisar detalhadamente para pesquisar algo específico, a qualquer momento você poderá criar uma nova política com base nos resultados da sua investigação.  
   
-Por exemplo, se você estiver analisando o **Log de atividades** e observar que uma das suas contas de administrador está fazendo logon de uma localização geográfica inesperada, poderá filtrar os resultados do **Log de atividades** para exibir todas as atividades de logon por esse administrador e, então, criar um relatório que notificará você da próxima vez que for detectada atividade para esse usuário.  
+Por exemplo, se você estiver consultando o **Log de atividades** e encontrar uma atividade de administração que não pertença aos endereços IP do seu escritório.
+
   
 Para criar uma política com base nos resultados da investigação, execute o seguinte:  
   
 1.  No console, clique em **Investigar** seguido de **Log de atividades**, **Arquivos** ou **Contas**.  
   
-2.  Use os filtros na parte superior da página para limitar os resultados da pesquisa para a área suspeita, por exemplo, na página de Log de atividade, clique em **Usuário** e selecione o administrador cuja conta está registrando atividades incomuns. Em seguida, em **Atividade**, selecione **Copiar pasta** e **Copiar arquivo**.  
+2.  Use os filtros na parte superior da página para limitar os resultados da pesquisa à área suspeita, por exemplo, na página Log de atividades, clique em **Atividade** e selecione **Logon de administrador**. Em seguida, em **Endereço IP**, selecione **Categoria** e defina o valor para não incluir as categorias de endereço IP que você criou para seus domínios reconhecidos, como os endereços IP de administração, corporativos e de VPN.  
   
      ![](./media/create-file-from-investigation.png)  
   
@@ -142,11 +142,6 @@ Para criar uma política com base nos resultados da investigação, execute o se
 >   
 >  [Políticas do Cloud Discovery](cloud-discovery-policies.md)  
   
-### <a name="policy-conflicts"></a>Conflitos de política
-Depois de criar várias políticas, pode surgir uma situação na qual as políticas se sobrepõem. Nesse caso, o Cloud App Security processará as políticas da seguinte maneira:
-* Se duas políticas possuírem ações que estão contidas umas na outra (por exemplo, **Remover compartilhamentos externos** está incluído em **Tornar particular**), o Cloud App Security resolverá o conflito e a ação mais segura será aplicada.
-* Se as ações forem completamente não relacionadas (por exemplo, **Notificar proprietário** e **Tornar particular**). Ambas as ações serão executadas.
-* Se houver conflito entre as ações, (por exemplo **Alterar o proprietário para o usuário A** e **Alterar o proprietário para o usuário B**), resultados diferentes poderão ocorrer em cada correspondência. É importante alterar suas políticas para evitar conflitos, pois eles podem resultar em alterações indesejadas na unidade que serão difíceis de detectar. 
 
 
 ## <a name="see-also"></a>Veja também  
@@ -156,6 +151,6 @@ Depois de criar várias políticas, pode surgir uma situação na qual as polít
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

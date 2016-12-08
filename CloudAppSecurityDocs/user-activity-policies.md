@@ -1,11 +1,11 @@
 ---
-title: "Políticas de atividades do usuário | Microsoft Docs"
-description: "Este tópico fornece instruções para criar e trabalhar com políticas de atividade do usuário."
+title: "Políticas de atividade | Microsoft Docs"
+description: "Este tópico fornece instruções para criar e trabalhar com políticas de atividade."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/8/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>Políticas de atividade de usuário
+# <a name="activity-policies"></a>Políticas de atividade
 As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.  
   
 Depois de definir uma política de detecção de atividades, ele começará a gerar alertas, os quais são gerados apenas em atividades que ocorrem depois da criação da política.
@@ -133,6 +133,6 @@ Cada política é composta pelas seguintes partes:
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

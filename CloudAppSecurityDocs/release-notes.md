@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,34 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 
 
 ---
 
 # <a name="release-notes"></a>Notas de versão
 
+
+## <a name="cloud-app-security-release-85"></a>Cloud App Security versão 85
+Lançado em 27 de novembro de 2016
+
+**Novos recursos**
+- Foi feita uma distinção entre aplicativos sancionados e aplicativos conectados. Sancionar e não sancionar agora é uma marca que pode ser aplicada a aplicativos descobertos e a qualquer aplicativo no catálogo de aplicativos. Aplicativos conectados são aqueles que você conectou usando o conector de API para aumentar a visibilidade e o controle. Agora você pode marcar aplicativos como sancionados ou não sancionados, ou conectá-los usando o conector de aplicativos, quando estiver disponível. 
+ 
+- Como parte dessa alteração, a página Aplicativos sancionados foi substituída por uma página reformulada chamada **Aplicativos conectados** que exibe dados de status sobre os conectores. 
+ 
+- Os coletores de log são acessados com mais facilidade em suas próprias linhas no menu **Configurações** em **Fontes**. 
+- Ao criar um filtro de política de atividades, você pode reduzir os falsos positivos optando por ignorar atividades repetidas quando elas forem executadas no mesmo objeto de destino pelo mesmo usuário, por exemplo, se houver várias tentativas de baixar o mesmo arquivo pela mesma pessoa não será disparado um alerta. 
+- Foram feitas melhorias na gaveta de atividades. Agora, ao clicar em um objeto de atividade na gaveta de atividades, você pode fazer uma busca detalhada para obter mais informações.
+
+**Melhorias**
+- Foram feitas melhorias no mecanismo de detecção de anomalias, incluindo os alertas de viagem impossível, para os quais as informações de IP agora estão disponíveis na descrição do alerta.
+- Foram feitas melhorias nos filtros complexos para habilitar a adição do mesmo filtro mais de uma vez para ajustar os resultados filtrados. 
+- As atividades de arquivos e pastas no Dropbox foram separadas para melhorar a visibilidade. 
+  
+**Correções de bugs**
+- Foi corrigido um bug no mecanismo de alertas do sistema que criava falsos positivos.
 
 ## <a name="cloud-app-security-release-84"></a>Cloud App Security versão 84
 Lançada em 13 de novembro de 2016
@@ -238,6 +258,6 @@ Lançamento: 15 de maio de 2016
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

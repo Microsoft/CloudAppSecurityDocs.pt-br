@@ -1,11 +1,11 @@
 ---
-title: "Solução de problemas de conectores de API usando mensagens de erro | Microsoft Docs"
-description: "Este tópico fornece uma lista de mensagens de erro do Conector de API, bem como recomendações de solução para cada uma."
+title: "Solução de problemas de conectores de aplicativos usando mensagens de erro | Microsoft Docs"
+description: "Este tópico fornece uma lista de mensagens de erro do Conector de aplicativos de API, além de recomendações de solução para cada uma."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,20 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
 
 
 ---
 
-# <a name="troubleshooting-api-connectors-using-error-messages"></a>Solução de problemas de conectores de API usando mensagens de erro
+
+# <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
+
+Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do conector de aplicativos após a tentativa de conectar um aplicativo de nuvem usando o conector de aplicativos de API.
+
+
 |Mensagem de erro|Aplicativo relevante|Descrição|Resolução|
-|----|----|----|----|
+|----|----|----|------------|
 |HttpRequestFailure: O servidor retornou: 400 Solicitação inválida: {"error":{"code":"AF20012","message":"A ID de locatário especificada (insira Tenant_ID aqui) está configurada incorretamente no sistema."|Office 365 |Não foi encontrada nenhuma licença atribuída do Office 365. |Atribua pelo menos uma licença do Office 365 ao seu locatário.| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Caixa|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
 |BoxRestException: Falha ao analisar a resposta.|Caixa|Erro interno|Clique no link “Teste agora” novamente para testar a conexão com o Box.|
@@ -59,6 +64,6 @@ ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

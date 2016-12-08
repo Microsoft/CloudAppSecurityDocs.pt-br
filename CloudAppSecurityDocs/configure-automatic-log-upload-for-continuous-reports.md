@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 
 ---
@@ -47,7 +47,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs  
   
 1.  Acesse a página de configuração de upload automatizado:  
-    No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "settings icon"), seguido pelas **Configurações de Cloud Discovery** e selecione a guia **Carregar logs automaticamente**.  
+    No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "settings icon"), antes de **Coletores de log**.  
   
 3.  Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:  
   
@@ -77,7 +77,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   > - Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
 4.  **Baixe** uma nova máquina virtual do coletor de logs clicando no Hyper-V ou VMWare e descompacte o arquivo usando a senha que você recebeu no portal.  
   
-### <a name="step-2-onpremises-deployment-of-the-virtual-machine-and-network-configuration"></a>Etapa 2 — Implantação da máquina virtual no local e configuração de rede   
+### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Etapa 2 — Implantação da máquina virtual no local e configuração de rede   
 
 > [!NOTE] 
 > As etapas a seguir descrevem a implantação no Hyper-V. As etapas de implantação do hipervisor da VM são ligeiramente diferentes.  
@@ -114,7 +114,7 @@ sudo network_config
 
 Neste ponto, seu coletor de logs deve estar conectado à rede e deverá poder alcançar o portal do Cloud App Security.  
 
-### <a name="step-3-onpremises-configuration-of-the-log-collection"></a>Etapa 3 — Configuração local da coleção de logs 
+### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>Etapa 3 — Configuração local da coleção de logs 
 Na primeira vez que você fizer logon no coletor de logs e importar a configuração do coletor de logs no portal, da seguinte maneira. 
 
 1.  Faça logon no coletor de logs via SSH usando as credenciais de administrador interativo fornecidas no portal. Se esse for o primeiro logon no console, você precisará alterar a senha e o logon novamente após a alteração da senha. Se você estiver usando uma sessão de terminal, poderá ser necessário reiniciar a sessão de terminal. )
@@ -133,7 +133,7 @@ Na primeira vez que você fizer logon no coletor de logs e importar a configura�
   
       d. Insira o nome do coletor de logs que deseja configurar, por exemplo:``` CloudAppSecurityLogCollector01  ```
 
-### <a name="step-4-onpremises-configuration-of-your-network-appliances"></a>Etapa 4 — Configuração local de seus dispositivos de rede
+### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Etapa 4 — Configuração local de seus dispositivos de rede
 
 Configure seus proxies e firewalls de rede para periodicamente exportar logs para a porta de Syslog dedicada do diretório de FTP acordo com as instruções na caixa de diálogo, por exemplo:  
   
@@ -141,7 +141,7 @@ Configure seus proxies e firewalls de rede para periodicamente exportar logs par
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-### <a name="step-5-verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Etapa 5 — Verificar a implantação bem-sucedida no portal do Cloud App Security
+### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Etapa 5 — Verificar a implantação bem-sucedida no portal do Cloud App Security
 
 Acesse o log Governança e verifique se os logs estão sendo carregados periodicamente no portal.  
   
@@ -158,6 +158,6 @@ Se você encontrar problemas durante a implantação, confira [Solucionando prob
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

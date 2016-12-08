@@ -1,11 +1,11 @@
 ---
-title: "Integração com a Proteção de Informações do Azure | Documentação da Microsoft"
+title: "Integração da Proteção de Informações do Azure | Microsoft Docs"
 description: "Este artigo fornece informações sobre como utilizar os rótulos da Proteção de Informações do Azure no Cloud App Security para controle adicional sobre o uso de aplicativos de nuvem da sua organização."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,20 +14,21 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
+ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
+ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
 
 
 ---
 
-# <a name="azure-information-protection-integration---private-preview"></a>Integração com a Proteção de Informações do Azure – **VISUALIZAÇÃO PRIVADA**
+# <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
-O Cloud App Security permite investigar arquivos e definir políticas com base nos rótulos de arquivo da Proteção de Informações do Azure, permitindo maior visibilidade e controle dos dados confidenciais na nuvem. Para habilitar isso, defina uma política no Cloud App Security para verificar os arquivos com a inspeção de conteúdo habilitada. Além disso, como parte do modo de visualização privada do Cloud App Security, você pode disparar alertas em atividades relacionadas a arquivos confidenciais. A integração com a Proteção de Informações do Azure permite que você:
+O Cloud App Security permite investigar arquivos e definir políticas com base nos rótulos de arquivo da Proteção de Informações do Azure, permitindo maior visibilidade e controle dos dados confidenciais na nuvem. Para habilitar isso, defina uma política no Cloud App Security para verificar os arquivos com a inspeção de conteúdo habilitada. Além disso, você pode disparar alertas sobre atividades relacionadas a arquivos confidenciais. A integração com a Proteção de Informações do Azure permite que você:
 -   Quantifique a exposição de dados confidenciais em seus aplicativos em nuvem.
 -   Crie políticas e alertas sobre violações de carregamento de dados confidenciais em seus aplicativos conectados à nuvem ou coloque em quarentena/bloqueie dados confidenciais para que não sejam compartilhados externamente.
 -   Investigue trilhas de auditoria e corrija arquivos que estão violando as políticas 
 
-> [!NOTE] Por padrão, os arquivos são examinados por rótulos somente quando há uma política de arquivo que os examina com a inspeção de conteúdo habilitada. Para examinar rótulos de todos os arquivos sem as políticas de arquivo, habilite o exame automático.
+> [!NOTE] 
+> Por padrão, os arquivos são examinados por rótulos somente quando há uma política de arquivo que os examina com a inspeção de conteúdo habilitada. Para examinar rótulos de todos os arquivos sem as políticas de arquivo, habilite o exame automático.
 
 ## <a name="terminology-overview"></a>Visão geral da terminologia
 -   O rótulo de classificação da Proteção de Informações do Azure – um atributo automaticamente adicionado aos arquivos em sua organização, com base em uma política ou, manualmente, definido por usuários finais.
@@ -62,6 +63,13 @@ Use o filtro **Rótulos de arquivo** para pesquisar arquivos que foram marcados 
 Ou, para arquivos que foram marcados com qualquer rótulo de arquivo:
 
 ![todos os filtros de rótulos de arquivo](./media/azip-file-tags-all-filter.png)
+
+## <a name="how-it-works"></a>Como funciona
+Assim que você conectar o Cloud App Security à Proteção de Informações do Azure, o Cloud App Security verificará os arquivos da seguinte maneira:
+1. Recuperar a lista de todos os rótulos de classificação usados em seu locatário. Isso é executado a cada hora para manter a lista atualizada.
+2. Verificar os arquivos buscando rótulos de classificação. Isso pode ocorrer de duas maneiras: a. Os arquivos que tiverem o conteúdo verificado como parte de uma política de arquivos também serão adicionados à fila de verificação de rótulos de classificação.
+    b. Para adicionar todos os arquivos na fila de verificação sem precisar definir uma política de arquivos, habilite a verificação automática (veja abaixo), que verificará todos os arquivos novos ou modificados.
+3. Os rótulos externos somente serão adicionados à lista de rótulos de classificação se eles forem vistos em um arquivo específico, a não ser que você marque a caixa de seleção **Ignorar rótulos de classificação da Proteção de Informações do Azure de outros locatários** (veja abaixo).
 
 ## <a name="enable-automatic-scan"></a>Habilitar exame automático
 Para habilitar exames automáticos de rótulos de arquivo para novos arquivos do Office 365:
@@ -119,6 +127,6 @@ Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.c
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

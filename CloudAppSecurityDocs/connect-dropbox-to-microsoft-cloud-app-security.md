@@ -1,5 +1,5 @@
 ---
-title: Conectar o Dropbox ao Microsoft Cloud App Security | Microsoft Docs
+title: Conectar Dropbox | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo do Dropbox ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
 
 
 ---
@@ -28,13 +28,13 @@ Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar en
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Como conectar o Dropbox ao Cloud App Security  
   
-1.  No console do Cloud App Security, clique em **Investigar** e em **Aplicativos sancionados**.  
+1.  No console do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
-2.  Na linha Dropbox, clique em **Conectar** na coluna **Status do Conector de Aplicativos** ou clique no botão **Conectar um aplicativo** seguido por **Dropbox**.  
+2.  Na página **Conectores de aplicativos**, clique no botão de mais após **Dropbox**.  
   
      ![conectar ao dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  Na página de configurações do Dropbox, na guia API, digite o endereço de email da conta de administrador.  
+3.  Na janela pop-up, insira o endereço de email da conta de administrador.  
   
 4.  Clique em **Gerar link**.  
   
@@ -63,6 +63,6 @@ Depois de conectar o Dropbox, você receberá eventos por 60 dias antes da conex
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

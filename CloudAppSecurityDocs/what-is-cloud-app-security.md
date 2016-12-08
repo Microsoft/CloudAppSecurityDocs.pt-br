@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 224c7039ecb7200ad951774ac5fb76202543a35c
-ms.openlocfilehash: 690e58cd598ee9a6dd329e19cd65129df160e009
+ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
+ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
 
 
 ---
@@ -34,7 +34,7 @@ O Cloud App Security é um componente crítico da pilha do Microsoft Cloud Secur
 |-------|---|:---|
 |![Descobrir](./media/discovery-icon.png)|Descobrir|Descobrir TI invisível com o Cloud App Security. Obtenha visibilidade descobrindo aplicativos, atividades, usuários, dados e arquivos em seu ambiente de nuvem. Descubra aplicativos de terceiros que estão conectados à sua nuvem.|
 |![Investigar](./media/investigate-icon.png)|Investigar|Investigue os seus aplicativos de nuvem usando as ferramentas de análise forense de nuvem para aprofundar-se ainda mais em aplicativos arriscados, usuários específicos e arquivos em sua rede. Localize padrões nos dados coletados de sua nuvem. Gere relatórios para monitorar sua nuvem.|
-|![Control](./media/protect-icon.png)|Control|Reduza o risco definindo políticas e alertas para obter o máximo controle sobre o tráfego da nuvem na rede. Use o Cloud App Security para migrar seus usuários para alternativas de aplicativo de nuvem seguras e sancionadas.|
+|![Control](./media/control-icon.png)|Control|Reduza o risco definindo políticas e alertas para obter o máximo controle sobre o tráfego da nuvem na rede. Use o Cloud App Security para migrar seus usuários para alternativas de aplicativo de nuvem seguras e sancionadas.|
 |![Proteger](./media/protect-icon.png)|Proteger|Use o Cloud App Security para sancionar/cancelar a sanção de aplicativos, impor a prevenção de perda de dados, controlar permissões e compartilhamento e gerar relatórios e alertas personalizados.|
 
 
@@ -50,11 +50,11 @@ O Cloud App Security integra a visibilidade com sua nuvem ao
 ![Arquitetura do Cloud App Security](./media/architecture.png)  
 
 > [!NOTE]  
-> Quando o Cloud App Security executa a inspeção do conteúdo, a privacidade de dados é imposta. Apenas os metadados dos registros de arquivo e as violações que foram identificadas são armazenados no banco de dados do Cloud App Security. Seus dados não são armazenados no banco de dados do Cloud App Security. Para obter mais informações sobre a retenção de dados, consulte nossa [política de privacidade](http://go.microsoft.com/fwlink/?LinkId=512132) e a [Central de Confiabilidade da Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
+> Quando o Cloud App Security executa a inspeção do conteúdo, a privacidade de dados é imposta. Seus dados não são armazenados no banco de dados do Cloud App Security. Somente os metadados dos registros de arquivo e qualquer violação identificada são armazenados no banco de dados do Cloud App Security. Para obter mais informações sobre retenção de dados, consulte nossa [política de privacidade](http://go.microsoft.com/fwlink/?LinkId=512132) e o [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
 O Cloud App Security mantém os dados da seguinte maneira:
 >- Log de atividades: 180 dias
 >- Dados de descoberta: 90 dias
->- Alertas: ilimitado
+>- Alertas: 180 dias
 
 Após a coleta de dados dessas fontes, o Cloud App Security executa a análise sofisticada dos dados. Ele o alerta imediatamente sobre atividades anormais e oferece uma visibilidade profunda do seu ambiente de nuvem. Você pode configurar uma política no Cloud App Security e usá-la para proteger tudo em seu ambiente de nuvem.  
 
@@ -87,6 +87,6 @@ Os clientes Premier também podem escolher o Cloud App Security diretamente no [
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

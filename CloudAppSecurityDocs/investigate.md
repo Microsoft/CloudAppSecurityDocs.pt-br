@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23ec0b7bef05146d3ff4a953225b56b52aa4959f
-ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
+ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
+ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 
 ---
@@ -37,17 +37,15 @@ Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos
 |Painel do aplicativo: aplicativos de terceiros|Analise aplicativos de terceiros atualmente implantados, como Google Apps e defina políticas para eles|  
 |Painel do usuário|Uma visão geral completa do perfil do usuário na nuvem, incluindo grupos, locais, atividades recentes, alertas relacionados e navegadores usados|  
 
-##  <a name="a-namesanctionappa-sanction-or-unsanction-apps"></a><a name="sanctionapp"></a> Sancionar ou cancelar a sanção de aplicativos  
-A primeira etapa para entender sua nuvem é sancionar aplicativos. Depois de sancionar um aplicativo, você poderá filtrar pelos aplicativos que não estão sancionados e iniciar a migração para aplicativos sancionadas do mesmo tipo.  
+##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> Marcar aplicativos como sancionados ou não sancionados  
+Uma etapa importante para entender sua nuvem é marcar os aplicativos como sancionados ou não sancionados. Depois de sancionar um aplicativo, você poderá filtrar pelos aplicativos que não estão sancionados e iniciar a migração para aplicativos sancionadas do mesmo tipo.  
 
--   No console do Cloud App Security, selecione **Descobrir** e depois **Painel descoberta**.  
+-   No console do Cloud App Security, acesse o Catálogo de aplicativos ou Aplicativos descobertos.  
 
--   Na lista de aplicativos descobertos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Sancionar três pontos](./media/sanction-three-dots.png "Sanction three dots") e selecione **Marcar como sancionado**.  
+-   Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](./media/sanction-three-dots.png "Tag as sanctioned dots") e selecione **Marcar como sancionado**.  
 
-     ![marcar como sancionado](./media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![Marcar como sancionado](./media/mark-as-sanctioned.png "tag as sanctioned")  
 
-> [!NOTE]  
->  Para cada aplicativo que desejar monitorar com a integração da API do Cloud App Security, é recomendável criar uma conta de serviço de administrador dedicada para o Cloud App Security.  
 
 ## <a name="use-the-investigation-tools"></a>Usar as ferramentas de investigação  
 
@@ -160,6 +158,6 @@ Os clientes Premier também podem escolher o Cloud App Security diretamente no [
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

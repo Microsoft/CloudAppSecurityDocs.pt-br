@@ -14,8 +14,8 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42cd06942ef90bc40a191bc12ddc12a18388430d
-ms.openlocfilehash: d07f8cfebd5654036078d474656a6e73e24d93d0
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: f4cf027220a7f4329a72d662f6ccf4d9ab02ede4
 
 
 ---
@@ -34,12 +34,12 @@ O painel do Cloud App Security fornece uma visão geral das atividades e recurso
 - Um mapa de atividades que rastreia de onde a atividade do usuário foi originada.
 - Tendências de uso do aplicativo conectado em seu ambiente de nuvem.  
 
-É recomendável que você verifique o painel diariamente para ver quais novos alertas foram acionados. Também é bom ficar atento à integridade do seu ambiente de nuvem para ter uma ideia do que está acontecendo em seu ambiente de nuvem.  
+É recomendável verificar o painel diariamente para ver quais novos alertas foram acionados. Também é bom ficar atento à integridade do seu ambiente de nuvem para ter uma ideia do que está acontecendo em seu ambiente de nuvem.  
 
 ![Painel do Cloud App Security](./media/dashboard.png "dashboard")  
 
 ## <a name="handle-your-alerts"></a>Tratar os alertas  
-Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais profundamente. Você talvez queira criar novas políticas com base no que encontrar. Por exemplo, você pode ver um administrador se conectando de um local desconhecido. Você pode criar uma política que suspende automaticamente uma conta de administrador quando ela é usada para entrar nesse local.  
+Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais profundamente. Você talvez queira criar novas políticas com base no que encontrar. Por exemplo, talvez você veja um administrador se conectando da Groenlândia e ninguém na sua empresa nunca se conectou da Groenlândia antes. Você pode criar uma política que suspende automaticamente uma conta de administrador quando ela é usada para entrar nesse local.  
 
 É uma boa ideia examinar todos os alertas e usá-los como ferramentas para modificar suas políticas. Se eventos inofensivos estiverem sendo considerados violações das políticas existentes, refine suas políticas para receber menos alertas desnecessários.  
 
@@ -66,7 +66,7 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
          For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new, unsanctioned service is discovered, you might want to block access to the service on your proxy or firewall.  
+         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
     #### <a name="questionable-violations"></a>Violações questionáveis
     Violações questionáveis exigem mais investigação.  
@@ -89,7 +89,7 @@ A tabela a seguir fornece uma lista dos tipos de alertas que podem ser disparado
 |Violação de política de atividade|Este tipo de alerta é o resultado de uma política que você criou.|Para trabalhar com esse tipo de alerta em massa, é recomendável trabalhar no Centro de políticas para mitigá-los.<br /><br /> Ajuste a política para excluir entidades ruidosas adicionando mais filtros e mais controles granulares.<br /><br /> Se a política for precisa, o alerta for garantido e for uma violação que você deseja parar imediatamente, considere adicionar a correção automática à política.|  
 |Violação de política de arquivos|Este tipo de alerta é o resultado de uma política que você criou.| Para trabalhar com esse tipo de alerta em massa, é recomendável trabalhar no Centro de políticas para mitigá-los.<br /><br /> Ajuste a política para excluir entidades ruidosas adicionando mais filtros e mais controles granulares.<br /><br /> Se a política for precisa, o alerta for garantido e for uma violação que você deseja parar imediatamente, considere adicionar a correção automática à política.|  
 |Conta comprometida|Este tipo de alerta é disparado quando o Cloud App Security identifica uma conta que foi comprometida, o que significa uma probabilidade muito alta de a conta ter sido usada de uma forma não autorizada.|Recomendamos que você suspenda a conta até entrar em contato com o usuário e garantir que ele altere a senha.|  
-|Conta inativa|Este alerta é disparado quando uma conta não é mais usada em um dos seus aplicativos de nuvem conectados.|Entre em contato com o usuário e o gerente do usuário para determinar se a conta ainda está ativa. Caso contrário, suspenda o usuário e encerre a licença para o aplicativo.|  
+|Conta inativa|Este alerta é disparado quando uma conta não é usada durante 60 dias em um dos seus aplicativos de nuvem conectados.|Entre em contato com o usuário e o gerente do usuário para determinar se a conta ainda está ativa. Caso contrário, suspenda o usuário e encerre a licença para o aplicativo.|  
 |Novo usuário administrador|Isso alerta você para as alterações em suas contas com privilégios para aplicativos conectados.|Confirme se as novas permissões de administrador na verdade são necessárias para o usuário. Se não forem, recomendamos revogar privilégios de administrador para reduzir a exposição.|  
 |Novo local de administração|Isso alerta você para as alterações em suas contas com privilégios para aplicativos conectados.|Confirme se a entrada desse local anormal foi legítima. Se não for, recomendamos revogar as permissões de administrador ou suspender a conta para reduzir a exposição.|  
 |Novo local|Este é um alerta informativo sobre o acesso a um aplicativo conectado de um novo local e é disparado apenas uma vez por país.|Investigue a atividade do usuário específico.|  
@@ -130,6 +130,6 @@ Os clientes Premier também podem escolher o Cloud App Security diretamente no [
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

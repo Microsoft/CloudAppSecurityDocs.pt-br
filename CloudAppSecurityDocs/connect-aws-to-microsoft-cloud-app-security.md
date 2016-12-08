@@ -1,5 +1,5 @@
 ---
-title: Conectar o AWS ao Microsoft Cloud App Security | Microsoft Docs
+title: Conectar o AWS | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo do AWS ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -96,13 +96,13 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     3.  Repita a Etapa 11 para todas as regiões, mas não configure nenhuma outra região para incluir serviços globais.  
   
-11. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos sancionados**.  
+11. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
-12. Na linha AWS, clique em **Conectar** na coluna **Status do Conector de Aplicativos** ou clique no botão **Conectar um aplicativo** seguido por **AWS**.  
+12. Na página **Conectores de aplicativos**, clique no sinal de mais antes de **AWS**.  
   
      ![conectar AWS](./media/connect-aws.png "connect AWS")  
   
-13. Na página de configurações do Amazon Web Services, cole a **Chave de acesso** e a **Chave secreta** do arquivo csv nos campos na página de API e clique **Atualizar Chave de Acesso**.  
+13. Na janela pop-up, cole a **Chave de acesso** e a **Chave secreta** do arquivo csv nos campos na página de API e clique em **Atualizar Chave de Acesso**.  
   
 14. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.  
   
@@ -118,6 +118,6 @@ Depois de conectar o AWS, você receberá eventos por 7 dias antes da conexão.
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

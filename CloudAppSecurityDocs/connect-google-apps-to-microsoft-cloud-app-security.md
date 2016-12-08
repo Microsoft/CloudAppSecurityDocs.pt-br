@@ -1,11 +1,11 @@
 ---
-title: Conectar o Google Apps ao Microsoft Cloud App Security | Microsoft Docs
+title: Conectar o Google Apps | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu Google apps ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
 
 # <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>Conectar o Google Apps ao Microsoft Cloud App Security
-Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Google Apps existente usando as APIs do conector.  
+Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Google Apps existente usando as APIs do conector.
+
+  
   
 ## <a name="configure-google-apps"></a>Configurar o Google Apps  
   
@@ -218,13 +220,13 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 ## <a name="configure-cloud-app-security"></a>Configurar o Microsoft Cloud App Security  
   
-1.  No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos sancionados**.  
+1.  No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
-2.  Na linha Google Apps, clique em **Conectar** na coluna **Status do Conector de Aplicativos** ou clique em **Conectar um aplicativo** e selecione **Google Apps**.  
+2.  Na página **Aplicativos conectados**, clique no sinal de mais e selecione **Google Apps**.  
   
      ![conectar google apps](./media/connect-google-apps.png "connect google apps")  
   
-3.  Na página de configurações do Google Apps, preencha o seguinte:  
+3.  Na janela pop-up, preencha o seguinte:  
   
      ![Configuração do Google Apps no Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
@@ -264,6 +266,6 @@ Após conectar o Google Apps, o Cloud App Security realizará uma verificação 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

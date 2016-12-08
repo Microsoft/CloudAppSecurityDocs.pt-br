@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: f65d64b240eb26f13a70143f5fb84a4f84f4cb6d
+ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
+ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
 
 
 ---
@@ -38,7 +38,7 @@ Os mecanismos de DLP internos do Cloud App Security executam inspeção de conte
 
 Abaixo está uma lista de filtros de arquivos que podem ser aplicados. A maioria dos filtros dá suporte a vários valores, bem como NOT, para fornecer uma ferramenta muito poderosa para a criação de políticas.  
 > [!NOTE] 
-> Ao usar os filtros de política, **contém** pesquisará somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **virus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se você pesquisar **malware.exe**, localizará TODOS os arquivos com malware ou exe em seu nome de arquivo, enquanto se pesquisar **"malware.exe"** (com as aspas), localizará apenas arquivos que contêm exatamente "malware.exe".  **É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt. 
+> Ao usar os filtros de política de arquivos, **Contém** pesquisará somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Colocar palavras entre aspas funciona como AND, portanto, por exemplo, se você pesquisar **"malware"** **"virus"**, ele encontrará virus_malware_file.exe, mas não encontrará malwarevirusfile.exe nem malware.exe. Espaços entre palavras funcionam como OR, por exemplo, se você pesquisar **malware** **virus** ele encontrará todos os arquivos com malware ou virus no nome, portanto, encontrará malware-virus.exe e virus.exe.   **É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt. 
 
 -   Nível de acesso – nível de acesso de compartilhamento, público, externo, interno ou privado.  Para obter mais informações sobre arquivos externos, consulte [Configuração geral, configuração do portal](getting-started-with-cloud-app-security.md) Internos são todos os arquivos dentro dos domínios Internos definidos na [Configuração geral](General-setup.md). Externos são arquivos salvos em locais que não estão dentro dos domínios internos que você definiu. Compartilhados são arquivos que têm nível de compartilhamento acima de particular (arquivos compartilhados em seus domínios internos), compartilhamento externo (arquivos compartilhados em domínios que não estão listados em seus domínios internos), públicos com um link (arquivos que podem ser compartilhados com qualquer pessoa por meio de um link) e públicos (arquivos que podem ser encontrados por pesquisas da Internet). 
 
@@ -67,7 +67,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. A maioria
   
 -   ID do arquivo – Pesquisa por IDs de arquivo específicas. Esse é um recurso avançado que permite que você acompanhe certos arquivos de alto valor sem depender de seu proprietário/local/nome.  
   
--   Nome do arquivo – nome do arquivo ou subcadeia de caracteres do nome conforme definido no aplicativo de nuvem, por exemplo, todos os arquivos com uma senha em seu nome.  
+-   Nome do arquivo – nome do arquivo ou subcadeia de caracteres do nome conforme definido no aplicativo de nuvem, por exemplo, todos os arquivos com uma senha em seu nome.   
   
 -   Marca de arquivo — pesquise arquivos com marcas específicas definidas pela Proteção de Informações do Azure. Isso exige integração à Proteção de Informações do Azure.
 
@@ -97,6 +97,19 @@ Você também pode definir a política para ser executada em arquivos específic
   
 ![aplicar para filtrar](./media/apply-to-filter.png "apply to filter")  
   
+## <a name="working-with-the-file-drawer"></a>Trabalhando com a Gaveta de arquivos
+
+Você pode exibir mais informações sobre cada arquivo, clicando no próprio Arquivo no Log de arquivo. Isso abre a Gaveta de arquivos que fornece as seguintes ações adicionais que você pode executar no arquivo:
+
+- URL: leva ao local do arquivo.
+- Identificadores de arquivo: clicar em Identificadores de arquivo abre um pop-up com detalhes de dados brutos sobre o arquivo, incluindo a ID do arquivo e as chaves de criptografia.
+- Proprietário: clique no proprietário para exibir a página de usuário do proprietário deste arquivo.
+- Políticas correspondentes: clique no link Políticas correspondentes para ver uma lista de políticas correspondentes a este arquivo.
+- Rótulo de classificação: clique no rótulo de classificação para exibir a lista de rótulos de classificação da Proteção de Informações do Azure encontrados neste arquivo. Em seguida, você poderá filtrar por todos os arquivos que corresponderem a esse rótulo.    
+
+![Gaveta de arquivos](./media/file-drawer.png "File drawer")  
+  
+Para obter uma lista de ações de governança disponíveis, consulte [Ações de governança de arquivo](governance-actions.md#file-governance-actions).
 
 ## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
@@ -106,6 +119,6 @@ Você também pode definir a política para ser executada em arquivos específic
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

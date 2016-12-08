@@ -1,5 +1,5 @@
 ---
-title: Conectar o Okta ao Microsoft Cloud App Security | Microsoft Docs
+title: Conectar o Okta | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo Okta ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
 
 
 ---
@@ -49,13 +49,13 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
          ![valor do token do okta](./media/okta-token-value.png "okta token value")  
   
-3.  No console do Cloud App Security, clique em **Investigar** e em **Aplicativos sancionados**.  
+3.  No console do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
-4.  Na linha Okta, clique em **Conectar** na coluna **Status do Conector de Aplicativos** ou clique no botão **Conectar um aplicativo** e em **Okta**.  
+4.  Na **página Conectores de aplicativos**, clique no botão de mais e depois em **Okta**.  
   
      ![conectar ao okta](./media/connect-okta.png "connect okta")  
   
-5.  Na página da API, no campo **Domínio**, insira seu domínio do Okta e cole seu token no campo **Token**.  
+5.  Na janela pop-up que abrir, no campo **Domínio**, insira seu domínio do Okta e cole seu token no campo **Token**.  
   
 6.  Clique em **Conectar** para criar o token para o Okta no Cloud App Security.  
   
@@ -73,6 +73,6 @@ Depois de conectar o Okta, você receberá eventos por 60 dias antes da conexão
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Conectar o ServiceNow ao Microsoft Cloud App Security | Microsoft Docs
+title: Conectar o ServiceNow | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo do ServiceNow ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -36,13 +36,13 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
      ![conta do servicenow](./media/servicenow-account.png "servicenow account")  
   
-4.  No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos sancionados**.  
+4.  No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
-5.  Na linha ServiceNow, clique em **Conectar** na coluna **Status do Conector de Aplicativos** ou clique no botão **Conectar um aplicativo** e em **ServiceNow**.  
+5.  Na página **Conectores de aplicativos**, clique no botão de mais e depois em **ServiceNow**.  
   
      ![conectar o servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-6.  Na página de configurações do ServiceNow, na guia API, adicione seu nome de usuário, senha e URL da instância do ServiceNow nas caixas apropriadas.  
+6.  Na janela pop-up, adicione seu nome de usuário, senha e URL da instância do ServiceNow nas caixas apropriadas.  
   
 7.  Clique em **Conectar**.  
   
@@ -62,6 +62,6 @@ Depois de conectar o ServiceNow, você receberá eventos por 60 dias antes da co
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

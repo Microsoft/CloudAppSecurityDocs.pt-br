@@ -1,5 +1,5 @@
 ---
-title: Conectar o Salesforce ao Microsoft Cloud App Security | Microsoft Docs
+title: Conectar o Salesforce | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo Salesforce ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -44,7 +44,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
          ![perfis manageusers do salesforce](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   Escolha o perfil que você está usando para implantar o Cloud App Security e clique em **Editar**.  
+    -   Escolha o perfil que você está usando para implantar o Cloud App Security e clique em **Editar**. Este é o perfil a ser usado para a conta de serviço do Cloud App Security para configurar o Conector de aplicativo.  
   
          ![editar perfil do salesforce](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     5.  Clique em **Salvar**.  
   
-4.  No console do Cloud App Security, clique em **Investigar** e em **Aplicativos sancionados**.  
+4.  No console do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
-5.  Na linha Box, clique em **Conectar** na coluna **Status do Conector de Aplicativos** ou clique no botão **Conectar um aplicativo** seguido por **Salesforce**.  
+5.  Na página **Conectores de aplicativos**, clique no botão de mais antes de **Salesforce**.  
   
      ![conectar o salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ Após conectar o SalesForce, você receberá Eventos da seguinte maneira: Gatilh
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
