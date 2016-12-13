@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
+ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
+ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
 
 
 ---
@@ -72,9 +72,10 @@ Assim que você conectar o Cloud App Security à Proteção de Informações do 
 3. Os rótulos externos somente serão adicionados à lista de rótulos de classificação se eles forem vistos em um arquivo específico, a não ser que você marque a caixa de seleção **Ignorar rótulos de classificação da Proteção de Informações do Azure de outros locatários** (veja abaixo).
 
 ## <a name="enable-automatic-scan"></a>Habilitar exame automático
-Para habilitar exames automáticos de rótulos de arquivo para novos arquivos do Office 365:
+A verificação automática permite pesquisar rótulos de classificação de Proteção de Informações do Azure em seus arquivos do Office 365 sem a necessidade de criar uma política. Esse recurso está disponível se você tiver uma licença independente do Cloud App Security.
+Para habilitar varreduras automáticas de marcas de arquivos para novos arquivos:
 
-1. No Office 365, vá até a página **Configurações gerais**.
+1. No Cloud App Security, vá para a página **Configurações gerais**.
 2. Em configurações de segurança do Azure selecione **Examinar automaticamente os arquivos para rótulos de classificação da Proteção de Informações do Azure**. Depois que ela for habilitada, todos os novos arquivos adicionados ao Office 365, não apenas aqueles que têm o conteúdo examinado por uma política de arquivo, terão rótulos de arquivo examinados.
 
 ![habilitar a Proteção de Informações do Azure](./media/enable-azip.png)
@@ -83,7 +84,7 @@ Para habilitar exames automáticos de rótulos de arquivo para novos arquivos do
 ## <a name="internal-and-external-tags"></a>Rótulos internos e externos
 Por padrão, o Cloud App Security examinará rótulos de classificação que foram definidos em sua organização, bem como aqueles externos que foram definidos por outras organizações. 
 
-Para ignorá-los, em **Configuração de segurança do Azure** selecione **Ignorar rótulos de classificação da Proteção de Informações do Azure de outros locatários**.
+Para ignorá-las, no portal do Cloud App Security, em **Configurações gerais** em **Configurações de segurança do Azure**, selecione **Ignorar rótulos de classificação da Proteção de Informações do Azure de outros locatários**.
  
 ![ignorar rótulos](./media/azip-ignore.png)
 
@@ -127,6 +128,6 @@ Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.c
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 
