@@ -50,6 +50,6 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

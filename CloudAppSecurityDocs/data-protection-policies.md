@@ -1,11 +1,11 @@
 ---
-title: "Políticas de proteção de dados | Microsoft Docs"
+title: "Políticas de arquivo | Microsoft Docs"
 description: "Este tópico descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e arquivos em uso nos aplicativos de nuvem da sua organização."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,13 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: ed0701c4513f9501e0b2e5a7b0b7931f5d76a628
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 12d9ef74f923c430fbfb547635786dc4c4300499
 
 
 ---
 
-# <a name="data-protection-policies"></a>Políticas de proteção de dados
-    
-## <a name="file-policies"></a>Políticas de arquivos  
+# <a name="file-policies"></a>Políticas de arquivos  
 As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso.  
 O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de 20 filtros de metadados (como por exemplo, nível de acesso e tipo de arquivo). 
  
@@ -71,12 +69,13 @@ Para criar uma nova política de arquivos, siga este procedimento:
 4.  Dentro de **Tipo de risco**, vincule a política ao tipo de risco mais apropriado. Este campo é somente informativo e ajuda você a pesquisar políticas e alertas específicos posteriormente, com base no tipo de risco.  O risco já pode estar pré-selecionado de acordo com a categoria para a qual você optou por criar a política. Por padrão, as políticas de arquivos são definidas para DLP.  
   
 5.  Para definir quais aplicativos descobertos dispararão uma política, **Crie um filtro para os arquivos em que esta política atuará**. Restrinja os filtros de política até chegar ao conjunto mais preciso de arquivos nos quais você deseja agir. Seja o mais restritivo possível para evitar falsos positivos. Por exemplo, se você quiser remover permissões públicas, lembre-se de adicionar o filtro "Público", se quiser remover um usuário externo, use o filtro "Externo" etc.  
-  
+> [!NOTE] 
+> Ao usar os filtros de política, **contém** pesquisará somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **virus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se você pesquisar **malware.exe**, localizará TODOS os arquivos com malware ou exe em seu nome de arquivo, enquanto se pesquisar **"malware.exe"** (com as aspas), localizará apenas arquivos que contêm exatamente "malware.exe". **É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt.  
 6.  Para Box, SharePoint, Dropbox e OneDrive, você pode impor sua política de arquivos em todos os arquivos no aplicativo ou em pastas específicas. Em **Aplicar a**, selecione **pastas selecionadas** ou **todos os arquivos, exceto as pastas selecionadas**, você será redirecionado para fazer logon no aplicativo de nuvem e, em seguida, adicionar as pastas relevantes.  
   
-7.  Selecione o **Método de inspeção de conteúdo**. O DLP interno permite filtrar os arquivos pelo conteúdo. Para verificar arquivos quanto ao conteúdo, selecione **DLP Interno**. Depois que a inspeção estiver habilitada, você poderá optar por usar expressões predefinidas ou pesquisar outras expressões personalizadas, seja com uma subcadeia de caracteres ou uma expressão regular própria.  
+7.  Selecione o **Método de inspeção de conteúdo**. O DLP interno permite filtrar os arquivos pelo conteúdo. Para verificar arquivos quanto ao conteúdo, selecione **DLP Interno**. Depois que a inspeção estiver habilitada, você poderá optar por usar expressões predefinidas ou pesquisar outras expressões personalizadas, seja com uma subcadeia de caracteres ou uma [expressão regular](working-with-the-regex-engine.md) própria.  
     Além disso, você pode especificar uma expressão regular para excluir um arquivo dos resultados. Isso será muito útil se você tiver um padrão de palavra-chave de classificação interno que você deseja excluir da política.  
-    Além disso, você pode decidir qual é o número mínimo de violações de conteúdo que deseja que correspondam antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.  
+    Você pode definir o número mínimo de violações de conteúdo que deseja corresponder antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.  
     Quando o conteúdo é comparado com a expressão selecionada, você pode escolher mascarar a correspondência em si dos logs e da notificação de violação. Quando marcado, o texto da violação será substituído por caracteres “X”. Lembre-se que os números são substituídos por caracteres “#” e nunca armazenados no Cloud App Security.  
   
 8.  Escolha as ações de **Governança** que você deseja que o Cloud App Security realize quando uma correspondência for detectada.  
@@ -113,9 +112,9 @@ Cada política é composta pelas seguintes partes:
     > [!NOTE]  
     >  Extensões estão disponíveis apenas na versão Cloud App Security Technical Preview.  
   
-    -   A inspeção de conteúdo pode ser executada por meio de mecanismos de terceiros para recursos antimalware ou de DLP aprimorados.  
+    -  A inspeção de conteúdo pode ser executada por meio de mecanismos de terceiros para recursos antimalware ou de DLP aprimorados.  
   
-    -   As ações de governança podem ser executadas por meio de mecanismos de terceiros para a imposição do controle de criptografia personalizado ou outros tipos de processamento de arquivo (por exemplo, aplicação de marca d’água personalizada).  
+    -  [As ações de governança](governance-actions.md) podem ser executadas por meio de mecanismos de terceiros para impor o controle de criptografia personalizado ou outros tipos de processamento de arquivo (por exemplo, aplicação de marca d’água personalizada).  
   
 ## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
@@ -125,6 +124,6 @@ Cada política é composta pelas seguintes partes:
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

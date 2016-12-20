@@ -1,5 +1,5 @@
 ---
-title: Configurar o Cloud Discovery | Microsoft Docs
+title: Implantar o Cloud Discovery | Microsoft Docs
 description: "Este tópico descreve o procedimento de configuração para colocar o Cloud Discovery em funcionamento."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: cfca549e1e16ca83972876626771a55d698530a2
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50
 
 
 ---
@@ -131,6 +131,6 @@ Para obter mais informações, consulte .
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

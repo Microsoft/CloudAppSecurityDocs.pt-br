@@ -1,11 +1,11 @@
 ---
-title: "Habilitar ações de visibilidade, proteção e governança instantâneas para seus aplicativos | Microsoft Docs"
-description: "Este tópico descreve o processo para habilitar os conectores de API para aplicativos na nuvem da sua organização."
+title: Conectar aplicativos | Microsoft Docs
+description: "Este tópico descreve o processo de conexão de aplicativos com conectores de API, para aplicativos na nuvem da sua organização."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
-ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
 
 
 ---
 
-# <a name="enable-instant-visibility-protection-and-governance-actions-for-your-apps"></a>Habilitar ações de visibilidade, proteção e governança instantâneas para seus aplicativos
+# <a name="connect-apps"></a>Conectar aplicativos 
 Os conectores de aplicativos aproveitam as APIs de provedores de aplicativo para proporcionar maior visibilidade e controle com o Cloud App Security sobre os aplicativos aos quais você se conecta.  
   
 O Cloud App Security aproveita as APIs fornecidas pelo provedor de nuvem, cada serviço tem sua própria estrutura e limitações de API. Ele trabalhou com os serviços para otimizar o uso das APIs de para garantir o melhor desempenho. Considerando as diferentes limitações que os serviços impõem sobre as APIs (como as limitações, limites de API, janelas de API de mudança de tempo dinâmicas etc.), os mecanismos do Cloud App Security aproveitam a capacidade permitida. Algumas operações, como a verificação de todos os arquivos no locatário, exigem uma grande quantidade de APIs e, portanto, são distribuídas por um período mais longo. Espere algumas que algumas políticas sejam executadas por várias horas ou vários dias.  
@@ -97,6 +97,8 @@ Para alguns aplicativos, pode ser necessário adicionar os seguintes endereços 
 -   Para o console:  
   
      104.42.231.28  
+
+- Para cada aplicativo que desejar conectar com a integração de API do Cloud App Security, recomendamos criar uma conta de serviço de administrador dedicada ao Cloud App Security.  
   
 > [!NOTE]  
 >  Para obter atualizações quando URLs e endereços IP forem alterados, assine o RSS conforme explicado em: [URLs e intervalos de endereços IP do Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
@@ -129,6 +131,6 @@ Para obter mais informações sobre o emparelhamento público, consulte [Circuit
    
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

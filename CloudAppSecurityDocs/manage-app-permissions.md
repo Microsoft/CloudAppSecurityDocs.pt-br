@@ -10,12 +10,12 @@ ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
+ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 208f50765f2559f45dbd4a11cfb4196982b61e74
-ms.openlocfilehash: 81a6663f16264177966492ac4a1ec9e00f6d1a76
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 
 
 ---
@@ -30,7 +30,7 @@ A guia **Permissões de aplicativo** exibe informações sobre permissões de ap
 
 Para acessar a guia de Permissões de aplicativo:
 
-1. No portal do Cloud App Security, clique em **Investigar** e em Aplicativos sancionados, selecione **Office 365**. 
+1. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**, selecione **Office 365**. 
 > [!Note]
 > Primeiro é necessário conectar o Cloud App Security com o Office 365 para trabalhar com Permissões do aplicativo.
 
@@ -115,6 +115,6 @@ Os filtros são aplicados automaticamente e a lista de aplicativos é atualizada
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

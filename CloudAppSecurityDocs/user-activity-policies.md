@@ -1,11 +1,11 @@
 ---
-title: "Políticas de atividades do usuário | Microsoft Docs"
-description: "Este tópico fornece instruções para criar e trabalhar com políticas de atividade do usuário."
+title: "Políticas de atividade | Microsoft Docs"
+description: "Este tópico fornece instruções para criar e trabalhar com políticas de atividade."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>Políticas de atividade de usuário
+# <a name="activity-policies"></a>Políticas de atividade
 As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.  
   
 Depois de definir uma política de detecção de atividades, ele começará a gerar alertas, os quais são gerados apenas em atividades que ocorrem depois da criação da política.
@@ -42,7 +42,7 @@ Para criar uma nova política de atividade, siga este procedimento:
 4.  Para definir quais ações ou outras métricas vão disparar essa política, trabalhe com os **filtros de atividade**.  
   
 5.  Em **Parâmetros de correspondência de atividade**, selecione se a violação da política será disparada quando uma única atividade corresponder aos filtros ou se uma violação será detectada apenas quando um número especificado de **Atividades repetidas** for detectado.  
-    Se você escolher **Atividade repetida**, defina as atividades que vão disparar o alerta: o número de atividades, período e se uma violação contará para um usuário em um aplicativo específico ou para o mesmo usuário com qualquer aplicativo.  
+    Se você escolher **Atividade repetida**, será possível definir **Agrupar atividades correspondentes por aplicativo**. Isso vai disparar uma correspondência de política apenas quando as atividades repetidas ocorrerem no mesmo aplicativo (por exemplo, cinco downloads do Box).  
   
 6.  Configure as **Ações** que devem ser executadas quando uma correspondência for encontrada.  
   
@@ -133,6 +133,6 @@ Cada política é composta pelas seguintes partes:
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

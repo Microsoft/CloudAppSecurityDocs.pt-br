@@ -88,6 +88,6 @@ Defina um **Limite diário de alertas** e selecione se o alerta será enviado co
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

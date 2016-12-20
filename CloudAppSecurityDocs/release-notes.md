@@ -5,22 +5,82 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
+ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 
 
 ---
 
 # <a name="release-notes"></a>Notas de versão
+
+
+## <a name="cloud-app-security-release-85"></a>Cloud App Security versão 85
+Lançado em 27 de novembro de 2016
+
+**Novos recursos**
+- Foi feita uma distinção entre aplicativos sancionados e aplicativos conectados. Sancionar e não sancionar agora é uma marca que pode ser aplicada a aplicativos descobertos e a qualquer aplicativo no catálogo de aplicativos. Aplicativos conectados são aqueles que você conectou usando o conector de API para aumentar a visibilidade e o controle. Agora você pode marcar aplicativos como sancionados ou não sancionados, ou conectá-los usando o conector de aplicativos, quando estiver disponível. 
+ 
+- Como parte dessa alteração, a página Aplicativos sancionados foi substituída por uma página reformulada chamada **Aplicativos conectados** que exibe dados de status sobre os conectores. 
+ 
+- Os coletores de log são acessados com mais facilidade em suas próprias linhas no menu **Configurações** em **Fontes**. 
+- Ao criar um filtro de política de atividades, você pode reduzir os falsos positivos optando por ignorar atividades repetidas quando elas forem executadas no mesmo objeto de destino pelo mesmo usuário, por exemplo, se houver várias tentativas de baixar o mesmo arquivo pela mesma pessoa não será disparado um alerta. 
+- Foram feitas melhorias na gaveta de atividades. Agora, ao clicar em um objeto de atividade na gaveta de atividades, você pode fazer uma busca detalhada para obter mais informações.
+
+**Melhorias**
+- Foram feitas melhorias no mecanismo de detecção de anomalias, incluindo os alertas de viagem impossível, para os quais as informações de IP agora estão disponíveis na descrição do alerta.
+- Foram feitas melhorias nos filtros complexos para habilitar a adição do mesmo filtro mais de uma vez para ajustar os resultados filtrados. 
+- As atividades de arquivos e pastas no Dropbox foram separadas para melhorar a visibilidade. 
+  
+**Correções de bugs**
+- Foi corrigido um bug no mecanismo de alertas do sistema que criava falsos positivos.
+
+## <a name="cloud-app-security-release-84"></a>Cloud App Security versão 84
+Lançada em 13 de novembro de 2016
+
+**Novos recursos**
+-   O Cloud App Security agora dá suporte à Proteção de Informações do Microsoft Azure incluindo a integração aprimorada e provisionamento automático. Você pode filtrar os Arquivos e definir políticas de arquivo usando a Classificação de marca segura e definir o rótulo de classificação que deseja exibir. Os rótulos também indicam se a classificação foi definida por alguém na sua organização ou por pessoas de outro locatário (Externo). Você também pode definir políticas de atividade com base nos rótulos de classificação da Proteção de Informações do Azure e habilitar a verificação automática para rótulos de classificação no Office 365. Para obter mais informações sobre como aproveitar esse novo recurso, consulte [Integração com o Proteção de Informações do Azure](azip-integration.md).
+ 
+**Melhorias**
+-   Foram feitas melhorias para o log de atividades do Cloud App Security: 
+   -    Eventos do Office 365 do Centro de conformidade e segurança agora estão integrados com o Cloud App Security e são visíveis no **Log de atividade**.
+   -    Todas as atividades do Cloud App Security são registradas no log de atividades do Cloud App Security como atividades administrativas.
+-   Para ajudá-lo a investigar os alertas relacionados a arquivos, em cada alerta que resultar de uma política de arquivo, agora você pode exibir a lista de atividades que foram executadas no arquivo correspondente.
+-   O algoritmo de viagem impossível no mecanismo de detecção de anomalias foi aprimorado para fornecer um melhor suporte para locatários pequenos. 
+ 
+**Pequenos aperfeiçoamentos**
+-   O **Limite de exportação de atividade** foi ampliado para 10.000. 
+-   Ao criar um **relatório de instantâneo** no processo de upload do log manual do Cloud Discovery, você agora recebe uma estimativa precisa de quanto tempo levará o processamento do log. 
+-   Em uma política de arquivo, a ação de governança **Remover colaborador** agora funciona em grupos.
+-   Pequenos aperfeiçoamentos foram feitos na página **Permissões de aplicativo**. 
+-   Quando mais de 10.000 usuários tiverem permissões para um aplicativo que se conecta ao Office 365, a lista é carregada lentamente. Isso foi corrigido.
+-   Atributos adicionais foram adicionados ao **Catálogo de aplicativos** sobre a indústria de cartões de pagamento.
+
+
+## <a name="cloud-app-security-release-83"></a>Cloud App Security versão 83
+Lançado em 30 de outubro de 2016
+
+**Novos recursos**
+-   Para simplificar a filtragem no [log de atividades](activity-filters.md) e [arquivo de log](file-filters.md), filtros semelhantes foram consolidados. Use os filtros de atividade: objeto Atividade, Endereço IP e Usuário. Use o filtro de arquivo Colaboradores para localizar exatamente o que você precisa.
+-   Na gaveta do log de atividades, em **Origem**, você pode clicar no link de **Exibir dados brutos** para baixar os dados brutos usados para gerar o log de atividades, de modo a analisar mais detalhadamente os eventos de aplicativo. 
+-   Adição de suporte para atividades extras de logon no Okta. [Visualização privada]
+-   Adição de suporte para atividades extras de logon no Salesforce. 
+
+**Melhorias**
+-   Melhor utilização de relatórios de instantâneo e solução de problemas do Cloud Discovery.
+-   Maior visibilidade da lista de alertas em vários aplicativos.
+-   Melhor utilização na criação de novos relatórios contínuos do Cloud Discovery.
+-   Melhor utilização do log Governança.
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Cloud App Security versão 82
 Lançado em 9 de outubro de 2016
@@ -198,6 +258,6 @@ Lançamento: 15 de maio de 2016
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
