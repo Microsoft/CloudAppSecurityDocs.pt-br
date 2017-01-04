@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
-ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
+ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
+ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
 
 
 ---
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 É importante carregar um log manualmente e permitir que o Cloud App Security analise-o antes de tentar usar o coletor de logs automático.
+Se você ainda não tiver um log e desejar ver um exemplo da aparência do seu log, siga o procedimento abaixo e baixe um arquivo de log de exemplo para ver qual deve ser a aparência do seu log.
+
 
 Para criar um relatório de instantâneo:
   
@@ -29,19 +31,22 @@ Para criar um relatório de instantâneo:
   
 2.  No portal do Cloud App Security, clique em **Descobrir** e **Criar novo relatório de instantâneo**.  
   
-     ![Criar novo relatório de instantâneo](./media/create-new-snapshot-report.png)
+   ![Criar novo relatório de instantâneo](./media/create-new-snapshot-report.png)
      
-      
 3.  Insira um **Nome do relatório** e uma **Descrição**
   
+     ![Novo relatório de instantâneo](./media/new-snapshot-report.png) 
+
 4.  Selecione a **Fonte de dados** da qual você deseja carregar os arquivos de log.  
   
+5. Verifique o formato do seu log para certificar-se de que ele está formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e Verificar** e, em seguida, clique em **Baixar Log de Exemplo**. Em seguida, compare seu log com o exemplo fornecido para verificar se ele é compatível. 
+
+ ![Verifique o formato do seu log](./media/cloud-discovery-snapshot-verify.png)  
+
 5.  **Escolha os logs de tráfego** que você deseja carregar. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados.  
   
 6.  Clique em **Criar**.  
-  
-     ![Novo relatório de instantâneo](./media/new-snapshot-report.png) 
-  
+
 7.  Após o upload ser concluído, a mensagem de status será exibida no canto superior direito da tela avisando que o log foi carregado com êxito.  
   
 8.  Depois de carregar os arquivos de log, levará algum tempo para que eles possam ser analisados e examinados.  
@@ -68,6 +73,6 @@ Após o processamento dos arquivos de log ser concluído, você receberá um ema
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
