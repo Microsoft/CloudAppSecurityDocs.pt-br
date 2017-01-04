@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
-ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 0432ccf823234617bb4c8466f88ca8f385704928
 
 
 ---
@@ -76,10 +76,12 @@ A verificação automática permite pesquisar rótulos de classificação de Pro
 Para habilitar varreduras automáticas de marcas de arquivos para novos arquivos:
 
 1. No Cloud App Security, vá para a página **Configurações gerais**.
-2. Em configurações de segurança do Azure selecione **Examinar automaticamente os arquivos para rótulos de classificação da Proteção de Informações do Azure**. Depois que ela for habilitada, todos os novos arquivos adicionados ao Office 365, não apenas aqueles que têm o conteúdo examinado por uma política de arquivo, terão rótulos de arquivo examinados.
+2. Na Proteção de Informações do Azure, selecione **Examinar arquivos automaticamente para rótulos de classificação da Proteção de Informações do Azure**. Depois que ela for habilitada, todos os novos arquivos adicionados ao Office 365, não apenas aqueles que têm o conteúdo examinado por uma política de arquivo, terão rótulos de arquivo examinados.
 
 ![habilitar a Proteção de Informações do Azure](./media/enable-azip.png)
- 
+
+> [!NOTE] 
+> A verificação automática não verificará arquivos existentes até que eles sejam modificados novamente. Para verificar rótulos de classificação da Proteção de Informações do Azure nos arquivos existentes, crie uma nova **Política de Arquivo** sem filtros, marque a opção **Inspeção de Conteúdo** e salve a política.
 
 ## <a name="internal-and-external-tags"></a>Rótulos internos e externos
 Por padrão, o Cloud App Security examinará rótulos de classificação que foram definidos em sua organização, bem como aqueles externos que foram definidos por outras organizações. 
@@ -128,6 +130,6 @@ Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.c
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

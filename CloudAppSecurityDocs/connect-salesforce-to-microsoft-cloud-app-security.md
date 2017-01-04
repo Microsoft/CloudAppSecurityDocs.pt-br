@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
+ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
+ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
 
 
 ---
@@ -42,25 +42,25 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     -   Em **Gerenciar Usuários**, vá para a página **Perfis**.  
   
-         ![perfis manageusers do salesforce](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
+         ![gerenciar perfis de usuário do salesforce](./media/salesforce-manageusers-profiles.png "gerenciar perfis de usuário do salesforce")  
   
     -   Escolha o perfil que você está usando para implantar o Cloud App Security e clique em **Editar**. Este é o perfil a ser usado para a conta de serviço do Cloud App Security para configurar o Conector de aplicativo.  
   
-         ![editar perfil do salesforce](./media/salesforce-edit-profile.png "salesforce edit profile")  
+         ![editar perfil do salesforce](./media/salesforce-edit-profile.png "editar perfil do salesforce")  
   
     -   Certifique-se de que a caixa de seleção **API Habilitada** esteja habilitada. Se não estiver selecionada, poderá ser necessário entrar em contato com a Salesforce para adicioná-la à sua conta.  
   
-         ![api do salesforce habilitada](./media/salesforce-api-enabled.png "salesforce api enabled")  
+         ![api do salesforce habilitada](./media/salesforce-api-enabled.png "api do salesforce habilitada")  
   
 3.  Se sua organização tiver **Salesforce CRM Content** habilitado, certifique-se de que a conta administrativa atual o tenha habilitado também.  
   
     1.  Vá para a página de configuração do Salesforce.  
   
-         ![configuração do salesforce](./media/salesforce-setup.png "salesforce setup")  
+         ![instalação do salesforce](./media/salesforce-setup.png "instalação do salesforce")  
   
     2.  No menu lateral, selecione **Gerenciar Usuários** e clique em **Usuários**.  
   
-         ![usuários do menu do salesforce](./media/salesforce-menu-users.png "salesforce menu users")  
+         ![usuários do menu do salesforce](./media/salesforce-menu-users.png "usuários do menu do salesforce")  
   
     3.  Selecione o usuário administrativo atual para seu usuário do Cloud App Security dedicado.  
   
@@ -68,7 +68,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
          Se não estiver selecionada, clique em **Editar** e, em seguida, marque a caixa de seleção.  
   
-         ![usuário do conteúdo crm do salesforce](./media/salesforce-crm-content-user.png "salesforce crm content user")  
+         ![usuário do conteúdo crm do salesforce](./media/salesforce-crm-content-user.png "usuário do conteúdo crm do salesforce")  
   
     5.  Clique em **Salvar**.  
   
@@ -76,13 +76,13 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 5.  Na página **Conectores de aplicativos**, clique no botão de mais antes de **Salesforce**.  
   
-     ![conectar o salesforce](./media/connect-salesforce.png "connect salesforce")  
+     ![conectar salesforce](./media/connect-salesforce.png "conectar salesforce")  
   
 6.  Na página de configurações do Salesforce, na guia API, clique em **Seguir este link**, dependendo de qual instância que você deseja instalar.  
   
 7.  Isso abre a página de logon do Salesforce. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Salesforce da sua equipe.  
   
-     ![logon do salesforce](./media/salesforce-logon.png "salesforce logon")  
+     ![logon do salesforce](./media/salesforce-logon.png "logon do salesforce")  
   
 8.  O Salesforce perguntará se você deseja permitir que o Cloud App Security acesse o log de atividades e as informações da sua equipe e realize quaisquer atividades como qualquer membro da equipe. Para continuar, clique em **Permitir**.  
   
@@ -95,7 +95,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
      O teste pode levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Concluído**.  
   
   
-Após conectar o SalesForce, você receberá Eventos da seguinte maneira: Gatilhos a partir do momento da conexão, Eventos de logon e Trilha de Auditoria de Instalação para os 60 dias antes da conexão, EventMonitoring de 30 dias ou 1 dia anterior, dependendo da sua licença do SalesForce EventMonitoring.
+Após conectar o Salesforce, você receberá Eventos da seguinte maneira: gatilhos a partir do momento da conexão, Eventos de logon e Trilha de Auditoria de Instalação por 60 dias antes da conexão, EventMonitoring 30 dias ou um dia antes, dependendo da sua licença do Salesforce EventMonitoring.
   
 ## <a name="see-also"></a>Veja também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
@@ -105,6 +105,6 @@ Após conectar o SalesForce, você receberá Eventos da seguinte maneira: Gatilh
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

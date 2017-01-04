@@ -14,8 +14,8 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 12d9ef74f923c430fbfb547635786dc4c4300499
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
 
 
 ---
@@ -76,7 +76,7 @@ Para criar uma nova política de arquivos, siga este procedimento:
 7.  Selecione o **Método de inspeção de conteúdo**. O DLP interno permite filtrar os arquivos pelo conteúdo. Para verificar arquivos quanto ao conteúdo, selecione **DLP Interno**. Depois que a inspeção estiver habilitada, você poderá optar por usar expressões predefinidas ou pesquisar outras expressões personalizadas, seja com uma subcadeia de caracteres ou uma [expressão regular](working-with-the-regex-engine.md) própria.  
     Além disso, você pode especificar uma expressão regular para excluir um arquivo dos resultados. Isso será muito útil se você tiver um padrão de palavra-chave de classificação interno que você deseja excluir da política.  
     Você pode definir o número mínimo de violações de conteúdo que deseja corresponder antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.  
-    Quando o conteúdo é comparado com a expressão selecionada, você pode escolher mascarar a correspondência em si dos logs e da notificação de violação. Quando marcado, o texto da violação será substituído por caracteres “X”. Lembre-se que os números são substituídos por caracteres “#” e nunca armazenados no Cloud App Security.  
+    Quando o conteúdo é comparado com a expressão selecionada, você pode escolher mascarar a correspondência em si dos logs e da notificação de violação. Quando marcado, o texto da violação será substituído por caracteres “X”. Lembre-se que os números são substituídos por caracteres “#” e nunca armazenados no Cloud App Security.  Também é possível selecionar a opção de remover a máscara dos quatro últimos caracteres de uma violação. Por padrão, as violações são completamente mascaradas e mostradas em seu contexto exibindo 40 caracteres antes e após a violação. Esta opção removerá a máscara dos quatro últimos caracteres da violação em si.
   
 8.  Escolha as ações de **Governança** que você deseja que o Cloud App Security realize quando uma correspondência for detectada.  
   
@@ -88,7 +88,7 @@ Para criar uma nova política de arquivos, siga este procedimento:
 >   
 >  Para obter orientação, você pode usar o botão **Editar e visualizar resultados** na seção Filtros.  
   
-![edição de política de arquivo e visualizar os resultados](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![editar a política do arquivo e visualizar os resultados](./media/file-policy-edit-and-preview-results.png "editar a política do arquivo e visualizar os resultados")  
   
 10. Para exibir correspondências de política de arquivo, os arquivos com suspeita de violar a política, clique em **Controle** e **Políticas**. Filtre os resultados para exibir somente as políticas do arquivo usando o filtro **Tipo** na parte superior. Para obter mais informações sobre as correspondências para cada política, clique em uma política. Isso exibe os arquivos de Correspondência agora para a política. Clique na guia **histórico** para ver um histórico de até 6 meses anteriores de arquivos que correspondem à política.     
   
@@ -101,12 +101,10 @@ Cada política é composta pelas seguintes partes:
   
 -   Filtros de arquivos – permitem criar condições muito granulares com base nos metadados.  
   
--   Inspeção de conteúdo – permite restringir a política, com base nos resultados do mecanismo de DLP.  
+-   Inspeção de conteúdo – permite restringir a política, com base nos resultados do mecanismo de DLP. É possível incluir uma expressão personalizada ou uma expressão predefinida. As exclusões podem ser definidas, e é possível escolher o número de correspondências. Também é possível usar a anonimização para mascarar o nome de usuário. 
   
 -   Ações – a política fornece a um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são encontradas.  Essas são divididas em ações de colaboração, ações de segurança e ações de investigação.
 
-![menu suspenso de governança de arquivos](./media/file-governance-drop-down.png)
-  
 -   Extensões  
   
     > [!NOTE]  
@@ -124,6 +122,6 @@ Cada política é composta pelas seguintes partes:
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

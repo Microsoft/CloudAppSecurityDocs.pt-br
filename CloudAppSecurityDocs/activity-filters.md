@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,12 +14,20 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
 
 
 ---
 # <a name="activities"></a>Atividades
+Para oferecer proteção de dados, o Cloud App Security proporciona visibilidade sobre todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. É possível criar políticas com base nas atividades e, em seguida, definir sobre o que você deseja ser alertado. Também é possível pesquisar atividades executadas em determinados arquivos. O tipo de atividades e as informações que recebemos para cada atividade dependem do aplicativo e do tipo de dados que ele pode fornecer. 
+
+Por exemplo, é possível usar o log de **atividades** para localizar usuários na sua organização que estejam usando sistemas operacionais ou navegadores desatualizados da seguinte maneira: depois de conectar o Office 365, o Google Apps, o Box, o Dropbox, o Okta, o Amazon Web Services ou o Salesforce ao Cloud App Security na página do **Log de atividades**, use o filtro avançado e selecione **Marca do agente do usuário**. Em seguida, selecione **Navegador desatualizado** ou **Sistema operacional desatualizado**. Se você vir que há arquivos **confidenciais** compartilhados fora da sua organização, poderá clicar em **Nova política da pesquisa** para criar uma política de atividade que detecta navegadores e sistemas operacionais desatualizados e notificar automaticamente os usuários.
+
+ ![Exemplo de navegador desatualizado de atividade](media/activity-outdated-example.png)
+
+ 
+
 O log de atividades pode ser filtrado para permitir que você encontre atividades específicas. O filtro básico fornece excelentes ferramentas para começar a usar a filtragem de suas atividades.
 
  ![filtro básico do log de atividades](media/activity-log-filter-basic.png)
@@ -33,7 +41,8 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
   
 -   ID da Atividade ‑ Pesquisa apenas atividades específicas por sua ID. Esse filtro é muito útil quando você conecta MCAS ao seu SIEM (usando o agente SIEM) e deseja investigar ainda mais os alertas no portal do MCAS.  
   
--   Objetos de atividade — procure arquivos, pastas ou URLs de site, ou objetos de destino (arquivo/pasta).
+-   Objetos de atividade – pesquise os objetos nos quais a atividade foi executada. Este filtro se aplica ao arquivo, à pasta, ao usuário ou aos objetos do aplicativo.
+    - ID de objeto de atividade – a ID do objeto (arquivo, pasta, usuário ou ID do aplicativo).
     - Arquivo, pasta ou URL de site — permite que você selecione arquivos, pastas e URLs que começam com uma cadeia de caracteres específica.
     - Objeto de destino (arquivo/pasta) — permite que você selecione uma pasta ou um arquivo específico. 
     
@@ -95,7 +104,7 @@ Você pode exibir mais informações sobre cada atividade clicando na própria a
 - Local: clique no local para exibir o local no Bing Mapas.
 - Marcas e categoria de endereço IP: clique na marca de IP para exibir a lista de marcas de IP encontradas nessa atividade. Em seguida, você pode filtrar por todas as atividades correspondentes nessa marca.    
 
-![gaveta atividade](./media/activity-drawer.png "activity drawer")  
+![gaveta de atividades](./media/activity-drawer.png "gaveta de atividades")  
   
 Para obter uma lista de ações de governança disponíveis, consulte [Parâmetros de correspondência de atividade](governance-actions.md#activity-match-parameters).
 
@@ -108,6 +117,6 @@ Para obter uma lista de ações de governança disponíveis, consulte [Parâmetr
   
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

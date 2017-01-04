@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37661b255147b3f43c5bfd8b5f6459bd4c25ac95
-ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
 
 
 ---
@@ -115,7 +115,7 @@ Para criar uma política com base nos resultados da investigação, execute o se
   
 2.  Use os filtros na parte superior da página para limitar os resultados da pesquisa à área suspeita, por exemplo, na página Log de atividades, clique em **Atividade** e selecione **Logon de administrador**. Em seguida, em **Endereço IP**, selecione **Categoria** e defina o valor para não incluir as categorias de endereço IP que você criou para seus domínios reconhecidos, como os endereços IP de administração, corporativos e de VPN.  
   
-     ![](./media/create-file-from-investigation.png)  
+     ![Criar arquivo com base na investigação](./media/create-file-from-investigation.png)  
   
 3.  No canto superior direito do console, clique em **Nova política da pesquisa**![](./media/new-policy-from-search-button.png)  
   
@@ -142,7 +142,19 @@ Para criar uma política com base nos resultados da investigação, execute o se
 >   
 >  [Políticas do Cloud Discovery](cloud-discovery-policies.md)  
   
+## <a name="enable-and-disable-policies"></a>Habilitar e desabilitar políticas
 
+Depois de criar uma política, é possível habilitá-la ou desabilitá-la. Isso evita a necessidade de excluir uma política após criá-la a fim de a interromper. Em vez disso, se por alguma razão você desejar interromper a política, desabilite-a até querer habilitá-la novamente.
+
+- Para habilitar uma política, na página **Política**, clique nos três pontos no final da linha da política que você deseja habilitar e selecione **Habilitar**. 
+
+![Habilitar política](./media/enable-policy.png)
+
+- Para desabilitar uma política, na página **Política**, clique nos três pontos no final da linha da política que você deseja desabilitar e selecione **Desabilitar**.
+
+![Desabilitar política](./media/disable-policy.png)
+
+Por padrão, depois de criar uma nova política, ela é habilitada.
 
 ## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
@@ -151,6 +163,6 @@ Para criar uma política com base nos resultados da investigação, execute o se
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
