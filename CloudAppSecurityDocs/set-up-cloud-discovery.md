@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50
+ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
+ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
 
 
 ---
@@ -28,6 +28,10 @@ O **Catálogo de aplicativos de nuvem** classifica o risco para seus aplicativos
 3.  Análise contínua da equipe de analistas de nuvem do Cloud App Security (para atributos como criptografia em repouso).
 4.  Solicitações de revisão baseada no cliente, com base nas solicitações de envio de cliente para alterações no Catálogo de aplicativos de nuvem. Todas as solicitações são revisadas por nossa equipe de analistas de nuvem e atualizadas com base em suas descobertas.
   
+## <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
+
+A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Para obter mais informações, consulte [Anonimização do Cloud Discovery](cloud-discovery-anonymizer.md).
+
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Relatórios contínuo e de instantâneo de avaliação de riscos 
 
 Há dois tipos de relatórios que você pode gerar: 
@@ -50,7 +54,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 >[!NOTE]
 >Os dados de relatórios contínuos são analisados duas vezes por dia.
  
-## <a name="using-traffic-logs-for-cloud-discovery"></a>Usando os logs de tráfego para o Cloud Discovery
+## <a name="using-traffic-logs-for--cloud-discovery"></a>Usando os logs de tráfego para o Cloud Discovery
 O Cloud Discovery utiliza os dados em seus logs de tráfego. Quanto mais detalhado o log, melhor é a visibilidade obtida. O Cloud Discovery requer dados de tráfego da Web com os seguintes atributos:
 - Data da transação
 - IP de Origem
@@ -86,6 +90,7 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewall da série Palo Alto
 - Sophos SG
+- Sophos Cyberoam
 - Squid (Comum)
 - Squid (Nativo)
 - Websense – Soluções de segurança da Web – Relatório detalhado de investigação (CSV)
@@ -119,8 +124,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |Zscaler|**Sim**|Não|**Sim**|Não|**Sim**|Não|
 
 
- 
-Para obter mais informações, consulte . 
+## <a name="see-also"></a>Veja também
  
 [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
@@ -131,6 +135,6 @@ Para obter mais informações, consulte .
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

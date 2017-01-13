@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
+ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
+ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
 
 
 ---
@@ -23,17 +23,17 @@ ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 # <a name="files"></a>Arquivos
 
 
-Para oferecer proteção de dados, o Cloud App Security proporciona visibilidade de todos os arquivos de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security examina todos os arquivos, por exemplo, todos os arquivos armazenados no OneDrive e no Salesforce. Assim, o Cloud App Security examinará novamente cada arquivo sempre que ele for modificado – a modificação pode ser em conteúdo, metadados ou permissões de compartilhamento. Os tempos de verificação dependem do número de arquivos armazenados em seu aplicativo. Use a página **Arquivos** para ter controle sobre seus dados e para ajudá-lo a compreender quais políticas você deve criar. Também é possível usar a página **Arquivos** para filtrar os arquivos a fim de investigar qual tipo de dados está salvo em seus aplicativos de nuvem. 
+Para oferecer proteção de dados, o Cloud App Security proporciona visibilidade de todos os arquivos de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security examina todos os arquivos, por exemplo, todos os arquivos armazenados no OneDrive e no Salesforce. Assim, o Cloud App Security examinará novamente cada arquivo sempre que ele for modificado – a modificação pode ser em conteúdo, metadados ou permissões de compartilhamento. Os tempos de verificação dependem do número de arquivos armazenados em seu aplicativo. Também é possível usar a página **Arquivos** para filtrar os arquivos a fim de investigar qual tipo de dados está salvo em seus aplicativos de nuvem. 
 
-Por exemplo, é possível usar a página **Arquivos** para proteger arquivos compartilhados com fontes externas rotulados como **confidenciais**, da seguinte maneira: depois de conectar o Office 365, o Google Apps, o Box, o Dropbox ou o Salesforce ao Cloud App Security, integre-se à Proteção de Informações do Azure. Em seguida, na página **Arquivos**, filtre os arquivos rotulados como **confidenciais**. Se você vir que há arquivos **confidenciais** compartilhados fora da sua organização, poderá criar uma política de arquivo que detecta arquivos **confidenciais** com níveis de acesso incorretos aplicados a eles e aplicar ações de governança automática a eles, como **Colocar na quarentena do usuário**, para colocar o arquivo em quarentena e impedir a perda de dados em sua organização.
+Por exemplo, é possível usar a página **Arquivos** para proteger arquivos compartilhados externamente rotulados como **confidenciais** da seguinte maneira: depois de conectar um aplicativo ao Cloud App Security, é possível integrar-se à Proteção de Informações do Azure. Em seguida, na página **Arquivos**, filtre os arquivos rotulados como **confidenciais**. Se você perceber que há arquivos **confidenciais** compartilhados fora da sua organização aplicando o filtro **Colaboradores** para excluir seu domínio, você poderá criar uma política de arquivo que detecta arquivos **confidenciais** que têm níveis de acesso incorretos aplicados a eles e aplicar ações de governança automática, como **Remover colaboradores externos** e **Enviar resumo de correspondência de política ao proprietário do arquivo** para evitar a perda de dados para sua organização.
 
  ![Filtro de arquivo confidencial](media/file-filter-confidential.png)
 
-Este é outro exemplo em que é possível usar a página **Arquivos** para proteger arquivos compartilhados com contas pessoais ou domínios não autorizados: depois de conectar o Office 365, o Google Apps, o Box ou o Dropbox ao Cloud App Security, na página **Arquivos**, filtre os arquivos cujo nível de acesso é **Interno** ou **Particular**. Se você vir que há arquivos **confidenciais** compartilhados com contas pessoais ou domínios externos, poderá criar uma política de arquivo que detecta arquivos **confidenciais** com níveis de acesso incorretos aplicados a eles. Clique em **Nova política da pesquisa** e aplique ações de governança automática a eles, como **Remover usuários externos**, para impedir a perda de dados em sua organização.
+Veja outro exemplo de como você pode usar a página **Arquivos**. Para verificar que ninguém na sua organização esteja compartilhando externa ou publicamente arquivos que não foram modificados nos últimos seis meses: depois de conectar um aplicativo ao Cloud App Security, na página **Arquivos**, filtre os arquivos cujo nível de acesso é **Externo** ou **Público** e defina a data da **Última modificação** para seis meses atrás. Você pode criar uma política de arquivo que detecta os arquivos públicos obsoletos clicando em **Nova política de pesquisa** e aplicar ações de controle automático a eles, como **Remover usuários externos** para evitar a perda de dados para sua organização.
 
- ![Filtro de arquivo não autorizado](media/file-filter-unauth.png)
+ ![Filtro de arquivo obsoleto externo](media/file-example-stale-external.png)
 
-O log Arquivos pode ser filtrado para permitir que você encontre arquivos específicos. O filtro básico fornece excelentes ferramentas para começar a usar a filtragem de seus arquivos.
+O filtro básico fornece excelentes ferramentas para começar a usar a filtragem de seus arquivos.
 
  ![filtro básico do log arquivos](media/file-log-filter-basic.png)
 
@@ -134,6 +134,6 @@ Para obter uma lista de ações de governança disponíveis, consulte [Ações d
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 
