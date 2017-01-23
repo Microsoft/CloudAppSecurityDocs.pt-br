@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
+ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
+ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
 
 
 ---
@@ -77,13 +77,12 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 |**Atividade do usuário**|✔*|✔|✔|✔ – requer Google Unlimited|Parcial|Com suporte com o Salesforce Shield|✔|Não Aplicável|  
 |**Atividade administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|  
 |**Verificação de arquivo periódica**|✔|✔|Não Aplicável|✔|✔|✔|✔|Em breve|  
-|**Verificação de arquivo quase em tempo real**|Em breve|✔|Não Aplicável|✔ – requer Google Unlimited|||Em breve||  
+|**Verificação de arquivo quase em tempo real**|✔|✔|Não Aplicável|✔ – requer Google Unlimited|||Em breve||  
 |**Controle de compartilhamento**|✔|✔|Não Aplicável|✔|Não Aplicável||✔||  
 |**Quarentena**|✔|✔|Não Aplicável|Em breve|||Em breve||  
 |**Exibir permissões de aplicativo**|✔|Sem suporte pelo provedor|Não Aplicável|✔||✔|Sem suporte pelo provedor||  
 |**Revogar permissões de aplicativo**|✔||Não Aplicável|✔||✔|Não Aplicável||  
   
-\* O Conector de Aplicativos do Office 365 inclui atividades de administração para o Exchange Online. Para adicionar a atividade do usuário para o Exchange Online, você precisará implantar o conector do Exchange Online separadamente.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
 Para alguns aplicativos, pode ser necessário adicionar os seguintes endereços IP à lista de permissões para permitir que Cloud App Security colete logs e forneça acesso para o console do Cloud App Security:  
@@ -131,6 +130,6 @@ Para obter mais informações sobre o emparelhamento público, consulte [Circuit
    
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

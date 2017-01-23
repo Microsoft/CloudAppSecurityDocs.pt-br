@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,14 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: 57ba1ea49d009dd10797609885463948f359e11e
+ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
+ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
 
 
 ---
 
 # <a name="deploy-cloud-app-security"></a>Implantar o Cloud App Security
-O Cloud App Security pode ajudá-lo a aproveitar os benefícios de aplicativos de nuvem, mas mantém o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Cloud App Security.  
+O Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Cloud App Security.  
 
 Sua organização deve ter uma licença para usar o Cloud App Security. Para obter mais informações, consulte a seção de recursos de licenciamento em [Como comprar o Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security).  
 
@@ -47,9 +47,9 @@ Sua organização deve ter uma licença para usar o Cloud App Security. Para obt
 
 Para acessar o portal do Cloud App Security, acesse [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
   
-Como alternativa, você pode acessar o portal por meio do **Centro de Administração do Office 365** clicando no ícone dos Centros de administração ![ícone dos centros de administração do O365](./media/o365-admin-centers-icon.png "O365 admin centers icon"), seguido por **Cloud App Security**.  
+Como alternativa, você pode acessar o portal por meio do **Centro de administração do Office 365** clicando no ícone dos Centros de administração ![ícone dos Centros de administração do O365](./media/o365-admin-centers-icon.png "ícone dos Centros de administração do O365") seguido por **Cloud App Security**.  
   
-     ![Access from O365](./media/access-from-o365.png "Access from O365")  
+![Acesso do O365](./media/access-from-o365.png "Acesso do O365")  
   
 
 
@@ -167,6 +167,6 @@ Os clientes Premier também podem escolher o Cloud App Security diretamente no [
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

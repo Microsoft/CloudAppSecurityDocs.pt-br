@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
 
 
 ---
@@ -35,7 +35,7 @@ Para criar uma nova política de atividade, siga este procedimento:
   
 2.  Clique em **Criar política** e selecione **Política de atividade**.  
   
-     ![menu de política de atividade](./media/activity-policy-menu.png "activity policy menu")  
+     ![menu de política de atividade](./media/activity-policy-menu.png "menu de política de atividade")  
   
 3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
@@ -54,13 +54,13 @@ Veja esses exemplos:
   
      No campo **Filtros de atividade**, configure os parâmetros para os quais o alerta será disparado.  
   
-     ![exemplo de política de várias tentativas de logon com falha](./media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")  
+     ![exemplo de política de falha no logon após várias tentativas](./media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de falha no logon após várias tentativas")  
   
 -   Alta taxa de downloads  
   
      Você pode definir a política para que você receba um alerta quando houve um nível inesperado ou não característico de atividade de download. Para configurar uma política assim, nos parâmetros **Taxa**, escolha os parâmetros para disparar o alerta.  
   
-     ![exemplo de alta taxa de downloads](./media/high-download-rate-example.png "high download rate example")  
+     ![exemplo de alta taxa de downloads](./media/high-download-rate-example.png "exemplo de alta taxa de downloads")  
   
 ## <a name="anomaly-detection"></a>Detecção de anomalias  
 Depois que sua organização estiver protegida pelo Cloud App Security, todas as atividades de nuvem serão pontuadas de acordo com vários fatores de risco predefinidos. O Cloud App Security examina cada sessão do usuário na nuvem e, em seguida, considera os fatores de risco definidos aqui para alertar você quando acontecer algo que seja diferente da linha de base da sua organização ou da atividade regular do usuário. A página de política de detecção de anomalias permite configurar e personalizar quais famílias de fatores de risco serão consideradas no processo de pontuação de risco. As políticas podem ser aplicadas de forma diferente para diferentes usuários, locais e setores organizacionais. Por exemplo, você pode criar uma política que o alerta quando os membros da sua equipe de TI estão ativos de fora do escritório.  
@@ -71,7 +71,7 @@ Para configurar uma política de detecção de anomalias:
   
 2.  Clique em **Criar política** e selecione a política de **Detecção de anomalias**.  
   
-     ![Menu de política de detecção de anomalias](./media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
+     ![Menu de política de detecção de anomalias](./media/anomaly-detection-policy-menu.png "Menu de política de detecção de anomalias")  
   
 3.  Preencha o nome e a descrição da política e continue para o campo **Filtros de atividade**, no qual é possível escolher a atividade à qual deseja aplicar a política.  
   
@@ -109,7 +109,7 @@ Para configurar uma política de detecção de anomalias:
   
      O valor de sensibilidade determinará quantos alertas semanais serão disparados em média para cada 1.000 usuários.  
   
-     ![IPs de detecção de anomalias](./media/anomaly-detection-ips.png "anomaly detection IPs")  
+     ![IPs de detecção de anomalias](./media/anomaly-detection-ips.png "IPs de detecção de anomalias")  
   
 8.  Clique em **Criar**.  
  
@@ -122,7 +122,9 @@ Cada política é composta pelas seguintes partes:
   
 -   Filtros de atividade – permitem criar condições muito granulares com base nos metadados.  
   
--   Parâmetros de correspondência de atividade – permitem que você defina um limite para o número de vezes que uma atividade se repete para ser considerada como correspondente à política.  
+-   Parâmetros de correspondência de atividade – permitem que você defina um limite para o número de vezes que uma atividade se repete para ser considerada como correspondente à política.  Especifique o número de atividades repetidas necessário para corresponder à política, por exemplo, definindo uma política para alertar quando um usuário executa dez tentativas de logon sem êxito em um período de dois minutos.  Por padrão, a configuração **Parâmetros de correspondência de atividade** gera uma correspondência para cada atividade que atende a todos os filtros de atividade.   
+Usando **Atividade repetida**, você pode definir o número de atividades repetidas, a duração do período em que as atividades são contadas e até mesmo especificar que todas as atividades devem ser executadas pelo mesmo usuário e no mesmo aplicativo de nuvem.  
+  
   
 -   Ações – a política fornece a um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são detectadas.  
 ## <a name="see-also"></a>Veja também  
@@ -133,6 +135,6 @@ Cada política é composta pelas seguintes partes:
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

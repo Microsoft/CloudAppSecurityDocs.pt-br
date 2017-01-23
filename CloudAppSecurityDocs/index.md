@@ -5,7 +5,7 @@ title: Cloud App Security | Microsoft Docs
 description: "Documentação técnica do Cloud App Security"
 author: msmbaldwin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/11/2017
 ms.topic: hubpage
 ms.prod: azure
 ms.service: cloud-app-security
@@ -159,7 +159,7 @@ ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
         <ul class="journeys-list">
           <li class="journey-step">
             <header class="journey-step-header row">
-              <a href="./troubleshooting.md">
+              <a href="./troubleshooting-cloud-discovery.md">
                 <div class="title column-third">
                   <span class="step-number">5</span>
                   <p>Solucionar problemas</p>
@@ -170,7 +170,7 @@ ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./troubleshooting.md">
+                  <a href="./troubleshooting-cloud-discovery.md">
                     <h3>Solucionar problemas</h3>
                     <p>Use esses guias para solucionar problemas do Cloud App Security e do conector de API.</p>
                   </a>

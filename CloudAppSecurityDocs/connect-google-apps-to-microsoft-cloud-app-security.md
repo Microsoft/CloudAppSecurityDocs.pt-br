@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
 
 
 ---
@@ -35,7 +35,8 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 3.  Na tela **New project (Novo projeto)**:  
   
-    1.  Nomeie o projeto como **Cloud App Security para Google**.  
+    1.  Nomeie o projeto da seguinte forma:</br>
+    **Cloud App Security for Google** 
   
     2.  Selecione se deseja ou não assinar as atualizações.  
   
@@ -70,7 +71,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     -   Gmail API (API do Gmail)  
   
-         ![Aviso de google11](./media/google11-warning.png "google11 warning")  
+         ![aviso google11](./media/google11-warning.png "aviso google11")  
   
 7.  Você deve ter cinco **Enabled APIs (APIs Habilitadas)**:  
   
@@ -102,7 +103,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 11. Na guia **Credentials (Credenciais)**, clique em **Manage service accounts (Gerenciar contas de serviço)** na extrema direita.  
   
-     ![credenciais de conta de serviço do google apps](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
+     ![conta de serviço de credenciais do Google Apps](./media/google-apps-credentials-service-account.png "conta de serviço de credenciais do Google Apps")  
   
 12. Clique nos três pontos à direita da conta de serviço que você criou e selecione **Edit (Editar)**.  
   
@@ -118,7 +119,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 15. Abra o menu do Google clicando as três linhas horizontais ao lado de Google Cloud Platform e selecione **API manager (Gerenciador de API)**.  
   
-     ![menu do Google](./media/google-menu.png "google menu")  
+     ![menu do Google](./media/google-menu.png "menu do Google")  
   
      Selecione **Enabled APIs (APIs Habilitadas)**.  
   
@@ -208,15 +209,15 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 18. Selecione **Security (Segurança)** na lista de controles. Se você não encontrar essa opção listada, selecione More controls (Mais controles) na barra cinza na parte inferior da página e selecione **Security (Segurança)**.  
   
-     ![segurança do google apps](./media/google-apps-security.png "google apps security")  
+     ![segurança do Google Apps](./media/google-apps-security.png "segurança do Google Apps")  
   
 19. Selecione **API reference (Referência da API)**.  
   
-     ![referência da api do google](./media/google-api-ref.png "google api ref")  
+     ![referência da API do Google](./media/google-api-ref.png "referência da API do Google")  
   
 20. Selecione **Enable API Access (Habilitar acesso à API)** e clique em **Save changes (Salvar alterações)**.  
   
-     ![acesso à API do Google](./media/google-api-access.png "google api access")  
+     ![acesso à API do Google](./media/google-api-access.png "acesso à API do Google")  
   
 ## <a name="configure-cloud-app-security"></a>Configurar o Microsoft Cloud App Security  
   
@@ -224,11 +225,11 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 2.  Na página **Aplicativos conectados**, clique no sinal de mais e selecione **Google Apps**.  
   
-     ![conectar google apps](./media/connect-google-apps.png "connect google apps")  
+     ![conectar Google Apps](./media/connect-google-apps.png "conectar Google Apps")  
   
 3.  Na janela pop-up, preencha o seguinte:  
   
-     ![Configuração do Google Apps no Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
+     ![Configuração do Google Apps no Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Configuração do Google Apps no Cloud App Security")  
   
     1.  **Google Service Account email address (Endereço de email da conta de serviço do Google)** que você copiou na etapa 14.  
   
@@ -244,7 +245,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     7.  Utilize **Seguir o link** para se conectar ao Google Apps. Isso abrirá o Google Apps e será solicitado que você autorize o acesso ao Cloud App Security.  
   
-         ![Solicitação de autorização do Google Apps](./media/google-apps-authorization-request.png "Google Apps authorization request")  
+         ![Solicitação de autorização do Google Apps](./media/google-apps-authorization-request.png "Solicitação de autorização do Google Apps")  
   
     8.  Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.  
   
@@ -266,6 +267,6 @@ Após conectar o Google Apps, o Cloud App Security realizará uma verificação 
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 
