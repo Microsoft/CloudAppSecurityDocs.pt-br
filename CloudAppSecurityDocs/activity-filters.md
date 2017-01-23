@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,21 +14,24 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
 
 
 ---
 # <a name="activities"></a>Atividades
-Para oferecer proteção de dados, o Cloud App Security proporciona visibilidade sobre todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. É possível criar políticas com base nas atividades e, em seguida, definir sobre o que você deseja ser alertado. Também é possível pesquisar atividades executadas em determinados arquivos. O tipo de atividades e as informações que recebemos para cada atividade dependem do aplicativo e do tipo de dados que ele pode fornecer. 
+O Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. O **Log de atividades** pode ser filtrado para permitir que você encontre atividades específicas. É possível criar políticas com base nas atividades e, em seguida, definir sobre o que você deseja ser alertado e agir. Também é possível pesquisar atividades executadas em determinados arquivos. O tipo de atividades e as informações que recebemos para cada atividade dependem do aplicativo e do tipo de dados que ele pode fornecer. 
 
-Por exemplo, é possível usar o log de **atividades** para localizar usuários na sua organização que estejam usando sistemas operacionais ou navegadores desatualizados da seguinte maneira: depois de conectar o Office 365, o Google Apps, o Box, o Dropbox, o Okta, o Amazon Web Services ou o Salesforce ao Cloud App Security na página do **Log de atividades**, use o filtro avançado e selecione **Marca do agente do usuário**. Em seguida, selecione **Navegador desatualizado** ou **Sistema operacional desatualizado**. Se você vir que há arquivos **confidenciais** compartilhados fora da sua organização, poderá clicar em **Nova política da pesquisa** para criar uma política de atividade que detecta navegadores e sistemas operacionais desatualizados e notificar automaticamente os usuários.
+Por exemplo, é possível usar o **Log de atividades** para encontrar usuários na sua organização que estejam usando sistemas operacionais ou navegadores desatualizados da seguinte maneira: depois de conectar um aplicativo ao Cloud App Security, na página **Log de atividades**, use o filtro avançado e selecione **Marcação do agente do usuário**. Em seguida, selecione **Navegador desatualizado** ou **Sistema operacional desatualizado**.
 
- ![Exemplo de navegador desatualizado de atividade](media/activity-outdated-example.png)
+ ![Exemplo de navegador desatualizado de atividade](media/activity-example-outdated.png)
+
+Se desejar verificar se existem arquivos **confidenciais** acessados fora da sua organização, defina o filtro **Objeto de atividade** para pesquisar **Rótulo de classificação** e selecione o rótulo **confidencial**. Defina o filtro **Endereço IP** para pesquisar a **Categoria** e exclua os endereços IP do Office (as categorias IP podem ser configuradas no menu **Configurações**). Você pode clicar em **Nova política de pesquisa** para criar uma política de atividade com base nos filtros definidos e notificar automaticamente os usuários.
+
+ ![Exemplo externo de arquivos confidenciais de atividade](media/activity-example-ip.png)
 
  
-
-O log de atividades pode ser filtrado para permitir que você encontre atividades específicas. O filtro básico fornece excelentes ferramentas para começar a usar a filtragem de suas atividades.
+O filtro básico fornece excelentes ferramentas para começar a usar a filtragem de suas atividades.
 
  ![filtro básico do log de atividades](media/activity-log-filter-basic.png)
 
@@ -66,9 +69,21 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
   
 -   Endereço IP – o endereço IP bruto, a categoria ou a marca do(a) qual a atividade foi executada.  
     - Endereço IP bruto — permite que você pesquise as atividades que foram realizadas nos endereços IP brutos, ou por eles, que sejam iguais, diferentes, comecem com ou não comecem com uma sequência específica, ou endereços IP brutos que estão ou não estão definidos. 
-    - Categoria de IP – a categoria do endereço IP em que a atividade foi executada, por exemplo, todas as atividades do intervalo de endereços IP administrativo. Para obter mais informações sobre categorias de IP, consulte [Organizar os dados de acordo com suas necessidades](general-setup.md#IPtagsandRanges).  
-    - Marca de IP ‑ A marca do endereço IP em que a atividade foi executada, por exemplo, todas as atividades de endereços IP de proxy anônimos. Para obter mais informações sobre marcas de IP, consulte [Organizar os dados de acordo com suas necessidades](general-setup.md#IPtagsandRanges).
-  
+    - Categoria de IP – a categoria do endereço IP em que a atividade foi executada, por exemplo, todas as atividades do intervalo de endereços IP administrativo. As categorias precisam ser configuradas para incluir os endereços IP relevantes, exceto para a categoria "Arriscado", que é pré-configurada e inclui duas marcações de IP: proxy anônimo e Tor. Para saber como configurar as categorias de IP, consulte [Organizar os dados de acordo com suas necessidades](general-setup.md#IPtagsandRanges).  
+    - Marca de IP ‑ A marca do endereço IP em que a atividade foi executada, por exemplo, todas as atividades de endereços IP de proxy anônimos. O Cloud App Security cria um conjunto de marcações internas de IP que não são configuráveis. Além disso, você pode configurar suas próprias marcações de IP. Para obter mais informações sobre como configurar as suas próprias marcações de IP, consulte [Organizar os dados de acordo com as suas necessidades](general-setup.md#IPtagsandRanges).
+   As marcações internas de IP incluem:
+    - Aplicativos Microsoft (14 deles)
+    - Proxy anônimo
+    - Botnet
+    - IP de verificação de Darknet
+    - Servidor C&C de malware
+    - Analisador de conectividade remota
+    - Provedores de satélite
+    - Proxy inteligente e de acesso (deixados de fora de propósito)
+    - Nós de saída do Tor
+    - Zscaler
+
+
 -   Atividade representada – pesquisa somente atividades que foram realizadas no nome de outro usuário.  
 
 -   Local – o país do qual a atividade foi executada.  
@@ -106,10 +121,10 @@ Você pode exibir mais informações sobre cada atividade clicando na própria a
 
 ![gaveta de atividades](./media/activity-drawer.png "gaveta de atividades")  
   
-Para obter uma lista de ações de governança disponíveis, consulte [Parâmetros de correspondência de atividade](governance-actions.md#activity-match-parameters).
+Para obter uma lista das ações de governança disponíveis, consulte [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
 
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
@@ -117,6 +132,6 @@ Para obter uma lista de ações de governança disponíveis, consulte [Parâmetr
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

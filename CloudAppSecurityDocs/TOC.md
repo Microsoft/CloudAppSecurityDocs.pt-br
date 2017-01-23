@@ -6,6 +6,7 @@
 ## [Implantar o Cloud Discovery](set-up-cloud-discovery.md)
 ### [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
+### [Anonimizar dados do Cloud Discovery](cloud-discovery-anonymizer.md)
 ### [Personalizar o Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Conectar aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Conectar o Box](connect-box-to-microsoft-cloud-app-security.md)
@@ -22,7 +23,6 @@
 ### [Arquivos](file-filters.md)
 ### [Atividades](activity-filters.md)
 ### [Alertas](monitor-alerts.md)
-### [Integrar à Proteção de Informações do Azure](azip-integration.md)
 ## [Controle](control.md)
 ### [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 #### [Políticas do Cloud Discovery](cloud-discovery-policies.md)
@@ -34,11 +34,14 @@
 ##### [Trabalhando com o mecanismo RegEx](working-with-the-regex-engine.md)
 ### [Gerenciar permissões de aplicativo](manage-app-permissions.md)
 ## [Governança](governance-actions.md)
+## Integrar
+### [Integração à Proteção de Informações do Azure](azip-integration.md)
+### [Integração ao SIEM](siem.md)
 # [Solucionar problemas](troubleshooting.md)
 ## [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solução de problemas de conectores de API usando mensagens de erro](troubleshooting-api-connectors-using-error-messages.md)
 ## [Solução de problemas de inspeção de conteúdo](troubleshooting-content-inspection.md)
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

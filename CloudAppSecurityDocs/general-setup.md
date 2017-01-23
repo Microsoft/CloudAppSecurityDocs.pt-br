@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
-ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
+ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
+ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
 
 
 ---
@@ -82,7 +82,7 @@ Para configurar suas preferências como um administrador do Cloud App Security, 
   
 3. Quando terminar, clique em **Salvar**.  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> Organizar os dados de acordo com suas necessidades  
+##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> Definir intervalos IP  
 Para identificar facilmente os endereços IP conhecidos, como seus endereços IP do escritório físico, é necessário definir intervalos de endereço IP, o que permite que você marque e categorize apropriadamente e personalize a forma como os logs e alertas são exibidos e investigados.   
 Cada grupo de intervalos de IP pode ser categorizado com base em uma lista predefinida de categorias de IP ou marcado com suas próprias marcas de IP criadas. Além disso, essa configuração permite que você substitua as informações de geolocalização com base no seu conhecimento de rede interno.  
   
@@ -104,9 +104,7 @@ Na barra de menus, clique no ícone de configurações ![ícone de configuraçõ
   
 4.  Insira um **ISP Registrado**. Isso substituirá os dados em suas atividades  
   
-5.  Para **Marcar** as atividades desses endereços IP, insira uma marca. Inserir uma palavra na caixa cria a marca. Depois que você já tiver uma marca configurada, poderá adicioná-la facilmente a intervalos de IP adicionais selecionando-a na lista. Você pode adicionar quantas marcas de IP desejar para cada intervalo. As marcas de IP podem ser usadas ao criar políticas.  
-  
-     As **Marcas de IP** internas do Cloud App Security são definidas para endereços arriscados e são constantemente atualizadas. Essas marcas incluem proxies Anônimos, provedores de satélite, nós de saída Tor e a rede de proxy do Cloud App Security. Essas marcas internas não são visíveis.  
+5.  Para **Marcar** as atividades desses endereços IP, insira uma marca. Inserir uma palavra na caixa cria a marca. Depois que você já tiver uma marca configurada, poderá adicioná-la facilmente a intervalos de IP adicionais selecionando-a na lista. Você pode adicionar quantas marcas de IP desejar para cada intervalo. As marcas de IP podem ser usadas ao criar políticas.  Além das marcações de IP que você configura, o Cloud App Security tem marcações internas que não são configuráveis. Você pode ver a lista de marcações em [Filtro de marcações de IP](activity-filters.md).  
   
 6.  As **Categorias de IP** são usadas para reconhecer facilmente atividades de endereços IP interessantes. As categorias estão disponíveis no portal embora precisem de configuração do usuário para determinar quais endereços IP estão incluídos em cada categoria, exceto para a categoria “Arriscados”, que inclui duas marcas de IP: proxy anônimo e Tor.  
   
@@ -232,6 +230,6 @@ O Cloud App Security é combinado a com o Azure Active Directory para atividades
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 
