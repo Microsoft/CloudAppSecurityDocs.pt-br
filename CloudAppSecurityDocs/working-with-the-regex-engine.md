@@ -1,11 +1,11 @@
 ---
-title: Trabalhando com o mecanismo RegEx | Microsoft Docs
+title: "Usando o mecanismo RegEx para políticas de inspeção de conteúdo | Microsoft Docs"
 description: "Este tópico fornece instruções para usar RegEx para correspondência de padrão de políticas do Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
-
-
+ms.openlocfilehash: c386cbbdadaf97297e6d876cdac9f7d3e2142b73
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
  
 As políticas de inspeção de conteúdo do Cloud App Security utilizam o RegEx para a correspondência de padrões. A inspeção de conteúdo pode ser aplicada como parte das políticas de arquivos. Para testar expressões regulares, você pode usar os seguintes sites:  
@@ -67,8 +64,3 @@ Expressões de exemplo
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

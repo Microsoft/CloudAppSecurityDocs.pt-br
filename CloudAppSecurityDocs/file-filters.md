@@ -1,11 +1,11 @@
 ---
-title: Arquivos | Microsoft Docs
+title: "Entendendo os dados e filtros de arquivos disponíveis no Cloud App Security | Microsoft Docs"
 description: "Este tópico de referência fornece informações sobre os tipos e filtros de arquivos usados pelo Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
-ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
-
-
+ms.openlocfilehash: 81330b5333050bea2352f0907ac5c83d71af14bf
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="files"></a>Arquivos
 
 
@@ -41,7 +38,7 @@ Para analisar arquivos mais específicos, você pode expandir o filtro básico c
 
  ![filtro avançado do log arquivo](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> Filtros de arquivos 
+###  <a name="Filefilters"></a> Filtros de arquivos 
  
 O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de 20 filtros de metadados (como por exemplo, nível de acesso e tipo de arquivo). 
  
@@ -84,7 +81,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. A maioria
   
 -   Nome do arquivo – nome do arquivo ou subcadeia de caracteres do nome conforme definido no aplicativo de nuvem, por exemplo, todos os arquivos com uma senha em seu nome.   
   
--   Marca de arquivo — pesquise arquivos com marcas específicas definidas pela Proteção de Informações do Azure. Isso exige integração à Proteção de Informações do Azure.
+-   Rótulo de classificação – pesquise arquivos com marcas específicas definidas pela Proteção de Informações do Azure. Isso exige integração à Proteção de Informações do Azure.
 
 -   Tipo de arquivo – O Cloud App Security usa o tipo MIME recebido do serviço e examina o arquivo para determinar o verdadeiro tipo de arquivo. Observe que se essa verificação destina-se a arquivos que são relevantes para a verificação de dados (documentos, imagens, apresentações, planilhas, arquivos de texto e zip/arquivo morto). O filtro funciona por tipo de arquivo/pasta, por exemplo, todas as pastas que são... ou todos os arquivos de planilha que são...
 
@@ -132,8 +129,3 @@ Para obter uma lista de ações de governança disponíveis, consulte [Ações d
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

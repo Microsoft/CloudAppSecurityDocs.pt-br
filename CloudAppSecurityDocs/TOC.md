@@ -1,23 +1,27 @@
-# [Compreender e Explorar](what-is-cloud-app-security.md)
+# Compreender e Explorar
 ## [O que é CAS?](what-is-cloud-app-security.md)
 ## [Notas de versão](release-notes.md)
-# [Implantar](getting-started-with-cloud-app-security.md)
+# Implantar
+## [Introdução](getting-started-with-cloud-app-security.md)
 ## [Personalizar o portal](general-setup.md)
+### [Grupos de usuários](user-groups.md)
+### [Intervalos e marcas de IP](ip-tags.md)
 ## [Implantar o Cloud Discovery](set-up-cloud-discovery.md)
 ### [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Anonimizar dados do Cloud Discovery](cloud-discovery-anonymizer.md)
-### [Personalizar o Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Conectar aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Conectar o Box](connect-box-to-microsoft-cloud-app-security.md)
-### [Conectar o Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [Conectar o G Suite](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [Conectar o Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [Conectar o AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Conectar o Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
 ### [Conectar o Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Conectar o ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Conectar o Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-# [Usar](daily-activities-to-protect-your-cloud-environment.md)
+# Uso
+## [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+## [Trabalhar com o Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Investigar](investigate.md)
 ### [Referência de relatório interno](built-in-report-reference.md)
 ### [Arquivos](file-filters.md)
@@ -28,20 +32,18 @@
 #### [Políticas do Cloud Discovery](cloud-discovery-policies.md)
 ##### [Política de detecção de anomalias do Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Políticas de atividade](user-activity-policies.md)
-##### [Política de detecção de anomalias](anomaly-detection-policy.md)
+#### [Política de detecção de anomalias](anomaly-detection-policy.md)
 #### [Políticas de arquivos](data-protection-policies.md)
 ##### [Inspeção de Conteúdo](content-inspection.md)
 ##### [Trabalhando com o mecanismo RegEx](working-with-the-regex-engine.md)
+#### [Referência de Modelo de Política](policy-template-reference.md)
 ### [Gerenciar permissões de aplicativo](manage-app-permissions.md)
-## [Governança](governance-actions.md)
+### [Controlar aplicativos conectados](governance-actions.md)
+### [Controlar aplicativos descobertos](governance-discovery.md)
 ## Integrar
 ### [Integração à Proteção de Informações do Azure](azip-integration.md)
 ### [Integração ao SIEM](siem.md)
-# [Solucionar problemas](troubleshooting.md)
+# Solucionar problemas
 ## [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solução de problemas de conectores de API usando mensagens de erro](troubleshooting-api-connectors-using-error-messages.md)
 ## [Solução de problemas de inspeção de conteúdo](troubleshooting-content-inspection.md)
-
-<!--HONumber=Jan17_HO1-->
-
-

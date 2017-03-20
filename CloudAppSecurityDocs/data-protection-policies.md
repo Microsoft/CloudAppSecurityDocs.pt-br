@@ -1,11 +1,11 @@
 ---
-title: "Políticas de arquivo | Microsoft Docs"
+title: "Criar políticas para monitorar e proteger arquivos em seus aplicativos de nuvem | Microsoft Docs"
 description: "Este tópico descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e arquivos em uso nos aplicativos de nuvem da sua organização."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
-
-
+ms.openlocfilehash: fdaacd43a21ec1cd8d0bf8fdee08e4918af47e68
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="file-policies"></a>Políticas de arquivos  
 As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso.  
 O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de 20 filtros de metadados (como por exemplo, nível de acesso e tipo de arquivo). 
  
 **Tipos de arquivos com suporte** 
 
-Mecanismos de DLP internos do Cloud App Security executam inspeção de conteúdo extraindo texto de todos os tipos de arquivo comuns (mais de 100), incluindo Office, Open Office, arquivos compactados, vários formatos de texto avançado, XML, HTML e muito mais.
+Mecanismos de DLP internos do Cloud App Security executam inspeção de conteúdo extraindo texto de todos os tipos de arquivo comuns (mais de&100;), incluindo Office, Open Office, arquivos compactados, vários formatos de texto avançado, XML, HTML e muito mais.
 
 O mecanismo combina três aspectos em cada política:  
   
@@ -50,7 +47,7 @@ A seguir estão exemplos das políticas de arquivos que podem ser criadas:
     Receba um alerta sobre qualquer arquivo compartilhado com contas de propriedade de domínios externos específicos, por exemplo, com o domínio de um concorrente. Selecione o domínio externo com o qual você deseja limitar o compartilhamento.  
   
 -   Arquivos compartilhados em quarentena não modificados durante o último período:  
-    Receba um alerta sobre arquivos compartilhados que ninguém modificou recentemente, para colocá-los em quarentena ou optar por ativar uma ação automatizada. Exclua todos os arquivos particulares que não foram modificados durante um intervalo de datas especificado. No Google Apps, você pode optar por colocar esses arquivos em quarentena usando a caixa de seleção 'Colocar arquivo em quarentena' na página de criação de política.  
+    Receba um alerta sobre arquivos compartilhados que ninguém modificou recentemente, para colocá-los em quarentena ou optar por ativar uma ação automatizada. Exclua todos os arquivos particulares que não foram modificados durante um intervalo de datas especificado. No G Suite, você pode optar por colocar esses arquivos em quarentena usando a caixa de seleção "Colocar arquivo em quarentena", na página de criação de política.  
   
 -   Compartilhando com usuários não autorizados:  
     Receba um alerta sobre os arquivos sendo compartilhados com um grupo de usuários não autorizados em sua organização. Selecione os usuários dos quais o compartilhamento é proibido.  
@@ -76,7 +73,7 @@ Para criar uma nova política de arquivos, siga este procedimento:
 7.  Selecione o **Método de inspeção de conteúdo**. O DLP interno permite filtrar os arquivos pelo conteúdo. Para verificar arquivos quanto ao conteúdo, selecione **DLP Interno**. Depois que a inspeção estiver habilitada, você poderá optar por usar expressões predefinidas ou pesquisar outras expressões personalizadas, seja com uma subcadeia de caracteres ou uma [expressão regular](working-with-the-regex-engine.md) própria.  
     Além disso, você pode especificar uma expressão regular para excluir um arquivo dos resultados. Isso será muito útil se você tiver um padrão de palavra-chave de classificação interno que você deseja excluir da política.  
     Você pode definir o número mínimo de violações de conteúdo que deseja corresponder antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.  
-    Quando o conteúdo é comparado com a expressão selecionada, você pode escolher mascarar a correspondência em si dos logs e da notificação de violação. Quando marcado, o texto da violação será substituído por caracteres “X”. Lembre-se que os números são substituídos por caracteres “#” e nunca armazenados no Cloud App Security.  Também é possível selecionar a opção de remover a máscara dos quatro últimos caracteres de uma violação. Por padrão, as violações são completamente mascaradas e mostradas em seu contexto exibindo 40 caracteres antes e após a violação. Esta opção removerá a máscara dos quatro últimos caracteres da violação em si.
+    Quando o conteúdo for comparado com a expressão selecionada, o texto de violação será substituído por caracteres "X". Por padrão, as violações são completamente mascaradas e mostradas em seu contexto exibindo 40 caracteres antes e após a violação. Os números no contexto da expressão são substituídos por caracteres "#" e nunca são armazenados no Cloud App Security. Você pode selecionar a opção para **Remover a máscara dos últimos quatro caracteres de uma violação** para remover a máscara dos últimos quatro caracteres da própria violação.
   
 8.  Escolha as ações de **Governança** que você deseja que o Cloud App Security realize quando uma correspondência for detectada.  
   
@@ -88,7 +85,7 @@ Para criar uma nova política de arquivos, siga este procedimento:
 >   
 >  Para obter orientação, você pode usar o botão **Editar e visualizar resultados** na seção Filtros.  
   
-![editar a política do arquivo e visualizar os resultados](./media/file-policy-edit-and-preview-results.png "editar a política do arquivo e visualizar os resultados")  
+ ![editar a política do arquivo e visualizar os resultados](./media/file-policy-edit-and-preview-results.png "editar a política do arquivo e visualizar os resultados")  
   
 10. Para exibir correspondências de política de arquivo, os arquivos com suspeita de violar a política, clique em **Controle** e **Políticas**. Filtre os resultados para exibir somente as políticas do arquivo usando o filtro **Tipo** na parte superior. Para obter mais informações sobre as correspondências para cada política, clique em uma política. Isso exibe os arquivos de Correspondência agora para a política. Clique na guia **histórico** para ver um histórico de até 6 meses anteriores de arquivos que correspondem à política.     
   
@@ -120,8 +117,3 @@ Cada política é composta pelas seguintes partes:
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
