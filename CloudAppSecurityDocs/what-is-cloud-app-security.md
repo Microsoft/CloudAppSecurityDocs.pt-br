@@ -1,11 +1,11 @@
 ---
-title: "O que é o Cloud App Security | Microsoft Docs"
+title: "O que é o Cloud App Security? | Microsoft Docs"
 description: "Este tópico descreve o Cloud App Security e como ele funciona."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
-
-
+ms.openlocfilehash: e49247479374db0127dd8c7e4ea042b718e51b8d
+ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>O que é o Cloud App Security
 
@@ -26,7 +24,7 @@ ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
 
 Mudar para a nuvem aumenta a flexibilidade para os funcionários e reduz os custos de TI, mas também apresenta novos desafios e complexidades para manter sua organização segura. Para poder obter todos os benefícios dos aplicativos de nuvem, as equipes de TI devem encontrar o equilíbrio correto de dar suporte ao acesso ao mesmo tempo que mantêm o controle para proteger dados críticos.  
 
-O Cloud App Security é um componente crítico da pilha do Microsoft Cloud Security. É uma solução abrangente que pode ajudar sua organização à medida que você muda para aproveitar ao máximo a promessa de aplicativos em nuvem enquanto o mantém no controle com maior visibilidade das atividades. Ela também ajuda a aumentar a proteção de dados críticos em aplicativos de nuvem. Com ferramentas que ajudam a descobrir a TI Invisível, avaliar os riscos, impor políticas, investigar atividades e parar ameaças, sua organização pode migrar para a nuvem com segurança enquanto mantém o controle de dados críticos.  
+O Cloud App Security é um componente crítico da pilha do Microsoft Cloud Security. É uma solução abrangente que pode ajudar sua organização à medida que você muda para aproveitar ao máximo a promessa de aplicativos em nuvem enquanto o mantém no controle com maior visibilidade das atividades. Ela também ajuda a aumentar a proteção de dados críticos em aplicativos de nuvem. Com ferramentas que ajudam a descobrir a TI Invisível, avaliar os riscos, impor políticas, investigar atividades e parar ameaças, sua organização pode migrar para a nuvem com segurança enquanto mantém o controle de dados críticos. 
 
 ## <a name="the-cloud-app-security-framework"></a>A estrutura do Cloud App Security  
 
@@ -45,14 +43,18 @@ O Cloud App Security integra a visibilidade com sua nuvem ao
 -   usar conectores de aplicativos fáceis de implantar que utilizam as APIs do provedor para visibilidade e governança de aplicativos ao quais você se conecta.  
 -   ajudar a ter o controle contínuo definindo e ajustando continuamente as políticas.  
 
-![Arquitetura do Cloud App Security](./media/architecture.png)  
+![Diagrama de arquitetura do Cloud App Security](./media/architecture.png)  
 
-> [!NOTE]  
-> Quando o Cloud App Security executa a inspeção do conteúdo, a privacidade de dados é imposta. O conteúdo do arquivo não é armazenado no banco de dados do Cloud App Security. Somente os metadados dos registros de arquivo e qualquer violação identificada são armazenados no banco de dados do Cloud App Security. Para obter mais informações sobre retenção de dados, consulte nossa [política de privacidade](http://go.microsoft.com/fwlink/?LinkId=512132) e o [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
-O Cloud App Security mantém os dados da seguinte maneira:
->- Log de atividades: 180 dias
->- Dados de descoberta: 90 dias
->- Alertas: 180 dias
+### <a name="data-retention--compliance"></a>Retenção de dados e conformidade
+
+O Cloud App Security é certificado oficialmente com a Conformidade da Microsoft para ISO, HIPAA, CSA STAR, cláusulas de modelo da UE e muito mais. Para ver a lista completa das certificações, acesse [Ofertas de conformidade Microsoft] (https://go.microsoft.com/fwlink/?linkid=842039) e selecione Cloud App Security.  
+
+Quando o Cloud App Security executa a inspeção do conteúdo, a privacidade de dados é imposta. O conteúdo do arquivo não é armazenado no banco de dados do Cloud App Security. Somente os metadados dos registros de arquivo e qualquer violação identificada são armazenados no banco de dados do Cloud App Security. Para obter mais informações sobre a retenção de dados, consulte nossa [política de privacidade](http://go.microsoft.com/fwlink/?LinkId=512132) e a [Central de Confiabilidade da Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
+Cloud App Security mantém os dados da seguinte maneira: Cloud App Security mantém os dados da seguinte maneira: 
+ 
+- Log de atividades: 180 dias 
+- Dados de descoberta: 90 dias 
+- Alertas: 180 dias 
 
 Após a coleta de dados dessas fontes, o Cloud App Security executa a análise sofisticada dos dados. Ele o alerta imediatamente sobre atividades anormais e oferece uma visibilidade profunda do seu ambiente de nuvem. Você pode configurar uma política no Cloud App Security e usá-la para proteger tudo em seu ambiente de nuvem.  
 
@@ -82,9 +84,3 @@ Você pode usar políticas para definir o comportamento dos usuários na nuvem. 
 Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).    
 Para obter suporte técnico, vá para a página de [suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier](https://premier.microsoft.com/).   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

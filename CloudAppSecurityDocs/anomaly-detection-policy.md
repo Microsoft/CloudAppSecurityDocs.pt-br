@@ -1,11 +1,11 @@
 ---
-title: "Política de detecção de anomalias | Microsoft Docs"
+title: "Criar políticas de detecção de anomalias no Cloud App Security | Microsoft Docs"
 description: "Este tópico fornece uma descrição das Políticas de detecção de anomalias, bem como informações de referência sobre os blocos de construção de uma política de detecção de anomalias."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2016
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,19 +13,70 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 002e0b82296162ee13fa378c4641cc8f21547237
-ms.openlocfilehash: ca51d36a6d899124d3d4eb84ded1972ad9c8bab4
-
-
+ms.openlocfilehash: d6c1851b1903159d40c0daa256fbb28bdb1268bd
+ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+translationtype: HT
 ---
-
 # <a name="anomaly-detection-policy"></a>Política de detecção de anomalias
 Este artigo fornece detalhes de referência sobre as políticas, fornecendo explicações sobre cada tipo de política e os campos que podem ser configurados para cada política.  
- 
+
+Depois que sua organização estiver protegida pelo Cloud App Security, todas as atividades de nuvem serão pontuadas de acordo com vários fatores de risco predefinidos. O Cloud App Security examina cada sessão do usuário na nuvem e, em seguida, considera os fatores de risco definidos aqui para alertar você quando acontecer algo que seja diferente da linha de base da sua organização ou da atividade regular do usuário. A página de política de detecção de anomalias permite configurar e personalizar quais famílias de fatores de risco serão consideradas no processo de pontuação de risco. As políticas podem ser aplicadas de forma diferente para diferentes usuários, locais e setores organizacionais. Por exemplo, você pode criar uma política que o alerta quando os membros da sua equipe de TI estão ativos de fora do escritório.  
+
 O Cloud App Security tem um período inicial de assimilação de 7 dias, durante o qual ele não sinaliza nenhum novo usuários, atividade, dispositivos ou locais como anormais. Depois disso, cada sessão é comparada à atividade, quando os usuários estavam ativos, endereços IP, dispositivos, etc. detectados ao longo do mês anterior e à pontuação de risco dessas atividades. Use o controle deslizante de sensibilidade na política para definir a pontuação de risco mínimo que disparará os alertas. É recomendável usar o limite de sensibilidade padrão por usa semana ao criar uma política de anomalias, antes de alterá-lo de acordo com o número de alertas recebidos. O Cloud App Security enviará mais ou menos alertas para várias pontuações de risco ao alterar a sensibilidade.
   
 ![controle deslizante de sensibilidade](./media/sensitivity-slider.png)
+
+Para configurar uma política de detecção de anomalias:  
+  
+1.  No console, clique em **Controlar** seguido por **Políticas**.  
+  
+2.  Clique em **Criar política** e selecione a política de **Detecção de anomalias**.  
+  
+     ![Menu de política de detecção de anomalias](./media/anomaly-detection-policy-menu.png "Menu de política de detecção de anomalias")  
+  
+3.  Preencha o nome e a descrição da política e continue para o campo **Filtros de atividade**, no qual é possível escolher a atividade à qual deseja aplicar a política.  
+  
+4.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
+  
+5.  Para aplicar a política a todas as atividades em seu ambiente de nuvem, selecione **Todas as atividades monitoradas**. Para limitar a política a tipos específicos de atividades, escolha **Atividade selecionada**. Clique em **Adicionar filtros** e defina os parâmetros apropriados pelos quais filtrar a atividade. Por exemplo, para impor a política somente em atividades realizadas por administradores do Salesforce, selecione essa marca.  
+  
+6.  Sob esse campo, defina os **Fatores de risco**. Você pode escolher quais famílias de risco deseja considerar ao calcular a pontuação de risco. À direita da linha, você pode usar o botão Ativar/Desativar para habilitar e desabilitar os vários riscos. Além disso, para maior granularidade, você pode escolher a atividade na qual habilitar cada família de risco específica.  
+  
+     Os fatores de risco são os seguintes:  
+  
+    -   **Falhas de logon**: os usuários estão tentando fazer logon e falhando várias vezes em um curto período?  
+  
+    -   **Atividade do administrador**: os administradores estão usando suas contas com privilégios para fazer logon de locais incomuns ou em horários estranhos?  
+  
+    -   **Contas inativas**: repentinamente há atividade em uma conta que não estava sendo usada há algum tempo?  
+  
+    -   **Local**: há atividade em um local novo, incomuns ou suspeito?  
+  
+    -   **Viagem impossível**: um usuário está fazendo logon de Denver e dez minutos depois de Paris?  
+  
+    -   **Agente de dispositivo e usuário**: há atividade de um dispositivo não reconhecido ou não gerenciado?  
+
+    -   **Taxa de atividade**: há repentinamente muita atividade em um aplicativo específico? Há downloads ou exclusões grandes, número em massa de arquivos compartilhados ou muita atividade de administrador inesperada?
+  
+     Você pode usar esses parâmetros para definir cenários complexos, por exemplo, para excluir o intervalo IP do seu escritório dos fatores de risco considerados para a detecção de anomalias, criar uma marca de “IP do escritório” específica e filtrar o intervalo sem os parâmetros considerados. Para então excluir o intervalo que você criou da detecção de anomalias da atividade do administrador:  
+  
+    -   Em **Tipo de risco**, localize **Atividade do Administrador**.  
+  
+    -   Altere **Aplicar a** para **Atividade Selecionada**.  
+  
+    -   Em **Filtros de atividade**, defina **Aplicar a** como **Atividade selecionada** e em **Activities matching all of the following (Atividades que correspondem a todas as a seguir)**, escolha **Atividade administrativa** é **True**.  
+  
+    -   Clique no ícone **+** e selecione **IP tag does not equal (Marca do IP diferente de)** e selecione a marca de IP do escritório.  
+  
+7.  Em **Sensibilidade**, selecione com que frequência você deseja receber alertas.  
+  
+     O valor de sensibilidade determinará quantos alertas semanais serão disparados em média para cada 1.000 usuários.  
+  
+     ![IPs de detecção de anomalias](./media/anomaly-detection-ips.png "IPs de detecção de anomalias")  
+  
+8.  Clique em **Criar**.  
+ 
+
 ## <a name="anomaly-detection-policy-reference"></a>Referência de política de detecção de anomalias  
 Uma política de detecção de anomalias permite instalar e configurar o monitoramento contínuo da atividade de usuário quanto a anomalias comportamentais. As anomalias são detectadas pela verificação da atividade do usuário. O risco é avaliado observando mais de 30 indicadores de risco diferentes, agrupados em 6 fatores de risco. Com base nos resultados da política, os alertas de segurança são disparados.   
 Cada política é composta pelas seguintes partes:  
@@ -60,6 +111,8 @@ Cada fator de risco, quando incluído na avaliação de risco, tem seus próprio
   
 -   Agente de dispositivo e usuário ‑ Atividade realizada por um usuário usando um agente do usuário ou dispositivo que nunca foi usado por outro usuário, nunca foi usado por esse usuário específico ou nunca foi usado.  
   
+-   Taxa de atividade – atividades repetidas executadas por um usuário em um curto período. 
+
 ### <a name="sensitivity"></a>Sensibilidade  
 Há duas maneiras de controlar o número de alertas disparados pela política:  
   
@@ -73,9 +126,3 @@ Há duas maneiras de controlar o número de alertas disparados pela política:
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

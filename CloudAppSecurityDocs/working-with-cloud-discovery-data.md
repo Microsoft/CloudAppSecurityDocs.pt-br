@@ -1,11 +1,11 @@
 ---
-title: Personalizar o Cloud Discovery | Microsoft Docs
+title: Usar os dados do Cloud Discovery para detectar comportamentos de risco | Microsoft Docs
 description: "Este tópico fornece instruções sobre como trabalhar com os dados do Cloud Discovery, incluindo trabalhar com a pontuação de risco do aplicativo."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
-
-
+ms.openlocfilehash: 872c5839a3fbf54e4e4d07ef9ac0629aef29aaad
+ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+translationtype: HT
 ---
-
-# <a name="customize-cloud-discovery"></a>Personalizar o Cloud Discovery
+# <a name="working-with-cloud-discovery"></a>Trabalhando com o Cloud Discovery
 ## <a name="review-the-cloud-discovery-dashboard"></a>Examinar o Painel do Cloud Discovery
 
 O painel do Cloud Discovery foi projetado para fornecer mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização. Ele fornece uma visão geral rápida de quais tipos de aplicativos estão sendo usados, os alertas abertos e os níveis de risco dos aplicativos na sua organização. Ele também mostra quem são os principais usuários do aplicativo e fornece um mapa do local da Matriz de Aplicativo. O Painel do Cloud Discovery tem muitas opções para filtrar os dados, para que você possa gerar exibições específicas dependendo do que mais lhe interessa, e gráficos de fácil compreensão para fornecer um panorama completo rápido.
@@ -133,8 +130,3 @@ Para excluir os dados do Cloud Discovery:
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-
