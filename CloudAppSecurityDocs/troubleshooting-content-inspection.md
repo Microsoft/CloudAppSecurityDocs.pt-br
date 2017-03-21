@@ -1,11 +1,11 @@
 ---
-title: "Solução de problemas de inspeção de conteúdo | Microsoft Docs"
+title: "Solução de problemas de erros de inspeção de conteúdo no Cloud App Security | Microsoft Docs"
 description: "Este tópico fornece uma lista de status de inspeção de conteúdo e seus significados."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 65e1957f413ff72b4ddfc76dc01e9514c721104c
-
-
+ms.openlocfilehash: 02451f0bc49cc5b3365673806562708943de7cfd
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="troubleshooting-content-inspection"></a>Solução de problemas de inspeção de conteúdo
 |Status da inspeção de conteúdo|Descrição|
 |----|----|
@@ -45,8 +42,3 @@ ms.openlocfilehash: 65e1957f413ff72b4ddfc76dc01e9514c721104c
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

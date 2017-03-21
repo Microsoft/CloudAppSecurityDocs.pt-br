@@ -1,11 +1,11 @@
 ---
-title: Anonimizar dados do Cloud Discovery | Microsoft Docs
+title: "Proteger a privacidade do usuário no Cloud App Security anonimizando dados | Microsoft Docs"
 description: "Este artigo fornece informações sobre como anonimizar os nomes de usuário nos dados do Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 049494e45caf670f753f6b5fbfbbf117462b7156
-
-
+ms.openlocfilehash: 5e3b10cc8fa00deb296076063a6b5f6cde76999e
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
-
 ## <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
 A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Quando necessário, para uma investigação de segurança específica (por exemplo, devido a uma violação de segurança ou atividade de usuário suspeita), os administradores podem resolver o nome de usuário real. Se um administrador tiver algum motivo para suspeitar de um usuário específico, ele também poderá pesquisar o nome de usuário criptografado de um nome de usuário conhecido e começar a investigação usando o nome de usuário criptografado. Toda conversão de nome de usuário é auditada no **Log de governança** do portal.
@@ -77,8 +73,3 @@ Como funciona a anonimização de dados:
     
       
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "Controlar aplicativos de nuvem com políticas | Microsoft Docs"
+title: "Controlar o uso de aplicativos de nuvem criando políticas no Cloud App Security | Microsoft Docs"
 description: "Este tópico fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos de nuvem."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
-
-
+ms.openlocfilehash: e913b589babc66ef5aff5f05af9fb5de22f308d1
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
@@ -161,8 +159,3 @@ Por padrão, depois de criar uma nova política, ela é habilitada.
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

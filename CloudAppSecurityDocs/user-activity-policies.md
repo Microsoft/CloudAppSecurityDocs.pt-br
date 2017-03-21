@@ -1,11 +1,11 @@
 ---
-title: "Políticas de atividade | Microsoft Docs"
+title: "Criando políticas para controlar atividades no Cloud App Security | Microsoft Docs"
 description: "Este tópico fornece instruções para criar e trabalhar com políticas de atividade."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
-
-
+ms.openlocfilehash: 0f12bb57f06efb0cb0860e7aae898e2bde87d2f2
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="activity-policies"></a>Políticas de atividade
 As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.  
   
@@ -62,57 +59,6 @@ Veja esses exemplos:
   
      ![exemplo de alta taxa de downloads](./media/high-download-rate-example.png "exemplo de alta taxa de downloads")  
   
-## <a name="anomaly-detection"></a>Detecção de anomalias  
-Depois que sua organização estiver protegida pelo Cloud App Security, todas as atividades de nuvem serão pontuadas de acordo com vários fatores de risco predefinidos. O Cloud App Security examina cada sessão do usuário na nuvem e, em seguida, considera os fatores de risco definidos aqui para alertar você quando acontecer algo que seja diferente da linha de base da sua organização ou da atividade regular do usuário. A página de política de detecção de anomalias permite configurar e personalizar quais famílias de fatores de risco serão consideradas no processo de pontuação de risco. As políticas podem ser aplicadas de forma diferente para diferentes usuários, locais e setores organizacionais. Por exemplo, você pode criar uma política que o alerta quando os membros da sua equipe de TI estão ativos de fora do escritório.  
-  
-Para configurar uma política de detecção de anomalias:  
-  
-1.  No console, clique em **Controlar** seguido por **Políticas**.  
-  
-2.  Clique em **Criar política** e selecione a política de **Detecção de anomalias**.  
-  
-     ![Menu de política de detecção de anomalias](./media/anomaly-detection-policy-menu.png "Menu de política de detecção de anomalias")  
-  
-3.  Preencha o nome e a descrição da política e continue para o campo **Filtros de atividade**, no qual é possível escolher a atividade à qual deseja aplicar a política.  
-  
-4.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
-  
-5.  Para aplicar a política a todas as atividades em seu ambiente de nuvem, selecione **Todas as atividades monitoradas**. Para limitar a política a tipos específicos de atividades, escolha **Atividade selecionada**. Clique em **Adicionar filtros** e defina os parâmetros apropriados pelos quais filtrar a atividade. Por exemplo, para impor a política somente em atividades realizadas por administradores do Salesforce, selecione essa marca.  
-  
-6.  Sob esse campo, defina os **Fatores de risco**. Você pode escolher quais famílias de risco deseja considerar ao calcular a pontuação de risco. À direita da linha, você pode usar o botão Ativar/Desativar para habilitar e desabilitar os vários riscos. Além disso, para maior granularidade, você pode escolher a atividade na qual habilitar cada família de risco específica.  
-  
-     Os fatores de risco são os seguintes:  
-  
-    -   **Falhas de logon**: os usuários estão tentando fazer logon e falhando várias vezes em um curto período?  
-  
-    -   **Atividade do administrador**: os administradores estão usando suas contas com privilégios para fazer logon de locais incomuns ou em horários estranhos?  
-  
-    -   **Contas inativas**: repentinamente há atividade em uma conta que não estava sendo usada há algum tempo?  
-  
-    -   **Local**: há atividade em um local novo, incomuns ou suspeito?  
-  
-    -   **Viagem impossível**: um usuário está fazendo logon de Denver e dez minutos depois de Paris?  
-  
-    -   **Agente de dispositivo e usuário**: há atividade de um dispositivo não reconhecido ou não gerenciado?  
-  
-     Você pode usar esses parâmetros para definir cenários complexos, por exemplo, para excluir o intervalo IP do seu escritório dos fatores de risco considerados para a detecção de anomalias, criar uma marca de “IP do escritório” específica e filtrar o intervalo sem os parâmetros considerados. Para então excluir o intervalo que você criou da detecção de anomalias da atividade do administrador:  
-  
-    -   Em **Tipo de risco**, localize **Atividade do Administrador**.  
-  
-    -   Altere **Aplicar a** para **Atividade Selecionada**.  
-  
-    -   Em **Filtros de atividade**, defina **Aplicar a** como **Atividade selecionada** e em **Activities matching all of the following (Atividades que correspondem a todas as a seguir)**, escolha **Atividade administrativa** é **True**.  
-  
-    -   Clique no ícone **+** e selecione **IP tag does not equal (Marca do IP diferente de)** e selecione a marca de IP do escritório.  
-  
-7.  Em **Sensibilidade**, selecione com que frequência você deseja receber alertas.  
-  
-     O valor de sensibilidade determinará quantos alertas semanais serão disparados em média para cada 1.000 usuários.  
-  
-     ![IPs de detecção de anomalias](./media/anomaly-detection-ips.png "IPs de detecção de anomalias")  
-  
-8.  Clique em **Criar**.  
- 
   
 ## <a name="activity-policy-reference"></a>Referência de política de atividade  
 Esta seção fornece detalhes de referência sobre as políticas, fornecendo explicações sobre cada tipo de política e os campos que podem ser configurados para cada política.  
@@ -133,8 +79,3 @@ Usando **Atividade repetida**, você pode definir o número de atividades repeti
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

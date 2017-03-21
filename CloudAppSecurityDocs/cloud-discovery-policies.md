@@ -1,11 +1,11 @@
 ---
-title: "Políticas do Cloud Discovery | Microsoft Docs"
+title: "Criar políticas em aplicativos do Cloud Discovery no Cloud App Security | Microsoft Docs"
 description: "Este tópico fornece informações sobre como trabalhar com políticas do Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
-
-
+ms.openlocfilehash: f90d44fba89e06e160c0161e1cec7b7f95d3e00c
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
     
 ## <a name="creating-an-app-discovery-policy"></a>Criando uma política de descoberta de aplicativos  
@@ -29,7 +26,7 @@ As políticas de descoberta permitem que você defina alertas que notificam quan
   
 2.  Clique em **Criar política** e selecione a política **Descoberta de aplicativos**.  
   
-     ![menu de política de descoberta de aplicativo](./media/app-discovery-policy-menu.png "app discovery policy menu")  
+     ![menu da política de descoberta de aplicativos](./media/app-discovery-policy-menu.png "menu da política de descoberta de aplicativos")  
   
 3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
@@ -52,7 +49,7 @@ Defina a **Gravidade** da política como **Média**.
 Na parte inferior, defina os limites que devem disparar um alerta para um determinado aplicativo descoberto. Apenas se mais de 100 usuários no ambiente usaram o aplicativo e apenas se eles baixaram uma determinada quantidade de dados do serviço.   
 Além disso, você pode definir o limite de alertas diários que deseja receber.  
   
-![exemplo de política de descoberta de aplicativo](./media/app-discovery-policy-example.png "app discovery policy example")  
+![exemplo de política de descoberta de aplicativos](./media/app-discovery-policy-example.png "exemplo de política de descoberta de aplicativos")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Detecção de anomalias do Cloud Discovery  
 O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anomalias. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico. Por padrão, a política de detecção de anomalias está habilitada, portanto, não é necessário configurar uma nova política para ela funcionar, mas você pode ajustar sobre quais tipos de anomalias deseja ser alertado na política padrão.  
@@ -61,7 +58,7 @@ O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anom
   
 2.  Clique em **Criar política** e selecione **Política de detecção de anomalias de Cloud Discovery**.  
   
-     ![menu de política de detecção de anomalias do Cloud Discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
+     ![menu da política de descoberta de anomalias do cloud discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu da política de descoberta de anomalias do cloud discovery")  
   
 3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
@@ -78,7 +75,7 @@ Defina um **Limite diário de alertas** e selecione se o alerta será enviado co
   
 9. Clique em **Criar**.  
   
-![nova política de descoberta de anomalias](./media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
+![nova política de descoberta de anomalias](./media/new-discovery-anomaly-policy.png "nova política de descoberta de anomalias")  
   
 ## <a name="see-also"></a>Veja também  
 [Políticas de atividade de usuário](user-activity-policies.md)   
@@ -86,8 +83,3 @@ Defina um **Limite diário de alertas** e selecione se o alerta será enviado co
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

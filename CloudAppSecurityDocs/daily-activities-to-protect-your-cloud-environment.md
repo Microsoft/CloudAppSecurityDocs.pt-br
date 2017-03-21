@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: f4cf027220a7f4329a72d662f6ccf4d9ab02ede4
-
-
+ms.openlocfilehash: 28068d41d44aa0b2f7a5e5950546a5e185d77eba
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="daily-activities-to-protect-your-cloud-environment"></a>Atividades diárias para proteger seu ambiente de nuvem
 Depois de colocar o Cloud App Security em funcionamento, será necessário configurar fluxos de dados, sancionar os aplicativos que deseja permitir que as pessoas usem e definir políticas para monitorar seu ambiente de nuvem. Em seguida, você pode usar o Cloud App Security para controlar e proteger sua nuvem e gerenciar os riscos.  
 
@@ -36,7 +33,7 @@ O painel do Cloud App Security fornece uma visão geral das atividades e recurso
 
 É recomendável verificar o painel diariamente para ver quais novos alertas foram acionados. Também é bom ficar atento à integridade do seu ambiente de nuvem para ter uma ideia do que está acontecendo em seu ambiente de nuvem.  
 
-![Painel do Cloud App Security](./media/dashboard.png "dashboard")  
+![Painel do Cloud App Security](./media/dashboard.png "painel")  
 
 ## <a name="handle-your-alerts"></a>Tratar os alertas  
 Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais profundamente. Você talvez queira criar novas políticas com base no que encontrar. Por exemplo, talvez você veja um administrador se conectando da Groenlândia e ninguém na sua empresa nunca se conectou da Groenlândia antes. Você pode criar uma política que suspende automaticamente uma conta de administrador quando ela é usada para entrar nesse local.  
@@ -47,7 +44,7 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
      Esta seção do painel fornece uma visibilidade completa de qualquer atividade suspeita ou violação de suas políticas estabelecidas. Ela ajuda a proteger a postura de segurança que você definiu para o seu ambiente de nuvem.  
 
-     ![Alertas](./media/alerts.png "alerts")  
+     ![Alertas](./media/alerts.png "alertas")  
 
 2.   Para cada alerta, você precisa investigar e determinar a natureza da violação e a resposta necessária.  
 
@@ -109,11 +106,11 @@ Depois que você examinar os alertas abertos, vá para o Centro de políticas pa
 
      Se a política estiver definida para encontrar violações de conformidade e alguém salvar os números de cartão de crédito em arquivos no OneDrive, você terá uma correspondência na política.  
 
-     ![Correspondências de PCI](./media/pci-matches.png "pci matches")  
+     ![Correspondências de PCI](./media/pci-matches.png "correspondências de pci")  
 
 -   Selecione a correspondência para ver os arquivos reais que violaram a política.  
 
-     ![Correspondências de conteúdo de PCI](./media/pci-content-matches.png "pci content matches")  
+     ![Correspondências de conteúdo de PCI](./media/pci-content-matches.png "correspondências de conteúdo de pci")  
 
      Você pode selecionar o próprio arquivo para obter informações sobre os arquivos.  
 
@@ -121,15 +118,9 @@ Depois que você examinar os alertas abertos, vá para o Centro de políticas pa
 
      Você pode clicar nas **Correspondências** para ver os números de cartão de crédito reais.  
 
-     ![ccn de correspondências de conteúdo](./media/content-matches-ccn.png "content matches ccn")  
+     ![Ccn de correspondências de conteúdo](./media/content-matches-ccn.png "ccn de correspondências de conteúdo")  
 
 ## <a name="next-steps"></a>Próximas etapas  
 Para obter mais informações sobre como investigar alertas, consulte [Investigar](investigate.md).  
 Para obter suporte técnico, visite a página de [suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier.](https://premier.microsoft.com/)  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-
