@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f12bb57f06efb0cb0860e7aae898e2bde87d2f2
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 1aaf81fe759fabd6105076d22c65f20c149b8d19
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="activity-policies"></a>Políticas de atividade
