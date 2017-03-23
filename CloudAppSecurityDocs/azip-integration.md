@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e31fd5f40aa432fd149cef0b5923818247aed326
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
@@ -86,7 +86,8 @@ Para ignorar os rótulos de classificação definidos fora da sua organização,
 
 ![rótulos da Proteção de Informações do Azure no Cloud App Security](./media/azip-tags-in-cas.png)
 
-**Política nº 1 – dados confidenciais externamente compartilhados no Box:**
+> ![Observação] Quando os rótulos do Azure Identity Protection estiverem desabilitados em um arquivo, os rótulos desabilitados serão exibidos como desabilitados no Cloud App Security. Os rótulos excluídos não serão exibidos.
+> **Política nº 1 – dados confidenciais externamente compartilhados no Box:**
 
 1.    Criar uma política de arquivo.
 2.    Definir o nome, severidade e categoria da política.

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9797791f11e1329167252f713ecc0698572d2134
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
@@ -103,10 +103,10 @@ Para obter informações sobre como as ações de governança são tratadas quan
 **Local**|**Tipo de objeto de destino**|**Ação de governança**|**Descrição**|**Conectores relacionados** 
 ---------|---------|---------|---------|---------
 |Contas|Arquivo|Remover colaborações do usuário|Remove todas as colaborações de um usuário específico para todos os arquivos - bom para as pessoas que estão saindo da empresa.|Box, G Suite|
-|Contas|Conta|Cancelar suspensão de usuário|Cancela a suspensão do usuário|G Suite, Box, Office|
+|Contas|Conta|Cancelar suspensão de usuário|Cancela a suspensão do usuário|G Suite, Box, Office, Salesforce|
 |Contas|Conta|Configurações de conta|Leva você para a página de configurações de conta no aplicativo específico (por exemplo, dentro do Salesforce).|Todas as configurações dos aplicativos One Drive e SharePoint são feitas no Office.|
 |Contas |Arquivo|Transferir a propriedade de todos os arquivos|Em uma conta, você transfere os arquivos de um usuário para que a propriedade deles seja concedida a uma nova pessoa que você selecionar. O proprietário anterior se torna um editor. Depois de transferir a propriedade, o admin@gtest1.adallom.com se tornará um editor e não será mais possível alterar as configurações de compartilhamento. O novo proprietário receberá uma notificação por email sobre a alteração de propriedade.|G Suite|
-|Contas, Política de atividade|Conta|Suspender um usuário|Define que o usuário não terá nenhum acesso e capacidade para fazer logon - se o usuário estiver conectado quando você definir esta opção, ele será bloqueado imediatamente.|G Suite, Box, Office|
+|Contas, Política de atividade|Conta|Suspender um usuário|Define que o usuário não terá nenhum acesso e capacidade para fazer logon - se o usuário estiver conectado quando você definir esta opção, ele será bloqueado imediatamente.|G Suite, Box, Office, Salesforce|
 |Política de atividade, Contas|Conta|Revogar a senha|Revoga a senha de uma conta de usuário - por exemplo, configurando uma política de atividade que revogue uma senha após 10 tentativas de logon mal sucedidas.|G Suite|
 |Política de atividade, Contas|Conta|Revogar privilégios de administrador|Revoga privilégios para uma conta de administrador - por exemplo, configurando uma política de atividade que revogue os privilégios de administrador depois de 10 tentativas de logon mal sucedidas.|G Suite|
 |Painel do aplicativo > Permissões de aplicativo|Permissões|Cancelar veto do aplicativo|No Google e Salesforce: remove o veto do aplicativo e permite que os usuários concedam permissões para o aplicativo de terceiros com a conta do Google ou Salesforce. No Office 365: restaura as permissões do aplicativo de terceiros para o Office.|G Suite, Salesforce, Office|
@@ -140,6 +140,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Configurações > Configurações do Cloud Discovery > Gerenciar exibições de dados|Cloud Discovery|Criar exibição personalizada de dados de filtro do Cloud Discovery|Cria uma nova exibição de dados para uma exibição mais detalhada dos resultados da descoberta. Por exemplo, intervalos de IP específicos.|Descoberta|
 |Configurações > Configurações do Cloud Discovery > Excluir dados|Cloud Discovery|Excluir os dados do Cloud Discovery|Exclui todos os dados coletados de fontes de descoberta.|Descoberta|
 |Configurações > Configurações do Cloud Discovery > Carregar logs manualmente/Carregar logs automaticamente|Cloud Discovery|Analisar dados do Cloud Discovery|Notificação de que todos os dados de log foram analisados.|Descoberta|
+
 
 
 ## <a name="see-also"></a>Veja também  

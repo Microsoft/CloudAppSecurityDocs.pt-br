@@ -1,11 +1,11 @@
 ---
-title: "Versões e notas de versão do Cloud App Secuirty | Microsoft Docs"
+title: "Versões e notas de versão do Cloud App Security | Microsoft Docs"
 description: "Este tópico é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 3/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,35 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23870c7ba734acc3095f1dcd097f19954fee5e79
-ms.sourcegitcommit: 064afc7148de42c0e81763f96ec13fb2c92f02a9
+ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notas de versão
 
+## <a name="cloud-app-security-release-93"></a>Cloud App Security versão 93
+Lançado em 20 de março de 2017
+
+**Novos recursos:**
+-    A Anonimização do Cloud App Security agora permite que você configure uma chave de criptografia personalizada. Para saber mais, veja [Anonimização do Cloud Discovery](cloud-discovery-anonymizer.md).
+-    Para ter mais controle sobre o gerenciamento de usuário e conta, agora, você tem acesso direto às configurações da conta do Azure AD para cada usuário e conta da página **Conta** clicando na engrenagem ao lado de cada usuário. Isso facilita o acesso ao gerenciamento de grupos, ao gerenciamento avançado de usuário, à configuração de MFA, aos detalhes sobre logons de usuário e à possibilidade de bloquear a entrada. 
+-    Agora você pode exportar um script de bloqueio para aplicativos não sancionados por meio da API do Cloud App Security. Leia mais sobre nossas APIs no portal do Cloud App Security clicando no ponto de interrogação na barra de menus, seguido por **documentação da API**.
+-    O conector do aplicativo do Cloud App Security para ServiceNow foi expandido para incluir suporte para tokens de OAuth (como apresentado em Genebra, Helsinque, Istambul). Isso oferece uma conexão de API mais robusta para o ServiceNow, que não depende do usuário que está implantando. Para saber mais, confira [Conectar o ServiceNow ao Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Os clientes existentes podem atualizar as configurações na página de conector do Aplicativo ServiceNow.
+-    Se você tiver configurado scanners DLP adicionais de terceiros, o status de verificação de DLP agora mostrará o status de cada conector de forma independente para melhorar a visibilidade.
+-    Agora, o Cloud App Security conta com suporte para atividades de Equipes da Microsoft que são suportadas no log de auditoria do Office 365. Esse recurso está sendo implantado gradativamente.
+-    Para os eventos de representação do Exchange Online, agora você pode filtrar pelo nível de permissão usado - delegado, administrador ou administrador delegado. Você pode pesquisar por eventos exibindo o nível de representação que interessa a você no **Log de atividades** pesquisando por **Objetos de atividade** > **Item**.
+-    Na gaveta de aplicativos na guia Permissões do Aplicativo você pode ver o **Editor** de cada aplicativo. Você também pode usar o Editor como um filtro para investigar outros aplicativos do mesmo editor.
+-    Agora, os endereços IP com risco são exibidos como um fator de risco independente em vez de ponderados no fator de risco de **Localização** geral. 
+-    Quando os rótulos do Azure Identity Protection estiverem desabilitados em um arquivo, os rótulos desabilitados serão exibidos como desabilitados no Cloud App Security. Os rótulos excluídos não serão exibidos.
+ 
+**Suporte adicional do Salesforce:**
+-    Agora, você pode suspender e cancelar a suspensão de usuários do Salesforce no Cloud App Security. Isso pode ser feito na guia **Contas** do Conector do Salesforce clicando na engrenagem ao final da linha de um usuário específico e selecionando **Suspender** ou **Cancelar suspensão** e também pode ser aplicado como uma ação de governança como parte de uma política. Todas as atividades suspensas e não suspensas realizadas no Cloud App Security serão registradas no [Log de governança](governance-actions.md). 
+-    Melhor visibilidade ao compartilhamento de conteúdo do Salesforce: agora você pode ver quais arquivos foram compartilhados e com quem, incluindo arquivos compartilhados publicamente, arquivos compartilhados com grupos e arquivos compartilhados com todo o domínio do Salesforce. Uma maior visibilidade será implantada retroativamente a aplicativos do Salesforce novos e conectados atualmente, e isso pode levar algum tempo para ser atualizado pela primeira vez.
+-    Aprimoramos a cobertura para os seguintes eventos do Salesforce e os separamos da atividade **Gerenciar usuários**: 
+    - Editar permissões
+    - Criar usuário
+    - Alterar função
+    - Redefinir senha
 
 ## <a name="cloud-app-security-release-90-91-92"></a>Cloud App Security versão 90, 91, 92
 Lançado em fevereiro de 2017
@@ -54,8 +77,8 @@ Agora o Cloud App Security está oficialmente certificado com a Conformidade da 
 Lançado em 22 de janeiro de 2017
 
 **Novos recursos**
--    Estamos começando a distribuir a capacidade de exibir os eventos de DLP do Centro de Conformidade e Segurança do Office 365 no Cloud App Security. Se você tiver configurado políticas DLP no Centro de Conformidade e Segurança do Office 365, quando forem detectadas correspondências de política, elas serão exibidas no log de atividades do Cloud App Security. As informações no log de atividades incluirão o arquivo ou email que disparou a correspondência e a política ou o alerta correspondente. A atividade "Evento de segurança" permite exibir as correspondências de políticas DLP do Office 365 no log de atividades do Cloud App Security. Usando esse recurso, você pode:
-    -    Ver todas as correspondências de DLP provenientes do mecanismo de DLP do Office365.
+-    Estamos começando a distribuir a capacidade de exibir os eventos de DLP do Centro de Conformidade e Segurança do Office 365 no Cloud App Security. Se você tiver configurado políticas DLP no Centro de Conformidade e Segurança do Office 365, quando forem detectadas correspondências de política, elas serão exibidas no log de atividades do Cloud App Security. As informações no log de atividades incluirão o arquivo ou email que disparou a correspondência e a política ou o alerta correspondente. A atividade **Evento de segurança** permite exibir as correspondências de políticas DLP do Office 365 no log de atividades do Cloud App Security. Usando esse recurso, você pode:
+    -    Ver todas as correspondências de DLP provenientes do mecanismo de DLP do Office 365.
     -    Alertar sobre as correspondências de políticas DLP do Office 365 para um arquivo, um site do SharePoint ou uma política específica.
     -    Investigar as correspondências de DLP em um contexto mais amplo, por exemplo, usuários externos que acessaram ou baixaram algum arquivo que disparou uma correspondência de política DLP.
  

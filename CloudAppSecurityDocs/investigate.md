@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="investigate"></a>Investigar
@@ -79,6 +79,8 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
     -   Alguém foi demitido, mas ainda tem acesso a um aplicativo e pode usar esse acesso para roubar informações?  
 
     -   Você deseja revogar a permissão do usuário para um aplicativo específico ou exigir que um usuário específico execute a autenticação multifator?  
+    
+    -   Você também pode analisar a conta do usuário clicando na engrenagem no final da linha da conta do usuário e selecionando uma ação a ser executada, como **Suspender o usuário** ou **Remover as colaborações do usuário**. Se o usuário foi importado do Azure Active Directory, você também pode clicar nas **Configurações da conta do Azure AD** para ter acesso fácil a recursos de gerenciamento de usuários avançados, como gerenciamento de grupo, MFA, detalhes sobre as entradas do usuário e a possibilidade de bloquear a entrada.
 
 4.  Vá para **Investigar** e, em seguida, selecione um aplicativo. O painel do aplicativo se abre e fornece informações e insights. Você pode usar as guias na parte superior para verificar o seguinte:  
 
