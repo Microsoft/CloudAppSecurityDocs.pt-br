@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,37 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="control"></a>Control
 Você pode aplicar ações de governança aos arquivos de usuários em seu ambiente de nuvem. Depois investigar completamente e aprender sobre sua nuvem, você pode usar ações de governança para ajudar a proteger sua organização.  
+
+## <a name="use-policies-to-assess-risk"></a>Usar políticas para avaliar os riscos  
+Depois que você examinar os alertas abertos, vá para o Centro de políticas para examinar as violações de política que não dispararam alertas.  
+
+-   No painel do Cloud App Security, clique em **Controle** e em **Políticas**.  
+
+-   Selecione uma política específica para ver a lista **Em violação agora** das correspondências de política que não dispararam alertas.  
+
+-   Clique nas violações, uma de cada vez, e decida o que fazer para cada uma. Consulte as seguintes figuras, para obter mais informações sobre as ações de governança.  
+
+     Se a política estiver definida para encontrar violações de conformidade e alguém salvar os números de cartão de crédito em arquivos no OneDrive, você terá uma correspondência na política.  
+
+     ![Correspondências de PCI](./media/pci-matches.png "correspondências de pci")  
+
+-   Selecione a correspondência para ver os arquivos reais que violaram a política.  
+
+     ![Correspondências de conteúdo de PCI](./media/pci-content-matches.png "correspondências de conteúdo de pci")  
+
+     Você pode selecionar o próprio arquivo para obter informações sobre os arquivos.  
+
+     Você pode clicar em **Colaboradores** para ver quem tem acesso a esse arquivo.  
+
+     Você pode clicar nas **Correspondências** para ver os números de cartão de crédito reais.  
+
+     ![Ccn de correspondências de conteúdo](./media/content-matches-ccn.png "ccn de correspondências de conteúdo")  
 
 ## <a name="apply-governance-actions"></a>Aplicar ações de governança  
 Você pode aplicar ações de governança de dentro de políticas, de dentro de alertas e do log **Arquivos**.  
