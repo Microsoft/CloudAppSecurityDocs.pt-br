@@ -35,7 +35,7 @@
 ##### [Política de detecção de anomalias do Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Políticas de atividade](user-activity-policies.md)
 #### [Política de detecção de anomalias](anomaly-detection-policy.md)
-##### [Políticas de arquivos](data-protection-policies.md)
+#### [Políticas de arquivos](data-protection-policies.md)
 ##### [Inspeção de Conteúdo](content-inspection.md)
 ##### [Trabalhando com o mecanismo RegEx](working-with-the-regex-engine.md)
 #### [Referência de Modelo de Política](policy-template-reference.md)
