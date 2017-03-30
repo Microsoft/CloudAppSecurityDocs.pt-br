@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/20/2017
+ms.date: 3/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notas de versão
@@ -23,6 +23,7 @@ translationtype: HT
 Lançado em 20 de março de 2017
 
 **Novos recursos:**
+-   Agora, você pode aplicar políticas para incluir ou excluir grupos de usuários importados. 
 -    A Anonimização do Cloud App Security agora permite que você configure uma chave de criptografia personalizada. Para saber mais, veja [Anonimização do Cloud Discovery](cloud-discovery-anonymizer.md).
 -    Para ter mais controle sobre o gerenciamento de usuário e conta, agora, você tem acesso direto às configurações da conta do Azure AD para cada usuário e conta da página **Conta** clicando na engrenagem ao lado de cada usuário. Isso facilita o acesso ao gerenciamento de grupos, ao gerenciamento avançado de usuário, à configuração de MFA, aos detalhes sobre logons de usuário e à possibilidade de bloquear a entrada. 
 -    Agora você pode exportar um script de bloqueio para aplicativos não sancionados por meio da API do Cloud App Security. Leia mais sobre nossas APIs no portal do Cloud App Security clicando no ponto de interrogação na barra de menus, seguido por **documentação da API**.
@@ -32,7 +33,7 @@ Lançado em 20 de março de 2017
 -    Para os eventos de representação do Exchange Online, agora você pode filtrar pelo nível de permissão usado - delegado, administrador ou administrador delegado. Você pode pesquisar por eventos exibindo o nível de representação que interessa a você no **Log de atividades** pesquisando por **Objetos de atividade** > **Item**.
 -    Na gaveta de aplicativos na guia Permissões do Aplicativo você pode ver o **Editor** de cada aplicativo. Você também pode usar o Editor como um filtro para investigar outros aplicativos do mesmo editor.
 -    Agora, os endereços IP com risco são exibidos como um fator de risco independente em vez de ponderados no fator de risco de **Localização** geral. 
--    Quando os rótulos do Azure Identity Protection estiverem desabilitados em um arquivo, os rótulos desabilitados serão exibidos como desabilitados no Cloud App Security. Os rótulos excluídos não serão exibidos.
+-    Quando os rótulos de Proteção de Informações do Azure estiverem desabilitados em um arquivo, os rótulos desabilitados serão exibidos como desabilitados no Cloud App Security. Os rótulos excluídos não serão exibidos.
  
 **Suporte adicional do Salesforce:**
 -    Agora, você pode suspender e cancelar a suspensão de usuários do Salesforce no Cloud App Security. Isso pode ser feito na guia **Contas** do Conector do Salesforce clicando na engrenagem ao final da linha de um usuário específico e selecionando **Suspender** ou **Cancelar suspensão** e também pode ser aplicado como uma ação de governança como parte de uma política. Todas as atividades suspensas e não suspensas realizadas no Cloud App Security serão registradas no [Log de governança](governance-actions.md). 
