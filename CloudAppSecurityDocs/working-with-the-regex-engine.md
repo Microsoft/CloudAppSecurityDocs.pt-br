@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c386cbbdadaf97297e6d876cdac9f7d3e2142b73
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 0b635a9d2f2e5befa53abea6b7d59876def0a115
+ms.sourcegitcommit: 3bacec2f1e5b7bd34175ab5975f7be74792007e4
 translationtype: HT
 ---
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
