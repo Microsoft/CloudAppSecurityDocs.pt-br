@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notas de versão
+
+## <a name="cloud-app-security-release-94"></a>Cloud App Security versão 94
+Lançado em 2 de abril de 2017
+
+**Novos recursos:**
+-    O Cloud App Security agora está integrado ao Azure RMS. Você pode proteger arquivos no OneDrive e no Sharepoint Online do Office 365 com o Microsoft Rights Management diretamente do portal do Cloud App Security. Isso pode ser feito na página **Arquivos**. Para saber mais, veja [Integrar com a Proteção de Informações do Azure](azip-integration.md). Aplicativos adicionais terão suporte em versões futuras.
+-    Até agora, era especialmente difícil identificar quando as atividades de bots e rastreadores ocorriam em sua rede porque as atividades não eram executadas por um usuário em sua rede. Sem o seu conhecimento, bots e rastreadores podem executar ferramentas maliciosas em seus computadores. Agora, o Cloud App Security fornece as ferramentas para ver quando bots e rastreadores estão realizando atividades em sua rede. Você pode usar a nova marca de agente do usuário para filtrar atividades no log correspondente. A marca de agente do usuário permite que filtrar todas as atividades realizadas por bots e você pode usá-la para criar uma política que o alerta sempre que esse tipo de atividade for detectado. Você será informado quando versões futuras incluírem essas atividades de risco, que estarão incorporadas aos alertas de detecção de anomalias. 
+-    A nova página de permissões de aplicativo unificada permite investigar mais facilmente as permissões que os usuários tem fornecido a aplicativos de terceiros. Clicando em **Investigar** > **Permissões de aplicativo**, agora é possível exibir uma lista de todas as permissões que os usuários forneceram a aplicativos de terceiros em uma página de permissões de aplicativo, por aplicativo conectado, que permite comparar melhor entre os diversos aplicativos e as permissões concedidas.  Para saber mais, veja [Gerenciar permissões de aplicativos](manage-app-permissions.md).
+-    Você pode filtrar os dados diretamente da Gaveta da tabela para uma análise mais fácil.
+No **Log de atividades**, a tabela **Arquivos** e as páginas **Permissões de aplicativo** agora são aprimoradas com novas ações contextuais que tornam a dinamização do processo de investigação muito mais fácil. Também adicionamos links rápidos para as páginas de configuração e a capacidade de copiar dados com um único clique. Para saber mais, veja as informações sobre [como trabalhar com as gavetas de atividades e de arquivos](file-filters.md).
+-    Concluída a implementação do suporte para logs de atividades e alertas do Microsoft Teams para Office 365.
+ 
+
+
 
 ## <a name="cloud-app-security-release-93"></a>Cloud App Security versão 93
 Lançado em 20 de março de 2017

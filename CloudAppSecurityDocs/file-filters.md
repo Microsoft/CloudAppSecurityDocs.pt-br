@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a44be5715d0a9af18afcafaeec3c6180d4e9283
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 046816dbffffb8f91b11656375730b07be4b4fb0
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="files"></a>Arquivos
@@ -118,6 +118,9 @@ Você pode exibir mais informações sobre cada arquivo, clicando no próprio Ar
 - Proprietário: clique no proprietário para exibir a página de usuário do proprietário deste arquivo.
 - Políticas correspondentes: clique no link Políticas correspondentes para ver uma lista de políticas correspondentes a este arquivo.
 - Rótulo de classificação: clique no rótulo de classificação para exibir a lista de rótulos de classificação da Proteção de Informações do Azure encontrados neste arquivo. Em seguida, você poderá filtrar por todos os arquivos que corresponderem a esse rótulo.    
+
+Os campos da gaveta Arquivos fornecem links contextuais para arquivos adicionais e análises detalhadas que você talvez queira executar diretamente na gaveta. Por exemplo, se você mover o cursor para próximo do campo **Proprietário**, poderá usar o ícone para adicionar filtro ![adicionar filtro](./media/add-to-filter-icon.png) para adicionar o proprietário imediatamente ao filtro da página atual. Você também pode usar o ícone de engrenagem de configurações ![ícone de configurações](./media/contextual-settings-icon.png) que aparece diretamente na página de configurações necessária para alterar a configuração de um dos campos, tais como **Rótulos de classificação**.
+
 
 ![Arquivador](./media/file-drawer.png "Arquivador")  
   

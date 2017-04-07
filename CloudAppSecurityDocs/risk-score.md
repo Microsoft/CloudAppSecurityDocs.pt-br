@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,38 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d617631819744211df5e6bee1f48df36dcedb7ce
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 2fcc085cc53d2d7580640022029b1a528bea416a
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="working-with-the-risk-score"></a>Trabalhar com a pontuação de risco  
+
+## <a name="the-cloud-app-catalog"></a>O catálogo de aplicativos de nuvem
+
+Para entender melhor quais aplicativos de nuvem podem ser descobertos pelo Cloud Discovery do Cloud App Security, use o Catálogo de Aplicativos de Nuvem.
+
+O Catálogo de Aplicativos de Nuvem contém mais de 14.000 aplicativos SaaS que podem ser exibidos (filtrados) com base no nome, domínio, pontuação de risco, categoria ou recursos de segurança disponíveis.
+
+![acessar o catálogo de aplicativos de nuvem](./media/risk-cac-dropdown.png)
+
+## <a name="discovery-requests"></a>Solicitações de descoberta
+
+Pontuações de informações e de risco no Catálogo de aplicativos de nuvem são baseadas em várias fontes. A Microsoft se esforça para manter as informações atualizadas, mas não garante a exatidão de todas as fontes de dados. 
+
+Entre em contato conosco se você acredita que as informações sobre um aplicativo estão desatualizadas.
+
+-    Solicitar atualização de pontuação: caso queira que nossa equipe reavalie esse aplicativo de nuvem.
+-    Relatar novos dados (por campo geral ou específico): se você acredita que as informações sobre o aplicativo estão desatualizadas.
+
+![atualizar dados de risco](./media/risk-cac-feedback.png)
+
+Além disso, incentivamos você a sugerir a adição de quaisquer aplicativos de nuvem que sua organização usa que atualmente não podem ser descobertos pelo Cloud Discovery.
+
+![sugerir novos aplicativos](./media/risk-suggest-app.png)
+
+
+## <a name="customizing-the-risk-score"></a>Personalizar a pontuação de risco
+
 O Cloud Discovery oferece dados importantes com relação à credibilidade e à confiabilidade dos aplicativos de nuvem que são usados em todo o ambiente. No portal, cada aplicativo descoberto é exibido juntamente com uma pontuação total, representando a avaliação do Cloud App Security da maturidade desse aplicativo específico do uso para empresas. A pontuação total de qualquer aplicativo em particular é uma média ponderada de três subpontuações relacionadas a três subcategorias que o Cloud App Security considera ao avaliar a confiabilidade:  
   
 -   **Geral** ‑ Essa categoria se refere a informações básicas sobre a empresa que produz o aplicativo, incluindo o seu domínio, ano de fundação e popularidade. Esses campos devem apresentar a estabilidade da empresa no nível mais básico.  
@@ -32,74 +59,20 @@ Cada uma das categorias é composta por várias propriedades específicas. De ac
   
 1.  No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
   
-2.  Em **Configurar métrica de pontuação**, deslize a **Importância** para alterar o peso do campo para **Ignorado**, **Baixo**, **Médio**, **Alto** ou **Muito Alto**.  
+2.  Em **Configurar métrica de pontuação**, deslize a **Importância** para alterar o peso do campo ou da categoria de risco para **Ignorado**, **Baixo**, **Médio**, **Alto** ou **Muito Alto**.  
   
 3.  Além disso, você pode definir se determinados valores não estão disponíveis ou não são aplicáveis no cálculo da pontuação. Quando incluídos, valores N/A têm uma contribuição negativa para a pontuação calculada.  
   
      ![pontuação](./media/score.png "pontuação")  
-  
-## <a name="manage-continuous-reports"></a>Gerenciar relatórios contínuos  
-Relatórios contínuos personalizados fornecem maior granularidade ao monitorar os dados de log do Cloud Discovery da sua organização. Ao criar relatórios personalizados, é possível filtrar por localizações geográficas, redes, sites ou unidades organizacionais específicas. Por padrão, somente os relatórios a seguir aparecem no seu seletor de relatório do Cloud Discovery:  
-  
--  O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  
-  
-- O **Relatório específico de fonte de dados** mostra apenas informações para uma fonte de dados específica.  
-  
-Para criar um novo relatório contínuo:  
-  
-1.  No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
-  
-2.  Clique na guia **Gerenciar relatórios contínuos**.  
-  
-3.  Clique no botão **Criar relatório**.  
-  
-4.  Insira um nome de relatório.  
-  
-5.  Selecione as fontes de dados que você deseja incluir.  
-  
-6.  Defina os filtros que você deseja nos dados, os quais podem ser **Unidades Organizacionais**, **Marcas de endereço IP** ou **Intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](general-setup.md#IPtagsandRanges).  
-  
-    ![criar relatório contínuo personalizado](./media/create-custom-continuous-report.png) 
-  
-## <a name="exclude-entities"></a>Excluir entidades  
-Se você tiver usuários do sistema ou endereços IP que são particularmente ruidosos e não interessantes ou aplicativos que não são relevantes, talvez você deseje excluir os dados deles dos dados do Cloud Discovery que são analisados. Por exemplo, você talvez queira excluir todas as informações provenientes de 127.0.0.1 ou do host local.  
-  
-Para criar uma exclusão:  
-  
-1.  No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
-  
-2.  Clique na guia **Excluir entidades**.  
-  
-3.  Escolha a guia **Usuários excluídos** ou **Endereços IP excluídos** e clique no botão **Adicionar usuário** ou **Adicionar endereço IP**.  
-  
-4.  Adicione um alias do usuário ou endereço IP. É recomendável adicionar informações sobre por que o usuário ou o endereço IP foi excluído.  
-  
-     ![excluir usuário](./media/exclude-user.png "excluir usuário")  
-  
-## <a name="deleting-cloud-discovery-data"></a>Excluindo dados do Cloud Discovery  
-Há uma série de motivos pelos quais você pode desejar excluir seus dados do Cloud Discovery. É recomendável exclui-los nos seguintes casos:  
-  
--   Se você carregou os arquivos de log manualmente e passou muito tempo antes de atualizar o sistema com novos arquivos de log e você não deseja dados antigos afetando os resultados.  
-  
--   Quando você define uma nova exibição de dados personalizada, ela será aplicada somente aos novos dados daquele ponto em diante, então talvez você deseje apagar os dados antigos e carregar os arquivos de log novamente para permitir que a exibição de dados personalizada selecione eventos nos dados de arquivo de log.  
-  
--   Se vários usuários ou endereços IP começaram a funcionar novamente recentemente após ficarem um período offline, sua atividade será identificada como anômala e você poderá obter muitas violações falso positivas.  
-  
-Para excluir os dados do Cloud Discovery:  
-  
-1.  No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
-  
-2.  Clique na guia **Excluir dados**.  
-  
-     É importante ter certeza de que deseja excluir os dados antes de continuar. Isso não poderá ser desfeito e exclui **todos** os dados do Cloud Discovery no sistema.  
-  
-3.  Clique no botão **Excluir**.  
-  
-     ![excluir dados](./media/delete-data.png "excluir dados")  
-  
-    > [!NOTE]  
-    >  O processo de exclusão leva alguns minutos e não é imediato.  
 
+Todas as informações necessárias para compreender como nossas classificações de risco se acumulam estão disponíveis no portal do Cloud App Security.
+Para melhor compreender o peso de um fator de risco na categoria de risco específico, use o botão "i" à direita de cada nome de campo no perfil do aplicativo. Isso fornece informações sobre exatas como o Cloud App Security pontua um fator de risco específico. A pontuação é o valor do fator de risco em uma escala de 1 a 10 mais o seu peso na categoria de risco:
+
+![cálculo de risco](./media/cac-weight.png)
+  
+Para compreender o peso de uma categoria risco na pontuação total do aplicativo, passe o mouse sobre a pontuação da categoria de risco:
+
+![peso da categoria de risco](./media/risk-category-weight.png)
 
 
  

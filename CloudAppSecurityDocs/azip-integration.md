@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
@@ -108,8 +108,34 @@ Saiba mais sobre [ações de governança](governance-actions.md).
 
 Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) e confira o [tutorial de Início Rápido](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial) da Proteção de Informações do Azure.
 
+
+## <a name="integration-with-azure-rights-management"></a>Integração com o Azure Rights Management
+
+Sua organização deve ter o Azure Rights Management licenciado e ativado para integrar com o Cloud App Security.  Essas duas etapas separadas podem ser encontradas em [Ativando o Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
+
+O Cloud App Security atualmente oferece suporte apenas para o nível de proteção Genéricos. A proteção nativa para arquivos do Office, PDF e de imagem estará disponível em versões futuras. 
+
+Esse recurso atualmente está disponível para arquivos que são armazenados no SharePoint Online e no OneDrive for Business. Mais aplicativos de nuvem serão compatíveis em versões futuras.
+
+Depois que o Cloud App Security estiver conectado ao seu serviço do Office 365, será possível usar os recursos da integração com RMS que possibilitam proteger os documentos com RMS diretamente no portal do Cloud App Security, conforme explicado a seguir:
+
+1. Na página **Arquivos**, selecione o arquivo que deseja proteger e clique nos três pontos no final da linha do arquivo. Em seguida, escolha **Proteger**. 
+![proteger aplicativo](./media/protect-app.png)
+2. Você será solicitado a escolher um dos modelos da sua organização para proteger o arquivo. Depois clique em **Proteger**. 
+![modelo de proteção](./media/protect-template.png)
+3. Depois de escolher um modelo e clicar em Proteger, o Cloud App Security aplicará o modelo e protegerá o arquivo original. O arquivo protegido terá o mesmo nome do arquivo original, mas com uma nova extensão de arquivo: ".pfile".
+> [!NOTE]
+>     Recomenda-se aplicar os modelos de RMS que abrangem toda a empresa em arquivos, para que todos os usuários da organização possam acessar esses arquivos, incluindo o proprietário original do arquivo. O proprietário do arquivo, a política de compartilhamento de arquivo e a lista de usuários que já têm acesso a ele não mudam quando o arquivo se torna protegido.
+
+4. Se os usuários desejam acessar o arquivo protegido, eles precisam ter o aplicativo RMS sharing instalado em seus dispositivos. Para saber mais, veja a [Visão geral técnica e detalhes sobre proteção para o aplicativo de compartilhamento Microsoft Rights Management](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
+
+5. Você pode reverter essa ação a qualquer momento no **Log de governança** clicando no botão **Reverter** no final da linha da ação Proteger executada anteriormente. 
+
+
+
+
  
-## <a name="see-also"></a>Consulte Também  
+## <a name="see-also"></a>Veja também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

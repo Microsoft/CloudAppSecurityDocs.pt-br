@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
@@ -83,7 +83,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
   
     -   Revogar senha – revoga a senha do usuário e o força a definir uma nova senha em seu próximo logon.  
   
-     ![referência de política de atividade&6;](./media/activity-policy-ref6.png "referência de política de atividade&6;")  
+     ![referência de política de atividade 6](./media/activity-policy-ref6.png "referência de política de atividade 6")  
   
 
 ### <a name="governance-conflicts"></a>Conflitos de governança
@@ -127,6 +127,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Arquivos|Arquivo|Restaurar da quarentena do usuário|Restaura um usuário de ser colocado em quarentena.|Caixa|
 |Arquivos|Arquivo|Conceder permissões de leitura para mim|Concede permissões de leitura do arquivo para você mesmo, de forma que você possa acessar o arquivo e entender se ele tem uma violação ou não.|G Suite|
 |Arquivos|Arquivo|Permitir que os editores compartilhem|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança é o oposto da ação Remover a capacidade do editor de compartilhar, e permite que o editor compartilhe o arquivo.|G Suite|
+|Arquivos|Arquivo|Proteger|Proteger um arquivo com o Microsoft Rights Management aplicando um modelo da organização.|Office 365|
 |Arquivos|Arquivo|Revogar formulário de permissões de leitura para mim|Revoga permissões de leitura do arquivo para você mesmo, útil após conceder permissão a si próprio para entender se um arquivo tem uma violação ou não.|G Suite|
 |Arquivos, Política de arquivo|Arquivo|Transferir a propriedade do arquivo|Altera o proprietário - na política em que você escolher um proprietário específico.|G Suite|
 |Arquivos, Política de arquivo|Arquivo|Remover um parceiro|Remove um parceiro específico de um arquivo.|G Suite, Box, One Drive, SharePoint|
