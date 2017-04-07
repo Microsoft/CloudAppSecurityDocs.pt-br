@@ -1,11 +1,11 @@
 ---
-title: Investigar | Microsoft Docs
+title: Investigar riscos e atividades suspeitas na nuvem com o Cloud App Security | Microsoft Docs
 description: "Este tópico fornece uma descrição do processo para investigar alertas, problemas e atividades suspeitas usando o Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
-ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
-
-
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="investigate"></a>Investigar
-Depois de o Cloud App Security ser executado em seu ambiente de nuvem, você precisará de um estágio de aprendizado e investigação sobre como usa as ferramentas do Cloud App Security para obter uma compreensão mais profunda do que está acontecendo no seu ambiente de nuvem. Em seguida, com base em seu ambiente específico e como ele está sendo usado, você pode identificar os requisitos para proteger sua organização contra riscos.  
+Depois de o Cloud App Security ser executado em seu ambiente de nuvem, você precisará de um estágio de aprendizado e investigação sobre como usa as ferramentas do Cloud App Security para obter uma compreensão mais profunda do que está acontecendo no seu ambiente de nuvem. Em seguida, com base em seu ambiente específico e como ele está sendo usado, você pode identificar os requisitos para proteger sua organização contra riscos.
 
 Este tópico descreve como executar uma investigação profunda para obter uma compreensão melhor sobre seu ambiente de nuvem.  
 
@@ -34,17 +31,17 @@ Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos
 |Painel do aplicativo: geral|Visão geral do uso do aplicativo por local, gráficos de uso por número de usuários|  
 |Painel do aplicativo: insights|Análise de dados armazenados no aplicativo, divididos por tipo de arquivo e nível de compartilhamento de arquivos|  
 |Painel do aplicativo: arquivos|Analise detalhadamente arquivos, a capacidade de filtrar de acordo com o proprietário, o nível de compartilhamento etc. e execute ações de governança (como quarentena)|  
-|Painel do aplicativo: aplicativos de terceiros|Analise aplicativos de terceiros atualmente implantados, como Google Apps e defina políticas para eles|  
+|Painel do aplicativo: aplicativos de terceiros|Faz uma busca detalhada nos aplicativos de terceiros atualmente implantados, como o G Suite, e suas políticas definidas|  
 |Painel do usuário|Uma visão geral completa do perfil do usuário na nuvem, incluindo grupos, locais, atividades recentes, alertas relacionados e navegadores usados|  
 
-##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> Marcar aplicativos como sancionados ou não sancionados  
+##  <a name="sanctionapp"></a> Marcar aplicativos como sancionados ou não sancionados  
 Uma etapa importante para entender sua nuvem é marcar os aplicativos como sancionados ou não sancionados. Depois de sancionar um aplicativo, você poderá filtrar pelos aplicativos que não estão sancionados e iniciar a migração para aplicativos sancionadas do mesmo tipo.  
 
 -   No console do Cloud App Security, acesse o Catálogo de aplicativos ou Aplicativos descobertos.  
 
--   Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](./media/sanction-three-dots.png "Tag as sanctioned dots") e selecione **Marcar como sancionado**.  
+-   Na lista de aplicativos, na linha do aplicativo que você deseja marcar como sancionado, selecione os três pontos no final da linha ![pontos para Marcar como sancionado](./media/sanction-three-dots.png "pontos para Marcar como sancionado") e selecione **Marcar como sancionado**.  
 
-     ![Marcar como sancionado](./media/mark-as-sanctioned.png "tag as sanctioned")  
+     ![Marcar como sancionado](./media/mark-as-sanctioned.png "marcar como sancionado")  
 
 
 ## <a name="use-the-investigation-tools"></a>Usar as ferramentas de investigação  
@@ -82,10 +79,12 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
     -   Alguém foi demitido, mas ainda tem acesso a um aplicativo e pode usar esse acesso para roubar informações?  
 
     -   Você deseja revogar a permissão do usuário para um aplicativo específico ou exigir que um usuário específico execute a autenticação multifator?  
+    
+    -   Você também pode analisar a conta do usuário clicando na engrenagem no final da linha da conta do usuário e selecionando uma ação a ser executada, como **Suspender o usuário** ou **Remover as colaborações do usuário**. Se o usuário foi importado do Azure Active Directory, você também pode clicar nas **Configurações da conta do Azure AD** para ter acesso fácil a recursos de gerenciamento de usuários avançados, como gerenciamento de grupo, MFA, detalhes sobre as entradas do usuário e a possibilidade de bloquear a entrada.
 
 4.  Vá para **Investigar** e, em seguida, selecione um aplicativo. O painel do aplicativo se abre e fornece informações e insights. Você pode usar as guias na parte superior para verificar o seguinte:  
 
-     ![Painel do aplicativo](./media/investigate-app.png "investigate app")  
+     ![Painel de aplicativos](./media/investigate-app.png "investigar aplicativo")  
 
     -   Que tipo de dispositivos seus usuários estão usando para se conectar ao aplicativo?  
 
@@ -135,7 +134,7 @@ Digamos que você supõe que não há nenhum acesso ao seu ambiente de nuvem por
 
 5.  Em **Filtros de atividade**, selecione **+** para adicionar um filtro. Role para baixo até **Marca de IP** e, em seguida, selecione **Anônimo** e **Tor**.  
 
-     ![Exemplo de política para IPs arriscados](./media/example-policy-risky-ips.png "example policy risky ips")  
+     ![Exemplo de política para IPs arriscados](./media/example-policy-risky-ips.png "Exemplo de política para IPs arriscados")  
 
 Agora que você tem a política em vigor, está surpreso ao ver que recebe um alerta de que a política foi violada.  
 
@@ -155,9 +154,3 @@ Agora que você tem a política em vigor, está surpreso ao ver que recebe um al
 Para saber como controlar o aplicativo de nuvem da sua organização, consulte [Controlar](control.md).   
 Para obter suporte técnico, vá para a página de [suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).  
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier](https://premier.microsoft.com/).  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-
