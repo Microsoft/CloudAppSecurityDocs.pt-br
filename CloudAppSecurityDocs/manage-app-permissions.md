@@ -1,11 +1,11 @@
 ---
-title: "Gerenciar permissões de aplicativo | Documentação da Microsoft"
+title: "Controlar quais aplicativos de nuvem de terceiros recebem permissões | Microsoft Docs"
 description: "Este artigo fornece informações sobre como você pode controlar, vetar e autorizar permissões de aplicativo de terceiros."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
-
-
+ms.openlocfilehash: 4e4641af039ba2ad7b0f36b0322277081170be01
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="manage-app-permissions"></a>Gerenciar permissões de aplicativo
 Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365.  Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo.  Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões do aplicativo Cloud App Security habilitam a visualização de quais aplicativos instalados pelo usuário têm acesso a dados do Office 365, quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
 
@@ -30,11 +27,7 @@ A guia **Permissões de aplicativo** exibe informações sobre permissões de ap
 
 Para acessar a guia de Permissões de aplicativo:
 
-1. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**, selecione **Office 365**. 
-> [!Note]
-> Primeiro é necessário conectar o Cloud App Security com o Office 365 para trabalhar com Permissões do aplicativo.
-
-2. Em seguida, no painel do Office 365, clique na guia de **Permissões de aplicativo**.
+No portal do Cloud App Security, clique em **Investigar** e em **Permissões de aplicativo**.
 
 
  ![permissões de aplicativo](./media/app-permissions.png)
@@ -113,8 +106,3 @@ Os filtros são aplicados automaticamente e a lista de aplicativos é atualizada
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

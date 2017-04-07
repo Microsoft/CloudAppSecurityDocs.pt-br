@@ -1,11 +1,11 @@
 ---
-title: "Inspeção de conteúdo | Microsoft Docs"
+title: "Como o Cloud App Security executa inspeção de conteúdo | Microsoft Docs"
 description: "seu artigo descreve o processo que o Cloud App Security segue ao executar a inspeção de conteúdo DLP nos dados na nuvem."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 3/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
-
-
+ms.openlocfilehash: f6ed28c8edd3f2897de8bad368db1da78527aea1
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="content-inspection"></a>Inspeção de conteúdo
 Este artigo descreve o processo que o Cloud App Security segue ao executar a inspeção de conteúdo DLP nos dados na nuvem. 
 
@@ -45,7 +42,7 @@ As políticas internas de verificação de inspeção de conteúdo podem pesquis
 
 - Endereços de email 
 - Números de cartão de crédito 
-  - Todas as empresas de cartão de crédito (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
+  -    Todas as empresas de cartão de crédito (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
   - Delimitadores: espaço, ponto ou traço
   - Essa verificação também inclui a validação de Luhn
 - Códigos SWIFT
@@ -63,6 +60,15 @@ As políticas internas de verificação de inspeção de conteúdo podem pesquis
 - Cartões de passaporte
 - Números do seguro social
 
+## <a name="supported-languages"></a>Idiomas com suporte
+
+O mecanismo de inspeção de conteúdo do Cloud App Security:
+-    Oferece suporte a todos os caracteres Unicode
+-    Abrange mais de 1.000 tipos de arquivo
+-    Oferece suporte a vários idiomas, especialmente arquivos que usam os conjuntos de caracteres Unicode. Defina suas políticas para considerar esses idiomas; por exemplo se você estiver procurando palavras-chave, deve defini-las para os idiomas que você pretende usar.
+-    Comparar tipos de arquivo baseados em texto que usam codificação diferente de Unicode, por exemplo chinês GB2312, com palavras-chave em chinês Unicode não funcionará conforme o esperado.
+-    Para tipos de arquivo que se baseiam em bibliotecas de terceiros, corresponder cadeias de caracteres e palavras pode não funcionar conforme o esperado em todos os momentos. Isso é mais comum em arquivos (como tipos de arquivo binários) em que a inspeção de conteúdo se baseia em bibliotecas de terceiros que retornam cadeias de caracteres Java para conjuntos de idiomas e caracteres.
+
 
 
 ## <a name="see-also"></a>Veja também  
@@ -70,8 +76,3 @@ As políticas internas de verificação de inspeção de conteúdo podem pesquis
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
