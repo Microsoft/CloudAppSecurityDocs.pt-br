@@ -1,11 +1,11 @@
 ---
-title: Conectar o AWS | Microsoft Docs
+title: Conectar AWS a Cloud App Security para visibilidade e controle de uso | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo do AWS ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,47 +13,40 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
-
-
+ms.openlocfilehash: 68d4c221626706ca641a5d3e1986da543771561a
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar o AWS ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Amazon Web Services existente usando as APIs do conector.  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Como conectar o Amazon Web Services ao Cloud App Security  
   
-1.  No seu console do Amazon Web Services, clique em **Gerenciamento de Identidades e Acesso**.  
+1.  No seu [Console do Amazon Web Services](https://console.aws.amazon.com/), em **Segurança, Identidade e Conformidade**, clique em **IAM**.  
   
-     ![identidade e acesso do aws](./media/aws-identity-and-access.png "aws identity and access")  
+     ![Identidade e acesso do AWS](./media/aws-identity-and-access.png "aws identity and access")  
   
-2.  Clique na guia **Usuários**.  
+2.  Clique na guia **Usuários** e, em seguida, clique em **Adicionar usuário**.  
   
-     ![usuários do aws](./media/aws-users.png "aws users")  
+     ![Usuários do AWS](./media/aws-users.png "aws users")      
   
-3.  Clique em **Criar Novos Usuários**.  
-  
-     ![Criar usuário do AWS](./media/aws-create-user.png "AWS create user")  
-  
-4.  Crie um novo usuário do Cloud App Security e verifique se a caixa de seleção **Gerar uma chave de acesso para cada usuário)** está marcada.  
-  
-5.  Clique em **Download Credentials (Baixar Credenciais)**.  
-  
-     ![credenciais de dl aws](./media/aws-dl-cred.png "aws dl cred")  
-  
-6.  Na guia **Permissões**, clique em **Anexar Política**.  
-  
-     ![anexar a política de usuário do aws](./media/aws-attach-user-policy.png "aws attach user policy")  
-  
-7.  A tela **Examinar Política** é aberta.
- 
-     ![examinar política](./media/aws-review-policy.png "aws review policy")  
-  
+4.  Na etapa **Detalhes**, forneça um novo nome de usuário para Cloud App Security e certifique-se de que em **Tipo de acesso** você selecione **Acesso programático** e clique em **Próximas permissões**.  
 
-8. Em **Nome da Política**, digite “AdallomTrustPolicy”. 
-10. Em **Documento de Política**, copie e cole o seguinte:  
+     ![Criar usuário do AWS](./media/aws-create-user.png "AWS create user")
+
+5. Na etapa **Permissões**, selecione **Anexar as políticas existentes diretamente** e, em seguida, clique em **Criar política**.
+
+   ![Anexar usuário no AWS](./media/aws-attach-user-policy.png "Anexar política existente no AWS")
+
+6.  Em **Criar Política**, selecione **Criar sua Própria Política**.
+ 
+    ![Criar a sua própria política no AWS](./media/aws-create-own-policy.png "Criar política no AWS")
+ 
+7.  Em **Examinar Política**, forneça um **Nome da Política**, por exemplo CloudAppSecurityPolicy.
+
+    ![Examinar política no AWS](./media/aws-review-policy.png "AWS review policy")
+
+8. Em seguida, cole o seguinte no campo **Documento de política** e clique em **Criar política**:
   
     ```     
     {  
@@ -61,8 +54,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
       "Statement" : [{  
           "Action" : [  
             "cloudtrail:DescribeTrails",  
-  
-           "cloudtrail:LookupEvents",  
+            "cloudtrail:LookupEvents",  
             "cloudtrail:GetTrailStatus",  
             "cloudwatch:Describe*",  
             "cloudwatch:Get*",  
@@ -78,46 +70,48 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     ```  
   
-9. No arquivo baixado `credentials.csv`, localize as credenciais do novo usuário. Você precisará copiá-las mais tarde.  
+9. De volta à tela **Adicionar usuário**, atualize a lista se necessário, selecione o usuário que você acabou de criar e clique em **Próxima Revisão**.
+
+   ![Examinar política de usuário no AWS](./media/aws-review-user.png "Examinar usuário no AWS")
+
+10. Se todos os detalhes estiverem corretos, clique em **Criar usuário**.
+
+    ![Permissões de usuário do AWS](./media/aws-user-permissions.png "Examinar permissões de usuário do AWS")
+
+11. Quando você receber a mensagem de êxito, clique em **Baixar .csv** para salvar uma cópia das credenciais do novo usuário, as quais serão necessária posteriormente.  
+
+    ![Baixar CSV no AWS](./media/aws-download-csv.png "AWS download csv")
   
-10. Retorne à página principal do console do AWS e, no canto superior direito, selecione sua região principal na janela suspensa e clique em **CloudTrail** no menu principal.  
+10. No console do AWS, clique em **Serviços** e, em **Ferramentas de Gerenciamento**, clique **CloudTrail**.  
   
-     ![aws cloudtrail](./media/aws-cloudtrail.png "aws cloudtrail")  
+     ![CloudTrail do AWS](./media/aws-cloudtrail.png "aws cloudtrail")  
   
-    1.  Caso ainda não tenha usado o CloudTrail para essa região antes, clique no botão **Introdução** e configure-o selecionando o bucket S3 adequado.  
+    Caso ainda não tenha usado o CloudTrail antes, clique em **Introdução** e configure-o ao fornecer um nome e selecionando o bucket S3 adequado e clique em **Ativar**. Para verificar se você tem uma cobertura completa, defina **Aplicar a todas as regiões** como **Sim**.
   
-         Clique na guia **Configuração** no canto superior esquerdo da tela. Em **Configuração adicional**, clique no ícone de edição.  
+       ![Ligar CloudTrail no AWS](./media/aws-turnon-cloudtrail.png "AWS turn on CloudTrail")
   
-         ![configuração do aws cloudtrail](./media/aws-cloudtrail-config.png "aws cloudtrail config")  
-  
-    2.  Clique em **Sim** quando a pergunta **Include global services (Incluir serviços globais)** surgir e clique em **Salvar**. Isso se aplica somente à região selecionada.  
-  
-         ![aws inclui global svc](./media/aws-include-global-svc.png "aws include global svc")  
-  
-    3.  Repita a Etapa 11 para todas as regiões, mas não configure nenhuma outra região para incluir serviços globais.  
+    Você verá o novo nome de CloudTrail na lista **Trilhas**.
+    
+      ![Lista do AWS CloudTrail](./media/aws-cloudtrail-list.png "Lista do AWS CloudTrail")
   
 11. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
 12. Na página **Conectores de aplicativos**, clique no sinal de mais antes de **AWS**.  
   
-     ![conectar AWS](./media/connect-aws.png "connect AWS")  
+     ![Conectar ao AWS](./media/connect-aws.png "connect AWS")  
   
-13. Na janela pop-up, cole a **Chave de acesso** e a **Chave secreta** do arquivo csv nos campos na página de API e clique em **Atualizar Chave de Acesso**.  
+13. No pop-up, cole a **Chave de acesso** e a **Chave secreta** do arquivo csv nos campos relevantes e clique em **Conectar**.  
+   ![Conectar aplicativo ao AWS](./media/aws-connect-app.png "AWS connect app") 
   
 14. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.  
   
      O teste pode levar alguns minutos. Quando ele for concluído, você receberá uma notificação de Êxito ou Falha. Depois de receber uma notificação de êxito, clique em **Concluído**.  
   
-Depois de conectar o AWS, você receberá eventos por 7 dias antes da conexão.
+Depois de conectar o AWS, você receberá eventos por 7 dias antes da conexão, a menos que você tenha acabado de habilitar o CloudTrail, caso em que você receberá eventos desde o momento em que habilitar o CloudTrail.
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Docs
+title: "Implantar Cloud App Security para informações de uso em aplicativo de nuvem e controle | Microsoft Docs"
 description: "Este tópico descreve o processo para colocar o Cloud App Security em funcionamento."
 keywords: 
 author: rkarlin
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
-ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
-
-
+ms.openlocfilehash: 2c1b1506f4693304cc10f64b1db372dc710e026a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="deploy-cloud-app-security"></a>Implantar o Cloud App Security
 O Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Cloud App Security.  
 
@@ -59,7 +56,7 @@ Como alternativa, você pode acessar o portal por meio do **Centro de administra
  
 
 ### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Etapa 1. [Configurar o Cloud Discovery](set-up-cloud-discovery.md).
-Tarefa necessária: carregar os logs de tráfego **para criar um relatório contínuo do Cloud Discovery**
+Tarefa necessária: carregar logs de tráfego **Para criar um relatório contínuo do Cloud Discovery**
 
  1. Vá para **Configurações** > **Configurações de Cloud Discovery**.
  2. Selecione **Carregar log automaticamente**.
@@ -164,9 +161,3 @@ Essas configurações ajudam a oferecer um melhor controle dos recursos no conso
 Configurar políticas [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).    
 Para obter suporte técnico, vá para a página de [suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier](https://premier.microsoft.com/).   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

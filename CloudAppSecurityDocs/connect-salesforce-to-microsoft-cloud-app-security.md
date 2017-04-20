@@ -1,11 +1,11 @@
 ---
-title: Conectar o Salesforce | Microsoft Docs
+title: Conectar o Salesforce ao Cloud App Security para obter visibilidade e controle de uso | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo Salesforce ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
-ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
-
-
+ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
-
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar o Salesforce ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Salesforce existente usando a API do conector de aplicativos.  
   
@@ -48,7 +44,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
          ![editar perfil do salesforce](./media/salesforce-edit-profile.png "editar perfil do salesforce")  
   
-    -   Certifique-se de que a caixa de seleção **API Habilitada** esteja habilitada. Se não estiver selecionada, poderá ser necessário entrar em contato com a Salesforce para adicioná-la à sua conta.  
+    -   Certifique-se de que a caixa de seleção **API Habilitada** esteja marcada. Se não estiver selecionada, poderá ser necessário entrar em contato com a Salesforce para adicioná-la à sua conta.  
   
          ![api do salesforce habilitada](./media/salesforce-api-enabled.png "api do salesforce habilitada")  
   
@@ -95,16 +91,23 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
      O teste pode levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Concluído**.  
   
   
-Após conectar o Salesforce, você receberá Eventos da seguinte maneira: gatilhos a partir do momento da conexão, Eventos de logon e Trilha de Auditoria de Instalação por 60 dias antes da conexão, EventMonitoring 30 dias ou um dia antes, dependendo da sua licença do Salesforce EventMonitoring.
+Após conectar o Salesforce, você receberá Eventos da seguinte maneira: gatilhos a partir do momento da conexão, Eventos de logon e Trilha de Auditoria de Instalação por 60 dias antes da conexão, EventMonitoring 30 dias ou um dia antes, dependendo da sua licença do Salesforce EventMonitoring. A API do Cloud App Security se comunica diretamente com as APIs disponíveis no Salesforce. Como o Salesforce limita o número de chamadas à API que ele pode receber, o Cloud App Security leva isso em consideração e respeita a limitação. As APIs do Salesforce enviam cada resposta com um campo para os contadores de API, incluindo total disponível e restante. O Cloud App Security calcula isso em um percentual e garante que sempre haja 10% de chamadas à API disponíveis restantes. 
+
+> [!NOTE]
+> A limitação do Cloud App Security é calculada apenas em suas próprias chamadas à API com o Salesforce, não com os outros aplicativos que fazem chamadas à API com o Salesforce.
+> Limitar as chamadas à API devido à limitação poderá diminuir a taxa em que os dados são incluídos no Cloud App Security, mas normalmente voltará ao normal durante a noite.
+
+
+Eventos do Salesforce são processados pelo Cloud App Security da seguinte maneira: 
   
+- Registro em eventos a cada 15 minutos
+- Definição de trilha de auditoria a cada 15 minutos
+- Monitoramento de log de eventos são exportados a cada 24 horas pelo Salesforce (12:00 UTC) 
+
+
 ## <a name="see-also"></a>Veja também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
