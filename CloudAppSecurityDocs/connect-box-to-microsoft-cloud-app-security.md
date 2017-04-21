@@ -1,11 +1,11 @@
 ---
-title: Conectar o Box | Microsoft Docs
+title: Conectar o Box ao Cloud App Security para obter visibilidade e controle de uso | Microsoft Docs
 description: "Este tópico fornece informações sobre como conectar seu aplicativo do Box ao Cloud App Security usando o conector de API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
-
-
+ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Conectar o Box ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Box existente usando as APIs do Conector de Aplicativos.  
   
@@ -32,15 +29,15 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     -   No console de administração do Box, clique no ícone de configurações seguido por **Business settings (Configurações de negócios)**.  
   
-         ![configurações de negócios do box](./media/box-business-settings.png "box business settings")  
+         ![Configurações de negócios do Box](./media/box-business-settings.png "box business settings")  
   
     -   Clique na guia **Aplicativos**.  
   
-         ![aplicativos do box](./media/box-apps.png "box apps")  
+         ![Aplicativos do Box](./media/box-apps.png "box apps")  
   
     -   Se **Aplicativos não Publicados** for selecionado, na caixa de texto **Exceto para**, adicione o número de série do aplicativo do Cloud App Security: `nduj1o3yavu30dii7e03c3n7p49cj2qh` e clique em **Salvar**.  
   
-         ![configurações do box exceto para](./media/box-settings-except-for.png "box settings except for")  
+         ![Configurações de exceção no Box](./media/box-settings-except-for.png "box settings except for")  
   
     > [!NOTE]  
     >  Se você for um cliente Adallom existente e a URL do seu console for para o Adallom e não para o Cloud App Security, use este número de série do aplicativo: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
@@ -49,9 +46,9 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 3.  Na página **Conectores de aplicativos**, clique no botão de sinal de mais e selecione **Box**.  
   
-     ![conectar o box](./media/connect-box.png "connect box")  
+     ![Conectar ao Box](./media/connect-box.png "connect box")  
   
-4.  Na janela pop-up **Configurações do Box**, clique em **Seguir esse link**.  
+4.  No pop-up **Configurações do Box**, clique em **Seguir esse link**.  
   
 5.  Isso abre a página de logon do Box. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Box da sua equipe.  
   
@@ -75,8 +72,3 @@ Após conectar o Box, o Cloud App Security realizará uma verificação completa
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 046816dbffffb8f91b11656375730b07be4b4fb0
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 8f5d78ec5a748dbf0ba3c2895c5f84c4d6cb0a87
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
 translationtype: HT
 ---
 # <a name="files"></a>Arquivos

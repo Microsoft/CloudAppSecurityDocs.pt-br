@@ -1,11 +1,11 @@
 ---
-title: Implantar o Cloud Discovery | Microsoft Docs
+title: Implantar o Cloud Discovery com o Cloud App Security | Microsoft Docs
 description: "Este tópico descreve o procedimento de configuração para colocar o Cloud Discovery em funcionamento."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
-
-
+ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 O Cloud Discovery analisa os logs de tráfego e os compara com o catálogo de aplicativos de nuvem do Cloud App Security de mais de 13.000 em aplicativos de nuvem que são classificados e pontuados com base em mais de 50 atributos, a fim de fornecer visibilidade contínua do uso da nuvem, TI sombra e o risco que a TI sombra representa para sua organização.
 O **Catálogo de aplicativos de nuvem** classifica o risco para seus aplicativos de nuvem com base em certificações regulatórias, padrões da indústria e práticas recomendadas. Quatro processos complementares são executados no Catálogo de aplicativos de nuvem para mantê-lo atualizado:
-1.  Extração de dados automatizada diretamente do aplicativo de nuvem (para atributos como conformidade com SOC 2).
-2.  Extração de dados avançada automatizada dos algoritmos do Cloud App Security (para atributos como cabeçalhos de segurança HTTP).
-3.  Análise contínua da equipe de analistas de nuvem do Cloud App Security (para atributos como criptografia em repouso).
-4.  Solicitações de revisão baseada no cliente, com base nas solicitações de envio de cliente para alterações no Catálogo de aplicativos de nuvem. Todas as solicitações são revisadas por nossa equipe de analistas de nuvem e atualizadas com base em suas descobertas.
+1.    Extração de dados automatizada diretamente do aplicativo de nuvem (para atributos como conformidade com SOC 2).
+2.    Extração de dados avançada automatizada dos algoritmos do Cloud App Security (para atributos como cabeçalhos de segurança HTTP).
+3.    Análise contínua da equipe de analistas de nuvem do Cloud App Security (para atributos como criptografia em repouso).
+4.    Solicitações de revisão baseada no cliente, com base nas solicitações de envio de cliente para alterações no Catálogo de aplicativos de nuvem. Todas as solicitações são revisadas por nossa equipe de analistas de nuvem e atualizadas com base em suas descobertas.
   
 ## <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
@@ -84,7 +81,7 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - Cisco ScanSafe
 - Cisco Merkai – Log de URLs
 - Dell Sonicwall
-- Fortiner Fortigate
+- Fortinet Fortigate
 - Juniper SRX
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
@@ -113,16 +110,17 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |Cisco Scansfe|**Sim**|Não|**Sim**|**Sim**|**Sim**|**Sim**|
 |Dell SonicWall|**Sim**|**Sim**|Não|**Sim**|**Sim**|**Sim**|
 |Fortigate|Não|**Sim**|Não|**Sim**|**Sim**|**Sim**|
-|Juniper SRX|Não|**Sim**|Não|**Sim**|**Sim**|**Sim**|
+|Juniper SRX|Não|**Sim**|Não|**Sim**\*|**Sim**|**Sim**|
 |McAfee SWG|**Sim**|Não|Não|**Sim**|**Sim**|**Sim**|
 |Meraki|**Sim**|**Sim**|Não|**Sim**|Não|Não|
 |MS TMG|**Sim**|Não|**Sim**|**Sim**|**Sim**|**Sim**|
-|PAN|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
+|Redes de Palo Alto|**Sim**|**Sim**|**Sim**|**Sim**\*|**Sim**|**Sim**|
 |Sophos|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|Não|
 |Websense – Relatório de detalhes investigativo (CSV)|**Sim**|Não|Não|**Sim**|Não|Não|
 |Websense – Log de atividades da Internet (CEF)|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
-|Zscaler|**Sim**|Não|**Sim**|Não|**Sim**|Não|
+|Zscaler|**Sim**|Não|**Sim**|Não|**Sim**|**Sim**|
 
+\* Cloud Discovery dá suporte a IPv6.
 
 ## <a name="see-also"></a>Veja também
  
@@ -131,10 +129,3 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)
-  
-  
-
-
-<!--HONumber=Dec16_HO4-->
-
-
