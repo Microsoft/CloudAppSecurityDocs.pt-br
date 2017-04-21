@@ -23,7 +23,7 @@ O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de
  
 **Tipos de arquivos com suporte** 
 
-Mecanismos de DLP internos do Cloud App Security executam inspeção de conteúdo extraindo texto de todos os tipos de arquivo comuns (mais de&100;), incluindo Office, Open Office, arquivos compactados, vários formatos de texto avançado, XML, HTML e muito mais.
+Mecanismos de DLP internos do Cloud App Security executam inspeção de conteúdo extraindo texto de todos os tipos de arquivo comuns (mais de 100), incluindo Office, Open Office, arquivos compactados, vários formatos de texto avançado, XML, HTML e muito mais.
 
 O mecanismo combina três aspectos em cada política:  
   
