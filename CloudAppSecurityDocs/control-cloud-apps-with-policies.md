@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
@@ -139,7 +139,20 @@ Para criar uma política com base nos resultados da investigação, execute o se
 >  [Políticas de proteção de dados](data-protection-policies.md)  
 >   
 >  [Políticas do Cloud Discovery](cloud-discovery-policies.md)  
+
   
+### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>Adicionar ações automatizadas para responder e corrigir riscos automaticamente
+
+Para obter uma lista de ações de governança disponíveis por aplicativo, consulte [Controlando aplicativos conectados](governance-actions.md).
+
+Você também pode definir a política para enviar um alerta por email ou mensagem de texto quando correspondências são detectadas. 
+
+Para definir suas preferências de notificação, vá até [Personalizar o portal](general-setup.md) 
+  
+> [!NOTE] 
+> O número máximo de alertas que serão enviados por meio de mensagem de texto é 10 por número de telefone por dia. Observe que o dia é calculado de acordo com o fuso horário UTC. 
+
+
 ## <a name="enable-and-disable-policies"></a>Habilitar e desabilitar políticas
 
 Depois de criar uma política, é possível habilitá-la ou desabilitá-la. Isso evita a necessidade de excluir uma política após criá-la a fim de a interromper. Em vez disso, se por alguma razão você desejar interromper a política, desabilite-a até querer habilitá-la novamente.
