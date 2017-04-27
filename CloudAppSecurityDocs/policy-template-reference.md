@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a06dd9f53c4074b2842eee3f369611b5b6b274c
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 12b77282ebf900978efa6be7b6902aee5ad2eaaa
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="policy-templates"></a>Modelos de Política
@@ -36,7 +36,7 @@ A seguir está uma lista de todos os modelos de política que existem no Cloud A
 |Novo aplicativo com risco|Alerta quando novos aplicativos são descobertos com pontuação de risco menor do que 6 e que são usados por mais de 50 usuários com um uso diário total de mais de 50 MB.|
 |Verificação de conformidade de aplicativo de colaboração|Alerta quando novos aplicativos de colaboração são descobertos que não tem conformidade com SOC2 e SSAE 16, e são usados por mais de 50 usuários com um uso diário total de mais de 50 MB.|
 |Logon de um endereço IP com risco|Alerta quando um usuário faz logon em seus aplicativos sancionados de um endereço IP com risco. Por padrão, a categoria de endereço IP com risco contém endereços que têm marcas de endereço IP de proxy anônimo, TOR ou Botnet. Você pode adicionar mais endereços IP para essa categoria na página de configurações de intervalos de endereço IP.|
-|Atividade administrativa de um endereço IP não administrativo|Alerta quando um usuário administrador executa uma atividade administrativa de um endereço IP que não está incluído em uma categoria específica de intervalo de endereços IP. Você pode definir os endereços IP adicionais com risco indo para a página de configurações e selecionando os intervalos de endereços IP.|
+|Atividade administrativa de um endereço IP não corporativo|Alerta quando um usuário administrador executa uma atividade administrativa de um endereço IP que não está incluído na categoria de intervalo de endereços IP corporativos. Você deve primeiro configurar seus endereços IP corporativos indo para a página Configurações e definindo **Intervalos de endereços IP**.|
 |Logon de usuário de um endereço IP não categorizado|Alerta quando um usuário faz logon de um endereço IP que não está incluído em uma categoria específica de intervalo de IP. Você pode categorizar os endereços IP indo para a página Configurações e selecionando os intervalos de endereços IP.|
 |Arquivo contendo PII detectado na nuvem (mecanismo de DLP interno)|Alerta quando um arquivo que contém informações de identificação pessoal (PII) é detectado pelo nosso mecanismo interno de prevenção de perda de dados (DLP) em um aplicativo de nuvem sancionado.|
 |Novo aplicativo de gerenciamento de recursos humanos|Alerta quando novos aplicativos de gerenciamento de recursos humanos são usados por mais de 50 usuários com um uso diário total de mais de 50 MB.|

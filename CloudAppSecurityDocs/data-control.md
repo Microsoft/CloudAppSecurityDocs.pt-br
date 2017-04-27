@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7e735519caa7da514f06db13afc737cf6ef1806
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 25fef8249688d9116001fd7147a00aedf9d72ca7
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="controlling-and-protecting-your-files"></a>Controlar e proteger seus arquivos  
@@ -27,10 +27,10 @@ O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de
 Esse caso de uso aplica-se ao Office 365, G Suite, Box, Dropbox e Salesforce.
 
 ### <a name="the-threat"></a>A AMEAÇA
-Os funcionários estão compartilhando arquivos da empresa que contêm dados confidenciais com pessoas de fora da organização. Isso pode resultar em vazamentos de dados não monitorados. Isso pode ser inocente e não violar as políticas da empresa, mas mesmo nesse caso é importante monitorar o que está sendo compartilhado, para que você sempre esteja ciente de como a rede está sendo usada e quais dados estão sendo compartilhados externamente.
+Um dos maiores benefícios que a tecnologia de nuvem oferece é a capacidade de compartilhar qualquer coisa com qualquer um. Mas com mais poder vem maior responsabilidade; para certificar-se de que nenhum dado confidencial está sendo compartilhado externamente, você precisa saber quais arquivos contêm dados confidenciais e com quem eles são compartilhados. Usando as ferramentas fornecidas com seus aplicativos na nuvem, você não é capaz de dizer o que é salvo no aplicativo na nuvem nem quem tem acesso – impedindo que você reconheça possíveis vazamentos de dados.
 
 ### <a name="the-solution"></a>A SOLUÇÃO
-Obtenha visibilidade sobre o compartilhamento de arquivos em sua rede e implante as ações de governança aplicando as seguintes políticas e ações de governança no Cloud App Security.
+Ao encontrar os parâmetros de nível de compartilhamento e confidencialidade e realizar o cruzamento entre eles, você pode identificar essas possíveis violações. O Cloud App Security examina todos os arquivos salvos em seus aplicativos na nuvem e classifica-os automaticamente pelo nível de compartilhamento. Você pode configurar uma política de arquivo do Cloud App Security para pesquisar todos os dados confidenciais salvos em seus aplicativos na nuvem. Uma vez descoberto que um arquivo confidencial compartilhado externamente, você pode realizar ações de correção manual ou você pode definir o Cloud App Security para fazer isso automaticamente para você. Ao fazer isso, você pode remover o risco de vazamento de dados com um clique.
 
 #### <a name="prerequisites"></a>Pré-requisitos
 
@@ -38,7 +38,7 @@ Obtenha visibilidade sobre o compartilhamento de arquivos em sua rede e implante
 
 #### <a name="setting-up-monitoring"></a>Configurar o monitoramento
 
-1.    Controlar seus arquivos criando uma política
+1.    Inicie o monitoramento de seu aplicativo configurando uma política que verificará todos os arquivos compartilhados externamente quanto a conteúdo sensível:
 
     1. Na página **Políticas**, clique em [**Criar política de arquivos**](data-protection-policies.md). 
     ![Criar política de arquivos](./media/create-file-policy.png)
@@ -66,7 +66,7 @@ Obtenha visibilidade sobre o compartilhamento de arquivos em sua rede e implante
 
 #### <a name="removing-the-risk"></a>Remover o risco
 
-Depois de validar e ajustar a política para garantir que esteja executando como pretendido, faça o seguinte: 
+Após você ter validado e ajustado a política, remova eventuais falsos positivos que possam ter correspondido à sua política. Em seguida, faça o seguinte: 
   1. Você pode executar [ações de governança](governance-actions.md) imediatas clicando nos três pontos no final da linha e selecionando a ação de governança relevante; por exemplo, **Colocar em quarentena de usuário**.
 
  ![governança automática externa](./media/auto-gov-external.png)
@@ -81,21 +81,21 @@ Esse caso de uso aplica-se ao Office 365, G Suite, Box, Dropbox e Salesforce.
 
 Esse caso de uso tira proveito da integração entre o Cloud App Security e a Proteção de Informações do Azure. Se você estiver executando a Proteção de Informações do Azure em sua organização e tiver rotulado os arquivos com rótulos da Proteção de Informações do Azure, o Cloud App Security permite monitorar e controlar o que acontece com esses arquivos depois que eles são rotulados.
 
-## <a name="the-threat"></a>A AMEAÇA
+### <a name="the-threat"></a>A AMEAÇA
 
 Você sabe que precisa proteger seus dados. Você já teve o trabalho de classificar os arquivos na Proteção de Informações do Azure. Mas após classificá-los, como você saberá onde estão e quem os acessa? 
 
-## <a name="the-solution"></a>A SOLUÇÃO
- Você pode monitorar esses arquivos confidenciais quando estiverem na nuvem usando o Cloud App Security. Isso permite garantir que os dados classificados como **confidenciais** (ou alguma outra classificação confidencial) não sejam compartilhados inadequadamente. Deixe que o Cloud App Security monitore e gerencie os arquivos classificados na Proteção de Informações do Azure implementando as seguintes ações de governança e políticas.
+### <a name="the-solution"></a>A SOLUÇÃO
+ Você pode monitorar esses arquivos confidenciais quando estiverem na nuvem usando o Cloud App Security. Isso permite que você certifique-se de que os dados classificados como **confidenciais** (ou outra classificação confidencial) não estejam sendo inadequadamente compartilhados. Deixe que o Cloud App Security monitore e gerencie os arquivos que você classificou na Proteção de Informações do Azure distribuindo a política e ações de governança a seguir.
 
-### <a name="prerequisites"></a>Pré-requisitos
+#### <a name="prerequisites"></a>Pré-requisitos
 
 - [Conectar](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ao menos um aplicativo de nuvem ao Cloud App Security.
 - Siga as [Instruções de integração da Proteção de Informações do Azure](azip-integration.md) para habilitar a verificação automática.
 
-### <a name="setting-up-monitoring"></a>Configurar o monitoramento
+#### <a name="setting-up-monitoring"></a>Configurar o monitoramento
 
-1. Controlar seus dados criando uma política    
+1. Monitore todos os arquivos com os rótulos de classificação desejados que são compartilhados publicamente:    
     
     1. Na página **Políticas**, clique em [**Criar política de arquivos**](data-protection-policies.md). 
 
@@ -116,7 +116,7 @@ Você sabe que precisa proteger seus dados. Você já teve o trabalho de classif
     3. Se você descobrir falsos positivos, marque-os com uma marca de verificação para excluí-los do relatório e das correspondências dinâmicas. Você pode usar o recurso de comentários para informar a equipe do Cloud App Security sobre as melhorias que gostaria de adicionar. 
 
 
-### <a name="validating-your-policy"></a>Validar a política
+#### <a name="validating-your-policy"></a>Validar a política
 
 1. Crie um novo documento do Word e use a barra de ferramentas da Proteção de Informações do Azure para definir qualquer rótulo de confidencialidade, como **Confidencial**. 
 
@@ -129,7 +129,7 @@ Você sabe que precisa proteger seus dados. Você já teve o trabalho de classif
 
 #### <a name="removing-the-risk"></a>Remover o risco
 
-Depois de validar e ajustar a política para garantir que esteja executando como pretendido, faça o seguinte: 
+Após você ter validado e ajustado a política para remover eventuais falsos positivos que possam ter correspondido à sua política, faça o seguinte: 
 
 1. Você pode executar [ações de governança](governance-actions.md) imediatas clicando nos três pontos no final da linha e selecionando a ação de governança relevante; por exemplo, **Colocar em quarentena de usuário**.
     
