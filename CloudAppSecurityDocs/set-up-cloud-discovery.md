@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
+ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
 translationtype: HT
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
@@ -64,7 +64,7 @@ O Cloud Discovery utiliza os dados em seus logs de tráfego. Quanto mais detalha
  
 O Cloud Discovery não pode mostrar ou analisar atributos que não estão incluídos em seus logs.
 Por exemplo, o formato de log padrão do **Cisco ASA Firewall** não contém a **Quantidade de bytes carregados por transação**, **Username** nem a **URL de destino** (somente o IP de destino).
-Portanto, esses atributos serão exibidos nos dados do Cloud Discovery para esses logs, e a visibilidade sobre os aplicativos de nuvem pode ser limitada. Para firewalls Cisco ASA, é necessário definir o nível de informações para 6. 
+Portanto, esses atributos não serão exibidos nos dados do Cloud Discovery para esses logs e a visibilidade sobre os aplicativos de nuvem poderá ser limitada. Para firewalls Cisco ASA, é necessário definir o nível de informações para 6. 
  
 
 Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego devem atender às seguintes condições:
@@ -79,7 +79,7 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - Firewall Cisco ASA (Para firewalls Cisco ASA, é necessário definir o nível de informações para 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Cisco Merkai – Log de URLs
+- Cisco Meraki – log de URLs
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
