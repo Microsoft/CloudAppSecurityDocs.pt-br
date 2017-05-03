@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
+ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
+ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notas de versão
@@ -26,7 +26,7 @@ Lançado em 24 de abril de 2017
 **Atualizações**
 - A página **Contas** foi atualizada com aprimoramentos que facilitam a detecção de riscos. Agora você pode filtrar mais facilmente em busca de contas internas e externas, ver num piscar de olhos se um usuário tem permissões de administrador e realizar ações em cada conta, por aplicativo, de modo simples (tais como remover permissões, remover colaborações do usuário e suspender o usuário). Além disso, [grupos de usuários](user-groups.md) importados para cada conta serão exibidos. 
 
-- Para contas da Microsoft (Office 365 e Azure Active Directory), o Cloud App Security agrupa diferentes identificadores de usuário como endereços de proxy, aliases, SIDs e muito mais em uma única conta. Todos os aliases relacionados a uma conta aparecerão sob o endereço de email principal. Com base na lista de identificadores de usuário, para atividades cujo ator é um identificador de usuário, o ator será exibido como o nome UPN do nome de usuário primário. Com base no nome UPN, serão atribuídos a grupos e políticas aplicadas. Isso melhorará a investigação de atividades e unirá todas as atividades relacionadas à mesma sessão de anomalias e políticas baseadas em grupo. Este recurso será implantado gradualmente no próximo mês.
+- Para as contas de trabalho da Microsoft (Office 365 e Azure Active Directory), o Cloud App Security agrupa diferentes identificadores de usuário como endereços de proxy, aliases, SIDs e muito mais em uma única conta. Todos os aliases relacionados a uma conta aparecerão sob o endereço de email principal. Com base na lista de identificadores de usuário, para atividades cujo ator é um identificador de usuário, o ator será exibido como o nome UPN do nome de usuário primário. Com base no nome UPN, serão atribuídos a grupos e políticas aplicadas. Isso melhorará a investigação de atividades e unirá todas as atividades relacionadas à mesma sessão de anomalias e políticas baseadas em grupo. Este recurso será implantado gradualmente no próximo mês.
 
 - A marca de Robô foi adicionada como um possível fator de risco no relatório interno de uso do navegador. Agora, além de o uso do navegador ser marcado como obsoleto, você pode ver quando o uso do navegador foi executado por um robô. Saiba mais sobre o [relatórios internos](built-in-report-reference.md).
 
