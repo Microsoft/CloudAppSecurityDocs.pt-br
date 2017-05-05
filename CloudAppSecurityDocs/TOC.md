@@ -9,6 +9,7 @@
 ## [Implantar o Cloud Discovery](set-up-cloud-discovery.md)
 ### [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
+### [Usando o analisador de log personalizado](custom-log-parser.md)
 ### [Anonimizar dados do Cloud Discovery](cloud-discovery-anonymizer.md)
 ## [Conectar aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Conectar o Box](connect-box-to-microsoft-cloud-app-security.md)
