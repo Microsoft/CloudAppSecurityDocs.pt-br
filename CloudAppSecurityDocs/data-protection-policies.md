@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 04264ea25a987e2bfef60a0e77c0a227b650b740
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
 ---
 # <a name="file-policies"></a>Políticas de arquivos  
 As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso.  
@@ -103,10 +104,7 @@ Cada política é composta pelas seguintes partes:
 -   Ações – a política fornece a um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são encontradas.  Essas são divididas em ações de colaboração, ações de segurança e ações de investigação.
 
 -   Extensões  
-  
-    > [!NOTE]  
-    >  Extensões estão disponíveis apenas na versão Cloud App Security Technical Preview.  
-  
+   
     -  A inspeção de conteúdo pode ser executada por meio de mecanismos de terceiros para recursos antimalware ou de DLP aprimorados.  
   
     -  [As ações de governança](governance-actions.md) podem ser executadas por meio de mecanismos de terceiros para impor o controle de criptografia personalizado ou outros tipos de processamento de arquivo (por exemplo, aplicação de marca d’água personalizada).  
