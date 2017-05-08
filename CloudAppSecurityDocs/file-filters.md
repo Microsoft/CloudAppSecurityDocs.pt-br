@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 5/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8f5d78ec5a748dbf0ba3c2895c5f84c4d6cb0a87
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
-translationtype: HT
+ms.openlocfilehash: a93e9ac3c98dbbe2fef09419afe58c158ec96337
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
 ---
 # <a name="files"></a>Arquivos
 
