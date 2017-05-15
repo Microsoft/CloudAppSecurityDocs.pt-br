@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: acae7c7da7e9f800ff95a89ab422143bb84b699c
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: dc103be5e26752cdfa7dd605ba45f4a7c347b032
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="discover"></a>Descobrir
 
@@ -73,7 +74,7 @@ Para criar um novo relatório contínuo:
   
 5.  Selecione as fontes de dados que você deseja incluir.  
   
-6.  Defina os filtros que você deseja nos dados, os quais podem ser **Unidades Organizacionais**, **Marcas de endereço IP** ou **Intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](general-setup.md#IPtagsandRanges).  
+6.  Defina os filtros que você deseja nos dados, os quais podem ser **Unidades Organizacionais**, **Marcas de endereço IP** ou **Intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).  
   
     ![criar relatório contínuo personalizado](./media/create-custom-continuous-report.png) 
 

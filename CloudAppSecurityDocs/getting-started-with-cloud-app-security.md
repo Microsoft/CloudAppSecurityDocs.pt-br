@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Implantar o Cloud App Security
 O Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Cloud App Security.  
@@ -99,7 +100,7 @@ Tarefa necessária: Criar políticas
 Você pode usar políticas para ajudar a monitorar as tendências, ver as ameaças de segurança e gerar alertas e relatórios personalizados. Com as políticas, você pode criar ações de governança e definir controles de compartilhamento de arquivos e prevenção de perda de dados.
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>Etapa 4. [Personalizar sua experiência](general-setup.md#mailsettings).
+### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Etapa 4. [Personalizar sua experiência](mail-settings.md).
 Tarefa recomendada: Adicionar os detalhes da sua organização
 
 **Para inserir as configurações de email**
@@ -126,7 +127,7 @@ Tarefa recomendada: Adicionar os detalhes da sua organização
 Alguns recursos funcionam mais bem quando personalizados para suas necessidades. Forneça uma experiência melhor para os usuários com seus próprios modelos de email, decida quais notificações são recebidas e personalize sua métrica de pontuação de risco de acordo com as preferências da sua organização.
 
 
-### <a name="step-5-organize-the-data-according-to-your-needsgeneral-setupmdiptagsandranges"></a>Etapa 5. [Organizar os dados de acordo com suas necessidades](general-setup.md#IPtagsandRanges).
+### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Etapa 5. [Organizar os dados de acordo com suas necessidades](ip-tags.md).
 Tarefa recomendada: Definir as configurações importantes
 
 **Para criar marcas de endereço IP**
