@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4191a3c73344eb631a989ba6942b7ac6a515940f
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.openlocfilehash: d159cb95c9f0468e8c658c13586d07f0f20049ef
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: pt-BR
 ---
 # <a name="built-in-report-reference"></a>Referência de relatório interno
-É recomendável que você crie relatórios personalizados usando relatórios internos como ponto de partida, como se fosse um modelo no qual basear seus relatórios personalizados. A tabela a seguir fornece uma lista de relatórios internos e os tipos de eventos que talvez você queira usá-los para monitorar.  
+
+O CAS fornece uma lista completa de relatórios internos prontos que permitem a obtenção de informações e o monitoramento de como as pessoas usam a nuvem. Você pode usar os filtros em cada relatório para personalizar o relatório e exportá-lo para sua conveniência.
+
+
+A tabela a seguir fornece uma lista de relatórios internos e os tipos de eventos que talvez você queira usá-los para monitorar.  
   
 ## <a name="built-in-report-list"></a>Lista de relatórios internos  
   

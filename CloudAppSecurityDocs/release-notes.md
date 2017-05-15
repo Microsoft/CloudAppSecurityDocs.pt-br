@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: pt-BR
 ---
 # <a name="release-notes"></a>Notas de versão
+
+
+## <a name="cloud-app-security-release-96"></a>Cloud App Security versão 96
+Lançamento: 8 de maio de 2017
+
+Novos recursos:
+-    Continuando a distribuição gradual da permissão de Leitor de Segurança, que permite que você gerencie as permissões concedidas aos seus administradores dentro do console do Cloud App Security. Por padrão, todos os Administradores globais e os Administradores de segurança do Azure Active Directory e do Office 365 têm permissão total no portal, e todos os Leitores de segurança no Azure Active Directory e no Office 365 têm acesso somente leitura no Cloud App Security. Para saber mais, confira [Gerenciar permissões de administrador](manage-admins.md).
+-    Distribuição concluída do suporte ao Cloud App Security para analisadores de log definidos pelo usuário para logs baseados em CSV. O Cloud App Security permite que você configure um analisador para seus dispositivos anteriormente sem suporte fornecendo as ferramentas para delinear quais colunas se correlacionam com dados específicos. Para saber mais, confira [Analisador de log personalizado](custom-log-parser.md).
+Aprimoramentos:
+-    Agora, o Cloud Discovery dá suporte a dispositivos Juniper SSG.
+-    O suporte do Cloud Discovery aos logs Cisco ASA foi aprimorado para melhorar a visibilidade.
+-    Agora você pode executar com mais facilidade ações em lote e selecionar vários registros nas tabelas do portal do Cloud App Security: o tamanho da página aumentou para melhorar as operações em lote.
+-    Agora, os relatórios internos **Compartilhamento de saída por domínio** e **Proprietários dos arquivos compartilhados** podem ser executados para os dados do Salesforce.
+-    Estamos iniciando a distribuição de atividades adicionais do Salesforce, permitindo que você acompanhe informações interessantes extraídas dos dados da atividade. Essas atividades incluem exibição e edição de contas, leads, oportunidades e vários outros objetos interessantes da Salesforce.
+-    Novas atividades foram adicionadas ao Exchange a fim de permitir que você possa monitorar quais permissões foram concedidas para pastas de caixa de correio ou caixas de correio do usuário. Essas atividades incluem:
+    -    Adicionar permissões de destinatário
+    -    Remover permissões de destinatário
+    -    Adicionar permissões de pasta de caixa de correio
+    -    Remover permissões de pasta de caixa de correio
+    -    Definir permissões de pasta de caixa de correio
+
+    Por exemplo, agora você pode monitorar os usuários que receberam permissões **SendAs** para as caixas de correio de outros usuários e, como resultado, podem enviar emails em nome deles.
 
 
 ## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security versão 95 (em distribuição)

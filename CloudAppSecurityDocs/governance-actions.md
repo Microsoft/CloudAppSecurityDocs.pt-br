@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: pt-BR
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades.
@@ -105,7 +106,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Contas|Arquivo|Remover colaborações do usuário|Remove todas as colaborações de um usuário específico para todos os arquivos - bom para as pessoas que estão saindo da empresa.|Box, G Suite|
 |Contas|Conta|Cancelar suspensão de usuário|Cancela a suspensão do usuário|G Suite, Box, Office, Salesforce|
 |Contas|Conta|Configurações de conta|Leva você para a página de configurações de conta no aplicativo específico (por exemplo, dentro do Salesforce).|Todas as configurações dos aplicativos One Drive e SharePoint são feitas no Office.|
-|Contas |Arquivo|Transferir a propriedade de todos os arquivos|Em uma conta, você transfere os arquivos de um usuário para que a propriedade deles seja concedida a uma nova pessoa que você selecionar. O proprietário anterior se torna um editor. Depois de transferir a propriedade, o admin@gtest1.adallom.com se tornará um editor e não será mais possível alterar as configurações de compartilhamento. O novo proprietário receberá uma notificação por email sobre a alteração de propriedade.|G Suite|
+|Contas |Arquivo|Transferir a propriedade de todos os arquivos|Em uma conta, você transfere os arquivos de um usuário para que a propriedade deles seja concedida a uma nova pessoa que você selecionar. O proprietário anterior se tornará um editor e não será mais possível alterar as configurações de compartilhamento. O novo proprietário receberá uma notificação por email sobre a alteração de propriedade.|G Suite|
 |Contas, Política de atividade|Conta|Suspender um usuário|Define que o usuário não terá nenhum acesso e capacidade para fazer logon - se o usuário estiver conectado quando você definir esta opção, ele será bloqueado imediatamente.|G Suite, Box, Office, Salesforce|
 |Política de atividade, Contas|Conta|Revogar a senha|Revoga a senha de uma conta de usuário - por exemplo, configurando uma política de atividade que revogue uma senha após 10 tentativas de logon mal sucedidas.|G Suite|
 |Política de atividade, Contas|Conta|Revogar privilégios de administrador|Revoga privilégios para uma conta de administrador - por exemplo, configurando uma política de atividade que revogue os privilégios de administrador depois de 10 tentativas de logon mal sucedidas.|G Suite|
