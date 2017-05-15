@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: pt-BR
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 O Cloud Discovery analisa os logs de tráfego e os compara com o catálogo de aplicativos de nuvem do Cloud App Security de mais de 13.000 em aplicativos de nuvem que são classificados e pontuados com base em mais de 50 atributos, a fim de fornecer visibilidade contínua do uso da nuvem, TI sombra e o risco que a TI sombra representa para sua organização.
@@ -74,15 +75,19 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 4.  O arquivo de log é válido e inclui informações de tráfego de saída.
  
 ## <a name="supported-firewalls-and-proxies"></a>Proxies e firewalls com suporte
+
+- Barracuda - Firewall de aplicativo Web (W3C)
 - Blue Coat Proxy SG – Log de acesso (W3C)
 - Check Point
 - Firewall Cisco ASA (Para firewalls Cisco ASA, é necessário definir o nível de informações para 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki – log de URLs
+- Clavister NGFW (Syslog)
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
+- Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewall da série Palo Alto
@@ -95,24 +100,26 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - Zscaler
 
 
-Se seu log não tiver suporte, selecione **Outro** na **Fonte de dados** e especifique o dispositivo e o log que você está tentando carregar. O log será analisado pela equipe de analistas do Cloud App Security e você será notificado se o suporte para o tipo de log for adicionado. 
+Se seu log não tiver suporte, selecione **Outro** na **Fonte de dados** e especifique o dispositivo e o log que você está tentando carregar. O log será analisado pela equipe de analistas do Cloud App Security e você será notificado se o suporte para o tipo de log for adicionado. Como alternativa, você pode definir um analisador personalizado que corresponda ao seu formato. Para saber mais, confira [Usar analisador de log personalizado](custom-log-parser.md).
 
 
 Atributos de dados (de acordo com a documentação do fornecedor):
 
 |Fonte de dados|URL do aplicativo de destino|IP do aplicativo de destino|Nome de usuário|IP de Origem|Tráfego total|Bytes carregados|
 |----|----|----|-----|----|----|----|
+|Barracuda|**Sim**|**Sim**|**Sim**|**Sim**|Não|Não|
 |Blue Coat|**Sim**|Não|**Sim**|**Sim**|**Sim**|**Sim**|
 |Checkpoint|Não|**Sim**|Não|**Sim**|Não|Não|
 |Cisco ASA|Não|**Sim**|Não|**Sim**|**Sim**|Não|
 |Cisco FWSM|Não|**Sim**|Não|**Sim**|**Sim**|Não|
 |Cisco Ironport WSA|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
-|Cisco Scansfe|**Sim**|Não|**Sim**|**Sim**|**Sim**|**Sim**|
+|Cisco Meraki|**Sim**|**Sim**|Não|**Sim**|Não|Não||Cisco Scansafe|**Sim**|Não|**Sim**|**Sim**|**Sim**|**Sim**|
+|Clavister NGFW (Syslog)|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 |Dell SonicWall|**Sim**|**Sim**|Não|**Sim**|**Sim**|**Sim**|
 |Fortigate|Não|**Sim**|Não|**Sim**|**Sim**|**Sim**|
-|Juniper SRX|Não|**Sim**|Não|**Sim**\*|**Sim**|**Sim**|
+|Juniper SRX|Não|**Sim**|Não|**Sim**\**|**Sim**|**Sim**|
+|Juniper SSG|Não|**Sim**|Não|**Sim**|**Sim**|**Sim**|
 |McAfee SWG|**Sim**|Não|Não|**Sim**|**Sim**|**Sim**|
-|Meraki|**Sim**|**Sim**|Não|**Sim**|Não|Não|
 |MS TMG|**Sim**|Não|**Sim**|**Sim**|**Sim**|**Sim**|
 |Redes de Palo Alto|**Sim**|**Sim**|**Sim**|**Sim**\*|**Sim**|**Sim**|
 |Sophos|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|Não|
