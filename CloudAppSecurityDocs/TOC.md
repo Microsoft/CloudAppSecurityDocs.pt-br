@@ -3,7 +3,10 @@
 ## [Notas de versão](release-notes.md)
 # Implantar
 ## [Introdução](getting-started-with-cloud-app-security.md)
-## [Personalizar o portal](general-setup.md)
+## [Configuração básica](general-setup.md)
+### [Gerenciar administradores](manage-admins.md)
+#### [Configurações de administração](admin-settings.md)
+### [Configurações de email](mail-settings.md)
 ### [Grupos de usuários](user-groups.md)
 ### [Intervalos e marcas de IP](ip-tags.md)
 ## [Implantar o Cloud Discovery](set-up-cloud-discovery.md)
@@ -51,3 +54,4 @@
 ## [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solução de problemas de conectores de API usando mensagens de erro](troubleshooting-api-connectors-using-error-messages.md)
 ## [Solução de problemas de inspeção de conteúdo](troubleshooting-content-inspection.md)
+## [Solução de problemas de integração de SIEM](troubleshooting-siem.md)
