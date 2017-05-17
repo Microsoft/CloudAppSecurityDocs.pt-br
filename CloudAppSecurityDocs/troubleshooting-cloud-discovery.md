@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1cd697631f776c55fbedcec9a0ed34a3b68d8ac0
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 35d965d753dae9013a42f89ded8a87c461baa330
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solucionando problemas de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Erros de análise de log
 
-Você pode controlar o processamento dos registros do Cloud Discovery usando o log de governança. Este guia fornece as ações de resolução a serem executada para cada erro que pode ser exibido.
+Você pode controlar o processamento dos registros do Cloud Discovery usando o log de governança. Este artigo fornece as ações de resolução a serem executadas para cada erro que pode ser exibido.
 
 ### <a name="governance-log-errors"></a>Erros de log de governança
 |ERRO|DESCRIÇÃO|RESOLUÇÃO|
@@ -30,7 +32,7 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 |O formato de log não corresponde|O formato de log que você carregou não coincide com o esperado para esta fonte de dados.|1. Verifique se o log não está corrompido. <br /> 2. Compare e corresponda o log com o formato de exemplo mostrado na página de upload.|
 |As transações têm mais de 90 dias|Todas as transações têm mais de 90 dias e, portanto, estão sendo ignorados.|Exporte um novo log com os eventos recentes e faça upload dele novamente.|
 |Nenhuma transação para aplicativos de nuvem catalogados|Nenhuma transação para quaisquer aplicativos de nuvem reconhecidos foi encontrada no log.|Verifique se o log contém informações sobre o tráfego de saída.|
-|Tipo de log sem suporte|Quando você seleciona **Fonte de dados = Outro (sem suporte)**, o log não é analisado. Em vez disso, ele é enviado para análise para a equipe técnica do Cloud App Security.|A equipe técnica do Cloud App Security cria um analisador dedicado por cada fonte de dados. As fontes de dados mais populares [já têm suporte](set-up-cloud-discovery.md). Cada upload de uma fonte de dados sem suporte é revisado e adicionado ao pipeline de analisadores de novas fontes de dados. Novas notificações de analisador são publicadas como parte das notas de versão do Cloud App Security.|
+|Tipo de log sem suporte|Quando você seleciona **Fonte de dados = Outro (sem suporte)**, o log não é analisado. Em vez disso, ele é enviado para análise para a equipe técnica do Cloud App Security.|A equipe técnica do Cloud App Security cria um analisador dedicado por cada fonte de dados. As fontes de dados mais populares [já têm suporte](set-up-cloud-discovery.md). Cada upload de uma fonte de dados sem suporte é revisado e adicionado ao pipeline de analisadores de novas fontes de dados. Novas notificações de analisador são publicadas como parte das [notas de versão](release-notes.md) do Cloud App Security.|
 ## <a name="log-collector-errors"></a>Erros do coletor de logs
 
 |PROBLEMA|RESOLUÇÃO|

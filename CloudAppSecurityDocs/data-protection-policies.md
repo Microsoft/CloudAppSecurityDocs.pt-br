@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/3/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 04264ea25a987e2bfef60a0e77c0a227b650b740
-ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.openlocfilehash: 5d8ff332a58da395a8284dfd3416e54624b739ef
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: pt-BR
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="file-policies"></a>Políticas de arquivos  
 As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso.  
@@ -64,12 +65,16 @@ Para criar uma nova política de arquivos, siga este procedimento:
   
 3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
-4.  Dentro de **Tipo de risco**, vincule a política ao tipo de risco mais apropriado. Este campo é somente informativo e ajuda você a pesquisar políticas e alertas específicos posteriormente, com base no tipo de risco.  O risco já pode estar pré-selecionado de acordo com a categoria para a qual você optou por criar a política. Por padrão, as políticas de arquivos são definidas para DLP.  
+3. Forneça uma **Gravidade de política** à sua política. Se você tiver configurado a Cloud App Security para enviar notificações em correspondências de política para um nível de severidade de política específicas, isso será usado para determinar se correspondências ela disparará uma notificação.
+
+4.  Em **Categoria**, vincule a política ao tipo de risco mais apropriado. Este campo é somente informativo e ajuda você a pesquisar políticas e alertas específicos posteriormente, com base no tipo de risco.  O risco já pode estar pré-selecionado de acordo com a categoria para a qual você optou por criar a política. Por padrão, as políticas de arquivos são definidas para DLP.  
   
 5.  Para definir quais aplicativos descobertos dispararão uma política, **Crie um filtro para os arquivos em que esta política atuará**. Restrinja os filtros de política até chegar ao conjunto mais preciso de arquivos nos quais você deseja agir. Seja o mais restritivo possível para evitar falsos positivos. Por exemplo, se você quiser remover permissões públicas, lembre-se de adicionar o filtro **Público**, se quiser remover um usuário externo, use o filtro "Externo" etc.  
 > [!NOTE] 
 > Ao usar os filtros de política, **contém** pesquisará somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **virus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se você pesquisar **malware.exe**, localizará TODOS os arquivos com malware ou exe em seu nome de arquivo, enquanto se pesquisar **"malware.exe"** (com as aspas), localizará apenas arquivos que contêm exatamente "malware.exe". **É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt.  
-6.  Para Box, SharePoint, Dropbox e OneDrive, você pode impor sua política de arquivos em todos os arquivos no aplicativo ou em pastas específicas. Em **Aplicar a**, selecione **pastas selecionadas** ou **todos os arquivos, exceto as pastas selecionadas**, você será redirecionado para fazer logon no aplicativo de nuvem e, em seguida, adicionar as pastas relevantes.  
+6.   Sob o primeiro filtro **Aplicar a**, selecione **pastas selecionadas** ou **todos os arquivos, excluindo pastas selecionadas** para Box, SharePoint, Dropbox, OneDrive, onde você pode aplicar a política a todas as políticas de arquivos a todos os arquivos no aplicativo ou a pastas específicas. Você será redirecionado para fazer logon no aplicativo de nuvem e, em seguida, adicione as pastas relevantes.  
+
+6. Sob o segundo filtro **Aplicar a**, selecione **todos os proprietários de arquivos**, **proprietários de arquivo de grupos selecionados** ou **todos os proprietários de arquivos, excluindo grupos selecionados** e, em seguida, selecione os grupos de usuários relevantes para determinar quais usuários e grupos devem ser incluídos na política.
   
 7.  Selecione o **Método de inspeção de conteúdo**. O DLP interno permite filtrar os arquivos pelo conteúdo. Para verificar arquivos quanto ao conteúdo, selecione **DLP Interno**. Depois que a inspeção estiver habilitada, você poderá optar por usar expressões predefinidas ou pesquisar outras expressões personalizadas, seja com uma subcadeia de caracteres ou uma [expressão regular](working-with-the-regex-engine.md) própria.  
     Além disso, você pode especificar uma expressão regular para excluir um arquivo dos resultados. Isso será muito útil se você tiver um padrão de palavra-chave de classificação interno que você deseja excluir da política.  
@@ -78,15 +83,9 @@ Para criar uma nova política de arquivos, siga este procedimento:
   
 8.  Escolha as ações de **Governança** que você deseja que o Cloud App Security realize quando uma correspondência for detectada.  
   
-9. Depois de criar sua política, você pode exibi-la na guia **Política de arquivos**. Você sempre pode editar uma política de, calibrar seus filtros ou alterar as ações automatizadas. A política é habilitada automaticamente após a criação e iniciará a verificação de seus arquivos de nuvem imediatamente.  
+9. Depois de criar sua política, você pode exibi-la na guia **Política de arquivos**. Você sempre pode editar uma política de, calibrar seus filtros ou alterar as ações automatizadas. A política é habilitada automaticamente após a criação e iniciará a verificação de seus arquivos de nuvem imediatamente.  Tenha muito cuidado ao definir as ações de controle, elas podem causar uma perda irreversível de permissões de acesso para seus arquivos. É recomendável restringir os filtros para representar exatamente os arquivos nos quais você deseja agir, usando vários campos de pesquisa. Quanto mais restritos forem os filtros, melhor. Para obter orientação, você pode usar o botão **Editar e visualizar resultados** na seção Filtros.  
   
-> [!NOTE]  
->  Tenha muito cuidado ao definir as ações de controle, elas podem causar uma perda irreversível de permissões de acesso para seus arquivos.  
-> É recomendável restringir os filtros para representar exatamente os arquivos nos quais você deseja agir, usando vários campos de pesquisa. Quanto mais restritos forem os filtros, melhor.  
->   
->  Para obter orientação, você pode usar o botão **Editar e visualizar resultados** na seção Filtros.  
-  
- ![editar a política do arquivo e visualizar os resultados](./media/file-policy-edit-and-preview-results.png "editar a política do arquivo e visualizar os resultados")  
+   ![editar a política do arquivo e visualizar os resultados](./media/file-policy-edit-and-preview-results.png "editar a política do arquivo e visualizar os resultados")  
   
 10. Para exibir correspondências de política de arquivo, os arquivos com suspeita de violar a política, clique em **Controle** e **Políticas**. Filtre os resultados para exibir somente as políticas do arquivo usando o filtro **Tipo** na parte superior. Para obter mais informações sobre as correspondências para cada política, clique em uma política. Isso exibe os arquivos de Correspondência agora para a política. Clique na guia **histórico** para ver um histórico de até 6 meses anteriores de arquivos que correspondem à política.     
   
