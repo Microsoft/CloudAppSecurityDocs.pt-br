@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cae50c83705d91513525c9b90e462e44e07b97ed
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>Controlar e proteger seus arquivos  
 
@@ -136,6 +138,10 @@ Após você ter validado e ajustado a política para remover eventuais falsos po
 2. Depois que for totalmente validada, você pode defini-la para executar ações de governança automáticas. Por exemplo, no SharePoint e no OneDrive é possível **Colocar em quarentena de usuário** e, para o G Suite e o Box, é possível **Remover acesso público**.
  
  ![ação de governança automática remover acesso público](./media/gov-action-public-access.png)
+
+
+Para obter mais informações sobre como o Cloud App Security funciona com o Proteção de Informações do Azure funcionam juntos, consulte [Proteger contra erros de usuário](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
+
 
 ## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   

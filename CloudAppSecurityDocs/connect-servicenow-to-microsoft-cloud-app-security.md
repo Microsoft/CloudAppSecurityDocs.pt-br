@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
-ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
-translationtype: HT
+ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 
@@ -62,7 +64,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
      ![Conectar ao ServiceNow](./media/connect-servicenow.png "connect servicenow")  
   
-8.  No pop-up, adicione seu nome de usuário, senha, URL da instância, ID do Cliente e Segredo do Cliente do ServiceNow nas caixas apropriadas.  
+8.  No pop-up, adicione a ID de usuário do ServiceNow, senha, URL da instância, ID do Cliente e Segredo do Cliente do ServiceNow nas caixas apropriadas.  
   
 9.  Clique em **Conectar**.  
   
@@ -92,7 +94,7 @@ Para conectar o ServiceNow ao Cloud App Security, você deve ter permissões do 
 
     ![Conectar ao ServiceNow](./media/connect-servicenow.png "connect servicenow")   
 
-6.  Na página de configurações do ServiceNow, na guia API, adicione seu nome de usuário, senha e URL da instância do ServiceNow nas caixas apropriadas.   
+6.  Na página de configurações do ServiceNow, na guia API, adicione sua ID de usuário do ServiceNow, senha e URL da instância do ServiceNow nas caixas apropriadas.   
 
 7.  Clique em **Conectar**.   
 
