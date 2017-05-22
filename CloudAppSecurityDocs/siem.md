@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5880ea404d6830c5d8f12534c04f123d8c517946
-ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
+ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="siem-integration"></a>Integração ao SIEM
     
@@ -25,12 +25,38 @@ Agora você pode integrar o Cloud App Security ao seu servidor SIEM para habilit
 
 Ao integrar o SIEM primeiro com o Cloud App Security, atividades e alertas dos últimos dois dias serão encaminhadas para o SIEM e todos os alertas e atividades (com base no filtro que você selecionar) daquele momento em diante. Além disso, se você desabilitar esse recurso por um longo período, quando você habilita-o novamente ele encaminhará os últimos dois dias de alertas e atividades e, em seguida, todos os alertas e atividades daquele momento em diante.
 
+## <a name="siem-integration-architecture"></a>Arquitetura de integração do SIEM
+
+O agente SIEM é implantado na rede da sua organização. Quando implantado e configurado, ele pesquisa os tipos de dados que foram configurados (alertas e atividades) usando as APIs RESTful do Cloud App Security.
+O tráfego é, então, enviado por meio de um canal HTTPS criptografado na porta 443.
+
+Depois que o agente SIEM recuperar os dados do Cloud App Security, ele enviará as mensagens do Syslog para seu SIEM local usando as configurações da rede que você forneceu durante a configuração (TCP ou UDP com uma porta personalizada). 
+
+![Arquitetura de integração do SIEM](./media/siem-architecture.png)
+
+## <a name="sample-siem-logs"></a>Exemplo dos logs do SIEM
+
+Os logs fornecidos do Cloud App Security para seu SIEM são CEF em Syslog. Nos exemplos de logs a seguir, você poderá ver o tipo de evento normalmente enviado pelo Cloud App Security ao seu servidor SIEM. Neles você poderá ver quando o alerta foi acionado, o **tipo de evento**, a **política** que foi violada, o **usuário** que acionou o evento, o **aplicativo** que o usuário estava usando para criar a violação e a **URL** de onde o alerta está vindo:
+
+Exemplo de log de atividades: 
+  
+2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
+
+
+
+Exemplo de log de alertas: 
+
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
+
+
+## <a name="how-to-integrate"></a>Como integrar
+
 A integração ao SIEM é realizada em três etapas:
 1. Configurar no portal do Cloud App Security. 
 2. Baixar o arquivo JAR e executá-lo no servidor.
 3. Valide se o agente SIEM está funcionando.
 
-## <a name="prerequisites"></a>Pré-requisitos
+### <a name="prerequisites"></a>Pré-requisitos
 
 - Um servidor Windows ou Linux padrão (pode ser uma máquina virtual).
 - O servidor deve executar o Java 8. Não há suporte para versões anteriores.
