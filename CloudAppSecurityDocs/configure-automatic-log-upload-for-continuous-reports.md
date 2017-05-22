@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
-ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
-translationtype: HT
+ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Logs de FTP são carregados para o Cloud App Security depois da conclusão da transferência do arquivo por FTP para o Coletor de Logs e para Syslogs. O Coletor de Logs grava os logs recebidos para o disco a cada 20 minutos e carrega o arquivo para o Cloud App Security.
@@ -32,8 +34,8 @@ Antes de configurar a coleta de arquivos de log automática, verifique se o log 
 - CPU: 2
 - RAM: 4 GB 
 - Configurações de firewall: 
-- Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada
-- Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443
+    - Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada
+    - Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443
 
   
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
