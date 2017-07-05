@@ -14,17 +14,19 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
 A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Quando necessário, para uma investigação de segurança específica (por exemplo, devido a uma violação de segurança ou atividade de usuário suspeita), os administradores podem resolver o nome de usuário real. Se um administrador tiver algum motivo para suspeitar de um usuário específico, ele também poderá pesquisar o nome de usuário criptografado de um nome de usuário conhecido e começar a investigação usando o nome de usuário criptografado. Toda conversão de nome de usuário é auditada no **Log de governança** do portal.
 
 Pontos principais:
--    Nenhuma informação particular é armazenada nem exibida. Somente informações criptografadas.
--    Dados particulares são criptografados usando AES-128 com uma chave dedicada por locatário.
--    A resolução de nomes de usuário é realizada ad hoc e por nome de usuário decifrando um determinado nome de usuário criptografado.
+-   Nenhuma informação particular é armazenada nem exibida. Somente informações criptografadas.
+-   Dados particulares são criptografados usando AES-128 com uma chave dedicada por locatário.
+-   A resolução de nomes de usuário é realizada ad hoc e por nome de usuário decifrando um determinado nome de usuário criptografado.
 
 
 Como funciona a anonimização de dados:

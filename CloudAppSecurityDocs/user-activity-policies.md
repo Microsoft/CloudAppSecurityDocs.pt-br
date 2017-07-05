@@ -14,8 +14,10 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 1aaf81fe759fabd6105076d22c65f20c149b8d19
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="activity-policies"></a>Políticas de atividade
 As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.  

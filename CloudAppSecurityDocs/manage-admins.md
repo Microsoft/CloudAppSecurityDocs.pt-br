@@ -14,10 +14,10 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: f4d336b48dc7f3655a60d64ec4fe7e066db7f438
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="managing-admin-access"></a>Gerenciar o acesso administrativo
 

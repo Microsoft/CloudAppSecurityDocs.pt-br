@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e9fa0b4d0527c6322da14cdf16cc8509ec37c1ed
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
-translationtype: HT
+ms.openlocfilehash: c046cefa687b67796e2039db079e51f510ea2ff0
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
 

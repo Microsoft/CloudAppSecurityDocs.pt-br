@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: a70e561150ef8d00a3815eb4332868f4c1fbeece
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 
@@ -66,7 +66,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 8.  No pop-up, adicione a ID de usuário do ServiceNow, senha, URL da instância, ID do Cliente e Segredo do Cliente do ServiceNow nas caixas apropriadas. Para localizar a sua ID de Usuário do ServiceNow, no portal do ServiceNow, acesse **Usuários** e, em seguida, localize seu nome na tabela, ele será exibido ao lado da ID de Usuário.
 
-![ID de usuário do ServiceNow](./media/servicenow-userid.png)
+    ![ID de usuário do ServiceNow](./media/servicenow-userid.png)
   
 9.  Clique em **Conectar**.  
   

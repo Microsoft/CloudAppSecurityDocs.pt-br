@@ -14,9 +14,10 @@ ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: d159cb95c9f0468e8c658c13586d07f0f20049ef
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="built-in-report-reference"></a>Referência de relatório interno
 

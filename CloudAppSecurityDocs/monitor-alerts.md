@@ -14,8 +14,10 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="alerts"></a>Alertas
 Para exibir alertas:

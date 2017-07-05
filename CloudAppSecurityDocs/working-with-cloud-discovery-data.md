@@ -14,10 +14,10 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 8b76c732e35258212b4ab97d5e21811a5f2f2828
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="discover"></a>Descobrir
 
