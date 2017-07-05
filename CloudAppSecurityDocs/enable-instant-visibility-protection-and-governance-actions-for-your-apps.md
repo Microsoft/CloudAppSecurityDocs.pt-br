@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0c6fbb24a0b5d7f1c5ada4b805eb8b7ae5ecada2
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
-translationtype: HT
+ms.openlocfilehash: 96f6aeb2ec67175bde4ed94199405d6457797659
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-apps"></a>Conectar aplicativos 
 Os conectores de aplicativos aproveitam as APIs de provedores de aplicativo para proporcionar maior visibilidade e controle com o Cloud App Security sobre os aplicativos aos quais você se conecta.  

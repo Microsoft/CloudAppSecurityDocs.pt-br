@@ -14,10 +14,10 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Implantar o Cloud App Security
 O Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Cloud App Security.  

@@ -14,9 +14,10 @@ ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 451d88f6403e62ed5cf68d5a932e5029f270df7a
-ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="import-user-groups"></a>Importar grupos de usuários
 

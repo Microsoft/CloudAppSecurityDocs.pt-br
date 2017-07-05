@@ -14,10 +14,10 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -94,17 +94,17 @@ Para ignorar os rótulos de classificação definidos fora da sua organização,
 
 **Política nº 1 – dados confidenciais externamente compartilhados no Box:**
 
-1.    Criar uma política de arquivo.
-2.    Definir o nome, severidade e categoria da política.
-3.    Adicionar os seguintes filtros para localizar todos os dados confidenciais que são externamente compartilhados no Box:
+1.  Criar uma política de arquivo.
+2.  Definir o nome, severidade e categoria da política.
+3.  Adicionar os seguintes filtros para localizar todos os dados confidenciais que são externamente compartilhados no Box:
 
 ![política de confidencialidade](./media/azip-confidentiality-policy.png) 
 
 **Política nº 2 – dados restritos que recentemente foram modificados fora da pasta de Finanças no SharePoint:**
 
-1.    Criar uma política de arquivo.
-2.    Definir o nome, severidade e categoria da política.
-3.    Adicionar os seguintes filtros para localizar todos os dados restritos que foram modificados recentemente e adicionar excluir a pasta Finanças na opção de seleção de pasta: 
+1.  Criar uma política de arquivo.
+2.  Definir o nome, severidade e categoria da política.
+3.  Adicionar os seguintes filtros para localizar todos os dados restritos que foram modificados recentemente e adicionar excluir a pasta Finanças na opção de seleção de pasta: 
  
 ![política de dados restritos](./media/azip-restricted-data-policy.png) 
 
@@ -130,7 +130,7 @@ Depois que o Cloud App Security estiver conectado ao seu serviço do Office 365,
 ![modelo de proteção](./media/protect-template.png)
 3. Depois de escolher um modelo e clicar em Proteger, o Cloud App Security aplicará o modelo e protegerá o arquivo original. O arquivo protegido terá o mesmo nome do arquivo original, mas com uma nova extensão de arquivo: ".pfile".
 > [!NOTE]
->     Recomenda-se aplicar os modelos de RMS que abrangem toda a empresa em arquivos, para que todos os usuários da organização possam acessar esses arquivos, incluindo o proprietário original do arquivo. O proprietário do arquivo, a política de compartilhamento de arquivo e a lista de usuários que já têm acesso a ele não mudam quando o arquivo se torna protegido.
+>   Recomenda-se aplicar os modelos de RMS que abrangem toda a empresa em arquivos, para que todos os usuários da organização possam acessar esses arquivos, incluindo o proprietário original do arquivo. O proprietário do arquivo, a política de compartilhamento de arquivo e a lista de usuários que já têm acesso a ele não mudam quando o arquivo se torna protegido.
 
 4. Se os usuários desejam acessar o arquivo protegido, eles precisam ter o aplicativo RMS sharing instalado em seus dispositivos. Para saber mais, veja a [Visão geral técnica e detalhes sobre proteção para o aplicativo de compartilhamento Microsoft Rights Management](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
 

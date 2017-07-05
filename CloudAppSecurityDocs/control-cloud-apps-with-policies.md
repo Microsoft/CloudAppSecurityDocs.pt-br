@@ -14,8 +14,10 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
-ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 

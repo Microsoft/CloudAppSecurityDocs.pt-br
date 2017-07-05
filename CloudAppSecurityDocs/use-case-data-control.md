@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: c218a1aa02aafaa38107bc6072a810dec2e5a0a4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>Controlar e proteger seus arquivos  
 
@@ -40,7 +40,7 @@ Ao encontrar os parâmetros de nível de compartilhamento e confidencialidade e 
 
 #### <a name="setting-up-monitoring"></a>Configurar o monitoramento
 
-1.    Inicie o monitoramento de seu aplicativo configurando uma política que verificará todos os arquivos compartilhados externamente quanto a conteúdo sensível:
+1.  Inicie o monitoramento de seu aplicativo configurando uma política que verificará todos os arquivos compartilhados externamente quanto a conteúdo sensível:
 
     1. Na página **Políticas**, clique em [**Criar política de arquivos**](data-protection-policies.md). 
     ![Criar política de arquivos](./media/create-file-policy.png)
@@ -101,11 +101,11 @@ Você sabe que precisa proteger seus dados. Você já teve o trabalho de classif
     
     1. Na página **Políticas**, clique em [**Criar política de arquivos**](data-protection-policies.md). 
 
-    2.    Na seção de filtro, é possível remover os filtros de **Nível de acesso** e **Última modificação** para executar essa política em todos os arquivos na sua nuvem. Esses filtros aplicam-se somente a arquivos modificados desse momento em diante. Adicione o filtro **Rótulo de classificação**, **é igual a** e selecione o rótulo de classificação da sua organização. 
+    2.  Na seção de filtro, é possível remover os filtros de **Nível de acesso** e **Última modificação** para executar essa política em todos os arquivos na sua nuvem. Esses filtros aplicam-se somente a arquivos modificados desse momento em diante. Adicione o filtro **Rótulo de classificação**, **é igual a** e selecione o rótulo de classificação da sua organização. 
     
     ![rótulo de classificação de política de arquivos](./media/file-policy-class-label.png)
 
-    3.    Para monitorar o compartilhamento inadequado desses arquivos classificados, adicione um filtro com o nível de acesso que você está tentando impedir. Por exemplo, **Nível de acesso é igual a Público, Público (Internet)**.  Depois de iniciar a política, o Cloud App Security demora um pouco para verificar os arquivos existentes e quaisquer novos arquivos que você adicionar. Dependendo da quantidade de dados na nuvem, levará algum tempo para concluir a verificação.
+    3.  Para monitorar o compartilhamento inadequado desses arquivos classificados, adicione um filtro com o nível de acesso que você está tentando impedir. Por exemplo, **Nível de acesso é igual a Público, Público (Internet)**.  Depois de iniciar a política, o Cloud App Security demora um pouco para verificar os arquivos existentes e quaisquer novos arquivos que você adicionar. Dependendo da quantidade de dados na nuvem, levará algum tempo para concluir a verificação.
 
     ![filtro de política de arquivos público](./media/file-policy-filter-public.png)
 

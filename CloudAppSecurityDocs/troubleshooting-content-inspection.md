@@ -14,10 +14,10 @@ ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 40f759d58fe26776c0738271c0112d00bb52bf5a
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="troubleshooting-content-inspection"></a>Solução de problemas de inspeção de conteúdo
 |Status da inspeção de conteúdo|Descrição|

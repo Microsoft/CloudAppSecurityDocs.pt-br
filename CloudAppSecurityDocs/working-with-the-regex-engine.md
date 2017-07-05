@@ -14,8 +14,10 @@ ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 0b635a9d2f2e5befa53abea6b7d59876def0a115
-ms.sourcegitcommit: 3bacec2f1e5b7bd34175ab5975f7be74792007e4
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
  

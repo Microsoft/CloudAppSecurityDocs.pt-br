@@ -14,10 +14,10 @@ ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 3e0c14d142f9154b5e986105899c9445667518c6
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="frequently-asked-questions"></a>Perguntas frequentes
 

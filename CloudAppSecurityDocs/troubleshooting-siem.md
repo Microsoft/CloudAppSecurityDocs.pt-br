@@ -14,10 +14,10 @@ ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: d7b71a3db122db3b7ed6ae28348bb74946b57427
-ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Solucionando problemas do agente SIEM
 
