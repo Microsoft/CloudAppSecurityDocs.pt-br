@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
-Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Logs de FTP são carregados para o Cloud App Security depois da conclusão da transferência do arquivo por FTP para o Coletor de Logs e para Syslogs. O Coletor de Logs grava os logs recebidos para o disco a cada 20 minutos e carrega o arquivo para o Cloud App Security.
+Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Logs de FTP são carregados para o Cloud App Security depois que o arquivo concluiu a transferência do FTP para o Coletor de Log e para Syslog. O Coletor de Logs grava os logs recebidos no disco e carrega o arquivo para o Cloud App Security quando o tamanho do arquivo for maior que 40 kb.
+
+Depois que um log for carregado no Cloud App Security, ele é movido para um diretório de backup que armazena os últimos 20 logs a qualquer momento. Quando novos logs chegam, os antigos são excluídos. Quando o espaço em disco do coletor de log está cheio, o coletor de log descarta novos logs até que tenha mais espaço livre em disco.
 
 Antes de configurar a coleta de arquivos de log automática, verifique se o log corresponde ao tipo de log esperado para garantir que o Cloud App Security possa analisar seu arquivo específico. 
 
@@ -80,7 +82,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   > - Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
 4.  **Baixe** uma nova máquina virtual do coletor de logs clicando no Hyper-V ou VMWare e descompacte o arquivo usando a senha que você recebeu no portal.  
   
-###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Etapa 2 — Implantação da máquina virtual no local e configuração de rede   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Etapa 2 — Implantação da máquina virtual no local e configuração de rede   
 
 > [!NOTE] 
 > As etapas a seguir descrevem a implantação no Hyper-V. As etapas de implantação do hipervisor da VM são ligeiramente diferentes.  
@@ -146,11 +148,23 @@ Configure seus proxies e firewalls de rede para periodicamente exportar logs par
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Etapa 5 — Verificar a implantação bem-sucedida no portal do Cloud App Security
 
+Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **criado**, será possível que a conexão do coletor de logs e a análise não tenham sido concluídas.
+
+![status do coletor de log](./media/log-collector-status.png)
+
 Acesse o log Governança e verifique se os logs estão sendo carregados periodicamente no portal.  
   
 Se você encontrar problemas durante a implantação, confira [Solucionando problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
+### <a name="optional---create-custom-continuous-reports"></a>Opcional – Criar relatórios contínuos personalizados
 
+Após ter verificado que os logs estão sendo carregados no Cloud App Security e os relatórios sendo gerados, você pode criar relatórios personalizados. Agora você pode criar relatórios de descoberta personalizados com base em grupos de usuários do Azure Active Directory. Por exemplo, se você quiser ver o uso de nuvem de seu departamento de marketing, será possível importar o grupo de marketing usando o recurso importar grupo de usuários e, em seguida, criar um relatório personalizado para este grupo. Você também pode personalizar um relatório com base na marca do endereço IP ou intervalos de endereços IP.
+
+1. No portal do Cloud App Security, sob a engrenagem de configurações, selecione **Configurações do Cloud Discovery** e, em seguida, selecione **Gerenciar relatórios contínuos**. 
+2. Clique no botão **Criar relatório** e preencha os campos.
+3. Em **Filtros**, você pode filtrar os dados de acordo com a fonte de dados, por [grupo de usuários importados](user-groups.md) ou por [marcas e intervalos de endereços IP](ip-tags.md). 
+
+![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Veja também  
 [Trabalhando com dados do Cloud Discovery](working-with-cloud-discovery-data.md)   

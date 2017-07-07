@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 6/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar o Salesforce ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Salesforce existente usando a API do conector de aplicativos.  
@@ -44,10 +46,14 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
          ![editar perfil do salesforce](./media/salesforce-edit-profile.png "editar perfil do salesforce")  
   
-    -   Certifique-se de que a caixa de seleção **API Habilitada** esteja marcada. Se não estiver selecionada, poderá ser necessário entrar em contato com a Salesforce para adicioná-la à sua conta.  
-  
-         ![api do salesforce habilitada](./media/salesforce-api-enabled.png "api do salesforce habilitada")  
-  
+    -   Certifique-se de ter as seguintes caixas de seleção habilitadas:   
+        - **API Habilitada**
+        - **Exibir todos os dados** 
+        - **Gerenciar Conteúdo CRM do Salesforce**
+        - **Gerenciar usuários**
+        
+        Se eles não estiverem selecionados, talvez seja necessário contatar o Salesforce para adicioná-los a sua conta.  
+             
 3.  Se sua organização tiver **Salesforce CRM Content** habilitado, certifique-se de que a conta administrativa atual o tenha habilitado também.  
   
     1.  Vá para a página de configuração do Salesforce.  

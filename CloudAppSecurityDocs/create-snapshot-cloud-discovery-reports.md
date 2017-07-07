@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 É importante carregar um log manualmente e permitir que o Cloud App Security analise-o antes de tentar usar o coletor de logs automático.
@@ -41,6 +41,11 @@ Para criar um relatório de instantâneo:
 5. Verifique o formato do seu log para certificar-se de que ele está formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e Verificar** e, em seguida, clique em **Baixar Log de Exemplo**. Em seguida, compare seu log com o exemplo fornecido para verificar se ele é compatível. 
 
  ![Verifique o formato do seu log](./media/cloud-discovery-snapshot-verify.png)  
+
+  > [!NOTE]
+  > O formato de exemplo FTP tem suporte em instantâneos e no upload automatizado enquanto o syslog tem suporte somente no upload automatizado.<br></br>
+Baixar um exemplo de log também baixará um exemplo de log FTP.
+
 
 5.  **Escolha os logs de tráfego** que você deseja carregar. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados.  
   

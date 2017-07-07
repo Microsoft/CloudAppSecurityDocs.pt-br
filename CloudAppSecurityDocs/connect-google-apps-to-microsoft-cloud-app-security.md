@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
+ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar o G Suite ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do G Suite existente usando as APIs do conector.
@@ -31,7 +33,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
      ![google1](./media/google1.png "google1")  
   
 3.  Na tela **Novo projeto**, nomeie o projeto da seguinte maneira:</br>
-    **Cloud App Security para Google** e clique em **Criar**.  
+    **Microsoft Cloud App Security** e clique em **Criar**.  
            ![google2](./media/google2.png "google2")  
   
 4.  Depois que o projeto é criado, na barra de ferramentas, ao lado de Google Cloud Platform, selecione o projeto e, em **API**, clique **Ir para visão geral de APIs**.  
@@ -63,7 +65,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 8.  Clique em **Credentials (Credenciais)** seguido da **tela OAuth consent (Consentimento OAuth)**  
   
-    -   Em **Product name shown to users (Nome do produto mostrado aos usuários)**, digite **Cloud App Security para Google**.  
+    -   Em **Product name shown to users (Nome do produto mostrado aos usuários)**, digite **Microsoft Cloud App Security**.  
   
     -   Todos os outros campos são opcionais.  
   
@@ -79,11 +81,11 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
 
      ![Chave da conta de serviço do Google](./media/google8.png "google8")  
   
-11. Em **Criar chave de conta de serviço**, escolha **Nova conta de serviço** e digite qualquer nome, por exemplo **Conta de serviço 1**, em **Função**, escolha **Projeto** e, em seguida, **Editor** e, em **Tipo de chave**, escolha **P12** e clique em **Criar**.  
+11. Em **Criar chave de conta de serviço**, escolha **Nova conta de serviço** e digite qualquer nome, por exemplo **Conta de serviço 1**, em **Função**, escolha **Projeto** e, em seguida, **Editor** e, em **Tipo de chave**, escolha **P12** e clique em **Criar**. Marque a caixa de seleção **Habilitar a delegação em todo o domínio do G Suite** e clique em **Salvar**.  
   
      ![Criar chave da conta de serviço Google](./media/google9.png "google9")  
   
-12.  Um arquivo de certificado P12 será salvo no seu computador. Um pop-up mostrará a você a **senha da chave privada**. CERTIFIQUE-SE DE SALVÁ-LA para uso posterior.  
+12.  Um arquivo de certificado P12 será salvo no seu computador.  
         
 12. Na tela **Credentials (Credenciais)**, clique em **Manage service accounts (Gerenciar contas de serviço)** na extrema direita.  
        ![conta de serviço de credenciais do G Suite](./media/google10.png "G Suite credentials service account")  
@@ -91,10 +93,6 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
 13. Clique nos três pontos à direita da conta de serviço que você criou e selecione **Edit (Editar)**.  
   
      ![Editar Google](./media/google11.png "google edit")  
-  
-14. Marque a caixa de seleção **Habilitar a delegação em todo o domínio do G Suite** e clique em **Salvar**.  
-  
-     ![Todo o domínio Google](./media/google12.png "google domain wide")  
   
 15. Copie a **ID da conta de serviço** atribuída ao seu serviço, você precisará dela mais tarde.  
   
@@ -107,7 +105,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
 
 18. Preencha o seguinte:
 
-    -   **Application Name (Nome do Aplicativo)**: Cloud App Security para Google.  
+    -   **Application Name (Nome do Aplicativo)**: Microsoft Cloud App Security.  
   
     -   **Short Description & Long Description (Descrição curta e descrição longa)** (opcional): o Microsoft Cloud App Security fornece a visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem.  
   
@@ -116,18 +114,16 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
     -   Em **Integração de Unidade**, digite o seguinte em **Abrir URL:**  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-  
-    -   Clique em **Save Changes (Salvar Alterações)**.  
-  
+     
          ![Configuração do Google Drive](./media/google15.png "googledriveconfig")  
   
 19. Na lista **Enabled APIs (APIs Habilitadas)**, clique na engrenagem de configuração ao lado de **Google Apps Marketplace SDK (SDK do Google Apps Marketplace)**. 
          ![Configuração do SDK do Marketplace Google](./media/google16.png "googledriveconfig")  
-20. Selecione a guia **Configuração**.  
+20. Selecione a guia **Configuração**. 
   
     -   Copie o **Número do projeto (ID do Aplicativo)** que aparece na parte superior para usar mais tarde.  
   
-    -   O **Application Name (Nome do Aplicativo)** deve informar **Cloud App Security para Google**.
+    -   O **Application Name (Nome do Aplicativo)** deve informar **Microsoft Cloud App Security**.
   
          Preencha o campo **Application description (Descrição do aplicativo)** com “O Microsoft Cloud App Security fornece visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem”.  
   
