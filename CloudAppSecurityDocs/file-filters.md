@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 305c7ab0293e35ffbabc9b665a5b797619111131
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: deabe5b6ccb46ad766ba8e4c206abaf021cd5b72
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="files"></a>Arquivos
 
@@ -83,7 +83,12 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. A maioria
   
 -   Nome do arquivo – nome do arquivo ou subcadeia de caracteres do nome conforme definido no aplicativo de nuvem, por exemplo, todos os arquivos com uma senha em seu nome.   
   
--   Rótulo de classificação – pesquise arquivos com marcas específicas definidas pela Proteção de Informações do Azure. Isso exige integração à Proteção de Informações do Azure.
+-   Rótulo de classificação – pesquise arquivos com conjunto de marcas específicas. Esses são:
+    - Marcas de Habilitar a Proteção de Informações do Azure. Isso exige integração à Proteção de Informações do Azure.
+    - Marcas do Cloud App Security. agora fornece mais informações sobre os arquivos verificados. Para cada arquivo verificado pelo DLP do Cloud App Security, você poderá saber se os arquivos foram bloqueados de serem inspecionados porque foram criptografados ou corrompidos. Por exemplo, você pode configurar políticas para alertá- e arquivos protegidos por senha em quarentena que são compartilhados externamente, da seguinte maneira: 
+        - Azure RMS criptografado – arquivos cujo conteúdo não foi inspecionado porque eles têm um conjunto de criptografia do RMS do Azure.
+        - Criptografado por senha – arquivos cujo conteúdo não foi inspecionado porque eles são protegidos por senha pelo usuário.
+        - Arquivo corrompido – arquivos cujo conteúdo não foi inspecionado porque seu conteúdo não pôde ser lido.
 
 -   Tipo de arquivo – O Cloud App Security usa o tipo MIME recebido do serviço e examina o arquivo para determinar o verdadeiro tipo de arquivo. Observe que se essa verificação destina-se a arquivos que são relevantes para a verificação de dados (documentos, imagens, apresentações, planilhas, arquivos de texto e zip/arquivo morto). O filtro funciona por tipo de arquivo/pasta, por exemplo, todas as pastas que são... ou todos os arquivos de planilha que são...
 
@@ -111,6 +116,9 @@ Você também pode definir a política para ser executada em arquivos específic
   
 ![aplicar para filtrar](./media/apply-to-filter.png "aplicar para filtrar")  
   
+>[!NOTE]
+> Se em algum momento você desejar limpar os filtros, poderá fazê-lo ao clicar no ícone ![Limpar filtros](./media/clear-filters.png).
+
 ## <a name="working-with-the-file-drawer"></a>Trabalhando com a Gaveta de arquivos
 
 Você pode exibir mais informações sobre cada arquivo, clicando no próprio Arquivo no Log de arquivo. Isso abre a Gaveta de arquivos que fornece as seguintes ações adicionais que você pode executar no arquivo:

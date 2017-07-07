@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 049ff6838e03e8d6d2fca49b4dd32c60a1a9db93
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="activities"></a>Atividades
 O Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. 
@@ -80,7 +80,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
    As marcações internas de IP incluem:
     - Aplicativos Microsoft (14 deles)
     - Proxy anônimo
-    - Botnet
+    - Botnet (você verá que a atividade foi executada por um botnet com um link para saber mais sobre o botnet específico)
     - IP de verificação de Darknet
     - Servidor C&C de malware
     - Analisador de conectividade remota
@@ -99,8 +99,8 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 -   ISP Registrado – o ISP do qual a atividade foi executada.   
 
 -  Origem — pesquise pela origem na qual a atividade foi detectada. A origem pode ser um dos seguintes:
-  -    Conector de aplicativo — logs provenientes diretamente do conector de API do aplicativo.
-  -    Análise de conector de aplicativo — melhorias de segurança do Cloud App Security com base na verificação de informação do conector de API.
+  - Conector de aplicativo — logs provenientes diretamente do conector de API do aplicativo.
+  - Análise de conector de aplicativo — melhorias de segurança do Cloud App Security com base na verificação de informação do conector de API.
   
 
 -   Usuário — o usuário que executou a atividade, que pode ser filtrado no domínio, grupo, nome ou na organização. Para filtrar atividades sem nenhum usuário específico, você pode usar o operador 'não está definido'.  
@@ -117,10 +117,14 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
   
 -   Marca de agente do usuário — marca de agente do usuário interna, por exemplo, todas as atividades de sistemas operacionais desatualizados ou navegador desatualizado.  
     
-  
-## <a name="working-with-the-activity-drawer"></a>Trabalhando com a gaveta Atividade
+>[!NOTE]
+> Se em algum momento você desejar limpar os filtros, poderá fazê-lo ao clicar no ícone ![Limpar filtros](./media/clear-filters.png).
 
-Você pode exibir mais informações sobre cada atividade clicando na própria atividade no log de atividades. Isso abre a gaveta Atividade, que fornece as seguintes ações adicionais que você pode executar no arquivo:
+## <a name="the-activity-drawer"></a>A gaveta de atividades
+
+### <a name="working-with-the-activity-drawer"></a>Trabalhando com a gaveta Atividade
+
+Você pode exibir mais informações sobre cada atividade clicando na própria atividade no log de atividades. Isso abre a Gaveta de atividades, que fornece as seguintes ações adicionais que você pode executar na atividade:
 
 - Políticas correspondentes: clique no link Políticas correspondentes para ver uma lista de políticas nessa atividade correspondente.
 - Exibir dados brutos: clique em Exibir dados brutos para ver os dados reais que foram recebidos do aplicativo.
@@ -136,8 +140,24 @@ Os campos na gaveta Atividade fornecem links contextuais para atividades adicion
   
 Para obter uma lista das ações de governança disponíveis, consulte [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
 
+### <a name="user-insights"></a>Informações de usuário
 
-## <a name="see-also"></a>Consulte Também  
+A experiência de investigação inclui informações prontas sobre o usuário em ação. Com um único clique, você pode obter uma visão abrangente do usuário, incluindo por meio de qual local ele se conectou, com quantos alertas em aberto ele está envolvido e suas informações de metadados.
+
+Para exibir informações de usuário:
+
+1. Clique na atividade em si no **Log de atividades**.
+
+2. Em seguida, clique na guia **Usuário**. <br></br> Isso abre a Gaveta de atividades. A guia **Usuário** fornece as seguintes informações sobre o usuário:
+    - **Abrir alertas**: o número de alertas abertos envolvendo o usuário.
+    - **Violação de arquivo**: o número de violações de arquivo para arquivos pertencentes ao usuário.
+    - **Atividades**: o número de atividades executadas pelo usuário nos últimos 30 dias.
+    - **Países**: o número de países dos quais o usuário se conectou nos últimos 30 dias.
+    - **ISPs**: o número de ISPs dos quais o usuário se conectou nos últimos 30 dias.
+    - **Endereços IP**: o número de endereços IP dos quais o usuário se conectou nos últimos 30 dias.
+
+
+## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 6/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 77f9d0175a35b95ed45632fce7644809912acb09
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="siem-integration"></a>Integração ao SIEM
     
@@ -27,26 +27,13 @@ Ao integrar o SIEM primeiro com o Cloud App Security, atividades e alertas dos �
 
 ## <a name="siem-integration-architecture"></a>Arquitetura de integração do SIEM
 
-O agente SIEM é implantado na rede da sua organização. Quando implantado e configurado, ele pesquisa os tipos de dados que foram configurados (alertas e atividades) usando as APIs RESTful do Cloud App Security.
+O agente SIEM é implantado na rede da sua organização. Quando implantado e configurado, ele efetua pull dos tipos de dados que foram configurados (alertas e atividades) usando as APIs RESTful do Cloud App Security.
 O tráfego é, então, enviado por meio de um canal HTTPS criptografado na porta 443.
 
 Depois que o agente SIEM recuperar os dados do Cloud App Security, ele enviará as mensagens do Syslog para seu SIEM local usando as configurações da rede que você forneceu durante a configuração (TCP ou UDP com uma porta personalizada). 
 
 ![Arquitetura de integração do SIEM](./media/siem-architecture.png)
 
-## <a name="sample-siem-logs"></a>Exemplo dos logs do SIEM
-
-Os logs fornecidos do Cloud App Security para seu SIEM são CEF em Syslog. Nos exemplos de logs a seguir, você poderá ver o tipo de evento normalmente enviado pelo Cloud App Security ao seu servidor SIEM. Neles você poderá ver quando o alerta foi acionado, o **tipo de evento**, a **política** que foi violada, o **usuário** que acionou o evento, o **aplicativo** que o usuário estava usando para criar a violação e a **URL** de onde o alerta está vindo:
-
-Exemplo de log de atividades: 
-  
-2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
-
-
-
-Exemplo de log de alertas: 
-
-2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
 
 
 ## <a name="how-to-integrate"></a>Como integrar
@@ -65,10 +52,10 @@ A integração ao SIEM é realizada em três etapas:
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Etapa 1: configurar no portal do Cloud App Security
 
-1. No portal do Cloud App Security, na engrenagem Configurações, clique em **Agentes SIEM**.
+1. No portal do Cloud App Security, sob a engrenagem de Configurações, clique em **Extensões de segurança** e, em seguida, clique na guia **Agentes SIEM**.
 
-2. Clique em Adicionar agente SIEM para iniciar o assistente.
-3. No assistente, clique em **Adicionar agente SIEM**.    
+2. Clique no ícone de adição para iniciar o assistente do **Adicionar agente SIEM**.
+3. No assistente, clique em **Adicionar agente SIEM**. 
 4. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Avançar**.
 
    ![Configurações gerais do SIEM](./media/siem1.png)

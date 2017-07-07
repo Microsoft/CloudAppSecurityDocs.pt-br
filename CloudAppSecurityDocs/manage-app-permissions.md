@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f0793afc91b7bf29afe56bc5fa2218fb07dc6bf
-ms.sourcegitcommit: 25564029fb94c1e37e7072775c88a0456089224c
-translationtype: HT
+ms.openlocfilehash: 23eedf73a5b3eec883da5e64a9db98f6ec895098
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="manage-app-permissions"></a>Gerenciar permissões de aplicativo
 Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365, o G Suite e o Salesforce.  Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo.  Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões do aplicativo Cloud App Security habilitam a visualização de quais aplicativos instalados pelo usuário têm acesso a dados do Office 365, do G Suite e do Salesforce, quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365, do G Suite e do Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
@@ -69,6 +71,14 @@ O ícone fica verde e o aplicativo é aprovado para todos os usuários do aplica
 3. Digite a mensagem que você deseja enviar para os usuários do aplicativo na caixa Digite uma mensagem de notificação personalizada e atualize o endereço de email 'responder para', se for necessário. 
  Clique em **Vetar aplicativo** para enviar o email e vetar o aplicativo dos usuários do aplicativo conectado.
 
+## <a name="revoke-app-and-notify-user"></a>Revogar aplicativo e notificar o usuário
+
+Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou para notificar o usuário que isso deve foi feito. 
+
+1. Na página de Permissões de aplicativo, clique em três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *Você autorizou o aplicativo Adallom Google Protector a acessar sua conta G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere conceder ou revogar as permissões que você deu a esse aplicativo em sua conta G Suite. Para revogar o acesso ao aplicativo, acesse: https://security.google.com/settings/security/permissions?hl=en&pli=1, selecione o aplicativo e clique em 'Revogar acesso' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
+2. Você também pode revogar permissões para usar o aplicativo para o usuário, clicando no ícone no final da linha do aplicativo na tabela e selecionando **Revogar aplicativo**. 
+
+ ![revogar aplicativo](./media/revoke-app.png)
 
 ## <a name="query-app-permissions"></a>Consultar permissões de aplicativo
 

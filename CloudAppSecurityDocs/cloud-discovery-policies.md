@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: ad1b3e4c94458a35aa3f4230fe48d29e5f2f8461
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
     
@@ -30,22 +32,22 @@ As políticas de descoberta permitem que você defina alertas que notificam quan
   
 3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
-4.  Para definir quais aplicativos descobertos vão disparar essa política, clique em **Adicionar filtros**.  
+4.  Defina a **Gravidade** da política.
+
+5. Para definir quais aplicativos descobertos vão disparar essa política, adicione filtros.  
   
-     Os filtros são escolhidos do lado esquerdo da página do pop-up de filtro. É possível filtrar por **Nome do aplicativo**, **Domínio**, **Fator de risco**, **Pontuação de risco** e **Categoria**. O lado direito da página mostrará os resultados para os filtros escolhidos no catálogo de serviço atual. Depois de escolher os filtros, salve e verifique se as marcas apropriadas aparecem na caixa de filtros.  
-  
-5.  Em **Aplicar a** escolha se isso se aplica a **Usuários**, **Endereços IP** ou ambos.  
-  
-6.  Defina o **Daily usage threshold (Limite de uso diário)** que o aplicativo deve atender para corresponder à política.  
+6.  Você pode definir um limite para o nível de sensibilidade que a política deve ter. Depois de habilitar **Disparar uma correspondência de política se todas as seguintes situações ocorrerem no mesmo dia**, você pode definir um mínimo para o **Número de usuários**, **Número de endereços IP**, **Tráfego diário**, **Dados baixados**, **Dados carregados** e **Número de transações** que o aplicativo deve atender para corresponder à política.  
   
 7.  Defina um **Limite diário de alertas** e selecione se o alerta será enviado como um email, uma mensagem de texto ou ambos e forneça detalhes conforme necessário. Você pode clicar em Salvar configurações de alerta para o padrão para habilitar políticas futuras para salvar essas configurações de alerta, incluindo o número de telefone e os endereços de email, como o padrão.  
   
+8. Selecione possíveis ações de **Governança** a serem aplicadas quando um aplicativo corresponde a essa política. Ele pode marcar automaticamente políticas como **Sancionadas** ou **Não sancionadas** 
+
 8.  Clique em **Criar**.  
   
 Por exemplo, se você estiver interessado em descobrir aplicativos de hospedagem arriscados em seu ambiente de nuvem, defina sua política da seguinte forma:  
   
 Defina os filtros de política para descobrir todos os serviços encontrados na categoria **serviços de hospedagem** e que tenham uma pontuação baixa, indicando que são arriscados.   
-Defina a **Gravidade** da política como **Média**.   
+   
 Na parte inferior, defina os limites que devem disparar um alerta para um determinado aplicativo descoberto. Apenas se mais de 100 usuários no ambiente usaram o aplicativo e apenas se eles baixaram uma determinada quantidade de dados do serviço.   
 Além disso, você pode definir o limite de alertas diários que deseja receber.  
   

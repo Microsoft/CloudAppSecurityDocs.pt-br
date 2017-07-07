@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: a30cf7f973daadd38a2049183ab1800d8d210cf4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades.
@@ -80,20 +81,28 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
   
     -   Ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo.  
   
-    -   Suspender usuário – suspende o usuário do aplicativo.  
+    -   Suspender usuário – suspende o usuário do aplicativo. 
+    > [!NOTE] 
+    > Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários no seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida. 
   
     -   Revogar senha – revoga a senha do usuário e o força a definir uma nova senha em seu próximo logon.  
   
-     ![referência de política de atividade 6](./media/activity-policy-ref6.png "referência de política de atividade 6")  
+     ![Ações de governança de política de atividade do Cloud App Security](./media/activity-policy-ref6.png "ref6 da política de atividade")  
   
 
 ### <a name="governance-conflicts"></a>Conflitos de governança
 
 Após a criação de várias políticas, pode surgir uma situação na qual as ações de governança em várias políticas se sobreponham. Nesse caso, o Cloud App Security processará as ações de governança da seguinte maneira:
 
+#### <a name="conflicts-between-policies"></a>Conflitos entre políticas
+
 - Se duas políticas contiverem ações contidas umas nas outras (por exemplo, **Remover compartilhamentos externos** incluída em **Tornar particular**), o Cloud App Security resolverá o conflito e a ação mais forte será imposta.
 - Se as ações forem completamente não relacionadas (por exemplo, **Notificar proprietário** e **Tornar particular**). Ambas as ações serão executadas.
 - Se houver conflito entre as ações, (por exemplo **Alterar o proprietário para o usuário A** e **Alterar o proprietário para o usuário B**), resultados diferentes poderão ocorrer em cada correspondência. É importante alterar suas políticas para evitar conflitos, pois eles podem resultar em alterações indesejadas na unidade que serão difíceis de detectar.
+
+#### <a name="conflicts-in-user-sync"></a>Conflitos na sincronização de usuário
+
+- Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários no seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida. 
 
 ### <a name="governance-log"></a>Log de governança
 O log de governança fornece um registro de status de cada tarefa que você definir no Cloud App Security para execução, incluindo tarefas manuais e automáticas. Essas tarefas incluem aquelas que podem ser definidas em políticas, as ações de governança que definidas em arquivos e usuários e qualquer outra ação definida para execução no Cloud App Security. O Log de governança também fornece informações sobre o êxito ou falha dessas ações. Você pode optar por repetir ou reverter algumas das ações de governança do log de governança. 
@@ -124,7 +133,8 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Política de arquivos, Atividade de política|Arquivo, Atividade|Notificar usuários específicos|Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.|Todos os aplicativos|
 |Política de arquivo e Política de atividade|Arquivo, Atividade|Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação.|Tudo|
 |Política de arquivo e Arquivos|Arquivo|Remover a capacidade do editor de compartilhar|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança restringe essa opção e também o compartilhamento de arquivos com o proprietário.|G Suite|
-|Política de arquivo e Arquivos|Arquivo|Colocar em quarentena do administrador|Remove qualquer permissão do arquivo e o move para uma pasta de quarentena na unidade raiz do usuário. Isso permite que o administrador examine o arquivo e o mova.|Caixa|
+|Política de arquivo e Arquivos|Arquivo|[Colocar em quarentena do administrador](use-case-admin-quarantine.md)|Remove qualquer permissão do arquivo e o move para uma pasta de quarentena em um local para o administrador. Isso permite que o administrador examine o arquivo e o remova.|Office 365 SharePoint, OneDrive for Business, Box|
+|Política de arquivos, Política de atividade, Alertas|Aplicativo|Exigir que os usuários entrem novamente|Você pode exigir que os usuários entrem novamente no Office 365 e em todos os aplicativos do Azure AD como uma correção rápida e eficaz para alertas de atividade do usuário suspeita e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário.|Office 365, Azure AD|
 |Arquivos|Arquivo|Restaurar da quarentena do usuário|Restaura um usuário de ser colocado em quarentena.|Caixa|
 |Arquivos|Arquivo|Conceder permissões de leitura para mim|Concede permissões de leitura do arquivo para você mesmo, de forma que você possa acessar o arquivo e entender se ele tem uma violação ou não.|G Suite|
 |Arquivos|Arquivo|Permitir que os editores compartilhem|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança é o oposto da ação Remover a capacidade do editor de compartilhar, e permite que o editor compartilhe o arquivo.|G Suite|
