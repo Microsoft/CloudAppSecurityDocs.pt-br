@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 824dd288e821289b0d09569d461a498d87e30705
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
+ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/05/2017
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
@@ -59,7 +59,7 @@ Há filtros de aplicativos Descoberto básicos e avançados. Para alcançar um f
 ![Aplicativos Descobertos](./media/discovered-apps.png)  
 
 
-- **Marca de aplicativo**: selecione se o aplicativo foi sancionado, não sancionado ou não está marcado. Além disso, você pode criar uma marca personalizada para seu aplicativo e, em seguida, usá-la para filtrar tipos específicos de aplicativos.
+- **Marca de aplicativo**: selecione se o aplicativo foi sancionado, não sancionado ou não está marcado. Além disso, você pode criar uma marca personalizada para seu aplicativo e, em seguida, usá-la para filtrar tipos específicos de aplicativos. 
 - **Aplicativos e domínios**: permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos. 
 - **Categorias**: o filtro de categorias, que está localizado à esquerda da página, permite pesquisar tipos de aplicativos de acordo com as categorias de aplicativo, por exemplo, aplicativos de rede Social, aplicativos de armazenamento em nuvem etc. Você pode selecionar várias categorias por vez ou uma única categoria e, em seguida, aplicar os filtros básicos e avançados sobre eles.
 - **Fator de risco de conformidade**: permite que você pesquise padrões específicos, certificação e conformidades com as quais o aplicativo pode cumprir (HIPAA ISO 27001, SOC 2, PCI-DSS etc.).
@@ -70,7 +70,7 @@ Há filtros de aplicativos Descoberto básicos e avançados. Para alcançar um f
 
 ## <a name="creating-and-managing-custom-app-tags"></a>Criando e gerenciando marcas de aplicativo personalizadas
 
-Você pode criar uma marca de aplicativo personalizada. Essas marcas podem ser usadas como filtros para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. 
+Você pode criar uma marca de aplicativo personalizada. Essas marcas podem ser usadas como filtros para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. Por exemplo, lista de observação personalizada, atribuição a uma unidade de negócios específica ou aprovações personalizadas, como "aprovado pelo departamento jurídico".
 
 Para criar uma marca de aplicativo personalizada:
 

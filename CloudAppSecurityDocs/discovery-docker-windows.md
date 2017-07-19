@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 7/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,15 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0421cd58de58c44257d20d9fe1e23ac84cdc9f0a
-ms.sourcegitcommit: 7ca888f37e4fe05eda72d8e588be15fbcf4ca9e5
+ms.openlocfilehash: 1ef3958d72150a1a67e92877c58270cbe17fe038
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/16/2017
 ---
-# Instale e configure o Docker do coletor de logs automático no Windows Server 2016
-<a id="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016" class="xliff"></a>
+# <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Instale e configure o Docker do coletor de logs automático no Windows Server 2016
 
-## Requisitos técnicos
-<a id="technical-requirements" class="xliff"></a>
+## <a name="technical-requirements"></a>Requisitos técnicos
 
 -   SO: Windows Server 2016 ou Windows 10
 
@@ -39,8 +37,7 @@ ms.lasthandoff: 07/11/2017
 
     -   Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443.
 
-## Desempenho do coletor de logs
-<a id="log-collector-performance" class="xliff"></a>
+## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 
 O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB por hora. Os principais afunilamentos no processo de coleta de logs são:
 
@@ -48,8 +45,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 -   Desempenho de E/S da máquina virtual alocada pela sua equipe de TI: determina a velocidade na qual os logs são gravados no disco do coletor de logs. O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se sua configuração geralmente excede 50 GB por hora, é recomendável dividir o tráfego entre vários coletores de logs.
 
-## Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
-<a id="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector" class="xliff"></a>
+## <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
 
 1.  Acesse a página de configuração de upload automatizado:<br></br> No portal do Cloud App Security, clique no ícone de configurações [ícone de configurações](./media/settings-icon.png), antes de **Coletores de log**.
 
@@ -99,8 +95,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
     ![Windows4](./media/windows4.png)
 
-## Etapa 2 – implantação local de seu computador
-<a id="step-2--on-premises-deployment-of-your-machine" class="xliff"></a>
+## <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – implantação local de seu computador
 
 >[!NOTE]
 >As etapas a seguir descrevem a implantação no Windows Server. As etapas de implantação para outras plataformas são ligeiramente diferentes.
@@ -140,15 +135,13 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 Você verá a mensagem: **Concluído com êxito!**.
   ![windows10](./media/windows10.png)
 
-## Etapa 4 — Configuração local de seus dispositivos de rede
-<a id="step-4---on-premises-configuration-of-your-network-appliances" class="xliff"></a>
+## <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Etapa 4 — Configuração local de seus dispositivos de rede
 
 Configure seus proxies e firewalls de rede para periodicamente exportar logs para a porta de Syslog dedicada do diretório de FTP acordo com as instruções na caixa de diálogo, por exemplo:
 
-        \`BlueCoat_HQ - Destination path: \<\<machine_name\>\>\BlueCoat_HQ\`
+        BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## Etapa 5 — Verificar a implantação bem-sucedida no portal do Cloud App Security
-<a id="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal" class="xliff"></a>
+## <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Etapa 5 — Verificar a implantação bem-sucedida no portal do Cloud App Security
 
 Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **criado**, será possível que a conexão do coletor de logs e a análise não tenham sido concluídas.
 
@@ -158,8 +151,7 @@ Você também pode ir para o **log de governança** e verificar se que os logs e
 
 Se você encontrar problemas durante a implantação, confira [Solucionando problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-## Consulte também
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Consulte também
  
 [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
