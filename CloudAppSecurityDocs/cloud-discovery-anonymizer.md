@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/16/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
@@ -33,7 +33,7 @@ Como funciona a anonimização de dados:
 
 1.  Há três maneiras de aplicar a anonimização de dados: 
     
-    - Você pode definir que os dados de um arquivo de log específico sejam anonimizados [criando um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e selecionando **Anonimizar informações particulares**.
+    - Você pode definir que os dados de um arquivo de log específico sejam mantidos em anonimato. Para fazer isso, [crie um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e escolha **Tornar anônimas as informações privadas**.
  ![Anonimizar dados de instantâneo](./media/anonymize-log.png)
 
     - Você pode definir a anonimização dos dados de um [upload automatizado para uma nova fonte de dados](configure-automatic-log-upload-for-continuous-reports.md) selecionando **Anonimizar informações particulares** ao adicionar a nova fonte de dados.  

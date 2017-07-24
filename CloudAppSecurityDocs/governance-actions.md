@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a30cf7f973daadd38a2049183ab1800d8d210cf4
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: ed24b4020cd96db0bcb84378110499b289d583da
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades.
@@ -85,7 +85,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
     > [!NOTE] 
     > Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários no seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida. 
   
-    -   Revogar senha – revoga a senha do usuário e o força a definir uma nova senha em seu próximo logon.  
+    -   Revogar senha – Revoga a senha do usuário e o força a definir uma nova senha no próximo logon.  
   
      ![Ações de governança de política de atividade do Cloud App Security](./media/activity-policy-ref6.png "ref6 da política de atividade")  
   
