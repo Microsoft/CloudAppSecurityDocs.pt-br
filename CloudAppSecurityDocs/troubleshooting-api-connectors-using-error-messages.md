@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c046cefa687b67796e2039db079e51f510ea2ff0
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1c796c3933be0678183eae6e52ffd92097880ed8
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
 
 Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do conector de aplicativos após a tentativa de conectar um aplicativo de nuvem usando o conector de aplicativos de API.
 
 
+> [!div class="mx-tableFixed"]
 |Mensagem de erro|Aplicativo relevante|Descrição|Resolução|
 |----|----|----|------------|
 |HttpRequestFailure: O servidor retornou: 400 Solicitação inválida: {"error":{"code":"AF20012","message":"A ID de locatário especificada (insira Tenant_ID aqui) está configurada incorretamente no sistema."|Office 365 |Não foi encontrada nenhuma licença atribuída do Office 365. |Atribua pelo menos uma licença do Office 365 ao seu locatário.| 
