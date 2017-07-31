@@ -8,22 +8,24 @@
       "build_source_folder": "CloudAppSecurityDocs",
       "build_output_subfolder": "cloud-app-security",
       "locale": "pt-BR",
-      "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [],
   "branches_to_filter": [
-    "live-oldev", "live"
+    "live-oldev",
+    "live"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/CloudAppSecurityDocs.pt-br",
   "git_repository_branch_open_to_public_contributors": "live",
+  "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
