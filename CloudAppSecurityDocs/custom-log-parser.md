@@ -33,7 +33,7 @@ Para configurar um analisador personalizado de CSV:
      
 3.  Insira um **Nome do relatório** e uma **Descrição**
   
-4.  Em **Fonte de dados**, selecione **Formato de log personalizado... **.  
+4.  Em **Fonte de dados**, selecione **Formato de log personalizado...** .  
 
      ![Novo relatório de instantâneo](./media/custom-log-upload.png)   
 
