@@ -19,8 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/09/2017
 ---
-# Configurar upload de log automático para relatórios contínuos
-<a id="configure-automatic-log-upload-for-continuous-reports" class="xliff"></a>
+# <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
 
 Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Logs de FTP são carregados no Cloud App Security após o arquivo finalizar a transferência por FTP para o coletor de log.  Para Syslog, o coletor de log grava os logs recebidos para o disco e carrega o arquivo no Cloud App Security quando o tamanho do arquivo é maior que 40 KB.
@@ -32,8 +31,7 @@ Antes de configurar a coleta de arquivos de log automática, verifique se o log 
 > [!NOTE]
 > O Cloud App Security dá suporte para encaminhamento de logs do servidor SIEM para o Coletor de Log, supondo que os logs estão sendo encaminhados em seu formato original. No entanto, é altamente recomendável que o coletor de log seja integrado diretamente com seu firewall e/ou proxy.
 
-## Modos de implantação
-<a id="deployment-modes" class="xliff"></a>
+## <a name="deployment-modes"></a>Modos de implantação
 
 O coletor de log dá suporte a dois modos de implantação:
 
@@ -44,8 +42,7 @@ O coletor de log dá suporte a dois modos de implantação:
 
 
 
-## Consulte também
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Consulte também
  
 [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
