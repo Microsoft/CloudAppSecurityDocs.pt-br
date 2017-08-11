@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 683815d0db528ac65b0d547cd8e5ab09ea64321f
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
@@ -52,8 +52,13 @@ Na página **Aplicativos descobertos**, em **Procurar por categoria**, selecione
 
 Depois que os resultados são filtrados, você pode [cancelar a sanção e bloqueá-los](governance-discovery.md) usando a caixa de seleção de ação em massa para cancelar a sanção de todos eles em uma ação só. Depois que eles tiverem a sanção cancelada, você poderá usar um script de bloqueio para impedir que eles sejam usados em seu ambiente.
 
-Para se aprofundar ainda mais, você poderá investigar os aplicativos descobertos para o nível de subdomínio e identificar as instâncias específicas que estão em uso. 
+O Cloud Discovery permite aprofundar ainda mais no uso de nuvem da sua organização e identificar instâncias específicas que estão em uso ao investigar os subdomínios de descoberta.
 
+Por exemplo, você pode diferenciar entre os diferentes sites do SharePoint.
+
+Isso tem suporte apenas em firewalls e proxies que contêm dados de URL de destino. Consulte a lista de dispositivos com suporte em [Proxies e firewalls com suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+![informações de subdomínio](./media/discovery-domains.png)  
 
 ## <a name="discovered-app-filters"></a>Filtros dos aplicativos descobertos
 
