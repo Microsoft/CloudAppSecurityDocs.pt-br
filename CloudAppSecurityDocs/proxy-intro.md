@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 28317b70-1851-4610-b1d6-863bc5994bb6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 46377a8447ca7a7c0e98183b9d114c329d040e74
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 82e1ee0b5161dce88db815dc8eea06340bdbc532
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-the-cloud-app-security-proxy"></a>Trabalhando com o proxy do Cloud App Security
 
@@ -42,7 +42,7 @@ Para usar o Controle de acesso no Cloud App Security, implante o Proxy fazendo a
 > [!NOTE]
 > -  Não é necessário alterar as políticas existentes do provedor de identidade.
 
-### <a name="supported-apps-and-identity-providers"></a>Aplicativos e provedores de identidade compatíveis
+#### <a name="supported-apps-and-identity-providers"></a>Aplicativos e provedores de identidade compatíveis
 
 O Controle de acesso do proxy foi projetado para dar suporte a qualquer aplicativo e qualquer provedor de identidade que oferece suporte a protocolos SAML ou Web Services Federation. A equipe do Cloud App Security está testando os principais provedores de identidade e os aplicativos principais com os recursos de controle de acesso. No entanto, como há muitos provedores de identidade e muitos aplicativos de nuvem, nem toda combinação de provedores de identidade e aplicativo é testada. É recomendável testar o processo de logon único com seu provedor de identidade e o aplicativo em uma área restrita ou ambiente de teste antes de implantá-lo em um ambiente de produção.
 
