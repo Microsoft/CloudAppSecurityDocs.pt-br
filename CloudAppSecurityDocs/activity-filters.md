@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8899715f7da9433646e3b007ca971b191b602a3a
-ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
+ms.openlocfilehash: 7d74bb482f44e2845d348dd18777d72910b7e18b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="activities"></a>Atividades
 O Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. 
@@ -124,23 +124,22 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 
 ### <a name="working-with-the-activity-drawer"></a>Trabalhando com a gaveta Atividade
 
-Você pode exibir mais informações sobre cada atividade clicando na própria atividade no log de atividades. Isso abre a Gaveta de atividades, que fornece as seguintes ações adicionais que você pode executar na atividade:
+Você pode exibir mais informações sobre cada atividade clicando na própria atividade no log de atividades. Isso abre a Gaveta de atividades, que fornece as seguintes ações adicionais e informações para cada atividade:
+    - Políticas correspondentes: clique no link Políticas correspondentes para ver uma lista de políticas nessa atividade correspondente.
+    - Exibir dados brutos: clique em Exibir dados brutos para ver os dados reais que foram recebidos do aplicativo.
+    - Usuário: clique no usuário para exibir a página do usuário que executou a atividade. 
+    - Tipo de dispositivo: clique no tipo de dispositivo para exibir os dados brutos do agente do usuário. 
+    - Local: clique no local para exibir o local no Bing Mapas.
+    - Marcas e categoria de endereço IP: clique na marca de IP para exibir a lista de marcas de IP encontradas nessa atividade. Em seguida, você pode filtrar por todas as atividades correspondentes nessa marca.    
 
-- Políticas correspondentes: clique no link Políticas correspondentes para ver uma lista de políticas nessa atividade correspondente.
-- Exibir dados brutos: clique em Exibir dados brutos para ver os dados reais que foram recebidos do aplicativo.
-- Usuário: clique no usuário para exibir a página do usuário que executou a atividade. 
-- Tipo de dispositivo: clique no tipo de dispositivo para exibir os dados brutos do agente do usuário. 
-- Local: clique no local para exibir o local no Bing Mapas.
-- Marcas e categoria de endereço IP: clique na marca de IP para exibir a lista de marcas de IP encontradas nessa atividade. Em seguida, você pode filtrar por todas as atividades correspondentes nessa marca.    
-
-Os campos na gaveta Atividade fornecem links contextuais para atividades adicionais e análises detalhadas que você talvez queira executar diretamente na gaveta. Por exemplo, se você mover o cursor para próximo da categoria de endereço IP, pode usar o ícone para adicionar filtro ![adicionar filtro](./media/add-to-filter-icon.png) para adicionar o endereço IP imediatamente ao filtro da página atual. Você também pode usar o ícone de engrenagem de configurações ![ícone de configurações](./media/contextual-settings-icon.png) que aparece diretamente na página de configurações necessária para alterar a configuração de um dos campos, tais como **Grupos de usuários**.
+ Os campos na gaveta Atividade fornecem links contextuais para atividades adicionais e análises detalhadas que você talvez queira executar diretamente na gaveta. Por exemplo, se você mover o cursor para próximo da categoria de endereço IP, pode usar o ícone para adicionar filtro ![adicionar filtro](./media/add-to-filter-icon.png) para adicionar o endereço IP imediatamente ao filtro da página atual. Você também pode usar o ícone de engrenagem de configurações ![ícone de configurações](./media/contextual-settings-icon.png) que aparece diretamente na página de configurações necessária para alterar a configuração de um dos campos, tais como **Grupos de usuários**.
 
 
 ![gaveta de atividades](./media/activity-drawer.png "gaveta de atividades")  
   
 Para obter uma lista das ações de governança disponíveis, consulte [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
 
-### <a name="user-insights"></a>Informações de usuário
+#### <a name="user-insights"></a>Informações de usuário
 
 A experiência de investigação inclui informações prontas sobre o usuário em ação. Com um único clique, você pode obter uma visão abrangente do usuário, incluindo por meio de qual local ele se conectou, com quantos alertas em aberto ele está envolvido e suas informações de metadados.
 
@@ -156,9 +155,31 @@ Para exibir informações de usuário:
     - **ISPs**: o número de ISPs dos quais o usuário se conectou nos últimos 30 dias.
     - **Endereços IP**: o número de endereços IP dos quais o usuário se conectou nos últimos 30 dias.
 
-![Informações do usuário no Microsoft Cloud App Security](./media/user-insights.png)
+![informações do usuário no Cloud App Security](./media/user-insights.png)
 
-## <a name="see-also"></a>Consulte também  
+#### <a name="ip-address-insights"></a>Informações sobre endereço IP
+
+Como as informações de endereço IP são cruciais para quase todas as investigações, você pode exibir informações detalhadas sobre endereços IP na Gaveta de atividades. De dentro de uma atividade específica, você pode clicar na guia de endereço IP para exibir os dados consolidados sobre o endereço IP, incluindo o número de alertas abertos para o endereço IP específico, um gráfico de tendência de atividade recente e um mapa do local. Isso permite o fácil detalhamento, por exemplo, quando estiver investigando alertas de viagem impossíveis, você pode compreender facilmente onde o endereço IP foi usado e se ele foi envolvido em atividades suspeitas ou não. Você também pode executar ações diretamente na gaveta do endereço IP que permite que você marque um endereço IP como arriscado, VPN ou corporativo para facilitar a criação de políticas e a futura investigação.
+
+Para exibir as informações sobre endereço IP:
+
+1. Clique na atividade em si no **Log de atividades**.
+
+2. Em seguida, clique na guia **Endereço IP**. <br></br> Isso abre a guia **Endereço IP** da Gaveta de atividades e fornece as seguintes informações sobre o endereço IP:
+    - **Abrir alertas**: o número de alertas abertos envolvendo o endereço IP.
+    - **Atividades**: o número de atividades executadas pelo endereço IP nos últimos 30 dias.
+    - **Localização do IP**: as localizações geográficas a partir das quais o endereço IP foi conectado nos últimos 30 dias.
+    - **Atividades**: o número de atividades executadas a partir do endereço IP nos últimos 30 dias.
+    - **Atividades administrativas**: o número de atividades administrativas executadas a partir do endereço IP nos últimos 30 dias.
+    - Você pode executar as seguintes ações de endereço IP:
+        - Marcar como arriscado 
+        - Marcar como endereço IP de VPN
+        - Marcar como IP arriscado e adicionar ao grupo bloqueado
+
+![Informações do endereço IP no Cloud App Security](./media/ip-address-insights.png)
+
+
+## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

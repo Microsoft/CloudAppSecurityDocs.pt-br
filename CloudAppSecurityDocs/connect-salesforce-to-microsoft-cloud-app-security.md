@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: ef16afaa0990b86703f76fe817f86bcdd6ba38e6
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar o Salesforce ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Salesforce existente usando a API do conector de aplicativos.  
@@ -38,11 +38,12 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     -   Faça logon em sua conta do Salesforce e vá para a página **Configuração**.  
   
-    -   Em **Gerenciar Usuários**, vá para a página **Perfis**.  
+    -   Em **Gerenciar Usuários**, vá para a página **Perfis de Usuário**.  
   
          ![gerenciar perfis de usuário do salesforce](./media/salesforce-manageusers-profiles.png "gerenciar perfis de usuário do salesforce")  
   
-    -   Escolha o perfil que você está usando para implantar o Cloud App Security e clique em **Editar**. Este é o perfil a ser usado para a conta de serviço do Cloud App Security para configurar o Conector de aplicativo.  
+    -   Crie um novo perfil clicando em **Novo**. 
+    - Escolha o perfil que você acabou de criar para implantar o Cloud App Security e clique em **Editar**. Este é o perfil a ser usado para a conta de serviço do Cloud App Security para configurar o Conector de aplicativo.  
   
          ![editar perfil do salesforce](./media/salesforce-edit-profile.png "editar perfil do salesforce")  
   
@@ -108,10 +109,10 @@ Eventos do Salesforce são processados pelo Cloud App Security da seguinte manei
   
 - Registro em eventos a cada 15 minutos
 - Definição de trilha de auditoria a cada 15 minutos
-- Os logs da Salesforce rastreiam a atividade de uso por um período de 24 horas, de 00:00 às 23:59, horário UTC. Os eventos da Salesforce geram dados de log em tempo real. No entanto, os arquivos de log são gerados pela Salesforce no dia posterior à ocorrência de um evento, fora dos horários de pico. Portanto, os dados do arquivo de log ficam indisponíveis por pelo menos um dia, após um evento. Para saber mais sobre os eventos da Salesforce, confira [Usando o monitoramento de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
+- Os logs do Salesforce rastreiam a atividade de uso por um período de 24 horas, de 0:00 a 23:59, UTC. Os eventos no Salesforce geram dados de log em tempo real. No entanto, os arquivos de log são gerados pelo Salesforce no dia após um evento ocorrer, fora do horário de pico. Portanto, os dados do arquivo de log ficam indisponíveis por pelo menos um dia após um evento. Para saber mais sobre os eventos do Salesforce, veja [Usando o monitoramento de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

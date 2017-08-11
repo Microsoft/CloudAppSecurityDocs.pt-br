@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7fe4b327e3f90bf98f4796d1b9b3149435b0ccd5
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Novidades do Cloud App Security
+
+## <a name="cloud-app-security-release-102"></a>Cloud App Security versão 102 
+Lançado em 30 de julho de 2017
+ 
+-   Como as informações de endereço IP são cruciais para quase todas as investigações, agora você pode exibir informações detalhadas sobre endereços IP na Gaveta de atividades. De dentro de uma atividade específica, você agora pode clicar na guia de endereço IP para exibir os dados consolidados sobre o endereço IP, incluindo o número de alertas abertos para o endereço IP específico, um gráfico de tendência de atividade recente e um mapa do local. Isso permite o fácil detalhamento, por exemplo, quando estiver investigando alertas de viagem impossíveis, você pode compreender facilmente onde o endereço IP foi usado e se ele foi envolvido em atividades suspeitas ou não. Você também pode executar ações diretamente na gaveta do endereço IP que permite que você marque um endereço IP como arriscado, VPN ou corporativo para facilitar a criação de políticas e a futura investigação. Para saber mais, veja [Informações sobre endereço IP](activity-filters.md#ip-address-insights)
+
+-   Na descoberta de nuvem, agora você pode usar [formatos de log personalizado](custom-log-parser.md) também para [uploads de log automatizados](discovery-docker.md). Isso permite que você automatize facilmente o upload de logs de seus SIEMs como servidores de Splunk ou qualquer outro formato sem suporte. 
+ 
+-   As novas ações de investigação de usuário permitem um nível adicional de análise para investigações do usuário. Nas páginas de **Investigação**, você agora pode clicar com o botão direito em uma atividade, usuário ou conta e aplicar um dos seguintes novos filtros para investigação e filtragem avançadas: **Exibir atividade relacionada**, **Exibir controle relacionado**, **Exibir alertas relacionados**, **Exibir arquivos de propriedade**, **Exibir arquivos compartilhados com esse usuário**.
+
+-   O catálogo do Cloud App agora contém um novo campo para retenção de dados após o encerramento da conta. Esse fator de risco permite que você tenha certeza de que seus dados foram completamente removidos depois de encerrar uma conta dentro de um aplicativo de nuvem.
+
+-   O Cloud App Security agora tem visibilidade aprimorada em atividades relativas a objetos do Salesforce, como clientes potenciais, contas, campanhas, oportunidades, perfis e casos. Por exemplo, a visibilidade do acesso de páginas de conta permite que você configure uma política que alerta se um usuário exibe um número muito grande de páginas de conta. Isso está disponível por meio do Salesforce App Connector, quando você tiver habilitado o Salesforce Event Monitoring (parte do Salesforce Shield).
+
+- Não rastrear agora está disponível para clientes de visualização privada! Agora você pode controlar quais os dados de atividade do usuários são processados. Isso permite definir grupos específicos no Cloud App Security como "Não rastrear". Por exemplo, agora você pode decidir não processar nenhum dado de atividade de usuários localizados na Alemanha ou em qualquer país que não esteja vinculado a uma lei de conformidade específica. Isso pode ser implementado em todos os aplicativos no Cloud App Security, para um aplicativo específico ou até mesmo um subaplicativo específico. Além disso, esse recurso pode ser utilizado para facilitar a distribuição gradual do Cloud App Security. Para saber mais ou para participar da visualização privada para esse recurso, entre em contato com o suporte ou seu representante de conta. 
+
+
 
 ## <a name="cloud-app-security-release-100"></a>Cloud App Security versão 100 
 Lançado em 3 de julho de 2017
@@ -45,9 +62,9 @@ Lançado em 3 de julho de 2017
     - **Pontuação de risco personalizada**: agora você pode substituir a pontuação de risco de um aplicativo. Por exemplo, se a pontuação de risco de um aplicativo é 8 e é um aplicativo sancionado na sua organização, você pode alterar a pontuação de risco para 10 para sua organização. Você também pode adicionar observações para tornar a justificativa da alteração clara quando qualquer pessoa analisar o aplicativo.
 -   **Novo modo de implantação do coletor de log:** estamos começando a implementar um novo modo de implantação que agora está disponível para o coletor de logs. Além da implantação baseada em dispositivo virtual atual, o novo coletor de log baseado em Docker (contêiner) pode ser instalado como um pacote nos computadores com Windows e Ubuntu, tanto localmente quanto no Azure. Ao usar o Docker, o computador host é de propriedade do cliente, que pode fazer patch livremente e monitorá-lo.
 
-### <a name="announcements"></a>Comunicados: 
--   o Catálogo de Aplicativos de Nuvem agora tem suporte para mais de 15.000 aplicativos detectáveis
--   Conformidade: o Cloud App Security tem a certificação oficial SOC1/2/3 pelo Microsoft Azure. Para ver a lista completa de certificações, confira [Ofertas de conformidade](https://www.microsoft.com/trustcenter/compliance/complianceofferings) e filtre os resultados para Cloud App Security.
+### <a name="announcements"></a>Avisos: 
+-   O catálogo do Cloud App agora oferece suporte a mais de 15.000 aplicativos detectáveis
+-   Conformidade: o Cloud App Security oficialmente é certificado para SOC1/2/3 pelo Azure. Para obter a lista completa das certificações, veja [Ofertas de conformidade](https://www.microsoft.com/trustcenter/compliance/complianceofferings) e filtre os resultados por Cloud App Security.
 
 ### <a name="other-improvements"></a>Outros aperfeiçoamentos: 
 -   **Melhor análise:** foram feitas melhorias no mecanismo de análise de log do Cloud Discovery. Erros internos têm probabilidade significativamente menor de ocorrer.
@@ -175,7 +192,7 @@ Lançado em 20 de março de 2017
 -   Se você tiver configurado scanners DLP adicionais de terceiros, o status de verificação de DLP agora mostrará o status de cada conector de forma independente para melhorar a visibilidade.
 -   Agora, o Cloud App Security conta com suporte para atividades de Equipes da Microsoft que são suportadas no log de auditoria do Office 365. Esse recurso está sendo implantado gradativamente.
 -   Para os eventos de representação do Exchange Online, agora você pode filtrar pelo nível de permissão usado - delegado, administrador ou administrador delegado. Você pode pesquisar por eventos exibindo o nível de representação que interessa a você no **Log de atividades** pesquisando por **Objetos de atividade** > **Item**.
--   Na gaveta de aplicativos na guia Permissões do Aplicativo você pode ver o **Editor** de cada aplicativo. Você também pode usar o Editor como um filtro para investigar outros aplicativos do mesmo editor.
+-   Na gaveta de aplicativos na guia **Permissões do Aplicativo** dos aplicativos do Office 365, você pode ver o **Editor** de cada aplicativo. Você também pode usar o Editor como um filtro para investigar outros aplicativos do mesmo editor.
 -   Agora, os endereços IP com risco são exibidos como um fator de risco independente em vez de ponderados no fator de risco de **Localização** geral. 
 -   Quando os rótulos de Proteção de Informações do Azure estiverem desabilitados em um arquivo, os rótulos desabilitados serão exibidos como desabilitados no Cloud App Security. Os rótulos excluídos não serão exibidos.
  

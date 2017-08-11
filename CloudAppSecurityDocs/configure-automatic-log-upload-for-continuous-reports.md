@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurar o upload de log automático para relatórios contínuos em uma solução de virtualização
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 - Hipervisor: HyperV ou VMware
@@ -43,7 +43,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs  
   
 1.  Acesse a página de configuração de upload automatizado:  
-    No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "settings icon"), antes de **Coletores de log**.  
+    No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações"), antes de **Coletores de log**.  
   
 3.  Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:  
   
@@ -51,7 +51,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   
     b.  Atribua o **Nome** do proxy ou firewall.  
   
-    c.  Selecione o dispositivo na lista **Fonte**.  
+    c.  Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado especificamente, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
   
     d.  Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.  
   
@@ -81,7 +81,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 1.  Abra o Gerenciador do Hyper-V.  
   
 2.  Selecione **Novo**, **Máquina Virtual** e clique em **Próximo**.  
- ![máquina virtual do hipervisor de descoberta](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![máquina virtual do hipervisor de descoberta](./media/discovery-hyperv-virtual-machine.png "máquina virtual do hipervisor de descoberta")  
   
 3.  Forneça um **Nome** para a nova máquina virtual, por exemplo, CloudAppSecurityLogCollector01 e clique em **Próximo**.  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 148c9b275ce77a963dc27c77be791d5dcd37379a
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Implantar o Cloud App Security
 O Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Cloud App Security.  
@@ -65,7 +65,7 @@ Tarefa necessária: carregar logs de tráfego **Para criar um relatório contín
  3. Na guia **Fontes de dados**, adicione suas fontes.
  4. Na guia **Coletores de logs**, configure o coletor de logs.
  
- **Para criar um relatório de instantâneo do Cloud Discovery**
+**Para criar um relatório de instantâneo do Cloud Discovery**
 
  1. Vá para **Descobrir** > **Criar um novo relatório de instantâneo** e siga as etapas exibidas.
 
@@ -109,19 +109,19 @@ Tarefa recomendada: Adicionar os detalhes da sua organização
 2. Em **Identidade do remetente de email** insira os endereços de email e o nome de exibição.
 3. Em **Design de emails**, carregue o modelo de email da sua organização.
 
- **Para definir as notificações de administrador**
+**Para definir as notificações de administrador**
 
 1. Na barra de navegação, escolha seu nome de usuário e, em seguida, vá para **Configurações de usuário**.
 2. Em **Notificações**, configure os métodos que você deseja definir para notificações do sistema.
 3. Escolha **Salvar**.
 
- **Para personalizar as métricas de pontuação**
+**Para personalizar as métricas de pontuação**
 
 1. Vá para **Configurações** > **Configurações de Cloud Discovery**.
 2. Em **Configuração de métrica de pontuação**, configure a importância de vários valores de risco.
 3. Escolha **Salvar**.
 
- Agora as pontuações de risco atribuídas aos aplicativos descobertos são configuradas exatamente de acordo com as necessidades e prioridades da sua organização.
+Agora as pontuações de risco atribuídas aos aplicativos descobertos são configuradas exatamente de acordo com as necessidades e prioridades da sua organização.
 
 **Por que personalizar seu ambiente?**
 Alguns recursos funcionam mais bem quando personalizados para suas necessidades. Forneça uma experiência melhor para os usuários com seus próprios modelos de email, decida quais notificações são recebidas e personalize sua métrica de pontuação de risco de acordo com as preferências da sua organização.
@@ -137,12 +137,12 @@ Tarefa recomendada: Definir as configurações importantes
 3. Insira os **detalhes**, o **local**, as **marcas** e a **categoria** do intervalo de IP.
 4. Escolha **Criar**.
 
- Agora, você pode usar marcas de IP ao criar políticas e ao filtrar e criar modos de exibição de dados.
+ Agora, você pode usar marcas de IP ao criar políticas e ao filtrar e criar relatórios contínuos.
 
- **Para criar exibições**
+**Para criar relatórios contínuos**
 
 1. Vá para **Configurações** > **Configurações de Cloud Discovery**.
-2. Em **Exibições de dados**, selecione (+) **Adicionar exibição de dados**.
+2. Em **Gerenciar relatórios contínuos**, escolha **Criar relatório**.
 3. Siga as etapas de configuração.
 4. Escolha **Criar**.
 
