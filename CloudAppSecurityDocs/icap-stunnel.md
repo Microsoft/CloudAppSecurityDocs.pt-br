@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1fab1835ec1ed1a4a245b87bd5324e15a28a646
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2290c594595e7754ef0e6e29d70734ff99a42b23
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
@@ -52,7 +52,7 @@ Para o Cloud App Security enviar dados por meio de seu stunnel para seu servidor
 
 Configure um servidor ICAP, anote o número da porta e certifique-se de que você defina **Modo** como **Bloqueio**. O modo de bloqueio define o servidor ICAP para retransmitir o veredicto de classificação de volta ao Cloud App Security.
 
-Consulte a documentação do produto DLP externa para obter instruções sobre como fazer isso. Por exemplo, consulte [Apêndice A: instalação do servidor Forcepoint ICAP](#forcepoint).
+Consulte a documentação do produto DLP externa para obter instruções sobre como fazer isso. Por exemplo, consulte o [Anexo A: configuração do servidor ICAP do Forcepoint](#forcepoint) e [Anexo B: guia de implantação do Symantec](#symantec).
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>ETAPA 2: configurar o servidor de stunnel 
 
@@ -252,9 +252,9 @@ No ForcePoint, defina seu dispositivo usando as seguintes etapas:
     ![Bloqueio de ICAP](./media/icap-blocking.png)
  
 
-## <a name="appendix-b-symantec-deployment-guide"></a>Apêndice B: Guia de implantação do Symantec
+## Apêndice B: Guia de implantação do Symantec <a name="symantec"></a>
 
-As versões com suporte do Symantec DLP são 11 a 14.6. Conforme observado acima, você deve implantar um servidor de detecção no mesmo datacenter do Azure onde seu locatário do Cloud App Security reside. O servidor de detecção sincroniza com o servidor de imposição por meio de um túnel IPSec dedicado. 
+As versões com suporte do Symantec DLP são 11 e superiores. Conforme observado acima, você deve implantar um servidor de detecção no mesmo datacenter do Azure onde seu locatário do Cloud App Security reside. O servidor de detecção sincroniza com o servidor de imposição por meio de um túnel IPSec dedicado. 
  
 ### <a name="detection-server-installation"></a>Instalação do servidor de detecção 
 O servidor de detecção usado pelo Cloud App Security é um Network Prevent padrão para servidor Web. Há várias opções de configuração que devem ser alteradas:

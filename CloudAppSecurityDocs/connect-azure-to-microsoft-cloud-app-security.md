@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/8/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75b5a6fb3707872f0455da1a1856b55adb17c597
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
+ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar o Azure ao Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
 
 O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seção fornece instruções para transmitir todos os seus Logs de Atividades a um único Hub de Eventos em sua assinatura. 
 
-### <a name="step-1-stream-your-azure-activity"></a>Etapa 1: transmitir sua atividade do Azure
+### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>Etapa 1: transmitir seus logs de atividade do Azure para Hubs de Eventos
 
 1.  Transmita o Log de Atividades do Azure da sua assinatura do Azure a um Hub de Eventos. Siga o guia oficial na documentação do Azure: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
@@ -35,10 +35,13 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
  > Se você tiver mais de uma assinatura do Azure, repita isso para cada assinatura, mas use um único Hub de Eventos que será compartilhado entre suas assinaturas.
 
  Depois de concluir as instruções, será criado um novo Hub de Eventos no namespace que você escolher.
+ 
+ > [!NOTE]
+ > Se você receber um erro depois de tentar exportar os Logs de Atividade, vá para a folha **Provedores de recursos** no Azure e certifique-se de que ‘microsoft.insights’ está registrado.
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Etapa 2: obter uma cadeia de conexão para seu Hub de Eventos
 
-1.  Vá para a folha Hubs de Eventos.
+1.  Vá para a folha **Hubs de Eventos**.
   
    ![Folha Hubs de Eventos](media/azure-event-hubs.png "Hubs de Eventos do Azure")
 
@@ -53,6 +56,9 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
 4.  Selecione o novo Hub de Eventos criado pelo Azure Monitor. Ele é chamado de **insights-operational-logs**.
   
     ![Logs operacionais de insights](media/azure-insight-operational-logs.png "Logs operacionais de insights do Azure")
+  
+  > [!NOTE]
+  > Poderá levar alguns minutos até que o Hub de Eventos seja criado.
 
 5. Crie uma nova política de acesso que conceda permissão ao Cloud App Security para ler do Hub de Eventos clicando em **Políticas de acesso compartilhado** e, em seguida, clique em **Adicionar**.
   
@@ -78,7 +84,10 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
   
 4.  No campo **Cadeia de conexão**, cole a cadeia de conexão que você copiou na etapa anterior.  
   
-5.  No campo **Grupo de consumidores**, digite:   $Default A menos que você tenha criado um grupo de consumidores diferente para ser usado.
+5.  No **Grupo de consumidores**, digite:   `$Default`
+    
+   >[!NOTE] 
+   > Se você criou um grupo de consumidores diferente para ser usado, use o nome **Grupo de consumidores**.
   
 6.  Clique em **Conectar**.
 8.  Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.  
