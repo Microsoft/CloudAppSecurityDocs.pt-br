@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: 12ea0c3833c4ff4b2a3c5c7d4478f0603e471547
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar o G Suite ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do G Suite existente usando as APIs do conector.
@@ -88,7 +88,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
 12.  Um arquivo de certificado P12 será salvo no seu computador.  
         
 12. Na tela **Credentials (Credenciais)**, clique em **Manage service accounts (Gerenciar contas de serviço)** na extrema direita.  
-       ![conta de serviço de credenciais do G Suite](./media/google10.png "G Suite credentials service account")  
+       ![conta de serviço de credenciais do G Suite](./media/google10.png "conta de serviço de credenciais do G Suite")  
   
 13. Clique nos três pontos à direita da conta de serviço que você criou e selecione **Edit (Editar)**.  
   
@@ -119,6 +119,9 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 19. Na lista **Enabled APIs (APIs Habilitadas)**, clique na engrenagem de configuração ao lado de **Google Apps Marketplace SDK (SDK do Google Apps Marketplace)**. 
          ![Configuração do SDK do Marketplace Google](./media/google16.png "googledriveconfig")  
+
+       >[!NOTE]
+       > Se a engrenagem estiver desabilitada, você poderá clicar em **Google Apps Marketplace SDK (SDK do Google Apps Marketplace)**. 
 20. Selecione a guia **Configuração**. 
   
     -   Copie o **Número do projeto (ID do Aplicativo)** que aparece na parte superior para usar mais tarde.  
@@ -187,7 +190,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
        ![Segurança Google](./media/googlesecurity.png "google8")  
  
 19. Selecione **API reference (Referência da API)**.  
-       ![Habilitação de API Google](./media/googleapi.png "google8")  
+       ![google api enable](./media/googleapi.png "google8")  
       
 20. Selecione **Enable API Access (Habilitar acesso à API)** e clique em **Save changes (Salvar alterações)**.  
   

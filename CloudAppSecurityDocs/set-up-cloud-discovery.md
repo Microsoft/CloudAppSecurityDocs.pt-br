@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,15 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
-O Cloud Discovery analisa os logs de tráfego e os compara com o catálogo de aplicativos de nuvem do Cloud App Security de mais de 13.000 em aplicativos de nuvem que são classificados e pontuados com base em mais de 50 atributos, a fim de fornecer visibilidade contínua do uso da nuvem, TI sombra e o risco que a TI sombra representa para sua organização.
-O **Catálogo de aplicativos de nuvem** classifica o risco para seus aplicativos de nuvem com base em certificações regulatórias, padrões da indústria e práticas recomendadas. Quatro processos complementares são executados no Catálogo de aplicativos de nuvem para mantê-lo atualizado:
-1.    Extração de dados automatizada diretamente do aplicativo de nuvem (para atributos como conformidade com SOC 2).
-2.    Extração de dados avançada automatizada dos algoritmos do Cloud App Security (para atributos como cabeçalhos de segurança HTTP).
-3.    Análise contínua da equipe de analistas de nuvem do Cloud App Security (para atributos como criptografia em repouso).
-4.    Solicitações de revisão baseada no cliente, com base nas solicitações de envio de cliente para alterações no Catálogo de aplicativos de nuvem. Todas as solicitações são revisadas por nossa equipe de analistas de nuvem e atualizadas com base em suas descobertas.
-  
-## <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
-
-A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Para obter mais informações, consulte [Anonimização do Cloud Discovery](cloud-discovery-anonymizer.md).
-
+O Cloud Discovery analisa os logs de tráfego e os compara com o catálogo de aplicativos de nuvem do Cloud App Security de mais de 15 mil em aplicativos de nuvem que são classificados e pontuados com base em mais de 60 fatores de risco, a fim de fornecer visibilidade contínua do uso da nuvem, TI sombra e o risco que a TI sombra representa para sua organização.
+ 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Relatórios contínuo e de instantâneo de avaliação de riscos 
 
 Há dois tipos de relatórios que você pode gerar: 
@@ -44,7 +36,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
   
 -   **Analisar** – O Cloud App Security analisa e extrai dados de tráfego dos logs de tráfego com um analisador dedicado para cada fonte de dados.  
   
--   **Examinar** – os dados de tráfego são examinados em relação ao Catálogo de aplicativos de nuvem para identificar mais de 13.000 aplicativos de nuvem e avaliar sua pontuação de risco. Os usuários ativos e os endereços IP também são identificados como parte da análise.  
+-   **Analisar** – os dados de tráfego são examinados em relação ao Catálogo de aplicativos de nuvem para identificar mais de 15.000 aplicativos de nuvem e avaliar sua pontuação de risco. Os usuários ativos e os endereços IP também são identificados como parte da análise.  
   
 -   **Gerar relatório** – Um relatório de avaliação de risco dos dados extraídos dos arquivos de log é gerado.   
  
@@ -74,6 +66,8 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 3.  Os eventos têm menos de 90 dias.
 4.  O arquivo de log é válido e inclui informações de tráfego de saída.
  
+
+
 ## <a name="supported-firewalls-and-proxies"></a>Proxies e firewalls com suporte
 
 - Barracuda - Firewall de aplicativo Web (W3C)
@@ -99,6 +93,8 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - Websense – Soluções de segurança da Web – Log de atividades de Internet (CEF)
 - Zscaler
 
+> [!NOTE]
+> O Cloud Discovery oferece suporte a endereços IPv4 e IPv6.
 
 Se seu log não tiver suporte, selecione **Outro** na **Fonte de dados** e especifique o dispositivo e o log que você está tentando carregar. O log será analisado pela equipe de analistas do Cloud App Security e você será notificado se o suporte para o tipo de log for adicionado. Como alternativa, você pode definir um analisador personalizado que corresponda ao seu formato. Para saber mais, confira [Usar analisador de log personalizado](custom-log-parser.md).
 
@@ -117,17 +113,19 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |Clavister NGFW (Syslog)|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 |Dell SonicWall|**Sim**|**Sim**|Não|**Sim**|**Sim**|**Sim**|
 |Fortigate|Não|**Sim**|Não|**Sim**|**Sim**|**Sim**|
-|Juniper SRX|Não|**Sim**|Não|**Sim**\**|**Sim**|**Sim**|
+|Juniper SRX|Não|**Sim**|Não|**Sim**|**Sim**|**Sim**|
 |Juniper SSG|Não|**Sim**|Não|**Sim**|**Sim**|**Sim**|
 |McAfee SWG|**Sim**|Não|Não|**Sim**|**Sim**|**Sim**|
 |MS TMG|**Sim**|Não|**Sim**|**Sim**|**Sim**|**Sim**|
-|Redes de Palo Alto|**Sim**|**Sim**|**Sim**|**Sim**\*|**Sim**|**Sim**|
+|Redes de Palo Alto|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 |Sophos|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|Não|
-|Websense – Relatório de detalhes investigativo (CSV)|**Sim**|Não|Não|**Sim**|Não|Não|
+|Squid (Comum)|**Sim**|Não|**Sim**|**Sim**|Não|**Sim**|
+|Squid (Nativo)|**Sim**|Não|**Sim**|**Sim**|Não|**Sim**|
+|Websense – Relatório de detalhes investigativo (CSV)|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 |Websense – Log de atividades da Internet (CEF)|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 |Zscaler|**Sim**|Não|**Sim**|Não|**Sim**|**Sim**|
 
-\* Cloud Discovery dá suporte a IPv6.
+
 
 ## <a name="see-also"></a>Veja também
  

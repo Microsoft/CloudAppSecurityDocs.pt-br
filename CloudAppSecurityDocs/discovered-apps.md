@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
-ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
+ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
@@ -51,6 +51,9 @@ Na página **Aplicativos descobertos**, em **Procurar por categoria**, selecione
 ![Filtros dos aplicativos descobertos](./media/discovered-app-filters.png)
 
 Depois que os resultados são filtrados, você pode [cancelar a sanção e bloqueá-los](governance-discovery.md) usando a caixa de seleção de ação em massa para cancelar a sanção de todos eles em uma ação só. Depois que eles tiverem a sanção cancelada, você poderá usar um script de bloqueio para impedir que eles sejam usados em seu ambiente.
+
+Para se aprofundar ainda mais, você poderá investigar os aplicativos descobertos para o nível de subdomínio e identificar as instâncias específicas que estão em uso. 
+
 
 ## <a name="discovered-app-filters"></a>Filtros dos aplicativos descobertos
 
