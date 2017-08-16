@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 O Cloud Discovery analisa os logs de tráfego e os compara com o catálogo de aplicativos de nuvem do Cloud App Security de mais de 15 mil em aplicativos de nuvem que são classificados e pontuados com base em mais de 60 fatores de risco, a fim de fornecer visibilidade contínua do uso da nuvem, TI sombra e o risco que a TI sombra representa para sua organização.
@@ -123,7 +123,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |Squid (Nativo)|**Sim**|Não|**Sim**|**Sim**|Não|**Sim**|
 |Websense – Relatório de detalhes investigativo (CSV)|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 |Websense – Log de atividades da Internet (CEF)|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
-|Zscaler|**Sim**|Não|**Sim**|Não|**Sim**|**Sim**|
+|Zscaler|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 
 
 
