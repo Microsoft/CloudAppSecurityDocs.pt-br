@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 75094bde-e135-47fb-b5c6-7e1168919771
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 245e44cdf56b15795f67340442babcb0f688ea9d
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2cabdaa94c36dcf7496cc1d1126e720871ee80b9
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="deploying-the-cloud-app-security-proxy"></a>Implantando o proxy do Cloud App Security
 
@@ -25,6 +25,10 @@ ms.lasthandoff: 08/03/2017
 > É altamente recomendável tentar a instalação em uma área restrita ou ambiente de teste antes de instalá-lo em um ambiente de produção.
 
 As etapas descritas abaixo devem ser executadas para implantar o proxy do Cloud App Security e habilitar o controle de acesso e o controle de sessão.
+
+Como parte da implantação do Proxy, você precisa alterar as configurações no provedor de identidade e no aplicativo que você deseja controlar. Isso inclui alterações de URL para que o provedor de identidade e o aplicativo redirecione as solicitações de logon para o proxy. Além disso, e se for necessário, os certificados também são substituídos.
+
+Depois que essas etapas forem concluídas, todos os eventos de logon passam pelo proxy e o proxy pode decidir se eles têm permissão para acessar o aplicativo, se tiveram o acesso negado ou se podem acessar em modo monitorado. Observe que, neste estágio, o Proxy pode solicitar certificados do cliente do dispositivo e usar o estado do dispositivo para tomar decisões sobre a política.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
