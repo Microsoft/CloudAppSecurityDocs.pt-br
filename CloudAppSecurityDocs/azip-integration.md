@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 8/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 350f90af7114d8b34aaaa6062bb3c14379fd3dfa
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -118,7 +118,7 @@ Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.c
 
 Sua organização deve ter o Azure Rights Management licenciado e ativado para integrar com o Cloud App Security.  Essas duas etapas separadas podem ser encontradas em [Ativando o Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
 
-O Cloud App Security atualmente oferece suporte apenas para o nível de proteção Genéricos. A proteção nativa para arquivos do Office, PDF e de imagem estará disponível em versões futuras. 
+No momento, o Cloud App Security dá suporte à proteção nativa para arquivos do Office (2016 e posterior). Os arquivos PDF e de imagem estarão disponíveis em versões futuras. 
 
 Esse recurso atualmente está disponível para arquivos que são armazenados no SharePoint Online e no OneDrive for Business. Mais aplicativos de nuvem serão compatíveis em versões futuras.
 
@@ -126,11 +126,11 @@ Depois que o Cloud App Security estiver conectado ao seu serviço do Office 365,
 
 1. Na página **Arquivos**, selecione o arquivo que deseja proteger e clique nos três pontos no final da linha do arquivo. Em seguida, escolha **Proteger**. 
 ![proteger aplicativo](./media/protect-app.png)
-2. Você será solicitado a escolher um dos modelos da sua organização para proteger o arquivo. Depois clique em **Proteger**. 
-![modelo de proteção](./media/protect-template.png)
-3. Depois de escolher um modelo e clicar em Proteger, o Cloud App Security aplicará o modelo e protegerá o arquivo original. O arquivo protegido terá o mesmo nome do arquivo original, mas com uma nova extensão de arquivo: ".pfile".
+2. Você deverá escolher um dos rótulos de classificação da sua organização a serem usados para proteger o arquivo e clicar em **Proteger**. 
+![rótulo de classificação de proteção](./media/protect-template.png)
+3. Depois de escolher um rótulo de classificação e clicar em Proteger, o Cloud App Security aplicará o rótulo de classificação e protegerá o arquivo original. T
 > [!NOTE]
->   Recomenda-se aplicar os modelos de RMS que abrangem toda a empresa em arquivos, para que todos os usuários da organização possam acessar esses arquivos, incluindo o proprietário original do arquivo. O proprietário do arquivo, a política de compartilhamento de arquivo e a lista de usuários que já têm acesso a ele não mudam quando o arquivo se torna protegido.
+>   Recomenda-se aplicar os rótulos de classificação de RMS que abrangem toda a empresa em arquivos, para que todos os usuários da organização possam acessar esses arquivos, incluindo o proprietário original do arquivo. O proprietário do arquivo, a política de compartilhamento de arquivo e a lista de usuários que já têm acesso a ele não mudam quando o arquivo se torna protegido.
 
 4. Se os usuários desejam acessar o arquivo protegido, eles precisam ter o aplicativo RMS sharing instalado em seus dispositivos. Para saber mais, veja a [Visão geral técnica e detalhes sobre proteção para o aplicativo de compartilhamento Microsoft Rights Management](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
 

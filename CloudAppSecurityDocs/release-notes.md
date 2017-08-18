@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Novidades do Cloud App Security
+
+
+## <a name="cloud-app-security-release-103"></a>Cloud App Security versão 103 
+Lançado em 13 de agosto de 2017
+
+- O Cloud App Security adicionou suporte de proteção nativa da Proteção de Informações do Azure para os seguintes arquivos do Office .docm, .docx, .dotm, .dotx, .xlam, .xlsb, .xlsm, .xlsx, .xltx, .xps, .potm, .potx, .ppsx, .ppsm, .pptm, .pptx, .thmx, .vsdx, .vsdm, .vssx, .vssm, .vstx, .vstm (no lugar da proteção genérica).
+
+- Qualquer administrador de conformidade do Azure Active Directory receberá automaticamente permissões semelhantes no Cloud App Security, incluindo a capacidade de ler somente e gerenciar alertas, criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios internos no Gerenciamento de dados. 
+
+- Estendemos o contexto de violação da DLP de 40 para 100 caracteres a fim de ajudar você a entender melhor o contexto da violação.
+
+- Mensagens de erro detalhadas para o carregador de log personalizado do Cloud Discovery para permitir que você solucione erros facilmente no upload do log.
+
+- O script de bloqueio do Cloud Discovery foi estendido para dar suporte ao formato Zscaler.
+
+- Novo fator de risco do Catálogo de aplicativos de nuvem: retenção de dados após o encerramento da conta. Isso permite que você se certifique de que seus dados foram completamente removidos depois de encerrar uma conta dentro de um aplicativo de nuvem.
+
 
 ## <a name="cloud-app-security-release-102"></a>Cloud App Security versão 102 
 Lançado em 30 de julho de 2017
