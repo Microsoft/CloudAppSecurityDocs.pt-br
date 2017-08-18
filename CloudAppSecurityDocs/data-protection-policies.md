@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c356900333b41a0aeecd8a19eea1b85305f45ba6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 3cbe85149a2e632b7f9804652953728945532bcb
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="file-policies"></a>Políticas de arquivos  
 As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso.  
@@ -79,7 +79,7 @@ Para criar uma nova política de arquivos, siga este procedimento:
 7.  Selecione o **Método de inspeção de conteúdo**. O DLP interno permite filtrar os arquivos pelo conteúdo. Para verificar arquivos quanto ao conteúdo, selecione **DLP Interno**. Depois que a inspeção estiver habilitada, você poderá optar por usar expressões predefinidas ou pesquisar outras expressões personalizadas, seja com uma subcadeia de caracteres ou uma [expressão regular](working-with-the-regex-engine.md) própria.  
     Além disso, você pode especificar uma expressão regular para excluir um arquivo dos resultados. Isso será muito útil se você tiver um padrão de palavra-chave de classificação interno que você deseja excluir da política.  
     Você pode definir o número mínimo de violações de conteúdo que deseja corresponder antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.  
-    Quando o conteúdo for comparado com a expressão selecionada, o texto de violação será substituído por caracteres "X". Por padrão, as violações são completamente mascaradas e mostradas em seu contexto exibindo 40 caracteres antes e após a violação. Os números no contexto da expressão são substituídos por caracteres "#" e nunca são armazenados no Cloud App Security. Você pode selecionar a opção para **Remover a máscara dos últimos quatro caracteres de uma violação** para remover a máscara dos últimos quatro caracteres da própria violação.
+    Quando o conteúdo for comparado com a expressão selecionada, o texto de violação será substituído por caracteres "X". Por padrão, as violações são completamente mascaradas e mostradas em seu contexto exibindo 100 caracteres antes e após a violação. Os números no contexto da expressão são substituídos por caracteres "#" e nunca são armazenados no Cloud App Security. Você pode selecionar a opção para **Remover a máscara dos últimos quatro caracteres de uma violação** para remover a máscara dos últimos quatro caracteres da própria violação.
   
 8.  Escolha as ações de **Governança** que você deseja que o Cloud App Security realize quando uma correspondência for detectada.  
   
