@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar o Azure ao Microsoft Cloud App Security
 
@@ -41,7 +41,7 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Etapa 2: obter uma cadeia de conexão para seu Hub de Eventos
 
-1.  Vá para a folha **Hubs de Eventos**.
+1.  Vá para a folha **Hubs de Eventos – Versão Prévia**.
   
    ![Folha Hubs de Eventos](media/azure-event-hubs.png "Hubs de Eventos do Azure")
 
@@ -54,12 +54,12 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
     ![Entidades de Hubs de Eventos](media/azure-event-hubs-entities.png "Entidades do Hub de Eventos do Azure")
 
 4.  Selecione o novo Hub de Eventos criado pelo Azure Monitor. Ele é chamado de **insights-operational-logs**.
-  
-    ![Logs operacionais de insights](media/azure-insight-operational-logs.png "Logs operacionais de insights do Azure")
-  
   > [!NOTE]
   > Poderá levar alguns minutos até que o Hub de Eventos seja criado.
 
+   ![Logs operacionais de insights](media/azure-insight-operational-logs.png "Logs operacionais de insights do Azure")
+  
+  
 5. Crie uma nova política de acesso que conceda permissão ao Cloud App Security para ler do Hub de Eventos clicando em **Políticas de acesso compartilhado** e, em seguida, clique em **Adicionar**.
   
     ![Políticas de acesso compartilhado](media/azure-shared-access-policies.png "Política de acesso compartilhado do Azure")
@@ -90,15 +90,8 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
    > Se você criou um grupo de consumidores diferente para ser usado, use o nome **Grupo de consumidores**.
   
 6.  Clique em **Conectar**.
-8.  Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.  
+     Isso enviará uma mensagem de texto para a conexão e poderá levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.  
   
-     O teste pode levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.  
-  
-
-
-
-
-
 ## <a name="see-also"></a>Veja também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

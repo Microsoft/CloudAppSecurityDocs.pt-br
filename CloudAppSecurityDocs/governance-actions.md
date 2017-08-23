@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed24b4020cd96db0bcb84378110499b289d583da
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: db600c90983cc90ad55b994a22af0ed8bb6f288a
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades.
@@ -85,7 +85,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
     > [!NOTE] 
     > Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários no seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida. 
   
-    -   Revogar senha – Revoga a senha do usuário e o força a definir uma nova senha no próximo logon.  
+    -   Revogar senha – revoga a senha do usuário e o força a definir uma nova senha em seu próximo logon.  
   
      ![Ações de governança de política de atividade do Cloud App Security](./media/activity-policy-ref6.png "ref6 da política de atividade")  
   
@@ -138,7 +138,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Arquivos|Arquivo|Restaurar da quarentena do usuário|Restaura um usuário de ser colocado em quarentena.|Caixa|
 |Arquivos|Arquivo|Conceder permissões de leitura para mim|Concede permissões de leitura do arquivo para você mesmo, de forma que você possa acessar o arquivo e entender se ele tem uma violação ou não.|G Suite|
 |Arquivos|Arquivo|Permitir que os editores compartilhem|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança é o oposto da ação Remover a capacidade do editor de compartilhar, e permite que o editor compartilhe o arquivo.|G Suite|
-|Arquivos|Arquivo|Proteger|Proteger um arquivo com o Microsoft Rights Management aplicando um modelo da organização.|Office 365|
+|Arquivos|Arquivo|Proteger|Proteja um arquivo com a Proteção de Informações do Azure aplicando um modelo da organização.|Office 365 (SharePoint e OneDrive)|
 |Arquivos|Arquivo|Revogar formulário de permissões de leitura para mim|Revoga permissões de leitura do arquivo para você mesmo, útil após conceder permissão a si próprio para entender se um arquivo tem uma violação ou não.|G Suite|
 |Arquivos, Política de arquivo|Arquivo|Transferir a propriedade do arquivo|Altera o proprietário - na política em que você escolher um proprietário específico.|G Suite|
 |Arquivos, Política de arquivo|Arquivo|Remover um parceiro|Remove um parceiro específico de um arquivo.|G Suite, Box, One Drive, SharePoint|

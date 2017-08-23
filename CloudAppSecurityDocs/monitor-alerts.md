@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 8/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="alerts"></a>Alertas
 Para exibir alertas:
@@ -27,6 +27,11 @@ No portal do Cloud App Security, clique em Alertas.
 
 ![Menu Alerta](./media/alert-menu.png)
 
+Para lidar com cada alerta, clique no alerta na tabela e selecione uma destas opções:
+- **Resolver alerta**: depois de investigar e realizar ações para mitigar o alerta, clique em **Resolver alerta**. Você pode inserir um comentário para salvar as informações sobre quais ações foram executadas e pode optar por **Enviar comentários à equipe do Cloud App Security** sobre o alerta. Depois de resolver um alerta, ele não será mais exibido na tabela de alertas.
+- Resolver um alerta e **Marcar como lido**: você pode deixar o alerta aberto, mas pode marcá-lo como lido.
+- Resolver alerta e **Ajustar a política**: você pode modificar a política correspondente ao alerta em resposta ao alerta.
+- **Ignorar**: você pode ignorar o alerta, o que fará com que ele deixe de ser exibido na tabela, mas não o mostrará como resolvido. Isso é mais usado quando o alerta é benigno ou um falso positivo.
 
 Os seguintes tipos de alertas serão exibidos. 
 
