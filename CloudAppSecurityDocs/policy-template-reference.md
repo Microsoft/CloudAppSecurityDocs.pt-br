@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 038d3c12a63f12d6b0b506de439a91e4d2d027f2
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 00534bda0a515099a486f731e0297b9fd6dec8e3
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="policy-templates"></a>Modelos de Política
 
@@ -49,7 +49,7 @@ A seguir está uma lista de todos os modelos de política que existem no Cloud A
 |Detecção de ameaças|Atividade administrativa de um endereço IP não corporativo|Alerta quando um usuário administrador executa uma atividade administrativa de um endereço IP que não está incluído na categoria de intervalo de endereços IP corporativos. Você deve primeiro configurar seus endereços IP corporativos indo para a página Configurações e definindo **Intervalos de endereços IP**.|
 |Detecção de ameaças|Detecção geral de anomalias|Alerta quando uma sessão anômala é detectada em um dos aplicativos sancionados, tais como: viagem impossível, padrão logon, conta inativa.|
 |Detecção de ameaças|Logon de um endereço IP com risco|Alerta quando um usuário faz logon em seus aplicativos sancionados de um endereço IP com risco. Por padrão, a categoria de endereço IP com risco contém endereços que têm marcas de endereço IP de proxy anônimo, TOR ou Botnet. Você pode adicionar mais endereços IP para essa categoria na página de configurações de intervalos de endereço IP.|
-|Detecção de ameaças|Download em massa por um único usuário|Alerta quando um usuário executa mais de 30 downloads dentro de 5 minutos.|
+|Detecção de ameaças|Download em massa por um único usuário|Alerta quando um usuário executa mais de 50 downloads dentro de 1 minutos.|
 |Detecção de ameaças|Logon do usuário com falha em várias tentativas para um aplicativo|Alerta quando um usuário tenta fazer logon em um aplicativo e falha de mais de 10 vezes em 5 minutos.|
 |Detecção de ameaças|Atividade de ransomware potencial|Alerta quando um usuário carrega arquivos para a nuvem que podem ser infectados com ransomware.|
 |Detecção de ameaças|Logon de usuário de um endereço IP não categorizado|Alerta quando um usuário faz logon de um endereço IP que não está incluído em uma categoria específica de intervalo de IP. Você pode categorizar os endereços IP indo para a página Configurações e selecionando os intervalos de endereços IP.|
