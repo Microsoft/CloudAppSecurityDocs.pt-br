@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: db600c90983cc90ad55b994a22af0ed8bb6f288a
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: c0c3487980cdd5c1a3dad08e280de43ea714fadd
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades.
@@ -33,7 +33,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
   
     -   Notificação de email do usuário – mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários do arquivo em violação.  
   
-    -   Copiar gerente – com base na integração de diretório do usuário, as notificações de email também podem ser enviadas para o gerente da pessoa que violar uma política.  
+    -   Copiar gerente – com base na integração de diretório do usuário, as notificações de email também podem ser enviadas para o gerente da pessoa que violar uma política. (Somente Salesforce)
   
 -   Notificar usuários específicos – lista específica de endereços de email que receberão essas notificações.  
   
@@ -73,7 +73,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
   
     -   Notificação de email do usuário – mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários do arquivo em violação.  
   
-    -   Copiar gerente – com base na integração de diretório do usuário, as notificações de email também podem ser enviadas para o gerente da pessoa que violar uma política.  
+    -   Copiar gerente – com base na integração de diretório do usuário, as notificações de email também podem ser enviadas para o gerente da pessoa que violar uma política. (Somente Salesforce)
   
     -   Notificar usuários adicionais – lista específica de endereços de email que receberão essas notificações.  
   
@@ -128,8 +128,8 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Descobrir > Aplicativos descobertos/Endereços IP/Usuários|Cloud Discovery|Exportar dados de descoberta|Cria um CSV dos dados de descoberta.|Descoberta|
 |Política de arquivos|Arquivo|Lixeira|Coloca o arquivo na lixeira do usuário.|One Drive, SharePoint|
 |Política de Arquivos|Arquivo|Notificar o último editor de arquivo|Envia um email para notificar a última pessoa que editou o arquivo que ele viola uma política.|G Suite, Box|
-|Política de Arquivos|Arquivo|Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo com a opção de cc para o gerente quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir.|Todos os aplicativos|
-|Política de arquivos, Atividade de política|Arquivo, Atividade|cc para gerente do proprietário/usuário|Quando o proprietário do arquivo recebe uma notificação por email de que o arquivo está violando uma política, essa ação, se desejado, notifica o gerente do proprietário/usuário do arquivo.|Todos os aplicativos, exceto o Service Now|
+|Política de Arquivos|Arquivo|Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir.|Todos os aplicativos|
+|Política de arquivos, Atividade de política|Arquivo, Atividade|cc para gerente do proprietário/usuário|Quando o proprietário do arquivo recebe uma notificação por email de que o arquivo está violando uma política, essa ação, se desejado, notifica o gerente do proprietário/usuário do arquivo.|Salesforce|
 |Política de arquivos, Atividade de política|Arquivo, Atividade|Notificar usuários específicos|Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.|Todos os aplicativos|
 |Política de arquivo e Política de atividade|Arquivo, Atividade|Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação.|Tudo|
 |Política de arquivo e Arquivos|Arquivo|Remover a capacidade do editor de compartilhar|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança restringe essa opção e também o compartilhamento de arquivos com o proprietário.|G Suite|
