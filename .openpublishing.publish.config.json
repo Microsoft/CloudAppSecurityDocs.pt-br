@@ -21,6 +21,7 @@
   "notification_subscribers": [],
   "branches_to_filter": [
     "live-oldev",
+    "live",
     "live"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/CloudAppSecurityDocs.pt-br",
