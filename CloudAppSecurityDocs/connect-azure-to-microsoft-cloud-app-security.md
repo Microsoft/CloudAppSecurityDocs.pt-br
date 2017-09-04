@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
+ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 09/04/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar o Azure ao Microsoft Cloud App Security
 
@@ -91,7 +91,12 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
   
 6.  Clique em **Conectar**.
      Isso enviará uma mensagem de texto para a conexão e poderá levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.  
-  
+
+
+> [!NOTE]
+> Esse recurso está em visualização pública.
+
+
 ## <a name="see-also"></a>Veja também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
