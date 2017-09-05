@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f2df50b089cf7a2b5aa989b56c243faa2dd251b2
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Novidades do Cloud App Security
 
@@ -28,6 +28,7 @@ Lançado em 27 de agosto de 2017
 -   Agora você pode adicionar intervalos de IP em massa por meio da criação de um script usando a [API de intervalos de endereço IP](https://portal.cloudappsecurity.com/api-docs/). 
 -   O Cloud Discovery agora fornece melhor visibilidade para transações bloqueadas, apresentando o total de transações e as transações bloqueadas.
 -   Agora você pode filtrar aplicativos de nuvem com base em se eles são certificados com a **ISO 27017**. Esse novo fator de risco do Catálogo de Aplicativos de Nuvem determina se o provedor de aplicativo tem essa certificação, que estabelece os controles normalmente aceitos e as diretrizes para processar e proteger as informações do usuário em um ambiente de computação em nuvem pública.
+- Para ajudá-lo a se preparar para a conformidade com o GDPR, reunimos as instruções de preparação dos aplicativos de nuvem no Catálogo de Aplicativos de Nuvem. Isso ainda não afeta a pontuação de risco do aplicativo, mas fornecerá um link para a página de preparação do GDPR do distribuidor do aplicativo, assim que estiver disponível. A Microsoft ainda não verificou o conteúdo, portanto não é responsável pela respectiva validade.
 
 
 ## <a name="cloud-app-security-release-103"></a>Cloud App Security versão 103 

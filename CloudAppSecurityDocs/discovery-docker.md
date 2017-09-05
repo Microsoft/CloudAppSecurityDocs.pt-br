@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a102951d6600f960ee9c045f6ce6fdb3adbe1f42
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: 37f288aa66213fde4ad3a0146064b2c44ea79e4a
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
@@ -29,7 +29,8 @@ Depois que um log for carregado no Cloud App Security, ele é movido para um dir
 Antes de configurar a coleta de arquivos de log automática, verifique se o log corresponde ao tipo de log esperado para garantir que o Cloud App Security possa analisar seu arquivo específico.
 
 > [!NOTE]
-> O Cloud App Security dá suporte para encaminhamento de logs do servidor SIEM para o Coletor de Log, supondo que os logs estão sendo encaminhados em seu formato original. No entanto, é altamente recomendável que você integre o coletor de logs diretamente ao seu firewall e/ou proxy.
+>-  O Cloud App Security dá suporte para encaminhamento de logs do servidor SIEM para o Coletor de Log, supondo que os logs estão sendo encaminhados em seu formato original. No entanto, é altamente recomendável que você integre o coletor de logs diretamente ao seu firewall e/ou proxy.
+>- O coletor de logs compacta os dados antes de os carregar. O tráfego de saída no coletor de logs representará 10% do tamanho dos logs de tráfego recebidos. 
 
 ## <a name="deployment-modes"></a>Modos de implantação
 
