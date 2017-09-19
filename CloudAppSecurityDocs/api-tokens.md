@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 291a9bf9a0c45a7ef2667b5a4266ebb582d3a23b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="api-tokens"></a>Tokens de API
     
@@ -49,7 +49,11 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
   - Tokens com status Gerado são tokens que nunca foram usados. 
   - Tokens com status Ativo são tokens que foram gerados e foram usados nos últimos 7 dias. 
   - Tokens com o status Inativo foram usados, mas não houve atividade nos últimos 7 dias.
+5. Depois de gerar um novo token, você receberá uma nova URL a ser usada para acessar o portal do Cloud App Security. 
 
+ ![Token de API do Cloud App Security](./media/generate-api-token.png)
+
+A URL do portal genérica continuará a funcionar, mas será consideravelmente mais lenta do que a URL personalizada fornecida com o token. Se você esquecer a URL a qualquer momento, você poderá exibi-la indo até o ícone **?** no menu e selecionando **Sobre**.
 
 ## <a name="api-token-management"></a>Gerenciamento de token de API
 
@@ -63,6 +67,14 @@ Depois que um token é revogado, ele é removido da tabela e o software que ele 
 
 > [!NOTE]
 > Conectores do SIEM e coletores de log também usam tokens de API. Esses tokens devem ser gerenciados das seções de agente SIEM e coletores de log e não aparecerão nessa tabela. 
+
+
+## <a name="view-your-data-center"></a>Exibir seu data center
+
+Para ver a qual data center você está se conectando, no portal do Cloud App Security, clique no **?** na barra de menus e selecione **Sobre**. 
+
+Na tela da versão do Cloud App Security, você pode ver o data center.
+
 
 ## <a name="see-also"></a>Veja também  
 [Solução de problemas de integração de SIEM](troubleshooting-siem.md)   

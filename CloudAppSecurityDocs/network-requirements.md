@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,52 +13,64 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dac230e191c7c2d8159a2f373e6ef939fdd841a4
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
 Este tópico fornece uma lista de portas e endereços IP que você precisa permitir e adicionar à lista de permissões para trabalhar com o Cloud App Security. 
 
-
-## <a name="portal-access"></a>Acesso ao portal
-
-Para o acesso ao portal, é necessário adicionar os seguintes endereços IP à sua lista de permissões do firewall para fornecer acesso ao portal do Cloud App Security:  
-  
-104.42.231.28  
+Para obter informações sobre como ver a qual data center do Cloud App Security center você está conectado, consulte [Tokens de API](api-tokens.md)
 
 
-## <a name="app-connector-access"></a>Acesso ao conector do aplicativo
 
-Para alguns aplicativos de terceiros serem acessados pelo Cloud App Security, pode ser necessário adicionar os seguintes endereços IP à lista de permissões para permitir que Cloud App Security colete logs e forneça acesso para o console do Cloud App Security:  
-  
-104.209.35.177  
-13.91.98.185 40.118.211.172 13.93.216.68 13.91.61.249 13.93.233.42 13.64.196.27 13.64.198.97 13.64.199.41 13.64.198.19
+## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>Acesso ao portal, agente SIEM, gateway de autenticação e coletor de log
+
+Para obter acesso de gateway de autenticação e do portal e para habilitar o Cloud App Security a se conectar ao seu SIEM, bem como para habilitar o coletor de logs do Cloud App Security para executá-lo, é necessário adicionar a **porta de saída 443** ao endereço IP abaixo a lista de permissões do firewall:  
+
+
+> [!div class="mx-tableFixed"]
+|Data center|Endereços IP|  
+|----|----|
+|US1|13.91.91.243<br></br>52.183.75.62|
+|EU1|52.174.56.180<br></br>13.80.125.22|
+
+## <a name="app-connector-access-and-external-dlp-integration"></a>Acesso ao aplicativo conector e integração de DLP externa
+
+Para se conectar a aplicativos de terceiros e integrar soluções de DLP externas, habilite o Cloud App Security para se conectar a esses endereços IP:
+
+
+> [!div class="mx-tableFixed"]
+|Data center|Endereços IP|  
+|----|----|
+|US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
+|EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
+
+### <a name="app-connector"></a>Conector de aplicativo
+Para alguns aplicativos de terceiros serem acessados pelo Cloud App Security, esses endereços IP podem ser usados para permitir que o Cloud App Security colete logs e forneça acesso para o console do Cloud App Security. 
 
 > [!NOTE]
 >Você pode ver esses endereços IP nos logs de atividades do fornecedor porque o Cloud App Security executa as ações de governança e as varreduras desses endereços IP. 
   
 
-## <a name="siem-agent-and-log-collector"></a>Agente SIEM e coletor de logs
+### <a name="dlp-integration"></a>Integração do DLP
 
-Para permitir que o Cloud App Security se conecte ao seu SIEM e que o coletor de logs do Cloud App Security seja executado, é necessário abrir:
+Para que o Cloud App Security envie dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de DMZ para esses endereços IP com um número da porta de origem dinâmico. 
 
-- Porta de saída 443 para 104.42.231.28
-
-## <a name="external-dlp-integration"></a>Integração de DLP externa
-
-Para o Cloud App Security enviar dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de DMZ para os endereços IP externos usados pelo Cloud App Security com um número da porta de origem dinâmico. 
-
-1.  Endereços de origem: esses devem ser na lista de permissões conforme listado acima para aplicativos de terceiros de conector de API
+1.  Endereços de origem: eles devem estar na lista de permissões conforme listado acima para aplicativos de terceiros de conector de API
 2.  Porta TCP de origem: dinâmico
 3.  Endereços de destino: um ou dois endereços IP do stunnel conectado ao servidor ICAP externo
 4.  Porta TCP de destino: conforme definido em sua rede
 
 > [!NOTE] 
 > Por padrão, o número da porta stunnel é definido como 11344. Você pode alterá-lo para outra porta, se necessário, mas certifique-se de anotar o novo número da porta.
+
+
+    
 
 
 
