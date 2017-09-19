@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 9/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 9ee63f826e3ab23f20f7a0d3f3ccf37d63e16345
+ms.sourcegitcommit: 60fea672ed205ae9cbe622646b2681c69cf8ac7a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="connect-apps"></a>Conectar aplicativos 
 Os conectores de aplicativos aproveitam as APIs de provedores de aplicativo para proporcionar maior visibilidade e controle com o Cloud App Security sobre os aplicativos aos quais você se conecta.  
@@ -85,34 +85,8 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
   
   
 ## <a name="prerequisites"></a>Pré-requisitos  
-Para alguns aplicativos, pode ser necessário adicionar os seguintes endereços IP à lista de permissões para permitir que Cloud App Security colete logs e forneça acesso para o console do Cloud App Security:  
-  
--   Para os logs:  
-  
-    104.209.35.177  
-  
-    13.91.98.185
- 
-    40.118.211.172
 
-    13.93.216.68
-
-    13.91.61.249
-
-    13.93.233.42
-
-    13.64.196.27
-
-    13.64.198.97
-
-    13.64.199.41
-
-    13.64.198.19
-  
-  
--   Para o console:  
-  
-     104.42.231.28  
+- Em alguns aplicativos, pode ser necessário adicionar endereços IP à lista de permissões para permitir que o Cloud App Security colete logs e forneça acesso ao console do Cloud App Security. Confira mais informações em [Requisitos de rede](network-requirements.md).
 
 - Para cada aplicativo que desejar conectar com a integração de API do Cloud App Security, recomendamos criar uma conta de serviço de administrador dedicada ao Cloud App Security.  
   
