@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d6c1851b1903159d40c0daa256fbb28bdb1268bd
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 5ffc6d748e8a4050a40cfadc81d5b2267eae934d
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="anomaly-detection-policy"></a>Política de detecção de anomalias
 Este artigo fornece detalhes de referência sobre as políticas, fornecendo explicações sobre cada tipo de política e os campos que podem ser configurados para cada política.  
 
 Depois que sua organização estiver protegida pelo Cloud App Security, todas as atividades de nuvem serão pontuadas de acordo com vários fatores de risco predefinidos. O Cloud App Security examina cada sessão do usuário na nuvem e, em seguida, considera os fatores de risco definidos aqui para alertar você quando acontecer algo que seja diferente da linha de base da sua organização ou da atividade regular do usuário. A página de política de detecção de anomalias permite configurar e personalizar quais famílias de fatores de risco serão consideradas no processo de pontuação de risco. As políticas podem ser aplicadas de forma diferente para diferentes usuários, locais e setores organizacionais. Por exemplo, você pode criar uma política que o alerta quando os membros da sua equipe de TI estão ativos de fora do escritório.  
 
-O Cloud App Security tem um período inicial de assimilação de 7 dias, durante o qual ele não sinaliza nenhum novo usuários, atividade, dispositivos ou locais como anormais. Depois disso, cada sessão é comparada à atividade, quando os usuários estavam ativos, endereços IP, dispositivos, etc. detectados ao longo do mês anterior e à pontuação de risco dessas atividades. Use o controle deslizante de sensibilidade na política para definir a pontuação de risco mínimo que disparará os alertas. É recomendável usar o limite de sensibilidade padrão por usa semana ao criar uma política de anomalias, antes de alterá-lo de acordo com o número de alertas recebidos. O Cloud App Security enviará mais ou menos alertas para várias pontuações de risco ao alterar a sensibilidade.
+O Cloud App Security tem um período inicial de assimilação de sete dias, durante o qual ele não sinaliza nenhum novo usuários, atividade, dispositivos ou locais como anormais. Depois disso, cada sessão é comparada à atividade, quando os usuários estavam ativos, endereços IP, dispositivos, etc. detectados ao longo do mês anterior e à pontuação de risco dessas atividades. Use o controle deslizante de sensibilidade na política para definir a pontuação de risco mínimo que disparará os alertas. É recomendável usar o limite de sensibilidade padrão por usa semana ao criar uma política de anomalias, antes de alterá-lo de acordo com o número de alertas recebidos. O Cloud App Security enviará mais ou menos alertas para várias pontuações de risco ao alterar a sensibilidade.
   
 ![controle deslizante de sensibilidade](./media/sensitivity-slider.png)
 
@@ -72,7 +72,7 @@ Para configurar uma política de detecção de anomalias:
   
 7.  Em **Sensibilidade**, selecione com que frequência você deseja receber alertas.  
   
-     O valor de sensibilidade determinará quantos alertas semanais serão disparados em média para cada 1.000 usuários.  
+     O valor de sensibilidade determina quantos alertas semanais são disparados em média para cada 1.000 usuários.  
   
      ![IPs de detecção de anomalias](./media/anomaly-detection-ips.png "IPs de detecção de anomalias")  
   
@@ -118,7 +118,7 @@ Cada fator de risco, quando incluído na avaliação de risco, tem seus próprio
 ### <a name="sensitivity"></a>Sensibilidade  
 Há duas maneiras de controlar o número de alertas disparados pela política:  
   
--   Controle deslizante de sensibilidade – escolha quantos alertas disparar por 1.000 usuários por semana. Os alertas serão disparados das atividades com o maior risco.  
+-   Controle deslizante de sensibilidade – escolha quantos alertas disparar por 1.000 usuários por semana. Os alertas são disparados para as atividades com o maior risco.  
   
 -   Limite diário de alertas – restringir o número de alertas gerados em um único dia.  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -69,7 +69,13 @@ Para que o Cloud App Security envie dados por meio de seu stunnel para seu servi
 > [!NOTE] 
 > Por padrão, o número da porta stunnel é definido como 11344. Você pode alterá-lo para outra porta, se necessário, mas certifique-se de anotar o novo número da porta.
 
+## <a name="email-server"></a>Servidor de email
 
+O endereço IP dedicado do email do Cloud App Security é: 
+
+198.2.134.139 (mail1.cloudappsecurity.com)
+
+Inclua esse endereço IP à lista de permissões com o serviço antispam a fim de habilitar o envio de notificações.
     
 
 

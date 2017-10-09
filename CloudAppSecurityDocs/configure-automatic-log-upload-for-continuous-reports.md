@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 9/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6475c66a8786d3d9f39c70d460453aeed352feb
-ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
+ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurar o upload de log automático para relatórios contínuos em uma solução de virtualização
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 09/24/2017
     - Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada
     - Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443
 
-  
+> [!NOTE]
+> Se o seu firewall exigir uma lista de acesso de endereço IP estático e não oferecer suporte à lista de permissões com base na URL, permita que o coletor de log inicie o tráfego de saída para os [Intervalos de IP de datacenter do Microsoft Azure na porta 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB por hora.
 Os principais afunilamentos no processo de coleta de logs são:
@@ -54,7 +56,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   
     b.  Atribua o **Nome** do proxy ou firewall.  
   
-    c.  Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado especificamente, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
+    c.  Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
   
     d.  Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.  
   
@@ -73,8 +75,8 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   
   > [!NOTE] 
   > - Um único coletor de logs pode lidar com várias fontes de dados.
-  > - Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
-4.  **Baixe** uma nova máquina virtual do coletor de logs clicando no Hyper-V ou VMWare e descompacte o arquivo usando a senha que você recebeu no portal.  
+  > - Copie o conteúdo da tela, pois você o usará ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
+4.  **Baixe** uma nova máquina de virtual coletora de log clicando em Hyper-V ou VMWare. Depois, descompacte o arquivo usando a senha que você recebeu no portal.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Etapa 2 — Implantação da máquina virtual no local e configuração de rede   
 
@@ -84,7 +86,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 1.  Abra o Gerenciador do Hyper-V.  
   
 2.  Selecione **Novo**, **Máquina Virtual** e clique em **Próximo**.  
- ![máquina virtual do hipervisor de descoberta](./media/discovery-hyperv-virtual-machine.png "máquina virtual do hipervisor de descoberta")  
+ ![máquina virtual do Hiper-V de descoberta](./media/discovery-hyperv-virtual-machine.png "máquina virtual do Hiper-V de descoberta")  
   
 3.  Forneça um **Nome** para a nova máquina virtual, por exemplo, CloudAppSecurityLogCollector01 e clique em **Próximo**.  
   
@@ -99,11 +101,11 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 8.  Escolha **Usar um disco rígido virtual existente** e selecione o arquivo .**vhd** que foi incluído no arquivo Zip que você baixou.  
   
 9.  Clique em **Avançar** e clique em **Concluir**.  
-    A máquina será adicionada ao seu ambiente do Hyper-V.  
+    A máquina é adicionada ao seu ambiente do Hyper-V.  
   
 9. Clique na máquina virtual na tabela **Máquinas Virtuais** e clique em **Iniciar**.   
   
-10. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. Você deve ver o prompt de logon. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, faça logon usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que foram copiadas quando você criou o Coletor de Logs acima. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:
+10. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. Você deve ver o prompt de logon. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, faça logon usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que foram copiadas quando você criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:
 ```
 sudo network_config
 ```
@@ -120,7 +122,7 @@ Na primeira vez que você fizer logon no coletor de logs e importar a configura�
 2.  Execute o utilitário de configuração do coletor com o token de acesso fornecido quando você criou o coletor de logs.```sudo collector_config <access token> ```
 3. Insira o domínio do console, por exemplo: ```contoso.portal.cloudappsecurity.com``` Isso está disponível na URL que você vê depois de fazer logon no portal do Cloud App Security. 
 
-4. Insira o nome do coletor de logs que quer configurar, por exemplo: **CloudAppSecurityLogCollector01** ou **NewYork** da imagem acima.
+4. Insira o nome do coletor de logs que quer configurar, por exemplo: **CloudAppSecurityLogCollector01** ou **NewYork** da imagem anterior.
 
 5.  Importe a configuração do coletor de logs do portal, da seguinte maneira:  
   
@@ -142,7 +144,7 @@ Configure seus proxies e firewalls de rede para periodicamente exportar logs par
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Etapa 5 — Verificar a implantação bem-sucedida no portal do Cloud App Security
 
-Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **criado**, será possível que a conexão do coletor de logs e a análise não tenham sido concluídas.
+Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **Criado**, talvez a conexão do coletor de logs e a análise não tenham sido concluídos.
 
 ![status do coletor de log](./media/log-collector-status.png)
 
@@ -157,6 +159,9 @@ Após ter verificado que os logs estão sendo carregados no Cloud App Security e
 1. No portal do Cloud App Security, sob a engrenagem de configurações, selecione **Configurações do Cloud Discovery** e, em seguida, selecione **Gerenciar relatórios contínuos**. 
 2. Clique no botão **Criar relatório** e preencha os campos.
 3. Em **Filtros**, você pode filtrar os dados de acordo com a fonte de dados, por [grupo de usuários importados](user-groups.md) ou por [marcas e intervalos de endereços IP](ip-tags.md). 
+
+> [!NOTE]
+> Todos os relatórios personalizados são limitados a no máximo 1 GB de dados não compactados. Se houver mais de 1 GB de dados, o primeiro GB de dados será exportado para o relatório.
 
 ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
