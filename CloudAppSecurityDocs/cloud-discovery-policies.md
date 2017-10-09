@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad1b3e4c94458a35aa3f4230fe48d29e5f2f8461
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: c909125b57f2ee341f6621f33b43c522cfc6d32c
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
     
@@ -34,7 +34,7 @@ As políticas de descoberta permitem que você defina alertas que notificam quan
   
 4.  Defina a **Gravidade** da política.
 
-5. Para definir quais aplicativos descobertos vão disparar essa política, adicione filtros.  
+5. Para definir quais aplicativos descobertos disparam essa política, adicione filtros.  
   
 6.  Você pode definir um limite para o nível de sensibilidade que a política deve ter. Depois de habilitar **Disparar uma correspondência de política se todas as seguintes situações ocorrerem no mesmo dia**, você pode definir um mínimo para o **Número de usuários**, **Número de endereços IP**, **Tráfego diário**, **Dados baixados**, **Dados carregados** e **Número de transações** que o aplicativo deve atender para corresponder à política.  
   
@@ -64,9 +64,9 @@ O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anom
   
 3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
-4.  Para definir quais aplicativos descobertos vão disparar essa política, clique em **Adicionar filtros**.  
+4.  Para definir quais aplicativos descobertos disparam essa política, clique em **Adicionar filtros**.  
   
-     Os filtros são escolhidos do lado esquerdo da página do pop-up de filtro. É possível filtrar por nome do serviço, domínio, fator de risco, pontuação de risco e categoria. O lado direito da página mostrará os resultados para os filtros escolhidos no catálogo de serviço atual. Depois de escolher os filtros, salve e verifique se as marcas apropriadas aparecem na caixa de filtros.  
+     Os filtros são escolhidos do lado esquerdo da página do pop-up de filtro. É possível filtrar por nome do serviço, domínio, fator de risco, pontuação de risco e categoria. O lado direito da página mostra os resultados para os filtros escolhidos no catálogo de serviço atual. Depois de escolher os filtros, salve e verifique se as marcas apropriadas aparecem na caixa de filtros.  
   
 5.  Em **Aplicar a**, escola se isso se aplica a **Todas as exibições de dados** ou a **Exibições de dados específicas** e se isso se aplica a **Usuários**, **Endereços IP** ou ambos.  
   

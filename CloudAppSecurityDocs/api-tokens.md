@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: d4e56bc0b09b27b600d1f397f89ba13e5ee15350
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="api-tokens"></a>Tokens de API
     
@@ -40,33 +40,33 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
 1. No menu **Configurações**, selecione **Extensões de segurança** e, em seguida, **Tokens de API**.
 
 2. Clique no ícone de adição, **Gerar novo token** e forneça um nome para identificar o token no futuro e, em seguida, clique em **Avançar**.
-![Token de API de geração do Cloud App Security](./media/api-token-gen.png)
+![O Cloud App Security gera token API](./media/api-token-gen.png)
 
-3. Copie o valor do token e salve-o em algum lugar para recuperação – se você perdê-lo, será necessário gerar o token novamente. O token terá os privilégios do usuário que o emitiu. Por exemplo, um leitor de segurança não pode emitir um token que pode alterar os dados.
+3. Copie o valor do token e salve-o em algum lugar para recuperação – se você perdê-lo, será necessário gerar o token novamente. O token tem os privilégios do usuário que o emitiu. Por exemplo, um leitor de segurança não pode emitir um token que pode alterar os dados.
 
 4. Você pode filtrar os tokens de status: Ativo, Inativo ou Gerado. 
 
   - Tokens com status Gerado são tokens que nunca foram usados. 
-  - Tokens com status Ativo são tokens que foram gerados e foram usados nos últimos 7 dias. 
-  - Tokens com o status Inativo foram usados, mas não houve atividade nos últimos 7 dias.
+  - Tokens com status Ativo são tokens que foram gerados e foram usados nos últimos sete dias. 
+  - Tokens com o status Inativo foram usados, mas não houve atividade nos últimos sete dias.
 5. Depois de gerar um novo token, você receberá uma nova URL a ser usada para acessar o portal do Cloud App Security. 
 
  ![Token de API do Cloud App Security](./media/generate-api-token.png)
 
-A URL do portal genérica continuará a funcionar, mas será consideravelmente mais lenta do que a URL personalizada fornecida com o token. Se você esquecer a URL a qualquer momento, você poderá exibi-la indo até o ícone **?** no menu e selecionando **Sobre**.
+A URL genérica do portal continuará a funcionar, mas será consideravelmente mais lenta do que a URL personalizada fornecida com o token. Se você esquecer a URL a qualquer momento, você poderá exibi-la indo até o ícone **?** no menu e selecionando **Sobre**.
 
 ## <a name="api-token-management"></a>Gerenciamento de token de API
 
 A página de token de API inclui uma tabela de todos os tokens de API que foram gerados.
 
-Administradores completos verão todos os tokens gerados para este locatário. Outros usuários verão apenas os tokens que eles mesmos geraram.
+Administradores completos veem todos os tokens gerados para este locatário. Outros usuários veem apenas os tokens que eles mesmos geraram.
 
 A tabela fornece detalhes sobre quando o token foi gerado e quando ele foi usado pela última vez e permite revogar o token. 
 
-Depois que um token é revogado, ele é removido da tabela e o software que ele estava em uso não consegue fazer chamadas à API até que um novo token seja fornecido. 
+Depois que um token é revogado, ele é removido da tabela e o software que ele estava usando não consegue fazer chamadas à API até que um novo token seja fornecido. 
 
 > [!NOTE]
-> Conectores do SIEM e coletores de log também usam tokens de API. Esses tokens devem ser gerenciados das seções de agente SIEM e coletores de log e não aparecerão nessa tabela. 
+> Conectores do SIEM e coletores de log também usam tokens de API. Esses tokens devem ser gerenciados das seções de agente SIEM e coletores de log e não aparecem nessa tabela. 
 
 
 ## <a name="view-your-data-center"></a>Exibir seu data center

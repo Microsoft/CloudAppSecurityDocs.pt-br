@@ -1,6 +1,6 @@
 ---
 title: "Quais são as diferenças entre as edições do Cloud App Security? | Microsoft Docs"
-description: "Este tópico descreve as diferenças entre o Cloud App Security e o Gerenciamento de Segurança Avançada do Office 365."
+description: "Este tópico descreve as diferenças entre o Cloud App Security e o Cloud App Security do Office 365."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -13,28 +13,28 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7dd8b94579255b7ccccf4df093d24c5a853f66a4
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: 68700daaa07dddf18bf71cf6830e755f99f76dbb
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="what-are-the-differences-between-cloud-app-security-and-office-365-advanced-security-management-asm"></a>Quais são as diferenças entre o Cloud App Security e o Gerenciamento de Segurança Avançada (ASM) do Office 365?
+# <a name="what-are-the-differences-between-cloud-app-security-and-office-365-cloud-app-security"></a>Quais são as diferenças entre o Cloud App Security e o Cloud App Security do Office 365?
 
 > [!NOTE]
-> Para obter informações sobre o Gerenciamento de segurança avançado e o Cloud App Security no Office 365, consulte a [Introdução ao Gerenciamento de segurança avançado](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+> Para saber mais sobre o Cloud App Security do Office 365, consulte [Introdução ao Cloud App Security do Office 365](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 ## <a name="cloud-app-security"></a>Cloud App Security 
 
 O Microsoft Cloud App Security é uma solução entre SaaS completa que traz visibilidade profunda, controles de dados fortes e proteção contra ameaças aprimorada aos seus aplicativos de nuvem. Com esse serviço, é possível obter visibilidade sobre TI sombra descobrindo os aplicativos de nuvem em uso e é possível controlar e proteger os dados dos aplicativos depois de sancioná-los no serviço. 
 
-## <a name="office-365-advanced-security-management"></a>Gerenciamento de Segurança Avançada do Office 365
+## <a name="office-365-cloud-app-security"></a>Cloud App Security do Office 365
 
-Gerenciamento Avançado de Segurança é um subconjunto do Cloud App Security que fornece visibilidade aprimorada e controle para o Office 365. Isso inclui a detecção de ameaças com base nos logs de atividade do usuário, a descoberta de TI sombra para aplicativos que têm funcionalidade semelhante às ofertas do Office 365 e controle de permissões do aplicativo para o Office 365.
+Cloud App Security do Office 365 é um subconjunto do Cloud App Security que fornece visibilidade aprimorada e controle para o Office 365. Isso inclui a detecção de ameaças com base nos logs de atividade do usuário, a descoberta de TI sombra para aplicativos que têm funcionalidade semelhante às ofertas do Office 365 e controle de permissões do aplicativo para o Office 365.
 
 ## <a name="feature-support"></a>Suporte ao recurso
 
-|Capacidade|Recurso|Microsoft Cloud App Security|Gerenciamento de Segurança Avançada do Office 365|
+|Capacidade|Recurso|Microsoft Cloud App Security|Cloud App Security do Office 365|
 |----|----|----|----|
 |Cloud Discovery|Aplicativos Descobertos |Mais de 15.000 aplicativos de nuvem  |Mais de 750 aplicativos de nuvem com funcionalidade semelhante à do Office 365|
 ||Implantação para análise de descoberta|Upload de log manual e automático|Upload de log manual|

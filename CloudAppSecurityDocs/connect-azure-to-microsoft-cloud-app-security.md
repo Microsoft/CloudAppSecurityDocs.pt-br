@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: 7497a52a48a7cb3b943da847b85144d0ce78ca84
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar o Azure ao Microsoft Cloud App Security
 
@@ -32,18 +32,18 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
 1.  Transmita o Log de Atividades do Azure da sua assinatura do Azure a um Hub de Eventos. Siga o guia oficial na documentação do Azure: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
  > [!NOTE]
- > Se você tiver mais de uma assinatura do Azure, repita isso para cada assinatura, mas use um único Hub de Eventos que será compartilhado entre suas assinaturas.
+ > Se você tiver mais de uma assinatura do Azure, repita essa etapa para cada assinatura usando um único Hub de Eventos que será compartilhado entre suas assinaturas.
 
  Depois de concluir as instruções, será criado um novo Hub de Eventos no namespace que você escolher.
  
  > [!NOTE]
- > Se você receber um erro depois de tentar exportar os Logs de Atividade, vá para a folha **Provedores de recursos** no Azure e certifique-se de que ‘microsoft.insights’ está registrado.
+ > Se você receber um erro depois de tentar exportar os Logs de Atividade, acesse **Provedores de recursos** no Azure e certifique-se de que ‘microsoft.insights’ está registrado.
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Etapa 2: obter uma cadeia de conexão para seu Hub de Eventos
 
-1.  Vá para a folha **Hubs de Eventos – Versão Prévia**.
+1.  Acesse **Hubs de Eventos – Versão Prévia** no menu à esquerda.
   
-   ![Folha Hubs de Eventos](media/azure-event-hubs.png "Hubs de Eventos do Azure")
+   ![Menu Hubs de eventos](media/azure-event-hubs.png "Hubs de Eventos do Azure")
 
 2.  Selecione o Namespace do seu Hub de Eventos.
   
@@ -55,7 +55,7 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
 
 4.  Selecione o novo Hub de Eventos criado pelo Azure Monitor. Ele é chamado de **insights-operational-logs**.
   > [!NOTE]
-  > Poderá levar alguns minutos até que o Hub de Eventos seja criado.
+  > Pode demorar alguns minutos até que o Hub de Eventos seja criado.
 
    ![Logs operacionais de insights](media/azure-insight-operational-logs.png "Logs operacionais de insights do Azure")
   
@@ -66,11 +66,11 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
 
 6.  Insira um nome para a nova política e certifique-se de incluir pelo menos a **Declaração de escuta**. Quando terminar, clique em **Criar**.
   
-    ![Nova política do Azure](media/azure-new-policy.png "Criar nova política do Azure")
+    ![Nova política do Azure](media/azure-new-policy.png "Nova política do Azure")
 
-7.  Em **Configurações** e em **Políticas de acesso compartilhado**, clique na política de acesso que você acabou de criar.   
+7.  Em **Configurações** e em **Políticas de acesso compartilhado**, clique na política de acesso que você criou.   
   
-    ![Selecionar política do Azure](media/azure-select-policy.png "Selecionar política do Azure")
+    ![Política do Azure](media/azure-select-policy.png "Política do Azure")
 
 8. Na janela Política, copie uma das cadeias de conexão clicando no botão ao lado de **Cadeia de conexão – Chave primária** ou **Cadeia de conexão – Chave secundária**.
 
@@ -89,8 +89,7 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
    >[!NOTE] 
    > Se você criou um grupo de consumidores diferente para ser usado, use o nome **Grupo de consumidores**.
   
-6.  Clique em **Conectar**.
-     Isso enviará uma mensagem de texto para a conexão e poderá levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.  
+6.  Clique em **Conectar** para se conectar e testar a conexão. Talvez demore alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.  
 
 
 > [!NOTE]

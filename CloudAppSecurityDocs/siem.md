@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bd396f4e4f7158dfe1500d85431ef0643e6816a3
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="siem-integration"></a>Integração ao SIEM
     
@@ -83,6 +83,7 @@ Você pode clicar em **Editar e visualizar resultados** para verificar se o filt
 > [!NOTE]
 > - O nome do arquivo pode ser diferente dependendo da versão do agente SIEM.
 > - Parâmetros em colchetes [] são opcionais e devem ser usados somente se relevantes.
+> - Quando em execução no Windows, é recomendável configurar uma tarefa agendada para executar o comando. Isso garantirá que o serviço esteja sempre ativado.
 
 Quando as seguintes variáveis são usadas:
 - DIRNAME é o caminho para o diretório que você deseja usar para os logs locais de depuração do agente.

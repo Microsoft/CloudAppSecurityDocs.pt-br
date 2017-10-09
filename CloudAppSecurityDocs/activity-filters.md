@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7d74bb482f44e2845d348dd18777d72910b7e18b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 835ffc05fb84117bf9bbf848d5718de4557e5e15
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="activities"></a>Atividades
 O Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. 
@@ -45,9 +45,9 @@ Para analisar atividades mais específicas, você pode expandir o filtro básico
  ![filtro avançado do log de atividades](media/activity-log-filter-advanced.png)
 
 ## <a name="activity-filters"></a>Filtros de atividade
-Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maioria dos filtros dá suporte a vários valores, bem como NOT, para fornecer uma ferramenta muito poderosa para a criação de políticas.  
+Veja a seguir uma lista de filtros de atividades que podem ser aplicados. A maioria dos filtros dá suporte a vários valores, bem como NOT, para fornecer uma ferramenta poderosa para a criação de políticas.  
   
--   ID da Atividade ‑ Pesquisa apenas atividades específicas por sua ID. Esse filtro é muito útil quando você conecta o Cloud App Security ao SIEM (usando o agente SIEM) e deseja investigar ainda mais os alertas no portal do Cloud App Security.  
+-   ID da Atividade ‑ Pesquisa apenas atividades específicas por sua ID. Esse filtro é útil quando você conecta o Cloud App Security ao SIEM (usando o agente SIEM) e deseja investigar ainda mais os alertas no portal do Cloud App Security.  
   
 -   Objetos de atividade – pesquise os objetos nos quais a atividade foi executada. Este filtro se aplica ao arquivo, à pasta, ao usuário ou aos objetos do aplicativo. 
     - ID de objeto de atividade – a ID do objeto (arquivo, pasta, usuário ou ID do aplicativo).
@@ -80,7 +80,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
    As marcações internas de IP incluem:
     - Aplicativos Microsoft (14 deles)
     - Proxy anônimo
-    - Botnet (você verá que a atividade foi executada por um botnet com um link para saber mais sobre o botnet específico)
+    - Botnet (você vê que a atividade foi executada por um botnet com um link para saber mais sobre o botnet específico)
     - IP de verificação de Darknet
     - Servidor C&C de malware
     - Analisador de conectividade remota
@@ -98,7 +98,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 
 -   ISP Registrado – o ISP do qual a atividade foi executada.   
 
--  Origem — pesquise pela origem na qual a atividade foi detectada. A origem pode ser um dos seguintes:
+-  Origem — pesquise pela origem na qual a atividade foi detectada. Pode ter uma das seguintes origens:
   - Conector de aplicativo — logs provenientes diretamente do conector de API do aplicativo.
   - Análise de conector de aplicativo — melhorias de segurança do Cloud App Security com base na verificação de informação do conector de API.
   
@@ -107,7 +107,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
     -   Domínio do usuário — pesquise um domínio de usuário específico.
     -   Organização do usuário – A unidade organizacional do usuário que executou a atividade, por exemplo, todas as atividades realizadas pelos usuários de EMEA_marketing.  
     -   Grupo de usuários – Grupos de usuários específicos que você pode importar de aplicativos conectados, por exemplo, administradores do Office 365.  
-    -   Nome de usuário — pesquise por um nome de usuário específico. Para ver uma lista de usuários em um grupo de usuários específico, clique no nome do grupo de usuários na **Gaveta de atividade**. Você será levado para a página de Contas, que lista todos os usuários no grupo. Dali você pode analisar os detalhes das contas de usuários específicos do grupo.
+    -   Nome de usuário — pesquise por um nome de usuário específico. Para ver uma lista de usuários em um grupo de usuários específico, clique no nome do grupo de usuários na **Gaveta de atividade**. Isso leva você até a página de Contas, que lista todos os usuários no grupo. Dali você pode analisar os detalhes das contas de usuários específicos do grupo.
        -  Os filtros **Grupo de usuários** e **Nome de usuário** podem passar por filtragem adicional, usando o filtro **Como** e selecionando a função do usuário, que pode ser qualquer uma das seguintes:
             - Apenas objeto de atividade – isso significa que o usuário ou o grupo de usuários selecionado não executou a atividade em questão, eles eram o objeto da atividade
             - Apenas ator – isso significa que o usuário ou o grupo de usuários realizou a atividade
