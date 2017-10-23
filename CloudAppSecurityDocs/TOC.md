@@ -1,7 +1,9 @@
 # Compreender e Explorar
-## [O que é CAS?](what-is-cloud-app-security.md)
+## [O que é o Cloud App Security?](what-is-cloud-app-security.md)
 ## [Quais são as novidades?](release-notes.md)
-## [CAS edições](editions-cloud-app-security.md)
+## Comparar
+### [Office 365](editions-cloud-app-security-o365.md)
+### [Azure AD](editions-cloud-app-security-aad.md)
 # Implantar
 ## [Introdução](getting-started-with-cloud-app-security.md)
 ## [Configuração básica](general-setup.md)
