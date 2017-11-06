@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 7ffb49e882856b144fff028c7b10167b5c55356f
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="investigate"></a>Investigar
 Depois de o Cloud App Security ser executado em seu ambiente de nuvem, você precisará de um estágio de aprendizado e investigação sobre como usa as ferramentas do Cloud App Security para obter uma compreensão mais profunda do que está acontecendo no seu ambiente de nuvem. Em seguida, com base em seu ambiente específico e como ele está sendo usado, você pode identificar os requisitos para proteger sua organização contra riscos.
