@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 062ada4cc621eff89bf2968dd230f33fc84000d6
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: cd118d67089fbda869c223129b7edc574af1cb28
+ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Instalar e configurar o Docker de coletor de log automático no Windows Server 2016
 
@@ -39,6 +39,8 @@ ms.lasthandoff: 09/28/2017
     -   Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada.
 
     -   Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443.
+
+    - Permita que o coletor de logs inicie o tráfego de saída para o armazenamento de blobs do Azure (https://adaprodconsole.blob.core.windows.net/) nas portas 80 e 443.
 
 > [!NOTE]
 > Se o seu firewall exigir uma lista de acesso de endereço IP estático e não oferecer suporte à lista de permissões com base na URL, permita que o coletor de log inicie o tráfego de saída para os [Intervalos de IP de datacenter do Microsoft Azure na porta 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
@@ -93,15 +95,11 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
     > -   Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
 
-4.  Mais informações sobre a implantação serão exibidas.
-
-    ![Windows3](./media/windows3.png)
-
-5.  **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone copiar para a área de transferência [ícone copiar para a área de transferência](./media/copy-icon.png).
+4.  Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone copiar para a área de transferência [ícone copiar para a área de transferência](./media/copy-icon.png).
 
 6.  **Exportar** a configuração de fontes de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
 
-    ![Windows4](./media/windows4.png)
+   ![Crie o coletor de logs](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – Implantação local de seu computador
 
@@ -126,17 +124,10 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 7.  Implante a imagem do coletor usando o comando run gerado no portal.
 
-    ![windows8](./media/windows8.png)
+   ![Crie o coletor de logs](./media/windows7.png)
 
-    >[!NOTE]
-    >Se você precisa configurar um proxy, adicione o endereço IP do proxy e a porta correspondente. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:  
- `   docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
-    "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
-    "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
-    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
-
-    ![windows9](./media/windows9.png)
+   Se você precisar configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:  
+ `(echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
 9.  Verifique se o coletor está sendo executado corretamente executando o seguinte comando:`docker logs <collector_name>`
 

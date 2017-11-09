@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 835ffc05fb84117bf9bbf848d5718de4557e5e15
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="activities"></a>Atividades
 O Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. 
@@ -51,11 +51,11 @@ Veja a seguir uma lista de filtros de atividades que podem ser aplicados. A maio
   
 -   Objetos de atividade – pesquise os objetos nos quais a atividade foi executada. Este filtro se aplica ao arquivo, à pasta, ao usuário ou aos objetos do aplicativo. 
     - ID de objeto de atividade – a ID do objeto (arquivo, pasta, usuário ou ID do aplicativo).
-    - Arquivo, pasta ou URL de site — permite que você selecione arquivos, pastas e URLs que começam com uma cadeia de caracteres específica.
-    - Objeto de destino (arquivo/pasta) — permite que você selecione uma pasta ou um arquivo específico. 
     - Item – permite que você pesquise pelo nome ou ID de qualquer objeto de atividade (por exemplo: nomes de usuário, arquivos, parâmetros, sites). Para o filtro **Item do objeto da atividade**, você pode selecionar se deseja filtrar os itens por **Contém**, **Igual** ou **Começa com** o item específico.
     
 -   Tipo de atividade — pesquise a atividade do aplicativo.
+
+-   Tipo de atividade (visualização) – atualmente sendo distribuída. Permite que você pesquise a atividade do aplicativo com maior granularidade, usando a categoria de atividade ou o nome da atividade fornecido diretamente pelo aplicativo.
 
 -   Atividade administrativa – pesquisa apenas atividades administrativas.  
   

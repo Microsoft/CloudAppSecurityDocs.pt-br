@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,52 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
+ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
 Este tópico fornece uma lista de portas e endereços IP que você precisa permitir e adicionar à lista de permissões para trabalhar com o Cloud App Security. 
 
-Para obter informações sobre como ver a qual data center do Cloud App Security center você está conectado, consulte [Tokens de API](api-tokens.md)
 
+## <a name="view-your-data-center"></a>Exibir seu data center
 
+Alguns dos requisitos abaixo dependem em que data center você está conectado. 
 
-## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>Acesso ao portal, agente SIEM, gateway de autenticação e coletor de log
+Para ver a qual data center você está se conectando:
 
-Para obter acesso de gateway de autenticação e do portal e para habilitar o Cloud App Security a se conectar ao seu SIEM, bem como para habilitar o coletor de logs do Cloud App Security para executá-lo, é necessário adicionar a **porta de saída 443** ao endereço IP abaixo a lista de permissões do firewall:  
+1. No portal do Cloud App Security, clique em **?** na barra de menus e selecione **Sobre**. 
+
+    ![clique em Sobre](./media/about-menu.png)
+
+2. Na tela da versão do Cloud App Security, você pode ver a região e o data center.
+
+    ![Exibir seu data center](./media/data-center.png)
+
+## <a name="portal-access"></a>Acesso ao portal
+
+Para acessar o portal do Cloud App Security, adicione a **porta de saída 443** para os seguintes endereços IP na lista de permissões do seu firewall:  
 
 
 > [!div class="mx-tableFixed"]
 |Data center|Endereços IP|  
 |----|----|
-|US1|13.91.91.243<br></br>52.183.75.62|
-|EU1|52.174.56.180<br></br>13.80.125.22|
+|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+
+## <a name="siem-agent-connection"></a>Conexão do agente SIEM
+
+Para habilitar a conexão do Cloud App Security ao seu SIEM, adicione a **porta de saída 443** para os seguintes endereços IP na lista de permissões do seu firewall:  
+
+
+> [!div class="mx-tableFixed"]
+|Data center|Endereços IP|  
+|----|----|
+|US1|13.91.91.243|
+|EU1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Acesso ao aplicativo conector e integração de DLP externa
 
@@ -77,10 +99,20 @@ O endereço IP dedicado do email do Cloud App Security é:
 
 Inclua esse endereço IP à lista de permissões com o serviço antispam a fim de habilitar o envio de notificações.
     
+## <a name="log-collector"></a>Coletor de logs 
+
+Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detectar TI sombra na sua organização, é necessário abrir o seguinte:
+
+- Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada.
+- Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443.
+- Permita que o coletor de logs inicie o tráfego de saída para o armazenamento de blobs do Azure (https://adaprodconsole.blob.core.windows.net/) nas portas 80 e 443.
+
+> [!NOTE]
+> Se o seu firewall exigir uma lista de acesso de endereço IP estático e não oferecer suporte à lista de permissões com base na URL, permita que o coletor de logs inicie o tráfego de saída para os Intervalos de IP de datacenter do Microsoft Azure na porta 443.
 
 
 
-  
+
 ## <a name="see-also"></a>Veja também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

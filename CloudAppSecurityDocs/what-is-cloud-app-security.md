@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: 2d085cb1df45748ec869766f7c6824dc427b61fe
+ms.sourcegitcommit: 991e957c70d49e3fbf77828c2d2064fa363da667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-cloud-app-security"></a>O que é o Cloud App Security
 
@@ -43,9 +43,10 @@ O Cloud App Security integra a visibilidade com sua nuvem ao
 -   usar o Cloud Discovery para mapear e identificar seu ambiente de nuvem e os aplicativos de nuvem que sua organização está usando.
 -   sancionar e cancelar a sanção de aplicativos em sua nuvem.  
 -   usar conectores de aplicativos fáceis de implantar que utilizam as APIs do provedor para visibilidade e governança de aplicativos ao quais você se conecta.  
+-   usando a proteção de proxy para obter visibilidade em tempo real e controle sobre o acesso e as atividades executadas dentro de seus aplicativos de nuvem.
 -   ajudar a ter o controle contínuo definindo e ajustando continuamente as políticas.  
 
-![Diagrama de arquitetura do Cloud App Security](./media/architecture.png)  
+![Diagrama de arquitetura do Cloud App Security](./media/proxy-architecture.png)  
 
 ### <a name="data-retention--compliance"></a>Retenção de dados e conformidade
 
@@ -58,7 +59,7 @@ O Cloud App Security mantém os dados da seguinte maneira:
 - Dados de descoberta: 90 dias 
 - Alertas: 180 dias 
 
-Após a coleta de dados dessas fontes, o Cloud App Security executa a análise sofisticada dos dados. Ele o alerta imediatamente sobre atividades anormais e oferece uma visibilidade profunda do seu ambiente de nuvem. Você pode configurar uma política no Cloud App Security e usá-la para proteger tudo em seu ambiente de nuvem.  
+Depois que os dados são coletados dessas fontes, o Cloud App Security executa um mecanismo heurístico sofisticado de detecção de anomalias que faz o perfil do seu ambiente e fornece alertas sobre atividades anormais em relação à linha de base aprendida e oferece uma visibilidade profunda em seu ambiente de nuvem. Você pode configurar uma política no Cloud App Security e usá-la para proteger tudo em seu ambiente de nuvem.  
 
 ### <a name="cloud-discovery"></a>Cloud Discovery  
 
@@ -76,6 +77,13 @@ Os conectores de aplicativos usam APIs de provedores de aplicativos de nuvem par
 Para conectar um aplicativo e estender a proteção, o administrador do aplicativo autoriza o Cloud App Security a acessar o aplicativo. Em seguida, o Cloud App Security consulta o aplicativo para logs de atividade e verifica dados, contas e conteúdo de nuvem. O Cloud App Security pode impor políticas, detectar ameaças e fornecer ações de governança para resolver problemas.  
 
 O Cloud App Security usa as APIs fornecidas pelo provedor de nuvem. Cada aplicativo tem sua própria estrutura e limitações de API. O Cloud App Security trabalha com os provedores de aplicativo para otimizar o uso das APIs e para garantir o melhor desempenho. Considerando as diversas limitações que os aplicativos impõem sobre as APIs (como as limitações, limites de API, janelas de API de mudança de tempo dinâmicas), os mecanismos do Cloud App Security utilizam a capacidade permitida. Algumas operações, como a verificação de todos os arquivos no locatário, exigem uma grande quantidade de APIs e, portanto, são distribuídas por um período mais longo. Espere algumas que algumas políticas sejam executadas por várias horas ou vários dias.  
+
+### <a name="proxy-protection"></a>Proteção de proxy
+O proxy do Cloud App Security fornece as ferramentas necessárias para ter exibição em tempo real e controle sobre o acesso ao seu ambiente de nuvem e as atividades executadas nele. Com o proxy, você pode proteger sua organização de: 
+-   Evitar o vazamento de dados bloqueando os downloads antes que eles ocorram
+-   Definir as regras que forçam os dados armazenados em e baixados da nuvem a serem protegidos com criptografia
+-   Obter visibilidade para pontos de extremidade desprotegidos para que você possa monitorar o que está sendo feito em dispositivos não gerenciados
+-   Controlar o acesso por meio de redes não corporativas ou endereços IP arriscados
 
 ### <a name="policy-control"></a>Controle de política  
 
