@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f3d710cabf1477ea248182a994dee8c00e2c4536
+ms.sourcegitcommit: f9c6bd3c629cc48ce771fec47dd6e40bc4c7a197
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
@@ -34,10 +34,12 @@ Como funciona a anonimização de dados:
 1.  Há três maneiras de aplicar a anonimização de dados: 
     
     - Você pode definir que os dados de um arquivo de log específico sejam anonimizados [criando um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e selecionando **Anonimizar informações particulares**.
- ![Anonimizar dados de instantâneo](./media/anonymize-log.png)
+
+      ![Torne anônimos dados de instantâneo](./media/anonymize-log.png)
 
     - Você pode definir a anonimização dos dados de um [upload automatizado para uma nova fonte de dados](configure-automatic-log-upload-for-continuous-reports.md) selecionando **Anonimizar informações particulares** ao adicionar a nova fonte de dados.  
- ![Anonimizar dados de log](./media/anonymize-autolog.png)
+  
+      ![Torne anônimos dados de log](./media/anonymize-autolog.png)
 
     - Você pode definir no Cloud App Security que o padrão seja anonimizar todos os dados de relatórios de instantâneos de arquivos de log carregados e de relatórios contínuos dos coletores de log da seguinte maneira:
      
@@ -47,24 +49,27 @@ Como funciona a anonimização de dados:
 
         3. Em Chave de criptografia, selecione se deseja **Usar a chave dedicada gerada para seu portal** ou **Usar uma chave personalizada**. Se você **Usar uma chave personalizada**, digite uma chave de criptografia UTF8 de 16 bytes.
         4. Clique em **Salvar**.
-  ![Anonimização](./media/anonymizer1.png)
+ 
+       ![Anonimização](./media/anonymizer1.png)
   
 
 2.  Quando a Anonimização está selecionada, o Cloud App Security analisa o log de tráfego e extrai atributos específicos de dados.
 3.  O Cloud App Security substitui o nome de usuário por um nome de usuário criptografado.
 4.  Em seguida, ele analisa os dados de uso de nuvem e gera relatórios do Cloud Discovery com base nos dados anonimizados.
- ![Painel Anonimizar Cloud Discovery](./media/anonymize-dashboard.png)
  
-
+    ![Torne anônimo o painel do Cloud Discovery](./media/anonymize-dashboard.png)
+ 
 5.  Para uma investigação específica, como ao investigar um alerta de uso anômalo, você poderá resolver o nome de usuário específico no portal e fornecer uma justificativa comercial. Esta página também pode ser usada para pesquisar o nome de usuário criptografado de um nome de usuário conhecido. 
 
     1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
     2. Na guia **Anonimização**, em **Anonimizar e resolver nomes de usuário**, insira uma justificativa explicando porque você está executando a resolução.
     3. Em **Inserir nome de usuário a ser resolvido**, selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver**. 
-![Anonimização](./media/anonymizer.png)
+
+   ![Anonimização](./media/anonymizer.png)
 
 6.  A ação é auditada no **Log de governança** do portal. 
-![Anonimização](./media/anonymize-gov-log.png)
+
+     ![Anonimização](./media/anonymize-gov-log.png)
 
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: edf852bf90a0d4b9345f1beb675ef5ee3c4f941d
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 11/06/2017
 ---
 #  <a name="IPtagsandRanges"></a> Trabalhando com marcações e intervalos de IP
 
@@ -69,14 +69,15 @@ Na barra de menus, clique no ícone de configurações ![ícone de configuraçõ
   
     -   **Administrativos**: esses devem ser todos os endereços IP dos seus administradores.  
   
-    -   **Internos**: esses devem ser todos os endereços IP da sua rede interna, suas filiais e seus endereços de roaming de Wi-Fi.  
+    -  **Provedor de nuvem**: estes devem ser os endereços IP usados por seu provedor de nuvem.
+  
+    -   **Corporativos**: estes devem ser todos os endereços IP da sua rede interna, suas filiais e seus endereços de roaming de Wi-Fi.  
   
     -   **Arriscados**: esses devem ser quaisquer endereços IP que considerar arriscados. Eles podem incluir endereços IP suspeitos que você viu no passado, endereços IP em redes de seus concorrentes etc.  
   
     -   **VPN**: esses devem ser quaisquer endereços IP usados para funcionários remotos.  
-  
-    -   **Proxy de nuvem**: esse deve ser o endereço IP do seu proxy a nuvem.  
-  
+ 
+
 7.  Quando terminar, clique em **Criar**.  
   
      ![intervalo de newipaddress](./media/newipaddress-range.png "intervalo de newipaddress")  

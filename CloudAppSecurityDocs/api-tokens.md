@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d4e56bc0b09b27b600d1f397f89ba13e5ee15350
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e8e86368429fac280b5555d85a0de3ec1789effa
+ms.sourcegitcommit: 2fe9475d428855a6dab6fa2edd0ccd56d66f87ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="api-tokens"></a>Tokens de API
     
@@ -69,16 +69,13 @@ Depois que um token é revogado, ele é removido da tabela e o software que ele 
 > Conectores do SIEM e coletores de log também usam tokens de API. Esses tokens devem ser gerenciados das seções de agente SIEM e coletores de log e não aparecem nessa tabela. 
 
 
-## <a name="view-your-data-center"></a>Exibir seu data center
 
-Para ver a qual data center você está se conectando, no portal do Cloud App Security, clique no **?** na barra de menus e selecione **Sobre**. 
-
-Na tela da versão do Cloud App Security, você pode ver o data center.
 
 
 ## <a name="see-also"></a>Veja também  
 [Solução de problemas de integração de SIEM](troubleshooting-siem.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  
-  
+
+## <a name="check-out-this-video"></a>Confira este vídeo!
+[Microsoft Cloud App Security – API REST e Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  

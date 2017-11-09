@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,40 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
+ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="whats-new-with-cloud-app-security"></a>Novidades do Cloud App Security
+# <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-releases-109"></a>Cloud App Security versões 109
+Lançado em 29 de outubro de 2017 
+
+- A distribuição do recurso de proxy do Microsoft Cloud App Security foi iniciada. O proxy do Microsoft Cloud App Security fornece as ferramentas necessárias para ter exibição em tempo real e controle sobre o acesso ao seu ambiente de nuvem e as atividades executadas nele. Por exemplo:
+    -   Evite o vazamento de dados bloqueando os downloads antes que eles ocorram.
+    -   Defina as regras que forçam os dados armazenados na e baixados da nuvem a serem protegidos com criptografia.
+    -   Obtenha visibilidade para pontos de extremidade desprotegidos para que você possa monitorar o que está sendo feito em dispositivos não gerenciados.
+    -   Controle o acesso por meio de redes não corporativas ou endereços IP arriscados.
+  
+  Para obter mais informações, consulte [Proteger aplicativos com proxy](proxy-intro-aad.md).
+
+-   Estamos distribuindo gradualmente a capacidade de filtrar de acordo com os nomes de atividades de serviços específicos. Esse novo filtro de tipo de atividade é mais granular, para que você possa monitorar as atividades de aplicativos específicas, em vez de tipos de atividade mais gerais. Por exemplo, anteriormente, você podia filtrar por **Executar o comando**, e agora você pode filtrar para cmdlets EXO específicos. O nome da atividade também pode ser visto na gaveta de atividade em **Tipo (em aplicativo)**. Essa funcionalidade substituirá o filtro de tipo de atividade.  
+
+-   O Cloud Discovery agora é compatível a Cisco ASA com FirePOWER. 
+
+-   Foram feitas melhorias de desempenho nas páginas de Usuário de Discovery e IP para melhorar a experiência do usuário.
+
+
+## <a name="cloud-app-security-releases-105-106-107-108"></a>Cloud App Security versões 105, 106, 107, 108
+Lançadas em setembro/outubro de 2017
+ 
+-   O Cloud App Security agora inclui um data center localizado na UE. Além de nosso data center dos EUA, o data center da UE permitirá que os clientes do Cloud App Security estejam em total conformidade com a nova e futura padronização e as certificações europeias. 
+-   Novos filtros foram adicionados à página de **Conectores de aplicativos**, que lhe fornecem filtragem mais simples e análise adicional.
+-   O Cloud Discovery em arquivos de log que contêm apenas informações de IP de destino foi aprimorado.
+ 
 
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security versão 104 
 Lançado em 27 de agosto de 2017
