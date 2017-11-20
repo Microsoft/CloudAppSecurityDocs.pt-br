@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d76d9026352d237b26f2945570e2f349bd372bb4
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Implante o proxy para aplicativos do Azure AD
 
 > [!NOTE]
-> A distribuição do recurso de proxy do Microsoft Cloud App Security foi iniciada.
+> Este é um recurso de versão prévia.
 
 Siga estas etapas para configurar aplicativos do Azure AD para ser controlados pelo proxy do Cloud App Security.
 
@@ -100,6 +100,8 @@ Para certificar-se de que a atividade será capturada corretamente, clique em um
 
 
 Agora você está pronto para criar [Políticas de sessão](session-policy-aad.md) para controlar seus aplicativos de proxy.
+
+
 
 ## <a name="see-also"></a>Veja também  
 [Trabalhando com o proxy do Cloud App Security](proxy-intro-aad.md)   

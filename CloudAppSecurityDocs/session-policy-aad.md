@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ebb7db49fcf5ed524a05943557d616487294f8
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="session-policies"></a>Políticas de sessão 
 
 > [!NOTE]
-> A distribuição do recurso de proxy do Microsoft Cloud App Security foi iniciada.
+> Este é um recurso de versão prévia.
 
 As políticas de sessão do Cloud App Security habilitam o monitoramento em tempo real de nível de sessão, oferecendo visibilidade granular de aplicativos de nuvem e a capacidade de executar ações diferentes dependendo da política configurada para uma sessão de usuário. Em vez de permitir ou bloquear o acesso completamente, com o controle de sessão, é possível permitir acesso ao monitorar a sessão e/ou limitar atividades de sessão específicas. 
 
@@ -159,7 +159,7 @@ Quando o **bloco** for definido como a **Ação** que deseja colocar na polític
 
 Quando **Proteger** é definido como a **Ação** a ser executada na política de sessão do proxy do Cloud App Security, o proxy determina o rótulo e a proteção subsequentes de um arquivo de acordo com os filtros de arquivo da política. Os rótulos são configurados no console de Proteção de Informações do Azure no Azure e **Proteger** deve ser selecionado no rótulo para que o rótulo seja exibido como uma opção na política do Cloud App Security. Quando um rótulo for selecionado e um arquivo que atende aos critérios da política do Cloud App Security for baixado, o rótulo e a proteção correspondente (com permissões) serão aplicados ao arquivo após o download. O arquivo original permanece como está no aplicativo de nuvem, enquanto o arquivo baixado agora está protegido. Os usuários que tentam acessar o arquivo devem atender os requisitos de permissão determinados pela proteção aplicada.  
  
-  
+ 
 ## <a name="see-also"></a>Veja também  
 [Bloqueio de downloads em dispositivos não gerenciados, usando funcionalidades de proxy do Azure AD](use-case-proxy-block-session-aad.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
