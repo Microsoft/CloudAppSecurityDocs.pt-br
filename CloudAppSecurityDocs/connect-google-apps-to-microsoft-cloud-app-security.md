@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
-ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
+ms.openlocfilehash: 9d813ecc39da6c26b81f459a278aa7eb42ca72f9
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar o G Suite ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do G Suite existente usando as APIs do conector.
@@ -114,7 +114,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     -   **Short Description & Long Description (Descrição curta e descrição longa)** (opcional): o Microsoft Cloud App Security fornece a visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem.  
   
-    -   O Google exige que você carregue pelo menos um ícone do aplicativo. Vá para [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) para baixar um arquivo zip que contém os ícones do Cloud App Security. Em seguida, em **Application icon (Ícone do aplicativo)**, arraste e solte as imagens 128x128 e 32x32.  
+    -   O Google exige que você carregue pelo menos um ícone do aplicativo. Acesse [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) para baixar o arquivo zip que contém os ícones do Cloud App Security. Em seguida, em **Application icon (Ícone do aplicativo)**, arraste e solte as imagens 128x128 e 32x32.  
   
     -   Role para baixo na seção **Integração de unidade**, digite a seguinte URL em **Abrir URL:**  
   
@@ -136,7 +136,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     -   Configure as quatro imagens necessárias em **Application icons (Ícones de aplicativo)**.  
   
-         As imagens podem ser encontradas em: [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
+         As imagens podem ser encontradas em: [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644)  
   
     -   Preencha as seguintes **Support URLs (URLs de suporte)**:  
   

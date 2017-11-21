@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurar o upload de log automático para relatórios contínuos em uma solução de virtualização
 
@@ -76,7 +76,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   > [!NOTE] 
   > - Um único coletor de logs pode lidar com várias fontes de dados.
   > - Copie o conteúdo da tela, pois você o usará ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
-4.  **Baixe** uma nova máquina de virtual coletora de log clicando em Hyper-V ou VMWare. Depois, descompacte o arquivo usando a senha que você recebeu no portal.  
+4.  Se você aceitar os [termos de licença de usuário final](https://go.microsoft.com/fwlink/?linkid=862492), **baixe** uma nova máquina virtual coletora de logs clicando em Hyper-V ou VMWare. Em seguida, descompacte o arquivo usando a senha que você recebeu no portal.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Etapa 2 — Implantação da máquina virtual no local e configuração de rede   
 

@@ -1,6 +1,6 @@
 ---
 title: "Configurar o upload de log automático para relatórios contínuos | Microsoft Docs"
-description: "Este tópico descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu em um servidor local."
+description: "Este tópico descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu no Azure."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -10,10 +10,10 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
+ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
 ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
@@ -97,42 +97,56 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
    ![Crie o coletor de logs](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – Implantação local de seu computador
+### <a name="step-2--deployment-of-your-machine-in-azure"></a>Etapa 2 – Implantação de seu computador no Azure
 
-> [!Note]
+> [!NOTE]
 > As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantação para outras plataformas são ligeiramente diferentes.
 
-1.  Abra um terminal em seu computador Ubuntu.
 
-2.  Altere para privilégios de raiz usando o comando:`sudo -i`
-
-3. Para ignorar um proxy na sua rede, execute os dois comandos a seguir:
-        
-        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
-        export https_proxy='<IP>:<PORT>'
-
-3.  Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
-
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
-
-     > [!NOTE] 
-     > Se esse comando não conseguir validar seu certificado de proxy, execute o comando usando `curl -k` no início.
+1.  Crie um novo computador Ubuntu no seu ambiente do Azure. 
+2.  Depois que o computador estiver pronto, abra as portas pelos caminhos a seguir:
+    1.  Na exibição de máquina, acesse **Rede** e selecione a interface relevante clicando duas vezes nela.
+    2.  Acesse **Grupo de Segurança de Rede** e selecione o grupo de segurança de rede relevante.
+    3.  Acesse **Regras de segurança de entrada** e clique em **Adicionar**,
+      
+      ![Azure no Ubuntu](./media/ubuntu-azure.png)
     
-    ![ubuntu5](./media/ubuntu5.png)
+    4. Adicionar as seguintes regras (no modo **Avançado**):
 
-4.  Implante a imagem do coletor no computador de hospedagem importando a configuração do coletor. Faça isso copiando o comando de execução gerado no portal. Se você precisar configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:
+    |Nome|Intervalos de porta de destino|Protocolo|Origem|Destination|
+    |----|----|----|----|----|
+    |caslogcollector_ftp|21|TCP|qualquer|qualquer|
+    |caslogcollector_ftp_passive|20000-20099|TCP|qualquer|qualquer|
+    |caslogcollector_syslogs_tcp|601-700|TCP|qualquer|qualquer|
+    |caslogcollector_syslogs_tcp|514-600|UDP|qualquer|qualquer|
+      
+      ![Regras do Azure no Ubuntu](./media/ubuntu-azure-rules.png)
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+3.  Volte para o computador e clique em **Conectar** para abrir um terminal no computador.
 
-   ![Crie o coletor de logs](./media/windows7.png)
+4.  Altere para privilégios de raiz usando `sudo -i`.
 
-5.  Verifique se o coletor está sendo executado corretamente executando o seguinte comando: `docker logs \<collector_name\>`
+5.  Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
+        
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
 
-Você deverá ver a mensagem **Concluído com êxito!**
+6. No portal do Cloud App Security, na janela **Criar novo coletor de log**, copie o comando para importar a configuração do coletor no computador de hospedagem:
 
-  ![ubuntu8](./media/ubuntu8.png)
+      ![Azure no Ubuntu](./media/ubuntu-azure.png)
+
+7. Execute o comando para implantar o coletor de logs.
+
+      ![Comando do Azure no Ubuntu](./media/ubuntu-azure-command.png)
+
+>[!NOTE]
+>Para configurar um proxy, adicione o endereço de IP do proxy e a porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado será: 
+
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+
+         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+
+8. Para verificar se o coletor de logs está sendo executado corretamente, execute o seguinte comando: `Docker logs <collector_name>`. Você deve obter os resultados: **Concluído com êxito!**
+
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
