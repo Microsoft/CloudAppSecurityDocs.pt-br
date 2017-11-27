@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-apps"></a>Conectar aplicativos 
 Os conectores de aplicativos aproveitam as APIs de provedores de aplicativo para proporcionar maior visibilidade e controle com o Cloud App Security sobre os aplicativos aos quais você se conecta.  
@@ -76,7 +76,7 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 |**Atividade de logon**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Atividade do usuário**|✔*|✔|✔|✔ – requer Google Unlimited|Parcial|Com suporte com o Salesforce Shield|✔|Não Aplicável|  
 |**Atividade administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|  
-|**Verificação de arquivo periódica**|✔|✔|Não Aplicável|✔|✔|✔|✔|Em breve|  
+|**Verificação de arquivo periódica**|✔|✔|Não Aplicável|✔|✔|✔|✔|Não Aplicável|  
 |**Verificação de arquivo quase em tempo real**|✔|✔|Não Aplicável|✔ – requer Google Unlimited|||Em breve||  
 |**Controle de compartilhamento**|✔|✔|Não Aplicável|✔|Não Aplicável||✔||  
 |**Quarentena**|✔|✔|Não Aplicável|Em breve|||Em breve||  
