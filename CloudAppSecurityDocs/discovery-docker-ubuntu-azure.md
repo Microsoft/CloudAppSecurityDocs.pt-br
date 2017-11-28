@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
+ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Instalação e configuração no Ubuntu
 
@@ -32,16 +32,7 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM: 4 GB
 
--   Configurações de firewall:
-
-    -   Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada.
-
-    -   Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, portal.contoso.cloudappsecurity.com) na porta 443
-
-    - Permita que o coletor de logs inicie o tráfego de saída para o armazenamento de blobs do Azure (https://adaprodconsole.blob.core.windows.net/) nas portas 80 e 443.
-
-> [!NOTE]
-> Se o seu firewall exigir uma lista de acesso de endereço IP estático e não oferecer suporte à lista de permissões com base na URL, permita que o coletor de log inicie o tráfego de saída para os [Intervalos de IP de datacenter do Microsoft Azure na porta 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+-   Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements#log-collector)
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 
@@ -118,7 +109,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     |caslogcollector_ftp|21|TCP|qualquer|qualquer|
     |caslogcollector_ftp_passive|20000-20099|TCP|qualquer|qualquer|
     |caslogcollector_syslogs_tcp|601-700|TCP|qualquer|qualquer|
-    |caslogcollector_syslogs_tcp|514-600|UDP|qualquer|qualquer|
+    |caslogcollector_syslogs_udp|514-600|UDP|qualquer|qualquer|
       
       ![Regras do Azure no Ubuntu](./media/ubuntu-azure-rules.png)
 
@@ -128,7 +119,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 5.  Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. No portal do Cloud App Security, na janela **Criar novo coletor de log**, copie o comando para importar a configuração do coletor no computador de hospedagem:
 
@@ -138,12 +129,12 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
       ![Comando do Azure no Ubuntu](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->Para configurar um proxy, adicione o endereço de IP do proxy e a porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado será: 
+     >[!NOTE]
+     >Para configurar um proxy, adicione o endereço de IP do proxy e a porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado será: 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Proxy do Ubuntu](./media/ubuntu-proxy.png)
 
 8. Para verificar se o coletor de logs está sendo executado corretamente, execute o seguinte comando: `Docker logs <collector_name>`. Você deve obter os resultados: **Concluído com êxito!**
 
