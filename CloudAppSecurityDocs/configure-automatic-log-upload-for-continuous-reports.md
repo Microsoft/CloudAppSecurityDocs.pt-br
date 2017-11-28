@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c5c8f7a8a6203f23be30ea160d8867163d8f360b
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurar o upload de log automático para relatórios contínuos em uma solução de virtualização
 
@@ -29,12 +29,8 @@ ms.lasthandoff: 11/13/2017
 - Espaço em disco: 250 GB
 - CPU: 2
 - RAM: 4 GB 
-- Configurações de firewall: 
-    - Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada
-    - Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443
+- Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements#log-collector)
 
-> [!NOTE]
-> Se o seu firewall exigir uma lista de acesso de endereço IP estático e não oferecer suporte à lista de permissões com base na URL, permita que o coletor de log inicie o tráfego de saída para os [Intervalos de IP de datacenter do Microsoft Azure na porta 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB por hora.
