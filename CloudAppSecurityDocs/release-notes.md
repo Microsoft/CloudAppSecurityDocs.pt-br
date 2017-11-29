@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-111"></a>Cloud App Security versão 111
+Lançado em 26 de novembro de 2017
+
+-   Agora as políticas de descoberta oferecem suporte a marcas do aplicativo como uma condição e uma ação de governança. Isso permite que você marque automaticamente os aplicativos recém-descobertos com marcas personalizadas, como **Aplicativos populares**. Você também pode usar a marca do aplicativo como um filtro, por exemplo, "Enviar-me um alerta quando um aplicativo na 'Watchlist' tiver mais de 100 usuários em um único dia".
+
+-   O filtro **Tempo** foi aprimorado para torná-lo mais fácil de usar.
+
+-   A inspeção de conteúdo agora permite distinguir entre o conteúdo, metadados e nome de arquivo, permitindo que você selecione qual deles deseja inspecionar.
+
+-   Uma nova ação de governança foi adicionada ao G Suite. Agora, você pode **Reduzir o acesso público** para arquivos compartilhados. Isso permite que você defina os arquivos disponíveis publicamente como disponíveis somente com um link compartilhado.
+
+-   Todo o log OKTA sobre atividades para outros aplicativos agora será exibido no Cloud App Security como proveniente do OKTA. Você pode visualizar e filtrar com base no aplicativo de destino para o qual o logon foi executado no campo **Objetos da atividade**.
 
 
 ## <a name="cloud-app-security-release-110"></a>Cloud App Security versão 110
