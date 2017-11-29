@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c5c8f7a8a6203f23be30ea160d8867163d8f360b
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: 0258c3e505bf9e1d1b0511084919a0b52f237b4c
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/27/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurar o upload de log automático para relatórios contínuos em uma solução de virtualização
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
 > [!WARNING] 
 > É altamente recomendável configurar o upload de logs usando o [Docker](discovery-docker.md) para uma implantação mais flexível.
