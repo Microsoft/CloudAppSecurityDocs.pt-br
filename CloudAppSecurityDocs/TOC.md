@@ -18,6 +18,9 @@
 ### [Configurar upload de log automático para relatórios contínuos](discovery-docker.md)
 #### [Docker no Ubuntu local](discovery-docker-ubuntu.md)
 #### [Docker no Ubuntu no Azure](discovery-docker-ubuntu-azure.md)
+##### Modificar a configuração do Docker
+###### [Personalizar arquivos de certificado](discovery-docker-custom-cert.md)
+###### [Alterar a senha do FTP](discovery-docker-change-ftp.md)
 #### [Usando uma solução de virtualização](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Usar o analisador de log personalizado](custom-log-parser.md)
 ### [Aprimoramento do Cloud Discovery](cloud-discovery-aad-enrichment.md)
