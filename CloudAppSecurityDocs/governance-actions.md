@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76066e4747630b1aa7cb5c3301c8053c8254a8a0
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades.
@@ -52,6 +52,8 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
         -   Tornar privado – somente o proprietário pode acessar o arquivo, todos os compartilhamentos são removidos.  
   
         -   Remover um parceiro – remove um parceiro específico do arquivo.  
+
+        - Reduzir o acesso público: defina os arquivos disponíveis publicamente como disponíveis somente com um link compartilhado.
   
     -   Quarentena  
   
@@ -141,6 +143,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Arquivos|Arquivo|Proteger|Proteja um arquivo com a Proteção de Informações do Azure aplicando um modelo da organização.|Office 365 (SharePoint e OneDrive)|
 |Arquivos|Arquivo|Revogar formulário de permissões de leitura para mim|Revoga permissões de leitura do arquivo para você mesmo, útil após conceder permissão a si próprio para entender se um arquivo tem uma violação ou não.|G Suite|
 |Arquivos, Política de arquivo|Arquivo|Transferir a propriedade do arquivo|Altera o proprietário - na política em que você escolher um proprietário específico.|G Suite|
+|Arquivos, Política de arquivo|Arquivo|Reduzir o acesso público|Isso permite que você defina os arquivos disponíveis publicamente como disponíveis somente com um link compartilhado.|G Suite|
 |Arquivos, Política de arquivo|Arquivo|Remover um parceiro|Remove um parceiro específico de um arquivo.|G Suite, Box, One Drive, SharePoint|
 |Arquivos, Política de arquivo|Arquivo|Tornar privado|Torna o arquivo privado - não há mais parceiros ou links públicos, não compartilhados com qualquer pessoa.|G Suite, One Drive, SharePoint|
 |Arquivos, Política de arquivo|Arquivo|Remover usuários externos|Remove todos os parceiros externos - fora dos domínios configurados como internos nas Configurações.|G Suite, Box |
