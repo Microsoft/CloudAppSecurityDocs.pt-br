@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
-ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.openlocfilehash: 2f17135950b24bf6132ae09a132e557f42dcff14
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Instalação e configuração no Ubuntu
 
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
--   Sistema operacional: Ubuntu 14.04 ou superior
+-   Sistema operacional: Ubuntu 14.04 ou superior (não há nenhuma versão estável do docker que seja compatível com o Ubuntu 17.10)
 
 -   Espaço em disco: 250 GB
 
@@ -111,7 +111,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     |caslogcollector_syslogs_tcp|601-700|TCP|qualquer|qualquer|
     |caslogcollector_syslogs_udp|514-600|UDP|qualquer|qualquer|
       
-      ![Regras do Azure no Ubuntu](./media/ubuntu-azure-rules.png)
+      ![Regras do Azure no Ubuntu](./media/inbound-rule.png)
 
 3.  Volte para o computador e clique em **Conectar** para abrir um terminal no computador.
 
@@ -121,23 +121,21 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-6. No portal do Cloud App Security, na janela **Criar novo coletor de log**, copie o comando para importar a configuração do coletor no computador de hospedagem:
-
-      ![Azure no Ubuntu](./media/ubuntu-azure.png)
-
-7. Execute o comando para implantar o coletor de logs.
-
       ![Comando do Azure no Ubuntu](./media/ubuntu-azure-command.png)
 
-     >[!NOTE]
-     >Para configurar um proxy, adicione o endereço de IP do proxy e a porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado será: 
+6. No portal do Cloud App Security, na janela **Criar novo coletor de log**, copie o comando para importar a configuração do coletor no computador de hospedagem:
 
+      ![Azure no Ubuntu](./media/windows7.png)
+
+7. Execute o comando para implantar o coletor de logs.
+     
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Proxy do Ubuntu](./media/ubuntu-proxy.png)
 
 8. Para verificar se o coletor de logs está sendo executado corretamente, execute o seguinte comando: `Docker logs <collector_name>`. Você deve obter os resultados: **Concluído com êxito!**
 
+   ![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
@@ -166,7 +164,7 @@ Após ter verificado que os logs estão sendo carregados no Cloud App Security e
 ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Veja também
-[Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)  
+[Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier](https://premier.microsoft.com/)
 

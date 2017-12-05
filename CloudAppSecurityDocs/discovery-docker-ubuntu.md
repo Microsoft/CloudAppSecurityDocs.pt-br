@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Instalação e configuração no Ubuntu
 
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
--   Sistema operacional: Ubuntu 14.04 ou superior
+-   Sistema operacional: Ubuntu 14.04 ou superior (não há nenhuma versão estável do docker que seja compatível com o Ubuntu 17.10)
 
 -   Espaço em disco: 250 GB
 
@@ -153,7 +153,7 @@ Após ter verificado que os logs estão sendo carregados no Cloud App Security e
 ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Veja também
-[Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)  
+[Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)  
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier](https://premier.microsoft.com/)
 
