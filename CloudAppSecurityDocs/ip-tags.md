@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 758605fddf97c0f35cbc0c3029d20e536fc9dee1
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/10/2017
 ---
 #  <a name="IPtagsandRanges"></a> Trabalhando com marcações e intervalos de IP
 
@@ -40,7 +40,7 @@ O Cloud App Security é fornecido pré-configurado com marcações internas para
 Para usar essas marcações internas como parte de uma pesquisa, consulte a ID na documentação da API do Cloud App Security. 
 
 > [!NOTE]
-> Você pode adicionar intervalos de IP em massa por meio da criação de um script usando a [API de intervalos de endereço IP](https://portal.cloudappsecurity.com/api-docs/)
+> Você pode adicionar intervalos IP em massa por meio da criação de um script com a **API de intervalos de endereços IP**, que está localizada na barra de menus do portal do Cloud App Security. Para isso, basta clicar no ponto de interrogação e em **Documentação da API**.
 
 
 Marcas de endereço IP internas e marcas de IP personalizadas são consideradas hierarquicamente, com marcas de IP personalizadas, tendo precedência sobre as marcas de IP internas. Por exemplo, se um endereço IP estiver marcado como **Arriscado** com base em inteligência de ameaça, mas há uma marca IP personalizada que o identifica como **Corporativo**, as marcas e a categoria personalizada terão precedência.

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,22 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-112"></a>Lançamento 112 do Cloud App Security
+Lançado em 10 de dezembro de 2017
+
+-   Agora, para acessar a gaveta de informações relevante, basta clicar em um nome de usuário ou endereço IP no log de atividades. 
+-   Quando investigar atividades, clique no ícone de relógio para exibir facilmente todas as atividades da gaveta de informações dentro do mesmo período de tempo. Isso permite exibir todas as atividades realizadas dentro um período de 48 horas da atividade que você está exibindo.
+-   Melhorias implementadas no analisador de logs do Cloud Discovery para Juniper SRX.
+-   No caso das atividades monitoradas pelo proxy, expandimos o **objeto da atividade** para incluir informações relevantes para verificações de DLP. Além disso, expandimos as políticas correspondentes para incluir violações de DLP, quando for o caso.
+
 
 ## <a name="cloud-app-security-release-111"></a>Cloud App Security versão 111
 Lançado em 26 de novembro de 2017
@@ -72,7 +81,7 @@ Lançadas em setembro/outubro de 2017
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security versão 104 
 Lançado em 27 de agosto de 2017
 
--   Agora você pode adicionar intervalos de IP em massa por meio da criação de um script usando a [API de intervalos de endereço IP](https://portal.cloudappsecurity.com/api-docs/). 
+-   Agora, você pode adicionar intervalos de IP em massa por meio da criação de um script com a **API de intervalos de endereços IP**, que está localizada na barra de menus do portal do Cloud App Security. Para isso, basta clicar no ponto de interrogação e em **Documentação da API**. 
 -   O Cloud Discovery agora fornece melhor visibilidade para transações bloqueadas, apresentando o total de transações e as transações bloqueadas.
 -   Agora você pode filtrar aplicativos de nuvem com base em se eles são certificados com a **ISO 27017**. Esse novo fator de risco do Catálogo de Aplicativos de Nuvem determina se o provedor de aplicativo tem essa certificação, que estabelece os controles normalmente aceitos e as diretrizes para processar e proteger as informações do usuário em um ambiente de computação em nuvem pública.
 - Para ajudá-lo a se preparar para a conformidade com o GDPR, reunimos as instruções de preparação dos aplicativos de nuvem no Catálogo de Aplicativos de Nuvem. Isso ainda não afeta a pontuação de risco do aplicativo, mas fornecerá um link para a página de preparação do GDPR do distribuidor do aplicativo, assim que estiver disponível. A Microsoft ainda não verificou o conteúdo, portanto não é responsável pela respectiva validade.
