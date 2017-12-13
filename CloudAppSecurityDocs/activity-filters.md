@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: b13f7c6270b79050e8ba0f871f2096f420bf6691
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="activities"></a>Atividades
 O Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. 
@@ -134,7 +134,13 @@ Você pode exibir mais informações sobre cada atividade clicando na própria a
 
  Os campos na gaveta Atividade fornecem links contextuais para atividades adicionais e análises detalhadas que você talvez queira executar diretamente na gaveta. Por exemplo, se você mover o cursor para próximo da categoria de endereço IP, pode usar o ícone para adicionar filtro ![adicionar filtro](./media/add-to-filter-icon.png) para adicionar o endereço IP imediatamente ao filtro da página atual. Você também pode usar o ícone de engrenagem de configurações ![ícone de configurações](./media/contextual-settings-icon.png) que aparece diretamente na página de configurações necessária para alterar a configuração de um dos campos, tais como **Grupos de usuários**.
 
-
+ Use os ícones na parte superior da guia para:
+ - Exibir atividades do mesmo tipo
+ - Exibir todas as atividades do mesmo usuário
+ - Exibir atividades do mesmo endereço IP
+ - Exibir atividades da mesma localização geográfica
+ - Exibir atividades do mesmo período de tempo (48 horas)
+ 
 ![gaveta de atividades](./media/activity-drawer.png "gaveta de atividades")  
   
 Para obter uma lista das ações de governança disponíveis, consulte [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
@@ -165,7 +171,7 @@ Para exibir as informações sobre endereço IP:
 
 1. Clique na atividade em si no **Log de atividades**.
 
-2. Em seguida, clique na guia **Endereço IP**. <br></br> Isso abre a guia **Endereço IP** da Gaveta de atividades e fornece as seguintes informações sobre o endereço IP:
+2. Em seguida, clique na guia **Endereço IP**. <br></br> Esse recurso abre a guia **Endereço IP** da gaveta de atividades, que fornece as seguintes informações sobre o endereço IP:
     - **Abrir alertas**: o número de alertas abertos envolvendo o endereço IP.
     - **Atividades**: o número de atividades executadas pelo endereço IP nos últimos 30 dias.
     - **Localização do IP**: as localizações geográficas a partir das quais o endereço IP foi conectado nos últimos 30 dias.
@@ -175,6 +181,7 @@ Para exibir as informações sobre endereço IP:
         - Marcar como arriscado 
         - Marcar como endereço IP de VPN
         - Marcar como IP arriscado e adicionar ao grupo bloqueado
+
 
 ![Informações do endereço IP no Cloud App Security](./media/ip-address-insights.png)
 
