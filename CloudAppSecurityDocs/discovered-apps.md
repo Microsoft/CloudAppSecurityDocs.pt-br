@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/26/2017
+ms.date: 1/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d349488692f006908426fd8f33eb6ae654350958
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
+ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
@@ -52,46 +52,6 @@ Na página **Aplicativos descobertos**, em **Procurar por categoria**, selecione
 
 Depois que os resultados são filtrados, você pode [cancelar a sanção e bloqueá-los](governance-discovery.md) usando a caixa de seleção de ação em massa para cancelar a sanção de todos eles em uma ação só. Depois que eles tiverem a sanção cancelada, você poderá usar um script de bloqueio para impedir que eles sejam usados em seu ambiente.
 
-O Cloud Discovery permite aprofundar ainda mais no uso de nuvem da sua organização e identificar instâncias específicas que estão em uso ao investigar os subdomínios de descoberta.
-
-Por exemplo, você pode diferenciar entre os diferentes sites do SharePoint.
-
-Isso tem suporte apenas em firewalls e proxies que contêm dados de URL de destino. Consulte a lista de dispositivos com suporte em [Proxies e firewalls com suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
-
-![informações de subdomínio](./media/discovery-domains.png)  
-
-## <a name="discovered-app-filters"></a>Filtros dos aplicativos descobertos
-
-Há filtros de aplicativos Descoberto básicos e avançados. Para alcançar um filtro complexo (como no exemplo acima), use a opção avançada, que inclui todos os itens a seguir:
-
-![Aplicativos Descobertos](./media/discovered-apps.png)  
-
-
-- **Marca de aplicativo**: selecione se o aplicativo foi sancionado, não sancionado ou não está marcado. Além disso, você pode criar uma marca personalizada para seu aplicativo e, em seguida, usá-la para filtrar tipos específicos de aplicativos. 
-- **Aplicativos e domínios**: permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos. 
-- **Categorias**: o filtro de categorias, que está localizado à esquerda da página, permite pesquisar tipos de aplicativos de acordo com as categorias de aplicativo, por exemplo, aplicativos de rede Social, aplicativos de armazenamento em nuvem etc. Você pode selecionar várias categorias por vez ou uma única categoria e, em seguida, aplicar os filtros básicos e avançados sobre eles.
-- **Fator de risco de conformidade**: permite que você pesquise padrões específicos, certificação e conformidades com as quais o aplicativo pode cumprir (HIPAA ISO 27001, SOC 2, PCI-DSS etc.).
-- **Fator de risco geral**: permite que você pesquise fatores de risco gerais, como a popularidade do consumidor, Data center local etc.
-- **Pontuação de risco**: permite que você filtre aplicativos por classificação de risco para que você possa se concentrar, por exemplo, revisando somente os aplicativos muito arriscados. Você também pode substituir a pontuação de risco definida pelo Cloud App Security. Para saber mais, confira [Trabalhando com pontuação de risco](risk-score.md).
-- **Fator de risco de segurança**: habilita a filtragem com base em medidas específicas de segurança (como Criptografia em rest, autenticação multifator etc.).
-- **Uso**: permite filtrar com base em estatísticas de uso deste aplicativo, como aplicativos com menos de ou mais de uma quantidade especificada de **carregamentos de dados**, aplicativos com maior ou menor que um número especificado de **Usuários**.
-
-## <a name="creating-and-managing-custom-app-tags"></a>Criando e gerenciando marcas de aplicativo personalizadas
-
-Você pode criar uma marca de aplicativo personalizada. Essas marcas podem ser usadas como filtros para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. Por exemplo, lista de observação personalizada, atribuição a uma unidade de negócios específica ou aprovações personalizadas, como "aprovado pelo departamento jurídico".
-
-Para criar uma marca de aplicativo personalizada:
-
-1. Na engrenagem **Configurações**, selecione **Cloud Discovery** e na guia **Gerenciar marcas de aplicativo**, clique no ícone ![de adição](./media/plus-icon.png). 
-
-![criar marca de aplicativo personalizada](./media/create-app-tag.png)
-
-2. Você pode usar a tabela **Gerenciar marcas de aplicativo** para exibir quais aplicativos atualmente são marcados com cada marca de aplicativo e você pode excluir marcas de aplicativo não utilizados.
-
-3. Para aplicar uma marca de aplicativo, na guia **Aplicativos descobertos**, clique nos três pontos na extremidade direita da tabela e selecione a marca do aplicativo para aplicar. 
-
-> [!NOTE]
->Você também pode criar uma nova marca de aplicativo diretamente na tabela **Aplicativos descobertos** clicando na marca **Criar aplicativo** depois de selecionar os três pontos à direita de qualquer aplicativo selecionado. Você também pode acessar a tela **Gerenciar marcas de aplicativo** clicando no link no canto do pop-up **Criar marca de aplicativo**.
 
 ## <a name="exclude-entities"></a>Excluir entidades  
 Se você tiver usuários do sistema ou endereços IP que são particularmente ruidosos e não interessantes ou aplicativos que não são relevantes, talvez você deseje excluir os dados deles dos dados do Cloud Discovery que são analisados. Por exemplo, você talvez queira excluir todas as informações provenientes de 127.0.0.1 ou do host local.  
@@ -162,7 +122,7 @@ Para excluir os dados do Cloud Discovery:
 
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
  
 [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
