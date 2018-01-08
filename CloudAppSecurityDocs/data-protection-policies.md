@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fb64a080a1b74b89be98410fefba5f9821704645
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: ebf5f375cdb0df5f844452beea8259a190d3c0c1
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="file-policies"></a>Políticas de arquivos  
 As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso.  
@@ -108,7 +108,7 @@ Cada política é composta pelas seguintes partes:
   
     -  [As ações de governança](governance-actions.md) podem ser executadas por meio de mecanismos de terceiros para impor o controle de criptografia personalizado ou outros tipos de processamento de arquivo (por exemplo, aplicação de marca d’água personalizada).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
