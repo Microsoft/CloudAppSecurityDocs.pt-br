@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0a16c3f02c4a39b36766c532ea4e50868c3425
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 161fbf275bfea2ceafbb36e56b1ba91fcd564543
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Instalação e configuração no Ubuntu
 
@@ -72,7 +72,10 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
     b. Atribua um **nome** ao coletor de logs.
 
-    c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker.
+    c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. 
+
+     > [!NOTE]
+     > O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
 
     d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
 
@@ -111,8 +114,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     |caslogcollector_syslogs_tcp|601-700|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
     |caslogcollector_syslogs_udp|514-600|UDP|<Sub-rede do endereço IP do dispositivo>|qualquer|
       
-    
-      ![Regras do Azure no Ubuntu](./media/inbound-rule.png)
+     ![Regras do Azure no Ubuntu](./media/inbound-rule.png)
 
 3.  Volte para o computador e clique em **Conectar** para abrir um terminal no computador.
 
@@ -164,7 +166,7 @@ Após ter verificado que os logs estão sendo carregados no Cloud App Security e
 
 ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
 [Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier](https://premier.microsoft.com/)

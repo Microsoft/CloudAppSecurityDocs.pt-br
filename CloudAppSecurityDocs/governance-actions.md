@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: 167593985fcf88e87cce4e524dd0d91d06de0cbf
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades.
@@ -136,6 +136,8 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Política de arquivo e Política de atividade|Arquivo, Atividade|Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação.|Tudo|
 |Política de arquivo e Arquivos|Arquivo|Remover a capacidade do editor de compartilhar|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança restringe essa opção e também o compartilhamento de arquivos com o proprietário.|G Suite|
 |Política de arquivo e Arquivos|Arquivo|[Colocar em quarentena do administrador](use-case-admin-quarantine.md)|Remove qualquer permissão do arquivo e o move para uma pasta de quarentena em um local para o administrador. Isso permite que o administrador examine o arquivo e o remova.|Office 365 SharePoint, OneDrive for Business, Box|
+|Política de arquivo e Arquivos|Arquivo|Aplicar rótulo de classificação|Aplica um rótulo de classificação da Proteção de Informações do Azure a arquivos automaticamente de acordo com as condições definidas na política.|Box, One Drive, SharePoint|
+|Política de arquivo e Arquivos|Arquivo|Remover rótulo de classificação|Remove um rótulo de classificação da Proteção de Informações do Azure de arquivos automaticamente de acordo com as condições definidas na política.|Box, One Drive, SharePoint|
 |Política de arquivos, Política de atividade, Alertas|Aplicativo|Exigir que os usuários entrem novamente|Você pode exigir que os usuários entrem novamente no Office 365 e em todos os aplicativos do Azure AD como uma correção rápida e eficaz para alertas de atividade do usuário suspeita e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário.|Office 365, Azure AD|
 |Arquivos|Arquivo|Restaurar da quarentena do usuário|Restaura um usuário de ser colocado em quarentena.|Caixa|
 |Arquivos|Arquivo|Conceder permissões de leitura para mim|Concede permissões de leitura do arquivo para você mesmo, de forma que você possa acessar o arquivo e entender se ele tem uma violação ou não.|G Suite|
@@ -158,7 +160,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 
 
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

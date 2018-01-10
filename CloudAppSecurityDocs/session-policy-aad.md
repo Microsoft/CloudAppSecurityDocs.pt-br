@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: 62694b685bb82074d74c72b4ec60f4e0e7436fd1
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="session-policies"></a>Políticas de sessão 
 
 > [!NOTE]
 > Este é um recurso de versão prévia.
 
-As políticas de sessão do Cloud App Security habilitam o monitoramento em tempo real de nível de sessão, oferecendo visibilidade granular de aplicativos de nuvem e a capacidade de executar ações diferentes dependendo da política configurada para uma sessão de usuário. Em vez de permitir ou bloquear o acesso completamente, com o controle de sessão, é possível permitir acesso ao monitorar a sessão e/ou limitar atividades de sessão específicas. 
+As políticas de sessão do Cloud App Security habilitam o monitoramento em tempo real de nível de sessão, oferecendo visibilidade granular de aplicativos de nuvem e a capacidade de executar ações diferentes dependendo da política configurada para uma sessão de usuário. Em vez de [permitir ou bloquear o acesso por completo](access-policy-aad.md), com o controle de sessão, é possível permitir o acesso durante o monitoramento da sessão e/ou limitar atividades de sessão específicas. 
 
 Por exemplo, é possível decidir que, de dispositivos não gerenciados ou, para sessões provenientes de locais específicos, você deseja permitir que o usuário acesse o aplicativo, mas também limitar o download de arquivos confidenciais ou requerer que determinados documentos sejam protegidos no download. As políticas de sessão permitem que você configure esses controles de sessão de usuário. 
 
@@ -34,6 +34,8 @@ Por exemplo, é possível decidir que, de dispositivos não gerenciados ou, para
 - Os aplicativos relevantes devem ser [implantados com o proxy](proxy-deployment-aad.md)
 - Uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redireciona os usuários para o proxy do Cloud App Security deve estar em vigor, conforme descrito abaixo.
 
+> [!NOTE]
+> - As políticas de sessão também dão suporte a aplicativos configurados com provedores de identidade diferentes do Azure AD na Versão Prévia Privada. Para obter mais informações sobre a Versão Prévia Privada, envie um email para mcaspreview@microsoft.com.
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>Criar uma política de acesso condicional do Azure AD
 
@@ -160,7 +162,7 @@ Quando o **bloco** for definido como a **Ação** que deseja colocar na polític
 Quando **Proteger** é definido como a **Ação** a ser executada na política de sessão do proxy do Cloud App Security, o proxy determina o rótulo e a proteção subsequentes de um arquivo de acordo com os filtros de arquivo da política. Os rótulos são configurados no console de Proteção de Informações do Azure no Azure e **Proteger** deve ser selecionado no rótulo para que o rótulo seja exibido como uma opção na política do Cloud App Security. Quando um rótulo for selecionado e um arquivo que atende aos critérios da política do Cloud App Security for baixado, o rótulo e a proteção correspondente (com permissões) serão aplicados ao arquivo após o download. O arquivo original permanece como está no aplicativo de nuvem, enquanto o arquivo baixado agora está protegido. Os usuários que tentam acessar o arquivo devem atender os requisitos de permissão determinados pela proteção aplicada.  
  
  
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Bloqueio de downloads em dispositivos não gerenciados, usando funcionalidades de proxy do Azure AD](use-case-proxy-block-session-aad.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

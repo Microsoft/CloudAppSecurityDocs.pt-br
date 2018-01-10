@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2acabcc195b8496f0a9bda812cc11b289911b81a
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="siem-integration"></a>Integração ao SIEM
     
@@ -130,57 +130,25 @@ Bem como o seguinte exemplo de arquivo de log de alertas:
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Alertas de exemplo do Cloud App Security em CEF (Formato Comum de Evento)
 
 
-##### <a name="activity-logs"></a>Logs de Atividade
+|Aplicável a|Nome do campo CEF|Descrição|
+|----|-----|----|
+|Atividades/Alertas|start| Carimbo de data/hora da atividade ou do alerta|
+|Atividades/Alertas|end|Carimbo de data/hora da atividade ou do alerta|
+|Atividades/Alertas|rt|Carimbo de data/hora da atividade ou do alerta|
+|Atividades/Alertas|msg |Descrição da atividade ou do alerta, conforme mostrado no portal|
+|Atividades/Alertas|suser| Usuário de entidade da atividade ou do alerta|
+|Atividades/Alertas|destinationServiceName| Aplicativo de origem da atividade ou do alerta; por exemplo, Office 365, SharePoint e Box.|
+|Atividades/Alertas|cs<X>Label|Cada rótulo tem um significado diferente, mas o rótulo em si é autoexplicativo; por exemplo, targetObjects (objetos de destino).|
+|Atividades/Alertas|cs<X>|As informações correspondentes ao rótulo (o usuário de destino da atividade ou do alerta, de acordo com o exemplo de rótulo).|
+|Atividades|EVENT_CATEGORY_* |Categoria de alto nível da atividade|
+|Atividades|<ACTION> |O tipo de atividade, conforme exibido no portal|
+|Atividades|externalId| ID do evento|
+|Atividades|dvc| IP do dispositivo do cliente|
+|Atividades|requestClientApplication|Agente do usuário do dispositivo do cliente|
+|Alertas|<alert type>|Por exemplo, “ALERT_CABINET_EVENT_MATCH_AUDIT”|
+|Alertas|<name>|O nome da política correspondente|
+|Alertas|externalId|ID do Alerta|
 
--   EVENT_CATEGORY_* – Categoria de atividade de alto nível
-
--   <ACTION> – O tipo de atividade, conforme exibido no portal
-
--   externalId – ID do evento
-
--   start – Carimbo de data/hora da atividade
-
--   end – Carimbo de data/hora da atividade
-
--   rt – Carimbo de data/hora da atividade
-
--   msg – Descrição do evento, conforme exibido no portal
-
--   suser – Atividade do usuário
-
--   destinationServiceName – Aplicativo de origem da atividade; por exemplo, Office 365, Sharepoint e Box.
-
--   dvc – IP do dispositivo do cliente
-
--   requestClientApplication – Agente do usuário do dispositivo do cliente
-
--   cs<X>Label – Cada rótulo tem um significado diferente, mas o rótulo em si é autoexplicativo; por exemplo, targetObjects (objetos de destino).
-
--   cs<X> – As informações relacionadas ao rótulo (o usuário de destino da atividade ou do alerta, de acordo com o exemplo de rótulo).
-
-##### <a name="alerts"></a>Alertas
-
--   <alert type> – Por exemplo, "ALERT_CABINET_EVENT_MATCH_AUDIT"
-
--   <name> – O nome da política correspondente
-
--   externalId – ID do alerta
-
--   start – Carimbo de data/hora do alerta
-
--   end – Carimbo de data/hora do alerta
-
--   rt – Carimbo de data/hora do alerta
-
--   msg – Descrição do alerta conforme exibido no portal
-
--   suser – Usuário da entidade do alerta
-
--   destinationServiceName – Aplicativo de origem do alerta; por exemplo, Office 365, SharePoint e Box
-
--   cs<X>Label – Cada rótulo tem um significado diferente, mas o rótulo em si é autoexplicativo; por exemplo, targetObjects (objetos de destino).
-
--   cs<X> – As informações relacionadas ao rótulo (o usuário de destino da atividade ou do alerta, de acordo com o exemplo de rótulo).
 
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Etapa 3: validar se o agente SIEM está funcionando
@@ -215,7 +183,7 @@ Se precisar excluir o agente SIEM no futuro, você poderá clicar nos três pont
 
 O agente SIEM é um ponto de extremidade único que oferece suporte à recuperação de até dois dias de tempo de inatividade. É possível alcançar uma medida adicional de alta disponibilidade com um balanceador de carga como o ponto de extremidade do cliente.
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Solução de problemas de integração de SIEM](troubleshooting-siem.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
