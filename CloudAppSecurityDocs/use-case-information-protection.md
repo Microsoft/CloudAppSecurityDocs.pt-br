@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e6c7365be26dc379bcf0269812931387972bc8f
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6ef94215cbb07dd35e9353e3a63b9e575905b16b
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure  
 
@@ -41,16 +41,16 @@ Esse alto nível de proteção acompanha o arquivo – se você enviar o arquivo
 Um usuário em sua organização salva arquivos de informações confidenciais de clientes no Box e programa-o para ser compartilhado com todas as pessoas na organização. O usuário não percebe que, além de sua equipe imediata, a equipe de suporte inteira tem acesso a essa conta do Box, incluindo fornecedores, parceiros e os visitantes que ocasionalmente passam no escritório. Agora, qualquer pessoa com acesso à conta do Box de sua organização tem acesso a essas informações. Isso pode ser não apenas perigoso para os clientes, mas pode ser contra os regulamentos de PII em muitos países, causando possíveis problemas legais.
 
 ## <a name="the-solution"></a>A solução
-Use o Cloud App Security com a Proteção de Informações do Azure para inserir as informações de classificação e proteção para obter uma proteção persistente que segue seus dados – garantindo que permaneçam protegidos, independentemente de onde estão armazenados ou com quem são compartilhados. Isso também permite que você compartilhe dados com segurança com colegas de trabalho, bem como seus parceiros e clientes. Defina quem pode acessar os dados e o que pode fazer com eles – como permitir que os usuários exibam e editem arquivos, mas não imprimam nem encaminhem, além de outras [ações de governança](governance-actions.md) compatíveis com o Cloud App Security, como remover colaboradores e remover recursos de compartilhamento.
+Use o Cloud App Security com a Proteção de Informações do Azure para inserir as informações de classificação e proteção para obter uma proteção persistente que segue seus dados – garantindo que permaneçam protegidos, independentemente de onde estão armazenados ou com quem são compartilhados. Isso também permite que você compartilhe dados com segurança com colegas de trabalho, bem como seus parceiros e clientes. Defina quem pode acessar os dados e o que eles podem fazer com eles – como permitir que os usuários exibam e editem arquivos, mas não imprimam nem encaminhem, além de outras [ações de governança](governance-actions.md) compatíveis com o Cloud App Security, como remover colaboradores e remover recursos de compartilhamento.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Habilite o Cloud App Security e a Proteção de Informações do Azure para seu locatário
+- [Habilitar o Cloud App Security e a Proteção de Informações do Azure](azip-integration.md) no locatário.
 - [Conectar o Box](connect-box-to-microsoft-cloud-app-security.md) ao Cloud App Security.
 
 ## <a name="setting-up-data-protection"></a>Configurando a proteção de dados
 
-Vamos configurar uma política que procura os números de cartão de crédito em arquivos armazenados em sua conta do Box e, quando eles forem encontrados, .
+Vamos configurar uma política que procura números de cartão de crédito em arquivos armazenados em sua conta do Box e, quando eles forem encontrados, aplicaremos automaticamente um rótulo da Proteção de Informações do Azure e, em seguida, com esse rótulo, controlaremos o que acontece com todos os arquivos.
 
 1. Comece a proteger os dados armazenados no Box configurando uma política que criptografará todos os dados confidenciais armazenados no Box:
 
@@ -89,7 +89,7 @@ Vamos configurar uma política que procura os números de cartão de crédito em
 >O Cloud App Security atualmente é compatível com a aplicação automática de rótulos da Proteção de Informações do Azure no Box, SharePoint e OneDrive for business.
 
 
- ## <a name="see-also"></a>Veja também  
+ ## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

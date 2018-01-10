@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb0703442d3568556dc54df5e1bd7901906ca9b3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar o AWS ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Amazon Web Services existente usando as APIs do conector.  
@@ -36,20 +36,12 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
 
      ![criar usuário no AWS](./media/aws-create-user.png "Criar usuário no AWS")
 
-5. Na etapa **Permissões**, selecione **Anexar as políticas existentes diretamente** e, em seguida, clique em **Criar política**.
+5. Clique na guia JSON:
 
-   ![Anexar usuário no AWS](./media/aws-attach-user-policy.png "Anexar política de usuário no AWS")
+     ![AWS JSON](./media/aws-json.png "guia AWS JSON")
 
-6.  Em **Criar Política**, selecione **Criar sua Própria Política**.
- 
-    ![Criar sua própria política no AWS](./media/aws-create-own-policy.png "Criar política no AWS")
- 
-7.  Em **Examinar Política**, forneça um **Nome da Política**, por exemplo CloudAppSecurityPolicy.
+6. Cole o seguinte script na área fornecida:
 
-    ![Examinar a política no AWS](./media/aws-review-policy.png "Examinar a política no AWS")
-
-8. Em seguida, cole o seguinte script no campo **Documento de política** e clique em **Criar política**:
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -71,7 +63,15 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
      }  
   
     ```  
-  
+
+     ![Código AWS](./media/aws-code.png "Código AWS")
+    
+6. Clique em **Examinar política**.
+
+7. Forneça um **Nome** e clique em **Criar política**.
+
+     ![Nomear política no AWS](./media/aws-create-policy.png "Criar política no AWS")
+
 9. De volta à tela **Adicionar usuário**, atualize a lista se necessário, selecione o usuário que você criou e clique em **Próxima Revisão**.
 
    ![Revisar a política de usuário no AWS](./media/aws-review-user.png "Revisar usuário no AWS")
@@ -111,7 +111,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 Depois de conectar o AWS, você receberá eventos por sete dias antes da conexão. Se você acabou de habilitar o CloudTrail, nesse caso, você receberá eventos a partir do momento em que habilitou o CloudTrail.
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
-ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
+ms.openlocfilehash: b1155fa6ade88636f2dac575bfaa84db0f7bdd8b
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Instalação e configuração no Ubuntu
 
@@ -62,8 +62,9 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     d. Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.
 
     e. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
-    >[!NOTE]
-    >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
+    
+     >[!NOTE]
+     >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
 
     f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.
 
@@ -73,15 +74,18 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
     b. Atribua um **nome** ao coletor de logs.
 
-    c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker.
+    c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. 
+       
+       > [!NOTE]
+       > O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
 
     d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
 
     ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - Um único coletor de logs pode lidar com várias fontes de dados.
-    >- Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
+     >  [!NOTE]
+     > - Um único coletor de logs pode lidar com várias fontes de dados.
+     > - Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
 
 4.  Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone copiar para a área de transferência ![ícone copiar para a área de transferência](./media/copy-icon.png).
 
@@ -91,7 +95,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – Implantação local de seu computador
 
-> [!Note]
+> [!NOTE]
 > As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantação para outras plataformas são ligeiramente diferentes.
 
 1.  Abra um terminal em seu computador Ubuntu.
@@ -152,8 +156,11 @@ Após ter verificado que os logs estão sendo carregados no Cloud App Security e
 
 ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
-## <a name="see-also"></a>Veja também
-[Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)  
+## <a name="see-also"></a>Consulte Também
+
+[Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)
+
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier](https://premier.microsoft.com/)
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Implante o proxy para aplicativos do Azure AD
 
@@ -78,7 +78,7 @@ Siga estas etapas para configurar aplicativos do Azure AD para ser controlados p
 
         ![Identificação de dispositivo](./media/device-identification.png)
  
-       Depois que o certificado for carregado, você poderá criar políticas de sessão dependendo se a **Marca do dispositivo** é igual a ou não é igual ao **Certificado de cliente válido**.
+       Depois que o certificado for carregado, você poderá criar políticas de acesso e políticas de sessão dependendo se a **Marca do dispositivo** é igual ou não ao **Certificado do cliente válido**.
  
       > [!NOTE]
       >Um certificado será solicitado de um usuário somente se a sessão corresponder a uma política que usa o filtro de certificado de cliente válido. 
@@ -99,11 +99,11 @@ Para certificar-se de que a atividade será capturada corretamente, clique em um
  ![teste a marca de agente do usuário](./media/domain-joined.png)
 
 
-Agora você está pronto para criar [Políticas de sessão](session-policy-aad.md) para controlar seus aplicativos de proxy.
+Agora você está pronto para criar [políticas de acesso](access-policy-aad.md) e [políticas de sessão](session-policy-aad.md) para controlar seus aplicativos de proxy.
 
 
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Trabalhando com o proxy do Cloud App Security](proxy-intro-aad.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
