@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/25/2017
+ms.date: 1/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4bc6716b469962e1196b76ab7d55652d2081af51
-ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
+ms.openlocfilehash: ec5fbb7ee06a8b57374fb5f36efeecea4413191e
+ms.sourcegitcommit: 09eabb9b69a01790476641d6e672d125ea057fbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -51,7 +51,7 @@ Arquivos que foram rotulados com proteção fora do Cloud App Security atualment
 ## <a name="how-it-works"></a>Como funciona
 Provavelmente você já está familiarizado com os rótulos de classificação de arquivos na [Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/). As marcações de classificação da Proteção de Informações do Azure são exibidas no Cloud App Security. Assim que você integrar o Cloud App Security à Proteção de Informações do Azure, o Cloud App Security verificará os arquivos da seguinte maneira:
 1. O Cloud App Security recupera a lista de todos os rótulos de classificação usados em seu locatário. Isso é executado a cada hora para manter a lista atualizada.
-2. Em seguida, o Cloud App Security verifica os arquivos quanto aos rótulos de classificação, da seguinte maneira: a. Se você habilitou a verificação automática (veja a seguir), todos os arquivos novos ou modificados serão adicionados à fila de verificação.
+2. Em seguida, o Cloud App Security verifica os arquivos quanto aos rótulos de classificação, da seguinte maneira: a. Se você habilitar a varredura automática (veja a seguir), todos os arquivos novos ou modificados serão adicionados à fila de varredura e todos os arquivos e repositórios existentes serão verificados, classificados e protegidos.
     b. Se você definiu uma política de arquivos (veja o seguinte) para pesquisar rótulos de classificação, esses arquivos serão adicionados à fila de verificação de rótulos de classificação.
 3. Conforme observado acima, essas são verificações dos rótulos de classificação descobertos na verificação inicial que o Cloud App Security executa para saber quais rótulos de classificação são usados em seu locatário. Rótulos externos, ou seja, rótulos de classificação definidos por alguém externo ao seu locatário, são adicionados à lista de rótulos de classificação. Se não quiser examinar esses rótulos, marque a caixa de seleção **Somente examinar arquivos para rótulos de classificação da Proteção de Informações do Azure deste locatário** (veja a seguir).
 4. Depois que você habilitar a Proteção de Informações do Azure no Cloud App Security, todos os novos arquivos que forem adicionados ao Office 365 também serão verificados quanto aos rótulos de classificação.
