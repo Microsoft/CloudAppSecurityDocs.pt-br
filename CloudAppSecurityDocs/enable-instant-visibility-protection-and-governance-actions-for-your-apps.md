@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: 4e0732cce649b7d6c2767325e3c232c36b523fec
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-apps"></a>Conectar aplicativos 
 Os conectores de aplicativos aproveitam as APIs de provedores de aplicativo para proporcionar maior visibilidade e controle com o Cloud App Security sobre os aplicativos aos quais você se conecta.  
@@ -82,7 +82,7 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 |**Quarentena**|✔|✔|Não Aplicável|Em breve|||Em breve||  
 |**Exibir permissões de aplicativo**|✔|Sem suporte pelo provedor|Não Aplicável|✔||✔|Sem suporte pelo provedor||  
 |**Revogar permissões de aplicativo**|✔||Não Aplicável|✔||✔|Não Aplicável||  
-  
+|**Aplique os rótulos da Proteção de Informações do Azure**|✔|✔|||||||  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
 
@@ -111,9 +111,9 @@ Para usar conectores de aplicativos, você precisa ter certeza de que tem o segu
 **ExpressRoute**  
   
 O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para latência, desempenho e segurança aprimorados. Não há nenhuma etapa de configuração necessária do lado do cliente.  
-Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da ExpressRoute e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

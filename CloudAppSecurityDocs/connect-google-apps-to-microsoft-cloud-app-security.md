@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 1/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
-ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
+ms.openlocfilehash: 1742fbaae18fe4624bf057e54b9e11d2d68c5335
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar o G Suite ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do G Suite existente usando as APIs do conector.
@@ -25,7 +25,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
 ## <a name="configure-g-suite"></a>Configurar G Suite  
   
-1.  Como um Superadministrador do G Suite, faça logon em [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
+1.  Como um Superadministrador do G Suite, faça logon em <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
   
 2.  Clique em **Criar projeto** para iniciar um novo projeto.  
   
@@ -113,7 +113,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     -   **Short Description & Long Description (Descrição curta e descrição longa)** (opcional): o Microsoft Cloud App Security fornece a visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem.  
   
-    -   O Google exige que você carregue pelo menos um ícone do aplicativo. Acesse [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) para baixar o arquivo zip que contém os ícones do Cloud App Security. Em seguida, em **Application icon (Ícone do aplicativo)**, arraste e solte as imagens 128x128 e 32x32.  
+    -   O Google exige que você carregue pelo menos um ícone do aplicativo. Acesse [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) para baixar o arquivo zip que contém os ícones do Cloud App Security. Em seguida, no **ícone do aplicativo**, clique em **Selecionar** ao lado da imagem 128x128 e arraste-a para a tela pop-up. Clique em **Selecionar** ao lado da imagem 32x32 e arraste-a para a tela pop-up.  
   
     -   Role para baixo na seção **Integração de unidade**, digite a seguinte URL em **Abrir URL:**  
   
@@ -184,7 +184,8 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
            https://www.googleapis.com/auth/admin.directory.device.mobile  
   
            https://www.googleapis.com/auth/admin.directory.user  
-  
+
+    -   Quando a Suite G solicita visibilidade, selecione **Meu domínio** (não público). 
     -   Clique em **Save Changes (Salvar Alterações)**.  
   
 22. Vá para [admin.google.com](https://admin.google.com/) e, em seguida, escolha **Segurança**. 
