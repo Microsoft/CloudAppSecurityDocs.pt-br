@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.app: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b95533e39ce21693f46d431fcc70d82a2d423d1
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 56b29da76a14e95b2ec3b31083013befb9ce8f21
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="built-in-report-reference"></a>Referência de relatório interno
 
@@ -40,9 +40,9 @@ A tabela a seguir fornece uma lista de relatórios internos e os tipos de evento
 |Gerenciamento de dados|Compartilhamento de saída por domínio|Este relatório lista os domínios com os quais os arquivos corporativos são compartilhados por seus funcionários. Para cada domínio, o relatório detalha quais usuários corporativos estão compartilhando arquivos com aquele domínio, quais arquivos são compartilhados e quais são os parceiros com quem os arquivos são compartilhados. É recomendável que você gerencie o compartilhamento com esses domínios por meio da guia Arquivos na página do aplicativo de cada aplicativo relevante.|  
 |Gerenciamento de dados|Proprietários de arquivos compartilhados|Este relatório lista os usuários que estão compartilhando arquivos corporativos com o mundo exterior. Os arquivos compartilhados externamente são compartilhados com parceiros externos específicos. Os arquivos compartilhados publicamente são acessíveis para qualquer pessoa na Internet, por meio de um link privado, e podem ser localizados apenas por aqueles que são explicitamente expostos ao link. Os arquivos compartilhados publicamente (Internet) podem ser acessados por qualquer pessoa na Internet, até mesmo por meio de um resultado de mecanismo de pesquisa.  Se você encontrar usuários que compartilham uma quantidade excessiva de arquivos, será recomendável que você investigue a natureza dessas permissões de compartilhamento excessivas usando a guia Arquivos e entre em contato com esses usuários para compreender melhor o uso do compartilhamento externo.|  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Controle](control.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
