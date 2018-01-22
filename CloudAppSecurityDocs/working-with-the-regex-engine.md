@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2c5f767745079d9e1e4d796dc236a210f95d9b85
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: 1f6ee1a96a7f65c903fe6e0978fd9a31d850697e
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
  
@@ -60,9 +60,9 @@ Expressões de exemplo
 |d.n't\s{0,10}c.r.|Não importa<br /><br /> D!n'tcor0<br /><br /> Não importa|Sim<br /><br /> Sim<br /><br /> Não|  
  
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
 

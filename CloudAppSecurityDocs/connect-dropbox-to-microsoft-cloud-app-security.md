@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 56195253a603671d2f273616b652f5d821e80a51
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: bf26515a37f4471b03235df63eef564326976229
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar o Dropbox ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do Dropbox existente usando as APIs do conector.  
@@ -54,9 +54,9 @@ Depois de conectar o Dropbox, você receberá eventos por 60 dias antes da conex
 > [!NOTE] 
 > Todos os eventos do Dropbox de adição de arquivo são exibidos no Cloud App Security como Carregar arquivo para alinhamento com todos os outros aplicativos conectados ao Cloud App Security. 
  
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

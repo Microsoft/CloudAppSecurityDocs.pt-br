@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/26/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 63631cef50738096e98414a1a9dfe7a1218fc475
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 912d3118f8662e5d21234fe102d3415106b7fd69
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="discover"></a>Descobrir
 
@@ -109,9 +109,9 @@ Para excluir os dados do Cloud Discovery:
 
 
  
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

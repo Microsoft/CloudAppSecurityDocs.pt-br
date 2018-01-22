@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: abda59dfdde956447ea314f09ab00815ae717a38
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 0e771330feb92833e77c0699d33851d7d52d82ef
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="activity-policies"></a>Políticas de atividade
 As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.  
@@ -75,9 +75,9 @@ Usando **Atividade repetida**, você pode definir o número de atividades repeti
   
   
 -   Ações – a política fornece a um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são detectadas.  
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Políticas de proteção de dados](data-protection-policies.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7ffb49e882856b144fff028c7b10167b5c55356f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="investigate"></a>Investigar
 Depois de o Cloud App Security ser executado em seu ambiente de nuvem, você precisará de um estágio de aprendizado e investigação sobre como usa as ferramentas do Cloud App Security para obter uma compreensão mais profunda do que está acontecendo no seu ambiente de nuvem. Em seguida, com base em seu ambiente específico e como ele está sendo usado, você pode identificar os requisitos para proteger sua organização contra riscos.
@@ -152,7 +152,7 @@ Agora que você tem a política em vigor, está surpreso ao ver que recebe um al
 
      Se for permitido e esperar-se que ocorra novamente, você poderá modificar a política para evitar que esse tipo de evento seja considerado uma violação no futuro.  
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
 Para saber como controlar o aplicativo de nuvem da sua organização, consulte [Controlar](control.md).   
-Para obter suporte técnico, vá para a página de [suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).  
+
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier](https://premier.microsoft.com/).  
