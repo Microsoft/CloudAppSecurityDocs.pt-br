@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0258c3e505bf9e1d1b0511084919a0b52f237b4c
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: 56252b8d4bd7d69719b9ceb6fb05a9e8030f8ffd
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/27/2017
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB por hora.
-Os principais afunilamentos no processo de coleta de logs são:
+Os principais gargalos no processo de coleta de logs são:
 - Largura de banda da rede: a largura de banda da rede determina a velocidade de upload do log.
 - Desempenho de E/S da máquina virtual alocada pela sua equipe de TI: determina a velocidade na qual os logs são gravados no disco do coletor de logs.
 O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se sua configuração geralmente excede 50 GB por hora, é recomendável dividir o tráfego entre vários coletores de logs.
@@ -161,9 +161,9 @@ Após ter verificado que os logs estão sendo carregados no Cloud App Security e
 
 ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
-## <a name="see-also"></a>Veja também  
-[Trabalhando com dados do Cloud Discovery](working-with-cloud-discovery-data.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+## <a name="see-also"></a>Consulte Também  
+[Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
     
       

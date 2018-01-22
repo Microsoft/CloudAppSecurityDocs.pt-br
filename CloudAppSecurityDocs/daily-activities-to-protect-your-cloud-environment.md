@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8bfd63e9d2491025158526fa41fb2f5240df2a28
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="working-with-the-dashboard"></a>Trabalhar com o painel
 Depois de colocar o Cloud App Security em funcionamento, será necessário configurar fluxos de dados, sancionar os aplicativos que deseja permitir que as pessoas usem e definir políticas para monitorar seu ambiente de nuvem. Em seguida, você pode usar o Cloud App Security para controlar e proteger sua nuvem e gerenciar os riscos.  
@@ -40,5 +40,5 @@ O painel do Cloud App Security fornece uma visão geral das atividades e recurso
 
 ## <a name="next-steps"></a>Próximas etapas  
 Para obter mais informações sobre como investigar alertas, consulte [Investigar](investigate.md).  
-Para obter suporte técnico, visite a página de [suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier.](https://premier.microsoft.com/)  

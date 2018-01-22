@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c6bd0be8e8c3c7efea38fca7d20248826d628102
-ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
+ms.openlocfilehash: 5f4fd69cc11e5e7a3659b342c7c043f2a1eff5ae
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="what-are-the-differences-discovery-capabilities-in-azure-active-directory-and-microsoft-cloud-app-security"></a>Quais são as diferenças entre os recursos de descoberta do Azure Active Directory e do Microsoft Cloud App Security?
 
@@ -44,9 +44,9 @@ A seguir está uma comparação dos recursos de descoberta no Microsoft Cloud Ap
 ||Análise e relatórios contínuos|Sim|Sim|
 ||Detecção de anomalias para aplicativos descobertos|Sim||
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 
 Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).    
-Para obter suporte técnico, vá para a página de [suporte assistido do Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
+
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier](https://premier.microsoft.com/).   
 
