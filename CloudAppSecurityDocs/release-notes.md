@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
-ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
+ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-115"></a>Lançamento 115 do Cloud App Security
+Lançado em 21 de janeiro de 2018
+
+-   Este lançamento fornece uma experiência aprimorada ao selecionar pastas específicas nas políticas de arquivo. Agora, é possível exibir e selecionar rapidamente várias pastas para incluir em uma política. 
+-   Na página **Aplicativos descobertos**: 
+   - o recurso de marcação em lotes permite aplicar marcações personalizadas, além das marcações Sancionado e Não Sancionado. 
+   - Quando você **gera um relatório de endereço IP**, os relatórios exportados agora incluem informações sobre a proveniência do tráfego de aplicativos sancionados ou não sancionados. 
+-   Você já pode solicitar um novo Conector de aplicativos da API à equipe do Microsoft Cloud App Security diretamente no portal, na página **Conectar um aplicativo**. 
+
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security versão 114
 Lançado em 7 de janeiro de 2018
@@ -34,7 +44,7 @@ Lançado em 25 de dezembro de 2017
 
 -   Temos o prazer de anunciar que o Cloud App Security agora permite uma integração profunda com a Proteção de Informações do Azure. Esse recurso de visualização pública permite examinar e classificar arquivos em aplicativos na nuvem e aplicar automaticamente os rótulos da Proteção de Informações do Azure para proteção. Esse recurso está disponível para o Box, SharePoint e OneDrive. Para obter mais informações, consulte [Integração com a Proteção de Informações do Azure](azip-integration.md).
 
--   Os analisadores de log do Cloud Discovery agora dão suporte a formatos genéricos: LEEF, CEF e WC3.
+-   Os analisadores de log do Cloud Discovery agora têm suporte para formatos genéricos: LEEF, CEF e W3C.
 
 
 ## <a name="cloud-app-security-release-112"></a>Lançamento 112 do Cloud App Security
@@ -629,7 +639,7 @@ Lançamento: 15 de maio de 2016
 * Ao definir que um alerta será enviado quando uma política for violada, você poderá definir um nível de gravidade mínimo naquela sobre a qual você deseja ser alertado. Você pode optar por usar as configurações padrão da sua organização para isso e também pode definir uma configuração de alerta específica como o padrão para sua organização.
 
 ## <a name="see-also"></a>Consulte Também  
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

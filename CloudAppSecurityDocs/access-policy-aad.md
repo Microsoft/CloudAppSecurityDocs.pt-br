@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b91c48262dbf85b133433b9d16615cab934dcddd
-ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
+ms.openlocfilehash: 421dae3f71ca26f167dbb4a53a28a466baf8b2a6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="access-policies"></a>Políticas de acesso 
 
@@ -89,8 +89,8 @@ Para criar uma nova política de acesso, siga este procedimento:
 
  
 ## <a name="see-also"></a>Consulte Também  
-[Bloqueio de downloads em dispositivos não gerenciados, usando funcionalidades de proxy do Azure AD](use-case-proxy-block-session-aad.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Bloqueando downloads em dispositivos não gerenciados, usando funcionalidades de proxy do Microsoft Azure AD](use-case-proxy-block-session-aad.md)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

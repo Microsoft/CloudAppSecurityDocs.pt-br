@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75e0c1cc4d91cfcbb8631170a0adfbde9349dee
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 6d6daa74269057595a34db7813d0cd6ba5eaf947
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="manage-app-permissions"></a>Gerenciar permissões de aplicativo
 Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365, o G Suite e o Salesforce.  Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo.  Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões do aplicativo Cloud App Security habilitam a visualização de quais aplicativos instalados pelo usuário têm acesso a dados do Office 365, do G Suite e do Salesforce, quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365, do G Suite e do Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
@@ -55,7 +55,7 @@ A página de Permissões de aplicativo fornece as seguintes informações sobre 
 ## <a name="ban-or-approve-an-app"></a>Vetar ou aprovar um aplicativo
 1. Na página de Permissões do aplicativo, clique no aplicativo para abrir a Gaveta de aplicativo para exibir mais informações sobre o aplicativo e as permissões que foram concedida a ele. Você pode clicar no link de Permissões para exibir uma lista completa das permissões que foram concedidas ao aplicativo. Em Uso da comunidade, você pode exibir o quão comum o aplicativo é em outras organizações. Você também pode clicar no link Relacionar atividade para exibir as atividades que estão listadas no log de governança relacionado a esse aplicativo.
 2. Para vetar o aplicativo, clique no ícone de vetar no final da linha do aplicativo na tabela. <br></br>
- ![ícone de vetar aplicativo](./media/ban-app-icon.png) <br></br>
+ ![ícone Vetar aplicativo](./media/ban-app-icon.png) <br></br>
 Ao vetar um aplicativo, você pode escolher se deseja que os usuários saibam que o aplicativo previamente instalado e autorizado foi vetado, será desabilitado e não terá acesso ao aplicativo conectado. Se não quiser que eles saibam, cancele a seleção de Notificar os usuários que concederam acesso a esse aplicativo vetado na caixa de diálogo de Vetar o aplicativo.
 
     ![vetar aplicativo](./media/ban-app.png)
@@ -89,9 +89,9 @@ Você pode consultar as permissões de aplicativo no modo de exibição **Básic
 - Selecione o ícone **Remover um filtro** ao lado do filtro para remover os filtros.
 
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
