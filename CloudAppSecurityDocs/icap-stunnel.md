@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6277f0789780a2ae4fe9a4978af970f7ad961503
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
@@ -254,7 +254,9 @@ No ForcePoint, defina seu dispositivo usando as seguintes etapas:
 
 ## Apêndice B: Guia de implantação do Symantec <a name="symantec"></a>
 
-As versões com suporte do Symantec DLP são 11 e superiores. Conforme observado acima, você deve implantar um servidor de detecção no mesmo datacenter do Azure onde seu locatário do Cloud App Security reside. O servidor de detecção sincroniza com o servidor de imposição por meio de um túnel IPSec dedicado. 
+As versões com suporte do Symantec DLP são 11 e superiores. 
+
+Conforme observado acima, você deve implantar um servidor de detecção no mesmo datacenter do Azure onde seu locatário do Cloud App Security reside. O servidor de detecção sincroniza com o servidor de imposição por meio de um túnel IPSec dedicado. 
  
 ### <a name="detection-server-installation"></a>Instalação do servidor de detecção 
 O servidor de detecção usado pelo Cloud App Security é um Network Prevent padrão para servidor Web. Há várias opções de configuração que devem ser alteradas:
@@ -279,7 +281,10 @@ O servidor de detecção usado pelo Cloud App Security é um Network Prevent pad
 
 
 ### <a name="policy-configuration"></a>Configuração de política
-O Cloud App Security dá suporte direto a todos os tipos de regra de detecção incluídos com o Symantec DLP; portanto, não é necessário alterar as regras existentes. No entanto, há uma alteração de configuração que deve ser aplicada a todas as políticas existentes e novas para habilitar a integração completa. Essa alteração é a adição de uma regra específica de resposta para todas as políticas. Adicione a alteração de configuração ao Vontu:
+O Cloud App Security dá suporte direto a todos os tipos de regra de detecção incluídos com o Symantec DLP; portanto, não é necessário alterar as regras existentes. No entanto, há uma alteração de configuração que deve ser aplicada a todas as políticas existentes e novas para habilitar a integração completa. Essa alteração é a adição de uma regra específica de resposta para todas as políticas. 
+
+Adicione a alteração de configuração ao Vontu:
+
 1.  Vá para **Gerenciar** > **Políticas** > **Regras de Resposta** e clique em **Adicionar Regra de Resposta**.
     
     ![adicionar regra de resposta](./media/icap-add-response-rule.png)
@@ -293,13 +298,22 @@ O Cloud App Security dá suporte direto a todos os tipos de regra de detecção 
     ![bloquear http](./media/icap-block-http.png)
 
 Adicione a regra criada a todas as políticas existentes:
+
 1. Em cada Política, alterne para a guia **Resposta**.
-2. Na lista suspensa **Regra de resposta**, selecione a regra de resposta de bloqueio que você criou anteriormente.
+
+2. Na lista suspensa **Regra de Resposta**, selecione a regra de resposta de bloqueio que você criou anteriormente.
+
 3. Salve a política.
    
     ![desabilite o modo de avaliação](./media/icap-add-policy.png)
 
 Essa regra deve ser adicionada a todas as políticas existentes.
 
+>[!NOTE]
+> Se usar o Symantec Vontu para verificar arquivos do Dropbox, o CAS exibirá o arquivo automaticamente como sendo de origem da seguinte URL: http://misc/filename. Na verdade, esta URL de espaço reservado não direciona para nenhum site, mas é usada para fins de registro.
 
 
+## <a name="see-also"></a>Consulte Também  
+[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
+
+[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

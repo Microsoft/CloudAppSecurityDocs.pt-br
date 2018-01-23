@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
-ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
+ms.openlocfilehash: 4f5e69282dc52802d8b6ff764c956eb7c1d82693
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="siem-integration"></a>Integração ao SIEM
     
@@ -184,8 +184,8 @@ Se precisar excluir o agente SIEM no futuro, você poderá clicar nos três pont
 O agente SIEM é um ponto de extremidade único que oferece suporte à recuperação de até dois dias de tempo de inatividade. É possível alcançar uma medida adicional de alta disponibilidade com um balanceador de carga como o ponto de extremidade do cliente.
 
 ## <a name="see-also"></a>Consulte Também  
-[Solução de problemas de integração de SIEM](troubleshooting-siem.md)   
-[Para obter suporte técnico, visite a página de suporte assistido do Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Solução de problemas da integração SIEM](troubleshooting-siem.md)   
+
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   
