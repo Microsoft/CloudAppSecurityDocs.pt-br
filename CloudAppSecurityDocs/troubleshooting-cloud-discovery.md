@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae08c4e39fa01b1007dc0e14d8235558d2180372
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0e3ed6adf784f1252e02c4abe847a7b3741d11ca
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solucionando problemas de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Erros de análise de log
@@ -28,7 +28,6 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 |ERRO|DESCRIÇÃO|RESOLUÇÃO|
 |----|----|----|
 |Tipo de arquivo sem suporte|O arquivo carregado não é um arquivo de log válido (por exemplo, um arquivo de imagem).|Carregue um arquivo de **texto**, **zip** ou **gzip** que foi exportado diretamente do seu firewall ou proxy.|
-|Erro interno|Foi detectada uma falha de recurso interno|Clique em **Tetar novamente** para executar a tarefa novamente.|
 |O formato de log não corresponde|O formato de log que você carregou não coincide com o esperado para esta fonte de dados.|1. Verifique se o log não está corrompido. <br /> 2. Compare e corresponda o log com o formato de exemplo mostrado na página de upload.|
 |As transações têm mais de 90 dias|Todas as transações têm mais de 90 dias e, portanto, estão sendo ignorados.|Exporte um novo log com os eventos recentes e faça upload dele novamente.|
 |Nenhuma transação para aplicativos de nuvem catalogados|Nenhuma transação para quaisquer aplicativos de nuvem reconhecidos foi encontrada no log.|Verifique se o log contém informações sobre o tráfego de saída.|
