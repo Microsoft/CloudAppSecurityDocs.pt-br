@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 354beea33a126b676e379b54d05989f87a0a9910
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
-As políticas permitem que você defina a maneira como deseja que os usuários se comportem na nuvem. Elas permitem que você detecte comportamento de risco, violações ou pontos de dados e atividades suspeitos no seu ambiente de nuvem e, se necessário, integre fluxos de trabalho de correção para obter a mitigação de risco completa. Existem vários tipos de políticas que se correlacionam com diferentes tipos de informações que você deseja reunir sobre seu ambiente de nuvem e os tipos de ações de correção que deseja executar.  
+As políticas permitem que você defina a maneira como deseja que os usuários se comportem na nuvem. Elas permitem que você detecte comportamento de risco, violações ou pontos de dados e atividades suspeitos em seu ambiente de nuvem e, se necessário, integrar fluxos de trabalho de correção para obter a mitigação de risco completa. Existem vários tipos de políticas que se correlacionam com diferentes tipos de informações que você deseja reunir sobre seu ambiente de nuvem e os tipos de ações de correção que deseja executar.  
   
-Por exemplo, se houver uma ameaça de violação de dados que deseja colocar em quarentena, você precisará de um tipo diferente de política em vigor do que se você deseja bloquear o uso de um aplicativo de nuvem arriscado por sua organização.  
+Por exemplo, se você quiser colocar uma ameaça de violação de dados em quarentena, precisará ter um tipo de política em vigor diferente da necessária para bloquear o uso de um aplicativo de nuvem arriscado por sua organização.  
   
 ## <a name="policy-types"></a>Tipos de política  
-Quando você observa a página **Política**, as várias políticas e os modelos podem ser diferenciados pelo tipo e ícone para ver quais políticas estarão disponíveis. As políticas disponíveis dependem da fonte de dados e do que foi habilitado no Cloud App Security para sua organização, por exemplo, se você carregou os logs do Cloud Discovery, as políticas relacionadas ao Cloud Discovery serão exibidas.
+Quando você observa a página **Política**, as várias políticas e modelos podem ser diferenciados pelo tipo e ícone para ver quais políticas estão disponíveis. As políticas disponíveis dependem da fonte de dados e do que foi habilitado no Cloud App Security para sua organização, por exemplo, se você carregou logs do Cloud Discovery, as políticas relacionadas ao Cloud Discovery são exibidas.
 
 Os seguintes tipos de políticas podem ser criados:  
   
@@ -58,8 +58,7 @@ O Cloud App Security ajuda a mitigar diferentes riscos na nuvem. Você pode conf
   
 -   **Cloud Discovery:** aplicativos novos estão sendo usados em sua organização? Você tem um problema de aplicativos de TI Invisível sendo usados sobre os quais não tem conhecimento?  
   
-     A classificação geral do risco para cada aplicativo de nuvem com base nas normas e certificações do setor e  
-    práticas recomendadas permite que você monitore o número de usuários, atividades, volume de tráfego e horas de uso típico para  
+     Classifique o risco geral para cada aplicativo de nuvem com base em normas e certificações e práticas recomendadas do setor, que permite que você monitore o número de usuários, atividades, volume de tráfego e horas de uso típico para  
     cada aplicativo de nuvem.  
   
 -   **DLP:** arquivos proprietários estão sendo compartilhados publicamente? Você precisa colocar arquivos em quarentena?  
@@ -90,9 +89,9 @@ Siga este processo para controlar o risco com políticas:
 ### <a name="create-a-policy"></a>Criar uma política  
 Você pode usar os modelos de política do Cloud App Security como base para todas as suas políticas ou criar políticas de uma consulta.  
   
-Os modelos de política ajudarão você a definir os filtros corretos e as configurações necessárias para detectar eventos específicos de interesse em seu ambiente. Os modelos incluem políticas de todos os tipos e podem ser aplicados a vários serviços.  
+Modelos de política ajudam você a definir os filtros corretos e as configurações necessárias para detectar eventos específicos de interesse em seu ambiente. Os modelos incluem políticas de todos os tipos e podem ser aplicados a vários serviços.  
   
-Para criar uma política de um **modelo de política**, faça o seguinte:  
+Para criar uma política de **Modelo de política**, execute estas etapas:  
   
 1.  No console, clique em **Controlar** seguido por **Modelos**.  
   
@@ -102,17 +101,17 @@ Para criar uma política de um **modelo de política**, faça o seguinte:
   
 3.  Modifique o modelo conforme necessário para sua política personalizada. Todas as propriedades e campos dessa política baseada em modelo podem ser modificados de acordo com suas necessidades.  
 > [!NOTE] 
->Ao usar os filtros de política, **contém** pesquisará somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **virus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se você pesquisar **malware.exe**, localizará TODOS os arquivos com malware ou exe em seu nome de arquivo, enquanto se pesquisar **"malware.exe"** (com as aspas), localizará apenas arquivos que contêm exatamente "malware.exe". 
-     **É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt.  
-4.  Depois de criar a nova política baseada em modelo, um link para a nova política aparece na coluna **Políticas vinculadas** na tabela de modelos de política ao lado do modelo por meio do qual a política foi criada.  
+>Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se pesquisar *malware.exe*, você localizará TODOS os arquivos com malware ou exe em seu nome de arquivo, enquanto se pesquisar **"malware.exe"** (com aspas), localizará apenas arquivos que contêm exatamente "malware.exe". 
+     **É igual a** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar *malware.exe*, ele localizará malware.exe, mas não malware.exe.txt.  
+4.  Depois de criar a nova política baseada em modelo, um link para a nova política aparece na coluna **Políticas vinculadas** na tabela de modelos de política ao lado do modelo por meio do qual a política foi criada.   
      Você pode criar quantas políticas desejar de cada modelo e elas serão vinculadas ao modelo original, permitindo que você acompanhe todas as políticas criadas usando o mesmo modelo.  
   
 Como alternativa, você pode **criar uma política durante a investigação**. Se você estiver investigando **Log de atividades**, **Arquivos** ou **Contas** e analisar detalhadamente para pesquisar algo específico, a qualquer momento você poderá criar uma nova política com base nos resultados da sua investigação.  
   
-Por exemplo, se você estiver consultando o **Log de atividades** e encontrar uma atividade de administração que não pertença aos endereços IP do seu escritório.
+Por exemplo, se você estiver consultando o **Log de atividades** e encontrar uma atividade de administrador que não pertença aos endereços IP de seu escritório.
 
   
-Para criar uma política com base nos resultados da investigação, execute o seguinte:  
+Para criar uma política com base nos resultados da investigação, execute as seguintes etapas:  
   
 1.  No console, clique em **Investigar** seguido de **Log de atividades**, **Arquivos** ou **Contas**.  
   
@@ -127,8 +126,8 @@ Para criar uma política com base nos resultados da investigação, execute o se
 5.  Modifique o modelo conforme necessário para sua política personalizada. Todas as propriedades e campos dessa política baseada em investigação podem ser modificados de acordo com suas necessidades.  
    
 > [!NOTE] 
-> Ao usar os filtros de política, **contém** pesquisará somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **virus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe.  
-     **É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt.  
+> Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe.  
+     **É igual a** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt.  
   
  
  
@@ -137,7 +136,7 @@ Para criar uma política com base nos resultados da investigação, execute o se
  
   
 > [!NOTE]  
->  Para obter mais informações sobre como definir os campos de política, consulte a documentação da política correspondente:  
+>  Para obter mais informações sobre como definir campos de política, consulte a documentação da política correspondente:  
 >   
 >  [Políticas de atividade de usuário](user-activity-policies.md)  
 >   
@@ -155,12 +154,12 @@ Você também pode definir a política para enviar um alerta por email ou mensag
 Para definir suas preferências de notificação, vá até [Personalizar o portal](general-setup.md) 
   
 > [!NOTE] 
-> O número máximo de alertas que serão enviados por meio de mensagem de texto é 10 por número de telefone por dia. Observe que o dia é calculado de acordo com o fuso horário UTC. 
+> O número máximo de alertas enviados por meio de mensagem de texto é 10 por número de telefone por dia. O dia é calculado de acordo com o fuso horário UTC. 
 
 
 ## <a name="enable-and-disable-policies"></a>Habilitar e desabilitar políticas
 
-Depois de criar uma política, é possível habilitá-la ou desabilitá-la. Isso evita a necessidade de excluir uma política após criá-la a fim de a interromper. Em vez disso, se por alguma razão você desejar interromper a política, desabilite-a até querer habilitá-la novamente.
+Depois de criar uma política, é possível habilitá-la ou desabilitá-la. Isso evita a necessidade de excluir uma política após criá-la a fim de a interromper. Em vez disso, se por alguma razão você desejar interromper a política, desabilite-a até que queira habilitá-la novamente.
 
 - Para habilitar uma política, na página **Política**, clique nos três pontos no final da linha da política que você deseja habilitar e selecione **Habilitar**. 
 

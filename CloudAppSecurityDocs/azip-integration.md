@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af2fc62de63eba4ca1f275be5cf4f8717047c063
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
+ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -91,7 +91,7 @@ Para ignorar os rótulos de classificação definidos fora da sua organização,
  ![proteger aplicativo](./media/protect-app.png)
   
   >[!NOTE]
-  >A Proteção de Informações do Azure protege arquivos com um tamanho máximo de 50 MB. 
+  >Quando o Cloud App Security protege arquivos com a Proteção de Informações do Azure, o tamanho máximo de arquivo compatível é de 50 MB. 
 
 2. Você deve escolher um dos rótulos de classificação de sua organização a serem aplicados ao arquivo e clicar em **Aplicar**. 
 ![rótulo de classificação de proteção](./media/protect-template.png)

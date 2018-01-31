@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 635535c0089a7c1dc8c1505c302b4e5245449029
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 ## <a name="managing-admin-access"></a>Gerenciar o acesso administrativo
 
-O Cloud App Security dá suporte a controle de acesso baseado em função. Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD têm acesso ao Cloud App Security:
+O Cloud App Security é compatível com o controle de acesso baseado em função. Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD têm acesso ao Cloud App Security:
 
-- Administrador global e Administrador de segurança: os administradores com **Acesso completo** terão permissão total no Cloud App Security para adicionar administradores, adicionar políticas e configurações, carregar logs e executar ações de controle.
+- Administrador global e Administrador de segurança: administradores com **Acesso completo** têm permissão total no Cloud App Security para adicionar administradores, adicionar políticas e configurações, carregar logs e executar ações de controle.
 
 - Administrador de conformidade: tem permissões somente leitura e pode gerenciar alertas. Pode criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios internos em Gerenciamento de dados. 
 
@@ -41,17 +41,17 @@ O Cloud App Security dá suporte a controle de acesso baseado em função. Por p
 
 Para obter mais informações, consulte [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
-Você também pode adicionar administradores adicionais de segurança ao Cloud App Security, sem adicionar usuários a funções administrativas do Azure Active Directory, fazendo o seguinte:
+Você também pode adicionar administradores adicionais ao Cloud App Security, sem adicionar usuários a funções administrativas do Azure Active Directory, executando as seguintes etapas:
 
 1. Clique na engrenagem de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e, em seguida, em **Gerenciar acesso de administrador**. 
 
 2. Adicione os administradores que devem ter acesso ao Cloud App Security.
   
       
-3. Em seguida, clique na lista suspensa para definir o tipo de acesso que o administrador terá, **Acesso completo** ou **Alertas de gerenciamento e somente leitura**.
+3. Em seguida, clique na lista suspensa para definir o tipo de acesso que o administrador tem, **Acesso completo** ou **Alertas de gerenciamento e somente leitura**.
 
      >[!NOTE]
-      >Qualquer administrador com acesso limitado a **Alertas de gerenciamento e somente leitura** que tenta acessar uma página restrita ou executar uma ação restrita receberá um erro indicando que ele não tem permissão para acessar a página ou executar a ação.
+      >Qualquer administrador com acesso limitado a **Alertas de gerenciamento e somente leitura** que tentar acessar uma página restrita ou executar uma ação restrita receberá um erro indicando que não tem permissão para acessar a página ou executar a ação.
 
    ![gerenciar acesso de administrador](./media/manage-admin-access.png "gerenciar acesso de administrador")  
 
@@ -69,7 +69,7 @@ Por exemplo, se você quiser atribuir à Stephanie, uma Leitora de segurança no
 Para adicionar outros administradores ao Cloud App Security:
 1. Clique na engrenagem de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e, em seguida, em **Gerenciar acesso de administrador**. 
 
-2. Adicione os administradores que devem ter acesso ao Cloud App Security, selecione seu nível de acesso e clique em **Fechar**.
+2. Adicione os administradores que devem ter acesso ao Cloud App Security. Selecione o nível de acesso e clique em **Fechar**.
 
 
 
