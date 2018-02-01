@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
@@ -31,11 +31,11 @@ Este guia fornece as etapas necessárias para configurar a conexão ICAP no Clou
 >Esse recurso está em visualização pública.
 
 ## <a name="architecture"></a>Arquitetura
-O Cloud App Security examina o ambiente de nuvem e, com base em seu arquivo de configuração de política, decide se deve verificar o arquivo usando o mecanismo DLP interno ou DLP externo. Se a verificação DLP externa é aplicada, o arquivo é enviado por meio do túnel seguro para o ambiente do cliente no qual ele é transmitido para o dispositivo ICAP para o veredicto DLP: permitido/bloqueado. As respostas são enviadas ao Cloud App Security pelo stunnel, onde ele é usado pela política para determinar ações subsequentes, como notificações, quarentena e compartilhamento de controle.
+O Cloud App Security examina o ambiente de nuvem e, com base em seu arquivo de configuração de política, decide se deve verificar o arquivo usando o mecanismo DLP interno ou DLP externo. Se a verificação DLP externa é aplicada, o arquivo é enviado por meio do túnel seguro para o ambiente do cliente no qual ele é transmitido para o dispositivo ICAP para o veredicto DLP: permitido/bloqueado. As respostas são enviadas ao Cloud App Security pelo stunnel, onde são usadas pela política para determinar ações subsequentes, como notificações, quarentena e compartilhamento de controle.
 
 ![Arquitetura do stunnel](./media/icap-architecture-stunnel.png)
 
-Como o Cloud App Security é executado no Azure, uma implantação no Azure resultará em desempenho aprimorado. No entanto, há suporte para outras opções, incluindo implantações de Nuvem e Locais. Implantação em outros ambientes pode resultar em degradação do desempenho devido à maior latência e taxa de transferência menor. O servidor ICAP e o stunnel devem ser implantados juntos na mesma rede para garantir que o tráfego seja criptografado.
+Como o Cloud App Security é executado no Azure, uma implantação no Azure resulta em desempenho aprimorado. No entanto, há suporte para outras opções, incluindo implantações de Nuvem e Locais. Implantação em outros ambientes pode resultar em degradação do desempenho devido à maior latência e taxa de transferência menor. O servidor ICAP e o stunnel devem ser implantados juntos na mesma rede para garantir que o tráfego seja criptografado.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Para o Cloud App Security enviar dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de DMZ para os endereços IP externos usados pelo Cloud App Security com um número da porta de origem dinâmico. 
@@ -50,13 +50,13 @@ Para o Cloud App Security enviar dados por meio de seu stunnel para seu servidor
 
 ## <a name="step-1--set-up-icap-server"></a>ETAPA 1: configurar o servidor ICAP
 
-Configure um servidor ICAP, anote o número da porta e certifique-se de que você defina **Modo** como **Bloqueio**. O modo de bloqueio define o servidor ICAP para retransmitir o veredicto de classificação de volta ao Cloud App Security.
+Configure um servidor ICAP, anote o número da porta e certifique-se de definir **Modo** como **Bloqueio**. O modo de bloqueio define o servidor ICAP para retransmitir o veredicto de classificação de volta ao Cloud App Security.
 
 Consulte a documentação do produto DLP externa para obter instruções sobre como fazer isso. Por exemplo, consulte o [Anexo A: configuração do servidor ICAP do Forcepoint](#forcepoint) e [Anexo B: guia de implantação do Symantec](#symantec).
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>ETAPA 2: configurar o servidor de stunnel 
 
-Nesta etapa você configurará o stunnel conectado ao seu servidor ICAP. 
+Nesta etapa, você configura o stunnel conectado a seu servidor ICAP. 
 
 >[!NOTE]
 > Embora altamente recomendada, essa etapa é opcional e pode ser ignorada em cargas de trabalho de teste. 
@@ -125,7 +125,7 @@ Consulte o [site do stunnel](https://www.stunnel.org/index.html) para obter deta
 
 O exemplo a seguir é baseado em uma instalação de servidor do Ubuntu, quando conectado como usuário raiz – para outros servidores, use comandos paralelos. 
 
-No servidor preparado, baixe e instale a versão mais recente do stunnel executando o comando a seguir em seu servidor do Ubuntu que instalará o stunnel e o OpenSSL:
+No servidor preparado, baixe e instale a versão mais recente do stunnel executando o comando a seguir em seu servidor do Ubuntu, que instalará o stunnel e o OpenSSL:
 
     apt-get update
     apt-get install openssl -y
@@ -230,9 +230,9 @@ Se o processo ainda não está funcionando, consulte o [documentação do stunne
 5. Na tela **Configuração do servidor**, forneça o **Endereço IP** e a **Porta** do servidor stunnel que você configurou na Etapa 2. Para fins de balanceamento de carga, você pode configurar o **Endereço IP** e a **Porta** de um servidor adicional. Os endereços IP fornecidos devem ser os endereços IP estáticos externos dos seus servidores.
 
    ![Conexão ICAP do Cloud App Security](./media/icap-wizard2.png)
-6. Clique em **Avançar**. O Cloud App Security testará a conectividade com o servidor configurado. Se você receber um erro, examine as instruções e as configurações de rede. Depois de conectado com êxito, você pode clicar em **Encerrar**.
+6. Clique em **Avançar**. O Cloud App Security testa a conectividade com o servidor configurado. Se você receber um erro, examine as instruções e as configurações de rede. Depois de conectado com êxito, você pode clicar em **Encerrar**.
 
-7. Agora, para direcionar o tráfego para esse servidor DLP externo, quando você cria uma **Política de arquivo**, em **Método de inspeção de conteúdo**, selecione a conexão que você acabou de criar. Leia mais sobre [Criar uma política de arquivo](data-protection-policies.md).
+7. Agora, para direcionar o tráfego para esse servidor DLP externo, quando você criar uma **Política de arquivo**, em **Método de inspeção de conteúdo**, selecione a conexão que você criou. Leia mais sobre [Criar uma política de arquivo](data-protection-policies.md).
 
 
 ## Apêndice A: instalação do servidor ForcePoint ICAP <a name="forcepoint"></a>
@@ -293,7 +293,7 @@ Adicione a alteração de configuração ao Vontu:
 
     ![resposta automatizada](./media/icap-automated-response.png)
 
-3. Digite um nome de regra, por exemplo, **Bloquear HTTP/HTTPS**. Em **Ações** selecione **Bloquear HTTP/HTTPS** e clique em **Salvar**.
+3. Digite um nome de regra, por exemplo, **Bloquear HTTP/HTTPS**. Em **Ações**, selecione **Bloquear HTTP/HTTPS** e clique em **Salvar**.
 
     ![bloquear http](./media/icap-block-http.png)
 
@@ -301,7 +301,7 @@ Adicione a regra criada a todas as políticas existentes:
 
 1. Em cada Política, alterne para a guia **Resposta**.
 
-2. Na lista suspensa **Regra de Resposta**, selecione a regra de resposta de bloqueio que você criou anteriormente.
+2. Na lista suspensa **Regra de resposta**, selecione a regra de resposta de bloqueio que você criou anteriormente.
 
 3. Salve a política.
    
@@ -310,7 +310,7 @@ Adicione a regra criada a todas as políticas existentes:
 Essa regra deve ser adicionada a todas as políticas existentes.
 
 >[!NOTE]
-> Se usar o Symantec Vontu para verificar arquivos do Dropbox, o CAS exibirá o arquivo automaticamente como sendo de origem da seguinte URL: http://misc/filename. Na verdade, esta URL de espaço reservado não direciona para nenhum site, mas é usada para fins de registro.
+> Se você usar o Symantec Vontu para verificar arquivos do Dropbox, o CAS exibirá o arquivo automaticamente como sendo de origem da seguinte URL: http://misc/filename. Na verdade, esta URL de espaço reservado não direciona para nenhum site, mas é usada para fins de registro.
 
 
 ## <a name="see-also"></a>Consulte Também  
