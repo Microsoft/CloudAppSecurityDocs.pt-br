@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5f9868fab58c1809b80aaa6b06a797c4e70e2e64
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7299b52fe26a079664489c0bc832dd898c2c6cfc
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
-# <a name="basic-set-up"></a>Configuração básica
+# <a name="basic-setup"></a>Configuração básica
 O procedimento a seguir fornece instruções para personalizar o portal do Cloud App Security.
 
 ## <a name="prerequisites"></a>Pré-requisitos 
-Para o acesso ao portal, é necessário adicionar os seguintes endereços IP à sua lista de permissões do Firewall para fornecer acesso ao portal do Cloud App Security:  
+Para acessar o portal, é necessário adicionar os seguintes endereços IP à lista de permissões de seu firewall para fornecer acesso ao portal do Cloud App Security:  
   
 - 104.42.231.28  
   
@@ -36,28 +36,24 @@ Para o acesso ao portal, é necessário adicionar os seguintes endereços IP à 
      
      ![configurações gerais](./media/general-settings.png "configurações gerais")  
   
-3.  Em **Detalhes da organização**, é importante que você forneça um **Nome de exibição da organização** para sua organização. Ele será exibido em emails e páginas da Web enviadas do sistema.  
+3.  Em **Detalhes da organização**, é importante que você forneça um **Nome de exibição da organização** para sua organização. Ele é exibido em emails e páginas da Web enviadas do sistema.  
   
 4. Forneça um **Nome do ambiente** (locatário). Isso será especialmente importante se você gerenciar vários locatários.  
   
-4. Também é possível fornecer um **logotipo** que será exibido em notificações de email enviadas do sistema e em páginas da web enviadas do sistema. O logotipo deve ser um arquivo png com um tamanho máximo de 150 x 50 pixels em uma tela de fundo transparente.  
+4. Também é possível fornecer um **Logotipo** que é exibido em notificações de email enviadas do sistema e em páginas da Web enviadas do sistema. O logotipo deve ser um arquivo png com um tamanho máximo de 150 x 50 pixels em uma tela de fundo transparente.  
 
 4.  Certifique-se de adicionar uma lista de seus **Domínios gerenciados**. Esta é uma etapa essencial porque o Cloud App Security usa os domínios gerenciados para determinar quais usuários são internos, quais são externos e onde os arquivos devem e não devem ser compartilhados. Isso é usado para relatórios, bem como alertas.  
 > [!NOTE] 
-> - Os usuários em domínios que não estão configurados como interno serão marcados como externos e seus arquivos e atividades não serão verificados.
+> - Usuários em domínios que não estão configurados como internos são marcados como externos e seus arquivos e atividades não são verificados.
 
 5. Se você estiver se integrando com a integração da Proteção de Informações do Azure, consulte [Integração da Proteção de Informações do Azure](azip-integration.md) para obter informações. 
   
   
-6.  Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **Exportar configurações do portal** para criar um arquivo JSON de todas as suas configurações do portal, incluindo as regras de política, grupos de usuários e intervalos de endereços IP.  
+6.  Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **Exportar configurações do portal** para criar um arquivo JSON de todas as suas configurações do portal, incluindo regras de política, grupos de usuários e intervalos de endereços IP.  
   
-       
-
-
-
+   
 > [!NOTE] 
-> Se você usa o ExpressRoute, o Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para latência, desempenho e segurança aprimorados. Não há nenhuma etapa de configuração necessária do lado do cliente.  
-    Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+> Se você usa o ExpressRoute, o Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado a ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para aprimorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente. <br></br>Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
 ## <a name="see-also"></a>Consulte Também  
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
