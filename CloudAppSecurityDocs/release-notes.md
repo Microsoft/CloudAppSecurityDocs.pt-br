@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 2/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-116"></a>Cloud App Security versão 116
+Lançado em 4 de fevereiro de 2018
+
+- Implementação gradual: o Cloud App Security agora correlaciona os usuários e suas contas em aplicativos SaaS. Isso permite investigar facilmente todas as atividades de um usuário, em todos os vários aplicativos SaaS correlacionados, independentemente de qual aplicativo ou conta usaram.  
+
+-   Implementação gradual: o Cloud App Security agora dá suporte a várias instâncias do mesmo aplicativo conectado. Se você tiver várias instâncias do Salesforce (uma para venda, uma para marketing), por exemplo, poderá conectar os dois ao Cloud App Security e gerenciá-los no mesmo console para criar políticas granulares e uma investigação mais detalhada. 
+
+- A investigação do Cloud App Security foi aprimorada! Agora você pode fazer uma busca detalhada na página **Alertas** no **Log de atividades** e exibir as ações adicionais que podem ser executadas diretamente do alerta.
+
+- Os analisadores do Cloud Discovery agora oferecem suporte a dois formatos de ponto de verificação adicionais, XML e KPC.
+
+
 
 ## <a name="cloud-app-security-release-115"></a>Lançamento 115 do Cloud App Security
 Lançado em 21 de janeiro de 2018
@@ -27,7 +40,7 @@ Lançado em 21 de janeiro de 2018
 -   Este lançamento fornece uma experiência aprimorada ao selecionar pastas específicas nas políticas de arquivo. Agora, é possível exibir e selecionar rapidamente várias pastas para incluir em uma política. 
 -   Na página **Aplicativos descobertos**: 
    - o recurso de marcação em lotes permite aplicar marcações personalizadas, além das marcações Sancionado e Não Sancionado. 
-   - Quando você **gera um relatório de endereço IP**, os relatórios exportados agora incluem informações sobre a proveniência do tráfego de aplicativos sancionados ou não sancionados. 
+   - Quando você **Gerar um relatório de endereço IP** ou **Gerar o relatório de um usuário**, os relatórios exportados agora incluirão informações sobre a proveniência do tráfego de aplicativos sancionados ou não sancionados. 
 -   Você já pode solicitar um novo Conector de aplicativos da API à equipe do Microsoft Cloud App Security diretamente no portal, na página **Conectar um aplicativo**. 
 
 
