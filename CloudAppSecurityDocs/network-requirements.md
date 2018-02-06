@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/30/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf6bca7ff1e5ccb2bc2ed72a0c6f0e47942ed19a
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 939e5c13f786adff59db189b1e54cc414f61c1b5
+ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -84,7 +84,7 @@ Para se conectar a aplicativos de terceiros, habilite o Cloud App Security para 
 |UE|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
  
 
-## <a name="dlp-integration"></a>Integração do DLP
+## <a name="third-party-dlp-integration"></a>Integração do DLP de terceiros
 
 Para que o Cloud App Security envie dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de DMZ para esses endereços IP com um número da porta de origem dinâmico. 
 

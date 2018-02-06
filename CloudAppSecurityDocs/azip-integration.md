@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/28/2018
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
-ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
+ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -35,6 +35,8 @@ Integrando a Proteção de Informações do Azure no Cloud App Security, você p
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
+
+- Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 Atualmente, o Cloud App Security permite a aplicação de rótulos de classificação da Proteção de Informações do Azure para os seguintes tipos de arquivo:
 
@@ -91,7 +93,7 @@ Para ignorar os rótulos de classificação definidos fora da sua organização,
  ![proteger aplicativo](./media/protect-app.png)
   
   >[!NOTE]
-  >Quando o Cloud App Security protege arquivos com a Proteção de Informações do Azure, o tamanho máximo de arquivo compatível é de 50 MB. 
+  > O Cloud App Security pode aplicar a Proteção de Informações do Azure em arquivos de até 50 MB.  
 
 2. Você deve escolher um dos rótulos de classificação de sua organização a serem aplicados ao arquivo e clicar em **Aplicar**. 
 ![rótulo de classificação de proteção](./media/protect-template.png)
