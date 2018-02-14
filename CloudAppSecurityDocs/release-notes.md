@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -28,9 +28,7 @@ Lançado em 4 de fevereiro de 2018
 
 -   Implementação gradual: o Cloud App Security agora dá suporte a várias instâncias do mesmo aplicativo conectado. Se você tiver várias instâncias do Salesforce (uma para venda, uma para marketing), por exemplo, poderá conectar os dois ao Cloud App Security e gerenciá-los no mesmo console para criar políticas granulares e uma investigação mais detalhada. 
 
-- A investigação do Cloud App Security foi aprimorada! Agora você pode fazer uma busca detalhada na página **Alertas** no **Log de atividades** e exibir as ações adicionais que podem ser executadas diretamente do alerta.
-
-- Os analisadores do Cloud Discovery agora oferecem suporte a dois formatos de ponto de verificação adicionais, XML e KPC.
+oul- Os analisadores do Cloud Discovery agora oferecem suporte a dois formatos adicionais de ponto de verificação: XML e KPC.
 
 
 
