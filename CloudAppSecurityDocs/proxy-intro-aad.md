@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 950ccd90c2efa777bc8f43abf87a2638f7316de1
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Proteja aplicativos com o proxy do Microsoft Cloud App Security
 
@@ -84,8 +84,36 @@ No momento, o proxy é compatível com aplicativos configurados com logon único
 > - O proxy também é compatível com aplicativos configurados com provedores de identidade diferentes do Azure AD na Versão Prévia Privada. Para obter mais informações sobre a Versão Prévia Privada, envie um email para mcaspreview@microsoft.com.
 > - Os aplicativos do Office 365 não estão configurados com SAML, portanto, não são compatíveis no momento.
 
-Além disso, o controle de sessão não está automaticamente disponível para todos os aplicativos. A equipe do Cloud App Security testou muitos aplicativos populares com controle de sessão. Outros aplicativos podem exigir que um processo de integração seja realizado com o cliente.
-Em termos de clientes, o controle de sessão está disponível para qualquer navegador em qualquer plataforma principal. No entanto, aplicativos móveis e aplicativos da área de trabalho não são compatíveis com o controle de sessão. 
+O controle de sessão está disponível para qualquer navegador nas principais plataformas (não há suporte para aplicativos móveis e aplicativos de área de trabalho no momento). Com a integração nativa do Microsoft Azure AD, há suporte para todos os aplicativos configurados com logon único do SAML no Azure AD, incluindo os seguintes aplicativos em destaque:
+
+-   Salesforce
+
+-   Caixa
+
+-   G Suite
+
+-   Workday
+
+-   Slack
+
+-   Workplace by Facebook
+
+-   ServiceNow
+
+-   JIRA/Confluence
+
+-   AWS
+
+-   Workiva
+
+-   CornerStone on Demand
+
+-   DocuSign
+
+-   HighQ 
+
+Aplicativos adicionais estão sendo continuamente integrados ao controle de sessão. Se você estiver interessado em um aplicativo específico que não foi mencionado aqui, [envie os detalhes do aplicativo para nós](mailto:casfeedback@microsoft.com) e o caso de uso de seu interesse para que ele seja integrado.
+
 
 
 
