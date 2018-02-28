@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 2/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 048b2e594190ad19d20fcba57767b6fcf6ebd2fd
+ms.sourcegitcommit: 4f9a4884672633927ce649e51df3b10c547787af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -45,7 +45,7 @@ Atualmente, o Cloud App Security permite a aplicação de rótulos de classifica
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 - Os arquivos PDF e de imagem estarão disponíveis em versões futuras 
 
-Esse recurso atualmente está disponível para arquivos que são armazenados no Box, SharePoint Online e OneDrive for Business. Mais aplicativos de nuvem serão compatíveis em versões futuras.
+Atualmente, esse recurso está disponível para arquivos que são armazenados nos aplicativos Box, G Suite, SharePoint Online e OneDrive for Business. Mais aplicativos de nuvem serão compatíveis em versões futuras.
 
 Arquivos que foram rotulados com proteção fora do Cloud App Security atualmente não podem ser examinados nem alterados pelo Cloud App Security. Arquivos que foram rotulados (sem proteção) externamente ao Cloud App Security podem ser examinados, e o Cloud App Security pode aplicar um rótulo diferente (com ou sem proteção), conforme definido nas políticas do Cloud App Security.
 
@@ -116,6 +116,9 @@ Siga estas instruções para criar a política de arquivo:
 3.  Nas ações de governança do aplicativo relevante, selecione **Aplicar um rótulo de classificação** e, em seguida, o tipo de rótulo.
 
    ![Aplicar rótulo](./media/aip-gov-action.png)
+
+> [!NOTE]
+> A capacidade de aplicar automaticamente um rótulo de Proteção de Informações do Azure por meio de uma política de arquivos é um recurso poderoso. Para proteger os clientes de aplicarem por engano um rótulo a um grande número de arquivos, como precaução de segurança, há um limite diário de 100 ações **Aplicar rótulo** por aplicativo, por locatário. Depois que o limite diário for atingido, a ação "Aplicar rótulo" será pausada temporariamente e continuará automaticamente no dia seguinte (após as 00:00 UTC). Para aumentar o limite para o seu locatário, [contate o suporte do Cloud App Security](mailto:cascoresupport@microsoft.com).
 
 ### <a name="control-file-exposure"></a>Controlar a exposição de arquivo
 
