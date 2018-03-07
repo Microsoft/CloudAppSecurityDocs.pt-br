@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar o G Suite ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Cloud App Security à sua conta do G Suite existente usando as APIs do conector.
@@ -62,7 +62,9 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
    > [!NOTE]  
    >  Ignore o aviso **Credentials (Credenciais)** por enquanto.  
 
-8.  Você deve ter cinco **Enabled APIs (APIs Habilitadas)**:  
+8. Clique em Habilitar para cada API.
+     ![Habilitar API do Google ](./media/google-api.png "google-api")  
+1. Você deve ter cinco **APIs habilitadas**, portanto, desabilitar quaisquer outras APIs:
   
      ![APIs habilitadas para Google](./media/google5.png "google5")  
   
@@ -187,7 +189,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
 
     -   Em **Visibilidade**, selecione **Meu domínio** (não público). 
     -   Clique em **Save Changes (Salvar Alterações)**.  
-  
+        ![visibilidade do Google](./media/google-visibility.png "visibilidade do google")  
 22. Vá para [admin.google.com](https://admin.google.com/) e, em seguida, escolha **Segurança**. 
    
       ![segurança do google](./media/googlesec.png "segurança do google")  
@@ -219,7 +221,7 @@ Esta seção fornece instruções para conectar o Cloud App Security à sua cont
   
     4.  Insira um **email da conta do administrador** do seu administrador do G Suite.  
   
-    5.  Se você tiver uma conta do G Suite ilimitada, marque essa caixa de seleção. Para obter informações sobre quais recursos estão disponíveis no Cloud App Security para o G Suite ilimitado, confira [Habilitar ações de visibilidade, proteção e governança instantâneas para seus aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  Se você tiver uma conta do G Suite Business ou Enterprise, marque essa caixa de seleção. Para saber mais sobre quais recursos estão disponíveis no Cloud App Security para o G Suite Business ou Enterprise, confira [Habilitar ações de visibilidade, proteção e governança instantâneas para seus aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Clique em **Salvar configurações**.  
   

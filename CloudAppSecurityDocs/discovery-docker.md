@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 2/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f05fd8f548067c7e9ceb32c93e739072d682d15c
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: f9af164385b74f9742581e9879424e02409af34d
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
@@ -36,14 +36,14 @@ Antes de configurar a coleta de arquivos de log automática, verifique se o log 
 
 O Coletor de logs dá suporte a dois modos de implantação:
 
--   **Contêiner**: é executado como uma imagem do Docker no [Ubuntu no local](discovery-docker-ubuntu.md) ou no [Ubuntu no Azure](discovery-docker-ubuntu-azure.md). 
+-   **Contêiner**: é executado como uma imagem do Docker no [Ubuntu no local](discovery-docker-ubuntu.md), no [Ubuntu no Azure](discovery-docker-ubuntu-azure.md) ou [RHEL local](discovery-docker-ubuntu.md). 
 
 -   **Solução de virtualização**: [é executado como uma imagem no hipervisor do Hyper-V ou do VMware](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
  
 [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
