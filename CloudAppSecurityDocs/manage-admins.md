@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e20af36ddf5d3758d42a13caab89663ec1fab985
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 ## <a name="managing-admin-access"></a>Gerenciar o acesso administrativo
 
@@ -43,7 +43,7 @@ Para obter mais informações, consulte [Atribuindo funções de administrador n
 
 Você também pode adicionar administradores adicionais ao Cloud App Security, sem adicionar usuários a funções administrativas do Azure Active Directory, executando as seguintes etapas:
 
-1. Clique na engrenagem de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e, em seguida, em **Gerenciar acesso de administrador**. 
+1. Clique na engrenagem de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e, em seguida, em **Gerenciar administradores**. 
 
 2. Adicione os administradores que devem ter acesso ao Cloud App Security.
   

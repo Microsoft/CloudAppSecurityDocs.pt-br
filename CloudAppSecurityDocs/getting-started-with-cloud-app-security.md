@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4526b93a0d95f4bd1cc0a97867ba585002408130
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-cloud-app-security"></a>Implantar o Cloud App Security
 O Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Cloud App Security.  
@@ -60,14 +60,14 @@ Como alternativa, você pode acessar o portal por meio do **Centro de administra
 ### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Etapa 1. [Configurar o Cloud Discovery](set-up-cloud-discovery.md).
 Tarefa necessária: carregar logs de tráfego **Para criar um relatório contínuo do Cloud Discovery**
 
- 1. Vá para **Configurações** > **Configurações de Cloud Discovery**.
- 2. Selecione **Carregar log automaticamente**.
+ 1.Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
+ 2. Escolha **Upload automático de log**.
  3. Na guia **Fontes de dados**, adicione suas fontes.
  4. Na guia **Coletores de logs**, configure o coletor de logs.
  
 **Para criar um relatório de instantâneo do Cloud Discovery**
 
- 1. Vá para **Descobrir** > **Criar um novo relatório de instantâneo** e siga as etapas exibidas.
+ 1. Acesse **Descobrir** > **Relatório de instantâneo** e execute as etapas exibidas.
 
 **Por que você deve configurar os relatórios do Cloud Discovery?**
 Obter a visibilidade da TI Invisível na sua organização é essencial.
@@ -77,8 +77,8 @@ Depois que os logs são analisados, você pode facilmente descobrir quais aplica
 ### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Etapa 2. [Definir visibilidade, proteção e governança instantâneas para seus aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Tarefa necessária: Conectar aplicativos
 
-1. Vá até **configurações** > **Conectores de aplicativo**.
-2. Escolha **Conectar aplicativo** e selecione um aplicativo.
+1.Na engrenagem de configurações, selecione **Conectores de aplicativos**.
+2. Clique no sinal de adição para adicionar um aplicativo e selecionar um aplicativo.
 3. Siga as etapas de configuração para conectar o aplicativo.
 
 **Por que conectar um aplicativo?**
@@ -105,7 +105,7 @@ Tarefa recomendada: Adicionar os detalhes da sua organização
 
 **Para inserir as configurações de email**
 
-1. Vá para **Configurações** > **Configurações de email**.
+1. Na engrenagem de configurações, selecione **Configurações de email**.
 2. Em **Identidade do remetente de email** insira os endereços de email e o nome de exibição.
 3. Em **Design de emails**, carregue o modelo de email da sua organização.
 
@@ -117,8 +117,9 @@ Tarefa recomendada: Adicionar os detalhes da sua organização
 
 **Para personalizar as métricas de pontuação**
 
-1. Vá para **Configurações** > **Configurações de Cloud Discovery**.
-2. Em **Configuração de métrica de pontuação**, configure a importância de vários valores de risco.
+1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
+1. No ícone de configurações, selecione **Configurações do Cloud Discovery**.
+2. Em **Métricas de pontuação**, configure a importância de vários valores de risco.
 3. Escolha **Salvar**.
 
 Agora as pontuações de risco atribuídas aos aplicativos descobertos são configuradas exatamente de acordo com as necessidades e prioridades da sua organização.
@@ -132,8 +133,9 @@ Tarefa recomendada: Definir as configurações importantes
 
 **Para criar marcas de endereço IP**
 
-1. Vá para **Configurações** > **Marcas de endereço IP**.
-2. Selecione (+) **Adicionar intervalo de endereços IP**.
+1. No ícone de configurações, selecione **Configurações do Cloud Discovery**.
+1.Na engrenagem de configurações, selecione **Intervalos de endereço IP**.
+2. Clique no sinal de adição para adicionar um intervalo de endereços IP.
 3. Insira os **detalhes**, o **local**, as **marcas** e a **categoria** do intervalo de IP.
 4. Escolha **Criar**.
 
@@ -141,8 +143,8 @@ Tarefa recomendada: Definir as configurações importantes
 
 **Para criar relatórios contínuos**
 
-1. Vá para **Configurações** > **Configurações de Cloud Discovery**.
-2. Em **Gerenciar relatórios contínuos**, escolha **Criar relatório**.
+1. Na engrenagem de configurações, **Configurações do Cloud Discovery**.
+2. Em **Relatórios contínuos**, escolha **Criar relatório**.
 3. Siga as etapas de configuração.
 4. Escolha **Criar**.
 
@@ -150,7 +152,7 @@ Agora, você pode exibir dados descobertos com base em suas próprias preferênc
 
 **Para adicionar domínios**
 
-1. Vá para **Configurações** > **Configurações gerais**.
+1. Na engrenagem de configurações, selecione **Configurações**.
 2. Em **Detalhes da organização**, adicione os domínios internos da sua organização.
 3. Escolha **Salvar**.
 
