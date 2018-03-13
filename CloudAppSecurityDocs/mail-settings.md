@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,26 +13,24 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="mailsettings"></a> Definir as preferências de notificação de email  
-Na barra de menus, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e selecione **Configurações de Email** para definir os parâmetros para notificações por email enviadas do Cloud App Security para administradores que solicitam alertas e notificações enviadas para os usuários finais sobre violações em que estão envolvidos.  
 
-Para obter informações sobre o endereço IP do servidor de email do Cloud App Security que você deve incluir na lista de permissões em seu serviço antispam, consulte [Requisitos de rede](network-requirements.md). 
+Para definir parâmetros para as notificações de email enviadas do Cloud App Security para administradores solicitando alertas e para as notificações enviadas para usuários finais informando sobre as violações nas quais estão envolvidos, faça este procedimento. Para obter informações sobre o endereço IP do servidor de email do Cloud App Security que você deve incluir na lista de permissões em seu serviço antispam, consulte [Requisitos de rede](network-requirements.md). 
+
+
+1. Na barra de menus, clique na engrenagem de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações"), selecione **Configurações** e depois a guia **Configurações de Email**.  
+
+2. **Do endereço de email**: a conta de email que você deseja usar para enviar a notificação.  
+   
+   **Nome de exibição**: o nome a ser exibido no campo **De** da mensagem de email.  
   
-![menu de configuração de email](./media/mail-setting-menu.png "menu de configuração de email")  
-  
-Configure o seguinte:  
-  
-1.  **Do endereço de email**: a conta de email que você deseja usar para enviar a notificação.  
-  
-     **Nome de exibição**: o nome a ser exibido no campo **De** da mensagem de email.  
-  
-     **Endereço de email para resposta**: a conta de email a ser usada para respostas à mensagem.  
+   **Endereço de email para resposta**: a conta de email a ser usada para respostas à mensagem.  
   
      ![definição de configurações de email](./media/mail-settings-config.png "definição de configurações de email")  
 
@@ -41,7 +39,7 @@ Configure o seguinte:
   
 2.  Para o **Design de email**, você pode usar um arquivo html para personalizar e criar as mensagens de email enviadas do sistema. O arquivo html usado para o modelo deve incluir o seguinte:  
   
-    -   Todo modelo CSS deve estar embutido no modelo.  
+    -   Todos os arquivos CSS devem estar embutidos no modelo.  
   
     -   O modelo deve ter três espaços reservados não editáveis:  
   

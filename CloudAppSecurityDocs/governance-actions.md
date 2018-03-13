@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/7/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a61579877c230849ef721a923d4148ea4950c8d3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades.
@@ -87,7 +87,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
     > [!NOTE] 
     > Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários no seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida. 
   
-    -   Revogar senha – revoga a senha do usuário e o força a definir uma nova senha em seu próximo logon.  
+    -   Exigir que o usuário entre novamente. Desconecta o usuário e exige que ele entre novamente.  
   
      ![Ações de governança de política de atividade do Cloud App Security](./media/activity-policy-ref6.png "ref6 da política de atividade")  
   
@@ -119,7 +119,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Contas|Conta|Configurações de conta|Leva você para a página de configurações de conta no aplicativo específico (por exemplo, dentro do Salesforce).|Todas as configurações dos aplicativos One Drive e SharePoint são feitas no Office.|
 |Contas |Arquivo|Transferir a propriedade de todos os arquivos|Em uma conta, você transfere os arquivos de um usuário para que a propriedade deles seja concedida a uma nova pessoa que você selecionar. O proprietário anterior se tornará um editor e não será mais possível alterar as configurações de compartilhamento. O novo proprietário receberá uma notificação por email sobre a alteração de propriedade.|G Suite|
 |Contas, Política de atividade|Conta|Suspender um usuário|Define que o usuário não terá nenhum acesso e capacidade para fazer logon - se o usuário estiver conectado quando você definir esta opção, ele será bloqueado imediatamente.|G Suite, Box, Office, Salesforce|
-|Política de atividade, Contas|Conta|Revogar a senha|Revoga a senha de uma conta de usuário - por exemplo, configurando uma política de atividade que revogue uma senha após 10 tentativas de logon mal sucedidas.|G Suite|
+|Política de atividade, Contas|Conta|Exigir que o usuário entre novamente|Revoga todos os tokens de atualização e todas as emissões de cookie de sessão para aplicativos pelo usuário. Isso impedirá o acesso aos dados da organização e forçará o usuário a entrar novamente em todos os aplicativos.|G Suite|
 |Política de atividade, Contas|Conta|Revogar privilégios de administrador|Revoga privilégios para uma conta de administrador - por exemplo, configurando uma política de atividade que revogue os privilégios de administrador depois de 10 tentativas de logon mal sucedidas.|G Suite|
 |Painel do aplicativo > Permissões de aplicativo|Permissões|Cancelar veto do aplicativo|No Google e Salesforce: remove o veto do aplicativo e permite que os usuários concedam permissões para o aplicativo de terceiros com a conta do Google ou Salesforce. No Office 365: restaura as permissões do aplicativo de terceiros para o Office.|G Suite, Salesforce, Office|
 |Painel do aplicativo > Permissões de aplicativo|Permissões|Desabilitar permissões de aplicativo|Revoga as permissões de um aplicativo de terceiros para o Google, Salesforce ou Office. Esta é uma ação única que ocorrerá em todas as permissões existentes, mas não evitará futuras conexões. |G Suite, Salesforce, Office|

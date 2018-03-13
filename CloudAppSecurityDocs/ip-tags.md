@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 3/7/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc032e1e5b560a8f6550a091c6694d0f63ff5822
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 #  <a name="IPtagsandRanges"></a> Trabalhando com marcações e intervalos de IP
 
@@ -45,7 +45,7 @@ Para usar essas marcações internas como parte de uma pesquisa, consulte a ID n
 
 Marcas de endereço IP internas e marcas de IP personalizadas são consideradas hierarquicamente, com marcas de IP personalizadas, tendo precedência sobre as marcas de IP internas. Por exemplo, se um endereço IP estiver marcado como **Arriscado** com base na inteligência de ameaças, mas houver uma marca IP personalizada que o identifica como **Corporativo**, as marcas e a categoria personalizada terão precedência.
 
-Na barra de menus, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e selecione **Intervalos de Endereços IP**. Clique em **+Adicionar Intervalo de Endereços IP** e defina os seguintes campos:  
+Na barra de menus, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e selecione **Intervalos de Endereços IP**. Clique no sinal de adição para adicionar intervalos de endereços IP e defina os seguintes campos:  
   
 > [!NOTE]  
 > - O local e o ISP registrado substituem os padrões.   
@@ -57,13 +57,7 @@ Na barra de menus, clique no ícone de configurações ![ícone de configuraçõ
   
 2.  Insira o **Intervalo de endereços IP** que você deseja configurar e clique no botão "+". Você pode adicionar quantos endereços IP e sub-redes desejar usando a notação de prefixo de rede (também conhecida como notação CIDR), por exemplo, 192.168.1.0/32.  
   
-3.  Para os campos **Substituir o local** ou Organização (ISP) para esses endereços, insira um novo valor. Por exemplo, se você tiver um endereço IP que é considerado publicamente como sendo da Irlanda, mas você sabe que é dos Estados Unidos, você poderá substituir essa configuração.  
-  
-4.  Insira um **ISP Registrado**. Isso substitui os dados em suas atividades  
-  
-5.  Para **Marcar** as atividades desses endereços IP, insira uma marca. Inserir uma palavra na caixa cria a marca. Depois que já tiver uma marca configurada, você poderá adicioná-la facilmente a intervalos de IP adicionais selecionando-a na lista. Você pode adicionar quantas marcas de IP desejar para cada intervalo. As marcas de IP podem ser usadas ao criar políticas.  Além das marcações de IP que você configura, o Cloud App Security tem marcações internas que não são configuráveis. Você pode ver a lista de marcações em [Filtro de marcações de IP](activity-filters.md).  
-  
-6.  As **Categorias de IP** são usadas para reconhecer facilmente atividades de endereços IP interessantes. As categorias estão disponíveis no portal, embora precisem de configuração do usuário para determinar quais endereços IP estão incluídos em cada categoria, exceto para a categoria “Arriscados”, que inclui duas marcas de IP: proxy anônimo e Tor.  
+3.  Use as **Categorias** para reconhecer facilmente as atividades de endereços IP interessantes. As categorias estão disponíveis no portal, embora precisem de configuração do usuário para determinar quais endereços IP estão incluídos em cada categoria, exceto para a categoria “Arriscados”, que inclui duas marcas de IP: proxy anônimo e Tor.  
   
      As seguintes categorias IP estão disponíveis:  
   
@@ -76,9 +70,13 @@ Na barra de menus, clique no ícone de configurações ![ícone de configuraçõ
     -   **Arriscados**: esses devem ser quaisquer endereços IP que considerar arriscados. Eles podem incluir endereços IP suspeitos que você viu no passado, endereços IP em redes de seus concorrentes etc.  
   
     -   **VPN**: esses devem ser quaisquer endereços IP usados para funcionários remotos.  
+4.  Para **Marcar** as atividades desses endereços IP, insira uma marca. Inserir uma palavra na caixa cria a marca. Depois que já tiver uma marca configurada, você poderá adicioná-la facilmente a intervalos de IP adicionais selecionando-a na lista. Você pode adicionar quantas marcas de IP desejar para cada intervalo. As marcas de IP podem ser usadas ao criar políticas.  Além das marcações de IP que você configura, o Cloud App Security tem marcações internas que não são configuráveis. Você pode ver a lista de marcações em [Filtro de marcações de IP](activity-filters.md).  
+  
+5.  Para os campos **Substituir o local** ou Organização (ISP) para esses endereços, insira um novo valor. Por exemplo, se você tiver um endereço IP que é considerado publicamente como sendo da Irlanda, mas você sabe que é dos Estados Unidos, você poderá substituir essa configuração.  
+  
+6.  Insira um **ISP Registrado**. Isso substitui os dados em suas atividades  
  
-
-7.  Quando terminar, clique em **Criar**.  
+7.   Quando terminar, clique em **Criar**.  
   
      ![intervalo de newipaddress](./media/newipaddress-range.png "intervalo de newipaddress")  
   
