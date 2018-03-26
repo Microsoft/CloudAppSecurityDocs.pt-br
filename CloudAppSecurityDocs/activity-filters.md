@@ -1,23 +1,23 @@
 ---
 title: Visibilidade das atividades dos aplicativos de nuvem | Microsoft Docs
-description: "Este tópico fornece uma lista de atividades, filtros e parâmetros de correspondência que podem ser aplicados às políticas de atividade."
-keywords: 
+description: Este tópico fornece uma lista de atividades, filtros e parâmetros de correspondência que podem ser aplicados às políticas de atividade.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b2880e9cb1569f018f0e9234e2ff75ec872f5470
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: b628b06e5e5c26ec153d7a4b1a9ef9483c15618a
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="activities"></a>Atividades
 O Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. 
@@ -30,11 +30,6 @@ O **Log de atividades** pode ser filtrado para permitir que você encontre ativi
 Por exemplo, é possível usar o **Log de atividades** para encontrar usuários na sua organização que estejam usando sistemas operacionais ou navegadores desatualizados da seguinte maneira: depois de conectar um aplicativo ao Cloud App Security, na página **Log de atividades**, use o filtro avançado e selecione **Marcação do agente do usuário**. Em seguida, selecione **Navegador desatualizado** ou **Sistema operacional desatualizado**.
 
  ![Exemplo de navegador desatualizado de atividade](media/activity-example-outdated.png)
-
-Se desejar verificar se existem arquivos **confidenciais** acessados fora da sua organização, defina o filtro **Objeto de atividade** para pesquisar **Rótulo de classificação** e selecione o rótulo **confidencial**. Defina o filtro **Endereço IP** para pesquisar a **Categoria** e exclua os endereços IP do Office (as categorias IP podem ser configuradas no menu **Configurações**). Você pode clicar em **Nova política de pesquisa** para criar uma política de atividade com base nos filtros definidos e notificar automaticamente os usuários.
-
- ![Exemplo externo de arquivos confidenciais de atividade](media/activity-example-ip.png)
-
  
 O filtro básico fornece excelentes ferramentas para começar a usar a filtragem de suas atividades.
 
