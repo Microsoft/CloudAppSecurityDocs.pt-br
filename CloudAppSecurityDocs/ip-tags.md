@@ -1,23 +1,23 @@
 ---
 title: Definir intervalos de IP e marcas | Microsoft Docs
-description: "Este tópico fornece instruções sobre como trabalhar com marcas IP e categorias IP."
-keywords: 
+description: Este tópico fornece instruções sobre como trabalhar com marcas IP e categorias IP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 3/18/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f066e17f8b4f2e54a65abb5c58095c0917e4e985
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 #  <a name="IPtagsandRanges"></a> Trabalhando com marcações e intervalos de IP
 
@@ -26,16 +26,7 @@ Cada grupo de intervalos de IP pode ser categorizado com base em uma lista prede
   
 Há suporte para IPv4 e IPv6.  
   
-O Cloud App Security é fornecido pré-configurado com marcações internas para os seguintes endereços IP: 
-- Cliente nativo
-- Sistema operacional desatualizado
-- Dispositivos gerenciados
-- Proxy anônimo
-- Botnet (quando uma atividade foi executada por um botnet, você recebe um link para saber mais sobre o botnet específico)
-- Tor
-- Dispositivo em conformidade
-- Dispositivo verificado
-- Representar
+O Cloud App Security é pré-configurado com intervalos de IP internos de provedores de nuvem populares, como o Azure e o Office 365. Além disso, temos marcação interna baseada na inteligência contra ameaças da Microsoft, que inclui proxy anônimo, Botnet e Tor. É possível ver a lista suspensa completa na página de intervalos de endereços IP.
 
 Para usar essas marcações internas como parte de uma pesquisa, consulte a ID na documentação da API do Cloud App Security. 
 

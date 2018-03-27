@@ -1,26 +1,31 @@
 ---
 title: Novidades do Cloud App Security | Microsoft Docs
-description: "Este tópico é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security."
-keywords: 
+description: Este tópico é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08a798bb20830afcbdb498c2ac72787873f72fab
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
+## <a name="cloud-app-security-release-119"></a>Cloud App Security versão 119
+Lançado em 18 de março de 2018
+
+-   A página de intervalos de endereços IP inclui os endereços IP internos descobertos pelo Cloud App Security. São incluídos endereços IP de serviços de nuvem identificados, como o Office 365 e o Azure, bem como o feed de inteligência contra ameaças que enriquece automaticamente os endereços IP com informações sobre endereços IP arriscados conhecidos. 
+-   Agora, quando tenta executar uma ação de governança em um arquivo e falha porque o arquivo está bloqueado, o Cloud App Security automaticamente tenta a ação de governança novamente. 
 
 ## <a name="cloud-app-security-release-118"></a>Cloud App Security versão 118
 Lançado em 4 de março de 2018
