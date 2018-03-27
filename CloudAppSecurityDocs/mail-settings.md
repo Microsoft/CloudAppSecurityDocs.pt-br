@@ -1,23 +1,23 @@
 ---
-title: "Definir as preferências de notificação de email | Microsoft Docs"
-description: "Este artigo oferece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security."
-keywords: 
+title: Definir as preferências de notificação de email | Microsoft Docs
+description: Este artigo oferece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> Definir as preferências de notificação de email  
 
@@ -29,7 +29,9 @@ Para definir parâmetros para as notificações de email enviadas do Cloud App S
 2. **Do endereço de email**: a conta de email que você deseja usar para enviar a notificação.  
    
    **Nome de exibição**: o nome a ser exibido no campo **De** da mensagem de email.  
-  
+   > [!NOTE]
+   > Somente caracteres Unicode têm suporte no nome de exibição, de acordo com o [protocolo rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
+
    **Endereço de email para resposta**: a conta de email a ser usada para respostas à mensagem.  
   
      ![definição de configurações de email](./media/mail-settings-config.png "definição de configurações de email")  

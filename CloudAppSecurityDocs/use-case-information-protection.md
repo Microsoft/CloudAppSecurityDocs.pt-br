@@ -1,23 +1,23 @@
 ---
-title: "Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure | Microsoft Docs"
-description: "Este tópico descreve o processo para aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure no Microsoft Cloud App Security."
-keywords: 
+title: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure | Microsoft Docs
+description: Este tópico descreve o processo para aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure no Microsoft Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9addebb97bc57b14c5c666b73a0d0d8e21a23ff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure  
 
@@ -86,8 +86,8 @@ Vamos configurar uma política que procura números de cartão de crédito em ar
 4. Você pode clicar na correspondência para ver quais arquivos foram protegidos. A correspondência em si será mascarada para proteger os dados confidenciais. 
 
 >[!NOTE]
->O Cloud App Security atualmente é compatível com a aplicação automática de rótulos da Proteção de Informações do Azure no Box, SharePoint e OneDrive for business.
-
+> - O Cloud App Security atualmente é compatível com a aplicação automática de rótulos da Proteção de Informações do Azure no Box, SharePoint e OneDrive for business.
+> - Quando um documento é rotulado usando o Cloud App Security, as marcações visuais não são aplicadas imediatamente, e sim quando esse documento é aberto em um aplicativo do Office e é salvo pela primeira vez. Para obter mais informações, consulte [How to configure a label for visual markings for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied) (Como configurar um rótulo para marcações visuais na Proteção de Informações do Azure).
 
  ## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
