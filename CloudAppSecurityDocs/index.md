@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
 description: Saiba como usar o Cloud App Security.
-ms.openlocfilehash: d499b8abe9aa775dbd0c248cf117040c322111de
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 681344fdb313421429484427b7e5899d418cf8a8
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="cloud-app-security-documentation"></a>Documentação do Cloud App Security
 
@@ -42,7 +42,7 @@ Mesmo que você não esteja na nuvem, seus funcionários estão. Traga a seguran
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Investigue o que está acontecendo em seu ambiente de nuvem</h3>
+                        <h3>Investigar o que está acontecendo em seu ambiente de nuvem</h3>
                     </div>
                 </div>
             </div>
@@ -138,5 +138,4 @@ Mesmo que você não esteja na nuvem, seus funcionários estão. Traga a seguran
                 </div>
             </div>
         </div>
-    </li>    
-</ul>
+    </li><br/></ul>
