@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
-ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
+ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-120"></a>Cloud App Security versão 120
+Lançado em 8 de abril de 2018
+
+-   Para o Office 365 e para o Azure AD, agora estamos implementando gradualmente a capacidade de detectar aplicativos internos como atividades de conta do usuário realizada por aplicativos do Office 365 e do Azure AD (tanto internos quanto externos). Isso permite criar políticas que alertarão você caso um aplicativo execute atividades inesperadas e não autorizadas. 
+-   Ao exportar uma lista de permissões de aplicativo para csv, campos adicionais como editor, nível de permissões e uso da comunidade são incluídos para auxiliar no processo de investigação e na conformidade.
+-   O aplicativo conectado ServiceNow foi aprimorado para que atividades de serviço internas não sejam mais registradas como tendo sido executadas por "Convidado" e não disparem mais alertas falsos positivos. Agora essas atividades são representadas como N/D, assim como todos os outros aplicativos conectados.
+
 
 ## <a name="cloud-app-security-release-119"></a>Cloud App Security versão 119
 Lançado em 18 de março de 2018
@@ -64,11 +72,11 @@ Lançado em 4 de fevereiro de 2018
 ## <a name="cloud-app-security-release-115"></a>Lançamento 115 do Cloud App Security
 Lançado em 21 de janeiro de 2018
 
--   Este lançamento fornece uma experiência aprimorada ao selecionar pastas específicas nas políticas de arquivo. Agora, é possível exibir e selecionar rapidamente várias pastas para incluir em uma política. 
--   Na página **Aplicativos descobertos**: 
-   - o recurso de marcação em lotes permite aplicar marcações personalizadas, além das marcações Sancionado e Não Sancionado. 
-   - Quando você **Gerar um relatório de endereço IP** ou **Gerar o relatório de um usuário**, os relatórios exportados agora incluirão informações sobre a proveniência do tráfego de aplicativos sancionados ou não sancionados. 
--   Você já pode solicitar um novo Conector de aplicativos da API à equipe do Microsoft Cloud App Security diretamente no portal, na página **Conectar um aplicativo**. 
+- Este lançamento fornece uma experiência aprimorada ao selecionar pastas específicas nas políticas de arquivo. Agora, é possível exibir e selecionar rapidamente várias pastas para incluir em uma política. 
+- Na página **Aplicativos descobertos**: 
+  - o recurso de marcação em lotes permite aplicar marcações personalizadas, além das marcações Sancionado e Não Sancionado. 
+  - Quando você **Gerar um relatório de endereço IP** ou **Gerar o relatório de um usuário**, os relatórios exportados agora incluirão informações sobre a proveniência do tráfego de aplicativos sancionados ou não sancionados. 
+- Você já pode solicitar um novo Conector de aplicativos da API à equipe do Microsoft Cloud App Security diretamente no portal, na página **Conectar um aplicativo**. 
 
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security versão 114
