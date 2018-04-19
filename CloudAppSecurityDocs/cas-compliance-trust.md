@@ -1,23 +1,23 @@
 ---
-title: "Conformidade, segurança de dados, privacidade e confiabilidade do Cloud App Security | Microsoft Docs"
-description: "Este tópico descreve a oferta de conformidade do Cloud App Security, central de confiabilidade, privacidade e segurança de dados."
-keywords: 
+title: Conformidade, segurança de dados, privacidade e confiabilidade do Cloud App Security | Microsoft Docs
+description: Este tópico descreve a oferta de conformidade do Cloud App Security, central de confiabilidade, privacidade e segurança de dados.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 4/11/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: efa135ed66891e4af5f685405b742fb9f1d5667e
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 0f16ff050ca5a3e73077a907dbf11cf3e9cf2b03
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Conformidade, confiabilidade, privacidade e segurança de dados do Microsoft Cloud App Security
 
@@ -40,19 +40,19 @@ O Microsoft Cloud App Security atende a vários padrões de conformidade interna
 |----|----|----|
 |![logotipo da csa](./media/csastar-attest.png)|Atestado CSA STAR|O Azure e o Intune receberam o atestado Cloud Security Alliance STAR com base em uma auditoria independente.|
 |![logotipo da csa](./media/csastar.png)|Certificação CSA STAR|O Azure, o Intune e o Power BI receberam a certificação Cloud Security Alliance STAR no nível Gold.|
-|![logotipo das cláusulas de modelo da UE](./media/eu-model-icon.png)|[Cláusulas de modelo da UE](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|A Microsoft oferece Cláusulas Contratuais Padrão da UE, que são garantias para transferências de dados pessoais.|
-|![logotipo da defesa de privacidade](./media/privacy_shield.png)|Defesa de Privacidade  UE-EUA|A Microsoft está em conformidade com essa estrutura a fim de proteger dados pessoais transferidos da UE para os EUA.|
+|![logotipo das cláusulas de modelo da UE](./media/eu-model-icon.png)|[Cláusulas de modelo da UE](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|A Microsoft oferece Cláusulas Contratuais Padrão da UE, que são garantias para transferências de dados pessoais.|
+|![logotipo da defesa de privacidade](./media/privacy_shield.png)|UE-EUA Defesa de Privacidade|A Microsoft está em conformidade com essa estrutura a fim de proteger dados pessoais transferidos da UE para os EUA.|
 |![logotipo FISC](./media/logo_fisc.png)|FISC|A Microsoft atende aos requisitos do padrão Financial Industry Information Systems v8 no Japão.|
-|![logotipo HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/trustcenter/compliance/hipaa)|A Microsoft oferece Health Insurance Portability e Accountability Act Business Associate Agreements (BAAs).|
+|![logotipo HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|A Microsoft oferece Health Insurance Portability e Accountability Act Business Associate Agreements (BAAs).|
 |![logotipo iso 9001](./media/iso-9001.png)|ISO 9001|A Microsoft recebeu o certificado por sua implementação desses padrões de gerenciamento de qualidade.|
-|![logotipo iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001)|A Microsoft recebeu o certificado por sua implementação desses padrões de gerenciamento de segurança da informação.|
-|![logotipo iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/trustcenter/compliance/iso-iec-27018)|A Microsoft foi a primeira provedora de nuvem a aderir a esse código de prática para privacidade na nuvem.|
+|![logotipo iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|A Microsoft recebeu o certificado por sua implementação desses padrões de gerenciamento de segurança da informação.|
+|![logotipo iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|A Microsoft foi a primeira provedora de nuvem a aderir a esse código de prática para privacidade na nuvem.|
 |![logotipo PCI](./media/pci-logo.png)|PCI DSS|O Azure está em conformidade com o padrão Payment Card Industry Data Security Standards nível 1, versão 3.1.|
-|![logotipo SOC](./media/soc-logo.png)|[Relatórios tipo 2 de SOC 1 e SOC 2](https://www.microsoft.com/trustcenter/compliance/soc)|Os serviços em nuvem da Microsoft estão em conformidade com os padrões de Controles de Organização de Serviços para segurança operacional.|
+|![logotipo SOC](./media/soc-logo.png)|[Relatórios tipo 2 de SOC 1 e SOC 2](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Os serviços em nuvem da Microsoft estão em conformidade com os padrões de Controles de Organização de Serviços para segurança operacional.|
 |![logotipo SOC](./media/soc-logo.png)|SOC 3|Os serviços em nuvem da Microsoft estão em conformidade com os padrões de Controles de Organização de Serviços para segurança operacional.|
 |![logotipo g-cloud](./media/g-cloud.png)|G-Cloud do Reino Unido|O Crown Commercial Service renovou a classificação dos serviços de nuvem da Microsoft para Government Cloud v6.|
 
-Para saber mais, acesse [Ofertas de conformidade da Microsoft] (https://go.microsoft.com/fwlink/?linkid=842039) e selecione Cloud App Security.  
+Para obter mais informações, acesse [Ofertas de conformidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=842039) e selecione Cloud App Security.  
 
 ## <a name="privacy"></a>Privacidade
 
@@ -66,7 +66,7 @@ Para saber mais, acesse [Ofertas de conformidade da Microsoft] (https://go.micro
 
 -   O Cloud App Security usa seus dados apenas para fins consistentes com o fornecimento dos serviços que você assina.
 
--   Se um governo entrar em contato com a Microsoft para obter acesso aos seus dados, a Microsoft redirecionará a consulta a você, o cliente, sempre que possível. A Microsoft desafiou exigências legais que não eram válidas, que proibiam a divulgação de informações de [uma solicitação de governo](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) por dados do cliente. Saiba mais sobre [quem pode acessar seus dados e sob quais condições](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms).
+-   Se um governo entrar em contato com a Microsoft para obter acesso aos seus dados, a Microsoft redirecionará a consulta a você, o cliente, sempre que possível. A Microsoft desafiou exigências legais que não eram válidas, que proibiam a divulgação de informações de [uma solicitação de governo](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) por dados do cliente. Saiba mais sobre [quem pode acessar seus dados e sob quais condições](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms).
 
 ### <a name="privacy-controls"></a>Controles de privacidade
 
@@ -76,7 +76,7 @@ Para saber mais, acesse [Ofertas de conformidade da Microsoft] (https://go.micro
 
 -   Atualmente, o Microsoft Cloud App Security opera em data centers nos Estados Unidos e na Europa (cada um deles uma "área geográfica"). Sua conta de locatário será criada em uma área geográfica com base no país que você escolheu durante a inscrição. Especificamente, seus dados serão armazenados em um data center na área geográfica mais próxima desse local.
 
-[Saiba mais sobre privacidade](https://www.microsoft.com/trustcenter/privacy)
+[Saiba mais sobre privacidade](https://www.microsoft.com/en-us/trustcenter/privacy)
 
 ## <a name="transparency"></a>Transparência
 
@@ -100,7 +100,7 @@ O Microsoft Cloud App Security mantém os dados da seguinte maneira:
 
 Você pode aprender mais sobre práticas de dados da Microsoft lendo os [Termos de Serviço Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
-[Saiba mais sobre transparência](https://www.microsoft.com/trustcenter/about/transparency) 
+[Saiba mais sobre transparência](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
 ## <a name="security"></a>Segurança
 
