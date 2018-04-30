@@ -1,15 +1,15 @@
 ---
 layout: LandingPage
-description: Saiba como usar o Cloud App Security.
-ms.openlocfilehash: 681344fdb313421429484427b7e5899d418cf8a8
-ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
+description: Saiba como usar o Microsoft Cloud App Security.
+ms.openlocfilehash: 63bdaefbb58fed837aa9d9ce363801693b3eafbf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="cloud-app-security-documentation"></a>Documentação do Cloud App Security
+# <a name="microsoft-cloud-app-security-documentation"></a>Documentação do Microsoft Cloud App Security
 
-Fornece segurança de nível empresarial para seus aplicativos na nuvem com o Cloud App Security.
+Fornece segurança de nível empresarial para seus aplicativos na nuvem com o Microsoft Cloud App Security.
 Mesmo que você não esteja na nuvem, seus funcionários estão. Traga a segurança dos seus sistemas locais para seus aplicativos na nuvem — aprovados e não aprovados — para maior visibilidade, controles abrangentes e proteção aprimorada contra problemas de segurança de nuvem.
 
 <ul class="panelContent cardsFTitle">
@@ -24,7 +24,7 @@ Mesmo que você não esteja na nuvem, seus funcionários estão. Traga a seguran
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Saiba mais sobre o Cloud App Security</h3>
+                        <h3>Saiba mais sobre o Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ Mesmo que você não esteja na nuvem, seus funcionários estão. Traga a seguran
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Usar o Cloud App Security para controlar o uso do aplicativo de nuvem</h3>
+                        <h3>Usar o Microsoft Cloud App Security para controlar o uso do aplicativo de nuvem</h3>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@ Mesmo que você não esteja na nuvem, seus funcionários estão. Traga a seguran
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Para saber mais sobre o Cloud App Security</h3>
+                        <h3>Para saber mais sobre o Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ Mesmo que você não esteja na nuvem, seus funcionários estão. Traga a seguran
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Obter suporte para o Cloud App Security</h3>
+                        <h3>Obter suporte para o Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>

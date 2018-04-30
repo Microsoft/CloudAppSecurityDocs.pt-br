@@ -38,7 +38,6 @@
 # Uso
 ## [Trabalhar com o painel](daily-activities-to-protect-your-cloud-environment.md)
 ## Cenários
-### [Proteger sua organização de ransomware](use-case-ransomware.md)
 ### [Bloquear downloads de informações confidenciais](use-case-proxy-block-session-aad.md)
 ### [Proteger seus arquivos com quarentena do administrador](use-case-admin-quarantine.md)
 ### [Aplicar os rótulos da Proteção de Informações do Azure automaticamente](use-case-information-protection.md)
@@ -52,7 +51,6 @@
 #### [Consultas e filtros de atividade](activity-filters-queries.md)
 ### [Arquivos](file-filters.md)
 ### [Contas](accounts.md)
-### [Referência de relatório interno](built-in-report-reference.md)
 ### [Gerenciar permissões de aplicativo](manage-app-permissions.md)
 ### [Monitorar aplicativos](monitor-alerts.md)
 #### [Gerenciar alertas](managing-alerts.md)
@@ -65,8 +63,9 @@
 #### [Políticas de arquivos](data-protection-policies.md)
 ##### [Inspeção de Conteúdo](content-inspection.md)
 ##### [Trabalhando com o mecanismo RegEx](working-with-the-regex-engine.md)
-#### [Políticas de acesso](access-policy-aad.md)
-#### [Políticas de sessão](session-policy-aad.md)
+#### Políticas de controle de aplicativo de acesso condicional
+##### [Políticas de acesso](access-policy-aad.md)
+##### [Políticas de sessão](session-policy-aad.md)
 #### [Referência de Modelo de Política](policy-template-reference.md)
 ### [Controlar aplicativos conectados](governance-actions.md)
 ### [Controlar aplicativos descobertos](governance-discovery.md)
