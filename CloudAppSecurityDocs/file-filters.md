@@ -1,28 +1,30 @@
 ---
-title: "Entendendo os dados e filtros de arquivos disponíveis no Cloud App Security | Microsoft Docs"
-description: "Este tópico de referência fornece informações sobre os tipos e filtros de arquivos usados pelo Cloud App Security."
-keywords: 
+title: Entendendo os dados e filtros de arquivos disponíveis no Cloud App Security | Microsoft Docs
+description: Este tópico de referência fornece informações sobre os tipos e filtros de arquivos usados pelo Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 995bcacd450856fb9aa75a4c7d48596a7fbc168c
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e34ff5bd2e25b4c25f314c35f2ffc3ab4b41c24a
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
 # <a name="files"></a>Arquivos
 
 
-Para oferecer proteção de dados, o Cloud App Security proporciona visibilidade de todos os arquivos de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security examina todos os arquivos, por exemplo, todos os arquivos armazenados no OneDrive e no Salesforce. Assim, o Cloud App Security examinará novamente cada arquivo sempre que ele for modificado – a modificação pode ser em conteúdo, metadados ou permissões de compartilhamento. Os tempos de verificação dependem do número de arquivos armazenados em seu aplicativo. Também é possível usar a página **Arquivos** para filtrar os arquivos a fim de investigar qual tipo de dados está salvo em seus aplicativos de nuvem. 
+Para oferecer proteção de dados, o Microsoft Cloud App Security proporciona visibilidade de todos os arquivos de seus aplicativos conectados. Depois que você conectar o Microsoft Cloud App Security a um aplicativo usando o conector de aplicativos, o Microsoft Cloud App Security examina todos os arquivos, por exemplo, todos os arquivos armazenados no OneDrive e no Salesforce. Assim, o Cloud App Security examinará novamente cada arquivo sempre que ele for modificado – a modificação pode ser em conteúdo, metadados ou permissões de compartilhamento. Os tempos de verificação dependem do número de arquivos armazenados em seu aplicativo. Também é possível usar a página **Arquivos** para filtrar os arquivos a fim de investigar qual tipo de dados está salvo em seus aplicativos de nuvem. 
 
 Por exemplo, é possível usar a página **Arquivos** para proteger arquivos compartilhados externamente rotulados como **confidenciais** da seguinte maneira: depois de conectar um aplicativo ao Cloud App Security, é possível integrar-se à Proteção de Informações do Azure. Em seguida, na página **Arquivos**, filtre os arquivos rotulados como **confidenciais**. Se você perceber que há arquivos **confidenciais** compartilhados fora da sua organização aplicando o filtro **Colaboradores** para excluir seu domínio, você poderá criar uma política de arquivo que detecta arquivos **confidenciais** que têm níveis de acesso incorretos aplicados a eles e aplicar ações de governança automática, como **Remover colaboradores externos** e **Enviar resumo de correspondência de política ao proprietário do arquivo** para evitar a perda de dados para sua organização.
 
@@ -47,12 +49,12 @@ O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de
 Os mecanismos de DLP internos do Cloud App Security executam inspeção de conteúdo extraindo texto de tipos de arquivos comuns (PDF, arquivo do Office, RTF, HTML, arquivos de código, etc.).
 
 Abaixo está uma lista de filtros de arquivos que podem ser aplicados. A maioria dos filtros dá suporte a vários valores, bem como NOT, para fornecer uma ferramenta muito poderosa para a criação de políticas.  
-> [!NOTE] 
+> [!NOTE]
 > Ao usar os filtros de política de arquivos, **Contém** pesquisará somente **palavras inteiras** – separadas por vírgulas, pontos, espaços ou sublinhados a serem pesquisados. 
 > - Espaços entre palavras funcionam como OR, por exemplo, se você pesquisar **malware** **virus**, serão encontrados todos os arquivos com "malware" ou "virus" no nome, portanto, encontrará malware-virus.exe e virus.exe.  
 > - Se você desejar pesquisar uma cadeia de caracteres, coloque as palavras entre aspas. Isso funciona como AND, por exemplo, se você pesquisar **"malware"** **"virus"**, será encontrado virus_malware_file.exe, mas não será encontrado malwarevirusfile.exe nem malware.exe. No entanto, será pesquisada a cadeia de caracteres exata. Se você pesquisar **"malware virus"**, não será encontrado **"virus"** nem **"virus_malware"**.
-
->**É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt. 
+> 
+> **É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt. 
 
 -   Nível de acesso – nível de acesso de compartilhamento, público, externo, interno ou privado.  Para obter mais informações sobre arquivos externos, consulte [Configuração geral, Configurar o portal](getting-started-with-cloud-app-security.md)
     - Arquivos internos são todos os arquivos que estão dentro dos domínios internos que você definir em [Configuração Geral](General-setup.md). 

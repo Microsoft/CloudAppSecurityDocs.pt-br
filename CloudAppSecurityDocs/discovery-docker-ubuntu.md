@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/22/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,15 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
-ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
+ms.openlocfilehash: 5db98a5c9d8c5d3a9ce27f498b8237ed110289ad
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker no Ubuntu e no RHEL local
 
 
@@ -32,7 +35,7 @@ ms.lasthandoff: 03/22/2018
 
 -   RAM: 4 GB
 
--   Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements#log-collector)
+-   Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md#log-collector)
 
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
@@ -47,49 +50,49 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
 
-1.  Acesse a página de configuração de upload automatizado:  <br></br>No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png), antes de **Coletores de log**.
+1. Acesse a página de configuração de upload automatizado:  <br></br>No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png), antes de **Coletores de log**.
 
-2.  Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:
+2. Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    a. Clique em **Adicionar fonte de dados**.
+   a. Clique em **Adicionar fonte de dados**.
 
-    b. Atribua o **Nome** do proxy ou firewall.
+   b. Atribua o **Nome** do proxy ou firewall.
 
-    c. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado especificamente, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
+   c. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado especificamente, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
 
-    d. Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.
+   d. Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.
 
-    e. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+   e. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
     
-     >[!NOTE]
-     >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
+    >[!NOTE]
+    >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
 
-    f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.
+   f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.
 
-3.  Vá para a guia **Coletores de logs** na parte superior.
+3. Vá para a guia **Coletores de logs** na parte superior.
 
-    a. Clique em **Adicionar coletor de logs**.
+   a. Clique em **Adicionar coletor de logs**.
 
-    b. Atribua um **nome** ao coletor de logs.
+   b. Atribua um **nome** ao coletor de logs.
 
-    c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. 
+   c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. 
        
-       > [!NOTE]
-       > O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
+      > [!NOTE]
+      > O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
 
-    d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
+   d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-     >  [!NOTE]
-     > - Um único coletor de logs pode lidar com várias fontes de dados.
-     > - Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
+   > [!NOTE]
+   > - Um único coletor de logs pode lidar com várias fontes de dados.
+   > - Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
 
-4.  Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone copiar para a área de transferência ![ícone copiar para a área de transferência](./media/copy-icon.png).
+4. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone copiar para a área de transferência ![ícone copiar para a área de transferência](./media/copy-icon.png).
 
-6.  **Exportar** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
+5. **Exportar** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
 
    ![Crie o coletor de logs](./media/windows7.png)
 
@@ -98,33 +101,33 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 > [!NOTE]
 > As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantação para outras plataformas são ligeiramente diferentes.
 
-1.  Abra um terminal em seu computador Ubuntu.
+1. Abra um terminal em seu computador Ubuntu.
 
-2.  Altere para privilégios de raiz usando o comando:`sudo -i`
+2. Altere para privilégios de raiz usando o comando:`sudo -i`
 
 3. Para ignorar um proxy na sua rede, execute os dois comandos a seguir:
         
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
-3.  Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
+4. Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
 
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
+   `curl -o /tmp/MCASInstallDocker.sh
+   https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
+   && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
-     > [!NOTE] 
-     > Se esse comando não conseguir validar seu certificado de proxy, execute o comando usando `curl -k` no início.
+    > [!NOTE] 
+    > Se esse comando não conseguir validar seu certificado de proxy, execute o comando usando `curl -k` no início.
     
-    ![ubuntu5](./media/ubuntu5.png)
+   ![ubuntu5](./media/ubuntu5.png)
 
-4.  Implante a imagem do coletor no computador de hospedagem importando a configuração do coletor. Faça isso copiando o comando de execução gerado no portal. Se você precisar configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:
+5. Implante a imagem do coletor no computador de hospedagem importando a configuração do coletor. Faça isso copiando o comando de execução gerado no portal. Se você precisar configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:
 
-            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+           (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Crie o coletor de logs](./media/windows7.png)
 
-5.  Verifique se o coletor está sendo executado corretamente executando o seguinte comando: `docker logs \<collector_name\>`
+6. Verifique se o coletor está sendo executado corretamente executando o seguinte comando: `docker logs \<collector_name\>`
 
 Você deverá ver a mensagem **Concluído com êxito!**
 

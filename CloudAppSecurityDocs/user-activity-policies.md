@@ -1,24 +1,27 @@
 ---
-title: "Criando políticas para controlar atividades no Cloud App Security | Microsoft Docs"
-description: "Este tópico fornece instruções para criar e trabalhar com políticas de atividade."
-keywords: 
+title: Criando políticas para controlar atividades no Cloud App Security | Microsoft Docs
+description: Este tópico fornece instruções para criar e trabalhar com políticas de atividade.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0e771330feb92833e77c0699d33851d7d52d82ef
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 87e05e1b28ef469b6f180fbd4479ac6727b22f3b
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="activity-policies"></a>Políticas de atividade
 As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.  
   
@@ -68,15 +71,15 @@ Esta seção fornece detalhes de referência sobre as políticas, fornecendo exp
 Uma **Política de atividade** é uma política baseada em API que permite que você monitore as atividades da sua organização na nuvem, considerando mais de 20 filtros de metadados de arquivo (incluindo o tipo de dispositivo e o local). Com base nos resultados de política, as notificações podem ser geradas e os usuários podem ser suspensos do aplicativo de nuvem.   
 Cada política é composta pelas seguintes partes:  
   
--   Filtros de atividade – permitem criar condições muito granulares com base nos metadados.  
+- Filtros de atividade – permitem criar condições muito granulares com base nos metadados.  
   
--   Parâmetros de correspondência de atividade – permitem que você defina um limite para o número de vezes que uma atividade se repete para ser considerada como correspondente à política.  Especifique o número de atividades repetidas necessário para corresponder à política, por exemplo, definindo uma política para alertar quando um usuário executa dez tentativas de logon sem êxito em um período de dois minutos.  Por padrão, a configuração **Parâmetros de correspondência de atividade** gera uma correspondência para cada atividade que atende a todos os filtros de atividade.   
-Usando **Atividade repetida**, você pode definir o número de atividades repetidas, a duração do período em que as atividades são contadas e até mesmo especificar que todas as atividades devem ser executadas pelo mesmo usuário e no mesmo aplicativo de nuvem.  
+- Parâmetros de correspondência de atividade – permitem que você defina um limite para o número de vezes que uma atividade se repete para ser considerada como correspondente à política.  Especifique o número de atividades repetidas necessário para corresponder à política, por exemplo, definindo uma política para alertar quando um usuário executa dez tentativas de logon sem êxito em um período de dois minutos.  Por padrão, a configuração **Parâmetros de correspondência de atividade** gera uma correspondência para cada atividade que atende a todos os filtros de atividade.   
+  Usando **Atividade repetida**, você pode definir o número de atividades repetidas, a duração do período em que as atividades são contadas e até mesmo especificar que todas as atividades devem ser executadas pelo mesmo usuário e no mesmo aplicativo de nuvem.  
   
   
--   Ações – a política fornece a um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são detectadas.  
-## <a name="see-also"></a>Consulte Também  
-[Políticas de proteção de dados](data-protection-policies.md)   
+- Ações – a política fornece a um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são detectadas.  
+  ## <a name="see-also"></a>Consulte Também  
+  [Políticas de proteção de dados](data-protection-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   

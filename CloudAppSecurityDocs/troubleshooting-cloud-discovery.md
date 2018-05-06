@@ -1,30 +1,34 @@
 ---
-title: "Solução de problemas de erros do Cloud Discovery no Cloud App Security | Microsoft Docs"
-description: "Este tópico fornece uma lista de erros frequentes do Cloud Discovery e recomendações de resolução para cada um."
-keywords: 
+title: Solução de problemas de erros do Cloud Discovery no Cloud App Security | Microsoft Docs
+description: Este tópico fornece uma lista de erros frequentes do Cloud Discovery e recomendações de resolução para cada um.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0e3ed6adf784f1252e02c4abe847a7b3741d11ca
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 6be5193ffd749de8a809f620e9b44d56935499e1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="troubleshooting-cloud-discovery"></a>Solucionando problemas de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Erros de análise de log
 
 Você pode controlar o processamento dos registros do Cloud Discovery usando o log de governança. Este artigo fornece as ações de resolução a serem executadas para cada erro que pode ser exibido.
 
 ### <a name="governance-log-errors"></a>Erros de log de governança
+
 |ERRO|DESCRIÇÃO|RESOLUÇÃO|
 |----|----|----|
 |Tipo de arquivo sem suporte|O arquivo carregado não é um arquivo de log válido (por exemplo, um arquivo de imagem).|Carregue um arquivo de **texto**, **zip** ou **gzip** que foi exportado diretamente do seu firewall ou proxy.|
@@ -35,15 +39,13 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 
 ## <a name="log-collector-errors"></a>Erros do coletor de logs
 
-|PROBLEMA|RESOLUÇÃO|
-|----|----|
-|Não foi possível conectar ao coletor de logs por FTP|1. Verifique se você estiver usando credenciais FTP e não SSH. <br />2. Verifique se o cliente FTP que você está usando não está definido para SFTP.|
-|Falha ao atualizar a configuração do coletor|1. Verifique se você inseriu o token de acesso mais recente. <br />2. Verifique no seu firewall se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443.|
-|Logs enviados ao coletor não aparecem no portal|1.  Verifique se há tarefas de análise com falha no Log de governança.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Se houver, corrija o erro com a tabela de erros de Análise de Log acima.<br /> 2. Caso contrário, verifique as fontes de dados e a configuração do Coletor de Logs no portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Na página Fonte de dados, verifique se a fonte de dados que você está usando está devidamente configurada. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Na página Coletores de Logs, verifique se que a fonte de dados está vinculada ao coletor de logs correto. <br /> 3. Verifique a configuração local do computador local do coletor de logs.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Faça logon no coletor de logs via SSH e execute o utilitário collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme se seu firewall ou proxy está enviando logs para o coletor de logs usando o protocolo definido (Syslog/TCP, Syslog/UDP ou FTP) e se ele está enviando para a porta e diretório corretos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Execute netstat no computador e verifique se ele recebe conexões de entrada de seu proxy ou firewall <br /> 4.   Verifique se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443.|
-|Status do coletor de logs: criado|A implantação do coletor de logs não foi concluída. Conclua as etapas de implantação locais de acordo com a guia de implantação.|
-|Status do coletor de logs: desconectado|Não há dados recebidos nas últimas 24 horas de qualquer uma das fontes de dados vinculados.|Verifique a configuração de exportação do log em seu dispositivo e verifique se ele foi definido corretamente.|
-
-
+|                         PROBLEMA                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     RESOLUÇÃO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Não foi possível conectar ao coletor de logs por FTP     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    1. Verifique se você estiver usando credenciais FTP e não SSH. <br />2. Verifique se o cliente FTP que você está usando não está definido para SFTP.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|        Falha ao atualizar a configuração do coletor         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          1. Verifique se você inseriu o token de acesso mais recente. <br />2. Verifique no seu firewall se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Logs enviados ao coletor não aparecem no portal | 1.  Verifique se há tarefas de análise com falha no Log de governança.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Se houver, corrija o erro com a tabela de erros de Análise de Log acima.<br /> 2. Caso contrário, verifique as fontes de dados e a configuração do Coletor de Logs no portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Na página Fonte de dados, verifique se a fonte de dados que você está usando está devidamente configurada. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Na página Coletores de Logs, verifique se que a fonte de dados está vinculada ao coletor de logs correto. <br /> 3. Verifique a configuração local do computador local do coletor de logs.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Faça logon no coletor de logs via SSH e execute o utilitário collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme se seu firewall ou proxy está enviando logs para o coletor de logs usando o protocolo definido (Syslog/TCP, Syslog/UDP ou FTP) e se ele está enviando para a porta e diretório corretos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Execute netstat no computador e verifique se ele recebe conexões de entrada de seu proxy ou firewall <br /> 4.   Verifique se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443. |
+|             Status do coletor de logs: criado              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            A implantação do coletor de logs não foi concluída. Conclua as etapas de implantação locais de acordo com a guia de implantação.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|           Status do coletor de logs: desconectado           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Não há dados recebidos nas últimas 24 horas de qualquer uma das fontes de dados vinculados.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 ## <a name="discovery-dashboard-errors"></a>Erros do painel de descoberta
 
@@ -55,5 +57,4 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  
-  
+

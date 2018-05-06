@@ -1,26 +1,28 @@
 ---
-title: "Forneça as configurações da sua organização no portal do Cloud App Security para melhores resultado | Microsoft Docs"
-description: "Este artigo explica como fornecer informações sobre sua organização no Cloud App Security."
-keywords: 
+title: Forneça as configurações da sua organização no portal do Cloud App Security para melhores resultado | Microsoft Docs
+description: Este artigo explica como fornecer informações sobre sua organização no Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ff8f123a1bab8831071865422f8afa34e20e416b
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 4add03fd95117ed67dd0ccd4cb08bf75c97aa9c9
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
 # <a name="basic-setup"></a>Configuração básica
-O procedimento a seguir fornece instruções para personalizar o portal do Cloud App Security.
+O procedimento a seguir fornece instruções para personalizar o portal do Microsoft Cloud App Security.
 
 ## <a name="prerequisites"></a>Pré-requisitos 
 Para acessar o portal, é necessário adicionar os seguintes endereços IP à lista de permissões de seu firewall para fornecer acesso ao portal do Cloud App Security:  
@@ -32,24 +34,24 @@ Para acessar o portal, é necessário adicionar os seguintes endereços IP à li
   
 ## <a name="set-up-the-portal"></a>Configurar o portal  
   
-1.  No portal do Cloud App Security, na barra de menus, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e selecione **Configurações** para configurar os detalhes da sua organização.     
+1. No portal do Cloud App Security, na barra de menus, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e selecione **Configurações** para configurar os detalhes da sua organização.     
 
-3.  Em **Detalhes da organização**, é importante que você forneça um **Nome de exibição da organização** para sua organização. Ele é exibido em emails e páginas da Web enviadas do sistema.  
+2. Em **Detalhes da organização**, é importante que você forneça um **Nome de exibição da organização** para sua organização. Ele é exibido em emails e páginas da Web enviadas do sistema.  
   
-4. Forneça um **Nome do ambiente** (locatário). Isso será especialmente importante se você gerenciar vários locatários.  
+3. Forneça um **Nome do ambiente** (locatário). Isso será especialmente importante se você gerenciar vários locatários.  
   
 4. Também é possível fornecer um **Logotipo** que é exibido em notificações de email enviadas do sistema e em páginas da Web enviadas do sistema. O logotipo deve ser um arquivo png com um tamanho máximo de 150 x 50 pixels em uma tela de fundo transparente.  
 
-4.  Certifique-se de adicionar uma lista de seus **Domínios gerenciados**. Esta é uma etapa essencial porque o Cloud App Security usa os domínios gerenciados para determinar quais usuários são internos, quais são externos e onde os arquivos devem e não devem ser compartilhados. Isso é usado para relatórios, bem como alertas.  
-> [!NOTE] 
-> - Usuários em domínios que não estão configurados como internos são marcados como externos e seus arquivos e atividades não são verificados.
+5. Certifique-se de adicionar uma lista de seus **Domínios gerenciados**. Esta é uma etapa essencial porque o Cloud App Security usa os domínios gerenciados para determinar quais usuários são internos, quais são externos e onde os arquivos devem e não devem ser compartilhados. Isso é usado para relatórios, bem como alertas.  
+   > [!NOTE] 
+   > - Usuários em domínios que não estão configurados como internos são marcados como externos e seus arquivos e atividades não são verificados.
 
-5. Se você estiver se integrando com a integração da Proteção de Informações do Azure, consulte [Integração da Proteção de Informações do Azure](azip-integration.md) para obter informações. 
+6. Se você estiver se integrando com a integração da Proteção de Informações do Azure, consulte [Integração da Proteção de Informações do Azure](azip-integration.md) para obter informações. 
 
- >[!NOTE]
- > Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+   >[!NOTE]
+   > Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
-6.  Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **Exportar configurações do portal** para criar um arquivo JSON de todas as suas configurações do portal, incluindo regras de política, grupos de usuários e intervalos de endereços IP.  
+7. Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **Exportar configurações do portal** para criar um arquivo JSON de todas as suas configurações do portal, incluindo regras de política, grupos de usuários e intervalos de endereços IP.  
   
    
 > [!NOTE] 

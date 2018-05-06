@@ -1,28 +1,31 @@
 ---
-title: "Configurar o upload de log automático para relatórios contínuos | Microsoft Docs"
-description: "Este tópico descreve o processo de configuração de upload automático de logs para relatórios contínuos no Cloud App Security."
-keywords: 
+title: Configurar o upload de log automático para relatórios contínuos | Microsoft Docs
+description: Este tópico descreve o processo de configuração de upload automático de logs para relatórios contínuos no Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2017
+ms.date: 4/22/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9af164385b74f9742581e9879424e02409af34d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: a55e0ff02d16af8b166b62a53fbcffb62d6dcc08
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
 
-Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Os logs de FTP são carregados para o Cloud App Security após o arquivo concluir a transferência do FTP para o coletor de logs.  Para Syslog, o coletor de logs grava os logs recebidos no disco e carrega o arquivo para o Cloud App Security quando o tamanho do arquivo é maior do que 40 KB.
+Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Os logs de FTP são carregados para o Microsoft Cloud App Security após o arquivo concluir a transferência do FTP para o coletor de logs.  Para Syslog, o coletor de logs grava os logs recebidos no disco e carrega o arquivo para o Cloud App Security quando o tamanho do arquivo é maior do que 40 KB.
 
 Depois que um log for carregado no Cloud App Security, ele é movido para um diretório de backup que armazena os últimos 20 logs a qualquer momento. Quando novos logs chegam, os antigos são excluídos. Quando o espaço em disco do coletor de log está cheio, o coletor de log descarta novos logs até que tenha mais espaço livre em disco. Quando isso acontecer, você receberá um aviso na guia **Coletores de logs** das configurações **Carregar logs automaticamente**.
 

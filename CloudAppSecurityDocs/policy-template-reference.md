@@ -1,27 +1,30 @@
 ---
-title: "Referência de modelo de política no Cloud App Security | Microsoft Docs"
-description: "Este tópico fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos de nuvem."
-keywords: 
+title: Referência de modelo de política no Cloud App Security | Microsoft Docs
+description: Este tópico fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos de nuvem.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e6d318be12d776c2bf399f4aec07be92b0a7128
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 6dbfa26443bf1b05c689aec563b8ee71599076c9
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="policy-templates"></a>Modelos de Política
 
-A seguir está uma lista de todos os modelos de política que existem no Cloud App Security. É recomendável iniciar a criação de políticas com base em um modelo existente sempre que possível para facilidade de uso.
+A seguir está uma lista de todos os modelos de política que existem no Microsoft Cloud App Security. É recomendável iniciar a criação de políticas com base em um modelo existente sempre que possível para facilidade de uso.
 
 |Categoria de risco|Nome do modelo|Descrição|
 |-----|----|----|

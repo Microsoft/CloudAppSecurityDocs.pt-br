@@ -1,24 +1,26 @@
 ---
-title: "Configurar o upload de logs automático para relatórios contínuos no Cloud App Security| Microsoft Docs"
-description: "Este tópico fornece informações sobre como fazer upload dos logs para criar relatórios automáticos do Cloud Discovery."
-keywords: 
+title: Configurar o upload de logs automático para relatórios contínuos no Cloud App Security| Microsoft Docs
+description: Este tópico fornece informações sobre como fazer upload dos logs para criar relatórios automáticos do Cloud Discovery.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 56252b8d4bd7d69719b9ceb6fb05a9e8030f8ffd
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 8e3e75687839e96d92c50f6fba132b49c06c62bd
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
 > [!WARNING] 
@@ -29,7 +31,7 @@ ms.lasthandoff: 01/16/2018
 - Espaço em disco: 250 GB
 - CPU: 2
 - RAM: 4 GB 
-- Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements#log-collector)
+- Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md#log-collector)
 
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
@@ -43,70 +45,70 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs  
   
-1.  Acesse a página de configuração de upload automatizado:  
-    No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações"), antes de **Coletores de log**.  
+1. Acesse a página de configuração de upload automatizado:  
+   No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações"), antes de **Coletores de log**.  
   
-3.  Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:  
+2. Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:  
   
-    a.  Clique em **Adicionar fonte de dados**.  
+   a.  Clique em **Adicionar fonte de dados**.  
   
-    b.  Atribua o **Nome** do proxy ou firewall.  
+   b.  Atribua o **Nome** do proxy ou firewall.  
   
-    c.  Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
+   c.  Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
   
-    d.  Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.  
+   d.  Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.  
   
-    e.  Defina o **Tipo de receptor** como **FTP** ou **Syslog**. Para **Syslog**, escolha **UDP** ou **TCP**.  
+   e.  Defina o **Tipo de receptor** como **FTP** ou **Syslog**. Para **Syslog**, escolha **UDP** ou **TCP**.  
   
-    f.  Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.  
+   f.  Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.  
   
-4.  Vá para a guia **Coletores de logs** na parte superior.  
+3. Vá para a guia **Coletores de logs** na parte superior.  
   
-    a.  Clique em **Adicionar coletor de logs**.  
+   a.  Clique em **Adicionar coletor de logs**.  
   
-    b.  Atribua um **nome** ao coletor de logs.  
+   b.  Atribua um **nome** ao coletor de logs.  
   
-    c.  Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e gerar um token de acesso.  
-![fontes de dados de descoberta](./media/discovery-data-sources.png)
+   c.  Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e gerar um token de acesso.  
+   ![fontes de dados de descoberta](./media/discovery-data-sources.png)
   
-  > [!NOTE] 
-  > - Um único coletor de logs pode lidar com várias fontes de dados.
-  > - Copie o conteúdo da tela, pois você o usará ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
-4.  Se você aceitar os [termos de licença de usuário final](https://go.microsoft.com/fwlink/?linkid=862492), **baixe** uma nova máquina virtual coletora de logs clicando em Hyper-V ou VMWare. Em seguida, descompacte o arquivo usando a senha que você recebeu no portal.  
+   > [!NOTE] 
+   > - Um único coletor de logs pode lidar com várias fontes de dados.
+   > - Copie o conteúdo da tela, pois você o usará ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
+4. Se você aceitar os [termos de licença de usuário final](https://go.microsoft.com/fwlink/?linkid=862492), **baixe** uma nova máquina virtual coletora de logs clicando em Hyper-V ou VMWare. Em seguida, descompacte o arquivo usando a senha que você recebeu no portal.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Etapa 2 — Implantação da máquina virtual no local e configuração de rede   
 
 > [!NOTE] 
 > As etapas a seguir descrevem a implantação no Hyper-V. As etapas de implantação do hipervisor da VM são ligeiramente diferentes.  
 
-1.  Abra o Gerenciador do Hyper-V.  
+1. Abra o Gerenciador do Hyper-V.  
   
-2.  Selecione **Novo**, **Máquina Virtual** e clique em **Próximo**.  
- ![máquina virtual do Hiper-V de descoberta](./media/discovery-hyperv-virtual-machine.png "máquina virtual do Hiper-V de descoberta")  
+2. Selecione **Novo**, **Máquina Virtual** e clique em **Próximo**.  
+   ![máquina virtual do Hiper-V de descoberta](./media/discovery-hyperv-virtual-machine.png "máquina virtual do Hiper-V de descoberta")  
   
-3.  Forneça um **Nome** para a nova máquina virtual, por exemplo, CloudAppSecurityLogCollector01 e clique em **Próximo**.  
+3. Forneça um **Nome** para a nova máquina virtual, por exemplo, CloudAppSecurityLogCollector01 e clique em **Próximo**.  
   
-4.  Selecione **Geração 1** e clique em **Próximo**.  
+4. Selecione **Geração 1** e clique em **Próximo**.  
   
-5.  Altere a **Memória de inicialização** para **4096 MB**.  
+5. Altere a **Memória de inicialização** para **4096 MB**.  
         
 6. Marque **Use Dynamic Memory (Usar Memória Dinâmica)** para essa máquina virtual e clique em **Próximo**.  
   
-7.  Se estiver disponível, escolha a rede **Conexão** e clique em **Próximo**.  
+7. Se estiver disponível, escolha a rede **Conexão** e clique em **Próximo**.  
   
-8.  Escolha **Usar um disco rígido virtual existente** e selecione o arquivo .**vhd** que foi incluído no arquivo Zip que você baixou.  
+8. Escolha **Usar um disco rígido virtual existente** e selecione o arquivo .**vhd** que foi incluído no arquivo Zip que você baixou.  
   
-9.  Clique em **Avançar** e clique em **Concluir**.  
-    A máquina é adicionada ao seu ambiente do Hyper-V.  
+9. Clique em **Avançar** e clique em **Concluir**.  
+   A máquina é adicionada ao seu ambiente do Hyper-V.  
   
-9. Clique na máquina virtual na tabela **Máquinas Virtuais** e clique em **Iniciar**.   
+10. Clique na máquina virtual na tabela **Máquinas Virtuais** e clique em **Iniciar**.   
   
-10. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. Você deve ver o prompt de logon. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, faça logon usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que foram copiadas quando você criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:
-```
-sudo network_config
-```
-> [!NOTE]
-> A máquina virtual é pré-configurada para obter um endereço IP de um servidor DHCP. Se precisar configurar endereços IP estáticos, gateway padrão, nome do host, servidores DNS e NTPS, você poderá usar o utilitário **network_config** ou realizar alterações manualmente.
+11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. Você deve ver o prompt de logon. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, faça logon usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que foram copiadas quando você criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:
+    ```
+    sudo network_config
+    ```
+    > [!NOTE]
+    > A máquina virtual é pré-configurada para obter um endereço IP de um servidor DHCP. Se precisar configurar endereços IP estáticos, gateway padrão, nome do host, servidores DNS e NTPS, você poderá usar o utilitário **network_config** ou realizar alterações manualmente.
 
 
 Neste ponto, seu coletor de logs deve estar conectado à rede e deverá poder alcançar o portal do Cloud App Security.  
@@ -165,6 +167,3 @@ Após ter verificado que os logs estão sendo carregados no Cloud App Security e
 [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
-    
-      
-  

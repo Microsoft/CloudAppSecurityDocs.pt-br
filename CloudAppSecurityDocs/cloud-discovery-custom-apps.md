@@ -1,24 +1,26 @@
 ---
 title: Adicionar aplicativos personalizados ao Cloud Discovery no Cloud App Security | Microsoft Docs
-description: "Este tópico fornece informações sobre como adicionar aplicativos personalizados ao Cloud Discovery no Cloud App Security a fim de monitorar a TI Sombra."
-keywords: 
+description: Este tópico fornece informações sobre como adicionar aplicativos personalizados ao Cloud Discovery no Cloud App Security a fim de monitorar a TI Sombra.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8ccd44e3c488b9adb0d4cd9df96b29b6bcc3e2d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 4eeaca599a51e110773555d1c6862d34f8fd99a2
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
 # <a name="add-custom-apps-to-cloud-discovery"></a>Adicionar aplicativos personalizados ao Cloud Discovery
     
 O Cloud Discovery analisa seus logs de tráfego com base no catálogo de aplicativos de nuvem do Microsoft Cloud App Security, com mais de 15.000 aplicativos de nuvem. O catálogo contém apenas aplicativos de nuvem disponíveis publicamente, para os quais o Cloud App Security fornece visibilidade e informações sobre o risco.
@@ -29,20 +31,20 @@ Ao adicionar um novo aplicativo de nuvem personalizado, o Cloud App Security é 
 
 Para adicionar um novo aplicativo de nuvem personalizado:
 
-1.  No portal do Cloud App Security, clique em **Descobrir** e em **Painel do Cloud Discovery**. 
+1. No portal do Cloud App Security, clique em **Descobrir** e em **Painel do Cloud Discovery**. 
   
- ![menu do painel do cloud discovery](./media/cloud-discovery-dashboard-menu.png)
+   ![menu do painel do cloud discovery](./media/cloud-discovery-dashboard-menu.png)
 
-2.  No canto superior direito, clique nas reticências e, em seguida, selecione **Adicionar novo aplicativo personalizado**. 
+2. No canto superior direito, clique nas reticências e, em seguida, selecione **Adicionar novo aplicativo personalizado**. 
 
- ![menu adicionar aplicativo personalizado](./media/add-custom-app-menu.png)
+   ![menu adicionar aplicativo personalizado](./media/add-custom-app-menu.png)
 
-3.  Preencha os campos para definir o novo registro de aplicativo que será listado no Catálogo de aplicativos de nuvem e no Cloud Discovery, após a detecção em seus logs de firewall.
+3. Preencha os campos para definir o novo registro de aplicativo que será listado no Catálogo de aplicativos de nuvem e no Cloud Discovery, após a detecção em seus logs de firewall.
 
-  ![aplicativo personalizado](./media/add-custom-app.png)
+   ![aplicativo personalizado](./media/add-custom-app.png)
 
 4. Em **Domínios**, preencha os domínios exclusivos que são usados ao acessar o aplicativo personalizado. Esses domínios são usados para corresponder às mensagens do log de tráfego para esse aplicativo. Se a fonte de dados que você estiver usando não contiver informações sobre a URL do aplicativo, verifique se você preencheu os campos de endereço **IPv4** e **IPv6**.
-4.  Recomendamos a adição de notas que permitirão o controle das alterações para este registro.
+5. Recomendamos a adição de notas que permitirão o controle das alterações para este registro.
 
 Após a criação do aplicativo, ele ficará disponível para você no Catálogo de aplicativos de nuvem.
 

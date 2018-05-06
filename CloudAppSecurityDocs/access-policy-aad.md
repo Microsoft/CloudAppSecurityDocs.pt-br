@@ -1,30 +1,32 @@
 ---
-title: "Criar políticas de acesso do Cloud App Security para permitir e bloquear o acesso | Microsoft Docs"
-description: "Este tópico descreve o procedimento para configurar uma política de acesso do Proxy do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD."
-keywords: 
+title: Criar políticas de acesso do Cloud App Security para permitir e bloquear o acesso | Microsoft Docs
+description: Este tópico descreve o procedimento para configurar uma política de acesso do Proxy do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 421dae3f71ca26f167dbb4a53a28a466baf8b2a6
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 4cf6ab04f91b2b834ba494870a62691d882ee556
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
 # <a name="access-policies"></a>Políticas de acesso 
 
 > [!NOTE]
 > Este é um recurso de versão prévia.
 
-As políticas de acesso do Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, local, dispositivo e aplicativo. Crie políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são ingressados em domínio e não gerenciados pelo Windows Intune distribuindo certificados do cliente para dispositivos gerenciados ou aproveitando os certificados existentes, como certificados MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado. 
+As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, local, dispositivo e aplicativo. Crie políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são ingressados em domínio e não gerenciados pelo Windows Intune distribuindo certificados do cliente para dispositivos gerenciados ou aproveitando os certificados existentes, como certificados MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado. 
 
 > [!NOTE]
 > Em vez de permitir ou bloquear o acesso por completo, com as [políticas de sessão](session-policy-aad.md), é possível permitir o acesso durante o monitoramento da sessão e/ou limitar atividades de sessão específicas. 
@@ -44,12 +46,12 @@ As políticas de acesso condicional do Azure Active Directory e as políticas de
 
 1. Configure uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) com atribuições de usuário ou grupo de usuários e o aplicativo SAML que você deseja controlar com o proxy do Cloud App Security. 
 
-  > [!NOTE]
-  > Apenas os aplicativos que foram [implantados com o proxy](proxy-deployment-aad.md) serão afetados por essa política.
+   > [!NOTE]
+   > Apenas os aplicativos que foram [implantados com o proxy](proxy-deployment-aad.md) serão afetados por essa política.
 
 2. Roteie usuários para o proxy do Cloud App Security selecionando **Usar restrições impostas pelo proxy** na folha **Sessão**.
 
- ![Acesso condicional do Azure AD às restrições do proxy](./media/proxy-deploy-restrictions-aad.png)
+   ![Acesso condicional do Azure AD às restrições do proxy](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Criar uma política de acesso do Cloud App Security 
 
@@ -58,11 +60,11 @@ Para criar uma nova política de acesso, siga este procedimento:
 1. No portal, selecione **Controle** e, em seguida, **Políticas**.
 2. Na página **Políticas**, clique em **Criar política** e selecione **Política de acesso**.  
 
- ![Criar política de acesso](./media/access-policy-menu.png)
+   ![Criar política de acesso](./media/access-policy-menu.png)
 
 3. Na janela **Política de acesso**, atribua um nome à política, como *Bloquear o acesso em dispositivos não gerenciados*.
 
- ![Nova política de acesso](./media/access-policy-screen.png)
+   ![Nova política de acesso](./media/access-policy-screen.png)
 
 4. Em **Origem da atividade** na seção **Atividades que correspondem a todos os seguintes**, selecione os filtros de atividade adicionais a serem aplicados na política. Eles podem incluir as seguintes opções: 
      

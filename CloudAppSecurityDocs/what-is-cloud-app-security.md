@@ -1,25 +1,28 @@
 ---
-title: "O que é o Cloud App Security? | Microsoft Docs"
-description: "Este tópico descreve o Cloud App Security e como ele funciona."
-keywords: 
+title: O que é o Cloud App Security? | Microsoft Docs
+description: Este tópico descreve o Cloud App Security e como ele funciona.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5b663fc96400902854d7c6901885a3220ca4c3c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c8fb1c11fb522b826f7106798f2583e5fa4c6be6
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="what-is-cloud-app-security"></a>O que é o Cloud App Security
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
+# <a name="what-is-microsoft-cloud-app-security"></a>O que é o Microsoft Cloud App Security
 
 > [!NOTE]
 > Para obter informações sobre o Gerenciamento de segurança avançado e o Cloud App Security no Office 365, consulte a [Introdução ao Gerenciamento de segurança avançado](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
@@ -50,7 +53,7 @@ O Cloud App Security integra a visibilidade com sua nuvem ao
 
 ### <a name="data-retention--compliance"></a>Retenção de dados e conformidade
 
-O Cloud App Security é certificado oficialmente com a Conformidade da Microsoft para ISO, HIPAA, CSA STAR, cláusulas de modelo da UE e muito mais. Para ver a lista completa das certificações, acesse [Ofertas de conformidade Microsoft] (https://go.microsoft.com/fwlink/?linkid=842039) e selecione Cloud App Security.  
+O Cloud App Security é certificado oficialmente com a Conformidade da Microsoft para ISO, HIPAA, CSA STAR, cláusulas de modelo da UE e muito mais. Para ver a lista completa das certificações, acesse [Ofertas de conformidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=842039) e selecione Cloud App Security.  
 
 Quando o Cloud App Security executa a inspeção do conteúdo, a privacidade de dados é imposta. O conteúdo do arquivo não é armazenado no banco de dados do Cloud App Security. Somente os metadados dos registros de arquivo e qualquer violação identificada são armazenados no banco de dados do Cloud App Security. Para obter mais informações sobre a retenção de dados, consulte nossa [política de privacidade](http://go.microsoft.com/fwlink/?LinkId=512132) e a [Central de Confiabilidade da Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
 O Cloud App Security mantém os dados da seguinte maneira: 

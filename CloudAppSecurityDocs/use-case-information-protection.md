@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,23 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: b4d507b5fb3a646b31ba3c380b170c2abca18ddf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
+
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure  
 
 Em um mundo perfeito, todos os seus funcionários entendem a importância da proteção das informações e do trabalho dentro de suas políticas. Mas, em um mundo real, é provável que um parceiro que trabalha com a contabilidade faça o upload de um documento para o repositório do Box com as permissões erradas e, uma semana mais tarde, você percebe que informações confidenciais da sua empresa foram perdidas para a concorrência. 
 
 O Microsoft Cloud App Security ajuda a impedir que esse tipo de desastre ocorra.
 
-O Cloud App Security identifica que existem permissões públicas em um documento salvo em sua conta do Box e usa um mecanismo de classificação para identificar que há informações confidenciais no documento compartilhado publicamente. O Cloud App Security envia um alerta para informar isso ocorreu e, além disso, aplica automaticamente o rótulo de classificação **confidencial** da Proteção de Informações do Azure para fornecer criptografia adicional ao arquivo. 
+O Microsoft Cloud App Security identifica que existem permissões públicas em um documento salvo em sua conta do Box e usa um mecanismo de classificação para identificar que há informações confidenciais no documento compartilhado publicamente. O Cloud App Security envia um alerta para informar isso ocorreu e, além disso, aplica automaticamente o rótulo de classificação **confidencial** da Proteção de Informações do Azure para fornecer criptografia adicional ao arquivo. 
 
 >[!NOTE]
 > - Aplicar um rótulo da Proteção de Informações do Azure é apenas uma ação dentro de uma longa lista de [ações de governança](governance-actions.md) disponíveis.

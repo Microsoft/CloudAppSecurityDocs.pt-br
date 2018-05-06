@@ -1,67 +1,70 @@
 ---
 title: Gerenciar alertas disparados no portal do Cloud App Security | Microsoft Docs
 description: Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 ## <a name="manage-your-alerts"></a>Gerenciar os alertas  
 Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais profundamente. Você talvez queira criar novas políticas com base no que encontrar. Por exemplo, talvez você veja um administrador se conectando da Groenlândia e ninguém na sua empresa nunca se conectou da Groenlândia antes. Você pode criar uma política que suspende automaticamente uma conta de administrador quando ela é usada para entrar nesse local.  
 
 É uma boa ideia examinar todos os alertas e usá-los como ferramentas para modificar suas políticas. Se eventos inofensivos estiverem sendo considerados violações das políticas existentes, refine suas políticas para receber menos alertas desnecessários.  
 
-1.   Em **Alertas abertos**, clique em **Exibir todos os alertas**.  
+1. Em **Alertas abertos**, clique em **Exibir todos os alertas**.  
 
-     Esta seção do painel fornece uma visibilidade completa de qualquer atividade suspeita ou violação de suas políticas estabelecidas. Ela ajuda a proteger a postura de segurança que você definiu para o seu ambiente de nuvem.  
+   Esta seção do painel fornece uma visibilidade completa de qualquer atividade suspeita ou violação de suas políticas estabelecidas. Ela ajuda a proteger a postura de segurança que você definiu para o seu ambiente de nuvem.  
 
-     ![Alertas](./media/alerts.png "alertas")  
+   ![Alertas](./media/alerts.png "alertas")  
 
-2.   Para cada alerta, você precisa investigar e determinar a natureza da violação e a resposta necessária.  
+2. Para cada alerta, você precisa investigar e determinar a natureza da violação e a resposta necessária.  
 
-     Você pode filtrar os alertas por Tipo de alerta ou Gravidade para processar os mais importantes primeiro.  
+   Você pode filtrar os alertas por Tipo de alerta ou Gravidade para processar os mais importantes primeiro.  
 
-     Selecione um alerta específico. Dependendo do tipo de alerta, você receberá várias ações que podem ser executadas antes de resolver o alerta.  
+   Selecione um alerta específico. Dependendo do tipo de alerta, você receberá várias ações que podem ser executadas antes de resolver o alerta.  
 
-     Há três tipos de violações com os quais você precisará lidar ao investigar os alertas:  
+   Há três tipos de violações com os quais você precisará lidar ao investigar os alertas:  
 
-    #### <a name="serious-violations"></a>Violações graves
-     Violações graves exigem resposta imediata.
+   #### <a name="serious-violations"></a>Violações graves
+   Violações graves exigem resposta imediata.
 
-         Examples:  
+       Examples:  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+       For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-    #### <a name="questionable-violations"></a>Violações questionáveis
-    Violações questionáveis exigem mais investigação.  
+   #### <a name="questionable-violations"></a>Violações questionáveis
+   Violações questionáveis exigem mais investigação.  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
+       You can contact the  user or the user's manager about the nature of the activity.  
 
-         Leave the activity open until you have more information.  
+       Leave the activity open until you have more information.  
 
- #### <a name="authorized-violations-or-anomalous-behavior"></a>Violações autorizadas ou comportamento anormal
- Violações autorizadas ou comportamento anormal podem resultar de uso legítimo.  
+   #### <a name="authorized-violations-or-anomalous-behavior"></a>Violações autorizadas ou comportamento anormal
+   Violações autorizadas ou comportamento anormal podem resultar de uso legítimo.  
 
-         Dismiss the alert.  
+       Dismiss the alert.  
 
-3.   Ao concluir esse processo, marque o alerta como resolvido.  
+3. Ao concluir esse processo, marque o alerta como resolvido.  
 
 A tabela a seguir fornece uma lista dos tipos de alertas que podem ser disparados e recomenda maneiras pelas quais você pode resolvê-los.  
 

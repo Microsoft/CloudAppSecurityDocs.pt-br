@@ -1,27 +1,30 @@
 ---
 title: Requisitos de rede do Cloud App Security | Microsoft Docs
-description: "Este tópico descreve os endereços IP e portas que você precisa abrir para trabalhar com o Cloud App Security."
-keywords: 
+description: Este tópico descreve os endereços IP e portas que você precisa abrir para trabalhar com o Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/30/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 939e5c13f786adff59db189b1e54cc414f61c1b5
-ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
+ms.openlocfilehash: 4a493fcc3c2c92f48e1fe573993ea987b57f7f6d
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="network-requirements"></a>Requisitos de rede
 
-Este tópico fornece uma lista de portas e endereços IP que você precisa permitir e adicionar à lista de permissões para trabalhar com o Cloud App Security. 
+Este tópico fornece uma lista de portas e endereços IP que você precisa permitir e adicionar à lista de permissões para trabalhar com o Microsoft Cloud App Security. 
 
 
 ## <a name="view-your-data-center"></a>Exibir seu data center
@@ -44,15 +47,16 @@ Para acessar o portal do Cloud App Security, adicione a **porta de saída 443** 
 
 
 > [!div class="mx-tableFixed"]
-|Data center|Endereços IP|Nome DNS|
-|----|----|----|
-|EUA|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
-|UE|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
-
-
->[!NOTE]
->Em vez de um caractere curinga (\*), você pode abrir somente a URL específica do locatário, por exemplo, de acordo com a captura de tela acima, você poderá abrir mod244533.us.portal.cloudappsecurity.com
+> 
+> |Data center|Endereços IP|Nome DNS|
+> |----|----|----|
+> |EUA|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+> |UE|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
+> 
+> 
+> [!NOTE]
+> Em vez de um caractere curinga (\*), você pode abrir somente a URL específica do locatário, por exemplo, de acordo com a captura de tela acima, você poderá abrir mod244533.us.portal.cloudappsecurity.com
 
 ## <a name="siem-agent-connection"></a>Conexão do agente SIEM
 
@@ -60,11 +64,12 @@ Para habilitar a conexão do Cloud App Security ao seu SIEM, adicione a **porta 
 
 
 > [!div class="mx-tableFixed"]
-|Data center|Endereços IP|  
-|----|----|
-|EUA|13.91.91.243|
-|US2|52.184.165.82|
-|UE|52.174.56.180|
+> 
+> |Data center|Endereços IP|  
+> |----|----|
+> |EUA|13.91.91.243|
+> |US2|52.184.165.82|
+> |UE|52.174.56.180|
 
 ## <a name="app-connector"></a>Conector de aplicativo
 
@@ -77,12 +82,13 @@ Para se conectar a aplicativos de terceiros, habilite o Cloud App Security para 
 
 
 > [!div class="mx-tableFixed"]
-|Data center|Endereços IP|  
-|----|----|
-|EUA|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|UE|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
- 
+> 
+> |Data center|Endereços IP|  
+> |----|----|
+> |EUA|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |UE|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
 
 ## <a name="third-party-dlp-integration"></a>Integração do DLP de terceiros
 
@@ -100,12 +106,13 @@ Para que o Cloud App Security envie dados por meio de seu stunnel para seu servi
 Para se conectar a aplicativos de terceiros e integrar soluções de DLP externas, habilite o Cloud App Security para se conectar nesses endereços IP:
 
 > [!div class="mx-tableFixed"]
-|Data center|Endereços IP|  
-|----|----|
-|EUA|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|UE|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
- 
+> 
+> |Data center|Endereços IP|  
+> |----|----|
+> |EUA|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |UE|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
 ## <a name="email-server"></a>Servidor de email
 
 O endereço IP dedicado do email do Cloud App Security é: 
@@ -113,7 +120,7 @@ O endereço IP dedicado do email do Cloud App Security é:
 198.2.134.139 (mail1.cloudappsecurity.com)
 
 Inclua esse endereço IP à lista de permissões com o serviço antispam a fim de habilitar o envio de notificações.
-    
+
 ## <a name="log-collector"></a>Coletor de logs 
 
 Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detectar TI sombra na sua organização, é necessário abrir o seguinte:
@@ -121,12 +128,13 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 - Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada.
 - Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443.
 - Permita que o coletor de logs inicie o tráfego de saída para o Armazenamento de Blobs do Azure nas portas 80 e 443:
-   
-    |Data center|URL|
-    |----|----|
-    |EUA|https://adaprodconsole.blob.core.windows.net/|
-    |US2|https://prod03use2console1.blob.core.windows.net/|
-    |UE|https://prod02euwconsole1.blob.core.windows.net/|
+
+
+  | Data center |                        URL                        |
+  |-------------|---------------------------------------------------|
+  |     EUA      |   https://adaprodconsole.blob.core.windows.net/   |
+  |     US2     | https://prod03use2console1.blob.core.windows.net/ |
+  |     UE      | https://prod02euwconsole1.blob.core.windows.net/  |
 
 > [!NOTE]
 > - Se o firewall exigir uma lista de acesso de endereço IP estático e não for compatível com a lista de permissões baseada em URL, permita que o coletor de logs inicie o tráfego de saída para os [Intervalos de IP do datacenter do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) na porta 443.
@@ -138,6 +146,5 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  
 
-   
+

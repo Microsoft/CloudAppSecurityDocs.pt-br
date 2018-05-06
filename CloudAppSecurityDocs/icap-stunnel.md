@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,15 +13,19 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 517a468e0ff1b64f3f24e2791b576f7249451c9e
+ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
+
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
-O Cloud App Security pode integrar soluções DLP existentes para estender esses controles para a nuvem preservando uma política consistente e unificada entre locais e atividades na nuvem. A plataforma exporta interfaces fáceis de usar, incluindo API REST e ICAP, habilitando a integração com sistemas de classificação de conteúdo, como Symantec Data Loss Prevention (antigo Vontu Data Loss Prevention) ou Forcepoint DLP. 
+O Microsoft Cloud App Security pode integrar soluções DLP existentes para estender esses controles para a nuvem preservando uma política consistente e unificada entre locais e atividades na nuvem. A plataforma exporta interfaces fáceis de usar, incluindo API REST e ICAP, habilitando a integração com sistemas de classificação de conteúdo, como Symantec Data Loss Prevention (antigo Vontu Data Loss Prevention) ou Forcepoint DLP. 
 
 A integração é obtida utilizando o protocolo ICAP padrão, um protocolo http como descrito em [RFC 3507](https://tools.ietf.org/html/rfc3507). Para proteger ICAP para transmissão de dados, é necessário configurar um túnel seguro SSL (stunnel) entre a solução DLP e o Cloud App Security. A configuração de stunnel fornece funcionalidade de criptografia TLS para seus dados durante o tráfego entre o servidor DLP e Cloud App Security. 
 
@@ -276,7 +280,7 @@ O servidor de detecção usado pelo Cloud App Security é um Network Prevent pad
 2. Em **ICAP** > **Filtragem de Resposta**, altere o valor de **Ignorar Respostas Menores Que** para 1.
 
 
-3. E adicione "application/<em>" à lista de **Inspecionar Tipo de Conteúdo</em>**.
+3. E adicione "application/" à lista de **Inspecionar Tipo de Conteúdo</em>**.
      ![inspecionar tipo de conteúdo](./media/icap-inspect-content-type.png)
 
 4. Clique em **Salvar**

@@ -1,26 +1,28 @@
 ---
-title: "Definir preferências de administrador | Microsoft Docs"
-description: "Este artigo fornece instruções para configurar as preferências do administrador em Cloud App Security."
-keywords: 
+title: Definir preferências de administrador | Microsoft Docs
+description: Este artigo fornece instruções para configurar as preferências do administrador em Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 3651f962973d9e2850301097e403d2da7b9eb01e
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
 ##  <a name="Adminsettings"></a> Personalizar as configurações de administração  
-Para configurar suas preferências como um administrador do Cloud App Security, clique em seu nome na barra de menus do portal e selecione **Configurações de usuário** para definir as seguintes configurações:  
+Para configurar suas preferências como um administrador do Microsoft Cloud App Security, clique em seu nome na barra de menus do portal e selecione **Configurações de usuário** para definir as seguintes configurações:  
   
 1.  Clique em **Configurações de conta**. Aqui você pode definir e renovar a senha de acesso para o portal do Cloud App Security.  
   

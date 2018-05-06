@@ -1,27 +1,30 @@
 ---
 title: Gerenciamento de token de API no Cloud App Security | Microsoft Docs
-description: "Este tópico fornece informações sobre a geração de tokens de API para Cloud App Security."
-keywords: 
+description: Este tópico fornece informações sobre a geração de tokens de API para Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a7ae478fcd85bdb16a1783886f274a8ab81462bb
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 1823f6bbcf0061b43d9d438c94b9434a609b5fad
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="api-tokens"></a>Tokens de API
     
-A API do Cloud App Security fornece acesso programático ao Cloud App Security por meio de pontos de extremidade API REST. Aplicativos podem usar a API para realizar operações de leitura e atualização nos dados e objetos do Cloud App Security. Por exemplo, a API de segurança do aplicativo de nuvem dá suporte às seguintes operações comuns para um objeto de usuário:
+A API do Microsoft Cloud App Security fornece acesso programático ao Cloud App Security por meio de pontos de extremidade API REST. Aplicativos podem usar a API para realizar operações de leitura e atualização nos dados e objetos do Cloud App Security. Por exemplo, a API de segurança do aplicativo de nuvem dá suporte às seguintes operações comuns para um objeto de usuário:
 
 - Carregar arquivos de log para o Cloud Discovery
 - Gerar scripts de bloqueio
@@ -40,18 +43,18 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
 1. No menu **Configurações**, selecione **Extensões de segurança** e, em seguida, **Tokens de API**.
 
 2. Clique no ícone de adição, **Gerar novo token** e forneça um nome para identificar o token no futuro e, em seguida, clique em **Avançar**.
-![O Cloud App Security gera token API](./media/api-token-gen.png)
+   ![O Cloud App Security gera token API](./media/api-token-gen.png)
 
 3. Copie o valor do token e salve-o em algum lugar para recuperação – se você perdê-lo, será necessário gerar o token novamente. O token tem os privilégios do usuário que o emitiu. Por exemplo, um leitor de segurança não pode emitir um token que pode alterar os dados.
 
 4. Você pode filtrar os tokens de status: Ativo, Inativo ou Gerado. 
 
-  - Tokens com status Gerado são tokens que nunca foram usados. 
-  - Tokens com status Ativo são tokens que foram gerados e foram usados nos últimos sete dias. 
-  - Tokens com o status Inativo foram usados, mas não houve atividade nos últimos sete dias.
+   - Tokens com status Gerado são tokens que nunca foram usados. 
+   - Tokens com status Ativo são tokens que foram gerados e foram usados nos últimos sete dias. 
+   - Tokens com o status Inativo foram usados, mas não houve atividade nos últimos sete dias.
 5. Depois de gerar um novo token, você receberá uma nova URL a ser usada para acessar o portal do Cloud App Security. 
 
- ![Token de API do Cloud App Security](./media/generate-api-token.png)
+   ![Token de API do Cloud App Security](./media/generate-api-token.png)
 
 A URL genérica do portal continuará a funcionar, mas será consideravelmente mais lenta do que a URL personalizada fornecida com o token. Se você esquecer a URL a qualquer momento, você poderá exibi-la indo até o ícone **?** no menu e selecionando **Sobre**.
 

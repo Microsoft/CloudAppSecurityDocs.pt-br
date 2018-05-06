@@ -1,24 +1,26 @@
 ---
 title: Trabalhando com consultas e filtros de aplicativos descobertos do Cloud App Security | Microsoft Docs
-description: "Este tópico fornece uma lista de consultas e filtros de aplicativos descobertos do Cloud App Security e explica como trabalhar com eles."
-keywords: 
+description: Este tópico fornece uma lista de consultas e filtros de aplicativos descobertos do Cloud App Security e explica como trabalhar com eles.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea1b0b150f1028e8a8d4edac32aa6d8a4f59b564
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: d92a0b86424ef94fcb58cd50b6c4e8bde04e5f33
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
 # <a name="discovered-app-filters-and-queries"></a>Consultas e filtros de aplicativos descobertos
 
 ## <a name="discovered-app-filters"></a>Filtros dos aplicativos descobertos
@@ -64,11 +66,11 @@ Para simplificar ainda mais a investigação, agora você pode criar consultas p
 
 3. No pop-up **Salvar consulta**, nomeie a consulta.
 
- ![nova consulta](./media/new-query.png)
+   ![nova consulta](./media/new-query.png)
 
 4. Para usar essa consulta novamente no futuro, em **Consultas**, role para baixo até **Consultas salvas** e selecione a consulta. 
 
- ![abrir consulta](./media/open-query.png)
+   ![abrir consulta](./media/open-query.png)
 
 
 O Cloud App Security também fornece **Consultas sugeridas** e permite salvar consultas personalizadas usadas com frequência. As consultas sugeridas fornecem vias de investigação recomendadas que filtram os aplicativos descobertos usando as seguintes consultas sugeridas opcionais:

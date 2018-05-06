@@ -1,24 +1,27 @@
 ---
 title: Usar o analisador de log personalizado para logs sem suporte | Microsoft Docs
-description: "Este artigo fornece informações sobre como usar o analisador de log personalizado para que o upload de logs de dispositivos sem suporte seja realizado para o Cloud App Security."
-keywords: 
+description: Este artigo fornece informações sobre como usar o analisador de log personalizado para que o upload de logs de dispositivos sem suporte seja realizado para o Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/26/2017
+ms.date: 4/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 859cba7daf575b41b33380eeec33288a17e64d91
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 4c4cf23d6b22686930cd6976908da9f432515e9a
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="use-a-custom-log-parser"></a>Usar o analisador de log personalizado
 O Cloud App Security permite que você configure um analisador personalizado para corresponder e processar o formato de seus logs, de modo que eles possam ser usados para a Descoberta de Nuvem, mesmo se forem de um firewall ou dispositivo sem suporte explícito do Cloud App Security. 
 
@@ -27,23 +30,23 @@ O analisador personalizado permite que você use os logs de firewalls sem suport
 
  
 Para configurar um analisador personalizado de CSV:
-1.  No portal do Cloud App Security, clique em **Descobrir** e **Criar novo relatório de instantâneo**.  
+1. No portal do Cloud App Security, clique em **Descobrir** e **Criar novo relatório de instantâneo**.  
   
-    ![Criar novo relatório de instantâneo](./media/create-new-snapshot-report.png)
+   ![Criar novo relatório de instantâneo](./media/create-new-snapshot-report.png)
      
-3.  Insira um **Nome do relatório** e uma **Descrição**
+2. Insira um **Nome do relatório** e uma **Descrição**
   
-4.  Em **Fonte de dados**, selecione **Formato de log personalizado...** .  
+3. Em **Fonte de dados**, selecione **Formato de log personalizado...** .  
 
-     ![Novo relatório de instantâneo](./media/custom-log-upload.png)   
+    ![Novo relatório de instantâneo](./media/custom-log-upload.png)   
 
-5. Colete os logs do firewall e do proxy por meio dos quais os usuários da sua organização acessam a Internet. Certifique-se de coletar logs durante os períodos de tráfego de pico que representam a atividade de todos os usuários na sua organização. 
+4. Colete os logs do firewall e do proxy por meio dos quais os usuários da sua organização acessam a Internet. Certifique-se de coletar logs durante os períodos de tráfego de pico que representam a atividade de todos os usuários na sua organização. 
 
-6. Abra os logs que você deseja processar em um editor de texto e examine o formato deles, certificando-se de que os nomes das colunas no log correspondam aos campos na tela **Formato de log personalizado**.
+5. Abra os logs que você deseja processar em um editor de texto e examine o formato deles, certificando-se de que os nomes das colunas no log correspondam aos campos na tela **Formato de log personalizado**.
 
-  ![analisador de log personalizado](./media/log-data.png) 
+   ![analisador de log personalizado](./media/log-data.png) 
 
-7. Em seguida, preencha os campos com base em seus dados para indicar quais colunas nos dados correspondem aos campos específicos no Cloud App Security. Será necessário modificar os nomes de coluna em seu arquivo de log para correlacionar corretamente.
+6. Em seguida, preencha os campos com base em seus dados para indicar quais colunas nos dados correspondem aos campos específicos no Cloud App Security. Será necessário modificar os nomes de coluna em seu arquivo de log para correlacionar corretamente.
   
    > [!NOTE]
     > Os campos diferenciam maiúsculas de minúsculas. Digite os nomes das colunas de forma idêntica no Cloud App Security e no arquivo de log. Além disso, certifique-se de que o formato de data escolhido seja idêntico.
@@ -53,23 +56,23 @@ Para configurar um analisador personalizado de CSV:
 
 7. Clique em **Salvar**. O formato de log personalizado configurado por você será salvo como o analisador personalizada padrão. Você pode editá-lo a qualquer momento, basta clicar em Editar.
 
-5. Em **Escolher os logs de tráfego**, selecione o arquivo de log que você modificou e carregue-o. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados.  
+8. Em **Escolher os logs de tráfego**, selecione o arquivo de log que você modificou e carregue-o. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados.  
   
 
-6.  Clique em **Criar**.  
+9. Clique em **Criar**.  
 
-7.  Após o upload ser concluído, a mensagem de status será exibida no canto superior direito da tela avisando que o log foi carregado com êxito.  
+10. Após o upload ser concluído, a mensagem de status será exibida no canto superior direito da tela avisando que o log foi carregado com êxito.  
   
-8.  Depois de carregar os arquivos de log, levará algum tempo para que eles possam ser analisados e examinados.  
-Após o processamento dos arquivos de log ser concluído, você receberá um email para avisar que ele está pronto. 
+11. Depois de carregar os arquivos de log, levará algum tempo para que eles possam ser analisados e examinados.  
+    Após o processamento dos arquivos de log ser concluído, você receberá um email para avisar que ele está pronto. 
   
-9. Uma faixa de notificação aparecerá na barra de status na parte superior do portal para atualizar o status de processamento dos arquivos de log.  
-![barra de menus do arquivo de log de processamento](./media/processing-log-file-menu-bar.png) 
+12. Uma faixa de notificação aparecerá na barra de status na parte superior do portal para atualizar o status de processamento dos arquivos de log.  
+    ![barra de menus do arquivo de log de processamento](./media/processing-log-file-menu-bar.png) 
    
-10. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, você pode exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.   
+13. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, você pode exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.   
   
      ![Guia Configurações de descoberta](./media/discovery-settings-tab.png)
-11. Em seguia, selecione **Gerenciar relatórios de instantâneo** e seu relatório de instantâneo.
+14. Em seguia, selecione **Gerenciar relatórios de instantâneo** e seu relatório de instantâneo.
  
     ![gerenciamento de relatório de instantâneo](./media/snapshot-report-managment.png)
 

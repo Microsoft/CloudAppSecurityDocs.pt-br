@@ -1,26 +1,29 @@
 ---
-title: "Controlar quais aplicativos de nuvem de terceiros recebem permissões | Microsoft Docs"
-description: "Este artigo fornece informações sobre como você pode controlar, vetar e autorizar permissões de aplicativo de terceiros."
-keywords: 
+title: Controlar quais aplicativos de nuvem de terceiros recebem permissões | Microsoft Docs
+description: Este artigo fornece informações sobre como você pode controlar, vetar e autorizar permissões de aplicativo de terceiros.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d6daa74269057595a34db7813d0cd6ba5eaf947
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 74ca53c1b25d73383d034fdb4d50425202e39859
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="manage-app-permissions"></a>Gerenciar permissões de aplicativo
-Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365, o G Suite e o Salesforce.  Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo.  Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões do aplicativo Cloud App Security habilitam a visualização de quais aplicativos instalados pelo usuário têm acesso a dados do Office 365, do G Suite e do Salesforce, quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365, do G Suite e do Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
+Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365, o G Suite e o Salesforce.  Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo.  Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões do aplicativo Microsoft Cloud App Security habilitam a visualização de quais aplicativos instalados pelo usuário têm acesso a dados do Office 365, do G Suite e do Salesforce, quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365, do G Suite e do Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
 
 
 ## <a name="working-with-the-app-permissions-page"></a>Trabalhando com a página de permissões de aplicativo
@@ -55,30 +58,30 @@ A página de Permissões de aplicativo fornece as seguintes informações sobre 
 ## <a name="ban-or-approve-an-app"></a>Vetar ou aprovar um aplicativo
 1. Na página de Permissões do aplicativo, clique no aplicativo para abrir a Gaveta de aplicativo para exibir mais informações sobre o aplicativo e as permissões que foram concedida a ele. Você pode clicar no link de Permissões para exibir uma lista completa das permissões que foram concedidas ao aplicativo. Em Uso da comunidade, você pode exibir o quão comum o aplicativo é em outras organizações. Você também pode clicar no link Relacionar atividade para exibir as atividades que estão listadas no log de governança relacionado a esse aplicativo.
 2. Para vetar o aplicativo, clique no ícone de vetar no final da linha do aplicativo na tabela. <br></br>
- ![ícone Vetar aplicativo](./media/ban-app-icon.png) <br></br>
-Ao vetar um aplicativo, você pode escolher se deseja que os usuários saibam que o aplicativo previamente instalado e autorizado foi vetado, será desabilitado e não terá acesso ao aplicativo conectado. Se não quiser que eles saibam, cancele a seleção de Notificar os usuários que concederam acesso a esse aplicativo vetado na caixa de diálogo de Vetar o aplicativo.
+   ![ícone Vetar aplicativo](./media/ban-app-icon.png) <br></br>
+   Ao vetar um aplicativo, você pode escolher se deseja que os usuários saibam que o aplicativo previamente instalado e autorizado foi vetado, será desabilitado e não terá acesso ao aplicativo conectado. Se não quiser que eles saibam, cancele a seleção de Notificar os usuários que concederam acesso a esse aplicativo vetado na caixa de diálogo de Vetar o aplicativo.
 
     ![vetar aplicativo](./media/ban-app.png)
-> [!Note]
-> É recomendável que você informe os usuários do aplicativo que ele está prestes a ter o uso vetado.
+   > [!Note]
+   > É recomendável que você informe os usuários do aplicativo que ele está prestes a ter o uso vetado.
 
 3. Para aprovar o aplicativo, clique no ícone de aprovar no final da linha na tabela. <br></br>
- ![aprovar aplicativo](./media/approve-app.png) <br></br>
-O ícone fica verde e o aplicativo é aprovado para todos os usuários do aplicativo conectado.
-> [!Note]
-> Quando você marca um aplicativo como aprovado não há nenhum efeito sobre o usuário final. Isso serve apenas para ajudá-lo a marcar visualmente os aplicativos que você aprovou para separá-los daqueles que você ainda não examinou.
+   ![aprovar aplicativo](./media/approve-app.png) <br></br>
+   O ícone fica verde e o aplicativo é aprovado para todos os usuários do aplicativo conectado.
+   > [!Note]
+   > Quando você marca um aplicativo como aprovado não há nenhum efeito sobre o usuário final. Isso serve apenas para ajudá-lo a marcar visualmente os aplicativos que você aprovou para separá-los daqueles que você ainda não examinou.
 
-3. Digite a mensagem que você deseja enviar para os usuários do aplicativo na caixa Digite uma mensagem de notificação personalizada e atualize o endereço de email 'responder para', se for necessário. 
- Clique em **Vetar aplicativo** para enviar o email e vetar o aplicativo dos usuários do aplicativo conectado.
+4. Digite a mensagem que você deseja enviar para os usuários do aplicativo na caixa Digite uma mensagem de notificação personalizada e atualize o endereço de email 'responder para', se for necessário. 
+   Clique em **Vetar aplicativo** para enviar o email e vetar o aplicativo dos usuários do aplicativo conectado.
 
 ## <a name="revoke-app-and-notify-user"></a>Revogar aplicativo e notificar o usuário
 
 Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou para notificar o usuário que isso deve foi feito. 
 
-1. Na página de Permissões de aplicativo, clique em três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *Você autorizou o aplicativo Adallom Google Protector a acessar sua conta G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere conceder ou revogar as permissões que você deu a esse aplicativo em sua conta G Suite. Para revogar o acesso ao aplicativo, acesse: https://security.google.com/settings/security/permissions?hl=en&pli=1, selecione o aplicativo e clique em 'Revogar acesso' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
+1. Na página de Permissões de aplicativo, clique em três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *Você autorizou o aplicativo Adallom Google Protector a acessar sua conta G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere conceder ou revogar as permissões que você deu a esse aplicativo em sua conta G Suite. Para revogar o acesso ao aplicativo, vá para: https://security.google.com/settings/security/permissions?hl=en&pli=1 Selecione o aplicativo e clique em 'Revogar o acesso' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
 2. Você também pode revogar permissões para usar o aplicativo para o usuário, clicando no ícone no final da linha do aplicativo na tabela e selecionando **Revogar aplicativo**. 
 
- ![revogar aplicativo](./media/revoke-app.png)
+   ![revogar aplicativo](./media/revoke-app.png)
 
 ## <a name="query-app-permissions"></a>Consultar permissões de aplicativo
 

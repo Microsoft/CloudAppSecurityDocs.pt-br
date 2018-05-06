@@ -1,27 +1,30 @@
 ---
-title: "Usando o mecanismo RegEx para políticas de inspeção de conteúdo | Microsoft Docs"
-description: "Este tópico fornece instruções para usar RegEx para correspondência de padrão de políticas do Cloud App Security."
-keywords: 
+title: Usando o mecanismo RegEx para políticas de inspeção de conteúdo | Microsoft Docs
+description: Este tópico fornece instruções para usar RegEx para correspondência de padrão de políticas do Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f6ee1a96a7f65c903fe6e0978fd9a31d850697e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 2e7c8f640a054ba8e5bc2ad999bd73a6604eb4d0
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
  
-As políticas de inspeção de conteúdo do Cloud App Security utilizam o RegEx para a correspondência de padrões. A inspeção de conteúdo pode ser aplicada como parte das políticas de arquivos. Para testar expressões regulares, você pode usar os seguintes sites:  
+As políticas de inspeção de conteúdo do Microsoft Cloud App Security utilizam o RegEx para a correspondência de padrões. A inspeção de conteúdo pode ser aplicada como parte das políticas de arquivos. Para testar expressões regulares, você pode usar os seguintes sites:  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   
@@ -51,14 +54,14 @@ As limitações a seguir são impostas em expressões regulares personalizadas:
   
 Expressões de exemplo  
   
-||||  
-|-|-|-|  
-|**Expressão regular**|**Dados**|**Correspondências**|  
-|Colou?r (?:black&#124;blue&#124;white)|Cor preta<br /><br /> Cor branca<br /><br /> Cor vermelha|Sim<br /><br /> Sim<br /><br /> Não|  
-|[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|Sim<br /><br /> Sim<br /><br /> Não|  
-|20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31)|2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31|Sim<br /><br /> Sim<br /><br /> Não|  
-|d.n't\s{0,10}c.r.|Não importa<br /><br /> D!n'tcor0<br /><br /> Não importa|Sim<br /><br /> Sim<br /><br /> Não|  
- 
+
+|                                                               |                                                               |                                    |
+|---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
+|              <strong>Expressão regular</strong>              |                     <strong>Dados</strong>                     |      <strong>Correspondências</strong>      |
+|            Colou?r (?:black&#124;blue&#124;white)             |   Cor preta<br /><br /> Cor branca<br /><br /> Cor vermelha   | Sim<br /><br /> Sim<br /><br /> Não |
+|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Sim<br /><br /> Sim<br /><br /> Não |
+| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Sim<br /><br /> Sim<br /><br /> Não |
+|                       d.n't\s{0,10}c.r.                       | Não importa<br /><br /> D!n'tcor0<br /><br /> Não importa | Sim<br /><br /> Sim<br /><br /> Não |
 
 ## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   

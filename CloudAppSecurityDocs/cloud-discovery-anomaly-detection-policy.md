@@ -1,24 +1,27 @@
 ---
-title: "Criar uma política de descoberta de anomalias do Cloud Discovery no Cloud App Security | Microsoft Docs"
-description: "Estes tópico fornece informações sobre como trabalhar com as políticas de detecção de anomalias do Cloud Discovery."
-keywords: 
+title: Criar uma política de descoberta de anomalias do Cloud Discovery no Cloud App Security | Microsoft Docs
+description: Estes tópico fornece informações sobre como trabalhar com as políticas de detecção de anomalias do Cloud Discovery.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 408b136764fd5e16f47772fb73ff6588d9b5bc8e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 49e7dadb3d179e70c04decccdc8ab11aeefc3241
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Política de detecção de anomalias do Cloud Discovery
 Este artigo fornece detalhes de referência sobre as políticas, fornecendo explicações sobre cada tipo de política e os campos que podem ser configurados para cada política.  
   
@@ -33,7 +36,8 @@ Para cada política, defina os seguintes parâmetros:
  
 2. Forneça o **Nome da política** e **Descrição**.  
 
-3. Crie um filtro para os aplicativos que você deseja monitorar clicando em **Adicionar filtro**. Você pode selecionar um aplicativo específico, uma **Categoria** de aplicativo ou filtrar por **Nome**, **Domínio e **Fator de risco** e clicar em **Salvar**.
+3. Crie um filtro para os aplicativos que você deseja monitorar clicando em <strong>Adicionar filtro</strong>. 
+   Você pode selecionar um aplicativo específico, uma <strong>Categoria</strong> de aplicativo ou filtrar por <strong>Nome</strong>, <strong>Domínio e **Fator de risco</strong> e clicar em <strong>Salvar</strong>.
 
 4. Em **Aplicar a**, defina como deseja que o uso seja filtrado. O uso sendo monitorado pode ser filtrado de duas maneiras diferentes:  
   

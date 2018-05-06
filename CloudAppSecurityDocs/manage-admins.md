@@ -1,27 +1,30 @@
 ---
 title: Gerenciar acesso de administrador ao portal do Cloud App Security | Microsoft Docs
-description: "Este tópico fornece instruções para configurar o acesso ao portal do Cloud App Security para seus administradores."
-keywords: 
+description: Este tópico fornece instruções para configurar o acesso ao portal do Cloud App Security para seus administradores.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e20af36ddf5d3758d42a13caab89663ec1fab985
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 220f25083ad4b1589b75a8ce17f40e80ebfd7ece
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 ## <a name="managing-admin-access"></a>Gerenciar o acesso administrativo
 
-O Cloud App Security é compatível com o controle de acesso baseado em função. Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD têm acesso ao Cloud App Security:
+O Microsoft Cloud App Security é compatível com o Controle de acesso baseado em função. Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD têm acesso ao Microsoft Cloud App Security:
 
 - Administrador global e Administrador de segurança: administradores com **Acesso completo** têm permissão total no Cloud App Security para adicionar administradores, adicionar políticas e configurações, carregar logs e executar ações de controle.
 

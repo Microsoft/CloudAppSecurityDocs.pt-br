@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/11/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,15 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f16ff050ca5a3e73077a907dbf11cf3e9cf2b03
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 067709747631e18fbc88de165127d89be8fef068
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Conformidade, confiabilidade, privacidade e segurança de dados do Microsoft Cloud App Security
 
 O Microsoft Cloud App Security é um componente crítico da pilha do Microsoft Cloud Security. Ele é uma solução abrangente que ajuda sua organização a aproveitar totalmente a promessa de aplicativos em nuvem, mas mantém você em controle por meio de visibilidade abrangente, recursos de auditoria e controles granulares sobre seus dados confidenciais.

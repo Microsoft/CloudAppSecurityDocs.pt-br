@@ -1,24 +1,27 @@
 ---
-title: "Controlar o uso de aplicativos de nuvem criando políticas no Cloud App Security | Microsoft Docs"
-description: "Este tópico fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos de nuvem."
-keywords: 
+title: Controlar o uso de aplicativos de nuvem criando políticas no Cloud App Security | Microsoft Docs
+description: Este tópico fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos de nuvem.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 578cedd1f499f91ae2e740a7e0e0f1495d86f3cb
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
 As políticas permitem que você defina a maneira como deseja que os usuários se comportem na nuvem. Elas permitem que você detecte comportamento de risco, violações ou pontos de dados e atividades suspeitos em seu ambiente de nuvem e, se necessário, integrar fluxos de trabalho de correção para obter a mitigação de risco completa. Existem vários tipos de políticas que se correlacionam com diferentes tipos de informações que você deseja reunir sobre seu ambiente de nuvem e os tipos de ações de correção que deseja executar.  
@@ -93,18 +96,18 @@ Modelos de política ajudam você a definir os filtros corretos e as configuraç
   
 Para criar uma política de **Modelo de política**, execute estas etapas:  
   
-1.  No console, clique em **Controlar** seguido por **Modelos**.  
+1. No console, clique em **Controlar** seguido por **Modelos**.  
   
-     ![](./media/create-policy-from-template.png)  
+    ![](./media/create-policy-from-template.png)  
   
-2.  Clique no **+** na extrema direita da linha do modelo que deseja usar. Uma página de criação de política é aberta contendo a configuração predefinida do modelo.  
+2. Clique no **+** na extrema direita da linha do modelo que deseja usar. Uma página de criação de política é aberta contendo a configuração predefinida do modelo.  
   
-3.  Modifique o modelo conforme necessário para sua política personalizada. Todas as propriedades e campos dessa política baseada em modelo podem ser modificados de acordo com suas necessidades.  
-> [!NOTE] 
->Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se pesquisar *malware.exe*, você localizará TODOS os arquivos com malware ou exe em seu nome de arquivo, enquanto se pesquisar **"malware.exe"** (com aspas), localizará apenas arquivos que contêm exatamente "malware.exe". 
-     **É igual a** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar *malware.exe*, ele localizará malware.exe, mas não malware.exe.txt.  
-4.  Depois de criar a nova política baseada em modelo, um link para a nova política aparece na coluna **Políticas vinculadas** na tabela de modelos de política ao lado do modelo por meio do qual a política foi criada.   
-     Você pode criar quantas políticas desejar de cada modelo e elas serão vinculadas ao modelo original, permitindo que você acompanhe todas as políticas criadas usando o mesmo modelo.  
+3. Modifique o modelo conforme necessário para sua política personalizada. Todas as propriedades e campos dessa política baseada em modelo podem ser modificados de acordo com suas necessidades.  
+   > [!NOTE] 
+   >Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se pesquisar *malware.exe*, você localizará TODOS os arquivos com malware ou exe em seu nome de arquivo, enquanto se pesquisar **"malware.exe"** (com aspas), localizará apenas arquivos que contêm exatamente "malware.exe". 
+    **É igual a** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar *malware.exe*, ele localizará malware.exe, mas não malware.exe.txt.  
+4. Depois de criar a nova política baseada em modelo, um link para a nova política aparece na coluna **Políticas vinculadas** na tabela de modelos de política ao lado do modelo por meio do qual a política foi criada.   
+    Você pode criar quantas políticas desejar de cada modelo e elas serão vinculadas ao modelo original, permitindo que você acompanhe todas as políticas criadas usando o mesmo modelo.  
   
 Como alternativa, você pode **criar uma política durante a investigação**. Se você estiver investigando **Log de atividades**, **Arquivos** ou **Contas** e analisar detalhadamente para pesquisar algo específico, a qualquer momento você poderá criar uma nova política com base nos resultados da sua investigação.  
   

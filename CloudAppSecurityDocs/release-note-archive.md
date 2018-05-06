@@ -1,24 +1,27 @@
 ---
-title: "Arquivo Morto de atualizações anteriores do Cloud App Security | Microsoft Docs"
-description: "Este tópico representa um arquivo que descreve as atualizações feitas em lançamentos anteriores do Cloud App Security."
-keywords: 
+title: Arquivo Morto de atualizações anteriores do Cloud App Security | Microsoft Docs
+description: Este tópico representa um arquivo que descreve as atualizações feitas em lançamentos anteriores do Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eccb23c10641517090c9fead2231eb5ebceb2000
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Arquivo Morto de atualizações anteriores do Microsoft Cloud App Security
 
 Para ver a lista de novidades, confira [Novidades sobre o Cloud App Security](release-notes.md).
@@ -173,16 +176,16 @@ Lançado em 18 de junho de 2017
 
 #### <a name="new-features"></a>Novos recursos
 
--   Agora você pode exigir que os usuários entrem novamente em todos os aplicativos do Office 365 e do Azure AD como uma correção rápida e eficaz para alertas de atividade do usuário suspeita e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário.
--   Agora você pode filtrar para atividades de **Adicionar atribuição de função de representação** no log de atividades. Esta atividade permite que você detecte quando um administrador concedeu uma função de **Representação de aplicativo** a qualquer usuário ou conta de sistema, usando o cmdlet **ManagementRoleAssignment novo**. Esta função permite que o representante execute operações ao usar permissões associadas à conta representada, em vez de permissões associadas à conta do representante.
-Melhorias do Cloud Discovery:
--   Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de usuário do Azure Active Directory. Quando você habilita esse recurso, o nome de usuário recebido nos logs de tráfego de descoberta serão correspondidos e substituídos pelo nome de usuário do Azure AD, habilitando os seguintes novos recursos:
+- Agora você pode exigir que os usuários entrem novamente em todos os aplicativos do Office 365 e do Azure AD como uma correção rápida e eficaz para alertas de atividade do usuário suspeita e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário.
+- Agora você pode filtrar para atividades de **Adicionar atribuição de função de representação** no log de atividades. Esta atividade permite que você detecte quando um administrador concedeu uma função de **Representação de aplicativo** a qualquer usuário ou conta de sistema, usando o cmdlet **ManagementRoleAssignment novo**. Esta função permite que o representante execute operações ao usar permissões associadas à conta representada, em vez de permissões associadas à conta do representante.
+  Melhorias do Cloud Discovery:
+- Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de usuário do Azure Active Directory. Quando você habilita esse recurso, o nome de usuário recebido nos logs de tráfego de descoberta serão correspondidos e substituídos pelo nome de usuário do Azure AD, habilitando os seguintes novos recursos:
   - Você pode investigar o uso de TI sombra pelo usuário do Azure Active Directory.
   - Você pode correlacionar o uso do aplicativo de nuvem Descoberto com as atividades coletadas pela API.
   - Então, você pode criar logs personalizados com base nos grupos de usuários do Azure AD. Por exemplo, um relatório de TI sombra para um departamento de Marketing específico.
--   Foram feitos aperfeiçoamentos ao analisador de syslog Juniper. Agora, ele dá suporte aos formatos de welf e sd-syslog.
--   Aprimoramentos foram feitos ao analisador Palo Alto para melhor descoberta de aplicativo.
--   Para verificar se os logs estão sendo carregados com êxito, agora você pode ver o status dos seus Coletores de log no portal do Cloud App Security. 
+- Foram feitos aperfeiçoamentos ao analisador de syslog Juniper. Agora, ele dá suporte aos formatos de welf e sd-syslog.
+- Aprimoramentos foram feitos ao analisador Palo Alto para melhor descoberta de aplicativo.
+- Para verificar se os logs estão sendo carregados com êxito, agora você pode ver o status dos seus Coletores de log no portal do Cloud App Security. 
 
 #### <a name="general-improvements"></a>Aperfeiçoamentos gerais:
 -   Marcas de endereço IP internas e marcas de IP personalizadas são consideradas hierarquicamente agora, com marcas de IP personalizadas, tendo precedência sobre as marcas de IP internas. Por exemplo, se um endereço IP estiver marcado como **Arriscado** com base em inteligência de ameaça, mas há uma marca IP personalizada que o identifica como **Corporativo**, as marcas e a categoria personalizada terão precedência.
@@ -256,8 +259,7 @@ Lançado em 24 de abril de 2017
 
 - Para as contas de trabalho da Microsoft (Office 365 e Azure Active Directory), o Cloud App Security agrupa diferentes identificadores de usuário como endereços de proxy, aliases, SIDs e muito mais em uma única conta. Todos os aliases relacionados a uma conta aparecerão sob o endereço de email principal. Com base na lista de identificadores de usuário, para atividades cujo ator é um identificador de usuário, o ator será exibido como o nome UPN do nome de usuário primário. Com base no nome UPN, serão atribuídos a grupos e políticas aplicadas. Isso melhorará a investigação de atividades e unirá todas as atividades relacionadas à mesma sessão de anomalias e políticas baseadas em grupo. Este recurso será implantado gradualmente no próximo mês.
 
-- A marca de Robô foi adicionada como um possível fator de risco no relatório interno de uso do navegador. Agora, além de o uso do navegador ser marcado como obsoleto, você pode ver quando o uso do navegador foi executado por um robô. Saiba mais sobre o [relatórios internos](built-in-report-reference.md).
-
+- A marca de Robô foi adicionada como um possível fator de risco no relatório interno de uso do navegador. Agora, além de o uso do navegador ser marcado como obsoleto, você pode ver quando o uso do navegador foi executado por um robô. 
 - Ao criar uma política de arquivo de inspeção de conteúdo, agora você pode definir o filtro para incluir apenas os arquivos com pelo menos 50 correspondências.
 
 
@@ -343,8 +345,8 @@ Lançado em 22 de janeiro de 2017
 -   As descrições das atividades foram melhoradas ficando mais consistentes e claras. Agora, cada atividade fornece um botão de comentários, portanto, se você não entender alguma ou tiver dúvidas, poderá nos informar. 
  
 **Melhorias**  
--   Foi adicionada uma nova ação de governança para o Office 365 que permite remover todos os usuários externos de um arquivo. Por exemplo, isso permite implementar políticas que **removem compartilhamentos externos de arquivos com classificação somente interna**.
--   Melhoria na identificação de usuários externos no SharePoint Online. Ao filtrar usando o grupo "usuários externos", a conta do sistema app@sharepoint não será exibida.
+- Foi adicionada uma nova ação de governança para o Office 365 que permite remover todos os usuários externos de um arquivo. Por exemplo, isso permite implementar políticas que **removem compartilhamentos externos de arquivos com classificação somente interna**.
+- Melhoria na identificação de usuários externos no SharePoint Online. Ao filtrar usando o grupo "usuários externos", a conta do sistema app@"sharepoint" não será exibida.
 
 
 
@@ -427,11 +429,11 @@ Lançada em 13 de novembro de 2016
 -   O Cloud App Security agora dá suporte à Proteção de Informações do Microsoft Azure incluindo a integração aprimorada e provisionamento automático. Você pode filtrar os Arquivos e definir políticas de arquivo usando a Classificação de marca segura e definir o rótulo de classificação que deseja exibir. Os rótulos também indicam se a classificação foi definida por alguém na sua organização ou por pessoas de outro locatário (Externo). Você também pode definir políticas de atividade com base nos rótulos de classificação da Proteção de Informações do Azure e habilitar a verificação automática para rótulos de classificação no Office 365. Para obter mais informações sobre como aproveitar esse novo recurso, consulte [Integração com o Proteção de Informações do Azure](azip-integration.md).
  
 **Melhorias**
--   Foram feitas melhorias para o log de atividades do Cloud App Security: 
-   -    Eventos do Office 365 do Centro de conformidade e segurança agora estão integrados com o Cloud App Security e são visíveis no **Log de atividade**.
-   -    Todas as atividades do Cloud App Security são registradas no log de atividades do Cloud App Security como atividades administrativas.
--   Para ajudá-lo a investigar os alertas relacionados a arquivos, em cada alerta que resultar de uma política de arquivo, agora você pode exibir a lista de atividades que foram executadas no arquivo correspondente.
--   O algoritmo de viagem impossível no mecanismo de detecção de anomalias foi aprimorado para fornecer um melhor suporte para locatários pequenos. 
+- Foram feitas melhorias para o log de atividades do Cloud App Security: 
+  -    Eventos do Office 365 do Centro de conformidade e segurança agora estão integrados com o Cloud App Security e são visíveis no **Log de atividade**.
+  -    Todas as atividades do Cloud App Security são registradas no log de atividades do Cloud App Security como atividades administrativas.
+- Para ajudá-lo a investigar os alertas relacionados a arquivos, em cada alerta que resultar de uma política de arquivo, agora você pode exibir a lista de atividades que foram executadas no arquivo correspondente.
+- O algoritmo de viagem impossível no mecanismo de detecção de anomalias foi aprimorado para fornecer um melhor suporte para locatários pequenos. 
  
 **Pequenos aperfeiçoamentos**
 -   O **Limite de exportação de atividade** foi ampliado para 10.000. 

@@ -1,27 +1,30 @@
 ---
-title: "Proteger a privacidade do usuário no Cloud App Security anonimizando dados | Microsoft Docs"
-description: "Este artigo fornece informações sobre como anonimizar os nomes de usuário nos dados do Cloud Discovery."
-keywords: 
+title: Proteger a privacidade do usuário no Cloud App Security anonimizando dados | Microsoft Docs
+description: Este artigo fornece informações sobre como anonimizar os nomes de usuário nos dados do Cloud Discovery.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 902c5a55930ca447aeb7428d36910550f2ca1687
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 86ca11744cf602aac979fafa0577731da8fbf277
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
-A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Quando necessário, para uma investigação de segurança específica (por exemplo, devido a uma violação de segurança ou atividade de usuário suspeita), os administradores podem resolver o nome de usuário real. Se um administrador tiver algum motivo para suspeitar de um usuário específico, ele também poderá pesquisar o nome de usuário criptografado de um nome de usuário conhecido e começar a investigação usando o nome de usuário criptografado. Toda conversão de nome de usuário é auditada no **Log de governança** do portal.
+A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Microsoft Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Quando necessário, para uma investigação de segurança específica (por exemplo, devido a uma violação de segurança ou atividade de usuário suspeita), os administradores podem resolver o nome de usuário real. Se um administrador tiver algum motivo para suspeitar de um usuário específico, ele também poderá pesquisar o nome de usuário criptografado de um nome de usuário conhecido e começar a investigação usando o nome de usuário criptografado. Toda conversão de nome de usuário é auditada no **Log de governança** do portal.
 
 Pontos principais:
 -   Nenhuma informação particular é armazenada nem exibida. Somente informações criptografadas.
@@ -31,45 +34,46 @@ Pontos principais:
 
 Como funciona a anonimização de dados:
 
-1.  Há três maneiras de aplicar a anonimização de dados: 
+1. Há três maneiras de aplicar a anonimização de dados: 
     
-    - Você pode definir que os dados de um arquivo de log específico sejam anonimizados [criando um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e selecionando **Anonimizar informações particulares**.
+   - Você pode definir que os dados de um arquivo de log específico sejam anonimizados [criando um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e selecionando **Anonimizar informações particulares**.
 
-      ![Torne anônimos dados de instantâneo](./media/anonymize-log.png)
+     ![Torne anônimos dados de instantâneo](./media/anonymize-log.png)
 
-    - Você pode definir a anonimização dos dados de um [upload automatizado para uma nova fonte de dados](configure-automatic-log-upload-for-continuous-reports.md) selecionando **Anonimizar informações particulares** ao adicionar a nova fonte de dados.  
+   - Você pode definir a anonimização dos dados de um [upload automatizado para uma nova fonte de dados](configure-automatic-log-upload-for-continuous-reports.md) selecionando **Anonimizar informações particulares** ao adicionar a nova fonte de dados.  
   
-      ![Torne anônimos dados de log](./media/anonymize-autolog.png)
+     ![Torne anônimos dados de log](./media/anonymize-autolog.png)
 
-    - Você pode definir no Cloud App Security que o padrão seja anonimizar todos os dados de relatórios de instantâneos de arquivos de log carregados e de relatórios contínuos dos coletores de log da seguinte maneira:
+   - Você pode definir no Cloud App Security que o padrão seja anonimizar todos os dados de relatórios de instantâneos de arquivos de log carregados e de relatórios contínuos dos coletores de log da seguinte maneira:
      
-        1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
+     1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
      
-        2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**.
+     2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**.
 
-        3. Em Chave de criptografia, selecione se deseja **Usar a chave dedicada gerada para seu portal** ou **Usar uma chave personalizada**. Se você **Usar uma chave personalizada**, digite uma chave de criptografia UTF8 de 16 bytes.
-        4. Clique em **Salvar**.
+     3. Em Chave de criptografia, selecione se deseja **Usar a chave dedicada gerada para seu portal** ou **Usar uma chave personalizada**. Se você **Usar uma chave personalizada**, digite uma chave de criptografia UTF8 de 16 bytes.
+     4. Clique em **Salvar**.
  
-       ![Anonimização](./media/anonymizer1.png)
+        ![Anonimização](./media/anonymizer1.png)
   
 
-2.  Quando a Anonimização está selecionada, o Cloud App Security analisa o log de tráfego e extrai atributos específicos de dados.
-3.  O Cloud App Security substitui o nome de usuário por um nome de usuário criptografado.
-4.  Em seguida, ele analisa os dados de uso de nuvem e gera relatórios do Cloud Discovery com base nos dados anonimizados.
+2. Quando a Anonimização está selecionada, o Cloud App Security analisa o log de tráfego e extrai atributos específicos de dados.
+3. O Cloud App Security substitui o nome de usuário por um nome de usuário criptografado.
+4. Em seguida, ele analisa os dados de uso de nuvem e gera relatórios do Cloud Discovery com base nos dados anonimizados.
  
-    ![Torne anônimo o painel do Cloud Discovery](./media/anonymize-dashboard.png)
+   ![Torne anônimo o painel do Cloud Discovery](./media/anonymize-dashboard.png)
  
-5.  Para uma investigação específica, como ao investigar um alerta de uso anômalo, você poderá resolver o nome de usuário específico no portal e fornecer uma justificativa comercial. Esta página também pode ser usada para pesquisar o nome de usuário criptografado de um nome de usuário conhecido. 
+5. Para uma investigação específica, como ao investigar um alerta de uso anômalo, você poderá resolver o nome de usuário específico no portal e fornecer uma justificativa comercial. 
+   Esta página também pode ser usada para pesquisar o nome de usuário criptografado de um nome de usuário conhecido. 
 
-    1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
-    2. Na guia **Anonimização**, em **Anonimizar e resolver nomes de usuário**, insira uma justificativa explicando porque você está executando a resolução.
-    3. Em **Inserir nome de usuário a ser resolvido**, selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver**. 
+   1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
+   2. Na guia **Anonimização**, em **Anonimizar e resolver nomes de usuário**, insira uma justificativa explicando porque você está executando a resolução.
+   3. Em **Inserir nome de usuário a ser resolvido**, selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver**. 
 
    ![Anonimização](./media/anonymizer.png)
 
-6.  A ação é auditada no **Log de governança** do portal. 
+6. A ação é auditada no **Log de governança** do portal. 
 
-     ![Anonimização](./media/anonymize-gov-log.png)
+    ![Anonimização](./media/anonymize-gov-log.png)
 
 
 

@@ -1,27 +1,30 @@
 ---
-title: "Integrar a Proteção de Informações do Azure ao Cloud App Security | Microsoft Docs"
-description: "Este artigo fornece informações sobre como utilizar os rótulos da Proteção de Informações do Azure no Cloud App Security para controle adicional sobre o uso de aplicativos de nuvem da sua organização."
-keywords: 
+title: Integrar a Proteção de Informações do Azure ao Cloud App Security | Microsoft Docs
+description: Este artigo fornece informações sobre como utilizar os rótulos da Proteção de Informações do Azure no Cloud App Security para controle adicional sobre o uso de aplicativos de nuvem da sua organização.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 92182731b6ee80c24aa2f3d7836415b2dfa4da2c
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: 72850e76d653de3b9d355782d78254567e50aa91
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
-O Cloud App Security permite aplicar rótulos de classificação da Proteção de Informações do Azure automaticamente, com ou sem proteção, a arquivos como uma ação de governança da política de arquivo. Também é possível investigar arquivos com a filtragem do rótulo de classificação aplicado no portal do Cloud App Security. Isso permite maior visibilidade e controle de seus dados confidenciais na nuvem. A integração de Proteção de Informações do Azure ao Cloud App Security é tão fácil quanto marcar uma única caixa de seleção. 
+O Microsoft Cloud App Security permite aplicar rótulos de classificação da Proteção de Informações do Azure automaticamente, com ou sem proteção, a arquivos como uma ação de governança da política de arquivo. Também é possível investigar arquivos com a filtragem do rótulo de classificação aplicado no portal do Cloud App Security. Isso permite maior visibilidade e controle de seus dados confidenciais na nuvem. A integração de Proteção de Informações do Azure ao Cloud App Security é tão fácil quanto marcar uma única caixa de seleção. 
 
 Integrando a Proteção de Informações do Azure no Cloud App Security, você pode aproveitar todo o potencial dos dois serviços e proteger arquivos na nuvem, incluindo:
 - A capacidade de aplicar rótulos de classificação como uma ação de governança a arquivos que correspondem a políticas específicas
@@ -90,17 +93,17 @@ Para ignorar os rótulos de classificação definidos fora da sua organização,
 
 1. Na página **Arquivos**, selecione o arquivo que deseja proteger e, em seguida, clique nos três pontos ao final da linha do arquivo e escolha **Aplicar rótulo de classificação**.
 
- ![proteger aplicativo](./media/protect-app.png)
+   ![proteger aplicativo](./media/protect-app.png)
   
-  >[!NOTE]
-  > O Cloud App Security pode aplicar a Proteção de Informações do Azure em arquivos de até 50 MB.  
+   >[!NOTE]
+   > O Cloud App Security pode aplicar a Proteção de Informações do Azure em arquivos de até 50 MB.  
 
 2. Você deve escolher um dos rótulos de classificação de sua organização a serem aplicados ao arquivo e clicar em **Aplicar**. 
-![rótulo de classificação de proteção](./media/protect-template.png)
+   ![rótulo de classificação de proteção](./media/protect-template.png)
 
 3. Depois de escolher um rótulo de classificação e clicar em Aplicar, o Cloud App Security aplicará o rótulo de classificação ao arquivo original.
 
-5. Também remova rótulos de classificação escolhendo a opção **Remover rótulo de classificação**. 
+4. Também remova rótulos de classificação escolhendo a opção **Remover rótulo de classificação**. 
 
 
 Para obter mais informações sobre como o Cloud App Security e a Proteção de Informações do Azure funcionam juntos, consulte [Proteger dados contra erros de usuário](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
@@ -111,9 +114,9 @@ Aplique rótulos de classificação a arquivos automaticamente criando uma polí
 
 Siga estas instruções para criar a política de arquivo:
 
-1.  Criar uma política de arquivo.
-2.  Defina a política, incluindo o tipo de arquivo que você deseja detectar, por exemplo, todos os arquivos em que **Nível de acesso** não é igual a **Interno** e em que **UO do Proprietário** é igual à sua equipe de finanças. 
-3.  Nas ações de governança do aplicativo relevante, selecione **Aplicar um rótulo de classificação** e, em seguida, o tipo de rótulo.
+1. Criar uma política de arquivo.
+2. Defina a política, incluindo o tipo de arquivo que você deseja detectar, por exemplo, todos os arquivos em que **Nível de acesso** não é igual a **Interno** e em que **UO do Proprietário** é igual à sua equipe de finanças. 
+3. Nas ações de governança do aplicativo relevante, selecione **Aplicar um rótulo de classificação** e, em seguida, o tipo de rótulo.
 
    ![Aplicar rótulo](./media/aip-gov-action.png)
 

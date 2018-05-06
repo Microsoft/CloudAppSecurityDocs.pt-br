@@ -1,24 +1,26 @@
 ---
-title: "Configurar o upload de log automático para relatórios contínuos | Microsoft Docs"
-description: "Este tópico descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu no Azure."
-keywords: 
+title: Configurar o upload de log automático para relatórios contínuos | Microsoft Docs
+description: Este tópico descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu no Azure.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 03ace8d5bf61ed623ad90b3717c4d35b767498a3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 59eb0ca7813a96f2ac2face66fba96d50851fd97
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
 # <a name="set-up-and-configuration-on-ubuntu"></a>Instalação e configuração no Ubuntu
 
 
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/16/2018
 
 -   RAM: 4 GB
 
--   Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements#log-collector)
+-   Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md#log-collector)
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 
@@ -46,48 +48,48 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
 
-1.  Acesse a página de configuração de upload automatizado:  <br></br>No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png), antes de **Coletores de log**.
+1. Acesse a página de configuração de upload automatizado:  <br></br>No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png), antes de **Coletores de log**.
 
-2.  Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:
+2. Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    a. Clique em **Adicionar fonte de dados**.
+   a. Clique em **Adicionar fonte de dados**.
 
-    b. Atribua o **Nome** do proxy ou firewall.
+   b. Atribua o **Nome** do proxy ou firewall.
 
-    c. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado especificamente, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
+   c. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado especificamente, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
 
-    d. Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.
+   d. Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.
 
-    e. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
-    >[!NOTE]
-    >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
+   e. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+   >[!NOTE]
+   >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
 
-    f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.
+   f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.
 
-3.  Vá para a guia **Coletores de logs** na parte superior.
+3. Vá para a guia **Coletores de logs** na parte superior.
 
-    a. Clique em **Adicionar coletor de logs**.
+   a. Clique em **Adicionar coletor de logs**.
 
-    b. Atribua um **nome** ao coletor de logs.
+   b. Atribua um **nome** ao coletor de logs.
 
-    c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. 
+   c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. 
 
-     > [!NOTE]
-     > O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
+    > [!NOTE]
+    > O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
 
-    d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
+   d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - Um único coletor de logs pode lidar com várias fontes de dados.
-    >- Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
+   > [!NOTE]
+   > - Um único coletor de logs pode lidar com várias fontes de dados.
+   > - Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
 
-4.  Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone copiar para a área de transferência ![ícone copiar para a área de transferência](./media/copy-icon.png).
+4. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone copiar para a área de transferência ![ícone copiar para a área de transferência](./media/copy-icon.png).
 
-6.  **Exportar** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
+5. **Exportar** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
 
    ![Crie o coletor de logs](./media/windows7.png)
 
@@ -97,34 +99,34 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 > As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantação para outras plataformas são ligeiramente diferentes.
 
 
-1.  Crie um novo computador Ubuntu no seu ambiente do Azure. 
-2.  Depois que o computador estiver pronto, abra as portas pelos caminhos a seguir:
-    1.  Na exibição de máquina, acesse **Rede** e selecione a interface relevante clicando duas vezes nela.
-    2.  Acesse **Grupo de Segurança de Rede** e selecione o grupo de segurança de rede relevante.
-    3.  Acesse **Regras de segurança de entrada** e clique em **Adicionar**,
+1. Crie um novo computador Ubuntu no seu ambiente do Azure. 
+2. Depois que o computador estiver pronto, abra as portas pelos caminhos a seguir:
+   1. Na exibição de máquina, acesse **Rede** e selecione a interface relevante clicando duas vezes nela.
+   2. Acesse **Grupo de Segurança de Rede** e selecione o grupo de segurança de rede relevante.
+   3. Acesse **Regras de segurança de entrada** e clique em **Adicionar**,
       
       ![Azure no Ubuntu](./media/ubuntu-azure.png)
     
-    4. Adicionar as seguintes regras (no modo **Avançado**):
+   4. Adicionar as seguintes regras (no modo **Avançado**):
 
-    |Nome|Intervalos de porta de destino|Protocolo|Origem|Destination|
-    |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
-    |caslogcollector_syslogs_udp|514-600|UDP|<Sub-rede do endereço IP do dispositivo>|qualquer|
+   |Nome|Intervalos de porta de destino|Protocolo|Origem|Destination|
+   |----|----|----|----|----|
+   |caslogcollector_ftp|21|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
+   |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
+   |caslogcollector_syslogs_tcp|601-700|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
+   |caslogcollector_syslogs_udp|514-600|UDP|<Sub-rede do endereço IP do dispositivo>|qualquer|
       
-     ![Regras do Azure no Ubuntu](./media/inbound-rule.png)
+    ![Regras do Azure no Ubuntu](./media/inbound-rule.png)
 
-3.  Volte para o computador e clique em **Conectar** para abrir um terminal no computador.
+3. Volte para o computador e clique em **Conectar** para abrir um terminal no computador.
 
-4.  Altere para privilégios de raiz usando `sudo -i`.
+4. Altere para privilégios de raiz usando `sudo -i`.
 
-5.  Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
+5. Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+       curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-      ![Comando do Azure no Ubuntu](./media/ubuntu-azure-command.png)
+     ![Comando do Azure no Ubuntu](./media/ubuntu-azure-command.png)
 
 6. No portal do Cloud App Security, na janela **Criar novo coletor de log**, copie o comando para importar a configuração do coletor no computador de hospedagem:
 

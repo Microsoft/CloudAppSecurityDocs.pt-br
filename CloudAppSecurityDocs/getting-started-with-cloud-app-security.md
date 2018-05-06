@@ -1,26 +1,29 @@
 ---
-title: "Implantar Cloud App Security para informações de uso em aplicativo de nuvem e controle | Microsoft Docs"
-description: "Este tópico descreve o processo para colocar o Cloud App Security em funcionamento."
-keywords: 
+title: Implantar Cloud App Security para informações de uso em aplicativo de nuvem e controle | Microsoft Docs
+description: Este tópico descreve o processo para colocar o Cloud App Security em funcionamento.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 59588a909192f225a086bacc4c218f388cbc46d4
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="deploy-cloud-app-security"></a>Implantar o Cloud App Security
-O Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Cloud App Security.  
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
+# <a name="deploy-microsoft-cloud-app-security"></a>Implantar o Microsoft Cloud App Security
+O Microsoft Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Microsoft Cloud App Security.  
 
 Sua organização deve ter uma licença para usar o Cloud App Security. Para obter mais informações, consulte a seção [Como comprar o Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) na home page do Cloud App Security.  
 
@@ -44,7 +47,7 @@ Sua organização deve ter uma licença para usar o Cloud App Security. Para obt
 
 ## <a name="to-access-the-portal"></a>Para acessar o portal
 
-Para acessar o portal do Cloud App Security, acesse [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
+Para acessar o portal do Cloud App Security, vá para [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
   
 Como alternativa, você pode acessar o portal por meio do **Centro de administração do Office 365** clicando no ícone dos Centros de administração ![ícone dos Centros de administração do O365](./media/o365-admin-centers-icon.png "ícone dos Centros de administração do O365") seguido por **Cloud App Security**.  
   
@@ -139,7 +142,7 @@ Tarefa recomendada: Definir as configurações importantes
 3. Insira os **detalhes**, o **local**, as **marcas** e a **categoria** do intervalo de IP.
 4. Escolha **Criar**.
 
- Agora, você pode usar marcas de IP ao criar políticas e ao filtrar e criar relatórios contínuos.
+   Agora, você pode usar marcas de IP ao criar políticas e ao filtrar e criar relatórios contínuos.
 
 **Para criar relatórios contínuos**
 

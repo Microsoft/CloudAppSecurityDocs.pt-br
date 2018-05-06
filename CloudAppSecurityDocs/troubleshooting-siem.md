@@ -1,27 +1,30 @@
 ---
-title: "Solução de problemas de integração do SIEM ao Cloud App Security | Microsoft Docs"
-description: "Este tópico fornece uma lista de possíveis problemas ao conectar o SIEM ao Cloud App Security e fornece soluções para cada um."
-keywords: 
+title: Solução de problemas de integração do SIEM ao Cloud App Security | Microsoft Docs
+description: Este tópico fornece uma lista de possíveis problemas ao conectar o SIEM ao Cloud App Security e fornece soluções para cada um.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5b801b889abdac386cba5cb850dc5d38bbba205c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 940e5994e9260b5fff6882867d5acea4f974b5e7
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="troubleshooting-the-siem-agent"></a>Solucionando problemas do agente SIEM
 
-Verifique se o status do agente SIEM no portal do Cloud App Security não está como **Erro de Conexão** ou **Desconectado** e se não há nenhuma notificação do agente. Ele será exibido como **Erro de Conexão** se a conexão estiver inativa por mais de duas horas e como **Desconectado**, se a conexão estiver inativa por mais de 12 horas.
+Verifique se o status do agente SIEM no portal do Microsoft Cloud App Security não está como **Erro de Conexão** ou **Desconectado** e se não há nenhuma notificação do agente. Ele será exibido como **Erro de Conexão** se a conexão estiver inativa por mais de duas horas e como **Desconectado**, se a conexão estiver inativa por mais de 12 horas.
 
 Caso veja algum dos seguintes erros no prompt de comando ao executar o agente, use as seguintes etapas para corrigir o problema:
 

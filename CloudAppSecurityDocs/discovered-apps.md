@@ -1,24 +1,27 @@
 ---
 title: Trabalhando com aplicativos descobertos no Cloud App Security | Microsoft Docs
-description: "Este tópico descreve o processo de identificação e correção de aplicativos de descoberta de nuvem arriscados no Cloud App Security."
-keywords: 
+description: Este tópico descreve o processo de identificação e correção de aplicativos de descoberta de nuvem arriscados no Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: abec8d49559c7ff29476a5a5291f1920db877b88
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Examinar o Painel do Cloud Discovery
@@ -56,7 +59,7 @@ O Cloud Discovery permite aprofundar ainda mais no uso de nuvem da sua organiza�
      
 Por exemplo, você pode diferenciar entre os diferentes sites do SharePoint.
 
-Isso tem suporte apenas em firewalls e proxies que contêm dados de URL de destino. Consulte a lista de dispositivos com suporte em [Proxies e firewalls com suporte](set-up-cloud-discovery#supported-firewalls-and-proxies).
+Isso tem suporte apenas em firewalls e proxies que contêm dados de URL de destino. Consulte a lista de dispositivos com suporte em [Proxies e firewalls com suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![informações de subdomínio](./media/discovery-domains.png) 
 
@@ -113,15 +116,15 @@ Há uma série de motivos pelos quais você pode desejar excluir seus dados do C
   
 Para excluir os dados do Cloud Discovery:  
   
-1.  No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
+1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
   
-2.  Clique na guia **Excluir dados**.  
+2. Clique na guia **Excluir dados**.  
   
-     É importante ter certeza de que deseja excluir os dados antes de continuar. Isso não poderá ser desfeito e exclui **todos** os dados do Cloud Discovery no sistema.  
+    É importante ter certeza de que deseja excluir os dados antes de continuar. Isso não poderá ser desfeito e exclui **todos** os dados do Cloud Discovery no sistema.  
   
-3.  Clique no botão **Excluir**.  
+3. Clique no botão **Excluir**.  
   
-     ![excluir dados](./media/delete-data.png "excluir dados")  
+    ![excluir dados](./media/delete-data.png "excluir dados")  
   
    > [!NOTE]  
    >  O processo de exclusão leva alguns minutos e não é imediato.  

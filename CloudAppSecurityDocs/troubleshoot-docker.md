@@ -1,25 +1,27 @@
 ---
-title: "Solução de problemas de implantação do docker do Cloud Discovery | Microsoft Docs"
-description: "Este tópico descreve o processo para modificar a configuração do docker do Cloud Discovery do Cloud App Security."
-keywords: 
+title: Solução de problemas de implantação do docker do Cloud Discovery | Microsoft Docs
+description: Este tópico descreve o processo para modificar a configuração do docker do Cloud Discovery do Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b994661f0f875db100a0aa2eb293b88e637b89cb
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 395faee1afcf58f1750983672760cd881f2a3441
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="troubleshooting-the-cloud-app-security-cloud-discovery-docker"></a>Solução de problemas do docker do Cloud Discovery do Cloud App Security
+*Aplica-se ao: Microsoft Cloud App Security*
+
+# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-docker"></a>Solução de problemas do docker do Microsoft Cloud Discovery do Cloud App Security
 
 ## <a name="changing-the-ftp-password"></a>Alterar a senha do FTP
 
@@ -40,22 +42,22 @@ ms.lasthandoff: 01/16/2018
 
 Siga este procedimento para personalizar os arquivos de certificado usados para conexões seguras com o docker do Cloud Discovery.
 
-1.  Abra um cliente de FTP e conecte-se ao coletor de logs.
+1. Abra um cliente de FTP e conecte-se ao coletor de logs.
 
-  ![Conecte-se ao cliente de FTP](./media/ftp-connect.png)
+   ![Conecte-se ao cliente de FTP](./media/ftp-connect.png)
 
-2.  Navegue até o diretório `ssl_update`.
-3.  Carregue novos arquivos de certificado no diretório `ssl_update` (os nomes são obrigatórios).
+2. Navegue até o diretório `ssl_update`.
+3. Carregue novos arquivos de certificado no diretório `ssl_update` (os nomes são obrigatórios).
 
-    ![Alterar a senha do FTP](./media/new-certs.png)
+   ![Alterar a senha do FTP](./media/new-certs.png)
 
-    1.  Para FTP: somente um arquivo é necessário, contendo a chave e os dados de certificado, nessa ordem, denominado **pure-ftpd.pem**.
+   1.  Para FTP: somente um arquivo é necessário, contendo a chave e os dados de certificado, nessa ordem, denominado **pure-ftpd.pem**.
     
-    2.  Para Syslog: três arquivos são necessários: **ca.pem**, **server-key.pem** e **server-cert.pem**. Caso algum dos arquivos esteja faltando, a atualização não ocorrerá.
+   2.  Para Syslog: três arquivos são necessários: **ca.pem**, **server-key.pem** e **server-cert.pem**. Caso algum dos arquivos esteja faltando, a atualização não ocorrerá.
 
-4.  Em um terminal, execute: `docker exec -t <collector name> update_certs`. Isso deverá produzir um resultado similar ao exibido na próxima tela.
+4. Em um terminal, execute: `docker exec -t <collector name> update_certs`. Isso deverá produzir um resultado similar ao exibido na próxima tela.
 
-    ![Alterar a senha do FTP](./media/update-certs.png)
+   ![Alterar a senha do FTP](./media/update-certs.png)
 
 ## <a name="see-also"></a>Consulte Também
 [Implantar o Cloud Discovery](set-up-cloud-discovery.md)

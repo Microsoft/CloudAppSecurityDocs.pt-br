@@ -1,24 +1,27 @@
 ---
 title: Trabalhando com aplicativos descobertos no Cloud App Security | Microsoft Docs
-description: "Este tópico descreve o processo de identificação e correção de aplicativos de descoberta de nuvem arriscados no Cloud App Security."
-keywords: 
+description: Este tópico descreve o processo de identificação e correção de aplicativos de descoberta de nuvem arriscados no Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 24fb4cd0d7b4c927081e07ef4a35d18582af1135
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Aplica-se ao: Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Examinar o Painel do Cloud Discovery
@@ -106,15 +109,15 @@ Há uma série de motivos pelos quais você pode desejar excluir seus dados do C
   
 Para excluir os dados do Cloud Discovery:  
   
-1.  No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
+1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
   
-2.  Clique na guia **Excluir dados**.  
+2. Clique na guia **Excluir dados**.  
   
-     É importante ter certeza de que deseja excluir os dados antes de continuar. Isso não poderá ser desfeito e exclui **todos** os dados do Cloud Discovery no sistema.  
+    É importante ter certeza de que deseja excluir os dados antes de continuar. Isso não poderá ser desfeito e exclui **todos** os dados do Cloud Discovery no sistema.  
   
-3.  Clique no botão **Excluir**.  
+3. Clique no botão **Excluir**.  
   
-     ![excluir dados](./media/delete-data.png "excluir dados")  
+    ![excluir dados](./media/delete-data.png "excluir dados")  
   
    > [!NOTE]  
    >  O processo de exclusão leva alguns minutos e não é imediato.  
