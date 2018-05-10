@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 10f8c4bef7e62c6a3e6f90c5df1f67e050f6c589
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6f34fbcf5c268518c269f98838321e134c6e7279
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -42,7 +42,9 @@ Para analisar atividades mais específicas, você pode expandir o filtro básico
 
  ![filtro avançado do log de atividades](media/activity-log-filter-advanced.png)
 
-
+> [!NOTE] 
+> A marca Legacy é adicionada a qualquer política de atividade que use o filtro "usuário" mais antigo. Esse filtro continuará funcionando normalmente. Se quiser remover a marca Legacy, remova o filtro e adicione-o novamente usando o novo filtro **Nome de usuário**.
+ 
 ## <a name="the-activity-drawer"></a>A gaveta de atividades
 
 ### <a name="working-with-the-activity-drawer"></a>Trabalhando com a gaveta Atividade

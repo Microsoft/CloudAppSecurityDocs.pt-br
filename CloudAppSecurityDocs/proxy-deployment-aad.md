@@ -1,11 +1,11 @@
 ---
-title: Implante o proxy do Cloud App Security para aplicativos do Azure AD | Microsoft Docs
-description: Este tópico fornece informações sobre como implantar o proxy do Microsoft Cloud App Security para aplicativos do Azure AD.
+title: Implantar o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security para aplicativos do Azure AD | Microsoft Docs
+description: Este tópico fornece informações sobre como implantar recursos de proxy reverso do Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security para aplicativos do Azure AD.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64742336717e202f7080a37f447672b953cf124a
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 5397fd49d1eaa2365c7909155ded55eef965e0de
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
-# <a name="deploy-proxy-for-azure-ad-apps"></a>Implante o proxy para aplicativos do Azure AD
+# <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD
 
 > [!NOTE]
 > Este é um recurso de versão prévia.
 
-Siga estas etapas para configurar aplicativos do Azure AD para ser controlados pelo proxy do Microsoft Cloud App Security.
+Execute estas etapas para configurar aplicativos do Azure AD para ser controlados pelo Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security.
 
 > [!NOTE]
-> Para implantar o proxy do Cloud App Security para aplicativos do Azure AD, será necessária uma licença válida [para o Azure AD Premium P2](https://docs.microsoft.com/azure/active-directory/license-users-groups).
+> Para implantar o Controle de Aplicativo de Acesso Condicional para aplicativos do Azure AD, será necessária uma [licença válida para o Azure AD Premium P2](https://docs.microsoft.com/azure/active-directory/license-users-groups).
 
 ## <a name="step-1-add-azure-ad-apps-in-cloud-app-security"></a>Etapa 1: Adicione os aplicativos do Azure AD no Cloud App Security  
 
@@ -39,36 +39,36 @@ Siga estas etapas para configurar aplicativos do Azure AD para ser controlados p
 
       ![Acesso condicional do Azure AD](./media/aad-conditional-access.png)
 
-   2. Clique em **Nova política** e crie uma nova política, certificando-se de, em **Sessão**, selecionar **Usar restrições impostas de proxy**.
+   2. Clique em **Nova política** e crie uma nova política, certificando-se de, em **Sessão**, selecionar **Usar restrições impostas de Controle de Aplicativo de Acesso Condicional**.
 
       ![Acesso condicional do Azure AD](./media/proxy-deploy-restrictions-aad.png)
 
    3. Na política de TESTE, em **Usuários**, atribua um usuário de teste ou um usuário que pode ser usado para um logon inicial.
     
-   4. Na política de TESTE, em **Aplicativo de nuvem**, atribua os aplicativos que deseja controlar com o proxy. 
+   4. Na política de TESTE, em **Aplicativo de nuvem**, atribua os aplicativos que você deseja controlar com o Controle de Aplicativo de Acesso Condicional. 
 
       > [!NOTE]
-      >Escolha aplicativos compatíveis com o proxy. O proxy é compatível com aplicativos configurados com logon único SAML no Azure AD. Por exemplo, os aplicativos do Office 365 não estão configurados com SAML, não são compatíveis no momento.
+      >Escolha aplicativos compatíveis com o Controle de Aplicativo de Acesso Condicional. O Controle de Aplicativo de Acesso Condicional é compatível com aplicativos configurados com logon único SAML no Azure AD. Por exemplo, os aplicativos do Office 365 não estão configurados com SAML, não são compatíveis no momento.
 
 
 2. Depois de criar a política, faça logon em cada aplicativo configurado na política com um usuário configurado na política. Certifique-se primeiro de fazer logoff de sessões existentes.
 
-3. No portal do Cloud App Security, vá até a engrenagem de configurações e selecione **Proxy**. 
+3. No portal do Cloud App Security, vá até a engrenagem de configurações e selecione **Controle de Aplicativo de Acesso Condicional**. 
     
      ![menu de proxy](./media/proxy-menu.png)
 
-4. Você verá uma mensagem informando que novos aplicativos do Azure AD foram descobertos pelo proxy. Clique no link **Exibir novos aplicativos**.
+4. Você verá uma mensagem informando que novos aplicativos do Azure AD foram descobertos pelo Controle de Aplicativo de Acesso Condicional. Clique no link **Exibir novos aplicativos**.
 
-   ![novos aplicativos de modo de exibição de proxy](./media/proxy-view-new-apps.png)
+   ![Controle de Aplicativo de Acesso Condicional exibir novos aplicativos](./media/proxy-view-new-apps.png)
 
 5. Na caixa de diálogo que é aberta, você pode ver todos os aplicativos aos quais você se conectou na etapa anterior. Para cada aplicativo, clique no sinal de + e, em seguida, clique em **Adicionar**.
 
-   ![novos aplicativos de proxy](./media/proxy-new-app.png)
+   ![Controle de Aplicativo de Acesso Condicional novos aplicativos](./media/proxy-new-app.png)
 
    > [!NOTE]
    > Se um aplicativo não for exibido no catálogo de aplicativos do Cloud App Security, ele será exibido na caixa de diálogo nos aplicativos não identificados juntamente com a URL de logon. Ao clicar no sinal de + para esses aplicativos, você poderá sugerir a adição do aplicativo ao catálogo. Depois que o aplicativo estiver no catálogo, execute as etapas novamente para implantar o aplicativo. 
 
-6. Na tabela de aplicativos de proxy, examine a coluna de **Controles disponíveis** e verifique se são exibidos o acesso condicional do Azure AD e o controle de sessão. <br></br>Se o controle de sessão não aparece para um aplicativo, isso significa que ele ainda não está disponível para esse aplicativo específico e, em vez dele, você vê o link **Solicitar o controle de sessão**. Clique para abrir uma caixa de diálogo e solicitar a integração do aplicativo ao controle de sessão. Durante o período de visualização pública do proxy, o processo de integração será executado junto com você pela equipe do Cloud App Security.
+6. Na tabela de aplicativos de Controle de Aplicativo de Acesso Condicional, examine a coluna de **Controles disponíveis** e verifique se são exibidos o acesso condicional do Azure AD e o controle de sessão. <br></br>Se o controle de sessão não aparece para um aplicativo, isso significa que ele ainda não está disponível para esse aplicativo específico e, em vez dele, você vê o link **Solicitar o controle de sessão**. Clique para abrir uma caixa de diálogo e solicitar a integração do aplicativo ao controle de sessão. Durante o período de visualização pública do Controle de Aplicativo de Acesso Condicional, o processo de integração será executado junto com você pela equipe do Microsoft Cloud App Security.
   
    ![solicitar controle de sessão](./media/request-session-control.png)
 
@@ -101,12 +101,12 @@ Siga estas etapas para configurar aplicativos do Azure AD para ser controlados p
    ![teste a marca de agente do usuário](./media/domain-joined.png)
 
 
-Agora você está pronto para criar [políticas de acesso](access-policy-aad.md) e [políticas de sessão](session-policy-aad.md) para controlar seus aplicativos de proxy.
+Agora você está pronto para criar [políticas de acesso](access-policy-aad.md) e [políticas de sessão](session-policy-aad.md) para controlar seus aplicativos de Controle de Aplicativo de Acesso Condicional.
 
 
 
 ## <a name="see-also"></a>Consulte Também  
-[Trabalhando com o proxy do Cloud App Security](proxy-intro-aad.md)   
+[Trabalhar com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 64d6d4b2c1d7eb27995d006c890d20590f3df06c
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -78,7 +78,7 @@ Lançado em 29 de outubro de 2017
     -   Obtenha visibilidade para pontos de extremidade desprotegidos para que você possa monitorar o que está sendo feito em dispositivos não gerenciados.
     -   Controle o acesso por meio de redes não corporativas ou endereços IP arriscados.
   
-  Para obter mais informações, consulte [Proteger aplicativos com proxy](proxy-intro-aad.md).
+  Saiba mais em [Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional](proxy-intro-aad.md).
 
 -   Estamos distribuindo gradualmente a capacidade de filtrar de acordo com os nomes de atividades de serviços específicos. Esse novo filtro de tipo de atividade é mais granular, para que você possa monitorar as atividades de aplicativos específicas, em vez de tipos de atividade mais gerais. Por exemplo, anteriormente, você podia filtrar por **Executar o comando**, e agora você pode filtrar para cmdlets EXO específicos. O nome da atividade também pode ser visto na gaveta de atividade em **Tipo (em aplicativo)**. Essa funcionalidade substituirá o filtro de tipo de atividade.  
 
@@ -88,7 +88,7 @@ Lançado em 29 de outubro de 2017
 
 
 ### <a name="cloud-app-security-releases-105-106-107-108"></a>Cloud App Security versões 105, 106, 107, 108
-Lançadas em setembro/outubro de 2017
+Lançado em setembro/outubro de 2017
  
 -   O Cloud App Security agora inclui um data center localizado na UE. Além de nosso data center dos EUA, o data center da UE permitirá que os clientes do Cloud App Security estejam em total conformidade com a nova e futura padronização e as certificações europeias. 
 -   Novos filtros foram adicionados à página de **Conectores de aplicativos**, que lhe fornecem filtragem mais simples e análise adicional.
@@ -227,7 +227,7 @@ Lançado em 24 de maio de 2017
 -   Em uma reação rápida para a varredura de ransomware do globo, no domingo, a equipe do Cloud App Security adicionou o moo modelo de [Política de detecção de atividade ransomware potencial](use-case-ransomware.md) ao portal que inclui a extensão de assinatura de WannaCrypt. Aconselhamos que você defina esta política ainda hoje.
 
 ### <a name="cloud-app-security-release-96"></a>Cloud App Security versão 96
-Lançamento: 8 de maio de 2017
+Lançado em 8 de maio de 2017
 
 Novos recursos:
 
@@ -365,7 +365,7 @@ Lançado em 8 de janeiro de 2017
 ## <a name="updates-made-in-2016"></a>Atualizações feitas em 2016
  
 ### <a name="cloud-app-security-release-87"></a>Cloud App Security versão 87
-Liberada em 25 de dezembro de 2016
+Lançado em 25 de dezembro de 2016
 
 **Novos recursos**
 -   Estamos em processo de lançamento da [anonimização de dados](cloud-discovery-anonymizer.md) para que você possa aproveitar o Cloud Discovery e ainda proteger a privacidade do usuário. A anonimização de dados é executada criptografando as informações de nome de usuário.
@@ -386,14 +386,14 @@ Liberada em 25 de dezembro de 2016
 
 
 ### <a name="cloud-app-security-release-86"></a>Cloud App Security versão 86
-Liberada em 13 de dezembro de 2016
+Lançado em 13 de dezembro de 2016
 
 **Novos recursos**
 - Todas as licenças autônomas do Cloud App Security fornecem a capacidade de habilitar a verificação da Proteção de Informações do Azure nas configurações gerais (sem a necessidade de criação de uma política). 
  
 **Melhorias**
 - Você pode agora usar “or” no filtro de arquivo para o nome do arquivo e no filtro de tipo MIME para arquivos e políticas. Isso permite cenários como inserir a palavra “passaporte” OR “driver” ao criar uma política com PII e ele fará a correspondência com arquivo que tenha “passaporte” ou “driver” no nome do arquivo. 
-- Por padrão, quando uma política DPL de inspeção de conteúdo é executada, os dados nas violações resultantes são mascarados. Agora você poderá cancelar a máscara dos últimos quatro caracteres da violação. 
+- Por padrão, quando uma política DLP de inspeção de conteúdo é executada, os dados nas violações resultantes são mascarados. Agora você poderá cancelar a máscara dos últimos quatro caracteres da violação. 
 
 **Pequenos aperfeiçoamentos**
 - Novos eventos relacionados à caixa de correio do Office 365 (Exchange) com relação às regras de encaminhamento, bem como adição e remoção de permissões de caixa de correio delegada.
@@ -423,7 +423,7 @@ Lançado em 27 de novembro de 2016
 - Foi corrigido um bug no mecanismo de alertas do sistema que criava falsos positivos.
 
 ### <a name="cloud-app-security-release-84"></a>Cloud App Security versão 84
-Lançada em 13 de novembro de 2016
+Lançado em 13 de novembro de 2016
 
 **Novos recursos**
 -   O Cloud App Security agora dá suporte à Proteção de Informações do Microsoft Azure incluindo a integração aprimorada e provisionamento automático. Você pode filtrar os Arquivos e definir políticas de arquivo usando a Classificação de marca segura e definir o rótulo de classificação que deseja exibir. Os rótulos também indicam se a classificação foi definida por alguém na sua organização ou por pessoas de outro locatário (Externo). Você também pode definir políticas de atividade com base nos rótulos de classificação da Proteção de Informações do Azure e habilitar a verificação automática para rótulos de classificação no Office 365. Para obter mais informações sobre como aproveitar esse novo recurso, consulte [Integração com o Proteção de Informações do Azure](azip-integration.md).
@@ -588,7 +588,7 @@ Lançado em 27 de junho de 2016
 * Os números de telefone de alerta por SMS agora são validados mediante inserção.
 
 ### <a name="cloud-app-security-release-74"></a>Cloud App Security versão 74
-Lançamento: 13 de junho de 2016
+Lançado em 13 de junho de 2016
 * A tela Alerta foi atualizada para fornecer mais informações rapidamente, incluindo a capacidade de ver todas as atividades do usuário rapidamente, um mapa de atividades, logs de governança do usuário relacionado, uma descrição do motivo de o alerta ser disparado e gráficos e mapas adicionais da página do usuário. 
 * Eventos gerados pelo Cloud App Security agora incluem o tipo de evento, formato, grupos de políticas, objetos relacionados e uma descrição.
 * Foram adicionadas novas marcas de endereço IP para o Office 365 ProPlus, OneNote, Office Online e Proteção do Exchange Online.
@@ -600,7 +600,7 @@ Lançamento: 13 de junho de 2016
 
 
 ### <a name="cloud-app-security-release-73"></a>Cloud App Security versão 73
-Lançamento: 29 de maio de 2016
+Lançado em 29 de maio de 2016
 
 * Recursos de alerta atualizados: agora, você pode definir alertas por política para serem enviados por email ou como mensagem de texto.
 * Página de alertas: design aprimorado para permitir melhor gerenciamento de incidentes e opções avançadas de resolução.
@@ -617,7 +617,7 @@ Lançamento: 29 de maio de 2016
 * Agora, você pode ignorar e resolver um único alerta ou uma seleção em massa de alertas da página de alertas.
 
 ### <a name="cloud-app-security-release-72"></a>Cloud App Security versão 72
-Lançamento: 15 de maio de 2016
+Lançado em 15 de maio de 2016
 
 *  Melhorias na aparência e infraestrutura gerais, incluindo:
     * Novo diagrama para fornecer mais assistência com o processo para carregar logs manualmente do Cloud Discovery.

@@ -1,11 +1,11 @@
 ---
 title: Criar políticas de acesso do Cloud App Security para permitir e bloquear o acesso | Microsoft Docs
-description: Este tópico descreve o procedimento para configurar uma política de acesso do Proxy do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD.
+description: Este tópico descreve o procedimento para configurar uma política de acesso do Controle de Aplicativo de Acesso Condicional do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD usando os recursos de proxy reverso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4cf6ab04f91b2b834ba494870a62691d882ee556
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 402cf7ad80c0421218dd5de9a61c9bf40fde709e
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -34,8 +34,8 @@ As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento
 ## <a name="prerequisites-to-using-access-policies"></a>Pré-requisitos para uso das políticas de acesso
 
 - Licença do Azure AD Premium P2
-- Os aplicativos relevantes devem ser [implantados com o proxy](proxy-deployment-aad.md)
-- Uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redireciona os usuários para o proxy do Cloud App Security deve estar em vigor, conforme descrito abaixo.
+- Os aplicativos relevantes devem ser [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)
+- Uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redireciona os usuários para o Microsoft Cloud App Security deve estar em vigor, conforme descrito abaixo.
 
 > [!NOTE]
 > - As políticas de acesso também dão suporte a aplicativos configurados com provedores de identidade diferentes do Azure AD na Versão Prévia Privada. Para obter mais informações sobre a Versão Prévia Privada, envie um email para mcaspreview@microsoft.com.
@@ -44,14 +44,14 @@ As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento
 
 As políticas de acesso condicional do Azure Active Directory e as políticas de sessão do Cloud App Security trabalham juntas para examinar cada sessão de usuário e tomar decisões de política para cada aplicativo. Para configurar uma política de acesso condicional no Azure AD, siga este procedimento:
 
-1. Configure uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) com atribuições de usuário ou grupo de usuários e o aplicativo SAML que você deseja controlar com o proxy do Cloud App Security. 
+1. Configure uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) com atribuições de usuário ou grupo de usuários e o aplicativo SAML que você deseja controlar com o Controle de Aplicativo de Acesso Condicional. 
 
    > [!NOTE]
-   > Apenas os aplicativos que foram [implantados com o proxy](proxy-deployment-aad.md) serão afetados por essa política.
+   > Apenas os aplicativos que foram [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md) serão afetados por essa política.
 
-2. Roteie usuários para o proxy do Cloud App Security selecionando **Usar restrições impostas pelo proxy** na folha **Sessão**.
+2. Encaminhe usuários para o Microsoft Cloud App Security selecionando **Usar restrições impostas do Controle de Aplicativo de Acesso Condicional** na folha **Sessão**.
 
-   ![Acesso condicional do Azure AD às restrições do proxy](./media/proxy-deploy-restrictions-aad.png)
+   ![Acesso condicional do Azure AD para restrições do Controle de Aplicativo de Acesso Condicional](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Criar uma política de acesso do Cloud App Security 
 
@@ -91,7 +91,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 
  
 ## <a name="see-also"></a>Consulte Também  
-[Bloqueando downloads em dispositivos não gerenciados, usando funcionalidades de proxy do Microsoft Azure AD](use-case-proxy-block-session-aad.md)   
+[Bloqueando downloads em dispositivos não gerenciados, usando funcionalidades de Controle de Aplicativo de Acesso Condicional do Azure AD](use-case-proxy-block-session-aad.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
