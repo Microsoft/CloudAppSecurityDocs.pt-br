@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/9/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d92a0b86424ef94fcb58cd50b6c4e8bde04e5f33
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 3a89faa350a35d7b5bfd5b2cfe7fdc0263bb2566
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/09/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -70,7 +70,7 @@ Para simplificar ainda mais a investigação, agora você pode criar consultas p
 
 4. Para usar essa consulta novamente no futuro, em **Consultas**, role para baixo até **Consultas salvas** e selecione a consulta. 
 
-   ![abrir consulta](./media/open-query.png)
+   ![abrir consulta](./media/discovered-app-query.png)
 
 
 O Cloud App Security também fornece **Consultas sugeridas** e permite salvar consultas personalizadas usadas com frequência. As consultas sugeridas fornecem vias de investigação recomendadas que filtram os aplicativos descobertos usando as seguintes consultas sugeridas opcionais:
