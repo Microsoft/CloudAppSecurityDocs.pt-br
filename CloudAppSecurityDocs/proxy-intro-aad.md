@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ebc88634d6a4b83effe598c45f8da62338cebf53
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 4ef6f91c13e2dc997efe51856d53775e124e0b4d
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/14/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -26,6 +26,10 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > Este é um recurso de versão prévia.
+
+
+>[!div class="step-by-step"]
+[PRÓXIMO: Implantar o Controle de Aplicativo de Acesso Condicional »](proxy-deployment-aad.md)
 
 
 Na área de trabalho de hoje em dia, geralmente não é suficiente saber o que está acontecendo em seu ambiente de nuvem após o fato, você deseja ser capaz de parar as violações e os vazamentos em tempo real, antes que os funcionários intencional ou inadvertidamente coloquem seus dados e sua organização em risco. É importante permitir que os usuários em sua organização aproveitem ao máximo os serviços e as ferramentas disponíveis a eles em aplicativos de nuvem e que eles tragam os próprios dispositivos para o trabalho. Ao mesmo tempo, são necessárias ferramentas para ajudar a proteger sua organização contra vazamentos de dados e roubo de dados, em tempo real. Juntamente com o Azure Active Directory, o Microsoft Cloud App Security oferece esses recursos em uma experiência holística e integrada com o Controle de Aplicativo de Acesso Condicional.
@@ -115,9 +119,14 @@ O controle de sessão está disponível para qualquer navegador nas principais p
 
 -   HighQ 
 
+-   Concur
+
 Aplicativos adicionais estão sendo continuamente integrados ao controle de sessão. Se você estiver interessado em um aplicativo específico que não foi mencionado aqui, [envie os detalhes do aplicativo para nós](mailto:casfeedback@microsoft.com) e o caso de uso de seu interesse para que ele seja integrado.
 
 
+
+>[!div class="step-by-step"]
+[PRÓXIMO: Implantar o Controle de Aplicativo de Acesso Condicional »](proxy-deployment-aad.md)
 
 
 ## <a name="see-also"></a>Consulte Também  

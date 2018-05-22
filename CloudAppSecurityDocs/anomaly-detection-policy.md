@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3fec0cf5ed6139ecdfc6b4e33b5a6e054e3d62ce
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
+ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/13/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -86,8 +86,20 @@ Essas políticas buscam atividades em uma única sessão em relação à linha d
 **Várias tentativas de logon com falha**
 - A detecção identifica usuários que realizaram várias tentativas de logon com falha em uma única sessão em relação à linha de base aprendida, o que poderia indicar uma tentativa de violação. 
 
+## <a name="scope-anomaly-detection-policies"></a>Definir políticas de detecção de anomalias
 
-## <a name="triaging-anomaly-detection-alerts"></a>Triagem de alertas de detecção de anomalias
+Cada política de detecção de anomalias pode ter um escopo independente, de modo que se aplique apenas aos usuários e grupos que você deseja incluir e excluir na política.
+Por exemplo, você pode definir a Atividade de detecção de regiões pouco frequentes para ignorar um usuário específico que viaja com frequência. 
+
+Para definir uma política de detecção de anomalias:
+1. Clique em **Políticas de**  > **Controle** e configure o filtro **Tipo** como **Política de detecção de anomalias**.
+2. Clique na política que você deseja definir.
+3. Em **Escopo**, altere o menu suspenso da configuração padrão de **Todos os usuários e grupos** para **Usuários e grupos específicos**.
+4. Selecione **Incluir** para especificar os usuários e grupos para os quais essa política será aplicada. Qualquer usuário ou grupo não selecionado aqui não será considerado uma ameaça e não gerará um alerta.
+5. Selecione **Excluir** para especificar usuários para os quais essa política não será aplicada. Qualquer usuário selecionado aqui não será considerado uma ameaça e não gerará um alerta, mesmo se eles forem membros de grupos selecionados em **Incluir**.
+
+ ![escopo de detecção de anomalias](./media/anomaly-detection-scoping.png)
+## <a name="triage-anomaly-detection-alerts"></a>Triagem de alertas de detecção de anomalias
 
 Você pode triar rapidamente os vários alertas disparados pelas novas políticas de detecção de anomalias e decidir quais precisam ser tratados primeiro. Para isso, é necessário o contexto do alerta para ver o panorama geral e entender se algo mal-intencionado realmente está acontecendo.  
 

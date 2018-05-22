@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5397fd49d1eaa2365c7909155ded55eef965e0de
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: d82e0e1d46e3927d0488dc525fa9c6bea42dd791
+ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -25,6 +25,13 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > Este é um recurso de versão prévia.
+
+
+
+>[!div class="step-by-step"]
+[« Anterior](proxy-intro-aad.md)
+[Próximo »](session-policy-aad.md)
+
 
 Execute estas etapas para configurar aplicativos do Azure AD para ser controlados pelo Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security.
 
@@ -102,6 +109,11 @@ Execute estas etapas para configurar aplicativos do Azure AD para ser controlado
 
 
 Agora você está pronto para criar [políticas de acesso](access-policy-aad.md) e [políticas de sessão](session-policy-aad.md) para controlar seus aplicativos de Controle de Aplicativo de Acesso Condicional.
+
+
+>[!div class="step-by-step"]
+[« ANTERIOR: Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional](proxy-intro-aad.md)
+[PRÓXIMO: Políticas de sessão »](session-policy-aad.md)
 
 
 
