@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df7fa13ece4f375751152db48114d0f2edd04362
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 05/09/2018
 # <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Bloqueando downloads de informações confidenciais usando o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Políticas de acesso](access-policy-aad.md)
+[« ANTERIOR: Como criar uma política de acesso](access-policy-aad.md)
 
 O administrador de TI atual está entre a cruz e a espada: você quer permitir que seus funcionários sejam produtivos. Isso significa permitir que os funcionários acessem aplicativos para poderem trabalhar a qualquer momento, em qualquer dispositivo. Por outro lado, você deseja proteger os ativos da empresa, e que incluem informações proprietárias e privilegiadas. Como é possível permitir que seus funcionários acessem aplicativos de nuvem e, ao mesmo tempo, proteger seus dados? **Este caso de uso permite que você bloqueie downloads realizados por usuários que têm acesso a seus dados confidenciais em aplicativos de nuvem empresariais de dispositivos não gerenciados ou locais fora da rede corporativa.**
 
@@ -133,7 +133,7 @@ Após concluir essa tarefa, vá para o portal do Cloud App Security e crie uma p
 
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Políticas de acesso](access-policy-aad.md)
+[« ANTERIOR: Como criar uma política de acesso](access-policy-aad.md)
 
 
 

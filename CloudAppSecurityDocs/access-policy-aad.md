@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbf878e3dee283c6d200008b414fb062f9e79723
-ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
+ms.openlocfilehash: 06a78107b33613fe8d947ed55e057990268c7026
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[« Política de sessão](session-policy-aad.md)<br>
-[Caso de uso »](use-case-proxy-block-session-aad.md)
+[« ANTERIOR: Como criar uma política de sessão](session-policy-aad.md)<br>
+[PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
 
 
 As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, local, dispositivo e aplicativo. Crie políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são ingressados em domínio e não gerenciados pelo Windows Intune distribuindo certificados do cliente para dispositivos gerenciados ou aproveitando os certificados existentes, como certificados MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado. 
@@ -95,8 +95,9 @@ Para criar uma nova política de acesso, siga este procedimento:
 
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Políticas de sessão](session-policy-aad.md)
-[PRÓXIMO: Bloquear downloads de informações confidenciais usando o Controle de Aplicativo de Acesso Condicional »](use-case-proxy-block-session-aad.md)
+[« ANTERIOR: Como criar uma política de sessão](session-policy-aad.md)<br>
+[PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
+
  
 ## <a name="see-also"></a>Consulte Também  
 [Bloqueando downloads em dispositivos não gerenciados, usando funcionalidades de Controle de Aplicativo de Acesso Condicional do Azure AD](use-case-proxy-block-session-aad.md)   

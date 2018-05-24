@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf13b7439baafa11a94aa8420ec050781fde88fc
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Implantar o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)
-[PRÓXIMO: Políticas de acesso »](access-policy-aad.md)
+[« ANTERIOR: Implantar o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)<br>
+[PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
 
 As políticas de sessão do Microsoft Cloud App Security habilitam o monitoramento em tempo real de nível de sessão, oferecendo visibilidade granular de aplicativos de nuvem e a capacidade de executar ações diferentes dependendo da política configurada para uma sessão de usuário. Em vez de [permitir ou bloquear o acesso por completo](access-policy-aad.md), com o controle de sessão, é possível permitir o acesso durante o monitoramento da sessão e/ou limitar atividades de sessão específicas usando os recursos de proxy reverso do Controle de Aplicativo de Acesso Condicional. 
@@ -182,8 +182,8 @@ Selecione **Bloquear atividades** para bloquear atividades específicas que voc�
 Quando **Proteger** é definido como a **Ação** a ser executada na política de sessão do Cloud App Security, o Controle de Aplicativo de Acesso Condicional determina o rótulo e a proteção subsequentes de um arquivo de acordo com os filtros de arquivo da política. Os rótulos são configurados no console de Proteção de Informações do Azure no Azure e **Proteger** deve ser selecionado no rótulo para que o rótulo seja exibido como uma opção na política do Cloud App Security. Quando um rótulo for selecionado e um arquivo que atende aos critérios da política do Cloud App Security for baixado, o rótulo e a proteção correspondente (com permissões) serão aplicados ao arquivo após o download. O arquivo original permanece como está no aplicativo de nuvem, enquanto o arquivo baixado agora está protegido. Os usuários que tentam acessar o arquivo devem atender os requisitos de permissão determinados pela proteção aplicada.  
  
 >[!div class="step-by-step"]
-[« ANTERIOR: Implantar o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)
-[PRÓXIMO: Políticas de acesso »](access-policy-aad.md)
+[« ANTERIOR: Implantar o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)<br>
+[PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
  
 ## <a name="see-also"></a>Consulte Também  
