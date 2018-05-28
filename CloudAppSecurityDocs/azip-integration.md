@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72850e76d653de3b9d355782d78254567e50aa91
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
+ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/25/2018
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -168,7 +168,7 @@ Siga estas instruções para criar a política de arquivo:
 Você também pode optar por definir alertas, notificação do usuário ou tomar ação imediata para essas políticas.
 Saiba mais sobre [ações de governança](governance-actions.md).
 
-Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) e confira o [tutorial de Início Rápido](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial) da Proteção de Informações do Azure.
+Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) e confira o [tutorial de Início Rápido](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial) da Proteção de Informações do Azure.
 
 
  
