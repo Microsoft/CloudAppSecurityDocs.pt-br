@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 417e5eb128e5ec351369d8703a3c220117031f32
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: f93a78e35c76e9dd76e1264fb11d6046ed2b6d18
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558933"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -32,7 +33,7 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
 
 ### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>Etapa 1: transmitir seus logs de atividade do Azure para Hubs de Eventos
 
-1. Transmita o Log de Atividades do Azure da sua assinatura do Azure a um Hub de Eventos. Siga o guia oficial na documentação do Azure: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
+1. Transmita o Log de Atividades do Azure da sua assinatura do Azure a um Hub de Eventos. Siga o guia oficial na documentação do Azure: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
    > [!NOTE]
    > Se você tiver mais de uma assinatura do Azure, repita essa etapa para cada assinatura usando um único Hub de Eventos que será compartilhado entre suas assinaturas.
@@ -48,9 +49,7 @@ O Cloud App Security se conecta ao Azure por meio dos Hubs de Eventos. Esta seç
   
    ![Menu Hubs de eventos](media/azure-event-hubs.png "Hubs de Eventos do Azure")
 
-2. Selecione o Namespace do seu Hub de Eventos.
-  
-   ![Namespace do Hub de Eventos](media/azure-namespace.png "Namespace do Azure")
+2.  No pop-up do Azure, clique em **Conectar o Microsoft Azure**.
 
 3. No menu, em **Entidades**, clique em **Hubs de Eventos**. 
   

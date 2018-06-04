@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,19 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 067709747631e18fbc88de165127d89be8fef068
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6db4518feb2c212feaece9bcd216a8ed25f7af2f
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34470654"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
-# <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Conformidade, confiabilidade, privacidade e segurança de dados do Microsoft Cloud App Security
+# <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Privacidade e segurança de dados do Microsoft Cloud App Security
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 O Microsoft Cloud App Security é um componente crítico da pilha do Microsoft Cloud Security. Ele é uma solução abrangente que ajuda sua organização a aproveitar totalmente a promessa de aplicativos em nuvem, mas mantém você em controle por meio de visibilidade abrangente, recursos de auditoria e controles granulares sobre seus dados confidenciais.
 
@@ -60,6 +63,9 @@ Para obter mais informações, acesse [Ofertas de conformidade da Microsoft](htt
 ## <a name="privacy"></a>Privacidade
 
 ### <a name="you-are-the-owner-of-your-data"></a>Você é o proprietário dos seus dados
+- No Microsoft Cloud App Security, seus administradores podem exibir dados de identificação pessoal armazenados no serviço do portal usando a barra de Pesquisa.
+- 
+- Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. Clicar em uma entidade abre [**Usuários e Contas**](accounts.md). A página **Usuários e contas** fornece detalhes abrangentes sobre a entidade, extraídos de aplicativos de nuvem conectados. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
 
 -   Você é proprietários dos seus dados e pode cancelar assinaturas e solicitar a exclusão dos dados a qualquer momento. Se você não renovar sua assinatura, seus dados serão excluídos dentro do prazo especificado nos [Termos de Serviços Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
@@ -74,6 +80,10 @@ Para obter mais informações, acesse [Ofertas de conformidade da Microsoft](htt
 ### <a name="privacy-controls"></a>Controles de privacidade
 
 -   Os controles de privacidade ajudam você a definir quem em sua organização tem acesso ao serviço e o que eles podem acessar.
+
+## <a name="updating-personal-data"></a>Atualização de dados pessoais
+Os dados pessoais sobre usuários derivam do objeto do usuário nos aplicativos SaaS usados. Por isso, qualquer alteração feita no perfil do usuário nesses aplicativos são refletidas no Microsoft Cloud App Security.
+
 
 ## <a name="data-location"></a>Local dos dados
 
@@ -104,6 +114,12 @@ O Microsoft Cloud App Security mantém os dados da seguinte maneira:
 Você pode aprender mais sobre práticas de dados da Microsoft lendo os [Termos de Serviço Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Saiba mais sobre transparência](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
+
+### <a name="deleting-personal-data"></a>Exclusão de dados pessoais
+Após a exclusão dos dados de um aplicativo de nuvem conectado, o Microsoft Cloud App Security excluirá automaticamente a cópia dos dados em até dois anos.
+
+### <a name="exporting-personal-data"></a>Exportação de dados pessoais
+O Microsoft Cloud App Security fornece a capacidade de [exportar](activity-filters.md#export) para CSV todas as atividades do usuário e informações de alerta de segurança.
 
 ## <a name="security"></a>Segurança
 

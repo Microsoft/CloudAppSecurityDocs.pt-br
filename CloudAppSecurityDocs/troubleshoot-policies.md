@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9bfc880cdaa0bf87abfd2b3b34cdf647a4aa1aaf
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: cfc1d9442c50153ce06a358ccdd88b4ab316a88d
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34445328"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 |Erro do|Descrição|Resolução|
 |----|----|----|
-| **A política <policy name> foi automaticamente desabilitada devido a um erro de configuração.**|Se este erro ocorrer no Microsoft Cloud App Security, isso significará que você precisará corrigir a configuração da política nomeada. Ao criar uma política do Microsoft Cloud App Security, geralmente você faz uso de outros objetos que criou no Cloud App Security, como marcações de IP ou filtros de intervalo de IP. Se a marcação ou o intervalo de IP usado na política for excluído posteriormente, a política será automaticamente desabilitada e esse erro ocorrerá. |Para restaurar a política, edite-a, remova quaisquer objetos excluídos de seus filtros e salve a política.|
+| **A política <policy name> foi automaticamente desabilitada devido a um erro de configuração**|Se este erro ocorrer no Microsoft Cloud App Security, isso significará que você precisará corrigir a configuração da política indicada. Ao criar uma política do Microsoft Cloud App Security, geralmente você faz uso de outros objetos que criou no Cloud App Security, ou no Centro de Segurança e Conformidade, como marcações de IP ou tipos confidenciais personalizados. Se a marcação de IP ou tipo confidencial personalizado usado na política for excluído posteriormente, a política será automaticamente desabilitada e esse erro ocorrerá. Isso também pode indicar um erro de configuração mais geral, como um filtro muito complexo. |Para restaurar a política, edite a política e corrija todo erro de configuração mencionado. Geralmente, isso significa que você precisará remover quaisquer objetos excluídos de filtros de política e salvar a política.|
 
 
 

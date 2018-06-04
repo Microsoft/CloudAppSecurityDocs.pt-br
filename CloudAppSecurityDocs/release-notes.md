@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/11/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,48 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 545d7cb0e7152918e8f9b1e37ff1d7a210605342
-ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
+ms.openlocfilehash: e5d7d03bc2c30716c9c449f66734ea65c58220eb
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34559052"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
+
+
+## <a name="cloud-app-security-release-124"></a>Cloud App Security versão 124
+
+Lançamento: 27 de maio de 2018
+
+-   **Avaliação de risco RGPD adicionada ao catálogo do Cloud App**<br>
+Adicionamos 13 fatores novos de risco ao Microsoft Cloud App Security. Esses fatores de risco seguem a lista de verificação do framework do RGPD para que você possa avaliar os aplicativos no catálogo do Cloud App de acordo com as normas de RGPD.
+
+-   **Integrar com o Serviço de Classificação de Dados da Microsoft**<br>
+O Microsoft Cloud App Security agora permite que você utilize de forma nativa o Serviço de Classificação de Dados da Microsoft, para classificar os arquivos em seus aplicativos de nuvem. <br>
+O Serviço de Classificação de Dados da Microsoft fornece uma experiência de proteção de informações unificada no Office 365, na Proteção de Informações do Azure e no Microsoft Cloud App Security. Ele permite que você estenda a mesma estrutura de classificação de dados para aplicativos de nuvem de terceiros protegidos pelo Microsoft Cloud App Security, aproveitando as decisões já tomadas em uma quantidade ainda maior de aplicativos. 
+
+-   **Conectar-se ao Microsoft Azure** (distribuição gradual)<br>
+O Microsoft Cloud App Security está estendendo seus recursos de monitoramento de IaaS para além do Amazon Web Services, e agora dá suporte ao Microsoft Azure. Isso permite que você se conecte e monitore perfeitamente todas as suas assinaturas do Azure com o Cloud App Security. Essa conexão fornece um conjunto avançado de ferramentas para proteger seu ambiente do Azure, incluindo: 
+ -  Visibilidade de todas as atividades realizadas por meio do portal
+ -  A capacidade de criar políticas personalizadas para alertar sobre comportamento indesejado, bem como a capacidade de proteger automaticamente contra possíveis usuários arriscados por meio de suspensão ou forçando-os a entrar novamente.
+ -  Todas as atividades do Azure são cobertas por nosso mecanismo de detecção de anomalias, o qual alertará automaticamente sobre qualquer comportamento suspeito no Portal do Azure, como viagem impossível, atividades em assa suspeitas e atividade de um novo país.<br>
+Para saber mais, confira [Conectar o Azure ao Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
+ 
+-   **Implantações com escopo**<br> (distribuição gradual) O Microsoft Cloud App Security fornece às empresas a capacidade de determinar de forma granular quais usuários eles querem monitorar e proteger com base na associação de grupo. Esse recurso permite que você selecione os usuários cujas atividades não serão exibidas para qualquer um dos aplicativos protegidos. O recurso de monitoramento com escopo é especialmente útil para: 
+  - Conformidade: se as suas regulamentações de conformidade exigirem que você evite o monitoramento de usuários de determinados países devido à legislação local.
+  - Licenciamento: se você deseja monitorar menos usuários a fim de permanecer dentro dos limites de suas licenças do Microsoft Cloud App Security.
+Para saber mais, confira [Implantação com escopo](scoped-deployment.md).
+
+-   **Alerta de aplicativo violado para aplicativos descobertos**<br>
+Agora, temos um alerta interno para notificar você quando houver violação de qualquer aplicativo descoberto do um locatário. O alerta fornecerá informações sobre a data e hora da violação, quais usuários utilizaram o aplicativo e criará um link para fontes publicamente disponíveis que fornecem informações sobre a violação.
+
+-   **Novo servidor de emails**<br>
+O servidor de email do Cloud App Security mudou e usa intervalos de endereço IP diferentes. Para certificar-se de que você pode obter notificações, adicione os novos endereços IP à lista de permissões antispam. Para usuários que personalizam suas notificações, o Microsoft Cloud App Security permite essa opção usando MailChimp®, um serviço de email de terceiros. Para obter a lista de endereços IP do servidor de email e instruções para habilitar o trabalho com o MailChimp, confira [Requisitos de rede](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server) e [Configurações de email](mail-settings.md).
+
 
 ## <a name="cloud-app-security-release-123"></a>Cloud App Security versão 123
 

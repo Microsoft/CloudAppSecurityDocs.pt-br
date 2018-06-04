@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df50762bc16e9d272312d88bbc584a86615d17ee
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: e6db675140d808b6dc8f7cd0d742a6745591e913
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558916"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -124,9 +125,20 @@ Para se conectar a aplicativos de terceiros e integrar soluções de DLP externa
 
 ## <a name="email-server"></a>Servidor de email
 
-O endereço IP dedicado do email do Cloud App Security é: 
+Para habilitar o envio de notificações usando o modelo e configurações padrão, adicione esses endereços IP à sua lista de permissões antispam. Os endereços IP de email dedicado do Cloud App Security são: 
 
-198.2.134.139 (mail1.cloudappsecurity.com)
+- 65.55.234.192/26
+- 207.46.200.0/27
+- 65.55.52.224/27
+- 94.245.112.0/27
+- 111.221.26.0/27
+- 207.46.50.192/26
+
+Se você quiser personalizar suas notificações, o Microsoft Cloud App Security permitirá essa opção usando o MailChimp®, um serviço de email de terceiros. Para que isso funcione, no portal do Microsoft Cloud App Security, em **Configurações**, selecione **Configurações de email** e revise os Termos de Serviço e a Declaração de Privacidade do MailChimp, e conceda à Microsoft permissão para usar o MailChimp em seu nome.
+
+Se você não fizer isso, as notificações de email serão enviadas usando todas as configurações padrão.
+
+Para trabalhar com o MailChimp, adicione esse endereço IP à lista de permissões antispam para habilitar o envio de notificações: 198.2.134.139 (mail1.cloudappsecurity.com)
 
 Inclua esse endereço IP à lista de permissões com o serviço antispam a fim de habilitar o envio de notificações.
 

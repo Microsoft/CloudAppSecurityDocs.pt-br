@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce67a75ee0fe62bec21660c87ce4a7d213aba1bf
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8d8a91193d6162cc6f37e905bdcb6b32a9c53784
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558967"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -53,15 +54,13 @@ O Cloud App Security oferece suporte aos seguintes aplicativos do Office 365:
  
 1.  Na página **Aplicativos conectados**, clique no botão de mais e selecione **Office 365**.  
 
-2.  No pop-up do Office 365, clique em Conectar o Office 365.
+    ![conectar o 0365](./media/connect-0365.png) 
 
-      ![conectar o 0365](./media/connect-0365.png) 
+2.  No pop-up do Office 365, clique em **Conectar o Office 365**.
+
+    ![conectar o 0365](./media/office-connect.png) 
  
-3.  Clique em “Testar agora” para testar a conexão para o Office 365. O teste pode levar alguns minutos.
-  
-    ![Testar conexão do O365](./media/o365-test-connection.png) 
- 
-4.   Depois de ser indicado que a conexão do Office 365 foi concluída com êxito, clique em **Fechar**.
+3.   Depois de ser indicado que a conexão do Office 365 foi concluída com êxito, clique em **Fechar**.
   
      ![O365 conectado](./media/o365-connected.png) 
 
