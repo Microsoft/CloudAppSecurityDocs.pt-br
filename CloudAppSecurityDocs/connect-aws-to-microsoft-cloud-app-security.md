@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64c3ac8cea662aa1eab69f46f5d226bc585e5e83
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ac168d889c237eb2987979be88662228239a75b7
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568638"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -56,7 +57,11 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
             "cloudwatch:Get*",  
             "cloudwatch:List*",  
             "iam:List*",  
-            "iam:Get*"  
+            "iam:Get*",
+            "s3:ListAllMyBuckets",
+            "s3:PutBucketAcl",
+            "s3:GetBucketAcl",
+            "s3:GetBucketLocation"
           ],  
           "Effect" : "Allow",  
           "Resource" : "*"  

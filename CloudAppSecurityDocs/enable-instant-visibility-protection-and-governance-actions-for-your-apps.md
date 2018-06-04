@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b0f009770d16f7d801df637e1ba632cc6f82f1ac
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8e9fb2a64417d68e64b2b37088fcb5baae3e6fe2
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568966"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -90,7 +91,7 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 > |**Quarentena**|✔|✔|Não Aplicável|Em breve|||Em breve||  
 > |**Exibir permissões de aplicativo**|✔|Sem suporte pelo provedor|Não Aplicável|✔||✔|Sem suporte pelo provedor||  
 > |**Revogar permissões de aplicativo**|✔||Não Aplicável|✔||✔|Não Aplicável||  
-> |**Aplique os rótulos da Proteção de Informações do Azure**|✔|✔|||||||  
+> |**Aplique os rótulos da Proteção de Informações do Azure**|✔|✔||✔|||||  
 
 ## <a name="prerequisites"></a>Pré-requisitos  
 
