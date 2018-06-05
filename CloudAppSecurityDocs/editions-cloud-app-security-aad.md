@@ -1,23 +1,24 @@
 ---
-title: "Quais são as diferenças entre os recursos de descoberta do Microsoft Cloud App Security e o Azure AD? | Microsoft Docs"
-description: "Este tópico descreve as diferenças entre os recursos de descoberta do Microsoft Cloud App Security e do Azure AD."
-keywords: 
+title: Quais são as diferenças entre os recursos de descoberta do Microsoft Cloud App Security e o Azure AD? | Microsoft Docs
+description: Este tópico descreve as diferenças entre os recursos de descoberta do Microsoft Cloud App Security e do Azure AD.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5f4fd69cc11e5e7a3659b342c7c043f2a1eff5ae
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9e4ba6be74994f097cbe225815a71b58b268e65f
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567536"
 ---
 # <a name="what-are-the-differences-discovery-capabilities-in-azure-active-directory-and-microsoft-cloud-app-security"></a>Quais são as diferenças entre os recursos de descoberta do Azure Active Directory e do Microsoft Cloud App Security?
 
@@ -35,7 +36,7 @@ A seguir está uma comparação dos recursos de descoberta no Microsoft Cloud Ap
 
 |Capacidade|Recurso|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
-|Cloud Discovery|Aplicativos Descobertos|Mais de 15.000 aplicativos de nuvem|Mais de 15.000 aplicativos de nuvem|
+|Cloud Discovery|Aplicativos Descobertos|Mais de 16.000 aplicativos de nuvem|Mais de 16.000 aplicativos de nuvem|
 ||Implantação para análise de descoberta|Upload de log manual e automático|Upload de log manual e automático|
 ||Anonimização de log para a privacidade do usuário|Sim|Sim|
 ||Acesso ao Catálogo de aplicativos de nuvem|Sim||
@@ -49,4 +50,3 @@ A seguir está uma comparação dos recursos de descoberta no Microsoft Cloud Ap
 Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).    
 
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier](https://premier.microsoft.com/).   
-

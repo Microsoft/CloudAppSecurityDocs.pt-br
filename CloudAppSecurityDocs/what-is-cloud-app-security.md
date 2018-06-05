@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7531650e17fb7cca2a187bece484e48fe406aae
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 59d949723939c2e82887044ce0a4c325019f5b6c
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568672"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -72,7 +73,7 @@ Para obter mais informações sobre o Cloud Discovery, consulte [Configurar o Cl
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>Sanção e o cancelamento de sanção de um aplicativo  
 
-Você pode usar o Cloud App Security para sancionar ou cancelar a sanção de aplicativos em sua organização usando nosso *Catálogo de aplicativos de nuvem*. A equipe de analistas da Microsoft tem um catálogo extenso e em constante expansão de mais de 15 mil aplicativos de nuvem que são classificados e pontuados com base nos padrões da indústria. Você pode usar o catálogo de aplicativos de nuvem para classificar o risco para seus aplicativos de nuvem com base em certificações regulatórias, padrões da indústria e práticas recomendadas. Depois, personalize as pontuações e os pesos de diversos parâmetros de acordo com as necessidades da sua organização. Com base nessas pontuações, o Cloud App Security permite que você saiba o quão arriscado o aplicativo é de acordo com mais de 60 fatores de risco que podem afetar seu ambiente.  
+Você pode usar o Cloud App Security para sancionar ou cancelar a sanção de aplicativos em sua organização usando nosso *Catálogo de aplicativos de nuvem*. A equipe de analistas da Microsoft tem um catálogo extenso e em constante expansão de mais de 16 mil aplicativos de nuvem que são classificados e pontuados com base nos padrões do setor. Você pode usar o catálogo de aplicativos de nuvem para classificar o risco para seus aplicativos de nuvem com base em certificações regulatórias, padrões da indústria e práticas recomendadas. Depois, personalize as pontuações e os pesos de diversos parâmetros de acordo com as necessidades da sua organização. Com base nessas pontuações, o Cloud App Security permite que você saiba o grau de risco do aplicativo com base em mais de 70 fatores de risco que podem afetar seu ambiente.  
 
 ### <a name="app-connectors"></a>Conectores de aplicativos  
 Os conectores de aplicativos usam APIs de provedores de aplicativos de nuvem para integrar a nuvem do Cloud App Security com outros aplicativos de nuvem. Conectores de aplicativo estendem o controle e a proteção. Eles também fornecem acesso às informações diretamente de aplicativos de nuvem para análise do Cloud App Security.  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2017
+ms.date: 5/27/2017
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3daf04f3caa2541bacafe6be33c7f9714b1dda71
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 403d61fd6c0177371dab351413e80e40dde41386
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567652"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
-O Cloud Discovery analisa os logs de tráfego e os compara ao catálogo de aplicativos de nuvem do Microsoft Cloud App Security de mais de 15 mil em aplicativos de nuvem que são classificados e pontuados com base em mais de 60 fatores de risco, a fim de fornecer visibilidade contínua do uso da nuvem, TI de sombra e o risco que a TI de sombra representa para sua organização.
+O Cloud Discovery analisa os logs de tráfego e os compara com o catálogo de mais de 16 mil aplicativos de nuvem do Microsoft Cloud App Security classificados e pontuados com base em mais de 70 fatores de risco, a fim de fornecer visibilidade contínua do uso da nuvem, TI de sombra e o risco que a TI de sombra representa para sua organização.
 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Relatórios contínuo e de instantâneo de avaliação de riscos 
 
@@ -39,7 +40,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 
 -   **Analisar** – O Cloud App Security analisa e extrai dados de tráfego dos logs de tráfego com um analisador dedicado para cada fonte de dados.  
 
--   **Analisar** – os dados de tráfego são examinados em relação ao Catálogo de aplicativos de nuvem para identificar mais de 15.000 aplicativos de nuvem e avaliar sua pontuação de risco. Os usuários ativos e os endereços IP também são identificados como parte da análise.  
+-   **Analisar** – os dados de tráfego são examinados em relação ao Catálogo do Cloud App para identificar mais de 16 mil aplicativos de nuvem e avaliar sua pontuação de risco. Os usuários ativos e os endereços IP também são identificados como parte da análise.  
 
 -   **Gerar relatório** – Um relatório de avaliação de risco dos dados extraídos dos arquivos de log é gerado.   
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b9a5ccee5fed0df3ebe29f8549473ffbb36a0b3
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559086"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568655"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
      
      ![regra de inclusão](./media/include-rule.png)
 
-4. Para definir grupos ou usuários específicos para exclusão do monitoramento, na guia **Excluir**, clique no ![ícone do sinal de adição](./media/plus-icon.png). <br>Na caixa de diálogo **Criar nova regra de inclusão**, defina os parâmetros a seguir:
+4. Para definir a exclusão de grupos específicos do monitoramento, na guia **Excluir**, clique no ![ícone](./media/plus-icon.png) do sinal de adição. <br>Na caixa de diálogo **Criar nova regra de inclusão**, defina os parâmetros a seguir:
 
     1. Em **Digitar nome da regra**, dê um nome descritivo para a regra.
     Em **Selecionar grupos de usuários**, selecione todos os grupos que você quer excluir do monitoramento do Cloud App Security.
@@ -62,6 +62,7 @@ Se você criar as seguintes regras:
 - Excluir o grupo de usuários "Alemanha todos os usuários"
 - Incluir no grupo de usuários "Vendas globais"somente as atividades do Office 365
 - Incluir no grupo de usuário "Gerentes de vendas" somente atividades do Power BI
+- O Salesforce está conectado ao Microsoft Cloud App Security e não há regras definidas para ele
 
 As seguintes atividades de usuário são monitoradas:
 
@@ -72,6 +73,9 @@ As seguintes atividades de usuário são monitoradas:
 |Barros|Vendas globais<br>Gerentes de vendas|Office 365 e todos os subaplicativos|
 |Diogo|Gerentes de vendas|Apenas Power BI|
 
+> [!NOTE] 
+> Outros aplicativos não serão afetados pelo escopo do grupo nestas regras.
+> No exemplo, para o Salesforce, todas as atividades são monitoradas em todos os grupos de usuários.
 
   
     
