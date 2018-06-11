@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a89c20e728d852ee3220be861e3e0f5988418a21
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759974"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -77,7 +78,7 @@ Execute estas etapas para configurar aplicativos do Azure AD para ser controlado
 
 6. Na tabela de aplicativos de Controle de Aplicativo de Acesso Condicional, examine a coluna de **Controles disponíveis** e verifique se são exibidos o acesso condicional do Azure AD e o controle de sessão. <br></br>Se o controle de sessão não aparece para um aplicativo, isso significa que ele ainda não está disponível para esse aplicativo específico e, em vez dele, você vê o link **Solicitar o controle de sessão**. Clique para abrir uma caixa de diálogo e solicitar a integração do aplicativo ao controle de sessão. Durante o período de visualização pública do Controle de Aplicativo de Acesso Condicional, o processo de integração será executado junto com você pela equipe do Microsoft Cloud App Security.
   
-   ![solicitar controle de sessão](./media/request-session-control.png)
+   ![solicitar controle de sessão](./media/proxy-view-new-apps.png)
 
 7. Opcional – Identifique os dispositivos usando certificados de cliente:
 
