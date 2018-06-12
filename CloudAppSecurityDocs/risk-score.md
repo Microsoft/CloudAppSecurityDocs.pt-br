@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed1896655c6d94eb134c3dd0aa0bac345f08aa89
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 40b477b3618e39473fe09568b3da761ce4d3b898
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34567669"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759909"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -102,7 +102,7 @@ Cada uma das categorias é composta por várias propriedades específicas. De ac
   
 1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
   
-2. Em **Configurar métrica de pontuação**, deslize a **Importância** para alterar o peso do campo ou da categoria de risco para **Ignorado**, **Baixo**, **Médio**, **Alto** ou **Muito Alto**.  
+2. Em **Métrica de pontuação**, deslize a opção **Importância** para alterar o peso do campo ou da categoria de risco para **Ignorado**, **Baixo**, **Médio**, **Alto** ou **Muito Alto**.  
   
 3. Além disso, você pode definir se determinados valores não estão disponíveis ou não são aplicáveis no cálculo da pontuação. Quando incluídos, valores N/A têm uma contribuição negativa para a pontuação calculada.  
   

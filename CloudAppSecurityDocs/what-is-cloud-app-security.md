@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59d949723939c2e82887044ce0a4c325019f5b6c
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: e4e2c77d3bb3b8f6a2a83b73aa9f16ae356b374f
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568672"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759926"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -52,18 +52,8 @@ O Cloud App Security integra a visibilidade com sua nuvem ao
 
 ![Diagrama de arquitetura do Cloud App Security](./media/proxy-architecture.png)  
 
-### <a name="data-retention--compliance"></a>Retenção de dados e conformidade
-
-O Cloud App Security é certificado oficialmente com a Conformidade da Microsoft para ISO, HIPAA, CSA STAR, cláusulas de modelo da UE e muito mais. Para ver a lista completa das certificações, acesse [Ofertas de conformidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=842039) e selecione Cloud App Security.  
-
-Quando o Cloud App Security executa a inspeção do conteúdo, a privacidade de dados é imposta. O conteúdo do arquivo não é armazenado no banco de dados do Cloud App Security. Somente os metadados dos registros de arquivo e qualquer violação identificada são armazenados no banco de dados do Cloud App Security. Para obter mais informações sobre a retenção de dados, consulte nossa [política de privacidade](http://go.microsoft.com/fwlink/?LinkId=512132) e a [Central de Confiabilidade da Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
-O Cloud App Security mantém os dados da seguinte maneira: 
- 
-- Log de atividades: 180 dias 
-- Dados de descoberta: 90 dias 
-- Alertas: 180 dias 
-
-Depois que os dados são coletados dessas fontes, o Cloud App Security executa um mecanismo heurístico sofisticado de detecção de anomalias que faz o perfil do seu ambiente e fornece alertas sobre atividades anormais em relação à linha de base aprendida e oferece uma visibilidade profunda em seu ambiente de nuvem. Você pode configurar uma política no Cloud App Security e usá-la para proteger tudo em seu ambiente de nuvem.  
+### <a name="data-retention--compliance"></a>Conformidade e retenção de dados
+Para saber mais sobre conformidade e retenção de dados do Microsoft Cloud App Security, confira [Privacidade e segurança de dados do Microsoft Cloud App Security](cas-compliance-trust.md).
 
 ### <a name="cloud-discovery"></a>Cloud Discovery  
 

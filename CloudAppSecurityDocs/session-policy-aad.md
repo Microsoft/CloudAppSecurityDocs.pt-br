@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: cf8f0230b2316646b49bd2f80f688d47229625c6
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759856"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -146,7 +147,7 @@ Se você não desejar notificar o usuário que ele está sendo monitorado, você
 
 1. Na engrenagem de configurações, selecione **Configurações gerais**. 
 
-2. Em seguida, nas configurações de Controle de Aplicativo de Acesso Condicional, desmarque a caixa de seleção **Notificar os usuários**.
+2. Em seguida, no **Controle de Aplicativo de Acesso Condicional**, marque a caixa de seleção **Monitoramento de usuário** e desmarque **Notificar os usuários**.
 
     ![desabilitar o aviso de monitoramento de sessão](./media/disable-session-monitoring-notice.png)
 

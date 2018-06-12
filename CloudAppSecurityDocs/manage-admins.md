@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 6e9a2f9466352296caea57ee3219fa6a5151f1c8
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568383"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251762"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -54,8 +54,8 @@ O Microsoft Cloud App Security é compatível com o Controle de acesso baseado e
    - Acessar e exibir a página Gerenciar relatórios de instantâneo 
 
 - Administrador de aplicativo/instância: tem permissões para todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao aplicativo ou instância específica de um aplicativo selecionado aqui. Por exemplo, se você conceder uma permissão de administrador de usuário à sua instância do Box European, o administrador poderá ver somente os dados relacionados a essa instância do aplicativo, como arquivos, atividades, políticas ou alertas, da seguinte maneira:
-- 
-  - Página de atividades: somente atividades sobre as entidades marcadas
+
+  - Página de atividades: somente atividades relacionadas ao aplicativo específico
   - Alertas: somente alertas relacionados ao aplicativo específico
   - Políticas: podem exibir todas as políticas e editar ou criar somente as políticas que lidam exclusivamente com o aplicativo/instância
   - Conta: somente contas para o aplicativo/instância específico
@@ -65,6 +65,21 @@ O Microsoft Cloud App Security é compatível com o Controle de acesso baseado e
   - Atividade do descoberta Cloud Discovery: sem permissões
   - Extensões de segurança: permissões apenas para o token de API com permissões de usuário
   - Ações de governança: apenas para o aplicativo/instância específico 
+
+- Administrador de grupo: tem permissões para todos os dados no Microsoft Cloud App Security, relacionados exclusivamente ao grupo específico selecionado aqui. Por exemplo, se você conceder permissão de administrador ao usuário para o grupo "Alemanha – Todos os usuários", o administrador será capaz de exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários, da seguinte maneira:
+
+  - Página de atividades: somente atividades relacionadas aos usuários do grupo
+  -     Alertas: somente alertas relacionados aos usuários do grupo
+  -     Políticas: podem exibir todas as políticas e editar ou criar somente as políticas que lidam exclusivamente com os usuários do grupo
+  -     Conta: somente contas de usuários específicos do grupo
+  -     Permissões de aplicativo: nenhuma permissão
+  -     Página de arquivos: nenhuma permissão
+  -     Controle de Aplicativo de Acesso Condicional: sem permissões
+  -     Atividade do descoberta Cloud Discovery: sem permissões
+  -     Extensões de segurança: permissões somente para o token de API com usuários do grupo
+  -     Ações de governança: somente para usuários específicos do grupo
+
+
 
 Para obter mais informações, consulte [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 

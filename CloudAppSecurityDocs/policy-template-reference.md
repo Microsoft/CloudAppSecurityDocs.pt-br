@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6dbfa26443bf1b05c689aec563b8ee71599076c9
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: feab5ecc5705fe0d0f43c2b49a15e970c8f54f67
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251789"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="policy-templates"></a>Modelos de Política
 
-A seguir está uma lista de todos os modelos de política que existem no Microsoft Cloud App Security. É recomendável iniciar a criação de políticas com base em um modelo existente sempre que possível para facilidade de uso.
+Esta é uma lista de modelos de política existentes no Microsoft Cloud App Security. É recomendável iniciar a criação de políticas com base em um modelo existente sempre que possível para facilidade de uso.
 
 |Categoria de risco|Nome do modelo|Descrição|
 |-----|----|----|
@@ -46,19 +47,20 @@ A seguir está uma lista de todos os modelos de política que existem no Microso
 |Cloud Discovery|Novo aplicativo de vendas|Alerta quando novos aplicativos de vendas são descobertos e que são usados por mais de 50 usuários com um uso diário total de mais de 50 MB.|
 |Cloud Discovery|Novos aplicativos do sistema de gerenciamento de fornecedor|Alerta quando novos aplicativos do sistema de gerenciamento de fornecedor são descobertos e que são usados por mais de 50 usuários com um uso diário total de mais de 50 MB.|
 |DLP|Código-fonte compartilhado externamente|Alerta quando um arquivo que contém o código-fonte é compartilhado fora da sua organização.|
-|DLP|Arquivo contendo PCI detectado na nuvem (mecanismo de DLP interno)|Alerta quando um arquivo que contém informações de cartão de pagamento (PCI) é detectado pelo nosso mecanismo interno de prevenção de perda de dados (DLP) em um aplicativo de nuvem sancionado.|
-|DLP|Arquivo contendo PHI detectado na nuvem (mecanismo de DLP interno)|Alerta quando um arquivo que contém informações protegidas de saúde (PHI) é detectado pelo nosso mecanismo interno de prevenção de perda de dados (DLP) em um aplicativo de nuvem sancionado.|
-|DLP|Arquivo contendo PII detectado na nuvem (mecanismo de DLP interno)|Alerta quando um arquivo que contém informações de identificação pessoal (PII) é detectado pelo nosso mecanismo interno de prevenção de perda de dados (DLP) em um aplicativo de nuvem sancionado.|
-|Detecção de ameaças|Atividade administrativa de um endereço IP não corporativo|Alerta quando um usuário administrador executa uma atividade administrativa de um endereço IP que não está incluído na categoria de intervalo de endereços IP corporativos. Você deve primeiro configurar seus endereços IP corporativos indo para a página Configurações e definindo **Intervalos de endereços IP**.|
+|DLP|Arquivo contendo PCI detectado na nuvem (mecanismo de DLP interno)|Alertar quando um arquivo que contenha dados de informações de cartão de pagamento for detectado pelo mecanismo interno de DLP (prevenção contra perda de dados) do Microsoft Cloud App Security, em um dos aplicativos de nuvem sancionados.|
+|DLP|Arquivo contendo PHI detectado na nuvem (mecanismo de DLP interno)|Alertar quando um arquivo que contenha dados de PHI (informações de integridade protegidas) for detectado pelo mecanismo interno de DLP (prevenção contra perda de dados) do Microsoft Cloud App Security, em um dos aplicativos de nuvem sancionados.|
+|DLP|Arquivo contendo informações de integridade protegidas detectado na nuvem (mecanismo interno de DLP)|Alertar quando um arquivo que contenha dados de PII (informações de identificação pessoal) for detectado pelo mecanismo interno de DLP (prevenção contra perda de dados) do Microsoft Cloud App Security, em um dos aplicativos de nuvem sancionados.|
+|Detecção de ameaças|Atividade administrativa de um endereço IP não corporativo|Alerta quando um usuário administrador executa uma atividade administrativa de um endereço IP que não está incluído na categoria de intervalo de endereços IP corporativos. Primeiro, configure os endereços IP corporativos; para fazer isso, vá até a página Configurações e defina **Intervalos de Endereços IP**.|
 |Detecção de ameaças|Detecção geral de anomalias|Alerta quando uma sessão anômala é detectada em um dos aplicativos sancionados, tais como: viagem impossível, padrão logon, conta inativa.|
-|Detecção de ameaças|Logon de um endereço IP com risco|Alerta quando um usuário faz logon em seus aplicativos sancionados de um endereço IP com risco. Por padrão, a categoria de endereço IP com risco contém endereços que têm marcas de endereço IP de proxy anônimo, TOR ou Botnet. Você pode adicionar mais endereços IP para essa categoria na página de configurações de intervalos de endereço IP.|
+|Detecção de ameaças|Logon de um endereço IP com risco|Alerta quando um usuário faz logon em seus aplicativos sancionados de um endereço IP com risco. A categoria de endereço IP Arriscada contém, por padrão, endereços que têm marcas de endereço IP de proxy Anônimos, Tor ou Botnet. Você pode adicionar mais endereços IP para essa categoria na página de configurações de intervalos de endereço IP.|
 |Detecção de ameaças|Download em massa por um único usuário|Alerta quando um usuário executa mais de 50 downloads dentro de 1 minutos.|
-|Detecção de ameaças|Logon do usuário com falha em várias tentativas para um aplicativo|Alerta quando um usuário tenta fazer logon em um aplicativo e falha de mais de 10 vezes em 5 minutos.|
+|Detecção de ameaças|Várias tentativas de logon do usuário com falha em um aplicativo|Alerta quando um usuário tenta fazer logon em um aplicativo e falha de mais de 10 vezes em 5 minutos.|
 |Detecção de ameaças|Atividade de ransomware potencial|Alerta quando um usuário carrega arquivos para a nuvem que podem ser infectados com ransomware.|
-|Detecção de ameaças|Logon de usuário de um endereço IP não categorizado|Alerta quando um usuário faz logon de um endereço IP que não está incluído em uma categoria específica de intervalo de IP. Você pode categorizar os endereços IP indo para a página Configurações e selecionando os intervalos de endereços IP.|
+|Detecção de ameaças|Logon de usuário em um endereço IP não categorizado|Alerta quando um usuário faz logon de um endereço IP que não está incluído em uma categoria específica de intervalo de IP. Você pode categorizar os endereços IP indo para a página Configurações e selecionando os intervalos de endereços IP.|
 |Controle de compartilhamento|Arquivo compartilhado com endereços de email pessoal|Alerta quando um arquivo é compartilhado com o endereço de email pessoal do usuário.|
-|Controle de compartilhamento|Arquivo compartilhado com domínio não autorizado|Alerta quando um arquivo é compartilhado com um domínio não autorizado (tal como seu concorrente).|
-|Controle de compartilhamento|Certificados digitais compartilhados (extensões de arquivo)|Alerta quando um arquivo que contém os certificados digitais publicamente é compartilhado.|
+|Controle de compartilhamento|Arquivo compartilhado com domínio não autorizado|Alertar quando um arquivo for compartilhado com um domínio não autorizado (por exemplo, de seu concorrente).|
+|Controle de compartilhamento|Certificados digitais compartilhados (extensões de arquivo)|Alerta quando um arquivo que contém os certificados digitais publicamente é compartilhado. Use este modelo para gerenciar o armazenamento do AWS.|
+|Controle de compartilhamento|Buckets do S3 acessíveis publicamente (AWS)|Alertar quando um bucket do S3 do AWS for compartilhado publicamente.|
 |Controle de compartilhamento|Arquivos obsoletos compartilhados externamente|Localizar arquivos compartilhados externamente que ainda não foram abertos ou modificados por 6 meses e removê-los da unidade de disco.|
 
 

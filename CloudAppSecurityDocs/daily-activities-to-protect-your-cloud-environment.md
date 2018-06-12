@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59810d24a51241f6c323a072565beb22d79feca0
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fd7eae955e91b9df5cf067386023041d71fe3a27
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251728"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -29,11 +30,12 @@ Este tópico descreve o que você deve fazer com o Cloud App Security diariament
 ## <a name="check-the-dashboard"></a>Verificar o painel  
 O painel do Cloud App Security fornece uma visão geral das atividades e recursos, incluindo:
 
-- Alertas abertos.
-- Violações de atividade.
-- Violações de conteúdo.
-- Um mapa de atividades que rastreia de onde a atividade do usuário foi originada.
-- Tendências de uso do aplicativo conectado em seu ambiente de nuvem.  
+- Alertas abertos
+- Violações de atividade
+- Violações de conteúdo
+- Um mapa de atividades que plota o local de origem da atividade do usuário
+- Tendências de uso do aplicativo conectado no ambiente de nuvem
+- Usuários principais por detecção de ameaças
 
 É recomendável verificar o painel diariamente para ver quais novos alertas foram acionados. Também é bom ficar atento à integridade do seu ambiente de nuvem para ter uma ideia do que está acontecendo em seu ambiente de nuvem.  
 
