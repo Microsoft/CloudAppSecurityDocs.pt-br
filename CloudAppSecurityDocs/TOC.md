@@ -26,7 +26,7 @@
 ### [Aprimoramento do Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Anonimizar dados do Cloud Discovery](cloud-discovery-anonymizer.md)
 ## [Conectar aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-### [Conectar o Microsoft Azure ao Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
+### [Conectar o Azure](connect-azure-to-microsoft-cloud-app-security.md)
 ### [Conectar o AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Conectar o Box](connect-box-to-microsoft-cloud-app-security.md)
 ### [Conectar o Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
@@ -52,6 +52,7 @@
 ### [Atividades](activity-filters.md)
 #### [Consultas e filtros de atividade](activity-filters-queries.md)
 ### [Arquivos](file-filters.md)
+#### [Gerar relatórios de gerenciamento de dados](built-in-reports.md)
 ### [Contas](accounts.md)
 ### [Gerenciar permissões de aplicativo](manage-app-permissions.md)
 ### [Monitorar aplicativos](monitor-alerts.md)
@@ -63,7 +64,9 @@
 #### [Políticas de atividade](user-activity-policies.md)
 #### [Política de detecção de anomalias](anomaly-detection-policy.md)
 #### [Políticas de arquivos](data-protection-policies.md)
-##### [Inspeção de Conteúdo](content-inspection.md)
+##### Inspeção de conteúdo
+###### [Inspeção de conteúdo interno](content-inspection.md)
+###### [Integração do Serviço de Classificação de Dados](dcs-inspection.md)
 ##### [Trabalhando com o mecanismo RegEx](working-with-the-regex-engine.md)
 #### Políticas de controle de aplicativo de acesso condicional
 ##### [Políticas de acesso](access-policy-aad.md)
