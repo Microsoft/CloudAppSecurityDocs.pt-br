@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 214bc10092765ff2470c258765b8adcf0cce5a9f
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f72ec05e044f6c14aa9336ee80cd9bc6a344cc7b
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
-ms.locfileid: "34152735"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259716"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -32,8 +32,6 @@ A integração é obtida utilizando o protocolo ICAP padrão, um protocolo http 
 
 Este guia fornece as etapas necessárias para configurar a conexão ICAP no Cloud App Security e a instalação do stunnel para proteger a conexão passando por ele.
 
-> [!NOTE]
->Esse recurso está em visualização pública.
 
 ## <a name="architecture"></a>Arquitetura
 O Cloud App Security examina o ambiente de nuvem e, com base em seu arquivo de configuração de política, decide se deve verificar o arquivo usando o mecanismo DLP interno ou DLP externo. Se a verificação DLP externa é aplicada, o arquivo é enviado por meio do túnel seguro para o ambiente do cliente no qual ele é transmitido para o dispositivo ICAP para o veredicto DLP: permitido/bloqueado. As respostas são enviadas ao Cloud App Security pelo stunnel, onde são usadas pela política para determinar ações subsequentes, como notificações, quarentena e compartilhamento de controle.

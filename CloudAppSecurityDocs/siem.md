@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b981a885d36f5a6aee8c605c049894d3f07a64e2
-ms.sourcegitcommit: de99734dd98ac36b56ee6a759b45a12f007eff80
+ms.openlocfilehash: 650107deb070b0442312de441877b29d5da93358
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259612"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -189,9 +190,7 @@ Se precisar excluir o agente SIEM no futuro, você poderá clicar nos três pont
 > [!NOTE]
 > Esse recurso está em visualização pública.
 
-## <a name="high-availability-options"></a>Opções de alta disponibilidade
 
-O agente SIEM é um ponto de extremidade único que oferece suporte à recuperação de até dois dias de tempo de inatividade. É possível alcançar uma medida adicional de alta disponibilidade com um balanceador de carga como o ponto de extremidade do cliente.
 
 ## <a name="see-also"></a>Consulte Também  
 [Solução de problemas da integração SIEM](troubleshooting-siem.md)   
