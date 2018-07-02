@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 4c4a78501732282f7ff3885e0662afa05c161f0b
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746935"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -52,8 +53,6 @@ As políticas de sessão do Cloud App Security permitem que você restrinja aind
 1. Crie uma política de acesso condicional do Azure AD com aplicativo e usuários atribuídos.
 2. Selecione **Usar restrições aplicadas pelo Controle de Aplicativo de Acesso Condicional** nos controles de sessão dentro da política de acesso condicional.   
 
-   ![Acesso condicional do Azure AD](./media/proxy-deploy-restrictions-aad.png)
-
 Após concluir essa tarefa, vá para o portal do Cloud App Security e crie uma política de sessão para monitorar e controlar os downloads de arquivo na sessão.
 
 ### <a name="step-2-create-a-session-policy"></a>Etapa 2: criar uma política de sessão
@@ -62,17 +61,11 @@ Após concluir essa tarefa, vá para o portal do Cloud App Security e crie uma p
 
 2. Na página **Políticas**, clique **Criar política** e depois **Política de sessão**.
  
-   ![criar política de sessão](./media/create-session-policy.png)
-
 3. Na página **Criar política de sessão**, dê um nome e uma descrição à sua política. Por exemplo, **Bloquear downloads do Salesforce para dispositivos não gerenciados**.
 
 4. Atribua uma **Severidade da política** e **Categoria**.
 
-   ![Nova política de sessão](./media/new-session-policy.png)
-
 5. Em **Tipo de controle de sessão**, selecione **Download do arquivo de controle (com DLP)**. Isso dá a você a capacidade de monitorar tudo que seus usuários fazem dentro de uma sessão do Salesforce e dá a você o controle para bloquear e proteger downloads em tempo real.
-
-   ![tipo de controle da política de sessão](./media/session-policy-control-type.png)
 
 6. em **Origem da atividade** na seção **Atividades que correspondem a todos os seguintes**, selecione os filtros: 
     
@@ -98,21 +91,11 @@ Após concluir essa tarefa, vá para o portal do Cloud App Security e crie uma p
    - **Rótulos de classificação**: se você usar os rótulos de classificação da Proteção de Informações do Azure e desejar filtrar os arquivos com base em um rótulo de classificação específico da Proteção de Informações do Azure.
    
    - Selecione **Nome do arquivo** ou **Tipo de arquivo** para aplicar as restrições com base neles.
- 
-     ![filtros de arquivo da política de sessão](./media/session-policy-file-filters.png)
-
 9. Habilite **Inspeção de conteúdo** para permitir que a DLP interna examine se há conteúdo confidencial em seus arquivos. 
-
-   ![inspeção do conteúdo da política de sessão](./media/session-policy-content-inspection.png)
 
 10. Em **Ações**, selecione **bloquear**. Personalize a mensagem de bloqueio que seus usuários receberão quando não conseguirem baixar os arquivos.  
 
-    ![ações da política de sessão](./media/session-policy-actions.png)
-
 11. Defina os alertas que você deseja receber quando a política é correspondida. É possível definir um limite para que você não receba um número excessivo de alertas, e é possível selecionar se você deseja receber os alertas como uma mensagem de email, como uma mensagem de texto ou ambos.
-
-    ![alertas da política de sessão](./media/session-policy-alert.png)
-
 
 12. Clique em **Criar**  
  
@@ -123,11 +106,7 @@ Após concluir essa tarefa, vá para o portal do Cloud App Security e crie uma p
 
 2. O arquivo deverá ser bloqueado e você deverá receber a mensagem definida em **Personalizar mensagens de bloqueio**. 
 
-   ![bloquear mensagem de download](./media/block-download-message.png)
-
 3. No portal do Cloud App Security, clique em **Controle** e depois **Políticas** e, sem seguida, clique na política criada para exibir o relatório de política. Uma correspondência de política de sessão deve ser exibida em breve. 
- 
-   ![relatório de política de sessão](./media/session-policy-report.png)
 
 4. Na relatório de política, é possível ver quais logons foram redirecionados para o Microsoft Cloud App Security para controle de sessão e quais arquivos foram baixados ou bloqueados das sessões monitoradas.
 

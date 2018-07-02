@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251745"
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140747"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -64,7 +64,6 @@ Para obter mais informações, acesse [Ofertas de conformidade da Microsoft](htt
 
 ### <a name="you-are-the-owner-of-your-data"></a>Você é o proprietário dos seus dados
 - No Microsoft Cloud App Security, seus administradores podem exibir dados de identificação pessoal armazenados no serviço do portal usando a barra de Pesquisa.
-- 
 - Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. Clicar em uma entidade abre [**Usuários e Contas**](accounts.md). A página **Usuários e contas** fornece detalhes abrangentes sobre a entidade, extraídos de aplicativos de nuvem conectados. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
 
 -   Você é proprietários dos seus dados e pode cancelar assinaturas e solicitar a exclusão dos dados a qualquer momento. Se você não renovar sua assinatura, seus dados serão excluídos dentro do prazo especificado nos [Termos de Serviços Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
