@@ -55,6 +55,7 @@
 #### [Gerar relatórios de gerenciamento de dados](built-in-reports.md)
 ### [Contas](accounts.md)
 ### [Gerenciar permissões de aplicativo](manage-app-permissions.md)
+### [Configuração de segurança](security-config.md)
 ### [Monitorar aplicativos](monitor-alerts.md)
 #### [Gerenciar alertas](managing-alerts.md)
 ## [Controle](control.md)
@@ -62,7 +63,8 @@
 #### [Políticas do Cloud Discovery](cloud-discovery-policies.md)
 ##### [Política de detecção de anomalias do Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Políticas de atividade](user-activity-policies.md)
-#### [Política de detecção de anomalias](anomaly-detection-policy.md)
+#### [Políticas de detecção de anomalias](anomaly-detection-policy.md)
+#### [Políticas de permissão de aplicativo](app-permission-policy.md)
 #### [Políticas de arquivos](data-protection-policies.md)
 ##### Inspeção de conteúdo
 ###### [Inspeção de conteúdo interno](content-inspection.md)
