@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/13/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
-ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
+ms.openlocfilehash: c182ea9cfebd7161e637cbd1460ac6b56b17362d
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746993"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -55,7 +56,9 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 **Atividade de país não frequente**
 - Essa detecção considera locais de atividades anteriores para determinar locais novos e pouco frequentes. O mecanismo de detecção de anomalias armazena informações sobre locais anteriores usados por usuários da organização. Um alerta é acionado quando uma atividade ocorre em um local que o usuário ou alguém da organização nunca visitou ou que não visitou recentemente. 
 
-
+**Detecção de malware**
+- Essa detecção identifica arquivos mal-intencionados no armazenamento em nuvem, sejam de aplicativos da Microsoft ou de aplicativos de terceiros. O Microsoft Cloud App Security usa a Inteligência Contra Ameaças da Microsoft para reconhecer se determinados arquivos estão associados a ataques de malware conhecidos e são possivelmente mal-intencionados. Essa política interna é desabilitada por padrão. Nem todo arquivo é examinado, mas é usada heurística para procurar arquivos que possam estar em risco. Depois que os arquivos são detectados, é exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo.
+    
 **Atividade de endereços IP anônimos**
 - Essa detecção identifica que os usuários estavam ativos com base em um endereço IP que foi identificado como um endereço IP de proxy anônimo. Esses proxies são usados por pessoas que desejam ocultar o endereço IP de seu dispositivo e podem ser usados de forma mal-intencionada. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP marcados incorretamente que são usados amplamente por usuários da organização.
 
@@ -86,6 +89,15 @@ Essas políticas buscam atividades em uma única sessão em relação à linha d
 **Várias tentativas de logon com falha**
 - A detecção identifica usuários que realizaram várias tentativas de logon com falha em uma única sessão em relação à linha de base aprendida, o que poderia indicar uma tentativa de violação. 
 
+## Habilitar governança automatizada<a name="adp-automated-gov"></a>
+
+É possível habilitar ações de correção automatizadas em alertas gerados por políticas de detecção de anomalias. 
+
+1. Clique no nome da política de detecção na página **Política**.
+2. Na janela **Editar política de detecção de anomalias** que é aberta, em **Governança** defina as ações de correção que deseja para cada aplicativo conectado ou para todos os aplicativos. 
+3. Clique em **Atualizar**.
+
+ 
 ## <a name="scope-anomaly-detection-policies"></a>Definir políticas de detecção de anomalias
 
 Cada política de detecção de anomalias pode ter um escopo independente, de modo que se aplique apenas aos usuários e grupos que você deseja incluir e excluir na política.
@@ -107,14 +119,13 @@ Você pode triar rapidamente os vários alertas disparados pelas novas política
 
    ![alerta1 de detecção de anomalias](./media/anomaly-alert-user1.png)
    ![alerta1 de detecção de anomalias](./media/anomaly-alert-user2.png)
-
  
 2. Isso permite que você entenda quais são as atividades suspeitas que o usuário executou e ter maior confiança sobre o comprometimento da conta. Por exemplo, um alerta de vários logons com falha pode realmente ser suspeito e indicar um ataque de força bruta em potencial, mas também pode ser um erro de configuração do aplicativo, fazendo com que o alerta seja um verdadeiro positivo benigno. No entanto, se você vir um alerta de vários logons com falha com atividades suspeitas adicionais, então há uma grande probabilidade de que a conta foi comprometida. No exemplo a seguir, você pode ver que o alerta **Várias tentativas de logon com falha** foi seguido de uma **Atividade de um endereço IP TOR** e de uma **Atividade de viagem impossível**, ambas fortes indicadores de comprometimento (IOCs) por si próprias. Como se isso já não fosse suspeito, é possível ver que o mesmo usuário realizou uma **Atividade de download em massa**, que em geral indica que o invasor está executando uma extração de dados. 
 
    ![alerta1 de detecção de anomalias](./media/anomaly-alert-user3.png)
    ![alerta1 de detecção de anomalias](./media/anomaly-alert-user4.png)
 
- 
+3.  Para arquivos infectados por malware, depois que os arquivos forem detectados, será exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo. 
 
 
   

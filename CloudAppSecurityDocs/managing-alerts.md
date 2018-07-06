@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fc9832d9eb41be007edc213e457bc9fe00ffb115
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746969"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -41,28 +42,24 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
    Há três tipos de violações com os quais você precisará lidar ao investigar os alertas:  
 
-   #### <a name="serious-violations"></a>Violações graves
-   Violações graves exigem resposta imediata.
+   - **Violações graves**<br>
+     Violações graves exigem resposta imediata. <br>
+     Exemplos:<br>
+     Para um alerta de atividade suspeita, talvez seja necessário suspender a conta até que o usuário altere sua senha.  
 
-       Examples:  
+     Em caso de perda de dados, talvez você deseje restringir as permissões ou colocar o arquivo em quarentena.  
 
-       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     Se um novo aplicativo for descoberto, talvez você queira bloquear o acesso ao serviço em seu proxy ou firewall.  
 
-       For a data leak you might want to restrict permissions or quarantine the file.  
+   - **Violações questionáveis**<br>
+     Violações questionáveis exigem mais investigação.  <br>
+     Você pode contatar o usuário ou o gerente do usuário sobre a natureza da atividade. <br>  
+     Deixe a atividade aberta até ter mais informações.  
 
-       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **Violações autorizadas ou comportamento anormal**<br>
+     Violações autorizadas ou comportamento anormal podem resultar de uso legítimo.  
 
-   #### <a name="questionable-violations"></a>Violações questionáveis
-   Violações questionáveis exigem mais investigação.  
-
-       You can contact the  user or the user's manager about the nature of the activity.  
-
-       Leave the activity open until you have more information.  
-
-   #### <a name="authorized-violations-or-anomalous-behavior"></a>Violações autorizadas ou comportamento anormal
-   Violações autorizadas ou comportamento anormal podem resultar de uso legítimo.  
-
-       Dismiss the alert.  
+     Ignore o alerta.  
 
 3. Ao concluir esse processo, marque o alerta como resolvido.  
 

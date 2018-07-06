@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/1/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5db98a5c9d8c5d3a9ce27f498b8237ed110289ad
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 623c644b68a625a1c67c8e071fda975c12847f60
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140798"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/23/2018
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
--   Sistema operacional: Ubuntu 14.04 ou superior (não há nenhuma versão estável do Docker para dar suporte ao Ubuntu 17.10) ou RHEL 7.2 ou superior 
+-   Sistema operacional: Ubuntu 14.04 e 16.04 (para versões mais recentes, contate o suporte) ou RHEL 7.2 ou superior 
 
 -   Espaço em disco: 250 GB
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/4/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,16 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: 54fbda3ec925643e640f31b5f6493843886dea13
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759974"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746952"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD
-
-> [!NOTE]
-> Este é um recurso de versão prévia.
-
-
 
 >[!div class="step-by-step"]
 [« Anterior: Introdução ao Controle de Aplicativo de Acesso Condicional](proxy-intro-aad.md)<br>
@@ -76,7 +71,7 @@ Execute estas etapas para configurar aplicativos do Azure AD para ser controlado
    > [!NOTE]
    > Se um aplicativo não for exibido no catálogo de aplicativos do Cloud App Security, ele será exibido na caixa de diálogo nos aplicativos não identificados juntamente com a URL de logon. Ao clicar no sinal de + para esses aplicativos, você poderá sugerir a adição do aplicativo ao catálogo. Depois que o aplicativo estiver no catálogo, execute as etapas novamente para implantar o aplicativo. 
 
-6. Na tabela de aplicativos de Controle de Aplicativo de Acesso Condicional, examine a coluna de **Controles disponíveis** e verifique se são exibidos o acesso condicional do Azure AD e o controle de sessão. <br></br>Se o controle de sessão não aparece para um aplicativo, isso significa que ele ainda não está disponível para esse aplicativo específico e, em vez dele, você vê o link **Solicitar o controle de sessão**. Clique para abrir uma caixa de diálogo e solicitar a integração do aplicativo ao controle de sessão. Durante o período de visualização pública do Controle de Aplicativo de Acesso Condicional, o processo de integração será executado junto com você pela equipe do Microsoft Cloud App Security.
+6. Na tabela de aplicativos de Controle de Aplicativo de Acesso Condicional, examine a coluna de **Controles disponíveis** e verifique se são exibidos o acesso condicional do Azure AD e o controle de sessão. <br></br>Se o controle de sessão não aparece para um aplicativo, isso significa que ele ainda não está disponível para esse aplicativo específico e, em vez dele, você vê o link **Solicitar o controle de sessão**. Clique para abrir uma caixa de diálogo e solicitar a integração do aplicativo ao controle de sessão. Nesse cenário, o processo de integração será executado junto com você pela equipe do Microsoft Cloud App Security.
   
    ![solicitar controle de sessão](./media/proxy-view-new-apps.png)
 

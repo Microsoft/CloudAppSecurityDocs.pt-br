@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06a78107b33613fe8d947ed55e057990268c7026
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f25b827c7b0ff635789a4ef721b538598729d0e9
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746908"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 # <a name="access-policies"></a>Políticas de acesso 
 
-> [!NOTE]
-> Este é um recurso de versão prévia.
 
 
 >[!div class="step-by-step"]
@@ -44,7 +43,7 @@ As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento
 - Uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redireciona os usuários para o Microsoft Cloud App Security deve estar em vigor, conforme descrito abaixo.
 
 > [!NOTE]
-> - As políticas de acesso também dão suporte a aplicativos configurados com provedores de identidade diferentes do Azure AD na Versão Prévia Privada. Para obter mais informações sobre a Versão Prévia Privada, envie um email para mcaspreview@microsoft.com.
+> - As políticas de acesso também dão suporte a aplicativos configurados com provedores de identidade diferentes do Azure AD. Para obter mais informações, envie um email para mcaspreview@microsoft.com.
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>Criar uma política de acesso condicional do Azure AD
 
@@ -56,9 +55,7 @@ As políticas de acesso condicional do Azure Active Directory e as políticas de
    > Apenas os aplicativos que foram [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md) serão afetados por essa política.
 
 2. Encaminhe usuários para o Microsoft Cloud App Security selecionando **Usar restrições impostas do Controle de Aplicativo de Acesso Condicional** na folha **Sessão**.
-
-   ![Acesso condicional do Azure AD para restrições do Controle de Aplicativo de Acesso Condicional](./media/proxy-deploy-restrictions-aad.png)
-
+ 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Criar uma política de acesso do Cloud App Security 
 
 Para criar uma nova política de acesso, siga este procedimento:
@@ -66,11 +63,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 1. No portal, selecione **Controle** e, em seguida, **Políticas**.
 2. Na página **Políticas**, clique em **Criar política** e selecione **Política de acesso**.  
 
-   ![Criar política de acesso](./media/access-policy-menu.png)
-
 3. Na janela **Política de acesso**, atribua um nome à política, como *Bloquear o acesso em dispositivos não gerenciados*.
-
-   ![Nova política de acesso](./media/access-policy-screen.png)
 
 4. Em **Origem da atividade** na seção **Atividades que correspondem a todos os seguintes**, selecione os filtros de atividade adicionais a serem aplicados na política. Eles podem incluir as seguintes opções: 
      
@@ -82,8 +75,6 @@ Para criar uma nova política de acesso, siga este procedimento:
 
    - **Marca de agente do usuário**: use esse filtro para habilitar que a heurística identifique os aplicativos móveis e de área de trabalho. Esse filtro pode ser configurado como igual a ou não igual ao **Cliente nativo** e deve ser testado em relação a seus aplicativos móveis e de área de trabalho para cada aplicativo de nuvem.
   
-       ![suporte de cliente nativo](./media/user-agent-tag.png)
-
 5. Em **Ações**, selecione uma das seguintes opções: 
 
     - **Permitir**: defina essa ação para permitir o acesso explicitamente de acordo com os filtros de política definidos.
