@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c80a67b0daa9191764528c0fcc2ed8fe5795541a
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 75731e401111286d3760163e512b623d6e85fdf2
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34559069"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340015"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -51,12 +51,18 @@ Para analisar atividades mais específicas, você pode expandir o filtro básico
 ### <a name="working-with-the-activity-drawer"></a>Trabalhando com a gaveta Atividade
 
 Você pode exibir mais informações sobre cada atividade clicando na própria atividade no log de atividades. Isso abre a Gaveta de atividades, que fornece as seguintes ações adicionais e informações para cada atividade:
-    - Políticas correspondentes: clique no link Políticas correspondentes para ver uma lista de políticas nessa atividade correspondente.
-    - Exibir dados brutos: clique em Exibir dados brutos para ver os dados reais que foram recebidos do aplicativo.
-    - Usuário: clique no usuário para exibir a página do usuário que executou a atividade. 
-    - Tipo de dispositivo: clique no tipo de dispositivo para exibir os dados brutos do agente do usuário. 
-    - Local: clique no local para exibir o local no Bing Mapas.
-    - Marcas e categoria de endereço IP: clique na marca de IP para exibir a lista de marcas de IP encontradas nessa atividade. Em seguida, você pode filtrar por todas as atividades correspondentes nessa marca.    
+
+   - Políticas correspondentes: clique no link Políticas correspondentes para ver uma lista de políticas nessa atividade correspondente.
+
+   - Exibir dados brutos: clique em Exibir dados brutos para ver os dados reais que foram recebidos do aplicativo.
+
+   - Usuário: clique no usuário para exibir a página do usuário que executou a atividade. 
+
+   - Tipo de dispositivo: clique no tipo de dispositivo para exibir os dados brutos do agente do usuário. 
+
+   - Local: clique no local para exibir o local no Bing Mapas.
+
+   - Marcas e categoria de endereço IP: clique na marca de IP para exibir a lista de marcas de IP encontradas nessa atividade. Em seguida, você pode filtrar por todas as atividades correspondentes nessa marca.    
 
  Os campos na gaveta Atividade fornecem links contextuais para atividades adicionais e análises detalhadas que você talvez queira executar diretamente na gaveta. Por exemplo, se você mover o cursor para próximo da categoria de endereço IP, pode usar o ícone para adicionar filtro ![adicionar filtro](./media/add-to-filter-icon.png) para adicionar o endereço IP imediatamente ao filtro da página atual. Você também pode usar o ícone de engrenagem de configurações ![ícone de configurações](./media/contextual-settings-icon.png) que aparece diretamente na página de configurações necessária para alterar a configuração de um dos campos, tais como **Grupos de usuários**.
 
