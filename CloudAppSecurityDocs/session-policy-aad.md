@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 146426bca36b4026af80d711e42860f553aef971
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: ef45ee81fced76dd3ff619aa8d42edf60b90e954
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747010"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340032"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -42,7 +42,7 @@ Por exemplo, é possível decidir que, de dispositivos não gerenciados ou, para
 
 ## <a name="prerequisites-to-using-session-policies"></a>Pré-requisitos para usar políticas de sessão
 
-- Licença do Azure AD Premium P2
+- Licença do Azure AD Premium P1
 - Os aplicativos relevantes devem ser [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)
 - Uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redireciona os usuários para o Microsoft Cloud App Security deve estar em vigor, conforme descrito abaixo.
 

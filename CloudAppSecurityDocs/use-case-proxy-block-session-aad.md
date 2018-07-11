@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4c4a78501732282f7ff3885e0662afa05c161f0b
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: 69da592808750b9c20e3615f935f6a0570b6afd4
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36746935"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339981"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -40,7 +40,7 @@ Proteja sua organização monitorando e controlando o uso de aplicativos de nuve
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Uma licença válida do Azure AD Premium P2
+- Uma licença válida do Azure AD Premium P1
 - Configurar um aplicativo de nuvem para SSO no Azure AD  
 - Certificar-se de que o [aplicativo foi implantado no Cloud App Security](proxy-deployment-aad.md)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,24 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bec87e3db09ee14320371cfbffba0d3d9a2cd55a
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
+ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747044"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843516"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-127"></a>Lançamento 127 do Cloud App Security
+
+Lançado em 8 de julho de 2018
+
+- Agora é possível ver atividades genéricas do Office 365: no **Log de atividades** e em **Políticas de atividades**, você pode filtrar as atividades do Office 365 para atividades **Não especificadas**. Analisar essas atividades permite investigar informações sobre atividades realizadas que ainda não foram classificadas por tipo no Cloud App Security, e é possível usar essas atividades para enviar solicitações à equipe do Cloud App Security para criar novos tipos de atividades com base nessas atividades. 
 
 ## <a name="cloud-app-security-release-126"></a>Cloud App Security versão 126
 
@@ -36,7 +42,7 @@ Lançado em 24 de junho de 2018
     -   Como parte da rede global do Azure, a integração e a interface foram melhoradas para oferecer uma experiência perfeita para usuários localizados em qualquer lugar do mundo.
  
 
--   **Disponibilidade geral da inspeção de conteúdo com o Serviço de Classificação de Dados da Microsoft**<br>A integração do Microsoft Cloud App Security com os Serviços de Classificação de Dados da Microsoft já está disponível. Essa integração permite que você utilize de forma nativa o Serviço de Classificação de Dados da Microsoft para classificar os arquivos em seus aplicativos de nuvem. Para obter mais informações, confira [Integração dos Serviços de Classificação de Dados da Microsoft](dcs-inspection.md).
+-   **Disponibilidade geral da inspeção de conteúdo com o Serviço de Classificação de Dados da Microsoft**<br>A integração do Microsoft Cloud App Security com os Serviços de Classificação de Dados da Microsoft já está disponível. Essa integração permite que você utilize de forma nativa o Serviço de Classificação de Dados da Microsoft para classificar os arquivos em seus aplicativos de nuvem. Para obter mais informações, confira [Integração dos Serviços de Classificação de Dados da Microsoft](dcs-inspection.md). Atualmente, este recurso está disponível somente nos EUA e na Europa (exceto na França).
 
 - **Relatório executivo de Cloud Discovery**<br>O Microsoft Cloud App Security está lançando gradualmente a capacidade de gerar um relatório executivo em PDF do Cloud Discovery. Esse relatório oferece uma visão geral do uso de Shadow IT identificado na organização, destacando os principais aplicativos e usuários em uso geral e em categorias líderes, e concentra-se no risco que a Shadow IT apresenta para a organização. Além disso, o relatório oferece uma lista de recomendações de como melhorar a visibilidade e o controle sobre a Shadow IT na organização. Use esse relatório para garantir que os possíveis riscos e ameaças sejam removidos e que a organização permaneça segura e protegida.
 

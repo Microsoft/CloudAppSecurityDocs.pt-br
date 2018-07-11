@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e34ff5bd2e25b4c25f314c35f2ffc3ab4b41c24a
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ea0eaa4831dce2ba19b434e6ebc91c8b59661834
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339957"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -86,7 +87,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. A maioria
   
 -   ID do arquivo – Pesquisa por IDs de arquivo específicas. Esse é um recurso avançado que permite que você acompanhe certos arquivos de alto valor sem depender de seu proprietário/local/nome.  
   
--   Nome do arquivo – nome do arquivo ou subcadeia de caracteres do nome conforme definido no aplicativo de nuvem, por exemplo, todos os arquivos com uma senha em seu nome.   
+-   Nome do arquivo – nome do arquivo ou subcadeia de caracteres do nome conforme definido no aplicativo de nuvem, como todos os arquivos com uma senha em seu nome.   
   
 -   Rótulo de classificação – pesquise arquivos com conjunto de marcas específicas. Esses são:
     - Marcas de Habilitar a Proteção de Informações do Azure. Isso exige integração à Proteção de Informações do Azure.
@@ -103,7 +104,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. A maioria
   
 -   Na lixeira – Exclui/inclui arquivos na pasta da lixeira. Esses arquivos ainda podem ser compartilhados e representam um risco.  
   
--   Última modificação – hora da modificação do arquivo. O filtro dá suporte a datas antes/depois de, intervalo de datas e expressões de tempo relativo, como por exemplo, todos os arquivos que não foram modificados nos últimos seis meses.  
+-   Última modificação – hora da modificação do arquivo. O filtro dá suporte a datas antes/depois de, intervalo de datas e expressões de tempo relativo, como todos os arquivos que não foram modificados nos últimos seis meses.  
 
 -   Política correspondente — os arquivos que são correspondentes por uma política ativa do Cloud App Security.
 
