@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7a3d2670a8c4ccabc96807304545b85ee43cbd2
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: a9a89450ed04b21159b7f4323f2e4b01a8e81d28
+ms.sourcegitcommit: 70e685dc53c70b719b707e685d5ef45cec445891
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/15/2018
+ms.locfileid: "39063938"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -40,7 +41,17 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
          ![Aplicativos do Box](./media/box-apps.png "box apps")  
   
-    -   Se **Aplicativos Não Publicados** for selecionado, na caixa de texto **Exceto para** adicione o número de série do aplicativo do Cloud App Security:<br></br>Data center US1: `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>Data center US2: `w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>Data center EU1: `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Em seguida, clique em **Salvar**. Para obter informações sobre como ver a qual data center do Cloud App Security center você está conectado, consulte [Tokens de API](api-tokens.md). 
+    -   Se **Aplicativos Não Publicados** for selecionado, na caixa de texto **Exceto para** adicione o número de série do aplicativo do Cloud App Security:
+     
+         |Data center|Número de série do Microsoft Cloud App Security|
+         |----|----|    
+         |US1| `nduj1o3yavu30dii7e03c3n7p49cj2qh`|
+         |US2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
+         |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
+         |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
+         |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
+
+        Em seguida, clique em **Salvar**. Para obter informações sobre como ver a qual data center do Cloud App Security center você está conectado, consulte [Tokens de API](api-tokens.md). 
   
          ![Configurações de exceção no Box](./media/box-settings-except-for.png "box settings except for")  
   
