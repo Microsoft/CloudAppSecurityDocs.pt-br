@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 650107deb070b0442312de441877b29d5da93358
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: c116a2b199638d60aeb793a8562a0852e07031f0
+ms.sourcegitcommit: 00e7adf7ebf26bf414df67e42ff6e3bac709b68b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259612"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39143335"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -52,6 +52,13 @@ A integração ao SIEM é realizada em três etapas:
 
 - Um servidor Windows ou Linux padrão (pode ser uma máquina virtual).
 - O servidor deve executar o Java 8. Não há suporte para versões anteriores.
+- Sistema operacional: Windows ou Linux
+- CPU: 2
+- Espaço em disco: 20 GB
+- RAM: 2 GB
+- O servidor deve executar o Java 8. Não há suporte para versões anteriores.
+- Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md)
+ 
 
 ## <a name="integrating-with-your-siem"></a>Integrando ao seu SIEM
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 26f6314dd1a3285049b4bf2bbd46467e63fca8ac
+ms.sourcegitcommit: 92ffce1e6067b087732f617cf56ca904ee3691de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568655"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175410"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
      
      ![regra de inclusão](./media/include-rule.png)
 
-4. Para definir a exclusão de grupos específicos do monitoramento, na guia **Excluir**, clique no ![ícone](./media/plus-icon.png) do sinal de adição. <br>Na caixa de diálogo **Criar nova regra de inclusão**, defina os parâmetros a seguir:
+4. Para definir a exclusão de grupos específicos do monitoramento, na guia **Excluir**, clique no ![ícone](./media/plus-icon.png) do sinal de adição. <br>Na caixa de diálogo **Criar nova regra de Exclusão**, defina os seguintes parâmetros:
 
     1. Em **Digitar nome da regra**, dê um nome descritivo para a regra.
     Em **Selecionar grupos de usuários**, selecione todos os grupos que você quer excluir do monitoramento do Cloud App Security.
