@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 7/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,40 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
-ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
+ms.openlocfilehash: 02e1036b6ab8b4796080bb3e91007e6d2dd365ce
+ms.sourcegitcommit: 8a31b9bb4594c74cf200cf81e31c0fd9d6d776a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37843516"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39220636"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-128"></a>Cloud App Security versão 128
+
+Lançado em 22 de julho de 2018
+
+-   **Ações de permissões de aplicativo entre vários aplicativos**<br>
+Agora, é possível vetar ou aprovar vários aplicativos em uma única ação caso eles tenham recebido permissões de aplicativo. Por exemplo, é possível analisar todos os aplicativos que receberam permissões de usuários da sua organização, selecionar todos os aplicativos que você deseja vetar e, em seguida, clicar nos aplicativos vetados para revogar todas as permissões concedidas e impedir os usuários de conceder permissões a esses aplicativos.  Para saber mais, confira [Gerenciar permissões de aplicativos](manage-app-permissions.md).
+-   **Suporte aprimorado para aplicativos do Azure**<br>
+No caso do Azure, estamos distribuindo gradualmente a capacidade de detectar aplicativos como atividades de conta de usuário realizadas por aplicativos do Azure (internos e externos). Isso permite criar políticas que alertarão você caso um aplicativo execute atividades inesperadas e não autorizadas. Para saber mais, confira [Conectar o Azure ao Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
+-   **Mecanismo de classificação de dados atualizado com novos tipos confidenciais do RGPD**<br>
+O [Serviço de Classificação de Dados do Cloud App Security](dcs-inspection.md) adicionou novos tipos confidenciais do RGPD ao nosso Mecanismo de Classificação de Dados para que você possa detectar conteúdo relacionado ao RGPD nos seus arquivos.
+-   **Atualizações no catálogo do Cloud App**<br>
+Agora, o catálogo do Cloud App inclui uma categoria de risco legal (além de Geral, Segurança e Conformidade) para ajudar a gerenciar a privacidade de dados e a conformidade com a propriedade, incluindo preparação para o RGPD.
+Para ajudar a avaliar a preparação para o RGPD de cada aplicativo de nuvem, a nova categoria de risco conta com uma instrução de preparação para o RGPD do serviço de nuvem e o status de cada controle de estrutura do RGPD.
+Como parte dessa melhoria, os seguintes atributos de risco foram movidos de outra categoria de risco para a categoria Legal:
+     - DMCA
+     - Propriedade dos dados
+     - Política de retenção de dados
+
+     Além disso, a nova categoria de risco é pontuada separadamente para que você possa configurar a pontuação de acordo com suas preferências e prioridades. Para saber mais, confira [Pontuação de risco](risk-score.md).
+
+-   **Nova consulta sugerida: preparação para o RGPD** <br>
+Há uma nova consulta sugerida para que você possa identificar aplicativos descobertos preparados para o RGPD. Como o RGPD se tornou uma prioridade para os administradores de segurança recentemente, essa consulta ajuda a identificar facilmente os aplicativos que estão preparados para o RGPD e reduz as ameaças ao avaliar o risco dos aplicativos que não estão preparados para o RGPD.
 
 
 ## <a name="cloud-app-security-release-127"></a>Lançamento 127 do Cloud App Security
