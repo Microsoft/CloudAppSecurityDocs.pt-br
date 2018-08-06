@@ -16,7 +16,7 @@
 ### [Grupos de usuários](user-groups.md)
 ### [Implantação no escopo](scoped-deployment.md)
 ### [Intervalos e marcas de IP](ip-tags.md)
-## [Implantar o Cloud Discovery](set-up-cloud-discovery.md)
+## [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 ### [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar upload de log automático para relatórios contínuos](discovery-docker.md)
 #### [Docker no Ubuntu e no RHEL local](discovery-docker-ubuntu.md)
