@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/5/2018
+ms.date: 8/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 40b477b3618e39473fe09568b3da761ce4d3b898
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: 6820e8340a7316f826ff437f168b3db8cc5ec773
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759909"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519169"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -46,17 +46,18 @@ Depois que os resultados são filtrados, você pode examinar os aplicativos rele
 
 ## <a name="cloud-app-catalog-filters"></a>Filtros do Catálogo de Aplicativos de nuvem
 
-Há filtros básicos e avançados do Catálogo de aplicativos de nuvem. Para alcançar um filtro complexo, use a opção avançada que inclui todos os itens a seguir:
+Há filtros básicos e avançados do Catálogo de aplicativos de nuvem. Para alcançar um filtro complexo, use a opção avançada que inclui todos os seguintes filtros:
 
 - **Marcas de aplicativo**: marcas permitem personalizar o Catálogo de aplicativos de nuvem. 
   Você pode selecionar **Sancionado**, **Não sancionado** ou você pode criar marcas personalizadas para aplicativos. Essas marcas podem ser usadas como filtros para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. 
 - **Aplicativos e domínios**: permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos. 
 - **Categorias**: o filtro de categorias, que está localizado à esquerda da página, permite pesquisar tipos de aplicativos de acordo com as categorias de aplicativo, por exemplo, aplicativos de rede Social, aplicativos de armazenamento em nuvem etc. Você pode selecionar várias categorias por vez ou uma única categoria e, em seguida, aplicar os filtros básicos e avançados sobre eles.
-- **Fator de risco de conformidade**: permite que você pesquise padrões específicos, certificação e conformidades com as quais o aplicativo pode cumprir (HIPAA ISO 27001, SOC 2, PCI-DSS etc.).
+- **Fator de risco de conformidade**: permite que você pesquise padrões específicos, certificação e conformidade com os quais o aplicativo pode cumprir (HIPAA, ISO 27001, SOC 2, PCI-DSS etc.).
 - **Fator de risco geral**: permite que você pesquise fatores de risco gerais, como a popularidade do consumidor, Data center local etc.
 - **Pontuação de risco**: permite que você filtre aplicativos por classificação de risco para que você possa se concentrar, por exemplo, revisando somente os aplicativos muito arriscados.
 - **Fator de risco de segurança**: habilita a filtragem com base em medidas específicas de segurança (como Criptografia em rest, autenticação multifator etc.).
-
+- **Legal**: permite filtrar com base em todos os regulamentos e políticas que estão em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo, como o RGPD, o DMCA e a política de retenção de dados.
+ 
 ## <a name="suggesting-a-change"></a>Sugerir uma alteração
 
 Se você encontrar um novo aplicativo no seu ambiente que ainda não foi classificado pelo Cloud App Security, um novo fator de risco ou uma atualização de pontuação ou dados de aplicativo que estão desatualizados, você pode solicitar uma análise do aplicativo:

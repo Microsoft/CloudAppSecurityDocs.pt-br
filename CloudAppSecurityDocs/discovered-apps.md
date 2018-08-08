@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: abec8d49559c7ff29476a5a5291f1920db877b88
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9c9cae44e8ecbd3856495723f951c050fa8f50e3
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519050"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -62,6 +63,14 @@ Por exemplo, você pode diferenciar entre os diferentes sites do SharePoint.
 Isso tem suporte apenas em firewalls e proxies que contêm dados de URL de destino. Consulte a lista de dispositivos com suporte em [Proxies e firewalls com suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![informações de subdomínio](./media/discovery-domains.png) 
+
+## <a name="generate-cloud-discovery-executive-report"></a>Gerar relatório executivo do Cloud Discovery
+
+A melhor maneira de obter uma visão geral do uso de Shadow IT na organização é gerando um relatório executivo do Cloud Discovery. Este relatório identifica os principais riscos potenciais e ajuda você a planejar um fluxo de trabalho para atenuar e gerenciar os riscos até que eles sejam resolvidos.
+
+Para gerar um relatório executivo do Cloud Discovery: 
+
+No painel do Cloud Discovery, clique nos três pontos no canto superior direito do menu e selecione **Gerar relatório executivo do Cloud Discovery**.
 
 ## <a name="exclude-entities"></a>Excluir entidades  
 Se você tiver usuários do sistema ou endereços IP que são particularmente ruidosos e não interessantes ou aplicativos que não são relevantes, talvez você deseje excluir os dados deles dos dados do Cloud Discovery que são analisados. Por exemplo, você talvez queira excluir todas as informações provenientes de 127.0.0.1 ou do host local.  

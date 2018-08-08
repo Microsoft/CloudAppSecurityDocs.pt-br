@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 623c644b68a625a1c67c8e071fda975c12847f60
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: 9c01b8780bd0e177dc20bf407a924f2648bae6e6
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140798"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519084"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -71,6 +71,11 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
 
    f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.
+    > [!NOTE]
+    >É recomendável configurar uma fonte de dados dedicada por dispositivo de rede para permitir que você:
+    <br>– Monitore o status de cada dispositivo separadamente, para fins de investigação.
+    <br>– Explore o Shadow IT Discovery por dispositivo, se cada dispositivo for usado por um segmento de usuários diferente.
+
 
 3. Vá para a guia **Coletores de logs** na parte superior.
 
