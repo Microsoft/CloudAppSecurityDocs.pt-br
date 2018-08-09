@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e477e1551f9004e31a5743b67a99ecef4e95d7f
-ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
+ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2018
-ms.locfileid: "39518169"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519101"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ ms.locfileid: "39518169"
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security versão 129
 
-Lançado em 22 de julho de 2018
+Lançamento de 5 de agosto de 2018
 
 - **Novas políticas de detecção de anomalias – regras de email suspeito**<br>Foram incluídas novas políticas de detecção de anomalias que detectam regras de encaminhamento de email suspeito, por exemplo, se um usuário criou uma regra de caixa de entrada que encaminha uma cópia de todos os emails para um endereço externo. 
 - Esta versão inclui correções e melhorias para vários problemas. 
