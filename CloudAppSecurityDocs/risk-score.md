@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6820e8340a7316f826ff437f168b3db8cc5ec773
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: 30e23682d99613d1bed0fa64f766bf668b60793d
+ms.sourcegitcommit: 96f82381a17b89f9aef384f760ebf142695a6051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519169"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653240"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -56,7 +56,7 @@ Há filtros básicos e avançados do Catálogo de aplicativos de nuvem. Para alc
 - **Fator de risco geral**: permite que você pesquise fatores de risco gerais, como a popularidade do consumidor, Data center local etc.
 - **Pontuação de risco**: permite que você filtre aplicativos por classificação de risco para que você possa se concentrar, por exemplo, revisando somente os aplicativos muito arriscados.
 - **Fator de risco de segurança**: habilita a filtragem com base em medidas específicas de segurança (como Criptografia em rest, autenticação multifator etc.).
-- **Legal**: permite filtrar com base em todos os regulamentos e políticas que estão em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo, como o RGPD, o DMCA e a política de retenção de dados.
+- **Fator de risco legal**: permite filtrar com base em todos os regulamentos e políticas que estão em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo, como o RGPD, o DMCA e a política de retenção de dados.
  
 ## <a name="suggesting-a-change"></a>Sugerir uma alteração
 
@@ -96,6 +96,8 @@ O Cloud Discovery oferece dados importantes com relação à credibilidade e à 
 -   **Segurança** ‑ A categoria de segurança considera todos os padrões que lidam com a segurança física dos dados utilizados pelo aplicativo descoberto. Isso inclui campos como autenticação multifator, criptografia, classificação de dados e propriedade dos dados.  
   
 -   **Conformidade** ‑ Essa categoria exibe quais padrões de conformidade de práticas recomendadas comuns são cumpridos pela empresa que produz o aplicativo. A lista de especificações inclui padrões como HIPAA, CSA e PCI-DSS.  
+
+-  **Legal**: esta categoria exibe quais aplicativos têm quais regulamentos e políticas em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo, como o RGPD, o DMCA e a política de retenção de dados.
   
 Cada uma das categorias é composta por várias propriedades específicas. De acordo com o algoritmo pontuação do Cloud App Security, cada propriedade recebe uma pontuação preliminar entre 0 e 10, dependendo do valor. Valores True/False receberão 10 ou 0 da mesma forma, enquanto propriedades contínuas como a idade do domínio receberão um determinado valor dentro do espectro. A pontuação de cada propriedade é ponderada em relação a todos os outros campos existentes na categoria, para criar o subtotal da categoria. Se você encontrar um aplicativo sem pontuação, isso normalmente indicará um aplicativo cujas propriedades são desconhecidas e, portanto, sem pontuação.  
   

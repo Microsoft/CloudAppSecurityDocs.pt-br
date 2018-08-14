@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2032d5fbfc78e734abd747dc6f6f84fca1f95f95
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: a2b5ec778ef7e9cd5968353b247f117f3019d3be
+ms.sourcegitcommit: 96f82381a17b89f9aef384f760ebf142695a6051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39518999"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653274"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ Há filtros de aplicativos Descoberto básicos e avançados. Para alcançar um f
 - **Pontuação de risco**: permite que você filtre aplicativos por classificação de risco para que você possa se concentrar, por exemplo, revisando somente os aplicativos muito arriscados. Você também pode substituir a pontuação de risco definida pelo Cloud App Security. Para saber mais, confira [Trabalhando com pontuação de risco](risk-score.md).
 - **Fator de risco de segurança**: habilita a filtragem com base em medidas específicas de segurança (como Criptografia em rest, autenticação multifator etc.).
 - **Uso**: permite filtrar com base em estatísticas de uso deste aplicativo, como aplicativos com menos ou mais de um número especificado de **uploads de dados**, aplicativos com mais ou menos que um número especificado de **Usuários**.
-- **Legal**: permite filtrar com base em todos os regulamentos e políticas que estão em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo, como o RGPD, o DMCA e a política de retenção de dados.
+- **Fator de risco legal**: permite filtrar com base em todos os regulamentos e políticas que estão em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo, como os aplicativos em nuvem prontos para o RGPD, o DMCA e a política de retenção de dados.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Criando e gerenciando marcas de aplicativo personalizadas
 
@@ -91,7 +91,7 @@ O Cloud App Security também fornece **Consultas sugeridas** e permite salvar co
 
  - Aplicativos em nuvem empresariais que têm criptografia fraca – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que apresentam riscos porque não criptografam dados em repouso e não dão suporte a nenhum protocolo de criptografia.
 
-- Pronto para o RGPD: filtra todos os aplicativos descobertos para exibir apenas os aplicativos que estão prontos para o RGPD. Como a conformidade com o RGPD é uma das principais prioridades, essa consulta ajuda a identificar facilmente os aplicativos que estão preparados para o RGPD e reduz as ameaças ao avaliar o risco dos aplicativos que não estão preparados para o RGPD.
+- Aplicativos de nuvem prontos para RGPD: filtra todos os aplicativos descobertos para exibir apenas os aplicativos que estão prontos para o RGPD. Como a conformidade com o RGPD é uma das principais prioridades, essa consulta ajuda a identificar facilmente os aplicativos que estão preparados para o RGPD e reduz as ameaças ao avaliar o risco dos aplicativos que não estão preparados para o RGPD.
  
 ![consultar aplicativos descobertos](./media/queries-discovered-apps.png)
 
