@@ -22,6 +22,7 @@
 #### [Docker no Ubuntu e no RHEL local](discovery-docker-ubuntu.md)
 #### [Docker no Ubuntu no Azure](discovery-docker-ubuntu-azure.md)
 #### [Usando uma solução de virtualização – Preterido](configure-automatic-log-upload-for-continuous-reports.md)
+### [Integrar com o Zscaler](zscaler-integration.md)
 ### [Usar o analisador de log personalizado](custom-log-parser.md)
 ### [Aprimoramento do Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Anonimizar dados do Cloud Discovery](cloud-discovery-anonymizer.md)
