@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 68/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: 2c0535c3c2fceec521383d00e828072c4e9ad1ff
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140747"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016957"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -58,7 +58,7 @@ O Microsoft Cloud App Security atende a vários padrões de conformidade interna
 |![logotipo SOC](./media/soc-logo.png)|SOC 3|Os serviços em nuvem da Microsoft estão em conformidade com os padrões de Controles de Organização de Serviços para segurança operacional.|
 |![logotipo g-cloud](./media/g-cloud.png)|G-Cloud do Reino Unido|O Crown Commercial Service renovou a classificação dos serviços de nuvem da Microsoft para Government Cloud v6.|
 
-Para obter mais informações, acesse [Ofertas de conformidade da Microsoft](https://servicetrust.microsoft.com) e selecione Cloud App Security.  
+Para obter mais informações, acesse [Ofertas de conformidade da Microsoft](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings) e selecione Cloud App Security.  
 
 ## <a name="privacy"></a>Privacidade
 
