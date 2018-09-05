@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519101"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017030"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-130"></a>Cloud App Security versão 130
+
+Lançado em 22 de agosto de 2018
+
+
+- **Nova barra de menus**<br>
+Para oferecer uma experiência de administrador mais consistente em todos os produtos do Microsoft 365 e permitir alternar com mais facilidade entre as soluções de segurança da Microsoft, a barra de menus do portal Cloud App Security foi transferida para o lado esquerdo da tela. Essa experiência de navegação consistente ajuda você a se orientar ao mudar de um portal de segurança da Microsoft para outro.
+
+- **Impacto da pontuação do aplicativo OAuth**<br>
+Agora você pode enviar os comentários para a equipe do Cloud App Security informando se algum aplicativo OAuth que pareça mal-intencionado foi descoberto na sua organização. Esse novo recurso permite que você participe da nossa comunidade de segurança e melhore a análise e a pontuação de risco do aplicativo OAuth. Saiba mais em [Gerenciar permissões de aplicativos](manage-app-permissions.md).
+
+- **Novos analisadores do Cloud Discovery**<br>
+Os analisadores do Cloud Discovery agora oferecem suporte ao iboss Secure Cloud Gateway e Sophos XG.
 
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security versão 129

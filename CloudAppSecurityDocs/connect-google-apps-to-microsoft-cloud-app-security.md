@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 670d5f479d53741d4cd047b9ad9c864e1239d5d8
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8fe064b9955e0b2b5db5d40f0450c4af63d352b3
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016999"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -44,9 +45,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
 5. Em **APIs**, clique **Ir para visão geral das APIs**.  
   
      ![google3](./media/google3.png "google3")  
-  
-6. Em **API**, desabilite todas as APIs listadas.  
-      
+   
 7. Clique em **Biblioteca** e habilite as seguintes APIs (use a linha de pesquisa se a API não aparecer na lista **APIs Populares**):  
      
    -   Admin SDK (SDK de Administração)  
@@ -66,7 +65,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
 
 8. Clique em Habilitar para cada API.
      ![Habilitar API do Google ](./media/google-api.png "google-api")  
-9. Você deve ter cinco **APIs habilitadas**, portanto, desabilitar quaisquer outras APIs:
+9. Habilite as seguintes APIs:
   
      ![APIs habilitadas para Google](./media/google5.png "google5")  
   
@@ -135,7 +134,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
     -   No **Nome do Aplicativo** digite o **Microsoft Cloud App Security**.
   
-         Na **Descrição do aplicativo** digite "O Microsoft Cloud App Security fornece visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem”.  
+         Na **Descrição do aplicativo** digite "O Microsoft Cloud App Security fornece visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem".  
   
     -   Desmarque a caixa de seleção **Enable individual install (Habilitar instalação individual)**.  
   

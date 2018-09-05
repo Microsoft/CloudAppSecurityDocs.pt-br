@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 537f95a46164678e921b5f6b4644d864bea24316
-ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
+ms.openlocfilehash: 1131a736fa630e9507427267fc9865723d5eaf82
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340066"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017047"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -39,6 +39,8 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
    Você pode filtrar os alertas por Tipo de alerta ou Gravidade para processar os mais importantes primeiro.  
 
    Selecione um alerta específico. Dependendo do tipo de alerta, você receberá várias ações que podem ser executadas antes de resolver o alerta.  
+   
+   É possível filtrar com base no aplicativo. Os aplicativos listados são aqueles nos quais foram detectadas atividades pelo Cloud App Security.
 
    Há três tipos de violações com os quais você precisará lidar ao investigar os alertas:  
 

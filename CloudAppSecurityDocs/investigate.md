@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 27d13ace0f278a8191f99e0436c056d90948bf8a
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016903"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -87,9 +88,7 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
     
     -   Você também pode analisar a conta do usuário clicando na engrenagem no final da linha da conta do usuário e selecionando uma ação a ser executada, como **Suspender o usuário** ou **Remover as colaborações do usuário**. Se o usuário foi importado do Azure Active Directory, você também pode clicar nas **Configurações da conta do Azure AD** para ter acesso fácil a recursos de gerenciamento de usuários avançados, como gerenciamento de grupo, MFA, detalhes sobre as entradas do usuário e a possibilidade de bloquear a entrada.
 
-4.  Vá para **Investigar** e, em seguida, selecione um aplicativo. O painel do aplicativo se abre e fornece informações e insights. Você pode usar as guias na parte superior para verificar o seguinte:  
-
-     ![Painel de aplicativos](./media/investigate-app.png "investigar aplicativo")  
+4.  Acesse **Investigar**, seguido de **Aplicativos conectados**, e selecione um aplicativo. O painel do aplicativo se abre e fornece informações e insights. Você pode usar as guias na parte superior para verificar:  
 
     -   Que tipo de dispositivos seus usuários estão usando para se conectar ao aplicativo?  
 
@@ -104,6 +103,8 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
     -   Eles estão autorizados para o nível de acesso para o qual têm permissão?  
 
     -   Quantos usuários o implantaram? Quão comuns são esses aplicativos em geral?  
+ 
+    ![Painel de aplicativos](./media/investigate-app.png "investigar aplicativo")  
 
 5.  Vá para o **Cloud Discovery Dashboard (Painel do Cloud Discovery)** e verifique o seguinte:  
 

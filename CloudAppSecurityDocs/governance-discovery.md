@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3fbbf979dddb96db69e57c86758c6c1a699c8a51
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 394a6db8cc79ab5c52cb6775394f7b939b02f9d5
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016818"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -26,6 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 Depois de revisar a lista de aplicativos descobertos em seu ambiente, você pode proteger seu ambiente contra o uso de aplicativos indesejados das seguintes maneiras.
 
+
 ### <a name="sanctioningunsanctioning-an-app"></a>Sanção/cancelamento de um aplicativo 
 
 Você pode cancelar um aplicativo de risco específico ao clicar nos três pontos no final da linha e selecionar **Cancelar sanção**.
@@ -33,10 +35,12 @@ O cancelamento de sanção de um aplicativo não bloqueia o uso, mas permite mon
 
 ![Marcar como não sancionado](./media/tag-as-unsanctioned.png)  
 
-
 Se você tiver uma lista de aplicativos que você deseja sancionar ou cancelar a sanção, você poderá usar a caixa de seleção para marcar todos os aplicativos que você deseja gerenciar e, em seguida, selecionar a ação.
 
 Para consultar uma lista de aplicativos não sancionados, você pode [gerar um script de bloco usando as APIs do Cloud App Security](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+
+> [!NOTE]
+> Se seu locatário usa o Zscaler NSS, qualquer aplicativo que você marcar como não sancionado é bloqueado automaticamente pelo Cloud App Security, e as seções a seguir em relação à criação de scripts de bloqueio são desnecessárias. Para saber mais, confira [Integração com o Zscaler](zscaler-integration.md).
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporte um script de bloqueio para controlar aplicativos descobertos
 

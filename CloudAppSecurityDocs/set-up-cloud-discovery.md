@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4e2a85c11e0e693ee7967de0fa0c23bf47388c34
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: 6d96dea5cfd7fd50c0730c59b13e5abb4121cdca
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259589"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016835"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -87,12 +87,14 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - Dell Sonicwall
 - Digital Arts i-FILTER
 - Fortinet Fortigate
+- iboss Secure Cloud Gateway
 - Juniper SRX
 - Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewall da série Palo Alto
 - Sophos SG
+- Sophos XG
 - Sophos Cyberoam
 - Squid (Comum)
 - Squid (Nativo)

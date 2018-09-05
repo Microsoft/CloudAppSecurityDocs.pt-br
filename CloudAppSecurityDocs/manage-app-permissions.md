@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 36798d23961f34a0c97fbe6a1547c558668640e6
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: f391b886783934a07aa295e882ec845fdf74f149
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259480"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016982"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -79,7 +79,7 @@ A página de Permissões de aplicativo fornece as seguintes informações sobre 
 
 Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou para notificar o usuário que isso deve foi feito. 
 
-1. Na página de Permissões de aplicativo, clique em três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *Você autorizou o aplicativo Adallom Google Protector a acessar sua conta G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere conceder ou revogar as permissões que você deu a esse aplicativo em sua conta G Suite. Para revogar o acesso ao aplicativo, vá para: https://security.google.com/settings/security/permissions?hl=en&pli=1 Selecione o aplicativo e clique em 'Revogar o acesso' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
+1. Na página **Permissões de aplicativo**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *Você autorizou o aplicativo Adallom Google Protector a acessar sua conta G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere conceder ou revogar as permissões que você deu a esse aplicativo em sua conta G Suite. Para revogar o acesso ao aplicativo, vá para: https://security.google.com/settings/security/permissions?hl=en&pli=1 Selecione o aplicativo e clique em 'Revogar o acesso' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
 2. Você também pode revogar permissões para usar o aplicativo para o usuário, clicando no ícone no final da linha do aplicativo na tabela e selecionando **Revogar aplicativo**. 
 
    ![revogar aplicativo](./media/revoke-app.png)
@@ -92,7 +92,15 @@ Você pode consultar as permissões de aplicativo no modo de exibição **Básic
 
 - Selecione o ícone **Remover um filtro** ao lado do filtro para remover os filtros.
 
+## <a name="send-feedback"></a>Enviar comentários
 
+Se algum aplicativo OAuth que pareça mal-intencionado for descoberto na sua organização, informe a equipe do Cloud App Security. Esse novo recurso permite que você participe da nossa comunidade de segurança e melhore a análise e a pontuação de risco do aplicativo OAuth.
+1. Na página de **Permissões de aplicativo**, clique nos três pontos no final da linha de aplicativo e selecione **Reportar aplicativo**.  
+
+   ![reportar aplicativo](./media/report-app.png)
+2. Na tela **Reportar este aplicativo**, você pode selecionar se é para reportar o aplicativo como mal-intencionado ou reportar algum outro problema com a maneira como o Cloud App Security percebe o aplicativo, por exemplo, **Editor incorreto** ou **Permissões incorretas**. Os dados que você envia são usados para atualizar a pontuação de riscos do aplicativo, bem como outras análises sobre ele.
+
+ 
 ## <a name="see-also"></a>Consulte Também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 

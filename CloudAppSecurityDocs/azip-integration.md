@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e81d57768f552f5564e35733f5a09ca17f9217c
-ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
+ms.openlocfilehash: abca47db7d4c3aa2db69bca2219e742af96b040e
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340049"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016934"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -35,7 +35,7 @@ Integrando a Proteção de Informações do Azure no Cloud App Security, você p
 
 
 > [!NOTE] 
-> Para habilitar esse recurso, você precisa de uma licença do Cloud App Security e de uma licença da Proteção de Informações do Azure Premium P2. Assim que as duas licenças estiverem em vigor, o Cloud App Security sincronizará os rótulos das organizações do serviço Proteção de Informações do Azure.
+> Para habilitar esse recurso, você precisa de uma licença do Cloud App Security e de uma licença da Proteção de Informações do Azure Premium P1. Assim que as duas licenças estiverem em vigor, o Cloud App Security sincronizará os rótulos das organizações do serviço Proteção de Informações do Azure.
 
 
 ## <a name="prerequisites"></a>Pré-requisitos

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 8/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5edbb6a812060cee1fef9b0bdf78bc31d362dfaf
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 6a25560de126aa0a18e9050d2f4f5695e19b880b
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34567601"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016886"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quais são as diferenças entre o Microsoft Cloud App Security e o Cloud App Security do Office 365?
 
@@ -37,7 +37,7 @@ O Cloud App Security do Office 365 é um subconjunto do Microsoft Cloud App Secu
 
 |Capacidade|Recurso|Microsoft Cloud App Security|Cloud App Security do Office 365|
 |----|----|----|----|
-|Cloud Discovery|Aplicativos Descobertos |Mais de 16.000 aplicativos de nuvem  |Mais de 750 aplicativos de nuvem com funcionalidade semelhante à do Office 365|
+|Cloud Discovery|Aplicativos Descobertos |Mais de 16.000 aplicativos de nuvem  |Mais de 750 aplicativos de nuvem com funcionalidades semelhantes ao Office 365|
 ||Implantação para análise de descoberta|Upload de log manual e automático|Upload de log manual|
 ||Anonimização de log para a privacidade do usuário|Sim||
 ||Acesso ao Catálogo de aplicativos de nuvem|Sim||

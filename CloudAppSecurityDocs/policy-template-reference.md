@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: feab5ecc5705fe0d0f43c2b49a15e970c8f54f67
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 85985a9ad83cff0bb68b3d1fd310e98bbea09181
+ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251789"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43115719"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -61,7 +61,7 @@ Esta é uma lista de modelos de política existentes no Microsoft Cloud App Secu
 |Controle de compartilhamento|Arquivo compartilhado com domínio não autorizado|Alertar quando um arquivo for compartilhado com um domínio não autorizado (por exemplo, de seu concorrente).|
 |Controle de compartilhamento|Certificados digitais compartilhados (extensões de arquivo)|Alerta quando um arquivo que contém os certificados digitais publicamente é compartilhado. Use este modelo para gerenciar o armazenamento do AWS.|
 |Controle de compartilhamento|Buckets do S3 acessíveis publicamente (AWS)|Alertar quando um bucket do S3 do AWS for compartilhado publicamente.|
-|Controle de compartilhamento|Arquivos obsoletos compartilhados externamente|Localizar arquivos compartilhados externamente que ainda não foram abertos ou modificados por 6 meses e removê-los da unidade de disco.|
+|Controle de compartilhamento|Arquivos obsoletos compartilhados externamente|Localize arquivos compartilhados externamente que não foram abertos nem modificados por seis meses.|
 
 
 
