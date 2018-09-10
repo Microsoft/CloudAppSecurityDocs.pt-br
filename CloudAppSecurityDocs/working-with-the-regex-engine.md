@@ -6,18 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e7c8f640a054ba8e5bc2ad999bd73a6604eb4d0
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 52a18f28382ffefca7785419fb67e8b0f2de66df
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44143234"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -46,9 +47,9 @@ As limitações a seguir são impostas em expressões regulares personalizadas:
   
 -   Quantificadores não permitidos: *, +, {n,}  
   
-     Em vez de *, use {0,9}  
+     Em vez de * use {0,9}  
   
-     Em vez de +, use {1,9}  
+     Em vez de + use {1,9}  
   
 -   Referência inversa não permitida: \\<número\> ou \k\<nome>  
   

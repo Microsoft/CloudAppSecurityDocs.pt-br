@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38faca2d4d8da2802ca0043bf53564d840645523
-ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
+ms.openlocfilehash: b61244a1c611355cf5ce9b0ca4f073c1ebccb765
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "31773086"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144033"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -51,26 +51,28 @@ As [Políticas de arquivos](data-protection-policies.md) são uma excelente ferr
    1. O arquivo original é movido para a pasta de quarentena de administrador que você definir.
    2. O arquivo original é excluído.
    3. Um arquivo de marca de exclusão é carregado para o local do arquivo original.
-
+      
       ![marca de exclusão de quarentena](./media/quarantine-tombstone.png)
-
+      
    4. O usuário tem acesso somente à marca de exclusão, na qual ele pode ser as diretrizes personalizadas fornecidas pelo IT e a ID de correlação para contatar o IT para liberar o arquivo.
 
 4. Quando você receber o alerta que um arquivo tiver sido colocado em quarentena, investigue o arquivo na página de **Alertas** do Cloud App Security:
-
+   
    ![alertas de quarentena](./media/quarantine-alerts.png)
- 
+   
 5. Também no **Relatório de política** na guia **Em quarentena**:
-
+   
    ![relatório de quarentena](./media/quarantine-report.png)
     
 6. Depois que um arquivo foi colocado em quarentena, use o processo a seguir para corrigir a situação de ameaça:
-       
+    
     1. Inspecione o arquivo na pasta de quarentena no SharePoint Online.
-    3. Você também pode examinar os logs de auditoria para aprofundar-se nas propriedades de arquivo.
-    4. Se o arquivo for contra a política corporativa, execute o processo de RI (resposta de incidente) da organização.
-    5. Se o arquivo for inofensivo, você poderá restaurar o arquivo da quarentena, no ponto em que o arquivo original for liberado, ou seja, ele será copiado para o local original, a marca de exclusão será excluída e o usuário poderá acessar o arquivo.
-       ![restaurar da quarentena](./media/quarantine-restore.png)
+    2. Você também pode examinar os logs de auditoria para aprofundar-se nas propriedades de arquivo.
+    3. Se o arquivo for contra a política corporativa, execute o processo de RI (resposta de incidente) da organização.
+    4. Se o arquivo for inofensivo, você poderá restaurar o arquivo da quarentena, no ponto em que o arquivo original for liberado, ou seja, ele será copiado para o local original, a marca de exclusão será excluída e o usuário poderá acessar o arquivo.
+       
+       ![restauração da quarentena](./media/quarantine-restore.png)
+       
 7. Após validar que a política é executada sem problemas, você pode usar as ações de governança automáticas na política para evitar mais perdas e aplicar automaticamente quarentena do administrador quando a política for correspondida.
 
 > [!NOTE]
