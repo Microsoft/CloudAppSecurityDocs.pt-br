@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 68/21/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2c0535c3c2fceec521383d00e828072c4e9ad1ff
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: 04baf0164ebead748914d8492a43fc62f5d63160
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016957"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44143880"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 

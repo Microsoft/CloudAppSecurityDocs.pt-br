@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 8/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6a25560de126aa0a18e9050d2f4f5695e19b880b
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: 0ece617169af47eeaa83ec626667d81ea8a394ad
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016886"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44142889"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quais são as diferenças entre o Microsoft Cloud App Security e o Cloud App Security do Office 365?
 
