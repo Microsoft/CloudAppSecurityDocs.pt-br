@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6976c39a644fe96f1d9ec431df08c9737026ffd
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e0e616914ce44ca28938298a5a0f3951b83454dc
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143032"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881781"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -37,7 +37,7 @@ O cancelamento de sanção de um aplicativo não bloqueia o uso, mas permite mon
 
 Se você tiver uma lista de aplicativos que você deseja sancionar ou cancelar a sanção, você poderá usar a caixa de seleção para marcar todos os aplicativos que você deseja gerenciar e, em seguida, selecionar a ação.
 
-Para consultar uma lista de aplicativos não sancionados, você pode [gerar um script de bloco usando as APIs do Cloud App Security](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+Para consultar uma lista de aplicativos não sancionados, você pode [gerar um script de bloco usando as APIs do Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
 > Se seu locatário usa o Zscaler NSS, qualquer aplicativo que você marcar como não sancionado é bloqueado automaticamente pelo Cloud App Security, e as seções a seguir em relação à criação de scripts de bloqueio são desnecessárias. Para saber mais, confira [Integração com o Zscaler](zscaler-integration.md).
