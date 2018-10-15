@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2018
+ms.date: 9/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6007579b9c83b83a1fa24502249437f645aeb94
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 71b16b421674c0e2ca3e9b5c70735ef03301a312
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144441"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251515"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -30,6 +30,10 @@ ms.locfileid: "44144441"
 
 
 Na área de trabalho de hoje em dia, geralmente não é suficiente saber o que está acontecendo em seu ambiente de nuvem após o fato, você deseja ser capaz de parar as violações e os vazamentos em tempo real, antes que os funcionários intencional ou inadvertidamente coloquem seus dados e sua organização em risco. É importante permitir que os usuários em sua organização aproveitem ao máximo os serviços e as ferramentas disponíveis a eles em aplicativos de nuvem e que eles tragam os próprios dispositivos para o trabalho. Ao mesmo tempo, são necessárias ferramentas para ajudar a proteger sua organização contra vazamentos de dados e roubo de dados, em tempo real. Juntamente com o Azure Active Directory, o Microsoft Cloud App Security oferece esses recursos em uma experiência holística e integrada com o Controle de Aplicativo de Acesso Condicional.
+
+> [!NOTE]
+> Para usar o Controle de Aplicativos de Acesso Condicional do Cloud App Security, é necessária uma [licença P1 do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) e uma assinatura ativa do Microsoft Cloud App Security.
+>
 
 ## <a name="how-it-works"></a>Como funciona
 
@@ -83,13 +87,12 @@ O mecanismo de identificação de dispositivos pode solicitar autenticação de 
  
 ## <a name="supported-apps-and-clients"></a>Clientes e aplicativos compatíveis
 
-No momento, o Controle de Aplicativo de Acesso Condicional é compatível com aplicativos configurados com logon único SAML no Azure AD. 
+No momento, o Controle de Aplicativos de Acesso Condicional é compatível com aplicativos configurados com aplicativos SAML e Open ID Connect com logon único no Azure AD. 
 
 > [!NOTE]
-> - O Controle de Aplicativos de Acesso Condicional também é compatível com aplicativos configurados com outros provedores de identidade além do Azure AD. Para obter mais informações sobre esse cenário, envie um email para mcaspreview@microsoft.com.
-> - Os aplicativos do Office 365 não estão configurados com SAML, portanto, não são compatíveis no momento.
+> O Controle de Aplicativos de Acesso Condicional também é compatível com aplicativos configurados com outros provedores de identidade além do Azure AD. Para obter mais informações sobre esse cenário, envie um email para mcaspreview@microsoft.com.
 
-O controle de sessão está disponível para qualquer navegador nas principais plataformas (aplicativos móveis e aplicativos da área de trabalho podem também ser bloqueados ou permitidos). Com a integração nativa do Microsoft Azure AD, há suporte para todos os aplicativos configurados com logon único do SAML no Azure AD, incluindo os seguintes aplicativos em destaque:
+O controle de sessão está disponível para qualquer navegador nas principais plataformas (aplicativos móveis e aplicativos da área de trabalho podem também ser bloqueados ou permitidos). Com a integração nativa do Azure AD, há suporte para todos os aplicativos SAML ou Open ID Connect configurados com logon único no Azure AD, incluindo os seguintes aplicativos em destaque:
 
 - AWS
 - Caixa
@@ -109,6 +112,13 @@ O controle de sessão está disponível para qualquer navegador nas principais p
 - Workday
 - Workiva
 - Workplace by Facebook
+- Exchange Online
+- OneDrive for Business
+- Power BI
+- SharePoint Online
+- Azure DevOps (Visual Studio Team Services)
+- Yammer
+
 
 
 Aplicativos adicionais estão sendo continuamente integrados ao controle de sessão. Se você estiver interessado em um aplicativo específico que não foi mencionado aqui, [envie os detalhes do aplicativo para nós](mailto:casfeedback@microsoft.com) e o caso de uso de seu interesse para que ele seja integrado.

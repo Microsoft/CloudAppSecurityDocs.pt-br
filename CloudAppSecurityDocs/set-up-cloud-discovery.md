@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 805cb008b60d3ab74119d15e4e24944fe82c8bd7
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d834b1140b9dc83acdc60f6bc585edee8d205073
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144509"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251600"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -84,7 +84,6 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - Cisco ScanSafe
 - Cisco Meraki – log de URLs
 - Clavister NGFW (Syslog)
-- Dell Sonicwall
 - Digital Arts i-FILTER
 - Fortinet Fortigate
 - iboss Secure Cloud Gateway
@@ -93,6 +92,7 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewall da série Palo Alto
+- Sonicwall (anteriormente conhecido como Dell)
 - Sophos SG
 - Sophos XG
 - Sophos Cyberoam
@@ -122,7 +122,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |              Cisco Ironport WSA              | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
 |                 Cisco Meraki                 | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
 |           Clavister NGFW (Syslog)            | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                Dell SonicWall                | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                SonicWall (anteriormente conhecido como Dell)                | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
 |            Digital Arts i-FILTER             | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
 |                  Fortigate                   |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
 |                 Juniper SRX                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |

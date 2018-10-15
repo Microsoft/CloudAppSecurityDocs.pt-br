@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5fc4ea258b355e580766477df49e4898e4650e93
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 9663e2c6948565f1a9f7118d88a4d85087588811
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142163"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251549"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -87,7 +87,7 @@ O Cloud App Security também fornece **Consultas sugeridas** e permite salvar co
 
  - Aplicativos de armazenamento em nuvem que apresentam riscos e não estão em conformidade – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que não estão em conformidade com o SOC 2 ou o HIPAA, não dão suporte à versão do PCI DSS e têm uma pontuação de risco igual a 5 ou inferior.
 
- - Aplicativos em nuvem empresariais que têm autenticação fraca – filtra todos os aplicativos descobertos para exibir apenas os aplicativos para os quais não há suporte para o SAML, não têm nenhuma política de senha e não habilitam o MFA.
+ - Aplicativos de nuvem empresariais que têm autenticação fraca – filtra todos os aplicativos descobertos para exibir apenas os aplicativos não compatíveis com SAML, não têm nenhuma política de senha e não habilitam o MFA.
 
  - Aplicativos em nuvem empresariais que têm criptografia fraca – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que apresentam riscos porque não criptografam dados em repouso e não dão suporte a nenhum protocolo de criptografia.
 

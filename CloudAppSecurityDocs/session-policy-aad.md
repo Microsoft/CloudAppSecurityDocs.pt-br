@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f241033fc56cb1c9adea4cb2c9c8facd95c82d73
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6614c845fad94880883dccff14f5f7f9d110dfa1
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144492"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251397"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -53,7 +53,7 @@ Por exemplo, é possível decidir que, de dispositivos não gerenciados ou, para
 
 As políticas de acesso condicional do Azure Active Directory e as políticas de sessão do Cloud App Security trabalham juntas para examinar cada sessão de usuário e tomar decisões de política para cada aplicativo. Para configurar uma política de acesso condicional no Azure AD, siga este procedimento:
 
-1. Configure uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) com atribuições de usuário ou grupo de usuários e o aplicativo SAML que você deseja controlar com o Controle de Aplicativo de Acesso Condicional. 
+1. Configure uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) com atribuições de usuário ou grupo de usuários e o aplicativo que você deseja controlar com o Controle de Aplicativos de Acesso Condicional. 
 
    > [!NOTE]
    > Apenas os aplicativos que foram [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md) serão afetados por essa política.
@@ -142,7 +142,7 @@ Para baixar o log exportado:
 
 ## Bloquear todos os downloads <a name="block-download"></a>
 
-Quando o **Bloco** for definido como a **Ação** que você deseja executar na política de sessão do Cloud App Security, o Controle de Aplicativo de Acesso Condicional impedirá que um usuário baixe um arquivo de acordo com os filtros de arquivo da política. Um evento de download é reconhecido pelo Microsoft Cloud App Security para cada aplicativo SAML e, quando um usuário iniciar esse evento, o Controle de Aplicativo de Acesso Condicional intervirá em tempo real para impedir a execução. Quando é recebido o sinal que um usuário iniciou um download, o Controle de Aplicativo de Acesso Condicional retorna uma mensagem **Download restringido** para o usuário e substitui o arquivo baixado por um arquivo de texto que contém uma mensagem personalizada para o usuário, que pode ser configurada na política de sessão.  
+Quando o **Bloco** for definido como a **Ação** que você deseja executar na política de sessão do Cloud App Security, o Controle de Aplicativo de Acesso Condicional impedirá que um usuário baixe um arquivo de acordo com os filtros de arquivo da política. Um evento de download é reconhecido pelo Microsoft Cloud App Security para cada aplicativo e, quando um usuário iniciar esse evento, o Controle de Aplicativos de Acesso Condicional intervirá em tempo real para impedir a execução. Quando é recebido o sinal que um usuário iniciou um download, o Controle de Aplicativo de Acesso Condicional retorna uma mensagem **Download restringido** para o usuário e substitui o arquivo baixado por um arquivo de texto que contém uma mensagem personalizada para o usuário, que pode ser configurada na política de sessão.  
 
 ## Bloquear atividades específicas<a name="block-activities"></a>
 

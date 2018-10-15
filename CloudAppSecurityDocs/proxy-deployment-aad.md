@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 636c0e407db3a7460cf64a76dc82133e7febf4c9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 39b9a5554e326e2d1a9237b1999e316949aad607
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143336"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251498"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -60,7 +60,7 @@ Execute estas etapas para configurar aplicativos do Azure AD para ser controlado
    4. Na política de TESTE, em **Aplicativo de nuvem**, atribua os aplicativos que você deseja controlar com o Controle de Aplicativo de Acesso Condicional. 
 
       > [!NOTE]
-      >Escolha aplicativos compatíveis com o Controle de Aplicativo de Acesso Condicional. O Controle de Aplicativo de Acesso Condicional é compatível com aplicativos configurados com logon único SAML no Azure AD. Por exemplo, os aplicativos do Office 365 não estão configurados com SAML, não são compatíveis no momento.
+      >Escolha aplicativos compatíveis com o Controle de Aplicativo de Acesso Condicional. O Controle de Aplicativos de Acesso Condicional é compatível com aplicativos configurados com aplicativos SAML e Open ID Connect com logon único no Azure AD. 
 
 ## Etapa 2: entre com um usuário no escopo para a política nos aplicativos <a name="sign-in-scoped"></a>
 

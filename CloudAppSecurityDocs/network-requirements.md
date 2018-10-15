@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/30/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9bc1064b28a8d7781718f121a0f64bd9cfa97395
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 64796d808134b20164761d13f26cebd8e544bd27
+ms.sourcegitcommit: 96ff394dd75c98a783ac196f312048a963717155
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144305"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584485"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -46,16 +46,31 @@ Para ver a qual data center você está se conectando:
 
 Para acessar o portal do Cloud App Security, adicione a **porta de saída 443** dos seguintes endereços IP e nomes DNS à lista de permissões do firewall:  
 
+    portal.cloudappsecurity.com
+    *.portal.cloudappsecurity.com
+    cdn.cloudappsecurity.com
+    https://adaproddiscovery.azureedge.net 
+    *.s-microsoft.com
+    cdn.cloudappsecurity.com
+    cloudappsecurity-rs.azureedge.net
+    *.msecnd.net
+    dev.virtualearth.net
+    *.cloudappsecurity.com
+    flow.microsoft.com
+    static2.sharepointonline.com
+    dc.services.visualstudio.com
+    *.blob.core.windows.net
 
+Além disso, os itens a seguir devem estar na lista de permissões, dependendo do data center usado:
 > [!div class="mx-tableFixed"]
 > 
 > |Data center|Endereços IP|Nome DNS|
 > |----|----|----|
-> |EUA|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us3.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |UE|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.eu2.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
+> |EUA|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br></br>|
+> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br></br>|
+> |UE|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
+> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|*.eu2.portal.cloudappsecurity.com|
 
 
 > 
@@ -147,7 +162,7 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 
 - Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada.
 - Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443.
-- Permita que o coletor de logs inicie o tráfego de saída para o Armazenamento de Blobs do Azure nas portas 80 e 443:
+- Permita que o coletor de logs inicie o tráfego de saída para o Armazenamento de Blobs do Azure na porta 443:
 
 
   | Data center |                        URL                        |

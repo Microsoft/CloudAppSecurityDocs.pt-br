@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a1ec5d07316f56a2f859cffa30ec22297c8b935
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: c1778a15df20cfccad8375dbf7f9fb4a753c17e7
+ms.sourcegitcommit: 96ff394dd75c98a783ac196f312048a963717155
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143625"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584502"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ A primeira coisa que você deve fazer para obter uma visão geral de seus aplica
 6. Por fim, não se esqueça de examinar a pontuação de risco do aplicativo descoberto na **Visão geral de risco de aplicativos** e verificar o status de alertas de descoberta para ver quantos alertas abertos você deve investigar.
   
 ## <a name="exclude-entities"></a>Excluir entidades  
-Se você tiver usuários do sistema ou endereços IP que são particularmente ruidosos e não interessantes ou aplicativos que não são relevantes, talvez você deseje excluir os dados deles dos dados do Cloud Discovery que são analisados. Por exemplo, você talvez queira excluir todas as informações provenientes de 127.0.0.1 ou do host local.  
+Se você tiver usuários do sistema ou endereços IP – ou computadores, se você usar a [integração do Windows Defender ATP](wdatp-integration.md) – particularmente ruidosos e não interessantes, talvez convenha excluir seus dados dos dados do Cloud Discovery analisados. Por exemplo, você talvez queira excluir todas as informações provenientes de 127.0.0.1 ou do host local.  
   
 Para criar uma exclusão:  
   
@@ -55,7 +55,7 @@ Para criar uma exclusão:
   
 3.  Escolha a guia **Usuários excluídos** ou **Endereços IP excluídos** e clique no botão **Adicionar usuário** ou **Adicionar endereço IP**.  
   
-4.  Adicione um alias do usuário ou endereço IP. É recomendável adicionar informações sobre por que o usuário ou o endereço IP foi excluído.  
+4.  Adicione um alias de usuário, endereço IP ou computador se estiver usando a integração do Windows Defender ATP. É recomendável adicionar informações sobre por que o usuário ou o endereço IP foi excluído.  
   
      ![excluir usuário](./media/exclude-user.png "excluir usuário")  
   
