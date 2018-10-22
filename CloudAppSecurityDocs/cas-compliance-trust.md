@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 68/21/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 04baf0164ebead748914d8492a43fc62f5d63160
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 8e6af8713761ccff80a141dadabba33b12bf00ea
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143880"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349569"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -144,7 +144,7 @@ O Microsoft Cloud App Security permite definir o escopo da implantação. Isso p
 
 Você pode optar por manter os relatórios do **Cloud Discovery** anônimos. Após o upload dos arquivos de log no **Microsoft** Cloud App Security, todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Para investigações de segurança específicas, você pode resolver o nome de usuário real. Dados particulares são criptografados usando AES-128 com uma chave dedicada por locatário. [Para saber mais](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
 
-## <a name="see-also"></a>Consulte também
+## <a name="next-steps"></a>Próximas etapas
 
 [Visão geral do Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
