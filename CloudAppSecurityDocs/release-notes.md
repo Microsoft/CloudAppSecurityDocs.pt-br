@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b4f96e969a4276e6f2456659dfcae7243a791232
-ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
+ms.openlocfilehash: 84db548efef74a84e2b97419eb6f5d213512b6c7
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45561194"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881900"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-132"></a>Cloud App Security versão 132
+
+Lançado em 25 de setembro de 2018
+
+- **Agora o Controle de Aplicativos de Acesso Condicional para o Office 365 está em versão prévia pública**
+    - Agora o Controle de Aplicativos de Acesso Condicional também é compatível com o Office 365 e com qualquer aplicativo configurado com o Open ID Connect.
+    - Forneça comentários de dentro de uma sessão: essa nova ferramenta permite que você forneça comentários à equipe do Cloud App Security sobre o desempenho de um aplicativo sob o controle de sessão, diretamente de dentro dela.
+
+
+- **Integração nativa com o Windows Defender ATP para Shadow IT Discovery além da sua corporação**
+    - Agora o Microsoft Cloud App Security integra-se nativamente ao Windows Defender ATP (Proteção Avançada contra Ameaças do Azure) para fornecer funcionalidades de descoberta do Shadow IT sem implantação para uso de aplicativos de nuvem dentro e fora da rede corporativa.  Isso permitirá que você execute o Cloud Discovery em computadores, mesmo quando eles não estiverem dentro da sua rede corporativa. Isso também permite a investigação baseada em computador: após identificar um usuário arriscado, será possível verificar todos os computadores que o usuário acessou para detectar potenciais riscos; se você identificar um computador arriscado, será possível verificar todos os usuários que o usaram para investigar potenciais riscos. Para saber mais, confira a integração da Proteção Avançada contra Ameaças do Azure do Windows Defender com o [Microsoft Cloud App Security](wdatp-integration.md).
+- **Inspeção de conteúdo para arquivos criptografados**
+    - Agora o Cloud App Security dá suporte à inspeção de conteúdo de arquivos protegidos criptografados que foram protegidos usando a Proteção de Informações do Azure. Agora é possível inspecionar esses arquivos criptografados para propostas de reclassificação e inspecionar uma exposição adicional de DLP e violações da política de segurança. 
 
 ## <a name="cloud-app-security-release-131"></a>Versão 131 do Cloud App Security
 

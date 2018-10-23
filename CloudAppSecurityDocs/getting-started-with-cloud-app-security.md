@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc2099958c64448931c1211fa9a5fe76d82f1422
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 066618c4e1096df0436a3b1bd40eb2563a35ae59
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144373"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072847"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -61,24 +61,7 @@ Como alternativa, você pode acessar o portal por meio do **Centro de administra
 
  
 
-### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Etapa 1. [Configurar o Cloud Discovery](set-up-cloud-discovery.md).
-Tarefa necessária: carregar logs de tráfego **Para criar um relatório contínuo do Cloud Discovery**
-
- 1.Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
- 2. Escolha **Upload automático de log**.
- 3. Na guia **Fontes de dados**, adicione suas fontes.
- 4. Na guia **Coletores de logs**, configure o coletor de logs.
- 
-**Para criar um relatório de instantâneo do Cloud Discovery**
-
- 1. Acesse **Descobrir** > **Relatório de instantâneo** e execute as etapas exibidas.
-
-**Por que você deve configurar os relatórios do Cloud Discovery?**
-Obter a visibilidade da TI Invisível na sua organização é essencial.
-Depois que os logs são analisados, você pode facilmente descobrir quais aplicativos de nuvem são usados, por quais pessoas e em quais dispositivos.
-
-
-### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Etapa 2. [Definir visibilidade, proteção e governança instantâneas para seus aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Etapa 1. [Definir visibilidade, proteção e governança instantâneas para seus aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Tarefa necessária: Conectar aplicativos
 
 1.Na engrenagem de configurações, selecione **Conectores de aplicativos**.
@@ -89,7 +72,7 @@ Tarefa necessária: Conectar aplicativos
 Depois de conectar um aplicativo, você pode obter maior visibilidade para poder investigar atividades, arquivos e contas para os aplicativos em seu ambiente de nuvem.
 
 
-### <a name="step-3-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Etapa 3. [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
+### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Etapa 2. [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
 Tarefa necessária: Criar políticas
 
 **Para criar políticas**
@@ -103,6 +86,27 @@ Tarefa necessária: Criar políticas
 **Como as políticas podem ajudar sua organização?**
 Você pode usar políticas para ajudar a monitorar as tendências, ver as ameaças de segurança e gerar alertas e relatórios personalizados. Com as políticas, você pode criar ações de governança e definir controles de compartilhamento de arquivos e prevenção de perda de dados.
 
+
+### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Etapa 3. [Configurar o Cloud Discovery](set-up-cloud-discovery.md).
+
+Tarefa necessária: Habilitar o Cloud App Security para exibir o uso do aplicativo de nuvem
+
+1. [Integrar-se ao Windows Defender ATP](wdatp-integration.md) para habilitar automaticamente o Cloud App Security para monitorar seus dispositivos Windows 10 dentro e fora da sua empresa.
+2. Se você usar o [Zscaler, integre-o](zscaler-integration.md) ao Cloud App Security.
+3. Para ter a cobertura completa, crie um relatório contínuo do Cloud Discovery
+
+   1. No ícone de engrenagem, selecione **Configurações do Cloud Discovery**.
+   2. Escolha **Upload automático de log**.
+   3. Na guia **Fontes de dados**, adicione suas fontes.
+   4. Na guia **Coletores de logs**, configure o coletor de logs.
+ 
+**Para criar um relatório de instantâneo do Cloud Discovery**
+
+ Acesse **Descobrir** > **Relatório de instantâneo** e execute as etapas exibidas.
+
+**Por que você deve configurar os relatórios do Cloud Discovery?**
+Obter a visibilidade da TI Invisível na sua organização é essencial.
+Depois que os logs são analisados, você pode facilmente descobrir quais aplicativos de nuvem são usados, por quais pessoas e em quais dispositivos.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Etapa 4. [Personalizar sua experiência](mail-settings.md).
 Tarefa recomendada: Adicionar os detalhes da sua organização

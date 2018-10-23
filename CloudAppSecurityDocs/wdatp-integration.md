@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23989eeb09bafaea994f9911c0bc0b4ee63b22c5
-ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
+ms.openlocfilehash: 114e4deeeca06c41132421a748fb95c5c7e7b34d
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251792"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881866"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -40,7 +40,7 @@ O Microsoft Cloud App Security usa as informações do tráfego coletadas pelo W
 
 - Licença do Microsoft Cloud App Security
 - Licença do Windows Defender ATP
-- Computadores Windows 10 executando o Windows Defender ATP RS5
+- Computadores Windows 10 que executam a versão 1809 ou posterior
 
 
 ## <a name="how-it-works"></a>Como funciona
@@ -93,7 +93,7 @@ Assim como acontece com qualquer outra fonte do Cloud Discovery, é possível ex
 
 
 ## <a name="related-videos"></a>Vídeos Relacionados  
-[Integrações do Cloud App Security + Proteção de Informações do Azure](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
+[Shadow IT Discovery além da rede corporativa com o Windows Defender ATP e a nuvem](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
 
 ## <a name="see-also"></a>Consulte Também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   

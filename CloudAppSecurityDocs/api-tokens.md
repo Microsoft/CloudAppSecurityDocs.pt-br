@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7ae8a06cc54eaa274b951a0762a589437c13ee0
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 81632b9be284d3c772544900d2b88b3f5eedf37b
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142401"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072728"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -46,7 +46,7 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
 2. Clique no ícone de adição, **Gerar novo token** e forneça um nome para identificar o token no futuro e, em seguida, clique em **Avançar**.
    ![O Cloud App Security gera token API](./media/api-token-gen.png)
 
-3. Copie o valor do token e salve-o em algum lugar para recuperação – se você perdê-lo, será necessário gerar o token novamente. O token tem os privilégios do usuário que o emitiu. Por exemplo, um leitor de segurança não pode emitir um token que pode alterar os dados.
+3. Copie o valor do token e salve-o em algum lugar para recuperação – se você perdê-lo, será necessário gerar o token novamente. O token tem os privilégios do usuário que o emitiu. Por exemplo, um leitor de segurança não pode emitir um token que possa alterar os dados.
 
 4. Você pode filtrar os tokens de status: Ativo, Inativo ou Gerado. 
 

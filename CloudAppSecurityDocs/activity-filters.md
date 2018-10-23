@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 15dc221b188aa2c72d8791ac511e7216c896861d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 55427fdfa73893fae763304eda6b73d19dac3f93
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144135"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072881"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="activities"></a>Atividades
-O Microsoft Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examina todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele é constantemente atualizado com novas atividades. 
+O Microsoft Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examinará todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele será constantemente atualizado com novas atividades. 
 
 > [!NOTE] 
 > Para obter uma lista completa de atividades do Office 365 monitoradas pelo Cloud App Security, veja [Pesquisar o log de auditoria no Centro de Conformidade e Segurança do Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities)
 
-O **Log de atividades** pode ser filtrado para permitir que você encontre atividades específicas. É possível criar políticas com base nas atividades e, em seguida, definir sobre o que você deseja ser alertado e agir. Também é possível pesquisar atividades executadas em determinados arquivos. O tipo de atividades e as informações que recebemos para cada atividade dependem do aplicativo e do tipo de dados que ele pode fornecer. 
+O **Log de atividades** pode ser filtrado para permitir que você encontre atividades específicas. Crie políticas com base nas atividades e, em seguida, defina sobre o que você deseja ser alertado e agir. É possível pesquisar atividades realizadas em determinados arquivos. O tipo de atividades e as informações que recebemos para cada atividade dependem do aplicativo e do tipo de dados que ele pode fornecer. 
 
 Por exemplo, é possível usar o **Log de atividades** para encontrar usuários na sua organização que estejam usando sistemas operacionais ou navegadores desatualizados da seguinte maneira: depois de conectar um aplicativo ao Cloud App Security, na página **Log de atividades**, use o filtro avançado e selecione **Marcação do agente do usuário**. Em seguida, selecione **Navegador desatualizado** ou **Sistema operacional desatualizado**.
 
@@ -79,15 +79,16 @@ Para obter uma lista das ações de governança disponíveis, consulte [Ações 
 
 #### <a name="user-insights"></a>Informações de usuário
 
-A experiência de investigação inclui informações prontas sobre o usuário em ação. Com um único clique, você pode obter uma visão abrangente do usuário, incluindo por meio de qual local ele se conectou, com quantos alertas em aberto ele está envolvido e suas informações de metadados.
+A experiência de investigação inclui insights sobre o usuário em ação. Com um único clique, é possível obter uma visão abrangente do usuário, incluindo por meio de qual local ele se conectou, com quantos alertas em aberto ele está envolvido e suas informações de metadados.
 
 Para exibir informações de usuário:
 
 1. Clique na atividade em si no **Log de atividades**.
 
-2. Em seguida, clique na guia **Usuário**. <br></br> Isso abre a Gaveta de atividades. A guia **Usuário** fornece as seguintes informações sobre o usuário:
+2. Em seguida, clique na guia **Usuário**. <br></br> Clicar abre a Gaveta de atividades. A guia **Usuário** fornece os seguintes insights sobre o usuário:
     - **Abrir alertas**: o número de alertas abertos envolvendo o usuário.
-    - **Violação de arquivo**: o número de violações de arquivo para arquivos pertencentes ao usuário.
+    - **Corresponde**: ao número de correspondências de política para arquivos pertencentes ao usuário. 
+   <!-- - **File violation**: The number of file violations for files owned by the user. -->
     - **Atividades**: o número de atividades executadas pelo usuário nos últimos 30 dias.
     - **Países**: o número de países dos quais o usuário se conectou nos últimos 30 dias.
     - **ISPs**: o número de ISPs dos quais o usuário se conectou nos últimos 30 dias.
@@ -97,7 +98,7 @@ Para exibir informações de usuário:
 
 #### <a name="ip-address-insights"></a>Informações sobre endereço IP
 
-Como as informações de endereço IP são cruciais para quase todas as investigações, você pode exibir informações detalhadas sobre endereços IP na Gaveta de atividades. De dentro de uma atividade específica, você pode clicar na guia de endereço IP para exibir os dados consolidados sobre o endereço IP, incluindo o número de alertas abertos para o endereço IP específico, um gráfico de tendência de atividade recente e um mapa do local. Isso permite o fácil detalhamento, por exemplo, quando estiver investigando alertas de viagem impossíveis, você pode compreender facilmente onde o endereço IP foi usado e se ele foi envolvido em atividades suspeitas ou não. Você também pode executar ações diretamente na gaveta do endereço IP que permite que você marque um endereço IP como arriscado, VPN ou corporativo para facilitar a criação de políticas e a futura investigação.
+Como as informações de endereço IP são cruciais para quase todas as investigações, você pode exibir informações detalhadas sobre endereços IP na Gaveta de atividades. De dentro de uma atividade específica, você pode clicar na guia de endereço IP para exibir os dados consolidados sobre o endereço IP, incluindo o número de alertas abertos para o endereço IP específico, um gráfico de tendência de atividade recente e um mapa do local. Isso permite fazer uma busca detalhada ao investigar alertas de viagens impossíveis, por exemplo. É possível compreender facilmente onde o endereço IP foi usado e se estava envolvido em atividades suspeitas ou não. Você também pode executar ações diretamente na gaveta do endereço IP que permite que você marque um endereço IP como arriscado, VPN ou corporativo para facilitar a criação de políticas e a futura investigação.
 
 Para exibir as informações sobre endereço IP:
 
@@ -110,9 +111,9 @@ Para exibir as informações sobre endereço IP:
     - **Atividades**: o número de atividades executadas a partir do endereço IP nos últimos 30 dias.
     - **Atividades administrativas**: o número de atividades administrativas executadas a partir do endereço IP nos últimos 30 dias.
     - Você pode executar as seguintes ações de endereço IP:
-        - Marcar como arriscado 
-        - Marcar como endereço IP de VPN
-        - Marcar como IP arriscado e adicionar ao grupo bloqueado
+        - Marcar como IP corporativo e adicionar à lista de permissões
+        - Marcar como endereço IP de VPN e adicionar à lista de permissões
+        - Marcar como IP arriscado e adicionar à lista bloqueada
 
 
 ![Informações do endereço IP no Cloud App Security](./media/ip-address-insights.png)
@@ -121,13 +122,13 @@ Para exibir as informações sobre endereço IP:
 
 Você pode exportar todas as atividades do usuário para um arquivo CSV. 
 
-No **Log de atividades**, no canto superior direito, clique no botão **Exportar** ![botão Exportar](./media/export-button.png).
+No **Log de atividades**, no canto superior direito, clique no botão **Exportar**. ![botão exportar](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 
 
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

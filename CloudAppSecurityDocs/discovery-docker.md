@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 10/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06b011e28a293c09f6d3f40e904252178045431d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 9f312f02b6fa24b7726ebbd927fc8b272a2359b3
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143557"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881832"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -26,11 +26,12 @@ ms.locfileid: "44143557"
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
 
-Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Os logs de FTP são carregados para o Microsoft Cloud App Security após o arquivo concluir a transferência do FTP para o coletor de logs.  Para Syslog, o coletor de logs grava os logs recebidos no disco e carrega o arquivo para o Cloud App Security quando o tamanho do arquivo é maior do que 40 KB.
+Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Os logs de FTP são carregados para o Microsoft Cloud App Security após o arquivo concluir a transferência do FTP para o coletor de logs.  Para Syslog, o coletor de logs grava os logs recebidos no disco e carrega o arquivo para o Cloud App Security quando o tamanho do arquivo é maior do que 40 KB. 
 
 Depois que um log for carregado no Cloud App Security, ele é movido para um diretório de backup que armazena os últimos 20 logs a qualquer momento. Quando novos logs chegam, os antigos são excluídos. Quando o espaço em disco do coletor de log está cheio, o coletor de log descarta novos logs até que tenha mais espaço livre em disco. Quando isso acontecer, você receberá um aviso na guia **Coletores de logs** das configurações **Carregar logs automaticamente**.
 
-Antes de configurar a coleta de arquivos de log automática, verifique se o log corresponde ao tipo de log esperado para garantir que o Cloud App Security possa analisar seu arquivo específico.
+Antes de configurar a coleta de arquivos de log automática, verifique se o log corresponde ao tipo de log esperado para garantir que o Cloud App Security possa analisar seu arquivo específico em [Usando logs de tráfego para o Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
+
 
 > [!NOTE]
 >-  O Cloud App Security dá suporte para encaminhamento de logs do servidor SIEM para o Coletor de Log, supondo que os logs estão sendo encaminhados em seu formato original. No entanto, é altamente recomendável que você integre o coletor de logs diretamente ao seu firewall e/ou proxy.

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 71b16b421674c0e2ca3e9b5c70735ef03301a312
-ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
+ms.openlocfilehash: 629e1133b57a9d2aef7e83390aee156b71c53b8e
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251515"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881815"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -112,12 +112,12 @@ O controle de sessão está disponível para qualquer navegador nas principais p
 - Workday
 - Workiva
 - Workplace by Facebook
-- Exchange Online
-- OneDrive for Business
-- Power BI
-- SharePoint Online
-- Azure DevOps (Visual Studio Team Services)
-- Yammer
+- Exchange Online (versão prévia)
+- OneDrive for Business (versão prévia)
+- Power BI (versão prévia)
+- SharePoint Online (versão prévia)
+- Azure DevOps (Visual Studio Team Services) (versão prévia)
+- Yammer (versão prévia)
 
 
 

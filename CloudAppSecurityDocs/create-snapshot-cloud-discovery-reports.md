@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 734975276a148ce541b84c4a68751b2bdb5666fb
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 1072196cb6a1ab8781f1bde5b2b58a094d6d3afe
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143642"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881917"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
-É importante carregar um log manualmente e permitir que o Microsoft Cloud App Security analise-o antes de tentar usar o coletor de logs automático.
+É importante carregar um log manualmente e permitir que o Microsoft Cloud App Security analise-o antes de tentar usar o coletor de logs automático. Para saber mais sobre como o coletor de logs funciona e o formato esperado de log, confira [Usando logs de tráfego para Cloud Discovery](#log-format).
+
 Se você ainda não tiver um log e desejar ver um exemplo da aparência do seu log, siga o procedimento abaixo e baixe um arquivo de log de exemplo para ver qual deve ser a aparência do seu log.
 
 
@@ -71,7 +72,95 @@ Para criar um relatório de instantâneo:
 ![gerenciamento de relatório de instantâneo](./media/snapshot-report-managment.png)
 
   
-      
+## Usar os logs de tráfego para Cloud Discovery <a name="log-format"></a>
+O Cloud Discovery utiliza os dados em seus logs de tráfego. Quanto mais detalhado o log, melhor é a visibilidade obtida. O Cloud Discovery requer dados de tráfego da Web com os seguintes atributos:
+- Data da transação
+- IP de Origem
+- Usuário de origem ‑ altamente recomendado
+- Endereço IP de destino
+- URL de destino **recomendada** (URLs fornecem maior precisão para detecção de aplicativos de nuvem que endereços IP)
+- Quantidade total de dados (as informações dos dados são muito valiosas)
+- Quantidade de dados carregados ou baixados (fornece informações sobre os padrões de uso dos aplicativos de nuvem)
+- Ação executada (permitida/bloqueada)
+
+O Cloud Discovery não pode mostrar ou analisar atributos que não estão incluídos em seus logs.
+Por exemplo, o formato de log padrão do **Cisco ASA Firewall** não contém o **Número de bytes carregados por transação**, **Username** nem a **URL de destino** (somente o IP de destino).
+Portanto, esses atributos não serão exibidos nos dados do Cloud Discovery para esses logs e a visibilidade sobre os aplicativos de nuvem será limitada. Para firewalls Cisco ASA, é necessário definir o nível de informações para 6. 
+
+
+Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego devem atender às seguintes condições:
+1.  A fonte de dados tem suporte (consulte a lista abaixo).
+2.  O formato de log corresponde ao formato padrão esperado (isso será verificado após o upload pela Ferramenta de log).
+3.  Os eventos têm menos de 90 dias.
+4.  O arquivo de log é válido e inclui informações de tráfego de saída.
+
+
+
+## Proxies e firewalls com suporte <a name="supported-firewalls-and-proxies"></a>
+
+- Barracuda - Firewall de aplicativo Web (W3C)
+- Blue Coat Proxy SG – Log de acesso (W3C)
+- Check Point
+- Firewall Cisco ASA (Para firewalls Cisco ASA, é necessário definir o nível de informações para 6)
+- Cisco ASA com FirePOWER
+- Cisco IronPort WSA
+- Cisco ScanSafe
+- Cisco Meraki – log de URLs
+- Clavister NGFW (Syslog)
+- Digital Arts i-FILTER
+- Fortinet Fortigate
+- iboss Secure Cloud Gateway
+- Juniper SRX
+- Juniper SSG
+- McAfee Secure Web Gateway
+- Microsoft Forefront Threat Management Gateway (W3C)
+- Firewall da série Palo Alto
+- Sonicwall (anteriormente conhecido como Dell)
+- Sophos SG
+- Sophos XG
+- Sophos Cyberoam
+- Squid (Comum)
+- Squid (Nativo)
+- Websense – Soluções de segurança da Web – Relatório detalhado de investigação (CSV)
+- Websense – Soluções de segurança da Web – Log de atividades de Internet (CEF)
+- Zscaler
+
+> [!NOTE]
+> O Cloud Discovery oferece suporte a endereços IPv4 e IPv6.
+
+Se seu log não tiver suporte, selecione **Outro** na **Fonte de dados** e especifique o dispositivo e o log que você está tentando carregar. O log será analisado pela equipe de analistas do Cloud App Security e você será notificado se o suporte para o tipo de log for adicionado. Como alternativa, você pode definir um analisador personalizado que corresponda ao seu formato. Para saber mais, confira [Usar analisador de log personalizado](custom-log-parser.md).
+
+
+Atributos de dados (de acordo com a documentação do fornecedor):
+
+
+|                 Fonte de dados                  |    URL do aplicativo de destino    |    IP do aplicativo de destino     |       Nome de usuário       |      IP de Origem       |    Tráfego total     |    Bytes carregados    |
+|----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+|                  Barracuda                   | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |          Não          |
+|                  Blue Coat                   | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  Checkpoint                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
+|              Cisco ASA (Syslog)              |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
+|           Cisco ASA com FirePOWER           | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  Cisco FWSM                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
+|              Cisco Ironport WSA              | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Cisco Meraki                 | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
+|           Clavister NGFW (Syslog)            | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                SonicWall (anteriormente conhecido como Dell)                | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|            Digital Arts i-FILTER             | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  Fortigate                   |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Juniper SRX                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Juniper SSG                  |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  McAfee SWG                  | <strong>Sim</strong> |          Não          |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                    MS TMG                    | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|              Redes de Palo Alto              |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                    Sophos                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
+|                Squid (Comum)                | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |
+|                Squid (Nativo)                | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |
+| Websense – Relatório de detalhes investigativo (CSV) | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|    Websense – Log de atividades da Internet (CEF)    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                   Zscaler                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+     
+ 
 ## <a name="see-also"></a>Consulte Também  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
