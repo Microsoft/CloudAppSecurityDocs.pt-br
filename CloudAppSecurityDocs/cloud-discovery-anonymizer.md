@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f1dbc607d0ea5f1242874e4c5744dfabdce4a234
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 73ac9c91bae7c5fa9f59aafe3b52293099e9797c
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143795"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349417"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -33,7 +33,7 @@ Pontos principais:
 -   A resolução de nomes de usuário é realizada ad hoc e por nome de usuário decifrando um determinado nome de usuário criptografado.
 
 
-Como funciona a anonimização de dados:
+## <a name="how-data-anonymization-works"></a>Como funciona a anonimização de dados
 
 1. Há três maneiras de aplicar a anonimização de dados: 
     
@@ -49,7 +49,7 @@ Como funciona a anonimização de dados:
      
      1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
      
-     2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**.
+     2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**. Você pode selecionar **Anonimizar as informações do computador por padrão no relatório 'Usuários do Ponto de Extremidade do Win10'**.
 
      3. Em Chave de criptografia, selecione se deseja **Usar a chave dedicada gerada para seu portal** ou **Usar uma chave personalizada**. Se você **Usar uma chave personalizada**, digite uma chave de criptografia UTF8 de 16 bytes.
      4. Clique em **Salvar**.

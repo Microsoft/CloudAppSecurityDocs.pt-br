@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0bf959510ac5daf87c421ed9977479a7e037d6d7
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 02c09c05ca89e58bc45648fc592c8b5a79aaf4f3
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144577"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349518"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="cloud-discovery-enrichment"></a>Aprimoramento do Cloud Discovery
 
-Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de usuário do Azure Active Directory. Quando você habilita esse recurso, o nome de usuário recebido nos logs de tráfego de descoberta são correspondidos e substituídos pelo nome de usuário do Azure AD, habilitando os seguintes novos recursos:
--   Você pode investigar o uso de TI sombra pelo usuário do Azure Active Directory.
--   Você pode correlacionar o uso do aplicativo de nuvem Descoberto com as atividades coletadas pela API.
--   Então, você pode criar logs personalizados com base nos grupos de usuários do Azure AD. Por exemplo, um relatório de TI sombra para um departamento de Marketing específico.
+Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de usuário do Azure Active Directory. Quando você habilita esse recurso, o nome de usuário recebido nos logs de tráfego de descoberta é correspondido e substituído pelo nome de usuário do Azure AD. O aprimoramento do Cloud Discovery habilita os seguintes recursos:
+- Você pode investigar o uso de TI sombra pelo usuário do Azure Active Directory.
+- Você pode correlacionar o uso do aplicativo de nuvem Descoberto com as atividades coletadas pela API.
+- Então, você pode criar logs personalizados com base nos grupos de usuários do Azure AD. Por exemplo, um relatório de TI sombra para um departamento de Marketing específico.
 
 
 ## <a name="prerequisites"></a>Pré-requisitos:
@@ -39,7 +39,7 @@ Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de 
     
 1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
      
-2. Na guia **Aprimoramento do usuário**, habilite a Cloud App Security para usar os dados do Azure Active Directory para aprimorar os nomes de usuário por padrão, selecione **Aprimorar identificadores de usuário descobertos com nomes de usuário do Azure Active Directory**.
+2. Na guia **Aprimoramento do usuário**, selecione **Aprimorar os identificadores descobertos do usuário com os nomes de usuários do Azure Active Directory**. Essa opção permite que o Cloud App Security use dados do Azure Active Directory para aprimorar os nomes de usuário padrão.
 
 3. Clique em **Salvar**.
  
@@ -48,7 +48,8 @@ Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de 
 
   
       
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas
+  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17aed7570f5f0cb68c89bfebe25969b0bf713aba
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d477439e05f8c6a9a29b8ad28fa4381b5e93274c
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144050"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349586"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -112,7 +112,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. A maioria
   
 -   Proprietário ‑ Inclui/exclui os proprietários de arquivos específicos, por exemplo, rastrear todos os arquivos compartilhados por rogue_employee_#100.  
   
--   UO do Proprietário – Inclui/exclui proprietários de arquivos que pertencem a um determinado grupo organizacional, por exemplo, todos os arquivos públicos, exceto aqueles compartilhados por EMEA_marketing.  
+-   UO do Proprietário – Inclui/exclui proprietários de arquivos que pertencem a um determinado grupo organizacional, por exemplo, todos os arquivos públicos, exceto aqueles compartilhados por EMEA_marketing. Isso se aplica somente aos arquivos armazenados no Google Drive.
   
 -   Pasta pai – Inclui/exclui com base na pasta pai, por exemplo, todos os arquivos compartilhados publicamente, exceto arquivos nesta pasta.  
   
