@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c3e0231d2b4f289ec460adc2d4d90e56443bb10f
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: 6b2028a8b62413cccefdab0fb529fb42fa57c221
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072830"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349637"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -27,15 +27,15 @@ ms.locfileid: "49072830"
 
 ## <a name="activity-filters"></a>Filtros de atividade
 
-Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maioria dos filtros dá suporte a vários valores, bem como NOT, para fornecer uma ferramenta poderosa para a criação de políticas.  
+Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maioria dos filtros tem suporte para vários valores, embora NÃO forneça uma ferramenta avançada para a criação de políticas.  
   
 - ID da Atividade ‑ Pesquisa apenas atividades específicas por sua ID. Esse filtro é útil quando você conecta o Microsoft Cloud App Security ao SIEM (usando o agente SIEM) e deseja investigar ainda mais os alertas no portal do Cloud App Security.  
   
-- Objetos de atividade – pesquise os objetos nos quais a atividade foi executada. Este filtro se aplica ao arquivo, à pasta, ao usuário ou aos objetos do aplicativo. 
+- Objetos da atividade – Procura os objetos nos quais a atividade foi realizada. Este filtro se aplica ao arquivo, à pasta, ao usuário ou aos objetos do aplicativo. 
   - ID de objeto de atividade – a ID do objeto (arquivo, pasta, usuário ou ID do aplicativo).
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
-  - Item – permite que você pesquise pelo nome ou ID de qualquer objeto de atividade (por exemplo: nomes de usuário, arquivos, parâmetros, sites). Para o filtro **Item do objeto da atividade**, você pode selecionar se deseja filtrar os itens por **Contém**, **Igual ou **Começa com** o item específico.
+  - Item – permite que você pesquise pelo nome ou ID de qualquer objeto de atividade (por exemplo: nomes de usuário, arquivos, parâmetros, sites). Para o filtro **Item do objeto da atividade**, você pode selecionar se deseja filtrar os itens por **Contém**, **Igual** ou **Começa com** o item específico.
     
 - Tipo de atividade — pesquise a atividade do aplicativo.
 
@@ -53,7 +53,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
   
 - Marca do dispositivo — pesquise por dispositivo compatível, gerenciado ou verificado.
 
-- Tipo de dispositivo – Pesquisa apenas atividades executadas usando um tipo de dispositivo específico. Por exemplo, pesquise todas as atividades em dispositivos móveis, PCs ou tablets.  
+- Tipo de dispositivo – Pesquisa apenas as atividades realizadas por meio de um tipo de dispositivo específico. Por exemplo, pesquise todas as atividades em dispositivos móveis, PCs ou tablets.  
 
 - Arquivos e pastas – pesquise arquivos e pastas nos quais a atividade foi executada.
     - ID do arquivo – permite que você pesquise pela ID do arquivo na qual a atividade foi executada. 
@@ -61,7 +61,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
     - Arquivos ou pastas específicos – permite incluir ou excluir arquivos ou pastas específicos. Ao selecionar arquivos ou pastas, é possível filtrar a lista por **Aplicativo**, **Proprietário** ou **Nome do arquivo** parcial. 
   
 - Endereço IP – o endereço IP bruto, a categoria ou a marca do(a) qual a atividade foi executada.  
-  - Endereço IP bruto – permite pesquisar atividades que foram realizadas nos endereços IP brutos ou por eles, que sejam iguais, diferentes, comecem com ou não comecem com uma sequência específica ou com endereços IP brutos. 
+  - Endereço IP bruto – Permite pesquisar atividades realizadas em ou por endereços IP brutos. Os IPs brutos podem ser iguais, não iguais, iniciar com ou não iniciar com uma sequência específica. 
   - Categoria de IP – a categoria do endereço IP em que a atividade foi executada, por exemplo, todas as atividades do intervalo de endereços IP administrativo. As categorias precisam ser configuradas para incluir os endereços IP relevantes, exceto para a categoria "Arriscado", que é pré-configurada e inclui duas marcações de IP: proxy anônimo e Tor. Para saber como configurar as categorias de IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).  
   - Marca de IP ‑ A marca do endereço IP em que a atividade foi executada, por exemplo, todas as atividades de endereços IP de proxy anônimos. O Cloud App Security cria um conjunto de marcações internas de IP que não são configuráveis. Além disso, é possível configurar suas próprias marcas de IP. Para obter mais informações sobre como configurar as suas próprias marcações de IP, consulte [Organizar os dados de acordo com as suas necessidades](ip-tags.md).
   As marcações internas de IP incluem:
@@ -128,7 +128,7 @@ Para simplificar ainda mais a investigação, agora você pode criar consultas p
    ![abrir consulta](./media/select-activity-query.png)
 
 
-O Cloud App Security também fornece **consultas sugeridas** As consultas sugeridas fornecem vias de investigação recomendadas que filtram as atividades. É possível editar essas consultas e salvá-las como consultas personalizadas. A seguir estão as consultas sugeridas opcionais:
+O Cloud App Security também fornece **Consultas sugeridas**. As consultas sugeridas fornecem caminhos de investigação recomendados que filtram as atividades. É possível editar essas consultas e salvá-las como consultas personalizadas. A seguir estão as consultas sugeridas opcionais:
 
  - Atividades de administrador – filtra todas as atividades para exibir apenas as atividades que envolveram administradores.
 
@@ -136,19 +136,19 @@ O Cloud App Security também fornece **consultas sugeridas** As consultas sugeri
 
  - Logon com falha – filtra todas as atividades para exibir apenas os logons e entradas com falha por SSO 
 
- - Atividades de arquivos e pastas – filtra todas as atividades para exibir apenas as atividades que envolveram arquivos e pastas, incluindo upload e download de pastas, acesso a pastas; criação, exclusão, upload, download, colocação em quarentena e acesso a arquivos; e transferência de conteúdo. 
+ - Atividades de arquivo e pasta – Filtra todas as atividades para exibir apenas as atividades que envolvem arquivos e pastas. O filtro inclui carregamento, download e acesso a pastas, além de criação, exclusão, carregamento, download, colocação em quarentena, acesso a arquivos e transferência de conteúdo. 
 
  - Atividades de representação – filtra todas as atividades para exibir apenas as atividades de representação.
 
  - Atividades de caixa de correio – filtra todas as atividades para exibir apenas as atividades do Microsoft Exchange Online, como criação de itens, limpeza de mensagens da caixa de correio, atualização e envio de mensagens usando permissões Enviar Como (representação).
 
- - Alterações de senha e solicitações e redefinição – filtra todas as atividades para exibir apenas as atividades que envolvem redefinição de senha, alteração de senha e forçar o usuário a alterar a senha na próxima entrada.
+ - Alterações de senha e solicitações e redefinição – Filtra todas as atividades para exibir apenas as atividades que envolvem redefinição de senha, alteração de senha e forçar o usuário a alterar a senha na entrada seguinte.
 
  - Riscos de segurança – filtra todas as atividades para exibir apenas as atividades que correspondem às políticas DLP.
 
  - Atividades de compartilhamento – filtra todas as atividades para exibir apenas as atividades que envolvem compartilhamento pastas e arquivos, incluindo a criação de um vínculo da empresa, criação de um vínculo anônimo e concessão de permissões de leitura/gravação.
 
- - Logon bem-sucedido – filtra todas as atividades para exibir apenas as atividades que envolvem logons bem-sucedidos, incluindo representação da ação, representação do logon, logon único e logon de um novo dispositivo.
+ - Login bem-sucedido – Filtra todas as atividades para exibir apenas as atividades que envolvem logins bem-sucedidos, inclusive representação da ação, representação do logon, logon único e logon de um novo dispositivo.
 
 ![consultar atividades](./media/queries-activity.png)
  
