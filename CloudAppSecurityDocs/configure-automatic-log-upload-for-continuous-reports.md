@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 843b58567b87793cc5c46c0d10d5b94127a4b156
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6bc011f2e5d42f49d679260a2c36f977ba1b004f
+ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144152"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990691"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
 > [!WARNING] 
-> É altamente recomendável configurar o upload de logs usando o [Docker](discovery-docker.md) para uma implantação mais flexível.
+> É altamente recomendável configurar o upload de logs usando o [Docker](discovery-docker.md) para obter uma implantação mais flexível.
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
-- Hipervisor: HyperV ou VMware
+- Hipervisor: Hyper-V ou VMware
 - Espaço em disco: 250 GB
 - CPU: 2
 - RAM: 4 GB 
@@ -39,8 +39,8 @@ ms.locfileid: "44144152"
 O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB por hora.
 Os principais gargalos no processo de coleta de logs são:
 - Largura de banda da rede: a largura de banda da rede determina a velocidade de upload do log.
-- Desempenho de E/S da máquina virtual alocada pela sua equipe de TI: determina a velocidade na qual os logs são gravados no disco do coletor de logs.
-O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se sua configuração geralmente excede 50 GB por hora, é recomendável dividir o tráfego entre vários coletores de logs.
+- Desempenho de E/S da máquina virtual: determina a velocidade em que os logs são gravados no disco do coletor de logs.
+O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se a configuração geralmente excede 50 GB por hora, recomendamos dividir o tráfego entre vários coletores de logs.
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração  
   
@@ -55,21 +55,21 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   
    b.  Atribua o **Nome** do proxy ou firewall.  
   
-   c.  Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, veja [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
+   c.  Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
   
-   d.  Compare seu log com o exemplo do formato de log esperado. Se seu formato de arquivo de log não corresponder a esse exemplo, você deverá adicionar sua fonte de dados como **Outro**.  
+   d.  Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.  
   
-   e.  Defina o **Tipo de receptor** como **FTP** ou **Syslog**. Para **Syslog**, escolha **UDP** ou **TCP**.  
+   e.  Defina o **Tipo de receptor** como **FTP** ou **Syslog**. Para **Syslog**, escolha **UDP**, **TCP** ou **TLS**.  
   
-   f.  Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.  
+   f.  Clique em **Adicionar** para salvar a fonte de dados. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede.  
   
 3. Vá para a guia **Coletores de logs** na parte superior.  
   
    a.  Clique em **Adicionar coletor de logs**.  
   
-   b.  Atribua um **nome** ao coletor de logs.  
+   b.  Dê um **nome** ao coletor de log.  
   
-   c.  Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e gerar um token de acesso.  
+   c.  Selecione todas as **Fontes de dados** que deseja conectar ao coletor. Clique em **Atualizar** para salvar a configuração e gerar um token de acesso.  
    ![fontes de dados de descoberta](./media/discovery-data-sources.png)
   
    > [!NOTE] 
@@ -97,14 +97,14 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   
 7. Se estiver disponível, escolha a rede **Conexão** e clique em **Próximo**.  
   
-8. Escolha **Usar um disco rígido virtual existente** e selecione o arquivo .**vhd** que foi incluído no arquivo Zip que você baixou.  
+8. Escolha **Usar um disco rígido virtual existente**. Selecione o arquivo **.vhd** que foi incluído no arquivo zip baixado.  
   
 9. Clique em **Avançar** e clique em **Concluir**.  
    A máquina é adicionada ao seu ambiente do Hyper-V.  
   
 10. Clique na máquina virtual na tabela **Máquinas Virtuais** e clique em **Iniciar**.   
   
-11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. Você deve ver o prompt de logon. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, faça logon usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que foram copiadas quando você criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:
+11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. O prompt de entrada será exibido. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, entre usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que você copiou quando criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:
     ```
     sudo network_config
     ```
@@ -115,9 +115,9 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 Neste ponto, seu coletor de logs deve estar conectado à rede e deverá poder alcançar o portal do Cloud App Security.  
 
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Etapa 3 — Configuração local da coleção de logs 
-Na primeira vez que você fizer logon no coletor de logs e importar a configuração do coletor de logs no portal, da seguinte maneira. 
+Na primeira vez que você entrar no coletor de logs e importar a configuração do coletor de logs do portal, faça o seguinte. 
 
-1.  Faça logon no coletor de logs via SSH usando as credenciais de administrador interativo fornecidas no portal. Se esse for o primeiro logon no console, você precisará alterar a senha e o logon novamente após a alteração da senha. Se você estiver usando uma sessão de terminal, poderá ser necessário reiniciar a sessão de terminal. )
+1.  Entre no coletor de logs por SSH usando as credenciais de administrador interativo fornecidas no portal. (Se esta for a primeira vez que você faz logon no console, será necessário alterar a senha e entrar novamente após a alteração. Se você estiver usando uma sessão do terminal, poderá ser necessário reiniciá-la. )
 2.  Execute o utilitário de configuração do coletor com o token de acesso fornecido quando você criou o coletor de logs.```sudo collector_config <access token> ```
 3. Insira o domínio do console, por exemplo: ```contoso.portal.cloudappsecurity.com``` Isso está disponível na URL que você vê depois de fazer logon no portal do Cloud App Security. 
 
@@ -125,7 +125,7 @@ Na primeira vez que você fizer logon no coletor de logs e importar a configura�
 
 5.  Importe a configuração do coletor de logs do portal, da seguinte maneira:  
   
-      a.  Faça logon no coletor de logs via SSH usando as credenciais de administrador interativo fornecidas no portal.  
+      a.  Entre no coletor de logs por SSH usando as credenciais de administrador interativo fornecidas no portal.  
   
       b.  Execute o utilitário de configuração do coletor com o token de acesso fornecido no comando ```sudo collector_config \<access token>```  
      
@@ -149,13 +149,13 @@ Verifique o status do coletor na tabela **Coletor de logs** e verifique se o sta
 
 Acesse o log Governança e verifique se os logs estão sendo carregados periodicamente no portal.  
   
-Se você encontrar problemas durante a implantação, confira [Solucionando problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
+Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### <a name="optional---create-custom-continuous-reports"></a>Opcional – Criar relatórios contínuos personalizados
 
-Após ter verificado que os logs estão sendo carregados no Cloud App Security e os relatórios sendo gerados, você pode criar relatórios personalizados. Agora você pode criar relatórios de descoberta personalizados com base em grupos de usuários do Azure Active Directory. Por exemplo, se você quiser ver o uso de nuvem de seu departamento de marketing, será possível importar o grupo de marketing usando o recurso importar grupo de usuários e, em seguida, criar um relatório personalizado para este grupo. Você também pode personalizar um relatório com base na marca do endereço IP ou intervalos de endereços IP.
+Depois de verificar que os logs estão sendo carregados no Cloud App Security e os relatórios estão sendo gerados, você poderá criar relatórios personalizados. Agora você pode criar relatórios de descoberta personalizados com base em grupos de usuários do Azure Active Directory. Por exemplo, se você quiser ver o uso de nuvem de seu departamento de marketing, será possível importar o grupo de marketing usando o recurso importar grupo de usuários e, em seguida, criar um relatório personalizado para este grupo. Você também pode personalizar um relatório com base na marca do endereço IP ou intervalos de endereços IP.
 
-1. No portal do Cloud App Security, sob a engrenagem de configurações, selecione **Configurações do Cloud Discovery** e, em seguida, selecione **Gerenciar relatórios contínuos**. 
+1. No portal do Cloud App Security, na engrenagem de Configurações, selecione **Configurações do Cloud Discovery** e, em seguida, escolha **Relatórios contínuos**. 
 2. Clique no botão **Criar relatório** e preencha os campos.
 3. Em **Filtros**, você pode filtrar os dados de acordo com a fonte de dados, por [grupo de usuários importados](user-groups.md) ou por [marcas e intervalos de endereços IP](ip-tags.md). 
 
@@ -164,7 +164,7 @@ Após ter verificado que os logs estão sendo carregados no Cloud App Security e
 
 ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas 
 [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

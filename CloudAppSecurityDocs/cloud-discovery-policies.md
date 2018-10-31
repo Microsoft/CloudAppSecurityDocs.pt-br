@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,77 +13,89 @@ ms.technology: ''
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d95e99bd1702b523c9947a35465bccba178d36ec
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: a7f39372953b49f4e220c0350f8912421449b825
+ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143676"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990708"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
-    
+Você pode criar políticas de descoberta de aplicativo para alertá-lo quando novos aplicativos são detectados. O Cloud App Security também pesquisa anomalias em todos os logs do Cloud Discovery. 
+
 ## <a name="creating-an-app-discovery-policy"></a>Criando uma política de descoberta de aplicativos  
 As políticas de descoberta permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização.  
   
-1.  No console, clique em **Controlar** seguido por **Políticas**.  
+1. No console, clique em **Controlar** seguido por **Políticas**.  
   
-2.  Clique em **Criar política** e selecione a política **Descoberta de aplicativos**.  
+2. Clique em **Criar política** e selecione a política **Descoberta de aplicativos**.  
   
      ![menu da política de descoberta de aplicativos](./media/app-discovery-policy-menu.png "menu da política de descoberta de aplicativos")  
   
-3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
+3. Forneça um nome e uma descrição à sua política. Caso deseje, você poderá baseá-los em um modelo. Para obter mais informações sobre modelos de política, confira [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
-4.  Defina a **Gravidade** da política.
+4. Defina a **Gravidade** da política.
 
 5. Para definir quais aplicativos descobertos disparam essa política, adicione filtros.  
   
-6.  Você pode definir um limite para o nível de sensibilidade que a política deve ter. Depois de habilitar **Disparar uma correspondência de política se todas as seguintes situações ocorrerem no mesmo dia**, você pode definir um mínimo para o **Número de usuários**, **Número de endereços IP**, **Tráfego diário**, **Dados baixados**, **Dados carregados** e **Número de transações** que o aplicativo deve atender para corresponder à política.  
-  
-7.  Defina um **Limite diário de alertas** e selecione se o alerta será enviado como um email, uma mensagem de texto ou ambos e forneça detalhes conforme necessário. Você pode clicar em Salvar configurações de alerta para o padrão para habilitar políticas futuras para salvar essas configurações de alerta, incluindo o número de telefone e os endereços de email, como o padrão.  
-  
-8. Selecione possíveis ações de **Governança** a serem aplicadas quando um aplicativo corresponde a essa política. Ele pode marcar automaticamente políticas como **Sancionadas** ou **Não sancionadas** 
+6. Você pode definir um limite para o nível de sensibilidade que a política deve ter. Habilite **Disparar uma correspondência de política se todas as situações a seguir ocorrerem no mesmo dia**. Você pode definir os critérios que o aplicativo precisa exceder diariamente para corresponder à política. Selecione um dos seguintes critérios: 
+     - Tráfego diário
+     - Dados baixados
+     - Número de endereços IP
+     - Número de transações
+     - Número de usuários
+     - Dados carregados
 
-8.  Clique em **Criar**.  
   
-Por exemplo, se você estiver interessado em descobrir aplicativos de hospedagem arriscados em seu ambiente de nuvem, defina sua política da seguinte forma:  
+7. Defina um **Limite de alerta diário** em **Alertas**. Selecione se o alerta será enviado como um email e/ou como uma mensagem de texto. Em seguida, forneça números de telefone e endereços de email, conforme o necessário.
+     - Clicar em **Salvar configurações de alerta como o padrão da organização** permite que políticas futuras usem a configuração.
+     - Se houver uma configuração padrão, você poderá selecionar **Usar as configurações padrão da organização**.
   
-Defina os filtros de política para descobrir todos os serviços encontrados na categoria **serviços de hospedagem** e que tenham uma pontuação baixa, indicando que são arriscados.   
-   
-Na parte inferior, defina os limites que devem disparar um alerta para um determinado aplicativo descoberto. Apenas se mais de 100 usuários no ambiente usaram o aplicativo e apenas se eles baixaram uma determinada quantidade de dados do serviço.   
+8. Selecione ações de **Governança** a serem aplicadas quando um aplicativo corresponder a essa política. Elas podem marcar as políticas como **Sancionadas**, **Não Sancionadas** ou com uma marca personalizada. 
+
+9. Clique em **Criar**.  
+  
+Por exemplo, se você estiver interessado em descobrir aplicativos de hospedagem arriscados encontrados em seu ambiente de nuvem, defina sua política da seguinte maneira:  
+  
+Defina os filtros de política para descobrir todos os serviços encontrados na categoria **serviços de hospedagem** que têm uma pontuação de risco igual a 1, indicando que eles são altamente arriscados.
+
+ Defina os limites que devem disparar um alerta para um determinado aplicativo descoberto na parte inferior. Por exemplo, alertar apenas se mais de 100 usuários no ambiente usaram o aplicativo e se eles baixaram uma determinada quantidade de dados do serviço.
 Além disso, você pode definir o limite de alertas diários que deseja receber.  
   
 ![exemplo de política de descoberta de aplicativos](./media/app-discovery-policy-example.png "exemplo de política de descoberta de aplicativos")  
   
-## <a name="cloud-discovery-anomaly-detection"></a>Detecção de anomalias do Cloud Discovery  
-O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anomalias. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico. Por padrão, a política de detecção de anomalias está habilitada, portanto, não é necessário configurar uma nova política para ela funcionar, mas você pode ajustar sobre quais tipos de anomalias deseja ser alertado na política padrão.  
+## <a name="cloud-discovery-anomaly-detection"></a>Detecção de anomalias do Cloud Discovery
+
+O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anomalias. Por exemplo, quando um usuário, que nunca usou o Dropbox antes, de repente carrega 600 GB nele ou quando há muito mais transações que o normal em um aplicativo específico. A política de detecção de anomalias é habilitada por padrão. Não é necessário configurar uma nova política para que ela funcione. No entanto, você pode ajustar sobre quais tipos de anomalias deseja ser alertado na política padrão.  
   
-1.  No console, clique em **Controlar** seguido por **Políticas**.  
+1. No console, clique em **Controlar** seguido por **Políticas**.  
   
-2.  Clique em **Criar política** e selecione **Política de detecção de anomalias de Cloud Discovery**.  
+2. Clique em **Criar política** e selecione **Política de detecção de anomalias de Cloud Discovery**.  
   
      ![menu da política de descoberta de anomalias do cloud discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu da política de descoberta de anomalias do cloud discovery")  
   
-3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
+3. Forneça um nome e uma descrição à sua política. Caso deseje, você poderá baseá-los em um modelo, para obter mais informações sobre modelos de política, confira [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
-4.  Para definir quais aplicativos descobertos disparam essa política, clique em **Adicionar filtros**.  
+4. Para definir quais aplicativos descobertos disparam essa política, clique em **Adicionar filtros**.  
   
-     Os filtros são escolhidos do lado esquerdo da página do pop-up de filtro. É possível filtrar por nome do serviço, domínio, fator de risco, pontuação de risco e categoria. O lado direito da página mostra os resultados para os filtros escolhidos no catálogo de serviço atual. Depois de escolher os filtros, salve e verifique se as marcas apropriadas aparecem na caixa de filtros.  
+     Os filtros são escolhidos em listas suspensas. Para adicionar filtros, clique no botão de adição. Para remover um filtro, clique em 'X'. 
   
-5.  Em **Aplicar a**, escola se isso se aplica a **Todas as exibições de dados** ou a **Exibições de dados específicas** e se isso se aplica a **Usuários**, **Endereços IP** ou ambos.  
+5. Em **Aplicar a** escolha se essa política aplica a **Todos os relatórios contínuos** ou **Relatórios contínuos específicos**. Se a política se aplica a **Usuários** e/ou a **Endereços IP**.  
   
-6.  Selecione as datas durante as quais a atividade anômala ocorreu para disparar o alerta em **Gerar alertas apenas para atividades suspeitas que ocorrerem após a data.**  
+6. Selecione as datas durante as quais a atividade anômala ocorreu para disparar o alerta em **Gerar alertas apenas para atividades suspeitas que ocorrerem após a data.**  
   
-7.  Em **Alertas**, você pode definir a sensibilidade de detecção de anomalias de baixa a alta para configurar a frequência de alertas que você deseja receber.  
-Defina um **Limite diário de alertas** e selecione se o alerta será enviado como um email, uma mensagem de texto ou ambos e forneça detalhes conforme necessário. Você pode clicar em Salvar configurações de alerta para o padrão para habilitar políticas futuras para salvar essas configurações de alerta, incluindo o número de telefone e os endereços de email, como o padrão. Você também pode clicar em **Usar padrões da organização** para definir essas configurações de acordo com o padrão para sua organização.  
+7. Defina um **Limite de alerta diário** em **Alertas**. Selecione se o alerta será enviado como um email e/ou como uma mensagem de texto. Em seguida, forneça números de telefone e endereços de email, conforme o necessário.
+     - Clicar em **Salvar configurações de alerta como o padrão da organização** permite que políticas futuras usem a configuração.
+     - Se houver uma configuração padrão, você poderá selecionar **Usar as configurações padrão da organização**.
   
-9. Clique em **Criar**.  
+8. Clique em **Criar**.  
   
 ![nova política de descoberta de anomalias](./media/new-discovery-anomaly-policy.png "nova política de descoberta de anomalias")  
   
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas 
 [Políticas de atividade de usuário](user-activity-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
