@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/5/2018
+ms.date: 11/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64796d808134b20164761d13f26cebd8e544bd27
-ms.sourcegitcommit: 96ff394dd75c98a783ac196f312048a963717155
+ms.openlocfilehash: 3e0a56c9c174765660dfd19cad0c3cced1d74cd7
+ms.sourcegitcommit: 6069639ae538cc23831bbcaf61f18d92c6a5117d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48584485"
+ms.lasthandoff: 11/04/2018
+ms.locfileid: "50982064"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -51,8 +51,6 @@ Para acessar o portal do Cloud App Security, adicione a **porta de saída 443** 
     cdn.cloudappsecurity.com
     https://adaproddiscovery.azureedge.net 
     *.s-microsoft.com
-    cdn.cloudappsecurity.com
-    cloudappsecurity-rs.azureedge.net
     *.msecnd.net
     dev.virtualearth.net
     *.cloudappsecurity.com
