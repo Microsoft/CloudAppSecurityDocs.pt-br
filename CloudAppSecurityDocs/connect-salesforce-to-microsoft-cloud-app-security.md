@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 52b24a6aa80ee3283a5f2f6b96a3b1b51ce07d8b
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 1a2830cb7813eb5b86fc56751f628b6b9d5a630e
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143931"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217298"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -27,7 +27,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
 ## <a name="how-to-connect-salesforce-to-cloud-app-security"></a>Como conectar o Salesforce ao Cloud App Security  
   
-1.  É recomendável ter uma conta de administrador de serviço dedicada para o Cloud App Security.  
+1.  É recomendável ter uma conta do administrador de serviço dedicada para o Cloud App Security.  
   
 2.  Confirme se a API REST está habilitada no Salesforce.  
   
@@ -39,14 +39,14 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
      Verifique se sua edição tem a API REST disponível e habilitada da seguinte maneira:  
   
-    -   Faça logon em sua conta do Salesforce e vá para a página **Configuração**.  
+    -   Entre em sua conta do Salesforce e acesse a página **Configuração**.  
   
     -   Em **Gerenciar Usuários**, vá para a página **Perfis de Usuário**.  
   
          ![gerenciar perfis de usuário do salesforce](./media/salesforce-manageusers-profiles.png "gerenciar perfis de usuário do salesforce")  
   
     -   Crie um novo perfil clicando em **Novo**. 
-    - Escolha o perfil que você acabou de criar para implantar o Cloud App Security e clique em **Editar**. Este é o perfil a ser usado para a conta de serviço do Cloud App Security para configurar o Conector de aplicativo.  
+    - Escolha o perfil que você acabou de criar para implantar o Cloud App Security e clique em **Editar**.  este é o perfil a ser usado para a conta de serviço do Cloud App Security para configurar o Conector de aplicativo.  
   
          ![editar perfil do salesforce](./media/salesforce-edit-profile.png "editar perfil do salesforce")  
   
@@ -56,7 +56,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
         - **Gerenciar Conteúdo CRM do Salesforce**
         - **Gerenciar usuários**
         
-        Se eles não estiverem selecionados, talvez seja necessário contatar o Salesforce para adicioná-los a sua conta.  
+        Se essas caixas de seleção não estiverem selecionadas, poderá ser necessário contatar a Salesforce para adicioná-las à sua conta.  
              
 3.  Se sua organização tiver **Salesforce CRM Content** habilitado, certifique-se de que a conta administrativa atual o tenha habilitado também.  
   
@@ -72,7 +72,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
     4.  Certifique-se de que a caixa de seleção **Usuário do Salesforce CRM Content** esteja marcada.  
   
-         Se não estiver selecionada, clique em **Editar** e, em seguida, marque a caixa de seleção.  
+         Se ela não estiver selecionada, clique em **Editar** e, em seguida, marque a caixa de seleção.  
   
          ![usuário do conteúdo crm do salesforce](./media/salesforce-crm-content-user.png "usuário do conteúdo crm do salesforce")  
   
@@ -86,13 +86,13 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
 6.  Na página de configurações do Salesforce, na guia API, clique em **Seguir este link**, dependendo de qual instância que você deseja instalar.  
   
-7.  Isso abre a página de logon do Salesforce. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Salesforce da sua equipe.  
+7.  Isso abre a página de entrada do Salesforce. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Salesforce da sua equipe.  
   
-     ![logon do salesforce](./media/salesforce-logon.png "logon do salesforce")  
+     ![entrada do salesforce](./media/salesforce-logon.png "logon do salesforce")  
   
 8.  O Salesforce perguntará se você deseja permitir que o Cloud App Security acesse o log de atividades e as informações da sua equipe e realize quaisquer atividades como qualquer membro da equipe. Para continuar, clique em **Permitir**.  
   
-9. Neste ponto, você receberá uma notificação de êxito ou falha em relação à implementação. O Cloud App Security agora está autorizado no Salesforce.com.  
+9. Neste ponto, você receberá uma notificação de êxito ou de falha em relação à implantação. O Cloud App Security agora está autorizado no Salesforce.com.  
   
 10. De volta ao console do Cloud App Security, você deverá ver a mensagem indicando que o Salesforce foi conectado com êxito.  
   
@@ -110,12 +110,12 @@ Após conectar o Salesforce, você receberá Eventos da seguinte maneira: gatilh
 
 Eventos do Salesforce são processados pelo Cloud App Security da seguinte maneira: 
   
-- Registro em eventos a cada 15 minutos
-- Definição de trilha de auditoria a cada 15 minutos
+- Eventos de entrada a cada 15 minutos
+- Trilhas de auditoria de instalação a cada 15 minutos
 - Os logs do Salesforce rastreiam a atividade de uso por um período de 24 horas, de 0:00 a 23:59, UTC. Os eventos no Salesforce geram dados de log em tempo real. No entanto, os arquivos de log são gerados pelo Salesforce no dia após um evento ocorrer, fora do horário de pico. Portanto, os dados do arquivo de log ficam indisponíveis por pelo menos um dia após um evento. Para saber mais sobre os eventos do Salesforce, veja [Usando o monitoramento de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

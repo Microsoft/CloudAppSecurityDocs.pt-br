@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/15/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c850a50458b3322f65087ceff105fc916ffdc83a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: f246cff6e48d07f52d0b40d37599e5dcd89d7d2e
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142707"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217196"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -51,7 +51,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
          |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        Em seguida, clique em **Salvar**. Para obter informações sobre como ver a qual data center do Cloud App Security center você está conectado, consulte [Tokens de API](api-tokens.md). 
+        Em seguida, clique em **Salvar**. Para obter informações sobre como ver a qual data center do Cloud App Security você está conectado, consulte [Tokens de API](api-tokens.md). 
   
          ![Configurações de exceção no Box](./media/box-settings-except-for.png "box settings except for")  
   
@@ -66,7 +66,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
 4.  No pop-up **Configurações do Box**, clique em **Seguir esse link**.  
   
-5.  A página de logon do Box é aberta. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Box da sua equipe.  
+5.  A página de entrada do Box é aberta. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Box da sua equipe.  
   
 6.  O Box pergunta se você deseja permitir que o Cloud App Security acesse o log de atividades e as informações da sua equipe e realize atividades como qualquer membro da equipe. Para continuar, clique em **Permitir**.  
   
@@ -82,7 +82,7 @@ Depois de conectar o Box, você receberá eventos por 60 dias antes da conexão.
   
 Após conectar o Box, o Cloud App Security realizará uma verificação completa. Dependendo de quantos arquivos e usuários você tiver, a verificação completa poderá levar algum tempo. Para habilitar a verificação quase em tempo real, os arquivos nos quais as atividades são detectadas são movidos para o início da fila de verificação. Por exemplo, um arquivo editado, atualizado ou compartilhado é verificado imediatamente, em vez de aguardar o processo de verificação normal. A verificação quase em tempo real não se aplica a arquivos que não são modificados por natureza. Por exemplo, os arquivos que são exibidos, visualizados, impressos ou exportados são verificados como parte da verificação agendada regularmente.
   
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas 
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

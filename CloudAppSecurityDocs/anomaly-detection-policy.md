@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc5249ae183da37293920aade12346aaca46eb32
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349607"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745724"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -78,6 +78,9 @@ Essa detecção se beneficia da capacidade do Cloud App Security de monitorar o 
 **Encaminhamento de caixa de entrada suspeito**
 
 - Essa detecção procura regras de encaminhamento de email suspeito, por exemplo, se um usuário criou uma regra de caixa de entrada que encaminha uma cópia de todos os emails para um endereço externo. 
+ 
+> [!NOTE]
+> O Cloud App Security só alerta você para cada regra de encaminhamento identificada como suspeita com base no comportamento típico do usuário. 
 
 **Atividades incomuns (por usuário)**<br>
 Essas detecções identificam os usuários que executam:
@@ -92,6 +95,13 @@ Essas políticas buscam atividades em uma única sessão em relação à linha d
 
 **Várias tentativas de logon com falha**
 - A detecção identifica usuários que realizaram várias tentativas de logon com falha em uma única sessão em relação à linha de base aprendida, o que poderia indicar uma tentativa de violação. 
+
+**Extração de dados para aplicativos não sancionados**
+- Essa política é habilitada automaticamente para alertar quando um usuário ou endereço IP usa um aplicativo que não está aprovado para executar uma atividade parecida com uma tentativa de extrair informações de sua organização.
+
+**Várias atividades de exclusão de VM**
+- Esta política identifica seu ambiente e dispara alertas quando os usuários excluem várias VMs em uma única sessão em relação à linha de base em sua organização. Isso pode indicar uma tentativa de violação.
+
 
 ## Habilitar governança automatizada<a name="adp-automated-gov"></a>
 

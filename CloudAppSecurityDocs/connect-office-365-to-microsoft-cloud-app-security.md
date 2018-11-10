@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1960d9801ad24b880bd2f4eaad3947b26d87437e
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: ef40ee52ca592de3feef2998ea6b753436c4d0fa
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144458"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217247"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -27,7 +27,7 @@ ms.locfileid: "44144458"
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar o Office 365 ao Microsoft Cloud App Security
 Esta seção fornece instruções para conectar o Microsoft Cloud App Security à sua conta do Microsoft Office 365 existente usando a API do conector de aplicativos.  
   
-O Cloud App Security dá suporte à Plataforma Dedicada herdada do Office 365 além das ofertas mais recentes de serviços do Office 365 (conhecidos como a família da versão vNext do Office 365).  O Cloud App Security não dá suporte ao Microsoft Business Productivity Online Standard Suite Herdado. 
+O Cloud App Security dá suporte à Plataforma Dedicada herdada do Office 365 além das ofertas mais recentes de serviços do Office 365 (conhecidos como a família da versão vNext do Office 365).  O Cloud App Security não é compatível com o Microsoft Business Productivity Online Standard Suite Herdado. 
 
 > [!NOTE]
 > Em alguns casos, uma versão do serviço vNext difere um pouco nos níveis administrativos e de gerenciamento da oferta padrão do Office 365.
@@ -38,7 +38,7 @@ O Cloud App Security oferece suporte aos seguintes aplicativos do Office 365:
 - SharePoint
 - OneDrive
 - Equipes (exibido somente depois que as Equipes forem detectadas no portal)
-- PowerBI (exibido somente depois que as atividades do PowerBI forem detectadas no portal e exige que você ative a auditoria)
+- Power BI (exibido apenas depois que as atividades do Power BI são detectadas no portal e requer que você ative a auditoria)
 - Exchange (exibido somente depois que as atividades do Exchange forem detectadas no portal e exige que você ative a auditoria)
 
  
@@ -65,7 +65,7 @@ O Cloud App Security oferece suporte aos seguintes aplicativos do Office 365:
 > [!NOTE] 
 > Depois de conectar o Office 365, você verá os dados de uma semana atrás, incluindo quaisquer aplicativos de terceiros conectados ao Office 365 que recebem APIs. Para aplicativos de terceiros que não recebiam APIs antes da conexão, você verá os eventos a partir do momento que conectar o Office 365, pois o Cloud App Security ativa todas as APIs desativadas por padrão.
 
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

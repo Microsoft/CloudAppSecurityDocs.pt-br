@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 347a0fe95fc27212e76f294047c408e2b6aaa36d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: b3e6e9a25c419aa9453e4771b477c068b9ad902c
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143693"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217230"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -27,7 +27,7 @@ ms.locfileid: "44143693"
 Esta seção fornece instruções para conectar o Microsoft Cloud App Security à sua conta do Dropbox existente usando as APIs do conector.  
  
  
-Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar entrar, o Cloud App Security registra esses usuários como usuários não autenticados. Se você encontrar usuários não autenticados do Dropbox, isso poderá indicar usuários que não são da sua organização ou que podem ser usuários reconhecido da organização que não entraram.
+Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar entrar, o Cloud App Security registra esses usuários como usuários não autenticados. Se encontrar usuários não autenticados do Dropbox, isso poderá indicar usuários que não são da sua organização ou eles poderão ser usuários reconhecidos de dentro da sua organização que não entraram.
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Como conectar o Dropbox ao Cloud App Security  
   
@@ -43,7 +43,7 @@ Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar en
   
 5.  Clique em **Seguir este link**.  
   
-     A página de logon do Dropbox é aberta. Insira suas credenciais para permitir que o Cloud App Security acesse a instância do Dropbox da sua equipe.  
+     A página de entrada do Dropbox é aberta. Insira suas credenciais para permitir que o Cloud App Security acesse a instância do Dropbox da sua equipe.  
   
 6.  O Dropbox pergunta se você deseja permitir que o Cloud App Security acesse o log de atividades e as informações da sua equipe e realize atividades como qualquer membro da equipe. Para continuar, clique em **Permitir**.  
   
@@ -58,7 +58,7 @@ Depois de conectar o Dropbox, você receberá eventos por 60 dias antes da conex
 > [!NOTE] 
 > Todos os eventos do Dropbox de adição de arquivo são exibidos no Cloud App Security como Carregar arquivo para alinhamento com todos os outros aplicativos conectados ao Cloud App Security. 
  
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas 
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

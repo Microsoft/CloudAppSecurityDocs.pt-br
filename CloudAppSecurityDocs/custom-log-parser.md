@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9a1bd913c139b7af83aa210bc185c83a5b4bd0a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 3d70d71364157d6e3eca2a97574a2cbd82020e78
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143235"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217179"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="use-a-custom-log-parser"></a>Usar o analisador de log personalizado
-O Cloud App Security permite que você configure um analisador personalizado para corresponder e processar o formato de seus logs, de modo que eles possam ser usados para a Descoberta de Nuvem, mesmo se forem de um firewall ou dispositivo sem suporte explícito do Cloud App Security. 
+O Cloud App Security permite que você configure um analisador personalizado para corresponder e processar o formato de seus logs, de modo que eles possam ser usados para o Cloud Discovery. Normalmente, você usaria um analisador personalizado se o firewall ou o dispositivo não fosse explicitamente compatível com o Cloud App Security. 
 
 O analisador personalizado permite que você use os logs de firewalls sem suporte seguindo esse processo. 
 
@@ -43,7 +43,7 @@ Para configurar um analisador personalizado de CSV:
 
 4. Colete os logs do firewall e do proxy por meio dos quais os usuários da sua organização acessam a Internet. Certifique-se de coletar logs durante os períodos de tráfego de pico que representam a atividade de todos os usuários na sua organização. 
 
-5. Abra os logs que você deseja processar em um editor de texto e examine o formato deles, certificando-se de que os nomes das colunas no log correspondam aos campos na tela **Formato de log personalizado**.
+5. Abra os logs que você deseja processar em um editor de texto. Examine o formato deles, certificando-se de que os nomes das colunas no log correspondam aos campos na tela **Formato de log personalizado**.
 
    ![analisador de log personalizado](./media/log-data.png) 
 
@@ -67,10 +67,10 @@ Para configurar um analisador personalizado de CSV:
 11. Depois de carregar os arquivos de log, levará algum tempo para que eles possam ser analisados e examinados.  
     Após o processamento dos arquivos de log ser concluído, você receberá um email para avisar que ele está pronto. 
   
-12. Uma faixa de notificação aparecerá na barra de status na parte superior do portal para atualizar o status de processamento dos arquivos de log.  
-    ![barra de menus do arquivo de log de processamento](./media/processing-log-file-menu-bar.png) 
+12. Uma faixa de notificação será exibida na barra de status na parte superior do **painel do Cloud Discovery**. A faixa atualiza você sobre o status de processamento dos arquivos de log.  
+    ![processando a barra de menus do arquivo de log](./media/processing-log-file-menu-bar.png) 
    
-13. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, você pode exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.   
+13. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, é possível exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.   
   
      ![Guia Configurações de descoberta](./media/discovery-settings-tab.png)
 14. Em seguia, selecione **Gerenciar relatórios de instantâneo** e seu relatório de instantâneo.
@@ -83,7 +83,7 @@ Para configurar um analisador personalizado de CSV:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="next-steps"></a>Próximas etapas
  
 [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 

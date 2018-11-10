@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,27 +13,27 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b6d426b1b59dc8f62322d404b1cd18e829611ba6
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e67ba01b00af1f8af9bdd5e282f0fac74afa0183
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143965"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217332"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="control"></a>Control
-Você pode aplicar ações de governança aos arquivos de usuários em seu ambiente de nuvem. Depois investigar completamente e aprender sobre sua nuvem, você pode usar ações de governança para ajudar a proteger sua organização.  
+Você pode aplicar ações de governança aos arquivos de usuários em seu ambiente de nuvem. Depois investigar completamente e aprender sobre sua nuvem, será possível usar ações de governança para ajudar a proteger sua organização.  
 
 ## <a name="use-policies-to-assess-risk"></a>Usar políticas para avaliar os riscos  
 Depois que você examinar os alertas abertos, vá para o Centro de políticas para examinar as violações de política que não dispararam alertas.  
 
 -   No painel do Cloud App Security, clique em **Controle** e em **Políticas**.  
 
--   Selecione uma política específica para ver a lista **Em violação agora** das correspondências de política que não dispararam alertas.  
+-   Selecione uma política específica para ver a lista **Correspondência agora** das correspondências de política que não dispararam alertas.  
 
--   Clique nas violações, uma de cada vez, e decida o que fazer para cada uma. Consulte as seguintes figuras, para obter mais informações sobre as ações de governança.  
+-   Clique nas violações, uma de cada vez, e decida o que fazer para cada uma. Para obter mais informações sobre as ações de governança, consulte as figuras a seguir.  
 
      Se a política estiver definida para encontrar violações de conformidade e alguém salvar os números de cartão de crédito em arquivos no OneDrive, você terá uma correspondência na política.  
 
@@ -49,7 +49,7 @@ Depois que você examinar os alertas abertos, vá para o Centro de políticas pa
 
      Você pode clicar nas **Correspondências** para ver os números de cartão de crédito reais.  
 
-     ![Ccn de correspondências de conteúdo](./media/content-matches-ccn.png "ccn de correspondências de conteúdo")  
+     ![O conteúdo corresponde aos números do cartão de crédito](./media/content-matches-ccn.png "o conteúdo corresponde aos números do cartão de crédito")  
 
 ## <a name="apply-governance-actions"></a>Aplicar ações de governança  
 Você pode aplicar ações de governança de dentro de políticas, de dentro de alertas e do log **Arquivos**.  
@@ -78,13 +78,13 @@ O Cloud App Security ajuda a distribuir suas migrações, permitindo que você s
 ### <a name="migrate-your-users-to-a-new-app"></a>Migrar seus usuários para um novo aplicativo  
 Considere este cenário: você adquiriu recentemente o Office 365 e deseja que todos os usuários em sua organização parem de usar todos os outros aplicativos de armazenamento em nuvem e comecem a usar o OneDrive. Aqui está o que você talvez queira fazer:  
 
-1. Vá para seu **Cloud Discovery Dashboard (Painel do Cloud Discovery)** e em **Categorias**, filtre os aplicativos por **Armazenamento em Nuvem**. Em seguida, classifique os resultados por **Usuários** ou **Endereços IP** e verifique qual aplicativo é mais popular.  
+1. Vá para seu **Painel do Cloud Discovery** e, em **Categorias de aplicativos**, filtre os aplicativos por **Armazenamento em Nuvem**. Classifique os resultados por **Usuários** ou **Endereços IP** e verifique qual aplicativo é mais popular.  
 
 2. Você pode ver quais usuários estão usando outros aplicativos. Também é possível analisar detalhadamente esses aplicativos e notificar os usuários que você deseja que elas migrem para o OneDrive da seguinte maneira:
 
-   1.  No seu **Painel do Cloud Discovery**, clique em **Dropbox** e, em seguida, selecione a guia **Endereço IP** ou **Usuários**.  
+   1. No seu **Painel do Cloud Discovery**, clique em **Dropbox** e, em seguida, selecione a guia **Endereço IP** ou **Usuários**.  
 
-   2.  Escolha a seta ![Ícone de seta](./media/arrow-icon.png "ícone de seta") e selecione **Exportar**.  
+   2. Escolha o ícone de seta **Exportar** ![ícone de seta](./media/arrow-icon.png "ícone de seta") e escolha as opções de exportação.  
 
 ### <a name="find-more-secure-alternatives"></a>Encontrar alternativas mais seguras  
 O catálogo de serviços do Cloud App Security pode ajudá-lo a encontrar alternativas que funcionem para sua organização, em vez de aplicativos arriscados que seus usuários podem estar utilizando.  
@@ -99,7 +99,7 @@ Considere este cenário: você está pensando em comprar uma ferramenta de produ
 
 4.   Se decidir que deseja comprar uma licença empresarial para toda a organização, pode ser útil também olhar a coluna **usuários**. Lá, é possível ver o que é mais popular entre os usuários, consultar se é confiável e conferir quais recursos de segurança existem antes de tomar a decisão.  
 
-## <a name="see-also"></a>Consulte também  
+## <a name="next-steps"></a>Próximas etapas
 Para saber como usar e configurar políticas para controlar o uso do aplicativo de nuvem, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).   
 
 Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier](https://premier.microsoft.com/).  

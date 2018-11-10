@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c547241190d4b51731f3c8b063624135d243d5ce
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d6c3e680ec17d8a62977e4c25af5b9163244afea
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143982"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217281"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -95,7 +95,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
      ![CloudTrail do AWS](./media/aws-cloudtrail.png "Cloudtrail do AWS")  
   
-    Caso ainda não tenha usado o CloudTrail antes, clique em **Introdução** e configure-o ao fornecer um nome e selecionando o bucket S3 adequado e clique em **Ativar**. Para verificar se você tem uma cobertura completa, defina **Aplicar a todas as regiões** como **Sim**.
+    Caso ainda não tenha usado o CloudTrail antes, clique em **Introdução** e configure-o fornecendo um nome e selecionando o bucket S3 adequado e clique em **Ativar**. Para verificar se você tem uma cobertura completa, defina **Aplicar a todas as regiões** como **Sim**.
   
        ![Ligar CloudTrail no AWS](./media/aws-turnon-cloudtrail.png "Ligar CloudTrail no AWS")
   
@@ -105,7 +105,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
 11. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.  
   
-12. Na página **Conectores de aplicativos**, clique no sinal de mais antes de **AWS**.  
+12. Na página **Conectores de aplicativos**, clique no sinal de mais antes de **Amazon Web Services**.  
   
      ![Conectar ao AWS](./media/connect-aws.png "connect AWS")  
   
@@ -118,7 +118,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
 Depois de conectar o AWS, você receberá eventos por sete dias antes da conexão. Se você acabou de habilitar o CloudTrail, nesse caso, você receberá eventos a partir do momento em que habilitou o CloudTrail.
   
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 84db548efef74a84e2b97419eb6f5d213512b6c7
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 2c82311bacf965d12e7f23aa4769862aba6d3207
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881900"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745741"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-133-134-135"></a>Cloud App Security versão 133, 134, 135
+
+Lançado em outubro de 2018
+
+**Novas políticas de detecção de anomalias estão sendo gradualmente distribuídas**
+- A nova política de Extração de dados para aplicativos não sancionados é habilitada automaticamente para alertá-lo quando um usuário ou endereço IP usa um aplicativo não aprovado para executar uma atividade que se parece com uma tentativa de remover informações de sua organização.
+- A nova política de Atividades de exclusão múltipla de VM traça o perfil do seu ambiente e dispara alertas quando os usuários excluem várias VMs em uma única sessão em relação à linha de base em sua organização.
+
+**Serviço de classificação de dados disponível para a Ásia-Pacífico**
+- A inspeção de conteúdo do serviço de classificação de dados agora está disponível para clientes da Ásia-Pacífico. Para obter uma lista completa de suporte regional, veja [Integração de Serviços de Classificação de Dados da Microsoft](dcs-inspection.md).
+
+**Suporte do Cloud Discovery para i-Filter**
+-  O recurso Cloud App Security do Cloud Discovery agora tem suporte aprimorado para o analisador de syslog do i-Filter.
 
 ## <a name="cloud-app-security-release-132"></a>Cloud App Security versão 132
 

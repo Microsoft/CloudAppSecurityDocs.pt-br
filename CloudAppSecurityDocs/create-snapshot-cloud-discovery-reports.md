@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,27 +13,27 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1072196cb6a1ab8781f1bde5b2b58a094d6d3afe
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 82193845bffa1f88f69eef035dbcc20dbb2da40b
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881917"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217383"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
-É importante carregar um log manualmente e permitir que o Microsoft Cloud App Security analise-o antes de tentar usar o coletor de logs automático. Para saber mais sobre como o coletor de logs funciona e o formato esperado de log, confira [Usando logs de tráfego para Cloud Discovery](#log-format).
+É importante carregar um log manualmente e permitir que o Microsoft Cloud App Security o analise antes de tentar usar o coletor de logs automático. Para saber mais sobre como o coletor de logs funciona e o formato esperado de log, confira [Usando logs de tráfego para Cloud Discovery](#log-format).
 
-Se você ainda não tiver um log e desejar ver um exemplo da aparência do seu log, siga o procedimento abaixo e baixe um arquivo de log de exemplo para ver qual deve ser a aparência do seu log.
+Se você ainda não tiver um log e desejar ver um exemplo de como deverá ser a aparência de seu log, baixe um arquivo de log de exemplo. Siga o procedimento abaixo para ver qual deverá ser a aparência do seu log.
 
 
 Para criar um relatório de instantâneo:
   
 1. Colete arquivos de log do firewall e do proxy por meio dos quais os usuários da sua organização acessam a Internet. Certifique-se de coletar logs durante os períodos de tráfego de pico que representam a atividade de todos os usuários na sua organização.  
   
-2. No portal do Cloud App Security, clique em **Descobrir** e **Criar novo relatório de instantâneo**.  
+2. No portal do Cloud App Security, clique em **Descobrir** e, em seguida, **Criar relatório de instantâneos**.  
   
    ![Criar novo relatório de instantâneo](./media/create-new-snapshot-report.png)
      
@@ -43,7 +43,7 @@ Para criar um relatório de instantâneo:
 
 4. Selecione a **Fonte de dados** da qual você deseja carregar os arquivos de log.  
   
-5. Verifique o formato do seu log para certificar-se de que ele está formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e Verificar** e, em seguida, clique em **Baixar Log de Exemplo**. Em seguida, compare seu log com o exemplo fornecido para verificar se ele é compatível. 
+5. Verifique o formato do seu log para certificar-se de que ele foi formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e verificar** e, em seguida, **Baixar log de exemplo**. Compare seu log com o exemplo fornecido para verificar se ele é compatível. 
 
    ![Verifique o formato do seu log](./media/cloud-discovery-snapshot-verify.png)  
 
@@ -61,19 +61,19 @@ Para criar um relatório de instantâneo:
 9. Depois de carregar os arquivos de log, levará algum tempo para que eles possam ser analisados e examinados.  
    Após o processamento dos arquivos de log ser concluído, você receberá um email para avisar que ele está pronto. 
   
-10. Uma faixa de notificação aparecerá na barra de status na parte superior do portal para atualizar o status de processamento dos arquivos de log.  
-    ![barra de menus do arquivo de log de processamento](./media/processing-log-file-menu-bar.png) 
+10. Uma faixa de notificação será exibida na barra de status na parte superior do **painel do Cloud Discovery**. A faixa atualiza você sobre o status de processamento dos arquivos de log.  
+    ![processando a barra de menus do arquivo de log](./media/processing-log-file-menu-bar.png) 
    
-11. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, você pode exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.   
+11. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, é possível exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.   
   
      ![Guia Configurações de descoberta](./media/discovery-settings-tab.png)
 12. Em seguia, selecione **Relatórios de instantâneo** e seu relatório de instantâneo.
  
-![gerenciamento de relatório de instantâneo](./media/snapshot-report-managment.png)
+     ![gerenciamento de relatório de instantâneo](./media/snapshot-report-managment.png)
 
   
 ## Usar os logs de tráfego para Cloud Discovery <a name="log-format"></a>
-O Cloud Discovery utiliza os dados em seus logs de tráfego. Quanto mais detalhado o log, melhor é a visibilidade obtida. O Cloud Discovery requer dados de tráfego da Web com os seguintes atributos:
+O Cloud Discovery usa os dados em seus logs de tráfego. Quanto mais detalhado o log, melhor é a visibilidade obtida. O Cloud Discovery requer dados de tráfego da Web com os seguintes atributos:
 - Data da transação
 - IP de Origem
 - Usuário de origem ‑ altamente recomendado
@@ -83,16 +83,16 @@ O Cloud Discovery utiliza os dados em seus logs de tráfego. Quanto mais detalha
 - Quantidade de dados carregados ou baixados (fornece informações sobre os padrões de uso dos aplicativos de nuvem)
 - Ação executada (permitida/bloqueada)
 
-O Cloud Discovery não pode mostrar ou analisar atributos que não estão incluídos em seus logs.
-Por exemplo, o formato de log padrão do **Cisco ASA Firewall** não contém o **Número de bytes carregados por transação**, **Username** nem a **URL de destino** (somente o IP de destino).
+O Cloud Discovery não pode mostrar nem analisar atributos que não estão incluídos em seus logs.
+Por exemplo, o formato de log padrão do **Cisco ASA Firewall** não tem o **número de bytes carregados por transação**, **Nome de usuário** nem a **URL de destino** (somente o IP de destino).
 Portanto, esses atributos não serão exibidos nos dados do Cloud Discovery para esses logs e a visibilidade sobre os aplicativos de nuvem será limitada. Para firewalls Cisco ASA, é necessário definir o nível de informações para 6. 
 
 
-Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego devem atender às seguintes condições:
-1.  A fonte de dados tem suporte (consulte a lista abaixo).
-2.  O formato de log corresponde ao formato padrão esperado (isso será verificado após o upload pela Ferramenta de log).
-3.  Os eventos têm menos de 90 dias.
-4.  O arquivo de log é válido e inclui informações de tráfego de saída.
+Para gerar com êxito um relatório do Cloud Discovery, seus logs de tráfego devem atender às seguintes condições:
+1. A fonte de dados tem suporte (consulte a lista abaixo).
+2. O formato de log corresponde ao formato padrão esperado (formato verificado após o upload da Ferramenta de log).
+3. Os eventos têm menos de 90 dias.
+4. O arquivo de log é válido e inclui informações de tráfego de saída.
 
 
 
@@ -101,7 +101,7 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 - Barracuda - Firewall de aplicativo Web (W3C)
 - Blue Coat Proxy SG – Log de acesso (W3C)
 - Check Point
-- Firewall Cisco ASA (Para firewalls Cisco ASA, é necessário definir o nível de informações para 6)
+- Firewall Cisco ASA (Para firewalls Cisco ASA, é necessário definir o nível de informações como 6)
 - Cisco ASA com FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
@@ -128,7 +128,7 @@ Para gerar um relatório do Cloud Discovery com êxito, os logs de tráfego deve
 > [!NOTE]
 > O Cloud Discovery oferece suporte a endereços IPv4 e IPv6.
 
-Se seu log não tiver suporte, selecione **Outro** na **Fonte de dados** e especifique o dispositivo e o log que você está tentando carregar. O log será analisado pela equipe de analistas do Cloud App Security e você será notificado se o suporte para o tipo de log for adicionado. Como alternativa, você pode definir um analisador personalizado que corresponda ao seu formato. Para saber mais, confira [Usar analisador de log personalizado](custom-log-parser.md).
+Se não houver suporte para seu log, selecione **Outro** como a **Fonte de dados** e especifique o dispositivo e o log que você está tentando carregar. O log será examinado pela equipe de analista de nuvem do Cloud App Security e você será notificado se for adicionado suporte para seu tipo de log. Como alternativa, você pode definir um analisador personalizado que corresponda ao seu formato. Para saber mais, confira [Usar analisador de log personalizado](custom-log-parser.md).
 
 
 Atributos de dados (de acordo com a documentação do fornecedor):
@@ -161,7 +161,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |                   Zscaler                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
      
  
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
