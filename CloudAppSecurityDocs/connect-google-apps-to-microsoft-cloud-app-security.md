@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 11/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf1a10466deb59ca06a88674993c628b8b744563
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 834f444831e2024d9a29ace710e7e2c35fb6f1ce
+ms.sourcegitcommit: b8e75cefeffe3ae160830f3bf384f05db985e0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144611"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51285836"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -28,7 +28,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
 ## <a name="configure-g-suite"></a>Configurar G Suite  
   
-1. Como um Superadministrador do G Suite, faça logon em <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
+1. Como um Superadministrador do G Suite, entre em <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
   
 2. Clique em **Criar projeto** para iniciar um novo projeto.  
   
@@ -38,7 +38,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
    **Microsoft Cloud App Security** e clique em **Criar**.  
           ![google2](./media/google2.png "google2")  
   
-4. Depois que o projeto tiver sido criado, na barra de ferramentas, clique em **Google Cloud Platform** e certifique-se de que o projeto correto está selecionado na lista suspensa na parte superior.
+4. Depois que o projeto for criado, na barra de ferramentas, clique em **Google Cloud Platform**. Verifique se o projeto certo foi selecionado no menu suspenso na parte superior.
        
       ![google project](./media/googleverify-project.png "googleverify project")  
 
@@ -54,7 +54,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
    -   API do Google Drive  
   
-   -   SDK do Marketplace de Aplicativos  
+   -   SDK do Marketplace do G Suite  
   
    -   Gmail API (API do Gmail)  
             
@@ -77,7 +77,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
     - Clique em **Salvar**.  
   
-      ![Nome do produto Google](./media/google6.png "google6")  
+      ![Consentimento do Oauth do Google](./media/google-oauth-consent.png "consentimento de oauth do google")  
   
 11. Na guia **Credenciais**, clique na seta ao lado de **Criar credenciais**.  
   
@@ -126,7 +126,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
 
 21. Clique em **Salvar alterações**.
 
-22. Volte para a lista **APIs habilitadas**. Clique em **SDK do Marketplace de Aplicativos**. 
+22. Volte para a lista **APIs habilitadas**. Clique no **SDK do Marketplace do G Suite**. 
       
 23. Selecione a guia **Configuração**. 
   
@@ -134,8 +134,11 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
     -   No **Nome do Aplicativo** digite o **Microsoft Cloud App Security**.
   
-         Na **Descrição do aplicativo** digite "O Microsoft Cloud App Security fornece visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem”.  
-  
+         Na **Descrição do aplicativo** digite "O Microsoft Cloud App Security fornece visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem”. 
+    - Verifique se você clicou em **Concluído** na janela **Novo item**.      
+     
+       ![novo item do google](./media/google-new-item.png "novo item no google")  
+
     -   Desmarque a caixa de seleção **Enable individual install (Habilitar instalação individual)**.  
   
     -   Configure as quatro imagens necessárias em **Application icons (Ícones de aplicativo)**.  
@@ -226,7 +229,7 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
     6.  Clique em **Salvar configurações**.  
   
-    7.  **Siga o link** para se conectar ao G Suite. Isso abre o G Suite, e você será solicitado a autorizar o acesso ao Cloud App Security.  
+    7.  **Siga o link** para se conectar ao G Suite. Isso abre o G Suite e você deverá autorizar o acesso para o Cloud App Security.  
          
     8.  Certifique-se de que a conexão foi bem-sucedida clicando em **Testar agora**.  
   
@@ -237,10 +240,10 @@ Esta seção fornece instruções para conectar o Microsoft Cloud App Security �
   
 Depois de conectar o G Suite, você receberá eventos por 60 dias antes da conexão.
   
-Após conectar o G Suite, o Cloud App Security realiza uma verificação completa. Dependendo de quantos arquivos e usuários você tiver, a verificação completa poderá levar algum tempo. Para habilitar a verificação quase em tempo real, os arquivos nos quais a atividade é detectada são movidos para o início da fila de verificação. Por exemplo, um arquivo editado, atualizado ou compartilhado é verificado imediatamente. Isso não se aplica a arquivos que não são modificados por natureza. Por exemplo, os arquivos que são exibidos, visualizados, impressos ou exportados são verificados durante a verificação regular.
+Após conectar o G Suite, o Cloud App Security realiza uma verificação completa. Dependendo de quantos arquivos e usuários você tiver, a verificação completa poderá levar algum tempo. Para habilitar a verificação quase em tempo real, os arquivos nos quais a atividade é detectada são movidos para o início da fila de verificação. Por exemplo, um arquivo editado, atualizado ou compartilhado é verificado imediatamente. Isso não é aplicável a arquivos que não são modificados por natureza. Por exemplo, os arquivos que são exibidos, visualizados, impressos ou exportados são verificados durante a verificação regular.
   
   
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas 
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

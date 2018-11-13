@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e0a56c9c174765660dfd19cad0c3cced1d74cd7
-ms.sourcegitcommit: 6069639ae538cc23831bbcaf61f18d92c6a5117d
+ms.openlocfilehash: a3c955a037f7ea81e0a06e673fd18030c0cbbf9b
+ms.sourcegitcommit: 3253c98f1bf2fafc2578a87ee2db9698caa05c5b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2018
-ms.locfileid: "50982064"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265317"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -89,6 +89,8 @@ Para habilitar a conexão do Cloud App Security ao seu SIEM, adicione a **porta 
 > |US3|40.90.218.198<br>40.90.218.196|
 > |UE|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
+
+Se você não especificar um proxy ao configurar o agente SIEM do Cloud App Security, você precisará permitir conexões http para http://ocsp.msocsp.com/ na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 
 ## <a name="app-connector"></a>Conector de aplicativo
 
@@ -174,6 +176,7 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 > [!NOTE]
 > - Se o firewall exigir uma lista de acesso de endereço IP estático e não for compatível com a lista de permissões baseada em URL, permita que o coletor de logs inicie o tráfego de saída para os [Intervalos de IP do datacenter do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) na porta 443.
 >- Permita que o coletor de logs inicie o tráfego de saída no portal do Cloud App Security.
+>- Se não especificar um proxy ao configurar o coletor de logs, você precisará permitir conexões http para http://ocsp.msocsp.com/ na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 
 
 
