@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 71fe930881b792661b782b9d88782c9272216702
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 813dc33d884f502090c3d60fef3faef33c379d90
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745673"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596891"
 ---
+# <a name="working-with-the-dashboard"></a>Trabalhar com o painel
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-# <a name="working-with-the-dashboard"></a>Trabalhar com o painel
 Este artigo descreve o que você deve fazer com o Cloud App Security diariamente.  Depois de ativar o Microsoft Cloud App Security, você precisará:
 
 - Configurar fluxos de dados

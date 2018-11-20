@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82193845bffa1f88f69eef035dbcc20dbb2da40b
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: ff22c10cdbb1736fde90922c7dc36b81f26558cc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217383"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597435"
 ---
+# <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-
-# <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 É importante carregar um log manualmente e permitir que o Microsoft Cloud App Security o analise antes de tentar usar o coletor de logs automático. Para saber mais sobre como o coletor de logs funciona e o formato esperado de log, confira [Usando logs de tráfego para Cloud Discovery](#log-format).
 
 Se você ainda não tiver um log e desejar ver um exemplo de como deverá ser a aparência de seu log, baixe um arquivo de log de exemplo. Siga o procedimento abaixo para ver qual deverá ser a aparência do seu log.

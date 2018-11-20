@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb408b5422e2b9ed4eb0ab5287a67a929ec680c0
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 972ee25a77f491704b6ebc17a059c2d1f7e4d367
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142724"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644307"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -54,7 +54,7 @@ Se você trabalha com o Cloud App Security e o Zscaler, pode integrar os dois pr
     
 3. Investigue os aplicativos de nuvem descobertos na sua rede, confira [Como trabalhar com o Cloud Discovery](working-with-cloud-discovery-data.md) para ver mais informações e as etapas de investigação.
  
-4. Qualquer aplicativo que você definir como não sancionado no Cloud App Security receberá o ping do Zscaler a cada duas horas e será automaticamente bloqueado pelo Zscaler. Para saber mais sobre como cancelar a sanção de aplicativos, confira [Sanção/cancelamento de um aplicativo](governance-discovery.md#govern-discovered-apps).
+4. Qualquer aplicativo que você definir como não sancionado no Cloud App Security receberá o ping do Zscaler a cada duas horas e será automaticamente bloqueado pelo Zscaler. Para saber mais sobre como cancelar a sanção de aplicativos, confira [Sanção/cancelamento de um aplicativo](governance-discovery.md#BKMK_SanctionApp).
     
     
     

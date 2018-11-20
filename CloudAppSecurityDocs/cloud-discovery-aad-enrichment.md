@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 02c09c05ca89e58bc45648fc592c8b5a79aaf4f3
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 66bf3a348a14dc6bc0fa8d3da481540493b7acbf
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349518"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597044"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="cloud-discovery-enrichment"></a>Aprimoramento do Cloud Discovery
+
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de usuário do Azure Active Directory. Quando você habilita esse recurso, o nome de usuário recebido nos logs de tráfego de descoberta é correspondido e substituído pelo nome de usuário do Azure AD. O aprimoramento do Cloud Discovery habilita os seguintes recursos:
 - Você pode investigar o uso de TI sombra pelo usuário do Azure Active Directory.
