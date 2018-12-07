@@ -1,11 +1,11 @@
 ---
 title: Visibilidade das atividades dos aplicativos de nuvem | Microsoft Docs
-description: Este tópico fornece uma lista de atividades, filtros e parâmetros de correspondência que podem ser aplicados às políticas de atividade.
+description: Este artigo fornece uma lista de atividades, filtros e parâmetros de correspondência que podem ser aplicados às políticas de atividade.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87aa9ac1cb823222230d24d667c1bcfa7e702104
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: ed2628a18eaa777b8ad849cf2cc9f4417589685c
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349450"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743515"
 ---
+# <a name="activities"></a>Atividades
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-
-# <a name="activities"></a>Atividades
 O Microsoft Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examinará todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele será constantemente atualizado com novas atividades. 
 
 > [!NOTE] 
@@ -122,7 +122,9 @@ Para exibir as informações sobre endereço IP:
 
 Você pode exportar todas as atividades do usuário para um arquivo CSV. 
 
-No **Log de atividades**, no canto superior direito, clique no botão **Exportar**. ![botão exportar](./media/export-button.png)
+No **Log de atividades**, no canto superior direito, clique no botão **Exportar**.
+
+ ![botão exportar](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

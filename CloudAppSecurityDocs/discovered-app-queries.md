@@ -1,11 +1,11 @@
 ---
 title: Trabalhando com consultas e filtros de aplicativos descobertos do Cloud App Security | Microsoft Docs
-description: Este tópico fornece uma lista de consultas e filtros de aplicativos descobertos do Cloud App Security e explica como trabalhar com eles.
+description: Este artigo fornece uma lista de consultas e filtros de aplicativos descobertos do Cloud App Security e explica como trabalhar com eles.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 65dfb8411910747db2d12f6757218fca93b362f2
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: f72d5e96d5013684f163a645fbf3e5795cc7639c
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745758"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597282"
 ---
+# <a name="discovered-app-filters-and-queries"></a>Consultas e filtros de aplicativos descobertos
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-# <a name="discovered-app-filters-and-queries"></a>Consultas e filtros de aplicativos descobertos
 Quando você tiver um grande número de aplicativos descobertos, considerará útil filtrá-los e consultá-los. Este artigo descreve quais filtros estão disponíveis e como consultar os aplicativos descobertos.  
 
 ## <a name="discovered-app-filters"></a>Filtros dos aplicativos descobertos
@@ -79,21 +80,21 @@ Para simplificar ainda mais a investigação, você pode criar consultas persona
 
 O Cloud App Security também fornece **Consultas sugeridas** e permite salvar consultas personalizadas usadas com frequência. As consultas sugeridas fornecem vias de investigação recomendadas que filtram os aplicativos descobertos usando as seguintes consultas sugeridas opcionais:
 
- - Aplicativos na nuvem que permitem o uso anônimo – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que apresentam riscos de segurança porque não exigem a autenticação do usuário e permitem que os usuários carreguem dados.
+ - **Aplicativos na nuvem que permitem o uso anônimo** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que apresentam riscos de segurança porque não exigem a autenticação do usuário e permitem que os usuários façam upload de dados.
 
- - Aplicativos na nuvem que têm a certificação CSA STAR – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que têm a certificação CSA STAR por autoavaliação, certificação, atestado ou monitoramento contínuo.
+ - **Aplicativos na nuvem que têm a certificação CSA STAR** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que têm a certificação CSA STAR por autoavaliação, certificação, atestado ou monitoramento contínuo.
 
- - Aplicativos na nuvem em conformidade com o FedRAMP – filtra todos os aplicativos descobertos para exibir apenas os aplicativos cujo fator de risco de conformidade com o FedRAMP é alto, médio ou baixo. 
+ - **Aplicativos na nuvem em conformidade com o FedRAMP** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos cujo fator de risco de conformidade com o FedRAMP é alto, médio ou baixo. 
 
- - Aplicativos de armazenamento em nuvem e colaboração que têm dados do usuário – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que apresentam riscos porque não permitem que você tenha a propriedade sobre seus dados, pois são retidos por eles.
+ - **Aplicativos de armazenamento em nuvem e colaboração que têm dados do usuário** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que apresentam riscos porque não permitem que você tenha a propriedade sobre seus dados, pois são retidos por eles.
 
- - Aplicativos de armazenamento em nuvem que apresentam riscos e não estão em conformidade – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que não estão em conformidade com o SOC 2 ou o HIPAA, não dão suporte à versão do PCI DSS e têm uma pontuação de risco igual a 5 ou inferior.
+ - **Aplicativos de armazenamento em nuvem que apresentam riscos e não estão em conformidade** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que não estão em conformidade com o SOC 2 ou o HIPAA, não dão suporte à versão do PCI DSS e têm uma pontuação de risco igual a 5 ou inferior.
 
- - Aplicativos de nuvem empresariais que têm autenticação fraca – filtra todos os aplicativos descobertos para exibir apenas os aplicativos não compatíveis com SAML, não têm nenhuma política de senha e não habilitam o MFA.
+ - **Aplicativos de nuvem empresariais que têm autenticação fraca** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que não dão suporte ao SAML, não têm nenhuma política de senha e não habilitam o MFA.
 
- - Aplicativos em nuvem empresariais que têm criptografia fraca – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que apresentam riscos porque não criptografam dados em repouso e não dão suporte a nenhum protocolo de criptografia.
+ - **Aplicativos em nuvem empresariais que têm criptografia fraca** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que apresentam riscos porque não criptografam dados em repouso e não dão suporte a nenhum protocolo de criptografia.
 
-- Aplicativos de nuvem prontos para RGPD: filtra todos os aplicativos descobertos para exibir apenas os aplicativos que estão prontos para o RGPD. Como a conformidade com o RGPD é uma das principais prioridades, essa consulta ajuda a identificar facilmente os aplicativos que estão preparados para o RGPD e reduz as ameaças ao avaliar o risco dos aplicativos que não estão preparados para o RGPD.
+- **Aplicativos na nuvem prontos para RGPD** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que estão prontos para o RGPD. Como a conformidade com o RGPD é uma das principais prioridades, essa consulta ajuda a identificar facilmente os aplicativos que estão preparados para o RGPD e reduz as ameaças ao avaliar o risco dos aplicativos que não estão preparados para o RGPD.
  
 ![consultar aplicativos descobertos](./media/queries-discovered-apps.png)
 

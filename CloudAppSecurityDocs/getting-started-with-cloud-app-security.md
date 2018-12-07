@@ -1,11 +1,11 @@
 ---
 title: Implantar Cloud App Security para informações de uso em aplicativo de nuvem e controle | Microsoft Docs
-description: Este tópico descreve o processo para colocar o Cloud App Security em funcionamento.
+description: Este artigo descreve o processo para colocar o Cloud App Security em funcionamento.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 066618c4e1096df0436a3b1bd40eb2563a35ae59
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: baa1aed2ca4e1c2f52248fbfec35376502370d7f
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072847"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644324"
 ---
+# <a name="deploy-microsoft-cloud-app-security"></a>Implantar o Microsoft Cloud App Security
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-
-# <a name="deploy-microsoft-cloud-app-security"></a>Implantar o Microsoft Cloud App Security
-O Microsoft Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele funciona ao melhorar a visibilidade de atividade de nuvem e ajuda a aumentar a proteção de dados corporativos. Neste tópico, o guiaremos pelas etapas utilizadas para configurar e trabalhar com o Microsoft Cloud App Security.  
+O Microsoft Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele trabalha melhorando a visibilidade da atividade na nuvem e ajuda a aumentar a proteção de dados corporativos. Neste artigo, descreveremos as etapas utilizadas para configurar e trabalhar com o Microsoft Cloud App Security.  
 
 Sua organização deve ter uma licença para usar o Cloud App Security. Para obter mais informações, consulte a seção [Como comprar o Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) na home page do Cloud App Security.  
 
@@ -33,24 +33,19 @@ Sua organização deve ter uma licença para usar o Cloud App Security. Para obt
 
 ## <a name="prerequisites"></a>Pré-requisitos  
   
--   Sua organização deve ter uma licença do Cloud App Security para usar o produto. Para obter mais informações, consulte a seção [Como comprar o Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) na home page do Cloud App Security.  
+- Sua organização precisa ter uma licença do Cloud App Security para usar o produto. Para obter mais informações, consulte a seção [Como comprar o Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) na home page do Cloud App Security.  
   
      Para obter suporte para a ativação de locatário, consulte [Contatar o suporte comercial do Office 365 ‑ Ajuda para Administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
+- Depois de obter uma licença do Cloud App Security, você receberá um email com informações de ativação e um link para o portal do Cloud App Security.  
   
-> [!NOTE] 
-> Não é necessário ter uma licença do Office 365 para o Cloud App Security.  
+- Para configurar o Cloud App Security, você precisa ser Administrador global, Administrador de conformidade ou Leitor de segurança no Azure Active Directory ou no Office 365. É importante entender que um usuário que recebe uma função administrativa terá as mesmas permissões em todos os aplicativos na nuvem assinados por sua organização. Isso ocorrerá independentemente de você atribuir a função no portal do Office 365, no portal clássico do Azure ou usando o módulo do Azure AD para o [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Para obter mais informações, consulte [Atribuir funções de administrador no Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) e [Atribuindo funções de administrador no Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
   
--   Depois que tiver adquirido uma licença do Cloud App Security, você receberá um email com informações de ativação e um link para o portal do Cloud App Security.  
-  
--   Para configurar o recurso Cloud App Security, é necessário ser Administrador global, Administrador de conformidade ou Leitor de segurança no Azure Active Directory ou no Office 365. É importante entender que um usuário atribuído a uma função de administrador terá as mesmas permissões em todos os aplicativos de nuvem que sua organização tenha assinado, independentemente de você atribuir a função no portal do Office 365, no Portal Clássico do Azure ou usando o módulo do Azure AD para [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Para obter mais informações, consulte [Atribuir funções de administrador no Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) e [Atribuindo funções de administrador no Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
-  
--   Para executar o portal do Cloud App Security, use o Internet Explorer 11, Microsoft Edge (mais recente), Google Chrome (mais recente), Mozilla Firefox (mais recente) ou Apple Safari (mais recente).  
+- Para executar o portal do Cloud App Security, use o Internet Explorer 11, o Microsoft Edge (mais recente), o Google Chrome (mais recente), o Mozilla Firefox (mais recente) ou o Apple Safari (mais recente).  
 
 ## <a name="to-access-the-portal"></a>Para acessar o portal
 
 Para acessar o portal do Cloud App Security, vá para [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
-  
-Como alternativa, você pode acessar o portal por meio do **Centro de administração do Office 365** clicando no ícone dos Centros de administração ![ícone dos Centros de administração do O365](./media/o365-admin-centers-icon.png "ícone dos Centros de administração do O365") seguido por **Cloud App Security**.  
+Acesse também o portal por meio do **Centro de administração do Office 365** clicando no ícone dos Centros de administração. ![Ícone dos centros de administração do O365](./media/o365-admin-centers-icon.png "O365 admin centers icon") Em seguida, selecione **Cloud App Security**.  
   
 ![Acesso do O365](./media/access-from-o365.png "Acesso do O365")  
   
@@ -106,7 +101,7 @@ Tarefa necessária: Habilitar o Cloud App Security para exibir o uso do aplicati
 
 **Por que você deve configurar os relatórios do Cloud Discovery?**
 Obter a visibilidade da TI Invisível na sua organização é essencial.
-Depois que os logs são analisados, você pode facilmente descobrir quais aplicativos de nuvem são usados, por quais pessoas e em quais dispositivos.
+Depois que os logs são analisados, você pode descobrir com facilidade quais aplicativos na nuvem estão sendo usados, por quais pessoas e em quais dispositivos.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Etapa 4. [Personalizar sua experiência](mail-settings.md).
 Tarefa recomendada: Adicionar os detalhes da sua organização
@@ -133,7 +128,7 @@ Tarefa recomendada: Adicionar os detalhes da sua organização
 Agora as pontuações de risco atribuídas aos aplicativos descobertos são configuradas exatamente de acordo com as necessidades e prioridades da sua organização.
 
 **Por que personalizar seu ambiente?**
-Alguns recursos funcionam mais bem quando personalizados para suas necessidades. Forneça uma experiência melhor para os usuários com seus próprios modelos de email, decida quais notificações são recebidas e personalize sua métrica de pontuação de risco de acordo com as preferências da sua organização.
+Alguns recursos funcionam melhor quando personalizados para suas necessidades. Forneça uma experiência melhor para seus usuários com seus próprios modelos de email. Decida quais notificações serão recebidas e personalize sua métrica de pontuação de risco de acordo com as preferências de sua organização.
 
 
 ### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Etapa 5. [Organizar os dados de acordo com suas necessidades](ip-tags.md).

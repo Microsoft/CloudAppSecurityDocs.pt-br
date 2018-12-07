@@ -1,11 +1,11 @@
 ---
 title: Criar políticas de detecção de anomalias no Cloud App Security | Microsoft Docs
-description: Este tópico fornece uma descrição das Políticas de detecção de anomalias, bem como informações de referência sobre os blocos de construção de uma política de detecção de anomalias.
+description: Este artigo fornece uma descrição das Políticas de detecção de anomalias, bem como informações de referência sobre os blocos de construção de uma política de detecção de anomalias.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: e29456add1796ea13c67b44f61c628cdb924f0dc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745724"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596942"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
- 
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
+
+*Aplica-se ao: Microsoft Cloud App Security*
 
 As políticas de detecção de anomalias do Microsoft Cloud App Security fornecem análises comportamentais de entidades e de usuários (UEBA) e aprendizado de máquina (ML) inovadores para que você execute imediatamente uma detecção avançada a ameaças em seu ambiente de nuvem. Por serem habilitadas automaticamente, as novas políticas de detecção de anomalias geram resultados imediatos ao fornecer detecções imediatas, visando inúmeras anomalias comportamentais nos usuários, máquinas e dispositivos conectados à sua rede.  Além disso, as novas políticas expõem mais dados do mecanismo de detecção do Cloud App Security para ajudar a acelerar o processo de investigação e conter as ameaças em andamento. 
 
@@ -81,6 +80,9 @@ Essa detecção se beneficia da capacidade do Cloud App Security de monitorar o 
  
 > [!NOTE]
 > O Cloud App Security só alerta você para cada regra de encaminhamento identificada como suspeita com base no comportamento típico do usuário. 
+
+**Regras de manipulação de caixa de entrada suspeita**
+- Essa detecção analisa o ambiente e dispara alertas quando regras suspeitas que excluem ou movem mensagens ou pastas são definidas na caixa de entrada de um usuário. Isso pode indicar que a conta do usuário está comprometida, que as mensagens estão sendo ocultadas intencionalmente e que a caixa de correio está sendo usada para distribuir spam ou malware em sua organização.
 
 **Atividades incomuns (por usuário)**<br>
 Essas detecções identificam os usuários que executam:

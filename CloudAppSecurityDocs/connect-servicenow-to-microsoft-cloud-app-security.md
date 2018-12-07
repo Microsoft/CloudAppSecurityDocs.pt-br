@@ -1,6 +1,6 @@
 ---
 title: Conectar o ServiceNow ao Cloud App Security para obter visibilidade e controle de uso | Microsoft Docs
-description: Este tópico fornece informações sobre como conectar seu aplicativo do ServiceNow ao Cloud App Security usando o conector de API.
+description: Este artigo fornece informações sobre como conectar o aplicativo ServiceNow ao Cloud App Security usando o conector de API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75e22bb5ff151ea71ea2a48e5aef45f22fc4b5f8
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: f81623e718d9cf4329f3e738c1b585cb6b33b102
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217315"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597265"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 
-Esta seção fornece instruções para conectar o Microsoft Cloud App Security à sua conta do ServiceNow existente usando a API do conector de aplicativos. 
+*Aplica-se ao: Microsoft Cloud App Security*
+
+Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do ServiceNow usando a API do conector de aplicativos. 
 
 > [!NOTE]
 >  É recomendável implantar o ServiceNow usando os tokens de aplicativo OAuth, disponíveis para Fuji e versões posteriores (consulte a [documentação do ServiceNow](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) relevante). Para as versões anteriores, um [modo de conexão herdado](#legacy-servicenow-connection) está disponível com base no usuário/senha. O nome de usuário/senha fornecidos são usados apenas para geração de token de API e não são salvos após o processo de conexão inicial.

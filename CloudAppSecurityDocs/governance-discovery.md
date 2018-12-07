@@ -1,11 +1,11 @@
 ---
 title: Bloqueando aplicativos descobertos | Microsoft Docs
-description: Este tópico descreve o procedimento para exportar scripts de bloqueio para aplicativos descobertos.
+description: Este artigo descreve o procedimento para exportar scripts de bloqueio para aplicativos descobertos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,29 +13,27 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0e616914ce44ca28938298a5a0f3951b83454dc
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 7664ad859d0fb069c524b8fa61f5e7c2cbd3b3ec
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881781"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644290"
 ---
+# <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-
-## <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
-
-Depois de revisar a lista de aplicativos descobertos em seu ambiente, você pode proteger seu ambiente contra o uso de aplicativos indesejados das seguintes maneiras.
+Depois de examinar a lista de aplicativos descobertos em seu ambiente, você pode proteger o ambiente contra o uso de aplicativos indesejados das maneiras indicadas a seguir.
 
 
-### <a name="sanctioningunsanctioning-an-app"></a>Sanção/cancelamento de um aplicativo 
+## <a name="BKMK_SanctionApp"></a> Sanção/cancelamento de sanção de um aplicativo 
 
-Você pode cancelar um aplicativo de risco específico ao clicar nos três pontos no final da linha e selecionar **Cancelar sanção**.
-O cancelamento de sanção de um aplicativo não bloqueia o uso, mas permite monitorar seu uso mais facilmente com os filtros do Cloud Discovery. Então, você pode notificar os usuários do aplicativo que ele a sanção cancelada e sugerir uma alternativa, um aplicativo seguro para seu uso.
+Você pode cancelar a sanção um aplicativo de risco específico clicando nos três pontos no final da linha. Em seguida, selecione **Cancelar sanção**. O cancelamento de sanção de um aplicativo não bloqueia o uso, mas permite monitorar seu uso mais facilmente com os filtros do Cloud Discovery. Em seguida, você pode notificar os usuários do aplicativo não sancionado e sugerir um aplicativo alternativo seguro para seu uso.
 
 ![Marcar como não sancionado](./media/tag-as-unsanctioned.png)  
 
-Se você tiver uma lista de aplicativos que você deseja sancionar ou cancelar a sanção, você poderá usar a caixa de seleção para marcar todos os aplicativos que você deseja gerenciar e, em seguida, selecionar a ação.
+Se você tiver uma lista de aplicativos que deseja sancionar ou cancelar a sanção, use a caixa de seleção para marcar os aplicativos que deseja gerenciar e, em seguida, selecione a ação.
 
 Para consultar uma lista de aplicativos não sancionados, você pode [gerar um script de bloco usando as APIs do Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
@@ -44,8 +42,7 @@ Para consultar uma lista de aplicativos não sancionados, você pode [gerar um s
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporte um script de bloqueio para controlar aplicativos descobertos
 
-O Cloud App Security permite que você bloqueie o acesso a aplicativos não sancionados aproveitando os dispositivos de segurança locais existentes. Gere um script de bloqueio dedicado e importe-o no seu dispositivo.
-Essa solução não exige redirecionamento de todo o tráfego da web da organização para um proxy.
+O Cloud App Security permite que você bloqueie o acesso a aplicativos não sancionados usando os dispositivos de segurança locais existentes. Gere um script de bloqueio dedicado e importe-o para seu dispositivo. Essa solução não exige o redirecionamento de todo o tráfego da Web da organização para um proxy.
 
 1. No painel do Cloud Discovery, marque quaisquer aplicativos que deseja bloquear como **Não sancionado**.
 
@@ -57,9 +54,9 @@ Essa solução não exige redirecionamento de todo o tráfego da web da organiza
 
 3. Em **Gerar script de bloqueio**, selecione o dispositivo para o qual deseja gerar o script de bloqueio. 
 
-   ![Pop-up da opção Gerar script de bloqueio](./media/generate-block-script-popup.png)  
+   ![Pop-up de Gerar script de bloqueio](./media/generate-block-script-popup.png)  
 
-4. Em seguida, clique no botão Gerar script. Isso criará um script de bloqueio para todos os seus aplicativos não sancionados. Por padrão, o arquivo será nomeado com a data em que foi exportado e o tipo de dispositivo selecionado, por exemplo: *2017-02-19_CAS_Fortigate_block_script.txt* 
+4. Em seguida, clique no botão Gerar script para criar um script de bloqueio para todos os aplicativos não sancionados. Por padrão, o arquivo será nomeado com a data em que foi exportado e o tipo de dispositivo selecionado. *2017-02-19_CAS_Fortigate_block_script.txt* é um nome de arquivo de exemplo 
 
    ![Botão Gerar script de bloqueio](./media/generate-block-script-button.png)  
 
@@ -67,7 +64,7 @@ Essa solução não exige redirecionamento de todo o tráfego da web da organiza
 
 
 
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

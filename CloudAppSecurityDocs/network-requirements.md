@@ -1,11 +1,11 @@
 ---
 title: Requisitos de rede do Cloud App Security | Microsoft Docs
-description: Este tópico descreve os endereços IP e portas que você precisa abrir para trabalhar com o Cloud App Security.
+description: Este artigo descreve os endereços IP e portas que você precisa abrir para trabalhar com o Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,26 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38c2e52118cd896f9cfe148647b43d72a154647f
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 25ebeff05dc6fc7afd5e16de2076534c7f5070a3
+ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597452"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52280588"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="network-requirements"></a>Requisitos de rede
 
-Este tópico fornece uma lista de portas e endereços IP que você precisa permitir e adicionar à lista de permissões para trabalhar com o Microsoft Cloud App Security. 
+*Aplica-se ao: Microsoft Cloud App Security*
 
+Este artigo fornece uma lista de portas e endereços IP que você precisa permitir e adicionar à lista de permissões para trabalhar com o Microsoft Cloud App Security. 
 
 ## <a name="view-your-data-center"></a>Exibir seu data center
 
 Alguns dos requisitos abaixo dependem em que data center você está conectado. 
 
-Para ver a qual data center você está se conectando:
+Para ver qual data center você está se conectando, execute as seguintes etapas:
 
-1. No portal do Cloud App Security, clique em **?** na barra de menus e selecione **Sobre**. 
+1. No portal do Cloud App Security, clique no **ícone de ponto de interrogação** na barra de menus. Em seguida, selecione **Sobre**. 
 
     ![clique em Sobre](./media/about-menu.png)
 
@@ -95,7 +93,7 @@ Para habilitar a conexão do Cloud App Security ao seu SIEM, adicione a **porta 
 
 ## <a name="app-connector"></a>Conector de aplicativo
 
-Para alguns aplicativos de terceiros serem acessados pelo Cloud App Security, esses endereços IP podem ser usados para permitir que o Cloud App Security colete logs e forneça acesso para o console do Cloud App Security. 
+Para alguns aplicativos de terceiros serem acessados pelo Cloud App Security, esses endereços IP podem ser usados. Os endereços IP permitem ao Cloud App Security coletar logs e fornecer acesso ao console do Cloud App Security. 
 
 > [!NOTE]
 >Você pode ver esses endereços IP nos logs de atividades do fornecedor porque o Cloud App Security executa as ações de governança e as varreduras desses endereços IP. 
@@ -116,12 +114,12 @@ Para se conectar a aplicativos de terceiros, habilite o Cloud App Security para 
 
 ## <a name="third-party-dlp-integration"></a>Integração do DLP de terceiros
 
-Para que o Cloud App Security envie dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de DMZ para esses endereços IP com um número da porta de origem dinâmico. 
+Para habilitar o Cloud App Security a enviar dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de DMZ para esses endereços IP com um número da porta de origem dinâmico. 
 
-1.  Endereços de origem: eles devem estar na lista de permissões conforme listado acima para aplicativos de terceiros de conector de API
-2.  Porta TCP de origem: dinâmico
-3.  Endereços de destino: um ou dois endereços IP do stunnel conectado ao servidor ICAP externo
-4.  Porta TCP de destino: conforme definido em sua rede
+1. **Endereços de origem** – esses endereços devem ser colocados na lista de permissões conforme listado acima para aplicativos de terceiros de conector de API
+2. **Porta TCP de origem** – dinâmica
+3. **Endereços de destino** – um ou dois endereços IP do stunnel conectado ao servidor ICAP externo
+4. **Porta TCP de destino** – conforme definido em sua rede
 
 > [!NOTE] 
 > -  Por padrão, o número da porta stunnel é definido como 11344. Você pode alterá-lo para outra porta, se necessário, mas certifique-se de anotar o novo número da porta.
@@ -150,16 +148,16 @@ Para habilitar o envio de notificações com o modelo e as configurações padr�
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-Se você quiser personalizar a identidade do remetente de email, o Microsoft Cloud App Security permitirá essa opção usando o MailChimp®, um serviço de email de terceiros. Para que isso funcione, no portal do Microsoft Cloud App Security, em **Configurações**, selecione **Configurações de email** e revise os Termos de Serviço e a Declaração de Privacidade do MailChimp. Em seguida, conceda à Microsoft permissão para usar o MailChimp em seu nome.
+Se você quiser personalizar a identidade do remetente de email, o Microsoft Cloud App Security permitirá essa personalização usando o MailChimp®, um serviço de email de terceiros. Para facilitar o trabalho, no portal do Microsoft Cloud App Security, vá para **Configurações**. Selecione **Configurações de email** e examine os Termos de serviço e a Política de privacidade do MailChimp. Em seguida, dê à Microsoft permissão para usar o MailChimp em seu nome.
 
-Se você não fizer isso, as notificações de email serão enviadas usando todas as configurações padrão.
+Se você não personalizar a identidade do remetente, as notificações de email serão enviadas usando todas as configurações padrão.
 
 Para trabalhar com o MailChimp, adicione esse endereço IP à lista de permissões antispam para habilitar o envio de notificações: 198.2.134.139 (mail1.cloudappsecurity.com)
 
 
 ## <a name="log-collector"></a>Coletor de logs 
 
-Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detectar TI sombra na sua organização, é necessário abrir o seguinte:
+Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detectar TI Sombra na sua organização, abra os seguintes itens:
 
 - Permitir que o coletor de logs receba o tráfego FTP e Syslog de entrada.
 - Permitir que o coletor de logs inicie o tráfego de saída para o portal (por exemplo, contoso.cloudappsecurity.com) na porta 443.
@@ -179,9 +177,8 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 >- Permita que o coletor de logs inicie o tráfego de saída no portal do Cloud App Security.
 >- Se não especificar um proxy ao configurar o coletor de logs, você precisará permitir conexões http para http://ocsp.msocsp.com/ na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 
-
-
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas
+ 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

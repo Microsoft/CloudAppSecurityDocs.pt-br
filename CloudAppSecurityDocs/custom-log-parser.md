@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8b15a5ce0deebb90b40d5a4bcd7c1aefd9bfc8a
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 593c54aa44b2345e1c0b7e3ad7dab9b6e50e774a
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596806"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743634"
 ---
 # <a name="use-a-custom-log-parser"></a>Usar o analisador de log personalizado
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-O Cloud App Security permite que você configure um analisador personalizado para corresponder e processar o formato de seus logs, de modo que eles possam ser usados para o Cloud Discovery. Normalmente, você usaria um analisador personalizado se o firewall ou o dispositivo não fosse explicitamente compatível com o Cloud App Security. 
+O Cloud App Security permite que você configure um analisador personalizado para corresponder e processar o formato de seus logs, de modo que eles possam ser usados para o Cloud Discovery. Normalmente, você usaria um analisador personalizado se o firewall ou o dispositivo não fosse explicitamente compatível com o Cloud App Security. Pode ser um analisador de CSV ou um analisador de valor de chave personalizado.
 
 O analisador personalizado permite que você use os logs de firewalls sem suporte seguindo esse processo. 
 
 
  
-Para configurar um analisador personalizado de CSV:
+Para configurar um analisador personalizado:
 1. No portal do Cloud App Security, clique em **Descobrir** e **Criar novo relatório de instantâneo**.  
   
    ![Criar novo relatório de instantâneo](./media/create-new-snapshot-report.png)
@@ -55,7 +55,7 @@ Para configurar um analisador personalizado de CSV:
    ![analisador de log personalizado](./media/custom-log-parser.png) 
 
 
-7. Clique em **Salvar**. O formato de log personalizado configurado por você será salvo como o analisador personalizada padrão. Você pode editá-lo a qualquer momento, basta clicar em Editar.
+7. Clique em **Salvar**. O formato de log personalizado configurado por você será salvo como o analisador personalizada padrão. Você pode editá-lo a qualquer momento, basta clicar em **Editar**.
 
 8. Em **Escolher os logs de tráfego**, selecione o arquivo de log que você modificou e carregue-o. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados.  
   

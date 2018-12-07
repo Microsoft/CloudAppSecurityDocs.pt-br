@@ -1,11 +1,11 @@
 ---
 title: Controlar o uso de aplicativos de nuvem criando políticas no Cloud App Security | Microsoft Docs
-description: Este tópico fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos de nuvem.
+description: Este artigo fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos na nuvem.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 24b3148a5de7e0367076b740242a583f68e4856f
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: a1d79ec9dffe5e0b60a71106d4b4907ed8c5ee0d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217349"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597112"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
+
+*Aplica-se ao: Microsoft Cloud App Security*
 
 As políticas permitem que você defina a maneira como deseja que os usuários se comportem na nuvem. Elas permitem que você detecte comportamento arriscado, violações ou atividades e pontos de dados suspeitos em seu ambiente de nuvem. Se necessário, é possível integrar fluxos de trabalho de correção para atingir a mitigação de risco completa. Existem vários tipos de políticas que se correlacionam com diferentes tipos de informações que você deseja reunir sobre seu ambiente de nuvem e os tipos de ações de correção que deseja executar.  
   
@@ -122,7 +121,9 @@ Para criar uma política com base nos resultados da investigação, siga estas e
   
      ![Criar arquivo com base na investigação](./media/create-file-from-investigation.png)  
   
-3. No canto superior direito do console, clique em **Nova política da pesquisa**.![Nova política da pesquisa](./media/new-policy-from-search-button.png)  
+3. No canto superior direito do console, clique em **Nova política da pesquisa**.
+
+     ![Botão Nova política da pesquisa](./media/new-policy-from-search-button.png)
   
 4. Uma página de criação de política é aberta, contendo os filtros usados na sua investigação.  
   

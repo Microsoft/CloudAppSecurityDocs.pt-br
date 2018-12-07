@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 11/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,48 +13,57 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 682d3e7a988e7662f393b20296322ee590d85315
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 2d1621dd7a1e082631b941ecfb711a686a69991a
+ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143200"
+ms.lasthandoff: 11/18/2018
+ms.locfileid: "51943694"
 ---
+# <a name="email-notification-preferences"></a>Preferências de notificação por email
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
+Este artigo oferece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security.
 
-##  <a name="mailsettings"></a> Definir as preferências de notificação de email  
+## <a name="mailsettings"></a> Definir as preferências de notificação de email  
 
-Para definir parâmetros para as notificações de email enviadas do Microsoft Cloud App Security para administradores solicitando alertas e para as notificações enviadas para usuários finais informando sobre as violações nas quais estão envolvidos, faça este procedimento. Para obter informações sobre o endereço IP do servidor de email do Microsoft Cloud App Security que você deve incluir na lista de permissões em seu serviço antispam, consulte [Requisitos de rede](network-requirements.md). 
+ O Microsoft Cloud App Security envia notificações por email aos administradores solicitando alertas e aos usuários finais envolvidos em violações. Para definir parâmetros para notificações por email, siga este procedimento. Para obter informações sobre o endereço IP do servidor de email do Microsoft Cloud App Security que você deve incluir na lista de permissões em seu serviço antispam, consulte [Requisitos de rede](network-requirements.md).
 
-
-1. Na barra de menus, clique na engrenagem de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações"), selecione **Configurações** e depois a guia **Configurações de Email**.  
+1. Na barra de menus, clique na engrenagem de configurações, selecione **Configurações** e, em seguida, a guia **Configurações de email**.  
 
    ![configurações de email](./media/mail-settings-config.png)
 
-2. Em **Identidade do remetente de email**: se você estiver planejando usar as configurações de email padrão, não será necessário alterar qualquer coisa nesta seção. Se você quiser personalizar a identidade do remetente de email, defina uma destas configurações para personalizar o campo que você deseja alterar. É possível alterar qualquer uma destas opções: **Do nome de exibição**, **Do endereço de email**, **Endereço de email para resposta**. O Microsoft Cloud App Security faz isso para você por meio de um serviço de email de terceiros chamado MailChimp®. Revise e aceite os Termos de Serviço e a Declaração de Privacidade do MailChimp para habilitar isso. Caso contrário, o Microsoft Cloud App Security enviará as notificações usando as configurações padrão.
-   
+2. Em **Identidade do remetente de email**: se você pretende usar as configurações de email padrão, não precisa alterar nada nesta seção. Se você quiser personalizar a identidade do remetente de email, defina uma destas configurações para personalizar o campo que você deseja alterar. Altere um ou todos os seguintes itens: **Do nome de exibição**, **Do endereço de email**, **Endereço de email para resposta**. O Microsoft Cloud App Security realiza a personalização usando um serviço de email de terceiros chamado MailChimp®. Lembre-se de examinar e aceitar os Termos de serviço e a Política de privacidade do MailChimp para habilitar a personalização. Caso contrário, o Microsoft Cloud App Security enviará as notificações usando as configurações padrão.
+ 
    > [!NOTE]
    > Somente caracteres unicode têm suporte no nome de exibição e no endereço de email, de acordo com o [padrão rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
 
   
-3. Para o **Design de email**, você pode usar um arquivo html para personalizar e criar as mensagens de email enviadas do sistema. O arquivo html usado para o modelo deve incluir o seguinte:  
+3. Para o **Design de email**, você pode usar um arquivo html para personalizar e criar as mensagens de email enviadas do sistema. O arquivo HTML usado para o modelo deve incluir os seguintes itens:  
   
-   -   Todos os arquivos CSS devem estar embutidos no modelo.  
+   - Todos os arquivos CSS devem estar embutidos no modelo.  
   
-   -   O modelo deve ter três espaços reservados não editáveis:  
+   - O modelo deve ter três espaços reservados não editáveis:  
   
-        %%logo%% ‑ Uma URL para o logotipo da sua empresa que foi carregado na página Configuração geral  
+        - **%%logo%%** – a URL para o logotipo de sua empresa que foi carregado na página Configuração geral.  
   
-        %%title%% ‑ Um espaço reservado para o título do email, conforme definido pela política.  
+        - **%%title%%** – espaço reservado para o título do email, conforme definido pela política.  
 
-        %%content%% ‑ Um espaço reservado para o conteúdo que será incluído para os usuários finais, conforme definido pela política.  
-     
+        - **%%content%%** – espaço reservado para o conteúdo que será incluído para os usuários finais, conforme definido pela política.  
+
 4. Clique em **Carregar um modelo...** e selecione o arquivo que você criou. 
 
-5. Em seguida, clique em **Enviar um email de teste** para enviar um email de teste para você mesmo para ver um exemplo do modelo que você criou. O email será enviado para a conta usada para fazer logon no portal. No email de teste, você poderá ver os campos de metadados, o modelo, o assunto do email, o título no corpo do email e o conteúdo.  A seguir está um exemplo de modelo de email: 
+5. Clique em **Enviar um email de teste** para enviar por email para você um exemplo do modelo criado. O email será enviado para a conta usada para fazer logon no portal. No email de teste, você verá e verificará os seguintes itens:
+    - Os campos de metadados
+    - O modelo
+    - O assunto do email
+    - O título no corpo do email
+    - O conteúdo
 
+## <a name="sample-email-template"></a>Modelo de email de exemplo
 
+Veja abaixo um modelo de email de exemplo:
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -108,15 +117,10 @@ Para definir parâmetros para as notificações de email enviadas do Microsoft C
           </table>  
             </body>  
           </html>  
-   ```
-  
+```
 
-  
-  
+## <a name="next-steps"></a>Próximas etapas
 
-  
-    
-## <a name="see-also"></a>Consulte Também  
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

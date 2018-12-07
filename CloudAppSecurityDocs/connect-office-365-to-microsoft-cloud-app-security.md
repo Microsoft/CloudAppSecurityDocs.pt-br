@@ -1,11 +1,11 @@
 ---
 title: Conectar o Office 365 ao Cloud App Security para obter visibilidade e controle de uso | Microsoft Docs
-description: Este tópico fornece informações sobre como conectar seu Office 365 ao Cloud App Security usando o conector de API.
+description: Este artigo fornece informações sobre como conectar o Office 365 ao Cloud App Security usando o conector de API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,20 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ef40ee52ca592de3feef2998ea6b753436c4d0fa
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 3bfbdaef4a62ba100710709703b6cdf0a53e9f64
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217247"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596755"
 ---
+# <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar o Office 365 ao Microsoft Cloud App Security
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-
-
-# <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar o Office 365 ao Microsoft Cloud App Security
-Esta seção fornece instruções para conectar o Microsoft Cloud App Security à sua conta do Microsoft Office 365 existente usando a API do conector de aplicativos.  
+Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do Microsoft Office 365 usando a API do conector de aplicativos.  
   
-O Cloud App Security dá suporte à Plataforma Dedicada herdada do Office 365 além das ofertas mais recentes de serviços do Office 365 (conhecidos como a família da versão vNext do Office 365).  O Cloud App Security não é compatível com o Microsoft Business Productivity Online Standard Suite Herdado. 
+O Cloud App Security dá suporte à Plataforma Dedicada herdada do Office 365 além das ofertas mais recentes de serviços do Office 365 (conhecidos como a família da versão vNext do Office 365).  O Cloud App Security não dá suporte ao Microsoft BPOS (Business Productivity Online Standard Suite) Herdado. 
 
 > [!NOTE]
 > Em alguns casos, uma versão do serviço vNext difere um pouco nos níveis administrativos e de gerenciamento da oferta padrão do Office 365.

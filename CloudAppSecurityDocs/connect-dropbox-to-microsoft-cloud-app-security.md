@@ -1,11 +1,11 @@
 ---
 title: Conectar o Dropbox ao Cloud App Security para obter visibilidade e controle de uso | Microsoft Docs
-description: Este tópico fornece informações sobre como conectar seu aplicativo do Dropbox ao Cloud App Security usando o conector de API.
+description: Este artigo fornece informações sobre como conectar o aplicativo Dropbox ao Cloud App Security usando o conector de API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3e6e9a25c419aa9453e4771b477c068b9ad902c
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 6a994e5ef04a18299d78613adfb74147787c862c
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217230"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596789"
 ---
+# <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar o Dropbox ao Microsoft Cloud App Security
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-
-# <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar o Dropbox ao Microsoft Cloud App Security
-Esta seção fornece instruções para conectar o Microsoft Cloud App Security à sua conta do Dropbox existente usando as APIs do conector.  
+Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do Dropbox usando as APIs do conector.  
  
  
 Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar entrar, o Cloud App Security registra esses usuários como usuários não autenticados. Se encontrar usuários não autenticados do Dropbox, isso poderá indicar usuários que não são da sua organização ou eles poderão ser usuários reconhecidos de dentro da sua organização que não entraram.

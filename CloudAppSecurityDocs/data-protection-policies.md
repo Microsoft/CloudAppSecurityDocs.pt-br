@@ -1,11 +1,11 @@
 ---
 title: Criar políticas para monitorar e proteger arquivos em seus aplicativos de nuvem | Microsoft Docs
-description: Este tópico descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e arquivos em uso nos aplicativos de nuvem da sua organização.
+description: Este artigo descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e os arquivos em uso nos aplicativos na nuvem de sua organização.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,53 +13,49 @@ ms.technology: ''
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2445c88a6fae504b51b5d4a0cb32ba00c936681e
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 388fca467f4ef83f2494caab411d242a8a273e36
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745775"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597357"
 ---
+# <a name="file-policies"></a>Políticas de arquivos  
+
 *Aplica-se ao: Microsoft Cloud App Security*
 
-# <a name="file-policies"></a>Políticas de arquivos  
-As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso.  <br></br>
-
-O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de 20 filtros de metadados (como por exemplo, nível de acesso e tipo de arquivo). 
+As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso. O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de 20 filtros de metadados (como por exemplo, nível de acesso e tipo de arquivo). 
  
-**Tipos de arquivos com suporte** 
+**Tipos de arquivos com suporte**
 
 Mecanismos de DLP internos do Cloud App Security executam inspeção de conteúdo extraindo texto de todos os tipos de arquivo comuns (mais de 100), incluindo Office, Open Office, arquivos compactados, vários formatos de texto avançado, XML, HTML e muito mais.
 
+## <a name="policies"></a>Políticas 
 O mecanismo combina três aspectos em cada política:  
   
--   Verificação de conteúdo com base em modelos predefinidos ou expressões personalizadas.  
+- Verificação de conteúdo com base em modelos predefinidos ou expressões personalizadas.  
   
--   Filtros de contexto, incluindo funções de usuário, metadados de arquivo, nível de compartilhamento, integração do grupo organizacional, contexto de colaboração e atributos personalizáveis adicionais.  
+- Filtros de contexto, incluindo funções de usuário, metadados de arquivo, nível de compartilhamento, integração do grupo organizacional, contexto de colaboração e atributos personalizáveis adicionais.  
   
--   Ações automatizadas para governança e correção. Para obter mais informações, consulte [Control](control.md) (Controlar).  
+- Ações automatizadas para governança e correção. Para obter mais informações, consulte [Control](control.md) (Controlar).  
   
 Quando habilitada, a política examina continuamente seu ambiente de nuvem, identifica arquivos que correspondem aos filtros de contexto e conteúdo e aplica as ações automatizadas solicitadas. Essas políticas detectam e corrigem violações de informações em repouso ou quando novo conteúdo é criado. As políticas podem ser monitoradas usando alertas em tempo real ou relatórios gerados do console.  
   
 A seguir estão exemplos das políticas de arquivos que podem ser criadas:  
   
--   Arquivos compartilhados publicamente: <br></br>
-    Receba um alerta sobre qualquer arquivo na sua nuvem que esteja compartilhado publicamente selecionando todos os arquivos cujo nível de compartilhamento é público.  
+-  **Arquivos compartilhados publicamente** – receba um alerta sobre qualquer arquivo em sua nuvem que esteja compartilhado publicamente selecionando todos os arquivos cujo nível de compartilhamento é público.  
   
--   O nome do arquivo compartilhado publicamente contém o nome da organização: <br></br> Receba um alerta sobre qualquer arquivo que contenha o nome da sua organização e esteja compartilhado publicamente. Selecione os arquivos com um nome de arquivo que contenha o nome da sua organização e que estejam compartilhados publicamente.  
+- **O nome de arquivo compartilhado publicamente contém o nome da organização** – receba um alerta sobre qualquer arquivo que contém o nome de sua organização e esteja compartilhado publicamente. Selecione os arquivos com um nome de arquivo que contenha o nome da sua organização e que estejam compartilhados publicamente.  
   
--   Compartilhando com domínios externos:  <br></br>
-    Receba um alerta sobre qualquer arquivo compartilhado com as contas pertencentes a domínios externos específicos. Por exemplo, arquivos compartilhados com o domínio de um concorrente. Selecione o domínio externo com o qual você deseja limitar o compartilhamento.  
+- **Compartilhando com domínios externos** – receba um alerta sobre qualquer arquivo compartilhado com as contas pertencentes a domínios externos específicos. Por exemplo, arquivos compartilhados com o domínio de um concorrente. Selecione o domínio externo com o qual você deseja limitar o compartilhamento.  
   
--   Arquivos compartilhados em quarentena não modificados durante o último período:  <br></br>
-    Receba um alerta sobre arquivos compartilhados que ninguém modificou recentemente para colocá-los em quarentena ou optar por ativar uma ação automatizada. Exclua todos os arquivos particulares que não foram modificados durante um intervalo de datas especificado. No G Suite, você pode optar por colocar esses arquivos em quarentena usando a caixa de seleção "Colocar arquivo em quarentena", na página de criação de política.  
+- **Arquivos compartilhados em quarentena não modificados durante o último período** – receba um alerta sobre arquivos compartilhados que ninguém modificou recentemente, para colocá-los em quarentena ou optar por ativar uma ação automatizada. Exclua todos os arquivos particulares que não foram modificados durante um intervalo de datas especificado. No G Suite, você pode optar por colocar esses arquivos em quarentena usando a caixa de seleção ‘Colocar arquivo em quarentena’ na página de criação da política.  
   
--   Compartilhando com usuários não autorizados:  <br></br>
-    Receba um alerta sobre os arquivos compartilhados com um grupo de usuários não autorizados em sua organização. Selecione os usuários para os quais o compartilhamento não é autorizado.  
+- **Compartilhando com usuários não autorizados** – receba um alerta sobre os arquivos compartilhados com um grupo de usuários não autorizados em sua organização. Selecione os usuários para os quais o compartilhamento não é autorizado.  
   
--   Extensão do arquivo confidencial:  <br></br>
-    Receba um alerta sobre arquivos com extensões específicas com potencial de alta exposição. Selecione a extensão específica (por exemplo, crt para certificados) ou o nome do arquivo e exclua aqueles com o nível de compartilhamento privado.  
-  
+- **Extensão de arquivo confidencial** – receba um alerta sobre arquivos com extensões específicas com potencial de alta exposição. Selecione a extensão específica (por exemplo, crt para certificados) ou o nome do arquivo e exclua aqueles com o nível de compartilhamento privado.  
+
+## <a name="create-a-new-file-policy"></a>Criar uma política de arquivo  
 Para criar uma nova política de arquivos, siga este procedimento:  
   
 1. No console, clique em **Controlar** seguido por **Políticas**.  
@@ -99,15 +95,13 @@ Uma **Política de arquivos** é uma política baseada em API que permite que vo
   
 Cada política é composta pelas seguintes partes:  
   
--   Filtros de arquivos – permitem criar condições granulares com base nos metadados.  
+- **Filtros de arquivos** – permite criar condições granulares com base nos metadados.  
   
--   Inspeção de conteúdo – permite restringir a política, com base nos resultados do mecanismo de DLP. É possível incluir uma expressão personalizada ou uma expressão predefinida. As exclusões podem ser definidas, e é possível escolher o número de correspondências. Também é possível usar a anonimização para mascarar o nome de usuário. 
+- **Inspeção de conteúdo** – permite restringir a política, com base nos resultados do mecanismo de DLP. É possível incluir uma expressão personalizada ou uma expressão predefinida. As exclusões podem ser definidas, e é possível escolher o número de correspondências. Também é possível usar a anonimização para mascarar o nome de usuário. 
   
--   Ações – a política fornece a um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são encontradas.  Essas ações são divididas em ações de colaboração, ações de segurança e ações de investigação.
+- **Ações** – a política fornece um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são encontradas.  Essas ações são divididas em ações de colaboração, ações de segurança e ações de investigação.
 
--   Extensões  
-   
-    -  A inspeção de conteúdo pode ser executada por meio de mecanismos de terceiros para recursos antimalware ou de DLP aprimorados.  
+- **Extensões** – a inspeção de conteúdo pode ser executada por meio de mecanismos de terceiros para funcionalidades aprimoradas de DLP ou antimalware.  
 
   
 ## <a name="next-steps"></a>Próximas etapas 

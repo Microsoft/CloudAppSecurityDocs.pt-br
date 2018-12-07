@@ -1,11 +1,11 @@
 ---
 title: Criar políticas de acesso do Cloud App Security para permitir e bloquear o acesso | Microsoft Docs
-description: Este tópico descreve o procedimento para configurar uma política de acesso do Controle de Aplicativo de Acesso Condicional do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD usando os recursos de proxy reverso.
+description: Este artigo descreve o procedimento para configurar uma política de acesso do Controle de Aplicativos de Acesso Condicional do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD usando as funcionalidades de proxy reverso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,23 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0c6f6a8139996cadde78f5378b84d82210d70ade
-ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
+ms.openlocfilehash: 7ce928d8335c46e6eadb06a0ccbf152f1741808f
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251380"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596708"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
 # <a name="access-policies"></a>Políticas de acesso 
 
-
+*Aplica-se ao: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« ANTERIOR: Como criar uma política de sessão](session-policy-aad.md)<br>
 [PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
 
 
-As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, local, dispositivo e aplicativo. Crie políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são ingressados em domínio e não gerenciados pelo Windows Intune distribuindo certificados do cliente para dispositivos gerenciados ou aproveitando os certificados existentes, como certificados MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado. 
+As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, localização, dispositivo e aplicativo. Crie políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são ingressados no domínio e não gerenciados pelo Windows Intune distribuindo certificados do cliente para dispositivos gerenciados ou usando certificados existentes, como certificados MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado. 
 
 > [!NOTE]
 > Em vez de permitir ou bloquear o acesso por completo, com as [políticas de sessão](session-policy-aad.md), é possível permitir o acesso durante o monitoramento da sessão e/ou limitar atividades de sessão específicas. 
@@ -54,7 +52,7 @@ As políticas de acesso condicional do Azure Active Directory e as políticas de
    > [!NOTE]
    > Apenas os aplicativos que foram [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md) serão afetados por essa política.
 
-2. Encaminhe usuários para o Microsoft Cloud App Security selecionando **Usar restrições impostas do Controle de Aplicativo de Acesso Condicional** na folha **Sessão**.
+2. Encaminhe usuários para o Microsoft Cloud App Security selecionando **Usar restrições impostas pelo Controle de Aplicativos de Acesso Condicional** em **Sessão**.
  
 ## <a name="create-a-cloud-app-security-access-policy"></a>Criar uma política de acesso do Cloud App Security 
 
@@ -65,7 +63,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 
 3. Na janela **Política de acesso**, atribua um nome à política, como *Bloquear o acesso em dispositivos não gerenciados*.
 
-4. Em **Origem da atividade** na seção **Atividades que correspondem a todos os seguintes**, selecione os filtros de atividade adicionais a serem aplicados na política. Eles podem incluir as seguintes opções: 
+4. Na seção **Atividades que correspondem a todos os seguintes**, em **Origem da atividade**, selecione os filtros de atividade adicionais a serem aplicados à política. Os filtros incluem as seguintes opções: 
      
    - **Marcas de dispositivo**: use este filtro para identificar dispositivos não gerenciados.
 
@@ -73,7 +71,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 
    - **Endereço IP**: use nesse filtro para filtrar por endereços IP ou usar marcas de endereço IP atribuídas anteriormente. 
 
-   - **Marca de agente do usuário**: use esse filtro para habilitar que a heurística identifique os aplicativos móveis e de área de trabalho. Esse filtro pode ser configurado como igual a ou não igual ao **Cliente nativo** e deve ser testado em relação a seus aplicativos móveis e de área de trabalho para cada aplicativo de nuvem.
+   - **Marca de agente do usuário**: use esse filtro para habilitar que a heurística identifique os aplicativos móveis e de área de trabalho. Esse filtro pode ser definido como igual a ou não é igual a. Os valores devem ser testados nos aplicativos móveis e da área de trabalho para cada aplicativo na nuvem.
   
 5. Em **Ações**, selecione uma das seguintes opções: 
 
@@ -90,7 +88,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 [PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
 
  
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas  
 [Bloqueando downloads em dispositivos não gerenciados, usando funcionalidades de Controle de Aplicativo de Acesso Condicional do Azure AD](use-case-proxy-block-session-aad.md)   
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  

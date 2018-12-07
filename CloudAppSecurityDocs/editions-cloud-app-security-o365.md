@@ -1,11 +1,11 @@
 ---
 title: Quais são as diferenças entre o Cloud App Security e o Cloud App Security do Office 365? | Microsoft Docs
-description: Este tópico descreve as diferenças entre o Cloud App Security e o Cloud App Security do Office 365.
+description: Este artigo descreve as diferenças entre o Cloud App Security e o Cloud App Security do Office 365.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/21/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,26 @@ ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0ece617169af47eeaa83ec626667d81ea8a394ad
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: fa11ebe67ddf86995a404ec386d0c601fd4dc021
+ms.sourcegitcommit: e424807015f33aa359d9e29e13cc2faac5adcb92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142889"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561114"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quais são as diferenças entre o Microsoft Cloud App Security e o Cloud App Security do Office 365?
 
-> [!NOTE]
-> Para saber mais sobre o Cloud App Security do Office 365, consulte [Introdução ao Cloud App Security do Office 365](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+*Aplica-se ao: Microsoft Cloud App Security*
+
+Este artigo descreve as diferenças entre o Cloud App Security e o Cloud App Security do Office 365. Para saber mais sobre o Cloud App Security do Office 365, consulte [Introdução ao Cloud App Security do Office 365](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
 
-O Cloud App Security é uma solução entre SaaS completa que traz visibilidade profunda, fortes controles de dados e proteção aprimorada contra ameaças para os seus aplicativos de nuvem. Com esse serviço, é possível obter visibilidade sobre TI sombra descobrindo os aplicativos de nuvem em uso e é possível controlar e proteger os dados dos aplicativos depois de sancioná-los no serviço. 
+O Microsoft Cloud App Security é uma solução entre SaaS completa que traz visibilidade profunda, controles de dados fortes e proteção contra ameaças aprimorada aos seus aplicativos na nuvem. Com esse serviço, você pode obter visibilidade sobre TI Sombra descobrindo os aplicativos na nuvem em uso. Você pode controlar e proteger os dados nos aplicativos depois de sancioná-los no serviço.
 
 ## <a name="office-365-cloud-app-security"></a>Cloud App Security do Office 365
 
-O Cloud App Security do Office 365 é um subconjunto do Microsoft Cloud App Security que fornece visibilidade aprimorada e controle para o Office 365. Isso inclui a detecção de ameaças com base nos logs de atividade do usuário, a descoberta de TI sombra para aplicativos que têm funcionalidade semelhante às ofertas do Office 365 e controle de permissões do aplicativo para o Office 365.
+O Cloud App Security do Office 365 é um subconjunto do Microsoft Cloud App Security que fornece visibilidade aprimorada e controle para o Office 365. O Cloud App Security do Office 365 inclui a detecção de ameaças com base nos logs de atividades do usuário, a descoberta de TI Sombra para aplicativos que têm funcionalidade semelhante às ofertas do Office 365 e o controle de permissões de aplicativo para o Office 365.
 
 ### <a name="feature-support"></a>Suporte ao recurso
 
@@ -58,7 +59,7 @@ O Cloud App Security do Office 365 é um subconjunto do Microsoft Cloud App Secu
 
 
 
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas  
 
 Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).    
 

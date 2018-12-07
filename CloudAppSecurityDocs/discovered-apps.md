@@ -1,11 +1,11 @@
 ---
 title: Trabalhando com aplicativos descobertos no Cloud App Security | Microsoft Docs
-description: Este tópico descreve o processo de identificação e correção de aplicativos de descoberta de nuvem arriscados no Cloud App Security.
+description: Este artigo descreve o processo de identificação e correção de aplicativos de descoberta de nuvem que trazem riscos no Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,22 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8cc854e387cb563ca488c299f17b6553905ac6d7
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 97453e055dc7014cccef5d9a479e4fc76020fa2c
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745690"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597129"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
-## <a name="review-the-cloud-discovery-dashboard"></a>Examinar o Painel do Cloud Discovery
+*Aplica-se ao: Microsoft Cloud App Security*
 
 O painel do Cloud Discovery foi projetado para fornecer mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização. Ele fornece uma visão geral rápida de quais tipos de aplicativos estão sendo usados, os alertas abertos e os níveis de risco dos aplicativos na sua organização. Ele também mostra quem são os principais usuários do aplicativo e fornece um mapa do local da Matriz de Aplicativo. O Painel do Cloud Discovery tem muitas opções para filtrar os dados. A filtragem permite que você gere exibições específicas dependendo do que você está mais interessado usando gráficos de fácil compreensão para apresentar o panorama completo em uma visão geral.
 
 ![painel do Cloud Discovery](./media/cloud-discovery-dashboard.png)
+
+## <a name="review-the-cloud-discovery-dashboard"></a>Examinar o Painel do Cloud Discovery
 
 A primeira coisa que você deve fazer para obter uma visão geral de seus aplicativos do Cloud Discovery é examinar as seguintes informações no Painel do Cloud Discovery:
  
@@ -42,7 +41,7 @@ A primeira coisa que você deve fazer para obter uma visão geral de seus aplica
 4. Você pode ver os **principais usuários e endereços IP** de origem para identificar quais usuários são os mais dominantes nos aplicativos de nuvem na sua organização.
 5. Verifique como os aplicativos descobertos se espalham acordo com a localização geográfica (segundo a Matriz) no **mapa de Matriz de Aplicativos**.
 
-6. Por fim, não se esqueça de examinar a pontuação de risco do aplicativo descoberto na **Visão geral de risco do aplicativo**.  Verifique o **status de alertas de descoberta** para ver quantos alertas abertos você deve investigar.
+6. Por fim, não se esqueça de examinar a pontuação de risco do aplicativo descoberto na **Visão geral de risco do aplicativo**. Verifique o **status de alertas de descoberta** para ver quantos alertas abertos você deve investigar.
 
 ## <a name="deep-dive-into-discovered-apps"></a>Aprofundar-se nos aplicativos Descobertos
 Se você deseja aprofundar-se ainda mais nos dados que o Cloud Discovery fornece, use os filtros para examinar quais aplicativos são arriscados e quais são usados com frequência.
@@ -109,7 +108,7 @@ Para criar um novo relatório contínuo:
   
 5. Selecione as fontes de dados que você deseja incluir.  
   
-6. Defina os filtros que você deseja nos dados. Esses filtros podem ser **Grupos de usuários**, marcas de **Endereço IP ou **Intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).  
+6. Defina os filtros que você deseja nos dados. Esses filtros podem ser **Grupos de usuários**, **Marcas de endereço IP** ou **Intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).  
   
     ![criar relatório contínuo personalizado](./media/create-custom-continuous-report.png) 
 

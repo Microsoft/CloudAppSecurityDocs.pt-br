@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,29 +13,28 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e6af8713761ccff80a141dadabba33b12bf00ea
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: b6fca4c85aa2816b4e6ef5db084c31544f241133
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349569"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597306"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Privacidade e segurança de dados do Microsoft Cloud App Security
+
+*Aplica-se ao: Microsoft Cloud App Security*
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-O Microsoft Cloud App Security é um componente crítico da pilha do Microsoft Cloud Security. Ele é uma solução abrangente que ajuda sua organização a aproveitar totalmente a promessa de aplicativos em nuvem, mas mantém você em controle por meio de visibilidade abrangente, recursos de auditoria e controles granulares sobre seus dados confidenciais.
+O Microsoft Cloud App Security é um componente crítico da pilha do Microsoft Cloud Security. É uma solução abrangente que ajuda sua organização a aproveitar totalmente a promessa dos aplicativos na nuvem. O Cloud App Security mantém você no controle por meio da visibilidade abrangente, auditoria e controles granulares sobre seus dados confidenciais.
 
-Com ferramentas que ajudam a descobrir TI sombra e avaliar riscos, permitindo que você aplique políticas e investigue atividades. O Microsoft Cloud App Security ajuda você a controlar o acesso em tempo real e a impedir ameaças, para que sua organização possa migrar com mais segurança para a nuvem.
+O Microsoft Cloud App Security traz ferramentas que ajudam a descobrir a TI sombra e avaliar riscos, permitindo que você imponha políticas e investigue atividades. Ele ajuda você a controlar o acesso em tempo real e a impedir ameaças, para que sua organização possa migrar com mais segurança para a nuvem.
 
 ## <a name="cloud-app-security-compliance"></a>Conformidade do Cloud App Security
 
-Em um mundo onde violações a dados e ataques são ocorrências diárias, é essencial para as organizações escolher um agente de segurança de aplicativo de nuvem capaz de todos os esforços para proteger seus dados. O Microsoft Cloud App Security, como todos os produtos e serviços de nuvem da Microsoft, foi criado desde o início com o objetivo de atender às demandas rigorosas de segurança e privacidade de clientes do Cloud App Security.
+Em um mundo em que violações a dados e ataques são ocorrências diárias, é essencial que as organizações escolham um agente de segurança de aplicativo na nuvem que empreenda todos os esforços para proteger seus dados. O Microsoft Cloud App Security, como todos os produtos e serviços de nuvem da Microsoft, foi criado com o objetivo de atender às rigorosas demandas de segurança e privacidade de nossos clientes.
 
-Para ajudar as organizações a atender aos requisitos regionais, nacionais e específicos do setor que controlam a coleta e o uso de dados de indivíduos, o Microsoft Cloud App Security fornece um conjunto abrangente de ofertas de conformidade (incluindo certificações e atestados).
+Para ajudar as organizações a atender aos requisitos regionais, nacionais e específicos do setor que controlam a coleta e o uso de dados de indivíduos, o Microsoft Cloud App Security fornece um conjunto abrangente de ofertas de conformidade. As ofertas de conformidade incluem certificações e atestados.
 
 ### <a name="compliance-framework-and-offerings"></a>Estrutura e ofertas de conformidade
 
@@ -62,43 +61,47 @@ Para obter mais informações, acesse [Ofertas de conformidade da Microsoft](htt
 
 ## <a name="privacy"></a>Privacidade
 
-### <a name="you-are-the-owner-of-your-data"></a>Você é o proprietário dos seus dados
+### <a name="youre-the-owner-of-your-data"></a>Você é o proprietário de seus dados
 - No Microsoft Cloud App Security, seus administradores podem exibir dados de identificação pessoal armazenados no serviço do portal usando a barra de Pesquisa.
 - Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. Clicar em uma entidade abre [**Usuários e Contas**](accounts.md). A página **Usuários e contas** fornece detalhes abrangentes sobre a entidade, extraídos de aplicativos de nuvem conectados. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
 
--   Você é proprietários dos seus dados e pode cancelar assinaturas e solicitar a exclusão dos dados a qualquer momento. Se você não renovar sua assinatura, seus dados serão excluídos dentro do prazo especificado nos [Termos de Serviços Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- Você é proprietários dos seus dados e pode cancelar assinaturas e solicitar a exclusão dos dados a qualquer momento. Se você não renovar sua assinatura, seus dados serão excluídos dentro do prazo especificado nos [Termos de Serviços Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
--   Se optar por encerrar o serviço, você poderá levar seus dados consigo.
+- Se optar por encerrar o serviço, você poderá levar seus dados consigo.
 
 ### <a name="microsoft-cloud-app-security-is-the-processor-of-your-data"></a>O Microsoft Cloud App Security é o processador de seus dados
 
--   O Cloud App Security usa seus dados apenas para fins consistentes com o fornecimento dos serviços que você assina.
+- O Cloud App Security usa seus dados apenas para fins consistentes com o fornecimento dos serviços que você assina.
 
--   Se um governo entrar em contato com a Microsoft para obter acesso aos seus dados, a Microsoft redirecionará a consulta a você, o cliente, sempre que possível. A Microsoft desafiou exigências legais que não eram válidas, que proibiam a divulgação de informações de [uma solicitação de governo](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) por dados do cliente. Saiba mais sobre [quem pode acessar seus dados e sob quais condições](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms).
+- Se um governo entrar em contato com a Microsoft para obter acesso aos seus dados, a Microsoft redirecionará a consulta a você, o cliente, sempre que possível. A Microsoft desafiou exigências legais que não eram válidas, que proibiam a divulgação de informações de [uma solicitação de governo](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) por dados do cliente. Saiba mais sobre [quem pode acessar seus dados e sob quais condições](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms).
 
 ### <a name="privacy-controls"></a>Controles de privacidade
 
--   Os controles de privacidade ajudam você a definir quem em sua organização tem acesso ao serviço e o que eles podem acessar.
+- Os controles de privacidade ajudam você a definir quem em sua organização tem acesso ao serviço e o que eles podem acessar.
 
 ## <a name="updating-personal-data"></a>Atualização de dados pessoais
-Os dados pessoais sobre usuários derivam do objeto do usuário nos aplicativos SaaS usados. Por isso, qualquer alteração feita no perfil do usuário nesses aplicativos são refletidas no Microsoft Cloud App Security.
+Os dados pessoais sobre usuários derivam do objeto do usuário nos aplicativos SaaS usados. Por isso, qualquer alteração feita no perfil do usuário nesses aplicativos é refletida no Microsoft Cloud App Security.
 
 
 ## <a name="data-location"></a>Local dos dados
 
--   Atualmente, o Microsoft Cloud App Security opera em data centers nos Estados Unidos e na Europa (cada um deles uma "área geográfica"). Sua conta de locatário será criada em uma área geográfica com base no país que você escolheu durante a inscrição. Especificamente, seus dados serão armazenados em um data center na área geográfica mais próxima desse local.
+- Atualmente, o Microsoft Cloud App Security opera em data centers nos Estados Unidos e na Europa (cada um deles uma "área geográfica"). Sua conta de locatário será criada em uma área geográfica com base no país que você escolheu durante a inscrição. Especificamente, seus dados serão armazenados em um data center na área geográfica mais próxima desse local.
 
 [Saiba mais sobre privacidade](https://www.microsoft.com/en-us/trustcenter/privacy)
 
 ## <a name="transparency"></a>Transparência
 
-A Microsoft fornece transparência sobre suas práticas: compartilhando com você onde os dados estão armazenados, afirmando que seus dados são usados somente para fornecer serviços estabelecido e especificando como os engenheiros da Microsoft e subcontratados aprovados usam esses dados para fornecer serviços.
+A Microsoft fornece transparência sobre suas práticas: 
+
+- Compartilhando com você o local em que os dados são armazenados.
+- Afirmando que seus dados são usados apenas para fornecer os serviços acordados.
+- Especificando como os engenheiros da Microsoft e os subcontratados aprovados usam esses dados para fornecer serviços.
 
 A Microsoft usa os controles rígidos para controlar o acesso a dados do cliente, concedendo o menor nível de acesso necessário para concluir tarefas importantes e revogando o acesso quando não for mais necessário.
 
 ### <a name="data-protection"></a>Proteção de dados
 
-O Microsoft Cloud App Security impõe a proteção de dados ao executar a inspeção de conteúdo. O conteúdo do arquivo não é armazenado no Cloud App Security; somente os metadados dos registros de arquivo e quaisquer correspondências identificadas são armazenadas.
+O Microsoft Cloud App Security impõe a proteção de dados durante a inspeção de conteúdo. O conteúdo dos arquivos não é armazenado no datacenter do Cloud App Security. Apenas os metadados dos registros de arquivo e as correspondências identificadas são armazenados.
 
 ### <a name="data-retention"></a>Retenção de dados
 
@@ -110,7 +113,7 @@ O Microsoft Cloud App Security mantém os dados da seguinte maneira:
 
 - Alertas: 180 dias
 
-Você pode aprender mais sobre práticas de dados da Microsoft lendo os [Termos de Serviço Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+Saiba mais sobre as práticas de dados da Microsoft lendo os [Termos de Serviço Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Saiba mais sobre transparência](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
@@ -128,7 +131,7 @@ A Microsoft usa a tecnologia de criptografia para proteger seus dados em repouso
 
 ### <a name="identity-and-access-management"></a>Gerenciamento de acesso e identidade
 
-O Microsoft Cloud App Security permite que você limite o acesso dos administradores ao portal com base na localização geográfica usando o Azure Active Directory para limitar o acesso. É possível exigir autenticação multifator para acessar o portal do Microsoft Cloud App Security usando o Azure Active Directory.
+O Microsoft Cloud App Security permite que você limite o acesso dos administradores ao portal com base na geolocalização usando o Azure Active Directory. É possível exigir autenticação multifator para acessar o portal do Microsoft Cloud App Security usando o Azure Active Directory.
 
 ### <a name="permissions"></a>Permissões
 
@@ -138,7 +141,7 @@ O Microsoft Cloud App Security é compatível com o controle de acesso baseado e
 
 ### <a name="scoped-deployment"></a>Implantação com escopo
 
-O Microsoft Cloud App Security permite definir o escopo da implantação. Isso permite que você administre apenas grupos específicos usando o Cloud App Security, ou exclua grupos específicos da governança do Cloud App Security. Para saber mais, confira [Implantação com escopo](scoped-deployment.md).
+O Microsoft Cloud App Security permite definir o escopo da implantação. A definição de escopo permite que você controle apenas grupos específicos usando o Cloud App Security ou exclua grupos específicos da governança do Cloud App Security. Para saber mais, confira [Implantação com escopo](scoped-deployment.md).
 
 ### <a name="anonymization"></a>Anonimização 
 

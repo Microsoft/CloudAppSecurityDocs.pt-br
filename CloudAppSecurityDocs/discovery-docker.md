@@ -1,11 +1,11 @@
 ---
 title: Configurar o upload de log automático para relatórios contínuos | Microsoft Docs
-description: Este tópico descreve o processo de configuração de upload automático de logs para relatórios contínuos no Cloud App Security.
+description: Este artigo descreve o processo de configuração de upload automático de logs para relatórios contínuos no Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,22 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc77a77b8a72192bc7b588b758d68136c7a2399b
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 379d2153f0e309ca5694f132432249c7df81010d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349552"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596706"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
+*Aplica-se ao: Microsoft Cloud App Security*
 
-Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Os logs de FTP são carregados para o Microsoft Cloud App Security após o arquivo concluir a transferência do FTP para o coletor de logs. Para Syslog, o coletor de logs grava os logs recebidos no disco e carrega o arquivo para o Cloud App Security quando o tamanho do arquivo é maior do que 40 KB. 
+Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Os logs de FTP são carregados para o Microsoft Cloud App Security após o arquivo concluir a transferência do FTP para o coletor de logs. Para o Syslog, o Coletor de Logs grava os logs recebidos no disco. Em seguida, o coletor carrega o arquivo no Cloud App Security quando o tamanho do arquivo é maior que 40 KB. 
 
-Depois que um log for carregado no Cloud App Security, ele é movido para um diretório de backup que armazena os últimos 20 logs a qualquer momento. Quando novos logs chegam, os antigos são excluídos. Quando o espaço em disco do coletor de log está cheio, o coletor de log descarta novos logs até que tenha mais espaço livre em disco. Quando isso acontecer, você receberá um aviso na guia **Coletores de logs** das configurações **Carregar logs automaticamente**.
+Depois que um log é carregado no Cloud App Security, ele é movido para um diretório de backup. O diretório de backup armazena os últimos 20 logs. Quando novos logs chegam, os antigos são excluídos. Sempre que o espaço em disco do coletor de logs está cheio, o coletor de logs remove os novos logs até que tenha mais espaço livre em disco. Você receberá um aviso na guia **Coletores de logs** das configurações **Fazer upload de logs automaticamente** quando isso acontecer.
 
-Antes de configurar a coleta de arquivos de log automática, verifique se o log corresponde ao tipo de log esperado para garantir que o Cloud App Security possa analisar seu arquivo específico em [Usando logs de tráfego para o Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
+Antes de configurar a coleta automática de arquivos de log, verifique se o log corresponde ao tipo de log esperado. Você deseja ter certeza de que o Cloud App Security pode analisar seu arquivo específico. Para obter mais informações, confira [Usando logs de tráfego para o Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
 
 
 > [!NOTE]
@@ -50,7 +48,7 @@ O Coletor de logs dá suporte a dois modos de implantação:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="next-steps"></a>Próximas etapas
  
 [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
