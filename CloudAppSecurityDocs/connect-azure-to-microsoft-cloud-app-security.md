@@ -1,11 +1,11 @@
 ---
 title: Conectar o Azure ao Cloud App Security para obter visibilidade e controle de uso | Microsoft Docs
-description: Este tópico fornece informações sobre como conectar o Azure ao Cloud App Security usando o conector de API.
+description: Este artigo fornece informações sobre como conectar o Azure ao Cloud App Security usando o conector de API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,18 @@ ms.technology: ''
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0bb637129c852e284aad5b27bba9ed13a5111cf5
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 9466a9afa157bad350bb94b63ba633bf0d80bac2
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217145"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597160"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar o Azure ao Microsoft Cloud App Security
 
-Esta seção fornece instruções para conectar o Microsoft Cloud App Security à sua conta do Azure existente usando a API do conector de aplicativos.  
+*Aplica-se ao: Microsoft Cloud App Security*
+
+Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do Azure usando a API do conector de aplicativos.  
   
 ## <a name="how-to-connect-azure-to-cloud-app-security"></a>Como conectar o Azure ao Cloud App Security  
   
