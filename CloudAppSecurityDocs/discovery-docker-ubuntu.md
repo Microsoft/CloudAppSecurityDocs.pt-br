@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7f81855eab2ed8ec2b4fe3f151116f91ad29aae6
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 9e20a02b3075a496e30c99d8ae3d0364b7e60d82
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597091"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124274"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker no Ubuntu e no RHEL local
 
@@ -130,7 +130,7 @@ As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantaç�
 
    ![Crie o coletor de logs](./media/windows7.png)
 
-6. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs \<collector_name\>`
+6. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs <collector_name>`
 
 Você deverá ver a mensagem **Concluído com êxito!**
 
