@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 01b08ae0246dbae89a71794bca170d757725c3c8
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 8e9a740972dfd9eb62522458adb55f2b0667db76
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597186"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123917"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
 
@@ -98,6 +98,6 @@ O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anom
 ## <a name="next-steps"></a>Próximas etapas 
 [Políticas de atividade de usuário](user-activity-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

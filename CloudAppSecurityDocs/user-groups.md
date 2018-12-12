@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb209535c6969a3177ea5a638425eedabda1bba1
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d952746375c18730b92f7629ac4978c61ebfbfa9
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143462"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123781"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
    
@@ -53,7 +53,8 @@ Os cenários típicos que aproveitam os grupos de usuários importados incluem: 
 A importação de grupos permite que você selecione os grupos como filtros ao investigar no **Log de atividades** e ao criar políticas. 
 
 > [!NOTE]
-> Somente as atividades executadas após a importação de um grupo de usuários serão marcadas como tendo sido executada por um membro do grupo de usuários.
+> - Somente as atividades executadas após a importação de um grupo de usuários serão marcadas como tendo sido executada por um membro do grupo de usuários.
+> - Após a sincronização inicial, os grupos são atualizados a cada hora.
 
 Para obter mais informações sobre como usar os filtros de grupo de usuários, consulte [Atividades](activity-filters.md).
 
@@ -62,6 +63,6 @@ Para obter mais informações sobre como usar os filtros de grupo de usuários, 
 ## <a name="see-also"></a>Consulte Também  
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

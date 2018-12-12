@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 213a289c3a9205a9f48ee44febf4c55c146c59de
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 7c94a25c93f8e794c19365132438660dac471ff3
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143117"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124138"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -119,6 +119,6 @@ Após concluir essa tarefa, vá para o portal do Cloud App Security e crie uma p
 ## <a name="see-also"></a>Consulte Também  
 [Criar uma política de sessão](session-policy-aad.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

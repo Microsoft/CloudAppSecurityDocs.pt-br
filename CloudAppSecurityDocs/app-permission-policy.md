@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/2/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d0b65fd50a75c7af045abd5cbbd890ecff4d33de
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 76278a51608ca12f1091514d8fdfef29aa304b1f
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743532"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124444"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 
@@ -50,6 +50,6 @@ Como alternativa, também é possível criar a política clicando em **Controle*
   ## <a name="next-steps"></a>Próximas etapas 
   [Políticas de proteção de dados](data-protection-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

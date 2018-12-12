@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 66bf3a348a14dc6bc0fa8d3da481540493b7acbf
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: d57d1eccdc1d835fb828388b422ce12b211172df
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597044"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123900"
 ---
 # <a name="cloud-discovery-enrichment"></a>Aprimoramento do Cloud Discovery
 
@@ -51,7 +51,7 @@ Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de 
   
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
     
       
   

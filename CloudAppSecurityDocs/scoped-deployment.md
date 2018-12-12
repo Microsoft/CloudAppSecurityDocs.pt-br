@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/30/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8f2c228aaa048556155579b0a4c61391b83f51d5
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: bf0a19b89d79b6bc6f3bb6edf51cf4392621ab68
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743430"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124734"
 ---
 # Implantação com escopo <a name="scoped-deployment"></a> 
 
@@ -92,6 +92,6 @@ As seguintes atividades de usuário são monitoradas:
 ## <a name="next-steps"></a>Próximas etapas  
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

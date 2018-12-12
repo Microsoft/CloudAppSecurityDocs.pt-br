@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0385cef903263b680f4fdd5915bd150a3cca17dc
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: dd54f1244e418e88edc35da53097eb20a5f28674
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743396"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124104"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -91,4 +91,4 @@ A tabela a seguir fornece uma lista dos tipos de alertas que podem ser disparado
 ## <a name="next-steps"></a>Próximas etapas  
 Para obter mais informações sobre como investigar alertas, consulte [Investigar](investigate.md).  
 
-Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3bfbdaef4a62ba100710709703b6cdf0a53e9f64
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 974754e72fd6392930eab740d48790b4d5156c59
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596755"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124155"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar o Office 365 ao Microsoft Cloud App Security
 
@@ -67,6 +67,6 @@ O Cloud App Security oferece suporte aos seguintes aplicativos do Office 365:
 ## <a name="next-steps"></a>Próximas etapas  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/15/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0321ecc91cc6dc420e44a323cdef37f34c19556a
-ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
+ms.openlocfilehash: 5262c51e18ba46bd6a5b41da5a41b2a73deecfba
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644273"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123713"
 ---
 # <a name="basic-setup"></a>Configuração básica
 
@@ -61,6 +61,6 @@ Para acessar o portal, é necessário adicionar os seguintes endereços IP à li
 ## <a name="next-steps"></a>Próximas etapas  
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

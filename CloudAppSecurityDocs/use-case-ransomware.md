@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5fd6cf54012d148261e98f0058109420cb55e9fa
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: cf9da01f896b1f9509918bca73c3d189e9d4557e
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143863"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123577"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -53,6 +53,6 @@ Detecte potencial ransomware em seu ambiente de nuvem ao criar uma política par
    ## <a name="see-also"></a>Consulte Também  
    [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

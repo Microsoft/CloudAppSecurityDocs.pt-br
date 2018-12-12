@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6de41d28e2ab9469bf8dd5229eea1652b53c3aca
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: df9e1c91efd5120168fcc918b949dad7519578f4
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596704"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123611"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integração dos Serviços de Classificação de Dados da Microsoft
 
@@ -53,5 +53,5 @@ Definir essas políticas permite que você amplie facilmente a força dos recurs
 ## <a name="next-steps"></a>Próximas etapas  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   

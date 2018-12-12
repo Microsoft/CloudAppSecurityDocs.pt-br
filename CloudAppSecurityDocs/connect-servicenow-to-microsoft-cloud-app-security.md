@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f81623e718d9cf4329f3e738c1b585cb6b33b102
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: db322502c8036e6e8d6060aa9e8f313e3893d0b7
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597265"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123968"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 
@@ -117,5 +117,5 @@ Para conectar o ServiceNow ao Cloud App Security, é necessário ter permissões
 ## <a name="next-steps"></a>Próximas etapas 
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   

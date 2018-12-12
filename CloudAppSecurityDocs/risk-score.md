@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/28/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dcc60f975b7dcbf2c17260b95c30b58769acdf87
-ms.sourcegitcommit: 5d3a057a8bb2cb98fd7350775e46b0e4d34763ed
+ms.openlocfilehash: bb6539d5e80f4918d1e6b49bc244c0e58a94b092
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386245"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124495"
 ---
 # <a name="working-with-the-risk-score"></a>Trabalhar com a pontuação de risco
 
@@ -142,6 +142,6 @@ Você também pode adicionar observações para tornar a justificativa da altera
  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

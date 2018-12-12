@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 52a18f28382ffefca7785419fb67e8b0f2de66df
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 792a03ce890a6848fd89d1cff6ff6a544300b728
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143234"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123560"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
@@ -67,7 +67,7 @@ Expressões de exemplo
 ## <a name="see-also"></a>Consulte Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
 
 ## <a name="check-out-this-video"></a>Confira este vídeo!

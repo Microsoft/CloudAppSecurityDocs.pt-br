@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 388fca467f4ef83f2494caab411d242a8a273e36
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: c0a92453831cad191b2c69ebdf5b45deaf7c0b94
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597357"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124614"
 ---
 # <a name="file-policies"></a>Políticas de arquivos  
 
@@ -107,6 +107,6 @@ Cada política é composta pelas seguintes partes:
 ## <a name="next-steps"></a>Próximas etapas 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

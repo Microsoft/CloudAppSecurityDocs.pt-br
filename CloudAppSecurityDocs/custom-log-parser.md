@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 593c54aa44b2345e1c0b7e3ad7dab9b6e50e774a
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 10d6e40ef8b2634fbcac3677ce37bd695141507a
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743634"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123714"
 ---
 # <a name="use-a-custom-log-parser"></a>Usar o analisador de log personalizado
 
@@ -91,3 +91,4 @@ Para configurar um analisador personalizado:
 
 [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)
 
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  

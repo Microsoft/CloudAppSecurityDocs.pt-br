@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/16/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7c528a57799d7a00c0f54d2e798dc0f5c281fd13
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 5984b4c7067086d11f2504f7bd1cdb186ccc8788
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743566"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124597"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
@@ -113,4 +113,4 @@ Se algum aplicativo OAuth que pareça mal-intencionado for descoberto na sua org
 
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  

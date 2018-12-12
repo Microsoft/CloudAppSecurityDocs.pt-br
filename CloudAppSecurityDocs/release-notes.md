@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,27 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 16d39803071d000e6394caaef94787182c82cea0
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 0c994ed22caae6daed57a6514c0ac6496abacf8d
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743685"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124818"
 ---
 *Aplica-se ao: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
+
+
+## <a name="cloud-app-security-release-138"></a>Cloud App Security versão 138
+
+Lançado em 9 de dezembro de 2018
+
+- **Upload automático de log usando o Docker no Windows**<br>Agora o Cloud App Security oferece suporte ao upload automático de log para o Windows 10 (Fall Creators Update) e o Windows Server (versão 1709 e posterior) usando um Docker for Windows.
+Confira [Docker no Windows local](discovery-docker-windows.md) para obter mais informações e instruções de como isso pode ser configurado.
+- O Cloud App Security integra-se ao [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) para fornecer guias estratégicos de automação e orquestração de alerta personalizadas. Para obter mais informações e instruções de integração, confira [Integrating with Microsoft Flow](flow-integration.md) (Integrando ao Microsoft Flow).
+
 
 ## <a name="cloud-app-security-release-137"></a>Cloud App Security versão 137
 
@@ -313,6 +323,6 @@ Lançado em 7 de janeiro de 2018
 
 Confira a descrição dos lançamentos anteriores aos relacionados aqui em [Lançamentos anteriores do Microsoft Cloud App Security](release-note-archive.md).
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

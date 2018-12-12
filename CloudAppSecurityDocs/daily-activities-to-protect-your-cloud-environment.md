@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 813dc33d884f502090c3d60fef3faef33c379d90
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 3c261adfbec2044ae2625f7ffb3b851907e2e223
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596891"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123005"
 ---
 # <a name="working-with-the-dashboard"></a>Trabalhar com o painel
 
@@ -52,4 +52,4 @@ O painel do Cloud App Security fornece uma visão geral das atividades e recurso
 ## <a name="next-steps"></a>Próximas etapas  
 Para obter mais informações sobre como investigar alertas, consulte [Investigar](investigate.md).  
 
-Os clientes Premier também podem escolher o Cloud App Security diretamente no [Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/16/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d1621dd7a1e082631b941ecfb711a686a69991a
-ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
+ms.openlocfilehash: 686ea1838ea0f034e48ef320d106149ad51db5b0
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2018
-ms.locfileid: "51943694"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123543"
 ---
 # <a name="email-notification-preferences"></a>Preferências de notificação por email
 
@@ -123,6 +123,6 @@ Veja abaixo um modelo de email de exemplo:
 
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
   

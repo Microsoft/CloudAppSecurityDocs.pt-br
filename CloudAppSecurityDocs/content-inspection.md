@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 34cacd1eecfb14039863d6cf920e83b16001df6a
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: af28086c6ef7fdf389bbea29b0fcac31271a7002
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597469"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123832"
 ---
 # <a name="built-in-content-inspection"></a>Inspeção de conteúdo interna
 
@@ -80,5 +80,5 @@ O mecanismo de inspeção de conteúdo do Cloud App Security:
 ## <a name="next-steps"></a>Próximas etapas
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   

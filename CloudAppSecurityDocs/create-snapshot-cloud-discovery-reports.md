@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ff22c10cdbb1736fde90922c7dc36b81f26558cc
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 4704f4ccf93fe369efce5e53d3cf99986ed31eff
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597435"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124784"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 
@@ -164,7 +164,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 ## <a name="next-steps"></a>Próximas etapas  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
     
       
   
