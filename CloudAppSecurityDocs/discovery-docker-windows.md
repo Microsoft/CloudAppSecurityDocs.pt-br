@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37eab4a159d0791f5cc84a42eb7db3da4797ff92
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124393"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450640"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Você pode configurar o upload automático de log para relatórios contínuos no Cloud App Security usando um Docker no Windows.
 
@@ -48,7 +48,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 – Configuração do portal da Web: Definir fontes de dados e vinculá-las a um coletor de logs
 
 1. Acesse a página de configurações **Upload automático de logs**. 
 
@@ -126,7 +126,7 @@ Isso instala o cliente do Docker em seu computador. Durante a instalação do co
    ![Crie o coletor de logs](./media/windows7.png)
 8. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs <collector_name>`
 
-Você deverá ver a mensagem **Concluído com êxito!**
+Você deverá ver a mensagem: **Concluído com êxito!**
 
   ![ubuntu8](./media/ubuntu8.png)
 
@@ -160,12 +160,12 @@ Verifique se os logs estão sendo carregados no Cloud App Security e se os relat
 
 Para verificar se o instalador do Docker é assinado pela Microsoft:
 1. Clique com o botão direito do mouse no arquivo e selecione **Propriedades**.
-2. Clique em **Geral** e verifique se a informação **Esta assinatura digital está OK** é exibida.  
-3. Clique em **Assinaturas Digitais** e verifique se a Microsoft está listada na **Lista de assinaturas**.  
+2. Clique em **Assinaturas Digitais** e verifique se a mensagem **Esta assinatura digital está correta** é exibida.  
+3. Verifique se **Microsoft Corporation** está listada como a única entrada em **Nome do signatário**.  
 
 ![Assinatura digital válida](./media/digital-signature-successful.png)
 
-Se a assinatura digital não for válida, ela será exibida desta forma:
+Se a assinatura digital não for válida, ela indicará **Esta assinatura digital não é válida**:
 
 ![Assinatura digital não válida](./media/digital-signature-unsuccessful.png)
 

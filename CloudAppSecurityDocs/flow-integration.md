@@ -1,11 +1,11 @@
 ---
-title: Integrar o Flow ao Cloud App Security para obter a automação de alerta personalizada | Microsoft Docs
+title: Integrar o Flow ao Cloud App Security para obter automação de alerta personalizada
 description: Este artigo fornece informações de como obter a automação de alerta personalizada integrando o Flow ao Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea109073ef6bab3520073272224da65589627960
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.openlocfilehash: 558559463df0bcb4e008d75115501c23d27cd878
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124890"
+ms.locfileid: "53175763"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>Integrar ao Flow para obter a automação de alerta personalizada – Versão Prévia
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Cloud App Security integra-se ao [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) para fornecer guias estratégicos de automação e orquestração de alerta personalizadas. Usando o [ecossistema de conectores](https://docs.microsoft.com/connectors/) disponível no Microsoft Flow, você pode automatizar o disparo de guias estratégicos quando o Cloud App Security gera alertas. Por exemplo, crie automaticamente um problema nos sistemas de tíquete usando o [conector do ServiceNow](https://docs.microsoft.com/connectors/service-now/) ou envie um email de aprovação para executar uma ação de governança personalizada quando um alerta é disparado no Cloud App Security.  
 

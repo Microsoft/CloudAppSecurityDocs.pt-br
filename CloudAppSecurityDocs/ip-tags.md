@@ -1,11 +1,11 @@
 ---
-title: Definir intervalos de IP e marcas | Microsoft Docs
+title: Definir intervalos de IP e marcas – Cloud App Security | Microsoft Docs
 description: Este artigo fornece instruções sobre como trabalhar com marcas de IP e categorias de IP.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2ab846dd42e668e947ec82d9e2b707adc4526e3d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: beb18c3c79ba1c4da96982f93b290d324347303d
+ms.sourcegitcommit: a55a20b8613755068e52b5cf65ad333fddd29688
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123390"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450982"
 ---
 #  <a name="IPtagsandRanges"></a> Trabalhando com marcações e intervalos de IP
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Para identificar com facilidade endereços IP conhecidos, como os endereços IP de seu escritório físico, você precisa definir intervalos de endereços IP. Os intervalos de endereços IP permitem que você marque, categorize e personalize a maneira como os logs e os alertas são exibidos e investigados. Cada grupo de intervalos de IP pode ser categorizado com base em uma lista predefinida de categorias de IP. Você também pode criar marcas de IP personalizadas para seus intervalos de IP. Além disso, você pode substituir as informações públicas de localização geográfica com base em seu conhecimento da rede interna. Há suporte para IPv4 e IPv6. 
 
@@ -35,6 +36,11 @@ O Cloud App Security é pré-configurado com intervalos de IP internos de proved
 
 
 As marcas de endereço IP internas e as marcas de IP personalizadas são consideradas de maneira hierárquica. As marcas de IP personalizadas têm precedência sobre as marcas de IP internas. Por exemplo, se um endereço IP estiver marcado como **De risco** com base na inteligência contra ameaças, mas houver uma marca de IP personalizada que o identifica como **Corporativo**, as marcas e a categoria personalizadas terão precedência.
+
+>[!NOTE]
+> Quando um endereço IP é marcado como corporativo, ele é refletido no portal e os endereços IP são excluídos de dispararem detecções específicas (por exemplo, viagem impossível), pois são considerados confiáveis.
+>
+
 
 ## <a name="create-an-ip-address-range"></a>Criar um intervalo de endereços IP 
 
@@ -51,15 +57,15 @@ Na barra de menus, clique no ícone de configurações. Selecione **Intervalos d
   
      As seguintes categorias IP estão disponíveis:  
   
-    - **Administrativos**: esses IPs devem ser todos os endereços IP dos administradores.  
+    - **Administrativos**: Esses IPs devem ser todos os endereços IP dos administradores.  
   
-    - **Provedor de nuvem**: esses IPs devem ser os endereços IP usados por seu provedor de nuvem.
+    - **Provedor de nuvem**: Esses IPs devem ser os endereços IP usados pelo provedor de nuvem.
   
-    - **Corporativos**: esses IPs devem ser todos os endereços IP de sua rede interna, suas filiais e seus endereços de roaming de Wi-Fi.  
+    - **Corporativos**: Esses IPs devem ser todos os endereços IP da rede interna, as filiais e os endereços de roaming de Wi-Fi.  
   
-    - **De risco**: esses IPs devem ser todos os endereços IP que você considere apresentar riscos. Eles podem incluir endereços IP suspeitos vistos no passado, endereços IP em redes de seus concorrentes, etc.  
+    - **De risco**: Esses IPs devem ser todos os endereços IP que você considere apresentar riscos. Eles podem incluir endereços IP suspeitos vistos no passado, endereços IP em redes de seus concorrentes, etc.  
   
-    - **VPN**: esses IPs devem ser todos os endereços IP usados para funcionários remotos.
+    - **VPN**: Esses IPs devem ser todos os endereços IP usados para funcionários remotos.
   
 4. Para **Marcar** as atividades desses endereços IP, insira uma marca. Inserir uma palavra na caixa cria a marca. Depois que já tiver uma marca configurada, você poderá adicioná-la facilmente a intervalos de IP adicionais selecionando-a na lista. Você pode adicionar quantas marcas de IP desejar para cada intervalo. As marcas de IP podem ser usadas ao criar políticas.  Junto com as marcas de IP que você configura, o Cloud App Security tem marcas internas que não são configuráveis. Você pode ver a lista de marcações em [Filtro de marcações de IP](activity-filters.md).  
     > [!NOTE]  

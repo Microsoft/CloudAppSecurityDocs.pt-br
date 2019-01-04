@@ -1,11 +1,11 @@
 ---
-title: Usando o mecanismo RegEx para políticas de inspeção de conteúdo | Microsoft Docs
-description: Este tópico fornece instruções para usar RegEx para correspondência de padrão de políticas do Cloud App Security.
+title: Usar o mecanismo RegEx no Cloud App Security para políticas de inspeção de conteúdo
+description: Este artigo fornece instruções de uso do RegEx para correspondência de padrões em políticas do Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,48 +13,55 @@ ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 792a03ce890a6848fd89d1cff6ff6a544300b728
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 92cb0d5dcadacf167cb085af5d84ef199f3a8029
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123560"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450606"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
+
+*Aplica-se a: Microsoft Cloud App Security*
  
-As políticas de inspeção de conteúdo do Microsoft Cloud App Security utilizam o RegEx para a correspondência de padrões. A inspeção de conteúdo pode ser aplicada como parte das políticas de arquivos. Para testar expressões regulares, você pode usar os seguintes sites:  
+Este artigo fornece instruções de uso do RegEx para correspondência de padrões em políticas do Cloud App Security.
+
+## <a name="regular-expressions-in-cloud-app-security"></a>Expressões regulares no Cloud App Security
+
+As políticas de inspeção de conteúdo do Microsoft Cloud App Security usam o RegEx para correspondência de padrões. A inspeção de conteúdo pode ser aplicada como parte das políticas de arquivos.
+
+### <a name="testing-regular-expressions"></a>Testando expressões regulares
+
+Para testar expressões regulares, use os seguintes sites:  
   
--   [http://regexpal.com/](http://regexpal.com/)  
+- [https://regexpal.com/](https://regexpal.com/) – selecione **Sem distinção entre maiúsculas e minúsculas**.  
   
-     Verifique se você selecionou **Sem distinção entre maiúsculas e minúsculas**.  
-  
--   [https://regex101.com/](https://regex101.com/)  
-  
-     Fornece uma análise detalhada do RegEx.  
-  
+- [https://regex101.com/](https://regex101.com/) – fornece uma análise detalhada do RegEx.  
+
+### <a name="limitations-of-regular-expressions-in-cloud-app-security"></a>Limitações de expressões regulares no Cloud App Security
+
 As limitações a seguir são impostas em expressões regulares personalizadas:  
   
--   A pesquisa nunca faz distinção entre maiúsculas e minúsculas  
-   
--   Quantificadores permitidos: {n,m} em que n, m < 10  
+- A pesquisa nunca faz distinção entre maiúsculas e minúsculas  
+
+- Quantificadores permitidos: {n,m} em que n, m < 10  
   
--   Todos os grupos devem ser de não captura, por exemplo: (?:xxx)  
+- Todos os grupos devem ser de não captura, por exemplo: (?:xxx)  
   
      Em vez de (group) use (?:group)  
   
--   Quantificadores não permitidos: *, +, {n,}  
+- Quantificadores não permitidos: *, +, {n,}  
   
      Em vez de * use {0,9}  
   
      Em vez de + use {1,9}  
   
--   Referência inversa não permitida: \\<número\> ou \k\<nome>  
+- Referência inversa não permitida: \\<número\> ou \k\<nome>  
   
-Expressões de exemplo  
-  
+### <a name="example-expressions"></a>Expressões de exemplo  
+
+A tabela a seguir fornece expressões de exemplo e indica se elas são correspondentes ou não.
 
 |                                                               |                                                               |                                    |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
@@ -64,11 +71,13 @@ Expressões de exemplo
 | 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Sim<br /><br /> Sim<br /><br /> Não |
 |                       d.n't\s{0,10}c.r.                       | Não importa<br /><br /> D!n'tcor0<br /><br /> Não importa | Sim<br /><br /> Sim<br /><br /> Não |
 
-## <a name="see-also"></a>Consulte Também  
+## <a name="check-out-this-video"></a>Confira este vídeo!
+
+[Trabalhando com o mecanismo Regex](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
+
+## <a name="next-steps"></a>Próximas etapas
+
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
-
-## <a name="check-out-this-video"></a>Confira este vídeo!
-[Trabalhando com o mecanismo Regex](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)    

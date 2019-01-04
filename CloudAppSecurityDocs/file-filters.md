@@ -1,11 +1,11 @@
 ---
-title: Entendendo os dados e filtros de arquivos disponíveis no Cloud App Security | Microsoft Docs
+title: Entendendo os dados de arquivo e os filtros disponíveis no Cloud App Security
 description: Este artigo de referência fornece informações sobre os tipos e filtros de arquivo usados pelo Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,26 +13,27 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5136b75dd45836cc8493b1021d598567ef858a73
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: dad41edad096f56349dbd729756151499ffecbb4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124410"
+ms.locfileid: "53176936"
 ---
 # <a name="files"></a>Arquivos
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Para oferecer proteção de dados, o Microsoft Cloud App Security proporciona visibilidade de todos os arquivos de seus aplicativos conectados. Depois que você conectar o Microsoft Cloud App Security a um aplicativo usando o conector de aplicativos, o Microsoft Cloud App Security examina todos os arquivos, por exemplo, todos os arquivos armazenados no OneDrive e no Salesforce. Em seguida, o Cloud App Security examina novamente cada arquivo sempre que ele é modificado – a modificação pode ser em conteúdo, metadados ou permissões de compartilhamento. Os tempos de verificação dependem do número de arquivos armazenados em seu aplicativo. Também é possível usar a página **Arquivos** para filtrar os arquivos a fim de investigar qual tipo de dados está salvo em seus aplicativos de nuvem.
 
 ## <a name="file-filter-examples"></a>Exemplos de filtros de arquivo
 
-Por exemplo, use a página **Arquivos** para proteger arquivos compartilhados externamente rotulados como **confidenciais** da seguinte maneira: depois de conectar um aplicativo ao Cloud App Security, integre-o à Proteção de Informações do Azure. Em seguida, na página **Arquivos**, filtre os arquivos rotulados como **confidenciais** e exclua seu domínio no filtro **Colaboradores**. Se você observar que há arquivos confidenciais compartilhados fora de sua organização, crie uma política de arquivo para detectá-los. Você pode aplicar ações de governança automáticas a esses arquivos, como **Remover colaboradores externos** e **Enviar resumo de correspondência de política para o proprietário do arquivo** para evitar a perda de dados para sua organização.
+Por exemplo, use a página **Arquivos** para proteger arquivos compartilhados externamente e rotulados como **confidenciais** da seguinte maneira: Depois de conectar um aplicativo ao Cloud App Security, integre-o à Proteção de Informações do Azure. Em seguida, na página **Arquivos**, filtre os arquivos rotulados como **confidenciais** e exclua seu domínio no filtro **Colaboradores**. Se você observar que há arquivos confidenciais compartilhados fora de sua organização, crie uma política de arquivo para detectá-los. Você pode aplicar ações de governança automáticas a esses arquivos, como **Remover colaboradores externos** e **Enviar resumo de correspondência de política para o proprietário do arquivo** para evitar a perda de dados para sua organização.
 
  ![Filtro de arquivo confidencial](media/file-filter-confidential.png)
 
-Veja outro exemplo de como você pode usar a página **Arquivos**. Garanta que ninguém em sua organização esteja compartilhando arquivos pública ou externamente que não foram modificados nos últimos seis meses: conecte um aplicativo ao Cloud App Security e acesse a página **Arquivos**. Filtre os arquivos cujo nível de acesso é **Externo** ou **Público** e defina a data da **Última modificação** para seis meses atrás. Crie uma política de arquivo que detecte esses arquivos públicos obsoletos clicando em **Nova política da pesquisa**. Aplique ações de governança automática a eles, como **Remover usuários externos**, para impedir a perda de dados em sua organização.
+Veja outro exemplo de como você pode usar a página **Arquivos**. Garanta que ninguém em sua organização esteja compartilhando arquivos pública ou externamente que não foram modificados nos últimos seis meses: Conecte um aplicativo ao Cloud App Security e acesse a página **Arquivos**. Filtre os arquivos cujo nível de acesso é **Externo** ou **Público** e defina a data da **Última modificação** para seis meses atrás. Crie uma política de arquivo que detecte esses arquivos públicos obsoletos clicando em **Nova política da pesquisa**. Aplique ações de governança automática a eles, como **Remover usuários externos**, para impedir a perda de dados em sua organização.
 
  ![Filtro de arquivo obsoleto externo](media/file-example-stale-external.png)
 
@@ -70,10 +71,10 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
 
       > [!NOTE]
       >  Os arquivos compartilhado em seus aplicativos de armazenamento conectados por usuários externos são manipulados como se segue pelo Cloud App Security:
-      > - **OneDrive:** o OneDrive atribui um usuário interno como o proprietário de qualquer arquivo colocado no seu OneDrive por um usuário externo. Como esses arquivos são considerados como pertencentes à sua organização, O Cloud App Security os examina e aplica políticas como acontece com qualquer outro arquivo no seu OneDrive.
-      > - **Google Drive:** o Google Drive os considera como pertencentes ao usuário externo e, devido às restrições legais dos arquivos e dados que não são de propriedade da sua organização, o Cloud App Security não tem acesso a esses arquivos.
-      > - **Box:** como o Box considera arquivos de propriedade externa como informações confidenciais, os Administradores Globais do Box não conseguem ver seu conteúdo. Por esse motivo, o Cloud App Security não tem acesso a esses arquivos. 
-      > - **Dropbox:** como o Dropbox considera arquivos de propriedade externa como informações confidenciais, os Administradores Globais do Dropbox não conseguem ver seu conteúdo. Por esse motivo, o Cloud App Security não tem acesso a esses arquivos.
+      > - **OneDrive:** O OneDrive atribui um usuário interno como o proprietário de qualquer arquivo colocado em seu OneDrive por um usuário externo. Como esses arquivos são considerados como pertencentes à sua organização, O Cloud App Security os examina e aplica políticas como acontece com qualquer outro arquivo no seu OneDrive.
+      > - **Google Drive:** O Google Drive os considera como pertencentes ao usuário externo e, devido às restrições legais sobre arquivos e dados não pertencentes à sua organização, o Cloud App Security não tem acesso a esses arquivos.
+      > - **Box:** Como o Box considera arquivos de propriedade externa como informações particulares, os Administradores Globais do Box não conseguem ver o conteúdo deles. Por esse motivo, o Cloud App Security não tem acesso a esses arquivos. 
+      > - **Dropbox:** Como o Dropbox considera arquivos de propriedade externa como informações particulares, os Administradores Globais do Dropbox não conseguem ver o conteúdo deles. Por esse motivo, o Cloud App Security não tem acesso a esses arquivos.
 
 - **Aplicativo** – pesquise apenas arquivos dentro desses aplicativos.  
   

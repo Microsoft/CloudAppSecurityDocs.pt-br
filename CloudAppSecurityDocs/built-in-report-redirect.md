@@ -1,11 +1,11 @@
 ---
-title: Como localizar relatórios internos preterido no Cloud App Security | Microsoft Docs
+title: Localizar relatórios internos preteridos no Cloud App Security
 description: Este artigo fornece instruções para gerar relatórios preteridos no Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a26a055137aa64391fedf8399e35ec9f112858ee
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d0dbd2d945660ce57c832e8ff5678008268403a4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124733"
+ms.locfileid: "53176766"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Como localizar relatórios internos preteridos
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Estamos atualizando a funcionalidade de relatórios internos inserindo-a em outras partes do portal. A atualização dessa funcionalidade está em andamento para melhoria dos relatórios do Microsoft Cloud App Security.
 

@@ -1,11 +1,11 @@
 ---
-title: Investigar riscos e atividades suspeitas na nuvem com o Cloud App Security | Microsoft Docs
+title: Investigar riscos e atividades suspeitas de aplicativos na nuvem – Cloud App Security | Microsoft Docs
 description: Este artigo fornece uma descrição do processo para investigar alertas, problemas e atividades suspeitas usando o Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a285943125d3973089f21e522924e4e2b428d753
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 12bb0604e776f9ff8df61c784d3d8597dc05ed32
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123934"
+ms.locfileid: "53176630"
 ---
 # <a name="investigate"></a>Investigar
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Depois que o Microsoft Cloud App Security for executado no ambiente de nuvem, você precisará de um estágio de aprendizado e investigação. Saiba como usar as ferramentas do Microsoft Cloud App Security para obter uma compreensão mais profunda do que está acontecendo em seu ambiente de nuvem. De acordo com seu ambiente específico e como ele está sendo usado, você pode identificar os requisitos para proteger sua organização contra riscos. Este artigo descreve como fazer uma investigação para obter uma melhor compreensão sobre seu ambiente de nuvem.  
 

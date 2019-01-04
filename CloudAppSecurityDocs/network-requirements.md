@@ -1,11 +1,11 @@
 ---
-title: Requisitos de rede do Cloud App Security | Microsoft Docs
+title: Requisitos de rede – Cloud App Security | Microsoft Docs
 description: Este artigo descreve os endereços IP e portas que você precisa abrir para trabalhar com o Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06de1b58f2a9a13559f4ac04a594ac681376e696
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: df90f8a2b2a52f9dbaacac3e317b1354bdbe1d8a
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124359"
+ms.locfileid: "53176596"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece uma lista de portas e endereços IP que você precisa permitir e adicionar à lista de permissões para trabalhar com o Microsoft Cloud App Security. 
 
@@ -152,7 +153,7 @@ Se você quiser personalizar a identidade do remetente de email, o Microsoft Clo
 
 Se você não personalizar a identidade do remetente, as notificações de email serão enviadas usando todas as configurações padrão.
 
-Para trabalhar com o MailChimp, adicione esse endereço IP à lista de permissões antispam para habilitar o envio de notificações: 198.2.134.139 (mail1.cloudappsecurity.com)
+Para trabalhar com o MailChimp, adicione este endereço IP à lista de permissões antispam para habilitar o envio de notificações: 198.2.134.139 (mail1.cloudappsecurity.com)
 
 
 ## <a name="log-collector"></a>Coletor de logs 

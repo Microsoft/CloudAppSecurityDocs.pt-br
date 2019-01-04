@@ -1,11 +1,11 @@
 ---
-title: Bloqueando aplicativos descobertos | Microsoft Docs
+title: Bloqueando aplicativos descobertos – Cloud App Security | Microsoft Docs
 description: Este artigo descreve o procedimento para exportar scripts de bloqueio para aplicativos descobertos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31924884b3bf49e499491a50c0181bc87602fb71
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 00c5063d93f469d91512e6bb37338855093e6bdf
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123798"
+ms.locfileid: "53175559"
 ---
 # <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Depois de examinar a lista de aplicativos descobertos em seu ambiente, você pode proteger o ambiente contra o uso de aplicativos indesejados das maneiras indicadas a seguir.
 

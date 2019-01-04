@@ -1,11 +1,11 @@
 ---
-title: Solução de problemas de implantação do docker do Cloud Discovery | Microsoft Docs
+title: Solução de problemas de implantação do Docker do Cloud Discovery
 description: Este artigo descreve o processo para modificar a configuração do Docker do Cloud Discovery do Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 69ff240426b86a254128e241c66c59fff1a10c36
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a87212e475360fa20fcc6712e7b44dfd69667dc5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122988"
+ms.locfileid: "53175406"
 ---
 # <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Solucionando problemas da implantação do Cloud Discovery do Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo descreve como modificar a configuração do Docker do Cloud Discovery do Cloud App Security.
 
@@ -60,8 +61,8 @@ Siga este procedimento para personalizar os arquivos de certificado usados para 
 
    ![Alterar a senha do FTP](./media/new-certs.png)
 
-    - **Para FTP:** apenas um arquivo é necessário. O arquivo tem os dados de chave e de certificado, nessa ordem, e é denominado **pure-ftpd.pem**.
-    - **Para Syslog:** três arquivos são necessários: **ca.pem**, **server-key.pem e **server-cert.pem**. Se um dos arquivos estiver ausente, a atualização não ocorrerá.
+    - **Para FTP:** Apenas um arquivo é necessário. O arquivo tem os dados de chave e de certificado, nessa ordem, e é denominado **pure-ftpd.pem**.
+    - **Para Syslog:** Três arquivos são necessários: **ca.pem**, **server-key.pem e **server-cert.pem**. Se um dos arquivos estiver ausente, a atualização não ocorrerá.
 
 4. Em um terminal, execute: `docker exec -t <collector name> update_certs`. O comando deve produzir uma saída semelhante à mostrada na captura de tela a seguir.
 

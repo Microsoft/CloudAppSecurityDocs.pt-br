@@ -1,11 +1,11 @@
 ---
-title: Trabalhando com aplicativos descobertos no Cloud App Security | Microsoft Docs
+title: Trabalhando com aplicativos descobertos no Cloud App Security
 description: Este artigo descreve o processo de identificação e correção de aplicativos de descoberta de nuvem que trazem riscos no Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 403eb991a33fd8f0deda7212b0ec180fe23f8551
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122829"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450573"
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O painel do Cloud Discovery foi projetado para fornecer mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização. Ele fornece uma visão geral rápida de quais tipos de aplicativos estão sendo usados, os alertas abertos e os níveis de risco dos aplicativos na sua organização. Ele também mostra quem são os principais usuários do aplicativo e fornece um mapa do local da Matriz de Aplicativo. O Painel do Cloud Discovery tem muitas opções para filtrar os dados. A filtragem permite que você gere exibições específicas dependendo do que você está mais interessado usando gráficos de fácil compreensão para apresentar o panorama completo em uma visão geral.
 
@@ -44,6 +45,7 @@ A primeira coisa que você deve fazer para obter uma visão geral de seus aplica
 6. Por fim, não se esqueça de examinar a pontuação de risco do aplicativo descoberto na **Visão geral de risco do aplicativo**. Verifique o **status de alertas de descoberta** para ver quantos alertas abertos você deve investigar.
 
 ## <a name="deep-dive-into-discovered-apps"></a>Aprofundar-se nos aplicativos Descobertos
+
 Se você deseja aprofundar-se ainda mais nos dados que o Cloud Discovery fornece, use os filtros para examinar quais aplicativos são arriscados e quais são usados com frequência.
 
 
@@ -58,11 +60,11 @@ Por exemplo, se você quiser identificar aplicativos de colaboração e de armaz
 
 Depois que os resultados são filtrados, você pode [cancelar a sanção e bloqueá-los](governance-discovery.md) usando a caixa de seleção de ação em massa para cancelar a sanção de todos eles em uma ação só. Depois que eles tiverem a sanção cancelada, você poderá usar um script de bloqueio para impedir que sejam usados em seu ambiente.
 
-O Cloud Discovery permite que você se aprofunde ainda mais no uso de nuvem da sua organização. Você pode identificar instâncias específicas que estão em uso ao investigar os subdomínios descobertos.
+O Cloud Discovery permite que você se aprofunde ainda mais no uso de nuvem da sua organização. Identifique instâncias específicas que estão em uso investigando os subdomínios descobertos.
      
 Por exemplo, você pode diferenciar entre os diferentes sites do SharePoint.
 
-Isso tem suporte apenas em firewalls e proxies que contêm dados de URL de destino. Consulte a lista de dispositivos com suporte em [Proxies e firewalls com suporte](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
+Isso tem suporte apenas em firewalls e proxies que contêm dados de URL de destino. Para obter informações, confira a lista de dispositivos compatíveis em [Proxies e firewalls compatíveis](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
 
  ![informações de subdomínio](./media/discovery-domains.png) 
 
@@ -75,21 +77,20 @@ Para gerar um relatório executivo do Cloud Discovery:
 No painel do **Cloud Discovery**, clique nos três pontos no canto superior direito do menu e selecione **Gerar relatório executivo do Cloud Discovery**.
 
 ## <a name="exclude-entities"></a>Excluir entidades
+
 Se você tem usuários do sistema, endereços IP ou computadores ruidosos, mas desinteressantes, ou aplicativos que não são relevantes, talvez queira excluir os dados deles dos dados do Cloud Discovery que são analisados. Por exemplo, você talvez queira excluir todas as informações provenientes de 127.0.0.1 ou do host local.  
   
 Para criar uma exclusão:  
   
 1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.  
-  
 2. Clique na guia **Excluir entidades**.  
-  
-3. Escolha a guia **Usuários excluídos**, **Endereços IP excluídos** ou **Computadores excluídos** e clique no botão + para adicionar sua exclusão.  
-  
-4. Adicione um alias do usuário, um endereço IP ou um nome do computador. É recomendável adicionar informações sobre por que a exclusão foi feita.  
+3. Escolha a guia **Usuários excluídos**, **Endereços IP excluídos** ou **Computadores excluídos** e clique no botão + para adicionar sua exclusão.
+4. Adicione um alias do usuário, um endereço IP ou um nome do computador. É recomendável adicionar informações sobre por que a exclusão foi feita.
   
      ![excluir usuário](./media/exclude-user.png "excluir usuário")  
   
-## <a name="manage-continuous-reports"></a>Gerenciar relatórios contínuos  
+## <a name="manage-continuous-reports"></a>Gerenciar relatórios contínuos
+
 Relatórios contínuos personalizados fornecem maior granularidade ao monitorar os dados de log do Cloud Discovery da sua organização. Ao criar relatórios personalizados, é possível filtrar por localizações geográficas, redes, sites ou unidades organizacionais específicas. Por padrão, somente os relatórios a seguir aparecem no seu seletor de relatório do Cloud Discovery:  
   
 - O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  
@@ -116,7 +117,8 @@ Para criar um novo relatório contínuo:
 > Todos os relatórios personalizados são limitados a no máximo 1 GB de dados não compactados. Se houver mais de 1 GB de dados, o primeiro GB de dados será exportado para o relatório.
 
 
-## <a name="deleting-cloud-discovery-data"></a>Excluindo dados do Cloud Discovery  
+## <a name="deleting-cloud-discovery-data"></a>Excluindo dados do Cloud Discovery
+
 Há uma série de motivos pelos quais você pode desejar excluir seus dados do Cloud Discovery. É recomendável exclui-los nos seguintes casos:  
   
 - Se você carregou os arquivos de log manualmente e passou muito tempo antes de atualizar o sistema com novos arquivos de log e você não deseja dados antigos afetando os resultados.  
@@ -138,10 +140,7 @@ Para excluir os dados do Cloud Discovery:
     ![excluir dados](./media/delete-data.png "excluir dados")  
   
    > [!NOTE]  
-   >  O processo de exclusão leva alguns minutos e não é imediato.  
-
-
-
+   >  O processo de exclusão leva alguns minutos e não é imediato.
 
 ## <a name="next-steps"></a>Próximas etapas
  

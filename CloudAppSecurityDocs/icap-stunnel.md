@@ -1,11 +1,11 @@
 ---
-title: Integração de DLP externa do Cloud App Security por meio de ICAP seguro | Microsoft Docs
+title: Integração de DLP externo do Cloud App Security por meio de ICAP seguro
 description: Este artigo fornece as etapas necessárias para configurar a conexão ICAP no Cloud App Security e a instalação do stunnel.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 006d9eaa2bb7a71c6661931724344ca55166ba61
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 86ef20ca985213a369035505232d4bf594a47caf
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124461"
+ms.locfileid: "53177225"
 ---
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security pode integrar soluções DLP existentes para estender esses controles para a nuvem preservando uma política consistente e unificada entre locais e atividades na nuvem. A plataforma exporta interfaces fáceis de usar, incluindo API REST e ICAP, habilitando a integração com sistemas de classificação de conteúdo, como Symantec Data Loss Prevention (antigo Vontu Data Loss Prevention) ou Forcepoint DLP. 
 
@@ -41,21 +42,21 @@ Como o Cloud App Security é executado no Azure, uma implantação no Azure resu
 ## <a name="prerequisites"></a>Pré-requisitos
 Para o Cloud App Security enviar dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de DMZ para os endereços IP externos usados pelo Cloud App Security com um número da porta de origem dinâmico. 
 
-1.  Endereços de origem: consulte [Conectar aplicativos, em Pré-requisitos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
-2.  Porta TCP de origem: dinâmico
+1.  Endereços de origem: Consulte [Conectar aplicativos, em Pré-requisitos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
+2.  Porta TCP de origem: Dinâmico
 3.  Endereços de destino: um ou dois endereços IP do stunnel conectado ao servidor ICAP externo que você configurará nas próximas etapas
-4.  Porta TCP de destino: conforme definido em sua rede
+4.  Porta TCP de destino: Conforme definido na rede
 
 > [!NOTE] 
 > Por padrão, o número da porta stunnel é definido como 11344. Você pode alterá-lo para outra porta, se necessário, mas certifique-se de anotar o novo número da porta, você deverá inseri-lo na próxima etapa.
 
-## <a name="step-1--set-up-icap-server"></a>ETAPA 1: configurar o servidor ICAP
+## <a name="step-1--set-up-icap-server"></a>ETAPA 1:  Configurar o servidor ICAP
 
 Configure um servidor ICAP, anote o número da porta e certifique-se de definir **Modo** como **Bloqueio**. O modo de bloqueio define o servidor ICAP para retransmitir o veredicto de classificação de volta ao Cloud App Security.
 
-Veja a documentação do produto DLP Externo para obter instruções sobre como fazer essa configuração. Por exemplo, consulte o [Anexo A: configuração do servidor ICAP do Forcepoint](#forcepoint) e [Anexo B: guia de implantação do Symantec](#symantec).
+Veja a documentação do produto DLP Externo para obter instruções sobre como fazer essa configuração. Por exemplo, confira [Apêndice A: Instalação do servidor Forcepoint ICAP](#forcepoint) e [Apêndice B: Guia de Implantação da Symantec](#symantec).
 
-## <a name="step-2--set-up-your-stunnel-server"></a>ETAPA 2: configurar o servidor de stunnel 
+## <a name="step-2--set-up-your-stunnel-server"></a>ETAPA 2:  Configurar o servidor de stunnel 
 
 Nesta etapa, você configura o stunnel conectado a seu servidor ICAP. 
 
@@ -209,7 +210,7 @@ Para fazer a atualização para a tabela de IP persistente, use os seguintes com
 Se o processo ainda não está funcionando, consulte o [documentação do stunnel](https://www.stunnel.org/docs.html) para solucionar problemas.
 
 
-## <a name="step-3--connect-to-cloud-app-security"></a>ETAPA 3: conectar-se ao Cloud App Security
+## <a name="step-3--connect-to-cloud-app-security"></a>ETAPA 3:  Conectar-se ao Cloud App Security
 
 1. No Cloud App Security, em **Configurações**, selecione **Extensões de segurança** e selecione a guia **DLP externo**.
 
@@ -237,7 +238,7 @@ Se o processo ainda não está funcionando, consulte o [documentação do stunne
 7. Agora, para direcionar o tráfego para esse servidor DLP externo, quando você criar uma **Política de arquivo**, em **Método de inspeção de conteúdo**, selecione a conexão que você criou. Leia mais sobre [Criar uma política de arquivo](data-protection-policies.md).
 
 
-## Apêndice A: instalação do servidor ForcePoint ICAP <a name="forcepoint"></a>
+## Apêndice A: Instalação do servidor ForcePoint ICAP <a name="forcepoint"></a>
 
 No ForcePoint, defina seu dispositivo usando as seguintes etapas:
 
@@ -254,7 +255,7 @@ No ForcePoint, defina seu dispositivo usando as seguintes etapas:
     ![Bloqueio de ICAP](./media/icap-blocking.png)
  
 
-## Apêndice B: Guia de implantação do Symantec <a name="symantec"></a>
+## Apêndice B: Guia de Implantação da Symantec <a name="symantec"></a>
 
 As versões com suporte do Symantec DLP são 11 e superiores. 
 
@@ -314,7 +315,7 @@ Adicione a regra criada a todas as políticas existentes:
 Essa regra deve ser adicionada a todas as políticas existentes.
 
 >[!NOTE]
-> Se você usar o Symantec Vontu para verificar arquivos do Dropbox, o CAS exibirá o arquivo automaticamente como sendo de origem da seguinte URL: http://misc/filename Na verdade, esta URL de espaço reservado não direciona para nenhum site, mas é usada para fins de registro.
+> Se você usar o Symantec Vontu para examinar arquivos do Dropbox, o CAS exibirá o arquivo automaticamente como sendo de origem da seguinte URL: http://misc/filename Essa URL de espaço reservado, na verdade, não leva a lugar algum, mas é usada para fins de log.
 
 
 ## <a name="next-steps"></a>Próximas etapas 

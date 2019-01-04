@@ -1,11 +1,11 @@
 ---
-title: Trabalhando com a pontuação de risco | Microsoft Docs
+title: Trabalhando com a pontuação de risco – Cloud App Security | Microsoft Docs
 description: Este artigo fornece instruções sobre como usar e personalizar a pontuação de risco do aplicativo Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb6539d5e80f4918d1e6b49bc244c0e58a94b092
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8427aa87af9b986b482901cf3671e54a6aa6fac3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124495"
+ms.locfileid: "53177419"
 ---
 # <a name="working-with-the-risk-score"></a>Trabalhar com a pontuação de risco
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Catálogo de Aplicativos de Nuvem fornece uma visão completa do que o Cloud Discovery identifica. O Cloud Discovery analisa seus logs de tráfego com base no catálogo de mais de 16.000 aplicativos de nuvem do Microsoft Cloud App Security. Os aplicativos são classificados e pontuados com base mais de 70 fatores de risco para fornecer visibilidade contínua do uso de nuvem, TI Sombra e o risco que a TI Sombra representa para sua organização. Este artigo fornece instruções sobre como usar e personalizar a pontuação de risco do aplicativo Cloud App Security.
 
@@ -55,15 +56,15 @@ Depois que os resultados são filtrados, você pode examinar os aplicativos rele
 
 Há filtros básicos e avançados do Catálogo de aplicativos de nuvem. Para criar um filtro complexo, use a opção avançada que inclui todos os seguintes filtros:
 
-- **Marcas de aplicativo**: marcas permitem personalizar o Catálogo de aplicativos de nuvem. 
+- **Marcas de aplicativo**: As marcas permitem personalizar o Catálogo de Aplicativos na Nuvem. 
   Você pode selecionar **Sancionado**, **Não sancionado** ou criar marcas personalizadas para aplicativos. Essas marcas então podem ser usadas como filtros. Os filtros são úteis para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. 
-- **Aplicativos e domínios**: permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos. 
-- **Categorias**: o filtro de categorias, localizado à esquerda da página, permite que você pesquise tipos de aplicativos de acordo com as categorias de aplicativo. Por exemplo, aplicativos de rede social, aplicativos de armazenamento em nuvem e mais tipos de aplicativos. Você pode selecionar mais de uma categoria por vez ou uma única categoria. Em seguida, aplique filtros básicos ou avançados sobre as categorias.
-- **Fator de risco de conformidade**: permite que você pesquise padrões específicos, certificação e conformidade com os quais o aplicativo pode cumprir. Exemplos incluem HIPAA, ISO 27001, SOC 2 e PCI-DSS.
-- **Fator de risco geral**: permite que você pesquise fatores de risco gerais, como a popularidade do consumidor, localidade do data center, entre outros.
-- **Fator de risco legal**: permite que você filtre com base em todos os regulamentos e políticas que estão em vigor. Usar fatores de risco ajuda a garantir a proteção de dados e a privacidade dos usuários do aplicativo, como RGPD, DMCA e política de retenção de dados.
-- **Pontuação de risco**: permite que você filtre aplicativos por pontuação de risco em que você possa se concentrar. Por exemplo, revisando somente os aplicativos arriscados.
-- **Fator de risco de segurança**: habilita você a filtrar com base em medidas de segurança específica. As medidas incluem criptografia em repouso, autenticação multifator e outras.
+- **Aplicativos e domínios**: Permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos. 
+- **Categorias**: O filtro de categorias, localizado à esquerda da página, permite que você pesquise tipos de aplicativos de acordo com as categorias de aplicativo. Por exemplo, aplicativos de rede social, aplicativos de armazenamento em nuvem e mais tipos de aplicativos. Você pode selecionar mais de uma categoria por vez ou uma única categoria. Em seguida, aplique filtros básicos ou avançados sobre as categorias.
+- **Fator de risco de conformidade**: Permite que você pesquise padrões, certificação e conformidade específicos que o aplicativo pode cumprir. Exemplos incluem HIPAA, ISO 27001, SOC 2 e PCI-DSS.
+- **Fator de risco geral**: Permite que você pesquise fatores de risco gerais, como popularidade do consumidor, localidade do data center, entre outros.
+- **Fator de risco legal**: Permite a filtragem com base em todos os regulamentos e todas as políticas que estão em vigor. Usar fatores de risco ajuda a garantir a proteção de dados e a privacidade dos usuários do aplicativo, como RGPD, DMCA e política de retenção de dados.
+- **Pontuação de risco**: Permite a filtragem de aplicativos pela pontuação de risco, de modo que você possa se concentrar. Por exemplo, revisando somente os aplicativos arriscados.
+- **Fator de risco de segurança**: Permite a filtragem com base em medidas específicas de segurança. As medidas incluem criptografia em repouso, autenticação multifator e outras.
 
 ## <a name="suggesting-a-change"></a>Sugerir uma alteração
 
@@ -103,7 +104,7 @@ O Cloud Discovery oferece dados importantes com relação à credibilidade e à 
   
 - **Conformidade** ‑ Essa categoria exibe quais padrões de conformidade de práticas recomendadas comuns são cumpridos pela empresa que produz o aplicativo. A lista de especificações inclui padrões como HIPAA, CSA e PCI-DSS.  
 
-- **Legal**: esta categoria exibe quais aplicativos têm quais regulamentos e políticas em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo, como o RGPD, o DMCA e a política de retenção de dados.
+- **Jurídico**: Essa categoria exibe os aplicativos e seus respectivos regulamentos e políticas em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo, como o RGPD, o DMCA e a política de retenção de dados.
   
 Cada uma das categorias é composta por várias propriedades específicas. De acordo com o algoritmo pontuação do Cloud App Security, cada propriedade recebe uma pontuação preliminar entre 0 e 10, dependendo do valor. Valores Verdadeiro/Falso receberão 10 ou 0 adequadamente. No entanto, propriedades contínuas, como a idade do domínio receberão um determinado valor dentro do espectro. A pontuação de cada propriedade será ponderada em relação a todos os outros campos existentes na categoria para criar o subtotal da categoria. Se você encontrar um aplicativo sem pontuação, isso normalmente indicará um aplicativo cujas propriedades são desconhecidas e, portanto, sem pontuação.  
   

@@ -1,11 +1,11 @@
 ---
-title: Proteger com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security | Microsoft Docs
+title: Proteger aplicativos com o Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security
 description: Este artigo fornece informações sobre como funciona o proxy reverso do Controle de Aplicativos de Acesso Condicional do Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,20 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 620bcbc8751ac782c947b2a761e8250ddc0f5807
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
+ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124257"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587827"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[PRÓXIMO: Implantar o Controle de Aplicativo de Acesso Condicional »](proxy-deployment-aad.md)
+[PRÓXIMO: Implantar o Controle de Aplicativos de Acesso Condicional »](proxy-deployment-aad.md)
 
 
 No espaço de trabalho de hoje, muitas vezes não é suficiente saber o que está acontecendo em seu ambiente de nuvem após o fato. Você deseja interromper violações e vazamentos em tempo real antes que os funcionários intencional ou inadvertidamente coloquem seus dados e sua organização em risco. É importante permitir que os usuários em sua organização aproveitem ao máximo os serviços e as ferramentas disponíveis a eles em aplicativos de nuvem e que eles tragam os próprios dispositivos para o trabalho. Ao mesmo tempo, são necessárias ferramentas para ajudar a proteger sua organização contra vazamentos de dados e roubo de dados, em tempo real. Juntamente com o Azure Active Directory, o Microsoft Cloud App Security oferece esses recursos em uma experiência holística e integrada com o Controle de Aplicativo de Acesso Condicional.
@@ -40,17 +41,17 @@ Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy rever
 
 O Controle de Aplicativo de Acesso Condicional permite o monitoramento e controle em tempo real do acesso e das sessões do aplicativo com base nas políticas de acesso e de sessão. As políticas de acesso e de sessão são utilizadas dentro do portal do Cloud App Security para refinar ainda mais os filtros e definir as ações a serem executadas em relação a um usuário. Com as políticas de acesso e de sessão, é possível:
 
-- **Bloquear downloads**: é possível bloquear o download de documentos confidenciais. Por exemplo, em dispositivos não gerenciados.
+- **Bloquear download**: Bloqueie o download de documentos confidenciais. Por exemplo, em dispositivos não gerenciados.
 
-- **Proteger downloads**: em vez de bloquear o download de documentos confidenciais, é possível exigir que os documentos sejam protegidos por meio de criptografia no download. Essa criptografia garante que o documento esteja protegido e que o acesso do usuário seja autenticado se os dados são baixados para um dispositivo não confiável. 
+- **Proteger download**: Em vez de bloquear o download de documentos confidenciais, exija que os documentos sejam protegidos por meio de criptografia no momento do download. Essa criptografia garante que o documento esteja protegido e que o acesso do usuário seja autenticado se os dados são baixados para um dispositivo não confiável. 
 
-- **Monitorar sessões de usuário de baixa confiança**: usuários de risco são monitorados quando eles entram em aplicativos e suas ações são registradas dentro da sessão. É possível investigar e analisar o comportamento do usuário para compreender onde e sob quais condições as políticas de sessão deverão ser aplicadas no futuro. 
+- **Monitorar sessões de usuário de baixa confiança**: Os usuários de risco são monitorados quando entram nos aplicativos e suas ações são registradas na sessão. É possível investigar e analisar o comportamento do usuário para compreender onde e sob quais condições as políticas de sessão deverão ser aplicadas no futuro. 
 
-- **Bloquear o acesso**: bloqueie o acesso por completo a aplicativos específicos de usuários provenientes de dispositivos não gerenciados ou de redes não corporativas.
+- **Bloquear o acesso**: Bloqueie o acesso por completo a aplicativos específicos de usuários provenientes de dispositivos não gerenciados ou de redes não corporativas.
 
-- **Criar modo somente leitura**: ao monitorar e bloquear atividades personalizadas no aplicativo, você pode criar um modo somente leitura para aplicativos específicos para usuários específicos.  
+- **Criar modo somente leitura**: Monitorando e bloqueando atividades personalizadas no aplicativo, você pode criar um modo somente leitura de aplicativos específicos para usuários específicos.  
 
-- **Restringir sessões de usuário de redes não corporativas**: os usuários que acessam um aplicativo protegido de uma localização que não faz parte da sua rede corporativa terão acesso restrito. O download de materiais confidenciais é bloqueado ou protegido.
+- **Restringir sessões de usuário de redes não corporativas**: Os usuários que acessam um aplicativo protegido em uma localização que não faz parte da rede corporativa têm acesso restrito. O download de materiais confidenciais é bloqueado ou protegido.
 
 ### <a name="how-session-control-works"></a>Como funciona o controle de sessão
 
@@ -117,6 +118,7 @@ O controle de sessão está disponível para qualquer navegador em qualquer plat
 - SharePoint Online (versão prévia)
 - Azure DevOps (Visual Studio Team Services) (versão prévia)
 - Yammer (versão prévia)
+- Microsoft Flow (versão prévia)
 
 
 
@@ -125,7 +127,7 @@ Aplicativos adicionais estão sendo continuamente integrados ao controle de sess
 
 
 >[!div class="step-by-step"]
-[PRÓXIMO: Implantar o Controle de Aplicativo de Acesso Condicional »](proxy-deployment-aad.md)
+[PRÓXIMO: Implantar o Controle de Aplicativos de Acesso Condicional »](proxy-deployment-aad.md)
 
 
 ## <a name="next-steps"></a>Próximas etapas

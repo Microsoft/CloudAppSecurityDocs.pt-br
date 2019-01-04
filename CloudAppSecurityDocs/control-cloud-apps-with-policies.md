@@ -1,11 +1,11 @@
 ---
-title: Controlar o uso de aplicativos de nuvem criando políticas no Cloud App Security | Microsoft Docs
+title: Controlar o uso de aplicativos na nuvem criando políticas – Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos na nuvem.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b15e3f54b8aabe4dff37597fa78465d34ad6c144
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e73f9e3ab8de86bd2ea7a010435b93e860cf54a4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124801"
+ms.locfileid: "53177055"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 As políticas permitem que você defina a maneira como deseja que os usuários se comportem na nuvem. Elas permitem que você detecte comportamento arriscado, violações ou atividades e pontos de dados suspeitos em seu ambiente de nuvem. Se necessário, é possível integrar fluxos de trabalho de correção para atingir a mitigação de risco completa. Existem vários tipos de políticas que se correlacionam com diferentes tipos de informações que você deseja reunir sobre seu ambiente de nuvem e os tipos de ações de correção que deseja executar.  
   
@@ -47,35 +48,35 @@ Os seguintes tipos de políticas podem ser criados:
 ## <a name="identifying-risk"></a>Identificando o risco  
 O Cloud App Security ajuda a mitigar diferentes riscos na nuvem. Você pode configurar qualquer política e alerta a ser associado a um dos seguintes riscos:  
   
--   **Controle de acesso:** quem acessa o que de onde?  
+-   **Controle de acesso:** Quem acessa o que de que local?  
   
      Monitore continuamente o comportamento e detecte atividades anômalas, incluindo ataques internos e externos de alto risco e aplique uma política para alertar, bloquear ou exigir a verificação de identidade para qualquer aplicativo ou ação específica dentro de um aplicativo. Habilite políticas de controle de acesso móvel e local com base no usuário, dispositivo e geografia com bloqueio não refinado e exibição, edição e bloqueio granulares. Detecte eventos de logon suspeitos, incluindo falhas de autenticação multifator, falhas de logon de conta desabilitada e eventos de representação.  
   
--   **Conformidade:** seus requisitos de conformidade estão violados?  
+-   **Conformidade:** Os requisitos de conformidade foram violados?  
   
      Catalogue e identifique dados controlados ou confidenciais, incluindo permissões de compartilhamento para cada arquivo armazenado nos serviços de sincronização de arquivos para garantir a conformidade com regulamentações como PCI, SOX e HIPAA  
   
--   **Controle de configuração:** estão sendo feitas alterações não autorizadas nas suas configurações?  
+-   **Controle de configuração:** Alterações não autorizadas estão sendo feitas na configuração?  
   
      Monitore alterações de configuração, incluindo manipulação de configuração remota.  
   
--   **Cloud Discovery:** aplicativos novos estão sendo usados em sua organização? Você tem um problema de aplicativos de TI Invisível sendo usados sobre os quais não tem conhecimento?  
+-   **Cloud Discovery:** Novos aplicativos estão sendo usados em sua organização? Você tem um problema de aplicativos de TI Invisível sendo usados sobre os quais não tem conhecimento?  
   
      Classifique o risco geral para cada aplicativo de nuvem com base nas normas e certificações do setor e melhores práticas. Permite que você monitore o número de usuários, as atividades, o volume de tráfego e as horas de uso típico para cada aplicativo na nuvem.  
   
--   **DLP:** arquivos proprietários estão sendo compartilhados publicamente? Você precisa colocar arquivos em quarentena?  
+-   **DLP:** Arquivos proprietários estão sendo compartilhados publicamente? Você precisa colocar arquivos em quarentena?  
   
      A integração de DLP local fornece a correção de loop fechado e a integração com as soluções de DLP locais existentes.  
   
--   **Contas com privilégios:** você precisa monitorar contas de administrador?  
+-   **Contas privilegiadas:** Você precisa monitorar contas de administrador?  
   
      Monitoramento e relatórios de atividades de administradores e usuários com privilégios em tempo real.  
   
--   **Controle de compartilhamento:** como os dados estão sendo compartilhados em seu ambiente de nuvem?  
+-   **Controle de compartilhamento:** Como os dados estão sendo compartilhados no ambiente de nuvem?  
   
      Inspecione o conteúdo de arquivos e na nuvem e imponha políticas de compartilhamento internas e externas. Monitore a colaboração e imponha políticas de compartilhamento, como bloquear o compartilhamento de arquivos fora da sua organização.  
   
--   **Detecção de ameaças:** há atividades suspeitas ameaçando seu ambiente de nuvem?  
+-   **Detecção de ameaças:** Há atividades suspeitas ameaçando o ambiente de nuvem?  
   
      Receba notificações em tempo real para qualquer limite de atividade ou violação de política por email ou mensagem de texto. Ao aplicar algoritmos de aprendizado de máquina, o Cloud App Security permite que você detecte o comportamento que poderia indicar que um usuário está usando os dados de maneira indevida.  
   
@@ -97,7 +98,7 @@ Para criar uma política de **Modelo de política**, execute estas etapas:
   
 1. No console, clique em **Controlar** seguido por **Modelos**.  
   
-    ![](./media/create-policy-from-template.png)  
+    ![Criar a política com base em um modelo](./media/create-policy-from-template.png)  
   
 2. Clique no **+** na extrema direita da linha do modelo que deseja usar. Uma página de criação de política é aberta contendo a configuração predefinida do modelo.  
   

@@ -1,11 +1,11 @@
 ---
-title: Conectar o Dropbox ao Cloud App Security para obter visibilidade e controle de uso | Microsoft Docs
-description: Este artigo fornece informações sobre como conectar o aplicativo Dropbox ao Cloud App Security usando o conector de API.
+title: Conectar o Dropbox ao Cloud App Security
+description: Este artigo fornece informações sobre como conectar o aplicativo Dropbox ao Cloud App Security usando o conector de API para obter visibilidade e controle sobre o uso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 045ba61f4621bc82be7743098b43ccbc96f2085a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: afb9ac560478bda35d2556cd9382a99478aa91d2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124223"
+ms.locfileid: "53176494"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar o Dropbox ao Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
-Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do Dropbox usando as APIs do conector.  
+Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do Dropbox usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre o uso do Dropbox. 
  
  
 Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar entrar, o Cloud App Security registra esses usuários como usuários não autenticados. Se encontrar usuários não autenticados do Dropbox, isso poderá indicar usuários que não são da sua organização ou eles poderão ser usuários reconhecidos de dentro da sua organização que não entraram.

@@ -1,11 +1,11 @@
 ---
-title: Gerenciar alertas disparados no portal do Cloud App Security | Microsoft Docs
+title: Gerenciar alertas acionados no Cloud App Security
 description: Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97cc1a6bee2c8264b7dfc430f555219ccd40ffd9
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 34fe83d4d6300037d31f577029f0b4887c7108e2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124478"
+ms.locfileid: "53176807"
 ---
 # <a name="manage-alerts"></a>Gerenciar alertas
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
 
@@ -58,11 +59,17 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
          - Você pode contatar o usuário ou o gerente do usuário sobre a natureza da atividade.
          - Deixe a atividade aberta até ter mais informações.  
 
-       - **Violações autorizadas ou comportamento anômalo** – violações autorizadas ou comportamento anômalo pode resultar de uso legítimo.  
+       - **Violações autorizadas ou comportamento anômalo** – violações autorizadas ou comportamento anômalo pode resultar de uso legítimo. <br>
+         - Você pode ignorar o alerta.
 
-   - Ignore o alerta.  
 
-3. Ao concluir esse processo, marque o alerta como resolvido.  
+3. Sempre que você ignora um alerta, é importante enviar comentários sobre o motivo pelo qual você o está ignorando. A equipe do Cloud App Security usa esses comentários como uma indicação da precisão do alerta. Em seguida, essas informações são usadas para ajustar nossos modelos de machine learning para alertas futuros. Você pode seguir estas diretrizes para decidir como categorizar o alerta:
+   - Se o uso legítimo disparou o alerta e esse não é um problema de segurança, ele pode ser um destes tipos: 
+
+     - Benigno positivo: O alerta é preciso, mas a atividade é legítima. Você deve ignorar o alerta e definir o motivo como **A gravidade real é menor** ou **Não interessante**.
+     -  Falso positivo: O alerta é impreciso. Ignore o alerta e defina o motivo pelo qual o **Alerta não é preciso**.
+   - Se houver muito ruído para determinar a legitimidade e a precisão de um alerta, ignore-o e defina o motivo como **Excesso de alertas semelhantes**.
+   - Verdadeiro positivo: Se o alerta estiver relacionado a um evento de risco real que foi confirmado de modo mal-intencionado ou inadvertidamente por alguém de dentro ou fora da organização, defina o evento como **Resolver** depois de terem sido tomadas todas as devidas providências para corrigir o evento.
 
 ## <a name="alert-types"></a>Tipos de alerta
 

@@ -1,11 +1,11 @@
 ---
-title: Trabalhando com consultas e filtros de atividades do Cloud App Security | Microsoft Docs
+title: Trabalhando com consultas e filtros de atividades do Cloud App Security
 description: Este artigo fornece uma lista de consultas e filtros de atividades do Cloud App Security e explica como trabalhar com eles.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 404095a7c688a1e077bc11703c737697b5311a59
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 4e10adf4b059728e45d9a87ebefcf1f1707566a7
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124665"
+ms.locfileid: "53177164"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividades
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece descrições e instruções para consultas e filtros de atividades do Cloud App Security.
 
@@ -46,7 +47,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 
 - Aplicativo – pesquisa apenas atividades em aplicativos específicos.  
   
-- Ação aplicada — pesquise pela ação de governança aplicada: Bloqueado, Ignorar proxy, Descriptografado, Criptografado, Falha de criptografia, Sem ação.
+- Ação aplicada – pesquisar pela ação de governança aplicada: Bloqueado, Ignorar proxy, Descriptografado, Criptografado, Falha de criptografia, Nenhuma ação.
 
 - Data – a data em que a atividade ocorreu. O filtro dá suporte a datas antes/depois e a um intervalo de datas.  
   

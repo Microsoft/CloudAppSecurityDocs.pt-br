@@ -1,11 +1,11 @@
 ---
-title: Definir escopo de sua implantação do Microsoft Cloud App Security | Microsoft Docs
+title: Definir escopo da implantação do Microsoft Cloud App Security
 description: Este artigo fornece informações sobre como definir o escopo de sua implantação do Cloud App Security, incluir e excluir usuários ou grupos específicos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf0a19b89d79b6bc6f3bb6edf51cf4392621ab68
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 899a6000674163f250dc981c58a800133902973f
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124734"
+ms.locfileid: "53176361"
 ---
 # Implantação com escopo <a name="scoped-deployment"></a> 
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security permite definir o escopo da implantação. Escopo permite que você selecione alguns grupos de usuários a serem monitorados para aplicativos ou excluídos do monitoramento.
 

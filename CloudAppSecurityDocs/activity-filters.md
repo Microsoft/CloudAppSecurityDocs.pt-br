@@ -1,11 +1,11 @@
 ---
-title: Visibilidade das atividades dos aplicativos de nuvem | Microsoft Docs
+title: Visibilidade das atividades de aplicativos na nuvem – Cloud App Security | Microsoft Docs
 description: Este artigo fornece uma lista de atividades, filtros e parâmetros de correspondência que podem ser aplicados às políticas de atividade.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4de076e4cf683efc8bd17347fa189bb13b53df74
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: bfdc9f6cb76a5daff867e9f697439214d249bcf7
+ms.sourcegitcommit: a55a20b8613755068e52b5cf65ad333fddd29688
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124427"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450965"
 ---
 # <a name="activities"></a>Atividades
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security proporciona visibilidade de todas as atividades de seus aplicativos conectados. Depois de conectar o Cloud App Security a um aplicativo usando o Conector de aplicativos, o Cloud App Security examinará todas as atividades que ocorreram – o período de tempo de verificação retroativo é diferente de acordo com o aplicativo – e, em seguida, ele será constantemente atualizado com novas atividades. 
 
@@ -31,7 +32,7 @@ O Microsoft Cloud App Security proporciona visibilidade de todas as atividades d
 
 O **Log de atividades** pode ser filtrado para permitir que você encontre atividades específicas. Crie políticas com base nas atividades e, em seguida, defina sobre o que você deseja ser alertado e agir. É possível pesquisar atividades realizadas em determinados arquivos. O tipo de atividades e as informações que recebemos para cada atividade dependem do aplicativo e do tipo de dados que ele pode fornecer. 
 
-Por exemplo, é possível usar o **Log de atividades** para encontrar usuários na sua organização que estejam usando sistemas operacionais ou navegadores desatualizados da seguinte maneira: depois de conectar um aplicativo ao Cloud App Security, na página **Log de atividades**, use o filtro avançado e selecione **Marcação do agente do usuário**. Em seguida, selecione **Navegador desatualizado** ou **Sistema operacional desatualizado**.
+Por exemplo, você pode usar o **Log de atividades** para encontrar usuários em sua organização que estejam usando sistemas operacionais ou navegadores desatualizados, da seguinte maneira: Depois de conectar um aplicativo ao Cloud App Security na página **Log de atividades**, use o filtro avançado e selecione **Marca de agente do usuário**. Em seguida, selecione **Navegador desatualizado** ou **Sistema operacional desatualizado**.
 
  ![Exemplo de navegador desatualizado de atividade](media/activity-example-outdated.png)
  
@@ -52,17 +53,17 @@ Para fazer uma busca detalhada de atividades mais específicas, você pode expan
 
 Você pode exibir mais informações sobre cada atividade clicando na própria atividade no log de atividades. Isso abre a Gaveta de atividades, que fornece as seguintes ações adicionais e informações para cada atividade:
 
-   - Políticas correspondentes: clique no link Políticas correspondentes para ver uma lista de políticas nessa atividade correspondente.
+   - Políticas correspondentes: Clique no link Políticas correspondentes para ver uma lista de políticas para as quais essa atividade encontrou uma correspondência.
 
-   - Exibir dados brutos: clique em Exibir dados brutos para ver os dados reais que foram recebidos do aplicativo.
+   - Exibir dados brutos: Clique em Exibir dados brutos para ver os dados reais recebidos do aplicativo.
 
-   - Usuário: clique no usuário para exibir a página do usuário que executou a atividade. 
+   - Usuário: Clique no usuário para exibir a página do usuário que executou a atividade. 
 
-   - Tipo de dispositivo: clique no tipo de dispositivo para exibir os dados brutos do agente do usuário. 
+   - Tipo de dispositivo: Clique no tipo de dispositivo para exibir os dados brutos do agente do usuário. 
 
-   - Local: clique no local para exibir o local no Bing Mapas.
+   - Local: Clique na localização para exibir a localização no Bing Mapas.
 
-   - Marcas e categoria de endereço IP: clique na marca de IP para exibir a lista de marcas de IP encontradas nessa atividade. Em seguida, você pode filtrar por todas as atividades correspondentes nessa marca.    
+   - Marcas e categoria de endereço IP: Clique na marca de IP para exibir a lista de marcas de IP encontradas nessa atividade. Em seguida, você pode filtrar por todas as atividades correspondentes nessa marca.    
 
  Os campos na gaveta Atividade fornecem links contextuais para atividades adicionais e análises detalhadas que você talvez queira executar diretamente na gaveta. Por exemplo, se você mover o cursor para próximo da categoria de endereço IP, pode usar o ícone para adicionar filtro ![adicionar filtro](./media/add-to-filter-icon.png) para adicionar o endereço IP imediatamente ao filtro da página atual. Você também pode usar o ícone de engrenagem de configurações ![ícone de configurações](./media/contextual-settings-icon.png) que aparece diretamente na página de configurações necessária para alterar a configuração de um dos campos, tais como **Grupos de usuários**.
 
@@ -86,13 +87,12 @@ Para exibir informações de usuário:
 1. Clique na atividade em si no **Log de atividades**.
 
 2. Em seguida, clique na guia **Usuário**. <br></br> Clicar abre a Gaveta de atividades. A guia **Usuário** fornece os seguintes insights sobre o usuário:
-    - **Abrir alertas**: o número de alertas abertos envolvendo o usuário.
-    - **Corresponde**: ao número de correspondências de política para arquivos pertencentes ao usuário. 
-   <!-- - **File violation**: The number of file violations for files owned by the user. -->
-    - **Atividades**: o número de atividades executadas pelo usuário nos últimos 30 dias.
-    - **Países**: o número de países dos quais o usuário se conectou nos últimos 30 dias.
-    - **ISPs**: o número de ISPs dos quais o usuário se conectou nos últimos 30 dias.
-    - **Endereços IP**: o número de endereços IP dos quais o usuário se conectou nos últimos 30 dias.
+    - **Alertas abertos**: O número de alertas abertos envolvendo o usuário.
+    - **Correspondências**: O número de correspondências de política para arquivos pertencentes ao usuário. 
+    - **Atividades**: O número de atividades executadas pelo usuário nos últimos 30 dias.
+    - **Países**: O número de países dos quais o usuário se conectou nos últimos 30 dias.
+    - **ISPs**: O número de ISPs dos quais o usuário se conectou nos últimos 30 dias.
+    - **Endereços IP**: O número de endereços IP dos quais o usuário se conectou nos últimos 30 dias.
 
 ![informações do usuário no Cloud App Security](./media/user-insights.png)
 
@@ -105,17 +105,19 @@ Para exibir as informações sobre endereço IP:
 1. Clique na atividade em si no **Log de atividades**.
 
 2. Em seguida, clique na guia **Endereço IP**. <br></br> Esse recurso abre a guia **Endereço IP** da gaveta de atividades, que fornece as seguintes informações sobre o endereço IP:
-    - **Abrir alertas**: o número de alertas abertos envolvendo o endereço IP.
-    - **Atividades**: o número de atividades executadas pelo endereço IP nos últimos 30 dias.
-    - **Localização do IP**: as localizações geográficas a partir das quais o endereço IP foi conectado nos últimos 30 dias.
-    - **Atividades**: o número de atividades executadas a partir do endereço IP nos últimos 30 dias.
-    - **Atividades administrativas**: o número de atividades administrativas executadas a partir do endereço IP nos últimos 30 dias.
+    - **Alertas abertos**: O número de alertas abertos envolvendo o endereço IP.
+    - **Atividades**: O número de atividades executadas pelo endereço IP nos últimos 30 dias.
+    - **Localização do IP**: As localizações geográficas das quais o endereço IP se conectou nos últimos 30 dias.
+    - **Atividades**: O número de atividades executadas desse endereço IP nos últimos 30 dias.
+    - **Atividades de administrador**: O número de atividades administrativas executadas desse endereço IP nos últimos 30 dias.
     - Você pode executar as seguintes ações de endereço IP:
         - Marcar como IP corporativo e adicionar à lista de permissões
         - Marcar como endereço IP de VPN e adicionar à lista de permissões
         - Marcar como IP arriscado e adicionar à lista bloqueada
 
-
+   >[!NOTE]
+   > Quando um endereço IP é marcado como corporativo, ele é refletido no portal e os endereços IP são excluídos de dispararem detecções específicas (por exemplo, viagem impossível), pois são considerados confiáveis.
+   >
 ![Informações do endereço IP no Cloud App Security](./media/ip-address-insights.png)
 
 ## Exportar atividades <a name="export"></a>

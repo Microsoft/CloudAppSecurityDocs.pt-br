@@ -1,11 +1,11 @@
 ---
-title: Implantar Cloud App Security para informações de uso em aplicativo de nuvem e controle | Microsoft Docs
-description: Este artigo descreve o processo para colocar o Cloud App Security em funcionamento.
+title: Implantar o Cloud App Security
+description: Este artigo descreve o processo usado para colocar o Cloud App Security em funcionamento, de modo que você obtenha o uso do aplicativo na nuvem, além de insights e controle sobre ele.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ba1b2af9267595bfed88d34a280774aa47411786
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 240a2831ca31945cff4b957c21096d2ed0a64b42
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124087"
+ms.locfileid: "53177242"
 ---
 # <a name="deploy-microsoft-cloud-app-security"></a>Implantar o Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security pode ajudar você a aproveitar os benefícios de aplicativos na nuvem sem deixar de manter o controle dos recursos corporativos. Ele trabalha melhorando a visibilidade da atividade na nuvem e ajuda a aumentar a proteção de dados corporativos. Neste artigo, descreveremos as etapas utilizadas para configurar e trabalhar com o Microsoft Cloud App Security.  
 
@@ -76,7 +77,7 @@ Tarefa necessária: Criar políticas
 2. Selecione um modelo de política na lista e selecione (+) **Criar política**.
 3. Personalize a política (selecione filtros, ações e outras configurações) e, em seguida, escolha **Criar**.
 4. No guia **Políticas**, selecione a política para ver as correspondências relevantes (atividades, arquivos, alertas).
- Dica: para cobrir todos os seus cenários de segurança de ambiente de nuvem, crie uma política para cada **categoria de risco**.
+ Dica: Para abranger todos os cenários de segurança do ambiente de nuvem, crie uma política para cada **categoria de risco**.
 
 **Como as políticas podem ajudar sua organização?**
 Você pode usar políticas para ajudar a monitorar as tendências, ver as ameaças de segurança e gerar alertas e relatórios personalizados. Com as políticas, você pode criar ações de governança e definir controles de compartilhamento de arquivos e prevenção de perda de dados.
@@ -84,7 +85,7 @@ Você pode usar políticas para ajudar a monitorar as tendências, ver as ameaç
 
 ### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Etapa 3. [Configurar o Cloud Discovery](set-up-cloud-discovery.md).
 
-Tarefa necessária: Habilitar o Cloud App Security para exibir o uso do aplicativo de nuvem
+Tarefa necessária: Habilitar o Cloud App Security para exibir o uso do aplicativo na nuvem
 
 1. [Integrar-se ao Windows Defender ATP](wdatp-integration.md) para habilitar automaticamente o Cloud App Security para monitorar seus dispositivos Windows 10 dentro e fora da sua empresa.
 2. Se você usar o [Zscaler, integre-o](zscaler-integration.md) ao Cloud App Security.
@@ -104,7 +105,7 @@ Obter a visibilidade da TI Invisível na sua organização é essencial.
 Depois que os logs são analisados, você pode descobrir com facilidade quais aplicativos na nuvem estão sendo usados, por quais pessoas e em quais dispositivos.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Etapa 4. [Personalizar sua experiência](mail-settings.md).
-Tarefa recomendada: Adicionar os detalhes da sua organização
+Tarefa recomendada: Adicionar os detalhes da organização
 
 **Para inserir as configurações de email**
 
@@ -132,7 +133,7 @@ Alguns recursos funcionam melhor quando personalizados para suas necessidades. F
 
 
 ### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Etapa 5. [Organizar os dados de acordo com suas necessidades](ip-tags.md).
-Tarefa recomendada: Definir as configurações importantes
+Tarefa recomendada: Definir configurações importantes
 
 **Para criar marcas de endereço IP**
 

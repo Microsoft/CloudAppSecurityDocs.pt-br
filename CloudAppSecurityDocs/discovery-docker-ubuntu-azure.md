@@ -1,11 +1,11 @@
 ---
-title: Configurar o upload de log automático para relatórios contínuos | Microsoft Docs
+title: Configurar o upload automático de logs usando o Docker no Azure
 description: Este artigo descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu no Azure.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2be66b030b7b46b55ab9c757a3ae036ebad14c5f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a6064660a869f30cf38d4ff3982fee8a7e2b0c3e
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124716"
+ms.locfileid: "53177344"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Instalação e configuração no Ubuntu
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Configure o upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu no Azure. Este artigo descreve como configurar o upload automático de logs. 
 
@@ -48,7 +49,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 – Configuração do portal da Web: Definir fontes de dados e vinculá-las a um coletor de logs
 
 1. Acesse a página de configurações **Upload automático de logs**. 
 
@@ -150,7 +151,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
      ![Proxy do Ubuntu](./media/ubuntu-proxy.png)
 
-8. Para verificar se o coletor de logs está sendo executado corretamente, execute o seguinte comando: `Docker logs <collector_name>`. Você deve obter os resultados: **Concluído com êxito!**
+8. Para verificar se o coletor de logs está sendo executado corretamente, execute o seguinte comando: `Docker logs <collector_name>`. Você deverá obter os resultados: **Concluído com êxito!**
 
    ![ubuntu8](./media/ubuntu8.png)
 

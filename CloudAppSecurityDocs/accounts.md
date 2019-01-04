@@ -1,11 +1,11 @@
 ---
-title: Visibilidade das contas do dos aplicativos na nuvem | Microsoft Docs
+title: Visibilidade das contas de aplicativos na nuvem – Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações sobre como examinar as contas de seus aplicativos conectados.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a48077187ace1980cf819a32514c9fbbb930c444
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 7b04724605eba07b2adbd952f634bd92496d772e
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123628"
+ms.locfileid: "53175661"
 ---
 # <a name="accounts"></a>Contas
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security proporciona visibilidade das contas de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security lerá as informações da conta associadas aos aplicativos conectados. A página Contas permite que você investigue essas contas, as permissões, os grupos dos quais são membros, os aliases delas e os aplicativos que elas estão usando. Além disso, quando o Cloud App Security detecta uma nova conta que não foi vista anteriormente em um dos aplicativos conectados, como nas atividades ou no compartilhamento de arquivos, a conta é adicionada à lista de contas deste aplicativo. Isso permite que você tenha visibilidade sobre a atividade de usuários externos interagindo com seus aplicativos em nuvem.
 
@@ -54,27 +55,27 @@ Veja a seguir uma lista de filtros de contas que podem ser aplicados. A maioria 
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-- **Afiliação**: a afiliação pode ser **interna** ou **externa**. Para definir quais usuários e contas são internos, em **configurações**, certifique-se de definir o **intervalo de endereços IP** da sua organização interna. Se a conta tiver permissões de administrador, o ícone na tabela Contas aparecerá com a adição da gravata vermelha. ![ícone de administrador de contas](./media/accounts-admin-icon.png)
+- **Afiliação**: A afiliação pode ser **Interna** ou **Externa**. Para definir quais usuários e contas são internos, em **configurações**, certifique-se de definir o **intervalo de endereços IP** da sua organização interna. Se a conta tiver permissões de administrador, o ícone na tabela Contas aparecerá com a adição da gravata vermelha. ![ícone de administrador de contas](./media/accounts-admin-icon.png)
 
-- **Aplicativo**: você pode filtrar para qualquer aplicativo conectado de API que esteja sendo usado por contas em sua organização.
+- **Aplicativo**: Você pode filtrar qualquer aplicativo conectado de API que esteja sendo usado por contas em sua organização.
 
-- **Domínio**: permite que você filtre para usuários em domínios específicos.
+- **Domínio**: Permite a filtragem de usuários em domínios específicos.
 
-- **Grupos**: permite que você filtre para membros de grupos de usuários no Cloud App Security – grupos de usuários internos e grupos de usuários importados.
+- **Grupos**: Permite a filtragem dos membros de grupos de usuários no Cloud App Security – grupos de usuários internos e grupos de usuários importados.
 
-- **Instância**: permite que você filtre para membros de uma instância de aplicativo específico. 
+- **Instância**: Permite a filtragem dos membros de uma instância de aplicativo específica. 
 
-- **Visto pela última vez em**: o filtro **Visto pela última vez em** permite localizar as contas que estão inativas e cujos usuários não executaram nenhuma atividade há algum tempo.
+- **Visto pela última vez em**: O filtro **Visto pela última vez em** permite localizar as contas que estão inativas e cujos usuários não executaram nenhuma atividade há algum tempo.
 
-- **Organização**: permite que você filtre os membros de grupos organizacionais específicos definidos em seus aplicativos conectados.
+- **Organização**: Permite a filtragem dos membros de grupos organizacionais específicos definidos em seus aplicativos conectados.
 
-- **Mostrar apenas administradores**: filtros para contas e usuários que são administradores.
+- **Mostrar somente Administradores**: Filtre contas e usuários que são administradores.
 
-- **Status**: filtre com base no status da conta de usuário de N/D, em estágios, ativo, suspenso ou excluído.
+- **Status**: Filtre com base no status da conta de usuário de N/D, de teste, ativa, suspensa ou excluída.
 
-- **Tipo**: permite que você filtre para o usuário ou o tipo de conta.
+- **Tipo**: Permite a filtragem do usuário ou do tipo de conta.
 
-- **Nome de usuário**: permite que você filtre para usuários específicos. 
+- **Nome de usuário**: Permite a filtragem de usuários específicos. 
 
 
 ## <a name="next-steps"></a>Próximas etapas  

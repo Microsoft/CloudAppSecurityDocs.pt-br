@@ -1,11 +1,11 @@
 ---
-title: Gerenciar acesso de administrador ao portal do Cloud App Security | Microsoft Docs
+title: Gerenciar o acesso de administrador ao portal do Cloud App Security
 description: Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe11600fc802e0c4f4d8024b78fa2713cc4a63
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 7fff5cffcae418225af7f1f14e98bf0c42e6811c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123951"
+ms.locfileid: "53175695"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security é compatível com o Controle de acesso baseado em função. Por padrão, algumas [funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) e [funções de administrador do Azure AD (Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Microsoft Cloud App Security. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, confira os artigos [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
@@ -30,11 +31,11 @@ O Microsoft Cloud App Security é compatível com o Controle de acesso baseado e
 
 Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD têm acesso ao Microsoft Cloud App Security:
 
-- **Administrador global e Administrador de segurança:** os administradores com **Acesso completo** têm permissões completas no Cloud App Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
+- **Administrador global e administrador de segurança:** Os administradores com **Acesso completo** têm permissões completas no Cloud App Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
 
-- **Administrador de conformidade:** tem permissões somente leitura e pode gerenciar alertas. Pode criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios internos em Gerenciamento de dados. 
+- **Administrador de conformidade:** Tem permissões somente leitura e pode gerenciar alertas. Pode criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios internos em Gerenciamento de dados. 
 
-- **Leitor de segurança:** tem permissões somente leitura e pode gerenciar alertas. O Leitor de segurança não tem permissão para executar as seguintes ações:
+- **Leitor de segurança:** Tem permissões somente leitura e pode gerenciar alertas. O Leitor de segurança não tem permissão para executar as seguintes ações:
 
   - Criar políticas e editar as existentes 
   - Executar ações de controle 
@@ -47,7 +48,7 @@ Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD 
   - Acessar e exibir o Log de controle 
   - Acessar e exibir a página Gerenciar relatórios de instantâneo 
 
-- **Administrador de aplicativo/instância:** tem permissões a todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao aplicativo ou à instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas, da seguinte maneira:
+- **Administrador de aplicativo/instância:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao aplicativo ou à instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas, da seguinte maneira:
 
   - Página de atividades – somente atividades sobre o aplicativo específico
   - Alertas – somente alertas relacionados ao aplicativo específico
@@ -60,7 +61,7 @@ Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD 
   - Extensões de segurança – permissões somente para o token de API com permissões de usuário
   - Ações de governança – somente para a instância/o aplicativo específico 
 
-- **Administrador de grupos:** tem permissões a todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao grupo específico selecionado aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários, da seguinte maneira:
+- **Administrador de grupo:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao grupo específico selecionado aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários, da seguinte maneira:
 
   - Página de atividades – somente atividades relacionadas aos usuários do grupo
   - Alertas – somente alertas relacionados aos usuários do grupo

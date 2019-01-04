@@ -1,11 +1,11 @@
 ---
-title: Controlar quais aplicativos OAuth de nuvem de terceiros recebem permissões | Microsoft Docs
+title: Controlar quais aplicativos OAuth na nuvem de terceiros recebem permissões – Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações sobre como você pode controlar, vetar e autorizar permissões de aplicativos OAuth de terceiros.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5984b4c7067086d11f2504f7bd1cdb186ccc8788
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d4b6911ac508d9b52fd54c3afe3b33ede4ffdc45
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124597"
+ms.locfileid: "53175610"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365, o G Suite e o Salesforce. Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo. Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões de aplicativo do Microsoft Cloud App Security permitem que você veja quais aplicativos OAuth instalados pelo usuário têm acesso a dados do Office 365, dados do G Suite e dados do Salesforce. Cloud App Security informa quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365, G Suite e Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
 
@@ -88,7 +89,7 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 
 Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou notificar o usuário de que ele deve alterar a permissão. 
 
-1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *Você autorizou o aplicativo a acessar sua conta G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere conceder ou revogar as permissões que você deu a esse aplicativo em sua conta G Suite. Para revogar o acesso ao aplicativo, vá para: https://security.google.com/settings/security/permissions?hl=en&pli=1 Selecione o aplicativo e clique em 'Revogar o acesso' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
+1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *Você autorizou o aplicativo a acessar sua conta do G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere conceder ou revogar as permissões que você deu a esse aplicativo em sua conta G Suite. Para revogar o acesso ao aplicativo, acesse: https://security.google.com/settings/security/permissions?hl=en&pli=1 Selecione o aplicativo e clique em 'Revogar acesso' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
 2. Você também pode revogar permissões para usar o aplicativo para o usuário. Clique no ícone no final da linha de aplicativo na tabela e selecionando **Revogar aplicativo**. 
 
    ![revogar aplicativo](./media/revoke-app.png)

@@ -1,11 +1,11 @@
 ---
-title: Gerenciamento de token de API no Cloud App Security | Microsoft Docs
+title: Gerenciamento de token de API no Cloud App Security
 description: Este artigo fornece informações sobre como gerar tokens de API para o Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b20d5bd3f2379c26e0e1262c9a5f57295ec939
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 871ad62cf4daf7a84bfc65724fb61413d70fafa3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123441"
+ms.locfileid: "53176341"
 ---
 # <a name="api-tokens"></a>Tokens de API
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 A API do Microsoft Cloud App Security fornece acesso programático ao Cloud App Security por meio de pontos de extremidade API REST. Aplicativos podem usar a API para realizar operações de leitura e atualização nos dados e objetos do Cloud App Security. Por exemplo, a API de segurança do aplicativo de nuvem dá suporte às seguintes operações comuns para um objeto de usuário:
 
@@ -47,7 +48,7 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
 
 3. Copie o valor do token e salve-o em algum lugar para recuperação – se você perdê-lo, será necessário gerar o token novamente. O token tem os privilégios do usuário que o emitiu. Por exemplo, um leitor de segurança não pode emitir um token que possa alterar os dados.
 
-4. Você pode filtrar os tokens de status: Ativo, Inativo ou Gerado. 
+4. Filtre os tokens por status: Ativo, Inativo ou Gerado. 
 
    - Tokens com status Gerado são tokens que nunca foram usados. 
    - Tokens com status Ativo são tokens que foram gerados e foram usados nos últimos sete dias. 

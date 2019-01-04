@@ -1,11 +1,11 @@
 ---
-title: Como aplicar ações de governança para controlar aplicativos conectados | Microsoft Docs
+title: Ações de governança para controlar aplicativos conectados – Cloud App Security | Microsoft Docs
 description: Este artigo lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security e as mensagens de log que as rastreiam.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 39022433ffb09410d883728a3f0ce2cae4d30d88
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48708ea18227a68a780c6ed02905cda51cea48e0
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124631"
+ms.locfileid: "53177437"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades. Ações de governança são ações integradas que você pode executar em arquivos ou atividades diretamente no Microsoft Cloud App Security. As ações de governança controlam o que os usuários fazem, em tempo real, nos aplicativos conectados. 
 

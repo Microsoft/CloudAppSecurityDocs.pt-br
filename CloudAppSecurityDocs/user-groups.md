@@ -1,11 +1,11 @@
 ---
-title: Importar grupos de usuários de aplicativos conectados | Microsoft Docs
-description: Este tópico fornece instruções de importação de seus grupos de usuários para Cloud App Security.
+title: Importar grupos de usuários de aplicativos conectados no Cloud App Security
+description: Este artigo fornece instruções sobre como importar os grupos de usuários de aplicativos conectados para o Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,20 +13,21 @@ ms.technology: ''
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d952746375c18730b92f7629ac4978c61ebfbfa9
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: ed02285732f363c91159981c5abb3179e45a6de8
+ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123781"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53347274"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-   
-# <a name="import-user-groups"></a>Importar grupos de usuários
+# <a name="importing-user-groups-from-connected-apps"></a>Importar grupos de usuários de aplicativos conectados
+
+*Aplica-se a: Microsoft Cloud App Security*
 
 Quando você conecta aplicativos usando conectores de API, o Microsoft Cloud App Security permite que você importe grupos de usuários, por exemplo do Office 365 e do Azure Active Directory.
 Há dois tipos de grupos de usuários: 
-- Grupos automáticos </br>Grupos automáticos são criados por padrão pelo Microsoft Cloud App Security. Por exemplo, há um grupo de usuários automático chamado **Externo**, que combina todos os usuários de todos os aplicativos que são externos à sua organização e tem acesso aos arquivos ou estavam em atividades do usuário em seu locatário.
+- Grupos automáticos </br>Grupos automáticos são criados por padrão pelo Microsoft Cloud App Security. Por exemplo, há um grupo de usuários automático chamado **Externo** que combina todos os usuários de todos os aplicativos que são externos à sua organização e que têm acesso a arquivos ou que estavam em atividades do usuário em seu locatário.
  Os seguintes grupos automáticos existem no Cloud App Security:
   - Externa
   - Administrador do Dropbox
@@ -35,9 +36,14 @@ Há dois tipos de grupos de usuários:
   - Administrador do Box
   - Todos os perfis personalizados e padrão do Salesforce, por exemplo o Administrador de Sistema do Salesforce. Consulte a lista completa [aqui](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0).
 
-- Grupos importados</br>Você pode importar qualquer grupo de seus aplicativos conectados. Por exemplo, você pode importar grupos de usuários do Office 365 (Active Directory) e outros aplicativos conectados. Isso permite que você procure ameaças na organização ao observar um grupo específico e não ao observar a organização inteira ou um usuário específico. 
+- Grupos importados</br>Você pode importar qualquer grupo de seus aplicativos conectados. Por exemplo, você pode importar grupos de usuários do Office 365 (Active Directory) e outros aplicativos conectados. Esses grupos permitem que você procure ameaças em sua organização, não observando a organização inteira nem um usuário específico, mas observando um grupo específico. 
 
-Os cenários típicos que aproveitam os grupos de usuários importados incluem: você pode investigar os documentos que as pessoas de RH observam, verificar se há algo incomum acontecendo no grupo de executivos ou se alguém do grupo administradores realizou uma atividade fora dos EUA. Para importar grupos de usuários:
+Os cenários típicos que usam grupos de usuários importados incluem:
+   - Investigar os documentos que a equipe de RH visualizou
+   - Verificar se há algo incomum acontecendo no grupo de executivos
+   - Descobrir se alguém do grupo de administradores realizou uma atividade fora dos EUA. 
+
+## <a name="how-to-import-user-groups"></a>Como importar grupos de usuários
 
 1. Na barra de menus, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e selecione **Grupos de usuários**.
 2. Clique em **Importar grupo de usuários**.
@@ -45,10 +51,10 @@ Os cenários típicos que aproveitam os grupos de usuários importados incluem: 
    ![Importar grupos de usuários](./media/user-groups-add.png)
 
 3. Selecione o aplicativo do qual deseja importar o grupo de usuários. A lista de aplicativos dependerá de qual Conector de Aplicativo você implantou.
-4. Selecione o grupo a ser importado. A lista de grupos disponíveis será uma lista de todos os grupos de usuário existente no próprio aplicativo. Se quiser adicionar um novo grupo, você precisará fazê-lo diretamente no próprio aplicativo e quando ele for exibido, selecione-o.
+4. Selecione o grupo a ser importado. A lista de grupos disponíveis será uma lista de todos os grupos de usuário existente no próprio aplicativo. Caso deseje adicionar um novo grupo, você precisará fazê-lo diretamente no próprio aplicativo. Em seguida, quando o grupo for exibido na lista aqui, selecione-o.
 5. Dependendo do tamanho do grupo, a importação pode demorar até uma hora. Você pode selecionar a opção para ser notificado por email quando o processo de importação for concluído.
 6. Clique em **Importar**. Depois de importar um grupo, o Cloud App Security sincroniza automaticamente os membros do grupo, assim como faz o Active Directory Connect.
-7. Depois que a importação for concluída, na página **Grupos de usuários**, você pode clicar em um grupo específico para exibir uma lista de todos os membros do grupo. Você também pode clicar em qualquer membro do grupo mais se aprofundar nos detalhes de uma conta específica e exibir quais aplicativos são usados, além de um resumo da conta, incluindo gráficos do usuário e suas atividades.
+7. Depois que a importação for concluída, na página **Grupos de usuários**, você pode clicar em um grupo específico para exibir uma lista de todos os membros do grupo. Clique em qualquer membro do grupo para fazer uma busca detalhada em uma conta específica. Você pode exibir quais aplicativos foram usados e um resumo da conta, incluindo grafos do usuário e suas atividades.
 
 A importação de grupos permite que você selecione os grupos como filtros ao investigar no **Log de atividades** e ao criar políticas. 
 
@@ -59,8 +65,8 @@ A importação de grupos permite que você selecione os grupos como filtros ao i
 Para obter mais informações sobre como usar os filtros de grupo de usuários, consulte [Atividades](activity-filters.md).
 
 
-    
-## <a name="see-also"></a>Consulte Também  
+## <a name="next-steps"></a>Próximas etapas
+ 
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  

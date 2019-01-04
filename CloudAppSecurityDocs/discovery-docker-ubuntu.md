@@ -1,11 +1,11 @@
 ---
-title: Configurar o upload de log automático para relatórios contínuos | Microsoft Docs
+title: Configurar o upload automático de logs usando o Docker local
 description: Este artigo descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou no RHEL em um servidor local.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e20a02b3075a496e30c99d8ae3d0364b7e60d82
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: add574af2b6ff28191b4f6ecf5a21746913cd8d5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124274"
+ms.locfileid: "53177106"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker no Ubuntu e no RHEL local
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Configure o upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker em um servidor local do Ubuntu ou do RHEL.
 
@@ -48,7 +49,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 – Configuração do portal da Web: Definir fontes de dados e vinculá-las a um coletor de logs
 
 1. Acesse a página de configurações **Upload automático de logs**. 
 
@@ -132,7 +133,7 @@ As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantaç�
 
 6. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs <collector_name>`
 
-Você deverá ver a mensagem **Concluído com êxito!**
+Você deverá ver a mensagem: **Concluído com êxito!**
 
   ![ubuntu8](./media/ubuntu8.png)
 

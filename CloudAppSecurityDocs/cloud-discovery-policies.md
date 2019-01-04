@@ -1,11 +1,11 @@
 ---
-title: Criar políticas em aplicativos do Cloud Discovery no Cloud App Security | Microsoft Docs
-description: Este tópico fornece informações sobre como trabalhar com políticas do Cloud Discovery.
+title: Criar políticas em aplicativos do Cloud Discovery – Cloud App Security | Microsoft Docs
+description: Este artigo fornece informações sobre como trabalhar com políticas do Cloud Discovery.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e9a740972dfd9eb62522458adb55f2b0667db76
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: bd6a2da5576d25a5b3b74dfa7c9a6ca9a26739af
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123917"
+ms.locfileid: "53175848"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Você pode criar políticas de descoberta de aplicativo para alertá-lo quando novos aplicativos são detectados. O Cloud App Security também pesquisa anomalias em todos os logs do Cloud Discovery. 
 

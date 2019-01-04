@@ -1,11 +1,11 @@
 ---
-title: Referência de modelo de política no Cloud App Security | Microsoft Docs
+title: Referência de modelo de política do Cloud App Security
 description: Este artigo fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos na nuvem.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 27f037e56fbf248e74edf1fd11bbce6a324895df
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: c2afb248fa3f4ccd7367d1603266cf0d1f803bd5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124036"
+ms.locfileid: "53176273"
 ---
 # <a name="policy-template-reference"></a>Referência de modelo de política
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece informações sobre modelos de política incluídos no Microsoft Cloud App Security. 
 

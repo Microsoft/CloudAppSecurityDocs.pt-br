@@ -1,11 +1,11 @@
 ---
-title: Criar políticas de acesso do Cloud App Security para permitir e bloquear o acesso | Microsoft Docs
+title: Criar políticas de acesso do Cloud App Security para permitir e bloquear o acesso
 description: Este artigo descreve o procedimento para configurar uma política de acesso do Controle de Aplicativos de Acesso Condicional do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD usando as funcionalidades de proxy reverso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,21 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 60d85d25400386161dacd09e359353e96dac6b94
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8252c3ec83dd2e37663c5c13df8fa56e333af19c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124121"
+ms.locfileid: "53176171"
 ---
-# <a name="access-policies"></a>Políticas de acesso 
+# <a name="access-policies"></a>Políticas de acesso
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« ANTERIOR: Como criar uma política de sessão](session-policy-aad.md)<br>
 [PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
-
 
 As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, localização, dispositivo e aplicativo. Crie políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são ingressados no domínio e não gerenciados pelo Windows Intune distribuindo certificados do cliente para dispositivos gerenciados ou usando certificados existentes, como certificados MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado. 
 
@@ -65,19 +65,19 @@ Para criar uma nova política de acesso, siga este procedimento:
 
 4. Na seção **Atividades que correspondem a todos os seguintes**, em **Origem da atividade**, selecione os filtros de atividade adicionais a serem aplicados à política. Os filtros incluem as seguintes opções: 
      
-   - **Marcas de dispositivo**: use este filtro para identificar dispositivos não gerenciados.
+   - **Marcas de dispositivo**: Use esse filtro para identificar dispositivos não gerenciados.
 
-   - **Local**: use este filtro para identificar locais desconhecidos (e, portanto, arriscados). 
+   - **Localização**: Use esse filtro para identificar localizações desconhecidas (e que, portanto, apresentam riscos). 
 
-   - **Endereço IP**: use nesse filtro para filtrar por endereços IP ou usar marcas de endereço IP atribuídas anteriormente. 
+   - **Endereço IP**: Use esse filtro para filtrar por endereços IP ou use marcas de endereço IP atribuídas anteriormente. 
 
-   - **Marca de agente do usuário**: use esse filtro para habilitar que a heurística identifique os aplicativos móveis e de área de trabalho. Esse filtro pode ser definido como igual a ou não é igual a. Os valores devem ser testados nos aplicativos móveis e da área de trabalho para cada aplicativo na nuvem.
+   - **Marca de agente do usuário**: Use esse filtro para permitir que a heurística identifique aplicativos móveis e da área de trabalho. Esse filtro pode ser definido como igual a ou não é igual a. Os valores devem ser testados nos aplicativos móveis e da área de trabalho para cada aplicativo na nuvem.
   
 5. Em **Ações**, selecione uma das seguintes opções: 
 
-    - **Permitir**: defina essa ação para permitir o acesso explicitamente de acordo com os filtros de política definidos.
+    - **Permitir**: Defina essa ação para permitir explicitamente o acesso de acordo com os filtros de política definidos.
 
-    - **Bloquear**: defina essa ação para bloquear o acesso explicitamente de acordo com os filtros de política definidos. 
+    - **Bloquear**: Defina essa ação para bloquear explicitamente o acesso de acordo com os filtros de política definidos. 
 
 6. Você pode **Criar um alerta para cada evento correspondente com a gravidade da política** e configurar um limite de alerta e selecionar se você deseja o alerta como um email, uma mensagem de texto ou ambos.
 

@@ -1,11 +1,11 @@
 ---
-title: Conectar o G Suite ao Cloud App Security para obter visibilidade e controle de uso | Microsoft Docs
-description: Este artigo fornece informações sobre como conectar o G Suite ao Cloud App Security usando o conector de API.
+title: Conectar o G Suite ao Cloud App Security
+description: Este artigo fornece informações sobre como conectar o G Suite ao Cloud App Security usando o conector de API para obter visibilidade e controle sobre o uso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df026fdf654703e61c87419df5dfd31558319e7a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48be91b9bcdd6689f5e0af138176a8bbd8033301
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124546"
+ms.locfileid: "53177259"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar o G Suite ao Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
-Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do G Suite usando as APIs do conector.
+Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do G Suite usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre o uso do G Suite. 
     
 ## <a name="configure-g-suite"></a>Configurar G Suite  
   
@@ -112,9 +113,9 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
 20. Clique na **Integração de interface do usuário da unidade** e preencha as informações a seguir:
 
-    - **Application Name (Nome do Aplicativo)**: Microsoft Cloud App Security.  
+    - **Nome do Aplicativo**: Microsoft Cloud App Security.  
   
-    - **Short Description & Long Description (Descrição curta e descrição longa)** (opcional): o Microsoft Cloud App Security fornece a visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem.  
+    - **Descrição Curta e Descrição Longa** (opcional): O Microsoft Cloud App Security fornece visibilidade dos aplicativos na nuvem, ajudando você a controlar, investigar e administrar o uso do aplicativo na nuvem, proteger dados corporativos e detectar atividades suspeitas de qualquer aplicativo na nuvem.  
   
     - O Google exige que você carregue pelo menos um ícone do aplicativo. Acesse [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) para baixar um arquivo zip que contém os ícones do Cloud App Security. Em seguida, no **ícone do aplicativo**, clique em **Selecionar** ao lado da imagem 128x128 e arraste-a para a tela pop-up. Clique em **Selecionar** ao lado da imagem 32x32 e arraste-a para a tela pop-up.  
   
@@ -147,9 +148,9 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
   
     -   Preencha as seguintes **Support URLs (URLs de suporte)**:  
   
-        -   **URL dos Termos de serviço**: http://go.microsoft.com/fwlink/?LinkID=733268  
+        -   **URL dos Termos de serviço**: https://go.microsoft.com/fwlink/?LinkID=733268  
   
-        -   **URL da Política de privacidade**: http://go.microsoft.com/fwlink/?LinkId=512132  
+        -   **URL da Política de privacidade**: https://go.microsoft.com/fwlink/?LinkId=512132  
   
     -   Em **Escopos do OAuth 2.0**, copie e cole as seguintes URLs (copie-as uma por uma e pressione Enter após cada uma):  
   

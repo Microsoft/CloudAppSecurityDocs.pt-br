@@ -1,11 +1,11 @@
 ---
-title: Criando políticas para controlar atividades no Cloud App Security | Microsoft Docs
-description: Este tópico fornece instruções para criar e trabalhar com políticas de atividade.
+title: Criar políticas para controlar atividades no Cloud App Security
+description: Este artigo fornece instruções para criar e trabalhar com políticas de atividade.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,75 +13,86 @@ ms.technology: ''
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b9d6c4b3fa20846153706230daaaf7243978b80
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: c98b01083b964901d3ff2823fff35c9702ddcd17
+ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123764"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53347316"
 ---
-*Aplica-se ao: Microsoft Cloud App Security*
-
-
 # <a name="activity-policies"></a>Políticas de atividade
-As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados, utilizando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.  
+
+*Aplica-se a: Microsoft Cloud App Security*
+
+As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.  
   
 Depois de definir uma política de detecção de atividades, ele começará a gerar alertas, os quais são gerados apenas em atividades que ocorrem depois da criação da política.
   
   
 ## <a name="custom-alerts"></a>Alertas personalizados  
-As políticas de atividade permitem que você defina alertas personalizados para serem enviados ou ações para serem realizadas quando a atividade do usuário é detectada. Por exemplo, se você quiser saber sempre que um usuário tenta fazer logon e falha 70 vezes em um minuto ou se um usuário baixa 7.000 arquivos ou se conecta do Afeganistão, você poderá definir alertas de atividade a serem enviados para você ou para o usuário quando esses eventos ocorrerem. Você pode até mesmo suspender o usuário até ter tempo de investigar o que ocorreu.  
+
+As políticas de atividade permitem o envio de alertas personalizados ou a execução de ações quando a atividade do usuário é detectada. Por exemplo, você deseja ser informado sempre que:
+
+- Um usuário tenta entrar e falha 70 vezes em um minuto
+- Um usuário baixa 7.000 arquivos
+- Um usuário se conecta do Afeganistão
+
+Você pode definir alertas de atividade a serem enviados para você mesmo ou para o usuário quando esses eventos ocorrerem. Você pode até mesmo suspender o usuário até concluir a investigação do que ocorreu.  
   
 Para criar uma nova política de atividade, siga este procedimento:  
   
-1.  No console, clique em **Controlar** seguido por **Políticas**.  
+1. No console, clique em **Controlar** seguido por **Políticas**.  
   
-2.  Clique em **Criar política** e selecione **Política de atividade**.  
+2. Clique em **Criar política** e selecione **Política de atividade**.  
   
      ![menu de política de atividade](./media/activity-policy-menu.png "menu de política de atividade")  
   
-3.  Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
+3. Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
-4.  Para definir quais ações ou outras métricas vão disparar essa política, trabalhe com os **filtros de atividade**.  
+4. Para definir quais ações ou outras métricas vão disparar essa política, trabalhe com os **filtros de atividade**.  
   
-5.  Em **Parâmetros de correspondência de atividade**, selecione se a violação da política será disparada quando uma única atividade corresponder aos filtros ou se uma violação será detectada apenas quando um número especificado de **Atividades repetidas** for detectado.  
-    Se você escolher **Atividade repetida**, será possível definir **Agrupar atividades correspondentes por aplicativo**. Isso vai disparar uma correspondência de política apenas quando as atividades repetidas ocorrerem no mesmo aplicativo (por exemplo, cinco downloads do Box).  
+5. Em **Parâmetros de correspondência de atividade**, selecione quando uma violação de política será disparada. Escolha disparar quando uma única atividade corresponde aos filtros ou somente quando um número especificado de **Atividades repetidas** é detectado.  
+    - Se você escolher **Atividade repetida**, poderá definir **Em um único aplicativo**. Essa configuração disparará uma correspondência de política somente quando as atividades repetidas ocorrerem no mesmo aplicativo. Por exemplo, cinco downloads em 30 minutos no Box disparam uma correspondência de política.  
   
-6.  Configure as **Ações** que devem ser executadas quando uma correspondência for encontrada.  
+6. Configure as **Ações** que devem ser executadas quando uma correspondência for encontrada.  
   
 Veja esses exemplos:  
   
--   Vários logons com falha  
+- Vários logons com falha  
   
-     Você pode definir sua política para que receba um alerta quando houve um grande número de tentativas de logon com falha dentro de um determinado período relativamente curto. Para configurar uma política assim, escolha o filtro de atividade apropriado na página **Nova Política de Atividade**.  
+     Você pode definir uma política para receber um alerta quando ocorrer um grande número de logons com falha em um curto período. Para configurar esse tipo de política, escolha o filtro de atividade apropriado na página **Nova Política de Atividade**.  
   
      No campo **Filtros de atividade**, configure os parâmetros para os quais o alerta será disparado.  
   
-     ![exemplo de política de falha no logon após várias tentativas](./media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de falha no logon após várias tentativas")  
+     ![Exemplo de política de várias tentativas de credenciais com falha](./media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de várias tentativas de logon com falha")  
   
--   Alta taxa de downloads  
+- Alta taxa de downloads  
   
-     Você pode definir a política para que você receba um alerta quando houve um nível inesperado ou não característico de atividade de download. Para configurar uma política assim, nos parâmetros **Taxa**, escolha os parâmetros para disparar o alerta.  
+     Você pode definir a política para que você receba um alerta quando houve um nível inesperado ou não característico de atividade de download. Para configurar esse tipo de política, nos parâmetros de **Taxa**, escolha os parâmetros para disparar o alerta.  
   
      ![exemplo de alta taxa de downloads](./media/high-download-rate-example.png "exemplo de alta taxa de downloads")  
   
   
 ## <a name="activity-policy-reference"></a>Referência de política de atividade  
-Esta seção fornece detalhes de referência sobre as políticas, fornecendo explicações sobre cada tipo de política e os campos que podem ser configurados para cada política.  
+
+Esta seção apresenta detalhes de referência sobre as políticas, explicações sobre cada tipo de política e os campos que podem ser configurados para cada política.  
   
-Uma **Política de atividade** é uma política baseada em API que permite que você monitore as atividades da sua organização na nuvem, considerando mais de 20 filtros de metadados de arquivo (incluindo o tipo de dispositivo e o local). Com base nos resultados de política, as notificações podem ser geradas e os usuários podem ser suspensos do aplicativo de nuvem.   
+Uma **Política de atividade** é uma política baseada em API que permite monitorar as atividades de sua organização na nuvem. A política leva em conta mais de 20 filtros de metadados de arquivo, incluindo a localização e o tipo de dispositivo. Com base nos resultados de política, as notificações podem ser geradas e os usuários podem ser suspensos do aplicativo de nuvem.
 Cada política é composta pelas seguintes partes:  
   
-- Filtros de atividade – permitem criar condições muito granulares com base nos metadados.  
+- Filtros de atividade – permite criar condições granulares com base nos metadados.  
   
-- Parâmetros de correspondência de atividade – permitem que você defina um limite para o número de vezes que uma atividade se repete para ser considerada como correspondente à política.  Especifique o número de atividades repetidas necessário para corresponder à política, por exemplo, definindo uma política para alertar quando um usuário executa dez tentativas de logon sem êxito em um período de dois minutos.  Por padrão, a configuração **Parâmetros de correspondência de atividade** gera uma correspondência para cada atividade que atende a todos os filtros de atividade.   
-  Usando **Atividade repetida**, você pode definir o número de atividades repetidas, a duração do período em que as atividades são contadas e até mesmo especificar que todas as atividades devem ser executadas pelo mesmo usuário e no mesmo aplicativo de nuvem.  
+- Parâmetros de correspondência de atividade – permitem que você defina um limite para o número de vezes que uma atividade se repete para ser considerada como correspondente à política.  Especifique o número de atividades repetidas necessário para corresponder à política. Por exemplo, defina uma política para alertar quando um usuário tiver 10 tentativas de logon sem êxito em um período de 2 minutos. Por padrão, o parâmetro **Correspondência de atividade aciona uma correspondência para cada atividade que atende a todos os filtros de atividade.
+
+  - Usando a **Atividade repetida**, você pode definir o número de atividades repetidas e a duração do período em que as atividades são contadas. Você também pode especificar que todas as atividades devem ser executadas pelo mesmo usuário e no mesmo aplicativo na nuvem.  
   
   
 - Ações – a política fornece a um conjunto de ações de governança que podem ser aplicadas automaticamente quando violações são detectadas.  
-  ## <a name="see-also"></a>Consulte Também  
-  [Políticas de proteção de dados](data-protection-policies.md)   
+  
+## <a name="next-steps"></a>Próximas etapas
+  
+[Políticas de proteção de dados](data-protection-policies.md)
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  
   

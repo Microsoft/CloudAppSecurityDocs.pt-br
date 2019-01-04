@@ -1,11 +1,11 @@
 ---
-title: Configurar o upload de log automático para relatórios contínuos | Microsoft Docs
-description: Este artigo descreve o processo de configuração de upload automático de logs para relatórios contínuos no Cloud App Security.
+title: Configurar o upload automático de logs para relatórios contínuos no Cloud App Security
+description: Este artigo descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b62a5b7b3270076efd3763488d87b14b8c78632
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e1f5023c31d5f2d33573ee99c2b363535c87e085
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123747"
+ms.locfileid: "53176715"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP. Cada log é automaticamente processado, compactado e transmitido para o portal. Os logs de FTP são carregados para o Microsoft Cloud App Security após o arquivo concluir a transferência do FTP para o coletor de logs. Para o Syslog, o Coletor de Logs grava os logs recebidos no disco. Em seguida, o coletor carrega o arquivo no Cloud App Security quando o tamanho do arquivo é maior que 40 KB. 
 
@@ -41,9 +42,9 @@ Antes de configurar a coleta automática de arquivos de log, verifique se o log 
 
 O Coletor de logs dá suporte a dois modos de implantação:
 
--   **Contêiner**: é executado como uma imagem do Docker no [Ubuntu no local](discovery-docker-ubuntu.md), no [Ubuntu no Azure](discovery-docker-ubuntu-azure.md) ou [RHEL local](discovery-docker-ubuntu.md). 
+-   **Contêiner**: Executado como uma imagem do Docker no [Ubuntu local](discovery-docker-ubuntu.md), no [Ubuntu no Azure](discovery-docker-ubuntu-azure.md) ou no [RHEL local](discovery-docker-ubuntu.md). 
 
--   **Solução de virtualização**: [é executado como uma imagem no hipervisor do Hyper-V ou do VMware](configure-automatic-log-upload-for-continuous-reports.md)
+-   **Solução de virtualização**:  [Executado como uma imagem no hipervisor do Hyper-V ou do VMware](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 
