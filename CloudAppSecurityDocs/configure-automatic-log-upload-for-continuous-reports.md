@@ -1,11 +1,11 @@
 ---
-title: Configurar o upload de logs automático para relatórios contínuos no Cloud App Security| Microsoft Docs
-description: Este tópico fornece informações sobre como fazer upload dos logs para criar relatórios automáticos do Cloud Discovery.
+title: Configurar o upload automático de logs para relatórios contínuos – Cloud App Security | Microsoft Docs
+description: Este artigo fornece informações sobre como fazer upload de logs para criar relatórios automáticos do Cloud Discovery.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 331ae314d77cbc2ea85d8b714823a392d40fa209
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 389760b6e5279668ec2b2fe389dccdbe647b7f5b
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124563"
+ms.locfileid: "53176970"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 > [!WARNING] 
 > É altamente recomendável configurar o upload de logs usando o [Docker](discovery-docker.md) para obter uma implantação mais flexível.
@@ -44,7 +45,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração  
   
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 – Configuração do portal da Web: Definir fontes de dados e vinculá-las a um coletor de logs  
   
 1. Acesse a página de configuração de upload automatizado:  
    No portal do Cloud App Security, clique no ícone de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações"), antes de **Coletores de log**.  
@@ -104,7 +105,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
   
 10. Clique na máquina virtual na tabela **Máquinas Virtuais** e clique em **Iniciar**.   
   
-11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. O prompt de entrada será exibido. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, entre usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que você copiou quando criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:
+11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: Clique na máquina virtual e selecione **Conectar**. O prompt de entrada será exibido. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, entre usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que você copiou quando criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:
     ```
     sudo network_config
     ```
@@ -119,9 +120,9 @@ Na primeira vez que você entrar no coletor de logs e importar a configuração 
 
 1.  Entre no coletor de logs por SSH usando as credenciais de administrador interativo fornecidas no portal. (Se esta for a primeira vez que você faz logon no console, será necessário alterar a senha e entrar novamente após a alteração. Se você estiver usando uma sessão do terminal, poderá ser necessário reiniciá-la. )
 2.  Execute o utilitário de configuração do coletor com o token de acesso fornecido quando você criou o coletor de logs.```sudo collector_config <access token> ```
-3. Insira o domínio do console, por exemplo: ```contoso.portal.cloudappsecurity.com``` Isso está disponível na URL que você vê depois de fazer logon no portal do Cloud App Security. 
+3. Insira seu domínio de console, por exemplo: ```contoso.portal.cloudappsecurity.com``` Isso está disponível na URL exibida após o logon no portal do Cloud App Security. 
 
-4. Insira o nome do coletor de logs que quer configurar, por exemplo: **CloudAppSecurityLogCollector01** ou **NewYork** da imagem anterior.
+4. Insira o nome do coletor de logs que deseja configurar, por exemplo: **CloudAppSecurityLogCollector01** ou **NewYork** na imagem anterior.
 
 5.  Importe a configuração do coletor de logs do portal, da seguinte maneira:  
   

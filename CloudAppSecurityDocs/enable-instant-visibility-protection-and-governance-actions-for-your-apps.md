@@ -1,11 +1,11 @@
 ---
-title: Conectar aplicativos para obter visibilidade profunda e controle com o Cloud App Security | Microsoft Docs
+title: Conectar aplicativos para obter visibilidade e controle – Cloud App Security | Microsoft Docs
 description: Este artigo descreve o processo para conexão de aplicativos com conectores de API aos aplicativos na nuvem de sua organização.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1d6f5e998959abf670d282297b2d7ca61706610d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 1a0d83ff6d3231d641843f5f7400fe6ba21813dc
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123985"
+ms.locfileid: "53177073"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos 
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Os conectores de aplicativos usam as APIs de provedores de aplicativos para permitir maior visibilidade e controle com o Microsoft Cloud App Security sobre os aplicativos aos quais você se conecta.  
 
