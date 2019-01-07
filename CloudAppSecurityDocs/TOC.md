@@ -1,21 +1,13 @@
-# Compreender e Explorar
-## [O que é o Cloud App Security?](what-is-cloud-app-security.md)
+# Microsoft Cloud App Security
+# [Visão geral](what-is-cloud-app-security.md)
 ## [Privacidade e segurança de dados do Cloud App Security](cas-compliance-trust.md)
 ## [Quais são as novidades?](release-notes.md)
 ### [Arquivamento de lançamentos anteriores](release-note-archive.md)
 ## Comparar
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
-# Implantar
+# Inícios rápidos
 ## [Introdução](getting-started-with-cloud-app-security.md)
-## [Configuração básica](general-setup.md)
-### [Requisitos de rede](network-requirements.md)
-### [Gerenciar administradores](manage-admins.md)
-#### [Configurações de administração](admin-settings.md)
-### [Configurações de email](mail-settings.md)
-### [Grupos de usuários](user-groups.md)
-### [Implantação no escopo](scoped-deployment.md)
-### [Intervalos e marcas de IP](ip-tags.md)
 ## [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 ### [Integrar com o Windows Defender ATP](wdatp-integration.md)
 ### [Integrar com o Zscaler](zscaler-integration.md)
@@ -28,6 +20,20 @@
 ### [Usar o analisador de log personalizado](custom-log-parser.md)
 ### [Aprimoramento do Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Anonimizar dados do Cloud Discovery](cloud-discovery-anonymizer.md)
+# Tutoriais
+## [Descobrir e gerenciar a TI sombra](tutorial-shadow-it.md)
+## [Bloquear downloads de informações confidenciais](use-case-proxy-block-session-aad.md)
+## [Proteger seus arquivos com quarentena do administrador](use-case-admin-quarantine.md)
+## [Aplicar os rótulos da Proteção de Informações do Azure automaticamente](use-case-information-protection.md)
+# Guias de instruções
+## [Configuração básica](general-setup.md)
+### [Requisitos de rede](network-requirements.md)
+### [Gerenciar administradores](manage-admins.md)
+#### [Configurações de administração](admin-settings.md)
+### [Configurações de email](mail-settings.md)
+### [Grupos de usuários](user-groups.md)
+### [Implantação no escopo](scoped-deployment.md)
+### [Intervalos e marcas de IP](ip-tags.md)
 ## [Conectar aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Conectar o Azure](connect-azure-to-microsoft-cloud-app-security.md)
 ### [Conectar o AWS](connect-aws-to-microsoft-cloud-app-security.md)
@@ -40,18 +46,13 @@
 ### [Conectar o ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ## [Proteger aplicativos com o controle de aplicativo de acesso condicional](proxy-intro-aad.md)
 ### [Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD](proxy-deployment-aad.md)
-# Uso
 ## [Trabalhar com o painel](daily-activities-to-protect-your-cloud-environment.md)
-## Cenários
-### [Bloquear downloads de informações confidenciais](use-case-proxy-block-session-aad.md)
-### [Proteger seus arquivos com quarentena do administrador](use-case-admin-quarantine.md)
-### [Aplicar os rótulos da Proteção de Informações do Azure automaticamente](use-case-information-protection.md)
 ## Descobrir
 ### [Trabalhando com aplicativos descobertos](discovered-apps.md)
 #### [Adicionar aplicativos personalizados ao Cloud Discovery](cloud-discovery-custom-apps.md)
 #### [Filtros e consultas dos aplicativos descobertos](discovered-app-queries.md)
 ### [Trabalhar com a pontuação de risco](risk-score.md)
-## [Investigar](investigate.md)
+## [Investigação](investigate.md)
 ### [Atividades](activity-filters.md)
 #### [Consultas e filtros de atividade](activity-filters-queries.md)
 ### [Arquivos](file-filters.md)
@@ -69,8 +70,8 @@
 #### [Políticas de detecção de anomalias](anomaly-detection-policy.md)
 #### [Políticas OAuth](app-permission-policy.md)
 #### [Políticas de arquivos](data-protection-policies.md)
-##### Inspeção de conteúdo
-###### [Inspeção de conteúdo interno](content-inspection.md)
+##### [Inspeção de conteúdo](content-inspection.md)
+###### [Inspeção de conteúdo interno](content-inspection-built-in.md)
 ###### [Integração do Serviço de Classificação de Dados](dcs-inspection.md)
 ##### [Trabalhando com o mecanismo RegEx](working-with-the-regex-engine.md)
 #### Políticas de controle de aplicativo de acesso condicional
@@ -84,7 +85,7 @@
 ### [Integração ao SIEM](siem.md)
 ### [Integração de DLP externa](icap-stunnel.md)
 ### [Tokens de API](api-tokens.md)
-# Solucionar problemas
+## Solucionar problemas
 ## [Solução de problemas do status de serviço](troubleshooting-status.md)
 ## [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solução de problemas de conectores de API usando mensagens de erro](troubleshooting-api-connectors-using-error-messages.md)
@@ -92,3 +93,8 @@
 ## [Solução de problemas de integração de SIEM](troubleshooting-siem.md)
 ## [Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)
 ## [Políticas da solução de problemas](troubleshoot-policies.md)
+# Referência
+# Recursos
+## [Portal de suporte Premier](https://premier.microsoft.com/)
+## [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+## [Como com o Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
