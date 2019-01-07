@@ -14,12 +14,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7fff5cffcae418225af7f1f14e98bf0c42e6811c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: c347b94688b070302de12651a75344213e4bcacc
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53175695"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059425"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -111,7 +111,6 @@ Para alternar locatários, depois de receber permissões para vários locatário
 
 ## <a name="next-steps"></a>Próximas etapas  
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
-
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+  
   
   
