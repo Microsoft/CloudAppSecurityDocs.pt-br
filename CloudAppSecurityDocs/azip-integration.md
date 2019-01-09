@@ -14,18 +14,22 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 590027f7769637188fc77aad882cedbc41158012
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: bbe1bd310f7c661ba631f088a474baf536fb8d32
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177327"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059453"
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security permite aplicar rótulos de classificação da Proteção de Informações do Azure automaticamente, com ou sem proteção, a arquivos como uma ação de governança da política de arquivo. Também é possível investigar arquivos com a filtragem do rótulo de classificação aplicado no portal do Cloud App Security. O uso de classificações proporciona mais visibilidade e controle sobre os dados confidenciais na nuvem. A integração de Proteção de Informações do Azure ao Cloud App Security é tão fácil quanto marcar uma única caixa de seleção. 
+
+> [!NOTE]
+> Este artigo também será relevante para os rótulos unificados da Proteção de Informações da Microsoft se você já [tiver migrado seus rótulos de classificação para o Centro de Segurança e Conformidade do Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Se você não tiver migrado seus rótulos de classificação existentes e começar a criar rótulos no Centro de Segurança e Conformidade do Office 365, o Cloud App Security usará apenas os rótulos preexistentes configurados no portal da Proteção de Informações do Azure.
+
 
 Integrando a Proteção de Informações do Azure ao Cloud App Security, é possível usar todo o potencial dos dois serviços e proteger arquivos na nuvem, incluindo:
 - A capacidade de aplicar rótulos de classificação como uma ação de governança a arquivos que correspondem a políticas específicas

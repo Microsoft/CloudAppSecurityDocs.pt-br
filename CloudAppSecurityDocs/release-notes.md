@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e946e341d901be2f3facfd5a0d6118cfc7770a22
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b7ac2458af007fa556cf7212281154174fe2276e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177412"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059497"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -27,6 +27,29 @@ ms.locfileid: "53177412"
 
 Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
 
+
+## <a name="cloud-app-security-release-139-140"></a>Cloud App Security versão 139, 140
+
+Lançado em 6 de janeiro de 2019
+
+- **Alteração na detecção de arquivos**<br>
+Os arquivos compartilhados com todas as pessoas no SharePoint e no One Drive agora são considerados **internos** [devido a alterações feitas no SharePoint e no One Drive](https://support.microsoft.com/help/4089534/how-to-grant-the-everyone-claim-to-external-users-in-office-365). Portanto, agora, se for detectado um arquivo compartilhado com todos, ele será tratado como um arquivo interno. Isso afeta como o arquivo é manipulado pelas políticas e mostrado na página de arquivos.
+
+- **Alteração no monitoramento de arquivos**<br>
+O comportamento padrão do monitoramento de arquivos foi alterado para clientes novos e ociosos. Agora você precisará habilitar o monitoramento de arquivos para habilitar o recurso, por meio de **Configurações** > **Arquivos**. Os clientes ativos existentes não serão afetados por essa alteração. 
+
+- **Ajuste avançado para políticas de detecção de anomalias**<br>
+Agora você pode afetar o mecanismo de detecção de anomalias para suprimir ou mostrar alertas de acordo com suas preferências. 
+   - Na política de Viagem Impossível, você pode definir o controle deslizante de sensibilidade para determinar o nível de comportamento anômalo necessário antes que um alerta seja disparado. 
+   - Você também pode configurar se os alertas de Atividade de país não frequente, endereços IP anônimos, endereços IP suspeitos e viagem impossível devem analisar os logons com falha e bem-sucedidos ou apenas os bem-sucedidos. 
+
+-   **Suporte para várias cadeias de confiança** O Controle de Aplicativos de Acesso Condicional agora é compatível com a adição e o uso de vários certificados raiz confiáveis ou intermediários como uma forma de gerenciamento de dispositivo.
+
+- **Nova função do Cloud Discovery** (distribuição gradual) Agora, o Cloud App Security fornece uma nova função de administrador para os usuários do Cloud Discovery. Essa função pode ser usada para definir o escopo de acesso de um usuário administrador apenas para as configurações e os dados do Cloud Discovery no portal do Cloud App Security.
+
+- **Suporte para rótulos unificados da Proteção de Informações do Microsoft** O Cloud App Security agora é compatível com os rótulos unificados da Proteção de Informações do Microsoft. Para clientes que já [migraram seus rótulos de classificação para o Centro de Segurança e Conformidade do Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), o Cloud App Security identificará e trabalhará com esses rótulos, conforme descrito em [Integrando com a Proteção de Informações do Azure](azip-integration.md). 
+
+**Suporte para rotulagem de arquivo PDF** Para clientes que usam rótulos unificados, o Cloud App Security agora é compatível com a rotulagem automática para arquivos PDF.
 
 ## <a name="cloud-app-security-release-138"></a>Cloud App Security versão 138
 

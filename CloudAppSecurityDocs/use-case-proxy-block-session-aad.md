@@ -1,12 +1,12 @@
 ---
 title: Bloquear downloads de dispositivos não gerenciados com o Controle de Aplicativos de Acesso Condicional do Cloud App Security
-description: Este artigo descreve o cenário para proteger sua organização contra downloads de dados confidenciais por dispositivos não gerenciados usando as funcionalidades de proxy reverso do Azure AD.
+description: Este tutorial descreve o cenário para proteger sua organização contra downloads de dados confidenciais por dispositivos não gerenciados usando as funcionalidades de proxy reverso do Azure AD.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/4/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,21 +14,26 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aab9063ad057abfe3dce3860494b1d20abe74f0f
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 25f08416549e8dbcf5cdb4dc15f0e2412381366e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347342"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059277"
 ---
-# <a name="block-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Bloquear downloads de informações confidenciais usando o Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security
+# <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloquear o download de informações confidenciais 
 
 *Aplica-se a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« ANTERIOR: Como criar uma política de acesso](access-policy-aad.md)
 
-O administrador de TI atual está entre a cruz e a espada. Você quer permitir que seus funcionários sejam produtivos. Isso significa permitir que os funcionários acessem aplicativos para poderem trabalhar a qualquer momento, em qualquer dispositivo. No entanto, você deseja proteger os ativos da empresa, incluindo informações proprietárias e privilegiadas. Como permitir que os funcionários acessem aplicativos na nuvem e, ao mesmo tempo, proteger seus dados? **Este caso de uso permite que você bloqueie downloads realizados por usuários que têm acesso a seus dados confidenciais em aplicativos de nuvem empresariais de dispositivos não gerenciados ou locais fora da rede corporativa.**
+O administrador de TI atual está entre a cruz e a espada. Você quer permitir que seus funcionários sejam produtivos. Isso significa permitir que os funcionários acessem aplicativos para poderem trabalhar a qualquer momento, em qualquer dispositivo. No entanto, você deseja proteger os ativos da empresa, incluindo informações proprietárias e privilegiadas. Como permitir que os funcionários acessem aplicativos na nuvem e, ao mesmo tempo, proteger seus dados? **Este tutorial permite que você bloqueie downloads realizados por usuários com acesso a dados confidenciais em aplicativos de nuvem empresariais usando dispositivos não gerenciados ou locais fora da rede corporativa.**
+
+> [!div class="checklist"]
+> * Criar uma política de download de bloqueio para dispositivos não gerenciados
+> * Validar sua política
+
 
 ## <a name="the-threat"></a>A ameaça
 

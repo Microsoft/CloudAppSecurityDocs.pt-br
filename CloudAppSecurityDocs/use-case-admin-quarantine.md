@@ -1,12 +1,12 @@
 ---
 title: Proteger arquivos com a quarentena do administrador do Cloud App Security
-description: Este artigo descreve o cenário de uso da quarentena do administrador para controlar violações de dados.
+description: Este tutorial descreve o cenário para usar a quarentena do administrador para controlar as violações de dados.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/6/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,24 +14,33 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82398a5fad8f2d5b3da67a7932b9df6857dd9355
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 825645f44ff2d7dd0d6ba289608f10a23ff62dea
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347251"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059348"
 ---
-# <a name="protecting-your-files-with-admin-quarantine"></a>Proteger seus arquivos com quarentena do administrador
+# <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: Proteger arquivos com quarentena do administrador
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-[Políticas de arquivo](data-protection-policies.md) são uma excelente ferramenta para encontrar ameaças contra as políticas de proteção de informações. Por exemplo, crie políticas de arquivo que encontram locais nos quais os usuários armazenaram informações confidenciais, números de cartão de crédito e arquivos ICAP de terceiros em sua nuvem. Com o Microsoft Cloud App Security, além de detectar estes arquivos indesejados armazenados na sua nuvem, deixando-o vulnerável, você também pode tomar ação imediata para interrompê-los em seus rastreamentos e bloquear os arquivos que representem uma ameaça. Usando a **Quarentena do administrador**, você pode proteger seus arquivos na nuvem e corrigir problemas, além de impedir a ocorrência de perdas futuras.
+[Políticas de arquivo](data-protection-policies.md) são uma excelente ferramenta para encontrar ameaças contra as políticas de proteção de informações. Por exemplo, crie políticas de arquivo que encontram locais nos quais os usuários armazenaram informações confidenciais, números de cartão de crédito e arquivos ICAP de terceiros em sua nuvem. 
+
+Este tutorial ajuda você a usar o Microsoft Cloud App Security para detectar arquivos indesejados armazenados na nuvem que o deixam vulnerável e a executar uma ação imediata para interrompê-los enquanto agem e bloquear os arquivos que representam uma ameaça usando a **Quarentena do administrador** para proteger os arquivos na nuvem, corrigir problemas e impedir vazamentos futuros.
+
+
+
+> [!div class="checklist"]
+> * Entender como funciona a quarentena 
+> * Configurar a quarentena do administrador
+
+
+## <a name="understand-how-quarantine-works"></a>Entender como funciona a quarentena 
 
 >[!NOTE] 
 > - Este é um recurso de versão prévia.
 > - Para obter uma lista de aplicativos que dão suporte a quarentena do administrador, consulte a lista de [ações de governança](governance-actions.md).
- 
-## <a name="how-quarantine-works"></a>Como a quarentena funciona 
 
 1. Quando um arquivo corresponde a uma política, a opção **Quarentena do administrador** estará disponível para o arquivo.
 

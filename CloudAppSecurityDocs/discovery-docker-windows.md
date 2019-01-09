@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 37eed2eb11dfd3f77a1cf26281af6d867c9e9c4d
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450640"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059478"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -146,7 +146,7 @@ Você também pode acessar o **Log de governança** e verificar se os logs estã
 
 Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### <a name="optional---create-custom-continuous-reports"></a>Opcional – Criar relatórios contínuos personalizados
+### Opcional – criar relatórios contínuos personalizados <a name="continuous-reports"></a>
 
 Verifique se os logs estão sendo carregados no Cloud App Security e se os relatórios são gerados. Após a verificação, crie relatórios personalizados. Crie relatórios de descoberta personalizados com base em grupos de usuários do Azure Active Directory. Por exemplo, caso deseje ver o uso de nuvem de seu departamento de marketing, importe o grupo de marketing usando o recurso Importar grupo de usuários. Em seguida, crie um relatório personalizado para esse grupo. Você também pode personalizar um relatório com base na marca do endereço IP ou intervalos de endereços IP.
 

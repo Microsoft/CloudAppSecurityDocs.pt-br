@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4ab929752a0e90026104f0451932c6a89a50ad2
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 28a1e86586fd81f09d291d46395199df988c3032
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177361"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059314"
 ---
 # <a name="file-policies"></a>Políticas de arquivos  
 
@@ -76,11 +76,14 @@ Para criar uma nova política de arquivos, siga este procedimento:
 
 8. No segundo filtro **Aplicar a**, selecione **todos os proprietários de arquivos**, **proprietários de arquivo de grupos de usuários selecionados** ou **todos os proprietários de arquivos, excluindo grupos selecionados**. Em seguida, selecione os grupos de usuários relevantes para determinar quais usuários e grupos devem ser incluídos na política.
   
-9. Selecione o **Método de inspeção de conteúdo**. O DLP interno permite filtrar os arquivos pelo conteúdo. Para verificar arquivos quanto ao conteúdo, selecione **DLP Interno**. Depois que a inspeção estiver habilitada, você poderá optar por usar expressões predefinidas ou pesquisar outras expressões personalizadas, seja com uma subcadeia de caracteres ou uma [expressão regular](working-with-the-regex-engine.md) própria.  <br></br>
+9. Selecione o **Método de inspeção de conteúdo**. Você pode selecionar a [**DLP interna**](content-inspection-built-in.md) ou os [**Serviços de Classificação de Dados**](content-inspection.md). É recomendado usar os **Serviços de Classificação de Dados**.
 
-   Além disso, você pode especificar uma expressão regular para excluir um arquivo dos resultados. Essa opção será muito útil se você tiver um padrão de palavra-chave de classificação interno que deseja excluir da política. <br></br> Você pode definir o número mínimo de violações de conteúdo que deseja corresponder antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.  <br></br>
-   Quando o conteúdo é comparado com a expressão selecionada, o texto de violação é substituído por caracteres "X". Por padrão, as violações são mascaradas e mostradas em seu contexto, exibindo 100 caracteres antes e após a violação. Os números no contexto da expressão são substituídos por caracteres "#" e nunca são armazenados no Cloud App Security. Você pode selecionar a opção para **Remover a máscara dos últimos quatro caracteres de uma violação** para remover a máscara dos últimos quatro caracteres da própria violação. É necessário definir quais tipos de dados a expressão regular pesquisa: conteúdo, metadados e/ou nome do arquivo. Por padrão, ela pesquisa o conteúdo e os metadados. Selecione pelo menos um tipo de dados a pesquisar ou a expressão regular não funcionará e a política não poderá ser criada. 
-  
+Depois que a inspeção for habilitada, você poderá optar por usar expressões predefinidas ou pesquisar outras expressões personalizadas.  <br></br>
+
+   Além disso, você pode especificar uma expressão regular para excluir um arquivo dos resultados. Essa opção será muito útil se você tiver um padrão de palavra-chave de classificação interno que deseja excluir da política. <br></br> 
+   Você pode definir o número mínimo de violações de conteúdo que deseja corresponder antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.  <br></br>
+   Quando o conteúdo é comparado com a expressão selecionada, o texto de violação é substituído por caracteres "X". Por padrão, as violações são mascaradas e mostradas em seu contexto, exibindo 100 caracteres antes e após a violação. Os números no contexto da expressão são substituídos por caracteres "#" e nunca são armazenados no Cloud App Security. Você pode selecionar a opção para **Remover a máscara dos últimos quatro caracteres de uma violação** para remover a máscara dos últimos quatro caracteres da própria violação. É necessário definir quais tipos de dados a expressão regular pesquisa: conteúdo, metadados e/ou nome do arquivo. Por padrão, ela pesquisa o conteúdo e os metadados. 
+   
 10. Escolha as ações de **Governança** que você deseja que o Cloud App Security realize quando uma correspondência for detectada.  
   
 11. Depois de criar sua política, você pode exibi-la na guia **Política de arquivos**. Você sempre pode editar uma política, calibrar seus filtros ou alterar as ações automatizadas. A política é habilitada automaticamente no momento da criação e inicia a verificação de seus arquivos de nuvem imediatamente.  Tenha muito cuidado ao definir as ações de controle, elas podem causar uma perda irreversível de permissões de acesso para seus arquivos. É recomendável restringir os filtros para representar exatamente os arquivos nos quais você deseja agir usando vários campos de pesquisa. Quanto mais restritos forem os filtros, melhor. Para obter orientação, você pode usar o botão **Editar e visualizar resultados** na seção Filtros.  

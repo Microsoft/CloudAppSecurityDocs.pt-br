@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/3/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c0e3ac17aa5bc8d3cb5d7b32d4556c3d5cd0a33
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 5c207fb951a1bd8120da694e07232c3851486b9c
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176773"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059370"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -71,6 +71,8 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 - Essa detecção habilita você a identificar quando um funcionário demitido continua a executar ações em seus aplicativos SaaS. Como os dados mostram que o maior risco de ameaça interna vem de funcionários que deixaram a empresa descontentes, é importante ficar atento à atividade em contas de funcionários demitidos. Às vezes, quando funcionários deixam a empresa, suas contas são desprovisionadas de aplicativos corporativos, mas, em muitos casos, eles ainda mantêm o acesso a determinados recursos corporativos. Isso é ainda mais importante ao considerar as contas privilegiadas, pois os danos potenciais que um administrador anterior pode causar são inerentemente maiores.
 Essa detecção se beneficia da capacidade do Cloud App Security de monitorar o comportamento do usuário entre aplicativos, permitindo a identificação da atividade regular do usuário, o fato de que a conta foi encerrada e atividade real em outros aplicativos. Por exemplo, um funcionário cuja conta do Azure AD foi encerrada, mas que ainda tem acesso à infraestrutura corporativa do AWS, tem o potencial de causar danos em grande escala.  
 
+A detecção procura usuários cuja conta foi encerrada no Azure AD, mas ainda executam atividades em outras plataformas, como AWS ou Salesforce. Isso é relevante principalmente para usuários que usam outra conta (não a conta de logon único principal) para gerenciar recursos, já que essas contas geralmente não são encerradas quando o usuário sai da empresa.
+
 **Atividade de endereços IP suspeitos**
 - A detecção identifica que os usuários estavam ativos com base em um endereço IP identificado como arriscado pela Microsoft Threat Intelligence. Esses endereços IP estão envolvidos em atividades mal-intencionadas, como Botnet C&C, e podem indicar uma conta comprometida. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP marcados incorretamente usados amplamente por usuários da organização.
 
@@ -114,7 +116,14 @@ Essas políticas buscam atividades em uma única sessão em relação à linha d
 2. Na janela **Editar política de detecção de anomalias** que é aberta, em **Governança** defina as ações de correção que deseja para cada aplicativo conectado ou para todos os aplicativos. 
 3. Clique em **Atualizar**.
 
- 
+## <a name="tune-anomaly-detection-policies"></a>Ajustar as políticas de detecção de anomalias
+
+Para afetar o mecanismo de detecção de anomalias para suprimir ou mostrar alertas de acordo com suas preferências:
+   - Na política de Viagem Impossível, você pode definir o controle deslizante de sensibilidade para determinar o nível de comportamento anômalo necessário antes que um alerta seja disparado. Por exemplo, se você definir como baixo, ele suprimirá os alertas de Viagem Impossível dos locais comuns de um usuário e, se você definir como alto, ele mostrará esses alertas. 
+
+   - Você também pode configurar se os alertas de Atividade de país não frequente, endereços IP anônimos, endereços IP suspeitos e viagem impossível devem analisar os logons com falha e bem-sucedidos ou apenas os bem-sucedidos. 
+   
+   
 ## <a name="scope-anomaly-detection-policies"></a>Definir políticas de detecção de anomalias
 
 Cada política de detecção de anomalias pode ter um escopo independente, de modo que se aplique apenas aos usuários e grupos que você deseja incluir e excluir na política.

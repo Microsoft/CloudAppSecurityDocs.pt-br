@@ -1,12 +1,12 @@
 ---
 title: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
-description: Este artigo descreve como aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure no Microsoft Cloud App Security.
+description: Este tutorial descreve como aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure no Microsoft Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/3/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,27 +14,25 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85dd32e95cfa866b7ac1f75f87685466b1bcb3db
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 12c3e913a66813f234040272eba638c9dae5e9f5
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347317"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059391"
 ---
-# <a name="automatically-apply-azure-information-protection-classification-labels"></a>Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
+# <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Em um mundo perfeito, todos os seus funcionários entendem a importância da proteção das informações e do trabalho dentro de suas políticas. Mas, em um mundo real, é provável que um parceiro que trabalhe com contabilidade carregue um documento no repositório do Box com as permissões incorretas. Na semana seguinte, você percebe que as informações confidenciais de sua empresa foram perdidas para a concorrência.
+Em um mundo perfeito, todos os seus funcionários entendem a importância da proteção das informações e do trabalho dentro de suas políticas. Mas, em um mundo real, é provável que um parceiro que trabalhe com contabilidade carregue um documento no repositório do Box com as permissões incorretas. Na semana seguinte, você percebe que as informações confidenciais de sua empresa foram perdidas para a concorrência. O Microsoft Cloud App Security ajuda a impedir que esse tipo de desastre ocorra. Este recurso está disponível para Box, SharePoint e OneDrive for Business. Aplicar um rótulo da Proteção de Informações do Azure é apenas uma ação dentro de uma longa lista de [ações de governança](governance-actions.md) disponíveis.
 
-O Microsoft Cloud App Security ajuda a impedir que esse tipo de desastre ocorra.
+Este tutorial ajuda você a identificar quais permissões públicas são definidas em um documento que é salvo no seu armazenamento em nuvem, para que você seja alertado quando ocorrer uma violação. Além disso, você pode aplicar automaticamente o rótulo de classificação **Confidencial** da Proteção de Informações do Azure para fornecer uma criptografia adicional aos arquivos.
 
-O Microsoft Cloud App Security identifica se há permissões públicas em um documento salvo em sua conta do Box e usa um mecanismo de classificação para identificar se há informações confidenciais nele. Um alerta é enviado para informá-lo de que esse problema ocorreu. Em seguida, o Cloud App Security aplica automaticamente o rótulo de classificação **Confidencial** da Proteção de Informações do Azure para fornecer criptografia adicional ao arquivo.
+> [!div class="checklist"]
+> * Configurar a proteção de dados 
+> * Validar sua política
 
->[!NOTE]
->
-> - Aplicar um rótulo da Proteção de Informações do Azure é apenas uma ação dentro de uma longa lista de [ações de governança](governance-actions.md) disponíveis.
-> - Este recurso está disponível para Box, SharePoint e OneDrive for Business.
 
 ## <a name="enhanced-data-level-encryption-protection"></a>Proteção de criptografia de nível de dados avançada
 
@@ -55,7 +53,7 @@ Use o Cloud App Security com a Proteção de Informações do Azure para inserir
 - [Habilitar o Cloud App Security e a Proteção de Informações do Azure](azip-integration.md) no locatário.
 - [Conectar o Box](connect-box-to-microsoft-cloud-app-security.md) ao Cloud App Security.
 
-## <a name="setting-up-data-protection"></a>Configurando a proteção de dados
+## <a name="set-up-data-protection"></a>Configurar a proteção de dados
 
 Vamos configurar uma política que procura números de cartão de crédito em arquivos armazenados em sua conta do Box. Quando os arquivos forem encontrados, aplique automaticamente um rótulo da Proteção de Informações do Azure e controle o que acontecerá com todos os arquivos contendo esse rótulo.
 
@@ -86,7 +84,7 @@ Vamos configurar uma política que procura números de cartão de crédito em ar
 
     2. Você pode investigar a correspondência clicando em uma correspondência específica para abrir a gaveta de arquivos. Na gaveta, você pode ver as outras políticas às quais esse arquivo correspondeu.
 
-## <a name="validating-your-policy"></a>Validar a política
+## <a name="validate-your-policy"></a>Validar sua política
 
 1. Para simular um alerta, acesse sua conta do Box e tente acessar um arquivo da pasta **Dados do cliente**.
 2. Vá para o relatório de políticas. Uma correspondência de política do arquivo deve aparecer em breve. 

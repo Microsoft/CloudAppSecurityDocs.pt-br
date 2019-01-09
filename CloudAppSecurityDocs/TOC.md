@@ -6,25 +6,23 @@
 ## Comparar
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
+
 # Inícios rápidos
 ## [Introdução](getting-started-with-cloud-app-security.md)
-## [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
-### [Integrar com o Windows Defender ATP](wdatp-integration.md)
-### [Integrar com o Zscaler](zscaler-integration.md)
-### [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
-### [Configurar upload de log automático para relatórios contínuos](discovery-docker.md)
-#### [Docker no Windows](discovery-docker-windows.md)
-#### [Docker no Ubuntu e no RHEL local](discovery-docker-ubuntu.md)
-#### [Docker no Ubuntu no Azure](discovery-docker-ubuntu-azure.md)
-#### [Usando uma solução de virtualização – Preterido](configure-automatic-log-upload-for-continuous-reports.md)
-### [Usar o analisador de log personalizado](custom-log-parser.md)
-### [Aprimoramento do Cloud Discovery](cloud-discovery-aad-enrichment.md)
-### [Anonimizar dados do Cloud Discovery](cloud-discovery-anonymizer.md)
+## [Trabalhar com aplicativos descobertos](discovered-apps.md)
+
+
 # Tutoriais
 ## [Descobrir e gerenciar a TI sombra](tutorial-shadow-it.md)
 ## [Bloquear downloads de informações confidenciais](use-case-proxy-block-session-aad.md)
 ## [Proteger seus arquivos com quarentena do administrador](use-case-admin-quarantine.md)
 ## [Aplicar os rótulos da Proteção de Informações do Azure automaticamente](use-case-information-protection.md)
+
+# Conceitos
+## [Proteger aplicativos com o controle de aplicativo de acesso condicional](proxy-intro-aad.md)
+## [Trabalhar com o painel](daily-activities-to-protect-your-cloud-environment.md)
+## [Trabalhar com a pontuação de risco](risk-score.md)
+
 # Guias de instruções
 ## [Configuração básica](general-setup.md)
 ### [Requisitos de rede](network-requirements.md)
@@ -34,6 +32,20 @@
 ### [Grupos de usuários](user-groups.md)
 ### [Implantação no escopo](scoped-deployment.md)
 ### [Intervalos e marcas de IP](ip-tags.md)
+## [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+### [Integrar com o Windows Defender ATP](wdatp-integration.md)
+### [Integrar com o Zscaler](zscaler-integration.md)
+### [Integrar-se com o Microsoft Flow](flow-integration.md)
+### [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
+### [Configurar upload de log automático para relatórios contínuos](discovery-docker.md)
+#### [Docker no Windows](discovery-docker-windows.md)
+#### [Docker no Ubuntu e no RHEL local](discovery-docker-ubuntu.md)
+#### [Docker no Ubuntu no Azure](discovery-docker-ubuntu-azure.md)
+#### [Coletor de logs por trás de um proxy](log-collector-proxy.md)
+#### [Usando uma solução de virtualização – Preterido](configure-automatic-log-upload-for-continuous-reports.md)
+### [Usar o analisador de log personalizado](custom-log-parser.md)
+### [Aprimoramento do Cloud Discovery](cloud-discovery-aad-enrichment.md)
+### [Anonimizar dados do Cloud Discovery](cloud-discovery-anonymizer.md)
 ## [Conectar aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Conectar o Azure](connect-azure-to-microsoft-cloud-app-security.md)
 ### [Conectar o AWS](connect-aws-to-microsoft-cloud-app-security.md)
@@ -44,14 +56,10 @@
 ### [Conectar o Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Conectar o Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 ### [Conectar o ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
-## [Proteger aplicativos com o controle de aplicativo de acesso condicional](proxy-intro-aad.md)
-### [Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD](proxy-deployment-aad.md)
-## [Trabalhar com o painel](daily-activities-to-protect-your-cloud-environment.md)
+## [Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD](proxy-deployment-aad.md)
 ## Descobrir
-### [Trabalhando com aplicativos descobertos](discovered-apps.md)
-#### [Adicionar aplicativos personalizados ao Cloud Discovery](cloud-discovery-custom-apps.md)
-#### [Filtros e consultas dos aplicativos descobertos](discovered-app-queries.md)
-### [Trabalhar com a pontuação de risco](risk-score.md)
+### [Adicionar aplicativos personalizados ao Cloud Discovery](cloud-discovery-custom-apps.md)
+### [Filtros e consultas dos aplicativos descobertos](discovered-app-queries.md)
 ## [Investigação](investigate.md)
 ### [Atividades](activity-filters.md)
 #### [Consultas e filtros de atividade](activity-filters-queries.md)
@@ -85,7 +93,7 @@
 ### [Integração ao SIEM](siem.md)
 ### [Integração de DLP externa](icap-stunnel.md)
 ### [Tokens de API](api-tokens.md)
-## Solucionar problemas
+# Referência
 ## [Solução de problemas do status de serviço](troubleshooting-status.md)
 ## [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solução de problemas de conectores de API usando mensagens de erro](troubleshooting-api-connectors-using-error-messages.md)
@@ -93,8 +101,7 @@
 ## [Solução de problemas de integração de SIEM](troubleshooting-siem.md)
 ## [Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)
 ## [Políticas da solução de problemas](troubleshoot-policies.md)
-# Referência
 # Recursos
 ## [Portal de suporte Premier](https://premier.microsoft.com/)
-## [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+## [Portal do Cloud App Security](https://portal.cloudappsecurity.com)
 ## [Como com o Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
