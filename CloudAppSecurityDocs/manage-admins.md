@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/9/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,18 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c347b94688b070302de12651a75344213e4bcacc
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 9c0387aaaf2bfc9de3a560c53c4b0e822e26e57d
+ms.sourcegitcommit: 8ed1a81e3e27c4fd0e1e131a7c8527fbb264b9fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059425"
+ms.locfileid: "54059859"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security é compatível com o Controle de acesso baseado em função. Por padrão, algumas [funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) e [funções de administrador do Azure AD (Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Microsoft Cloud App Security. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, confira os artigos [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+O Microsoft Cloud App Security é compatível com o Controle de acesso baseado em função. Por padrão, [funções de administrador do Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Microsoft Cloud App Security. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, confira os artigos [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
 ## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Funções do Office 365 e do Azure AD com acesso ao Cloud App Security
 
@@ -48,32 +48,47 @@ Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD 
   - Acessar e exibir o Log de controle 
   - Acessar e exibir a página Gerenciar relatórios de instantâneo 
 
-- **Administrador de aplicativo/instância:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao aplicativo ou à instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas, da seguinte maneira:
+- **Administrador de aplicativo/instância:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao aplicativo ou à instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas:
 
   - Página de atividades – somente atividades sobre o aplicativo específico
   - Alertas – somente alertas relacionados ao aplicativo específico
   - Políticas – pode exibir todas as políticas e editar ou criar somente as políticas relacionadas exclusivamente ao aplicativo/à instância
-  - Conta – somente contas para a instância/o aplicativo específico
+  - Página de contas – somente contas para a instância/o aplicativo específico
   - Permissões de aplicativo – somente permissões para a instância/o aplicativo específico
   - Página de arquivos – somente arquivos de instância/aplicativo específico
-  - Controle de Aplicativo de Acesso Condicional: sem permissões
-  - Atividade do descoberta Cloud Discovery: sem permissões
+  - Controle de Aplicativo de Acesso Condicional – nenhuma permissão
+  - Atividade do descoberta Cloud Discovery – nenhuma permissão
   - Extensões de segurança – permissões somente para o token de API com permissões de usuário
   - Ações de governança – somente para a instância/o aplicativo específico 
 
-- **Administrador de grupo:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao grupo específico selecionado aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários, da seguinte maneira:
+- **Administrador de grupo:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao grupo específico selecionado aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários:
 
   - Página de atividades – somente atividades relacionadas aos usuários do grupo
   - Alertas – somente alertas relacionados aos usuários do grupo
   - Políticas – pode exibir todas as políticas e editar ou criar somente as políticas relacionadas exclusivamente aos usuários do grupo
-  - Conta – somente contas dos usuários específicos do grupo
-  - Permissões de aplicativo: nenhuma permissão
-  - Página de arquivos: nenhuma permissão
-  - Controle de Aplicativo de Acesso Condicional: sem permissões
-  - Atividade do descoberta Cloud Discovery: sem permissões
+  - Página de contas – somente contas dos usuários específicos do grupo
+  - Permissões de aplicativo – nenhuma permissão
+  - Página de arquivos – nenhuma permissão
+  - Controle de Aplicativo de Acesso Condicional – nenhuma permissão
+  - Atividade do descoberta Cloud Discovery – nenhuma permissão
   - Extensões de segurança – permissões somente para o token de API com usuários do grupo
   - Ações de governança – somente para os usuários específicos do grupo
 
+- **Administrador de Descoberta Global:**  Tem permissão para exibir e editar todos os dados e configurações do Cloud Discovery. O administrador de Descoberta Global tem acesso da seguinte maneira:
+
+  - Configurações – 
+     -  Configurações do sistema – somente exibição
+     - Configurações do Cloud Discovery – exibir e editar tudo (permissões de anonimização dependem se ele recebeu autorização durante a atribuição de função)
+  - Atividade do Cloud Discovery – todas as permissões
+  - Alertas – somente alertas relacionados a dados do Cloud Discovery
+  - Políticas – pode exibir todas as políticas e editar ou criar somente as políticas do Cloud Discovery
+  - Página de atividades – nenhuma permissão
+  - Página de contas – nenhuma permissão
+  - Permissões de aplicativo – nenhuma permissão
+  - Página de arquivos – nenhuma permissão
+  - Controle de Aplicativo de Acesso Condicional – nenhuma permissão
+  - Extensões de segurança – nenhuma permissão
+  - Ações de governança – apenas ações relacionadas ao Cloud Discovery
 
 ## <a name="override-admin-permissions"></a>Substituir permissões de administrador
 
@@ -82,7 +97,7 @@ Por exemplo, caso deseje atribuir a Sara, um Leitor de segurança no Azure Activ
 
 ## <a name="add-additional-admins"></a>Adicionar administradores adicionais
 
-Adicione também outros administradores ao Cloud App Security sem adicionar usuários a funções administrativas do Azure Active Directory. Para adicionar outros administradores, siga as seguintes etapas:
+Adicione também outros administradores ao Cloud App Security sem adicionar usuários a funções administrativas do Azure Active Directory. Para adicionar outros administradores, realize as seguintes etapas:
 
    >[!IMPORTANT]
    > Somente Administradores globais ou Administradores de segurança podem conceder acesso a outros usuários ao Cloud App Security.
