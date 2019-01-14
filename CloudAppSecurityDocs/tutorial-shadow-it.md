@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: ccf52abaad217c257bbab14b886f6af120721c8c
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059549"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142277"
 ---
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -93,8 +93,9 @@ Examine essa página de alertas e use o filtro **Tipo de política** para examin
 
 ### <a name="phase-4-control-sanctioned-apps"></a>Fase 4: Controlar aplicativos sancionados
 
-    1. Para habilitar o controle do aplicativo por meio de APIs, [conecte os aplicativos por meio da API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). (enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) para monitoramento contínuo.
-    2. Proteja os aplicativos usando o [Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md).
+1. Para habilitar o controle do aplicativo por meio de APIs, [conecte os aplicativos por meio da API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). (enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) para monitoramento contínuo.
+
+2. Proteja os aplicativos usando o [Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md).
 
 
 A natureza dos aplicativos de nuvem significa que eles são atualizados diariamente e novos aplicativos aparecem o tempo todo. Por isso, os funcionários usam novos aplicativos continuamente e é importante acompanhar, examinar e atualizar as políticas da empresa, verificando quais aplicativos os usuários estão usando, bem como seus padrões de uso e comportamento. Você sempre pode acessar o painel do Cloud Discovery, ver quais novos aplicativos estão sendo usados e seguir as instruções neste artigo novamente para garantir que a organização e os dados estejam protegidos.
