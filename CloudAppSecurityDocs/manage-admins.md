@@ -14,22 +14,22 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9c0387aaaf2bfc9de3a560c53c4b0e822e26e57d
-ms.sourcegitcommit: 8ed1a81e3e27c4fd0e1e131a7c8527fbb264b9fe
+ms.openlocfilehash: 37cf8aef54b1d44d3036530544d9ffe25acf2073
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059859"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142260"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security é compatível com o Controle de acesso baseado em função. Por padrão, [funções de administrador do Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Microsoft Cloud App Security. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, confira os artigos [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+O Microsoft Cloud App Security é compatível com o controle de acesso baseado em função. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, confira os artigos [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
 ## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Funções do Office 365 e do Azure AD com acesso ao Cloud App Security
 
-Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD têm acesso ao Microsoft Cloud App Security:
+Por padrão, as seguintes funções de administrador do Office 365 e do [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Microsoft Cloud App Security:
 
 - **Administrador global e administrador de segurança:** Os administradores com **Acesso completo** têm permissões completas no Cloud App Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
 
@@ -56,8 +56,8 @@ Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD 
   - Página de contas – somente contas para a instância/o aplicativo específico
   - Permissões de aplicativo – somente permissões para a instância/o aplicativo específico
   - Página de arquivos – somente arquivos de instância/aplicativo específico
-  - Controle de Aplicativo de Acesso Condicional – nenhuma permissão
-  - Atividade do descoberta Cloud Discovery – nenhuma permissão
+  - Controle de Aplicativo de Acesso Condicional: sem permissões
+  - Atividade do descoberta Cloud Discovery: sem permissões
   - Extensões de segurança – permissões somente para o token de API com permissões de usuário
   - Ações de governança – somente para a instância/o aplicativo específico 
 
@@ -67,10 +67,10 @@ Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD 
   - Alertas – somente alertas relacionados aos usuários do grupo
   - Políticas – pode exibir todas as políticas e editar ou criar somente as políticas relacionadas exclusivamente aos usuários do grupo
   - Página de contas – somente contas dos usuários específicos do grupo
-  - Permissões de aplicativo – nenhuma permissão
-  - Página de arquivos – nenhuma permissão
-  - Controle de Aplicativo de Acesso Condicional – nenhuma permissão
-  - Atividade do descoberta Cloud Discovery – nenhuma permissão
+  - Permissões de aplicativo: nenhuma permissão
+  - Página de arquivos: nenhuma permissão
+  - Controle de Aplicativo de Acesso Condicional: sem permissões
+  - Atividade do descoberta Cloud Discovery: sem permissões
   - Extensões de segurança – permissões somente para o token de API com usuários do grupo
   - Ações de governança – somente para os usuários específicos do grupo
 
@@ -84,9 +84,9 @@ Por padrão, as seguintes funções de administrador do Office 365 e o Azure AD 
   - Políticas – pode exibir todas as políticas e editar ou criar somente as políticas do Cloud Discovery
   - Página de atividades – nenhuma permissão
   - Página de contas – nenhuma permissão
-  - Permissões de aplicativo – nenhuma permissão
-  - Página de arquivos – nenhuma permissão
-  - Controle de Aplicativo de Acesso Condicional – nenhuma permissão
+  - Permissões de aplicativo: nenhuma permissão
+  - Página de arquivos: nenhuma permissão
+  - Controle de Aplicativo de Acesso Condicional: sem permissões
   - Extensões de segurança – nenhuma permissão
   - Ações de governança – apenas ações relacionadas ao Cloud Discovery
 

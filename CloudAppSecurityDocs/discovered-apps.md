@@ -1,12 +1,12 @@
 ---
 title: Trabalhando com aplicativos descobertos no Cloud App Security
-description: Este artigo descreve o processo de identificação e correção de aplicativos de descoberta de nuvem que trazem riscos no Cloud App Security.
+description: Este guia de início rápido descreve o processo de identificação e correção de aplicativos de descoberta de nuvem que trazem riscos no Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/10/2019
+ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 589f0d11d7fac47a4080926f6aa4f654c17deb34
+ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450573"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060166"
 ---
-# <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
+# <a name="quickstart-work-with-discovered-apps"></a>Início Rápido: Trabalhar com aplicativos descobertos
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O painel do Cloud Discovery foi projetado para fornecer mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização. Ele fornece uma visão geral rápida de quais tipos de aplicativos estão sendo usados, os alertas abertos e os níveis de risco dos aplicativos na sua organização. Ele também mostra quem são os principais usuários do aplicativo e fornece um mapa do local da Matriz de Aplicativo. O Painel do Cloud Discovery tem muitas opções para filtrar os dados. A filtragem permite que você gere exibições específicas dependendo do que você está mais interessado usando gráficos de fácil compreensão para apresentar o panorama completo em uma visão geral.
+Este guia de início rápido apresenta as informações introdutórias sobre como monitorar e gerenciar aplicativos descobertos. O painel do Cloud Discovery foi projetado para fornecer mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização. Ele fornece uma visão geral rápida de quais tipos de aplicativos estão sendo usados, os alertas abertos e os níveis de risco dos aplicativos na sua organização. Ele também mostra quem são os principais usuários do aplicativo e fornece um mapa do local da Matriz de Aplicativo. O Painel do Cloud Discovery tem muitas opções para filtrar os dados. A filtragem permite que você gere exibições específicas dependendo do que você está mais interessado usando gráficos de fácil compreensão para apresentar o panorama completo em uma visão geral.
 
 ![painel do Cloud Discovery](./media/cloud-discovery-dashboard.png)
 

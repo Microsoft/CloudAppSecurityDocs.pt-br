@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/9/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b7ac2458af007fa556cf7212281154174fe2276e
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 9955c7e88caffd83859dd404e1615384f9a05490
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059497"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142328"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -47,9 +47,9 @@ Agora você pode afetar o mecanismo de detecção de anomalias para suprimir ou 
 
 - **Nova função do Cloud Discovery** (distribuição gradual) Agora, o Cloud App Security fornece uma nova função de administrador para os usuários do Cloud Discovery. Essa função pode ser usada para definir o escopo de acesso de um usuário administrador apenas para as configurações e os dados do Cloud Discovery no portal do Cloud App Security.
 
-- **Suporte para rótulos unificados da Proteção de Informações do Microsoft** O Cloud App Security agora é compatível com os rótulos unificados da Proteção de Informações do Microsoft. Para clientes que já [migraram seus rótulos de classificação para o Centro de Segurança e Conformidade do Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), o Cloud App Security identificará e trabalhará com esses rótulos, conforme descrito em [Integrando com a Proteção de Informações do Azure](azip-integration.md). 
+- **Suporte para rótulos unificados da Proteção de Informações da Microsoft** (lançamento gradual) O Cloud App Security agora é compatível com os rótulos unificados da Proteção de Informações da Microsoft. Para clientes que já [migraram seus rótulos de classificação para o Centro de Segurança e Conformidade do Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), o Cloud App Security identificará e trabalhará com esses rótulos, conforme descrito em [Integrando com a Proteção de Informações do Azure](azip-integration.md). 
 
-**Suporte para rotulagem de arquivo PDF** Para clientes que usam rótulos unificados, o Cloud App Security agora é compatível com a rotulagem automática para arquivos PDF.
+**Suporte para rotulagem de arquivo PDF** (lançamento gradual) Para os clientes que usam os rótulos unificados, o Cloud App Security agora é compatível com a rotulagem automática de arquivos PDF.
 
 ## <a name="cloud-app-security-release-138"></a>Cloud App Security versão 138
 
