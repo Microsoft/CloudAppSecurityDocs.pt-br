@@ -115,7 +115,7 @@ Para se conectar a aplicativos de terceiros, habilite o Cloud App Security para 
 
 ## <a name="third-party-dlp-integration"></a>Integração do DLP de terceiros
 
-Para habilitar o Cloud App Security a enviar dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de DMZ para esses endereços IP com um número da porta de origem dinâmico. 
+Para habilitar o Cloud App Security a enviar dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de rede de perímetro para esses endereços IP com um número da porta de origem dinâmico. 
 
 1. **Endereços de origem** – esses endereços devem ser colocados na lista de permissões conforme listado acima para aplicativos de terceiros de conector de API
 2. **Porta TCP de origem** – dinâmica
