@@ -14,12 +14,12 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8252c3ec83dd2e37663c5c13df8fa56e333af19c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 9df20f08928d1745578bf9eab2a1718f0ee8831f
+ms.sourcegitcommit: f9f50480f5353b395e1c6b0dd8ac6b0c7243aa77
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176171"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071109"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
@@ -50,7 +50,7 @@ As políticas de acesso condicional do Azure Active Directory e as políticas de
 1. Configure uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) com atribuições de usuário ou grupo de usuários e o aplicativo que você deseja controlar com o Controle de Aplicativos de Acesso Condicional. 
 
    > [!NOTE]
-   > Apenas os aplicativos que foram [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md) serão afetados por essa política.
+   > Apenas os aplicativos que foram [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md) serão afetados por essa política. 
 
 2. Encaminhe usuários para o Microsoft Cloud App Security selecionando **Usar restrições impostas pelo Controle de Aplicativos de Acesso Condicional** em **Sessão**.
  
