@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2019
+ms.date: 1/27/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 12c3e913a66813f234040272eba638c9dae5e9f5
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: c28cb20566ee3497dda7607c4d1a011d28d04a49
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059391"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086406"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
 

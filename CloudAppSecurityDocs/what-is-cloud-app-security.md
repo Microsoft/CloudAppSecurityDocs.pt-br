@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2019
+ms.date: 1/27/2019
 ms.topic: overview
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4e049ead1d211d9e22668e18aec23293ee26dd59
-ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
+ms.openlocfilehash: f447cfccaf7369977f85058a502ec16448013c30
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060149"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086321"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Visão geral do Microsoft Cloud App Security
 

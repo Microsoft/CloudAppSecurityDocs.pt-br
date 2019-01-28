@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 1/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54fbda3ec925643e640f31b5f6493843886dea13
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: 8ac0c4816664912f05e45cd93466f168527f9387
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142294"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086542"
 ---
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -32,7 +32,7 @@ ms.locfileid: "54142294"
 Execute estas etapas para configurar aplicativos do Azure AD para ser controlados pelo Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security.
 
 > [!NOTE]
-> Para implantar o Controle de Aplicativo de Acesso Condicional para aplicativos do Azure AD, será necessária uma [licença válida para o Azure AD Premium P2](https://docs.microsoft.com/azure/active-directory/license-users-groups).
+> Para implantar o Controle de Aplicativos de Acesso Condicional para aplicativos do Azure AD, será necessária uma [licença válida para o Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups).
 
 ## <a name="step-1-add-azure-ad-apps-in-cloud-app-security"></a>Etapa 1: Adicionar os aplicativos do Azure AD ao Cloud App Security  
 

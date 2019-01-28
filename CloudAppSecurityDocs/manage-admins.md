@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 37cf8aef54b1d44d3036530544d9ffe25acf2073
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: 0385813f218d8a8d449f8c1bbd5c99b50793056d
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142260"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086372"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 

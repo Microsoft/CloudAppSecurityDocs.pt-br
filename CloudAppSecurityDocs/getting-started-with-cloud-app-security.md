@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2019
+ms.date: 1/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e30c4cf8b582bb0471ac4a90f39e7a5649a74ed0
-ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
+ms.openlocfilehash: 0ee7a419b6005b0fb02b4abd426bb85be8b4feed
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060217"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086049"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: Começar a usar o Microsoft Cloud App Security
 
