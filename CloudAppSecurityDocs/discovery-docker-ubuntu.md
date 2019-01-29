@@ -14,12 +14,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: add574af2b6ff28191b4f6ecf5a21746913cd8d5
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: e1ac4a86306ecd5262dc066e770eedeae448cf3b
+ms.sourcegitcommit: 7cda3fb3fac6bf1452582f20596f5b6c6a995a68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751627"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker no Ubuntu e no RHEL local
 
@@ -145,13 +145,13 @@ Configure os proxies e os firewalls de rede para periodicamente exportar logs pa
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Etapa 4 — Verificar a implantação bem-sucedida no portal do Cloud App Security
 
-Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **Criado**, talvez a conexão do coletor de logs e a análise não tenham sido concluídos.
+Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **Criado**, talvez a conexão do coletor de logs e a análise não tenham sido concluídas.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
 
-Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
+Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### <a name="optional---create-custom-continuous-reports"></a>Opcional – Criar relatórios contínuos personalizados
 
