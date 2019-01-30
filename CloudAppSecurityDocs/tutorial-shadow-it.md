@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: 579359640f5c2e53f2267938620908be70ad617f
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142277"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086610"
 ---
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -44,15 +44,15 @@ Use esse processo para distribuir o Cloud Discovery de TI sombra na sua organiza
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>Fase 1: Descobrir e identificar a TI sombra
     
 1. **Descobrir a TI sombra**: identifique a situação de segurança da sua organização executando o Cloud Discovery em sua organização para ver o que realmente está acontecendo na rede. Para obter mais informações, confira [Configurar o Cloud Discovery](set-up-cloud-discovery.md). Isso pode ser feito usando um dos seguintes métodos:
-  
-    - Integre o Cloud App Security com o proxy. O Cloud App Security integra-se nativamente com alguns proxies de terceiros, incluindo o [Zscaler](zscaler-integration.md).
-    
+   
     - Coloque o Cloud Discovery em funcionamento rapidamente integrando-o ao [Windows Defender ATP](wdatp-integration.md). Essa integração nativa permite que você comece imediatamente a coletar dados sobre o tráfego de nuvem em seus dispositivos Windows 10 dentro e fora da rede.
    
     - Para obter uma cobertura em todos os dispositivos conectados à rede, é importante implantar o [coletor de logs do Cloud App Security](discovery-docker.md) em seus firewalls e em outros proxies para coletar dados dos pontos de extremidade e enviá-los ao Cloud App Security para análise.
 
-
-Como as políticas são diferentes entre grupos de usuários, regiões e grupos de negócios, é possível criar um relatório de TI sombra dedicado a cada uma dessas unidades. Para obter mais informações, confira (discovery-docker-windows#continuous-reports).
+   - Integre o Cloud App Security com o proxy. O Cloud App Security integra-se nativamente com alguns proxies de terceiros, incluindo o [Zscaler](zscaler-integration.md).
+   
+ 
+Como as políticas são diferentes entre grupos de usuários, regiões e grupos de negócios, é possível criar um relatório de TI sombra dedicado a cada uma dessas unidades. Para saber mais, confira [Docker no Windows local](discovery-docker-windows.md#continuous-reports).
 
 
 Agora que o Cloud Discovery está em execução na rede, examine os relatórios contínuos que são gerados e confira o [painel do Cloud Discovery](working-with-cloud-discovery-data.md) para ter uma visão completa de quais aplicativos estão sendo usados na organização. É interessante examiná-los por categoria, porque normalmente você perceberá que os aplicativos não sancionados estão sendo usados para fins relacionados a trabalhos legítimos que não foram atendidos por um aplicativo sancionado. 
@@ -79,10 +79,10 @@ Agora que o Cloud Discovery está em execução na rede, examine os relatórios 
     
 - **Gerenciar aplicativos de nuvem**: O Cloud App Security ajuda você com o processo de gerenciar o uso de aplicativos na organização. Depois de identificar os diferentes padrões e comportamentos usados na organização, você pode criar marcas de aplicativo personalizadas para classificar cada aplicativo de acordo com o status ou a justificativa dos negócios.
 Essas marcas podem ser usadas para fins de monitoramento específicos, por exemplo, para identificar um tráfego alto direcionado a aplicativos que estejam marcados como aplicativos de armazenamento em nuvem arriscados. As marcas de aplicativo podem ser gerenciadas em **Configurações do Cloud Discovery** > **Marcas de aplicativo**. Mais tarde, essas marcas podem ser usadas para a filtragem nas páginas do Cloud Discovery e a criação de políticas que as usem.
-    
-Agora é hora de criar políticas para que você possa ser alertado automaticamente quando acontecer algo com que você se preocupe. Por exemplo, é possível criar uma **Política de descoberta de aplicativo** que informe quando há um pico nos downloads ou no tráfego de um aplicativo com o qual você se preocupe. Você pode definir a política para ser notificado por email ou mensagem de texto. Para obter mais informações, confira [referência de modelo de política](policy-template-reference.md) e saiba mais sobre as [políticas do Cloud Discovery](cloud-discovery-policies.md).
 
 - **Monitoramento contínuo**: agora que você investigou os aplicativos cuidadosamente, é possível definir políticas que monitorem os aplicativos e forneçam controle onde for necessário.
+
+Agora é hora de criar políticas para que você possa ser alertado automaticamente quando acontecer algo com que você se preocupe. Por exemplo, é possível criar uma **política de descoberta de aplicativo** que informe quando há um pico nos downloads ou no tráfego de um aplicativo que seja relevante para você. Você pode definir a política para ser notificado por email ou mensagem de texto. Para obter mais informações, confira [referência de modelo de política](policy-template-reference.md) e saiba mais sobre as [políticas do Cloud Discovery](cloud-discovery-policies.md).
 
 
 Configure [**Políticas de descoberta de aplicativo**](cloud-discovery-policies.md). Por exemplo, você deve habilitar a **Política de comportamento anormal nos usuários descobertos**, a **Verificação de conformidade de aplicativo de armazenamento em nuvem** e a identificação de **Novo aplicativo arriscado**.

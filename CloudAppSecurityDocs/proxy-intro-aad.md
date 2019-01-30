@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/18/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
-ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
+ms.openlocfilehash: 319fa2395e972d79b3d010a88b0758752103c345
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587827"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086134"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -92,33 +92,36 @@ O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicat
 > [!NOTE]
 > O Controle de Aplicativos de Acesso Condicional também é compatível com aplicativos configurados com outros provedores de identidade além do Azure AD. Para obter mais informações sobre esse cenário, envie um email para mcaspreview@microsoft.com.
 
-O controle de sessão está disponível para qualquer navegador em qualquer plataforma principal. Aplicativos móveis e aplicativos da área de trabalho também podem ser bloqueados ou permitidos. Com a integração nativa do Azure AD, há suporte para todos os aplicativos SAML ou Open ID Connect configurados com logon único no Azure AD, incluindo os seguintes aplicativos em destaque:
+**O controle de sessão está disponível para todos os navegadores, nas principais plataformas e em todos os sistemas operacionais**. Aplicativos móveis e aplicativos da área de trabalho também podem ser bloqueados ou permitidos. Com a integração nativa do Azure AD, há suporte para todos os aplicativos SAML ou Open ID Connect configurados com logon único no Azure AD, incluindo os seguintes aplicativos em destaque:
 
 - AWS
+- Azure DevOps (Visual Studio Team Services) (versão prévia)
+- Portal do Azure (versão prévia)
 - Caixa
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
 - Egnyte
+- Exchange Online (versão prévia)
 - G Suite
 - GitHub
 - HighQ
 - JIRA/Confluence
+- OneDrive for Business (versão prévia)
+- LinkedIn Learning
+- Power BI (versão prévia)
 - Salesforce
 - ServiceNow
+- SharePoint Online (versão prévia)
 - Slack
 - Tableau
+- Microsoft Teams (versão prévia)
 - Workday
 - Workiva
 - Workplace by Facebook
-- Exchange Online (versão prévia)
-- OneDrive for Business (versão prévia)
-- Power BI (versão prévia)
-- SharePoint Online (versão prévia)
-- Azure DevOps (Visual Studio Team Services) (versão prévia)
 - Yammer (versão prévia)
-- Microsoft Flow (versão prévia)
+
 
 
 

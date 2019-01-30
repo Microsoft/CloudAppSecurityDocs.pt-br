@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48708ea18227a68a780c6ed02905cda51cea48e0
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 037687d0883ed7a50eb4c27df1a551695c175c5f
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177437"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086559"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
@@ -41,14 +41,16 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
      - **Notificação por email do usuário** – as mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários de arquivos em violação. 
 
-     - **Copiar gerente** – com base na integração de diretórios do usuário, as notificações por email também podem ser enviadas para o gerente da pessoa que violar uma política. (Somente Salesforce)
-
      - **Notificar usuários específicos** – lista específica de endereços de email que receberão essas notificações. 
 
      - **Notificar último editor do arquivo** – enviar notificações para a última pessoa que modificou o arquivo. 
 
 - **Ações de governança em aplicativos** – ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo. 
 
+     
+     - **Rotulagem**
+         - **Aplicar rótulo** – Capacidade de adicionar um rótulo de classificação da Proteção de Informações do Azure.
+         - **Remover rótulo** – Capacidade de remover um rótulo de classificação da Proteção de Informações do Azure.
      - **Alterar compartilhamento** 
 
         - **Remover compartilhamento público** – permitir o acesso somente a colaboradores nomeados, por exemplo: Remover o acesso público ao G Suite e Remover link direto compartilhado para o Box. 
@@ -59,7 +61,11 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
        - **Remover um colaborador** – remova um colaborador específico do arquivo. 
 
-       - **Reduzir o acesso público** – defina os arquivos disponíveis publicamente a serem disponibilizados somente com um link compartilhado.
+       - **Reduzir o acesso público** – defina os arquivos disponíveis publicamente a serem disponibilizados somente com um link compartilhado. (Google)
+        
+       - **Expiração de link compartilhado** – Capacidade de definir uma data de expiração para um link compartilhado, após a qual ele não estará mais ativo. (Box)
+
+       - **Alterar nível de acesso para compartilhamento de link** – Capacidade de alterar o nível de acesso do link compartilhado entre "somente a empresa", "somente colaboradores" e "público". (Box)
 
   - **Quarentena** 
 
@@ -69,7 +75,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
   - **Herdar permissões do pai** – essa ação de governança permite remover o conjunto de permissões específicas para um arquivo ou uma pasta no Office 365. Em seguida, reverta para as permissões definidas para a pasta pai.
 
-  - **Lixeira** – mova o arquivo para a pasta da lixeira.
+  - **Lixeira** – mova o arquivo para a pasta da lixeira. (SharePoint e OneDrive)
 
    ![alertas policy_create](./media/policy_create-alerts.png "alertas policy_create") 
 
@@ -81,8 +87,6 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
     - **Alertas** – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade. 
 
     - **Notificação por email do usuário** – as mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários de arquivos em violação. 
-
-    - **Copiar gerente** – com base na integração de diretórios do usuário, as notificações por email também podem ser enviadas para o gerente da pessoa que violar uma política. (Somente Salesforce)
 
     - **Notificar usuários adicionais** – lista específica de endereços de email que receberão essas notificações. 
 
@@ -137,13 +141,12 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Política de arquivos|Arquivo |Lixeira|Coloca o arquivo na lixeira do usuário.| One Drive, SharePoint |
 |Política de Arquivos|Arquivo | Notificar o último editor de arquivo |Envia um email para notificar a última pessoa que editou o arquivo que ele viola uma política. |G Suite, Box|
 |Política de Arquivos|Arquivo |Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir. | Todos os aplicativos |
-|Política de arquivos, Atividade de política | Arquivo, Atividade |cc para gerente do proprietário/usuário| Quando o proprietário do arquivo recebe uma notificação por email indicando que seu arquivo está violando uma política. Essa ação, opcionalmente, notifica o gerente do usuário/proprietário do arquivo. | Salesforce |
 |Política de arquivos, Atividade de política | Arquivo, Atividade | Notificar usuários específicos |Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.| Todos os aplicativos |
 |Política de arquivo e Política de atividade | Arquivo, Atividade |Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação. |Tudo |
 |Política de arquivo e Arquivos|Arquivo | Remover a capacidade do editor de compartilhar|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança restringe essa opção e também o compartilhamento de arquivos com o proprietário.| G Suite|
 |Política de arquivo e Arquivos|Arquivo | [Colocar em quarentena do administrador](use-case-admin-quarantine.md) |Remove qualquer permissão do arquivo e o move para uma pasta de quarentena em um local para o administrador. Essa ação permite que o administrador examine o arquivo e o remova.| Office 365 SharePoint, OneDrive for Business, Box|
 |Política de arquivo e Arquivos|Arquivo | Aplicar rótulo de classificação|Aplica um rótulo de classificação da Proteção de Informações do Azure a arquivos automaticamente de acordo com as condições definidas na política.| Box, One Drive, G Suite, SharePoint |
-|Política de arquivo e Arquivos|Arquivo | Remover rótulo de classificação | Remove um rótulo de classificação da Proteção de Informações do Azure de arquivos automaticamente de acordo com as condições definidas na política. | Box, One Drive, G Suite, SharePoint |
+|Política de arquivo e Arquivos|Arquivo | Remover rótulo de classificação | Remove um rótulo de classificação da Proteção de Informações do Azure de arquivos automaticamente de acordo com as condições definidas na política. É possível remover rótulos apenas quando eles não incluem proteção e são aplicados no Cloud App Security, exceto os aplicados diretamente na Proteção de Informações.| Box, One Drive, G Suite, SharePoint |
 |Política de arquivos, Política de atividade, Alertas | Aplicativo |Exigir que os usuários entrem novamente| Você pode exigir que os usuários entrem novamente no Office 365 e em todos os aplicativos do Azure AD como uma correção rápida e eficaz para alertas de atividade do usuário suspeita e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário. | Office 365, Azure AD |
 |Arquivos |Arquivo |Restaurar da quarentena do usuário |Restaura um usuário de ser colocado em quarentena. |Caixa |
 |Arquivos |Arquivo | Conceder permissões de leitura para mim| Concede permissões de leitura do arquivo para você mesmo, de forma que você possa acessar o arquivo e entender se ele tem uma violação ou não.| G Suite|
@@ -157,6 +160,8 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Arquivos, Política de arquivo|Arquivo | Remover usuários externos | Remove todos os parceiros externos - fora dos domínios configurados como internos nas Configurações. |G Suite, Box|
 |Arquivos, Política de arquivo|Arquivo |Conceder permissão de leitura ao domínio|Concede permissões de leitura do arquivo no domínio especificado para todo o seu domínio ou para um domínio específico. Essa ação é útil se você deseja remover o acesso público depois de conceder acesso ao domínio de pessoas que precisam trabalhar nele.| G Suite|
 |Arquivos, Política de arquivo|Arquivo | Colocar em quarentena do usuário | Remove todas as permissões do arquivo e o move para uma pasta de quarentena na unidade de raiz do usuário. Essa ação permite que o usuário examine o arquivo e o mova. Se ele for movido manualmente de volta, o compartilhamento de arquivos não será restaurado. | Box, One Drive, SharePoint |
+|Arquivos|Arquivo|Expiração de link compartilhado| Define uma data de expiração para um link compartilhado, após a qual ele não estará mais ativo.|Caixa|
+|Arquivos|Arquivo|Alterar nível de acesso para compartilhamento de link|Altera o nível de acesso do link compartilhado entre "somente a empresa", "somente colaboradores" e "público".| Caixa|
 |Arquivos, Política de arquivo|Arquivo | Remover acesso público| Se um arquivo era seu e você o colocou no acesso público, ele se tornará acessível somente para quem tiver sido configurado com acesso ao arquivo (dependendo do tipo de acesso que o arquivo tinha). | G Suite|
 |Arquivos, Política de arquivo|Arquivo |Remover link compartilhado direto| Remove um link que foi criado para o arquivo que é público, mas só é compartilhado com pessoas específicas.|Caixa |
 |Configurações > Configurações do Cloud Discovery| Cloud Discovery | Recalcular pontuações do Cloud Discovery |Recalcula as pontuações no catálogo de aplicativos de Nuvem após alterar uma métrica de pontuação.| Descoberta |

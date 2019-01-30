@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bbe1bd310f7c661ba631f088a474baf536fb8d32
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: d0858c2cadf3e36ed70ae59b715cfa9b7c7469c4
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059453"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086287"
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -116,6 +116,9 @@ Para ignorar o conjunto de rótulos de classificação de fora da organização,
 3. Depois de escolher um rótulo de classificação e clicar em Aplicar, o Cloud App Security aplicará o rótulo de classificação ao arquivo original.
 
 4. Também remova rótulos de classificação escolhendo a opção **Remover rótulo de classificação**. 
+
+> [!NOTE]
+> É possível remover rótulos apenas quando eles não incluem proteção e são aplicados no Cloud App Security, exceto os aplicados diretamente na Proteção de Informações.
 
 
 Para obter mais informações sobre como o Cloud App Security e a Proteção de Informações do Azure funcionam juntos, consulte [Proteger dados contra erros de usuário](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/16/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37eed2eb11dfd3f77a1cf26281af6d867c9e9c4d
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 9e645becc555c73dc7403dc3075095f903e760f9
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059478"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086100"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -28,7 +28,7 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-- Sistema operacional: Windows 10 (Fall Creators Update) e Windows Server, versão 1709 ou superior 
+- Sistema operacional: **Windows 10** Fall Creators Update e Windows Server **versão 1709 ou superior**
 
 - Espaço em disco: 250 GB
 
@@ -37,6 +37,8 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 - RAM: 4 GB
 
 - Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md#log-collector)
+
+- A virtualização no sistema operacional deve ser habilitada com o Hyper-V
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 
