@@ -1,11 +1,11 @@
 ---
 title: Configurar o upload automático de logs usando o Docker no Azure
-description: Este artigo descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu no Azure.
+description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL no Azure.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,22 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3b274bd8515fc893fb92af0c96f34d99d68d0bdc
-ms.sourcegitcommit: 900fce2575c39acda71ba42589f75d4c935fecb3
+ms.openlocfilehash: 9d3d0aad417050011a5a5780e5563ac3d040eb37
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54460014"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086440"
 ---
-# <a name="set-up-and-configuration-on-ubuntu"></a>Instalação e configuração no Ubuntu
+# <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalação e configuração no Ubuntu ou RHEL no Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Configure o upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu no Azure. Este artigo descreve como configurar o upload automático de logs. 
+Configure o carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL (Red Hat Enterprise Linux) no Azure. Este artigo descreve como configurar o upload automático de logs. 
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-- Sistema operacional: Ubuntu 14.04 e 16.04 (para versões mais recentes, contate o suporte)
+- Sistema operacional: Ubuntu 14.04 e 16.04 (para versões mais recentes, fale com o suporte) ou RHEL 7.2 ou superior
 
 - Espaço em disco: 250 GB
 
