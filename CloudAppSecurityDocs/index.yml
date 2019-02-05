@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 380111c9dfac45ef74a796071231230f42f5c853
-ms.sourcegitcommit: f9f50480f5353b395e1c6b0dd8ac6b0c7243aa77
+ms.openlocfilehash: eec26fd736dcf40dd670432a9edbea73a8c6d143
+ms.sourcegitcommit: 3165a601e3e4dc2b5661273e052fa9c0a48bb8e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55071197"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479517"
 documentType: LandingData
 title: Microsoft Cloud App Security
 metadata:
@@ -16,7 +16,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/22/2019
+  ms.date: 01/30/2019
   ms.author: mbaldwin
   layout: LandingPage
 abstract:
@@ -43,6 +43,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
         href: release-notes.md
+    - title: Explore o Microsoft 365, uma solução completa que inclui o Cloud App Security
+      href: https://docs.microsoft.com/microsoft-365/
+      image:
+        src: /office/media/icons/caret-right-blue.svg
+        href: https://docs.microsoft.com/microsoft-365/
 - title: Inícios Rápidos de 5 minutos
   items:
   - type: paragraph

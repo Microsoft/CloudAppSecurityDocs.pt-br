@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,42 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 191664850596aad2ab4bc7ed0bc78600004382f0
+ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086355"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689204"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
 *Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
+
+- **Configuração de política de sessão no Azure AD**<br>
+Agora você pode configurar políticas de sessão para monitorar usuários ou bloquear downloads em tempo real, diretamente no acesso condicional do Azure AD. Você ainda pode configurar as políticas de sessão avançadas diretamente no Cloud App Security. Para ver essa implantação, consulte [Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos do Azure AD](proxy-deployment-aad.md). 
+
+- **Consultas sugeridas e salvas para aplicativos OAuth** <br>
+As consultas sugeridas foram adicionadas à página dos aplicativos OAuth para fornecer modelos de investigação prontos para uso, a fim de filtrar os aplicativos OAuth. As consultas sugeridas incluem filtros personalizados para identificar aplicativos arriscados como aplicativos autorizados por administradores. Consultas salvas permitem salvar consultas personalizadas para uso futuro, semelhante às consultas salvas disponíveis atualmente no log de atividades e nas páginas de descoberta. 
+
+- **Configuração padrão de auditoria do Office 365**<br>
+Se quiser habilitar o monitoramento de atividades do Office 365 no Cloud App Security, será necessário habilitar a auditoria no [Centro de Conformidade e Segurança do Office]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins). Isso é resultado de uma [alteração na auditoria do Office 365]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Só será preciso executar essa alteração se você ainda não tiver habilitado o monitoramento de atividades do Office 365 no Cloud App Security.
+
+- **Suporte aprimorado do Box**<br>
+O Cloud App Security agora dá suporte a duas novas ações de governança para o Box:
+
+   - **Expiração de link compartilhado** – essa ação de governança fornece a capacidade de definir uma data de término para um link compartilhado, após a qual ele não estará mais ativo. 
+
+   - **Alterar nível de acesso para compartilhamento de link** – essa ação de governança fornece a capacidade de alterar o nível de acesso do link compartilhado entre "somente a empresa", "somente colaboradores" e "público".
+
+- **Suporte a vários locais no OneDrive**<br>
+Agora, o Cloud App Security fornece visibilidade completa de arquivos do OneDrive, mesmo se eles estiverem distribuídos em várias localizações geográficas. A proteção agora está disponível para arquivos que estão em outros locais, além do local principal.
+
+- **Melhoria de navegação do portal**<br>
+O portal do Cloud App Security foi aprimorado para fornecer uma navegação melhor e alinhar melhor o Cloud App Security com outros serviços de segurança da Microsoft, para facilidade de uso.
+
+
 
 ## <a name="cloud-app-security-release-141"></a>Lançamento 141 do Cloud App Security
 

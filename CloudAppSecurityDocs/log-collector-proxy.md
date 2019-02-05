@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/29/2019
+ms.date: 2/2/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d69444a4baa4e861c1ffa14c081f77a584911431
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: b256affd64705b874e68359c51af118b355330df
+ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086576"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55668921"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitar o coletor de logs por trás de um proxy
 
-Depois de configurar o coletor de logs, se você estiver executando por trás de um proxy, o coletor de logs poderá ter problemas para enviar dados ao Cloud App Security. Isso pode ser causado porque o coletor de logs não confia na autoridade de certificado raiz do proxy e não consegue se conectar ao Microsoft Cloud App Security para recuperar sua configuração ou carregar os logs recebidos.
+Depois de configurar o coletor de logs, se você estiver executando por trás de um proxy, o coletor de logs poderá ter problemas para enviar dados ao Cloud App Security. Isso pode acontecer porque o coletor de logs não confia na autoridade de certificado raiz do proxy e não consegue se conectar ao Microsoft Cloud App Security para recuperar sua configuração ou carregar os logs recebidos.
 
 >[!NOTE] 
 > Saiba mais sobre como alterar os certificados usados pelo coletor de logs para Syslog ou FTP e como resolver problemas de conectividade de firewalls e proxies para o coletor de logs em [Solucionar problemas da implantação do Microsoft Cloud App Security Cloud Discovery](troubleshoot-docker.md).
@@ -46,7 +46,7 @@ No shell, verifique se o contêiner foi criado e está em execução usando o se
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copie o Certificado de Autoridade de Certificação raiz do proxy para o contêiner
 
 De sua máquina virtual, copie o Certificado de Autoridade de Certificação para o contêiner do Cloud App Security. No exemplo a seguir, o contêiner é denominado *Ubuntu LogCollector* e o Certificado de Autoridade de Certificação é denominado *Proxy-CA.crt*.
-Execute o comando no host do Ubuntu e copie o certificado para uma pasta no contêiner em execução:
+Executar o comando no host do Ubuntu. Copia o certificado em uma pasta no contêiner em execução:
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
@@ -64,7 +64,7 @@ Execute o comando no host do Ubuntu e copie o certificado para uma pasta no cont
        bash
        cd 'find /opt/jdk/*/jre -iname bin'
 
-3. Importe o certificado raiz que você copiou anteriormente da pasta *descoberta* para o repositório de chaves do Java e defina uma senha. A senha padrão é "changeit":
+3. Importe o certificado raiz que você copiou anteriormente da pasta de *descoberta* para o repositório de chaves do Java e defina uma senha. A senha padrão é "changeit":
 
        bash
        ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
