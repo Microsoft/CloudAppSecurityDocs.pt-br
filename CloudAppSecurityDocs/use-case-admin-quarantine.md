@@ -4,7 +4,7 @@ description: Este tutorial descreve o cenário para usar a quarentena do adminis
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: tutorial
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7939e9d01dce429ddbcd59278d2717935dbd35bf
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 2d964d84b952c8427900a5554da297645829d4f0
+ms.sourcegitcommit: a592f734a803493e9dd10e632922e68f9760b93e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55085999"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56089875"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: Proteger arquivos com quarentena do administrador
 
