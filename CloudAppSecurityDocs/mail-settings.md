@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,25 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: de5474e2fd65d21f3221dd562f63a8ddc3bd9566
+ms.sourcegitcommit: b32fb2c561108cf280cd9098da20b0cb9aab4273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177038"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55740058"
 ---
 # <a name="email-notification-preferences"></a>Preferências de notificação por email
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Este artigo oferece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security.
+Este artigo fornece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security para seus usuários quando uma violação é detectada.
+
+> [!NOTE]
+> Essa personalização só afeta as notificações enviadas aos usuários finais, não as notificações enviadas aos administradores do Cloud App Security.
 
 ## <a name="mailsettings"></a> Definir as preferências de notificação de email  
 
- O Microsoft Cloud App Security envia notificações por email aos administradores solicitando alertas e aos usuários finais envolvidos em violações. Para definir parâmetros para notificações por email, siga este procedimento. Para obter informações sobre o endereço IP do servidor de email do Microsoft Cloud App Security que você deve incluir na lista de permissões em seu serviço antispam, consulte [Requisitos de rede](network-requirements.md).
+ O Microsoft Cloud App Security permite que você personalize as notificações de email enviadas aos usuários finais envolvidas nas violações. Para definir parâmetros para notificações por email, siga este procedimento. Para obter informações sobre o endereço IP do servidor de email do Microsoft Cloud App Security que você deve incluir na lista de permissões em seu serviço antispam, consulte [Requisitos de rede](network-requirements.md).
 
 1. Na barra de menus, clique na engrenagem de configurações, selecione **Configurações** e, em seguida, a guia **Configurações de email**.  
 
