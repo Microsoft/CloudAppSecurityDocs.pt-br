@@ -4,7 +4,7 @@ description: Este artigo é atualizado com frequência para mantê-lo informado 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 191664850596aad2ab4bc7ed0bc78600004382f0
-ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
+ms.openlocfilehash: 5915ac5fc3fef4ec4014841b946d0b05e6c73040
+ms.sourcegitcommit: a592f734a803493e9dd10e632922e68f9760b93e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55689204"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56091014"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
