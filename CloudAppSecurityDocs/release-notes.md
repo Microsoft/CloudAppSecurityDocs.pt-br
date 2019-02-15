@@ -7,6 +7,7 @@ ms.author: rkarlin
 manager: barbkess
 ms.date: 2/4/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5915ac5fc3fef4ec4014841b946d0b05e6c73040
-ms.sourcegitcommit: a592f734a803493e9dd10e632922e68f9760b93e
+ms.openlocfilehash: 4d1e430469acb737a4f64884211c6e875c04cc59
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56091014"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282113"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
