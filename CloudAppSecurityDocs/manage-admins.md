@@ -4,9 +4,10 @@ description: Este artigo fornece instruções para definir o acesso ao portal do
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0385813f218d8a8d449f8c1bbd5c99b50793056d
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 90cc081f33b30ac3b4774c7292752d1c27dddd0c
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086372"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281212"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 

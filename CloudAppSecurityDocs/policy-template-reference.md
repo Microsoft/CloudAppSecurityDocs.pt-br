@@ -4,9 +4,10 @@ description: Este artigo fornece informações sobre como as políticas são usa
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c2afb248fa3f4ccd7367d1603266cf0d1f803bd5
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 77402ec7fa10eb9b91ee2822e5ebaf544b65b1dc
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176273"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281807"
 ---
 # <a name="policy-template-reference"></a>Referência de modelo de política
 

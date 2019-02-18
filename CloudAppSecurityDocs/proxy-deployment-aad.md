@@ -4,9 +4,10 @@ description: Este artigo fornece informações sobre como implantar os recursos 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 2/2/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9342d66d7fe601325875477cb5174b3248d497fc
-ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
+ms.openlocfilehash: 8e74b6280175c459d9153dc267e16e91ad218b8c
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "55668853"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281943"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD
 

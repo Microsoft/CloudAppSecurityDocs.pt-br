@@ -4,9 +4,10 @@ description: Este artigo fornece instruções de uso do RegEx para correspondên
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/14/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 92cb0d5dcadacf167cb085af5d84ef199f3a8029
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 07085a2c2e8a27e6e6ad35d9e088a95f8d543522
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450606"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281110"
 ---
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
 

@@ -4,21 +4,22 @@ description: Este tutorial descreve o processo para aplicar automaticamente os r
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/28/2019
 ms.topic: tutorial
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 579359640f5c2e53f2267938620908be70ad617f
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 748d4daa5f3ca47b652888ee382bc22eff0f340c
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086610"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281758"
 ---
 *Aplica-se a: Microsoft Cloud App Security*
 

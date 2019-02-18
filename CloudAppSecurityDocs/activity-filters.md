@@ -4,9 +4,10 @@ description: Este artigo fornece uma lista de atividades, filtros e parâmetros 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/16/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bfdc9f6cb76a5daff867e9f697439214d249bcf7
-ms.sourcegitcommit: a55a20b8613755068e52b5cf65ad333fddd29688
+ms.openlocfilehash: 3043de593036dc5f8eec0ac9be2aca9b195f32c9
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450965"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281909"
 ---
 # <a name="activities"></a>Atividades
 

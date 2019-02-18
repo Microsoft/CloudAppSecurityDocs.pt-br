@@ -4,9 +4,10 @@ description: Este artigo fornece um link para a página de status do Cloud App S
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fa47fde4ae0277ab18eb478d67526e75450a87e9
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 718dd1b7caa88aeb535aa24ef0ebc81a7e0ed237
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176613"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281297"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Solução de problemas de status do Microsoft Cloud App Security
 

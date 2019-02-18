@@ -4,9 +4,10 @@ description: Este tópico fornece instruções sobre como trabalhar com os dados
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/14/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9af9ad3d28d2fd126d163544c0153d6ea029a9d1
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: f760a9aa5bb80d1301cf6125eeeec22a8e9a8a7a
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450623"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282294"
 ---
 # <a name="working-with-discovery-data"></a>Trabalhando com os dados de descoberta
 

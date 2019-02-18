@@ -4,9 +4,10 @@ description: Este artigo fornece uma lista de consultas e filtros de aplicativos
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a91520a7334694b0e5a4416a9db5f22877ec55d9
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 0871d2a24cfea8a5ca5e9bcd5397cde13dc8ea28
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53175780"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282640"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Consultas e filtros de aplicativos descobertos
 

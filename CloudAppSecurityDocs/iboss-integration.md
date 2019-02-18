@@ -4,9 +4,10 @@ description: Este artigo descreve como integrar o Microsoft Cloud App Security a
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 2/2/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 920d4272-685b-4c4d-9b31-94a2c6f3503e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 34d92504322b4210cf4a129b3392fd8e3de15050
-ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
+ms.openlocfilehash: 829dbac07eca84a3468da0260bec1141aa05a2c9
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "55668955"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281587"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Integrar o Cloud App Security com o iboss
 

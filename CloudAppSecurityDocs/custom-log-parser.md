@@ -4,9 +4,10 @@ description: Este artigo fornece informações sobre como usar o analisador de l
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 80eef93d11e11025d9e6cf01138bc9fab6a6fc19
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 4eaa2e05006cdb7ff08a29eec14abbb021980e05
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177208"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281552"
 ---
 # <a name="use-a-custom-log-parser"></a>Usar o analisador de log personalizado
 

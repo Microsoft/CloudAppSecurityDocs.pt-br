@@ -4,9 +4,10 @@ description: Este artigo fornece uma lista de consultas e filtros de atividades 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4fb8d909ee8720d6b2610bfe6acc65a02666167e
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 1ae941a71a0648e50cb90ece11b3d68e09a7a90e
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059304"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282198"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividades
 

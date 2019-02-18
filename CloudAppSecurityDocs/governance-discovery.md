@@ -4,9 +4,10 @@ description: Este artigo descreve o procedimento para exportar scripts de bloque
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 00c5063d93f469d91512e6bb37338855093e6bdf
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 902b919a801a6c3b077e930593ba74023efded9f
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53175559"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281042"
 ---
 # <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
 

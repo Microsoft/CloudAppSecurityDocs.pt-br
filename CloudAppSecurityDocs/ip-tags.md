@@ -4,9 +4,10 @@ description: Este artigo fornece instruções sobre como trabalhar com marcas de
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/16/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: beb18c3c79ba1c4da96982f93b290d324347303d
-ms.sourcegitcommit: a55a20b8613755068e52b5cf65ad333fddd29688
+ms.openlocfilehash: 9e2d40a61527bce0fb745ef6daf5b79796dfd1e5
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450982"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282028"
 ---
 #  <a name="IPtagsandRanges"></a> Trabalhando com marcações e intervalos de IP
 

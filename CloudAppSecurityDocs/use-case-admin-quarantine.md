@@ -7,6 +7,7 @@ ms.author: rkarlin
 manager: barbkess
 ms.date: 1/27/2019
 ms.topic: tutorial
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d964d84b952c8427900a5554da297645829d4f0
-ms.sourcegitcommit: a592f734a803493e9dd10e632922e68f9760b93e
+ms.openlocfilehash: e7ccd9d5b818361889755137f088ba833fec24c8
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56089875"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282470"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: Proteger arquivos com quarentena do administrador
 

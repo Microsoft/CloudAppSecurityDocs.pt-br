@@ -4,9 +4,10 @@ description: Este artigo fornece instruções para criar e trabalhar com políti
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/14/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c98b01083b964901d3ff2823fff35c9702ddcd17
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: b1ab9549e4bb4587137f8560b2ef997c7ee1218a
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347316"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281892"
 ---
 # <a name="activity-policies"></a>Políticas de atividade
 

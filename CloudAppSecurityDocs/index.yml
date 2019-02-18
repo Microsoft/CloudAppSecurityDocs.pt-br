@@ -1,17 +1,17 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: eec26fd736dcf40dd670432a9edbea73a8c6d143
-ms.sourcegitcommit: 3165a601e3e4dc2b5661273e052fa9c0a48bb8e5
+ms.openlocfilehash: a2120eeec08bd7be58d883c87a039ab2d7733a87
+ms.sourcegitcommit: a592f734a803493e9dd10e632922e68f9760b93e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479517"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56090963"
 documentType: LandingData
 title: Microsoft Cloud App Security
 metadata:
   title: Microsoft Cloud App Security
   description: Fornece segurança de nível corporativo para seus aplicativos na nuvem com o Microsoft Cloud App Security para maior visibilidade, controles abrangentes e proteção aprimorada contra problemas de segurança na nuvem.
   author: msmbaldwin
-  manager: mbaldwin
+  manager: barbkess
   ms.prod: cloud-app-security
   ms.tgt_pltfrm: na
   ms.devlang: na

@@ -4,9 +4,10 @@ description: Este artigo fornece instruções sobre como usar e personalizar a p
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b58ab490123824a0e0ba211cc1382a750985a0a0
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 537e6997eba03eb135b990c65afc9dda553d7c43
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086338"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282096"
 ---
 # <a name="working-with-the-risk-score"></a>Trabalhar com a pontuação de risco
 
