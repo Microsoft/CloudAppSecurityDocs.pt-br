@@ -1,0 +1,231 @@
+items:
+- name: Documentação do Microsoft Cloud App Security
+  href: index.yml
+- name: Visão geral
+  items:
+  - name: O que é o Microsoft Cloud App Security?
+    href: what-is-cloud-app-security.md
+  - name: Privacidade e segurança de dados do Cloud App Security
+    href: cas-compliance-trust.md
+  - name: Quais são as novidades?
+    href: release-notes.md
+  - name: Comparar
+    items:
+    - name: Office 365
+      href: editions-cloud-app-security-o365.md
+    - name: AD do Azure
+      href: editions-cloud-app-security-aad.md
+- name: Inícios rápidos
+  items:
+  - name: Introdução
+    href: getting-started-with-cloud-app-security.md
+  - name: Trabalhar com aplicativos descobertos
+    href: discovered-apps.md
+  expanded: true
+- name: Tutoriais
+  items:
+  - name: Descobrir e gerenciar a TI sombra
+    href: tutorial-shadow-it.md
+  - name: Bloquear downloads de informações confidenciais
+    href: use-case-proxy-block-session-aad.md
+  - name: Proteger seus arquivos com quarentena do administrador
+    href: use-case-admin-quarantine.md
+  - name: Aplicar os rótulos da Proteção de Informações do Azure automaticamente
+    href: use-case-information-protection.md
+- name: Conceitos
+  items:
+  - name: Proteger aplicativos com o Controle de Aplicativos de Acesso Condicional
+    href: proxy-intro-aad.md
+  - name: Trabalhar com o painel
+    href: daily-activities-to-protect-your-cloud-environment.md
+  - name: Trabalhar com a pontuação de risco
+    href: risk-score.md
+- name: Guias de instruções
+  items:
+  - name: Configuração básica
+    href: general-setup.md
+    items:
+    - name: Requisitos de rede
+      href: network-requirements.md
+    - name: Gerenciar administradores
+      href: manage-admins.md
+      items:
+      - name: Configurações do administrador
+        href: admin-settings.md
+    - name: Configurações de email
+      href: mail-settings.md
+    - name: Grupos de usuários
+      href: user-groups.md
+    - name: Implantação com escopo
+      href: scoped-deployment.md
+    - name: Intervalos e marcas de IP
+      href: ip-tags.md
+  - name: Configurar o Cloud Discovery
+    href: set-up-cloud-discovery.md
+    items:
+    - name: Integrar com o Windows Defender ATP
+      href: wdatp-integration.md
+    - name: Integrar com o Zscaler
+      href: zscaler-integration.md
+    - name: Criar instantâneo de relatórios do Cloud Discovery
+      href: create-snapshot-cloud-discovery-reports.md
+    - name: Configurar upload de log automático para relatórios contínuos
+      href: discovery-docker.md
+      items:
+      - name: Docker no Windows
+        href: discovery-docker-windows.md
+      - name: Docker no Ubuntu e no RHEL local
+        href: discovery-docker-ubuntu.md
+      - name: Docker no Ubuntu no Azure
+        href: discovery-docker-ubuntu-azure.md
+      - name: Solução de problemas de implantação do Docker do Cloud Discovery
+        href: troubleshoot-docker.md
+      - name: Coletor de logs por trás de um proxy
+        href: log-collector-proxy.md
+      - name: Usando uma solução de virtualização – Preterido
+        href: configure-automatic-log-upload-for-continuous-reports.md
+    - name: Usar o analisador de log personalizado
+      href: custom-log-parser.md
+    - name: Aprimoramento do Cloud Discovery
+      href: cloud-discovery-aad-enrichment.md
+    - name: Anonimizar dados do Cloud Discovery
+      href: cloud-discovery-anonymizer.md
+  - name: Conectar aplicativos
+    href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+    items:
+    - name: Conectar o Azure
+      href: connect-azure-to-microsoft-cloud-app-security.md
+    - name: Conectar a AWS
+      href: connect-aws-to-microsoft-cloud-app-security.md
+    - name: Conectar o Box
+      href: connect-box-to-microsoft-cloud-app-security.md
+    - name: Conectar o Dropbox
+      href: connect-dropbox-to-microsoft-cloud-app-security.md
+    - name: Conectar o G Suite
+      href: connect-google-apps-to-microsoft-cloud-app-security.md
+    - name: Conectar o Office 365
+      href: connect-office-365-to-microsoft-cloud-app-security.md
+    - name: Conectar o Okta
+      href: connect-okta-to-microsoft-cloud-app-security.md
+    - name: Conectar o Salesforce
+      href: connect-salesforce-to-microsoft-cloud-app-security.md
+    - name: Conectar o ServiceNow
+      href: connect-servicenow-to-microsoft-cloud-app-security.md
+  - name: Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD
+    href: proxy-deployment-aad.md
+  - name: Descobrir
+    items:
+    - name: Adicionar aplicativos personalizados ao Cloud Discovery
+      href: cloud-discovery-custom-apps.md
+    - name: Consultas e filtros de aplicativos descobertos
+      href: discovered-app-queries.md
+  - name: Investigação
+    href: investigate.md
+    items:
+    - name: Atividades
+      href: activity-filters.md
+      items:
+      - name: Consultas e filtros de atividades
+        href: activity-filters-queries.md
+    - name: Arquivos
+      href: file-filters.md
+      items:
+      - name: Gerar relatórios de gerenciamento de dados
+        href: built-in-reports.md
+    - name: Contas
+      href: accounts.md
+    - name: Gerenciar aplicativos OAuth
+      href: manage-app-permissions.md
+    - name: Configuração de segurança
+      href: security-config.md
+    - name: Monitorar aplicativos
+      href: monitor-alerts.md
+      items:
+      - name: Gerenciar alertas
+        href: managing-alerts.md
+  - name: Control
+    href: control.md
+    items:
+    - name: Controlar aplicativos de nuvem com políticas
+      href: control-cloud-apps-with-policies.md
+      items:
+      - name: Políticas de Cloud Discovery
+        href: cloud-discovery-policies.md
+        items:
+        - name: Política de detecção de anomalias do Cloud Discovery
+          href: cloud-discovery-anomaly-detection-policy.md
+      - name: Políticas de atividade
+        href: user-activity-policies.md
+      - name: Políticas de detecção de anomalias
+        href: anomaly-detection-policy.md
+      - name: Políticas OAuth
+        href: app-permission-policy.md
+      - name: Políticas de arquivos
+        href: working-with-the-regex-engine.md
+        items:
+        - name: Inspeção de conteúdo
+          href: content-inspection.md
+          items:
+          - name: Inspeção de conteúdo interna
+            href: content-inspection-built-in.md
+          - name: Integração do Serviço de Classificação de Dados
+            href: dcs-inspection.md
+        - name: Trabalhando com o mecanismo RegEx
+      - name: Políticas de controle de aplicativo de acesso condicional
+        items:
+        - name: Políticas de acesso
+          href: access-policy-aad.md
+        - name: Políticas de sessão
+          href: session-policy-aad.md
+      - name: Referência de modelo de política
+        href: policy-template-reference.md
+    - name: Controlar aplicativos conectados
+      href: governance-actions.md
+    - name: Controlar aplicativos descobertos
+      href: governance-discovery.md
+    - name: Integrar usando extensões de segurança
+      items:
+      - name: Integração da Proteção de Informações do Azure
+        href: azip-integration.md
+      - name: Integração ao SIEM
+        href: siem.md
+      - name: Integração de DLP externa
+        href: icap-stunnel.md
+      - name: Integrar-se com o Microsoft Flow
+        href: flow-integration.md
+      - name: Integrar-se com o iboss
+        href: iboss-integration.md
+      - name: Tokens de API
+        href: api-tokens.md
+- name: Referência
+  items:
+  - name: Solucionando problemas de Cloud Discovery
+    href: troubleshooting-cloud-discovery.md
+  - name: Solução de problemas de conectores de API usando mensagens de erro
+    href: troubleshooting-api-connectors-using-error-messages.md
+  - name: Solução de problemas de inspeção de conteúdo
+    href: troubleshooting-content-inspection.md
+  - name: Solução de problemas de integração de SIEM
+    href: troubleshooting-siem.md
+  - name: Solução de problemas de implantação do Docker do Cloud Discovery
+    href: troubleshoot-docker.md
+  - name: Políticas da solução de problemas
+    href: troubleshoot-policies.md
+- name: Recursos
+  items:
+  - name: Arquivo de nota de versão
+    href: release-note-archive.md
+  - name: Suporte e solução de problemas
+    href: support-and-ts.md
+  - name: Portal de suporte Premier
+    href: https://premier.microsoft.com/
+  - name: Portal do Cloud App Security
+    href: https://portal.cloudappsecurity.com
+  - name: Como comprar o Cloud App Security
+    href: https://www.microsoft.com/cloud-platform/cloud-app-security
+ms.openlocfilehash: 1e60193523c6b8c9b456f89c18d77a5de32a3352
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014823"
