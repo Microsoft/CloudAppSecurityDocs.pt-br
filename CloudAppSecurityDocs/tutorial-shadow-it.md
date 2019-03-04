@@ -14,17 +14,16 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 748d4daa5f3ca47b652888ee382bc22eff0f340c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281758"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014825"
 ---
-*Aplica-se a: Microsoft Cloud App Security*
-
-
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar a TI sombra na sua rede
+
+*Aplica-se a: Microsoft Cloud App Security*
 
 Quando é perguntado aos administradores de TI quantos aplicativos de nuvem eles acham que seus funcionários usam, em média eles dizem 30 ou 40, quando na realidade, a média é de mais de mil aplicativos separados usados pelos funcionários da organização. A TI sombra ajuda você a identificar quais aplicativos estão sendo usados e qual é seu nível de risco. 80% dos funcionários usam aplicativos não sancionados que ninguém revisou e podem não estar em conformidade com as políticas de segurança e conformidade da empresa. E como os funcionários são capazes de acessar recursos e aplicativos da empresa de fora da rede corporativa, não é mais suficiente ter políticas e regras nos firewalls. 
 
