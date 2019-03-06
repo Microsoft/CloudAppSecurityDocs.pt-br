@@ -15,12 +15,12 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 06ac9ecf135a2593ef07fad6e725e4a8c292e7a3
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 3e4c3e002bba503f204ddb2e474db40a93dc6ad1
+ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281213"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57254359"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 

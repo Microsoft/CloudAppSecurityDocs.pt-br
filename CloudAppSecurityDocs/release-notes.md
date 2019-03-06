@@ -6,7 +6,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: barbkess
 ms.date: 2/17/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -15,18 +15,30 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 554983cb38a566c96f8232a614f44d0505a70c75
-ms.sourcegitcommit: fba10a43f04823e4de5050dc94328bf76940656d
+ms.openlocfilehash: 75beec72a8d182e08334d51fc5654da3fc1cea32
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444048"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014857"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
+Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security. As atualizações mais antigas estão disponíveis no [Arquivo de notas sobre a versão](release-note-archive.md).
+
+
+## <a name="cloud-app-security-release-144"></a>Versão 144 do Cloud App Security
+
+Lançada em 24 de fevereiro de 2019
+
+- **Implantação de escopo para instâncias do aplicativo** A implantação de escopo para instâncias do aplicativo agora pode ser configurada no nível da instância do aplicativo, permitindo maior granularidade e controle.
+- **Aprimoramentos de funções** 
+   - As funções do Office 365 de operador de segurança e administrador de dados agora têm suporte no Cloud App Security. A função de administrador de dados permite que os usuários gerenciem todo conteúdo relacionado a arquivos, além de exibir os relatórios do Cloud Discovery. Os operadores de segurança têm permissão para gerenciar alertas e exibir a configuração de política.
+   - A função de leitor de segurança agora tem a capacidade de configurar o agente SIEM, permitindo melhor escopo de permissão.
+- **Suporte do Microsoft Flow** O Cloud App Security agora monitora as atividades dos usuários no Microsoft Flow. As atividades com suporte são as atividades relatadas pelo Flow para o log de auditoria do Office 365.
+- **Agrupamento de entidade de alerta** A página Alerta agora agrupa entidades relacionadas que foram envolvidas no alerta para ajudar em sua investigação.
 
 ## <a name="cloud-app-security-release-143"></a>Versão 143 do Cloud App Security
 
