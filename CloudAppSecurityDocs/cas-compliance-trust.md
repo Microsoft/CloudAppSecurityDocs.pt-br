@@ -5,8 +5,8 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 03/01/2019
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -15,12 +15,12 @@ ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f20816baddef7ac6b4968e3ba161ef0f5eaee1b0
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 26a199d0e92c48258b49ef69ddf0473584c54287
+ms.sourcegitcommit: 0b913d3a91e236d60ac8aede566cfd9a4f757abd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281467"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305874"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Privacidade e segurança de dados do Microsoft Cloud App Security
 
