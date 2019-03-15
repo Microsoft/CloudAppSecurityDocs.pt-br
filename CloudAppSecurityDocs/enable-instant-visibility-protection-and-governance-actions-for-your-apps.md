@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 665deae5a23a81113b9d9c091fec14230e904b55
-ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
-ms.translationtype: HT
+ms.openlocfilehash: 1c0c01b0de154528413f05caed780b7995420ba1
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57254358"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830465"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos 
 
@@ -33,6 +33,9 @@ O Microsoft Cloud App Security aproveita as APIs fornecidas pelo provedor de nuv
 ## <a name="multi-instance-support"></a>Suporte para várias instâncias
 
 O Cloud App Security agora dá suporte a várias instâncias do mesmo aplicativo conectado. Por exemplo, caso você tenha mais de uma instância do Salesforce (uma para venda, uma para marketing), poderá conectar as duas ao Cloud App Security. Você pode gerenciar as diferentes instâncias no mesmo console para criar políticas granulares e uma investigação mais profunda. Esse suporte se aplica somente a aplicativos conectados por API, e não a aplicativos descobertos na nuvem ou aplicativos conectados por proxy.
+
+> [!NOTE]
+> Não há suporte para várias instâncias para o Office 365 e Azure.
 
 ## <a name="how-it-works"></a>Como funciona  
 O Cloud App Security é implantado com privilégios de administrador do sistema para permitir o acesso completo a todos os objetos em seu ambiente.  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/6/2019
+ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2a0d2f550deb598fc565210bf0d1addf7b9cfad9
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 51d9c16f4a5946568bfbd13d364347bc3b2a81a2
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281008"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830397"
 ---
 # <a name="file-policies"></a>Políticas de arquivos  
 
@@ -108,7 +108,19 @@ Cada política é composta pelas seguintes partes:
 
 - **Extensões** – a inspeção de conteúdo pode ser executada por meio de mecanismos de terceiros para funcionalidades aprimoradas de DLP ou antimalware.  
 
-  
+## <a name="file-queries"></a>Consultas de arquivo
+
+Para simplificar ainda mais a investigação, agora você pode criar consultas personalizadas e salvá-las para uso posterior. 
+
+1. No **arquivo** página, use os filtros conforme descrito acima para fazer drill down em seus aplicativos conforme necessário. 
+
+2. Após concluir a criação da sua consulta, clique no botão **Salvar como** no canto superior direito dos filtros. 
+
+3. No pop-up **Salvar consulta**, nomeie a consulta.
+
+4. Para usar essa consulta novamente no futuro, em **Consultas**, role para baixo até **Consultas salvas** e selecione a consulta. 
+
+ 
 ## <a name="next-steps"></a>Próximas etapas 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
