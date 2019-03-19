@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a4598db6d770ee7b453df532239aa2452221fcbc
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 8ba13d53e479c55ec00c057f6a7b01c70c80af2f
+ms.sourcegitcommit: 57bad4dc9b28326c93ee480d308d52ea23c42089
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282181"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58163561"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -64,10 +64,10 @@ Além disso, os itens a seguir devem estar na lista de permissões, dependendo d
 > 
 > |Data center|Endereços IP|Nome DNS|
 > |----|----|----|
-> |EUA|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
 > |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br></br>|
 > |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br></br>|
-> |UE|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
+> |EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
 > |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|*.eu2.portal.cloudappsecurity.com|
 
 
@@ -84,14 +84,14 @@ Para habilitar a conexão do Cloud App Security ao seu SIEM, adicione a **porta 
 > 
 > |Data center|Endereços IP|  
 > |----|----|
-> |EUA|13.91.91.243|
+> |US1|13.91.91.243|
 > |US2|52.184.165.82|
 > |US3|40.90.218.198<br>40.90.218.196|
-> |UE|52.174.56.180|
+> |EU1|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
 
 > [!NOTE]
-> Se você não especificar um proxy ao configurar o agente SIEM do Cloud App Security, você precisará permitir conexões http para http://ocsp.msocsp.com/ na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
+> Se você não especificar um proxy ao configurar o agente SIEM do Cloud App Security, você precisa permitir conexões de http para http://ocsp.msocsp.com/ e ocsp.digicert.com na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 
 ## <a name="app-connector"></a>Conector de aplicativo
 
@@ -107,10 +107,10 @@ Para se conectar a aplicativos de terceiros, habilite o Cloud App Security para 
 > 
 > |Data center|Endereços IP|  
 > |----|----|
-> |EUA|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 > |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |UE|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+> |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 > |EU2|40.81.156.155<br>40.81.156.153|
 
 
@@ -133,10 +133,10 @@ Para se conectar a aplicativos de terceiros e integrar soluções de DLP externa
 > 
 > |Data center|Endereços IP|  
 > |----|----|
-> |EUA|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 > |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |UE|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+> |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 > |EU2|40.81.156.155<br>40.81.156.153|
 
 ## <a name="mail-server"></a>Servidor de emails
@@ -168,16 +168,16 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 
   | Data center |                        URL                        |
   |-------------|---------------------------------------------------|
-  |     EUA      |   https://adaprodconsole.blob.core.windows.net/   |
+  |     US1      |   https://adaprodconsole.blob.core.windows.net/   |
   |     US2     | https://prod03use2console1.blob.core.windows.net/ |
   |     US3     |https://prod5usw2console1.blob.core.windows.net/   |
-  |     UE      | https://prod02euwconsole1.blob.core.windows.net/  |
+  |     EU1      | https://prod02euwconsole1.blob.core.windows.net/  |
   |     EU2     |https://prod4uksconsole1.blob.core.windows.net/    |
 
 > [!NOTE]
 > - Se o firewall exigir uma lista de acesso de endereço IP estático e não for compatível com a lista de permissões baseada em URL, permita que o coletor de logs inicie o tráfego de saída para os [Intervalos de IP do datacenter do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) na porta 443.
 >- Permita que o coletor de logs inicie o tráfego de saída no portal do Cloud App Security.
->- Se não especificar um proxy ao configurar o coletor de logs, você precisará permitir conexões http para http://ocsp.msocsp.com/ na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
+>- Se você não especificar um proxy ao configurar o coletor de log, você precisa permitir conexões de http para http://ocsp.msocsp.com/ e ocsp.digicert.com na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 
 ## <a name="next-steps"></a>Próximas etapas
  

@@ -15,18 +15,20 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10b5b4d4402230aef2f9538b6e10a312248e430f
-ms.sourcegitcommit: e5c09b9f9da0354e6c25e4d325dbd1457c94e5d4
+ms.openlocfilehash: b8d55cfc5034048a3dbd4833f7d663f7d1f8dbce
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57346911"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830499"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security. As atualizações mais antigas estão disponíveis no [Arquivo de notas sobre a versão](release-note-archive.md).
+Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
+
+RSS feed: receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
 
 
 ## <a name="cloud-app-security-release-143"></a>Versão 143 do Cloud App Security
