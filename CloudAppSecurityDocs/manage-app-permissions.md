@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/3/2019
+ms.date: 3/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ffb0a07daba385f000094273cb0afd9c85eda1f8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: bba266d0e51748d3aab1e4d2e4a77b7e35e79998
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281637"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476613"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
@@ -88,7 +88,7 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 
 ## <a name="revoke-app-and-notify-user"></a>Revogar aplicativo e notificar o usuário
 
-Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou notificar o usuário de que ele deve alterar a permissão. 
+Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou notificar o usuário de que ele deve alterar a permissão. Quando você revoga a permissão, ele remove todas as permissões que foram concedidas ao aplicativo em "Aplicativos corporativos" no Azure AD.
 
 1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *Você autorizou o aplicativo a acessar sua conta do G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere conceder ou revogar as permissões que você deu a esse aplicativo em sua conta G Suite. Para revogar o acesso ao aplicativo, acesse: https://security.google.com/settings/security/permissions?hl=en&pli=1 Selecione o aplicativo e clique em 'Revogar acesso' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
 2. Você também pode revogar permissões para usar o aplicativo para o usuário. Clique no ícone no final da linha de aplicativo na tabela e selecionando **Revogar aplicativo**. 

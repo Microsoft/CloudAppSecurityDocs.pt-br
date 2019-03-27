@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,23 +15,25 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 233df1cf7f01266bbca6c122a6908811e4c6649b
-ms.sourcegitcommit: 57bad4dc9b28326c93ee480d308d52ea23c42089
+ms.openlocfilehash: a4d91f196cb8d2bab51a2688c07f0654317765f3
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58163864"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476443"
 ---
 # <a name="investigate-activities-using-the-api"></a>Investigar atividades usando a API
 
 *Aplica-se a: Microsoft Cloud App Security*
+
+Microsoft Cloud App Security fornece uma API REST com suporte completo para que você possa interagir programaticamente com o serviço.
 
 Você pode usar as APIs do Microsoft Cloud App Security para investigar as atividades executadas pelos usuários em aplicativos de nuvem conectados. 
 
 O modo de API de atividades do Cloud App Security é otimizado para verificação e a recuperação de grandes quantidades de dados (mais de 5.000 atividades). A API de verificação consultas os dados da atividade repetidamente até que todos os resultados foram verificados. 
 
 > [!NOTE] 
-> Para grandes quantidades de atividades e implantações em grande escala, podemos recommendedthat você usar o [agente SIEM](siem.md) para verificação de atividade.
+> Para grandes quantidades de atividades e implantações em grande escala, é recomendável que você use o [agente SIEM](siem.md) para verificação de atividade.
 
 **Para usar a API de verificação de atividade:**
 
@@ -53,7 +55,7 @@ O modo de API de atividades do Cloud App Security é otimizado para verificaçã
 - “hasNext”: Valor booliano. Indica se a outra iteração nos dados é necessária.
 - “nextQueryFilters”: Se for necessária outra iteração, ele contém a consulta consecutiva do JSON para ser executado. Use isso como o parâmetro "filtros" na próxima solicitação.
 
-
+O exemplo de Python a seguir obtém todas as atividades do dia anterior do Exchange Online.
 
       import requests
       import json

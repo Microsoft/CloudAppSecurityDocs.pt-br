@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d17d646479e9686c2ebbeb3c4675cf8dff2ee1d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: cc861a9b9c655039bc9fa87298d553a7bf9a9294
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281654"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476664"
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -92,7 +92,7 @@ Depois de habilitar a Proteção de Informações do Azure, os arquivos com rót
 
 
 > [!NOTE] 
-> A verificação automática não verifica arquivos existentes até que eles sejam modificados novamente. Para verificar rótulos de classificação em arquivos existentes da Proteção de Informações do Azure, você deve ter pelo menos um **Política de arquivo para inspeção de conteúdo**. Se não tiver nenhuma, crie uma nova **Política de arquivo**, exclua todos os filtros predefinidos, verifique a opção **Inspeção de conteúdo**. Em seguida, em **Inspeção de conteúdo**, clique em **Incluir arquivos que correspondem a uma expressão predefinida**, selecione qualquer valor predefinido e salve a política. Isso permite a inspeção do conteúdo, que detecta automaticamente os rótulos de classificação da Proteção de Informações do Azure.
+> A verificação automática não verifica arquivos existentes até que eles sejam modificados novamente. Para verificar arquivos existentes para rótulos de classificação da proteção de informações do Azure, você deve ter pelo menos um **política de arquivo** que inclui a inspeção de conteúdo. Se você não tem nenhum, crie uma nova **política de arquivo**, exclua todos os filtros predefinidos, em **método de inspeção** selecionar **DLP interno**. No **inspeção de conteúdo** campo, selecione **incluir arquivos que correspondem a uma expressão predefinida** e selecione qualquer valor predefinido e salve a política. Isso permite a inspeção do conteúdo, que detecta automaticamente os rótulos de classificação da Proteção de Informações do Azure.
 
 #### <a name="set-internal-and-external-tags"></a>Definir marcações internas e externas
 Por padrão, o Cloud App Security verifica rótulos de classificação que foram definidos pela organização, bem como rótulos externos que foram definidos por outras organizações. 
@@ -137,7 +137,7 @@ Siga estas instruções para criar a política de arquivo:
    ![Aplicar rótulo](./media/aip-gov-action.png)
 
 > [!NOTE]
-> A capacidade de aplicar automaticamente um rótulo de Proteção de Informações do Azure por meio da política de arquivo é um recurso poderoso. Para proteger os clientes da aplicação por engano de um rótulo a uma grande quantidade de arquivos, como precaução de segurança há um limite diário de 100 ações **Aplicar rótulo** por aplicativo, por locatário. Depois que o limite diário for atingido, a ação de aplicar rótulo pausa temporariamente e continua automaticamente no próximo dia (após 12h UTC). Para aumentar o limite para o seu locatário, [entre em contato com o suporte do Cloud App Security](mailto:cascoresupport@microsoft.com).
+> A capacidade de aplicar automaticamente um rótulo de Proteção de Informações do Azure por meio de uma política de arquivos é um recurso poderoso. Para proteger os clientes de aplicarem por engano um rótulo a um grande número de arquivos, como precaução de segurança, há um limite diário de 100 ações **Aplicar rótulo** por aplicativo, por locatário. Depois que o limite diário for atingido, a ação "Aplicar rótulo" será pausada temporariamente e continuará automaticamente no dia seguinte (após as 00:00 UTC). Para aumentar o limite para o seu locatário, [contate o suporte do Cloud App Security](mailto:cascoresupport@microsoft.com).
 
 ### <a name="control-file-exposure"></a>Controlar a exposição de arquivo
 
