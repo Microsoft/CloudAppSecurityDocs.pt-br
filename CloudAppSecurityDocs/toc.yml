@@ -67,6 +67,8 @@ items:
       href: wdatp-integration.md
     - name: Integrar com o Zscaler
       href: zscaler-integration.md
+    - name: Integrar-se com o iboss
+      href: iboss-integration.md
     - name: Criar instantâneo de relatórios do Cloud Discovery
       href: create-snapshot-cloud-discovery-reports.md
     - name: Configurar upload de log automático para relatórios contínuos
@@ -161,7 +163,7 @@ items:
       - name: Políticas OAuth
         href: app-permission-policy.md
       - name: Políticas de arquivos
-        href: working-with-the-regex-engine.md
+        href: data-protection-policies.md
         items:
         - name: Inspeção de conteúdo
           href: content-inspection.md
@@ -170,7 +172,8 @@ items:
             href: content-inspection-built-in.md
           - name: Integração do Serviço de Classificação de Dados
             href: dcs-inspection.md
-        - name: Trabalhando com o mecanismo RegEx
+          - name: Trabalhando com o mecanismo RegEx
+            href: working-with-the-regex-engine.md
       - name: Políticas de controle de aplicativo de acesso condicional
         items:
         - name: Políticas de acesso
@@ -183,20 +186,22 @@ items:
       href: governance-actions.md
     - name: Controlar aplicativos descobertos
       href: governance-discovery.md
-    - name: Integrar usando extensões de segurança
+    - name: Integração da Proteção de Informações do Azure
+      href: azip-integration.md
+    - name: Integrate with extrnal solutions (Integrar com soluções externas)
       items:
-      - name: Integração da Proteção de Informações do Azure
-        href: azip-integration.md
       - name: Integração ao SIEM
         href: siem.md
       - name: Integração de DLP externa
         href: icap-stunnel.md
-      - name: Integrar-se com o Microsoft Flow
-        href: flow-integration.md
-      - name: Integrar-se com o iboss
-        href: iboss-integration.md
-      - name: Tokens de API
+    - name: Automate processes and workflows (Automatizar processos e fluxos de trabalho)
+      items:
+      - name: Use the REST API (Usar a API REST)
         href: api-tokens.md
+      - name: Investigate activities with APIs (Investigar atividades com APIs)
+        href: investigate-activities-api.md
+      - name: Use Microsoft Flow (Usar o Microsoft Flow)
+        href: flow-integration.md
 - name: Referência
   items:
   - name: Solucionando problemas de Cloud Discovery
@@ -215,6 +220,8 @@ items:
   items:
   - name: Arquivo de nota de versão
     href: release-note-archive.md
+  - name: Licensing datasheet (Licenciamento de folha de dados)
+    href: https://aka.ms/mcaslicensing
   - name: Suporte e solução de problemas
     href: support-and-ts.md
   - name: Portal de suporte Premier
@@ -223,9 +230,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Como comprar o Cloud App Security
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: 1e60193523c6b8c9b456f89c18d77a5de32a3352
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: 7bda89d1d13dd10ab2c9ea981edf16959437bb2f
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014823"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476528"
