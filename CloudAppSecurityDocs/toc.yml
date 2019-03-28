@@ -15,7 +15,7 @@ items:
       href: editions-cloud-app-security-o365.md
     - name: AD do Azure
       href: editions-cloud-app-security-aad.md
-- name: Inícios rápidos
+- name: Guias de início rápido
   items:
   - name: Introdução
     href: getting-started-with-cloud-app-security.md
@@ -230,9 +230,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Como comprar o Cloud App Security
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: 7bda89d1d13dd10ab2c9ea981edf16959437bb2f
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: ffa2bbb2a6efbc829fb68c7eee8a1b1eb1db4bef
+ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476528"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543596"
