@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85a9071abc625e580e27b2a01220ac76104bda45
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 5c3cd5a1583260fa06a5f00805a7695cda8d44eb
+ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830448"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543613"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas do Microsoft Cloud App Security
 
@@ -68,7 +68,7 @@ Selecione **solicitação de suporte** para criar uma nova solicitação de supo
 
 5.  Verifique se as informações estão corretas e escolha **Criar** para enviar a solicitação de suporte.
 
-**Observação:** Se você tiver uma pergunta de cobrança ou assinatura, você pode abrir uma ocorrência para obter suporte por meio de [Centro de administração do Microsoft 365](https://portal.office.com/Support/SupportEntry.aspx).
+**Observação:** Se você tiver uma pergunta de cobrança ou assinatura, você pode abrir uma ocorrência para obter suporte por meio de [Centro de administração do Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### <a name="view-open-support-requests"></a>Exibir solicitações de suporte abertas
 

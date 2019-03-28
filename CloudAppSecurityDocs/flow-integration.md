@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 337582af366aad63589f20362b2afb20ec80f11d
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 497272a2072cf61349c1b0c9ccf49644b7f91665
+ms.sourcegitcommit: eba8c158d34198363a8da02b3cb6258df10f7673
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476545"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543117"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>Integrar ao Flow para obter a automação de alerta personalizada – Versão Prévia
 
@@ -35,7 +35,7 @@ O Cloud App Security integra-se ao [Microsoft Flow](https://docs.microsoft.com/f
 
 Por conta própria, o Cloud App Security fornece opções predefinidas de governança, como suspender o usuário ou tornar o arquivo privado durante a definição de políticas. Ao criar um guia estratégico no Microsoft Flow usando o conector do Cloud App Security, você pode criar fluxos de trabalho para habilitar as opções de governança personalizadas para suas políticas. Depois que o guia estratégico é criado no Flow, basta associá-lo a uma política no Cloud App Security para enviar alertas ao Flow. O Microsoft Flow oferece vários conectores e condições para criar um fluxo de trabalho personalizado para sua organização. 
 
-O [conector do Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/#/providers/microsoft.powerapps/apis/shared_cloudappsecurity/apioperations/mcas_on_alert_generated) no fluxo dá suporte a automatizada de gatilho e ações. O Flow é disparado automaticamente quando o Cloud App Security gera um alerta. As ações incluem a alteração do status de alerta no Cloud App Security. 
+O [conector do Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/) no fluxo dá suporte a automatizada de gatilho e ações. O Flow é disparado automaticamente quando o Cloud App Security gera um alerta. As ações incluem a alteração do status de alerta no Cloud App Security. 
 
 ## <a name="how-to-create-playbooks-with-microsoft-flow"></a>Como criar guias estratégicos com o Microsoft Flow
 
@@ -69,4 +69,3 @@ O [conector do Cloud App Security](https://docs.microsoft.com/connectors/cloudap
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  

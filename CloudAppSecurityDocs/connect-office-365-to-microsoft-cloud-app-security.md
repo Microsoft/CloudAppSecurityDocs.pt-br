@@ -15,12 +15,12 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fb693bfc58d74a64dd178e961f8d42ffd5ce1273
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: f432393c6e60a360f2acae6c35cc79a239469b41
+ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830363"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543630"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar o Office 365 ao Microsoft Cloud App Security
 
@@ -47,7 +47,7 @@ O Cloud App Security oferece suporte aos seguintes aplicativos do Office 365:
   
 > [!NOTE]
 >- Você deve ter pelo menos uma licença do Office 365 atribuída para conectar o Office 365 ao Cloud App Security.
->- Para habilitar o monitoramento de atividades do Office 365 no Cloud App Security, será necessário ativar a auditoria na [Centro de conformidade e segurança do Office]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
+>- Para habilitar o monitoramento de atividades do Office 365 no Cloud App Security, será necessário ativar a auditoria na [Centro de conformidade e segurança do Office](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
 >-  O log de auditoria de administrador do Exchange, que é habilitado por padrão no Office 365, registra um evento no log de auditoria do Office 365 quando um administrador (ou um usuário que tenha recebido privilégios administrativos) faz uma alteração em sua organização do Exchange Online. As alterações feitas usando o centro de administração do Exchange ou executando um cmdlet do Windows PowerShell são registradas no log de auditoria de administrador do Exchange. Para ver informações detalhadas sobre o log de auditoria de administrador do Exchange, consulte [Log de auditoria de administrador](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
 >- O log de auditoria do Exchange Mailbox deve estar ativado para cada caixa de correio do usuário para que as atividades do usuário no Exchange Online sejam registrada em log, consulte [Atividades do Exchange Mailbox](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- Se os aplicativos do Office estiverem habilitados, os grupos que fazem parte do Office 365 também serão importados para o Cloud App Security nos aplicativos do Office; por exemplo, se o SharePoint estiver habilitado, os Grupos do Office 365 também serão importados como grupos do SharePoint.
