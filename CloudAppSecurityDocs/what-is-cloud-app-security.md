@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a8d632a2fb78f3fa9cec36fb752e08843e3a97a
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 12e1ea59e4d8f99b57f6ba494430aef6082d4204
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281705"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476698"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Visão geral do Microsoft Cloud App Security
 
@@ -32,6 +32,8 @@ ms.locfileid: "56281705"
 A migração para a nuvem aumenta a flexibilidade dos funcionários e reduz os custos de TI. No entanto, ela também apresenta novos desafios e complexidades para manter sua organização segura. Para obter todos os benefícios dos aplicativos de nuvem, uma equipe de TI precisa encontrar o equilíbrio ideal entre dar suporte ao acesso e manter o controle para proteger dados críticos.  
 
 O Cloud App Security é um componente crítico da pilha do Microsoft Cloud Security. É uma solução abrangente que pode ajudar sua organização durante a transição, para que você aproveite ao máximo a promessa dos aplicativos na nuvem, enquanto o mantém no controle com maior visibilidade das atividades. Ela também ajuda a aumentar a proteção de dados críticos em aplicativos de nuvem. Com ferramentas que ajudam a descobrir a TI Invisível, avaliar os riscos, impor políticas, investigar atividades e parar ameaças, sua organização pode migrar para a nuvem com segurança enquanto mantém o controle de dados críticos. 
+
+Para obter informações sobre o licenciamento, confira a [Folha de dados de licenciamento do Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
 ## <a name="the-cloud-app-security-framework"></a>A estrutura do Cloud App Security  
 
