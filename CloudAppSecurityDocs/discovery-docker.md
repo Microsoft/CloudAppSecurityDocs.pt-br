@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3f4971f72ddc81b932df5ed992ce706e5a64b502
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 99cca2a7a5fbc8bf57eb7a211bd32a28b102a78a
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282674"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233489"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
@@ -41,11 +41,11 @@ Antes de configurar a coleta automática de arquivos de log, verifique se o log 
 
 ## <a name="deployment-modes"></a>Modos de implantação
 
-O Coletor de logs dá suporte a dois modos de implantação:
+O coletor de log dá suporte a dois modos de implantação:
 
 -   **Contêiner**: Executado como uma imagem do Docker no [Ubuntu local](discovery-docker-ubuntu.md), no [Ubuntu no Azure](discovery-docker-ubuntu-azure.md) ou no [RHEL local](discovery-docker-ubuntu.md). 
 
--   **Solução de virtualização**:  [Executado como uma imagem no hipervisor do Hyper-V ou do VMware](configure-automatic-log-upload-for-continuous-reports.md)
+-   **Solução de virtualização**:  É executado como uma imagem no hipervisor Hyper-V ou VMware (preterido)
 
 
 

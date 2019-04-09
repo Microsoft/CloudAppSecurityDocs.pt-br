@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9c819aa1e9b71007a158a388272d1f37cf9412df
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4381c872d9e17294e1a5b8767243f9afc6e797b0
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281331"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233557"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 
@@ -91,7 +91,7 @@ Portanto, esses atributos não serão exibidos nos dados do Cloud Discovery para
 
 
 Para gerar com êxito um relatório do Cloud Discovery, seus logs de tráfego devem atender às seguintes condições:
-1. A fonte de dados tem suporte (consulte a lista abaixo).
+1. [Há suporte para a fonte de dados](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. O formato de log corresponde ao formato padrão esperado (formato verificado após o upload da Ferramenta de log).
 3. Os eventos têm menos de 90 dias.
 4. O arquivo de log é válido e inclui informações de tráfego de saída.

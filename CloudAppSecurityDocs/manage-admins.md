@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 90cc081f33b30ac3b4774c7292752d1c27dddd0c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281212"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233540"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -62,7 +62,7 @@ Por padrão, as seguintes funções de administrador do Office 365 e do [Azure A
   - Extensões de segurança – permissões somente para o token de API com permissões de usuário
   - Ações de governança – somente para a instância/o aplicativo específico 
 
-- **Administrador de grupo:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao grupo específico selecionado aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários:
+- **Administrador de grupo de usuários:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao grupo específico selecionado aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários:
 
   - Página de atividades – somente atividades relacionadas aos usuários do grupo
   - Alertas – somente alertas relacionados aos usuários do grupo
@@ -75,7 +75,7 @@ Por padrão, as seguintes funções de administrador do Office 365 e do [Azure A
   - Extensões de segurança – permissões somente para o token de API com usuários do grupo
   - Ações de governança – somente para os usuários específicos do grupo
 
-- **Administrador de Descoberta Global:**  Tem permissão para exibir e editar todos os dados e configurações do Cloud Discovery. O administrador de Descoberta Global tem acesso da seguinte maneira:
+- **Administrador global de descoberta de nuvem:**  Tem permissão para exibir e editar todos os dados e configurações do Cloud Discovery. O administrador de Descoberta Global tem acesso da seguinte maneira:
 
   - Configurações – 
      -  Configurações do sistema – somente exibição
@@ -91,6 +91,11 @@ Por padrão, as seguintes funções de administrador do Office 365 e do [Azure A
   - Extensões de segurança – nenhuma permissão
   - Ações de governança – apenas ações relacionadas ao Cloud Discovery
 
+- **Administrador de relatório de descoberta de nuvem:** Tem permissão para exibir todos os dados no Microsoft Cloud App Security que selecionou lida exclusivamente com os relatórios específicos do Cloud Discovery. Por exemplo, você pode conceder a alguém permissão de administrador para o relatório contínuo do Windows Defender ATP. O administrador de descoberta verá apenas os dados de descoberta de nuvem que relaciona a essa fonte de dados e o catálogo de aplicativos.
+Este administrador não terá acesso para o **atividades** ou **arquivos** páginas e acesso limitado a políticas.
+
+- **Leitor global:** Tem acesso somente leitura completa a todos os aspectos do Microsoft Cloud App Security. Não é possível alterar as configurações ou tomar qualquer ação.
+ 
 ## <a name="override-admin-permissions"></a>Substituir permissões de administrador
 
 Se você quiser substituir a permissão do administrador no Azure Active Directory ou no Office 365, faça isso manualmente adicionando o usuário ao Cloud App Security e atribuindo permissões de usuário.
