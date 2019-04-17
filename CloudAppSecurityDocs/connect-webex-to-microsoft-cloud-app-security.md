@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/22/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c43271fd-9a61-4727-9945-de1c6ea5422c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09555165697ee66a84c99d4f3a5790f22b4d17d6
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 764ca55b076c837b784ddc82ef3b4337bc9a8fcd
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476949"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622347"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conectar o Cisco WebEx ao Microsoft Cloud App Security
 
@@ -30,7 +30,9 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
  
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Sugerimos que você crie uma conta de serviço dedicada para a conexão. Isso permitem ver que as ações de governança realizadas no WebEx como sendo executada nessa conta, como excluem mensagens enviadas em WebEx. Caso contrário, o nome do administrador que conector o Cloud App Security WebEx será exibido como o usuário que realizou as ações.  
+- Sugerimos que você crie uma conta de serviço dedicada para a conexão. Isso permite que você veja o que as ações de governança realizadas no WebEx como sendo executada nessa conta, como excluem mensagens enviadas em WebEx. Caso contrário, o nome do administrador que conector o Cloud App Security WebEx será exibido como o usuário que realizou as ações.  
+- Você deve ter o administrador completo **e** permissões de administrador de conformidade no WebEx.
+
 
 ## <a name="how-to-connect-webex-to-cloud-app-security"></a>Como conectar WebEx ao Cloud App Security  
   
