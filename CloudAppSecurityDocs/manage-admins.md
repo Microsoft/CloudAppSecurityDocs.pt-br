@@ -16,11 +16,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
-ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233540"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59745976"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
