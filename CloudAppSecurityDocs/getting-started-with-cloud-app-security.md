@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3e8730d21e2d924782f1aa8965aef1ad2bded9d0
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 977afbb5126e2f225ff4f89b2f6c353b166c2d27
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830482"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622398"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: Começar a usar o Microsoft Cloud App Security
 
@@ -57,7 +57,7 @@ Você também pode acessar o portal por meio do **Centro de administração do M
 ## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Etapa 1. [Definir visibilidade, proteção e governança instantâneas para seus aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Tarefa necessária: Conectar aplicativos
 
-1.Na engrenagem de configurações, selecione **Conectores de aplicativos**.
+1. Na engrenagem de configurações, selecione **Conectores de aplicativos**.
 2. Clique no sinal de adição para adicionar um aplicativo e selecionar um aplicativo.
 3. Siga as etapas de configuração para conectar o aplicativo.
 
@@ -119,7 +119,7 @@ Tarefa recomendada: Adicionar os detalhes da organização
 **Para personalizar as métricas de pontuação**
 
 1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
-1. No ícone de configurações, selecione **Configurações do Cloud Discovery**.
+1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
 2. Em **Métricas de pontuação**, configure a importância de vários valores de risco.
 3. Escolha **Salvar**.
 
@@ -134,8 +134,8 @@ Tarefa recomendada: Definir configurações importantes
 
 **Para criar marcas de endereço IP**
 
-1. No ícone de configurações, selecione **Configurações do Cloud Discovery**.
-1.Na engrenagem de configurações, selecione **Intervalos de endereço IP**.
+1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
+1. Na engrenagem de configurações, selecione **Intervalos de endereço IP**.
 2. Clique no sinal de adição para adicionar um intervalo de endereços IP.
 3. Insira os **detalhes**, o **local**, as **marcas** e a **categoria** do intervalo de IP.
 4. Escolha **Criar**.

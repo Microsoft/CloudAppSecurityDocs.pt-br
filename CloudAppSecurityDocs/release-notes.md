@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/31/2019
+ms.date: 04/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 277be79d2d9621f84b97c7fca84b56e0110d27ae
-ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.openlocfilehash: e2b22c35cfa72860689a89d149805eca7074fc55
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233574"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622432"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -29,6 +29,18 @@ ms.locfileid: "59233574"
 Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
 
 RSS feed: receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-147"></a>Cloud App Security, versão 147
+
+Lançado em 14 de abril de 2019
+
+- **Novo analisador de log do Cloud Discovery**<br>O Cloud App Security Cloud Discovery agora inclui um analisador de log integrado para dar suporte ao formato de log Palo Alto LEEF. 
+
+- **Atualizações de políticas de sessão**
+    - **Método adicional de inspeção de conteúdo para políticas de sessão**:<br>Agora, você terá a opção de escolher o Serviço de Classificação de Dados como um método de inspeção de conteúdo para arquivos ao definir uma política de sessão. O Serviço de Classificação de Dados oferece ao usuário uma ampla variedade de tipos confidenciais incorporados para identificar informações confidenciais.
+    - **Melhoria no controle de permissões de arquivos nas políticas de sessão**:<br>Agora, você poderá aplicar automaticamente permissões por usuário, como somente leitura, aos documentos após o download de seus aplicativos na nuvem ao criar uma política de sessão para controlar os downloads usando o Cloud App Security. Isso fornece um nível muito maior de flexibilidade e a capacidade de proteger as informações além dos rótulos corporativos pré-configuradas.
+    - **Controle de download de arquivo grande**:<br>Quando a inspeção de conteúdo estiver habilitada nas políticas de sessão, você poderá controlar o que acontece quando um usuário tentar baixar um arquivo muito grande. Se o arquivo for grande demais para ser examinado no download, você poderá escolher se ele será bloqueado ou permitido.
+
 
 ## <a name="cloud-app-security-release-146"></a>Cloud App Security, versão 146
 
