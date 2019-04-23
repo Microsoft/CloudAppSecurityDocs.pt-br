@@ -1,11 +1,11 @@
 ---
-title: Solução de problemas de implantação do Docker do Cloud Discovery
+title: Modificar as configurações de FTP
 description: Este artigo descreve o processo para modificar a configuração do Docker do Cloud Discovery do Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,22 +15,18 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01fa2f69422bd3c1c272a76c113254f819b90137
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 305281ec527f605951d4d0c7f720c054ac444cf3
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904202"
 ---
-# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Solucionando problemas da implantação do Cloud Discovery do Microsoft Cloud App Security
+# <a name="log-collector-ftp-configuration"></a>Configuração do FTP do coletor de log
 
 *Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo descreve como modificar a configuração do Docker do Cloud Discovery do Cloud App Security.
-
-## <a name="windows-defender-atp-integration"></a>Integração do Windows Defender ATP
-
-Se você integrou o Windows Defender ATP ao Cloud App Security, mas os resultados da integração não aparecem, ou seja, não há nenhum relatório de **usuários do ponto de extremidade do Win10**, verifique se os computadores aos quais você está se conectando são Windows 10 versão 1809 ou posterior e se você aguardou as duas horas necessárias para que os dados possam ser acessados.
 
 ## <a name="docker-deployment"></a>Implantação do Docker
 

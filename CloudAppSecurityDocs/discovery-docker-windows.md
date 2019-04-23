@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/29/2019
+ms.date: 4/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a4f5fdb9bfe807729bf29de370bca913b3409ce
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 6f97426e1e1c18e2be3adb61ad5b3df95fb2c9c4
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282232"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904270"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -73,10 +73,10 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
      d. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
 
-     e. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+     e. Defina o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
      
      >[!NOTE]
-     >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
+     >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer seu firewall/proxy ou configurações adicionais.
 
       f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede. É recomendável configurar uma fonte de dados dedicada por dispositivo de rede para permitir que você:
      - Monitore o status de cada dispositivo separadamente, para fins de investigação.
@@ -90,7 +90,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
    c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
 
-   d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
+   d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e ver as próximas etapas de implantação.
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -100,11 +100,11 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 4. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Use o ícone Copiar para área de transferência. ![ícone da área de transferência Copiar para](./media/copy-icon.png). Você precisará dele mais tarde.
 
-5. **Exportar** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
+5. **Exporte** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
 
    ![Crie o coletor de logs](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – Implantação local de seu computador
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – implantação local de seu computador
 As etapas a seguir descrevem a implantação no Windows. As etapas de implantação para outras plataformas são ligeiramente diferentes.
 
 1. Abra um terminal do PowerShell como administrador em seu computador Windows.
@@ -116,7 +116,7 @@ As etapas a seguir descrevem a implantação no Windows. As etapas de implantaç
 3. Para habilitar a execução de script do PowerShell, execute `Set-ExecutionPolicy RemoteSigned`.
 
 4. Execute: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-Isso instala o cliente do Docker em seu computador. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente.
+Isso instala o cliente do Docker em seu computador. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente. **Verifique se que o cliente do Docker está configurado para usar contêineres do Linux.**
 
 5. Após cada reinicialização, no diretório em que você salvou o instalador, execute novamente: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
 
@@ -145,7 +145,7 @@ Verifique o status do coletor na tabela **Coletor de logs** e verifique se o sta
 
  ![ubuntu9](./media/ubuntu9.png)
 
-Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
+Você também pode ir para o **log de governança** e verificar se que os logs estão sendo carregados periodicamente no portal.
 
 Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 

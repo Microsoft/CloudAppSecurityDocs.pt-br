@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: ad619e9d8d1503fc91b4e52b0b11bfaf22b8124e
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904304"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -91,7 +91,7 @@ Por padrão, as seguintes funções de administrador do Office 365 e do [Azure A
   - Extensões de segurança – nenhuma permissão
   - Ações de governança – apenas ações relacionadas ao Cloud Discovery
 
-- **Administrador de relatório de descoberta de nuvem:** Tem permissão para exibir todos os dados no Microsoft Cloud App Security que selecionou lida exclusivamente com os relatórios específicos do Cloud Discovery. Por exemplo, você pode conceder a alguém permissão de administrador para o relatório contínuo do Windows Defender ATP. O administrador de descoberta verá apenas os dados de descoberta de nuvem que relaciona a essa fonte de dados e o catálogo de aplicativos.
+- **Administrador de relatório de descoberta de nuvem:** Tem permissão para exibir todos os dados no Microsoft Cloud App Security que selecionou lida exclusivamente com os relatórios específicos do Cloud Discovery. Por exemplo, você pode conceder a alguém permissão de administrador para o relatório contínuo do Microsoft Defender ATP. O administrador de descoberta verá apenas os dados de descoberta de nuvem que relaciona a essa fonte de dados e o catálogo de aplicativos.
 Este administrador não terá acesso para o **atividades** ou **arquivos** páginas e acesso limitado a políticas.
 
 - **Leitor global:** Tem acesso somente leitura completa a todos os aspectos do Microsoft Cloud App Security. Não é possível alterar as configurações ou tomar qualquer ação.

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,23 @@ ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 966cefac08c84c92a4cdd60cb9d75c6f3af5525d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: cb34e67744c8d2f316eff09641e379ca562bd71f
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904287"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solucionando problemas de Cloud Discovery
 
 *Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo apresenta uma lista de erros do Cloud Discovery e as recomendações de resolução para cada um.
+
+## <a name="microsoft-defender-atp-integration"></a>Integração do Microsoft Defender ATP
+
+Se você integrou o Microsoft Defender ATP com o Cloud App Security e você não vir os resultados da integração - não há um **os usuários do ponto de extremidade Win10** report - Verifique se as máquinas que você está se conectando estão Windows 10 versão 1809 ou posteriormente, e que você esperou necessárias duas horas que leva antes de seus dados está acessível.
+
 
 ## <a name="log-parsing-errors"></a>Erros de análise de log
 
@@ -50,8 +55,8 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 |Falha ao atualizar a configuração do coletor | 1. Verifique se você inseriu o token de acesso mais recente. <br />2. Verifique no seu firewall se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443.|
 |Logs enviados ao coletor não aparecem no portal | 1.  Verifique se há tarefas de análise com falha no Log de governança.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Se houver, corrija o erro com a tabela de erros de Análise de Log acima.<br /> 2. Caso contrário, verifique as fontes de dados e a configuração do Coletor de Logs no portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Na página Fonte de dados, verifique se a fonte de dados que você está usando está devidamente configurada. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Na página Coletores de Logs, verifique se que a fonte de dados está vinculada ao coletor de logs correto. <br /> 3. Verifique a configuração local do computador local do coletor de logs.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Faça logon no coletor de logs via SSH e execute o utilitário collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme se seu firewall ou proxy está enviando logs para o coletor de logs usando o protocolo definido (Syslog/TCP, Syslog/UDP ou FTP) e se ele está enviando para a porta e diretório corretos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Execute netstat no computador e verifique se ele recebe conexões de entrada de seu proxy ou firewall <br /> 4.   Verifique se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443. |
 |Status do coletor de logs: Criado | A implantação do coletor de logs não foi concluída. Conclua as etapas de implantação locais de acordo com a guia de implantação.|
-|Status do coletor de logs: Disconnected | Não há dados recebidos nas últimas 24 horas de qualquer uma das fontes de dados vinculados. |
-
+|Status do coletor de logs: Desconectado | Não há dados recebidos nas últimas 24 horas de qualquer uma das fontes de dados vinculados. |
+|Falha ao extrair a imagem mais recente do coletor| Se você receber esse erro durante a implantação do Docker, é possível que você não tem memória suficiente no computador host. Para verificar isso, execute este comando no host: `docker pull microsoft/caslogcollector`. Se ele retorna este erro: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` entre em contato com o administrador da máquina host para fornecer mais espaço.|
 
 ## <a name="discovery-dashboard-errors"></a>Erros do painel de descoberta
 
