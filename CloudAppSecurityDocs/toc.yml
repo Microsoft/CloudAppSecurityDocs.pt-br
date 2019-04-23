@@ -65,7 +65,7 @@ items:
   - name: Configurar o Cloud Discovery
     href: set-up-cloud-discovery.md
     items:
-    - name: Integrar com o Windows Defender ATP
+    - name: Integrar-se com o Microsoft Defender ATP
       href: wdatp-integration.md
     - name: Integrar com o Zscaler
       href: zscaler-integration.md
@@ -86,8 +86,6 @@ items:
         href: troubleshoot-docker.md
       - name: Coletor de logs por trás de um proxy
         href: log-collector-proxy.md
-      - name: Usando uma solução de virtualização – Preterido
-        href: configure-automatic-log-upload-for-continuous-reports.md
     - name: Usar o analisador de log personalizado
       href: custom-log-parser.md
     - name: Aprimoramento do Cloud Discovery
@@ -232,9 +230,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Como comprar o Cloud App Security
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: d8ffcb45236d42317c4ca0f0fde899f7b0c1d4ac
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: 6c32aec83ffcb4f3ddada0307b2b6f8ea32fe3e7
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622364"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904219"
