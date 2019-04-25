@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/28/2019
+ms.date: 04/21/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: 48ec0ce810023dde3bd4866e23ec0c5078a158dc
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904253"
 ---
-# <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar a TI sombra na sua rede
+# <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar a TI sombra na sua rede 
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Use esse processo para distribuir o Cloud Discovery de TI sombra na sua organiza
     
 1. **Descobrir a TI sombra**: identifique a situação de segurança da sua organização executando o Cloud Discovery em sua organização para ver o que realmente está acontecendo na rede. Para obter mais informações, confira [Configurar o Cloud Discovery](set-up-cloud-discovery.md). Isso pode ser feito usando um dos seguintes métodos:
    
-    - Coloque o Cloud Discovery em funcionamento rapidamente integrando-o ao [Windows Defender ATP](wdatp-integration.md). Essa integração nativa permite que você comece imediatamente a coletar dados sobre o tráfego de nuvem em seus dispositivos Windows 10 dentro e fora da rede.
+    - Coloque o Cloud Discovery em execução rapidamente integrando-o ao [Microsoft Defender ATP](wdatp-integration.md). Essa integração nativa permite que você comece imediatamente a coletar dados sobre o tráfego de nuvem em seus dispositivos Windows 10 dentro e fora da rede.
    
     - Para obter uma cobertura em todos os dispositivos conectados à rede, é importante implantar o [coletor de logs do Cloud App Security](discovery-docker.md) em seus firewalls e em outros proxies para coletar dados dos pontos de extremidade e enviá-los ao Cloud App Security para análise.
 

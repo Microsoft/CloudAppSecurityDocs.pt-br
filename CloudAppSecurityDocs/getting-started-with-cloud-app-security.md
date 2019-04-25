@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 977afbb5126e2f225ff4f89b2f6c353b166c2d27
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: 568bfa46ec52bc4f20a3981fc627467d2bb3cab0
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904372"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: Começar a usar o Microsoft Cloud App Security
 
@@ -84,7 +84,7 @@ Você pode usar políticas para ajudar a monitorar as tendências, ver as ameaç
 
 Tarefa necessária: Habilitar o Cloud App Security para exibir o uso do aplicativo na nuvem
 
-1. [Integrar-se ao Windows Defender ATP](wdatp-integration.md) para habilitar automaticamente o Cloud App Security para monitorar seus dispositivos Windows 10 dentro e fora da sua empresa.
+1. [Integrar-se ao Microsoft Defender ATP](wdatp-integration.md) para habilitar automaticamente o Cloud App Security para monitorar seus dispositivos Windows 10 dentro e fora da sua empresa.
 2. Se você usar o [Zscaler, integre-o](zscaler-integration.md) ao Cloud App Security.
 3. Para ter a cobertura completa, crie um relatório contínuo do Cloud Discovery
 
