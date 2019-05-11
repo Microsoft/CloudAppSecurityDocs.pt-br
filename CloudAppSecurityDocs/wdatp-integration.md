@@ -1,6 +1,6 @@
 ---
 title: Integrar o Microsoft Defender ATP ao Cloud App Security
-description: Este artigo descreve como integrar a Proteção Avançada contra Ameaças do Windows Defender ao Cloud App Security para melhor visibilidade da TI sombra e do gerenciamento de riscos.
+description: Este artigo descreve como integrar o Microsoft Defender Advanced Threat Protection com o Cloud App Security para visibilidade aprimorada de TI sombra e o gerenciamento de riscos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -15,18 +15,18 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7c704f492212befcf8678d7a74e2b8492807cf7b
-ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.openlocfilehash: 73626047f44a5b50538d37a34c45e251186410cc
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59904236"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047768"
 ---
-# <a name="windows-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da Proteção Avançada contra Ameaças do Windows Defender ao Microsoft Cloud App Security | Microsoft Docs
+# <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração do Microsoft Defender Advanced Threat Protection com o Microsoft Cloud App Security
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security é integrado nativamente ao Windows Defender ATP (Proteção Avançada contra Ameaças). A integração simplifica a distribuição do Cloud Discovery, estende as funcionalidades do Cloud Discovery para além da rede corporativa e permite a investigação baseada em computador. [Windows Defender ATP (Proteção Avançada contra Ameaças)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) é uma plataforma de segurança para proteção, detecção, investigação e resposta inteligentes. Microsoft Defender ATP protege pontos de extremidade contra ameaças cibernéticas, detecta violações de dados e de ataques avançadas, automatiza a incidentes de segurança e melhora a postura de segurança.
+Microsoft Cloud App Security integra-se com o Microsoft Advanced Threat ATP (proteção Defender) nativamente. A integração simplifica a distribuição do Cloud Discovery, estende as funcionalidades do Cloud Discovery para além da rede corporativa e permite a investigação baseada em computador. [Proteção de ameaças avançadas (ATP) do Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) é uma plataforma de segurança para proteção inteligente, detecção, investigação e resposta. Microsoft Defender ATP protege pontos de extremidade contra ameaças cibernéticas, detecta violações de dados e de ataques avançadas, automatiza a incidentes de segurança e melhora a postura de segurança.
 
 Microsoft Cloud App Security usa as informações de tráfego coletadas pelo Microsoft Defender ATP sobre aplicativos de nuvem e serviços que está sendo acessados de computadores com Windows 10 gerenciado por TI. A integração permite que você execute o Cloud Discovery em qualquer computador na rede corporativa, usando Wi-Fi público, roaming e acesso remoto. Também permite a investigação baseada em computador.
 

@@ -4,8 +4,8 @@ description: Este tópico fornece instruções sobre como trabalhar com os dados
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 12/14/2018
+manager: angrobe
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f760a9aa5bb80d1301cf6125eeeec22a8e9a8a7a
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: ffba8584bcd9b7521f3fc1ec8b8774e096a32854
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282294"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047782"
 ---
 # <a name="working-with-discovery-data"></a>Trabalhando com os dados de descoberta
 
@@ -62,7 +62,7 @@ Para criar uma exclusão:
 
 Relatórios contínuos personalizados fornecem maior granularidade ao monitorar os dados de log do Cloud Discovery da sua organização. Ao criar relatórios personalizados, é possível filtrar por localizações geográficas, redes, sites ou unidades organizacionais específicas. Por padrão, somente os relatórios a seguir aparecem no seu seletor de relatório do Cloud Discovery:  
   
-- O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  
+- O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  O relatório global não inclui dados da Microsoft Defender ATP.
   
 - O **Relatório específico de fonte de dados** mostra apenas informações para uma fonte de dados específica.  
   

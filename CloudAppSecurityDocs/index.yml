@@ -1,76 +1,70 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: a2120eeec08bd7be58d883c87a039ab2d7733a87
-ms.sourcegitcommit: a592f734a803493e9dd10e632922e68f9760b93e
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56090963"
 documentType: LandingData
 title: Microsoft Cloud App Security
 metadata:
   title: Microsoft Cloud App Security
-  description: Fornece segurança de nível corporativo para seus aplicativos na nuvem com o Microsoft Cloud App Security para maior visibilidade, controles abrangentes e proteção aprimorada contra problemas de segurança na nuvem.
-  author: msmbaldwin
-  manager: barbkess
+  description: 'Fornece segurança de nível corporativo para seus aplicativos na nuvem com o Microsoft Cloud App Security para maior visibilidade, controles abrangentes e proteção aprimorada contra problemas de segurança na nuvem.'
+  author: rkarlin
+  manager: angrobe
   ms.prod: cloud-app-security
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/30/2019
-  ms.author: mbaldwin
+  ms.date: 06/05/2019
+  ms.author: rkarlin
   layout: LandingPage
 abstract:
-  description: O MCAS (Microsoft Cloud App Security) oferece segurança de nível corporativo para seus aplicativos na nuvem, trazendo a segurança de seus sistemas locais para maior visibilidade, controles abrangentes e proteção aprimorada contra problemas de segurança na nuvem.
+  description: 'Microsoft Cloud App Security é uma nuvem acesso segurança Broker (CASB) que opera em várias nuvens. Ele fornece visibilidade avançada, o controle sobre dados de viagem e análise sofisticada para identificar e combater ameaças cibernéticas em todos os seus serviços de nuvem.'
 sections:
-- title: Saiba mais
-  items:
-  - type: list
-    style: cards
-    className: cardsFTitle
+  - title: Saiba mais
     items:
-    - title: Saiba mais sobre o Microsoft Cloud App Security.
-      href: what-is-cloud-app-security.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        href: what-is-cloud-app-security.md
-    - title: Privacidade e segurança de dados do MCAS
-      href: cas-compliance-trust.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-        href: cas-compliance-trust.md
-    - title: Novidades no MCAS
-      href: release-notes.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-        href: release-notes.md
-    - title: Explore o Microsoft 365, uma solução completa que inclui o Cloud App Security
-      href: https://docs.microsoft.com/microsoft-365/
-      image:
-        src: /office/media/icons/caret-right-blue.svg
-        href: https://docs.microsoft.com/microsoft-365/
-- title: Inícios Rápidos de 5 minutos
-  items:
-  - type: paragraph
-    text: Aprender os conceitos básicos do Microsoft Cloud App Security.
-  - type: list
-    style: icon48
+      - type: list
+        style: cards
+        className: cardsFTitle
+        items:
+          - title: Saiba mais sobre o Microsoft Cloud App Security.
+            href: what-is-cloud-app-security.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+              href: what-is-cloud-app-security.md
+          - title: Privacidade e segurança de dados do MCAS
+            href: cas-compliance-trust.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+              href: cas-compliance-trust.md
+          - title: Novidades no MCAS
+            href: release-notes.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+              href: release-notes.md
+          - title: 'Explore o Microsoft 365, uma solução completa que inclui o Cloud App Security'
+            href: 'https://docs.microsoft.com/microsoft-365/'
+            image:
+              src: /office/media/icons/caret-right-blue.svg
+              href: 'https://docs.microsoft.com/microsoft-365/'
+  - title: Guias de início rápido de 5 minutos
     items:
-    - image:
-        src: https://docs.microsoft.com/media/common/i_design.svg
-      text: Começar a usar o Microsoft Cloud App Security
-      href: getting-started-with-cloud-app-security.md
-    - image:
-        src: https://docs.microsoft.com/media/common/i_event.svg
-      text: Trabalhar com aplicativos descobertos
-      href: discovered-apps.md
-- title: Tutoriais passo a passo
-  items:
-  - type: paragraph
-    text: Aprender a entender os alertas e a realizar investigações com esses tutoriais.
-  - type: list
-    style: unordered
+      - type: paragraph
+        text: Aprender os conceitos básicos do Microsoft Cloud App Security.
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_design.svg'
+            text: Começar a usar o Microsoft Cloud App Security
+            href: getting-started-with-cloud-app-security.md
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_event.svg'
+            text: Trabalhar com aplicativos descobertos
+            href: discovered-apps.md
+  - title: Tutoriais passo a passo
     items:
-    - html: <a href="/cloud-app-security/tutorial-shadow-it">Descobrir e gerenciar o TI sombra na sua rede</a>
-    - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">Bloquear o download de informações confidenciais</a>
-    - html: <a href="/cloud-app-security/use-case-admin-quarantine">Proteger arquivos com quarentena do administrador</a>
-    - html: <a href="/cloud-app-security/use-case-information-protection">Aplicar os rótulos de classificação da Proteção de Informações do Azure</a>
+      - type: paragraph
+        text: Aprender a entender os alertas e a realizar investigações com esses tutoriais.
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/cloud-app-security/tutorial-shadow-it">Descobrir e gerenciar o TI sombra na sua rede</a>
+          - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">Bloquear o download de informações confidenciais</a>
+          - html: <a href="/cloud-app-security/use-case-admin-quarantine">Proteger arquivos com quarentena do administrador</a>
+          - html: <a href="/cloud-app-security/use-case-information-protection">Aplicar os rótulos de classificação da Proteção de Informações do Azure</a>
