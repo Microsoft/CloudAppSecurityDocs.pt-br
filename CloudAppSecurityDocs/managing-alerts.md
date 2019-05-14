@@ -4,7 +4,7 @@ description: Este artigo explica como trabalhar com alertas gerados no portal do
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cf20f2b6d123443621756c244e5ce37007139dcb
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 97be32220886f60efa6c3e60c82ccb13e5adfe1d
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280855"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568325"
 ---
 # <a name="manage-alerts"></a>Gerenciar alertas
 

@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como utilizar os rótulos d
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cc861a9b9c655039bc9fa87298d553a7bf9a9294
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: b7792d594cd2345a93f57942ee032d6387f82b27
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476664"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567603"
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 

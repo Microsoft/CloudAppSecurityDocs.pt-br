@@ -4,7 +4,7 @@ description: Este artigo fornece instruções sobre como importar os grupos de u
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fb823e9aa13df6710ee3d07ced6b6db97d442eb0
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 7b5ec7e2ce37442b81838f7577cf4e11b260b09d
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282215"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568759"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importar grupos de usuários de aplicativos conectados
 

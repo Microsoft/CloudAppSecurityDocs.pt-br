@@ -4,7 +4,7 @@ description: Este artigo fornece informações de como obter a automação de al
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 497272a2072cf61349c1b0c9ccf49644b7f91665
-ms.sourcegitcommit: eba8c158d34198363a8da02b3cb6258df10f7673
+ms.openlocfilehash: 5a85f97480953951d281bc8e951293310ed29a19
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58543117"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567759"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>Integrar ao Flow para obter a automação de alerta personalizada – Versão Prévia
 

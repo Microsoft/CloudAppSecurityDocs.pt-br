@@ -4,7 +4,7 @@ description: Este artigo descreve o procedimento de configuração para colocar 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c7101ed6e8102167b36d029db5b885bf081f1c8
-ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.openlocfilehash: a8e7c476690b1831b78a59c7c63b061aef0dc78e
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65047805"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568509"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 

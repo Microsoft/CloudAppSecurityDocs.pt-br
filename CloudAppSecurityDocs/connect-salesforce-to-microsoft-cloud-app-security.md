@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como conectar o Salesforce 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3ac3ffcef0dfaaad492c0794eee9841a899b0eb
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 16e149d5b79d22c512cd1c318e69b89b2880cace
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281875"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567210"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar o Salesforce ao Microsoft Cloud App Security
 
@@ -115,7 +115,7 @@ Eventos do Salesforce são processados pelo Cloud App Security da seguinte manei
   
 - Eventos de entrada a cada 15 minutos
 - Trilhas de auditoria de instalação a cada 15 minutos
-- Os logs do Salesforce rastreiam a atividade de uso por um período de 24 horas, de 0:00 a 23:59, UTC. Os eventos no Salesforce geram dados de log em tempo real. No entanto, os arquivos de log são gerados pelo Salesforce no dia após um evento ocorrer, fora do horário de pico. Portanto, os dados do arquivo de log ficam indisponíveis por pelo menos um dia após um evento. Para saber mais sobre os eventos do Salesforce, veja [Usando o monitoramento de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
+- Os logs do Salesforce rastreiam a atividade de uso por um período de 24 horas, de 0:00 às 23:59, horário UTC. Os eventos da Salesforce geram dados de log em tempo real. No entanto, os arquivos de log são gerados pela Salesforce no dia posterior à ocorrência de um evento, fora dos horários de pico. Portanto, os dados do arquivo de log ficam indisponíveis por pelo menos um dia, após um evento. Para saber mais sobre os eventos do Salesforce, veja [Usando o monitoramento de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
 ## <a name="next-steps"></a>Próximas etapas  

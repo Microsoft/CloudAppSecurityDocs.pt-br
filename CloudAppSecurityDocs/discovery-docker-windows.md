@@ -4,7 +4,7 @@ description: Este artigo descreve o processo de configuração de upload automá
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 4/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6f97426e1e1c18e2be3adb61ad5b3df95fb2c9c4
-ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.openlocfilehash: 31fba210aeee0796e7ba3e7386348888ce877a1c
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59904270"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568468"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 

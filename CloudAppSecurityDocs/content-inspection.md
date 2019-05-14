@@ -4,7 +4,7 @@ description: Este artigo descreve o processo que o Cloud App Security segue ao e
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5f3b58d738ed8f514c5128312a64bf8e83792811
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: b0fcd13550d62d5ff96462b7d3f9f4a7437c1a44
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281093"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568049"
 ---
 # <a name="content-inspection"></a>Inspeção de conteúdo
 

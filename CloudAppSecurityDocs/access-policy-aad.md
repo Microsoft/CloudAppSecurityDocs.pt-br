@@ -4,7 +4,7 @@ description: Este artigo descreve o procedimento para configurar uma política d
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 093eb810f0830932197d62374ce4abc6d8fa7a4d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 7e490274493d09058f3252724e4ab1ce36b29b56
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281382"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565740"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 

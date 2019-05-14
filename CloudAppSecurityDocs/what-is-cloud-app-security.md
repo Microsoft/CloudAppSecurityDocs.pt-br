@@ -4,7 +4,7 @@ description: Este artigo descreve o Microsoft Cloud App Security e como ele func
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 12e1ea59e4d8f99b57f6ba494430aef6082d4204
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 525df694492667bf12ceb8a9fe30654f97c19935
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476698"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568793"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Visão geral do Microsoft Cloud App Security
 

@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como trabalhar com polític
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 88573259fb2fd5296703fe18abf15c90eaa21e50
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: bf54021007d891b78577bd646c43ec5377421bfd
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281824"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567523"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
 

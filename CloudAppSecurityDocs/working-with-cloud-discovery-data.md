@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: angrobe
-ms.date: 06/05/2019
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ffba8584bcd9b7521f3fc1ec8b8774e096a32854
-ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.openlocfilehash: 8d3c5d1dc7c2f3a1b4d36db94198adc910879921
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65047782"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568377"
 ---
 # <a name="working-with-discovery-data"></a>Trabalhando com os dados de descoberta
 

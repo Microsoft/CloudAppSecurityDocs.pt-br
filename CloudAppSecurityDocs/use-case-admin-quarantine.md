@@ -4,7 +4,7 @@ description: Este tutorial descreve o cenário para usar a quarentena do adminis
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e7ccd9d5b818361889755137f088ba833fec24c8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 71bb83bfbd40f39ebbd58dba6c630a2fee02927c
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282470"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047813"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: Proteger arquivos com quarentena do administrador
 
@@ -42,6 +42,7 @@ Este tutorial ajuda você a usar o Microsoft Cloud App Security para detectar ar
 >[!NOTE] 
 > - Este é um recurso de versão prévia.
 > - Para obter uma lista de aplicativos que dão suporte a quarentena do administrador, consulte a lista de [ações de governança](governance-actions.md).
+> - Se um arquivo no SharePoint ou OneDrive for detectado como sendo malware, ele não será posto em quarentena no portal do Cloud App Security. 
 
 1. Quando um arquivo corresponde a uma política, a opção **Quarentena do administrador** estará disponível para o arquivo.
 
@@ -104,7 +105,7 @@ Este tutorial ajuda você a usar o Microsoft Cloud App Security para detectar ar
       Para definir configurações de quarentena, na engrenagem de configurações, acesse **Configurações**. Forneça uma localização para os arquivos em quarentena e uma notificação de usuário que o usuário receberá quando seu arquivo for colocado em quarentena. 
       ![configurações de quarentena](./media/quarantine-settings.png)
 
-   2. Para o Box, a mensagem do usuário e a localização da pasta de quarentena não podem ser personalizadas. A localização da pasta é a unidade do administrador que conectou o Box ao Cloud App Security e a mensagem do usuário é: Este arquivo foi colocado em quarentena na unidade do administrador, pois pode violar as políticas de segurança e conformidade de sua empresa. Contate o administrador de TI para obter ajuda.
+   2. Para o Box, a mensagem do usuário e a localização da pasta de quarentena não podem ser personalizadas. A localização da pasta é a unidade do administrador que conectou o Box ao Cloud App Security e a mensagem do usuário é: Este arquivo foi colocado em quarentena na unidade do administrador, pois pode violar as políticas de segurança e conformidade de sua empresa. Entre em contato com seu administrador de TI para obter ajuda.
 
 
 

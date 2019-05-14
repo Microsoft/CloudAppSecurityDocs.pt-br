@@ -4,7 +4,7 @@ description: Este artigo descreve como integrar o Microsoft Defender Advanced Th
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 73626047f44a5b50538d37a34c45e251186410cc
-ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.openlocfilehash: 6a23a081ece3e6aa94995e688ec2163b36441e60
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65047768"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568406"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração do Microsoft Defender Advanced Threat Protection com o Microsoft Cloud App Security
 

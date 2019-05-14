@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como proteger a privacidade
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3e4c3e002bba503f204ddb2e474db40a93dc6ad1
-ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
-ms.translationtype: HT
+ms.openlocfilehash: 509373f5b63df5da2df0d75b8404c9963dcee186
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57254359"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567646"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 

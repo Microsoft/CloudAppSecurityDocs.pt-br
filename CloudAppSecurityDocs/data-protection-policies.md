@@ -4,7 +4,7 @@ description: Este artigo descreve o procedimento para configurar uma política d
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 51d9c16f4a5946568bfbd13d364347bc3b2a81a2
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 6a15705c9d3154ab5450c4e183988030230db394
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830397"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568016"
 ---
 # <a name="file-policies"></a>Políticas de arquivos  
 

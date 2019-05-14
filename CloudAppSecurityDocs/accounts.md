@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como examinar as contas de 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4cc8da00f61fca4f483857c1d3e87cab5491760
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 35b9bdf9e1b59bfecefe18f5fcaacd4ce6b73edf
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282045"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565876"
 ---
 # <a name="accounts"></a>Contas
 

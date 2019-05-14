@@ -4,7 +4,7 @@ description: Este artigo descreve o processo para conexão de aplicativos com co
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c0c01b0de154528413f05caed780b7995420ba1
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: e03503727b6e79f652c9d3b4ef1df4df57aae816
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830465"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567739"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos 
 

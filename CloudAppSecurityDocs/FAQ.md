@@ -4,7 +4,7 @@ description: Este artigo fornece as perguntas frequentes e as respostas sobre o 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dc4bbdff69f259cfeb51621f508719dd2d0e3c50
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: a172853944dc5ee468a0e17fffedb9bf15523a77
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281246"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565847"
 ---
 # <a name="frequently-asked-questions"></a>Perguntas frequentes
 

@@ -4,7 +4,7 @@ description: Este artigo fornece uma base em relação a como usar o painel do C
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 05858bd4e026208b9a93912a905292014e65c967
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: de3223b5216935d8027c09017a3c143e84ed53ee
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280991"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567972"
 ---
 # <a name="working-with-the-dashboard"></a>Trabalhar com o painel
 

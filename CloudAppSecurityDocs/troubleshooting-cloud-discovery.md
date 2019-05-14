@@ -4,7 +4,7 @@ description: Este artigo apresenta uma lista de erros frequentes do Cloud Discov
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cb34e67744c8d2f316eff09641e379ca562bd71f
-ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.openlocfilehash: bc8e477cac15dc9b5bd3338360d7c3953db0e442
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59904287"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568827"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solucionando problemas de Cloud Discovery
 
@@ -55,7 +55,7 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 |Falha ao atualizar a configuração do coletor | 1. Verifique se você inseriu o token de acesso mais recente. <br />2. Verifique no seu firewall se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443.|
 |Logs enviados ao coletor não aparecem no portal | 1.  Verifique se há tarefas de análise com falha no Log de governança.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Se houver, corrija o erro com a tabela de erros de Análise de Log acima.<br /> 2. Caso contrário, verifique as fontes de dados e a configuração do Coletor de Logs no portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Na página Fonte de dados, verifique se a fonte de dados que você está usando está devidamente configurada. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Na página Coletores de Logs, verifique se que a fonte de dados está vinculada ao coletor de logs correto. <br /> 3. Verifique a configuração local do computador local do coletor de logs.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Faça logon no coletor de logs via SSH e execute o utilitário collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme se seu firewall ou proxy está enviando logs para o coletor de logs usando o protocolo definido (Syslog/TCP, Syslog/UDP ou FTP) e se ele está enviando para a porta e diretório corretos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Execute netstat no computador e verifique se ele recebe conexões de entrada de seu proxy ou firewall <br /> 4.   Verifique se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443. |
 |Status do coletor de logs: Criado | A implantação do coletor de logs não foi concluída. Conclua as etapas de implantação locais de acordo com a guia de implantação.|
-|Status do coletor de logs: Desconectado | Não há dados recebidos nas últimas 24 horas de qualquer uma das fontes de dados vinculados. |
+|Status do coletor de logs: Disconnected | Não há dados recebidos nas últimas 24 horas de qualquer uma das fontes de dados vinculados. |
 |Falha ao extrair a imagem mais recente do coletor| Se você receber esse erro durante a implantação do Docker, é possível que você não tem memória suficiente no computador host. Para verificar isso, execute este comando no host: `docker pull microsoft/caslogcollector`. Se ele retorna este erro: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` entre em contato com o administrador da máquina host para fornecer mais espaço.|
 
 ## <a name="discovery-dashboard-errors"></a>Erros do painel de descoberta

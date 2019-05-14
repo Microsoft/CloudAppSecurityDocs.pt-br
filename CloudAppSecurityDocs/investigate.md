@@ -4,7 +4,7 @@ description: Este artigo fornece uma descrição do processo para investigar ale
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7d6aaf79cca92da7e82d59c9f05049e77e406071
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 7a96237fa954e1d7365d51d542d53f7a20eb1f8a
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281620"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568275"
 ---
 # <a name="investigate"></a>Investigar
 

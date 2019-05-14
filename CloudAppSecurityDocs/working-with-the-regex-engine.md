@@ -4,7 +4,7 @@ description: Este artigo fornece instruções de uso do RegEx para correspondên
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 07085a2c2e8a27e6e6ad35d9e088a95f8d543522
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 8b84e29d1f2f2de0f19e1575881266bb61727398
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281110"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568854"
 ---
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
 

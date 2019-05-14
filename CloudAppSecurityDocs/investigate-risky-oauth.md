@@ -4,7 +4,7 @@ description: Esse artigo fornece informações sobre como investigar os aplicati
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/08/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4118681e-362f-4b10-aa08-39691aa7800a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a781b31f4816011dbbb988d947daf109cbc21c0b
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: d2972f43725cdd6e9ea70ce305f41c11a621960b
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745942"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568311"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>Tutorial: Investigar aplicativos de OAuth arriscados
 

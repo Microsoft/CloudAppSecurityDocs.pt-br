@@ -4,7 +4,7 @@ description: Este artigo descreve o processo de configuração do carregamento d
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5acd24e9cd99abaed17c0bdb88f1a4e9825b0b16
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4799b0f835960d8170d1305406418734b65185d6
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282708"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567990"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalação e configuração no Ubuntu ou RHEL no Azure
 
@@ -72,10 +72,10 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
      d. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
 
-     e. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+     e. Defina o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
      
      >[!NOTE]
-     >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
+     >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer seu firewall/proxy ou configurações adicionais.
 
      f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede. É recomendável configurar uma fonte de dados dedicada por dispositivo de rede para permitir que você:
      - Monitore o status de cada dispositivo separadamente, para fins de investigação.
@@ -90,7 +90,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
      c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
 
-     d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
+     d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e ver as próximas etapas de implantação.
 
       ![ubuntu2](./media/ubuntu2.png)
 
@@ -168,7 +168,7 @@ Verifique o status do coletor na tabela **Coletor de logs** e verifique se o sta
 
  ![ubuntu9](./media/ubuntu9.png)
 
-Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
+Você também pode ir para o **log de governança** e verificar se que os logs estão sendo carregados periodicamente no portal.
 
 Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 

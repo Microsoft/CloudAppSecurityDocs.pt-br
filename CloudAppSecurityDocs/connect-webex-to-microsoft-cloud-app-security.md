@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como conectar seu aplicativ
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c43271fd-9a61-4727-9945-de1c6ea5422c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 764ca55b076c837b784ddc82ef3b4337bc9a8fcd
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: be23b571e25ba283bd661f647cf38d462b37882b
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622347"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568168"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conectar o Cisco WebEx ao Microsoft Cloud App Security
 

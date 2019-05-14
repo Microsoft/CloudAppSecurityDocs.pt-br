@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como usar a API para invest
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a4d91f196cb8d2bab51a2688c07f0654317765f3
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: db4e10c7ecc8e82795d3a75fb915757bfada6bb9
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476443"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568289"
 ---
 # <a name="investigate-activities-using-the-api"></a>Investigar atividades usando a API
 

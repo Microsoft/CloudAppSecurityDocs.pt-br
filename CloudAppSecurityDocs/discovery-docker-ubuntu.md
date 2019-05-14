@@ -4,7 +4,7 @@ description: Este artigo descreve o processo de configuração do upload automá
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4085cff828e8af6190bb0a46ff0306e2c64d87ab
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: cac1c58bb8985065e4b99f179a544d08c3f31c6b
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476596"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567811"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker no Ubuntu e no RHEL local
 

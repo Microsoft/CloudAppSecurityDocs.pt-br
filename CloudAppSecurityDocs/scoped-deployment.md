@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como definir o escopo de su
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e3ca7c6bf16eec51f684e42c8964628ee5aa7ad0
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: c1bd96bd60cd1170b9283ff19e35369193872c36
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281756"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568884"
 ---
 # Implantação com escopo <a name="scoped-deployment"></a> 
 

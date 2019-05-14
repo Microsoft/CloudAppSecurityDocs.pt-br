@@ -4,7 +4,7 @@ description: Este guia de início rápido descreve o processo de identificação
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 61e1c434c6726c58f4abffe190ce0911ec03730e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 364099f030e2f921c03ce7c47ea26dd14f5a25af
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281249"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047726"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>Início Rápido: Trabalhar com aplicativos descobertos
 
@@ -94,7 +94,7 @@ Para criar uma exclusão:
 
 Relatórios contínuos personalizados fornecem maior granularidade ao monitorar os dados de log do Cloud Discovery da sua organização. Ao criar relatórios personalizados, é possível filtrar por localizações geográficas, redes, sites ou unidades organizacionais específicas. Por padrão, somente os relatórios a seguir aparecem no seu seletor de relatório do Cloud Discovery:  
   
-- O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  
+- O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  O relatório global não inclui dados do Microsoft Defender ATP.
   
 - O **Relatório específico de fonte de dados** mostra apenas informações para uma fonte de dados específica.  
   

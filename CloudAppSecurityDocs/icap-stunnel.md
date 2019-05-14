@@ -4,7 +4,7 @@ description: Este artigo fornece as etapas necessárias para configurar a conex�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5eb92181f0c05b0659b4e157c1e5188103ae680e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 731a2593972754ac95dd39b16b0c7529783c2636
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281671"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568249"
 ---
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
@@ -256,15 +256,15 @@ No ForcePoint, defina seu dispositivo usando as seguintes etapas:
     ![Bloqueio de ICAP](./media/icap-blocking.png)
  
 
-## Apêndice B: Guia de Implantação da Symantec <a name="symantec"></a>
+## Apêndice b: Guia de Implantação da Symantec <a name="symantec"></a>
 
 As versões com suporte do Symantec DLP são 11 e superiores. 
 
-Conforme observado acima, você deve implantar um servidor de detecção no mesmo datacenter do Azure onde seu locatário do Cloud App Security reside. O servidor de detecção sincroniza com o servidor de imposição por meio de um túnel IPSec dedicado. 
+Conforme observado acima, você deve implantar um servidor de detecção no mesmo datacenter do Azure onde seu locatário do Cloud App Security reside. O servidor de detecção é sincronizado com o servidor de imposição por meio de um túnel IPSec dedicado. 
  
 ### <a name="detection-server-installation"></a>Instalação do servidor de detecção 
-O servidor de detecção usado pelo Cloud App Security é um Network Prevent padrão para servidor Web. Há várias opções de configuração que devem ser alteradas:
-1. Desabilite o **Modo de Avaliação**:
+O servidor de detecção usado pelo Cloud App Security é uma prevenção de rede padrão para servidor Web. Há várias opções de configuração que devem ser alteradas:
+1. Desabilite o **modo de avaliação**:
    1. Em **Sistema** > **Servidores e Detectores**, clique no destino de ICAP. 
     
       ![Destino de ICAP](./media/icap-target.png)
@@ -273,9 +273,9 @@ O servidor de detecção usado pelo Cloud App Security é um Network Prevent pad
     
       ![Configurar o destino de ICAP](./media/configure-icap-target.png)
     
-   3. Desabilite o **Modo de Avaliação**.
+   3. Desabilite o **modo de avaliação**.
     
-      ![desabilite o modo de avaliação](./media/icap-disable-trial-mode.png)
+      ![desabilitar o modo de avaliação](./media/icap-disable-trial-mode.png)
     
 2. Em **ICAP** > **Filtragem de Resposta**, altere o valor de **Ignorar Respostas Menores Que** para 1.
 
@@ -295,7 +295,7 @@ Adicione a alteração de configuração ao Vontu:
     
     ![adicionar regra de resposta](./media/icap-add-response-rule.png)
 
-2.  Verifique se **Resposta Automatizada** está selecionado e clique em **Avançar**.
+2.  Escolha **Resposta Automatizada** e clique em **Avançar**.
 
     ![resposta automatizada](./media/icap-automated-response.png)
 
@@ -303,7 +303,7 @@ Adicione a alteração de configuração ao Vontu:
 
     ![bloquear http](./media/icap-block-http.png)
 
-Adicione a regra criada a todas as políticas existentes:
+Adicione a regra criada para todas as políticas existentes:
 
 1. Em cada Política, alterne para a guia **Resposta**.
 
@@ -313,7 +313,7 @@ Adicione a regra criada a todas as políticas existentes:
    
     ![desabilite o modo de avaliação](./media/icap-add-policy.png)
 
-Essa regra deve ser adicionada a todas as políticas existentes.
+Adicione esta regra a todas as políticas existentes.
 
 >[!NOTE]
 > Se você usar o Symantec Vontu para examinar arquivos do Dropbox, o CAS exibirá o arquivo automaticamente como sendo de origem da seguinte URL: http://misc/filename Essa URL de espaço reservado, na verdade, não leva a lugar algum, mas é usada para fins de log.

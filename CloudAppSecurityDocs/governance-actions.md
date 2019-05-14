@@ -4,7 +4,7 @@ description: Este artigo lista e descreve todas as ações de governança que po
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6bce6df97a83e6a0a8e65c4eed8d8ac955ab9a1f
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: dfed20fd3b39395affce66098ebd0e7a16100a5e
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282062"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567815"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 

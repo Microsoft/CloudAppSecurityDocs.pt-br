@@ -4,7 +4,7 @@ description: Este artigo descreve o processo para modificar a configuração do 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 305281ec527f605951d4d0c7f720c054ac444cf3
-ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.openlocfilehash: bb21ffbef29395ca480fa718ac20f1f372253f23
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59904202"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568626"
 ---
 # <a name="log-collector-ftp-configuration"></a>Configuração do FTP do coletor de log
 

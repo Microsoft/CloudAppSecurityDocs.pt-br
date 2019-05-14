@@ -4,7 +4,7 @@ description: Este artigo fornece informações a respeito da integração do SIE
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f140ed3438720fc4e4f96b8b0efaa2572d6e722e
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 25968245abd28b6a97cebda85c5092cd0a8d35fe
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830380"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568855"
 ---
 # <a name="siem-integration"></a>Integração ao SIEM
 

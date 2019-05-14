@@ -4,7 +4,7 @@ description: Este artigo descreve as opções de suporte e solução de problema
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c3cd5a1583260fa06a5f00805a7695cda8d44eb
-ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
+ms.openlocfilehash: 1a64f46730e5c9cec50acab6750305ce9004c410
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58543613"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568475"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas do Microsoft Cloud App Security
 

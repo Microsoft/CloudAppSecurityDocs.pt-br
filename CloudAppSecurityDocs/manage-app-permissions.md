@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como você pode controlar, 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 445c8ac7d535e349ed3c8bee7af100062c76d184
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: 9f6242c6c378805c91c1707f9e22d1e48008d6de
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622381"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568537"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 

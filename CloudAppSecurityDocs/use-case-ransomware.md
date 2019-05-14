@@ -4,7 +4,7 @@ description: Este tópico descreve o cenário para proteger sua organização co
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0cb5f3ef6e88a35e7c8c5e262e666fb3d4107159
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: c9ee65a3a4aef6d6ef200597405642a0fde15c68
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282742"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568770"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protegendo sua organização contra ransonware
 

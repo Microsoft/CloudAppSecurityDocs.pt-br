@@ -4,7 +4,7 @@ description: Este guia de início rápido descreve o processo usado para colocar
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/15/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 568bfa46ec52bc4f20a3981fc627467d2bb3cab0
-ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.openlocfilehash: adfd8b7371fae5dcc4c4ffdfe5d9be647a12b826
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59904372"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567776"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: Começar a usar o Microsoft Cloud App Security
 

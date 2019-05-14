@@ -4,7 +4,7 @@ description: Este artigo oferece instruções para criar e trabalhar com políti
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd5d491613be999238f1ef84a5ffce63e0fcea4c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: b765424ce19004b984a360d49193445f2a53a033
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281558"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567931"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 

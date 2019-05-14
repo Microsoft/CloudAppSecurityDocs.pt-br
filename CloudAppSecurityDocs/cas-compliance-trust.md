@@ -4,7 +4,7 @@ description: Este artigo descreve a oferta de conformidade, a central de confiab
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 03/01/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 26a199d0e92c48258b49ef69ddf0473584c54287
-ms.sourcegitcommit: 0b913d3a91e236d60ac8aede566cfd9a4f757abd
+ms.openlocfilehash: ff64d0afc590312a877c81797e79ff7a7b05dbf9
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305874"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568134"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Privacidade e segurança de dados do Microsoft Cloud App Security
 
@@ -45,19 +45,19 @@ O Microsoft Cloud App Security atende a vários padrões de conformidade interna
 
 | |Título|Descrição|
 |----|----|----|
-|![logotipo da csa](./media/csastar-attest.png)|Atestado CSA STAR|O Azure e o Intune receberam o atestado Cloud Security Alliance STAR com base em uma auditoria independente.|
-|![logotipo da csa](./media/csastar.png)|Certificação CSA STAR|O Azure, o Intune e o Power BI receberam a certificação Cloud Security Alliance STAR no nível Gold.|
+|![logotipo da csa](./media/csastar-attest.png)|Atestado CSA STAR|Os serviços Azure e Intune receberam a certificação Cloud Security Alliance STAR Attestation com base em uma auditoria independente.|
+|![Logotipo CSA](./media/csastar.png)|Certificação CSA STAR|Os serviços Azure, Intune e Power BI receberam a certificação Cloud Security Alliance STAR no nível Ouro.|
 |![logotipo das cláusulas de modelo da UE](./media/eu-model-icon.png)|[Cláusulas de modelo da UE](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|A Microsoft oferece Cláusulas Contratuais Padrão da UE, que são garantias para transferências de dados pessoais.|
-|![logotipo da defesa de privacidade](./media/privacy_shield.png)|UE-EUA Defesa de Privacidade|A Microsoft está em conformidade com essa estrutura a fim de proteger dados pessoais transferidos da UE para os EUA.|
-|![logotipo FISC](./media/logo_fisc.png)|FISC|A Microsoft atende aos requisitos do padrão Financial Industry Information Systems v8 no Japão.|
+|![Logotipo Privacy Shield](./media/privacy_shield.png)|UE-EUA. Privacy Shield|A Microsoft está em conformidade com essa estrutura para proteção de dados pessoais transferidos da UE para os EUA.|
+|![Logotipo FISC](./media/logo_fisc.png)|FISC|A Microsoft atende aos requisitos do padrão v8 do Financial Industry Information Systems no Japão.|
 |![logotipo HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|A Microsoft oferece Health Insurance Portability e Accountability Act Business Associate Agreements (BAAs).|
-|![logotipo iso 9001](./media/iso-9001.png)|ISO 9001|A Microsoft recebeu o certificado por sua implementação desses padrões de gerenciamento de qualidade.|
+|![Logotipo ISO 9001](./media/iso-9001.png)|ISO 9001|A Microsoft é certificada pela implementação de padrões de gerenciamento de qualidade.|
 |![logotipo iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|A Microsoft recebeu o certificado por sua implementação desses padrões de gerenciamento de segurança da informação.|
 |![logotipo iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|A Microsoft foi a primeira provedora de nuvem a aderir a esse código de prática para privacidade na nuvem.|
-|![logotipo PCI](./media/pci-logo.png)|PCI DSS|O Azure está em conformidade com o padrão Payment Card Industry Data Security Standards nível 1, versão 3.1.|
+|![Logotipo PCI](./media/pci-logo.png)|PCI DSS|O Microsoft Azure está em conformidade com o PCI DSS (Payment Card Industry Data Security Standards) Nível 1, versão 3.1.|
 |![logotipo SOC](./media/soc-logo.png)|[Relatórios tipo 2 de SOC 1 e SOC 2](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Os serviços em nuvem da Microsoft estão em conformidade com os padrões de Controles de Organização de Serviços para segurança operacional.|
-|![logotipo SOC](./media/soc-logo.png)|SOC 3|Os serviços em nuvem da Microsoft estão em conformidade com os padrões de Controles de Organização de Serviços para segurança operacional.|
-|![logotipo g-cloud](./media/g-cloud.png)|G-Cloud do Reino Unido|O Crown Commercial Service renovou a classificação dos serviços de nuvem da Microsoft para Government Cloud v6.|
+|![Logotipo SOC](./media/soc-logo.png)|SOC 3|Os serviços em nuvem da Microsoft estão em conformidade com os padrões de Controles de Organização de Serviços para segurança operacional.|
+|![Logotipo G-Cloud](./media/g-cloud.png)|UK G-Cloud|O Crown Commercial Service renovou a classificação dos serviços de nuvem da Microsoft para Government Cloud v6.|
 
 Para obter mais informações, acesse [Ofertas de conformidade da Microsoft](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings) e selecione Cloud App Security.  
 

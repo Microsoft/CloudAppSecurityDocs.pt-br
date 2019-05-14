@@ -4,7 +4,7 @@ description: Este artigo fornece informações sobre como conectar o Office 365 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f432393c6e60a360f2acae6c35cc79a239469b41
-ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
+ms.openlocfilehash: 7cececd4453bb1f5e6c7cd0314610a3e4fbcaaf3
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58543630"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567615"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar o Office 365 ao Microsoft Cloud App Security
 

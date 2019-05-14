@@ -4,7 +4,7 @@ description: Este artigo descreve o procedimento para configurar uma política d
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 18b81bc9ff35929cb6c34637c0fa0c4f869284df
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 428c36837a8162c94ca95afbdabe7a3d424d9c1e
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282249"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568931"
 ---
 # <a name="session-policies"></a>Políticas de sessão 
 

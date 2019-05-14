@@ -4,7 +4,7 @@ description: Este artigo descreve os endereços IP e portas que você precisa ab
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8ba13d53e479c55ec00c057f6a7b01c70c80af2f
-ms.sourcegitcommit: 57bad4dc9b28326c93ee480d308d52ea23c42089
+ms.openlocfilehash: 5602e0141b8c9251c0d76d4960361fbea62fb289
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58163561"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568679"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 

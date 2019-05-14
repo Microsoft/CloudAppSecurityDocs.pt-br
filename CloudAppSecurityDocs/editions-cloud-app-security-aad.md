@@ -4,7 +4,7 @@ description: Este artigo descreve as diferenças entre os recursos de descoberta
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 03/25/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8c06489e5f7dbaf32d815bd548558f09a9447afb
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: ccae964e3d8dc264f5e6a8f1165c990a50320e9c
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476494"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567751"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Quais são as diferenças entre os recursos de descoberta do Azure Active Directory e do Microsoft Cloud App Security?
 
