@@ -15,12 +15,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 364099f030e2f921c03ce7c47ea26dd14f5a25af
-ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.openlocfilehash: 8324b5584cc49edcb15f356e6d255333f153b5bc
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65047726"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567920"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>Início Rápido: Trabalhar com aplicativos descobertos
 
