@@ -4,8 +4,8 @@ description: Este artigo fornece informações sobre como implantar os recursos 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+manager: angrobe
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14e5f822c5075f1d59dc7ecef350b46e3c8c0f0c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6a3b96a75bb76d548f0371fd9c98eff071312c67
+ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568674"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629536"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD
 
@@ -64,6 +64,8 @@ Execute estas etapas para configurar aplicativos do Azure AD para ser controlado
       > [!NOTE]
       >O Controle de Aplicativos de Acesso Condicional é compatível com qualquer aplicativo SAML ou Open ID Connect que esteja configurado com o logon único do Azure AD, incluindo esses aplicativos em destaque. Os aplicativos que não estão em destaque podem ser configurados com o controle de acesso no portal do Cloud App Security, por meio de uma solicitação para integrá-los no controle de sessão. 
 
+7. Clique em **habilitar** e **salvar**.
+ 
 ## Etapa 2: Entrar com um usuário com escopo para a política nos aplicativos <a name="sign-in-scoped"></a>
 
 Depois de criar a política, entre em cada aplicativo configurado nessa política. Entre usando um usuário configurado na política. Lembre-se primeiro de sair das sessões existentes.
