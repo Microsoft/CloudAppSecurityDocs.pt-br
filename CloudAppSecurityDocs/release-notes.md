@@ -4,8 +4,8 @@ description: Este artigo é atualizado com frequência para mantê-lo informado 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/15/2019
+manager: angrobe
+ms.date: 05/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ae0c0ee16c36127b124115917aa8640387835795
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 55a534b9c47f6db18cccc8f302d73deabda606ec
+ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568710"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629529"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -29,6 +29,23 @@ ms.locfileid: "65568710"
 Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
 
 RSS feed: receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-148-and-149"></a>Cloud App Security versão 148 e 149
+
+Lançado em 12 de maio de 2019
+
+- **Conector do aplicativo WebEx disponível**<br>Agora um novo conector de aplicativo está disponível para o Cisco WebEx Teams em visualização pública. Você pode conectar o Microsoft Cloud App Security ao Cisco WebEx Teams para monitorar e proteger seus usuários, atividades e arquivos. Para saber mais, confira [Conectar o WebEx](connect-webex-to-microsoft-cloud-app-security.md)
+
+- **Novos locais do serviço de classificação de dados da Microsoft**<br>O [Serviço de classificação de dados da Microsoft](dcs-inspection.md) agora está disponível em 4 novos locais: Austrália, Canadá, Índia e Japão. Se seu locatário do Office estiver localizado em um desses países, agora você pode utilizar o Serviço de classificação de dados da Microsoft como o método de inspeção de conteúdo nas políticas de arquivo do Microsoft Cloud App Security.
+
+- **Discovery para PaaS e IaaS sombras**<br> O Microsoft Cloud App Security ampliou os recursos do Cloud Discovery e agora também fornece TI sombra para os recursos hospedados em soluções de IaaS e PaaS, como o Microsoft Azure, Amazon Web Services e Google Cloud Platform. O Cloud Discovery fornece a visibilidade de quais aplicativos personalizados são executados sobre seu IaaS e PaaS, as contas de armazenamento que estão sendo criadas e muito mais. Use essa nova funcionalidade para descobrir quais recursos existirem, quem acessa cada um deles e a quantidade de tráfego transmitida.
+
+- **Atestado de aplicativo**<br>A conformidade e avaliação de risco do Microsoft Cloud App Security agora permite que provedores de nuvem atestem seu aplicativo para estar atualizado no Catálogo de Aplicativos de Nuvem. Esse piloto permite que provedores de nuvem preencham um questionário de autocertificação com base nos atributos de risco do Catálogo de aplicativos de nuvem para garantir que sua avaliação de risco no Cloud App Security seja precisa e atualizada. Assim, os usuários podem obter uma indicação de quais atributos de risco foram atestados pelo provedor (em vez de avaliados pela equipe do Cloud App Security) e quando cada atributo foi enviado pelo provedor. Para saber mais, confira [Atestar seu aplicativo](attest-your-app.md). 
+
+- **Granularidade da carga de trabalho do Office 365**<br>Agora, ao conectar o Office 365 ao Microsoft Cloud App Security, você tem controle sobre quais cargas de trabalho deseja conectar. Por exemplo, os clientes interessados apenas em conectar o Office 365 para o monitoramento de atividade agora podem fazê-lo durante o processo de conexão ou ao editar um conector existente do Office 365. Os clientes com um conector existente do Office 365 não são afetados por essa alteração.
+
+- **Suporte aprimorado do Teams**<br>Agora você pode monitorar e bloquear o envio de mensagens no aplicativo web do Teams em tempo real, configurando uma política de sessão com base no conteúdo confidencial. 
 
 ## <a name="cloud-app-security-release-147"></a>Cloud App Security, versão 147
 
@@ -164,7 +181,7 @@ Agora você pode afetar o mecanismo de detecção de anomalias para suprimir ou 
 
 Lançado em 9 de dezembro de 2018
 
-- **Upload automático de log usando o Docker no Windows**<br>Agora o Cloud App Security oferece suporte ao upload automático de log para o Windows 10 (Fall Creators Update) e o Windows Server (versão 1709 e posterior) usando um Docker for Windows.
+- **Upload automático de log usando o Docker no Windows**<br>Agora o Cloud App Security dá suporte ao upload automático de log para o Windows 10 (Fall Creators Update) e o Windows Server (versão 1709 e posterior) usando um Docker for Windows.
 Confira [Docker no Windows local](discovery-docker-windows.md) para obter mais informações e instruções de como isso pode ser configurado.
 - O Cloud App Security integra-se ao [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) para fornecer guias estratégicos de automação e orquestração de alerta personalizadas. Para obter mais informações e instruções de integração, confira [Integrating with Microsoft Flow](flow-integration.md) (Integrando ao Microsoft Flow).
 
@@ -246,7 +263,7 @@ Para oferecer uma experiência de administrador mais consistente em todos os pro
 Agora você pode enviar os comentários para a equipe do Cloud App Security informando se algum aplicativo OAuth que pareça mal-intencionado foi descoberto na sua organização. Esse novo recurso permite que você participe da nossa comunidade de segurança e melhore a análise e a pontuação de risco do aplicativo OAuth. Para obter mais informações, confira [Gerenciar aplicativo permiOAuth appsssions](manage-app-permissions.md).
 
 - **Novos analisadores do Cloud Discovery**<br>
-Os analisadores do Cloud Discovery agora oferecem suporte ao iboss Secure Cloud Gateway e Sophos XG.
+Os analisadores do Cloud Discovery agora dão suporte ao iboss Secure Cloud Gateway e Sophos XG.
 
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security versão 129
