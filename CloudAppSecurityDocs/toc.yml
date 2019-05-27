@@ -14,7 +14,7 @@
           href: editions-cloud-app-security-o365.md
         - name: AD do Azure
           href: editions-cloud-app-security-aad.md
-- name: Inícios rápidos
+- name: Guias de início rápido
   expanded: true
   items:
     - name: Introdução
@@ -89,18 +89,18 @@
               href: log-collector-proxy.md
             - name: Usar o analisador de log personalizado
               href: custom-log-parser.md
-    - name: Aprimoramento do Cloud Discovery
-      href: cloud-discovery-aad-enrichment.md
-    - name: Anonimizar dados do Cloud Discovery
-      href: cloud-discovery-anonymizer.md
-    - name: Trabalhando com o Cloud Discovery
-      items:
+        - name: Aprimoramento do Cloud Discovery
+          href: cloud-discovery-aad-enrichment.md
+        - name: Anonimizar dados do Cloud Discovery
+          href: cloud-discovery-anonymizer.md
         - name: Adicionar aplicativos personalizados ao Cloud Discovery
           href: cloud-discovery-custom-apps.md
         - name: Consultas e filtros de aplicativos descobertos
           href: discovered-app-queries.md
-    - name: Configurar upload de log automático para relatórios contínuos
+    - name: Conectar aplicativos
       items:
+        - name: Conectar aplicativos para obter visibilidade e proteção
+          href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
         - name: Conectar o Azure
           href: connect-azure-to-microsoft-cloud-app-security.md
         - name: Conectar a AWS
@@ -121,7 +121,6 @@
           href: connect-servicenow-to-microsoft-cloud-app-security.md
         - name: Conectar o WebEx
           href: connect-webex-to-microsoft-cloud-app-security.md
-      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD
       href: proxy-deployment-aad.md
     - name: Investigação
