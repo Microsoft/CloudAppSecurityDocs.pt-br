@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6a23a081ece3e6aa94995e688ec2163b36441e60
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b49ab77b33548d6fd188eadde97294ceb6c62ca5
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568406"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173522"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração do Microsoft Defender Advanced Threat Protection com o Microsoft Cloud App Security
 
@@ -92,6 +92,9 @@ Após você integrar o Microsoft Defender ATP com o Cloud App Security, você po
  
 Assim como acontece com qualquer outra fonte do Cloud Discovery, é possível exportar os dados do relatório de usuários de ponto de extremidade do Win10 para uma investigação adicional. 
 
+> [!NOTE]
+> - Defender ATP encaminha os dados ao Cloud App Security em partes de ~ 4 MB (transações de ponto de extremidade de ~ 4000)
+> - Se o limite de 4 MB não é atingido em 1 hora, relatórios de Defender ATP todas as transações executadas na última hora.
 
 ## <a name="related-videos"></a>Vídeos Relacionados
 

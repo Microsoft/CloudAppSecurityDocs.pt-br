@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 3/18/2019
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8e7c476690b1831b78a59c7c63b061aef0dc78e
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6f41d30f14f517e682e2535a908650c898ba13fa
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568509"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173542"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -36,20 +36,20 @@ Há dois tipos de relatórios que você pode gerar:
 
 - **Relatórios contínuos** – analisam todos os logs que são encaminhados da sua rede usando o Cloud App Security. Eles oferecem maior visibilidade em todos os dados e identificam automaticamente usos anormais com o mecanismo de detecção de anomalias do Machine Learning ou por meio de políticas personalizadas que você definir. Esses relatórios podem ser criados conectando-se das seguintes maneiras:
 
-  - [Integração do Microsoft Defender ATP](wdatp-integration.md): Cloud App Security integra-se com o Microsoft Advanced Threat ATP (proteção Defender) nativamente, para simplificar a distribuição do Cloud Discovery, estender os recursos de Cloud Discovery além da sua rede corporativa e habilitar a máquina com base em investigação.
-  - [Coletor de logs](discovery-docker.md): Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
-  - [Integração do Zscaler](zscaler-integration.md): Se você trabalha com o Cloud App Security e o Zscaler, pode integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. Juntos, o Cloud App Security e o Zscaler proporcionam uma implantação perfeita do Cloud Discovery, o bloqueio automático de aplicativos não sancionados e a avaliação de riscos diretamente no portal do Zscaler.
+ - [Integração do Microsoft Defender ATP](wdatp-integration.md): Cloud App Security integra-se com o Microsoft Advanced Threat ATP (proteção Defender) nativamente, para simplificar a distribuição do Cloud Discovery, estender os recursos de Cloud Discovery além da sua rede corporativa e habilitar a máquina com base em investigação.
+ - [Coletor de logs](discovery-docker.md): Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
+ - [Integração do Zscaler](zscaler-integration.md): Se você trabalha com o Cloud App Security e o Zscaler, pode integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. Juntos, o Cloud App Security e o Zscaler proporcionam uma implantação perfeita do Cloud Discovery, o bloqueio automático de aplicativos não sancionados e a avaliação de riscos diretamente no portal do Zscaler.
  - [integração de iboss](iboss-integration.md): Se você trabalha com o Cloud App Security e o iboss, é possível integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. Juntos, o Cloud App Security e iboss fornecem uma implantação perfeita do Cloud Discovery, bloqueio de aplicativos não sancionados e avaliação de riscos diretamente no portal do iboss automático.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Fluxo do processo de log: Dos dados brutos à avaliação de risco
 
-O processo de geração de uma avaliação de riscos consiste nas seguintes etapas. O processo leva de alguns minutos a várias horas, dependendo da quantidade de dados processados.  
+O processo de geração de uma avaliação de riscos consiste nas seguintes etapas. O processo leva de alguns minutos a várias horas, dependendo da quantidade de dados processados. 
 
-- **Carregar** – os logs do tráfego da Web da sua rede são carregados no portal.  
+- **Carregar** – os logs do tráfego da Web da sua rede são carregados no portal. 
 
-- **Analisar** – O Cloud App Security analisa e extrai dados de tráfego dos logs de tráfego com um analisador dedicado para cada fonte de dados.  
+- **Analisar** – O Cloud App Security analisa e extrai dados de tráfego dos logs de tráfego com um analisador dedicado para cada fonte de dados. 
 
-- **Analisar** – os dados de tráfego são examinados em relação ao Catálogo do Cloud App para identificar mais de 16 mil aplicativos de nuvem e avaliar sua pontuação de risco. Os usuários ativos e os endereços IP também são identificados como parte da análise.  
+- **Analisar** – os dados de tráfego são examinados em relação ao Catálogo do Cloud App para identificar mais de 16 mil aplicativos de nuvem e avaliar sua pontuação de risco. Os usuários ativos e os endereços IP também são identificados como parte da análise. 
 
 - **Gerar relatório** – Um relatório de avaliação de risco dos dados extraídos dos arquivos de log é gerado.
 
@@ -97,32 +97,36 @@ Se não houver suporte para seu log, selecione **Outro** como a **Fonte de dados
 Atributos de dados (de acordo com a documentação do fornecedor):
 
 
-|                 Fonte de dados                  |    URL do aplicativo de destino    |    IP do aplicativo de destino     |       Nome de usuário       |      IP de Origem       |    Tráfego total     |    Bytes carregados    |
+| Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de usuário | IP de Origem | Tráfego total | Bytes carregados |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-|                  Barracuda                   | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |          Não          |
-|                  Blue Coat                   | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                  Checkpoint                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
-|              Cisco ASA (Syslog)              |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
-|           Cisco ASA com FirePOWER           | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                  Cisco FWSM                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
-|              Cisco Ironport WSA              | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                 Cisco Meraki                 | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
-|           Clavister NGFW (Syslog)            | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                SonicWall (anteriormente conhecido como Dell)                | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|            Digital Arts i-FILTER             | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                  Fortigate                   |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                 Juniper SRX                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                 Juniper SSG                  |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                  McAfee SWG                  | <strong>Sim</strong> |          Não          |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                    MS TMG                    | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|              Redes de Palo Alto              |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                    Sophos                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
-|                Squid (Comum)                | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |
-|                Squid (Nativo)                | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |
+| Barracuda | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | Não | Não |
+| Blue Coat | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| Checkpoint | Não | <strong>Sim</strong> | Não | <strong>Sim</strong> | Não | Não |
+| Cisco ASA (Syslog) | Não | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | Não |
+| Cisco ASA com FirePOWER | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| Cisco FWSM | Não | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | Não |
+| Cisco Ironport WSA | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| Cisco Meraki | <strong>Sim</strong> | <strong>Sim</strong> | Não | <strong>Sim</strong> | Não | Não |
+|Cisco ScanSafe|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|
+| Clavister NGFW (Syslog) | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| SonicWall (anteriormente conhecido como Dell) | <strong>Sim</strong> | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| Digital Arts i-FILTER | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|ForcePoint Web Security Cloud|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|
+| Fortigate | Não | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|Fortinet FortiOS|<strong>Sim</strong>|<strong>Sim</strong>|Não|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|
+|iboss|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|<strong>Sim</strong>|
+| Juniper SRX | Não | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| Juniper SSG | Não | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| McAfee SWG | <strong>Sim</strong> | Não | Não | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| MS TMG | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| Redes de Palo Alto | Não | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| Sophos | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | Não |
+| Squid (Comum) | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | Não | <strong>Sim</strong> |
+| Squid (Nativo) | <strong>Sim</strong> | Não | <strong>Sim</strong> | <strong>Sim</strong> | Não | <strong>Sim</strong> |
 | Websense – Relatório de detalhes investigativo (CSV) | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|    Websense – Log de atividades da Internet (CEF)    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                   Zscaler                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-     
+| Websense – Log de atividades da Internet (CEF) | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+| Zscaler | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+
 
 
 ## <a name="next-steps"></a>Próximas etapas
