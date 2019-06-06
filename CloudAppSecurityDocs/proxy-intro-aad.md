@@ -2,10 +2,10 @@
 title: Proteger aplicativos com o Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security
 description: Este artigo fornece informações sobre como funciona o proxy reverso do Controle de Aplicativos de Acesso Condicional do Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c3da25124129097a0433dc5e8f312de9d73f9440
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0e1a48c5c139839b7999d8a36713adb22e37d957
+ms.sourcegitcommit: a77d2ed241e6d9d99d296f99f073d31fec88b709
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568965"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66687553"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -103,6 +103,7 @@ O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicat
 - CornerStone on Demand
 - DocuSign
 - Dropbox
+- Dynamics 365 CRM (visualização)
 - Egnyte
 - Exchange Online (versão prévia)
 - G Suite
