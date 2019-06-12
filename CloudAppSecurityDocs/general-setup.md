@@ -15,12 +15,12 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2889bbf3c837e0d8e086d7e7a579f2839c42b5f3
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: d3339c5b0edc1fd9ee3b3b201fb9fa66531d7694
+ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567841"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66837481"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuração básica do Cloud App Security
 
@@ -54,6 +54,9 @@ Para acessar o portal, é necessário adicionar os seguintes endereços IP à li
 
     - Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
+7. Se você estiver integrando com a integração do Azure Advanced Threat Protection, consulte [integração da proteção contra ameaças do Azure avançada](azip-integration.md) para obter informações. 
+
+
 7. Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **Exportar configurações do portal** para criar um arquivo JSON de todas as suas configurações do portal, incluindo regras de política, grupos de usuários e intervalos de endereços IP.  
   
    

@@ -25,6 +25,8 @@
   items:
     - name: Descobrir e gerenciar a TI sombra
       href: tutorial-shadow-it.md
+    - name: Investigar usuários arriscados
+      href: tutorial-ueba.md
     - name: Investigar aplicativos de OAuth arriscados
       href: investigate-risky-oauth.md
     - name: Bloquear downloads de informações confidenciais
@@ -208,18 +210,28 @@
   items:
     - name: Atestar seu aplicativo
       href: attest-your-app.md
-    - name: Solucionando problemas de Cloud Discovery
-      href: troubleshooting-cloud-discovery.md
-    - name: Solução de problemas de conectores de API usando mensagens de erro
-      href: troubleshooting-api-connectors-using-error-messages.md
-    - name: Solução de problemas de inspeção de conteúdo
-      href: troubleshooting-content-inspection.md
-    - name: Solução de problemas de integração de SIEM
-      href: troubleshooting-siem.md
-    - name: Solução de problemas de implantação do Docker do Cloud Discovery
-      href: troubleshoot-docker.md
-    - name: Políticas da solução de problemas
-      href: troubleshoot-policies.md
+    - name: Políticas comuns
+      items:
+        - name: Políticas de Cloud Discovery
+          href: policies-cloud-discovery.md
+        - name: Políticas de proteção contra ameaças
+          href: policies-threat-protection.md
+        - name: Políticas de proteção de informações
+          href: policies-information-protection.md
+    - name: Solução de problemas
+      items:
+        - name: Solucionando problemas de Cloud Discovery
+          href: troubleshooting-cloud-discovery.md
+        - name: Solução de problemas de conectores de API usando mensagens de erro
+          href: troubleshooting-api-connectors-using-error-messages.md
+        - name: Solução de problemas de inspeção de conteúdo
+          href: troubleshooting-content-inspection.md
+        - name: Solução de problemas de integração de SIEM
+          href: troubleshooting-siem.md
+        - name: Solução de problemas de implantação do Docker do Cloud Discovery
+          href: troubleshoot-docker.md
+        - name: Políticas da solução de problemas
+          href: troubleshoot-policies.md
 - name: Recursos
   items:
     - name: Arquivo de nota de versão

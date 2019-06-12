@@ -2,10 +2,10 @@
 title: Inspeção de conteúdo do Cloud App Security usando o Serviço de Classificação de Dados da Microsoft
 description: Este artigo descreve o processo que o Microsoft Cloud App Security segue ao executar a inspeção de conteúdo DLP usando o Serviço de Classificação de Dados da Microsoft.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 596ed74834a78b993c1b8d4833b8ce1ae481dcc2
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0424af7b50aea3bfe77ae0cb2fe1e7d66f6f1fde
+ms.sourcegitcommit: a5b9089b381bcf8bb48031a5a9141e4e20955aaf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567865"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66830323"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integração dos Serviços de Classificação de Dados da Microsoft
 
@@ -37,7 +37,7 @@ O Microsoft Cloud App Security permite que você use nativamente o Serviço de C
 Você tem a opção de definir o **Método de inspeção** para usar o **Serviço de Classificação de Dados da Microsoft** sem precisar fazer nenhuma configuração adicional. Essa opção é útil ao criar uma política de prevenção de vazamento de dados para seus arquivos no Microsoft Cloud App Security.
 
 
-1. Na página [política de arquivo](data-protection-policies.md), em **Método de inspeção**, selecione **Serviço de Classificação de Dados**.
+1. Na página [política de arquivo](data-protection-policies.md), em **Método de inspeção**, selecione **Serviço de Classificação de Dados**. Você também pode definir a **método de inspeção** na [política de sessão](session-policy-aad.md) página com **download do arquivo de controle (com DLP)** selecionado.
      ![Configuração do serviço de classificação de dados](./media/dcs-enable.png)
 2. Selecione se a política deve ser aplicada quando **qualquer** ou **todos** os critérios são atendidos.
 3. **Escolha o tipo de inspeção** selecionando os **Tipos de informações confidenciais**.
@@ -47,7 +47,7 @@ Você tem a opção de definir o **Método de inspeção** para usar o **Serviç
 
 5. Como opção, você pode retirar a máscara dos últimos quatro caracteres de uma correspondência. Por padrão, as correspondências são mascaradas e mostradas em seu contexto, e incluem os 40 caracteres antes e após a correspondência. Se você ativar essa caixa de seleção, ela removerá a máscara dos últimos quatro caracteres da correspondência em si.
 
-6. Você também pode definir alertas e ações de governança para a política. Para obter mais informações, confira [Políticas de arquivo](data-protection-policies.md) e [Ações de governança](governance-actions.md).
+6. Utilizando políticas de arquivo, você também pode definir alertas e ações de governança da política. Para obter mais informações, confira [Políticas de arquivo](data-protection-policies.md) e [Ações de governança](governance-actions.md). Aproveitar as políticas de sessão, você também pode monitorar e controlar ações em tempo real quando um arquivo corresponde a um tipo de controladores de domínio. Para obter mais informações, consulte [política de sessão](session-policy-aad.md).
 
 Definir essas políticas permite que você amplie facilmente a força dos recursos de DLP do Office 365 para todos os seus outros aplicativos de nuvem sancionados e proteja os dados armazenados neles com o conjunto de ferramentas completo fornecido pelo Microsoft Cloud App Security, como a capacidade de [aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure](azip-integration.md) e a capacidade de controlar as permissões de compartilhamento.
 
