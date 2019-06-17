@@ -15,12 +15,12 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3d5563b73c8b813608c5fd5bc0ea9120ba930e61
-ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.openlocfilehash: 4ca98ab0cb5655d774c6ee4e7f917a6e9456092a
+ms.sourcegitcommit: a25543c14c35f159dd06f7c0c89d6bc0e36a0413
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66837724"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031070"
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -63,9 +63,6 @@ Para habilitar o Cloud App Security para integrar com o Azure ATP:
  
 Depois de habilitar a integração do Azure Advanced Threat Protection, você poderá ver as atividades de locais para todos os usuários em sua organização. Você também será obter avançados insights sobre os usuários que combinam alertas e atividades suspeitas em seus ambientes de nuvem e locais.
 
-
-
-Saiba mais sobre [investigando usuários arriscados](tutorial-ueba.md).
 
 
 ## <a name="next-steps"></a>Próximas etapas 

@@ -2,10 +2,10 @@
 title: Novidades do Cloud App Security
 description: Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: angrobe
-ms.date: 05/15/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/04/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55a534b9c47f6db18cccc8f302d73deabda606ec
-ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
+ms.openlocfilehash: 958d005a9c2a34bb714fc5b2a4f17b04eb727df2
+ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65629529"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66837532"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -29,6 +29,13 @@ ms.locfileid: "65629529"
 Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
 
 RSS feed: receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-150"></a>Cloud App Security, lançamento 150
+
+Lançado em 26 de maio de 2019
+
+- **Melhoria na exportação de alertas**<br> Quando você exporta alertas para um arquivo CSV na página de **Alertas**, os resultados agora incluem a data de resolução ou de descarte do alerta.
 
 
 ## <a name="cloud-app-security-release-148-and-149"></a>Cloud App Security versão 148 e 149
@@ -43,7 +50,7 @@ Lançado em 12 de maio de 2019
 
 - **Atestado de aplicativo**<br>A conformidade e avaliação de risco do Microsoft Cloud App Security agora permite que provedores de nuvem atestem seu aplicativo para estar atualizado no Catálogo de Aplicativos de Nuvem. Esse piloto permite que provedores de nuvem preencham um questionário de autocertificação com base nos atributos de risco do Catálogo de aplicativos de nuvem para garantir que sua avaliação de risco no Cloud App Security seja precisa e atualizada. Assim, os usuários podem obter uma indicação de quais atributos de risco foram atestados pelo provedor (em vez de avaliados pela equipe do Cloud App Security) e quando cada atributo foi enviado pelo provedor. Para saber mais, confira [Atestar seu aplicativo](attest-your-app.md). 
 
-- **Granularidade da carga de trabalho do Office 365**<br>Agora, ao conectar o Office 365 ao Microsoft Cloud App Security, você tem controle sobre quais cargas de trabalho deseja conectar. Por exemplo, os clientes interessados apenas em conectar o Office 365 para o monitoramento de atividade agora podem fazê-lo durante o processo de conexão ou ao editar um conector existente do Office 365. Os clientes com um conector existente do Office 365 não são afetados por essa alteração.
+- **Granularidade da carga de trabalho do Office 365**<br>Agora, ao conectar o Office 365 ao Microsoft Cloud App Security, você tem controle sobre quais cargas de trabalho deseja conectar. Por exemplo, os clientes interessados apenas em conectar o Office 365 para o monitoramento de atividade agora podem fazê-lo durante o processo de conexão ou ao editar um conector existente do Office 365. Como parte desta alteração, o OneDrive e o SharePoint Online não serão mais mostrados como conectores separados, mas eles serão incluídos no conector do Office 365 como a carga de trabalho de _arquivos do Office 365_. Os clientes com um conector existente do Office 365 não são afetados por essa alteração.
 
 - **Suporte aprimorado do Teams**<br>Agora você pode monitorar e bloquear o envio de mensagens no aplicativo web do Teams em tempo real, configurando uma política de sessão com base no conteúdo confidencial. 
 
@@ -78,7 +85,7 @@ Lançado em 17 de março de 2019
 
 - **A integração do Microsoft Defender ATP agora está em disponibilidade geral** <br>
 Ano passado, anunciamos a [integração com a Proteção Avançada contra Ameaças do Windows Defender](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) que aprimora a descoberta de TI sombra na sua organização e a estende além da rede corporativa. [Habilitado com um único clique](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), estamos animados em anunciar que essa integração exclusiva agora está disponível.
-- **Suporte do Dynamics 365** <br>O Cloud App Security adicionou o monitoramento e o controle em tempo real no Dynamics 365 para que você possa proteger seus aplicativos de negócios e o conteúdo confidencial armazenado dentro desses aplicativos. 
+- **Suporte para Dynamics 365 CRM** <br>O Cloud App Security adicionou monitoramento e controle em tempo real no Dynamics 365 CRM para que você possa proteger seus aplicativos de negócios e o conteúdo confidencial armazenado dentro deles. 
 
 ## <a name="cloud-app-security-release-144"></a>Versão 144 do Cloud App Security
 
@@ -181,7 +188,7 @@ Agora você pode afetar o mecanismo de detecção de anomalias para suprimir ou 
 
 Lançado em 9 de dezembro de 2018
 
-- **Upload automático de log usando o Docker no Windows**<br>Agora o Cloud App Security dá suporte ao upload automático de log para o Windows 10 (Fall Creators Update) e o Windows Server (versão 1709 e posterior) usando um Docker for Windows.
+- **Upload automático de log usando o Docker no Windows**<br>Agora o Cloud App Security oferece suporte ao upload automático de log para o Windows 10 (Fall Creators Update) e o Windows Server (versão 1709 e posterior) usando um Docker for Windows.
 Confira [Docker no Windows local](discovery-docker-windows.md) para obter mais informações e instruções de como isso pode ser configurado.
 - O Cloud App Security integra-se ao [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) para fornecer guias estratégicos de automação e orquestração de alerta personalizadas. Para obter mais informações e instruções de integração, confira [Integrating with Microsoft Flow](flow-integration.md) (Integrando ao Microsoft Flow).
 
@@ -263,7 +270,7 @@ Para oferecer uma experiência de administrador mais consistente em todos os pro
 Agora você pode enviar os comentários para a equipe do Cloud App Security informando se algum aplicativo OAuth que pareça mal-intencionado foi descoberto na sua organização. Esse novo recurso permite que você participe da nossa comunidade de segurança e melhore a análise e a pontuação de risco do aplicativo OAuth. Para obter mais informações, confira [Gerenciar aplicativo permiOAuth appsssions](manage-app-permissions.md).
 
 - **Novos analisadores do Cloud Discovery**<br>
-Os analisadores do Cloud Discovery agora dão suporte ao iboss Secure Cloud Gateway e Sophos XG.
+Os analisadores do Cloud Discovery agora oferecem suporte ao iboss Secure Cloud Gateway e Sophos XG.
 
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security versão 129
@@ -339,7 +346,7 @@ Lançamento em 10 de junho de 2018
 Adicionamos um novo widget de investigação ao painel do Microsoft Cloud App Security, que mostra os principais usuários pelo número de alertas abertos de detecção de ameaças. Com este widget, você pode concentrar a investigação de ameaças sobre os usuários que apresentem uma quantidade elevada de sessões suspeitas.
 
 - **Suporte para os buckets AWS S3:**<br>
-O Microsoft Cloud App Security já pode detectar buckets do S3 do AWS e os respectivos níveis de compartilhamento. Ele fornece alertas e visibilidade para os buckets do AWS acessíveis publicamente. O programa permite também criar políticas baseadas em buckets e aplicar governança automaticamente. Além disso, temos um novo modelo de política disponível chamado **Buckets do S3 acessíveis publicamente (AWS)**, com o qual você pode facilmente criar uma política para gerenciar o armazenamento do AWS. Para habilitar esses novos recursos, atualize os aplicativos conectados ao AWS adicionando as novas permissões descritas em [Conectar o AWS](connect-aws-to-microsoft-cloud-app-security.md).
+O Microsoft Cloud App Security já pode detectar buckets do S3 do AWS e os respectivos níveis de compartilhamento. Ele fornece alertas e visibilidade para os buckets do AWS acessíveis publicamente. O programa permite também criar políticas baseadas em buckets e aplicar governança automaticamente. Além disso, temos um novo modelo de política disponível chamado **Buckets do S3 acessíveis publicamente (AWS)** , com o qual você pode facilmente criar uma política para gerenciar o armazenamento do AWS. Para habilitar esses novos recursos, atualize os aplicativos conectados ao AWS adicionando as novas permissões descritas em [Conectar o AWS](connect-aws-to-microsoft-cloud-app-security.md).
 
 - **Privilégios de administrador baseados em grupos de usuários**: Agora é possível definir permissões administrativas aos administradores do Microsoft Cloud App Security por grupo de usuários. Por exemplo, é possível definir um usuário específico como administrador apenas para os usuários da Alemanha. Isso permitiria ao usuário exibir e modificar as informações no Microsoft Cloud App Security, somente quando se relacionassem exclusivamente ao grupo de usuários "Alemanha – Todos os usuários". Saiba mais em [Gerenciar acesso de administrador](manage-admins.md).
 
