@@ -1,8 +1,8 @@
 ---
 title: Políticas do Cloud Discovery - Cloud App Security | Microsoft Docs
-description: Este tópico descreve as etapas para configurar várias políticas de Cloud Discovery no Cloud App Security.
-author: rkarlin
-ms.author: rkarlin
+description: Este artigo descreve as etapas para configurar várias políticas de Cloud Discovery no Cloud App Security.
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -10,12 +10,12 @@ ms.service: cloud-app-security
 ms.assetid: 570da960-771d-484f-932d-b086f2ec2978
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4c9d90852f1dbdf18da285f63abbb46e91595655
-ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.openlocfilehash: f301e5796fe408b9c1fb00b859c848bf4b62ba5f
+ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66837754"
+ms.lasthandoff: 06/16/2019
+ms.locfileid: "67149548"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
 
@@ -60,7 +60,7 @@ Configurar o upload de log automático para o Cloud Discovery contínuo relatór
 
 2.  No **modelo de política** campo, selecione o **novo aplicativo arriscado** modelo e aplique o modelo.
 
-3.  Sob **aplicativo correspondentes a todos os seguintes** definir os [pontuação de risco](risk-score.md) controle deslizante e e o fator de risco de conformidade para personalizar a você é o nível de risco que você deseja disparar um alerta e defina os outros filtros de política para atender às requisitos de segurança da sua organização.
+3.  Sob **aplicativo correspondentes a todos os seguintes** definir os [pontuação de risco](risk-score.md) controle deslizante e o fator de risco de conformidade para personalizar você são o nível de risco que você deseja disparar um alerta e defina os outros filtros de política para atender às requisitos de segurança da sua organização.
 
     1.  Opcional: Para obter as detecções mais significativas, personalize a quantidade de tráfego que vai disparar um alerta.
 
@@ -131,15 +131,15 @@ Configurar o upload de log automático para o Cloud Discovery contínuo relatór
 
 3.  Selecione a caixa de seleção **criar um alerta para cada evento correspondente com a gravidade da política**.
 
-4.  Configure as ações a ser tomada quando um alerta é disparado.
+4.  Configure as ações a serem tomadas quando um alerta é disparado.
 
 ## <a name="detect-risky-oauth-apps"></a>Detectar aplicativos arriscados de OAuth
 
-Obtenha visibilidade e controle sobre [aplicativos de OAuth](investigate-risky-oauth.md) que estão instaladas em aplicativos como Salesforce, Office 365 e G Suite. Aplicativos de OAuth que solicitar permissões alta e tem comunidade rara usar podem ser considerados arriscados.
+Obtenha visibilidade e controle sobre [aplicativos de OAuth](investigate-risky-oauth.md) que são instalados dentro de aplicativos como Salesforce, Office 365 e G Suite. Aplicativos de OAuth que solicitar permissões alta e tem comunidade rara usar podem ser considerados arriscados.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Configurar o upload de log automático para o Cloud Discovery contínuo relatórios, conforme descrito em [configurar o upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
+Você deve ter o aplicativo do G Suite, Office 365 ou Salesforce conectado usando [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Etapas
 
@@ -151,10 +151,10 @@ Configurar o upload de log automático para o Cloud Discovery contínuo relatór
 
 4.  Adicione o filtro **uso da comunidade** é igual a **Rare**.
 
-4.  Configure as ações a ser tomada quando um alerta é disparado. Por exemplo, para o Office 365, verifique **revogar aplicativo** para aplicativos de OAuth detectados pela política.
+4.  Configure as ações a serem tomadas quando um alerta é disparado. Por exemplo, para o Office 365, verifique **revogar aplicativo** para aplicativos de OAuth detectados pela política.
 
 > [!NOTE]
->  Suporte para lojas de aplicativos do Office 365, Salesforce e o G Suite.
+>  Suporte para lojas de aplicativos do Office 365, G Suite e Salesforce.
 
 ## <a name="next-steps"></a>Próximas etapas 
 

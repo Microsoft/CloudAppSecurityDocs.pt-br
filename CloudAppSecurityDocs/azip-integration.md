@@ -2,10 +2,10 @@
 title: Integrar a Proteção de Informações do Azure ao Cloud App Security
 description: Este artigo fornece informações sobre como utilizar os rótulos da Proteção de Informações do Azure no Cloud App Security para controle adicional sobre o uso de aplicativos de nuvem da sua organização.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/21/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b7792d594cd2345a93f57942ee032d6387f82b27
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 44fdf94cafa684e7a452155e2b5531bd0868d783
+ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567603"
+ms.lasthandoff: 06/16/2019
+ms.locfileid: "67149557"
 ---
 # <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
 
@@ -29,7 +29,7 @@ ms.locfileid: "65567603"
 O Microsoft Cloud App Security permite aplicar rótulos de classificação da Proteção de Informações do Azure automaticamente, com ou sem proteção, a arquivos como uma ação de governança da política de arquivo. Também é possível investigar arquivos com a filtragem do rótulo de classificação aplicado no portal do Cloud App Security. O uso de classificações proporciona mais visibilidade e controle sobre os dados confidenciais na nuvem. A integração de Proteção de Informações do Azure ao Cloud App Security é tão fácil quanto marcar uma única caixa de seleção. 
 
 > [!NOTE]
-> Este artigo também será relevante para os rótulos unificados da Proteção de Informações da Microsoft se você já [tiver migrado seus rótulos de classificação para o Centro de Segurança e Conformidade do Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Se você não tiver migrado seus rótulos de classificação existentes e começar a criar rótulos no Centro de Segurança e Conformidade do Office 365, o Cloud App Security usará apenas os rótulos preexistentes configurados no portal da Proteção de Informações do Azure.
+> Este artigo também será relevante para os rótulos unificados da Proteção de Informações da Microsoft se você já [tiver migrado seus rótulos de classificação para o Centro de Segurança e Conformidade do Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Se você não migrou seus rótulos de classificação existente e começar a criar novos rótulos no Centro de conformidade e segurança do Office 365, o Cloud App Security usará apenas os rótulos preexistentes configurados no portal do Azure Information Protection.
 
 
 Integrando a Proteção de Informações do Azure ao Cloud App Security, é possível usar todo o potencial dos dois serviços e proteger arquivos na nuvem, incluindo:
@@ -47,12 +47,14 @@ Integrando a Proteção de Informações do Azure ao Cloud App Security, é poss
 
 - Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
+Para usar rótulos no Cloud App Security, os rótulos devem ser publicados como parte da política global. Se você estiver usando a proteção de informações do Azure, os rótulos devem ser publicados por meio do portal do Azure Information Protection. Se você migrou para rótulos unificados, os rótulos devem ser publicados por meio do Centro de conformidade e segurança do Office 365.
+
 Atualmente, o Cloud App Security permite a aplicação de rótulos de classificação da Proteção de Informações do Azure para os seguintes tipos de arquivo:
 
 - Word: docm, docx, dotm, dotx
 - Excel: xlam, xlsm, xlsx, xltx
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
-- Os arquivos PDF estarão disponíveis em versões futuras 
+- PDF
 
 Atualmente, este recurso está disponível para arquivos armazenados nas plataformas Box, G Suite, SharePoint Online e OneDrive for Business. Mais aplicativos de nuvem serão compatíveis em versões futuras.
 
