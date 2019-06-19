@@ -23,6 +23,8 @@
       href: discovered-apps.md
 - name: Tutoriais
   items:
+    - name: Investigar usuários arriscados
+      href: tutorial-ueba.md
     - name: Descobrir e gerenciar a TI sombra
       href: tutorial-shadow-it.md
     - name: Investigar aplicativos de OAuth arriscados
@@ -188,6 +190,8 @@
           href: governance-actions.md
         - name: Controlar aplicativos descobertos
           href: governance-discovery.md
+        - name: Integração do ATP do Azure
+          href: aatp-integration.md
         - name: Integração da Proteção de Informações do Azure
           href: azip-integration.md
         - name: Integrate with extrnal solutions (Integrar com soluções externas)
