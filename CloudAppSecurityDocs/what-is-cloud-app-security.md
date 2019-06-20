@@ -2,10 +2,10 @@
 title: O que é o Cloud App Security?
 description: Este artigo descreve o Microsoft Cloud App Security e como ele funciona.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/27/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 525df694492667bf12ceb8a9fe30654f97c19935
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0271b75da9b9d8e18deb99503e4cfe78660ea704
+ms.sourcegitcommit: b679efee6d54931c6b5f123324b3b4dd791ddca6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568793"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67157073"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Visão geral do Microsoft Cloud App Security
 
@@ -29,19 +29,23 @@ ms.locfileid: "65568793"
 > [!NOTE]
 > Para saber mais sobre o Cloud App Security do Office 365, consulte [Introdução ao Cloud App Security do Office 365](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
-A migração para a nuvem aumenta a flexibilidade dos funcionários e reduz os custos de TI. No entanto, ela também apresenta novos desafios e complexidades para manter sua organização segura. Para obter todos os benefícios dos aplicativos de nuvem, uma equipe de TI precisa encontrar o equilíbrio ideal entre dar suporte ao acesso e manter o controle para proteger dados críticos.  
+A migração para a nuvem aumenta a flexibilidade tanto para funcionários quanto para a TI. No entanto, ela também apresenta novos desafios e complexidades para manter sua organização segura. Para obter todos os benefícios dos aplicativos e serviços de nuvem, uma equipe de TI precisa encontrar o equilíbrio ideal entre dar suporte ao acesso e manter o controle para proteger dados críticos.
 
-O Cloud App Security é um componente crítico da pilha do Microsoft Cloud Security. É uma solução abrangente que pode ajudar sua organização durante a transição, para que você aproveite ao máximo a promessa dos aplicativos na nuvem, enquanto o mantém no controle com maior visibilidade das atividades. Ela também ajuda a aumentar a proteção de dados críticos em aplicativos de nuvem. Com ferramentas que ajudam a descobrir a TI Invisível, avaliar os riscos, impor políticas, investigar atividades e parar ameaças, sua organização pode migrar para a nuvem com segurança enquanto mantém o controle de dados críticos. 
+O Microsoft Cloud App Security é um Agente de Segurança de Acesso à Nuvem que oferece suporte a vários modos de implantação, incluindo coleta de log, conectores de API e proxy reverso. Ele fornece visibilidade avançada, controle sobre a viagem de dados e análises sofisticadas para identificar e combater ameaças cibernéticas em todos os seus serviços de nuvem da Microsoft e de terceiros.
+
+O Microsoft Cloud App Security integra-se nativamente às principais soluções da Microsoft e foi desenvolvido com profissionais de segurança em mente. Ele fornece implantação simples, gerenciamento centralizado e recursos de automação inovadores.
 
 Para obter informações sobre o licenciamento, confira a [Folha de dados de licenciamento do Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
 ## <a name="the-cloud-app-security-framework"></a>A estrutura do Cloud App Security  
 
-- **Cloud Discovery**: Descubra o uso completo da nuvem em sua organização, incluindo avaliação de controle e de risco e relatórios de TI sombra.
+- **Descubra e controle o uso de Shadow IT**: identifique os aplicativos de nuvem, IaaS e PaaS usados ​​por sua organização. Investigue os padrões de uso, avalie os níveis de risco e a preparação para os negócios de mais de 16.000 aplicativos SaaS em relação a mais de 80 riscos. Comece a gerenciá-los para garantir a segurança e a conformidade.
 
-- **Proteção de dados**: Monitore e controle seus dados na nuvem obtendo visibilidade, impondo políticas DLP, alertas e investigação. 
+- **Proteja suas informações confidenciais em qualquer lugar na nuvem**: reconheça, classifique e proteja a exposição de informações confidenciais em repouso. Aproveite as políticas prontas para uso e os processos automatizados para aplicar controles em tempo real em todos os seus aplicativos na nuvem.
 
-- **Proteção contra ameaças**: Detecte usos anormais e incidentes de segurança. Use ferramentas avançadas de investigação e análise comportamental para atenuar o risco e definir políticas e alertas para obter o máximo de controle sobre o tráfego na nuvem da rede.
+- **Proteja contra ameaças cibernéticas e anomalias**: detecte comportamento incomum em aplicativos de nuvem para identificar ransomware, usuários comprometidos ou aplicativos não autorizados, analise o uso de alto risco e faça correções automaticamente para limitar o risco à sua organização.
+
+- **Avalie a conformidade de seus aplicativos na nuvem**: avalie se os seus aplicativos na nuvem atendem aos requisitos de conformidade relevantes, incluindo conformidade regulamentar e padrões do setor. Evite vazamentos de dados para aplicativos não compatíveis e limite o acesso a dados regulamentados.
 
 ## <a name="architecture"></a>Arquitetura  
 
