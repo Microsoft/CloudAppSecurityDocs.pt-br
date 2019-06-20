@@ -15,11 +15,11 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: 80ef10622093523c92547de4bb52538b705ce168
-ms.sourcegitcommit: 62778bfbc010b95cdef4c8aed23b0f195f382242
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67171548"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237231"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
 

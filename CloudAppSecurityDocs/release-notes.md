@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 958d005a9c2a34bb714fc5b2a4f17b04eb727df2
-ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.openlocfilehash: 33bd8a0642be1b3dd6a52b9ce93bf432d5b6836a
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66837532"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237230"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -128,7 +128,7 @@ Agora você pode configurar políticas de sessão para monitorar usuários ou bl
 As consultas sugeridas foram adicionadas à página dos aplicativos OAuth para fornecer modelos de investigação prontos para uso, a fim de filtrar os aplicativos OAuth. As consultas sugeridas incluem filtros personalizados para identificar aplicativos arriscados como aplicativos autorizados por administradores. Consultas salvas permitem salvar consultas personalizadas para uso futuro, semelhante às consultas salvas disponíveis atualmente no log de atividades e nas páginas de descoberta. 
 
 - **Configuração padrão de auditoria do Office 365**<br>
-Se quiser habilitar o monitoramento de atividades do Office 365 no Cloud App Security, será necessário habilitar a auditoria no [Centro de Conformidade e Segurança do Office]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins). Isso é resultado de uma [alteração na auditoria do Office 365]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Só será preciso executar essa alteração se você ainda não tiver habilitado o monitoramento de atividades do Office 365 no Cloud App Security.
+Se quiser habilitar o monitoramento de atividades do Office 365 no Cloud App Security, será necessário habilitar a auditoria no [Centro de Conformidade e Segurança do Office](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search). Isso é resultado de uma [alteração na auditoria do Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Só será preciso executar essa alteração se você ainda não tiver habilitado o monitoramento de atividades do Office 365 no Cloud App Security.
 
 - **Suporte aprimorado do Box**<br>
 O Cloud App Security agora dá suporte a duas novas ações de governança para o Box:
