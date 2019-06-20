@@ -15,12 +15,12 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1f920a6cb1ddcc00930527b9ba22264d4b4637a6
-ms.sourcegitcommit: 62778bfbc010b95cdef4c8aed23b0f195f382242
+ms.openlocfilehash: 641151ff3db196e38786f970507f2a8dcf026ca6
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67171483"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237106"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integração da proteção avançada contra ameaças do Azure
 

@@ -15,12 +15,12 @@ ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8b84e29d1f2f2de0f19e1575881266bb61727398
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: fe3e2659c27e69959b7c68d92f42a07b7984a7d0
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568854"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237194"
 ---
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
 
@@ -82,3 +82,6 @@ A tabela a seguir fornece expressões de exemplo e indica se elas são correspon
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
   
+
+## <a name="check-out-this-video"></a>Confira este vídeo!
+[Trabalhando com o mecanismo Regex](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)    

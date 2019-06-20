@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 841255c2d313c510374458316184161359c7855f
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ed441d1832ce9f6d0ce070fc58baa058a34bcadc
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567855"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237220"
 ---
 # <a name="files"></a>Arquivos
 
@@ -56,7 +56,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
 > [!NOTE]
 > Ao usar os filtros de política de arquivos, **Contém** pesquisará somente **palavras inteiras** – separadas por vírgulas, pontos, espaços ou sublinhados a serem pesquisados. 
 > - Espaços entre palavras funcionam como OR, por exemplo, se você pesquisar **malware** **virus**, serão encontrados todos os arquivos com "malware" ou "virus" no nome, portanto, encontrará malware-virus.exe e virus.exe.  
-> - Se você desejar pesquisar uma cadeia de caracteres, coloque as palavras entre aspas. Isso funciona como AND, por exemplo, se você pesquisar **"malware"** **"virus"**, será encontrado virus_malware_file.exe, mas não será encontrado malwarevirusfile.exe nem malware.exe. No entanto, será pesquisada a cadeia de caracteres exata. Se você pesquisar **"malware virus"**, não será encontrado **"virus"** nem **"virus_malware"**.
+> - Se você desejar pesquisar uma cadeia de caracteres, coloque as palavras entre aspas. Isso funciona como AND, por exemplo, se você pesquisar **"malware"** **"virus"** , será encontrado virus_malware_file.exe, mas não será encontrado malwarevirusfile.exe nem malware.exe. No entanto, será pesquisada a cadeia de caracteres exata. Se você pesquisar **"malware virus"** , não será encontrado **"virus"** nem **"virus_malware"** .
 >
 > **É igual a** pesquisará apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt. 
 
@@ -136,7 +136,7 @@ Defina também a política a ser executada em arquivos específicos definindo o 
 
 ## <a name="working-with-the-file-drawer"></a>Trabalhando com a Gaveta de arquivos
 
-Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Quando você clicar nele, será aberta a **Gaveta de arquivos, que fornece as seguintes ações adicionais que você pode executar no arquivo:
+Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Clicar abre o **gaveta de arquivos** que fornece as seguintes ações adicionais que você pode executar no arquivo:
 
 - **URL** – leva você para a localização do arquivo.
 - **Identificadores de arquivo** – abre um pop-up com detalhes de dados brutos sobre o arquivo, incluindo a ID do arquivo e as chaves de criptografia.

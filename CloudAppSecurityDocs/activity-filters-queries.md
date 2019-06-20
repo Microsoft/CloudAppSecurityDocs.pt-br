@@ -15,12 +15,12 @@ ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 098855853ea933e5319198978cb771c220ec22be
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4f25b48ece9782e75c20cfa8516183c953d05bb3
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565920"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237144"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividades
 
@@ -68,16 +68,16 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
   - Categoria de IP – a categoria do endereço IP em que a atividade foi executada, por exemplo, todas as atividades do intervalo de endereços IP administrativo. As categorias precisam ser configuradas para incluir os endereços IP relevantes, exceto para a categoria "Arriscado", que é pré-configurada e inclui duas marcações de IP: proxy anônimo e Tor. Para saber como configurar as categorias de IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).  
   - Marca de IP ‑ A marca do endereço IP em que a atividade foi executada, por exemplo, todas as atividades de endereços IP de proxy anônimos. O Cloud App Security cria um conjunto de marcações internas de IP que não são configuráveis. Além disso, é possível configurar suas próprias marcas de IP. Para obter mais informações sobre como configurar as suas próprias marcações de IP, consulte [Organizar os dados de acordo com as suas necessidades](ip-tags.md).
   As marcações internas de IP incluem:
-  - Aplicativos Microsoft (14 deles)
-  - Proxy anônimo
-  - Botnet (você verá que a atividade foi executada por um botnet com um link para saber mais sobre o botnet específico)
-  - IP de verificação de Darknet
-  - Servidor C&C de malware
-  - Analisador de conectividade remota
-  - Provedores satélite
-  - Proxy inteligente e de acesso (deixados de fora de propósito)
-  - Nós de saída do Tor
-  - Zscaler
+    - Aplicativos Microsoft (14 deles)
+    - Proxy anônimo
+    - Botnet (você verá que a atividade foi executada por um botnet com um link para saber mais sobre o botnet específico)
+    - IP de verificação de Darknet
+    - Servidor C&C de malware
+    - Analisador de conectividade remota
+    - Provedores satélite
+    - Proxy inteligente e de acesso (deixados de fora de propósito)
+    - Nós de saída do Tor
+    - Zscaler
 
 
 - Atividade representada – pesquisa somente atividades que foram realizadas no nome de outro usuário.  

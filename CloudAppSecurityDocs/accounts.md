@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 35b9bdf9e1b59bfecefe18f5fcaacd4ce6b73edf
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 86dad8f925f3ffd95a36787112482625c10c23d1
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565876"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237170"
 ---
 # <a name="accounts"></a>Contas
 
@@ -28,7 +28,7 @@ ms.locfileid: "65565876"
 
 O Microsoft Cloud App Security proporciona visibilidade das contas de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security lerá as informações da conta associadas aos aplicativos conectados. A página Contas permite que você investigue essas contas, as permissões, os grupos dos quais são membros, os aliases delas e os aplicativos que elas estão usando. Além disso, quando o Cloud App Security detecta uma nova conta que não foi vista anteriormente em um dos aplicativos conectados, como nas atividades ou no compartilhamento de arquivos, a conta é adicionada à lista de contas deste aplicativo. Isso permite que você tenha visibilidade sobre a atividade de usuários externos interagindo com seus aplicativos em nuvem.
 
-Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. A página **Usuários e contas** fornece detalhes abrangentes sobre a entidade, extraídos de aplicativos de nuvem conectados. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
+Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. O **usuários e contas** página fornece detalhes abrangentes sobre as entidades que são extraídas de aplicativos de nuvem conectados. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

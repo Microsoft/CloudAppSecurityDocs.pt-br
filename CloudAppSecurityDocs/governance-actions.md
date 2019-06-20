@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dfed20fd3b39395affce66098ebd0e7a16100a5e
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 12f099db6c23836fbcbb35d17c12a3736b76cf20
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567815"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237152"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
@@ -174,4 +174,5 @@ Para obter informações sobre como as ações de governança são tratadas quan
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/) 
+
 
