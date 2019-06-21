@@ -3,8 +3,8 @@ title: Proteger aplicativos com o Controle de Aplicativos de Acesso Condicional 
 description: Este artigo fornece informações sobre como funciona o proxy reverso do Controle de Aplicativos de Acesso Condicional do Cloud App Security.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+ms.author: shsagir
+manager: shsagir
 ms.date: 06/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0e1a48c5c139839b7999d8a36713adb22e37d957
-ms.sourcegitcommit: a77d2ed241e6d9d99d296f99f073d31fec88b709
+ms.openlocfilehash: 60b24e5da6fb0e8962426a49a2e568672c4ac6a9
+ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66687553"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298919"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
