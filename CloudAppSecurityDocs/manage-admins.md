@@ -2,10 +2,10 @@
 title: Gerenciar o acesso de administrador ao portal do Cloud App Security
 description: Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/04/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a086df199107c08481c464fd5a15769b6c00921
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: cea30130ec0f9f548b93fb09250ef8a6a8a3678a
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568644"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333637"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -49,11 +49,11 @@ Por padrão, as seguintes funções de administrador do Office 365 e do [Azure A
   - Acessar e exibir o Log de controle 
   - Acessar e exibir a página Gerenciar relatórios de instantâneo 
 
-- **Administrador de aplicativo/instância:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao aplicativo ou à instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas:
+- **Administrador de aplicativo/instância:** Tem permissões totais ou somente leitura para todos os dados no Microsoft Cloud App Security lida exclusivamente com o aplicativo específico ou uma instância de um aplicativo selecionada. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas:
 
   - Página de atividades – somente atividades sobre o aplicativo específico
   - Alertas – somente alertas relacionados ao aplicativo específico
-  - Políticas – pode exibir todas as políticas e editar ou criar somente as políticas relacionadas exclusivamente ao aplicativo/à instância
+  - Políticas - pode exibir todas as políticas e se atribuído completo permissões podem editar ou criar somente as políticas que lidam exclusivamente com o aplicativo/instância
   - Página de contas – somente contas para a instância/o aplicativo específico
   - Permissões de aplicativo – somente permissões para a instância/o aplicativo específico
   - Página de arquivos – somente arquivos de instância/aplicativo específico
@@ -62,11 +62,11 @@ Por padrão, as seguintes funções de administrador do Office 365 e do [Azure A
   - Extensões de segurança – permissões somente para o token de API com permissões de usuário
   - Ações de governança – somente para a instância/o aplicativo específico 
 
-- **Administrador de grupo de usuários:** Tem permissões em todos os dados no Microsoft Cloud App Security relacionados exclusivamente ao grupo específico selecionado aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários:
+- **Administrador de grupo de usuários:** Tem permissões totais ou somente leitura para todos os dados no Microsoft Cloud App Security lida exclusivamente com o grupo específico selecionada aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários:
 
   - Página de atividades – somente atividades relacionadas aos usuários do grupo
   - Alertas – somente alertas relacionados aos usuários do grupo
-  - Políticas – pode exibir todas as políticas e editar ou criar somente as políticas relacionadas exclusivamente aos usuários do grupo
+  - Políticas - pode exibir todas as políticas e se atribuído completo permissões podem editar ou criar somente as políticas que lidam exclusivamente com os usuários do grupo
   - Página de contas – somente contas dos usuários específicos do grupo
   - Permissões de aplicativo: nenhuma permissão
   - Página de arquivos: nenhuma permissão

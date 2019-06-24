@@ -15,12 +15,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b6f158408422a8b04dbabefe089d30b464ac4ac3
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 48488ef57ee48791eca3a05a061154d51777c577
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568575"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333666"
 ---
 # <a name="working-with-the-risk-score"></a>Trabalhar com a pontuação de risco
 
@@ -58,8 +58,8 @@ Depois que os resultados são filtrados, você pode examinar os aplicativos rele
 Há filtros básicos e avançados do Catálogo de aplicativos de nuvem. Para criar um filtro complexo, use a opção avançada que inclui todos os seguintes filtros:
 
 - **Marcas de aplicativo**: As marcas permitem personalizar o Catálogo de Aplicativos na Nuvem. 
-  Você pode selecionar **Sancionado**, **Não sancionado** ou criar marcas personalizadas para aplicativos. Essas marcas então podem ser usadas como filtros. Os filtros são úteis para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. 
-- **Aplicativos e domínios**: Permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos. 
+  Você pode selecionar **Sancionado**, **Não sancionado** ou criar marcas personalizadas para aplicativos. Essas marcas então podem ser usadas como filtros. Os filtros são úteis para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar.
+- **Aplicativos e domínios**: Permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos.
 - **Categorias**: O filtro de categorias, localizado à esquerda da página, permite que você pesquise tipos de aplicativos de acordo com as categorias de aplicativo. Por exemplo, aplicativos de rede social, aplicativos de armazenamento em nuvem e mais tipos de aplicativos. Você pode selecionar mais de uma categoria por vez ou uma única categoria. Em seguida, aplique filtros básicos ou avançados sobre as categorias.
 - **Fator de risco de conformidade**: Permite que você pesquise padrões, certificação e conformidade específicos que o aplicativo pode cumprir. Exemplos incluem HIPAA, ISO 27001, SOC 2 e PCI-DSS.
 - **Fator de risco geral**: Permite que você pesquise fatores de risco gerais, como popularidade do consumidor, localidade do data center, entre outros.

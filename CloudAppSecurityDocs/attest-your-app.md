@@ -2,10 +2,10 @@
 title: Atestar a seus aplicativos – o Cloud App Security | Microsoft Docs
 description: Este artigo fornece instruções para atestar a seus aplicativos no Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: barbkess
-ms.date: 04/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e395e0ca1ee0fe0805a37e75a6201c6d9a224cdf
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 6beaeba5c522aacb8a6d0c9612df318b267d2612
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298870"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333580"
 ---
 # <a name="attest-your-app"></a>Atestar seu aplicativo
 
@@ -47,37 +47,38 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 | Fornecedor | Geral | Cadeia de caracteres | Texto livre | O nome do fornecedor que disponibiliza este aplicativo. |
 | Tipos de dados | Geral | Cadeia de caracteres | Fechar lista - fornecida no questionário | Quais tipos de dados podem ser carregados pelo usuário para o aplicativo?|
 | Homepage | Geral | URL | Texto livre | URL da home page do provedor. |
-| Última violação | Segurança | Date | MMM-dd-aaaa | Incidente mais recente em que dados sigilosos, protegidos ou confidenciais, propriedade do aplicativo foi exibidos, roubados ou usados por um indivíduo não autorizado a fazê-lo. |
-| Método de criptografia de dados em repouso | Segurança | Cadeia de caracteres | Fechar lista - fornecida no questionário | O tipo de criptografia de dados em repouso realizado no aplicativo. |
-| Autenticação Multifator | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte a soluções de autenticação multifator? |
-| Restrição de endereço IP | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à restrição de endereços IP específicos pelo aplicativo? |
-| Trilha de auditoria de usuário | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à disponibilidade de trilha de auditoria por conta de usuário? |
-| Trilha de auditoria de administrador | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à disponibilidade de uma trilha de auditoria de administrador no aplicativo? |
-| Trilha de auditoria de dados | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à disponibilidade de uma trilha de auditoria de dados no aplicativo? |
-| Usuário pode carregar dados | Segurança | Booliano | Verdadeiro, FALSO | Dados de usuário carregado de suporte esse aplicativo? |
-| Classificação de dados | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo habilita a opção para a classificação dos dados carregados para o aplicativo? |
-| Lembrar senha | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo habilita a opção para lembrar e salvar senhas de usuário no aplicativo? |
-| Suporte a funções de usuário | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à distribuição de usuários por funções e níveis de permissão? |
-| Compartilhamento de arquivos | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo inclui recursos que permitem o compartilhamento de arquivos entre os usuários? |
-| Nome do certificado válido | Segurança | Booliano | Verdadeiro, FALSO | O servidor fornece um certificado SSL correspondente ao nome de domínio? |
-| Certificado confiável | Segurança | Booliano | Verdadeiro, FALSO | O servidor fornece um certificado SSL confiável (cadeia de assinatura não expirado, verificado e confiável, etc.)? |
-| Protocolo de criptografia | Segurança | Cadeia de caracteres | Fechar lista - fornecida no questionário | A última versão do protocolo de criptografia de segurança de camada de transporte (TLS) tem suportada entre o provedor de ponto de extremidade e o aplicativo do usuário. Se o certificado do servidor for inexistente ou não é válido, a criptografia será considerada sem suporte.|
-| Com correções para Heartbleed | Segurança | Booliano | Verdadeiro, FALSO | É a implementação de SSL do servidor para o bug Heartbleed para reduzir a vulnerabilidade? |
-| Cabeçalhos de segurança HTTP: Segurança de transporte estrito | Segurança | Booliano | Verdadeiro, FALSO | HTTP Strict-Transport-Security os cabeçalhos é implementados pelo aplicativo em seu site? |
-| Cabeçalhos de segurança HTTP: Content-Security-Policy | Segurança | Booliano | Verdadeiro, FALSO | HTTP Content-Security-Policy os cabeçalhos é implementados pelo aplicativo em seu site? |
-| Cabeçalhos de segurança HTTP: X-Frame-Options | Segurança | Booliano | Verdadeiro, FALSO | Cabeçalhos HTTP X-Frame-Options são implementados pelo aplicativo em seu site? |
-| Cabeçalhos de segurança HTTP: X-Content-Type-Options | Segurança | Booliano | Verdadeiro, FALSO | Cabeçalhos HTTP X-Content-Type-Options são implementados pelo aplicativo em seu site? |
-| Cabeçalhos de segurança HTTP: X-XSS-Protection | Segurança | Booliano | Verdadeiro, FALSO | HTTP X-XSS-Protection os cabeçalhos é implementados pelo aplicativo em seu site? |
-| Dá suporte a SAML | Segurança | Booliano | Verdadeiro, FALSO | Esse aplicativo oferece suporte ao padrão SAML para troca de dados de autenticação e autorização? |
-| Protegido contra DROWN | Segurança | Booliano | Verdadeiro, FALSO | Os servidores de aplicativos estão protegidos contra ataques DROWN? |
-| Os testes de penetração | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo realiza teste de penetração para detectar e avaliar vulnerabilidades de rede? |
-| Requer autenticação de usuário | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo requer autenticação e permite o uso anônimo? |
-| Política de senha: Limite de comprimento de senha | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo impõe um limite de comprimento na criação de senha? |
-| Política de senha: Combinação de caracteres | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo impõe uma combinação de caracteres na criação de senha? |
-| Política de senha: Período de alteração de senha | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo impõe que os usuários para redefinir sua senha periodicamente? |
-| Política de senha: Reutilização e histórico de senha | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo não permitir a reutilização de senhas antigas? |
-| Política de senha: Uso de informações pessoais | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo não permitir o uso de informações pessoais em senhas? |
-| política de senha | Segurança | Booliano | Verdadeiro, FALSO | Este aplicativo impõe uma política de senha está em conformidade com as práticas recomendadas? |
+| Plano de recuperação de desastre | Geral | Booliano | Verdadeiro, FALSO | Este aplicativo tem um plano de recuperação de desastres que inclui uma estratégia de backup e restauração? |
+| Última violação | Segurança  | Date | MMM-dd-aaaa | Incidente mais recente em que dados sigilosos, protegidos ou confidenciais, propriedade do aplicativo foi exibidos, roubados ou usados por um indivíduo não autorizado a fazê-lo. |
+| Método de criptografia de dados em repouso | Segurança  | Cadeia de caracteres | Fechar lista - fornecida no questionário | O tipo de criptografia de dados em repouso realizado no aplicativo. |
+| Autenticação Multifator | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte a soluções de autenticação multifator? |
+| Restrição de endereço IP | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à restrição de endereços IP específicos pelo aplicativo? |
+| Trilha de auditoria de usuário | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à disponibilidade de trilha de auditoria por conta de usuário? |
+| Trilha de auditoria de administrador | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à disponibilidade de uma trilha de auditoria de administrador no aplicativo? |
+| Trilha de auditoria de dados | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à disponibilidade de uma trilha de auditoria de dados no aplicativo? |
+| Usuário pode carregar dados | Segurança  | Booliano | Verdadeiro, FALSO | Dados de usuário carregado de suporte esse aplicativo? |
+| Classificação de dados | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo habilita a opção para a classificação dos dados carregados para o aplicativo? |
+| Lembrar senha | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo habilita a opção para lembrar e salvar senhas de usuário no aplicativo? |
+| Suporte a funções de usuário | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo dá suporte à distribuição de usuários por funções e níveis de permissão? |
+| Compartilhamento de arquivos | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo inclui recursos que permitem o compartilhamento de arquivos entre os usuários? |
+| Nome do certificado válido | Segurança  | Booliano | Verdadeiro, FALSO | O servidor fornece um certificado SSL correspondente ao nome de domínio? |
+| Certificado confiável | Segurança  | Booliano | Verdadeiro, FALSO | O servidor fornece um certificado SSL confiável (cadeia de assinatura não expirado, verificado e confiável, etc.)? |
+| Protocolo de criptografia | Segurança  | Cadeia de caracteres | Fechar lista - fornecida no questionário | A última versão do protocolo de criptografia de segurança de camada de transporte (TLS) tem suportada entre o provedor de ponto de extremidade e o aplicativo do usuário. Se o certificado do servidor for inexistente ou não é válido, a criptografia será considerada sem suporte.|
+| Com correções para Heartbleed | Segurança  | Booliano | Verdadeiro, FALSO | É a implementação de SSL do servidor para o bug Heartbleed para reduzir a vulnerabilidade? |
+| Cabeçalhos de segurança HTTP: Segurança de transporte estrito | Segurança  | Booliano | Verdadeiro, FALSO | HTTP Strict-Transport-Security os cabeçalhos é implementados pelo aplicativo em seu site? |
+| Cabeçalhos de segurança HTTP: Content-Security-Policy | Segurança  | Booliano | Verdadeiro, FALSO | HTTP Content-Security-Policy os cabeçalhos é implementados pelo aplicativo em seu site? |
+| Cabeçalhos de segurança HTTP: X-Frame-Options | Segurança  | Booliano | Verdadeiro, FALSO | Cabeçalhos HTTP X-Frame-Options são implementados pelo aplicativo em seu site? |
+| Cabeçalhos de segurança HTTP: X-Content-Type-Options | Segurança  | Booliano | Verdadeiro, FALSO | Cabeçalhos HTTP X-Content-Type-Options são implementados pelo aplicativo em seu site? |
+| Cabeçalhos de segurança HTTP: X-XSS-Protection | Segurança  | Booliano | Verdadeiro, FALSO | HTTP X-XSS-Protection os cabeçalhos é implementados pelo aplicativo em seu site? |
+| Dá suporte a SAML | Segurança  | Booliano | Verdadeiro, FALSO | Esse aplicativo oferece suporte ao padrão SAML para troca de dados de autenticação e autorização? |
+| Protegido contra DROWN | Segurança  | Booliano | Verdadeiro, FALSO | Os servidores de aplicativos estão protegidos contra ataques DROWN? |
+| Os testes de penetração | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo realiza teste de penetração para detectar e avaliar vulnerabilidades de rede? |
+| Requer autenticação de usuário | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo requer autenticação e permite o uso anônimo? |
+| Política de senha: Limite de comprimento de senha | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo impõe um limite de comprimento na criação de senha? |
+| Política de senha: Combinação de caracteres | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo impõe uma combinação de caracteres na criação de senha? |
+| Política de senha: Período de alteração de senha | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo impõe que os usuários para redefinir sua senha periodicamente? |
+| Política de senha: Reutilização e histórico de senha | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo não permitir a reutilização de senhas antigas? |
+| Política de senha: Uso de informações pessoais | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo não permitir o uso de informações pessoais em senhas? |
+| política de senha | Segurança  | Booliano | Verdadeiro, FALSO | Este aplicativo impõe uma política de senha está em conformidade com as práticas recomendadas? |
 | FINRA | Conformidade | Booliano | Verdadeiro, FALSO, n/d | Este aplicativo está em conformidade com o FINRA, um conjunto padrão para organizações não fins lucrativos autorizado pelo Congresso que regula e impõe o aprimoramento de garantias de investidores e integridade do mercado? |
 | FISMA | Conformidade | Booliano | Verdadeiro, FALSO, n/d | Este aplicativo está em conformidade com o FISMA, a legislação dos EUA que define uma estrutura abrangente para proteger as informações do governo, operações e ativos em órgãos federais contra ameaças? |
 | GAAP | Conformidade | Booliano | Verdadeiro, FALSO, n/d | Este aplicativo está em conformidade com o GAAP, um conjunto de regras de contabilidade normalmente seguidas e padrões para relatórios financeiros? |
