@@ -5,7 +5,7 @@
       "docset_name": "CloudAppSecurityDocs",
       "build_source_folder": "CloudAppSecurityDocs",
       "build_output_subfolder": "cloud-app-security",
-      "locale": "pt-BR",
+      "locale": "pt-br",
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -34,7 +34,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pt-BR",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pt-br",
       "branch": "master",
       "branch_mapping": {}
     },
