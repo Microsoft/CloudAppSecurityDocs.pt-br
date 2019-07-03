@@ -123,8 +123,12 @@
           href: connect-servicenow-to-microsoft-cloud-app-security.md
         - name: Conectar o WebEx
           href: connect-webex-to-microsoft-cloud-app-security.md
-    - name: Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD
-      href: proxy-deployment-aad.md
+    - name: Implantar os aplicativos do Controle de Aplicativos de Acesso Condicional
+      items:
+        - name: Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
+          href: proxy-deployment-aad.md
+        - name: Integrar e implantar o Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
+          href: proxy-deployment-any-app.md
     - name: Investigação
       href: investigate.md
       items:
