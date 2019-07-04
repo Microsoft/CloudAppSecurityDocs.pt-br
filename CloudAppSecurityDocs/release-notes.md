@@ -3,9 +3,9 @@ title: Novidades do Cloud App Security
 description: Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: shsagir
-manager: shsagir
-ms.date: 06/04/2019
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0d79be7d7ce307f2bc8adfae61c65ec023d715c0
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 3af4f1a18576baf44684c7a6764fed0f1c768c68
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298916"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333625"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -30,12 +30,30 @@ Este artigo é atualizado com frequência para mantê-lo informado das novidades
 
 RSS feed: receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## <a name="cloud-app-security-release-151"></a>Cloud App Security, versão 151
+
+Lançado em 9 de junho de 2019
+
+- **UEBA híbrido - integração nativa com o ATP do Azure (versão prévia)**<br>
+O Cloud App Security agora nativamente é integrado com o ATP do Azure para fornecer uma exibição única de atividades de identidade em aplicativos de nuvem e sua rede local. Para saber mais, confira [Integração com a Proteção Avançada contra Ameaças do Azure](aatp-integration.md).
+- **Aprimoramentos do UEBA**<br>
+Para ajudá-lo a identificar ameaças que não são tão evidentes, o Cloud App Security agora usa a exclusiva criação de perfil para fornecer as pontuações de risco para alertas e atividades individuais. As pontuações de risco podem ser usadas para identificar as atividades que não são suspeitas o suficiente para disparar alertas. No entanto, ao agregar as pontuações de risco à **Pontuação de prioridade de investigação** de um usuário, o Cloud App Security ajuda a identificar comportamentos de risco e concentrar sua investigação. Esses novos recursos agora estão disponíveis no nosso padesk do usuário reprojetado
+- **Novo fator de risco adicionado ao Catálogo de aplicativos de nuvem**<br>
+O Catálogo de aplicativos de nuvem agora inclui o fator de risco do Plano de Recuperação de Desastres para que você possa avaliar os aplicativos no Catálogo de aplicativos de nuvem para suporte a continuidade de negócios.
+- **Conector GA do Microsoft Flow**<br>
+Desde a visualização de suporte do Microsoft Cloud App Security para o conector do Microsoft Flow no ano passado, o conector agora está geralmente disponível.
+- **Aprimoramento de governança automatizada para políticas de arquivo**<br>
+O Cloud App Security agora dá suporte à configuração da ação de governança da **Lixeira** para políticas de arquivo – essa ação de governança fornece a capacidade de mover arquivos automaticamente para a pasta da lixeira.
+- **Suporte aprimorado para o Google Drive**<br>
+O Cloud App Security agora dá suporte à ação de governança da **Lixeira** para o Google Drive – essa ação de governança fornece a capacidade de mover arquivos do Google Drive para a pasta da lixeira.
+- **Nova permissão para as funções de administrador do aplicativo e administrador de grupo**<br>
+As funções *Administrador de aplicativo/instância* e *Administrador de grupo de usuários* agora dão suporte ao acesso somente leitura.
 
 ## <a name="cloud-app-security-release-150"></a>Cloud App Security, lançamento 150
 
 Lançado em 26 de maio de 2019
 
-- **Melhoria na exportação de alertas**<br> Quando você exporta alertas para um arquivo CSV na página de **Alertas**, os resultados agora incluem a data de resolução ou de descarte do alerta.
+- **Melhoria na exportação de alertas**<br>Quando você exporta alertas para um arquivo CSV na página de **Alertas**, os resultados agora incluem a data de resolução ou de descarte do alerta.
 
 
 ## <a name="cloud-app-security-release-148-and-149"></a>Cloud App Security versão 148 e 149
