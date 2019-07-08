@@ -3,9 +3,9 @@ title: Ações de governança para controlar aplicativos conectados – Cloud Ap
 description: Este artigo lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security e as mensagens de log que as rastreiam.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/20/2019
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 534ff73e8d68e2422dfb5bbf9a4d94a95026c288
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.openlocfilehash: b87b67df8e975bb6bf48d693aa11fcdf1018336f
+ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333603"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610884"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
@@ -76,7 +76,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
   - **Herdar permissões do pai** – essa ação de governança permite remover o conjunto de permissões específicas para um arquivo ou uma pasta no Office 365. Em seguida, reverta para as permissões definidas para a pasta pai.
 
-  - **Lixeira** – mova o arquivo para a pasta da lixeira. (Box, Google Drive, OneDrive, SharePoint)
+  - **Lixeira** – mova o arquivo para a pasta da lixeira. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
    ![alertas policy_create](./media/policy_create-alerts.png "alertas policy_create") 
 
@@ -139,7 +139,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Revogar o aplicativo|Revogue as permissões de um aplicativo de terceiros para o Google ou Salesforce. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras. | G Suite, Salesforce|
 |Painel do aplicativo > Permissões de aplicativo | Conta | Revogar o usuário do aplicativo|Você pode revogar usuários específicos ao clicar no número em Usuários. A tela exibirá os usuários específicos e você poderá usar o X para excluir permissões para qualquer usuário.| G Suite, Salesforce|
 |Descobrir > Aplicativos descobertos/Endereços IP/Usuários| Cloud Discovery | Exportar dados de descoberta | Cria um CSV dos dados de descoberta. | Descoberta |
-|Política de arquivos|Arquivo |Lixeira|Move o arquivo na Lixeira do usuário.| Box, Google Drive, OneDrive, SharePoint |
+|Política de arquivos|Arquivo |Lixeira|Move o arquivo na Lixeira do usuário.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Política de Arquivos|Arquivo | Notificar o último editor de arquivo |Envia um email para notificar a última pessoa que editou o arquivo que ele viola uma política. |G Suite, Box|
 |Política de Arquivos|Arquivo |Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir. | Todos os aplicativos |
 |Política de arquivos, Atividade de política | Arquivo, Atividade | Notificar usuários específicos |Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.| Todos os aplicativos |

@@ -2,10 +2,10 @@
 title: Entendendo os dados de arquivo e os filtros disponíveis no Cloud App Security
 description: Este artigo de referência fornece informações sobre os tipos e filtros de arquivo usados pelo Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MSn
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed441d1832ce9f6d0ce070fc58baa058a34bcadc
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: 82332b70c58f81e5084b3d26394430e429490b54
+ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237220"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610910"
 ---
 # <a name="files"></a>Arquivos
 
@@ -134,6 +134,23 @@ Defina também a política a ser executada em arquivos específicos definindo o 
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
+## <a name="authorizing-files"></a>Autorização de arquivos
+
+Depois que o Cloud App Security identificou arquivos como apresentando um malware ou um risco DLP, é recomendável que você investigue os arquivos. Se você determinar que os arquivos são seguros, você pode autorizá-los. Autorizar um arquivo remove do relatório de detecção de malware e suprime correspondências futuras nesse arquivo.
+
+### <a name="to-authorize-files"></a>Para autorizar a arquivos
+
+1. No Cloud App Security, clique em **controle** e, em seguida **diretivas**.
+1. Na lista de políticas, na linha na qual a política que disparou a investigação for exibida, na **contagem** coluna, clique em vincular as correspondências.
+    > [!TIP]
+    > Você pode filtrar a lista de políticas por tipo. A tabela a seguir lista por tipo de risco, filtrar o tipo a ser usado:
+    >
+    > | Tipo de risco | Tipo de filtro |
+    > | --- | --- |
+    > | DLP | Política de arquivos |
+    > | Malware | Política de detecção de malware |
+1. Na lista de arquivos correspondentes, na linha na qual o arquivo sob investigação aparece, clique em **autorizar**.
+
 ## <a name="working-with-the-file-drawer"></a>Trabalhando com a Gaveta de arquivos
 
 Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Clicar abre o **gaveta de arquivos** que fornece as seguintes ações adicionais que você pode executar no arquivo:
@@ -152,8 +169,6 @@ Para obter uma lista de ações de governança disponíveis, consulte [Ações d
 
 ## <a name="next-steps"></a>Próximas etapas
   
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
+[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  
-  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)

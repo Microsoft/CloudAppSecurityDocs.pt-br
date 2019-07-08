@@ -3,7 +3,7 @@ title: Conectar o ServiceNow ao Cloud App Security
 description: Este artigo fornece informações sobre como conectar o aplicativo ServiceNow ao Cloud App Security usando o conector de API para obter visibilidade e controle sobre o uso.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
 ms.date: 6/24/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0d2e857b76d06bd6467e04f844b1a8b57265c061
-ms.sourcegitcommit: b89778c5c2919b0a861bb018db82083d0c339471
+ms.openlocfilehash: 81272602fcdab13b8a0e5ffff85c4eec8ebf968d
+ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349601"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610765"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 
@@ -48,7 +48,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
    ![Novo perfil de OAuth ServiceNow](./media/servicenow-app-registry.png)
 
-4. Em **Que tipo de aplicativo OAuth?**, clique em **Criar um ponto de extremidade de API do OAuth para clientes externos**.
+4. Em **Que tipo de aplicativo OAuth?** , clique em **Criar um ponto de extremidade de API do OAuth para clientes externos**.
 
    ![Tipo de OAuth ServiceNow](./media/servicenow-oauth-app-type.png)
 

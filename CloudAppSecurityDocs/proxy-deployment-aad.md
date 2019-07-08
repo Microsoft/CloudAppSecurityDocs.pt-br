@@ -15,14 +15,14 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13ec7114bc38cb44dab2f8728d38b9ba64e67455
-ms.sourcegitcommit: ee00e0033bf45a5f795bfd3e1d71fa1f70f97acb
+ms.openlocfilehash: 511512c6d615f1e0fe09640bb7b02b2df694c6de
+ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511400"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610741"
 ---
-# <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o controle de aplicativo de acesso condicional para aplicativos em destaque
+# <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -131,10 +131,9 @@ Para verificar se a atividade é capturada corretamente, clique em um log de log
 > Depois de implantado, você não pode remover um aplicativo da página de Controle de Aplicativos de Acesso Condicional. Desde que você não defina uma política de acesso ou sessão no aplicativo, o Controle de Aplicativos de Acesso Condicional não alterará comportamentos para o aplicativo.
 
 >[!div class="step-by-step"]
-[« Anterior: Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)<br>
-[Próximo: Como criar uma política de sessão »](session-policy-aad.md)
+[« Anterior: Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)<br>[Próximo: Carregar e implantar o controle de aplicativo de acesso condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
 
 ## <a name="next-steps"></a>Próximas etapas 
-[Trabalhar com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)   
+[Trabalhando com controle de aplicativo de acesso condicional do Cloud App Security](proxy-intro-aad.md)
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
