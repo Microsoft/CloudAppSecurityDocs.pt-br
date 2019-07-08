@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 6/20/2019
+ms.date: 6/23/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3af4f1a18576baf44684c7a6764fed0f1c768c68
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.openlocfilehash: 79f4a9c08b43f7b6d62ec1ead27103da3c820752
+ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333625"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411857"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -30,6 +30,17 @@ Este artigo é atualizado com frequência para mantê-lo informado das novidades
 
 RSS feed: receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## <a name="cloud-app-security-release-152"></a>Cloud App Security versão 152
+
+Lançado em 23 de junho de 2019
+
+- **Implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo**<br>
+Temos a satisfação de anunciar que expandimos nosso suporte para o Controle de Aplicativos de Acesso Condicional para qualquer aplicativo Web, além do suporte avançado que já oferecíamos para [nossos aplicativos em destaque](proxy-intro-aad.md). Essa nova funcionalidade permite implantar qualquer aplicativo Web para funcionar com políticas de acesso e sessão, permitindo monitoramento e controle eficientes em tempo real. Por exemplo, você pode proteger downloads com rótulos de Proteção de Informações do Azure, bloquear o upload de documentos confidenciais, fornecer auditoria entre muitas outras ações.
+- **Auditoria de atividades do Portal**<br>
+O Cloud App Security audita todas as atividades do administrador no portal para fornecer monitoramento e investigação abrangentes das atividades executadas. Agora você também pode exportar até 90 dias de atividades para mais investigação e análise, por exemplo, auditoria de um administrador investigando um usuário específico ou exibindo alertas específicos. Para exportar o log, vá para a página de configurações **Gerenciar acesso de administrador**.
+- **Saída da sessão personalizada do portal do Cloud App Security**<br>
+Agora você pode configurar a saída automática de sessões de administrador para o portal que estejam ociosas por mais de um período especificado.
+
 ## <a name="cloud-app-security-release-151"></a>Cloud App Security, versão 151
 
 Lançado em 9 de junho de 2019
@@ -37,7 +48,7 @@ Lançado em 9 de junho de 2019
 - **UEBA híbrido - integração nativa com o ATP do Azure (versão prévia)**<br>
 O Cloud App Security agora nativamente é integrado com o ATP do Azure para fornecer uma exibição única de atividades de identidade em aplicativos de nuvem e sua rede local. Para saber mais, confira [Integração com a Proteção Avançada contra Ameaças do Azure](aatp-integration.md).
 - **Aprimoramentos do UEBA**<br>
-Para ajudá-lo a identificar ameaças que não são tão evidentes, o Cloud App Security agora usa a exclusiva criação de perfil para fornecer as pontuações de risco para alertas e atividades individuais. As pontuações de risco podem ser usadas para identificar as atividades que não são suspeitas o suficiente para disparar alertas. No entanto, ao agregar as pontuações de risco à **Pontuação de prioridade de investigação** de um usuário, o Cloud App Security ajuda a identificar comportamentos de risco e concentrar sua investigação. Esses novos recursos agora estão disponíveis no nosso padesk do usuário reprojetado
+Para ajudá-lo a identificar ameaças que não são tão evidentes, o Cloud App Security agora usa a exclusiva criação de perfil para fornecer as pontuações de risco para alertas e atividades individuais. As pontuações de risco podem ser usadas para identificar as atividades que não são suspeitas o suficiente para disparar alertas. No entanto, ao agregar as pontuações de risco à **Pontuação de prioridade de investigação** de um usuário, o Cloud App Security ajuda a identificar comportamentos de risco e concentrar sua investigação. Essas novas funcionalidades agora estão disponíveis em nossa página de usuário reprojetada.
 - **Novo fator de risco adicionado ao Catálogo de aplicativos de nuvem**<br>
 O Catálogo de aplicativos de nuvem agora inclui o fator de risco do Plano de Recuperação de Desastres para que você possa avaliar os aplicativos no Catálogo de aplicativos de nuvem para suporte a continuidade de negócios.
 - **Conector GA do Microsoft Flow**<br>
