@@ -14,7 +14,7 @@
           href: editions-cloud-app-security-o365.md
         - name: AD do Azure
           href: editions-cloud-app-security-aad.md
-- name: Guias de início rápido
+- name: Inícios rápidos
   expanded: true
   items:
     - name: Introdução
@@ -23,10 +23,10 @@
       href: discovered-apps.md
 - name: Tutoriais
   items:
-    - name: Investigar usuários arriscados
-      href: tutorial-ueba.md
     - name: Descobrir e gerenciar a TI sombra
       href: tutorial-shadow-it.md
+    - name: Investigar usuários arriscados
+      href: tutorial-ueba.md
     - name: Investigar aplicativos de OAuth arriscados
       href: investigate-risky-oauth.md
     - name: Bloquear downloads de informações confidenciais
