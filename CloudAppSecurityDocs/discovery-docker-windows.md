@@ -2,10 +2,10 @@
 title: Distribuir relatórios contínuos do Cloud App Security usando um Docker no Windows | Microsoft Docs
 description: Este artigo descreve o processo de configuração de upload automático de log para relatórios contínuos no Cloud App Security usando um Docker no Windows em um servidor local.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 4/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31fba210aeee0796e7ba3e7386348888ce877a1c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 470b1082a51568aed7018eae2d74afe83d94a071
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568468"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870209"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -27,7 +27,7 @@ ms.locfileid: "65568468"
 
 Você pode configurar o upload automático de log para relatórios contínuos no Cloud App Security usando um Docker no Windows.
 
-## <a name="technical-requirements"></a>Requisitos técnicos
+## <a name="prerequisites"></a>Pré-requisitos
 
 - Sistema operacional: **Windows 10** Fall Creators Update e Windows Server **versão 1709 ou superior**
 
@@ -40,6 +40,9 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 - Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md#log-collector)
 
 - A virtualização no sistema operacional deve ser habilitada com o Hyper-V
+
+> [!IMPORTANT]
+> Um usuário deve estar conectado para que o Docker colete logs. Recomendamos que o usuário do Docker se desconecte sem sair.
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 
@@ -116,7 +119,7 @@ As etapas a seguir descrevem a implantação no Windows. As etapas de implantaç
 3. Para habilitar a execução de script do PowerShell, execute `Set-ExecutionPolicy RemoteSigned`.
 
 4. Execute: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-Isso instala o cliente do Docker em seu computador. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente. **Verifique se que o cliente do Docker está configurado para usar contêineres do Linux.**
+Isso instala o cliente do Docker em seu computador. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente. **Verifique se o cliente do Docker está definido para usar contêineres do Linux.**
 
 5. Após cada reinicialização, no diretório em que você salvou o instalador, execute novamente: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
 
