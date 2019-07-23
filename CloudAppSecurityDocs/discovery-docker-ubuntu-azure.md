@@ -2,10 +2,10 @@
 title: Configurar o upload automático de logs usando o Docker no Azure
 description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL no Azure.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/27/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4799b0f835960d8170d1305406418734b65185d6
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b094682bc0f3b9ae6ebe6f0594a842a5e2e50458
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567990"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372311"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalação e configuração no Ubuntu ou RHEL no Azure
 
@@ -28,13 +28,13 @@ ms.locfileid: "65567990"
 
 Configure o carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL (Red Hat Enterprise Linux) no Azure. Este artigo descreve como configurar o upload automático de logs. 
 
-## <a name="technical-requirements"></a>Requisitos técnicos
+## <a name="prerequisites"></a>Pré-requisitos
 
-- Sistema operacional: Ubuntu 14.04 e 16.04 (para versões mais recentes, fale com o suporte) ou RHEL 7.2 ou superior
+- Sistema operacional: Ubuntu 14, 4 e 16, 4 (para versões mais recentes, contate o suporte), RHEL 7,2 ou superior ou CentOS 7,2 ou superior
 
 - Espaço em disco: 250 GB
 
-- CPU: 2
+- CPUS 2
 
 - RAM: 4 GB
 
@@ -63,9 +63,9 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
      a. Clique em **Adicionar fonte de dados**.
 
       ![Adicionar uma fonte de dados](./media/add-data-source.png)
-          
+
      b. Atribua o **Nome** do proxy ou firewall.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.

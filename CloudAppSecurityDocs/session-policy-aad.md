@@ -15,19 +15,19 @@ ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 428c36837a8162c94ca95afbdabe7a3d424d9c1e
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 9f5588893c39aab13c131ad76c89bc189a115b52
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568931"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372332"
 ---
 # <a name="session-policies"></a>Políticas de sessão 
 
 *Aplica-se a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Implantar o Controle de Aplicativos de Acesso Condicional](proxy-deployment-aad.md)<br>
+[« ANTERIOR: Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)<br>
 [PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
 
@@ -91,7 +91,7 @@ Para criar uma nova política de sessão, siga este procedimento:
      >[!NOTE]
      >As políticas de sessão não dão suporte a aplicativos móveis e de área de trabalho. Os aplicativos móveis e aplicativos da área de trabalho também podem ser bloqueados ou permitidos por meio da criação de uma política de acesso.
 
-6. Se você tiver selecionado a opção de **download do arquivo de controle (com DLP)**:
+6. Se você tiver selecionado a opção de **download do arquivo de controle (com DLP)** :
 
    1. Em **Origem da atividade** na seção **Arquivos que correspondem a todos os seguintes**, selecione os filtros de arquivos adicionais a serem aplicados na política. Esses filtros podem incluir as seguintes opções:
 
@@ -105,11 +105,11 @@ Para criar uma nova política de sessão, siga este procedimento:
  
    3. Em **Ações**, selecione um dos seguintes itens: 
 
-      - **Testar (Monitorar todas as atividades)**: Defina essa ação para permitir o download explicitamente de acordo com os filtros de política definidos.
+      - **Testar (Monitorar todas as atividades)** : Defina essa ação para permitir o download explicitamente de acordo com os filtros de política definidos.
 
-      - **Bloquear (Bloquear download de arquivo e monitorar todas as atividades)**: Defina essa ação para bloquear o download explicitamente de acordo com os filtros de política definidos. Para obter mais informações, consulte [Como funciona o bloqueio de download](#block-download).
+      - **Bloquear (Bloquear download de arquivo e monitorar todas as atividades)** : Defina essa ação para bloquear o download explicitamente de acordo com os filtros de política definidos. Para obter mais informações, consulte [Como funciona o bloqueio de download](#block-download).
 
-      - **Proteger (Aplicar rótulo de classificação ao download e monitorar todas as atividades)**: Essa opção só fica disponível se você selecionou **Controlar download de arquivo (com DLP)** em **Política de sessão**. Se sua organização usa a Proteção de Informações do Azure, você pode definir uma **Ação** para aplicar um rótulo de classificação configurado na Proteção de Informações do Azure para o arquivo. Para obter mais informações, consulte [Como funciona o a proteção de download](#protect-download).
+      - **Proteger (Aplicar rótulo de classificação ao download e monitorar todas as atividades)** : Essa opção só fica disponível se você selecionou **Controlar download de arquivo (com DLP)** em **Política de sessão**. Se sua organização usa a Proteção de Informações do Azure, você pode definir uma **Ação** para aplicar um rótulo de classificação configurado na Proteção de Informações do Azure para o arquivo. Para obter mais informações, consulte [Como funciona o a proteção de download](#protect-download).
 
 7. Você pode **Criar um alerta para cada evento correspondente com a gravidade da política** e definir um limite de alerta. Selecione se deseja que o alerta seja enviado como um email, como uma mensagem de texto ou ambos.
 
@@ -161,7 +161,7 @@ Selecione **Bloquear atividades** para bloquear atividades específicas que voc�
 Quando **Proteger** é definido como a **Ação** a ser executada na política de sessão do Cloud App Security, o Controle de Aplicativos de Acesso Condicional determina o rótulo e a proteção subsequentes de um arquivo conforme os filtros de arquivo da política. Os rótulos são configurados no console de Proteção de Informações do Azure e **Proteger** deve ser selecionado no rótulo para que ele seja exibido como uma opção na política do Cloud App Security. Quando um rótulo for selecionado e um arquivo que atende aos critérios da política do Cloud App Security for baixado, o rótulo e a proteção correspondente (com permissões) serão aplicados ao arquivo após o download. O arquivo original permanece como está no aplicativo de nuvem, enquanto o arquivo baixado agora está protegido. Os usuários que tentam acessar o arquivo devem atender os requisitos de permissão determinados pela proteção aplicada.  
  
 >[!div class="step-by-step"]
-[« ANTERIOR: Implantar o Controle de Aplicativos de Acesso Condicional](proxy-deployment-aad.md)<br>
+[« ANTERIOR: Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)<br>
 [PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
 ## <a name="next-steps"></a>Próximas etapas
