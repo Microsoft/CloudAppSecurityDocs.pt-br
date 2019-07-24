@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48d13da7ca266c8a2a8054bb810aeba3bd50955a
-ms.sourcegitcommit: 0945480ebb18f89b8cc3a3d5ead135ba53b04bfd
+ms.openlocfilehash: 454de33b96ecf657f7a2b7abc971d90cee75c36d
+ms.sourcegitcommit: 4861a99debc71f266de738d5db78b711590b5e88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68309068"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68431188"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -160,11 +160,11 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 
   | Data center |                        URL                        |
   |-------------|---------------------------------------------------|
-  |     US1     | https://adaprodconsole.blob.core.windows.net/     |
-  |     US2     | https://prod03use2console1.blob.core.windows.net/ |
-  |     US3     | https://prod5usw2console1.blob.core.windows.net/  |
-  |     EU1     | https://prod02euwconsole1.blob.core.windows.net/  |
-  |     EU2     | https://prod4uksconsole1.blob.core.windows.net/   |
+  |     US1     | https:\//adaprodconsole.blob.Core.Windows.net/     |
+  |     US2     | https:\//prod03use2console1.blob.Core.Windows.net/ |
+  |     US3     | https:\//prod5usw2console1.blob.Core.Windows.net/  |
+  |     EU1     | https:\//prod02euwconsole1.blob.Core.Windows.net/  |
+  |     EU2     | https:\//prod4uksconsole1.blob.Core.Windows.net/   |
 
 > [!NOTE]
 > - Se o firewall exigir uma lista de acesso de endereço IP estático e não for compatível com a lista de permissões baseada em URL, permita que o coletor de logs inicie o tráfego de saída para os [Intervalos de IP do datacenter do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) na porta 443.
