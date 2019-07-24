@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 15/7/2019
+ms.date: 7/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6b6be306035cf9ebf9ff74fce78795b8c74f436e
-ms.sourcegitcommit: 7a01493423369b663195277a2046a76393b44987
+ms.openlocfilehash: 9fb6b01bfa9dbe54c219ef3ff2061e1470483e95
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67880934"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372289"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 
@@ -36,14 +36,14 @@ Antes de configurar a coleta automática de arquivos de log, verifique se o log 
 > [!NOTE]
 >-  O Cloud App Security dá suporte para encaminhamento de logs do servidor SIEM para o Coletor de Log, supondo que os logs estão sendo encaminhados em seu formato original. No entanto, é altamente recomendável que você integre o coletor de logs diretamente ao seu firewall e/ou proxy.
 >- O coletor de logs compacta os dados antes de os carregar. O tráfego de saída no coletor de logs representará 10% do tamanho dos logs de tráfego recebidos. 
->-  Se o coletor de logs encontrar problemas, você receberá um alerta quando deixar de receber dados por 48 horas.
+>- Se o coletor de logs encontrar problemas, você receberá um alerta quando deixar de receber dados por 48 horas.
 >
 
 ## <a name="deployment-modes"></a>Modos de implantação
 
 O coletor de log dá suporte a dois modos de implantação:
 
--   **Contêiner**: É executado como uma imagem do Docker no [Windows](discovery-docker-windows.md), [no Ubuntu local](discovery-docker-ubuntu.md), no [Ubuntu no Azure](discovery-docker-ubuntu-azure.md) ou [no RHEL local](discovery-docker-ubuntu.md). 
+-   **Contêiner**: É executado como uma imagem do Docker no [Windows](discovery-docker-windows.md), [no Ubuntu local](discovery-docker-ubuntu.md), [no Ubuntu no Azure](discovery-docker-ubuntu-azure.md), [no RHEL local ou no](discovery-docker-ubuntu.md) CentOS.
 
 -   **Solução de virtualização**:  É executado como uma imagem sobre o Hyper-V ou o hipervisor do VMware (preterido)
 
