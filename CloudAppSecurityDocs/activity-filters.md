@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1db651146978c187a043abce78b4d92d819df217
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 7104207cc15fa915b3e08bcfe130d5bd43702340
+ms.sourcegitcommit: 0ea0ea939df9f9367f10fc60908d4f9fb9b06de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565719"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68601475"
 ---
 # <a name="activities"></a>Atividades
 
@@ -62,7 +62,7 @@ Você pode exibir mais informações sobre cada atividade clicando na própria a
 
    - Tipo de dispositivo: Clique no tipo de dispositivo para exibir os dados brutos do agente do usuário. 
 
-   - Local: Clique na localização para exibir a localização no Bing Mapas.
+   - Localização: Clique na localização para exibir a localização no Bing Mapas.
 
    - Marcas e categoria de endereço IP: Clique na marca de IP para exibir a lista de marcas de IP encontradas nessa atividade. Em seguida, você pode filtrar por todas as atividades correspondentes nessa marca.    
 

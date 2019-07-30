@@ -2,10 +2,10 @@
 title: Gerenciar alertas acionados no Cloud App Security
 description: Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,21 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97be32220886f60efa6c3e60c82ccb13e5adfe1d
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: f5fea33082c52fea5bb7a1664a23ff9a18b26adb
+ms.sourcegitcommit: 0ea0ea939df9f9367f10fc60908d4f9fb9b06de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568325"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68601484"
 ---
 # <a name="manage-alerts"></a>Gerenciar alertas
 
 *Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
+
+> [!NOTE]
+> Os alertas são gerenciados em suas respectivas políticas e podem ser configurados para serem enviados como email, mensagem de texto ou ambos.
 
 ## <a name="manage-your-alerts"></a>Gerenciar os alertas
 
