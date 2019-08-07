@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 1bb39de6eafda31df7df07d177050cbb0f02031a
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 7b86bc5f344f097c4c4e45c9d25123c5b361ebb2
+ms.sourcegitcommit: e9c93f69f280a929b2802619d24f59ea830b783f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372348"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68782873"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 
@@ -84,7 +84,7 @@ Siga estas etapas para configurar qualquer aplicativo a ser controlado pelo Clou
 
 ## Etapa 2: Configurar os usuários que implantarão o aplicativo<a name="conf-users"></a>
 
-1. No Cloud App Security, na barra de menus, clique no ícone configurações configurações ![de engrenagem ícone](./media/settings-icon.png "configurações") e selecione **configurações**.
+1. No Cloud App Security, na barra de menus, clique no ícone configurações ![]configurações de engrenagem ícone(./media/settings-icon.png "configurações") e selecione **configurações**.
 
 1. Em **controle de aplicativos de acesso condicional**, selecione **integração do aplicativo/manutenção**.
 
@@ -109,7 +109,7 @@ Siga estas etapas para configurar qualquer aplicativo a ser controlado pelo Clou
     1. Clique em **Finalizar**.
 
     > [!NOTE]
-    > Para que os certificados sejam reconhecidos, depois de instalar o certificado, você deve reiniciar o navegador e ir para a mesma página. Você verá uma marca de seleção pelos links de certificado confirmando que um certificado válido está instalado.
+    > Para que os certificados sejam reconhecidos, depois de instalar o certificado, você deve reiniciar o navegador e ir para a mesma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
 1. Clique em **Continue**.
 
@@ -127,7 +127,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
 1. No painel domínios descobertos, anote os nomes de domínio ou exporte a lista como um arquivo. csv.
     > [!NOTE]
     > O painel exibe uma lista de domínios descobertos que não estão associados no aplicativo. Os nomes de domínio são totalmente qualificados.
-1. Vá para Cloud App Security, na barra de menus, clique no ícone configurações configurações ![de engrenagem ícone](./media/settings-icon.png "configurações") e selecione **controle de aplicativos de acesso condicional**.
+1. Vá para Cloud App Security, na barra de menus, clique no ícone configurações ![]configurações de engrenagem ícone(./media/settings-icon.png "configurações") e selecione **controle de aplicativos de acesso condicional**.
 1. Na lista de aplicativos, na linha na qual o aplicativo que você está implantando aparece, escolha os três pontos no final da linha e, em **detalhes do aplicativo**, escolha **Editar**.
     > [!TIP]
     > Para exibir a lista de domínios configurados no aplicativo, clique em **Exibir domínios de aplicativo**.
@@ -150,7 +150,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
 
 Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produção de sua organização, execute as etapas a seguir.
 
-1. No Cloud App Security, na barra de menus, clique no ícone configurações configurações ![de engrenagem ícone](./media/settings-icon.png "configurações") e selecione **controle de aplicativos de acesso condicional**.
+1. No Cloud App Security, na barra de menus, clique no ícone configurações ![]configurações de engrenagem ícone(./media/settings-icon.png "configurações") e selecione **controle de aplicativos de acesso condicional**.
 1. Na lista de aplicativos, na linha na qual o aplicativo que você está implantando aparece, escolha os três pontos no final da linha e escolha **Editar aplicativo**.
 1. Selecione **usar com controle de aplicativos de acesso condicional** e, em seguida, clique em **salvar**.
 
