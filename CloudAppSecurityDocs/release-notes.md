@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/21/2019
+ms.date: 8/4/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c903276df9f2c8bcbfa374cdcb571a26b1c26014
-ms.sourcegitcommit: 66dab812232ff95c67d2b17421ec91b0b1f67400
+ms.openlocfilehash: fa721800d7313d2117788b870bab16b29287be8d
+ms.sourcegitcommit: e9c93f69f280a929b2802619d24f59ea830b783f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68508150"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68782814"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -30,6 +30,19 @@ Este artigo é atualizado com frequência para mantê-lo informado das novidades
 
 RSS feed: receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## <a name="cloud-app-security-release-155"></a>Cloud App Security, versão 155
+
+Lançado em 4 de agosto de 2019
+
+- **Novos modelos de políticas**<br>
+Agora o Cloud App Security inclui novos modelos de políticas de atividade interna para melhores práticas de segurança do AWS.
+
+- **Fim do suporte para TLS 1.0 e 1.1**<br>
+A Microsoft está migrando todos os seus serviços online para o protocolo TLS 1.2+ para fornecer a melhor criptografia. Portanto, a partir de 8 de setembro de 2019, o Cloud App Security não dará mais suporte a TLS 1.0 e 1.1, e as conexões que usam esses protocolos não serão compatíveis. Para obter mais informações sobre como a alteração afeta você, confira [nossa postagem no blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
+
+<!-- **Workday app connector available (Preview)**<br>
+A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
+
 ## <a name="cloud-app-security-release-154"></a>Cloud App Security versão 154
 
 Lançado em 21 de julho de 2019
@@ -37,13 +50,10 @@ Lançado em 21 de julho de 2019
 - **A integração e a implantação do Controle de Aplicativos de Acesso Condicional para qualquer aplicativo estão agora em disponibilidade geral**<br>
 Desde que liberamos a versão prévia do Controle de Aplicativos de Acesso Condicional para qualquer aplicativo no mês passado, recebemos comentários excelentes e estamos empolgados em anunciar a disponibilidade geral. Essa nova funcionalidade permite implantar qualquer aplicativo Web para funcionar com políticas de acesso e sessão, permitindo monitoramento e controle eficientes em tempo real.
 
-<!-- **Workday app connector available (Preview)**<br>
-A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
-
 - **Avaliação da configuração de segurança do AWS**<br>
 O Cloud App Security está lançando gradualmente a capacidade de fazer uma avaliação da configuração de segurança do ambiente do Amazon Web Services para conformidade com CIS e oferece recomendações sobre controles de segurança e configurações ausentes. Essa capacidade fornece às organizações uma exibição única para monitorar o status de conformidade de todas as contas do AWS conectadas.
 
-- **Detecções de anomalias do aplicativo OAuth (distribuição gradual)**<br>
+- **Detecções de anomalias do aplicativo OAuth**<br>
 Expandimos nossa capacidade atual de detectar aplicativos OAuth suspeitos. Agora há quatro novas detecções prontas para uso, que analisam os metadados de aplicativos OAuth autorizados em sua organização para identificar aqueles que são potencialmente mal-intencionados.
 
 ## <a name="cloud-app-security-release-153"></a>Cloud App Security versão 153
@@ -148,7 +158,8 @@ Lançado em 17 de março de 2019
 
 - **A integração do Microsoft Defender ATP agora está em disponibilidade geral** <br>
 Ano passado, anunciamos a [integração com a Proteção Avançada contra Ameaças do Windows Defender](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) que aprimora a descoberta de TI sombra na sua organização e a estende além da rede corporativa. [Habilitado com um único clique](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), estamos animados em anunciar que essa integração exclusiva agora está disponível.
-- **Suporte para Dynamics 365 CRM** <br>O Cloud App Security adicionou monitoramento e controle em tempo real no Dynamics 365 CRM para que você possa proteger seus aplicativos de negócios e o conteúdo confidencial armazenado dentro deles. 
+- **Suporte para Dynamics 365 CRM**<br>
+O Cloud App Security adicionou monitoramento e controle em tempo real no Dynamics 365 CRM para que você possa proteger seus aplicativos de negócios e o conteúdo confidencial armazenado dentro deles. Para obter mais informações sobre o que pode ser feito com o Dynamics 365 CRM, confira [este artigo](proxy-intro-aad.md#how-it-works).
 
 ## <a name="cloud-app-security-release-144"></a>Versão 144 do Cloud App Security
 
