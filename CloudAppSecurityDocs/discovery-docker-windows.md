@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/10/2019
+ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 470b1082a51568aed7018eae2d74afe83d94a071
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: 4d9e8e8f4ba01dba7da8f792315d9aa2f033a157
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870209"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861584"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -33,7 +33,7 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 
 - Espaço em disco: 250 GB
 
-- CPU: 2
+- CPUS 2
 
 - RAM: 4 GB
 
@@ -67,9 +67,9 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
      a. Clique em **Adicionar fonte de dados**.
 
       ![Adicionar uma fonte de dados](./media/add-data-source.png)
-          
+
      b. Atribua o **Nome** do proxy ou firewall.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
@@ -77,7 +77,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
      d. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
 
      e. Defina o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
-     
+
      >[!NOTE]
      >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer seu firewall/proxy ou configurações adicionais.
 
@@ -177,7 +177,6 @@ Se a assinatura digital não for válida, ela indicará **Esta assinatura digita
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)
+[Configuração de FTP do coletor de logs](log-collector-ftp.md)
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
-

@@ -2,10 +2,10 @@
 title: Habilitar o coletor de logs por trás de um proxy – Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações sobre como habilitar o coletor de logs do Cloud App Security Cloud Discovery por trás de um proxy.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,19 +15,19 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: affc3cf96644e6997aa2f49870d33fa93c1484f1
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4b468fa4361ed6278845ffad33594bc5543f1a03
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568219"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861536"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitar o coletor de logs por trás de um proxy
 
 Depois de configurar o coletor de logs, se você estiver executando por trás de um proxy, o coletor de logs poderá ter problemas para enviar dados ao Cloud App Security. Isso pode acontecer porque o coletor de logs não confia na autoridade de certificado raiz do proxy e não consegue se conectar ao Microsoft Cloud App Security para recuperar sua configuração ou carregar os logs recebidos.
 
->[!NOTE] 
-> Saiba mais sobre como alterar os certificados usados pelo coletor de logs para Syslog ou FTP e como resolver problemas de conectividade de firewalls e proxies para o coletor de logs em [Solucionar problemas da implantação do Microsoft Cloud App Security Cloud Discovery](troubleshoot-docker.md).
+>[!NOTE]
+> Para obter informações sobre como alterar os certificados usados pelo coletor de logs para syslog ou FTP e para resolver problemas de conectividade dos firewalls e proxies para o coletor de logs, consulte [configuração de FTP do coletor de logs](log-collector-ftp.md).
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>Configurar o coletor de logs por trás de um proxy
@@ -41,7 +41,6 @@ No shell, verifique se o contêiner foi criado e está em execução usando o se
     bash
     docker ps
 
-
 ![docker ps](./media/docker-1.png "docker ps")
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copie o Certificado de Autoridade de Certificação raiz do proxy para o contêiner
@@ -51,7 +50,6 @@ Executar o comando no host do Ubuntu. Copia o certificado em uma pasta no contê
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
-
 
 ### <a name="set-the-configuration-to-work-with-the-ca-certificate"></a>Defina a configuração para trabalhar com o Certificado de Autoridade de Certificação
 
@@ -70,12 +68,10 @@ Executar o comando no host do Ubuntu. Copia o certificado em uma pasta no contê
        bash
        ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
 
-
 4. Valide que o certificado foi importado corretamente para o repositório de chaves da Autoridade de Certificação, usando o comando a seguir para procurar o alias que você forneceu durante a importação (*SelfSignedCert*):
 
        bash
        ./keytool --list --keystore ../lib/security/cacerts | grep self
-
 
 ![keytool](./media/docker-2.png "keytool")
 
@@ -83,7 +79,7 @@ Você deve ver seu Certificado de Autoridade de Certificação importado do prox
 
 ### <a name="set-the-log-collector-to-run-with-the-new-configuration"></a>Definir o coletor de logs para ser executado com a nova configuração
 
-O contêiner está pronto. 
+O contêiner está pronto.
 
 Execute o comando **collector_config** usando o token da API que você usou durante a criação de seu coletor de logs:
 
@@ -104,13 +100,8 @@ O coletor de logs consegue agora se comunicar com o Cloud App Security. Depois d
 >[!NOTE]
 > Se você precisar atualizar a configuração do coletor de logs, para adicionar ou remover uma fonte de dados, por exemplo, normalmente precisará **excluir** o contêiner e executar as etapas anteriores novamente. Para evitar isso, você pode executar novamente a ferramenta *collector_config* com o novo token da API gerado no portal do Cloud App Security.
 
+## <a name="next-steps"></a>Próximas etapas
 
+[Políticas de atividade de usuário](user-activity-policies.md)
 
- 
-  
-## <a name="next-steps"></a>Próximas etapas 
-[Políticas de atividade de usuário](user-activity-policies.md)   
-
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  
-  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)

@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/18/2019
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,18 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b094682bc0f3b9ae6ebe6f0594a842a5e2e50458
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 9d094c35565b416a8a5c048c09abad90dacb425c
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372311"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861572"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalação e configuração no Ubuntu ou RHEL no Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Configure o carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL (Red Hat Enterprise Linux) no Azure. Este artigo descreve como configurar o upload automático de logs. 
+Configure o carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL (Red Hat Enterprise Linux) no Azure. Este artigo descreve como configurar o upload automático de logs.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -52,7 +52,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 – Configuração do portal da Web: Definir fontes de dados e vinculá-las a um coletor de logs
 
-1. Acesse a página de configurações **Upload automático de logs**. 
+1. Acesse a página de configurações **Upload automático de logs**.
 
      a. No portal do Cloud App Security, clique no ícone de configurações antes de **Coletores de log**.
 
@@ -73,7 +73,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
      d. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
 
      e. Defina o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
-     
+
      >[!NOTE]
      >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer seu firewall/proxy ou configurações adicionais.
 
@@ -81,7 +81,6 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
      - Monitore o status de cada dispositivo separadamente, para fins de investigação.
      - Explore o Shadow IT Discovery por dispositivo, se cada dispositivo for usado por um segmento de usuários diferente.
 
-     
 3. Vá para a guia **Coletores de logs** na parte superior.
 
      a. Clique em **Adicionar coletor de logs**.
@@ -109,8 +108,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 > [!NOTE]
 > As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantação para outras plataformas são ligeiramente diferentes.
 
-
-1. Crie um novo computador Ubuntu no seu ambiente do Azure. 
+1. Crie um novo computador Ubuntu no seu ambiente do Azure.
 2. Depois que o computador estiver pronto, abra as portas pelos caminhos a seguir:
 
      a. Na exibição do computador, acesse **Rede**, selecione a interface relevante clicando duas vezes nela.
@@ -118,9 +116,9 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
      b. Acesse **Grupo de Segurança de Rede** e selecione o grupo de segurança de rede relevante.
 
      c. Acesse **Regras de segurança de entrada** e clique em **Adicionar**,
-      
+
       ![Azure no Ubuntu](./media/ubuntu-azure.png)
-    
+
      d. Adicionar as seguintes regras (no modo **Avançado**):
 
       |Nome|Intervalos de porta de destino|Protocolo|Origem|Destination|
@@ -129,7 +127,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
       |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
       |caslogcollector_syslogs_tcp|601-700|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
       |caslogcollector_syslogs_udp|514-600|UDP|<Sub-rede do endereço IP do dispositivo>|qualquer|
-      
+
       ![Regras do Azure no Ubuntu](./media/inbound-rule.png)
 
 3. Volte para o computador e clique em **Conectar** para abrir um terminal no computador.
@@ -137,7 +135,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 4. Altere para privilégios de raiz usando `sudo -i`.
 
 5. Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
-        
+
        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
      ![Comando do Azure no Ubuntu](./media/ubuntu-azure-command.png)
@@ -147,7 +145,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
       ![Azure no Ubuntu](./media/windows7.png)
 
 7. Execute o comando para implantar o coletor de logs.
-     
+
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Proxy do Ubuntu](./media/ubuntu-proxy.png)
@@ -183,7 +181,7 @@ Verifique se os logs estão sendo carregados no Cloud App Security e se os relat
      ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>Próximas etapas
-[Solução de problemas de implantação do docker do Cloud Discovery](troubleshoot-docker.md)
+
+[Configuração de FTP do coletor de logs](log-collector-ftp.md)
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier](https://premier.microsoft.com/)
-
