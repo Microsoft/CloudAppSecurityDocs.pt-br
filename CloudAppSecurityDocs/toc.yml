@@ -14,7 +14,7 @@
           href: editions-cloud-app-security-o365.md
         - name: AD do Azure
           href: editions-cloud-app-security-aad.md
-- name: Inícios rápidos
+- name: Guias de início rápido
   expanded: true
   items:
     - name: Introdução
@@ -85,8 +85,8 @@
               href: discovery-docker-ubuntu.md
             - name: Docker no Ubuntu no Azure
               href: discovery-docker-ubuntu-azure.md
-            - name: Solução de problemas de implantação do Docker do Cloud Discovery
-              href: troubleshoot-docker.md
+            - name: Configuração de FTP do coletor de logs
+              href: log-collector-ftp.md
             - name: Coletor de logs por trás de um proxy
               href: log-collector-proxy.md
             - name: Usar o analisador de log personalizado
@@ -234,8 +234,6 @@
           href: troubleshooting-content-inspection.md
         - name: Solução de problemas de integração de SIEM
           href: troubleshooting-siem.md
-        - name: Solução de problemas de implantação do Docker do Cloud Discovery
-          href: troubleshoot-docker.md
         - name: Políticas da solução de problemas
           href: troubleshoot-policies.md
 - name: Recursos
