@@ -1,11 +1,11 @@
 ---
-title: Obter recomendações de configuração de segurança – Cloud App Security | Microsoft Docs
+title: Obter recomendações de configuração de segurança para o Azure-Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações de como obter recomendações de configuração de segurança no Cloud App Security por meio da integração com a Central de segurança do Azure.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,14 +15,14 @@ ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 32c144246decacc8d5f734aced5c57aca123251e
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: eba84847208b3dc020e9efec47a4215439751a60
+ms.sourcegitcommit: 3fe4489cbb2c7d7e8f26aa358511e9f738596e98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568542"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69013215"
 ---
-# <a name="security-configuration"></a>Configuração de segurança
+# <a name="security-configuration-for-azure"></a>Configuração de segurança para o Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -45,20 +45,20 @@ Para habilitar as recomendações de configuração de segurança no Microsoft C
 
 2. Abra a <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Central de Segurança do Azure</a> para que as alterações entrem em vigor.
 
-3. No portal do Microsoft Cloud App Security, acesse **Investigar** e, em seguida **Configuração de segurança**. 
-    - O Microsoft Cloud App Security fornece recomendações apenas para as 50 principais assinaturas. 
+3. Em Cloud app Security, navegue para **investigar** > a**configuração de segurança**e, em seguida, selecione a guia **Azure** .
+    - O Microsoft Cloud App Security fornece recomendações apenas para as 50 principais assinaturas.
     - Pode levar até 15 minutos para que as alterações entrem em vigor.
 
-     ![menu de configuração de segurança](./media/security-configuration-menu.png)
+     ![menu de configuração de segurança](media/security-configuration-menu.png)
 
-4. Você pode filtrar as recomendações por tipo, recurso e assinatura. Além disso, você pode clicar no ícone de configuração de segurança ![Ícone ASC](./media/asc-icon.png) para abrir a recomendação na Central de Segurança do Azure para obter mais informações e se aprofundar na recomendação. 
+4. Você pode filtrar as recomendações por tipo, recurso e assinatura. Além disso, você pode clicar no ícone de configuração de segurança ![Ícone ASC](./media/asc-icon.png) para abrir a recomendação na Central de Segurança do Azure para obter mais informações e se aprofundar na recomendação.
 
 Para obter informações de como implementar as recomendações de segurança, confira [Gerenciando recomendações de segurança na Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
 
-   ![configuração de segurança](./media/security-configuration1.png)
+   ![configuração de segurança](media/security-configuration-azure.png)
 
-## <a name="next-steps"></a>Próximas etapas 
+## <a name="next-steps"></a>Próximas etapas
+
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
