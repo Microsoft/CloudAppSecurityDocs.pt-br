@@ -35,6 +35,8 @@
       href: use-case-admin-quarantine.md
     - name: Aplicar os rótulos da Proteção de Informações do Azure automaticamente
       href: use-case-information-protection.md
+    - name: Automatizar alertas para proteger os pontos de extremidade
+      href: tutorial-flow.md
 - name: Conceitos
   items:
     - name: Proteger aplicativos com o Controle de Aplicativos de Acesso Condicional
@@ -147,7 +149,11 @@
         - name: Gerenciar aplicativos OAuth
           href: manage-app-permissions.md
         - name: Configuração de segurança
-          href: security-config.md
+          items:
+            - name: Configuração de segurança para o Azure
+              href: security-config.md
+            - name: Configuração de segurança para o AWS
+              href: security-config-aws.md
         - name: Monitorar aplicativos
           href: monitor-alerts.md
           items:
