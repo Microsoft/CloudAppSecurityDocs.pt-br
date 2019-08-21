@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 8099d38309703b4258d1b8234537d3b172df52b2
-ms.sourcegitcommit: d35baa4f55a3ab4cd8df478adaf10579a00f603d
+ms.openlocfilehash: 284470013b01b7af96f2e8b0b271b00bf7a7ff4b
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67622460"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69573013"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
 
@@ -36,8 +36,7 @@ Este tutorial fornece instruções sobre como usar o Cloud App Security para inv
 > * 3: [Investigar mais os usuários](#investigate)
 > * 4: [Proteger a organização](#protect)
 
-
-## Entender a pontuação de prioridade de investigação <a name ="risk-score"></a>
+## Entender a pontuação de prioridade de investigação<a name="risk-score"></a>
 
 A pontuação de prioridade de investigação é uma pontuação que o Cloud App Security fornece a cada usuário para que você saiba o nível de risco de um usuário em relação aos outros usuários da sua organização.
     
