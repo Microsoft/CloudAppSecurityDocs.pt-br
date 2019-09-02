@@ -5,87 +5,100 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/18/2019
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b591250343b97534fc4dba6b3322289b1adb4ce
-ms.sourcegitcommit: d1eb8ccf09840c659ba7170a2b92cd62d9d97a02
+ms.openlocfilehash: 1b467600661209d299ca5f5f4079a572aa3016c2
+ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68496721"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70208934"
 ---
-# <a name="placeholder-article"></a>Artigo de espaço reservado
-<!--
-# Connect Workday to Microsoft Cloud App Security
+# <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use.
+Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do workday existente usando a API do conector de aplicativos. Essa conexão fornece visibilidade e controle sobre o uso do workday.
 
-## How to connect Workday to Cloud App Security using OAuth
+## <a name="prerequisites"></a>Pré-requisitos
 
-1. Sign in with an Admin account to your Workday account.
+A conta workday usada para se conectar a Cloud App Security deve ser um membro de um grupo de segurança que tenha os seguintes domínios habilitados para eles:
 
-1. Search for "Edit tenant setup – system", and under **User Activity Logging**, select **Enable User Activity Logging**.
+- Administração de segurança do sistema
+- Sistema-auditoria de sistema
+- Equipe-dados de trabalho: Relatórios públicos de trabalho
 
-    ![Screenshot of allowing user activity logging](media/connect-workday-enable-logging.png)
+Recomendamos o uso de um usuário do sistema de integração do workday.
 
-1. Search for "Register API Client" and select **Register API Client – Task**.
+## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Como conectar o workday ao Cloud App Security usando o OAuth
 
-1. On the **Register API Client** page, fill out the following information, and then click **OK**.
+1. Entre com uma conta de administrador para sua conta do workday.
 
-    | Field name | Value |
+1. Pesquise "Editar configuração de locatário – sistema" e, em **log de atividades do usuário**, selecione **habilitar log de atividades do usuário**.
+
+    ![Captura de tela de permitir o log de atividades do usuário](media/connect-workday-enable-logging.png)
+
+1. Pesquise "Editar configuração de locatário – segurança" e, em **configurações do OAuth 2,0**, selecione **clientes OAuth 2,0 habilitados**.
+
+1. Pesquise "registrar cliente de API" e selecione **registrar cliente de API – tarefa**.
+
+1. Na página **registrar cliente de API** , preencha as informações a seguir e clique em **OK**.
+
+    | Nome do campo | Valor |
     | ---- | ---- |
-    | Client Name | Microsoft Cloud App Security |
-    | Client Grant Type | Authorization Code Grant |
-    | Access Token Type | Bearer |
-    | Redirection URI | https://portal.cloudappsecurity.com/api/oauth/connect |
-    | OAuth2 Scopes | **Staffing** and **System** |
-    | Scope (Functional Areas) | **Staffing** and **System** |
+    | Nome do cliente | Microsoft Cloud App Security |
+    | Tipo de concessão de cliente | Concessão de código de autorização |
+    | Tipo de token de acesso | Portador |
+    | URI de redirecionamento | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Escopos OAuth2 | **Equipe** e **sistema** |
+    | Escopo (áreas funcionais) | **Equipe** e **sistema** |
 
-    ![Screenshot of registering API client](media/connect-workday-register-api-client.png)
+    ![Captura de tela do registro do cliente de API](media/connect-workday-register-api-client.png)
 
-1. Once registered, make a note for the following parameters, and then click **Done**.
+1. Depois de registrado, anote os parâmetros a seguir e clique em **concluído**.
 
-    - Client ID
-    - Client Secret
-    - Workday REST API Endpoint
-    - Token Endpoint
-    - Authorization Endpoint
+    - ID do cliente
+    - Segredo do cliente
+    - Ponto de extremidade da API REST do workday
+    - Ponto de extremidade do token
+    - Ponto de extremidade de autorização
 
-    ![Screenshot of confirming registration of API client](media/connect-workday-register-api-client-confirm.png)
+    ![Captura de tela de confirmando o registro do cliente de API](media/connect-workday-register-api-client-confirm.png)
 
-1. In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
+1. No portal de Cloud App Security, clique em **investigar** e em **aplicativos conectados**.
 
-1. In the **App connectors** page, click the plus button and then **Workday**.
+1. Na página **conectores de aplicativos** , clique no botão de adição e, em seguida, em **workday**.
 
-    ![Screenshot of adding app connector](media/connect-workday-add-app.png)
+    ![Captura de tela da adição do conector de aplicativos](media/connect-workday-add-app.png)
 
-1. In the popup, add your instance name and then click **Connect Workday**.
+1. No pop-up, adicione o nome da instância e clique em **conectar workday**.
 
-    ![Screenshot of adding instance name](media/connect-workday-add-app-connect.png)
+    ![Captura de tela da adição do nome da instância](media/connect-workday-add-app-connect.png)
 
-1. On the next page, fill out the details with the information you noted earlier, and then click **Connect in Workday**.
+1. Na próxima página, preencha os detalhes com as informações anotadas anteriormente e clique em **conectar no workday**.
 
-    ![Screenshot of filling out app details](media/connect-workday-add-app-connect-details.png)
+    ![Captura de tela de preenchimento de detalhes do aplicativo](media/connect-workday-add-app-connect-details.png)
 
-1. In Workday, a popup will ask you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
+1. No workday, um pop-up perguntará se você deseja permitir Cloud App Security acesso à sua conta do workday. Para continuar, clique em **Permitir**.
 
-    ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
+    ![Captura de tela da autorização do acesso ao aplicativo](media/connect-workday-add-app-allow.png)
 
-1. Back in the Cloud App Security console, you should see a message that Workday was successfully connected. Make sure the connection succeeded by clicking **Test API**.
+1. De volta ao portal de Cloud App Security, você deverá ver uma mensagem informando que o workday foi conectado com êxito. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.
 
-    Testing may take a couple of minutes. After receiving a success notice, click **Close**.
+    O teste pode levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.
 
-## Next steps 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+> [!NOTE]
+> Depois de conectar o workday, você receberá eventos por sete dias antes da conexão.
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)-->
+## <a name="next-steps"></a>Próximas etapas
+
+[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)

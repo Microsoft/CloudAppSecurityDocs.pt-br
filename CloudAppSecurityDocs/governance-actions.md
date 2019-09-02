@@ -5,102 +5,97 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/7/2019
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b87b67df8e975bb6bf48d693aa11fcdf1018336f
-ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
+ms.openlocfilehash: f23494744e629990f6bcc68e1c22fb73b2db6033
+ms.sourcegitcommit: a2dd3bcc00d2bd1d2e4c3fd9f8c0fd7ac4a25091
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610884"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70206673"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades. Ações de governança são ações integradas que você pode executar em arquivos ou atividades diretamente no Microsoft Cloud App Security. As ações de governança controlam o que os usuários fazem, em tempo real, nos aplicativos conectados. 
+O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades. Ações de governança são ações integradas que você pode executar em arquivos ou atividades diretamente no Microsoft Cloud App Security. As ações de governança controlam o que os usuários fazem, em tempo real, nos aplicativos conectados.
 
 > [!NOTE]
-> Quando tenta executar uma ação de governança em um arquivo e falha porque o arquivo está bloqueado, o Microsoft Cloud App Security automaticamente tenta a ação de governança novamente. 
+> Quando tenta executar uma ação de governança em um arquivo e falha porque o arquivo está bloqueado, o Microsoft Cloud App Security automaticamente tenta a ação de governança novamente.
 
-
-## <a name="file-governance-actions"></a>Ações de governança de arquivo 
+## <a name="file-governance-actions"></a>Ações de governança de arquivo
 
 As ações de controle a seguir podem ser tomadas para aplicativos conectados em um arquivo, usuário ou política específica.
 
-- **Notificações:** 
+- **Notificações:**
 
-     - **Alertas** – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade. 
+  - **Alertas** – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade.
 
-     - **Notificação por email do usuário** – as mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários de arquivos em violação. 
+  - **Notificação por email do usuário** – as mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários de arquivos em violação.
 
-     - **Notificar usuários específicos** – lista específica de endereços de email que receberão essas notificações. 
+  - **Notificar usuários específicos** – lista específica de endereços de email que receberão essas notificações.
 
-     - **Notificar último editor do arquivo** – enviar notificações para a última pessoa que modificou o arquivo. 
+  - **Notificar último editor do arquivo** – enviar notificações para a última pessoa que modificou o arquivo.
 
-- **Ações de governança em aplicativos** – ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo. 
+- **Ações de governança em aplicativos** – ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo.
 
-     
-     - **Rotulagem**
-         - **Aplicar rótulo** – Capacidade de adicionar um rótulo de classificação da Proteção de Informações do Azure.
-         - **Remover rótulo** – Capacidade de remover um rótulo de classificação da Proteção de Informações do Azure.
-     - **Alterar compartilhamento** 
+  - **Rotulagem**
+    - **Aplicar rótulo** – Capacidade de adicionar um rótulo de classificação da Proteção de Informações do Azure.
+    - **Remover rótulo** – Capacidade de remover um rótulo de classificação da Proteção de Informações do Azure.
+  - **Alterar compartilhamento**
 
-        - **Remover compartilhamento público** – permitir o acesso somente a colaboradores nomeados, por exemplo: Remover o acesso público ao G Suite e Remover link direto compartilhado para o Box. 
+    - **Remover compartilhamento público** – permitir o acesso somente a colaboradores nomeados, por exemplo: Remover o acesso público ao G Suite e Remover link direto compartilhado para o Box.
 
-       - **Remover usuários externos** – permitir o acesso somente aos usuários da empresa. 
+    - **Remover usuários externos** – permitir o acesso somente aos usuários da empresa.
 
-       - **Tornar particular** – somente o proprietário pode acessar o arquivo, todos os compartilhamentos são removidos. 
+    - **Tornar particular** – somente o proprietário pode acessar o arquivo, todos os compartilhamentos são removidos.
 
-       - **Remover um colaborador** – remova um colaborador específico do arquivo. 
+    - **Remover um colaborador** – remova um colaborador específico do arquivo.
 
-       - **Reduzir o acesso público** – defina os arquivos disponíveis publicamente a serem disponibilizados somente com um link compartilhado. (Google)
-        
-       - **Expiração de link compartilhado** – Capacidade de definir uma data de expiração para um link compartilhado, após a qual ele não estará mais ativo. (Box)
+    - **Reduzir o acesso público** – defina os arquivos disponíveis publicamente a serem disponibilizados somente com um link compartilhado. (Google)
 
-       - **Alterar nível de acesso para compartilhamento de link** – Capacidade de alterar o nível de acesso do link compartilhado entre "somente a empresa", "somente colaboradores" e "público". (Box)
+    - **Expiração de link compartilhado** – Capacidade de definir uma data de expiração para um link compartilhado, após a qual ele não estará mais ativo. (Box)
 
-  - **Quarentena** 
+    - **Alterar nível de acesso para compartilhamento de link** – Capacidade de alterar o nível de acesso do link compartilhado entre "somente a empresa", "somente colaboradores" e "público". (Box)
 
-       - **Colocar em quarentena do usuário** – permitir o autoatendimento movendo o arquivo para uma pasta de quarentena controlada pelo usuário 
+  - **Quarentena**
 
-       - **Colocar em quarentena do administrador** – o arquivo é movido para a quarentena na unidade do administrador, que precisa aprová-lo. 
+    - **Colocar em quarentena do usuário** – permitir o autoatendimento movendo o arquivo para uma pasta de quarentena controlada pelo usuário
+
+    - **Colocar em quarentena do administrador** – o arquivo é movido para a quarentena na unidade do administrador, que precisa aprová-lo.
 
   - **Herdar permissões do pai** – essa ação de governança permite remover o conjunto de permissões específicas para um arquivo ou uma pasta no Office 365. Em seguida, reverta para as permissões definidas para a pasta pai.
 
   - **Lixeira** – mova o arquivo para a pasta da lixeira. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![alertas policy_create](./media/policy_create-alerts.png "alertas policy_create") 
+   ![alertas policy_create](./media/policy_create-alerts.png "alertas policy_create")
 
-
-## <a name="activity-governance-actions"></a>Ações de governança de atividade 
+## <a name="activity-governance-actions"></a>Ações de governança de atividade
 
 - **Notificações**
 
-    - **Alertas** – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade. 
+  - **Alertas** – os alertas podem ser disparados no sistema e propagados por email e mensagem de texto, com base no nível de gravidade.
 
-    - **Notificação por email do usuário** – as mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários de arquivos em violação. 
+  - **Notificação por email do usuário** – as mensagens de email podem ser personalizadas e serão enviadas a todos os proprietários de arquivos em violação.
 
-    - **Notificar usuários adicionais** – lista específica de endereços de email que receberão essas notificações. 
+  - **Notificar usuários adicionais** – lista específica de endereços de email que receberão essas notificações.
 
-- **Ações de governança em aplicativos** – ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo. 
+- **Ações de governança em aplicativos** – ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo.
 
-    - **Suspender usuário** – suspende o usuário do aplicativo. 
-      > [!NOTE] 
-      > Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários no seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida. 
+  - **Suspender usuário** – suspende o usuário do aplicativo.
+    > [!NOTE]
+    > Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários no seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida.
 
-    - **Exigir que o usuário entre novamente** – desconecta o usuário e exige que ele entre novamente. 
+  - **Exigir que o usuário entre novamente** – desconecta o usuário e exige que ele entre novamente.
 
-    ![Ações de governança de política de atividade do Cloud App Security](./media/activity-policy-ref6.png "ref6 da política de atividade") 
-
+  ![Ações de governança de política de atividade do Cloud App Security](./media/activity-policy-ref6.png "ref6 da política de atividade")
 
 ## <a name="governance-conflicts"></a>Conflitos de governança
 
@@ -114,22 +109,22 @@ Após a criação de várias políticas, pode surgir uma situação na qual as a
 
 ### <a name="conflicts-in-user-sync"></a>Conflitos na sincronização de usuário
 
-- Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários em seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida. 
+- Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários em seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e esta ação de governança será revertida.
 
 ## <a name="governance-log"></a>Log de governança
-O log de governança fornece um registro de status de cada tarefa que você definir no Cloud App Security para execução, incluindo tarefas manuais e automáticas. Essas tarefas incluem aquelas definidas em políticas, as ações de governança definidas em arquivos e usuários e qualquer outra ação definida para execução no Cloud App Security. O Log de governança também fornece informações sobre o êxito ou falha dessas ações. Você pode optar por repetir ou reverter algumas das ações de governança do log de governança. 
+
+O log de governança fornece um registro de status de cada tarefa que você definir no Cloud App Security para execução, incluindo tarefas manuais e automáticas. Essas tarefas incluem aquelas definidas em políticas, as ações de governança definidas em arquivos e usuários e qualquer outra ação definida para execução no Cloud App Security. O Log de governança também fornece informações sobre o êxito ou falha dessas ações. Você pode optar por repetir ou reverter algumas das ações de governança do log de governança.
 
 A tabela a seguir é a lista completa de ações que o portal do Cloud App Security permite que você execute. Essas ações são habilitadas em vários locais por todo o console, conforme descrito na coluna **Localização**. Cada ação de governança realizada é relacionada no Log de Governança.
 Para obter informações sobre como as ações de governança são tratadas quando há conflitos de política, consulte [Conflitos de política](control-cloud-apps-with-policies.md).
 
-
-|<strong>Local</strong> | <strong>Tipo de objeto de destino</strong> | <strong>Ação de governança</strong> |<strong>Descrição</strong>| <strong>Conectores relacionados</strong>|
+| Location | Tipo de objeto de destino | Ação de governança |Descrição| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Contas |Arquivo |Remover colaborações do usuário | Remove todas as colaborações de um usuário específico para todos os arquivos - bom para as pessoas que estão saindo da empresa. |Box, G Suite|
 |Contas | Conta | Cancelar suspensão de usuário |Cancela a suspensão do usuário |G Suite, Box, Office, Salesforce|
 |Contas | Conta |Configurações de conta | Leva você para a página de configurações de conta no aplicativo específico (por exemplo, dentro do Salesforce). | Todas as configurações dos aplicativos One Drive e SharePoint são feitas no Office. |
 |Contas |Arquivo |Transferir a propriedade de todos os arquivos | Em uma conta, você transfere os arquivos de um usuário para que a propriedade deles seja concedida a uma nova pessoa que você selecionar. O proprietário anterior se torna um editor e não pode mais alterar as configurações de compartilhamento. O novo proprietário receberá uma notificação por email sobre a alteração de propriedade. | G Suite|
-|Contas, Política de atividade | Conta | Suspender um usuário| Define o usuário para que ele não tenha nenhum acesso e nenhuma capacidade de entrar. Se ele estiver conectado quando você definir essa ação, ele será bloqueado imediatamente. |G Suite, Box, Office, Salesforce|
+|Contas, Política de atividade | Conta | Suspender um usuário| Define o usuário para que ele não tenha nenhum acesso e nenhuma capacidade de entrar. Se eles estiverem conectados quando você definir essa ação, eles serão bloqueados imediatamente. |G Suite, Box, Office, Salesforce|
 |Política de atividade, Contas | Conta |Exigir que o usuário entre novamente|Revoga todos os tokens de atualização e todas as emissões de cookie de sessão para aplicativos pelo usuário. Essa ação impedirá o acesso aos dados da organização e forçará o usuário a entrar novamente em todos os aplicativos.| G Suite|
 |Política de atividade, Contas | Conta | Revogar privilégios de administrador |Revoga os privilégios da conta do administrador. Por exemplo, definir uma política de atividade que revogue os privilégios de administrador depois de 10 tentativas de logon com falha. | G Suite|
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Cancelar veto de aplicativo| No Google e no Salesforce: remove o veto do aplicativo e permite que os usuários concedam permissões ao aplicativo de terceiros com suas contas do Google ou do Salesforce. No Office 365: restaura as permissões do aplicativo de terceiros para o Office. |G Suite, Salesforce, Office |
@@ -139,7 +134,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Revogar o aplicativo|Revogue as permissões de um aplicativo de terceiros para o Google ou Salesforce. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras. | G Suite, Salesforce|
 |Painel do aplicativo > Permissões de aplicativo | Conta | Revogar o usuário do aplicativo|Você pode revogar usuários específicos ao clicar no número em Usuários. A tela exibirá os usuários específicos e você poderá usar o X para excluir permissões para qualquer usuário.| G Suite, Salesforce|
 |Descobrir > Aplicativos descobertos/Endereços IP/Usuários| Cloud Discovery | Exportar dados de descoberta | Cria um CSV dos dados de descoberta. | Descoberta |
-|Política de arquivos|Arquivo |Lixeira|Move o arquivo na Lixeira do usuário.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
+|Política de arquivos|Arquivo |Lixeira|Move o arquivo na lixeira do usuário.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Política de Arquivos|Arquivo | Notificar o último editor de arquivo |Envia um email para notificar a última pessoa que editou o arquivo que ele viola uma política. |G Suite, Box|
 |Política de Arquivos|Arquivo |Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir. | Todos os aplicativos |
 |Política de arquivos, Atividade de política | Arquivo, Atividade | Notificar usuários específicos |Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.| Todos os aplicativos |
@@ -158,7 +153,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Arquivos, Política de arquivo|Arquivo | Reduzir o acesso público|Essa ação permite que você defina os arquivos disponíveis publicamente a serem disponibilizados somente com um link compartilhado.| G Suite|
 |Arquivos, Política de arquivo|Arquivo | Remover um parceiro | Remove um parceiro específico de um arquivo. | G Suite, Box, One Drive, SharePoint|
 |Arquivos, Política de arquivo|Arquivo | Tornar privado| Torna o arquivo privado - não há mais parceiros ou links públicos, não compartilhados com qualquer pessoa. | G Suite, One Drive, SharePoint |
-|Arquivos, Política de arquivo|Arquivo | Remover usuários externos | Remove todos os parceiros externos - fora dos domínios configurados como internos nas Configurações. |G Suite, Box|
+|Arquivos, Política de arquivo|Arquivo | Remover usuários externos | Remove todos os parceiros externos - fora dos domínios configurados como internos nas Configurações. |G Suite, Box, One Drive, SharePoint|
 |Arquivos, Política de arquivo|Arquivo |Conceder permissão de leitura ao domínio|Concede permissões de leitura do arquivo no domínio especificado para todo o seu domínio ou para um domínio específico. Essa ação é útil se você deseja remover o acesso público depois de conceder acesso ao domínio de pessoas que precisam trabalhar nele.| G Suite|
 |Arquivos, Política de arquivo|Arquivo | Colocar em quarentena do usuário | Remove todas as permissões do arquivo e o move para uma pasta de quarentena na unidade de raiz do usuário. Essa ação permite que o usuário examine o arquivo e o mova. Se ele for movido manualmente de volta, o compartilhamento de arquivos não será restaurado. | Box, One Drive, SharePoint |
 |Arquivos|Arquivo|Expiração de link compartilhado| Define uma data de expiração para um link compartilhado, após a qual ele não estará mais ativo.|Caixa|
@@ -170,9 +165,8 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Configurações > Configurações do Cloud Discovery > Excluir dados| Cloud Discovery | Excluir os dados do Cloud Discovery |Exclui todos os dados coletados de fontes de descoberta.| Descoberta |
 |Configurações > Configurações do Cloud Discovery > Carregar logs manualmente/Carregar logs automaticamente | Cloud Discovery | Analisar dados do Cloud Discovery| Notificação de que todos os dados de log foram analisados. | Descoberta |
 
-## <a name="next-steps"></a>Próximas etapas 
+## <a name="next-steps"></a>Próximas etapas
+
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/) 
-
-
+[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
