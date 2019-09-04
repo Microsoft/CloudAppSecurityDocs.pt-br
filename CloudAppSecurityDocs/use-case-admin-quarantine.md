@@ -15,12 +15,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1754c11414521c058e51851132a08eb7a9725fb9
-ms.sourcegitcommit: 5c8678d44aa73375703fd54fc7e0386b704bd3bc
+ms.openlocfilehash: 6756ee0043ce99f3323c03a0f43bab3ba6d0cce9
+ms.sourcegitcommit: 1801e4c65222b215fb62471854f4c501d4cd6c93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68633155"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70104507"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: Proteger arquivos com quarentena do administrador
 
@@ -37,7 +37,7 @@ Este tutorial ajuda você a usar o Microsoft Cloud App Security para detectar ar
 ## <a name="understand-how-quarantine-works"></a>Entender como funciona a quarentena
 
 >[!NOTE]
-> - Para obter uma lista de aplicativos que dão suporte a quarentena do administrador, consulte a lista de [ações de governança](governance-actions.md).
+> - Para obter uma lista de aplicativos que dão suporte à quarentena do administrador, consulte a lista de [ações de governança](governance-actions.md).
 > - Se um arquivo no SharePoint ou OneDrive for detectado como sendo malware, ele não será posto em quarentena no portal do Cloud App Security.
 
 1. Quando um arquivo corresponde a uma política, a opção **Quarentena do administrador** estará disponível para o arquivo.
