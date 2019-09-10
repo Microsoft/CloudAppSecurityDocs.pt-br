@@ -35,7 +35,7 @@
       href: use-case-admin-quarantine.md
     - name: Aplicar os rótulos da Proteção de Informações do Azure automaticamente
       href: use-case-information-protection.md
-    - name: Estender a governança para correção de ponto de extremidade
+    - name: Estender a governança para correção de pontos de extremidade
       href: tutorial-flow.md
 - name: Conceitos
   items:
