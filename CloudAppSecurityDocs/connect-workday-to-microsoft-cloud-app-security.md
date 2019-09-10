@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d22d5e20ca3ad8f8484fb22f16b595c91d27aa22
-ms.sourcegitcommit: 5929f232232f2c3cba460680d959b121dff1aa3a
+ms.openlocfilehash: 0530cfa93edd96bf805df3ac62b900b50fa5978b
+ms.sourcegitcommit: 6105add524e33adaa389bcf0f5baf4f1fdfd7f7d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2019
-ms.locfileid: "70803043"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70804891"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
 
@@ -44,7 +44,7 @@ Recomendamos o uso de um usuário do sistema de integração do workday.
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Como conectar o workday ao Cloud App Security usando o OAuth
 
-1. Entre em sua conta do workday com um usuário administrador que seja membro do grupo de segurança mencionado nos pré-requisitos.
+1. Entre no workday com uma conta que seja membro do grupo de segurança mencionado nos pré-requisitos.
 
 1. Pesquise "Editar configuração de locatário – sistema" e, em **log de atividades do usuário**, selecione **habilitar log de atividades do usuário**.
 
