@@ -5,21 +5,27 @@ author: ShlomoSagir-MS
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
-ms.date: 8/22/2019
-ms.openlocfilehash: 8aad8262baf985c25b4443d90c1e6ac2ba3b4725
-ms.sourcegitcommit: 33257c7a1017ee0a4ff8f4f8cc7ef018c9be00e5
+ms.date: 9/8/2019
+ms.openlocfilehash: ab9ab1a0e616ec25f7316691e6f747b20226cc10
+ms.sourcegitcommit: e1b3e3b45d39e46734e3a994bd8d0d1459be585a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70206537"
+ms.lasthandoff: 09/08/2019
+ms.locfileid: "70800873"
 ---
-# <a name="tutorial-extending-governance-to-endpoint-remediation"></a>Tutorial: Estender a governança para correção de ponto de extremidade
+# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Estender a governança para correção de ponto de extremidade
 
 O Cloud App Security fornece opções de governança predefinidas para políticas, como suspender um usuário ou tornar um arquivo privado. Usando a integração nativa com o Microsoft Flow, é possível usar um grande ecossistema de conectores SaaS (software como serviço) para criar fluxos de trabalho para automatizar processos, incluindo correção.
 
 Por exemplo, ao detectar uma possível ameaça de malware, é possível usar fluxos de trabalho para iniciar as ações de correção da ATP (Proteção Avançada contra Ameaças) do Microsoft defender, como a execução de uma verificação antivírus ou o isolamento de um ponto de extremidade.
 
 Neste tutorial, você aprenderá a configurar uma ação de governança de política para usar um fluxo de trabalho para executar uma verificação antivírus em um ponto de extremidade em que um usuário mostra sinais de comportamento suspeito.
+
+> [!div class="checklist"]
+> * 1: [Gerar um token de API do Cloud App Security](#generate-token)
+> * 2: [Criar um fluxo para executar um exame antivírus](#create-flow)
+> * 3: [Configurar o fluxo](#configure-flow)
+> * 4: [Configurar uma política para executar o fluxo](#configure-policy)
 
 > [!NOTE]
 > Esses fluxos de trabalho são relevantes apenas para políticas que contêm atividades de usuário. Por exemplo, não é possível usar esses fluxos de trabalho com políticas de descoberta ou de OAuth.
@@ -32,9 +38,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 * Você precisa ter um plano válido do Microsoft Defender ATP
 * O ambiente do Microsoft Flow deve ser sincronizado com o Azure AD, monitorado pelo Defender ATP e ingressado no domínio
 
-## <a name="to-configure-an-antivirus-scan-remediation-action"></a>Configurar uma ação de correção de verificação antivírus
-
-### <a name="step-1-generate-a-cloud-app-security-api-token"></a>Etapa 1: Gerar um token de API do Cloud App Security
+## Fase 1: Gerar um token de API do Cloud App Security<a name="generate-token"></a>
 
 > [!NOTE]
 > Se você tiver criado anteriormente um fluxo de trabalho usando um conector do Cloud App Security, o Microsoft Flow reutilizará automaticamente o token e você poderá ignorar esta etapa.
@@ -49,7 +53,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 
     ![Captura de tela da janela do token mostrando o token e o processo de cópia.](media/tutorial-flow-token-copy.png)
 
-### <a name="step-2-create-a-flow-to-run-an-antivirus-scan"></a>Etapa 2: Criar um fluxo para executar um exame antivírus
+## Fase 2: Criar um fluxo para executar um exame antivírus<a name="create-flow"></a>
 
 > [!NOTE]
 > Se você tiver criado anteriormente um fluxo usando um conector do Defender ATP, o Flow reutilizará automaticamente o conector e você poderá ignorar a etapa **Entrar**.
@@ -65,7 +69,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 
     ![Captura de tela da página de modelos do Microsoft Flow mostrando o processo de entrada.](media/tutorial-flow-templates-signin.png)
 
-### <a name="step-3-configure-the-flow"></a>Etapa 3: Configurar o fluxo
+## Fase 3: Configurar o fluxo<a name="configure-flow"></a>
 
 > [!NOTE]
 > Se você tiver criado anteriormente um fluxo usando um conector do Azure AD, o Microsoft Flow reutilizará automaticamente o token e você poderá ignorar esta etapa.
@@ -92,7 +96,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 
     ![Captura de tela da página de fluxo mostrando a seção de configuração do exame.](media/tutorial-flow-templates-scan.png)
 
-### <a name="step-4-configure-the-policy-to-run-the-flow"></a>Etapa 4: Configurar a política para executar o fluxo
+## Fase 4: Configurar uma política para executar o fluxo<a name="configure-policy"></a>
 
 1. No Cloud App Security, clique em **Controle** e em **Políticas**.
 
@@ -106,7 +110,7 @@ Agora, cada alerta gerado para essa política iniciará o fluxo para executar a 
 
 É possível usar as etapas neste tutorial para criar uma ampla gama de ações baseadas em fluxo de trabalho para estender os recursos de correção do Cloud App Security, incluindo outras ações do Defender ATP. Para ver uma lista de fluxos de trabalho predefinidos do Cloud App Security, no Microsoft Flow, [pesquise "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="see-also"></a>Consulte Também
 
 > [!div class="nextstepaction"]
 [Integrar-se ao Microsoft Flow para automação de alertas personalizada](flow-integration.md)
