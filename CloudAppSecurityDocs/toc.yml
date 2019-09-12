@@ -19,8 +19,6 @@
   items:
     - name: Introdução
       href: getting-started-with-cloud-app-security.md
-    - name: Trabalhar com aplicativos descobertos
-      href: discovered-apps.md
 - name: Tutoriais
   items:
     - name: Descobrir e gerenciar a TI sombra
@@ -43,8 +41,10 @@
       href: proxy-intro-aad.md
     - name: Trabalhar com o painel
       href: daily-activities-to-protect-your-cloud-environment.md
-    - name: Trabalhar com a pontuação de risco
+    - name: Trabalhar com pontuações de risco do aplicativo
       href: risk-score.md
+    - name: Trabalhando com aplicativos descobertos
+      href: discovered-apps.md
 - name: Guias de instruções
   items:
     - name: Configuração básica
