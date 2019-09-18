@@ -4,14 +4,14 @@ title: Microsoft Cloud App Security
 metadata:
   title: Microsoft Cloud App Security| Microsoft Docs
   description: 'Fornece segurança de nível corporativo para seus aplicativos na nuvem com o Microsoft Cloud App Security para maior visibilidade, controles abrangentes e proteção aprimorada contra problemas de segurança na nuvem.'
-  author: ShlomoSagir-MS
+  author: shsagir
   manager: angrobe
   ms.prod: cloud-app-security
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
   ms.date: 21/8/2019
-  ms.author: ShlomoSagir-MS
+  ms.author: shsagir
   ms.service: cloud-app-security
   layout: LandingPage
 abstract:
