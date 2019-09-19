@@ -2,9 +2,9 @@
 title: Conectar o ServiceNow ao Cloud App Security
 description: Este artigo fornece informações sobre como conectar o aplicativo ServiceNow ao Cloud App Security usando o conector de API para obter visibilidade e controle sobre o uso.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 81272602fcdab13b8a0e5ffff85c4eec8ebf968d
-ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
+ms.openlocfilehash: ce165d2f26b2e6a3d405aebf560b8f9964adcb3e
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610765"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083784"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 
@@ -32,7 +32,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 >  É recomendável implantar o ServiceNow usando os tokens de aplicativo OAuth, disponíveis para Fuji e versões posteriores (consulte a [documentação do ServiceNow](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) relevante). Para as versões anteriores, um [modo de conexão herdado](#legacy-servicenow-connection) está disponível com base no usuário/senha. O nome de usuário/senha fornecidos são usados apenas para geração de token de API e não são salvos após o processo de conexão inicial.
 > 
 > [!NOTE]
->  Cloud App Security dá suporte a versões do ServiceNow do Jacarta, Kingston, Eureka, Fiji, Geneva, Helsinque, Istambul, Londres e Madrid. Para conectar o ServiceNow ao Cloud App Security, você deve ter a função **Admin** e verificar se a instância do ServiceNow dá suporte ao acesso à API.  Para obter mais informações, consulte a [Documentação do produto ServiceNow](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+>  O Cloud App Security dá suporte às versões do ServiceNow, Kingston, Eureka, Fiji, Geneva, Helsinque, Istambul, Londres e Madri. Para conectar o ServiceNow ao Cloud App Security, você deve ter a função **Admin** e verificar se a instância do ServiceNow dá suporte ao acesso à API.  Para obter mais informações, consulte a [Documentação do produto ServiceNow](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>Como conectar o ServiceNow ao Cloud App Security usando OAuth
   

@@ -2,9 +2,9 @@
 title: Entendendo os dados de arquivo e os filtros disponíveis no Cloud App Security
 description: Este artigo de referência fornece informações sobre os tipos e filtros de arquivo usados pelo Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MSn
+manager: shsagirn
 ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82332b70c58f81e5084b3d26394430e429490b54
-ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
+ms.openlocfilehash: c7c7912a0b9363ce7f5375038914ea62d4606262
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610910"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084657"
 ---
 # <a name="files"></a>Arquivos
 
@@ -134,26 +134,26 @@ Defina também a política a ser executada em arquivos específicos definindo o 
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
-## <a name="authorizing-files"></a>Autorização de arquivos
+## <a name="authorizing-files"></a>Autorizando arquivos
 
-Depois que o Cloud App Security identificou arquivos como apresentando um malware ou um risco DLP, é recomendável que você investigue os arquivos. Se você determinar que os arquivos são seguros, você pode autorizá-los. Autorizar um arquivo remove do relatório de detecção de malware e suprime correspondências futuras nesse arquivo.
+Depois que Cloud App Security identificar arquivos como apresentando um risco de malware ou DLP, recomendamos que você investigue os arquivos. Se você determinar que os arquivos são seguros, poderá autorizá-los. Autorizar um arquivo o remove do relatório de detecção de malware e suprime correspondências futuras nele.
 
-### <a name="to-authorize-files"></a>Para autorizar a arquivos
+### <a name="to-authorize-files"></a>Para autorizar arquivos
 
-1. No Cloud App Security, clique em **controle** e, em seguida **diretivas**.
-1. Na lista de políticas, na linha na qual a política que disparou a investigação for exibida, na **contagem** coluna, clique em vincular as correspondências.
+1. Em Cloud App Security, clique em **controle** e em **políticas**.
+1. Na lista de políticas, na linha na qual a política que disparou a investigação aparece, na coluna **contagem** , clique no link correspondências.
     > [!TIP]
-    > Você pode filtrar a lista de políticas por tipo. A tabela a seguir lista por tipo de risco, filtrar o tipo a ser usado:
+    > Você pode filtrar a lista de políticas por tipo. A tabela a seguir lista, por tipo de risco, qual tipo de filtro deve ser usado:
     >
     > | Tipo de risco | Tipo de filtro |
     > | --- | --- |
     > | DLP | Política de arquivos |
     > | Malware | Política de detecção de malware |
-1. Na lista de arquivos correspondentes, na linha na qual o arquivo sob investigação aparece, clique em **autorizar**.
+1. Na lista de arquivos correspondentes, na linha na qual o arquivo em investigação aparece, clique em **autorizar**.
 
 ## <a name="working-with-the-file-drawer"></a>Trabalhando com a Gaveta de arquivos
 
-Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Clicar abre o **gaveta de arquivos** que fornece as seguintes ações adicionais que você pode executar no arquivo:
+Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Clicar abre a **gaveta de arquivos** que fornece as seguintes ações adicionais que você pode executar no arquivo:
 
 - **URL** – leva você para a localização do arquivo.
 - **Identificadores de arquivo** – abre um pop-up com detalhes de dados brutos sobre o arquivo, incluindo a ID do arquivo e as chaves de criptografia.

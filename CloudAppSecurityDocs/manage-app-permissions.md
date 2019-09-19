@@ -2,9 +2,9 @@
 title: Controlar quais aplicativos OAuth na nuvem de terceiros recebem permissões – Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações sobre como você pode controlar, vetar e autorizar permissões de aplicativos OAuth de terceiros.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d65c332cbf464a17fc3919d1a08fd7ff7a7a9493
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: 856acde6b2c0339921b8bd198b2e42cf4e5cfd1b
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208859"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084212"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
@@ -101,7 +101,7 @@ Você pode consultar os aplicativos OAuth na exibição **Básica** ou na exibi�
 
 ## <a name="oauth-app-auditing"></a>Auditoria de aplicativo OAuth
 
-Cloud App Security audita todas as atividades de autorização OAuth para fornecer monitoramento abrangente e investigação de atividades executadas. Você também pode exportar os detalhes de usuários que autorizam um aplicativo OAuth específico, fornecendo informações adicionais sobre os usuários, que você pode usar para análise posterior.
+O Cloud App Security audita todas as atividades de autorização do OAuth para fornecer monitoramento e investigação abrangentes das atividades executadas. Você também pode exportar os detalhes de usuários que autorizam um aplicativo OAuth específico, fornecendo informações adicionais sobre os usuários, que você pode usar para análise posterior.
 
 Para exportar o log, execute as seguintes etapas:
 

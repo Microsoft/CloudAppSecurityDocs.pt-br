@@ -2,9 +2,9 @@
 title: Distribuir relatórios contínuos do Cloud App Security usando um Docker no Windows | Microsoft Docs
 description: Este artigo descreve o processo de configuração de upload automático de log para relatórios contínuos no Cloud App Security usando um Docker no Windows em um servidor local.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4d9e8e8f4ba01dba7da8f792315d9aa2f033a157
-ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
+ms.openlocfilehash: 724ff32cbdf4d3d81d60ac1359b5c07fe22bb6e1
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861584"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084752"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 

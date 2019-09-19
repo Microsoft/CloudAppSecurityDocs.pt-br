@@ -2,9 +2,9 @@
 title: Integração do SIEM ao Cloud App Security
 description: Este artigo fornece informações a respeito da integração do SIEM ao Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e387de567dc4eb6dee4f49d3ba95cb803454ba0d
-ms.sourcegitcommit: 9e5d1923113dd7bdd499d57f7508757a1a67801b
+ms.openlocfilehash: 89b93b84caff9563e4d19769704abe6cc7c4705e
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2019
-ms.locfileid: "70017567"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084933"
 ---
 # <a name="siem-integration"></a>Integração ao SIEM
 

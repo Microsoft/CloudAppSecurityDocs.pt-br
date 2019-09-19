@@ -2,9 +2,9 @@
 title: Configurar o upload automático de logs para relatórios contínuos no Cloud App Security
 description: Este artigo descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9fb6b01bfa9dbe54c219ef3ff2061e1470483e95
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 288493abd926e68e73124f46aed8a0d774a3c17c
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372289"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084642"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar upload de log automático para relatórios contínuos
 

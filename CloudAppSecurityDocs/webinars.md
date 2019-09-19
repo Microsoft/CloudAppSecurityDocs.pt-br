@@ -1,18 +1,18 @@
 ---
 title: Assista ao nosso webinars-Cloud App Security | Microsoft Docs
 description: Exibe uma lista de webinars anteriores, incluindo uma descrição.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/25/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3edac5c02a7b69fdbf9ab221670f8f17533ece16
-ms.sourcegitcommit: 33257c7a1017ee0a4ff8f4f8cc7ef018c9be00e5
+ms.openlocfilehash: 8c9421ae5eee4dee6518b12a7a2023a46bf14b51
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70206599"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085102"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Microsoft Cloud App Security webinars
 

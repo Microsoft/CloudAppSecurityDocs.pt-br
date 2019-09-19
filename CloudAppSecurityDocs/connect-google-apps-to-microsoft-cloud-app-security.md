@@ -2,7 +2,7 @@
 title: Conectar o G Suite ao Cloud App Security
 description: Este artigo fornece informações sobre como conectar o G Suite ao Cloud App Security usando o conector de API para obter visibilidade e controle sobre o uso.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 6/17/2019
@@ -15,12 +15,12 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c5b06f08452fb626ee7042ffc3ab6f79f6125604
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 94fb1fcb6f66e9abacffca884cb18f7da18a25b0
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298964"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084178"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar o G Suite ao Microsoft Cloud App Security
 
@@ -37,14 +37,14 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
     ![google1](./media/google1.png "google1")  
   
 3. Na tela **Novo projeto**, nomeie o projeto da seguinte maneira:</br>
-   **Cloud App Security** e clique em **criar**.  
+   **Cloud app Security** e clique em **criar**.  
           ![google2](./media/google2.png "google2")  
   
 4. Depois que o projeto for criado, na barra de ferramentas, clique em **Google Cloud Platform**. Verifique se o projeto certo foi selecionado no menu suspenso na parte superior.
        
       ![google project](./media/googleverify-project.png "googleverify project")  
 
-5. Sob **APIs**, clique em **ir para visão geral da API**.  
+5. Em **APIs**, clique em **ir para a visão geral da API**.  
   
      ![google3](./media/google3.png "google3")  
    
@@ -101,23 +101,23 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
   
      ![Editar Google](./media/google11.png "google edit")  
   
-16. Clique em **ID do cliente do modo de exibição domínio DELEGAÇÃO ampla**.
+16. Clique em **exibir ID do cliente de delegação de todo o domínio**.
   
-     ![ID do cliente Google](./media/google12.png "google12") 
+     ![ID do cliente do Google](./media/google12.png "google12") 
 
-    -   Cópia de **ID do cliente** -você precisará dele mais tarde.
+    -   Copie a **ID do cliente** -você precisará dela mais tarde.
 
     -   Vá para [admin.google.com](https://admin.google.com/) e, em seguida, escolha **Segurança**.
 
-    -   Selecione **Mostrar mais** e, em seguida, escolha **configurações avançadas**.
+    -   Selecione **Mostrar mais** e, em seguida, escolha **Configurações avançadas**.
 
-    -   No **autenticação** seção, selecione **acesso para cliente API gerenciar**.
+    -   Na seção **autenticação** , selecione **gerenciar acesso de cliente de API**.
 
-    -   No **nome do cliente** , digite o **ID do cliente** que você copiou anteriormente.
+    -   Na caixa **nome do cliente** , insira a **ID do cliente** que você copiou anteriormente.
 
-          ![gerenciar o acesso de cliente de api](./media/google12-2.png "google12-2")
+          ![gerenciar o acesso de cliente de API](./media/google12-2.png "google12-2")
 
-    -   No **um ou mais escopos de API** , digite a seguinte lista de escopos necessários (copiar o texto e cole-o na caixa):
+    -   Na caixa **um ou mais escopos de API** , insira a seguinte lista de escopos necessários (Copie o texto e cole-o na caixa):
 
         `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 

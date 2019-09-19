@@ -2,9 +2,9 @@
 title: Requisitos de rede – Cloud App Security | Microsoft Docs
 description: Este artigo descreve os endereços IP e portas que você precisa abrir para trabalhar com o Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ef957575f3bb3047c6b0f73057dd0a78abd9e1f
-ms.sourcegitcommit: dc8b370e62e61a4f2f8a2baea75b564c3bdbc345
+ms.openlocfilehash: 975e7699a22b3c3b4267d59ecfe0229beaf3132c
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70259877"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085143"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 

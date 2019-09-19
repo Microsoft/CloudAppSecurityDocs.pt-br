@@ -2,9 +2,9 @@
 title: Conectar o workday ao Cloud App Security
 description: Este artigo fornece informações sobre como conectar seu aplicativo WORKDAY para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/8/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0530cfa93edd96bf805df3ac62b900b50fa5978b
-ms.sourcegitcommit: 6105add524e33adaa389bcf0f5baf4f1fdfd7f7d
+ms.openlocfilehash: 13f9870d2e1fbb9a368510ce715b9bc5c3bfe7c8
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70804891"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083872"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
 
@@ -34,9 +34,9 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 | Área funcional | Domínio | Subdomínio | Permissões de relatório/tarefa | Permissões de integração |
 | --- | --- | --- | --- | --- |
 | Sistema | Configurar: Configuração do locatário – geral | Configurar: Configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
-| Sistema | Administração de segurança | | Exibir, modificar | Obter, colocar |
+| Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
 | Sistema | Auditoria do sistema | | Exibir | Get |
-| Equipe | Dados de trabalho: Equipe | Dados de trabalho: Relatórios públicos de trabalho | Exibir | Get |
+| Pessoal | Dados de trabalho: Pessoal | Dados de trabalho: Relatórios públicos de trabalho | Exibir | Get |
 
 Para obter mais informações sobre como configurar usuários de integração do workday, grupos de segurança e permissões, consulte as etapas 1 a 4 da [integração de concessão ou acesso de ponto de extremidade externo ao](https://go.microsoft.com/fwlink/?linkid=2103212) guia do workday (acessível com documentação/credenciais da Comunidade).
 

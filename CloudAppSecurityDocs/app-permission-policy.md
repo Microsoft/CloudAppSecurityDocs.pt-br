@@ -2,9 +2,9 @@
 title: Criar políticas para controlar aplicativos OAuth no Cloud App Security
 description: Este artigo oferece instruções para criar e trabalhar com políticas de permissão de aplicativo no Microsoft Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 93d23f46dc5c0225d32f75876386375b402f3897
-ms.sourcegitcommit: d1eb8ccf09840c659ba7170a2b92cd62d9d97a02
+ms.openlocfilehash: 2046536e45f6ecd7f1ede6249c69b0c7f09b6f57
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68494225"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083848"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 

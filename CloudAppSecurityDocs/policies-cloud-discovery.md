@@ -1,7 +1,7 @@
 ---
-title: Políticas do Cloud Discovery - Cloud App Security | Microsoft Docs
-description: Este artigo descreve as etapas para configurar várias políticas de Cloud Discovery no Cloud App Security.
-author: ShlomoSagir-MS
+title: Políticas de Cloud Discovery – Cloud App Security | Microsoft Docs
+description: Este artigo descreve as etapas para configurar muitas políticas de Cloud Discovery no Cloud App Security.
+author: shsagir
 ms.author: shsagir
 ms.date: 06/13/2019
 ms.topic: conceptual
@@ -10,151 +10,151 @@ ms.service: cloud-app-security
 ms.assetid: 570da960-771d-484f-932d-b086f2ec2978
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8cf4f7564cdb8dd0470bfa6cc2c0c013b95f52e
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: ffcb2b67c03cf93843faf8255af86f4cb1c80a53
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298938"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085083"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Este artigo fornece uma visão geral de como começar a usar o Cloud App Security para obter visibilidade da sua organização sobre TI sombra usando o Cloud Discovery.
+Este artigo fornece uma visão geral de como começar a usar o Cloud App Security para obter visibilidade em sua organização em Shadow IT usando Cloud Discovery.
 
-Cloud App Security permite descobrir e analisar aplicativos em nuvem que estão sendo usados na ambiente da sua organização. Painel do Cloud Discovery mostra todos os aplicativos de nuvem em execução no ambiente e os classifica pela preparação para a função e enterprise. Para cada aplicativo, descobrir os usuários associados, endereços IP, as máquinas, transações e avaliação de risco conduz sem a necessidade de instalar um agente em seus dispositivos de ponto de extremidade.
+Cloud App Security permite que você descubra e analise aplicativos de nuvem que estão em uso no ambiente da sua organização. O painel de Cloud Discovery mostra todos os aplicativos de nuvem em execução no ambiente e os categoriza por função e preparação para a empresa. Para cada aplicativo, descubra os usuários associados, os endereços IP, os computadores, as transações e realiza a avaliação de risco sem a necessidade de instalar um agente em seus dispositivos de ponto de extremidade.
 
-## Detectar o uso do novo aplicativo de alto volume ou largos <a name= "detect-volume"></a>
+## Detectar novo uso de aplicativo de alto volume ou amplo<a name= "detect-volume"></a>
 
-Detecte novos aplicativos são altamente usados, em termos de número de usuários ou a quantidade de tráfego em sua organização.
+Detecte novos aplicativos que são altamente usados, em termos de número de usuários ou quantidade de tráfego em sua organização.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Configurar o upload de log automático para o Cloud Discovery contínuo relatórios, conforme descrito em [configurar o upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
+Configure o upload de log automático para relatórios Cloud Discovery contínuos, conforme descrito em [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Etapas
 
-1.  Sobre o **políticas** página, crie um novo **política de descoberta de aplicativo**
+1.  Na página **políticas** , crie uma nova **política de descoberta de aplicativo**
 
-2.  No **modelo de política** campo, selecione **novo aplicativo de alto volume** ou **novo aplicativo popular** e aplique o modelo.
+2.  No campo **modelo de política** , selecione **novo aplicativo de alto volume** ou **novo aplicativo popular** e aplique o modelo.
 
-3.  Personalize os filtros de política para atender aos requisitos da sua organização.
+3.  Personalize filtros de política para atender aos requisitos da sua organização.
 
-4.  Configure as ações a ser tomada quando um alerta é disparado.
+4.  Configure as ações a serem executadas quando um alerta for disparado.
 
 > [!NOTE]
 >  Um alerta é gerado uma vez para cada novo aplicativo que não foi descoberto nos últimos 90 dias.
 
-## <a name="detect-new-risky-or-non-compliant-app-use"></a>Detectar o uso do novo aplicativo arriscado ou fora de conformidade
+## <a name="detect-new-risky-or-non-compliant-app-use"></a>Detectar novo uso de aplicativo arriscado ou não compatível
 
-Detecte a exposição potencial da sua organização em aplicativos de nuvem que não atendem aos padrões de segurança.
-
-### <a name="prerequisites"></a>Pré-requisitos
-
-Configurar o upload de log automático para o Cloud Discovery contínuo relatórios, conforme descrito em [configurar o upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
-
-### <a name="steps"></a>Etapas
-
-1.  Sobre o **políticas** página, crie um novo **política de descoberta de aplicativo.**
-
-2.  No **modelo de política** campo, selecione o **novo aplicativo arriscado** modelo e aplique o modelo.
-
-3.  Sob **aplicativo correspondentes a todos os seguintes** definir os [pontuação de risco](risk-score.md) controle deslizante e o fator de risco de conformidade para personalizar você são o nível de risco que você deseja disparar um alerta e defina os outros filtros de política para atender às requisitos de segurança da sua organização.
-
-    1.  Opcional: Para obter as detecções mais significativas, personalize a quantidade de tráfego que vai disparar um alerta.
-
-        1.  Verifique as **disparar uma correspondência de política se todas as seguintes situações ocorrerem no mesmo dia** caixa de seleção.
-
-        2.  Selecione **tráfego diário** maior que 2.000 GB (ou outro).
-
-4.  Configure ações de governança a ser tomada quando um alerta é disparado. Sob **governança**, selecione **marcar aplicativo como não sancionado.**<br>Acesso ao aplicativo será bloqueado automaticamente quando a política é correspondida.
-
-5.  Opcional: Aproveite [integrações nativas do Cloud App Security](set-up-cloud-discovery.md) com Gateways de Web seguro para bloquear o acesso do aplicativo.
-
-## <a name="detect-use-of-unsanctioned-business-apps"></a>Detectar o uso de aplicativos de negócios não sancionados
-
-Você pode detectar quando os funcionários continuam a usar aplicativos não sancionados como uma substituição para aplicativos corporativos aprovados.
+Detecte uma possível exposição da sua organização em aplicativos de nuvem que não atendem aos seus padrões de segurança.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
--   Configurar o upload de log automático para o Cloud Discovery contínuo relatórios, conforme descrito em [configurar o upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
+Configure o upload de log automático para relatórios Cloud Discovery contínuos, conforme descrito em [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Etapas
 
-1.  No catálogo de aplicativos de nuvem, procure por seus aplicativos prontos para empresa e marcá-los com um [marca de aplicativo personalizada](discovered-app-queries.md#creating-and-managing-custom-app-tags).
+1.  Na página **políticas** , crie uma nova **política de descoberta de aplicativo.**
 
-2.  Siga as etapas em [detectar novos alto volume ou uso do aplicativo ampla](#detect-volume).
+2.  No campo **modelo de política** , selecione o **novo modelo de aplicativo arriscado** e aplique o modelo.
 
-3.  Adicionar um **marca do aplicativo** filtrar e escolha as marcas de aplicativo que você criou para seus aplicativos prontos para empresa.
+3.  Em **aplicativo que corresponde a todos os itens a seguir** , defina o controle deslizante de [Pontuação de risco](risk-score.md) e o fator de risco de conformidade para personalizá-lo é o nível de risco para o qual você deseja disparar um alerta e defina os outros filtros de política para atender aos requisitos de segurança de sua organização.
 
-4.  Configure ações de governança a ser tomada quando um alerta é disparado. Em um controle, selecione **marcar aplicativo como não sancionado**.<br>Acesso ao aplicativo será bloqueado automaticamente quando a política é correspondida.
+    1.  Opcional: Para obter detecções mais significativas, personalize a quantidade de tráfego que irá disparar um alerta.
 
-5.  Opcional: Aproveite [integrações nativas do Cloud App Security](set-up-cloud-discovery.md) com Gateways de Web seguro para bloquear o acesso do aplicativo.
+        1.  Marque a caixa de seleção **disparar uma correspondência de política se todos os itens a seguir ocorrerem no mesmo dia** .
 
-## <a name="detect-unusual-usage-patterns-on-your-network"></a>Detectar padrões de uso incomum em sua rede
+        2.  Selecione o **tráfego diário** maior que 2000 GB (ou outro).
 
-Detecte padrões de uso de tráfego anormal (uploads/downloads) em seus aplicativos de nuvem, que se originam de usuários ou endereços IP dentro da rede da sua organização.
+4.  Configure ações de governança a serem executadas quando um alerta for disparado. Em **governança**, selecione **aplicativo de marca como não aprovado.**<br>O acesso ao aplicativo será bloqueado automaticamente quando a política for correspondida.
+
+5.  Opcional: Aproveite [Cloud app Security integrações nativas](set-up-cloud-discovery.md) com gateways Web seguros para bloquear o acesso ao aplicativo.
+
+## <a name="detect-use-of-unsanctioned-business-apps"></a>Detectar o uso de aplicativos de negócios não aprovados
+
+Você pode detectar quando seus funcionários continuam a usar aplicativos não aprovados como substituição para aplicativos prontos para os negócios aprovados.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Configurar o upload de log automático para o Cloud Discovery contínuo relatórios, conforme descrito em [configurar o upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
+-   Configure o upload de log automático para relatórios Cloud Discovery contínuos, conforme descrito em [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Etapas
 
-1.  Sobre o **diretivas** página, crie um novo **política de detecção de anomalias do Cloud Discovery**.
+1.  No catálogo de aplicativos de nuvem, pesquise seus aplicativos prontos para a empresa e marque-os com uma [marca de aplicativo personalizada](discovered-app-queries.md#creating-and-managing-custom-app-tags).
 
-2.  No **modelo de política** campo, selecione **comportamentos anormais em usuários descobertos** ou **comportamentos anormais em endereços IP descobertos**.
+2.  Siga as etapas em [detectar novo uso de aplicativo grande ou de alto volume](#detect-volume).
+
+3.  Adicione um filtro de **marca de aplicativo** e escolha as marcas de aplicativo que você criou para seus aplicativos prontos para os negócios.
+
+4.  Configure ações de governança a serem executadas quando um alerta for disparado. Em governança, selecione **aplicativo de marca como não aprovado**.<br>O acesso ao aplicativo será bloqueado automaticamente quando a política for correspondida.
+
+5.  Opcional: Aproveite [Cloud app Security integrações nativas](set-up-cloud-discovery.md) com gateways Web seguros para bloquear o acesso ao aplicativo.
+
+## <a name="detect-unusual-usage-patterns-on-your-network"></a>Detectar padrões de uso incomuns em sua rede
+
+Detectar padrões de uso de tráfego anormal (uploads/downloads) em seus aplicativos de nuvem, que se originam de usuários ou endereços IP dentro da rede da sua organização.
+
+### <a name="prerequisites"></a>Pré-requisitos
+
+Configure o upload de log automático para relatórios Cloud Discovery contínuos, conforme descrito em [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
+
+### <a name="steps"></a>Etapas
+
+1.  Na página **políticas** , crie uma nova **política de detecção de anomalias Cloud Discovery**.
+
+2.  No campo **modelo de política** , selecione **comportamento anormal em usuários descobertos** ou **comportamento anormal em endereços IP descobertos**.
 
 3.  Personalize os filtros para atender aos requisitos da sua organização.
 
-4. Se você quiser ser alertado somente quando há anomalias envolvendo aplicativos arriscados, use o **pontuação de risco** filtra e defina o intervalo no qual aplicativos são considerados de risco.
+4. Se você quiser ser alertado somente quando houver anomalias envolvendo aplicativos arriscados, use os filtros de **Pontuação de risco** e defina o intervalo no qual os aplicativos são considerados arriscados.
 
-4.  Use o controle deslizante para **selecionar sensibilidade de detecção de anomalias**.
+4.  Use o controle deslizante para **selecionar a sensibilidade de detecção de anomalias**.
 
 > [!NOTE]
->  Depois que o upload de log contínua é estabelecido, o mecanismo de detecção de anomalias demora alguns dias até que uma linha de base (período de aprendizado), é estabelecida para o comportamento esperado em sua organização. Após o estabelecimento de uma linha de base, você começa a receber alertas com base em discrepâncias do comportamento esperado do tráfego entre aplicativos de nuvem feitas por usuários ou de endereços IP.
+>  Após o carregamento de log contínuo ser estabelecido, o mecanismo de detecção de anomalias leva alguns dias até que uma linha de base (período de aprendizagem) seja estabelecida para o comportamento esperado em sua organização. Depois que uma linha de base é estabelecida, você começa a receber alertas com base em discrepâncias do comportamento de tráfego esperado entre aplicativos de nuvem feitos por usuários ou de endereços IP.
 
-## <a name="detect-data-exfiltration-to-unsanctioned-storage-apps"></a>Detectar vazamento de dados para aplicativos de armazenamento não sancionados
+## <a name="detect-data-exfiltration-to-unsanctioned-storage-apps"></a>Detectar dados vazamento a aplicativos de armazenamento não aprovados
 
-Detecte possíveis vazamento de dados por um usuário a um aplicativo de armazenamento de nuvem não autorizados.
+Detecte dados potenciais de vazamento por um usuário para um aplicativo de armazenamento em nuvem não aprovado.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Configurar o upload de log automático para o Cloud Discovery contínuo relatórios, conforme descrito em [configurar o upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
+Configure o upload de log automático para relatórios Cloud Discovery contínuos, conforme descrito em [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Etapas
 
-1.  Sobre o **diretivas** página, edite a política interna **vazamento de dados para aplicativos não sancionados**.
+1.  Na página **políticas** , edite os dados de política internos **vazamento para aplicativos não aprovados**.
 
-2.  Selecione o filtro **categoria de aplicativo** é igual a **armazenamento em nuvem**.
+2.  Selecione a **categoria filtrar aplicativo** é igual ao **armazenamento em nuvem**.
 
-3.  Selecione a caixa de seleção **criar um alerta para cada evento correspondente com a gravidade da política**.
+3.  Marque a caixa de seleção para **criar um alerta para cada evento de correspondência com a severidade da política**.
 
-4.  Configure as ações a serem tomadas quando um alerta é disparado.
+4.  Configure as ações a serem tomadas quando um alerta for disparado.
 
-## <a name="detect-risky-oauth-apps"></a>Detectar aplicativos arriscados de OAuth
+## <a name="detect-risky-oauth-apps"></a>Detectar aplicativos OAuth arriscados
 
-Obtenha visibilidade e controle sobre [aplicativos de OAuth](investigate-risky-oauth.md) que são instalados dentro de aplicativos como Salesforce, Office 365 e G Suite. Aplicativos de OAuth que solicitar permissões alta e tem comunidade rara usar podem ser considerados arriscados.
+Obtenha visibilidade e controle sobre os [aplicativos OAuth](investigate-risky-oauth.md) instalados dentro de aplicativos como G Suite, Office 365 e Salesforce. Os aplicativos OAuth que solicitam permissões altas e têm um uso raro da Comunidade podem ser considerados arriscados.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Você deve ter o aplicativo do G Suite, Office 365 ou Salesforce conectado usando [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+Você deve ter o G Suite, o Office 365 ou o aplicativo Salesforce conectado usando os [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Etapas
 
-1.  Sobre o **políticas** página, crie um novo **política de aplicativo OAuth**.
+1.  Na página **políticas** , crie uma nova **política de aplicativo OAuth**.
 
-2.  Selecione o filtro **aplicativo** e defina o aplicativo a política deve abranger, G Suite, Office 365 ou Salesforce.
+2.  Selecione o **aplicativo** de filtro e defina o aplicativo que a política deve abranger, G Suite, Office 365 ou Salesforce.
 
-3.  Selecione **nível de permissão** filtrar equals **alta** (disponível para o G Suite e no O365).
+3.  Selecione filtro de **nível de permissão** é igual a **alto** (disponível para o G Suite e O365).
 
-4.  Adicione o filtro **uso da comunidade** é igual a **Rare**.
+4.  Adicionar o filtro **uso da Comunidade** é igual a **raro**.
 
-4.  Configure as ações a serem tomadas quando um alerta é disparado. Por exemplo, para o Office 365, verifique **revogar aplicativo** para aplicativos de OAuth detectados pela política.
+4.  Configure as ações a serem tomadas quando um alerta for disparado. Por exemplo, para o Office 365, marque **revogar aplicativo** para aplicativos OAuth detectados pela política.
 
 > [!NOTE]
->  Suporte para lojas de aplicativos do Office 365, G Suite e Salesforce.
+>  Com suporte para o G Suite, o Office 365 e as lojas de aplicativos do Salesforce.
 
 ## <a name="next-steps"></a>Próximas etapas 
 

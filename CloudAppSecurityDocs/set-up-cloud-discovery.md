@@ -1,7 +1,7 @@
 ---
 title: Implantar o Cloud Discovery – Cloud App Security | Microsoft Docs
 description: Este artigo descreve o procedimento de configuração para colocar o Cloud Discovery em funcionamento.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 296abe6a227d6ab6c72e09cc993d8cf413770cec
-ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
+ms.openlocfilehash: 838676a48aa92016f6ff3fc198423668f0ecaf77
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2019
-ms.locfileid: "69573047"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084908"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 

@@ -2,9 +2,9 @@
 title: Ações de governança para controlar aplicativos conectados – Cloud App Security | Microsoft Docs
 description: Este artigo lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security e as mensagens de log que as rastreiam.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f23494744e629990f6bcc68e1c22fb73b2db6033
-ms.sourcegitcommit: a2dd3bcc00d2bd1d2e4c3fd9f8c0fd7ac4a25091
+ms.openlocfilehash: bfd1a91d3226e5a8bbad03f831d998ea0a36f46c
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70206673"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084409"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
