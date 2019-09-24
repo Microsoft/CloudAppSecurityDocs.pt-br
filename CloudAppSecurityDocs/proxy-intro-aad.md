@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/25/2019
+ms.date: 9/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10f17632f5b611b86b1555ff50be5237c103ea88
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d26be7ba74d2eaf7d6f2baeb66ae9824a387ad02
+ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085030"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185170"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -71,6 +71,17 @@ O Controle de Aplicativo de Acesso Condicional permite que você crie políticas
 - Dispositivos ingressados em domínio
 - Implantação de certificados do cliente
 
+Para configurar uma política para aproveitar o gerenciamento de dispositivos por meio de certificados de cliente:
+
+1. Vá até a engrenagem de configurações e selecione **Identificação de dispositivo**.
+1. Carregue um ou mais certificados raiz ou intermediários.
+1. Depois que o certificado for carregado, você poderá criar [políticas de acesso](access-policy-aad.md) e políticas de [sessão](session-policy-aad.md) com base na **marca do dispositivo** e no **certificado de cliente válido**.
+
+    ![ID do dispositivo do Controle de Aplicativos de Acesso Condicional](./media/caac-device-id.png)
+
+> [!NOTE]
+> Um certificado será solicitado de um usuário apenas se a sessão corresponder a uma política que use o filtro de certificado do cliente válido.
+
 ### <a name="compliant-and-domain-joined-devices"></a>Dispositivos em conformidade e ingressados em domínio
 
 O acesso condicional do Azure AD permite que informações do dispositivo em conformidade e ingressado em domínio sejam passadas diretamente para o Microsoft Cloud App Security. Nele, uma política de acesso ou de sessão que usa o estado do dispositivo como filtro pode ser desenvolvida. Para obter mais informações, consulte a [Introdução ao gerenciamento de dispositivos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
@@ -106,11 +117,15 @@ O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicat
 
 > [!NOTE]
 > Usar o filtro de **aplicativo cliente** nas políticas de acesso pode fazer com que a sessão de usuário resultante seja modificada por Cloud app Security.
+>
+> Em políticas de acesso, ao usar o filtro de **aplicativo cliente** , ele assume como padrão a **mobilidade e a área de trabalho**. Isso pode fazer com que a sessão de usuário resultante seja modificada por um Cloud App Security. Para anular esse comportamento, defina o valor como **navegador**.
+>
+> Por padrão, avaliar se um aplicativo é móvel ou a área de trabalho pode fazer com que a sessão de usuário resultante seja modificada por Cloud App Security. Para evitar esse comportamento, defina o filtro de aplicativo cliente em suas políticas de acesso como sendo igual ao **navegador**.
 
 > [!NOTE]
 > O Cloud App Security usa protocolos TLS 1.2+ para fornecer a melhor criptografia do setor. Aplicativos cliente nativos e navegadores que não são compatíveis com TLS 1.2+ não estarão acessíveis quando configurados com controle de sessão. No entanto, aplicativos SaaS que usam TLS 1.1 ou inferior aparecerão no navegador como usando TLS 1.2+ quando configurados com o Cloud App Security.
 
-Ao integrar nativamente com o Azure AD, qualquer aplicativo configurado com SAML ou Open ID Connect pode ser integrado automaticamente. Além disso, os aplicativos a seguir são apresentados por Cloud App Security e já estão integrados e prontos para uso em qualquer locatário:
+<a name="featured-apps"></a>Ao integrar nativamente com o Azure AD, qualquer aplicativo configurado com SAML ou Open ID Connect pode ser integrado automaticamente. Além disso, os aplicativos a seguir são apresentados por Cloud App Security e já estão integrados e prontos para uso em qualquer locatário:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
