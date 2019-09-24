@@ -1,7 +1,7 @@
 ---
 title: Conformidade, segurança de dados, privacidade e confiabilidade do Cloud App Security | Microsoft Docs
 description: Este artigo descreve a oferta de conformidade, a central de confiabilidade, a privacidade e a segurança de dados do Cloud App Security.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.date: 8/21/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: be012da7233c021751d14f23d32d59c621bbf837
-ms.sourcegitcommit: 9b898458715af3b4056419c1e0df2dc0dc7385fa
+ms.openlocfilehash: 84c33ba29a0d63e5476186a417aae749f6f97825
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69670908"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083809"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Privacidade e segurança de dados do Microsoft Cloud App Security
 
