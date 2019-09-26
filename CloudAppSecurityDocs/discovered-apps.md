@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/3/2019
+ms.date: 09/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 58c35f83f20dbc81d051f488d70ecf64ccfd186f
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 4a9d504193061091352985a616893f2220c5d040
+ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083684"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71263267"
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
@@ -97,7 +97,9 @@ A melhor maneira de obter uma visão geral do uso de Shadow IT na organização 
 
 Para gerar um relatório executivo do Cloud Discovery:
 
-No painel do **Cloud Discovery**, clique nos três pontos no canto superior direito do menu e selecione **Gerar relatório executivo do Cloud Discovery**.
+1. No **painel Cloud Discovery**, clique nos três pontos no canto superior direito do painel e, em seguida, selecione **gerar relatório executivo Cloud Discovery**.
+1. Opcionalmente, altere o nome do relatório.
+1. Clique em **gerar**.
 
 ## <a name="exclude-entities"></a>Excluir entidades
 

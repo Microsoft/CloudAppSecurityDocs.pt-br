@@ -13,10 +13,10 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.openlocfilehash: 384147ba2a84090fe6f33fc6f6ea0586124666bd
-ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
+ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "71185131"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
