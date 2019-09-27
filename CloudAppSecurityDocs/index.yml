@@ -1,77 +1,81 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Microsoft Cloud App Security
+### YamlMime:Landing
+title: Documentação do Microsoft Cloud App Security
+summary: O Microsoft Cloud App Security é um CASB (Agente de Segurança de Acesso à Nuvem) que opera em várias nuvens. Ele fornece visibilidade avançada, controle sobre a viagem de dados e análise sofisticada para identificar e combater ameaças cibernéticas em todos os seus serviços de nuvem.
 metadata:
-  title: Microsoft Cloud App Security| Microsoft Docs
-  description: 'Fornece segurança de nível corporativo para seus aplicativos na nuvem com o Microsoft Cloud App Security para maior visibilidade, controles abrangentes e proteção aprimorada contra problemas de segurança na nuvem.'
-  author: shsagir
-  manager: angrobe
-  ms.prod: cloud-app-security
-  ms.tgt_pltfrm: na
-  ms.devlang: na
-  ms.topic: landing-page
-  ms.date: 21/8/2019
-  ms.author: shsagir
+  title: Documentação do Microsoft Cloud App Security
+  description: O Microsoft Cloud App Security é um CASB (Agente de Segurança de Acesso à Nuvem) que opera em várias nuvens. Ele fornece visibilidade avançada, controle sobre a viagem de dados e análise sofisticada para identificar e combater ameaças cibernéticas em todos os seus serviços de nuvem.
+  services: na
   ms.service: cloud-app-security
-  layout: LandingPage
-abstract:
-  description: 'O Microsoft Cloud App Security é um CASB (Agente de Segurança de Acesso à Nuvem) que opera em várias nuvens. Ele fornece visibilidade avançada, controle sobre a viagem de dados e análise sofisticada para identificar e combater ameaças cibernéticas em todos os seus serviços de nuvem.'
-sections:
-  - title: Saiba mais
-    items:
-      - type: list
-        style: cards
-        className: cardsFTitle
-        items:
-          - title: Saiba mais sobre o Microsoft Cloud App Security.
-            href: what-is-cloud-app-security.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-              href: what-is-cloud-app-security.md
-          - title: Privacidade e segurança de dados do MCAS
-            href: cas-compliance-trust.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-              href: cas-compliance-trust.md
-          - title: Novidades no MCAS
-            href: release-notes.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-              href: release-notes.md
-          - title: 'Explore o Microsoft 365, uma solução completa que inclui o Cloud App Security'
-            href: 'https://docs.microsoft.com/microsoft-365/'
-            image:
-              src: 'https://docs.microsoft.com/office/media/icons/caret-right-blue.svg'
-              href: 'https://docs.microsoft.com/microsoft-365/'
-          - title: Assista aos nossos webinars
-            href: webinars.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_video.svg'
-              href: webinars.md
-          - title: Leia nossos livros eletrônicos
-            href: e-books.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_library.svg'
-              href: e-books.md
-  - title: Guias de início rápido de 5 minutos
-    items:
-      - type: paragraph
-        text: Aprender os conceitos básicos do Microsoft Cloud App Security.
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_design.svg'
-            text: Começar a usar o Microsoft Cloud App Security
-            href: getting-started-with-cloud-app-security.md
-  - title: Tutoriais passo a passo
-    items:
-      - type: paragraph
-        text: Aprender a entender os alertas e a realizar investigações com esses tutoriais.
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="/cloud-app-security/tutorial-shadow-it">Descobrir e gerenciar o TI sombra na sua rede</a>
-          - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">Bloquear o download de informações confidenciais</a>
-          - html: <a href="/cloud-app-security/use-case-admin-quarantine">Proteger arquivos com quarentena do administrador</a>
-          - html: <a href="/cloud-app-security/use-case-information-protection">Aplicar os rótulos de classificação da Proteção de Informações do Azure</a>
+  ms.subservice: na
+  ms.topic: landing-page
+  ms.collection: na
+  author: shsagir
+  ms.author: shsagir
+  ms.date: 09/24/2019
+  ms.openlocfilehash: 2256a6ea3afda0856bd4ec6b088ec64c1cf61b73
+  ms.sourcegitcommit: dc0063b35fe22476581cd5e70c8dbd1e2e2b5c0d
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 09/26/2019
+  ms.locfileid: "71310737"
+landingContent:
+- title: Sobre o Cloud App Security
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: O que é o Cloud App Security?
+      url: what-is-cloud-app-security.md
+    - text: 20 principais casos de uso do CASB
+      url: https://go.microsoft.com/fwlink/p/?linkid=2099428
+  - linkListType: whats-new
+    links:
+    - text: Versões
+      url: release-notes.md
+- title: Introdução
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Introdução ao Cloud App Security
+      url: getting-started-with-cloud-app-security.md
+- title: Explore nossos principais casos de uso
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Descobrir e gerenciar a TI sombra na sua rede
+      url: tutorial-shadow-it.md
+    - text: Investigar usuários arriscados
+      url: tutorial-ueba.md
+    - text: Investigar aplicativos de OAuth arriscados
+      url: investigate-risky-oauth.md
+    - text: Bloquear o download de informações confidenciais
+      url: use-case-proxy-block-session-aad.md
+    - text: Proteger arquivos com quarentena do administrador
+      url: use-case-admin-quarantine.md
+    - text: Aplicar os rótulos de classificação da Proteção de Informações do Azure
+      url: use-case-information-protection.md
+    - text: Estender a governança para correção de pontos de extremidade
+      url: tutorial-flow.md
+- title: Conceitos
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Proteger aplicativos com o Controle de Aplicativos de Acesso Condicional
+      url: proxy-intro-aad.md
+    - text: Trabalhar com o painel
+      url: daily-activities-to-protect-your-cloud-environment.md
+    - text: Trabalhar com pontuações de risco do aplicativo
+      url: risk-score.md
+    - text: Trabalhando com aplicativos descobertos
+      url: discovered-apps.md
+- title: Recursos adicionais
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Leia nossos livros eletrônicos
+      url: e-books.md
+    - text: Explore o Microsoft 365, uma solução completa que inclui o Cloud App Security
+      url: https://docs.microsoft.com/microsoft-365/
+  - linkListType: video
+    links:
+    - text: Assista aos nossos webinars
+      url: webinars.md
