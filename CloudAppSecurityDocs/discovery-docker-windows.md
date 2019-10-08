@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 724ff32cbdf4d3d81d60ac1359b5c07fe22bb6e1
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: ab709236d98ee33fbf6ebf7b2f9d5cdfcb5a32ab
+ms.sourcegitcommit: 207543b3f7d0489b1275d20c3543964bc6525d1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084752"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71996005"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -29,7 +29,7 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Sistema operacional: **Windows 10** Fall Creators Update e Windows Server **versão 1709 ou superior**
+- Sistema operacional: **Windows 10** (atualização para criadores do outono) ou Windows Server **versão 1709 +**
 
 - Espaço em disco: 250 GB
 

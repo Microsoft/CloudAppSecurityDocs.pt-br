@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 838676a48aa92016f6ff3fc198423668f0ecaf77
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: f6c3408b7887ac35924ff647bbe67d8525bef9ed
+ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084908"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997402"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -63,6 +63,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 - Cisco IronPort WSA
 - Cisco Meraki – log de URLs
 - Clavister NGFW (Syslog)
+- ContentKeeper
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
@@ -102,6 +103,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 | Cisco Ironport WSA | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Cisco Meraki | **Sim** | **Sim** | Não | **Sim** | Não | Não |
 | Clavister NGFW (Syslog) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
+| ContentKeeper | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | SonicWall (anteriormente conhecido como Dell) | **Sim** | **Sim** | Não | **Sim** | **Sim** | **Sim** |
 | Digital Arts i-FILTER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | ForcePoint LEEF |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
