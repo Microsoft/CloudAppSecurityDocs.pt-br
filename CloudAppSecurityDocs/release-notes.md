@@ -4,19 +4,19 @@ description: Este artigo é atualizado com frequência para mantê-lo informado 
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/25/2019
+ms.date: 10/06/2019
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c78fc716caa1c43c0d0b1a24f5dfaa8adcd72e1
-ms.sourcegitcommit: be21e0f68f5e4d23bde661485bd9338e74bd6e45
+ms.openlocfilehash: 97d006399582e653322910803aaeec04f74582d0
+ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71307732"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997428"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -25,6 +25,28 @@ ms.locfileid: "71307732"
 Este artigo é atualizado com frequência para mantê-lo informado das novidades na última versão do Cloud App Security.
 
 RSS feed: receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-159"></a>Cloud App Security versão 159
+
+Lançado em 6 de outubro de 2019
+
+- **Novo analisador de log ContentKeeper do Cloud Discovery**  
+O Cloud Discovery do Cloud App Security analisa uma ampla variedade de logs de tráfego para classificar e pontuar os aplicativos. Agora o Cloud Discovery inclui um analisador de log interno para dar suporte aos formatos de log do ContentKeeper. Para acessar a lista de dispositivos com suporte, confira [Proxies e firewalls com suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **Novas detecções**  
+As novas políticas de detecção de anomalias a seguir estão prontas para uso e são habilitadas automaticamente:
+
+  - **Atividade de exclusão de email suspeito (versão prévia)**  
+    Alerta quando um usuário executa atividades incomuns de exclusão de email. Essa política pode ajudá-lo a detectar caixas de correio do usuário que podem estar comprometidas por possíveis vetores de ataque, como a comunicação de comando e controle (C&C/C2) por email.
+
+  - **Múltiplos compartilhamentos de relatórios do Power BI (versão prévia)**  
+    Alerta quando um usuário executa um número incomum de atividades de compartilhamento de relatório no Power BI em comparação com a linha de base aprendida.
+
+  - **Múltiplas atividades de criação de VM (versão prévia)**  
+    Alerta quando um usuário executa um número incomum de atividades de criação de VM em comparação com a linha de base aprendida. Atualmente aplica-se ao Azure.
+
+  - **Múltiplas atividades de exclusão de armazenamento (versão prévia)**  
+    Alerta quando um usuário executa um número incomum de atividades de exclusão de armazenamento em comparação com a linha de base aprendida. Atualmente aplica-se ao Azure.
 
 ## <a name="cloud-app-security-release-158"></a>Cloud App Security, versão 158
 
