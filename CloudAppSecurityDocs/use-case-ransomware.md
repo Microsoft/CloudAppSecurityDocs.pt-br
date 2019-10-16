@@ -2,9 +2,9 @@
 title: Visão geral do cenário de proteção contra ameaças – Cloud App Security | Microsoft Docs
 description: Este tópico descreve o cenário para proteger sua organização contra ameaças em seu ambiente de nuvem.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c9ee65a3a4aef6d6ef200597405642a0fde15c68
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ce6abab8e9790119b02dc80e5dcf63625e1dcf4b
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568770"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336086"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protegendo sua organização contra ransonware
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 No último grande ataque de ransomware, WannaCry atingiu o mundo cibernético com grande força, infectando uma estimativa de 200 mil computadores em 150 países. Com o aumento de ataques de ransomware nos últimos anos, uma média de 25 mil ataques por mês em 2015 e 56 mil em 2016, ser proativo em relação à garantia de que sua rede não esteja em risco está se tornando uma necessidade de segurança cibernética. Este artigo explica como você pode usar o Cloud App Security para monitorar sua nuvem, detectar e atenuar ameaças e aplicar as melhores práticas para proteger seu ambiente contra ransomware.
 

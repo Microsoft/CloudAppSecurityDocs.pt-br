@@ -2,9 +2,9 @@
 title: Definir preferências de notificação por email – Cloud App Security | Microsoft Docs
 description: Este artigo oferece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 2/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5ad87ebe283aa5bdd6b19766bfa76a2424015291
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 5bdf183c62329a2282881a341abd78e9126393d6
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568214"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335835"
 ---
 # <a name="email-notification-preferences"></a>Preferências de notificação por email
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo fornece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security para seus usuários quando uma violação é detectada.
 
@@ -39,7 +39,7 @@ Este artigo fornece informações sobre como personalizar as notificações de e
 
    ![configurações de email](./media/mail-settings-config.png)
 
-2. Em **Identidade do remetente de email**: Se você pretende usar as configurações de email padrão, não precisa alterar nada nesta seção. Se você quiser personalizar a identidade do remetente de email, defina uma destas configurações para personalizar o campo que você deseja alterar. Altere um ou todos os seguintes itens: **Nome de exibição do remetente**, **Endereço de email do remetente**, **Endereço de email para resposta**. O Microsoft Cloud App Security realiza a personalização usando um serviço de email de terceiros chamado MailChimp®. Lembre-se de examinar e aceitar os Termos de serviço e a Política de privacidade do MailChimp para habilitar a personalização. Caso contrário, o Microsoft Cloud App Security enviará as notificações usando as configurações padrão.
+2. Em **Identidade do remetente de email**: se você pretende usar as configurações de email padrão, não precisa alterar nada nesta seção. Se você quiser personalizar a identidade do remetente de email, defina uma destas configurações para personalizar o campo que você deseja alterar. Altere um ou todos os seguintes itens: **Do nome de exibição**, **Do endereço de email**, **Endereço de email para resposta**. O Microsoft Cloud App Security realiza a personalização usando um serviço de email de terceiros chamado MailChimp®. Lembre-se de examinar e aceitar os Termos de serviço e a Política de privacidade do MailChimp para habilitar a personalização. Caso contrário, o Microsoft Cloud App Security enviará as notificações usando as configurações padrão.
  
    > [!NOTE]
    > Somente caracteres unicode têm suporte no nome de exibição e no endereço de email, de acordo com o [padrão rfc822](https://www.rfc-editor.org/rfc/rfc822.txt).

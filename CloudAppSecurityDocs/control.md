@@ -2,9 +2,9 @@
 title: Como usar ações de governança no Cloud App Security
 description: Este artigo fornece informações sobre as ações de governança que você pode realizar no Cloud App Security para controlar o uso de aplicativos de nuvem da sua organização.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25a04977f628981a64fac86f325bf3883e9cc3e4
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 8830e76a266d9ab5fb0e552cccd6e73cbf2bc700
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568033"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335642"
 ---
 # <a name="control"></a>Control
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Você pode aplicar ações de governança aos arquivos de usuários em seu ambiente de nuvem. Depois investigar completamente e aprender sobre sua nuvem, será possível usar ações de governança para ajudar a proteger sua organização.  
 
@@ -93,7 +93,7 @@ O catálogo de serviços do Cloud App Security pode ajudá-lo a encontrar altern
 
 Considere este cenário: você está pensando em comprar uma ferramenta de produtividade, mas não tem certeza se seus usuários a usariam.  
 
-1.   Vá para o **Cloud Discovery Dashboard (Painel do Cloud Discovery)**.  
+1.   Vá para o **Cloud Discovery Dashboard (Painel do Cloud Discovery)** .  
 
 2.   Em **Categorias**, filtre aplicativos por **Produtividade**.  
 

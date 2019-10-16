@@ -2,9 +2,9 @@
 title: Bloqueando aplicativos descobertos – Cloud App Security | Microsoft Docs
 description: Este artigo descreve o procedimento para exportar scripts de bloqueio para aplicativos descobertos.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1f760c3481877a91f5395bc00d613bb72bb995e1
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ab6a8d276cdd3ce1963be2e5a0c28b42bc8eeaa6
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568152"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335795"
 ---
 # <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Depois de examinar a lista de aplicativos descobertos em seu ambiente, você pode proteger o ambiente contra o uso de aplicativos indesejados das maneiras indicadas a seguir.
 
@@ -46,11 +46,11 @@ Para consultar uma lista de aplicativos não sancionados, você pode [gerar um s
 
 O Cloud App Security permite que você bloqueie o acesso a aplicativos não sancionados usando os dispositivos de segurança locais existentes. Gere um script de bloqueio dedicado e importe-o para seu dispositivo. Essa solução não exige o redirecionamento de todo o tráfego da Web da organização para um proxy.
 
-1. No painel do Cloud Discovery, marque quaisquer aplicativos que deseja bloquear como **Não sancionado**.
+1. No painel de Descoberta de nuvem, marque quaisquer aplicativos que você deseja bloquear como **Não sancionados**.
 
    ![Marcar como não sancionado](./media/tag-as-unsanctioned.png)  
 
-2. Na barra de título, clique nos três pontos e selecione **Gerar script de bloqueio...**. 
+2. Na barra de título, clique nos três pontos e selecione **Gerar script de bloqueio...** . 
 
    ![Gerar script de bloqueio](./media/generate-block-script.png)  
 
@@ -60,7 +60,7 @@ O Cloud App Security permite que você bloqueie o acesso a aplicativos não sanc
 
 4. Em seguida, clique no botão Gerar script para criar um script de bloqueio para todos os aplicativos não sancionados. Por padrão, o arquivo será nomeado com a data em que foi exportado e o tipo de dispositivo selecionado. *2017-02-19_CAS_Fortigate_block_script.txt* é um nome de arquivo de exemplo 
 
-   ![Botão Gerar script de bloqueio](./media/generate-block-script-button.png)  
+   ![Botão Generate block script (Gerar script de bloqueio)](./media/generate-block-script-button.png)  
 
 5. Importe o arquivo criado para seu dispositivo.
 

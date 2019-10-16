@@ -2,9 +2,9 @@
 title: Localizar relatórios internos preteridos no Cloud App Security
 description: Este artigo fornece instruções para gerar relatórios preteridos no Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e662c7fecbc20a16b3709e6e603954d74771a6fd
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: dd064eb77955213a8fbcb2c655a86678ca4f0db8
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567487"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335506"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Como localizar relatórios internos preteridos
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Estamos atualizando a funcionalidade de relatórios internos inserindo-a em outras partes do portal. A atualização dessa funcionalidade está em andamento para melhoria dos relatórios do Microsoft Cloud App Security.
 
@@ -32,7 +32,7 @@ Estamos atualizando a funcionalidade de relatórios internos inserindo-a em outr
 
 Essa tabela ajuda você a exibir as informações fornecidas pelos relatórios preteridos usando outras funcionalidades do Cloud App Security:
 
-| Tipo de relatório | Nome do relatório interno | Descrição | Novo local dos dados |
+| Tipo de relatório | Nome do relatório interno | Description | Novo local dos dados |
 |----|----|----|----|
 | Segurança | Atividade | Esse relatório permite exibir uma lista dos países dos quais a atividade foi originada em seus aplicativos na nuvem. O relatório mostra diferentes parâmetros revelando o volume de atividades de cada país, como o número de eventos, o número de usuários e assim por diante. Isso ajuda você a obter uma visão geral da distribuição geográfica dos seus usuários. | Essas informações estão disponíveis para aplicativos, usuários e endereços IP específicos. Para cada aplicativo, clique no aplicativo. Nele, você pode ver o mapa de atividades com todos os locais. Para cada usuário, clique no usuário e na gaveta de insights do usuário. Nele, você pode ver os locais usados recentemente e o número de endereços IP e ISPs usados. Para cada endereço IP, clique no endereço IP específico. Na gaveta do endereço IP, você pode ver quantos usuários e administradores o utilizaram. |
 | Segurança | Uso de navegador | Os ataques baseados em navegador estão entre os vetores de ataques mais comuns. Os fornecedores investem grandes quantidades de recursos na proteção do software de navegação, criando um mecanismo de atualização efetivo para publicar atualizações nos pontos de extremidade. O uso de navegadores preteridos muito tempo depois de sua atualização estar vencida torna-os um alvo fácil para invasores que usam kits de exploração disponíveis. Essa funcionalidade permite que você obtenha uma lista dos navegadores desatualizados usados nos últimos 7 dias por usuários que acessam seus aplicativos na nuvem. Também permite saber se o uso de navegador desatualizado foi realizado por um robô. | Vá para o **Log de atividades** e abra **Filtros avançados**. Em seguida, defina o filtro para **Marca de agente do usuário** como igual a **Navegador desatualizado** e **Sistema operacional desatualizado** para ver uma lista de todos os sistemas operacionais e navegadores desatualizados em uso. |

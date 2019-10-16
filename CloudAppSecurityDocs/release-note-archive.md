@@ -2,9 +2,9 @@
 title: Arquivos de atualizações anteriores do Cloud App Security
 description: Este artigo é um arquivo que descreve as atualizações feitas em lançamentos anteriores do Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 30cf7145006156cddce444fb2365f8691fe3eb07
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: a9d411860fcaf3d261d815b2f6ba1c0b31f26d99
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568592"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335875"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Arquivo Morto de atualizações anteriores do Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo é um arquivo que descreve as atualizações feitas em lançamentos anteriores do Cloud App Security. Para ver a lista de novidades, confira [Novidades sobre o Cloud App Security](release-notes.md).
 
@@ -36,7 +36,7 @@ Lançado em 25 de dezembro de 2017
 
 - Temos o prazer de anunciar que o Cloud App Security agora é compatível com uma integração mais profunda com a Proteção de Informações do Azure. Esse recurso de visualização pública permite examinar e classificar arquivos em aplicativos na nuvem e aplicar automaticamente os rótulos da Proteção de Informações do Azure para proteção. Esse recurso está disponível para Box, SharePoint e OneDrive. Para saber mais, confira [Integração com a Proteção de Informações do Azure](azip-integration.md).
 
-- Os analisadores de log do Cloud Discovery agora dão suporte a formatos genéricos: LEEF, CEF e W3C.
+- Os analisadores de log do Cloud Discovery agora têm suporte para formatos genéricos: LEEF, CEF e W3C.
 
 
 ### <a name="cloud-app-security-release-112"></a>Lançamento 112 do Cloud App Security
@@ -68,7 +68,7 @@ Lançado em 26 de novembro de 2017
 
 Lançado em 12 de novembro de 2017
 
-- Agora disponível: Estamos começando a distribuir um novo modo de implantação para o coletor de logs. Além da atual implantação baseada em dispositivo virtual, o novo coletor de logs baseado em Docker (contêiner) pode ser instalado como um pacote em [computadores Ubuntu](discovery-docker.md), tanto localmente quanto no Azure. Ao usar o Docker, o computador host é de propriedade do cliente, que pode fazer patch livremente e monitorá-lo.
+- Agora geralmente disponível: estamos começando a implementar um novo modo de implantação para o coletor de logs. Além da atual implantação baseada em dispositivo virtual, o novo coletor de logs baseado em Docker (contêiner) pode ser instalado como um pacote em [computadores Ubuntu](discovery-docker.md), tanto localmente quanto no Azure. Ao usar o Docker, o computador host é de propriedade do cliente, que pode fazer patch livremente e monitorá-lo.
 
 - Usando o novo ponto de interrogação azul no canto, é possível agora acessar a página de documentação relevante do Cloud App Security em docs.microsoft.com de dentro das páginas do portal. Cada link é contextual e direciona você para as informações de que precisa com base na página que você está usando.
 - Agora, você pode enviar comentários de qualquer página do portal do Cloud App Security. Os comentários permitem que você informe bugs, solicite novos recursos e compartilhe sua experiência diretamente com a equipe do Cloud App Security.
@@ -87,7 +87,7 @@ Lançado em 29 de outubro de 2017
   
   Saiba mais em [Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional](proxy-intro-aad.md).
 
-- Estamos distribuindo gradualmente a capacidade de filtrar de acordo com os nomes de atividades de serviços específicos. Esse novo filtro de tipo de atividade é mais granular, para que você possa monitorar as atividades de aplicativos específicas, em vez de tipos de atividade mais gerais. Por exemplo, anteriormente, você podia filtrar por **Executar o comando**, e agora você pode filtrar para cmdlets EXO específicos. O nome da atividade também pode ser visto na gaveta de atividade em **Tipo (em aplicativo)**. Essa funcionalidade substituirá o filtro de tipo de atividade.  
+- Estamos distribuindo gradualmente a capacidade de filtrar de acordo com os nomes de atividades de serviços específicos. Esse novo filtro de tipo de atividade é mais granular, para que você possa monitorar as atividades de aplicativos específicas, em vez de tipos de atividade mais gerais. Por exemplo, anteriormente, você podia filtrar por **Executar o comando**, e agora você pode filtrar para cmdlets EXO específicos. O nome da atividade também pode ser visto na gaveta de atividade em **Tipo (em aplicativo)** . Essa funcionalidade substituirá o filtro de tipo de atividade.  
 
 - O Cloud Discovery agora é compatível a Cisco ASA com FirePOWER. 
 
@@ -134,7 +134,7 @@ Lançado em 30 de julho de 2017
 
 - No Cloud Discovery, agora você pode usar [formatos de log personalizado](custom-log-parser.md) para [uploads de log automatizados](discovery-docker.md). Formatos de log personalizados permitem que você automatize facilmente o upload de logs de seus SIEMs como servidores Splunk ou qualquer outro formato sem suporte.
 
-- As novas ações de investigação de usuário permitem um nível adicional de análise para investigações do usuário. Nas páginas **Investigação**, agora você pode clicar com o botão direito do mouse em uma atividade, um usuário ou uma conta e aplicar um dos seguintes novos filtros para investigação e filtragem avançada: **Exibir atividade relacionada**, **Exibir governança relacionada**, **Exibir alertas relacionados**, **Exibir arquivos de propriedade**, **Exibir arquivos compartilhados com este usuário**.
+- As novas ações de investigação de usuário permitem um nível adicional de análise para investigações do usuário. Nas páginas de **Investigação**, você agora pode clicar com o botão direito do mouse em uma atividade, usuário ou conta e aplicar um dos seguintes novos filtros para investigação e filtragem avançadas: **Exibir atividade relacionada**, **Exibir controle relacionado**, **Exibir alertas relacionados**, **Exibir arquivos de propriedade**, **Exibir arquivos compartilhados com esse usuário**.
 
 - O catálogo do Cloud App agora contém um novo campo para retenção de dados após o encerramento da conta. Esse fator de risco permite que você tenha certeza de que seus dados foram completamente removidos depois de encerrar uma conta dentro de um aplicativo de nuvem.
 
@@ -148,14 +148,14 @@ Lançado em 3 de julho de 2017
 
 **Novos recursos**
 
-- **Extensões de segurança:** As extensões de segurança são um novo painel para o gerenciamento centralizado de todas as extensões de segurança do Cloud App Security.  Extensões incluem gerenciamento de token de API, agentes SIEM e conectores de DLP Externo. O novo painel está disponível no Cloud App Security em "Configurações". 
+- **Extensões de segurança:** extensões de segurança é um novo painel para gerenciamento centralizado de todas as extensões de segurança ao Cloud App Security.  Extensões incluem gerenciamento de token de API, agentes SIEM e conectores de DLP Externo. O novo painel está disponível no Cloud App Security em "Configurações". 
 
     - Tokens de API – gere e gerencie seus próprios [tokens de API](api-tokens.md) para integrar o Cloud App Security com software de terceiros usando nossas APIs RESTful. 
     - Agentes SIEM – [integração SIEM](siem.md) estava localizada anteriormente em "Configurações", agora disponível como um guia de Extensões de Segurança.
     - DLP externo (Versão Prévia) – o Cloud App Security permite que você [utilize os investimentos existentes em sistemas de classificação de terceiros](icap-stunnel.md), como soluções de DLP (prevenção de perda de dados) e permite examinar o conteúdo de aplicativos usando as implantações existentes em execução no seu ambiente de nuvem. Entre em contato com seu gerente de conta para ingressar na versão prévia.
 
-- **Sancionar/cancelar sanção automaticamente:** As novas políticas de detecção de aplicativo dão ao Cloud Discovery a capacidade de definir automaticamente os aplicativos com o rótulo Sancionado/Não sancionado. Isso lhe dá a capacidade de identificar automaticamente os aplicativos que estão violando políticas e regulamentos da sua organização e adicioná-los ao script de bloqueio gerado.
-- **Rótulos de arquivo do Cloud App Security:** Agora você pode aplicar rótulos de arquivo do Cloud App Security para fornecer mais insights sobre os arquivos examinados. Para cada arquivo verificado pelo DLP do Cloud App Security, você poderá saber se os arquivos foram bloqueados de serem inspecionados porque foram criptografados ou corrompidos. Por exemplo, você pode configurar políticas para alertá- e arquivos protegidos por senha em quarentena que são compartilhados externamente. Este recurso está disponível para arquivos examinados após 3 de julho de 2017.
+- **Sancionar/cancelar sanção automaticamente:** as novas políticas de detecção de aplicativo dão ao Cloud Discovery a capacidade de definir automaticamente aplicativos com rótulo Sancionado/Não sancionado. Isso lhe dá a capacidade de identificar automaticamente os aplicativos que estão violando políticas e regulamentos da sua organização e adicioná-los ao script de bloqueio gerado.
+- **Rótulos de arquivo de segurança do Cloud App Security:** agora você pode aplicar rótulos de arquivo do Cloud App Security para fornecer mais informações nos arquivos verificados. Para cada arquivo verificado pelo DLP do Cloud App Security, você poderá saber se os arquivos foram bloqueados de serem inspecionados porque foram criptografados ou corrompidos. Por exemplo, você pode configurar políticas para alertá- e arquivos protegidos por senha em quarentena que são compartilhados externamente. Este recurso está disponível para arquivos examinados após 3 de julho de 2017.
 
     Você pode filtrar esses arquivos usando o filtro **Rótulos de classificação** > **Cloud App Security**: 
 
@@ -163,27 +163,27 @@ Lançado em 3 de julho de 2017
   - **Criptografado por senha** – arquivos cujo conteúdo não foi inspecionado porque são protegidos por senha pelo usuário.
   - **Arquivo corrompido** – arquivos cujo conteúdo não foi inspecionado porque seu conteúdo não pôde ser lido.
 
-- **Insights do usuário**: A experiência de investigação foi atualizada para permitir insights prontos para uso sobre o usuário em ação. Com um único clique, agora você pode obter uma visão geral abrangente dos usuários da Gaveta de atividades. Os insights incluem de que localização eles se conectaram, com quantos alertas em aberto eles estão envolvidos e suas informações de metadados.
-- **Insights do Conector de aplicativos:** Em **Conectores de Aplicativos**, cada aplicativo conectado agora inclui uma gaveta de aplicativos na tabela para uma busca detalhada mais fácil de seu status. Os detalhes fornecidos incluem quando o conector de aplicativos foi conectado e integridade da última verificação no conector. Você também pode monitorar o status da verificação de DLP em cada aplicativo: o número total de arquivos inspecionados pelo DLP, bem como o status das verificações em tempo real (solicitadas verificações versus verificações reais). Você poderá saber se a taxa de arquivos examinados pelo Cloud App Security em tempo real é menor do que o número solicitado e se o locatário pode ser exceder sua capacidade e a experiência de um atraso de resultados de DLP.
+- **Insights do usuário**: a experiência de investigação foi atualizada para permitir informações prontas sobre o usuário em ação. Com um único clique, agora você pode obter uma visão geral abrangente dos usuários da Gaveta de atividades. Os insights incluem de que localização eles se conectaram, com quantos alertas em aberto eles estão envolvidos e suas informações de metadados.
+- **Insights do conector de aplicativo:** em **Conectores de Aplicativos**, cada aplicativo conectado agora inclui uma gaveta de aplicativos na tabela para análise mais fácil de seu status. Os detalhes fornecidos incluem quando o conector de aplicativos foi conectado e integridade da última verificação no conector. Você também pode monitorar o status da verificação de DLP em cada aplicativo: o número total de arquivos inspecionados pelo DLP, bem como o status das verificações em tempo real (solicitadas verificações versus verificações reais). Você poderá saber se a taxa de arquivos examinados pelo Cloud App Security em tempo real é menor do que o número solicitado e se o locatário pode ser exceder sua capacidade e a experiência de um atraso de resultados de DLP.
 
 - **Personalização do Catálogo de aplicativos de nuvem:**
 
-  - **Marcas de aplicativo**: Agora você pode criar marcas personalizadas para aplicativos. Essas marcas podem ser usadas como filtros para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. Por exemplo, lista de observação personalizada, atribuição a uma unidade de negócios específica ou aprovações personalizadas, como "aprovado pelo departamento jurídico".
-  - **Notas personalizadas**: Conforme você examina e avalia os diferentes aplicativos descobertos em seu ambiente, agora você pode salvar suas conclusões e insights nas Notas.
-  - **Pontuação de risco personalizada**: Agora você pode substituir a pontuação de risco de um aplicativo. Por exemplo, se a pontuação de risco de um aplicativo for 8 e esse for um aplicativo sancionado na sua organização, você poderá alterar a pontuação de risco para 10 para sua organização. Você também pode adicionar observações para tornar a justificativa da alteração clara quando qualquer pessoa analisar o aplicativo.
+  - **Marcas de aplicativo**: agora você pode criar marcas personalizadas para aplicativos. Essas marcas podem ser usadas como filtros para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. Por exemplo, lista de observação personalizada, atribuição a uma unidade de negócios específica ou aprovações personalizadas, como "aprovado pelo departamento jurídico".
+  - **Notas personalizadas**: conforme você examina e avalia os diferentes aplicativos que foram descobertos em seu ambiente, agora você pode salvar suas conclusões e ideias em Notas.
+  - **Pontuação de risco personalizada**: agora você pode substituir a pontuação de risco de um aplicativo. Por exemplo, se a pontuação de risco de um aplicativo for 8 e esse for um aplicativo sancionado na sua organização, você poderá alterar a pontuação de risco para 10 para sua organização. Você também pode adicionar observações para tornar a justificativa da alteração clara quando qualquer pessoa analisar o aplicativo.
 
-- **Novo modo de implantação do coletor de logs:** Estamos começando a distribuir um novo modo de implantação agora disponível para o coletor de logs. Além da implantação baseada em dispositivo virtual atual, o novo coletor de log baseado em Docker (contêiner) pode ser instalado como um pacote nos computadores com Windows e Ubuntu, tanto localmente quanto no Azure. Ao usar o Docker, o computador host é de propriedade do cliente, que pode fazer patch livremente e monitorá-lo.
+- **Novo modo de implantação do coletor de log:** estamos começando a implementar um novo modo de implantação que agora está disponível para o coletor de logs. Além da implantação baseada em dispositivo virtual atual, o novo coletor de log baseado em Docker (contêiner) pode ser instalado como um pacote nos computadores com Windows e Ubuntu, tanto localmente quanto no Azure. Ao usar o Docker, o computador host é de propriedade do cliente, que pode fazer patch livremente e monitorá-lo.
 
 **Avisos:**
 
-- o Catálogo de Aplicativos de Nuvem agora tem suporte para mais de 15.000 aplicativos detectáveis
-- Conformidade: Oficialmente, o Cloud App Security tem a certificação SOC1/2/3 do Azure. Para obter a lista completa das certificações, confira [Ofertas de conformidade](https://www.microsoft.com/trustcenter/compliance/complianceofferings) e filtre os resultados por Cloud App Security.
+- O catálogo do Cloud App agora oferece suporte a mais de 15.000 aplicativos detectáveis
+- Conformidade: o Cloud App Security oficialmente é certificado para SOC1/2/3 pelo Azure. Para obter a lista completa das certificações, confira [Ofertas de conformidade](https://www.microsoft.com/trustcenter/compliance/complianceofferings) e filtre os resultados por Cloud App Security.
 
 **Outros aperfeiçoamentos:** 
 
-- **Melhor análise:** Foram feitas melhorias no mecanismo de análise de log do Cloud Discovery. Erros internos têm probabilidade significativamente menor de ocorrer.
-- **Formatos de log esperados:** O formato de log esperado para os logs do Cloud Discovery agora fornece exemplos dos formatos do Syslog e do FTP.
-- **Status de upload do coletor de logs:** Agora você pode ver o status do coletor de logs no portal e solucionar problemas de erros mais rapidamente usando as notificações de status no portal e os alertas do sistema.
+- **Melhor análise:** foram feitas melhorias no mecanismo de análise de log do Cloud Discovery. Erros internos têm probabilidade significativamente menor de ocorrer.
+- **Formatos de log esperados:** o formato esperado de log para logs de Cloud Discovery agora fornece exemplos de ambos os formatos de Syslog e FTP.
+- **Status de upload do coletor de logs:** agora, você pode ver o status do coletor de logs no portal e solucionar problemas de erros mais rapidamente com as notificações de status no portal e os alertas do sistema.
 
 ### <a name="cloud-app-security-release-99"></a>Cloud App Security versão 99
 
@@ -221,7 +221,7 @@ Lançado em 4 de junho de 2017
 
 **Novos recursos:**
 
-- Distribuição concluída de RBAC para leitores de segurança. Esse recurso permite que você gerencie as permissões que você conceder aos seus administradores dentro do console do Cloud App Security. Por padrão, todos os administradores do Azure Active Directory, os administradores globais do Office 365 e os administradores de Segurança têm permissão total no portal. Todos os leitores de segurança no Azure Active Directory e do Office 365 têm acesso somente leitura no Cloud App Security. Você pode adicionar outros administradores ou substituir permissões usando a opção "Gerenciar acesso". Para saber mais, confira [Gerenciar permissões de administrador](manage-admins.md).
+- O RBAC para leitores de segurança concluiu a distribuição. Esse recurso permite que você gerencie as permissões concedidas aos seus administradores dentro do console do Cloud App Security. Por padrão, todos os administradores do Azure Active Directory, os administradores globais do Office 365 e os administradores de Segurança têm permissão total no portal. Todos os leitores de segurança no Azure Active Directory e do Office 365 têm acesso somente leitura no Cloud App Security. Você pode adicionar outros administradores ou substituir permissões usando a opção "Gerenciar acesso". Para saber mais, confira [Gerenciar permissões de administrador](manage-admins.md).
 - Agora estamos lançando relatórios de inteligência de ameaça detalhados para endereços IP arriscados detectados pelo gráfico de segurança inteligente da Microsoft. Quando uma atividade é executada por um botnet, você verá o nome do botnet (se disponível) com um link para um relatório detalhado sobre o botnet específico.
  
 ### <a name="cloud-app-security-release-97"></a>Cloud App Security versão 97
@@ -230,7 +230,7 @@ Lançado em 24 de maio de 2017
 
 **Novos recursos:**
 
-- Investigar arquivos e violações de política: Agora você pode ver todas as correspondências de política na página Arquivos. Além disso, a página de alerta do arquivo foi aprimorada para incluir uma guia separada para o Histórico do arquivo específico. A melhoria permite fazer busca detalhada no histórico de violação entre todas as políticas para o arquivo específico. Cada evento histórico inclui um instantâneo do arquivo no momento do alerta. Isso incluirá uma indicação de se o arquivo foi excluído ou colocado em quarentena.
+- Investigue os arquivos e as violações de política: agora você pode ver todas as correspondências de política na página de arquivos. Além disso, a página de alerta do arquivo foi aprimorada para incluir uma guia separada para o Histórico do arquivo específico. A melhoria permite fazer busca detalhada no histórico de violação entre todas as políticas para o arquivo específico. Cada evento histórico inclui um instantâneo do arquivo no momento do alerta. Isso incluirá uma indicação de se o arquivo foi excluído ou colocado em quarentena.
 - [Quarentena do administrador](use-case-admin-quarantine.md) agora está disponível em versão prévia privada para o Office 365 SharePoint e o OneDrive for Business. Esse recurso permite que você coloque em quarentena os arquivos que correspondem a políticas ou defina uma ação automatizada para colocá-los em quarentena. Colocar em quarentena remove os arquivos do diretório do usuário do SharePoint e copia os originais para a localização de quarentena de administrador que você escolher.
 
 **Melhorias do Cloud Discovery:**
@@ -314,7 +314,7 @@ Lançado em 20 de março de 2017
 - O conector do aplicativo do Cloud App Security para ServiceNow foi expandido para incluir suporte para tokens de OAuth (como apresentado em Genebra, Helsinque, Istambul). Essa alteração fornece uma conexão de API mais robusta para o ServiceNow não depende do usuário que está implantando. Para saber mais, confira [Conectar o ServiceNow ao Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Os clientes existentes podem atualizar as configurações na página de conector do Aplicativo ServiceNow.
 - Se você tiver configurado scanners DLP adicionais de terceiros, o status de verificação de DLP agora mostrará o status de cada conector de forma independente para melhorar a visibilidade.
 - Agora, o Cloud App Security conta com suporte para atividades de Equipes da Microsoft que são suportadas no log de auditoria do Office 365. Esse recurso está sendo implantado gradativamente.
-- Para os eventos de representação do Exchange Online, agora você pode filtrar pelo nível de permissão usado – delegado, administrador ou administrador delegado. Você pode pesquisar por eventos exibindo o nível de representação que interessa a você no **Log de atividades** pesquisando por **Objetos de atividade** > **Item**.
+- Para eventos de representação do Exchange Online, agora você pode filtrar pelo nível de permissão usado-delegado, administrador ou administrador delegado. Você pode pesquisar eventos que exibam o nível de representação que lhe interessa no **log de atividades** pesquisando objetos de **atividade** > **Item**.
 - Na gaveta de aplicativos na guia **Permissões do Aplicativo** dos aplicativos do Office 365, você pode ver o **Editor** de cada aplicativo. Você também pode usar o Editor como um filtro para investigar outros aplicativos do mesmo editor.
 - Agora, os endereços IP com risco são exibidos como um fator de risco independente em vez de ponderados no fator de risco de **Localização** geral. 
 - Quando os rótulos de Proteção de Informações do Azure estiverem desabilitados em um arquivo, os rótulos desabilitados serão exibidos como desabilitados no Cloud App Security. Rótulos excluídos não serão exibidos.
@@ -322,7 +322,7 @@ Lançado em 20 de março de 2017
 **Suporte adicional do Salesforce:**
 
 - Agora, você pode suspender e cancelar a suspensão de usuários do Salesforce no Cloud App Security. Essa ação pode ser realizada na guia **Contas** do Conector do Salesforce. Clique na engrenagem ao final da linha de um usuário específico e selecione **Suspender** ou **Cancelar suspensão**. Suspender e cancelar suspensão também podem ser aplicados como uma ação de governança como parte de uma política. Todas as atividades suspensas e não suspensas realizadas no Cloud App Security serão registradas no [Log de governança](governance-actions.md). 
-- Melhor visibilidade do compartilhamento de conteúdo do Salesforce: Agora você pode ver quais arquivos foram compartilhados e com quem eles foram compartilhados, incluindo arquivos compartilhados publicamente, arquivos compartilhados com grupos e arquivos compartilhados com todo o domínio do Salesforce. Uma maior visibilidade será implantada retroativamente a aplicativos do Salesforce novos e conectados atualmente. Poderá levar algum tempo para essas informações serem atualizadas pela primeira vez.
+- Melhor visibilidade ao compartilhamento de conteúdo do Salesforce: agora você pode ver quais arquivos foram compartilhados e com quem, incluindo arquivos compartilhados publicamente, arquivos compartilhados com grupos e arquivos compartilhados com todo o domínio do Salesforce. Uma maior visibilidade será implantada retroativamente a aplicativos do Salesforce novos e conectados atualmente. Poderá levar algum tempo para essas informações serem atualizadas pela primeira vez.
 - Aprimoramos a cobertura para os seguintes eventos do Salesforce e os separamos da atividade **Gerenciar usuários**: 
   - Editar permissões
   - Criar usuário
@@ -353,7 +353,7 @@ Agora o Cloud App Security está oficialmente certificado com a Conformidade da 
 
 - O Cloud App Security agora inclui suporte para as seguintes atividades:
 
-  - **Office 365, SharePoint/OneDrive**: Atualizar configuração de aplicativo, Remover proprietário do grupo, Excluir site, Criar pasta
+  - **O Office 365, SharePoint/OneDrive**: atualizar configuração de aplicativo, Remover proprietário do grupo, Excluir site, Criar pasta
 
   - **Dropbox**: Adicionar membro ao grupo, Remover membro do grupo, Criar grupo, Renomear grupo, Alterar nome de membro da equipe
 
@@ -489,7 +489,7 @@ Lançado em 30 de outubro de 2016
 
 **Novos recursos:**
 
-- Para simplificar a filtragem no [log de atividades](activity-filters.md) e [arquivo de log](file-filters.md), filtros semelhantes foram consolidados. Usar os filtros de atividade: Objeto de atividade, Endereço IP e Usuário. Use o filtro de arquivo Colaboradores para localizar exatamente o que você precisa.
+- Para simplificar a filtragem no [log de atividades](activity-filters.md) e [arquivo de log](file-filters.md), filtros semelhantes foram consolidados. Use os filtros de atividade: objeto Atividade, Endereço IP e Usuário. Use o filtro de arquivo Colaboradores para localizar exatamente o que você precisa.
 - Na gaveta do log de atividades, em **Fonte**, você pode clicar no link para **Exibir dados brutos**. Essa ação baixa os dados brutos usados para gerar o log de atividades para fazer uma busca mais detalhada dos eventos de aplicativo. 
 - Adição de suporte para atividades extras de logon no Okta. [Visualização privada]
 - Adição de suporte para atividades extras de logon no Salesforce. 
@@ -562,7 +562,7 @@ Lançado em 21 de agosto de 2016
  
 **Melhorias:**
 
-- Melhorias gerais de usabilidade nas seguintes páginas: Páginas de políticas, Configurações gerais, Configurações de email.
+- Aperfeiçoamentos de usabilidade geral nas páginas a seguir: Páginas de políticas, Configurações gerais, Configurações de email.
 - Na tabela Alertas, é mais fácil distinguir entre alertas lidou e não lidos. Os alertas lidos têm uma linha azul à esquerda e estão esmaecidos para indicar que já foram.
 - Os parâmetros da política de Atividade **Atividade repetida** foram atualizados. 
 - Na página Contas, uma coluna de **Tipo** de usuário foi adicionada, agora você pode ver o tipo de conta de cada usuário. Os tipos de usuário são específicos de aplicativo. 
@@ -596,7 +596,7 @@ Lançado em 24 de julho de 2016
   - O Cloud App Security agora usa as marcas de endereço IP associadas um botnet e endereços IP anônimos como parte do cálculo de risco. 
   - Atividade do Office 365 agora é monitorada para altas taxas de download. Se a taxa de download do Office 365 for muito maior do que a da sua organização ou do que a taxa de download normal de um usuário específico, um alerta de detecção de anomalias será disparado. 
 - O Cloud App Security agora é compatível com a nova API da [funcionalidade de Compartilhamento Seguro](https://blogs.dropbox.com/dropbox/2016/06/new-dropbox-productivity-tools/) do Dropbox. 
-- Foram feitas melhorias para adicionar detalhes aos erros de análise de log da Descoberta, incluindo: Nenhuma transação relacionada à nuvem, Todos os eventos estão desatualizados, Arquivo corrompido, O formato de log não é correspondente.
+- Melhorias implementadas para adicionar detalhes aos erros de análise do Log de descoberta, incluindo: Nenhuma nuvem transação de nuvem relacionada, Todos os eventos estão desatualizados, Arquivo corrompido, Formato de log não correspondente.
 - O filtro de dados do Log de atividades foi aprimorado, agora ele inclui a capacidade de filtrar por tempo.
 - A página de intervalos de endereço IP foi aprimorada para facilitar o uso.
 - O Cloud App Security agora inclui suporte para a Proteção de Informações do Microsoft Azure (versão prévia). Você pode filtrar os arquivos e definir políticas de arquivo usando a classificação de marca segura. Em seguida, defina o nível de rótulo de classificação que você deseja exibir. Os rótulos também indicam se a classificação foi definida por alguém na sua organização ou por pessoas de outro locatário (Externo). 
@@ -605,7 +605,7 @@ Lançado em 24 de julho de 2016
 
 ### <a name="cloud-app-security-release-76"></a>Cloud App Security versão 76
 
-Lançado em: 10 de julho de 2016
+Lançado em 10 de julho de 2016
 
 **Melhorias:**
 
@@ -613,15 +613,15 @@ Lançado em: 10 de julho de 2016
 - Melhoria na utilização de política de atividade agregada.
 - Suporte aprimorado para o analisador de mensagem do log de firewall do TMG W3C.
 - Maior facilidade de uso para o menu suspenso de ação de governança de arquivo, que agora está separado em ações de colaboração, segurança e investigação.
-- Melhoria da detecção de viagem impossível na atividade de: Enviar email do Exchange Online.
+- Detecção de viagem impossível aprimorada para a atividade de: Enviar email do Exchange Online.
 - Uma nova lista de títulos (trilhas) foi adicionada à parte superior das páginas de Alertas e Política para facilitar a navegação.
 
 **Correções de bugs:**
-- A expressão predefinida para Cartão de Crédito na configuração de DLP para as Políticas de Arquivo foi alterada para Todos: Finanças: Cartão de Crédito.
+- A expressão predefinida para Cartão de Crédito nas definição de DLP para as Políticas de Arquivo foi alterada para Todos: Finanças: Cartão de Crédito.
 
 
 ### <a name="cloud-app-security-release-75"></a>Cloud App Security versão 75
-Lançado em: 27 de junho de 2016
+Lançado em 27 de junho de 2016
 
 **Novos recursos:**
 
@@ -635,7 +635,7 @@ Lançado em: 27 de junho de 2016
 
 ### <a name="cloud-app-security-release-74"></a>Cloud App Security versão 74
 
-Lançado em: 13 de junho de 2016
+Lançamento: 13 de junho de 2016
 
 - A tela Alerta foi atualizada para fornecer mais informações em uma visão geral. As atualizações incluem a capacidade de ver todas as atividades do usuário rapidamente, um mapa de atividades, logs de governança de usuário relacionado, uma descrição do motivo pelo qual o alerta foi disparado e gráficos e mapas adicionais da página do usuário. 
 - Eventos gerados pelo Cloud App Security agora incluem o tipo de evento, formato, grupos de políticas, objetos relacionados e uma descrição.
@@ -649,11 +649,11 @@ Lançado em: 13 de junho de 2016
 
 ### <a name="cloud-app-security-release-73"></a>Cloud App Security versão 73
 
-Lançado em: 29 de maio de 2016
+Lançamento: 29 de maio de 2016
 
-- Funcionalidades de alerta atualizadas: Agora você pode definir alertas por política para serem enviados por email ou como uma mensagem de texto.
-- Página de alertas: Design aprimorado para permitir melhor gerenciamento de incidentes e opções avançadas de resolução.
-- Ajustar política: Os alertas agora permitem que você vá diretamente das opções de resolução do alerta para a página de configurações de política para permitir um ajuste fino mais fácil baseado em alertas.
+- Recursos de alerta atualizados: agora, você pode definir alertas por política para serem enviados por email ou como mensagem de texto.
+- Página de alertas: design aprimorado para permitir melhor gerenciamento de incidentes e opções avançadas de resolução.
+- Ajustar a política: os alertas agora permitem que você mova das opções de resolução de alerta diretamente para a página de configurações de política para habilitar um ajuste fino mais fácil baseado em alertas.
 - Melhorias no cálculo de pontuação de risco de detecção de anomalias e taxas de falso-positivos reduzidas com base nos comentários dos clientes.
 - A exportação do log de atividades agora inclui a ID de Evento, a Categoria de Evento e o Nome do tipo de Evento.
 - Aparência aprimorada e usabilidade de criação das Ações de Governança de criação de política.
@@ -667,7 +667,7 @@ Lançado em: 29 de maio de 2016
 
 ### <a name="cloud-app-security-release-72"></a>Cloud App Security versão 72
 
-Lançado em: 15 de maio de 2016
+Lançamento: 15 de maio de 2016
 
 -  Melhorias na aparência e infraestrutura gerais, incluindo:
 

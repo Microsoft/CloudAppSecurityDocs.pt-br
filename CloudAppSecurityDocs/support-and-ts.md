@@ -2,9 +2,9 @@
 title: Informações sobre suporte e solução de problemas do Cloud App Security
 description: Este artigo descreve as opções de suporte e solução de problemas do Microsoft Cloud App Security
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,22 +15,22 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a64f46730e5c9cec50acab6750305ce9004c410
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: a8a8570cfa27bdc9e05af3a8917bf0ce55a56be9
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568475"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336195"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas do Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo descreve as opções de suporte e solução de problemas disponíveis do Cloud App Security.
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Gerenciar solicitações de suporte para Cloud App Security
 
-A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para o Microsoft Cloud App Security. O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas. O suporte técnico online está disponível apenas em inglês e japonês. O suporte via telefone e o suporte de cobrança online estão disponíveis em outros idiomas.
+A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para o Microsoft Cloud App Security. O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas. O suporte técnico online está disponível em inglês e japonês. O suporte por telefone e o suporte online de cobrança estão disponíveis em outros idiomas.
 
 Como administrador, você pode usar a opção **Ajuda + Suporte** para arquivar uma solicitação de suporte online do Cloud App Security por meio do portal do Azure. Para criar uma solicitação de suporte, a conta deve receber a atribuição de uma das seguintes [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
@@ -52,23 +52,23 @@ Selecione **solicitação de suporte** para criar uma nova solicitação de supo
 
 3.  Para a maioria dos problemas de suporte, vá até a guia **Básico** e escolha as seguintes opções:
 
-    -   **Tipo de problema**: **técnico**
+    -   **Tipo de problema**: **Técnico**
 
     -   **Assinatura**: \<*sua assinatura*\>
 
-    -   **Serviço**: **Cloud Application Security**
+    -   **Serviço**: **segurança de aplicativo de nuvem**
 
     -   **Tipo de problema**: escolha o tipo de problema no menu suspenso
 
-    -   **Subtipo do problema**: escolha o subtipo do problema no menu suspenso
+    -   **Subtipo de problema**: escolha o subtipo de problema no menu suspenso
 
-    -   **Assunto**: descreva resumidamente o problema que você está enfrentando
+    -   **Assunto**: Descreva brevemente o problema que você está tendo
 
-4.  Na guia **Detalhes**, preencha os detalhes do problema, o método de suporte, as informações de contato e clique em **Avançar: Examinar + criar**.
+4.  Na guia **detalhes** , preencha os detalhes do problema, o método de suporte, suas informações de contato e clique em **Avançar: revisar + criar**.
 
 5.  Verifique se as informações estão corretas e escolha **Criar** para enviar a solicitação de suporte.
 
-**Observação:** Se você tiver uma pergunta de cobrança ou assinatura, você pode abrir uma ocorrência para obter suporte por meio de [Centro de administração do Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
+**Observação:** Se você tiver uma pergunta de cobrança ou de assinatura, poderá abrir um caso para obter suporte por meio do [centro de administração Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### <a name="view-open-support-requests"></a>Exibir solicitações de suporte abertas
 

@@ -2,9 +2,9 @@
 title: Solução de problemas de erros de inspeção de conteúdo – Cloud App Security | Microsoft Docs
 description: Este artigo fornece uma lista de status de inspeção de conteúdo e seus significados.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e7c4de4407c476282db832f6d4aa60b0e987e1c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6d2ffb878cc48c619a7e5026b2f51dd7407c038b
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568424"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336156"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solução de problemas de inspeção de conteúdo
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo fornece uma lista de status de inspeção de conteúdo e seus significados.
 
@@ -32,25 +32,25 @@ Este artigo fornece uma lista de status de inspeção de conteúdo e seus signif
 
 A tabela lista cada status de inspeção de conteúdo e sua descrição.
 
-|Status da inspeção de conteúdo|Descrição|
+|Status da inspeção de conteúdo|Description|
 |----|----|
 |Concluído|A inspeção de conteúdo foi concluída com êxito.|
 |Não Aplicável|A inspeção de conteúdo não era aplicável a este arquivo. Esse status pode aparecer porque nenhuma política requer a inspeção de conteúdo desse arquivo ou porque não há suporte para esse tipo de arquivo.|
 |Pending (Pendente)|O arquivo está na fila de inspeção de conteúdo no momento.|
-|Falha: Erro de download|O Microsoft Cloud App Security não pôde baixar o arquivo para inspeção.|
-|Falha: Arquivo criptografado|O arquivo não pôde ser descriptografado.|
-|Falha: Arquivo corrompido|O arquivo está corrompido de alguma forma e não pôde ser inspecionado.|
+|Falha: Erro no download|O Microsoft Cloud App Security não pôde baixar o arquivo para inspeção.|
+|Falha: O arquivo está criptografado|O arquivo não pôde ser descriptografado.|
+|Falha: O arquivo está corrompido|O arquivo está corrompido de alguma forma e não pôde ser inspecionado.|
 |Falha: Erro interno|Ocorreu um erro indeterminado ao tentar verificar o arquivo.|
-|Falha: Erro de DLP externo|Algo em seu DLP externo deu errado, causando uma falha ao inspecionar o conteúdo no Cloud App Security.|
-|Falha: Tamanho do arquivo excedido|O limite do arquivo varia dependendo do tamanho do arquivo e do número de caracteres.|
-|Falha: Acesso a arquivo negado|O arquivo é externo à sua nuvem e não pôde ser acessado pelo Cloud App Security.|
-|Falha: Arquivo excluído|O arquivo não existe mais na sua nuvem e não pôde ser inspecionado.|
-|Falha: Tipo de arquivo sem suporte|O Cloud App Security não pode executar a inspeção de conteúdo nesse tipo de arquivo. Esse status pode aparecer porque não há suporte para o tipo de arquivo ou porque o arquivo não está no formato do tipo de arquivo esperado.|
+|Falha: Erro do DLP externo|Algo em seu DLP externo deu errado, causando uma falha ao inspecionar o conteúdo no Cloud App Security.|
+|Falha: tamanho do arquivo excedido|O limite do arquivo varia dependendo do tamanho do arquivo e do número de caracteres.|
+|Falha: Acesso ao arquivo negado|O arquivo é externo à sua nuvem e não pôde ser acessado pelo Cloud App Security.|
+|Falha: O arquivo foi excluído|O arquivo não existe mais na sua nuvem e não pôde ser inspecionado.|
+|Falha: tipo de arquivo sem suporte|O Cloud App Security não pode executar a inspeção de conteúdo nesse tipo de arquivo. Esse status pode aparecer porque não há suporte para o tipo de arquivo ou porque o arquivo não está no formato do tipo de arquivo esperado.|
 
 > [!NOTE]
 > Se você encontrar um traço no status de verificação, isso indicará que o arquivo não está na fila para ser verificado. Consulte [Políticas de arquivos](data-protection-policies.md) para obter informações sobre a configuração de políticas de inspeção de conteúdo.
 
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Confira Também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  

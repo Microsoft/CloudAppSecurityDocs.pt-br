@@ -2,9 +2,9 @@
 title: Integrar o Cloud App Security com o Zscaler
 description: Este artigo descreve como integrar o Microsoft Cloud App Security ao Zscaler para habilitar o Cloud Discovery contínuo e o bloqueio automatizado de aplicativos não sancionados.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82bd7721d29d212c03342b0d016fe8c245a88625
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 687570ff372da79822715d40a3eb3220147610d0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568345"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335973"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Integrar o Cloud App Security com o Zscaler
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Se você trabalha com o Cloud App Security e o Zscaler, pode integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. O Zscaler, como um proxy de nuvem autônomo, monitora o tráfego da sua organização, permitindo que você defina políticas para bloquear transações. Juntos, o Cloud App Security e o Zscaler oferecem os seguintes recursos:
 

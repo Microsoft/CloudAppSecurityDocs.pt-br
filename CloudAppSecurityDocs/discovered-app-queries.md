@@ -2,9 +2,9 @@
 title: Consultas e filtros de aplicativos descobertos do Cloud App Security
 description: Este artigo fornece uma lista de consultas e filtros de aplicativos descobertos do Cloud App Security e explica como trabalhar com eles.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 66e895a2a711fe42cba203a4a369dac098b98623
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 39e3ac88cfbe2a2bf6e6186c601fe278fae2c1d2
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568357"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335733"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Consultas e filtros de aplicativos descobertos
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Quando você tiver um grande número de aplicativos descobertos, considerará útil filtrá-los e consultá-los. Este artigo descreve quais filtros estão disponíveis e como consultar os aplicativos descobertos.  
 
@@ -35,15 +35,15 @@ Há filtros de aplicativos Descoberto básicos e avançados. Para alcançar um f
 ![Aplicativos Descobertos](./media/discovered-apps.png)  
 
 
-- **Marca de aplicativo**: Selecione se o aplicativo foi sancionado, não sancionado ou não foi marcado. Além disso, você pode criar uma marca personalizada para seu aplicativo e, em seguida, usá-la para filtrar tipos específicos de aplicativos. 
-- **Aplicativos e domínios**: Permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos. 
-- **Categorias**: O filtro de categorias, localizado à esquerda da página, permite que você pesquise tipos de aplicativos de acordo com as categorias de aplicativo. Exemplos de categorias incluem aplicativos de rede social, aplicativos de armazenamento em nuvem e serviços de hospedagem. Você pode selecionar várias categorias por vez ou uma única categoria e, em seguida, aplicar os filtros básicos e avançados sobre elas.
-- **Fator de risco de conformidade**: Permite que você pesquise padrões, certificação e conformidade específicos que o aplicativo pode cumprir (HIPAA, ISO 27001, SOC 2, PCI-DSS, entre outros).
-- **Fator de risco geral**: Permite que você pesquise fatores de risco gerais, como popularidade do consumidor, localidade do data center, entre outros.
-- **Pontuação de risco**: Permite a filtragem de aplicativos pela pontuação de risco, de modo que você possa se concentrar, por exemplo, somente na análise dos aplicativos de alto risco. Você também pode substituir a pontuação de risco definida pelo Cloud App Security. Para saber mais, confira [Trabalhando com pontuação de risco](risk-score.md).
-- **Fator de risco de segurança**: Permite a filtragem com base em medidas específicas de segurança (como Criptografia em repouso, autenticação multifator etc.).
-- **Uso**: Permite a filtragem com base nas estatísticas de uso desse aplicativo. Uso como aplicativos com um número maior ou menor que o especificado de **uploads de dados**, aplicativos com um número maior ou menor que o especificado de **Usuários**.
-- **Fator de risco legal**: Permite a filtragem com base em todos os regulamentos e todas as políticas que estão em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo. Exemplos incluem aplicativos em nuvem prontos para RGPD, DMCA e política de retenção de dados.
+- **Marca de aplicativo**: selecione se o aplicativo foi sancionado, não sancionado ou não está marcado. Além disso, você pode criar uma marca personalizada para seu aplicativo e, em seguida, usá-la para filtrar tipos específicos de aplicativos. 
+- **Aplicativos e domínios**: permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos. 
+- **Categorias**: o filtro de categorias, localizado à esquerda da página, permite que você pesquise tipos de aplicativos de acordo com as categorias de aplicativo. Exemplos de categorias incluem aplicativos de rede social, aplicativos de armazenamento em nuvem e serviços de hospedagem. Você pode selecionar várias categorias por vez ou uma única categoria e, em seguida, aplicar os filtros básicos e avançados sobre elas.
+- **Fator de risco de conformidade**: permite que você pesquise padrões específicos, certificação e conformidade com os quais o aplicativo pode cumprir (HIPAA, ISO 27001, SOC 2, PCI-DSS, entre outros).
+- **Fator de risco geral**: permite que você pesquise fatores de risco gerais, como a popularidade do consumidor, localidade do data center, entre outros.
+- **Pontuação de risco**: permite que você filtre aplicativos por classificação de risco para que você possa se concentrar, por exemplo, revisando somente os aplicativos de alto risco. Você também pode substituir a pontuação de risco definida pelo Cloud App Security. Para saber mais, confira [Trabalhando com pontuação de risco](risk-score.md).
+- **Fator de risco de segurança**: habilita a filtragem com base em medidas específicas de segurança (como Criptografia em rest, autenticação multifator etc.).
+- **Uso**: permite que você filtre com base nas estatísticas de uso desse aplicativo. Uso como aplicativos com um número maior ou menor que o especificado de **uploads de dados**, aplicativos com um número maior ou menor que o especificado de **Usuários**.
+- **Fator de risco legal**: permite filtrar com base em todos os regulamentos e políticas que estão em vigor para garantir a proteção de dados e a privacidade dos usuários do aplicativo. Exemplos incluem aplicativos em nuvem prontos para RGPD, DMCA e política de retenção de dados.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Criando e gerenciando marcas de aplicativo personalizadas
 
@@ -51,7 +51,7 @@ Você pode criar uma marca de aplicativo personalizada. Essas marcas podem ser u
 
 Para criar uma marca de aplicativo personalizada:
 
-1. Na engrenagem de **Configurações**, selecione **Configurações do Cloud Discovery** e, em seguida, a guia **Marcas de aplicativo**. Clique no ícone de mais. ![ícone de mais](./media/plus-icon.png)
+1. Na engrenagem de **configurações** , selecione **configurações de Cloud Discovery**e, em seguida, a guia **marcas de aplicativo** . Clique no ícone de adição. ![ícone de mais](./media/plus-icon.png)
 
    ![criar marca de aplicativo personalizada](./media/create-app-tag.png)
 

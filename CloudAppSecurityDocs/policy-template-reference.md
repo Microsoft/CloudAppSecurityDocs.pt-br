@@ -2,9 +2,9 @@
 title: Referência de modelo de política do Cloud App Security
 description: Este artigo fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos na nuvem.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e75ee880c2d198c3665c3e1271e71a351e973ec
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0cdb9fbc855f957c579d3a62f8120a96bdd8a1c0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568918"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336273"
 ---
 # <a name="policy-template-reference"></a>Referência de modelo de política
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo fornece informações sobre modelos de política incluídos no Microsoft Cloud App Security. 
 
@@ -32,7 +32,7 @@ Este artigo fornece informações sobre modelos de política incluídos no Micro
 
 É recomendável iniciar a criação de políticas com base em um modelo existente sempre que possível para facilidade de uso. Esta tabela apresenta modelos de política existentes no Microsoft Cloud App Security.
 
-|Categoria de risco|Nome do modelo|Descrição|
+|Categoria de risco|Nome do modelo|Description|
 |-----|----|----|
 |Cloud Discovery|Comportamentos anormais em usuários descobertos|Alerta ao detectar comportamentos anormais em usuários e aplicativos descobertos, como: grandes quantidades de dados carregados em comparação com outros usuários, grandes transações de usuário em comparação com o histórico do usuário.|
 |Cloud Discovery|Comportamentos anormais de endereços IP descobertos|Alertas ao detectar comportamentos anômalos em endereços IP e aplicativos descobertos, como: grandes quantidades de dados carregados em comparação com outros endereços IP, transações grandes de aplicativo em comparação com o histórico do endereço IP.|

@@ -2,9 +2,9 @@
 title: Integrar o Cloud App Security com o iboss
 description: Este artigo descreve como integrar o Microsoft Cloud App Security ao gateway de nuvem seguro do iboss para habilitar o Cloud Discovery contínuo e o bloqueio automatizado de aplicativos não sancionados.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 2/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 920d4272-685b-4c4d-9b31-94a2c6f3503e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 31316c4a8902ed85489e03a82dde3fb3ec7962b8
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 344fe833f5684de7bd944f3825c393bc9c02f021
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568185"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335779"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Integrar o Cloud App Security com o iboss
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Se você trabalha com o Cloud App Security e o iboss, é possível integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. O iboss é um gateway de nuvem seguro e autônomo que monitora o tráfego da sua organização e permite que você defina políticas que bloqueiam as transações. Juntos, o Cloud App Security e o iboss oferecem os seguintes recursos:
 

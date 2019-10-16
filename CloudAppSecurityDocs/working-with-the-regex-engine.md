@@ -2,9 +2,9 @@
 title: Usar o mecanismo RegEx no Cloud App Security para políticas de inspeção de conteúdo
 description: Este artigo fornece instruções de uso do RegEx para correspondência de padrões em políticas do Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fe3e2659c27e69959b7c68d92f42a07b7984a7d0
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: fee654b84f7149fa15be23d99d7b8f675a900599
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237194"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336059"
 ---
 # <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
  
 Este artigo fornece instruções de uso do RegEx para correspondência de padrões em políticas do Cloud App Security.
 

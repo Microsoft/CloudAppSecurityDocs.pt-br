@@ -1,5 +1,5 @@
 ---
-title: Conectar o workday ao Cloud App Security
+title: Conectar o workday ao Cloud App Security (versão prévia)
 description: Este artigo fornece informações sobre como conectar seu aplicativo WORKDAY para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13f9870d2e1fbb9a368510ce715b9bc5c3bfe7c8
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: da2f55e9f3be36d34bc7398258d96e28aae9b4b5
+ms.sourcegitcommit: 3996c1fe9a258c925e18c744447cb1574cce85d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083872"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72323891"
 ---
-# <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
+# <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conectar o workday ao Microsoft Cloud App Security (versão prévia)
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do workday existente usando a API do conector de aplicativos. Essa conexão fornece visibilidade e controle sobre o uso do workday.
 
@@ -31,12 +31,12 @@ Este artigo fornece instruções para conectar Microsoft Cloud App Security à s
 
 A conta workday usada para se conectar a Cloud App Security deve ser membro de um grupo de segurança (novo ou existente). O grupo de segurança deve ter as seguintes permissões selecionadas para os seguintes domínios:
 
-| Área funcional | Domínio | Subdomínio | Permissões de relatório/tarefa | Permissões de integração |
+| Área funcional | Domain | subdomínio | Permissões de relatório/tarefa | Permissões de integração |
 | --- | --- | --- | --- | --- |
-| Sistema | Configurar: Configuração do locatário – geral | Configurar: Configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
-| Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
-| Sistema | Auditoria do sistema | | Exibir | Get |
-| Pessoal | Dados de trabalho: Pessoal | Dados de trabalho: Relatórios públicos de trabalho | Exibir | Get |
+| System (sistema) | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
+| System (sistema) | Administração de Segurança | | Exibir, modificar | Obter, colocar |
+| System (sistema) | Auditoria do sistema | | Exiba os | Get |
+| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: relatórios de trabalho públicos | Exiba os | Get |
 
 Para obter mais informações sobre como configurar usuários de integração do workday, grupos de segurança e permissões, consulte as etapas 1 a 4 da [integração de concessão ou acesso de ponto de extremidade externo ao](https://go.microsoft.com/fwlink/?linkid=2103212) guia do workday (acessível com documentação/credenciais da Comunidade).
 
@@ -69,7 +69,7 @@ Recomendamos o uso de um usuário do sistema de integração do workday.
 
 1. Depois de registrado, anote os parâmetros a seguir e clique em **concluído**.
 
-    - ID do cliente
+    - ID do Cliente
     - Segredo do cliente
     - Ponto de extremidade da API REST do workday
     - Ponto de extremidade do token

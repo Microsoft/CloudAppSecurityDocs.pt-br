@@ -2,9 +2,9 @@
 title: Anonimizar dados de usuário no Cloud App Security
 description: Este artigo fornece informações sobre como proteger a privacidade do usuário anonimizando os nomes de usuários nos dados do Cloud Discovery.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 509373f5b63df5da2df0d75b8404c9963dcee186
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b83aa653074e0b441634c8560821fc4cf4d71373
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567646"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335490"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Microsoft Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Quando necessário, para uma investigação de segurança específica (por exemplo, devido a uma violação de segurança ou atividade de usuário suspeita), os administradores podem resolver o nome de usuário real. Se um administrador tiver algum motivo para suspeitar de um usuário específico, ele também poderá pesquisar o nome de usuário criptografado de um nome de usuário conhecido e começar a investigação usando o nome de usuário criptografado. Toda conversão de nome de usuário é auditada no **Log de governança** do portal.
 
@@ -50,7 +50,7 @@ Pontos principais:
      
      1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
      
-     2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**. Você pode selecionar **Anonimizar as informações do computador por padrão no relatório 'Usuários do Ponto de Extremidade do Win10'**.
+     2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**. Você pode selecionar **Anonimizar as informações do computador por padrão no relatório 'Usuários do Ponto de Extremidade do Win10'** .
 
      3. Em Chave de criptografia, selecione se deseja **Usar a chave dedicada gerada para seu portal** ou **Usar uma chave personalizada**. Se você **Usar uma chave personalizada**, digite uma chave de criptografia UTF8 de 16 bytes.
      4. Clique em **Salvar**.

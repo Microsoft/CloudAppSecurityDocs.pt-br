@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6f81cfa5dc504e8b88574a8bc72fb219ad85a95f
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: f63c05f9584b960ee5ac7b01bd06a4971e02bfe0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997392"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334809"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 As políticas de detecção de anomalias do Microsoft Cloud App Security fornecem análises comportamentais de entidades e de usuários (UEBA) e aprendizado de máquina (ML) inovadores para que você execute imediatamente uma detecção avançada a ameaças em seu ambiente de nuvem. Por serem habilitadas automaticamente, as novas políticas de detecção de anomalias geram resultados imediatos ao fornecer detecções imediatas, visando inúmeras anomalias comportamentais nos usuários, máquinas e dispositivos conectados à sua rede.  Além disso, as novas políticas expõem mais dados do mecanismo de detecção do Cloud App Security para ajudar a acelerar o processo de investigação e conter as ameaças em andamento.
 
@@ -62,6 +62,14 @@ Quanto maior o nível de confidencialidade, menor a supressão que é aplicada c
 ### <a name="malware-detection"></a>Detecção de malware
 
 * Essa detecção identifica arquivos mal-intencionados no armazenamento em nuvem, sejam de aplicativos da Microsoft ou de aplicativos de terceiros. O Microsoft Cloud App Security usa a Inteligência Contra Ameaças da Microsoft para reconhecer se determinados arquivos estão associados a ataques de malware conhecidos e são possivelmente mal-intencionados. Essa política interna é desabilitada por padrão. Nem todo arquivo é examinado, mas é usada heurística para procurar arquivos que possam estar em risco. Depois que os arquivos são detectados, é exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo.
+
+    > [!NOTE]
+    >- Para detecção de malware do Office 365, você precisa de uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
+    >- O Cloud App Security dá suporte à detecção de malware dos seguintes aplicativos:
+    >    - Caixa
+    >    - Dropbox
+    >    - G Suite
+    >    - Office 365
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
 
@@ -159,7 +167,7 @@ Para definir uma política de detecção de anomalias:
 
 Você pode triar rapidamente os vários alertas disparados pelas novas políticas de detecção de anomalias e decidir quais precisam ser tratados primeiro. Para isso, é necessário o contexto do alerta para ver o panorama geral e entender se algo mal-intencionado realmente está acontecendo.
 
-1. No **Log de atividades**, você pode abrir uma atividade para exibir a gaveta Atividades. Clique em **Usuário** para exibir a guia de informações do usuário. Essa guia inclui informações como o número de alertas, as atividades e de onde o usuário se conectou, que são importantes em uma investigação.
+1. No **Log de atividades**, você pode abrir uma atividade para exibir a gaveta Atividades. Clique em **usuário** para exibir a guia insights do usuário. Essa guia inclui informações como o número de alertas, atividades e o local em que eles se conectaram, o que é importante em uma investigação.
 
     detecção de ![anomaly alert1 @ no__t-1 ![anomaly detecção alert1 @ no__t-3
 

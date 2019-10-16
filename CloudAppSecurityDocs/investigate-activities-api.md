@@ -1,10 +1,10 @@
 ---
-title: Investigar atividades usando a API - Cloud App Security | Microsoft Docs
+title: Investigar atividades usando a API-Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações sobre como usar a API para investigar a atividade do usuário no Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,45 +15,45 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db4e10c7ecc8e82795d3a75fb915757bfada6bb9
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 98b1811fb17b0ade9a7901761e10c9dbb28d01f3
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568289"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335745"
 ---
 # <a name="investigate-activities-using-the-api"></a>Investigar atividades usando a API
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security fornece uma API REST com suporte completo para que você possa interagir programaticamente com o serviço.
+Microsoft Cloud App Security fornece uma API REST com suporte total para permitir que você interaja programaticamente com o serviço.
 
-Você pode usar as APIs do Microsoft Cloud App Security para investigar as atividades executadas pelos usuários em aplicativos de nuvem conectados. 
+Você pode usar as APIs de Microsoft Cloud App Security para investigar as atividades executadas pelos usuários em aplicativos de nuvem conectados. 
 
-O modo de API de atividades do Cloud App Security é otimizado para verificação e a recuperação de grandes quantidades de dados (mais de 5.000 atividades). A API de verificação consultas os dados da atividade repetidamente até que todos os resultados foram verificados. 
+O modo de API de atividades Cloud App Security é otimizado para verificação e recuperação de grandes quantidades de dados (mais de 5.000 atividades). A verificação de API consulta os dados da atividade repetidamente até que todos os resultados tenham sido verificados. 
 
 > [!NOTE] 
-> Para grandes quantidades de atividades e implantações em grande escala, é recomendável que você use o [agente SIEM](siem.md) para verificação de atividade.
+> Para grandes quantidades de atividades e implantações em grande escala, recomendamos que você use o [agente Siem](siem.md) para verificação de atividade.
 
 **Para usar a API de verificação de atividade:**
 
 1. Execute a consulta em seus dados.
-1. Se houver mais registros do que poderiam estar listadas em uma única verificação, você obterá um comando de retorno com `nextQueryFilters` que deve ser executado. Você obterá esse comando sempre que digitalizar até que a consulta retornou todos os resultados.
+1. Se houver mais registros do que o que pudesse ser listado em uma única verificação, você receberá um comando de retorno com `nextQueryFilters` que deverá ser executado. Você receberá esse comando sempre que examinar até que a consulta tenha retornado todos os resultados.
  
  
-**Parâmetros de corpo de solicitação**:
-- "filtros": Filtro de objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de atividade](activity-filters.md) para obter mais informações. Para evitar que suas solicitações limitadas, certifique-se de incluir uma limitação à sua consulta, por exemplo, consultar atividades do último dia ou filtrar para um determinado aplicativo.
-- “isScan”: Valor booliano. Habilita o modo de verificação.
-- “sortDirection”: A direção de classificação, os valores possíveis são "asc" e "desc" 
-- "sortField": Campos usados para classificar as atividades. Os possíveis valores são: 
-    - a data - a data em que, em seguida, a atividade ocorreu (esse é o padrão).
-    - criado - o carimbo de hora quando a atividade foi salvo.
-- “limit”: Número inteiro. No modo de verificação, entre 500 e 5000 (o padrão é 500). Controla o número de iterações usadas para verificação de todos os dados. 
+**Parâmetros do corpo da solicitação**:
+- "filtros": filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de atividade](activity-filters.md) para obter mais informações. Para evitar que suas solicitações sejam limitadas, lembre-se de incluir uma limitação em sua consulta, por exemplo, consultar as atividades do último dia ou filtrar um aplicativo específico.
+- "ISSCAN": booliano. Habilita o modo de verificação.
+- "sortDirection": a direção da classificação, os valores possíveis são "ASC" e "desc" 
+- "SortField": campos usados para classificar atividades. Os possíveis valores são: 
+    - data-a data em que a atividade ocorreu (esse é o padrão).
+    - Created-o carimbo de data/hora quando a atividade foi salva.
+- "Limit": inteiro. No modo de verificação, entre 500 e 5000 (o padrão é 500). Controla o número de iterações usadas para verificar todos os dados. 
 
 **Parâmetros de resposta**:
-- "dados": os dados retornados. Conterá até "limitar" o número de registros de cada iteração. Se houver mais registros a serem retirados (hasNext = true), a última alguns registros serão removidos para garantir que todos os dados é listada apenas uma vez.
-- “hasNext”: Valor booliano. Indica se a outra iteração nos dados é necessária.
-- “nextQueryFilters”: Se for necessária outra iteração, ele contém a consulta consecutiva do JSON para ser executado. Use isso como o parâmetro "filtros" na próxima solicitação.
+- "dados": os dados retornados. Conterá até "limitar" o número de registros de cada iteração. Se houver mais registros a serem puxados (hasNext = true), os últimos registros serão descartados para garantir que todos os dados sejam listados apenas uma vez.
+- "hasNext": booliano. Denota se outra iteração nos dados é necessária.
+- "nextQueryFilters": se outra iteração for necessária, ela conterá a consulta JSON consecutiva a ser executada. Use-o como o parâmetro "Filters" na próxima solicitação.
 
 O exemplo de Python a seguir obtém todas as atividades do dia anterior do Exchange Online.
 

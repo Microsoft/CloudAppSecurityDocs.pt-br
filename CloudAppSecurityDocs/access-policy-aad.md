@@ -2,9 +2,9 @@
 title: Criar políticas de acesso do Cloud App Security para permitir e bloquear o acesso
 description: Este artigo descreve o procedimento para configurar uma política de acesso do Controle de Aplicativos de Acesso Condicional do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD usando as funcionalidades de proxy reverso.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7e490274493d09058f3252724e4ab1ce36b29b56
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 081ecac67dac14443a85bc103294974607e3e106
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565740"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335443"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« ANTERIOR: Como criar uma política de sessão](session-policy-aad.md)<br>
@@ -66,19 +66,19 @@ Para criar uma nova política de acesso, siga este procedimento:
 
 4. Na seção **Atividades que correspondem a todos os seguintes**, em **Origem da atividade**, selecione os filtros de atividade adicionais a serem aplicados à política. Os filtros incluem as seguintes opções: 
      
-   - **Marcas de dispositivo**: Use esse filtro para identificar dispositivos não gerenciados.
+   - **Marcas de dispositivo**: use este filtro para identificar dispositivos não gerenciados.
 
-   - **Localização**: Use esse filtro para identificar localizações desconhecidas (e que, portanto, apresentam riscos). 
+   - **Local**: use este filtro para identificar locais desconhecidos (e, portanto, arriscados). 
 
-   - **Endereço IP**: Use esse filtro para filtrar por endereços IP ou use marcas de endereço IP atribuídas anteriormente. 
+   - **Endereço IP**: use nesse filtro para filtrar por endereços IP ou usar marcas de endereço IP atribuídas anteriormente. 
 
-   - **Marca de agente do usuário**: Use esse filtro para permitir que a heurística identifique aplicativos móveis e da área de trabalho. Esse filtro pode ser definido como igual a ou não é igual a. Os valores devem ser testados nos aplicativos móveis e da área de trabalho para cada aplicativo na nuvem.
+   - **Marca de agente do usuário**: use esse filtro para habilitar que a heurística identifique os aplicativos móveis e de área de trabalho. Esse filtro pode ser definido como igual a ou não é igual a. Os valores devem ser testados nos aplicativos móveis e da área de trabalho para cada aplicativo na nuvem.
   
 5. Em **Ações**, selecione uma das seguintes opções: 
 
-    - **Permitir**: Defina essa ação para permitir explicitamente o acesso de acordo com os filtros de política definidos.
+    - **Permitir**: defina essa ação para permitir o acesso explicitamente de acordo com os filtros de política definidos.
 
-    - **Bloquear**: Defina essa ação para bloquear explicitamente o acesso de acordo com os filtros de política definidos. 
+    - **Bloquear**: defina essa ação para bloquear o acesso explicitamente de acordo com os filtros de política definidos. 
 
 6. Você pode **Criar um alerta para cada evento correspondente com a gravidade da política** e configurar um limite de alerta e selecionar se você deseja o alerta como um email, uma mensagem de texto ou ambos.
 

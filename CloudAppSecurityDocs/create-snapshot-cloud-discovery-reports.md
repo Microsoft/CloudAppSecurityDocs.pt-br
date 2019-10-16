@@ -2,9 +2,9 @@
 title: Criar relatórios de instantâneos do uso de aplicativos na nuvem do Cloud Discovery
 description: Este artigo fornece informações sobre como carregar logs manualmente para criar um relatório de instantâneo de seus aplicativos do Cloud Discovery.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a06200e0256bac49f8a4a4e169898dcb3a09aa7b
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: af9db528ae9e3c3c21e67d502baf2f026d722f68
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568012"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335658"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 É importante carregar um log manualmente e permitir que o Microsoft Cloud App Security o analise antes de tentar usar o coletor de logs automático. Para saber mais sobre como o coletor de logs funciona e o formato esperado de log, confira [Usando logs de tráfego para Cloud Discovery](#log-format).
 
@@ -91,7 +91,7 @@ Portanto, esses atributos não serão exibidos nos dados do Cloud Discovery para
 
 
 Para gerar com êxito um relatório do Cloud Discovery, seus logs de tráfego devem atender às seguintes condições:
-1. [Há suporte para a fonte de dados](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. A [fonte de dados tem suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. O formato de log corresponde ao formato padrão esperado (formato verificado após o upload da Ferramenta de log).
 3. Os eventos têm menos de 90 dias.
 4. O arquivo de log é válido e inclui informações de tráfego de saída.
