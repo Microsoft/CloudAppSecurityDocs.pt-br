@@ -2,9 +2,9 @@
 title: Bloquear downloads de dispositivos não gerenciados com o Controle de Aplicativos de Acesso Condicional do Cloud App Security
 description: Este tutorial descreve o cenário para proteger sua organização contra downloads de dados confidenciais por dispositivos não gerenciados usando as funcionalidades de proxy reverso do Azure AD.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55f6943b6631178dbdc732264082715e2565b633
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b7f4bc220c7643d8aaca34f409ceeb262d5358e4
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568452"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336106"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloquear o download de informações confidenciais 
 
@@ -71,7 +71,7 @@ Depois de concluir essa tarefa, acesse o portal do Cloud App Security e crie uma
 
 4. Atribua uma **Severidade da política** e **Categoria**.
 
-5. Em **Tipo de controle de sessão**, selecione **Controlar download de arquivo (com DLP)**. Essa configuração fornece a capacidade de monitorar tudo o que os usuários fazem em uma sessão do Salesforce, fornecendo o controle para bloquear e proteger downloads em tempo real.
+5. Em **Tipo de controle de sessão**, selecione **Controlar download de arquivo (com DLP)** . Essa configuração fornece a capacidade de monitorar tudo o que os usuários fazem em uma sessão do Salesforce, fornecendo o controle para bloquear e proteger downloads em tempo real.
 
 6. Em **Origem da atividade** na seção **Atividades que correspondem a todos os seguintes**, selecione os filtros: 
 
