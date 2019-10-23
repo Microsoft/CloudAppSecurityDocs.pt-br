@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97d006399582e653322910803aaeec04f74582d0
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: f9aa6d02b22719fa23d76ef619461a273e267740
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997428"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336214"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -106,6 +106,9 @@ Agora o Cloud App Security inclui novos modelos de políticas de atividade inter
 - **Aviso: Fim do suporte para o TLS 1.0 e 1.1 em 8 de setembro**  
 A Microsoft está migrando todos os seus serviços online para o protocolo TLS 1.2+ para fornecer a melhor criptografia. Portanto, a partir de 8 de setembro de 2019, o Cloud App Security não dará mais suporte a TLS 1.0 e 1.1, e as conexões que usam esses protocolos não serão compatíveis. Para obter mais informações sobre como a alteração afeta você, confira [nossa postagem no blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
 
+- **Lógica aprimorada para atividades de entrada interativas (distribuição gradual)**  
+Estamos fazendo a distribuição gradual de uma nova lógica para identificar se uma atividade de entrada do Azure Active Directory é interativa. A nova lógica aprimora a capacidade do Cloud App Security de exibir apenas atividades de entrada iniciadas por um usuário.
+
 ## <a name="cloud-app-security-release-154"></a>Cloud App Security versão 154
 
 Lançado em 21 de julho de 2019
@@ -166,6 +169,8 @@ O Cloud App Security agora dá suporte à configuração da ação de governanç
 O Cloud App Security agora dá suporte à ação de governança da **Lixeira** para o Google Drive – essa ação de governança fornece a capacidade de mover arquivos do Google Drive para a pasta da lixeira.
 - **Nova permissão para as funções de administrador do aplicativo e administrador de grupo**  
 As funções *Administrador de aplicativo/instância* e *Administrador de grupo de usuários* agora dão suporte ao acesso somente leitura.
+- **Atividades de entrada com autenticação herdada (distribuição gradual)**  
+O Cloud App Security agora exibe atividades de entrada do Azure Active Directory que usam protocolos herdados, como o ActiveSync. Essas atividades de entrada podem ser exibidas no log de atividades e usadas durante a configuração de políticas.
 
 ## <a name="cloud-app-security-release-150"></a>Cloud App Security, lançamento 150
 
