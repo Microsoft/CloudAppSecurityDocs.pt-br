@@ -14,11 +14,13 @@
           href: editions-cloud-app-security-o365.md
         - name: AD do Azure
           href: editions-cloud-app-security-aad.md
-- name: Guias de início rápido
+- name: Inícios rápidos
   expanded: true
   items:
     - name: Introdução
       href: getting-started-with-cloud-app-security.md
+    - name: Práticas recomendadas
+      href: best-practices.md
 - name: Tutoriais
   items:
     - name: Descobrir e gerenciar a TI sombra
