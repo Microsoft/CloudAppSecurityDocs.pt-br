@@ -14,7 +14,7 @@
           href: editions-cloud-app-security-o365.md
         - name: AD do Azure
           href: editions-cloud-app-security-aad.md
-- name: Inícios rápidos
+- name: Guias de início rápido
   expanded: true
   items:
     - name: Introdução
@@ -210,8 +210,10 @@
           href: azip-integration.md
         - name: Integrate with extrnal solutions (Integrar com soluções externas)
           items:
-            - name: Integração ao SIEM
+            - name: Integração genérica ao SIEM
               href: siem.md
+            - name: Integração do Azure Sentinel
+              href: siem-sentinel.md
             - name: Integração de DLP externa
               href: icap-stunnel.md
         - name: Automate processes and workflows (Automatizar processos e fluxos de trabalho)
