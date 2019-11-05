@@ -14,6 +14,8 @@
           href: editions-cloud-app-security-o365.md
         - name: AD do Azure
           href: editions-cloud-app-security-aad.md
+        - name: US Government GCC High
+          href: editions-cloud-app-security-gcc.md
 - name: Guias de início rápido
   expanded: true
   items:
@@ -117,6 +119,8 @@
           href: connect-dropbox-to-microsoft-cloud-app-security.md
         - name: Conectar o G Suite
           href: connect-google-apps-to-microsoft-cloud-app-security.md
+        - name: Conectar o GCP
+          href: connect-google-gcp-to-microsoft-cloud-app-security.md
         - name: Conectar o Office 365
           href: connect-office-365-to-microsoft-cloud-app-security.md
         - name: Conectar o Okta
@@ -125,7 +129,7 @@
           href: connect-salesforce-to-microsoft-cloud-app-security.md
         - name: Conectar o ServiceNow
           href: connect-servicenow-to-microsoft-cloud-app-security.md
-        - name: Conectar o WebEx
+        - name: Conectar o Webex
           href: connect-webex-to-microsoft-cloud-app-security.md
         - name: Connect Workday (Conectar o Workday)
           href: connect-workday-to-microsoft-cloud-app-security.md

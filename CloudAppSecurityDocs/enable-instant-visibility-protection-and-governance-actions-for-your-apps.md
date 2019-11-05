@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9de8c36beed2ffb83152f2ff58da36b897c7026f
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d435d8b12e5cc90de2c8d4816d1f1b93ddb5d0a8
+ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084568"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73463621"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Os conectores de aplicativos usam as APIs de provedores de aplicativos para permitir maior visibilidade e controle com o Microsoft Cloud App Security sobre os aplicativos aos quais você se conecta.
 
@@ -68,22 +68,22 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Workday**|
-> |-|-|-|-|-|-|-|-|-|-|-|
-> |**Listar contas**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|Não aplicável|Não aplicável|
-> |**Privilégios**|✔|✔|Sem suporte pelo provedor|✔|✔|✔|✔||✔|Não aplicável|
-> |**Governança de usuário**|✔|✔||✔|Em breve|Em breve|Em breve||Em breve|Em breve|
-> |**Atividade de logon**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Atividade do usuário**|✔*|✔|✔|✔ – requer o Google Business ou Enterprise|Parcial|Com suporte com o Salesforce Shield|✔|Não Aplicável|✔|✔|
-> |**Atividade administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|
-> |**Verificação de arquivo periódica**|✔|✔|Não Aplicável|✔|✔|✔|✔|Não Aplicável|||
-> |**Verificação de arquivo quase em tempo real**|✔|✔|Não aplicável|✔ – requer o Google Business ou Enterprise|||Em breve||✔||
-> |**Controle de compartilhamento**|✔|✔|Não Aplicável|✔|Não Aplicável||✔||✔||
-> |**Quarentena**|✔|✔|Não Aplicável|Em breve|||Em breve||Não aplicável|Não aplicável|
-> |**Exibir permissões de aplicativo**|✔|Sem suporte pelo provedor|Não Aplicável|✔||✔|Sem suporte pelo provedor||Não aplicável|Não aplicável|
-> |**Revogar permissões de aplicativo**|✔||Não Aplicável|✔||✔|Não aplicável||Não aplicável|Não aplicável|
-> |**Aplique os rótulos da Proteção de Informações do Azure**|✔|✔||✔|||||Não aplicável|Não aplicável|
+> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**WebEx**|**Workday**|
+> |-|-|-|-|-|-|-|-|-|-|-|-|
+> |**Listar contas**|✔|✔|✔|Sujeito à conexão do G Suite|✔|✔|✔|✔|✔|✔|✔|
+> |**Grupo**|✔|✔|✔|Sujeito à conexão do G Suite|✔|✔|✔|✔|✔|Não Aplicável|Não Aplicável|
+> |**Privilégios**|✔|✔|Sem suporte pelo provedor|Sujeito à conexão do G Suite|✔|✔|✔|✔||✔|Não Aplicável|
+> |**Governança de usuário**|✔|✔||Sujeito à conexão do G Suite|✔|Em breve|✔|Em breve||Em breve|Em breve|
+> |**Atividade de logon**|✔|✔|✔|Sujeito à conexão do G Suite|✔|✔|✔|✔|✔|✔|✔|
+> |**Atividade do usuário**|✔*|✔|✔|✔|✔ – requer o Google Business ou Enterprise|Parcial|Com suporte com o Salesforce Shield|✔|Não Aplicável|✔|✔|
+> |**Atividade administrativa**|✔|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|
+> |**Verificação de arquivo periódica**|✔|✔|Não Aplicável||✔|✔|✔|✔|Não Aplicável|||
+> |**Verificação de arquivo quase em tempo real**|✔|✔|Não Aplicável||✔ – requer o Google Business ou Enterprise|||Em breve||✔||
+> |**Controle de compartilhamento**|✔|✔|Não Aplicável||✔|Não Aplicável||✔||✔||
+> |**Quarentena**|✔|✔|Não Aplicável||Em breve|||Em breve||Não Aplicável|Não Aplicável|
+> |**Exibir permissões de aplicativo**|✔|Sem suporte pelo provedor|Não Aplicável||✔||✔|Sem suporte pelo provedor||Não Aplicável|Não Aplicável|
+> |**Revogar permissões de aplicativo**|✔||Não Aplicável||✔||✔|Não Aplicável||Não Aplicável|Não Aplicável|
+> |**Aplique os rótulos da Proteção de Informações do Azure**|✔|✔|||✔|||||Não Aplicável|Não Aplicável|
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -100,14 +100,15 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 |-----|--------------|------|
 | Azure | | Administrador global |
 | AWS | | Usuário recém-criado |
-| Caixa | Enterprise | É altamente recomendável que você se conecte ao Box como um Administrador. A conexão como Coadministrador resultará em uma visibilidade apenas parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
-| Dropbox | Business/Enterprise | Administrador |
-| G Suite | G Suite Business ou Enterprise preferencial<br /><br /> G Suite Enterprise (no mínimo) | Superadministrador |
+| Caixa | Enterprise | É altamente recomendável que você se conecte ao box como um administrador. Conectar-se como um coadministrador resultará em apenas visibilidade parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
+| Dropbox | Business/Enterprise | Administração |
+| GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (não de avaliação) | Administrador |
-| Salesforce | | Administrador |
+| Okta | Enterprise (não de avaliação) | Administração |
+| Salesforce | | Administração |
 | ServiceNow | Eureka e superior | Função admin + RestAPI |
-| Webex | | Admin + administrador de conformidade |
+| WebEx | | Admin + administrador de conformidade |
 | Workday | | Consulte os [pré-requisitos do workday de conexão](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
