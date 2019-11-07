@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: fd20bf2a372c934f0603ba6cf709a5220c3f91a8
-  ms.sourcegitcommit: 3a44f020c6ae7f6c4956bf53727dfb0e82fd7cf0
+  ms.openlocfilehash: e998c613f893791e089c27a5f75daaa579bd3ea6
+  ms.sourcegitcommit: b0361f470e6bdcd0a8a502c5bf1f8a09533eaa14
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 10/24/2019
-  ms.locfileid: "72887881"
+  ms.lasthandoff: 11/06/2019
+  ms.locfileid: "73649251"
 landingContent:
 - title: Sobre o Cloud App Security
   linkLists:
@@ -31,6 +31,10 @@ landingContent:
     links:
     - text: Versões
       url: release-notes.md
+  - linkListType: video
+    links:
+    - text: Vídeos de implantação
+      url: https://go.microsoft.com/fwlink/?linkid=2110166
 - title: Introdução
   linkLists:
   - linkListType: quickstart
