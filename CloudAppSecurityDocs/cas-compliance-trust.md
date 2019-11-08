@@ -5,16 +5,16 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
-ms.date: 8/21/2019
+ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 84c33ba29a0d63e5476186a417aae749f6f97825
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: de625987873d60b99f39579ea6694dacccfd4479
+ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083809"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462105"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Privacidade e segurança de dados do Microsoft Cloud App Security
 
@@ -141,7 +141,7 @@ O Microsoft Cloud App Security permite que você limite o acesso dos administrad
 
 ### <a name="permissions"></a>Permissões
 
-O Microsoft Cloud App Security é compatível com o controle de acesso baseado em função. O Office 365 e as funções de administrador Global e de Segurança do Azure Active Directory têm acesso total ao Cloud App Security, e os leitores de Segurança têm acesso de leitura. [Para saber mais](https://docs.microsoft.com/cloud-app-security/manage-admins).
+O Microsoft Cloud App Security é compatível com o controle de acesso baseado em função. O Office 365 e as funções de administrador Global e de Segurança do Azure Active Directory têm acesso total ao Cloud App Security, e os leitores de Segurança têm acesso de leitura. [Para saber mais](/cloud-app-security/manage-admins).
 
 ## <a name="customer-controls-for-organizational-compliance"></a>Controles de cliente para conformidade organizacional
 
@@ -151,13 +151,17 @@ O Microsoft Cloud App Security permite definir o escopo da implantação. A defi
 
 ### <a name="anonymization"></a>Anonimização
 
-Você pode optar por manter os relatórios do **Cloud Discovery** anônimos. Após o upload dos arquivos de log no **Microsoft** Cloud App Security, todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Para investigações de segurança específicas, você pode resolver o nome de usuário real. Dados particulares são criptografados usando AES-128 com uma chave dedicada por locatário. [Para saber mais](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
+Você pode optar por manter os relatórios do **Cloud Discovery** anônimos. Após o upload dos arquivos de log no **Microsoft** Cloud App Security, todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Para investigações de segurança específicas, você pode resolver o nome de usuário real. Dados particulares são criptografados usando AES-128 com uma chave dedicada por locatário. [Para saber mais](/cloud-app-security/cloud-discovery-anonymizer).
+
+## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Segurança e privacidade para clientes do US Government GCC High do Cloud App Security
+
+Para saber mais sobre os padrões de conformidade do Cloud App Security e o local dos dados dos clientes do US Government GCC High, confira a [Descrição do serviço Enterprise Mobility + Security para US Government](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
 
 ## <a name="next-steps"></a>Próximas etapas
 
 [Visão geral do Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-[Documentação do Cloud App Security](https://docs.microsoft.com/cloud-app-security/)
+[Documentação do Cloud App Security](/cloud-app-security/)
 
 [Inscrição no Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
