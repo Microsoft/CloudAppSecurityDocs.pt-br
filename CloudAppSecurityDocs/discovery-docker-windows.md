@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ee4e89108ecb6e7db6e95f4d5c0a7730fc1ee07c
-ms.sourcegitcommit: b0361f470e6bdcd0a8a502c5bf1f8a09533eaa14
+ms.openlocfilehash: 7ec699e9fa3570d904ad31dd38079557253ad106
+ms.sourcegitcommit: b39dbead19ac8b81e6aad93cf6c454032eeb0858
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649262"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73906645"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -28,28 +28,36 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- SO: **Windows 10** (atualização para criadores do outono) ou Windows Server **versão 1709 +**
+* SO: **Windows 10** (atualização para criadores do outono) ou Windows Server **versão 1709 +**
 
-- Espaço em disco: 250 GB
+* Espaço em disco: 250 GB
 
-- CPU: 2
+* CPU: 2
 
-- RAM: 4 GB
+* RAM: 4 GB
 
-- Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md#log-collector)
+* Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md#log-collector)
 
-- A virtualização no sistema operacional deve ser habilitada com o Hyper-V
+* A virtualização no sistema operacional deve ser habilitada com o Hyper-V
 
 > [!IMPORTANT]
 > Um usuário deve estar conectado para que o Docker colete logs. Recomendamos que o usuário do Docker se desconecte sem sair.
+
+> [!NOTE]
+> Se você tiver um coletor de logs existente e quiser removê-lo antes de implantá-lo novamente, ou se simplesmente quiser removê-lo, execute os seguintes comandos:
+>
+> ```console
+> docker stop <collector_name>
+> docker rm <collector_name>
+> ```
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 
 O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB por hora. Os principais gargalos no processo de coleta de logs são:
 
-- Largura de banda da rede – a largura de banda da rede determina a velocidade de upload do log.
+* Largura de banda da rede – a largura de banda da rede determina a velocidade de upload do log.
 
-- Desempenho de E/S da máquina virtual – determina a velocidade em que os logs são gravados no disco do coletor de logs. O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se a configuração geralmente excede 50 GB por hora, recomendamos que você divida o tráfego entre vários coletores de logs.
+* Desempenho de E/S da máquina virtual – determina a velocidade em que os logs são gravados no disco do coletor de logs. O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se a configuração geralmente excede 50 GB por hora, recomendamos que você divida o tráfego entre vários coletores de logs.
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração
 
@@ -57,53 +65,45 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 1. Acesse a página de configurações **Upload automático de logs**.
 
-    a. No portal do Cloud App Security, clique no ícone de configurações antes de **Coletores de log**.
+    1. No portal do Cloud App Security, clique no ícone de configurações antes de **Coletores de log**.
 
     ![ícone de configurações](./media/settings-icon.png)
 
-2. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
+1. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
 
-    a. Clique em **Adicionar fonte de dados**.
+    1. Clique em **Adicionar fonte de dados**.
+    ![adicionar uma fonte de dados](./media/add-data-source.png)
+    1. Atribua o **Nome** do proxy ou firewall.
+    ![ubuntu1](./media/ubuntu1.png)
+    1. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
+    1. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
+    1. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
 
-    ![Adicionar uma fonte de dados](./media/add-data-source.png)
+    > [!NOTE]
+    > A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
 
-    b. Atribua o **Nome** do proxy ou firewall.
+    f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede. É recomendável configurar uma fonte de dados dedicada por dispositivo de rede para permitir que você:
 
-        ![ubuntu1](./media/ubuntu1.png)
+        * Monitor the status of each device separately, for investigation purposes.
+        * Explore Shadow IT Discovery per device, if each device is used by a different user segment.
 
-    c. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
+1. Vá para a guia **Coletores de logs** na parte superior.
 
-    d. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
+    1. Clique em **Adicionar coletor de logs**.
+    1. Atribua um **nome** ao coletor de logs.
+    1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
+    1. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
+    ![ubuntu2](./media/ubuntu2.png)
 
-    e. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+    > [!NOTE]
+    > * Um único coletor de logs pode lidar com várias fontes de dados.
+    > * Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
 
-    >[!NOTE]
-    >A integração com protocolos de transferência segura (FTPS e Syslog – TLS) geralmente requer configuração adicional ou seu firewall/proxy.
+1. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone Copiar para área de transferência, ![ícone Copiar para área de transferência](./media/copy-icon.png). Você precisará dele mais tarde.
 
-    f. Repita esse processo para cada firewall e proxy cujos logs podem ser usados para detectar o tráfego na rede. É recomendável configurar uma fonte de dados dedicada por dispositivo de rede para permitir que você:-monitore o status de cada dispositivo separadamente, para fins de investigação.
-        – Explore o Shadow IT Discovery por dispositivo, se cada dispositivo for usado por um segmento de usuários diferente.
+1. **Exportar** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
 
-3. Vá para a guia **Coletores de logs** na parte superior.
-
-   a. Clique em **Adicionar coletor de logs**.
-
-   b. Atribua um **nome** ao coletor de logs.
-
-   c. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
-
-   d. Selecione todas as **Fontes de dados** que quer conectar ao coletor e clique em **Atualizar** para salvar a configuração e consulte as próximas etapas de implantação.
-
-   ![ubuntu2](./media/ubuntu2.png)
-
-   > [!NOTE]
-   > - Um único coletor de logs pode lidar com várias fontes de dados.
-   > - Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
-
-4. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone Copiar para área de transferência, ![ícone Copiar para área de transferência](./media/copy-icon.png). Você precisará dele mais tarde.
-
-5. **Exportar** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
-
-   ![Crie o coletor de logs](./media/windows7.png)
+    ![Crie o coletor de logs](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – Implantação local de seu computador
 
@@ -111,40 +111,45 @@ As etapas a seguir descrevem a implantação no Windows. As etapas de implantaç
 
 1. Abra um terminal do PowerShell como administrador em seu computador Windows.
 
-2. Execute o seguinte comando para baixar o arquivo de script do Windows Docker Installer PowerShell: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Execute o seguinte comando para baixar o arquivo de script do Windows Docker Installer PowerShell: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
     Para validar que o instalador é assinado pela Microsoft, consulte [validar assinatura do instalador](#validate-signature)
 
-3. Para habilitar a execução de script do PowerShell, execute `Set-ExecutionPolicy RemoteSigned`
+1. Para habilitar a execução de script do PowerShell, execute `Set-ExecutionPolicy RemoteSigned`
 
-4. Execute: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` isso instala o cliente do Docker em seu computador. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente. **Verifique se o cliente do Docker está definido para usar contêineres do Linux.**
+1. Execute: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` isso instala o cliente do Docker em seu computador. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente. **Verifique se o cliente do Docker está definido para usar contêineres do Linux.**
 
-5. Após cada reinicialização, abra um terminal do PowerShell como administrador em seu computador e execute novamente: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Após cada reinicialização, abra um terminal do PowerShell como administrador em seu computador e execute novamente: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-6. Antes da conclusão da instalação, você precisará colar o comando de execução que copiou anteriormente.
+1. Antes da conclusão da instalação, você precisará colar o comando de execução que copiou anteriormente.
 
-7. Implante a imagem do coletor no computador de hospedagem importando a configuração do coletor. Importe a configuração copiando o comando de execução gerado no portal. Caso precise configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:
+1. Implante a imagem do coletor no computador de hospedagem importando a configuração do coletor. Importe a configuração copiando o comando de execução gerado no portal. Caso precise configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:
 
-    `(echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
+    ```console
+    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+    ```
 
-   ![Crie o coletor de logs](./media/windows7.png)
-8. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs <collector_name>`
+    ![Crie o coletor de logs](./media/windows7.png)
+
+1. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs <collector_name>`
 
 Você deverá ver a mensagem **Concluído com êxito!**
 
-  ![ubuntu8](./media/ubuntu8.png)
+![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
 Configure os proxies e os firewalls de rede para periodicamente exportar logs para a porta do Syslog dedicada do diretório de FTP de acordo com as instruções na caixa de diálogo. Por exemplo:
 
-    BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
+```console
+BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
+```
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Etapa 4 — Verificar a implantação bem-sucedida no portal do Cloud App Security
 
 Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **Criado**, talvez a conexão do coletor de logs e a análise não tenham sido concluídas.
 
- ![ubuntu9](./media/ubuntu9.png)
+![ubuntu9](./media/ubuntu9.png)
 
 Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
 
@@ -155,8 +160,8 @@ Se houver problemas durante a implantação, confira [Solução de problemas do 
 Verifique se os logs estão sendo carregados no Cloud App Security e se os relatórios são gerados. Após a verificação, crie relatórios personalizados. Crie relatórios de descoberta personalizados com base em grupos de usuários do Azure Active Directory. Por exemplo, caso deseje ver o uso de nuvem de seu departamento de marketing, importe o grupo de marketing usando o recurso Importar grupo de usuários. Em seguida, crie um relatório personalizado para esse grupo. Você também pode personalizar um relatório com base na marca do endereço IP ou intervalos de endereços IP.
 
 1. No portal do Cloud App Security, na engrenagem Configurações, selecione Configurações do Cloud Discovery e, em seguida, **Relatórios contínuos**.
-2. Clique no botão **Criar relatório** e preencha os campos.
-3. Em **Filtros**, você pode filtrar os dados de acordo com a fonte de dados, por [grupo de usuários importados](user-groups.md) ou por [marcas e intervalos de endereços IP](ip-tags.md).
+1. Clique no botão **Criar relatório** e preencha os campos.
+1. Em **Filtros**, você pode filtrar os dados de acordo com a fonte de dados, por [grupo de usuários importados](user-groups.md) ou por [marcas e intervalos de endereços IP](ip-tags.md).
 
     ![Relatório contínuo personalizado](./media/custom-continuous-report.png)
 
@@ -165,8 +170,8 @@ Verifique se os logs estão sendo carregados no Cloud App Security e se os relat
 Para verificar se o instalador do Docker é assinado pela Microsoft:
 
 1. Clique com o botão direito do mouse no arquivo e selecione **Propriedades**.
-2. Clique em **Assinaturas Digitais** e verifique se a mensagem **Esta assinatura digital está correta** é exibida.
-3. Verifique se **Microsoft Corporation** está listada como a única entrada em **Nome do signatário**.
+1. Clique em **Assinaturas Digitais** e verifique se a mensagem **Esta assinatura digital está correta** é exibida.
+1. Verifique se **Microsoft Corporation** está listada como a única entrada em **Nome do signatário**.
 
     ![Assinatura digital válida](./media/digital-signature-successful.png)
 
