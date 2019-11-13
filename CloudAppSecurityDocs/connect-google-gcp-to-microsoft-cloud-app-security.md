@@ -9,12 +9,12 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 80bc690185f9161137bc34c59e307894b05969a3
-ms.sourcegitcommit: 7c8e798e1a15a0b37899fa5e3f8ea29f6721d0a8
+ms.openlocfilehash: 27d32ca6daf7221d84b0cb0942d42c3555049e43
+ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73536725"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73934493"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security (versão prévia)
 
@@ -53,11 +53,10 @@ Crie um projeto dedicado no GCP em sua organização para habilitar o isolamento
 
     ![Captura de tela mostrando a caixa de diálogo Criar projeto do GCP](media/connect-gcp-create-project.png)
 
-> [!NOTE]
-> Depois que o projeto for criado, verifique se:
->
-> * O projeto dedicado é selecionado na lista suspensa na parte superior.
-> * A API pub/sub está habilitada. Para habilitar, vá para a guia pub/sub.
+### <a name="enable-the-pubsub-api"></a>Habilitar a API pub/sub
+
+1. Alterne para o projeto dedicado.
+1. Vá para a guia pub/sub. Uma mensagem de ativação de serviço deve ser exibida.
 
 ### <a name="create-a-dedicated-service-account-for-the-integration"></a>Criar uma conta de serviço dedicada para a integração
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 11/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d435d8b12e5cc90de2c8d4816d1f1b93ddb5d0a8
-ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
+ms.openlocfilehash: 1b153713784c737aeb5e863f99ed2196d471b2b8
+ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463621"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73934467"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -68,22 +68,22 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**WebEx**|**Workday**|
+> | | AWS | Caixa | Dropbox | GCP | G Suite | Office 365 | Okta | Serviço agora | Salesforce | WebEx | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
-> |**Listar contas**|✔|✔|✔|Sujeito à conexão do G Suite|✔|✔|✔|✔|✔|✔|✔|
-> |**Grupo**|✔|✔|✔|Sujeito à conexão do G Suite|✔|✔|✔|✔|✔|Não Aplicável|Não Aplicável|
-> |**Privilégios**|✔|✔|Sem suporte pelo provedor|Sujeito à conexão do G Suite|✔|✔|✔|✔||✔|Não Aplicável|
-> |**Governança de usuário**|✔|✔||Sujeito à conexão do G Suite|✔|Em breve|✔|Em breve||Em breve|Em breve|
-> |**Atividade de logon**|✔|✔|✔|Sujeito à conexão do G Suite|✔|✔|✔|✔|✔|✔|✔|
-> |**Atividade do usuário**|✔*|✔|✔|✔|✔ – requer o Google Business ou Enterprise|Parcial|Com suporte com o Salesforce Shield|✔|Não Aplicável|✔|✔|
-> |**Atividade administrativa**|✔|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|
-> |**Verificação de arquivo periódica**|✔|✔|Não Aplicável||✔|✔|✔|✔|Não Aplicável|||
-> |**Verificação de arquivo quase em tempo real**|✔|✔|Não Aplicável||✔ – requer o Google Business ou Enterprise|||Em breve||✔||
-> |**Controle de compartilhamento**|✔|✔|Não Aplicável||✔|Não Aplicável||✔||✔||
-> |**Quarentena**|✔|✔|Não Aplicável||Em breve|||Em breve||Não Aplicável|Não Aplicável|
-> |**Exibir permissões de aplicativo**|✔|Sem suporte pelo provedor|Não Aplicável||✔||✔|Sem suporte pelo provedor||Não Aplicável|Não Aplicável|
-> |**Revogar permissões de aplicativo**|✔||Não Aplicável||✔||✔|Não Aplicável||Não Aplicável|Não Aplicável|
-> |**Aplique os rótulos da Proteção de Informações do Azure**|✔|✔|||✔|||||Não Aplicável|Não Aplicável|
+> | **Listar contas** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Listar grupos** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
+> | **Listar privilégios** | | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Não pported por provedor |
+> | **Governança de usuário** | | ✔ | Em breve | Conexão do pacote G do assunto | ✔ | ✔ | | Em breve | ✔ | Em breve | t com suporte do provedor |
+> | **Atividade de logon** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Atividade do usuário** | Não Aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o lesforce Shield | ✔ | ✔ |
+> | **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
+> | **DLP – verificação periódica** | | ✔ | Em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | | | Sem suporte do ovider |
+> | **DLP – verificação quase em tempo real** | | ✔ | ✔ | Não Aplicável | ✔-requer o Google Business Enterprise | ✔ | Não Aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+> | **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | Não Aplicável | | ✔ | Sem suporte do ovider |
+> | **Governança de arquivos** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | | Sem suporte pelo provedor |
+> | **Exibir permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Chegando em | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não Aplicável | Não Aplicável |
+> | **Revogar permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Ming em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não Aplicável | Não Aplicável |
+> | **Aplique os rótulos da Proteção de Informações do Azure** | Não Aplicável | ✔ | | Não Aplicável | ✔ | ✔ | Não Aplicável | | | Não Aplicável | Não Aplicável |
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
