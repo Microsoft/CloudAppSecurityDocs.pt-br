@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e505044d94ce633bdba5f2b684873391d57f772
-ms.sourcegitcommit: 3a44f020c6ae7f6c4956bf53727dfb0e82fd7cf0
+ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
+ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72887938"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74143463"
 ---
 # <a name="cloud-app-security-best-practices"></a>Práticas recomendadas de Cloud App Security
 
@@ -34,7 +34,7 @@ As práticas recomendadas abordadas neste artigo incluem:
 > * [Use a trilha de auditoria das atividades para investigações forenses](#use-the-audit-trail-of-activities-for-forensic-investigations)
 > * [Proteger serviços de IaaS e aplicativos personalizados](#secure-iaas-services-and-custom-apps)
 
-## <a name="discover-and-assess-cloud-apps"></a>Descubra e avalie aplicativos de nuvem
+## <a name="discover-and-assess-cloud-apps"></a>Descobrir e avaliar aplicativos de nuvem
 
 A integração do Cloud App Security à proteção avançada contra ameaças do Microsoft defender (Microsoft defender ATP) oferece a capacidade de usar Cloud Discovery além da rede corporativa ou de gateways Web seguros. Com as informações de usuário e computador combinadas, você pode identificar usuários ou máquinas arriscados, ver quais aplicativos eles estão usando e investigar ainda mais no portal do Microsoft defender ATP.
 
@@ -167,7 +167,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 ---
 ---
 
-## <a name="enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud"></a>Impor políticas de conformidade e DLP para dados armazenados na nuvem
+## <a name="enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud"></a>Impor políticas de conformidade e DLP (proteção contra perda de dados) para dados armazenados na nuvem
 
 **Prática recomendada**: proteger dados confidenciais de serem compartilhados com usuários externos  
 **Detalhe**: Crie uma política de arquivo que detecta quando um usuário tenta compartilhar um arquivo com o rótulo de classificação **confidencial** com alguém externo à sua organização e configura sua ação de governança para remover usuários externos. Essa política garante que seus dados confidenciais não deixem sua organização e os usuários externos não podem obter acesso a ele.  
@@ -194,7 +194,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 ---
 ---
 
-## <a name="secure-collaboration-with-external-users-by-enforcing-real-time-session-controls"></a>Colaboração segura com usuários externos impondo controles de sessão em tempo real
+## <a name="secure-collaboration-with-external-users-by-enforcing-real-time-session-controls"></a>Proteger a colaboração com usuários externos ao impor controles de sessão em tempo real
 
 **Prática recomendada**: monitorar sessões com usuários externos usando controle de aplicativos de acesso condicional  
 **Detalhe**: para proteger a colaboração em seu ambiente, você pode criar uma política de sessão para monitorar sessões entre seus usuários internos e externos. Isso não apenas oferece a capacidade de monitorar a sessão entre os usuários (e notificá-los de que suas atividades de sessão estão sendo monitoradas), mas também permite que você limite atividades específicas também. Ao criar políticas de sessão para monitorar a atividade, você pode escolher os aplicativos e os usuários que deseja monitorar.  
@@ -208,7 +208,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 ---
 ---
 
-## <a name="detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware"></a>Detecte ameaças à nuvem, contas comprometidas, pessoas mal-intencionadas e ransomware
+## <a name="detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware"></a>Detectar ameaças à nuvem, contas comprometidas, pessoas mal-intencionadas e ransomware
 
 **Prática recomendada**: ajustar as políticas de anomalias, definir intervalos de IP, enviar comentários para alertas  
 **Detalhe**: as políticas de detecção de anomalias fornecem Ueba (análise comportamental do usuário e entidade) e o ml (aprendizado de máquina) prontos para que você possa executar imediatamente a detecção avançada de ameaças em seu ambiente de nuvem.
@@ -250,7 +250,7 @@ As políticas de detecção de anomalias são disparadas quando há atividades i
 ---
 ---
 
-## <a name="use-the-audit-trail-of-activities-for-forensic-investigations"></a>Use a trilha de auditoria das atividades para investigações forenses
+## <a name="use-the-audit-trail-of-activities-for-forensic-investigations"></a>Usar a trilha de auditoria das atividades para investigações forenses
 
 **Prática recomendada**: usar a trilha de auditoria de atividades ao investigar alertas  
 **Detalhe**: os alertas são disparados quando as atividades de usuário, administrador ou entrada não estão em conformidade com suas políticas. É importante investigar alertas para entender se há uma possível ameaça em seu ambiente.
@@ -267,7 +267,7 @@ Ao ignorar alertas, é importante investigar e entender por que eles não têm i
 ---
 ---
 
-## <a name="secure-iaas-services-and-custom-apps"></a>Proteger serviços de IaaS e aplicativos personalizados
+## <a name="secure-iaas-services-and-custom-apps"></a>Proteger serviços de IaaS (infraestrutura como serviço) e aplicativos personalizados
 
 **Prática recomendada**: conectar o Azure e o AWS  
 **Detalhe**: conectar cada um desses aplicativos de armazenamento em nuvem para Cloud app Security ajuda a melhorar seus recursos de detecções de ameaças. Ao monitorar atividades administrativas e de entrada para esses serviços, você pode detectar e ser notificado sobre possíveis ataques de força bruta, uso mal-intencionado de uma conta de usuário com privilégios e outras ameaças em seu ambiente. Por exemplo, você pode identificar riscos como exclusões incomuns de VMs ou até mesmo atividades de representação nesses aplicativos.  
@@ -278,7 +278,7 @@ Ao ignorar alertas, é importante investigar e entender por que eles não têm i
 
 ---
 
-**Prática recomendada**: examinar o CSPM para Azure e AWS  
+**Prática recomendada**: examinar as avaliações de configuração de segurança do Azure e do AWS  
 **Detalhe**: a integração com a central de segurança do Azure fornece uma avaliação de configuração de segurança de seu ambiente do Azure. A avaliação fornece recomendações para a configuração e o controle de segurança ausentes. A revisão dessas recomendações ajuda a identificar anomalias e possíveis vulnerabilidades em seu ambiente e navegar diretamente no local relevante no portal de segurança do Azure para resolvê-las.
 
 O AWS oferece a capacidade de obter visibilidade de suas recomendações de configurações de segurança sobre como melhorar sua segurança de nuvem. Com essas recomendações, você pode monitorar o status de conformidade de suas contas do AWS.  

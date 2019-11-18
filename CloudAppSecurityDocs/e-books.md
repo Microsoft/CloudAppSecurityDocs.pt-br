@@ -7,20 +7,20 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/22/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 35c20daf40d2e1b5c61bcc7d9d2f3589dbb95834
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 32dde1dcb79f617863701c1dcce3d6d8254deff0
+ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084596"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74143468"
 ---
-# <a name="microsoft-cloud-app-security-webinars"></a>Microsoft Cloud App Security webinars
+# <a name="microsoft-cloud-app-security-e-books"></a>Livros eletrônicos do Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Leia nossos livros eletrônicos para saber mais sobre Microsoft Cloud App Security, seus principais casos de uso e práticas recomendadas de implantação para ajudá-lo a proteger melhor seus ambientes de nuvem.
 
-| Título | Descrição |
+| Título | Description |
 | --- | --- |
 | **Visão geral**<br>[Leia agora](https://go.microsoft.com/fwlink/p/?linkid=2079728) | Leia sobre Cloud App Security e como ele se integra nativamente às principais soluções da Microsoft para fornecer implantação simples, gerenciamento centralizado e recursos inovadores de automação. |
 | **Shadow IT Discovery**<br>[Leia agora](https://go.microsoft.com/fwlink/p/?linkid=2079805) | Identificar aplicativos de nuvem e serviços usados por sua organização. Avalie os níveis de risco e a preparação para os negócios de mais de 16.000 aplicativos com mais de 70 fatores de risco e comece a gerenciá-los para garantir a segurança e a conformidade. |
