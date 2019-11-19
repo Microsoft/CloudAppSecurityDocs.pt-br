@@ -5,55 +5,59 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/11/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ef6132edd549f9d2552932bb9532650719331a4
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 390a9d5e9bff785b67f21802d4d0800af5640193
+ms.sourcegitcommit: 748c6f8cb234b303770814d8e63406a0bad36cd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084267"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74154877"
 ---
 # <a name="investigate"></a>Investigar
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Depois que o Microsoft Cloud App Security for executado no ambiente de nuvem, você precisará de um estágio de aprendizado e investigação. Saiba como usar as ferramentas do Microsoft Cloud App Security para obter uma compreensão mais profunda do que está acontecendo em seu ambiente de nuvem. De acordo com seu ambiente específico e como ele está sendo usado, você pode identificar os requisitos para proteger sua organização contra riscos. Este artigo descreve como fazer uma investigação para obter uma melhor compreensão sobre seu ambiente de nuvem.
 
 ## <a name="dashboards"></a>Painéis
+
 Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos no seu ambiente de nuvem:
 
-|Painel|Descrição|
+|Dashboard|Description|
 |---------------|-----------------|
 |Painel principal|Visão geral do status de nuvem (usuários, arquivos, atividades) e ações necessárias (alertas, violações de atividade e violações de conteúdo).|
 |Painel do aplicativo: visão geral|Visão geral do uso do aplicativo por local, gráficos de uso por número de usuários.|
 |Painel do aplicativo: informações|Informações sobre detalhes, segurança e conformidade do aplicativo.|
-|Painel do aplicativo: insights<br />*(quando aplicável)*|Análise de dados armazenados no aplicativo, dividida por tipo de arquivo e nível de compartilhamento de arquivos.|
-|Painel do aplicativo: arquivos<br />*(quando aplicável)*|Fazer uma busca detalhada nos arquivos; capacidade de filtrar de acordo com o proprietário, o nível de compartilhamento e muito mais. Execute ações de governança como quarentena.|
+|Painel do aplicativo: insights  
+*(quando aplicável)*|Análise de dados armazenados no aplicativo, dividida por tipo de arquivo e nível de compartilhamento de arquivos.|
+|Painel do aplicativo: arquivos  
+*(quando aplicável)*|Fazer uma busca detalhada nos arquivos; capacidade de filtrar de acordo com o proprietário, o nível de compartilhamento e muito mais. Execute ações de governança como quarentena.|
 |Painel do aplicativo: contas|Visão geral de todas as contas/usuários vinculados ao aplicativo.|
-|Painel do aplicativo: Aplicativos OAuth<br />*(quando aplicável)*|Faça uma busca detalhada nos aplicativos OAuth atualmente implantados, como G Suite, e defina políticas.|
+|Painel do aplicativo: aplicativos OAuth  
+*(quando aplicável)*|Faça uma busca detalhada nos aplicativos OAuth atualmente implantados, como G Suite, e defina políticas.|
 |Painel do aplicativo: log de atividades|Faça uma busca detalhada em todas as atividades do aplicativo; capacidade de filtrar de acordo com usuários, endereço IP e muito mais.|
 |Painel do aplicativo: alertas|Faça uma busca detalhada em todos os alertas de aplicativo; capacidade de filtrar de acordo com o status, a categoria, a severidade e muito mais.|
-|Painel do aplicativo: contas com privilégios especiais<br />*(Somente Salesforce)*|Visão geral de usuários por tipo de usuário privilegiado.|
-|Painel do usuário|Uma visão geral completa do perfil do usuário na nuvem, incluindo grupos, locais, atividades recentes, alertas relacionados e navegadores usados.|
+|Painel do aplicativo: contas com privilégios especiais  
+*(Somente Salesforce)*|Visão geral de usuários por tipo de usuário privilegiado.|
+|Painel do usuário|Uma visão geral completa do perfil do usuário na nuvem, locais, atividades recentes, alertas relacionados.|
 
-##  <a name="sanctionapp"></a> Marcar aplicativos como sancionados ou não sancionados
+## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />marcar aplicativos como aprovados ou não aprovados
+
 Uma etapa importante para entender sua nuvem é marcar os aplicativos como sancionados ou não sancionados. Depois de sancionar um aplicativo, você poderá filtrar pelos aplicativos que não estão sancionados e iniciar a migração para aplicativos sancionadas do mesmo tipo.
 
 - No console do Cloud App Security, acesse o Catálogo de aplicativos ou Aplicativos descobertos.
 
-- Na lista de aplicativos, na linha do aplicativo que você deseja marcar como sancionado, selecione os três pontos no final da linha ![pontos para Marcar como sancionado](./media/sanction-three-dots.png "pontos para Marcar como sancionado") e selecione **Marcar como sancionado**.
+- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](./media/sanction-three-dots.png "Marcar como pontos aprovados") e selecione **Marcar como sancionado**.
 
-     ![Marcar como sancionado](./media/mark-as-sanctioned.png "marcar como sancionado")
-
+    ![Marcar como aprovado](./media/mark-as-sanctioned.png "Marcar como aprovado")
 
 ## <a name="use-the-investigation-tools"></a>Usar as ferramentas de investigação
 
@@ -109,7 +113,7 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
     - Quantos usuários o implantaram? Quão comuns são esses aplicativos em geral?
 
-    ![Painel de aplicativos](./media/investigate-app.png "investigar aplicativo")
+    ![Painel do aplicativo](./media/investigate-app.png "investigar aplicativo")
 
 5. Acesse o **Painel do Cloud Discovery** e verifique os seguintes itens:
 
@@ -139,7 +143,7 @@ Digamos que você supõe que não há nenhum acesso ao seu ambiente de nuvem por
 
 5. Em **Atividades que correspondem a todos os seguintes**, escolha **+** para adicionar um filtro. Role a página para baixo até **Marca de IP** e, em seguida, escolha **Tor**.
 
-     ![Exemplo de política para IPs arriscados](./media/example-policy-risky-ips.png "Exemplo de política para IPs arriscados")
+    ![Exemplo de política para IPs arriscados](./media/example-policy-risky-ips.png "exemplo de ips arriscados de política")
 
 Agora que você tem a política em vigor, está surpreso ao ver que recebe um alerta de que a política foi violada.
 
@@ -147,13 +151,13 @@ Agora que você tem a política em vigor, está surpreso ao ver que recebe um al
 
 2. Se você notar que essa parece uma violação real, contenha ou corrija o risco.
 
-     Para conter o risco, você pode enviar uma notificação para o usuário para perguntar se a violação foi intencional e se o usuário estava ciente dela.
+    Para conter o risco, você pode enviar uma notificação para o usuário para perguntar se a violação foi intencional e se o usuário estava ciente dela.
 
-     Você também pode detalhar o alerta e suspender o usuário até que possa descobrir o que precisa ser feito.
+    Você também pode detalhar o alerta e suspender o usuário até que possa descobrir o que precisa ser feito.
 
 3. Se for um evento permitido que provavelmente não ocorrerá novamente, você poderá ignorar o alerta.
 
-     Se for permitido e esperar-se que ocorra novamente, você poderá modificar a política para evitar que esse tipo de evento seja considerado uma violação no futuro.
+    Se for permitido e esperar-se que ocorra novamente, você poderá modificar a política para evitar que esse tipo de evento seja considerado uma violação no futuro.
 
 ## <a name="next-steps"></a>Próximas etapas
 
