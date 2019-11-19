@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: e998c613f893791e089c27a5f75daaa579bd3ea6
-  ms.sourcegitcommit: b0361f470e6bdcd0a8a502c5bf1f8a09533eaa14
+  ms.openlocfilehash: 4e09b5a658ad60b5cf38f8f94528469ca6add6fd
+  ms.sourcegitcommit: 02f1992367d6de5c1b2c49935ada3c54167ff757
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/06/2019
-  ms.locfileid: "73649251"
+  ms.lasthandoff: 11/17/2019
+  ms.locfileid: "74153270"
 landingContent:
 - title: Sobre o Cloud App Security
   linkLists:
@@ -45,8 +45,6 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Descobrir e gerenciar a TI sombra na sua rede
-      url: tutorial-shadow-it.md
     - text: Investigar usuários arriscados
       url: tutorial-ueba.md
     - text: Investigar aplicativos de OAuth arriscados
@@ -73,7 +71,7 @@ landingContent:
       url: discovered-apps.md
 - title: Práticas recomendadas
   linkLists:
-  - linkListType: quickstart
+  - linkListType: get-started
     links:
     - text: Descobrir e avaliar aplicativos de nuvem
       url: best-practices.md#discover-and-assess-cloud-apps
@@ -95,6 +93,42 @@ landingContent:
       url: best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations
     - text: Proteger serviços de IaaS (infraestrutura como serviço) e aplicativos personalizados
       url: best-practices.md#secure-iaas-services-and-custom-apps
+- title: Descobrir e controlar TI sombra
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Descobrir e identificar a TI sombra
+      url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
+    - text: Avaliar e analisar
+      url: tutorial-shadow-it.md##phase-2-evaluate-and-analyze
+    - text: Gerenciar seus aplicativos
+      url: tutorial-shadow-it.md#phase-3-manage-your-apps
+  - linkListType: concept
+    links:
+    - text: Trabalhar com o painel
+      url: daily-activities-to-protect-your-cloud-environment.md
+    - text: Trabalhar com aplicativos descobertos
+      url: discovered-apps.md
+    - text: Trabalhar com pontuações de risco do aplicativo
+      url: risk-score.md
+  - linkListType: deploy
+    links:
+    - text: Implantar o Cloud Discovery
+      url: set-up-cloud-discovery.md
+  - linkListType: how-to-guide
+    links:
+    - text: Integrar à Proteção Avançada contra Ameaças do Microsoft Defender
+      url: wdatp-integration.md
+    - text: Aprimoramento do Cloud Discovery
+      url: cloud-discovery-aad-enrichment.md
+  - linkListType: reference
+    links:
+    - text: Descobrir e avaliar aplicativos de nuvem
+      url: best-practices.md#discover-and-assess-cloud-apps
+  - linkListType: video
+    links:
+    - text: Descoberta de TI sombra além da rede corporativa
+      url: https://www.youtube.com/watch?v=f8hbvbY1Hnc
 - title: Recursos adicionais
   linkLists:
   - linkListType: learn
