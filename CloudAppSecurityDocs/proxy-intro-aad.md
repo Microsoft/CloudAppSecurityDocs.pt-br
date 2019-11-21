@@ -14,25 +14,26 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d26be7ba74d2eaf7d6f2baeb66ae9824a387ad02
-ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
+ms.openlocfilehash: 6e15775be1435c47b9f2df1cc73f3e4b5aa0ddd4
+ms.sourcegitcommit: 4fb014e3563b8254635440f24e10b250af66c7f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185170"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239943"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[PRÓXIMO: Implantar o Controle de Aplicativos de Acesso Condicional »](proxy-deployment-aad.md)
+[PRÓXIMO: Implantar o Controle de Aplicativo de Acesso Condicional »](proxy-deployment-aad.md)
 
 No espaço de trabalho de hoje, muitas vezes não é suficiente saber o que está acontecendo em seu ambiente de nuvem após o fato. Você deseja interromper violações e vazamentos em tempo real antes que os funcionários intencional ou inadvertidamente coloquem seus dados e sua organização em risco. É importante permitir que os usuários em sua organização aproveitem ao máximo os serviços e as ferramentas disponíveis a eles em aplicativos de nuvem e que eles tragam os próprios dispositivos para o trabalho. Ao mesmo tempo, são necessárias ferramentas para ajudar a proteger sua organização contra vazamentos de dados e roubo de dados, em tempo real. Juntamente com o Azure Active Directory, o Microsoft Cloud App Security oferece esses recursos em uma experiência holística e integrada com o Controle de Aplicativo de Acesso Condicional.
 
 > [!NOTE]
-> Para usar o Controle de Aplicativos de Acesso Condicional do Cloud App Security, é necessária uma [licença P1 do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) e uma assinatura ativa do Microsoft Cloud App Security.
->
+> Para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você precisa de uma [licença Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)e uma assinatura do Active Microsoft Cloud app Security ou licença do Office 365 e5. Para obter uma lista de aplicativos em destaque incluídos no Office 365 e5, consulte [aplicativos em destaque do office 365](#O365-apps).
+
+Licença do Office 365 e5. Para obter uma lista de aplicativos incluídos com o Office 365 E5 com suporte, consulte aplicativos em destaque do Office 365
 
 ## <a name="how-it-works"></a>Como funciona
 
@@ -40,19 +41,19 @@ Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy rever
 
 O Controle de Aplicativo de Acesso Condicional permite o monitoramento e controle em tempo real do acesso e das sessões do aplicativo com base nas políticas de acesso e de sessão. As políticas de acesso e de sessão são utilizadas dentro do portal do Cloud App Security para refinar ainda mais os filtros e definir as ações a serem executadas em relação a um usuário. Com as políticas de acesso e de sessão, é possível:
 
-- **Impedir vazamento de dados**: Você pode bloquear o download, recortar, copiar e imprimir documentos confidenciais em, por exemplo, dispositivos não gerenciados.
+- **Impedir vazamento de dados**: você pode bloquear o download, recortar, copiar e imprimir documentos confidenciais em, por exemplo, dispositivos não gerenciados.
 
-- **Proteger download**: Em vez de bloquear o download de documentos confidenciais, você pode exigir que os documentos sejam rotulados e protegidos com a proteção de informações do Azure. Essa ação garante que o documento esteja protegido e o acesso do usuário seja restrito em uma sessão potencialmente arriscada.
+- **Proteger no download**: em vez de bloquear o download de documentos confidenciais, você pode exigir que os documentos sejam rotulados e protegidos com a proteção de informações do Azure. Essa ação garante que o documento esteja protegido e o acesso do usuário seja restrito em uma sessão potencialmente arriscada.
 
-- **Impedir o carregamento de arquivos sem rótulo**: Antes que um arquivo confidencial seja carregado, distribuído e usado por outros, é importante certificar-se de que o arquivo tem o rótulo e a proteção corretos. Você pode garantir que arquivos sem rótulo com conteúdo confidencial sejam impedidos de serem carregados até que o usuário classificar o conteúdo.
+- **Impedir o carregamento de arquivos sem rótulo**: antes de um arquivo confidencial ser carregado, distribuído e usado por outros, é importante certificar-se de que o arquivo tem o rótulo e a proteção corretos. Você pode garantir que arquivos sem rótulo com conteúdo confidencial sejam impedidos de serem carregados até que o usuário classificar o conteúdo.
 
-- **Monitorar sessões de usuário para conformidade**: Os usuários de risco são monitorados quando entram nos aplicativos e suas ações são registradas na sessão. É possível investigar e analisar o comportamento do usuário para compreender onde e sob quais condições as políticas de sessão deverão ser aplicadas no futuro.
+- **Monitorar sessões de usuário para fins de conformidade**: os usuários arriscados são monitorados quando entram em aplicativos e suas ações são registradas de dentro da sessão. É possível investigar e analisar o comportamento do usuário para compreender onde e sob quais condições as políticas de sessão deverão ser aplicadas no futuro.
 
-- **Bloquear o acesso**: Você pode bloquear o acesso de maneira granular para aplicativos e usuários específicos, dependendo de vários fatores de risco. Por exemplo, você pode bloqueá-los se eles estiverem usando certificados de cliente como uma forma de gerenciamento de dispositivo.
+- **Bloquear o acesso**: você pode bloquear o acesso de maneira granular para aplicativos e usuários específicos, dependendo de vários fatores de risco. Por exemplo, você pode bloqueá-los se eles estiverem usando certificados de cliente como uma forma de gerenciamento de dispositivo.
 
-- **Bloquear atividades personalizadas**: Alguns aplicativos têm cenários exclusivos que trazem risco, por exemplo, enviar mensagens com conteúdo confidencial em aplicativos como Microsoft Teams ou margem de atraso. Nesses tipos de cenários, você pode verificar mensagens quanto ao conteúdo confidencial e bloqueá-los em tempo real.
+- **Bloquear atividades personalizadas**: alguns aplicativos têm cenários exclusivos que trazem risco, por exemplo, enviar mensagens com conteúdo confidencial em aplicativos como equipes da Microsoft ou margem de atraso. Nesses tipos de cenários, você pode verificar mensagens quanto ao conteúdo confidencial e bloqueá-los em tempo real.
 
-### <a name="how-session-control-works"></a>Como o controle de sessão funciona
+### <a name="how-session-control-works"></a>Como funciona o controle de sessão
 
 A criação de uma política de sessão com Controle de Aplicativo de Acesso Condicional permite que você controle as sessões do usuário, redirecionando-o por meio de um proxy reverso, em vez de diretamente para o aplicativo. A partir de então, as solicitações e respostas do usuário passam por Cloud App Security em vez de diretamente para o aplicativo.
 
@@ -109,7 +110,7 @@ Saiba mais sobre como implantar certificados do cliente em [Implantar Controle d
 
 ## <a name="supported-apps-and-clients"></a>Clientes e aplicativos compatíveis
 
-O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicativos SAML e Open ID Connect configurados com logon único, juntamente com aplicativos Web hospedados localmente e configurados com o [Proxy de Aplicativo do Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicativos SAML e Open ID Connect configurados com logon único, juntamente com aplicativos Web hospedados localmente configurados com o [proxy de aplicativo Azure ad](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 > [!NOTE]
 > O Controle de Aplicativos de Acesso Condicional também é compatível com aplicativos configurados com outros provedores de identidade além do Azure AD. Para obter mais informações sobre esse cenário, envie um email para mcaspreview@microsoft.com.
 
@@ -125,7 +126,7 @@ O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicat
 > [!NOTE]
 > O Cloud App Security usa protocolos TLS 1.2+ para fornecer a melhor criptografia do setor. Aplicativos cliente nativos e navegadores que não são compatíveis com TLS 1.2+ não estarão acessíveis quando configurados com controle de sessão. No entanto, aplicativos SaaS que usam TLS 1.1 ou inferior aparecerão no navegador como usando TLS 1.2+ quando configurados com o Cloud App Security.
 
-<a name="featured-apps"></a>Ao integrar nativamente com o Azure AD, qualquer aplicativo configurado com SAML ou Open ID Connect pode ser integrado automaticamente. Além disso, os aplicativos a seguir são apresentados por Cloud App Security e já estão integrados e prontos para uso em qualquer locatário:
+<a name="featured-apps"></a>Ao integrar nativamente com o Azure AD, qualquer aplicativo configurado com SAML ou Open ID Connect você pode integrar qualquer aplicativo por conta própria. Além disso, os aplicativos a seguir são apresentados por Cloud App Security e já estão integrados e prontos para uso em qualquer locatário:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -147,7 +148,7 @@ O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicat
 - Power BI
 - Salesforce
 - ServiceNow
-- SharePoint online
+- SharePonot Onlnoe
 - Slack
 - Tableau
 - Microsoft Teams (versão prévia)
@@ -156,13 +157,25 @@ O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicat
 - Workplace by Facebook
 - Yammer (versão prévia)
 
+### <a name="a-ido365-apps-office-365-featured-apps"></a><a id="O365-apps" />aplicativos em destaque do Office 365
+
+Veja a seguir uma lista de aplicativos em destaque com suporte no Office 365 Cloud App Security:
+
+- Exchange Online
+- OneDrive for Business
+- Power BI
+- SharePonot Onlnoe
+- Microsoft Teams (versão prévia)
+- Yammer (versão prévia)
+
 Se você estiver interessado em um aplicativo específico em destaque, [envie-nos detalhes sobre o aplicativo](mailto:casfeedback@microsoft.com). Envie o caso de uso em que você está interessado para integrá-lo.
 
->[!div class="step-by-step"]
-[PRÓXIMO: Implantar o Controle de Aplicativos de Acesso Condicional »](proxy-deployment-aad.md)
+> [!div class="step-by-step"]
+> [PRÓXIMO: Implantar o Controle de Aplicativo de Acesso Condicional »](proxy-deployment-aad.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD](proxy-deployment-aad.md)
+> [!div class="nextstepaction"]
+> [Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD](proxy-deployment-aad.md)
 
 [Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)

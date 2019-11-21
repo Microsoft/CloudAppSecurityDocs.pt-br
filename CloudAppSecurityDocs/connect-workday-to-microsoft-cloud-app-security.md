@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: da2f55e9f3be36d34bc7398258d96e28aae9b4b5
-ms.sourcegitcommit: 3996c1fe9a258c925e18c744447cb1574cce85d1
+ms.openlocfilehash: 3ce27d2efc4535d8ee594145c27ce3948c6be90d
+ms.sourcegitcommit: 474c052a3f705973ebe83da3a03be3008fdf85ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72323891"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74203811"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conectar o workday ao Microsoft Cloud App Security (versão prévia)
 
@@ -29,18 +29,22 @@ Este artigo fornece instruções para conectar Microsoft Cloud App Security à s
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-A conta workday usada para se conectar a Cloud App Security deve ser membro de um grupo de segurança (novo ou existente). O grupo de segurança deve ter as seguintes permissões selecionadas para os seguintes domínios:
+A conta workday usada para se conectar a Cloud App Security deve ser membro de um grupo de segurança (novo ou existente). Recomendamos o uso de um usuário do sistema de integração do workday. O grupo de segurança deve ter as seguintes permissões selecionadas para as seguintes políticas de segurança de domínio:
 
-| Área funcional | Domain | subdomínio | Permissões de relatório/tarefa | Permissões de integração |
+| Área funcional | Política de segurança de domínio | Política de segurança de subdomínio | Permissões de relatório/tarefa | Permissões de integração |
 | --- | --- | --- | --- | --- |
-| System (sistema) | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
-| System (sistema) | Administração de Segurança | | Exibir, modificar | Obter, colocar |
-| System (sistema) | Auditoria do sistema | | Exiba os | Get |
-| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: relatórios de trabalho públicos | Exiba os | Get |
+| Sistema | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
+| Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
+| Sistema | Auditoria do sistema | | Exibir | Get |
+| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: relatórios de trabalho públicos | Exibir | Get |
+
+> [!NOTE]
+>
+> * A conta usada para configurar permissões para o grupo de segurança deve ser um administrador do workday.
+> * Para definir permissões, pesquise "políticas de segurança de domínio para a área funcional" e procure cada área funcional ("sistema"/"equipe") e conceda as permissões listadas na tabela.
+> * Depois que todas as permissões tiverem sido definidas, pesquise "ativar alterações de política de segurança pendentes" e aprove as alterações.
 
 Para obter mais informações sobre como configurar usuários de integração do workday, grupos de segurança e permissões, consulte as etapas 1 a 4 da [integração de concessão ou acesso de ponto de extremidade externo ao](https://go.microsoft.com/fwlink/?linkid=2103212) guia do workday (acessível com documentação/credenciais da Comunidade).
-
-Recomendamos o uso de um usuário do sistema de integração do workday.
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Como conectar o workday ao Cloud App Security usando o OAuth
 
@@ -69,11 +73,11 @@ Recomendamos o uso de um usuário do sistema de integração do workday.
 
 1. Depois de registrado, anote os parâmetros a seguir e clique em **concluído**.
 
-    - ID do Cliente
-    - Segredo do cliente
-    - Ponto de extremidade da API REST do workday
-    - Ponto de extremidade do token
-    - Ponto de extremidade de autorização
+    * ID do cliente
+    * Segredo do cliente
+    * Ponto de extremidade da API REST do workday
+    * Ponto de extremidade do token
+    * Ponto de extremidade de autorização
 
     ![Captura de tela de confirmando o registro do cliente de API](media/connect-workday-register-api-client-confirm.png)
 
