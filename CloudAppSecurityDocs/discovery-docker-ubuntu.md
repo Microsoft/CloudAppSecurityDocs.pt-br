@@ -29,7 +29,7 @@ Configure o upload automático de logs para relatórios contínuos no Cloud App 
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-* OS: Ubuntu 14.04, 16.04, and 18.04; RHEL 7.2 or higher, or CentOS 7.2 or higher 
+* Sistema operacional: Ubuntu 14, 4, 16, 4 e 18, 4; RHEL 7,2 ou superior ou CentOS 7,2 ou superior 
 
 * Espaço em disco: 250 GB
 
@@ -40,7 +40,7 @@ Configure o upload automático de logs para relatórios contínuos no Cloud App 
 * Defina o firewall conforme descrito nos [Requisitos de rede](network-requirements.md#log-collector)
 
 > [!NOTE]
-> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
+> Se você tiver um coletor de logs existente e quiser removê-lo antes de implantá-lo novamente, ou se simplesmente quiser removê-lo, execute os seguintes comandos:
 >
 > ```console
 > docker stop <collector_name>
@@ -68,7 +68,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 1. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
 
     1. Clique em **Adicionar fonte de dados**.  
-    ![Add a data source](media/add-data-source.png)
+    ![adicionar uma fonte de dados](media/add-data-source.png)
     1. Atribua o **Nome** do proxy ou firewall.  
     ![ubuntu1](media/ubuntu1.png)
     1. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
@@ -88,7 +88,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     1. Clique em **Adicionar coletor de logs**.
     1. Atribua um **nome** ao coletor de logs.
     1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
-    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
+    1. Selecione todas as **fontes de dados** que você deseja conectar ao coletor e clique em **Atualizar** para salvar a configuração.
 
     ![ubuntu2](media/ubuntu2.png)
 
@@ -102,7 +102,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     >
     > * Um único coletor de logs pode lidar com várias fontes de dados.
     > * Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * Para usuários que enviam dados de log via FTP pela primeira vez, é recomendável alterar a senha para o usuário de FTP. Para obter mais informações, consulte [alterando a senha de FTP](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – Implantação local de seu computador
 
@@ -140,7 +140,7 @@ As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantaç�
 
 1. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs <collector_name>`
 
-You should see the message: **Finished successfully!** 
+Você deve ver a mensagem: **concluída com êxito!** 
 ![ubuntu8](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
@@ -174,6 +174,6 @@ Verifique se os logs estão sendo carregados no Cloud App Security e se os relat
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [Configuração de FTP do coletor de logs](log-collector-ftp.md)
 
 [Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier](https://premier.microsoft.com/)
