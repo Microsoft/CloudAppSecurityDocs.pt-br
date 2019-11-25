@@ -15,12 +15,12 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 711c0cdf6a9678a63a19987f2c84101acf9de5ba
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0cd3952207ebc863000243f0eb78661fe9622fd5
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334469"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461429"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar o Dropbox ao Microsoft Cloud App Security
 
@@ -37,7 +37,7 @@ Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar en
   
 2.  Na página **Conectores de aplicativos**, clique no botão de mais após **Dropbox**.  
   
-     ![Conectar ao Dropbox](./media/connect-dropbox.png "connect dropbox")  
+     ![connect dropbox](./media/connect-dropbox.png "conectar ao dropbox")  
   
 3.  No pop-up, insira o endereço de email da conta do administrador.  
   
@@ -63,6 +63,6 @@ Depois de conectar o Dropbox, você receberá eventos por 60 dias antes da conex
 ## <a name="next-steps"></a>Próximas etapas 
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

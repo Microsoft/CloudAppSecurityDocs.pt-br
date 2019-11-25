@@ -15,26 +15,26 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7c7912a0b9363ce7f5375038914ea62d4606262
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: c7c42715eeb5aed583e85372b4560b61cc917be4
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084657"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458816"
 ---
 # <a name="files"></a>Arquivos
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Para oferecer proteção de dados, o Microsoft Cloud App Security proporciona visibilidade de todos os arquivos de seus aplicativos conectados. Depois que você conectar o Microsoft Cloud App Security a um aplicativo usando o conector de aplicativos, o Microsoft Cloud App Security examina todos os arquivos, por exemplo, todos os arquivos armazenados no OneDrive e no Salesforce. Em seguida, o Cloud App Security examina novamente cada arquivo sempre que ele é modificado – a modificação pode ser em conteúdo, metadados ou permissões de compartilhamento. Os tempos de verificação dependem do número de arquivos armazenados em seu aplicativo. Também é possível usar a página **Arquivos** para filtrar os arquivos a fim de investigar qual tipo de dados está salvo em seus aplicativos de nuvem.
 
 ## <a name="file-filter-examples"></a>Exemplos de filtros de arquivo
 
-Por exemplo, use a página **Arquivos** para proteger arquivos compartilhados externamente e rotulados como **confidenciais** da seguinte maneira: Depois de conectar um aplicativo ao Cloud App Security, integre-o à Proteção de Informações do Azure. Em seguida, na página **Arquivos**, filtre os arquivos rotulados como **confidenciais** e exclua seu domínio no filtro **Colaboradores**. Se você observar que há arquivos confidenciais compartilhados fora de sua organização, crie uma política de arquivo para detectá-los. Você pode aplicar ações de governança automáticas a esses arquivos, como **Remover colaboradores externos** e **Enviar resumo de correspondência de política para o proprietário do arquivo** para evitar a perda de dados para sua organização.
+Por exemplo, use a página **Arquivos** para proteger arquivos compartilhados externamente rotulados como **confidenciais** da seguinte maneira: depois de conectar um aplicativo ao Cloud App Security, integre-o à Proteção de Informações do Azure. Em seguida, na página **Arquivos**, filtre os arquivos rotulados como **confidenciais** e exclua seu domínio no filtro **Colaboradores**. Se você observar que há arquivos confidenciais compartilhados fora de sua organização, crie uma política de arquivo para detectá-los. Você pode aplicar ações de governança automáticas a esses arquivos, como **Remover colaboradores externos** e **Enviar resumo de correspondência de política para o proprietário do arquivo** para evitar a perda de dados para sua organização.
 
  ![Filtro de arquivo confidencial](media/file-filter-confidential.png)
 
-Veja outro exemplo de como você pode usar a página **Arquivos**. Garanta que ninguém em sua organização esteja compartilhando arquivos pública ou externamente que não foram modificados nos últimos seis meses: Conecte um aplicativo ao Cloud App Security e acesse a página **Arquivos**. Filtre os arquivos cujo nível de acesso é **Externo** ou **Público** e defina a data da **Última modificação** para seis meses atrás. Crie uma política de arquivo que detecte esses arquivos públicos obsoletos clicando em **Nova política da pesquisa**. Aplique ações de governança automática a eles, como **Remover usuários externos**, para impedir a perda de dados em sua organização.
+Veja outro exemplo de como você pode usar a página **Arquivos**. Garanta que ninguém em sua organização esteja compartilhando arquivos pública ou externamente que não foram modificados nos últimos seis meses: conecte um aplicativo ao Cloud App Security e acesse a página **Arquivos**. Filtre os arquivos cujo nível de acesso é **Externo** ou **Público** e defina a data da **Última modificação** para seis meses atrás. Crie uma política de arquivo que detecte esses arquivos públicos obsoletos clicando em **Nova política da pesquisa**. Aplique ações de governança automática a eles, como **Remover usuários externos**, para impedir a perda de dados em sua organização.
 
  ![Filtro de arquivo obsoleto externo](media/file-example-stale-external.png)
 
@@ -72,10 +72,10 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
 
       > [!NOTE]
       >  Os arquivos compartilhado em seus aplicativos de armazenamento conectados por usuários externos são manipulados como se segue pelo Cloud App Security:
-      > - **OneDrive:** O OneDrive atribui um usuário interno como o proprietário de qualquer arquivo colocado em seu OneDrive por um usuário externo. Como esses arquivos são considerados como pertencentes à sua organização, O Cloud App Security os examina e aplica políticas como acontece com qualquer outro arquivo no seu OneDrive.
-      > - **Google Drive:** O Google Drive os considera como pertencentes ao usuário externo e, devido às restrições legais sobre arquivos e dados não pertencentes à sua organização, o Cloud App Security não tem acesso a esses arquivos.
-      > - **Box:** Como o Box considera arquivos de propriedade externa como informações particulares, os Administradores Globais do Box não conseguem ver o conteúdo deles. Por esse motivo, o Cloud App Security não tem acesso a esses arquivos. 
-      > - **Dropbox:** Como o Dropbox considera arquivos de propriedade externa como informações particulares, os Administradores Globais do Dropbox não conseguem ver o conteúdo deles. Por esse motivo, o Cloud App Security não tem acesso a esses arquivos.
+      > - **OneDrive:** o OneDrive atribui um usuário interno como o proprietário de qualquer arquivo colocado no seu OneDrive por um usuário externo. Como esses arquivos são considerados como pertencentes à sua organização, O Cloud App Security os examina e aplica políticas como acontece com qualquer outro arquivo no seu OneDrive.
+      > - **Google Drive:** o Google Drive os considera como pertencentes ao usuário externo e, devido às restrições legais dos arquivos e dados que não são de propriedade da sua organização, o Cloud App Security não tem acesso a esses arquivos.
+      > - **Box:** como o Box considera arquivos de propriedade externa como informações confidenciais, os Administradores Globais do Box não conseguem ver seu conteúdo. Por esse motivo, o Cloud App Security não tem acesso a esses arquivos. 
+      > - **Dropbox:** como o Dropbox considera arquivos de propriedade externa como informações confidenciais, os Administradores Globais do Dropbox não conseguem ver seu conteúdo. Por esse motivo, o Cloud App Security não tem acesso a esses arquivos.
 
 - **Aplicativo** – pesquise apenas arquivos dentro desses aplicativos.  
   
@@ -107,7 +107,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
 - **Tipo de arquivo** – o Cloud App Security usa o tipo MIME recebido do serviço e examina o arquivo para determinar o verdadeiro tipo de arquivo. Essa verificação destina-se a arquivos que são relevantes para a verificação de dados (documentos, imagens, apresentações, planilhas, arquivos de texto e zip/arquivos). O filtro funciona por tipo de arquivo/pasta. Por exemplo, Todas as pastas que são... ou Todos os arquivos de planilha que são...
 
 
-   ![lixeira de filtros policy_file](./media/policy_file-filters-trash.png "lixeira de filtros policy_file")  
+   ![policy_file filters trash](./media/policy_file-filters-trash.png "lixeira de filtros policy_file")  
 
   
 - **Na lixeira** – exclui/inclui arquivos na pasta da lixeira. Esses arquivos ainda podem ser compartilhados e representam um risco.  
@@ -128,32 +128,32 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
   
 Defina também a política a ser executada em arquivos específicos definindo o filtro **Aplicar a**. Filtre para **todos os arquivos**, **pastas selecionadas** ou **todos os arquivos, exceto as pastas selecionadas**. Em seguida, selecione os arquivos ou as pastas relevantes.  
   
-![aplicar para filtrar](./media/apply-to-filter.png "aplicar para filtrar")  
+![apply to filter](./media/apply-to-filter.png "aplicar para filtrar")  
 <!-- 
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
-## <a name="authorizing-files"></a>Autorizando arquivos
+## <a name="authorizing-files"></a>Authorizing files
 
-Depois que Cloud App Security identificar arquivos como apresentando um risco de malware ou DLP, recomendamos que você investigue os arquivos. Se você determinar que os arquivos são seguros, poderá autorizá-los. Autorizar um arquivo o remove do relatório de detecção de malware e suprime correspondências futuras nele.
+After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Autorizar um arquivo o remove do relatório de detecção de malware e suprime correspondências futuras nele.
 
-### <a name="to-authorize-files"></a>Para autorizar arquivos
+### <a name="to-authorize-files"></a>To authorize files
 
-1. Em Cloud App Security, clique em **controle** e em **políticas**.
-1. Na lista de políticas, na linha na qual a política que disparou a investigação aparece, na coluna **contagem** , clique no link correspondências.
+1. In Cloud App Security, click **Control** and then **Policies**.
+1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
     > [!TIP]
-    > Você pode filtrar a lista de políticas por tipo. A tabela a seguir lista, por tipo de risco, qual tipo de filtro deve ser usado:
+    > You can filter the list of policies by type. The following table lists, per risk type, which filter type to use:
     >
-    > | Tipo de risco | Tipo de filtro |
+    > | Risk type | Filter type |
     > | --- | --- |
     > | DLP | Política de arquivos |
-    > | Malware | Política de detecção de malware |
-1. Na lista de arquivos correspondentes, na linha na qual o arquivo em investigação aparece, clique em **autorizar**.
+    > | Malware | Malware detection policy |
+1. In the list of matched files, on the row in which the file under investigation appears, click **Authorize**.
 
 ## <a name="working-with-the-file-drawer"></a>Trabalhando com a Gaveta de arquivos
 
-Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Clicar abre a **gaveta de arquivos** que fornece as seguintes ações adicionais que você pode executar no arquivo:
+Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
 
 - **URL** – leva você para a localização do arquivo.
 - **Identificadores de arquivo** – abre um pop-up com detalhes de dados brutos sobre o arquivo, incluindo a ID do arquivo e as chaves de criptografia.
@@ -163,7 +163,7 @@ Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log 
 
 Os campos da gaveta Arquivos fornecem links contextuais para arquivos adicionais e análises detalhadas que você talvez queira executar diretamente na gaveta. Por exemplo, se você mover o cursor ao lado do campo **Proprietário**, poderá usar o ícone "adicionar ao filtro" ![adicionar ao filtro](./media/add-to-filter-icon.png) para adicionar o proprietário imediatamente ao filtro da página atual. Você também pode usar o ícone de engrenagem de configurações ![ícone de configurações](./media/contextual-settings-icon.png) que aparece diretamente na página de configurações necessária para alterar a configuração de um dos campos, tais como **Rótulos de classificação**.
 
-![Arquivador](./media/file-drawer.png "Arquivador")  
+![File drawer](./media/file-drawer.png "Gaveta de arquivos")  
   
 Para obter uma lista de ações de governança disponíveis, consulte [Ações de governança de arquivo](governance-actions.md#file-governance-actions).
 
@@ -171,4 +171,4 @@ Para obter uma lista de ações de governança disponíveis, consulte [Ações d
   
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

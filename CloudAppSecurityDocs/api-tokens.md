@@ -15,16 +15,16 @@ ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a6695d1b55237d79ae64c395d269d624891f796
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: bcb98ccaad997a0d98df6d7ecb6eee876c64622e
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083722"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461281"
 ---
 # <a name="api-tokens"></a>Tokens de API
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 A API do Microsoft Cloud App Security fornece acesso programático ao Cloud App Security por meio de pontos de extremidade API REST. Aplicativos podem usar a API para realizar operações de leitura e atualização nos dados e objetos do Cloud App Security. Por exemplo, a API de segurança do aplicativo de nuvem dá suporte às seguintes operações comuns para um objeto de usuário:
 
@@ -48,7 +48,7 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
 
 3. Copie o valor do token e salve-o em algum lugar para recuperação – se você perdê-lo, será necessário gerar o token novamente. O token tem os privilégios do usuário que o emitiu. Por exemplo, um leitor de segurança não pode emitir um token que possa alterar os dados.
 
-4. Filtre os tokens por status: Ativo, Inativo ou Gerado. 
+4. Você pode filtrar os tokens de status: Ativo, Inativo ou Gerado. 
 
    - Tokens com status Gerado são tokens que nunca foram usados. 
    - Tokens com status Ativo são tokens que foram gerados e foram usados nos últimos sete dias. 
@@ -60,7 +60,7 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
     A URL genérica do portal continuará a funcionar, mas será consideravelmente mais lenta do que a URL personalizada fornecida com o token. Se você esquecer a URL a qualquer momento, você poderá exibi-la indo até o ícone **?** no menu e selecionando **Sobre**.
 
 > [!NOTE]
-> Se você estiver usando Azure Active Directory Privileged Identity Management ativação de função, seu token de API só será eficaz quando a função for ativada. Para obter mais informações, consulte [Ativar minhas funções do Azure AD no PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
+> If you are using Azure Active Directory Privileged Identity Management role activation, your API token will only be effective once the role is activated. For more information, see [Activate my Azure AD roles in PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
 
 ## <a name="api-token-management"></a>Gerenciamento de token de API
 
@@ -82,7 +82,7 @@ Depois que um token é revogado, ele é removido da tabela e o software que ele 
 ## <a name="next-steps"></a>Próximas etapas
 [Solução de problemas da integração SIEM](troubleshooting-siem.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
 
 ## <a name="check-out-this-video"></a>Confira este vídeo!
 [Microsoft Cloud App Security – API REST e Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  

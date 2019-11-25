@@ -15,16 +15,16 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 457d2cfd0a5b1c25b8463a8d48e3172c044a673e
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 4dabcc39d9688b8595b574b6806bcc7eb3e8780b
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084134"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458743"
 ---
 # <a name="log-collector-ftp-configuration"></a>Configuração de FTP do coletor de logs
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo descreve como modificar a configuração do Docker do Cloud Discovery do Cloud App Security.
 
@@ -58,8 +58,8 @@ Siga este procedimento para personalizar os arquivos de certificado usados para 
 
     ![Alterar a senha do FTP](./media/new-certs.png)
 
-    - **Para FTP:** Apenas um arquivo é necessário. O arquivo tem os dados de chave e de certificado, nessa ordem, e é denominado **pure-ftpd.pem**.
-    - **Para Syslog:** Três arquivos são necessários: **ca.pem**, **server-key.pem e **server-cert.pem**. Se um dos arquivos estiver ausente, a atualização não ocorrerá.
+    - **Para FTP:** apenas um arquivo é necessário. O arquivo tem os dados de chave e de certificado, nessa ordem, e é denominado **pure-ftpd.pem**.
+    - **Para Syslog:** três arquivos são necessários: **ca.pem**, **server-key.pem e **server-cert.pem**. Se um dos arquivos estiver ausente, a atualização não ocorrerá.
 
 4. Em um terminal, execute: `docker exec -t <collector name> update_certs`. O comando deve produzir uma saída semelhante à mostrada na captura de tela a seguir.
 
@@ -69,4 +69,4 @@ Siga este procedimento para personalizar os arquivos de certificado usados para 
 
 [Implantar o Cloud Discovery](set-up-cloud-discovery.md)
 
-[Os clientes Premier também podem escolher o Cloud App Security diretamente no Portal Premier](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

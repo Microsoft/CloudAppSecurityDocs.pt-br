@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bb91534942fd95f04ebf1f87ac5582a14aed6a55
-ms.sourcegitcommit: 474c052a3f705973ebe83da3a03be3008fdf85ff
+ms.openlocfilehash: 5e5d6c141777c2e6351d8a98448a29f6d36dca5d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203836"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459458"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importar grupos de usuários de aplicativos conectados
 
@@ -48,7 +48,7 @@ Você pode importar qualquer grupo de seus aplicativos conectados. Por exemplo, 
 
 ## <a name="how-to-import-user-groups"></a>Como importar grupos de usuários
 
-1. Na barra de menus, clique no ícone configurações ícones ![configurações](./media/settings-icon.png "ícone de configurações") e selecione **grupos de usuários**.
+1. In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "ícone de configurações") and select **User groups**.
 1. Clique em **Importar grupo de usuários**.
 
     ![Importar grupos de usuários](./media/user-groups-add.png)
@@ -63,7 +63,7 @@ A importação de grupos permite que você selecione os grupos como filtros ao i
 
 > [!NOTE]
 >
-> - Pode haver um pequeno atraso até que os grupos de usuários importados estejam disponíveis em filtros.
+> - There may be a short delay until imported user groups are available in filters.
 > - Somente as atividades executadas após a importação de um grupo de usuários serão marcadas como tendo sido executada por um membro do grupo de usuários.
 > - Após a sincronização inicial, os grupos são atualizados a cada hora.
 
@@ -74,4 +74,4 @@ Para obter mais informações sobre como usar os filtros de grupo de usuários, 
 > [!div class="nextstepaction"]
 > [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

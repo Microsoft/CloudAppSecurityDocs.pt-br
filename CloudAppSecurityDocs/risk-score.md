@@ -15,16 +15,16 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5947a83b6a09f5c25b8f3e3cf82318717e9aaca6
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 55bba38323d9f826504f5e288613feb2ca5f45da
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085065"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460528"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabalhar com pontuações de risco do aplicativo
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 O Catálogo de Aplicativos de Nuvem fornece uma visão completa do que o Cloud Discovery identifica. O Cloud Discovery analisa seus logs de tráfego com base no catálogo de mais de 16.000 aplicativos de nuvem do Microsoft Cloud App Security. Os aplicativos são classificados e pontuados com base mais de 70 fatores de risco para fornecer visibilidade contínua do uso de nuvem, TI Sombra e o risco que a TI Sombra representa para sua organização. Este artigo fornece instruções sobre como usar e personalizar a pontuação de risco do aplicativo Cloud App Security.
 
@@ -57,15 +57,15 @@ Depois que os resultados são filtrados, você pode examinar os aplicativos rele
 
 Há filtros básicos e avançados do Catálogo de aplicativos de nuvem. Para criar um filtro complexo, use a opção avançada que inclui todos os seguintes filtros:
 
-- **Marcas de aplicativo**: As marcas permitem personalizar o Catálogo de Aplicativos na Nuvem. 
+- **Marcas de aplicativo**: marcas permitem personalizar o Catálogo de aplicativos de nuvem. 
   Você pode selecionar **Sancionado**, **Não sancionado** ou criar marcas personalizadas para aplicativos. Essas marcas então podem ser usadas como filtros. Os filtros são úteis para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar.
-- **Aplicativos e domínios**: Permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos.
-- **Categorias**: O filtro de categorias, localizado à esquerda da página, permite que você pesquise tipos de aplicativos de acordo com as categorias de aplicativo. Por exemplo, aplicativos de rede social, aplicativos de armazenamento em nuvem e mais tipos de aplicativos. Você pode selecionar mais de uma categoria por vez ou uma única categoria. Em seguida, aplique filtros básicos ou avançados sobre as categorias.
-- **Fator de risco de conformidade**: Permite que você pesquise padrões, certificação e conformidade específicos que o aplicativo pode cumprir. Exemplos incluem HIPAA, ISO 27001, SOC 2 e PCI-DSS.
-- **Fator de risco geral**: Permite que você pesquise fatores de risco gerais, como popularidade do consumidor, localidade do data center, entre outros.
-- **Fator de risco legal**: Permite a filtragem com base em todos os regulamentos e todas as políticas que estão em vigor. Usar fatores de risco ajuda a garantir a proteção de dados e a privacidade dos usuários do aplicativo, como RGPD, DMCA e política de retenção de dados.
-- **Pontuação de risco**: Permite a filtragem de aplicativos pela pontuação de risco, de modo que você possa se concentrar. Por exemplo, revisando somente os aplicativos arriscados.
-- **Fator de risco de segurança**: Permite a filtragem com base em medidas específicas de segurança. As medidas incluem criptografia em repouso, autenticação multifator e outras.
+- **Aplicativos e domínios**: permite que você pesquise aplicativos específicos ou aplicativos usados em domínios específicos.
+- **Categorias**: o filtro de categorias, localizado à esquerda da página, permite que você pesquise tipos de aplicativos de acordo com as categorias de aplicativo. Por exemplo, aplicativos de rede social, aplicativos de armazenamento em nuvem e mais tipos de aplicativos. Você pode selecionar mais de uma categoria por vez ou uma única categoria. Em seguida, aplique filtros básicos ou avançados sobre as categorias.
+- **Fator de risco de conformidade**: permite que você pesquise padrões específicos, certificação e conformidade com os quais o aplicativo pode cumprir. Exemplos incluem HIPAA, ISO 27001, SOC 2 e PCI-DSS.
+- **Fator de risco geral**: permite que você pesquise fatores de risco gerais, como a popularidade do consumidor, localidade do data center, entre outros.
+- **Fator de risco legal**: permite que você filtre com base em todos os regulamentos e políticas que estão em vigor. Usar fatores de risco ajuda a garantir a proteção de dados e a privacidade dos usuários do aplicativo, como RGPD, DMCA e política de retenção de dados.
+- **Pontuação de risco**: permite que você filtre aplicativos por pontuação de risco em que você possa se concentrar. Por exemplo, revisando somente os aplicativos arriscados.
+- **Fator de risco de segurança**: habilita você a filtrar com base em medidas de segurança específica. As medidas incluem criptografia em repouso, autenticação multifator e outras.
 
 ## <a name="suggesting-a-change"></a>Sugerir uma alteração
 
@@ -117,7 +117,7 @@ Cada uma das categorias é composta por várias propriedades específicas. De ac
   
 3. Além disso, você pode definir se determinados valores não estão disponíveis ou não são aplicáveis no cálculo da pontuação. Quando incluídos, valores N/A têm uma contribuição negativa para a pontuação calculada.  
   
-   ![pontuação](./media/score.png "métricas de pontuação")  
+   ![score](./media/score.png "score metrics")  
 
 Todas as informações necessárias para compreender como as classificações de risco do Cloud App Security se comparam estão disponíveis no portal do Cloud App Security. Para melhor compreender o peso de um fator de risco na categoria de risco específico, use o botão "i" à direita de cada nome de campo no perfil do aplicativo. Isso fornece informações sobre exatas como o Cloud App Security pontua um fator de risco específico. A pontuação é o valor do fator de risco em uma escala de 1 a 10 mais o seu peso na categoria de risco:
 
@@ -144,6 +144,6 @@ Você também pode adicionar observações para tornar a justificativa da altera
  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

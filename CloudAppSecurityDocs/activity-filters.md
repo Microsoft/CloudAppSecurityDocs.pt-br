@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ce5cd7c341a6d255572763b879181ef2ca8f0cd6
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0b0db06ebce6bb5757adbdc1439d332a20f063e6
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334960"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461173"
 ---
 # <a name="activities"></a>Atividades
 
@@ -72,10 +72,10 @@ Você pode exibir mais informações sobre cada atividade clicando na própria a
  - Exibir atividades do mesmo tipo
  - Exibir todas as atividades do mesmo usuário
  - Exibir atividades do mesmo endereço IP
- - Exibir atividades da mesma localização geográfica
+ - View activities from the same geographic location
  - Exibir atividades do mesmo período de tempo (48 horas)
  
-![gaveta de atividades](./media/activity-drawer.png "gaveta de atividades")  
+![activity drawer](./media/activity-drawer.png "gaveta atividade")  
   
 Para obter uma lista das ações de governança disponíveis, consulte [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
 
@@ -136,6 +136,6 @@ No **Log de atividades**, no canto superior direito, clique no botão **Exportar
 ## <a name="next-steps"></a>Próximas etapas  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

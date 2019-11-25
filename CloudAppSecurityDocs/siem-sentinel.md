@@ -1,6 +1,6 @@
 ---
-title: Integração do Azure Sentinel com o Cloud App Security
-description: Este artigo fornece informações sobre como integrar o SIEM genérico com o Cloud App Security.
+title: Azure Sentinel integration with Cloud App Security
+description: This article provides information integrating your generic SIEM with Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -13,133 +13,133 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c64952b7d760dfc124f9e64b2bd75d4520b36274
-ms.sourcegitcommit: 2c2a14a58492990be5bbac88ff9beb071d556c80
+ms.openlocfilehash: f7664685204a2d2f1965800119c946c85f2cbe49
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73198790"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460395"
 ---
-# <a name="azure-sentinel-integration-preview"></a>Integração do Azure Sentinel (versão prévia)
+# <a name="azure-sentinel-integration-preview"></a>Azure Sentinel integration (preview)
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-Você pode integrar Microsoft Cloud App Security com o Azure Sentinel (um SIEM escalonável, nativo de nuvem e disparar) para permitir o monitoramento centralizado de alertas e dados de descoberta. A integração com o Azure Sentinel permite que você proteja melhor seus aplicativos de nuvem mantendo seu fluxo de trabalho de segurança usual, automatizando procedimentos de segurança e correlacionando entre eventos baseados em nuvem e locais.
+You can integrate Microsoft Cloud App Security with Azure Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
-Os benefícios de usar o Azure Sentinel incluem:
+Benefits of using Azure Sentinel include:
 
-* Retenção de dados mais longa fornecida pelo Log Analytics.
-* As visualizações prontas para uso.
-* Use ferramentas como o Microsoft Power BI ou pastas de trabalho do Azure Sentinel para criar suas próprias visualizações de dados de descoberta que atendam às suas necessidades organizacionais.
+* Longer data retention provided by Log Analytics.
+* Out-of-the-box visualizations.
+* Use tools such as Microsoft Power BI or Azure Sentinel workbooks to create your own discovery data visualizations that fit your organizational needs.
 
-As soluções de integração adicionais incluem:
+Additional integration solutions include:
 
-* **Siems genéricos** – integre Cloud app Security com seu servidor Siem genérico. Para obter informações sobre como integrar com um SIEM genérico, consulte [integração de Siem genérico](siem.md).
-* **Microsoft Security Graph API** -um serviço intermediário (ou agente) que fornece uma única interface programática para conectar vários provedores de segurança. Para obter mais informações, consulte [integrações de solução de segurança usando a API de segurança do Microsoft Graph](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Generic SIEMs** - Integrate Cloud App Security with your generic SIEM server. For information in integrating with a Generic SIEM, see [Generic SIEM integration](siem.md).
+* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
 
 ## <a name="how-to-integrate"></a>Como integrar
 
-A integração com o SIEM é realizada em duas etapas:
+Integrating with your SIEM is accomplished in two steps:
 
-1. Configure-o em Cloud App Security.
-1. Configure-o no Azure Sentinel.
+1. Set it up in Cloud App Security.
+1. Set it up in Azure Sentinel.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Para integrar com o Azure Sentinel:
+To integrate with Azure Sentinel:
 
-* Você deve ter uma licença válida do Azure Sentinel
-* Você deve ser um administrador global ou um administrador de segurança em seu locatário.
+* You must have a valid Azure Sentinel license
+* You must be a Global Administrator or a Security Administrator in your tenant.
 
-### <a name="integrating-with-azure-sentinel"></a>Integração com o Azure Sentinel
+### <a name="integrating-with-azure-sentinel"></a>Integrating with Azure Sentinel
 
-1. No portal de Cloud App Security, sob as **configurações** engrenagem, clique em **extensões de segurança**.
+1. In the Cloud App Security portal, under the **Settings** cog, click **Security extensions**.
 
-1. Na guia **agentes Siem** , clique em adicionar ( **+** ) e, em seguida, escolha **Azure Sentinel**.
+1. On the **SIEM agents** tab, click add ( **+** ), and then choose **Azure Sentinel**.
 
-    ![Captura de tela mostrando o menu Adicionar integração SIEM](media/siem0.png)
+    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
 
-1. No assistente, selecione os tipos de dados que você deseja encaminhar para o Azure Sentinel. Você pode configurar a integração da seguinte maneira:
-    1. **Alertas**: os alertas são automaticamente ativados quando o Azure Sentinel está habilitado. <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
-    1. **Logs de descoberta**: Use o controle deslizante para habilitá-los e desabilitá-los, por padrão, tudo está selecionado e, em seguida, use a lista suspensa **aplicar a** para filtrar quais logs de descoberta são enviados para o Azure Sentinel.
+1. In the wizard, select the data types you want to forward to Azure Sentinel. You can configure the integration, as follows:
+    1. **Alerts**: Alerts are automatically turned on once Azure Sentinel is enabled. <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
+    1. **Discovery logs**: Use the slider to enable and disable them, by default, everything is selected, and then use the **Apply to** drop-down to filter which discovery logs are sent to Azure Sentinel.
 
-    ![Captura de tela mostrando a página inicial de configurar a integração do Azure Sentinel](media/siem-sentinel-configuration.png)
+    ![Screenshot showing start page of Configure Azure Sentinel integration](media/siem-sentinel-configuration.png)
 
-1. Clique em **Avançar**e continue para o Azure Sentinel para finalizar a integração. Para obter informações sobre como configurar o Azure Sentinel, consulte [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security).
+1. Click **Next**, and continue to Azure Sentinel to finalize the integration. For information on configuring Azure Sentinel, see [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security).
 
-    ![Captura de tela mostrando a página concluir da integração de configurar o Azure Sentinel](media/siem-sentinel-configuration-complete.png)
+    ![Screenshot showing finish page of Configure Azure Sentinel integration](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
-> Os logs de descoberta começarão a ser encaminhados para o Azure Sentinel dentro de 15 minutos de configuração no portal do Cloud app Security.
+> Discovery logs will start forwarding to Azure Sentinel within 15 minutes of configuring them in the Cloud app Security portal.
 
-## <a name="alerts-and-discovery-logs-in-azure-sentinel"></a>Alertas e logs de descoberta no Azure Sentinel
+## <a name="alerts-and-discovery-logs-in-azure-sentinel"></a>Alerts and discovery logs in Azure Sentinel
 
-Depois que a integração for concluída, você poderá exibir Cloud App Security alertas e logs de descoberta no Azure Sentinel.
+Once the integration is completed, you can view Cloud App Security alerts and discovery logs in Azure Sentinel.
 
-No Azure Sentinel, em **logs**, em **informações de segurança**, você pode encontrar os logs para os tipos de dados Cloud app Security, da seguinte maneira:
+In Azure Sentinel, under **Logs**, under **Security Insights**, you can find the logs for the Cloud App Security data types, as follows:
 
 | Tipo de dado | Tabela |
 | --- | --- |
-| Logs de descoberta | McasShadowItReporting |
+| Discovery logs | McasShadowItReporting |
 | Alerts | SecurityAlert |
 
-A tabela a seguir descreve cada campo no esquema **McasShadowItReporting** :
+The following table describes each field in the **McasShadowItReporting** schema:
 
 | Campo | Tipo | Description | Exemplos |
 | --- | --- | --- | --- |
-| TenantId | Cadeia de caracteres | ID do espaço de trabalho | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
-| SourceSystem | Cadeia de caracteres | Sistema de origem – valor estático | Azure |
-| TimeGenerated [UTC] | DateTime | Data dos dados de descoberta | 2019-07-23T11:00:35.858 Z |
-| StreamName | Cadeia de caracteres | Nome do fluxo específico | Departamento de marketing |
-| TotalEvents | Inteiro | Número total de eventos por sessão | 122 |
-| BlockedEvents | Inteiro | Número de eventos bloqueados | 0 |
-| UploadedBytes | Inteiro | Quantidade de dados carregados | 1\.514.874 |
-| TotalBytes | Inteiro | Quantidade total de dados | 4\.067.785 |
-| DownloadedBytes | Inteiro | Quantidade de dados baixados | 2\.552.911 |
-| IP | Cadeia de caracteres | Endereço IP de origem | 127.0.0.0 |
+| TenantId | Cadeia de caracteres | Workspace ID | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
+| SourceSystem | Cadeia de caracteres | Source system – static value | Azure |
+| TimeGenerated [UTC] | DateTime | Date of discovery data | 2019-07-23T11:00:35.858Z |
+| StreamName | Cadeia de caracteres | Name of the specific stream | Marketing Department |
+| TotalEvents | Inteiro | Total number of events per session | 122 |
+| BlockedEvents | Inteiro | Number of blocked events | 0 |
+| UploadedBytes | Inteiro | Amount of uploaded data | 1,514,874 |
+| TotalBytes | Inteiro | Total amount of data | 4,067,785 |
+| DownloadedBytes | Inteiro | Amount of downloaded data | 2,552,911 |
+| IpAddress | Cadeia de caracteres | Source IP address | 127.0.0.0 |
 | UserName | Cadeia de caracteres | Nome de Usuário | `Raegan@contoso.com` |
-| EnrichedUserName | Cadeia de caracteres | Nome de usuário aprimorado com username do Azure AD | `Raegan@contoso.com` |
-| AppName | Cadeia de caracteres | Nome do aplicativo de nuvem | Microsoft OneDrive para empresas |
-| appId | Inteiro | Identificador do aplicativo de nuvem | 15600 |
-| AppCategory | Cadeia de caracteres | Categoria do aplicativo de nuvem | Armazenamento em nuvem |
-| AppTags | Matriz de cadeia de caracteres | Marcas internas e personalizadas definidas para o aplicativo | ["aprovado"] |
-| AppScore | Inteiro | A pontuação de risco do aplicativo em uma escala de 0-10, 10 sendo uma pontuação para um aplicativo não arriscado | 10 |
-| Tipo | Cadeia de caracteres | Tipo de logs – valor estático | McasShadowItReporting |
+| EnrichedUserName | Cadeia de caracteres | Enriched user name with Azure AD username | `Raegan@contoso.com` |
+| AppName | Cadeia de caracteres | Name of cloud app | Microsoft OneDrive for Business |
+| AppId | Inteiro | Cloud app identifier | 15600 |
+| AppCategory | Cadeia de caracteres | Category of cloud app | Cloud storage |
+| AppTags | Matriz de cadeia de caracteres | Built-in and custom tags defined for the app | ["sanctioned"] |
+| AppScore | Inteiro | The risk score of the app in a scale 0-10, 10 being  a score for a non-risky app | 10 |
+| Tipo | Cadeia de caracteres | Type of logs – static value | McasShadowItReporting |
 
-## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Usar Power BI com dados de Cloud App Security no Azure Sentinel
+## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Use Power BI with Cloud App Security data in Azure Sentinel
 
-Depois que a integração for concluída, você também poderá usar os dados de Cloud App Security armazenados no Azure Sentinel em outras ferramentas.
+Once the integration is completed, you can also use the Cloud App Security data stored in Azure Sentinel in other tools.
 
-Esta seção descreve como você pode usar o Microsoft Power BI (Power BI) para formatar e combinar dados facilmente para criar relatórios e painéis que atendam às necessidades da sua organização.
+This section describes how you can use Microsoft Power BI (Power BI) to easily shape and combine data to build reports and dashboards that meet the needs of your organization.
 
-Você pode começar rapidamente usando as seguintes etapas:
+You can get started quickly by using the following steps:
 
-1. Em Power BI, importe consultas do Sentinela do Azure para dados de Cloud App Security. Para obter mais informações, consulte [importar Azure monitor dados de log em Power bi](https://docs.microsoft.com/azure/azure-monitor/platform/powerbi).
-1. [Instale o aplicativo Cloud App Security Shadow it Discovery](https://aka.ms/MCASShadowITReporting) e [Conecte-](#connect-the-cloud-app-security-app) o aos seus dados de log de descoberta para exibir o painel de Shadow it Discovery interno.
+1. In Power BI, import queries from Azure Sentinel for Cloud App Security data. For more information, see [Import Azure Monitor log data into Power BI](https://docs.microsoft.com/azure/azure-monitor/platform/powerbi).
+1. [Install the Cloud App Security Shadow IT Discovery app](https://aka.ms/MCASShadowITReporting) and [connect it](#connect-the-cloud-app-security-app) to your discovery log data to view the built-in Shadow IT Discovery dashboard.
 
     > [!NOTE]
-    > Atualmente, o aplicativo não está publicado no Microsoft AppSource. Portanto, talvez seja necessário entrar em contato com o administrador do Power BI para obter permissões para instalar o aplicativo.
+    > Currently, the app is not published on Microsoft AppSource. Therefore, you may need to contact your Power BI admin for permissions to install the app.
 
-    ![Captura de tela mostrando o painel do Shadow IT Discovery](media/siem-sentinel-configuration-powerbi-dashboard.png)
+    ![Screenshot showing the Shadow IT Discovery dashboard](media/siem-sentinel-configuration-powerbi-dashboard.png)
 
-1. Opcionalmente, crie painéis personalizados em Power BI Desktop e ajuste-os para se adequar aos requisitos de análise visual e relatórios de sua organização.
+1. Optionally, build custom dashboards in Power BI Desktop and tweak it to fit the visual analytics and reporting requirements of your organization.
 
-### <a name="connect-the-cloud-app-security-app"></a>Conectar o aplicativo Cloud App Security
+### <a name="connect-the-cloud-app-security-app"></a>Connect the Cloud App Security app
 
-1. Em Power BI, clique em **aplicativos**e, em seguida, clique no aplicativo **Shadow it Discovery** .
+1. In Power BI, click **Apps**, and then click on the **Shadow IT Discovery** app.
 
-1. Na página Introdução **ao novo aplicativo** , clique em **conectar**.
+1. On the **Get started with your new app** page, click **Connect**.
 
-    ![Captura de tela mostrando a página conectar dados do aplicativo](media/siem-sentinel-powerbi-connect.png)
+    ![Screenshot showing connect app data page](media/siem-sentinel-powerbi-connect.png)
 
-1. Na página ID do espaço de trabalho, insira sua ID do espaço de trabalho do Azure Sentinel conforme exibido na página Visão geral do log Analytics e clique em **Avançar**.
+1. On the workspace ID page, enter your Azure Sentinel workspace ID as displayed in your log analytics overview page, and then click **Next**.
 
-    ![Captura de tela mostrando solicitação de ID do espaço de trabalho](media/siem-sentinel-powerbi-workspace-id.png)
+    ![Screenshot showing request for workspace ID](media/siem-sentinel-powerbi-workspace-id.png)
 
-1. Na página autenticação, especifique o método de autenticação e o nível de privacidade e, em seguida, clique em **entrar**.
+1. On the authentication page, specify the authentication method and privacy level, and then click **Sign in**.
 
-    ![Captura de tela mostrando a página de autenticação](media/siem-sentinel-powerbi-authentication.png)
+    ![Screenshot showing the authentication page](media/siem-sentinel-powerbi-authentication.png)
 
-1. Depois de conectar seus dados, vá para a guia **conjuntos** de dados de espaço de trabalho e clique em **Atualizar**. Isso atualizará o relatório com seus próprios dados.
+1. After connecting your data, go to the workspace **Datasets** tab and click **Refresh**. This will update the report with your own data.
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

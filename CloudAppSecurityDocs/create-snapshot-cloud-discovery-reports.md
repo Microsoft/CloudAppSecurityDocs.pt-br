@@ -15,12 +15,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: af9db528ae9e3c3c21e67d502baf2f026d722f68
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 05e579a46bc8367f8968f7a5028bae42e840844c
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335658"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459016"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 
@@ -91,7 +91,7 @@ Portanto, esses atributos não serão exibidos nos dados do Cloud Discovery para
 
 
 Para gerar com êxito um relatório do Cloud Discovery, seus logs de tráfego devem atender às seguintes condições:
-1. A [fonte de dados tem suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. O formato de log corresponde ao formato padrão esperado (formato verificado após o upload da Ferramenta de log).
 3. Os eventos têm menos de 90 dias.
 4. O arquivo de log é válido e inclui informações de tráfego de saída.
@@ -101,7 +101,7 @@ Para gerar com êxito um relatório do Cloud Discovery, seus logs de tráfego de
 ## <a name="next-steps"></a>Próximas etapas  
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
     
       
   

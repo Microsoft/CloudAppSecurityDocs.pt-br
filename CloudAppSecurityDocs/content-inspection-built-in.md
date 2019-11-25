@@ -15,12 +15,12 @@ ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a2677d0bf138882666299f11c6a6a81c73bc3075
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 606b79c2c689f96f72524e60bec9604a42e34219
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335599"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461087"
 ---
 # <a name="built-in-content-inspection"></a>Inspeção de conteúdo interna
 
@@ -82,5 +82,5 @@ O mecanismo de inspeção de conteúdo do Cloud App Security:
 ## <a name="next-steps"></a>Próximas etapas
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   

@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b22d84e2d640a596dda11e13d416f7fec558d377
-ms.sourcegitcommit: aa227a88d09eff15953d10663386f85ff68095b3
+ms.openlocfilehash: 62757b46f40127bb8d312435cd420fdb1e2f3865
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203463"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458494"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -186,4 +186,4 @@ Se a assinatura digital não for válida, ela indicará **Esta assinatura digita
 > [!div class="nextstepaction"]
 > [Log collector FTP configuration](log-collector-ftp.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

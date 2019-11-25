@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dd496f1aacaffedf16bc409f31fcc28a24c4ba68
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: e6559c68b3b958eb9a989153d5f1e4ec011fea49
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335553"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460953"
 ---
 # <a name="accounts"></a>Contas
 
@@ -28,7 +28,7 @@ ms.locfileid: "72335553"
 
 O Microsoft Cloud App Security proporciona visibilidade das contas de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security lerá as informações da conta associadas aos aplicativos conectados. A página Contas permite que você investigue essas contas, as permissões, os grupos dos quais são membros, os aliases delas e os aplicativos que elas estão usando. Além disso, quando o Cloud App Security detecta uma nova conta que não foi vista anteriormente em um dos aplicativos conectados, como nas atividades ou no compartilhamento de arquivos, a conta é adicionada à lista de contas deste aplicativo. Isso permite que você tenha visibilidade sobre a atividade de usuários externos interagindo com seus aplicativos em nuvem.
 
-Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. A página **usuários e contas** fornece detalhes abrangentes sobre as entidades extraídas dos aplicativos de nuvem conectados. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
+Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -82,6 +82,6 @@ Veja a seguir uma lista de filtros de contas que podem ser aplicados. A maioria 
 ## <a name="next-steps"></a>Próximas etapas  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Os clientes Premier também podem criar um problema diretamente no portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

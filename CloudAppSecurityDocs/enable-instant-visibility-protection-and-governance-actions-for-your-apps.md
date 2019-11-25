@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b153713784c737aeb5e863f99ed2196d471b2b8
-ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
+ms.openlocfilehash: e22b7d7f1b59c49470426080bf822fa070a1af6d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73934467"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458154"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -34,7 +34,7 @@ O Microsoft Cloud App Security aproveita as APIs fornecidas pelo provedor de nuv
 O Cloud App Security agora dá suporte a várias instâncias do mesmo aplicativo conectado. Por exemplo, caso você tenha mais de uma instância do Salesforce (uma para venda, uma para marketing), poderá conectar as duas ao Cloud App Security. Você pode gerenciar as diferentes instâncias no mesmo console para criar políticas granulares e uma investigação mais profunda. Esse suporte se aplica somente a aplicativos conectados por API, e não a aplicativos descobertos na nuvem ou aplicativos conectados por proxy.
 
 > [!NOTE]
-> Não há suporte para várias instâncias no Office 365 e no Azure.
+> Multi-instance is not supported for Office 365 and Azure.
 
 ## <a name="how-it-works"></a>Como funciona
 
@@ -68,21 +68,21 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 
 > [!div class="mx-tableFixed"]
 >
-> | | AWS | Caixa | Dropbox | GCP | G Suite | Office 365 | Okta | Serviço agora | Salesforce | WebEx | Workday |
+> | | AWS | Caixa | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
-> | **Listar contas** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **Listar grupos** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
-> | **Listar privilégios** | | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Não pported por provedor |
-> | **Governança de usuário** | | ✔ | Em breve | Conexão do pacote G do assunto | ✔ | ✔ | | Em breve | ✔ | Em breve | t com suporte do provedor |
-> | **Atividade de logon** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **Atividade do usuário** | Não Aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o lesforce Shield | ✔ | ✔ |
+> | **Listar contas** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
+> | **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Not pported by provider |
+> | **Governança de usuário** | | ✔ | Em breve | Subject G Suite connection | ✔ | ✔ | | Em breve | ✔ | Em breve | t supported by provider |
+> | **Atividade de logon** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Atividade do usuário** | Não Aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Supported with lesforce Shield | ✔ | ✔ |
 > | **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
-> | **DLP – verificação periódica** | | ✔ | Em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | | | Sem suporte do ovider |
-> | **DLP – verificação quase em tempo real** | | ✔ | ✔ | Não Aplicável | ✔-requer o Google Business Enterprise | ✔ | Não Aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-> | **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | Não Aplicável | | ✔ | Sem suporte do ovider |
-> | **Governança de arquivos** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | | Sem suporte pelo provedor |
-> | **Exibir permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Chegando em | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não Aplicável | Não Aplicável |
-> | **Revogar permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Ming em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não Aplicável | Não Aplicável |
+> | **DLP - Periodic scan** | | ✔ | Em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | | | Not supported by ovider |
+> | **DLP - Near-real-time scan** | | ✔ | ✔ | Não Aplicável | ✔ - requires Google Business Enterprise | ✔ | Não Aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+> | **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | Não Aplicável | | ✔ | Not supported by ovider |
+> | **File governance** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | | Sem suporte pelo provedor |
+> | **Exibir permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Coming on | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não Aplicável | Não Aplicável |
+> | **Revogar permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | ming soon | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não Aplicável | Não Aplicável |
 > | **Aplique os rótulos da Proteção de Informações do Azure** | Não Aplicável | ✔ | | Não Aplicável | ✔ | ✔ | Não Aplicável | | | Não Aplicável | Não Aplicável |
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -100,16 +100,16 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 |-----|--------------|------|
 | Azure | | Administrador global |
 | AWS | | Usuário recém-criado |
-| Caixa | Enterprise | É altamente recomendável que você se conecte ao box como um administrador. Conectar-se como um coadministrador resultará em apenas visibilidade parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
+| Caixa | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
 | Dropbox | Business/Enterprise | Administração |
-| GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
 | Okta | Enterprise (não de avaliação) | Administração |
 | Salesforce | | Administração |
-| ServiceNow | Eureka e superior | Função admin + RestAPI |
-| WebEx | | Admin + administrador de conformidade |
-| Workday | | Consulte os [pré-requisitos do workday de conexão](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
+| ServiceNow | Eureka e superior | Admin + RestAPI role |
+| Webex | | Admin + Compliance Admin |
+| Workday | | See the [connect Workday prerequisites](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
 
@@ -120,7 +120,7 @@ Para obter mais informações sobre o emparelhamento público, consulte [Circuit
 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
 
 ## <a name="check-out-this-video"></a>Confira este vídeo!
 

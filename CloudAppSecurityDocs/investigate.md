@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 390a9d5e9bff785b67f21802d4d0800af5640193
-ms.sourcegitcommit: 748c6f8cb234b303770814d8e63406a0bad36cd1
+ms.openlocfilehash: 6fc5d998bc174096d7530a37407137bfbf71d50d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74154877"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461321"
 ---
 # <a name="investigate"></a>Investigar
 
@@ -33,31 +33,31 @@ Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos
 
 |Dashboard|Description|
 |---------------|-----------------|
-|Painel principal|Visão geral do status de nuvem (usuários, arquivos, atividades) e ações necessárias (alertas, violações de atividade e violações de conteúdo).|
-|Painel do aplicativo: visão geral|Visão geral do uso do aplicativo por local, gráficos de uso por número de usuários.|
-|Painel do aplicativo: informações|Informações sobre detalhes, segurança e conformidade do aplicativo.|
-|Painel do aplicativo: insights  
-*(quando aplicável)*|Análise de dados armazenados no aplicativo, dividida por tipo de arquivo e nível de compartilhamento de arquivos.|
-|Painel do aplicativo: arquivos  
-*(quando aplicável)*|Fazer uma busca detalhada nos arquivos; capacidade de filtrar de acordo com o proprietário, o nível de compartilhamento e muito mais. Execute ações de governança como quarentena.|
-|Painel do aplicativo: contas|Visão geral de todas as contas/usuários vinculados ao aplicativo.|
-|Painel do aplicativo: aplicativos OAuth  
-*(quando aplicável)*|Faça uma busca detalhada nos aplicativos OAuth atualmente implantados, como G Suite, e defina políticas.|
-|Painel do aplicativo: log de atividades|Faça uma busca detalhada em todas as atividades do aplicativo; capacidade de filtrar de acordo com usuários, endereço IP e muito mais.|
-|Painel do aplicativo: alertas|Faça uma busca detalhada em todos os alertas de aplicativo; capacidade de filtrar de acordo com o status, a categoria, a severidade e muito mais.|
-|Painel do aplicativo: contas com privilégios especiais  
-*(Somente Salesforce)*|Visão geral de usuários por tipo de usuário privilegiado.|
-|Painel do usuário|Uma visão geral completa do perfil do usuário na nuvem, locais, atividades recentes, alertas relacionados.|
+|Painel principal|Overview of cloud status (users, files, activities) and required actions (alerts, activity violations, and content violations).|
+|App dashboard: overview|Overview of app usage per location, usage graphs per number of users.|
+|App dashboard: info|Information about app details, security, and compliance.|
+|App dashboard: insights  
+*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level.|
+|App dashboard: files  
+*(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
+|App dashboard: accounts|Overview of all accounts/users linked to the app.|
+|App dashboard: OAuth apps  
+*(where applicable)*|Drill down into OAuth apps currently deployed, like G Suite, and define policies.|
+|App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
+|App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
+|App dashboard: special privileged accounts  
+*(Salesforce only)*|Overview of users by privileged user type.|
+|Painel do usuário|A complete overview of the user profile in the cloud, locations, recent activities, related alerts.|
 
-## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />marcar aplicativos como aprovados ou não aprovados
+## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />Tag apps as sanctioned or unsanctioned
 
 Uma etapa importante para entender sua nuvem é marcar os aplicativos como sancionados ou não sancionados. Depois de sancionar um aplicativo, você poderá filtrar pelos aplicativos que não estão sancionados e iniciar a migração para aplicativos sancionadas do mesmo tipo.
 
 - No console do Cloud App Security, acesse o Catálogo de aplicativos ou Aplicativos descobertos.
 
-- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](./media/sanction-three-dots.png "Marcar como pontos aprovados") e selecione **Marcar como sancionado**.
+- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](./media/sanction-three-dots.png "Tag as sanctioned dots") e selecione **Marcar como sancionado**.
 
-    ![Marcar como aprovado](./media/mark-as-sanctioned.png "Marcar como aprovado")
+    ![Tag as sanctioned](./media/mark-as-sanctioned.png "tag as sanctioned")
 
 ## <a name="use-the-investigation-tools"></a>Usar as ferramentas de investigação
 
@@ -113,7 +113,7 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
     - Quantos usuários o implantaram? Quão comuns são esses aplicativos em geral?
 
-    ![Painel do aplicativo](./media/investigate-app.png "investigar aplicativo")
+    ![App dashboard](./media/investigate-app.png "investigar aplicativo")
 
 5. Acesse o **Painel do Cloud Discovery** e verifique os seguintes itens:
 
@@ -143,7 +143,7 @@ Digamos que você supõe que não há nenhum acesso ao seu ambiente de nuvem por
 
 5. Em **Atividades que correspondem a todos os seguintes**, escolha **+** para adicionar um filtro. Role a página para baixo até **Marca de IP** e, em seguida, escolha **Tor**.
 
-    ![Exemplo de política para IPs arriscados](./media/example-policy-risky-ips.png "exemplo de ips arriscados de política")
+    ![Example policy for risky IPs](./media/example-policy-risky-ips.png "exemplo de ips arriscados de política")
 
 Agora que você tem a política em vigor, está surpreso ao ver que recebe um alerta de que a política foi violada.
 
@@ -163,4 +163,4 @@ Agora que você tem a política em vigor, está surpreso ao ver que recebe um al
 
 Para saber como controlar o aplicativo de nuvem da sua organização, consulte [Controlar](control.md).
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)].

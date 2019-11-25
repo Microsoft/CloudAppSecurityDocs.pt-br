@@ -15,12 +15,12 @@ ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dd064eb77955213a8fbcb2c655a86678ca4f0db8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: d72344a45a744ceb21d8387d5991e9d895fd274d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335506"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460889"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Como localizar relatórios internos preteridos
 
@@ -50,6 +50,6 @@ Essa tabela ajuda você a exibir as informações fornecidas pelos relatórios p
 ## <a name="next-steps"></a>Próximas etapas 
 [Controle](control.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

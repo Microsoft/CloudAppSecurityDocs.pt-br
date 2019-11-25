@@ -15,21 +15,21 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 340e1919afc9ce5c72efb82825ddc6cd9579dbd3
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 0e0142cfaa91197084636cf1c3b9064f0fce021a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084123"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460869"
 ---
 # <a name="manage-alerts"></a>Gerenciar alertas
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
 
 > [!NOTE]
-> Os alertas são gerenciados em suas respectivas políticas e podem ser configurados para serem enviados como email, mensagem de texto ou ambos.
+> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
 
 ## <a name="manage-your-alerts"></a>Gerenciar os alertas
 
@@ -70,16 +70,16 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 3. Sempre que você ignora um alerta, é importante enviar comentários sobre o motivo pelo qual você o está ignorando. A equipe do Cloud App Security usa esses comentários como uma indicação da precisão do alerta. Em seguida, essas informações são usadas para ajustar nossos modelos de machine learning para alertas futuros. Você pode seguir estas diretrizes para decidir como categorizar o alerta:
    - Se o uso legítimo disparou o alerta e esse não é um problema de segurança, ele pode ser um destes tipos: 
 
-     - Benigno positivo: O alerta é preciso, mas a atividade é legítima. Você deve ignorar o alerta e definir o motivo como **A gravidade real é menor** ou **Não interessante**.
-     -  Falso positivo: O alerta é impreciso. Ignore o alerta e defina o motivo pelo qual o **Alerta não é preciso**.
+     - Benign positive: The alert is accurate but the activity is legitimate. Você deve ignorar o alerta e definir o motivo como **A gravidade real é menor** ou **Não interessante**.
+     -  Falso positivo: o alerta é impreciso. Ignore o alerta e defina o motivo pelo qual o **Alerta não é preciso**.
    - Se houver muito ruído para determinar a legitimidade e a precisão de um alerta, ignore-o e defina o motivo como **Excesso de alertas semelhantes**.
-   - Verdadeiro positivo: Se o alerta estiver relacionado a um evento de risco real que foi confirmado de modo mal-intencionado ou inadvertidamente por alguém de dentro ou fora da organização, defina o evento como **Resolver** depois de terem sido tomadas todas as devidas providências para corrigir o evento.
+   - Verdadeiro positivo: se o alerta estiver relacionado a um evento de risco real que foi confirmado de modo mal-intencionado ou inadvertidamente por alguém de dentro ou de fora da organização, defina o evento como **Resolver** depois de terem sido tomadas todas as devidas providências para corrigi o evento.
 
 ## <a name="alert-types"></a>Tipos de alerta
 
 A tabela a seguir fornece uma lista dos tipos de alertas que podem ser disparados e recomenda maneiras pelas quais você pode resolvê-los.  
 
-|Tipo de alerta|Descrição|Resolução recomendada|  
+|Tipo de alerta|Description|Resolução recomendada|  
 |----------------|-----------------|----------------------------|  
 |Violação de política de atividade|Este tipo de alerta é o resultado de uma política que você criou.|Para trabalhar com esse tipo de alerta em massa, é recomendável trabalhar no Centro de políticas para mitigá-los.<br /><br /> Ajuste a política para excluir entidades ruidosas adicionando mais filtros e mais controles granulares.<br /><br /> Se a política for precisa, o alerta for garantido e for uma violação que você deseja parar imediatamente, considere adicionar a correção automática à política.|  
 |Violação de política de arquivos|Este tipo de alerta é o resultado de uma política que você criou.| Para trabalhar com esse tipo de alerta em massa, é recomendável trabalhar no Centro de políticas para mitigá-los.<br /><br /> Ajuste a política para excluir entidades ruidosas adicionando mais filtros e mais controles granulares.<br /><br /> Se a política for precisa, o alerta for garantido e for uma violação que você deseja parar imediatamente, considere adicionar a correção automática à política.|  
@@ -97,4 +97,4 @@ A tabela a seguir fornece uma lista dos tipos de alertas que podem ser disparado
 ## <a name="next-steps"></a>Próximas etapas  
 Para obter mais informações sobre como investigar alertas, consulte [Investigar](investigate.md).  
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

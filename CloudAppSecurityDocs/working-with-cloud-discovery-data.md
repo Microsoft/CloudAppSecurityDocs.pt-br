@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 34127140ac088352b35ffedd03c53f9b046e07a7
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 5e289a3eea5bbc3306bfe6fa07c5a9084145e6d1
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335944"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459242"
 ---
 # <a name="working-with-discovery-data"></a>Trabalhando com os dados de descoberta
 
@@ -56,7 +56,7 @@ Para criar uma exclusão:
 3. Escolha a guia **Usuários excluídos**, **Endereços IP excluídos** ou **Computadores excluídos** e clique no botão + para adicionar sua exclusão.
 4. Adicione um alias do usuário, um endereço IP ou um nome do computador. É recomendável adicionar informações sobre por que a exclusão foi feita.
   
-     ![excluir usuário](./media/exclude-user.png "excluir usuário")  
+     ![exclude user](./media/exclude-user.png "excluir usuário")  
 
 ## <a name="manage-continuous-reports"></a>Gerenciar relatórios contínuos
 
@@ -105,7 +105,7 @@ Para excluir os dados do Cloud Discovery:
   
 3. Clique no botão **Excluir**.  
   
-    ![excluir dados](./media/delete-data.png "excluir dados")  
+    ![delete data](./media/delete-data.png "excluir dados")  
   
    > [!NOTE]  
    >  O processo de exclusão leva alguns minutos e não é imediato.
@@ -116,6 +116,6 @@ Para excluir os dados do Cloud Discovery:
 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

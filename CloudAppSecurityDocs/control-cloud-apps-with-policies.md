@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a0fd462818e843556820a1a54a6c1d3a0b9c90ea
-ms.sourcegitcommit: be21e0f68f5e4d23bde661485bd9338e74bd6e45
+ms.openlocfilehash: 7b333509cd00b2a17b3a3984da30e4e8142daf88
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71307694"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460738"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 As políticas permitem que você defina a maneira como deseja que os usuários se comportem na nuvem. Elas permitem que você detecte comportamento arriscado, violações ou atividades e pontos de dados suspeitos em seu ambiente de nuvem. Se necessário, é possível integrar fluxos de trabalho de correção para atingir a mitigação de risco completa. Existem vários tipos de políticas que se correlacionam com diferentes tipos de informações que você deseja reunir sobre seu ambiente de nuvem e os tipos de ações de correção que deseja executar.
 
@@ -35,7 +35,7 @@ Quando você observa a página **Política**, as várias políticas e modelos po
 
 Os seguintes tipos de políticas podem ser criados:
 
-|Ícone Tipo de política|Tipo de política|Uso|
+|Ícone Tipo de política|Tipo de política|Use objetos de|
 |-----|-----------------|---------|
 |![ícone de política de acesso](./media/proxy-policy.png)|Política de acesso|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem.|
 |![ícone de política de atividade](./media/activity_policy.png)|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|
@@ -49,35 +49,35 @@ Os seguintes tipos de políticas podem ser criados:
 
 O Cloud App Security ajuda a mitigar diferentes riscos na nuvem. Você pode configurar qualquer política e alerta a ser associado a um dos seguintes riscos:
 
-- **Controle de acesso:** Quem acessa o que de que local?
+- **Controle de acesso:** quem acessa o que de onde?
 
     Monitore continuamente o comportamento e detecte atividades anômalas, incluindo ataques internos e externos de alto risco e aplique uma política para alertar, bloquear ou exigir a verificação de identidade para qualquer aplicativo ou ação específica dentro de um aplicativo. Habilite políticas de controle de acesso móvel e local com base no usuário, dispositivo e geografia com bloqueio não refinado e exibição, edição e bloqueio granulares. Detecte eventos de logon suspeitos, incluindo falhas de autenticação multifator, falhas de logon de conta desabilitada e eventos de representação.
 
-- **Conformidade:** Os requisitos de conformidade foram violados?
+- **Conformidade:** seus requisitos de conformidade estão violados?
 
     Catalogue e identifique dados controlados ou confidenciais, incluindo permissões de compartilhamento para cada arquivo armazenado nos serviços de sincronização de arquivos para garantir a conformidade com regulamentações como PCI, SOX e HIPAA
 
-- **Controle de configuração:** Alterações não autorizadas estão sendo feitas na configuração?
+- **Controle de configuração:** estão sendo feitas alterações não autorizadas nas suas configurações?
 
     Monitore alterações de configuração, incluindo manipulação de configuração remota.
 
-- **Cloud Discovery:** Novos aplicativos estão sendo usados em sua organização? Você tem um problema de aplicativos de TI Invisível sendo usados sobre os quais não tem conhecimento?
+- **Cloud Discovery:** aplicativos novos estão sendo usados em sua organização? Você tem um problema de aplicativos de TI Invisível sendo usados sobre os quais não tem conhecimento?
 
     Classifique o risco geral para cada aplicativo de nuvem com base nas normas e certificações do setor e melhores práticas. Permite que você monitore o número de usuários, as atividades, o volume de tráfego e as horas de uso típico para cada aplicativo na nuvem.
 
-- **DLP:** Arquivos proprietários estão sendo compartilhados publicamente? Você precisa colocar arquivos em quarentena?
+- **DLP:** arquivos proprietários estão sendo compartilhados publicamente? Você precisa colocar arquivos em quarentena?
 
     A integração de DLP local fornece a correção de loop fechado e a integração com as soluções de DLP locais existentes.
 
-- **Contas privilegiadas:** Você precisa monitorar contas de administrador?
+- **Contas com privilégios:** você precisa monitorar contas de administrador?
 
     Monitoramento e relatórios de atividades de administradores e usuários com privilégios em tempo real.
 
-- **Controle de compartilhamento:** Como os dados estão sendo compartilhados no ambiente de nuvem?
+- **Controle de compartilhamento:** como os dados estão sendo compartilhados em seu ambiente de nuvem?
 
     Inspecione o conteúdo de arquivos e na nuvem e imponha políticas de compartilhamento internas e externas. Monitore a colaboração e imponha políticas de compartilhamento, como bloquear o compartilhamento de arquivos fora da sua organização.
 
-- **Detecção de ameaças:** Há atividades suspeitas ameaçando o ambiente de nuvem?
+- **Detecção de ameaças:** há atividades suspeitas ameaçando seu ambiente de nuvem?
 
     Receba notificações em tempo real para qualquer limite de atividade ou violação de política por email ou mensagem de texto. Ao aplicar algoritmos de aprendizado de máquina, o Cloud App Security permite que você detecte o comportamento que poderia indicar que um usuário está usando os dados de maneira indevida.
 
@@ -173,23 +173,23 @@ Depois de criar uma política, é possível habilitá-la ou desabilitá-la. Desa
 
 Por padrão, depois de criar uma política, ela será habilitada.
 
-## <a name="policies-overview-report"></a>Relatório de visão geral de políticas
+## <a name="policies-overview-report"></a>Policies overview report
 
-Cloud App Security permite exportar um relatório de visão geral de políticas mostrando métricas de alerta agregadas por política para ajudá-lo a monitorar, compreender e personalizar suas políticas para proteger melhor sua organização.
+Cloud App Security lets you export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization.
 
-Para exportar um log, execute as seguintes etapas:
+To export a log, perform the following steps:
 
-1. Na página **políticas** , clique no botão **Exportar** .
+1. In the **Policies** page, click the **Export** button.
 
-1. Especifique o intervalo de tempo necessário.
+1. Specify the required time range.
 
-1. Clique em **Exportar**. Esse processo pode levar algum tempo.
+1. Click **Export**. Esse processo pode levar algum tempo.
 
-Para baixar o relatório exportado:
+To download the exported report:
 
 1. Depois que o relatório estiver pronto, vá para **Configurações** e, em seguida **Relatórios exportados**.
 
-1. Na tabela, selecione o relatório relevante no **relatório visão geral** da lista de políticas e clique em baixar.
+1. In the table, select the relevant report from the list of **Policies overview report** and click download.
 
     ![botão de download](./media/download-button.png)
 
@@ -197,4 +197,4 @@ Para baixar o relatório exportado:
 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

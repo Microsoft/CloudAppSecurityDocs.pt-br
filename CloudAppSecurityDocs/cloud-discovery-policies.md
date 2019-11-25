@@ -15,12 +15,12 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 719d09c3d35f14e66862718e19562c7a16c18bf8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 274dace6a7d6c4b1e083f689568d4e9247f3c44a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335558"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461241"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
 
@@ -35,7 +35,7 @@ As políticas de descoberta permitem que você defina alertas que notificam quan
   
 2. Clique em **Criar política** e selecione a política **Descoberta de aplicativos**.  
   
-     ![menu da política de descoberta de aplicativos](./media/app-discovery-policy-menu.png "menu da política de descoberta de aplicativos")  
+     ![app discovery policy menu](./media/app-discovery-policy-menu.png "menu de política de descoberta de aplicativo")  
   
 3. Forneça um nome e uma descrição à sua política. Caso deseje, você poderá baseá-los em um modelo. Para obter mais informações sobre modelos de política, confira [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
@@ -67,7 +67,7 @@ Defina os filtros de política para descobrir todos os serviços encontrados na 
  Defina os limites que devem disparar um alerta para um determinado aplicativo descoberto na parte inferior. Por exemplo, alertar apenas se mais de 100 usuários no ambiente usaram o aplicativo e se eles baixaram uma determinada quantidade de dados do serviço.
 Além disso, você pode definir o limite de alertas diários que deseja receber.  
   
-![exemplo de política de descoberta de aplicativos](./media/app-discovery-policy-example.png "exemplo de política de descoberta de aplicativos")  
+![app discovery policy example](./media/app-discovery-policy-example.png "exemplo de política de descoberta de aplicativo")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Detecção de anomalias do Cloud Discovery
 
@@ -77,7 +77,7 @@ O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anom
   
 2. Clique em **Criar política** e selecione **Política de detecção de anomalias de Cloud Discovery**.  
   
-     ![menu da política de descoberta de anomalias do cloud discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu da política de descoberta de anomalias do cloud discovery")  
+     ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu de política de detecção de anomalias do Cloud Discovery")  
   
 3. Forneça um nome e uma descrição à sua política. Caso deseje, você poderá baseá-los em um modelo, para obter mais informações sobre modelos de política, confira [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
@@ -95,11 +95,11 @@ O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anom
   
 8. Clique em **Criar**.  
   
-![nova política de descoberta de anomalias](./media/new-discovery-anomaly-policy.png "nova política de descoberta de anomalias")  
+![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "nova política de descoberta de anomalias")  
   
 ## <a name="next-steps"></a>Próximas etapas 
 [Políticas de atividade de usuário](user-activity-policies.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

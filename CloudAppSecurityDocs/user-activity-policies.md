@@ -10,16 +10,16 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 490a2f56090973991fcb7e236310bd83b3012806
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 1f860400ec95d0aa2584eb1fd4a8682bb5a9ac58
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084867"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459586"
 ---
 # <a name="activity-policies"></a>Políticas de atividade
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.
 
@@ -47,9 +47,9 @@ Para criar uma nova política de atividade, siga este procedimento:
 
 4. Para definir quais ações ou outras métricas vão disparar essa política, trabalhe com os **filtros de atividade**.
     > [!NOTE]
-    > Para garantir que você inclua apenas os resultados em que o campo de filtro especificado tenha um valor, é recomendável adicionar o mesmo campo novamente usando o teste de **configuração** . Por exemplo, quando a filtragem por **local** *não é igual* a uma lista especificada de países, também *é*possível adicionar um filtro para **localização** . Você também pode visualizar os resultados do filtro selecionando **Editar e Visualizar resultados**.
+    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
     >
-    > ![Captura de tela das configurações de filtro, a exibição do campo de localização é definida](media/activity-example-location-isset.png)
+    > ![Screenshot of filter settings, showing location field is set](media/activity-example-location-isset.png)
 
 5. Em **Parâmetros de correspondência de atividade**, selecione quando uma violação de política será disparada. Escolha disparar quando uma única atividade corresponde aos filtros ou somente quando um número especificado de **Atividades repetidas** é detectado.
     - Se você escolher **Atividade repetida**, poderá definir **Em um único aplicativo**. Essa configuração disparará uma correspondência de política somente quando as atividades repetidas ocorrerem no mesmo aplicativo. Por exemplo, cinco downloads em 30 minutos no Box disparam uma correspondência de política.
@@ -64,13 +64,13 @@ Veja esses exemplos:
 
      No campo **Filtros de atividade**, configure os parâmetros para os quais o alerta será disparado.
 
-     ![Exemplo de política de várias tentativas de credenciais com falha](./media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de várias tentativas de logon com falha")
+     ![Policy example for multiple failed sign-in attempts](./media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de várias tentativas de logon com falha")
 
 - Alta taxa de downloads
 
      Você pode definir a política para que você receba um alerta quando houve um nível inesperado ou não característico de atividade de download. Para configurar esse tipo de política, nos parâmetros de **Taxa**, escolha os parâmetros para disparar o alerta.
 
-     ![exemplo de alta taxa de downloads](./media/high-download-rate-example.png "exemplo de alta taxa de downloads")
+     ![high download rate example](./media/high-download-rate-example.png "exemplo de alta taxa de downloads")
 
 ## <a name="activity-policy-reference"></a>Referência de política de atividade
 
@@ -91,4 +91,4 @@ Cada política é composta pelas seguintes partes:
 
 [Políticas de proteção de dados](data-protection-policies.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -15,12 +15,12 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e697d86bd7279e445a8fa40bf9fd5000081e469
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 2980fa8d9d784ce0e3169ed42359522885fcf320
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335903"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460658"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Monitorar alertas no Cloud App Security
 
@@ -32,7 +32,7 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
 É uma boa ideia examinar todos os seus alertas. Entender o motivo pelo qual um alerta está ocorrendo permite que você o use como uma ferramenta para modificar as políticas. 
 
-**Para exibir alertas:** No portal de Microsoft Cloud App Security, clique em **alertas**.
+**To view alerts:** In the Microsoft Cloud App Security portal, click on **Alerts**.
 
 
 ![Menu Alerta](./media/alert-menu.png)
@@ -66,7 +66,7 @@ Os seguintes tipos de alertas serão exibidos.
 
 |Nome do alerta|AlertID|Description|
 |----|----|----|
-|Alerta de atividade suspeita|ALERT_SUSPICIOUS_ACTIVITY|Atividades suspeitas são pontuadas de acordo com o nível de suspeita da atividade anormal (há uma conta inativa envolvida? Ele é de um novo local?) Esses critérios são todos calculados juntos para fornecer uma pontuação de risco com base nos seguintes fatores de risco: <br>O usuário é administrador <br>Usuário estritamente remoto<br>Proxy anônimo<br> A sessão inteira é composta por logons com falha<br>Vários logons com falha<br>Novo (administrador)<br>IP/ISP/país/agente de usuário para usuário/locatário<br> IP/ISP/país/agente de usuário usado somente pelo usuário (administrador)<br>Primeira atividade de usuário (administrador) em muito tempo<br>Primeira vez que essa atividade administrativa específica é executada em muito tempo<br>Essa atividade administrativa específica não é comum/nunca foi executada antes<br>Esse IP tinha apenas logons com falha no passado<br>Viagem impossível|
+|Alerta de atividade suspeita|ALERT_SUSPICIOUS_ACTIVITY|Atividades suspeitas são pontuadas de acordo com o nível de suspeita da atividade anormal (há uma conta inativa envolvida? Is it from a new location?) These criteria are all calculated together to provide a risk score based on the following risk factors: <br>O usuário é administrador <br>Usuário estritamente remoto<br>Proxy anônimo<br> A sessão inteira é composta por logons com falha<br>Vários logons com falha<br>Novo (administrador)<br>IP/ISP/país/agente de usuário para usuário/locatário<br> IP/ISP/país/agente de usuário usado somente pelo usuário (administrador)<br>Primeira atividade de usuário (administrador) em muito tempo<br>Primeira vez que essa atividade administrativa específica é executada em muito tempo<br>Essa atividade administrativa específica não é comum/nunca foi executada antes<br>Esse IP tinha apenas logons com falha no passado<br>Viagem impossível|
 |Alerta de uso de nuvem suspeito|ALERT_DISCOVERY_ANOMALY_DETECTION|A detecção de anomalias do Cloud Discovery verifica o padrão de comportamento normal e procura por usuários ou aplicativos que são usados de maneira incomum. |
 |Violação de política de atividade|ALERT_CABINET_EVENT_MATCH_AUDIT|Esse alerta informa quando uma correspondência de política foi detectada.|
 |Violação de política de arquivos|ALERT_CABINET_EVENT_MATCH_FILE|Esse alerta informa quando uma correspondência de política foi detectada.|
@@ -79,4 +79,4 @@ Os seguintes tipos de alertas serão exibidos.
 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

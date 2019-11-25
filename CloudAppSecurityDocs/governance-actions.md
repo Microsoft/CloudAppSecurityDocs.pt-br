@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bfd1a91d3226e5a8bbad03f831d998ea0a36f46c
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 7eb1ed1466ef1fb302ca0179951d45d12314d572
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084409"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458779"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades. Ações de governança são ações integradas que você pode executar em arquivos ou atividades diretamente no Microsoft Cloud App Security. As ações de governança controlam o que os usuários fazem, em tempo real, nos aplicativos conectados.
 
@@ -75,7 +75,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
   - **Lixeira** – mova o arquivo para a pasta da lixeira. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![alertas policy_create](./media/policy_create-alerts.png "alertas policy_create")
+   ![policy_create alerts](./media/policy_create-alerts.png "alertas de policy_create")
 
 ## <a name="activity-governance-actions"></a>Ações de governança de atividade
 
@@ -95,7 +95,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
   - **Exigir que o usuário entre novamente** – desconecta o usuário e exige que ele entre novamente.
 
-  ![Ações de governança de política de atividade do Cloud App Security](./media/activity-policy-ref6.png "ref6 da política de atividade")
+  ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "referência de política de atividade 6")
 
 ## <a name="governance-conflicts"></a>Conflitos de governança
 
@@ -118,13 +118,13 @@ O log de governança fornece um registro de status de cada tarefa que você defi
 A tabela a seguir é a lista completa de ações que o portal do Cloud App Security permite que você execute. Essas ações são habilitadas em vários locais por todo o console, conforme descrito na coluna **Localização**. Cada ação de governança realizada é relacionada no Log de Governança.
 Para obter informações sobre como as ações de governança são tratadas quando há conflitos de política, consulte [Conflitos de política](control-cloud-apps-with-policies.md).
 
-| Location | Tipo de objeto de destino | Ação de governança |Descrição| Conectores relacionados|
+| Local | Target object type | Governance action |Description| Related connectors|
 |-------------------|---------|-----|--------|-------|
 |Contas |Arquivo |Remover colaborações do usuário | Remove todas as colaborações de um usuário específico para todos os arquivos - bom para as pessoas que estão saindo da empresa. |Box, G Suite|
 |Contas | Conta | Cancelar suspensão de usuário |Cancela a suspensão do usuário |G Suite, Box, Office, Salesforce|
 |Contas | Conta |Configurações de conta | Leva você para a página de configurações de conta no aplicativo específico (por exemplo, dentro do Salesforce). | Todas as configurações dos aplicativos One Drive e SharePoint são feitas no Office. |
 |Contas |Arquivo |Transferir a propriedade de todos os arquivos | Em uma conta, você transfere os arquivos de um usuário para que a propriedade deles seja concedida a uma nova pessoa que você selecionar. O proprietário anterior se torna um editor e não pode mais alterar as configurações de compartilhamento. O novo proprietário receberá uma notificação por email sobre a alteração de propriedade. | G Suite|
-|Contas, Política de atividade | Conta | Suspender um usuário| Define o usuário para que ele não tenha nenhum acesso e nenhuma capacidade de entrar. Se eles estiverem conectados quando você definir essa ação, eles serão bloqueados imediatamente. |G Suite, Box, Office, Salesforce|
+|Contas, Política de atividade | Conta | Suspender um usuário| Define o usuário para que ele não tenha nenhum acesso e nenhuma capacidade de entrar. If they're logged in when you set this action, they're immediately locked out. |G Suite, Box, Office, Salesforce|
 |Política de atividade, Contas | Conta |Exigir que o usuário entre novamente|Revoga todos os tokens de atualização e todas as emissões de cookie de sessão para aplicativos pelo usuário. Essa ação impedirá o acesso aos dados da organização e forçará o usuário a entrar novamente em todos os aplicativos.| G Suite|
 |Política de atividade, Contas | Conta | Revogar privilégios de administrador |Revoga os privilégios da conta do administrador. Por exemplo, definir uma política de atividade que revogue os privilégios de administrador depois de 10 tentativas de logon com falha. | G Suite|
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Cancelar veto de aplicativo| No Google e no Salesforce: remove o veto do aplicativo e permite que os usuários concedam permissões ao aplicativo de terceiros com suas contas do Google ou do Salesforce. No Office 365: restaura as permissões do aplicativo de terceiros para o Office. |G Suite, Salesforce, Office |
@@ -134,13 +134,13 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Revogar o aplicativo|Revogue as permissões de um aplicativo de terceiros para o Google ou Salesforce. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras. | G Suite, Salesforce|
 |Painel do aplicativo > Permissões de aplicativo | Conta | Revogar o usuário do aplicativo|Você pode revogar usuários específicos ao clicar no número em Usuários. A tela exibirá os usuários específicos e você poderá usar o X para excluir permissões para qualquer usuário.| G Suite, Salesforce|
 |Descobrir > Aplicativos descobertos/Endereços IP/Usuários| Cloud Discovery | Exportar dados de descoberta | Cria um CSV dos dados de descoberta. | Descoberta |
-|Política de arquivos|Arquivo |Lixeira|Move o arquivo na lixeira do usuário.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
+|Política de arquivos|Arquivo |Lixeira|Moves the file in the user's trash.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Política de Arquivos|Arquivo | Notificar o último editor de arquivo |Envia um email para notificar a última pessoa que editou o arquivo que ele viola uma política. |G Suite, Box|
 |Política de Arquivos|Arquivo |Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir. | Todos os aplicativos |
 |Política de arquivos, Atividade de política | Arquivo, Atividade | Notificar usuários específicos |Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.| Todos os aplicativos |
 |Política de arquivo e Política de atividade | Arquivo, Atividade |Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação. |Tudo |
 |Política de arquivo e Arquivos|Arquivo | Remover a capacidade do editor de compartilhar|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança restringe essa opção e também o compartilhamento de arquivos com o proprietário.| G Suite|
-|Política de arquivo e Arquivos|Arquivo | [Colocar em quarentena do administrador](use-case-admin-quarantine.md) |Remove qualquer permissão do arquivo e o move para uma pasta de quarentena em um local para o administrador. Essa ação permite que o administrador examine o arquivo e o remova.| Office 365 SharePoint, OneDrive for Business, Box|
+|Política de arquivo e Arquivos|Arquivo | [Colocar em quarentena do administrador](use-case-admin-quarantine.md) |Removes any permissions from the file and moves the file to a quarantine folder in a location for the admin. This action enables the admin to review the file and remove it.| Office 365 SharePoint, OneDrive for Business, Box|
 |Política de arquivo e Arquivos|Arquivo | Aplicar rótulo de classificação|Aplica um rótulo de classificação da Proteção de Informações do Azure a arquivos automaticamente de acordo com as condições definidas na política.| Box, One Drive, G Suite, SharePoint |
 |Política de arquivo e Arquivos|Arquivo | Remover rótulo de classificação | Remove um rótulo de classificação da Proteção de Informações do Azure de arquivos automaticamente de acordo com as condições definidas na política. É possível remover rótulos apenas quando eles não incluem proteção e são aplicados no Cloud App Security, exceto os aplicados diretamente na Proteção de Informações.| Box, One Drive, G Suite, SharePoint |
 |Política de arquivos, Política de atividade, Alertas | Aplicativo |Exigir que os usuários entrem novamente| Você pode exigir que os usuários entrem novamente no Office 365 e em todos os aplicativos do Azure AD como uma correção rápida e eficaz para alertas de atividade do usuário suspeita e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário. | Office 365, Azure AD |
@@ -169,4 +169,4 @@ Para obter informações sobre como as ações de governança são tratadas quan
 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

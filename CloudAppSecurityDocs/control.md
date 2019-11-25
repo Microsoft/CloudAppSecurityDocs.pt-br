@@ -15,12 +15,12 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8830e76a266d9ab5fb0e552cccd6e73cbf2bc700
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: d6c535c0ae8abb280265d5ae2f9b5c92fe462905
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335642"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460911"
 ---
 # <a name="control"></a>Control
 
@@ -39,11 +39,11 @@ Depois que você examinar os alertas abertos, vá para o Centro de políticas pa
 
      Se a política estiver definida para encontrar violações de conformidade e alguém salvar os números de cartão de crédito em arquivos no OneDrive, você terá uma correspondência na política.  
 
-     ![Correspondências de PCI](./media/pci-matches.png "correspondências de pci")  
+     ![PCI matches](./media/pci-matches.png "correspondências de pci")  
 
 -   Selecione a correspondência para ver os arquivos reais que violaram a política.  
 
-     ![Correspondências de conteúdo de PCI](./media/pci-content-matches.png "correspondências de conteúdo de pci")  
+     ![PCI content matches](./media/pci-content-matches.png "correspondências de conteúdo de pci")  
 
      Você pode selecionar o próprio arquivo para obter informações sobre os arquivos.  
 
@@ -51,14 +51,14 @@ Depois que você examinar os alertas abertos, vá para o Centro de políticas pa
 
      Você pode clicar nas **Correspondências** para ver os números de cartão de crédito reais.  
 
-     ![O conteúdo corresponde aos números do cartão de crédito](./media/content-matches-ccn.png "o conteúdo corresponde aos números do cartão de crédito")  
+     ![Content matches credit card numbers](./media/content-matches-ccn.png "content matches credit card numbers")  
 
 ## <a name="apply-governance-actions"></a>Aplicar ações de governança  
 Você pode aplicar ações de governança de dentro de políticas, de dentro de alertas e do log **Arquivos**.  
 
-A qualquer momento, você pode examinar e ver o status de todas as ações de governança aplicadas anteriormente acessando a engrenagem **Configurações** e escolhendo **Log de governança**. ![ícone de configurações](./media/settings-icon.png "settings icon")
+A qualquer momento, você pode examinar e ver o status de todas as ações de governança aplicadas anteriormente acessando a engrenagem **Configurações** e escolhendo **Log de governança**. ![settings icon](./media/settings-icon.png "settings icon")
 
-Para qualquer ação de governança com falha, escolha o ícone **Tentar novamente** para aplicá-la outra vez. ![Ícone de Tentar novamente](./media/retry-icon.png "retry icon")   
+Para qualquer ação de governança com falha, escolha o ícone **Tentar novamente** para aplicá-la outra vez. ![Retry icon](./media/retry-icon.png "retry icon")   
 
 Dependendo do tipo de política, violação e aplicativo, diferentes ações de governança estão disponíveis.  
 
@@ -72,7 +72,7 @@ Uma vez que as ações de correção utilizam as APIs do provedor de nuvem, as a
 >   
 >  Para obter diretrizes, você pode usar o botão **Editar e visualizar resultados** na seção **Filtros**.  
 
-![Editar a política de arquivos e visualizar os resultados](./media/file-policy-edit-and-preview-results.png "editar a política de arquivos e visualizar os resultados")  
+![File policy edit and preview results](./media/file-policy-edit-and-preview-results.png "edição de política de arquivo e visualizar os resultados")  
 
 ## <a name="migration"></a>Migração  
 O Cloud App Security ajuda a distribuir suas migrações, permitindo que você saiba quem na sua organização está usando quais aplicativos e fornecendo as ferramentas para monitorar a adoção de novos aplicativos. Ele também pode ajudar a descobrir quais tipos de aplicativos você deve oferecer na sua organização, fornecendo as ferramentas para ver o que todos já estão usando.  
@@ -86,7 +86,7 @@ Considere este cenário: você adquiriu recentemente o Office 365 e deseja que t
 
    1. No seu **Painel do Cloud Discovery**, clique em **Dropbox** e, em seguida, selecione a guia **Endereço IP** ou **Usuários**.  
 
-   2. Escolha o ícone de seta **Exportar** e as opções de exportação. ![Ícone de seta](./media/arrow-icon.png "arrow icon")
+   2. Escolha o ícone de seta **Exportar** e as opções de exportação. ![Arrow icon](./media/arrow-icon.png "arrow icon")
 
 ### <a name="find-more-secure-alternatives"></a>Encontrar alternativas mais seguras  
 O catálogo de serviços do Cloud App Security pode ajudá-lo a encontrar alternativas que funcionem para sua organização, em vez de aplicativos arriscados que seus usuários podem estar utilizando.  
@@ -104,4 +104,4 @@ Considere este cenário: você está pensando em comprar uma ferramenta de produ
 ## <a name="next-steps"></a>Próximas etapas
 Para saber como usar e configurar políticas para controlar o uso do aplicativo de nuvem, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

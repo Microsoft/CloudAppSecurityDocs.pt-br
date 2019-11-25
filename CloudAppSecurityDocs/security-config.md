@@ -1,5 +1,5 @@
 ---
-title: Obter recomendações de configuração de segurança para o Azure-Cloud App Security | Microsoft Docs
+title: Get security configuration recommendations for Azure - Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações de como obter recomendações de configuração de segurança no Cloud App Security por meio da integração com a Central de segurança do Azure.
 keywords: ''
 author: shsagir
@@ -15,16 +15,16 @@ ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c68cf2cb1df5c61a2f3685818320cd3ffd30eb15
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 1e53dcc94b6ca96aeefcfd511e4ae4e9557e5a21
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084971"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460494"
 ---
 # <a name="security-configuration-for-azure"></a>Configuração de segurança para o Azure
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security fornece uma avaliação de configuração de segurança do seu ambiente do Azure. A avaliação, alimentada pela Central de Segurança do Azure, fornece recomendações para configuração ausente e controle de segurança.
 
@@ -45,7 +45,7 @@ Para habilitar as recomendações de configuração de segurança no Microsoft C
 
 2. Abra a <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Central de Segurança do Azure</a> para que as alterações entrem em vigor.
 
-3. Em Cloud app Security, navegue para **investigar** > a**configuração de segurança**e, em seguida, selecione a guia **Azure** .
+3. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Azure** tab.
     - O Microsoft Cloud App Security fornece recomendações apenas para as 50 principais assinaturas.
     - Pode levar até 15 minutos para que as alterações entrem em vigor.
 
@@ -61,4 +61,4 @@ Para obter informações de como implementar as recomendações de segurança, c
 
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

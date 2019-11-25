@@ -15,19 +15,19 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9b0b9380d3cc2780dd17e3c3a53c374bca38b6e9
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 0879c468f48c68214db8a4ff77e5f7ccb0eba252
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084239"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458403"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitar o coletor de logs por trás de um proxy
 
 Depois de configurar o coletor de logs, se você estiver executando por trás de um proxy, o coletor de logs poderá ter problemas para enviar dados ao Cloud App Security. Isso pode acontecer porque o coletor de logs não confia na autoridade de certificado raiz do proxy e não consegue se conectar ao Microsoft Cloud App Security para recuperar sua configuração ou carregar os logs recebidos.
 
 >[!NOTE]
-> Para obter informações sobre como alterar os certificados usados pelo coletor de logs para syslog ou FTP e para resolver problemas de conectividade dos firewalls e proxies para o coletor de logs, consulte [configuração de FTP do coletor de logs](log-collector-ftp.md).
+> For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Log collector FTP configuration](log-collector-ftp.md).
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>Configurar o coletor de logs por trás de um proxy
@@ -83,7 +83,7 @@ O contêiner está pronto.
 
 Execute o comando **collector_config** usando o token da API que você usou durante a criação de seu coletor de logs:
 
-![Token da API](./media/docker-3.png "Token da API")
+![API token](./media/docker-3.png "API token")
 
 Quando você executar o comando, especifique seu próprio token da API:
 
@@ -91,7 +91,7 @@ Quando você executar o comando, especifique seu próprio token da API:
       collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 
-![Atualização da configuração](./media/docker-4.png "Atualização da configuração")
+![Configuration update](./media/docker-4.png "Configuration update")
 
 O coletor de logs consegue agora se comunicar com o Cloud App Security. Depois de enviar dados a ele, o status será alterado de **Íntegro** para **Conectado** no portal do Cloud App Security.
 
@@ -104,4 +104,4 @@ O coletor de logs consegue agora se comunicar com o Cloud App Security. Depois d
 
 [Políticas de atividade de usuário](user-activity-policies.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

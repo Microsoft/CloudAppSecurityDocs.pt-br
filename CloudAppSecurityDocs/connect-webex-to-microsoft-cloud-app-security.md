@@ -1,6 +1,6 @@
 ---
-title: Conectar WebEx a Cloud App Security
-description: Este artigo fornece informações sobre como conectar seu aplicativo WebEx para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
+title: Connect Webex to Cloud App Security
+description: This article provides information about how to connect your Webex app to Cloud App Security using the API connector  for visibility and control over use.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,49 +14,49 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9e918b7ba5295eab7d7e477fc0197263142653e
-ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
+ms.openlocfilehash: 2f35d499398f6d538b552678d5c30740e2f5d5ea
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463645"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460836"
 ---
-# <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conectar o Cisco WebEx ao Microsoft Cloud App Security
+# <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Connect Cisco Webex to Microsoft Cloud App Security
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do Cisco WebEx existente usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre usuários, atividades e arquivos WebEx.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Sugerimos que você crie uma conta de serviço dedicada para a conexão. Isso permite que você veja que ações de governança executadas em WebEx como sendo executadas dessa conta, como excluir mensagens enviadas no WebEx. Caso contrário, o nome do administrador que se conectou Cloud App Security ao WebEx será exibido como o usuário que realizou as ações.
-- Você deve ter permissões totais de administrador **e** administrador de conformidade no WebEx.
+- We suggest that you create a dedicated service account for the connection. This enables you to see that governance actions performed in Webex as being performed from this account, such as delete messages sent in Webex. Otherwise, the name of the admin who connected Cloud App Security to Webex will appear as the user who performed the actions.
+- You must have Full administrator **and** Compliance administrator permissions in Webex.
 
-## <a name="how-to-connect-webex-to-cloud-app-security"></a>Como conectar o WebEx ao Cloud App Security
+## <a name="how-to-connect-webex-to-cloud-app-security"></a>How to connect Webex to Cloud App Security
 
 1. No console do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.
 
-1. Na página **conectores de aplicativos** , clique no botão de adição seguido pelo **Cisco WebEx**.
+1. In the **App connectors** page, click the plus button followed by **Cisco Webex**.
 
-    ![conectar WebEx](./media/cisco-webex.png "conectar WebEx")
+    ![connect Webex](./media/cisco-webex.png "connect Webex")
 
-1. No pop-up, insira o nome da instância deste conector.
+1. In the pop-up, enter the instance name of this connector.
 
-1. Clique em **conectar Cisco WebEx**. A página de entrada do WebEx é aberta. Insira suas credenciais para permitir que Cloud App Security acesso à instância WebEx de sua equipe.
+1. Click **Connect Cisco Webex**. The Webex sign in page opens. Enter your credentials to allow Cloud App Security access to your team's Webex instance.
 
-1. WebEx pergunta se você deseja permitir Cloud App Security acesso às informações da sua equipe, ao log de atividades e executar atividades como um membro da equipe. Para continuar, clique em **Permitir**.
+1. Webex asks you if you want to allow Cloud App Security access to your team information, activity log, and perform activities as a team member. Para continuar, clique em **Permitir**.
 
-1. De volta ao console do Cloud App Security, você deve receber uma mensagem de que o WebEx foi conectado com êxito.
+1. Back in the Cloud App Security console, you should receive a message that Webex was successfully connected.
 
 1. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.
 
     O teste pode levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.
 
-Depois de conectar o WebEx, você receberá eventos por 7 dias antes da conexão. Cloud App Security examina eventos nos últimos três meses. Para aumentar isso, você deve ter uma licença do Cisco WebEx pro e abrir um tíquete com suporte a Cloud App Security.
+After connecting Webex, you'll receive events for 7 days prior to connection. Cloud App Security scans events over the past three months. To increase this, you must have a Cisco Webex pro license and open a ticket with Cloud App Security support.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

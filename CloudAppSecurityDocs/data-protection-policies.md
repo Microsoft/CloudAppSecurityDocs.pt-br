@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7391832b1be0ed9b50d54f22ee324879fd588d38
-ms.sourcegitcommit: 207543b3f7d0489b1275d20c3543964bc6525d1a
+ms.openlocfilehash: 1689bccc5c2dd55ca719159697986f7c317be1af
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995977"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461378"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso. O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de 20 filtros de metadados (como por exemplo, nível de acesso e tipo de arquivo).
 
@@ -41,7 +41,7 @@ O mecanismo combina três aspectos em cada política:
 
 * Ações automatizadas para governança e correção. Para obter mais informações, consulte [Control](control.md) (Controlar).
     > [!NOTE]
-    > Somente uma ação de governança pode ser aplicada por arquivo; Portanto, quando houver várias correspondências de política de arquivo para um arquivo, a ação de governança da primeira política disparada será aplicada. Por exemplo, se uma política de arquivo já tiver aplicado um rótulo AIP a um arquivo, uma segunda política de arquivo não poderá mover o arquivo para a quarentena do administrador.
+    > Only one governance action can be applied per file; hence, where there are multiple file policy matches for a file, the governance action of the first triggered policy will be applied. For example, if a file policy has already applied an AIP label to a file, a second file policy cannot move the file to admin quarantine.
 
 Quando habilitada, a política examina continuamente seu ambiente de nuvem, identifica arquivos que correspondem aos filtros de contexto e conteúdo e aplica as ações automatizadas solicitadas. Essas políticas detectam e corrigem violações de informações em repouso ou quando novo conteúdo é criado. As políticas podem ser monitoradas usando alertas em tempo real ou relatórios gerados do console.
 
@@ -92,7 +92,7 @@ Para criar uma nova política de arquivos, siga este procedimento:
 
 1. Escolha as ações de **Governança** que você deseja que o Cloud App Security realize quando uma correspondência for detectada.
 
-1. Depois de criar sua política, você pode exibi-la na guia **Política de arquivos**. Você sempre pode editar uma política, calibrar seus filtros ou alterar as ações automatizadas. A política é habilitada automaticamente no momento da criação e inicia a verificação de seus arquivos de nuvem imediatamente.  Tenha muito cuidado ao definir as ações de controle, elas podem causar uma perda irreversível de permissões de acesso para seus arquivos. É recomendável restringir os filtros para representar exatamente os arquivos nos quais você deseja agir usando vários campos de pesquisa. Quanto mais restritos forem os filtros, melhor. Para obter orientação, você pode usar o botão **Editar e visualizar resultados** na seção Filtros.
+1. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. A política é habilitada automaticamente no momento da criação e inicia a verificação de seus arquivos de nuvem imediatamente.  Tenha muito cuidado ao definir as ações de controle, elas podem causar uma perda irreversível de permissões de acesso para seus arquivos. É recomendável restringir os filtros para representar exatamente os arquivos nos quais você deseja agir usando vários campos de pesquisa. Quanto mais restritos forem os filtros, melhor. Para obter orientação, você pode usar o botão **Editar e visualizar resultados** na seção Filtros.
 
     ![edição de política de arquivo e visualizar os resultados](./media/file-policy-edit-and-preview-results.png)
 
@@ -114,11 +114,11 @@ Cada política é composta pelas seguintes partes:
 
 * **Extensões** – a inspeção de conteúdo pode ser executada por meio de mecanismos de terceiros para funcionalidades aprimoradas de DLP ou antimalware.
 
-## <a name="file-queries"></a>Consultas de arquivo
+## <a name="file-queries"></a>File queries
 
 Para simplificar ainda mais a investigação, agora você pode criar consultas personalizadas e salvá-las para uso posterior.
 
-1. Na página **arquivo** , use os filtros conforme descrito acima para fazer uma busca detalhada em seus aplicativos, conforme necessário.
+1. In the **File** page, use the filters as described above to drill down into your apps as necessary.
 
 1. Após concluir a criação da sua consulta, clique no botão **Salvar como** no canto superior direito dos filtros.
 
@@ -130,4 +130,4 @@ Para simplificar ainda mais a investigação, agora você pode criar consultas p
 
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

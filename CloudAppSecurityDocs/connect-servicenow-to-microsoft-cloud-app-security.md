@@ -15,16 +15,16 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ce165d2f26b2e6a3d405aebf560b8f9964adcb3e
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: a90caeed68ae83e5a89730ec559cd54bcbdfa690
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083784"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460969"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do ServiceNow usando a API do conector de aplicativos. Essa conexão fornece visibilidade e controle sobre o uso do ServiceNow.
 
@@ -32,7 +32,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 >  É recomendável implantar o ServiceNow usando os tokens de aplicativo OAuth, disponíveis para Fuji e versões posteriores (consulte a [documentação do ServiceNow](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) relevante). Para as versões anteriores, um [modo de conexão herdado](#legacy-servicenow-connection) está disponível com base no usuário/senha. O nome de usuário/senha fornecidos são usados apenas para geração de token de API e não são salvos após o processo de conexão inicial.
 > 
 > [!NOTE]
->  O Cloud App Security dá suporte às versões do ServiceNow, Kingston, Eureka, Fiji, Geneva, Helsinque, Istambul, Londres e Madri. Para conectar o ServiceNow ao Cloud App Security, você deve ter a função **Admin** e verificar se a instância do ServiceNow dá suporte ao acesso à API.  Para obter mais informações, consulte a [Documentação do produto ServiceNow](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+>  Cloud App Security supports ServiceNow versions of Jakarta, Kingston, Eureka, Fiji, Geneva, Helsinki, Istanbul, London, and Madrid. Para conectar o ServiceNow ao Cloud App Security, você deve ter a função **Admin** e verificar se a instância do ServiceNow dá suporte ao acesso à API.  Para obter mais informações, consulte a [Documentação do produto ServiceNow](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>Como conectar o ServiceNow ao Cloud App Security usando OAuth
   
@@ -70,7 +70,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
   
 7. Na página **Conectores de aplicativos**, clique no botão de mais e depois em **ServiceNow**.  
   
-    ![conectar o ServiceNow](./media/connect-servicenow.png "conectar o ServiceNow")  
+    ![connect ServiceNow](./media/connect-servicenow.png "connect ServiceNow")  
   
 8. No pop-up, adicione a ID de usuário do ServiceNow, a senha, a URL da instância, a ID do Cliente e o Segredo do Cliente do ServiceNow nas caixas apropriadas. Para localizar sua ID de usuário do ServiceNow, no portal do ServiceNow, acesse **Usuários** e, em seguida, localize seu nome na tabela.
 
@@ -78,7 +78,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
   
 9. Clique em **Conectar**.  
   
-    ![Conectar ServiceNow ao CAS](./media/servicenow-portal-connect.png "Conectar ServiceNow no portal")  
+    ![ServiceNow connect to CAS](./media/servicenow-portal-connect.png "ServiceNow connect in portal")  
   
 10. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar agora**.  
   
@@ -96,19 +96,19 @@ Para conectar o ServiceNow ao Cloud App Security, é necessário ter permissões
 
 3. Verifique se o plug-in da API REST está ativado.   
 
-   ![Conta do ServiceNow](./media/servicenow-account.png "Conta do ServiceNow")   
+   ![ServiceNow account](./media/servicenow-account.png "ServiceNow account")   
 
 4. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos sancionados**.   
 
 5. Na linha ServiceNow, clique em **Conectar** na coluna **Status do Conector de Aplicativos** ou clique no botão **Conectar um aplicativo** e em **ServiceNow**.   
 
-   ![conectar o ServiceNow](./media/connect-servicenow.png "conectar o ServiceNow")   
+   ![connect ServiceNow](./media/connect-servicenow.png "connect ServiceNow")   
 
 6. Na página de configurações do ServiceNow, na guia API, adicione sua ID de usuário do ServiceNow, senha e URL da instância do ServiceNow nas caixas apropriadas.   
 
 7. Clique em **Conectar**.   
 
-   ![Senha de atualização do ServiceNow](./media/servicenow-update-password.png "Senha de atualização do ServiceNow")   
+   ![ServiceNow update password](./media/servicenow-update-password.png "ServiceNow update password")   
 
 8. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.   
   
@@ -119,5 +119,5 @@ Para conectar o ServiceNow ao Cloud App Security, é necessário ter permissões
 ## <a name="next-steps"></a>Próximas etapas 
 [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   

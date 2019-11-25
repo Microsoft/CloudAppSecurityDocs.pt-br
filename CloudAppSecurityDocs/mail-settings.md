@@ -15,12 +15,12 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5bdf183c62329a2282881a341abd78e9126393d6
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: dfb15076c2afc1e1ac29b72063b927bd0c5a74fb
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335835"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458383"
 ---
 # <a name="email-notification-preferences"></a>Preferências de notificação por email
 
@@ -128,6 +128,6 @@ Veja abaixo um modelo de email de exemplo:
 
 [Configurar o Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

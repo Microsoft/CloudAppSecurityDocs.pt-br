@@ -15,12 +15,12 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d049cdbb7a85f2728a83120214a870747abbe6c3
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: ac416d39f0884a417396fe121ccd8eb8f09fdbda
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335030"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460799"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
@@ -87,7 +87,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 1. Abra o Gerenciador do Hyper-V.  
   
 2. Selecione **Novo**, **Máquina Virtual** e clique em **Próximo**.  
-   ![máquina virtual do Hiper-V de descoberta](./media/discovery-hyperv-virtual-machine.png "máquina virtual do Hiper-V de descoberta")  
+   ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
   
 3. Forneça um **Nome** para a nova máquina virtual, por exemplo, CloudAppSecurityLogCollector01 e clique em **Próximo**.  
   
@@ -169,4 +169,4 @@ Depois de verificar que os logs estão sendo carregados no Cloud App Security e 
 ## <a name="next-steps"></a>Próximas etapas 
 [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)   
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
