@@ -1,70 +1,78 @@
 ---
-title: Integre a proteção avançada contra ameaças do Azure com o Cloud App Security
-description: Este artigo fornece informações sobre como aproveitar as ideias de proteção avançada contra ameaças do Azure no Cloud App Security para detecção de riscos híbridos.
+title: Integrate Azure Advanced Threat Protection with Cloud App Security
+description: This article provides information about how to leverage Azure Advanced Threat Protection insights in Cloud App Security for hybrid risk detection.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/27/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd52e120f20e6b8ebaeacdd5a30a7c98d883fec9
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 5636c6a0aa51d17847560a122248e625137840cb
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334878"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460936"
 ---
-# <a name="azure-advanced-threat-protection-integration"></a>Integração da proteção avançada contra ameaças do Azure
+# <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection integration
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security integra-se com o Azure ATP (proteção avançada contra ameaças do Azure) para fornecer UEBA (análise comportamental de entidade de usuário) em um ambiente híbrido – tanto no aplicativo de nuvem quanto no local, para obter mais informações, consulte [tutorial: investigar arriscado usuários](tutorial-ueba.md) para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo Azure ATP, consulte [o que é o Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
+Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md) For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para fazer uma investigação completa em um ambiente híbrido, é necessário:
 
 - Uma licença válida do ATP do Azure vinculada à instância do Azure Active Directory
-- Você deve ser um administrador global para habilitar a integração entre o Azure ATP e o Microsoft Cloud App Security 
-- Se não tiver o Azure ATP, experimente-o agora
-
+- You must be a global admin to enable integration between Azure ATP and Microsoft Cloud App Security
+- If do not have Azure ATP, try it now
 
 >[!NOTE]
->Se você não tiver uma assinatura para Microsoft Cloud App Security, ainda poderá usar o portal de Cloud App Security para obter informações do Azure ATP.
+>If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights.
 
+## <a name="enable-azure-advanced-threat-protection"></a>Enable Azure Advanced Threat Protection
 
-## <a name="enable-azure-advanced-threat-protection"></a>Habilitar a proteção avançada contra ameaças do Azure
+To enable Cloud App Security integration with Azure ATP:
 
-Para habilitar a integração do Cloud App Security com o Azure ATP:
+1. In Cloud App Security, under the settings cog, select **Settings**.
 
-1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**.
-    
-   ![Menu configurações](./media/azip-system-settings.png)
+   ![Settings menu](media/azip-system-settings.png)
 
-1. Em **proteção contra ameaças**, selecione **Azure ATP**.
-   
-    ![habilitar a proteção avançada contra ameaças do Azure](./media/aatp-integration.png)
+1. Under **Threat Protection**, select **Azure ATP**.
 
-3. Marque a caixa de seleção para **conectar dados do Azure ATP, incluindo alertas e atividades com Cloud app Security**.
+    ![enable azure advanced threat protection](media/aatp-integration.png)
 
+1. Select **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
 
 > [!NOTE]
-> Pode levar até 12 horas até que a integração entre em vigor.
- 
-Depois de habilitar a integração da proteção avançada contra ameaças do Azure, você poderá ver as atividades locais para todos os usuários em sua organização. Você também obterá informações avançadas sobre seus usuários que combinam alertas e atividades suspeitas em seus ambientes de nuvem e locais.
+> It may take up to 12 hours until the integration takes effect.
 
+After enabling Azure Advanced Threat Protection integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments.
 
+## <a name="disable-azure-advanced-threat-protection"></a>Disable Azure Advanced Threat Protection
 
-## <a name="next-steps"></a>Próximas etapas 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
+To disable Cloud App Security integration with Azure ATP:
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)  
-  
+1. In Cloud App Security, under the settings cog, select **Settings**.
+
+1. Under **Threat Protection**, select **Azure ATP**.
+
+1. Clear **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
+
+> [!NOTE]
+> Existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments are removed.
+
+## <a name="next-steps"></a>Próximas etapas
+
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]
