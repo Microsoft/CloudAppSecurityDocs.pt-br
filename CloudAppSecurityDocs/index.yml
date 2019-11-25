@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 4e09b5a658ad60b5cf38f8f94528469ca6add6fd
-  ms.sourcegitcommit: 02f1992367d6de5c1b2c49935ada3c54167ff757
+  ms.openlocfilehash: 05dd9156cddd6c94f4523d100b275c1ced42ba17
+  ms.sourcegitcommit: f3a6e9c4367d0ddfe4a23f417eb14de246fccd03
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/17/2019
-  ms.locfileid: "74153270"
+  ms.lasthandoff: 11/24/2019
+  ms.locfileid: "74457860"
 landingContent:
 - title: Sobre o Cloud App Security
   linkLists:
@@ -100,7 +100,7 @@ landingContent:
     - text: Descobrir e identificar a TI sombra
       url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
     - text: Avaliar e analisar
-      url: tutorial-shadow-it.md##phase-2-evaluate-and-analyze
+      url: tutorial-shadow-it.md#phase-2-evaluate-and-analyze
     - text: Gerenciar seus aplicativos
       url: tutorial-shadow-it.md#phase-3-manage-your-apps
   - linkListType: concept
