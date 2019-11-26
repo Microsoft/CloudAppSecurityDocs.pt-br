@@ -11,12 +11,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c6e185d3c2b6cc6d18468f97981233b9f0756f29
-ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
+ms.openlocfilehash: 0f79fea252ed16a603b75ea20e5641b3be2f963f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185125"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460876"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: Começar a usar o Microsoft Cloud App Security
 
@@ -168,4 +168,4 @@ Essas configurações ajudam a oferecer um melhor controle dos recursos no conso
 
 Configurar políticas [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
 
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)].
