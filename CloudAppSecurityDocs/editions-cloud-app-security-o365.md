@@ -5,22 +5,21 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/6/2019
+ms.date: 11/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48338744f06740b88262e4a6fade7ab174b37400
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: fcaf4dab75d85a392ad4b1f8607f9e43d2a9be4c
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335696"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459024"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quais são as diferenças entre o Microsoft Cloud App Security e o Cloud App Security do Office 365?
 
@@ -30,13 +29,13 @@ Este artigo descreve as diferenças entre o Cloud App Security e o Cloud App Sec
 
 Para obter informações sobre o licenciamento, confira a [Folha de dados de licenciamento do Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 O Microsoft Cloud App Security é uma solução entre SaaS completa que traz visibilidade profunda, controles de dados fortes e proteção contra ameaças aprimorada aos seus aplicativos na nuvem. Com esse serviço, você pode obter visibilidade sobre TI Sombra descobrindo os aplicativos na nuvem em uso. Você pode controlar e proteger os dados nos aplicativos depois de sancioná-los no serviço.
 
 ## <a name="office-365-cloud-app-security"></a>Cloud App Security do Office 365
 
-O Cloud App Security do Office 365 é um subconjunto do Microsoft Cloud App Security que fornece visibilidade aprimorada e controle para o Office 365. O Cloud App Security do Office 365 inclui a detecção de ameaças com base nos logs de atividades do usuário, a descoberta de TI Sombra para aplicativos que têm funcionalidade semelhante às ofertas do Office 365 e o controle de permissões de aplicativo para o Office 365.
+O Cloud App Security do Office 365 é um subconjunto do Microsoft Cloud App Security que fornece visibilidade aprimorada e controle para o Office 365. O Cloud App Security do Office 365 inclui detecção de ameaças com base nos logs de atividades do usuário, descoberta de TI Sombra para aplicativos que têm funcionalidade semelhante às ofertas do Office 365, controle de permissões de aplicativo para o Office 365 e controles de acesso e sessão.
 
 ### <a name="feature-support"></a>Suporte ao recurso
 
@@ -57,14 +56,13 @@ O Cloud App Security do Office 365 é um subconjunto do Microsoft Cloud App Secu
 ||Integração com soluções DLP de terceiros|Sim||
 |Detecção de Ameaças|Detecção de anomalias e análise comportamental|Para aplicativos entre SaaS, incluindo o Office 365|Para aplicativos do Office 365 |
 ||Correção de alertas automática e manual|Sim|Sim|
-||Conector SIEM|Sim. Alertas e logs de atividade para aplicativos entre SaaS.|Sim. Somente alertas do Office 365.|
+||Conector SIEM|Sim. Alertas e logs de atividade para aplicativos entre SaaS.|Somente para alertas do Office 365|
 ||Integração com o Microsoft Intelligent Security Graph|Sim|Sim|
 ||Políticas de atividade|Sim|Sim|
+|Controle de Aplicativos de Acesso Condicional|Monitoramento e controle de sessão em tempo real|Qualquer aplicativo na nuvem e no local|Para aplicativos do Office 365|
 
+## <a name="next-steps"></a>Próximas etapas
 
+Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).
 
-## <a name="next-steps"></a>Próximas etapas  
-
-Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).    
-
-[Os clientes Premier também podem criar uma nova solicitação de suporte diretamente no Portal Premier.](https://premier.microsoft.com/)   
+[!INCLUDE [Open support ticket](includes/support.md)].
