@@ -35,7 +35,7 @@ Quando você observa a página **Política**, as várias políticas e modelos po
 
 Os seguintes tipos de políticas podem ser criados:
 
-|Ícone Tipo de política|Tipo de política|Use objetos de|
+|Ícone Tipo de política|Tipo de política|Uso|
 |-----|-----------------|---------|
 |![ícone de política de acesso](./media/proxy-policy.png)|Política de acesso|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem.|
 |![ícone de política de atividade](./media/activity_policy.png)|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|
@@ -173,23 +173,23 @@ Depois de criar uma política, é possível habilitá-la ou desabilitá-la. Desa
 
 Por padrão, depois de criar uma política, ela será habilitada.
 
-## <a name="policies-overview-report"></a>Policies overview report
+## <a name="policies-overview-report"></a>Relatório de visão geral de políticas
 
-Cloud App Security lets you export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization.
+Cloud App Security permite exportar um relatório de visão geral de políticas mostrando métricas de alerta agregadas por política para ajudá-lo a monitorar, compreender e personalizar suas políticas para proteger melhor sua organização.
 
-To export a log, perform the following steps:
+Para exportar um log, execute as seguintes etapas:
 
-1. In the **Policies** page, click the **Export** button.
+1. Na página **políticas** , clique no botão **Exportar** .
 
-1. Specify the required time range.
+1. Especifique o intervalo de tempo necessário.
 
-1. Click **Export**. Esse processo pode levar algum tempo.
+1. Clique em **Exportar**. Esse processo pode levar algum tempo.
 
-To download the exported report:
+Para baixar o relatório exportado:
 
 1. Depois que o relatório estiver pronto, vá para **Configurações** e, em seguida **Relatórios exportados**.
 
-1. In the table, select the relevant report from the list of **Policies overview report** and click download.
+1. Na tabela, selecione o relatório relevante no **relatório visão geral** da lista de políticas e clique em baixar.
 
     ![botão de download](./media/download-button.png)
 

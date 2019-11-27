@@ -32,10 +32,10 @@ Este artigo fornece uma lista de status de inspeção de conteúdo e seus signif
 
 A tabela lista cada status de inspeção de conteúdo e sua descrição.
 
-|Status da inspeção de conteúdo|Description|
+|Status da inspeção de conteúdo|Descrição|
 |----|----|
 |Concluído|A inspeção de conteúdo foi concluída com êxito.|
-|Não Aplicável|A inspeção de conteúdo não era aplicável a este arquivo. Esse status pode aparecer porque nenhuma política requer a inspeção de conteúdo desse arquivo ou porque não há suporte para esse tipo de arquivo.|
+|Não aplicável|A inspeção de conteúdo não era aplicável a este arquivo. Esse status pode aparecer porque nenhuma política requer a inspeção de conteúdo desse arquivo ou porque não há suporte para esse tipo de arquivo.|
 |Pending (Pendente)|O arquivo está na fila de inspeção de conteúdo no momento.|
 |Falha: Erro no download|O Microsoft Cloud App Security não pôde baixar o arquivo para inspeção.|
 |Falha: O arquivo está criptografado|O arquivo não pôde ser descriptografado.|
@@ -50,7 +50,7 @@ A tabela lista cada status de inspeção de conteúdo e sua descrição.
 > [!NOTE]
 > Se você encontrar um traço no status de verificação, isso indicará que o arquivo não está na fila para ser verificado. Consulte [Políticas de arquivos](data-protection-policies.md) para obter informações sobre a configuração de políticas de inspeção de conteúdo.
 
-## <a name="see-also"></a>Confira Também  
+## <a name="see-also"></a>Consulte também  
 [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

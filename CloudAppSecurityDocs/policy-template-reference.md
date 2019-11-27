@@ -32,7 +32,7 @@ Este artigo fornece informações sobre modelos de política incluídos no Micro
 
 É recomendável iniciar a criação de políticas com base em um modelo existente sempre que possível para facilidade de uso. Esta tabela apresenta modelos de política existentes no Microsoft Cloud App Security.
 
-|Categoria de risco|Nome do modelo|Description|
+|Categoria de risco|Nome do modelo|Descrição|
 |-----|----|----|
 |Cloud Discovery|Comportamentos anormais em usuários descobertos|Alerta ao detectar comportamentos anormais em usuários e aplicativos descobertos, como: grandes quantidades de dados carregados em comparação com outros usuários, grandes transações de usuário em comparação com o histórico do usuário.|
 |Cloud Discovery|Comportamentos anormais de endereços IP descobertos|Alertas ao detectar comportamentos anômalos em endereços IP e aplicativos descobertos, como: grandes quantidades de dados carregados em comparação com outros endereços IP, transações grandes de aplicativo em comparação com o histórico do endereço IP.|

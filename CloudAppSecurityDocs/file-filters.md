@@ -107,7 +107,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
 - **Tipo de arquivo** – o Cloud App Security usa o tipo MIME recebido do serviço e examina o arquivo para determinar o verdadeiro tipo de arquivo. Essa verificação destina-se a arquivos que são relevantes para a verificação de dados (documentos, imagens, apresentações, planilhas, arquivos de texto e zip/arquivos). O filtro funciona por tipo de arquivo/pasta. Por exemplo, Todas as pastas que são... ou Todos os arquivos de planilha que são...
 
 
-   ![policy_file filters trash](./media/policy_file-filters-trash.png "lixeira de filtros policy_file")  
+   ![policy_file de filtros de lixo](./media/policy_file-filters-trash.png "lixeira de filtros policy_file")  
 
   
 - **Na lixeira** – exclui/inclui arquivos na pasta da lixeira. Esses arquivos ainda podem ser compartilhados e representam um risco.  
@@ -128,32 +128,32 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
   
 Defina também a política a ser executada em arquivos específicos definindo o filtro **Aplicar a**. Filtre para **todos os arquivos**, **pastas selecionadas** ou **todos os arquivos, exceto as pastas selecionadas**. Em seguida, selecione os arquivos ou as pastas relevantes.  
   
-![apply to filter](./media/apply-to-filter.png "aplicar para filtrar")  
+![aplicar ao filtro](./media/apply-to-filter.png "aplicar para filtrar")  
 <!-- 
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
-## <a name="authorizing-files"></a>Authorizing files
+## <a name="authorizing-files"></a>Autorizando arquivos
 
-After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Autorizar um arquivo o remove do relatório de detecção de malware e suprime correspondências futuras nele.
+Depois que Cloud App Security identificar arquivos como apresentando um risco de malware ou DLP, recomendamos que você investigue os arquivos. Se você determinar que os arquivos são seguros, poderá autorizá-los. Autorizar um arquivo o remove do relatório de detecção de malware e suprime correspondências futuras nele.
 
-### <a name="to-authorize-files"></a>To authorize files
+### <a name="to-authorize-files"></a>Para autorizar arquivos
 
-1. In Cloud App Security, click **Control** and then **Policies**.
-1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
+1. Em Cloud App Security, clique em **controle** e em **políticas**.
+1. Na lista de políticas, na linha na qual a política que disparou a investigação aparece, na coluna **contagem** , clique no link correspondências.
     > [!TIP]
-    > You can filter the list of policies by type. The following table lists, per risk type, which filter type to use:
+    > Você pode filtrar a lista de políticas por tipo. A tabela a seguir lista, por tipo de risco, qual tipo de filtro deve ser usado:
     >
-    > | Risk type | Filter type |
+    > | Tipo de risco | Tipo de filtro |
     > | --- | --- |
     > | DLP | Política de arquivos |
-    > | Malware | Malware detection policy |
-1. In the list of matched files, on the row in which the file under investigation appears, click **Authorize**.
+    > | Malware | Política de detecção de malware |
+1. Na lista de arquivos correspondentes, na linha na qual o arquivo em investigação aparece, clique em **autorizar**.
 
 ## <a name="working-with-the-file-drawer"></a>Trabalhando com a Gaveta de arquivos
 
-Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
+Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log de arquivo. Clicar abre a **gaveta de arquivos** que fornece as seguintes ações adicionais que você pode executar no arquivo:
 
 - **URL** – leva você para a localização do arquivo.
 - **Identificadores de arquivo** – abre um pop-up com detalhes de dados brutos sobre o arquivo, incluindo a ID do arquivo e as chaves de criptografia.
@@ -163,7 +163,7 @@ Exiba mais informações sobre cada arquivo clicando no próprio arquivo no log 
 
 Os campos da gaveta Arquivos fornecem links contextuais para arquivos adicionais e análises detalhadas que você talvez queira executar diretamente na gaveta. Por exemplo, se você mover o cursor ao lado do campo **Proprietário**, poderá usar o ícone "adicionar ao filtro" ![adicionar ao filtro](./media/add-to-filter-icon.png) para adicionar o proprietário imediatamente ao filtro da página atual. Você também pode usar o ícone de engrenagem de configurações ![ícone de configurações](./media/contextual-settings-icon.png) que aparece diretamente na página de configurações necessária para alterar a configuração de um dos campos, tais como **Rótulos de classificação**.
 
-![File drawer](./media/file-drawer.png "Gaveta de arquivos")  
+![Gaveta de arquivos](./media/file-drawer.png "Gaveta de arquivos")  
   
 Para obter uma lista de ações de governança disponíveis, consulte [Ações de governança de arquivo](governance-actions.md#file-governance-actions).
 

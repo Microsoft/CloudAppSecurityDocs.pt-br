@@ -37,11 +37,11 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
   
     -   No console de administração do Box, clique no ícone de configurações seguido por **Business settings** ou **Enterprise settings**.  
   
-         ![box business settings](./media/box-business-settings.png "configurações de negócios do box")  
+         ![configurações de negócios do box](./media/box-business-settings.png "configurações de negócios do box")  
   
     -   Clique na guia **Aplicativos**.  
   
-         ![box apps](./media/box-apps.png "aplicativos do box")  
+         ![aplicativos do box](./media/box-apps.png "aplicativos do box")  
   
     -   Se **Aplicativos Não Publicados** for selecionado, na caixa de texto **Exceto para** adicione o número de série do aplicativo do Cloud App Security:
      
@@ -55,7 +55,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
         Em seguida, clique em **Salvar**. Para obter informações sobre como ver a qual data center do Cloud App Security você está conectado, consulte [Tokens de API](api-tokens.md). 
   
-         ![box settings except for](./media/box-settings-except-for.png "configurações do box exceto para")  
+         ![configurações de caixa, exceto para](./media/box-settings-except-for.png "configurações do box exceto para")  
   
     > [!NOTE]  
     >  Se você for um cliente Adallom existente e a URL do seu console for para o Adallom e não para o Cloud App Security, use este número de série do aplicativo: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
@@ -64,7 +64,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
   
 3.  Na página **Conectores de aplicativos**, clique no botão de sinal de mais e selecione **Box**.  
   
-     ![connect box](./media/connect-box.png "conectar o box")  
+     ![caixa de conexão](./media/connect-box.png "conectar o box")  
   
 4.  No pop-up **Configurações do Box**, clique em **Seguir esse link**.  
   

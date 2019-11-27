@@ -28,58 +28,58 @@ ms.locfileid: "74459966"
 
 Este artigo apresenta uma lista de possíveis problemas ao conectar o SIEM ao Cloud App Security e fornece as possíveis resoluções.
 
-## <a name="recover-missing-activity-events-in-mcas-siem-agent"></a>Recover missing activity events in MCAS SIEM Agent 
+## <a name="recover-missing-activity-events-in-mcas-siem-agent"></a>Recuperar eventos de atividade ausentes no agente SIEM MCAS 
 
-If you received a system alert regarding an issue with activity delivery through the SIEM agent, follow the steps below to recover the activity events in the timeframe of the issue. These steps will guide you through setting up a new Recovery SIEM agent that will run in parallel and resend the activity events to your SIEM.
+Se você recebeu um alerta do sistema sobre um problema com a entrega de atividade por meio do agente SIEM, siga as etapas abaixo para recuperar os eventos de atividade no período de tempo do problema. Essas etapas o orientarão na configuração de um novo agente SIEM de recuperação que será executado em paralelo e reenviará os eventos de atividade para o SIEM.
 
 >[!NOTE]
->The recovery process will resend all activity events in the timeframe described in the system alert. If your SIEM already contains activity events from this timeframe, you will experience duplicated events after this recovery. 
+>O processo de recuperação reenviará todos os eventos de atividade no período de tempo descrito no alerta do sistema. Se o SIEM já contiver eventos de atividade desse período, você experimentará eventos duplicados após essa recuperação. 
 
-### <a name="step-1--configure-a-new-siem-agent-in-parallel-to-your-existing-agent"></a>Step 1 – Configure a new SIEM Agent in parallel to your existing agent 
-1. In the Cloud App Security portal, go to Security Extensions page.  
-2. In the SIEM Agents tab, click on [add a new SIEM agent](siem.md), and use the wizard to configure the connection details to your SIEM. 
+### <a name="step-1--configure-a-new-siem-agent-in-parallel-to-your-existing-agent"></a>Etapa 1 – configurar um novo agente SIEM em paralelo ao agente existente 
+1. No portal de Cloud App Security, acesse a página de extensões de segurança.  
+2. Na guia agentes SIEM, clique em [Adicionar um novo agente Siem](siem.md)e use o assistente para configurar os detalhes de conexão para o Siem. 
 
     >[!NOTE]
-    >This agent should run in parallel to the existing one, so network configuration might not be identical. 
+    >Esse agente deve ser executado em paralelo ao existente, portanto, a configuração de rede pode não ser idêntica. 
 
-1. In the wizard, configure the Data Types to include **only Activities** and apply the same activity filter that was used in your original SIEM agent (if it exists). 
-2. Turn on **Recovery mode** by checking the Recovery mode checkbox. This action will automatically configure the SIEM Agent to send only the missing activities due to the issue and stop sending activities once all activities are fully recovered.
+1. No assistente, configure os tipos de dados para incluir **apenas as atividades** e aplicar o mesmo filtro de atividade que foi usado em seu agente Siem original (se existir). 
+2. Ative o **modo de recuperação** marcando a caixa de seleção modo de recuperação. Essa ação configurará automaticamente o agente SIEM para enviar somente as atividades ausentes devido ao problema e interromperá o envio de atividades depois que todas as atividades forem totalmente recuperadas.
 3. Salve as configurações.
-4. Run the new agent using the generated token.
+4. Execute o novo agente usando o token gerado.
 
 
-### <a name="step-2--validate-the-successful-data-delivery-to-your-siem"></a>Step 2 – Validate the successful data delivery to your SIEM 
-1. Connect to your SIEM and validate that new data is received from the new SIEM Agent that you configured. 
-2. The agent will only send activities from the timeframe of the issue, which you were alerted on. 
+### <a name="step-2--validate-the-successful-data-delivery-to-your-siem"></a>Etapa 2 – validar a entrega de dados bem-sucedida para o SIEM 
+1. Conecte-se ao seu SIEM e valide se os novos dados são recebidos do novo agente SIEM que você configurou. 
+2. O agente enviará apenas atividades do período de tempo do problema, no qual você foi alertado. 
 
-### <a name="step-3--remove-the-recovery-siem-agent"></a>Step 3 – Remove the Recovery SIEM agent 
-1. The recovery SIEM agent will automatically stop sending data and be disabled once it reaches the end date.
-2. Validate in your SIEM that no new data is sent by the recovery SIEM agent. 
-3. Stop the execution of the agent on your machine. 
-4. In the portal, go to SIEM Agent page, and remove the Recovery SIEM Agent. 
-5. Make sure your original SIEM Agent is still running properly. 
+### <a name="step-3--remove-the-recovery-siem-agent"></a>Etapa 3 – remover o agente SIEM de recuperação 
+1. O agente SIEM de recuperação interromperá automaticamente o envio de dados e será desabilitado quando atingir a data de término.
+2. Valide em seu SIEM que nenhum dado novo é enviado pelo agente SIEM de recuperação. 
+3. Pare a execução do agente em seu computador. 
+4. No portal, acesse a página do agente SIEM e remova o agente SIEM de recuperação. 
+5. Verifique se o agente SIEM original ainda está sendo executado corretamente. 
 
-## <a name="general-troubleshooting"></a>General troubleshooting
+## <a name="general-troubleshooting"></a>Solução de problemas gerais
 
 Verifique se o status do agente SIEM no portal do Microsoft Cloud App Security não está como **Erro de conexão** ou **Desconectado** e se não há nenhuma notificação do agente. O status será mostrado como **Erro de conexão** se a conexão estiver inativa por mais de duas horas. O status será alterado para **Desconectado** se a conexão estiver inativa por mais de 12 horas.
 
 Caso veja algum dos seguintes erros no prompt de comando ao executar o agente, use as seguintes etapas para corrigir o problema:
 
-|Erro do|Description|Resolução|
+|Erro|Descrição|Resolução|
 |----|----|----|
-|Erro geral durante a inicialização|Erro inesperado durante a inicialização do agente.|Contate o suporte.|
-|Muitos erros críticos|Muitos erros críticos durante a conexão ao console. Desligue-o.|Contate o suporte.|
+|Erro geral durante a inicialização|Erro inesperado durante a inicialização do agente.|Entre em contato com o suporte.|
+|Muitos erros críticos|Muitos erros críticos durante a conexão ao console. Desligue-o.|Entre em contato com o suporte.|
 |Token inválido|O token fornecido não é válido.|Verifique se você copiou o token correto. Você pode usar o processo acima para regenerar o token.|
 |Endereço de proxy inválido|O endereço de proxy fornecido não é válido.|Verifique se você inseriu o proxy e a porta corretos.|
 
 
 Depois de criar o agente, verifique a página do agente SIEM no portal do Cloud App Security. Se aparecer uma das seguintes **Notificações do agente**, use as seguintes etapas para corrigir o problema:
 
-|Erro do|Description|Resolução|
+|Erro|Descrição|Resolução|
 |----|----|----|
-|**Erro interno**|Algo desconhecido deu errado com o agente SIEM.|Contate o suporte.|
-|**Erro de envio do servidor de dados**|Você poderá receber esse erro se estiver trabalhando com um servidor Syslog em TCP. O agente SIEM não pode se conectar ao servidor Syslog.  Se esse erro ocorrer, o agente parará de efetuar pull de novas atividades até que seja corrigido. Siga as etapas de correção até que o erro pare de aparecer.|1. Make sure you properly defined your Syslog server: In the Cloud App Security UI, edit your SIEM agent as described above. Verifique se você escreveu o nome do servidor corretamente e definiu a porta certa. </br>2. Check connectivity to your Syslog server: Make sure your firewall isn't blocking communication.| 
-|**Erro de conexão do servidor de dados**| Você poderá receber esse erro se estiver trabalhando com um servidor Syslog em TCP. O agente SIEM não pode se conectar ao servidor Syslog.  Se esse erro ocorrer, o agente parará de efetuar pull de novas atividades até que seja corrigido. Siga as etapas de correção até que o erro pare de aparecer.|1. Make sure you properly defined your Syslog server: In the Cloud App Security UI, edit your SIEM agent as described above. Verifique se você escreveu o nome do servidor corretamente e definiu a porta certa. </br>2. Check connectivity to your Syslog server: Make sure your firewall isn't blocking communication.|
+|**Erro interno**|Algo desconhecido deu errado com o agente SIEM.|Entre em contato com o suporte.|
+|**Erro de envio do servidor de dados**|Você poderá receber esse erro se estiver trabalhando com um servidor Syslog em TCP. O agente SIEM não pode se conectar ao servidor Syslog.  Se esse erro ocorrer, o agente parará de efetuar pull de novas atividades até que seja corrigido. Siga as etapas de correção até que o erro pare de aparecer.|1. Verifique se você definiu corretamente seu servidor syslog: na interface do usuário do Cloud App Security, edite seu agente SIEM, conforme descrito acima. Verifique se você escreveu o nome do servidor corretamente e definiu a porta certa. </br>2. Verifique a conectividade com o servidor syslog: Verifique se o firewall não está bloqueando a comunicação.| 
+|**Erro de conexão do servidor de dados**| Você poderá receber esse erro se estiver trabalhando com um servidor Syslog em TCP. O agente SIEM não pode se conectar ao servidor Syslog.  Se esse erro ocorrer, o agente parará de efetuar pull de novas atividades até que seja corrigido. Siga as etapas de correção até que o erro pare de aparecer.|1. Verifique se você definiu corretamente seu servidor syslog: na interface do usuário do Cloud App Security, edite seu agente SIEM, conforme descrito acima. Verifique se você escreveu o nome do servidor corretamente e definiu a porta certa. </br>2. Verifique a conectividade com o servidor syslog: Verifique se o firewall não está bloqueando a comunicação.|
 |**Erro do agente SIEM**|O agente SIEM está desconectado há mais de X horas|Verifique se você não alterou a configuração do SIEM no portal do Cloud App Security. Caso contrário, esse erro poderá indicar problemas de conectividade entre o Cloud App Security e o computador no qual você está executando o agente SIEM.|
 |**Erro de notificação do agente SIEM**|A notificação do agente SIEM encaminha erros que foram recebidos de um agente SIEM.|Esse erro indica que você recebeu erros sobre a conexão entre o agente SIEM e o servidor SIEM. Verifique se não há um firewall bloqueando o servidor SIEM ou o computador no qual você está executando o agente SIEM. Além disso, verifique se o endereço IP do servidor SIEM não foi alterado.|
 

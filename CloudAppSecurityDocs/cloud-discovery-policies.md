@@ -35,7 +35,7 @@ As políticas de descoberta permitem que você defina alertas que notificam quan
   
 2. Clique em **Criar política** e selecione a política **Descoberta de aplicativos**.  
   
-     ![app discovery policy menu](./media/app-discovery-policy-menu.png "menu de política de descoberta de aplicativo")  
+     ![menu de política do App Discovery](./media/app-discovery-policy-menu.png "menu de política de descoberta de aplicativo")  
   
 3. Forneça um nome e uma descrição à sua política. Caso deseje, você poderá baseá-los em um modelo. Para obter mais informações sobre modelos de política, confira [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
@@ -67,7 +67,7 @@ Defina os filtros de política para descobrir todos os serviços encontrados na 
  Defina os limites que devem disparar um alerta para um determinado aplicativo descoberto na parte inferior. Por exemplo, alertar apenas se mais de 100 usuários no ambiente usaram o aplicativo e se eles baixaram uma determinada quantidade de dados do serviço.
 Além disso, você pode definir o limite de alertas diários que deseja receber.  
   
-![app discovery policy example](./media/app-discovery-policy-example.png "exemplo de política de descoberta de aplicativo")  
+![exemplo de política de descoberta de aplicativo](./media/app-discovery-policy-example.png "exemplo de política de descoberta de aplicativo")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Detecção de anomalias do Cloud Discovery
 
@@ -77,7 +77,7 @@ O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anom
   
 2. Clique em **Criar política** e selecione **Política de detecção de anomalias de Cloud Discovery**.  
   
-     ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu de política de detecção de anomalias do Cloud Discovery")  
+     ![menu da política de detecção de anomalias da descoberta de nuvem](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu de política de detecção de anomalias do Cloud Discovery")  
   
 3. Forneça um nome e uma descrição à sua política. Caso deseje, você poderá baseá-los em um modelo, para obter mais informações sobre modelos de política, confira [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).  
   
@@ -95,7 +95,7 @@ O Cloud App Security pesquisa todos os logs em seu Cloud Discovery quanto a anom
   
 8. Clique em **Criar**.  
   
-![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "nova política de descoberta de anomalias")  
+![nova política de anomalias de descoberta](./media/new-discovery-anomaly-policy.png "nova política de descoberta de anomalias")  
   
 ## <a name="next-steps"></a>Próximas etapas 
 [Políticas de atividade de usuário](user-activity-policies.md)   

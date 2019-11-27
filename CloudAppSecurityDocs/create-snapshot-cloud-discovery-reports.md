@@ -91,7 +91,7 @@ Portanto, esses atributos não serão exibidos nos dados do Cloud Discovery para
 
 
 Para gerar com êxito um relatório do Cloud Discovery, seus logs de tráfego devem atender às seguintes condições:
-1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. A [fonte de dados tem suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. O formato de log corresponde ao formato padrão esperado (formato verificado após o upload da Ferramenta de log).
 3. Os eventos têm menos de 90 dias.
 4. O arquivo de log é válido e inclui informações de tráfego de saída.

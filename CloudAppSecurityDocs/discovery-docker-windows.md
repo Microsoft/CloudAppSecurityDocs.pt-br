@@ -28,7 +28,7 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* OS: **Windows 10** (fall creators update) or Windows Server **version 1709+**
+* SO: **Windows 10** (atualização para criadores do outono) ou Windows Server **versão 1709 +**
 
 * Espaço em disco: 250 GB
 
@@ -41,10 +41,10 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 * A virtualização no sistema operacional deve ser habilitada com o Hyper-V
 
 > [!IMPORTANT]
-> A user must be signed in for Docker to collect logs. We recommend advising your Docker user's to disconnect without signing out.
+> Um usuário deve estar conectado para que o Docker colete logs. Recomendamos que o usuário do Docker se desconecte sem sair.
 
 > [!NOTE]
-> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
+> Se você tiver um coletor de logs existente e quiser removê-lo antes de implantá-lo novamente, ou se simplesmente quiser removê-lo, execute os seguintes comandos:
 >
 > ```console
 > docker stop <collector_name>
@@ -72,7 +72,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 1. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
 
     1. Clique em **Adicionar fonte de dados**.  
-    ![Add a data source](media/add-data-source.png)
+    ![adicionar uma fonte de dados](media/add-data-source.png)
     1. Atribua o **Nome** do proxy ou firewall.  
     ![ubuntu1](media/ubuntu1.png)
     1. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
@@ -92,10 +92,10 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     1. Clique em **Adicionar coletor de logs**.
     1. Atribua um **nome** ao coletor de logs.
     1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
-    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
+    1. Selecione todas as **fontes de dados** que você deseja conectar ao coletor e clique em **Atualizar** para salvar a configuração.
     ![ubuntu2](media/ubuntu2.png)
 
-1. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. You can use the copy to clipboard icon, ![copy to clipboard icon](media/copy-icon.png). Você precisará dele mais tarde.
+1. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone Copiar para área de transferência, ![ícone Copiar para área de transferência](media/copy-icon.png). Você precisará dele mais tarde.
 
 1. **Exportar** a configuração de fonte de dados esperada. Essa configuração descreve como você deve definir a exportação de log em seus dispositivos.
 
@@ -105,7 +105,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     >
     > * Um único coletor de logs pode lidar com várias fontes de dados.
     > * Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * Para usuários que enviam dados de log via FTP pela primeira vez, é recomendável alterar a senha para o usuário de FTP. Para obter mais informações, consulte [alterando a senha de FTP](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – Implantação local de seu computador
 
@@ -113,15 +113,15 @@ As etapas a seguir descrevem a implantação no Windows. As etapas de implantaç
 
 1. Abra um terminal do PowerShell como administrador em seu computador Windows.
 
-1. Run the following command to download the Windows Docker installer PowerShell script file: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Execute o seguinte comando para baixar o arquivo de script do Windows Docker Installer PowerShell: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-    To validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature)
+    Para validar que o instalador é assinado pela Microsoft, consulte [validar assinatura do instalador](#validate-signature)
 
-1. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`
+1. Para habilitar a execução de script do PowerShell, execute `Set-ExecutionPolicy RemoteSigned`
 
-1. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` This installs the Docker client on your machine. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente. **Make sure the Docker client is set to use Linux containers.**
+1. Execute: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` isso instala o cliente do Docker em seu computador. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente. **Verifique se o cliente do Docker está definido para usar contêineres do Linux.**
 
-1. After each restart, open a PowerShell terminal as an administrator on your machine, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Após cada reinicialização, abra um terminal do PowerShell como administrador em seu computador e execute novamente: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
 1. Antes da conclusão da instalação, você precisará colar o comando de execução que copiou anteriormente.
 
@@ -184,6 +184,6 @@ Se a assinatura digital não for válida, ela indicará **Esta assinatura digita
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [Configuração de FTP do coletor de logs](log-collector-ftp.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

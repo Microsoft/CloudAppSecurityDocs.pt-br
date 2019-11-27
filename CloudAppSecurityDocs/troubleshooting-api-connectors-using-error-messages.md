@@ -35,7 +35,7 @@ Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do con
 
 > [!div class="mx-tableFixed"]
 > 
-> |Mensagem de erro|Aplicativo relevante|Description|Resolução|
+> |Mensagem de erro|Aplicativo relevante|Descrição|Resolução|
 > |----|----|----|------------|
 > |HttpRequestFailure: O servidor retornou: 400 Solicitação inválida: {"error":{"code":"AF20012","message":"A ID de locatário especificada (insira Tenant_ID aqui) está configurada incorretamente no sistema."|Office 365 |Não foi encontrada nenhuma licença atribuída do Office 365. |Atribua pelo menos uma licença do Office 365 ao seu locatário.| 
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Caixa|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|

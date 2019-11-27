@@ -87,7 +87,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 1. Abra o Gerenciador do Hyper-V.  
   
 2. Selecione **Novo**, **Máquina Virtual** e clique em **Próximo**.  
-   ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
+   ![descoberta da máquina virtual do Hyper-V](./media/discovery-hyperv-virtual-machine.png "descoberta da máquina virtual do Hyper-V")  
   
 3. Forneça um **Nome** para a nova máquina virtual, por exemplo, CloudAppSecurityLogCollector01 e clique em **Próximo**.  
   
@@ -119,7 +119,7 @@ Neste ponto, seu coletor de logs deve estar conectado à rede e deverá poder al
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Etapa 3 — Configuração local da coleção de logs 
 Na primeira vez que você entrar no coletor de logs e importar a configuração do coletor de logs do portal, faça o seguinte. 
 
-1.  Entre no coletor de logs por SSH usando as credenciais de administrador interativo fornecidas no portal. (Se esta for a primeira vez que você faz logon no console, será necessário alterar a senha e entrar novamente após a alteração. Se você estiver usando uma sessão do terminal, poderá ser necessário reiniciá-la. ) simples
+1.  Entre no coletor de logs por SSH usando as credenciais de administrador interativo fornecidas no portal. (Se esta for a primeira vez que você faz logon no console, será necessário alterar a senha e entrar novamente após a alteração. Se você estiver usando uma sessão do terminal, poderá ser necessário reiniciá-la. )
 2.  Execute o utilitário de configuração do coletor com o token de acesso fornecido quando você criou o coletor de logs.```sudo collector_config <access token> ```
 3. Insira o domínio do console, por exemplo: ```contoso.portal.cloudappsecurity.com``` Isso está disponível na URL que você vê depois de fazer logon no portal do Cloud App Security. 
 

@@ -1,6 +1,6 @@
 ---
-title: Get security configuration recommendations for AWS - Cloud App Security | Microsoft Docs
-description: This article provides information about how to Get security configuration recommendations in Cloud App Security by integrating with Amazon Web Services.
+title: Obter recomendações de configuração de segurança para AWS-Cloud App Security | Microsoft Docs
+description: Este artigo fornece informações sobre como obter recomendações de configuração de segurança no Cloud App Security integrando com Amazon Web Services.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -26,24 +26,24 @@ ms.locfileid: "74460454"
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security provides you with a security configuration assessment of your Amazon Web Services environment. This assessment provides fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for AWS.
+Microsoft Cloud App Security fornece uma avaliação de configuração de segurança de seu ambiente de Amazon Web Services. Essa avaliação fornece recomendações de segurança fundamentais com base no parâmetro de comparação de CIS (centro de segurança da Internet) para AWS.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- AWS Security Hub must be set up for all your AWS account regions. For more information, see [Setting Up AWS Security Hub](https://go.microsoft.com/fwlink/?linkid=2100208).
+- O Hub de segurança do AWS deve ser configurado para todas as suas regiões de conta do AWS. Para obter mais informações, consulte [Configurando o Hub de segurança do AWS](https://go.microsoft.com/fwlink/?linkid=2100208).
     > [!NOTE]
-    > If this is the first time you’re enabling Security Hub, it can take several hours for the initial data to become available.
-- Your Amazon Web Services must be connected to Cloud App Security. For more information, see [Connect AWS to Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md).
+    > Se esta for a primeira vez que você está habilitando o Hub de segurança, pode levar várias horas para que os dados iniciais fiquem disponíveis.
+- Seu Amazon Web Services deve estar conectado a Cloud App Security. Para obter mais informações, consulte [conectar o AWS ao Microsoft Cloud app Security](connect-aws-to-microsoft-cloud-app-security.md).
 
-## <a name="how-to-view-aws-security-recommendation"></a>How to view AWS security recommendation
+## <a name="how-to-view-aws-security-recommendation"></a>Como exibir a recomendação de segurança do AWS
 
-1. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Amazon Web Services** tab.
+1. Em Cloud App Security, navegue para **investigar** > **configuração de segurança**e, em seguida, selecione a guia **Amazon Web Services** .
     - O Microsoft Cloud App Security fornece recomendações apenas para as 50 principais assinaturas.
     - Pode levar até 15 minutos para que as alterações entrem em vigor.
 
      ![menu de configuração de segurança](media/security-configuration-menu.png)
 
-1. You can filter the recommendations by type, by resource, and by accounts. Além disso, você pode clicar no ícone de configuração de segurança ![Ícone ASC](./media/asc-icon.png) to open the recommendation in Amazon Security Hub for more information and to deep dive into the recommendation.
+1. Você pode filtrar as recomendações por tipo, por recurso e por contas. Além disso, você pode clicar no ícone de configuração de segurança ![Ícone ASC](./media/asc-icon.png) para abrir a recomendação no Hub de segurança do Amazon para obter mais informações e aprofundar-se na recomendação.
 
    ![configuração de segurança](media/security-configuration-aws.png)
 

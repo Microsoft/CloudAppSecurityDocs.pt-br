@@ -1,5 +1,5 @@
 ---
-title: Get security configuration recommendations for Azure - Cloud App Security | Microsoft Docs
+title: Obter recomendações de configuração de segurança para o Azure-Cloud App Security | Microsoft Docs
 description: Este artigo fornece informações de como obter recomendações de configuração de segurança no Cloud App Security por meio da integração com a Central de segurança do Azure.
 keywords: ''
 author: shsagir
@@ -45,7 +45,7 @@ Para habilitar as recomendações de configuração de segurança no Microsoft C
 
 2. Abra a <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Central de Segurança do Azure</a> para que as alterações entrem em vigor.
 
-3. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Azure** tab.
+3. Em Cloud App Security, navegue para **investigar** > **configuração de segurança**e, em seguida, selecione a guia **Azure** .
     - O Microsoft Cloud App Security fornece recomendações apenas para as 50 principais assinaturas.
     - Pode levar até 15 minutos para que as alterações entrem em vigor.
 

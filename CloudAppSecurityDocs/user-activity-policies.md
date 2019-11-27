@@ -47,9 +47,9 @@ Para criar uma nova política de atividade, siga este procedimento:
 
 4. Para definir quais ações ou outras métricas vão disparar essa política, trabalhe com os **filtros de atividade**.
     > [!NOTE]
-    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
+    > Para garantir que você inclua apenas os resultados em que o campo de filtro especificado tenha um valor, é recomendável adicionar o mesmo campo novamente usando o teste de **configuração** . Por exemplo, quando a filtragem por **local** *não é igual* a uma lista especificada de países, também *é*possível adicionar um filtro para **localização** . Você também pode visualizar os resultados do filtro selecionando **Editar e Visualizar resultados**.
     >
-    > ![Screenshot of filter settings, showing location field is set](media/activity-example-location-isset.png)
+    > ![Captura de tela das configurações de filtro, a exibição do campo de localização é definida](media/activity-example-location-isset.png)
 
 5. Em **Parâmetros de correspondência de atividade**, selecione quando uma violação de política será disparada. Escolha disparar quando uma única atividade corresponde aos filtros ou somente quando um número especificado de **Atividades repetidas** é detectado.
     - Se você escolher **Atividade repetida**, poderá definir **Em um único aplicativo**. Essa configuração disparará uma correspondência de política somente quando as atividades repetidas ocorrerem no mesmo aplicativo. Por exemplo, cinco downloads em 30 minutos no Box disparam uma correspondência de política.
@@ -64,13 +64,13 @@ Veja esses exemplos:
 
      No campo **Filtros de atividade**, configure os parâmetros para os quais o alerta será disparado.
 
-     ![Policy example for multiple failed sign-in attempts](./media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de várias tentativas de logon com falha")
+     ![Exemplo de política para várias tentativas de entrada com falha](./media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de várias tentativas de logon com falha")
 
 - Alta taxa de downloads
 
      Você pode definir a política para que você receba um alerta quando houve um nível inesperado ou não característico de atividade de download. Para configurar esse tipo de política, nos parâmetros de **Taxa**, escolha os parâmetros para disparar o alerta.
 
-     ![high download rate example](./media/high-download-rate-example.png "exemplo de alta taxa de downloads")
+     ![exemplo de alta taxa de download](./media/high-download-rate-example.png "exemplo de alta taxa de downloads")
 
 ## <a name="activity-policy-reference"></a>Referência de política de atividade
 

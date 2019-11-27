@@ -39,7 +39,7 @@ Você precisa ser Administrador global, Administrador de conformidade ou Adminis
  Add-MsolRoleMember -RoleName "Compliance Administrator" -RoleMemberEmailAddress "XX@XX.XX"
 ```
 
- ou do
+ OU
 
 ```powershell
  Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”

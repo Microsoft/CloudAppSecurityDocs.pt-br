@@ -37,7 +37,7 @@ Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar en
   
 2.  Na página **Conectores de aplicativos**, clique no botão de mais após **Dropbox**.  
   
-     ![connect dropbox](./media/connect-dropbox.png "conectar ao dropbox")  
+     ![conectar o Dropbox](./media/connect-dropbox.png "conectar ao dropbox")  
   
 3.  No pop-up, insira o endereço de email da conta do administrador.  
   

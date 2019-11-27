@@ -60,7 +60,7 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
     A URL genérica do portal continuará a funcionar, mas será consideravelmente mais lenta do que a URL personalizada fornecida com o token. Se você esquecer a URL a qualquer momento, você poderá exibi-la indo até o ícone **?** no menu e selecionando **Sobre**.
 
 > [!NOTE]
-> If you are using Azure Active Directory Privileged Identity Management role activation, your API token will only be effective once the role is activated. For more information, see [Activate my Azure AD roles in PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
+> Se você estiver usando Azure Active Directory Privileged Identity Management ativação de função, seu token de API só será eficaz quando a função for ativada. Para obter mais informações, consulte [Ativar minhas funções do Azure AD no PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
 
 ## <a name="api-token-management"></a>Gerenciamento de token de API
 

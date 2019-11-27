@@ -29,7 +29,7 @@ ms.locfileid: "74460869"
 Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
 
 > [!NOTE]
-> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
+> Os alertas são gerenciados em suas respectivas políticas e podem ser configurados para serem enviados como email, mensagem de texto ou ambos.
 
 ## <a name="manage-your-alerts"></a>Gerenciar os alertas
 
@@ -70,7 +70,7 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 3. Sempre que você ignora um alerta, é importante enviar comentários sobre o motivo pelo qual você o está ignorando. A equipe do Cloud App Security usa esses comentários como uma indicação da precisão do alerta. Em seguida, essas informações são usadas para ajustar nossos modelos de machine learning para alertas futuros. Você pode seguir estas diretrizes para decidir como categorizar o alerta:
    - Se o uso legítimo disparou o alerta e esse não é um problema de segurança, ele pode ser um destes tipos: 
 
-     - Benign positive: The alert is accurate but the activity is legitimate. Você deve ignorar o alerta e definir o motivo como **A gravidade real é menor** ou **Não interessante**.
+     - Benigno positivo: o alerta é preciso, mas a atividade é legítima. Você deve ignorar o alerta e definir o motivo como **A gravidade real é menor** ou **Não interessante**.
      -  Falso positivo: o alerta é impreciso. Ignore o alerta e defina o motivo pelo qual o **Alerta não é preciso**.
    - Se houver muito ruído para determinar a legitimidade e a precisão de um alerta, ignore-o e defina o motivo como **Excesso de alertas semelhantes**.
    - Verdadeiro positivo: se o alerta estiver relacionado a um evento de risco real que foi confirmado de modo mal-intencionado ou inadvertidamente por alguém de dentro ou de fora da organização, defina o evento como **Resolver** depois de terem sido tomadas todas as devidas providências para corrigi o evento.
@@ -79,7 +79,7 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
 A tabela a seguir fornece uma lista dos tipos de alertas que podem ser disparados e recomenda maneiras pelas quais você pode resolvê-los.  
 
-|Tipo de alerta|Description|Resolução recomendada|  
+|Tipo de alerta|Descrição|Resolução recomendada|  
 |----------------|-----------------|----------------------------|  
 |Violação de política de atividade|Este tipo de alerta é o resultado de uma política que você criou.|Para trabalhar com esse tipo de alerta em massa, é recomendável trabalhar no Centro de políticas para mitigá-los.<br /><br /> Ajuste a política para excluir entidades ruidosas adicionando mais filtros e mais controles granulares.<br /><br /> Se a política for precisa, o alerta for garantido e for uma violação que você deseja parar imediatamente, considere adicionar a correção automática à política.|  
 |Violação de política de arquivos|Este tipo de alerta é o resultado de uma política que você criou.| Para trabalhar com esse tipo de alerta em massa, é recomendável trabalhar no Centro de políticas para mitigá-los.<br /><br /> Ajuste a política para excluir entidades ruidosas adicionando mais filtros e mais controles granulares.<br /><br /> Se a política for precisa, o alerta for garantido e for uma violação que você deseja parar imediatamente, considere adicionar a correção automática à política.|  

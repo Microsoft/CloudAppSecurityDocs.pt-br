@@ -48,7 +48,7 @@ O painel do Cloud App Security fornece uma visão geral das atividades e recurso
 
 É recomendável verificar o painel diariamente para ver quais novos alertas foram acionados. É um bom lugar para ficar atento à integridade do seu ambiente de nuvem. O painel ajuda você a ter uma noção do que está acontecendo.  
 
-![Cloud App Security dashboard](./media/dashboard.png "painel")  
+![Painel do Cloud App Security](./media/dashboard.png "painel")  
 
 
 ## <a name="next-steps"></a>Próximas etapas  

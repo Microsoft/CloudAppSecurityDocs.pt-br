@@ -1,6 +1,6 @@
 ---
-title: Integrate Azure Advanced Threat Protection with Cloud App Security
-description: This article provides information about how to leverage Azure Advanced Threat Protection insights in Cloud App Security for hybrid risk detection.
+title: Integre a proteção avançada contra ameaças do Azure com o Cloud App Security
+description: Este artigo fornece informações sobre como aproveitar as ideias de proteção avançada contra ameaças do Azure no Cloud App Security para detecção de riscos híbridos.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -21,54 +21,54 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74460936"
 ---
-# <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection integration
+# <a name="azure-advanced-threat-protection-integration"></a>Integração da proteção avançada contra ameaças do Azure
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md) For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
+O Microsoft Cloud App Security integra-se com o Azure ATP (proteção avançada contra ameaças do Azure) para fornecer UEBA (análise comportamental de entidade de usuário) em um ambiente híbrido-ambos os aplicativos de nuvem e locais, para obter mais informações, consulte [tutorial: investigar usuários arriscados](tutorial-ueba.md) para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo Azure ATP, consulte [o que é o Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para fazer uma investigação completa em um ambiente híbrido, é necessário:
 
 - Uma licença válida do ATP do Azure vinculada à instância do Azure Active Directory
-- You must be a global admin to enable integration between Azure ATP and Microsoft Cloud App Security
-- If do not have Azure ATP, try it now
+- Você deve ser um administrador global para habilitar a integração entre o Azure ATP e o Microsoft Cloud App Security
+- Se não tiver o Azure ATP, experimente-o agora
 
 >[!NOTE]
->If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights.
+>Se você não tiver uma assinatura para Microsoft Cloud App Security, ainda poderá usar o portal de Cloud App Security para obter informações do Azure ATP.
 
-## <a name="enable-azure-advanced-threat-protection"></a>Enable Azure Advanced Threat Protection
+## <a name="enable-azure-advanced-threat-protection"></a>Habilitar a proteção avançada contra ameaças do Azure
 
-To enable Cloud App Security integration with Azure ATP:
+Para habilitar a integração de Cloud App Security com o Azure ATP:
 
-1. In Cloud App Security, under the settings cog, select **Settings**.
+1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**.
 
-   ![Settings menu](media/azip-system-settings.png)
+   ![Menu configurações](media/azip-system-settings.png)
 
-1. Under **Threat Protection**, select **Azure ATP**.
+1. Em **proteção contra ameaças**, selecione **Azure ATP**.
 
-    ![enable azure advanced threat protection](media/aatp-integration.png)
+    ![habilitar a proteção avançada contra ameaças do Azure](media/aatp-integration.png)
 
-1. Select **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
-
-> [!NOTE]
-> It may take up to 12 hours until the integration takes effect.
-
-After enabling Azure Advanced Threat Protection integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments.
-
-## <a name="disable-azure-advanced-threat-protection"></a>Disable Azure Advanced Threat Protection
-
-To disable Cloud App Security integration with Azure ATP:
-
-1. In Cloud App Security, under the settings cog, select **Settings**.
-
-1. Under **Threat Protection**, select **Azure ATP**.
-
-1. Clear **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
+1. Selecione **conectar dados do Azure ATP, incluindo alertas e atividades com Cloud app Security** e, em seguida, clique em **salvar**.
 
 > [!NOTE]
-> Existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments are removed.
+> Pode levar até 12 horas até que a integração entre em vigor.
+
+Depois de habilitar a integração da proteção avançada contra ameaças do Azure, você poderá ver as atividades locais para todos os usuários em sua organização. Você também obterá informações avançadas sobre seus usuários que combinam alertas e atividades suspeitas em seus ambientes de nuvem e locais.
+
+## <a name="disable-azure-advanced-threat-protection"></a>Desabilitar a proteção avançada contra ameaças do Azure
+
+Para desabilitar a integração de Cloud App Security com o Azure ATP:
+
+1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**.
+
+1. Em **proteção contra ameaças**, selecione **Azure ATP**.
+
+1. Desmarque **conectar dados do Azure ATP, incluindo alertas e atividades com Cloud app Security** e, em seguida, clique em **salvar**.
+
+> [!NOTE]
+> Os dados existentes do Azure ATP são mantidos de acordo com as políticas de retenção de Cloud App Security, mas as avaliações de postura de segurança de identidade são removidas.
 
 ## <a name="next-steps"></a>Próximas etapas
 

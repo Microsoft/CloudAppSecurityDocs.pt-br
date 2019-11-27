@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74459173"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integrate with Flow for custom alert automation
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integrar com o Flow para automação de alerta personalizada
 
 *Aplica-se ao: Microsoft Cloud App Security*
 

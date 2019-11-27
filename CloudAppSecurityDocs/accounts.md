@@ -28,7 +28,7 @@ ms.locfileid: "74460953"
 
 O Microsoft Cloud App Security proporciona visibilidade das contas de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security lerá as informações da conta associadas aos aplicativos conectados. A página Contas permite que você investigue essas contas, as permissões, os grupos dos quais são membros, os aliases delas e os aplicativos que elas estão usando. Além disso, quando o Cloud App Security detecta uma nova conta que não foi vista anteriormente em um dos aplicativos conectados, como nas atividades ou no compartilhamento de arquivos, a conta é adicionada à lista de contas deste aplicativo. Isso permite que você tenha visibilidade sobre a atividade de usuários externos interagindo com seus aplicativos em nuvem.
 
-Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
+Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. A página **usuários e contas** fornece detalhes abrangentes sobre as entidades extraídas dos aplicativos de nuvem conectados. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

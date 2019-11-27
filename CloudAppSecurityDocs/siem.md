@@ -1,6 +1,6 @@
 ---
-title: Generic SIEM integration with Cloud App Security
-description: This article provides information integrating your generic SIEM with Cloud App Security.
+title: Integração de SIEM genérico com Cloud App Security
+description: Este artigo fornece informações sobre como integrar o SIEM genérico com o Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -24,19 +24,19 @@ ms.locfileid: "74460353"
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-You can integrate Microsoft Cloud App Security with your generic SIEM server to enable centralized monitoring of alerts and activities from connected apps. À medida que novas atividades e eventos se tornam compatíveis com os aplicativos conectados, a visibilidade de seu conteúdo é implementada no Microsoft Cloud App Security. A integração a um serviço SIEM permite que você proteja melhor seus aplicativos na nuvem e, ao mesmo tempo, mantém seu fluxo de trabalho de segurança comum, automatiza os procedimentos de segurança e correlaciona os eventos baseados em nuvem e locais. O agente SIEM do Microsoft Cloud App Security é executado no servidor e efetua pull de alertas e de atividades do Microsoft Cloud App Security e transmite-os para o servidor SIEM.
+Você pode integrar Microsoft Cloud App Security com seu servidor SIEM genérico para habilitar o monitoramento centralizado de alertas e atividades de aplicativos conectados. À medida que novas atividades e eventos se tornam compatíveis com os aplicativos conectados, a visibilidade de seu conteúdo é implementada no Microsoft Cloud App Security. A integração a um serviço SIEM permite que você proteja melhor seus aplicativos na nuvem e, ao mesmo tempo, mantém seu fluxo de trabalho de segurança comum, automatiza os procedimentos de segurança e correlaciona os eventos baseados em nuvem e locais. O agente SIEM do Microsoft Cloud App Security é executado no servidor e efetua pull de alertas e de atividades do Microsoft Cloud App Security e transmite-os para o servidor SIEM.
 
 Ao integrar o SIEM primeiro com o Cloud App Security, atividades e alertas dos últimos dois dias serão encaminhadas para o SIEM e todos os alertas e atividades (com base no filtro que você selecionar) daquele momento em diante. Se você desabilitar esse recurso por um longo período e, em seguida, reabilitar, os últimos dois dias de atividades e alertas serão encaminhados e, em seguida, todos os alertas e atividades daí em diante.
 
-Additional integration solutions include:
+As soluções de integração adicionais incluem:
 
-* **Azure Sentinel** - A scalable, cloud-native SIEM and SOAR for native integration. For information about integrating with Azure Sentinel, see [Azure Sentinel integration](siem-sentinel.md).
-* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Azure Sentinel** – um Siem escalonável, nativo de nuvem e disparar para integração nativa. Para obter informações sobre como integrar com o Azure Sentinel, consulte [integração do Azure Sentinel](siem-sentinel.md).
+* **Microsoft Security Graph API** -um serviço intermediário (ou agente) que fornece uma única interface programática para conectar vários provedores de segurança. Para obter mais informações, consulte [integrações de solução de segurança usando a API de segurança do Microsoft Graph](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!IMPORTANT]
-> If you are integrating Azure Advanced Threat Protection in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. Um alerta será emitido de cada serviço e eles terão diferentes IDs de alerta. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
+> Se você estiver integrando a proteção avançada contra ameaças do Azure no Cloud App Security e os dois serviços estiverem configurados para enviar notificações de alerta para um SIEM, você começará a receber notificações de SIEM duplicadas para o mesmo alerta. Um alerta será emitido de cada serviço e eles terão diferentes IDs de alerta. Para evitar a duplicação e a confusão, certifique-se de lidar com o cenário. Por exemplo, decida onde você pretende executar o gerenciamento de alertas e, em seguida, interrompa as notificações do SIEM sendo enviadas do outro serviço.
 
-## <a name="generic-siem-integration-architecture"></a>Generic SIEM integration architecture
+## <a name="generic-siem-integration-architecture"></a>Arquitetura de integração do SIEM genérico
 
 O agente SIEM é implantado na rede da sua organização. Quando implantado e configurado, ele efetua pull dos tipos de dados que foram configurados (alertas e atividades) usando as APIs RESTful do Cloud App Security.
 O tráfego é, então, enviado por meio de um canal HTTPS criptografado na porta 443.
@@ -71,11 +71,11 @@ A integração ao SIEM é realizada em três etapas:
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Etapa 1: configurar no portal do Cloud App Security
 
-1. In the Cloud App Security portal, under the **Settings** cog, click **Security extensions**.
+1. No portal de Cloud App Security, sob as **configurações** engrenagem, clique em **extensões de segurança**.
 
-1. On the **SIEM agents** tab, click add ( **+** ), and then choose **Generic SIEM**.
+1. Na guia **agentes Siem** , clique em adicionar ( **+** ) e escolha **Siem genérico**.
 
-    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
+    ![Captura de tela mostrando o menu Adicionar integração SIEM](media/siem0.png)
 
 1. No assistente, clique em **Iniciar Assistente**.
 1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Avançar**.
@@ -110,7 +110,7 @@ A integração ao SIEM é realizada em três etapas:
 > - O nome do arquivo pode ser diferente dependendo da versão do agente SIEM.
 > - Parâmetros em colchetes [ ] são opcionais e devem ser usados somente se relevantes.
 > - É recomendável executar o JAR durante a inicialização do servidor.
->   - Windows: Run as a scheduled task and make sure that you configure the task to **Run whether the user is logged on or not** and that you uncheck the **Stop the task if it runs longer than** checkbox.
+>   - Windows: execute como uma tarefa agendada e certifique-se de configurar a tarefa para **executar se o usuário está conectado ou não** e desmarque a caixa de seleção **parar a tarefa se ela for executada por mais tempo** .
 >   - Linux: adicione o comando de execução com um **&** para o arquivo rc.local. Por exemplo: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Quando as seguintes variáveis são usadas:
@@ -157,7 +157,7 @@ O texto a seguir é um exemplo de arquivo de log de alertas:
 
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Alertas de exemplo do Cloud App Security em CEF (Formato Comum de Evento)
 
-|   Aplicável a   |      Nome do campo CEF      |                                                   Description                                                   |
+|   Aplicável a   |      Nome do campo CEF      |                                                   Descrição                                                   |
 |-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Atividades/Alertas |          start           |                                           Carimbo de data/hora da atividade ou do alerta                                           |
 | Atividades/Alertas |           end            |                                           Carimbo de data/hora da atividade ou do alerta                                           |
@@ -172,9 +172,9 @@ O texto a seguir é um exemplo de arquivo de log de alertas:
 |    Atividades     |        externalId        |                                                    ID do evento                                                     |
 |    Atividades     |           dvc            |                                             IP do dispositivo do cliente                                             |
 |    Atividades     | requestClientApplication |                                         Agente do usuário do dispositivo do cliente                                         |
-|      Alerts       |       <alert type>       |                                  Por exemplo, "ALERT_CABINET_EVENT_MATCH_AUDIT"                                  |
-|      Alerts       |          <name>          |                                             O nome da política correspondente                                             |
-|      Alerts       |        externalId        |                                                    ID do Alerta                                                     |
+|      Alertas       |       <alert type>       |                                  Por exemplo, "ALERT_CABINET_EVENT_MATCH_AUDIT"                                  |
+|      Alertas       |          <name>          |                                             O nome da política correspondente                                             |
+|      Alertas       |        externalId        |                                                    ID do Alerta                                                     |
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Etapa 3: validar se o agente SIEM está funcionando
 

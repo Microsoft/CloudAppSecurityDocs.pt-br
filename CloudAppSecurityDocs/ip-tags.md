@@ -79,7 +79,7 @@ Na barra de menus, clique no ícone de configurações. Selecione **Intervalos d
  
 7. Quando terminar, clique em **Criar**.  
   
-     ![newipaddress range](./media/newipaddress-range.png "intervalo de newipaddress")  
+     ![intervalo de newipaddress](./media/newipaddress-range.png "intervalo de newipaddress")  
 
 
 ## <a name="next-steps"></a>Próximas etapas

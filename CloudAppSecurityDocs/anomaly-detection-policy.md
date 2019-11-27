@@ -35,7 +35,7 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Falhas de logon
 * Atividade do administrador
 * Contas inativas
-* Local
+* Location
 * Viagem impossível
 * Agente de dispositivo e usuário
 * Taxa de atividade
@@ -55,57 +55,57 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 * Essa detecção identifica duas atividades do usuário (em uma ou em várias sessões) provenientes de locais geograficamente distantes em um período menor que o tempo necessário para o usuário se deslocar do primeiro local para o segundo, indicando que outro usuário está usando as mesmas credenciais. Essa detecção usa um algoritmo de aprendizado de máquina que ignora "falsos positivos" óbvios que contribuem para a condição de viagem impossível, como VPNs e locais usados regularmente por outros usuários da organização. A detecção tem um período inicial de aprendizado de sete dias, durante o qual aprende o padrão de atividade do novo usuário. A detecção de viagem impossível identifica atividades incomuns e impossíveis do usuário entre dois locais. A atividade deve ser incomum o suficiente para ser considerada um indicador de comprometimento e emitir um alerta. Para fazer isso funcionar, a lógica de detecção inclui níveis diferentes de supressão para lidar com cenários que podem disparar falsos positivos, como atividades de VPN. O controle deslizante de confidencialidade permite impactar o algoritmo e definir quão estrita a lógica de detecção deve ser.
 Quanto maior o nível de confidencialidade, menor a supressão que é aplicada como parte da lógica de detecção. Dessa forma, você pode adaptar a detecção de acordo com suas necessidades de cobertura e seus destinos de SNR.
 
-### <a name="activity-from-infrequent-country"></a>Activity from infrequent country
+### <a name="activity-from-infrequent-country"></a>Atividade de um país infrequente
 
 * Essa detecção considera locais de atividades anteriores para determinar locais novos e pouco frequentes. O mecanismo de detecção de anomalias armazena informações sobre locais anteriores usados por usuários da organização. Um alerta é disparado quando uma atividade ocorre em um local que nunca foi visitado ou não foi visitado recentemente por nenhum usuário na organização.
 
-### <a name="malware-detection"></a>Malware detection
+### <a name="malware-detection"></a>Detecção de malware
 
 * Essa detecção identifica arquivos mal-intencionados no armazenamento em nuvem, sejam de aplicativos da Microsoft ou de aplicativos de terceiros. O Microsoft Cloud App Security usa a Inteligência Contra Ameaças da Microsoft para reconhecer se determinados arquivos estão associados a ataques de malware conhecidos e são possivelmente mal-intencionados. Essa política interna é desabilitada por padrão. Nem todo arquivo é examinado, mas é usada heurística para procurar arquivos que possam estar em risco. Depois que os arquivos são detectados, é exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo.
 
     > [!NOTE]
-    >- For Office 365 malware detection, you need a valid license for Office 365 Advanced Threat Protection P1.
-    >- Cloud App Security supports malware detection the following apps:
+    >- Para detecção de malware do Office 365, você precisa de uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
+    >- O Cloud App Security dá suporte à detecção de malware dos seguintes aplicativos:
     >    - Caixa
     >    - Dropbox
     >    - G Suite
     >    - Office 365
 
-### <a name="activity-from-anonymous-ip-addresses"></a>Activity from anonymous IP addresses
+### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
 
 * Essa detecção identifica que os usuários estavam ativos com base em um endereço IP que foi identificado como um endereço IP de proxy anônimo. Esses proxies são usados por pessoas que desejam ocultar o endereço IP de seu dispositivo e podem ser usados de forma mal-intencionada. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP marcados incorretamente usados amplamente por usuários da organização.
 
-### <a name="ransomware-activity"></a>Ransomware activity
+### <a name="ransomware-activity"></a>Atividade de ransomware
 
 * O Cloud App Security estendeu seus recursos de detecção de ransomware com a detecção de anomalias para garantir uma cobertura mais ampla contra ataques de Ransomware sofisticados. Usando nossa experiência com pesquisa de segurança para identificar padrões de comportamentos que refletem a atividade de ransomware, o Cloud App Security garante a proteção holística e robusta. Por exemplo, se o Cloud App Security identificar uma taxa alta de uploads de arquivos ou atividades de exclusão de arquivo, isso poderá representar um processo de criptografia adverso. Esses dados são coletados nos logs recebidos de APIs conectadas e são combinados com padrões comportamentais aprendidos e inteligência contra ameaças, por exemplo, extensões de ransomware conhecidas. Para obter mais informações sobre como o Cloud App Security detecta ransomware, confira [Proteger sua organização contra ransomware](use-case-ransomware.md).
 
-### <a name="activity-performed-by-terminated-user"></a>Activity performed by terminated user
+### <a name="activity-performed-by-terminated-user"></a>Atividade executada por usuário encerrado
 
 * Essa detecção habilita você a identificar quando um funcionário demitido continua a executar ações em seus aplicativos SaaS. Como os dados mostram que o maior risco de ameaça interna vem de funcionários que deixaram a empresa descontentes, é importante ficar atento à atividade em contas de funcionários demitidos. Às vezes, quando funcionários deixam a empresa, suas contas são desprovisionadas de aplicativos corporativos, mas, em muitos casos, eles ainda mantêm o acesso a determinados recursos corporativos. Isso é ainda mais importante ao considerar as contas privilegiadas, pois os danos potenciais que um administrador anterior pode causar são inerentemente maiores.
 Essa detecção se beneficia da capacidade do Cloud App Security de monitorar o comportamento do usuário entre aplicativos, permitindo a identificação da atividade regular do usuário, o fato de que a conta foi encerrada e atividade real em outros aplicativos. Por exemplo, um funcionário cuja conta do Azure AD foi encerrada, mas que ainda tem acesso à infraestrutura corporativa do AWS, tem o potencial de causar danos em grande escala.
 
 A detecção procura usuários cuja conta foi encerrada no Azure AD, mas ainda executam atividades em outras plataformas, como AWS ou Salesforce. Isso é relevante principalmente para usuários que usam outra conta (não a conta de logon único principal) para gerenciar recursos, já que essas contas geralmente não são encerradas quando o usuário sai da empresa.
 
-### <a name="activity-from-suspicious-ip-addresses"></a>Activity from suspicious IP addresses
+### <a name="activity-from-suspicious-ip-addresses"></a>Atividade de endereços IP suspeitos
 
 * A detecção identifica que os usuários estavam ativos com base em um endereço IP identificado como arriscado pela Microsoft Threat Intelligence. Esses endereços IP estão envolvidos em atividades mal-intencionadas, como Botnet C&C, e podem indicar uma conta comprometida. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP marcados incorretamente usados amplamente por usuários da organização.
 
-### <a name="suspicious-inbox-forwarding"></a>Suspicious inbox forwarding
+### <a name="suspicious-inbox-forwarding"></a>Encaminhamento de caixa de entrada suspeito
 
 * Essa detecção procura regras de encaminhamento de email suspeito, por exemplo, se um usuário criou uma regra de caixa de entrada que encaminha uma cópia de todos os emails para um endereço externo.
 
 > [!NOTE]
 > O Cloud App Security só alerta você para cada regra de encaminhamento identificada como suspeita com base no comportamento típico do usuário.
 
-### <a name="suspicious-inbox-manipulation-rules"></a>Suspicious inbox manipulation rules
+### <a name="suspicious-inbox-manipulation-rules"></a>Regras de manipulação de caixa de entrada suspeitas
 
 * Essa detecção analisa o ambiente e dispara alertas quando regras suspeitas que excluem ou movem mensagens ou pastas são definidas na caixa de entrada de um usuário. Isso pode indicar que a conta do usuário está comprometida, que as mensagens estão sendo ocultadas intencionalmente e que a caixa de correio está sendo usada para distribuir spam ou malware em sua organização.
 
-### <a name="suspicious-email-deletion-activity-preview"></a>Suspicious email deletion activity (Preview)
+### <a name="suspicious-email-deletion-activity-preview"></a>Atividade de exclusão de email suspeito (versão prévia)
 
-* This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
+* Essa política faz o perfil do seu ambiente e dispara alertas quando um usuário executa atividades suspeitas de exclusão de email em uma única sessão. Essa política pode indicar que as caixas de correio de um usuário podem ser comprometidas por possíveis vetores de ataque, como a comunicação de comando e controle (C & C/C2) por email.
 
-### <a name="unusual-activities-by-user"></a>Unusual activities (by user)
+### <a name="unusual-activities-by-user"></a>Atividades incomuns (por usuário)
 
 Essas detecções identificam os usuários que executam:
 
@@ -114,21 +114,21 @@ Essas detecções identificam os usuários que executam:
 * Atividades incomuns de exclusão de arquivos
 * Atividades representadas incomuns
 * Atividades administrativas incomuns
-* Unusual Power BI report sharing activities (preview)
-* Unusual multiple VM creation activities (preview)
-* Unusual multiple storage deletion activities (preview)
+* Atividades de compartilhamento de relatório Power BI incomum (versão prévia)
+* Várias atividades de criação de VM incomuns (versão prévia)
+* Várias atividades de exclusão de armazenamento incomum (visualização)
 
 Essas políticas buscam atividades em uma única sessão em relação à linha de base aprendida, que pode indicar uma tentativa de violação. As detecções se beneficiam de um algoritmo de aprendizado de máquina que analisa o padrão de logon dos usuários e reduz falsos positivos. Essas detecções fazem parte do mecanismo heurístico de detecção de anomalias que analisa seu ambiente e dispara alertas em relação a uma linha de base obtida quanto à atividade de sua organização.
 
-### <a name="multiple-failed-login-attempts"></a>Multiple failed login attempts
+### <a name="multiple-failed-login-attempts"></a>Várias tentativas de logon com falha
 
 * A detecção identifica usuários que realizaram várias tentativas de logon com falha em uma única sessão em relação à linha de base aprendida, o que poderia indicar uma tentativa de violação.
 
-### <a name="data-exfiltration-to-unsanctioned-apps"></a>Data exfiltration to unsanctioned apps
+### <a name="data-exfiltration-to-unsanctioned-apps"></a>Vazamento de dados para aplicativos não aprovados
 
 * Essa política é habilitada automaticamente para alertar quando um usuário ou endereço IP usa um aplicativo que não está aprovado para executar uma atividade parecida com uma tentativa de extrair informações de sua organização.
 
-### <a name="multiple-delete-vm-activities"></a>Multiple delete VM activities
+### <a name="multiple-delete-vm-activities"></a>Várias atividades de exclusão de VM
 
 * Esta política identifica seu ambiente e dispara alertas quando os usuários excluem várias VMs em uma única sessão em relação à linha de base em sua organização. Isso pode indicar uma tentativa de violação.
 
@@ -167,9 +167,9 @@ Para definir uma política de detecção de anomalias:
 
 Você pode triar rapidamente os vários alertas disparados pelas novas políticas de detecção de anomalias e decidir quais precisam ser tratados primeiro. Para isso, é necessário o contexto do alerta para ver o panorama geral e entender se algo mal-intencionado realmente está acontecendo.
 
-1. No **Log de atividades**, você pode abrir uma atividade para exibir a gaveta Atividades. Click on **User** to view the user insights tab. This tab includes information like number of alerts, activities, and where they've connected from, which is important in an investigation.
+1. No **Log de atividades**, você pode abrir uma atividade para exibir a gaveta Atividades. Clique em **usuário** para exibir a guia insights do usuário. Essa guia inclui informações como o número de alertas, atividades e o local em que eles se conectaram, o que é importante em uma investigação.
 
-    ![anomaly detection alert1](./media/anomaly-alert-user1.png) ![anomaly detection alert1](./media/anomaly-alert-user2.png)
+    ![detecção de anomalias alert1](./media/anomaly-alert-user1.png) ![detecção de anomalias alert1](./media/anomaly-alert-user2.png)
 
 1. Isso permite que você entenda quais são as atividades suspeitas que o usuário executou e ter maior confiança sobre o comprometimento da conta. Por exemplo, um alerta de vários logons com falha pode realmente ser suspeito e indicar um ataque de força bruta em potencial, mas também pode ser um erro de configuração do aplicativo, fazendo com que o alerta seja um verdadeiro positivo benigno. No entanto, se você vir um alerta de vários logons com falha com atividades suspeitas adicionais, então há uma grande probabilidade de que a conta foi comprometida. No exemplo a seguir, você pode ver que o alerta **Várias tentativas de logon com falha** foi seguido de uma **Atividade de um endereço IP TOR** e de uma **Atividade de viagem impossível**, ambas fortes indicadores de comprometimento (IOCs) por si próprias. Como se isso já não fosse suspeito, é possível ver que o mesmo usuário realizou uma **Atividade de download em massa**, que em geral indica que o invasor está executando uma extração de dados.
 

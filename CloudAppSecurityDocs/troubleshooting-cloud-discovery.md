@@ -28,9 +28,9 @@ ms.locfileid: "74459986"
 
 Este artigo apresenta uma lista de erros do Cloud Discovery e as recomendações de resolução para cada um.
 
-## <a name="microsoft-defender-atp-integration"></a>Microsoft Defender ATP integration
+## <a name="microsoft-defender-atp-integration"></a>Integração do Microsoft defender ATP
 
-If you integrated Microsoft Defender ATP with Cloud App Security, and you don't see the results of the integration - there's not a **Win10 endpoint users** report - make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
+Se você integrou o Microsoft defender ATP com o Cloud App Security e não vê os resultados da integração – não há um relatório de **usuários de ponto de extremidade Win10** -Verifique se os computadores aos quais você está se conectando são o Windows 10 versão 1809 ou posterior, e que você aguardou as duas horas necessárias para que os dados sejam acessíveis.
 
 
 ## <a name="log-parsing-errors"></a>Erros de análise de log
@@ -39,10 +39,10 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 
 ### <a name="governance-log-errors"></a>Erros de log de governança
 
-|Erro do|Description|Resolução|
+|Erro|Descrição|Resolução|
 |----|----|----|
 |Tipo de arquivo sem suporte|O arquivo carregado não é um arquivo de log válido (por exemplo, um arquivo de imagem).|Carregue um arquivo de **texto**, **zip ou **gzip** que foi exportado diretamente do seu firewall ou proxy.|
-|O formato de log não corresponde|O formato de log carregado não corresponde ao esperado para esta fonte de dados.|1. Verify that the log isn't corrupt. <br /> 2. Compare and match your log to the sample format shown in the upload page.|
+|O formato de log não corresponde|O formato de log carregado não corresponde ao esperado para esta fonte de dados.|1. Verifique se o log não está corrompido. <br /> 2. Compare e corresponda ao seu log com o formato de exemplo mostrado na página carregar.|
 |As transações têm mais de 90 dias|Todas as transações têm mais de 90 dias e estão sendo ignoradas.|Exporte um novo log com eventos recentes e recarregue-o.|
 |Nenhuma transação para aplicativos de nuvem catalogados|Não foi encontrada no log nenhuma transação com aplicativos de nuvem reconhecidos.|Verifique se o log contém informações sobre o tráfego de saída.|
 |Tipo de log sem suporte|Quando você seleciona **Fonte de dados = outra (sem suporte)** , o log não é analisado. Nesse caso, ele é enviado à equipe técnica do Cloud App Security para ser analisado.|A equipe técnica do Cloud App Security cria um analisador dedicado por cada fonte de dados. As fontes de dados mais populares [já têm suporte](set-up-cloud-discovery.md). Cada upload de uma fonte de dados sem suporte é revisado e adicionado ao pipeline de analisadores de novas fontes de dados. Novas notificações de analisador são publicadas como parte das [notas de versão](release-notes.md) do Cloud App Security.|
@@ -51,12 +51,12 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 
 |PROBLEMA | RESOLUÇÃO |
 |--------|--|
-|Não foi possível conectar ao coletor de logs por FTP| 1. Verify that you are using FTP credentials and not SSH credentials. <br />2. Verify that the FTP client you are using is not set to SFTP.  |
-|Falha ao atualizar a configuração do coletor | 1. Verify that you entered the latest access token. <br />2. Verify in your firewall that the log collector is allowed to initiate outbound traffic on port 443.|
-|Logs enviados ao coletor não aparecem no portal | 1.  Check to see if there are failed parsing tasks in the Governance log.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Se houver, corrija o erro com a tabela de erros de Análise de Log acima.<br /> 2. If not, check the data sources and Log collector configuration in the portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Na página Fonte de dados, verifique se a fonte de dados que você está usando está devidamente configurada. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Na página Coletores de Logs, verifique se que a fonte de dados está vinculada ao coletor de logs correto. <br /> 3. Check the local configuration of the on-premises log collector machine.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Faça logon no coletor de logs via SSH e execute o utilitário collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme se seu firewall ou proxy está enviando logs para o coletor de logs usando o protocolo definido (Syslog/TCP, Syslog/UDP ou FTP) e se ele está enviando para a porta e diretório corretos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Execute netstat no computador e verifique se ele recebe conexões de entrada de seu proxy ou firewall <br /> 4.   Verify that the log collector is allowed to initiate outbound traffic on port 443. |
+|Não foi possível conectar ao coletor de logs por FTP| 1. Verifique se você está usando credenciais de FTP e não credenciais de SSH. <br />2. Verifique se o cliente FTP que você está usando não está definido como SFTP.  |
+|Falha ao atualizar a configuração do coletor | 1. Verifique se você inseriu o token de acesso mais recente. <br />2. Verifique no firewall se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443.|
+|Logs enviados ao coletor não aparecem no portal | 1. Verifique se há tarefas de análise com falha no log de governança.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Se houver, corrija o erro com a tabela de erros de Análise de Log acima.<br /> 2. caso contrário, verifique as fontes de dados e a configuração do coletor de logs no Portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Na página Fonte de dados, verifique se a fonte de dados que você está usando está devidamente configurada. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Na página Coletores de Logs, verifique se que a fonte de dados está vinculada ao coletor de logs correto. <br /> 3. Verifique a configuração local do computador do coletor de logs local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Faça logon no coletor de logs via SSH e execute o utilitário collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme se seu firewall ou proxy está enviando logs para o coletor de logs usando o protocolo definido (Syslog/TCP, Syslog/UDP ou FTP) e se ele está enviando para a porta e diretório corretos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Execute netstat no computador e verifique se ele recebe conexões de entrada de seu proxy ou firewall <br /> 4. Verifique se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443. |
 |Status do coletor de logs: criado | A implantação do coletor de logs não foi concluída. Conclua as etapas de implantação locais de acordo com a guia de implantação.|
 |Status do coletor de logs: desconectado | Não há dados recebidos nas últimas 24 horas de qualquer uma das fontes de dados vinculados. |
-|Failed pulling latest collector image| If you get this error during Docker deployment, it could be that you don't have enough memory ont he host machine. To check this, run this command on the host: `docker pull microsoft/caslogcollector`. If it returns this error: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` contact your host machine administrator to provide more space.|
+|Falha ao extrair a imagem do coletor mais recente| Se você receber esse erro durante a implantação do Docker, pode ser que você não tenha memória suficiente no computador host. Para verificar isso, execute este comando no host: `docker pull microsoft/caslogcollector`. Se ele retornar esse erro: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` contate o administrador do computador host para fornecer mais espaço.|
 
 ## <a name="discovery-dashboard-errors"></a>Erros do painel de descoberta
 

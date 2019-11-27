@@ -39,11 +39,11 @@ Depois que você examinar os alertas abertos, vá para o Centro de políticas pa
 
      Se a política estiver definida para encontrar violações de conformidade e alguém salvar os números de cartão de crédito em arquivos no OneDrive, você terá uma correspondência na política.  
 
-     ![PCI matches](./media/pci-matches.png "correspondências de pci")  
+     ![Correspondências de PCI](./media/pci-matches.png "correspondências de pci")  
 
 -   Selecione a correspondência para ver os arquivos reais que violaram a política.  
 
-     ![PCI content matches](./media/pci-content-matches.png "correspondências de conteúdo de pci")  
+     ![Correspondências de conteúdo de PCI](./media/pci-content-matches.png "correspondências de conteúdo de pci")  
 
      Você pode selecionar o próprio arquivo para obter informações sobre os arquivos.  
 
@@ -51,14 +51,14 @@ Depois que você examinar os alertas abertos, vá para o Centro de políticas pa
 
      Você pode clicar nas **Correspondências** para ver os números de cartão de crédito reais.  
 
-     ![Content matches credit card numbers](./media/content-matches-ccn.png "content matches credit card numbers")  
+     ![Conteúdo corresponde a números de cartão de crédito](./media/content-matches-ccn.png "conteúdo corresponde a números de cartão de crédito")  
 
 ## <a name="apply-governance-actions"></a>Aplicar ações de governança  
 Você pode aplicar ações de governança de dentro de políticas, de dentro de alertas e do log **Arquivos**.  
 
-A qualquer momento, você pode examinar e ver o status de todas as ações de governança aplicadas anteriormente acessando a engrenagem **Configurações** e escolhendo **Log de governança**. ![settings icon](./media/settings-icon.png "settings icon")
+A qualquer momento, você pode examinar e ver o status de todas as ações de governança aplicadas anteriormente acessando a engrenagem **Configurações** e escolhendo **Log de governança**. ![ícone de configurações](./media/settings-icon.png "sícone de onfigurações ")
 
-Para qualquer ação de governança com falha, escolha o ícone **Tentar novamente** para aplicá-la outra vez. ![Retry icon](./media/retry-icon.png "retry icon")   
+Para qualquer ação de governança com falha, escolha o ícone **Tentar novamente** para aplicá-la outra vez. ![Ícone de repetição](./media/retry-icon.png "rícone de etry ")   
 
 Dependendo do tipo de política, violação e aplicativo, diferentes ações de governança estão disponíveis.  
 
@@ -72,7 +72,7 @@ Uma vez que as ações de correção utilizam as APIs do provedor de nuvem, as a
 >   
 >  Para obter diretrizes, você pode usar o botão **Editar e visualizar resultados** na seção **Filtros**.  
 
-![File policy edit and preview results](./media/file-policy-edit-and-preview-results.png "edição de política de arquivo e visualizar os resultados")  
+![Resultados de edição e visualização da política de arquivo](./media/file-policy-edit-and-preview-results.png "edição de política de arquivo e visualizar os resultados")  
 
 ## <a name="migration"></a>Migração  
 O Cloud App Security ajuda a distribuir suas migrações, permitindo que você saiba quem na sua organização está usando quais aplicativos e fornecendo as ferramentas para monitorar a adoção de novos aplicativos. Ele também pode ajudar a descobrir quais tipos de aplicativos você deve oferecer na sua organização, fornecendo as ferramentas para ver o que todos já estão usando.  
@@ -86,7 +86,7 @@ Considere este cenário: você adquiriu recentemente o Office 365 e deseja que t
 
    1. No seu **Painel do Cloud Discovery**, clique em **Dropbox** e, em seguida, selecione a guia **Endereço IP** ou **Usuários**.  
 
-   2. Escolha o ícone de seta **Exportar** e as opções de exportação. ![Arrow icon](./media/arrow-icon.png "arrow icon")
+   2. Escolha o ícone de seta **Exportar** e as opções de exportação. ![Ícone de seta](./media/arrow-icon.png "aícone de RROW ")
 
 ### <a name="find-more-secure-alternatives"></a>Encontrar alternativas mais seguras  
 O catálogo de serviços do Cloud App Security pode ajudá-lo a encontrar alternativas que funcionem para sua organização, em vez de aplicativos arriscados que seus usuários podem estar utilizando.  

@@ -27,7 +27,7 @@ ms.locfileid: "74461009"
 
 Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365, o G Suite e o Salesforce. Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo. Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões de aplicativo do Microsoft Cloud App Security permitem que você veja quais aplicativos OAuth instalados pelo usuário têm acesso a dados do Office 365, dados do G Suite e dados do Salesforce. Cloud App Security informa quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365, G Suite e Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
 
-For more information on investigating OAuth apps, see [Investigate risky OAuth apps](investigate-risky-oauth.md).
+Para obter mais informações sobre a investigação de aplicativos OAuth, consulte [investigar aplicativos OAuth arriscados](investigate-risky-oauth.md).
 
 ## <a name="working-with-the-oauth-apps-page"></a>Trabalhando com a página de aplicativos de OAuth
 
@@ -53,7 +53,7 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 |Estado do aplicativo|Um administrador pode marcar um aplicativo como aprovado, vetado ou deixar como indeterminado.|Office 365, G Suite, Salesforce|
 |Uso da comunidade|Mostra quão popular o aplicativo é entre todos os seus usuários (comum, incomum, raro)|Office 365, G Suite, Salesforce|
 |Última autorização|A data mais recente em que um usuário concedeu permissões para este aplicativo.|Office 365, Salesforce|
-|Publisher|O nome do fornecedor que oferece o aplicativo.|Office 365|
+|Publicador|O nome do fornecedor que oferece o aplicativo.|Office 365|
 |Usado pela última vez|A data mais recente em que este aplicativo foi usado por alguém em sua organização.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Vetar ou aprovar um aplicativo
@@ -84,9 +84,9 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 
 ## <a name="revoke-app-and-notify-user"></a>Revogar aplicativo e notificar o usuário
 
-Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou notificar o usuário de que ele deve alterar a permissão. When you revoke permission it removes all permissions that were granted to the application under “Enterprise Applications” in Azure AD.
+Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou notificar o usuário de que ele deve alterar a permissão. Quando você revoga a permissão, ele remove todas as permissões que foram concedidas ao aplicativo em "aplicativos empresariais" no Azure AD.
 
-1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. By default, the user will be notified as follows: *You authorized the app to access your G Suite account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* Você pode personalizar a mensagem que é enviada.
+1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *você autorizou o aplicativo para acessar sua conta do G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere a concessão ou a revogação das permissões que você deu a esse aplicativo em sua conta do G Suite. Para revogar o acesso ao aplicativo, acesse: https://security.google.com/settings/security/permissions?hl=en&pli=1 selecione o aplicativo e clique em ' revogar acesso ' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
 2. Você também pode revogar permissões para usar o aplicativo para o usuário. Clique no ícone no final da linha de aplicativo na tabela e selecionando **Revogar aplicativo**.
 
     ![revogar aplicativo](./media/revoke-app.png)
@@ -99,17 +99,17 @@ Você pode consultar os aplicativos OAuth na exibição **Básica** ou na exibi�
 
 - Selecione o ícone **Remover um filtro** ao lado do filtro para remover os filtros.
 
-## <a name="oauth-app-auditing"></a>OAuth app auditing
+## <a name="oauth-app-auditing"></a>Auditoria de aplicativo OAuth
 
-O Cloud App Security audita todas as atividades de autorização do OAuth para fornecer monitoramento e investigação abrangentes das atividades executadas. You can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
+O Cloud App Security audita todas as atividades de autorização do OAuth para fornecer monitoramento e investigação abrangentes das atividades executadas. Você também pode exportar os detalhes de usuários que autorizam um aplicativo OAuth específico, fornecendo informações adicionais sobre os usuários, que você pode usar para análise posterior.
 
-To export the log, perform the following steps:
+Para exportar o log, execute as seguintes etapas:
 
-1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, click the link showing the number of users that authorized the app.
+1. Na página **aplicativos OAuth** , na linha em que o aplicativo relevante aparece, em **autorizado por**, clique no link mostrando o número de usuários que autorizaram o aplicativo.
 
-1. In the pop-up window, click **Export**.
+1. Na janela pop-up, clique em **Exportar**.
 
-    ![Screenshot showing export of OAuth app auditing](media/oauth-export-users.png)
+    ![Captura de tela mostrando a exportação da auditoria de aplicativo OAuth](media/oauth-export-users.png)
 
 ## <a name="send-feedback"></a>Enviar comentários
 

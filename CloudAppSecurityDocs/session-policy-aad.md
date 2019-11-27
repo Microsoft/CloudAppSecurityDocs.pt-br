@@ -27,7 +27,7 @@ ms.locfileid: "74460414"
 *Aplica-se ao: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
+[«ANTERIOR: integração e implantação Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)<br>
 [PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
 
@@ -161,7 +161,7 @@ Selecione **Bloquear atividades** para bloquear atividades específicas que voc�
 Quando **Proteger** é definido como a **Ação** a ser executada na política de sessão do Cloud App Security, o Controle de Aplicativos de Acesso Condicional determina o rótulo e a proteção subsequentes de um arquivo conforme os filtros de arquivo da política. Os rótulos são configurados no console de Proteção de Informações do Azure e **Proteger** deve ser selecionado no rótulo para que ele seja exibido como uma opção na política do Cloud App Security. Quando um rótulo for selecionado e um arquivo que atende aos critérios da política do Cloud App Security for baixado, o rótulo e a proteção correspondente (com permissões) serão aplicados ao arquivo após o download. O arquivo original permanece como está no aplicativo de nuvem, enquanto o arquivo baixado agora está protegido. Os usuários que tentam acessar o arquivo devem atender os requisitos de permissão determinados pela proteção aplicada.  
  
 >[!div class="step-by-step"]
-[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
+[«ANTERIOR: integração e implantação Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)<br>
 [PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
 ## <a name="next-steps"></a>Próximas etapas

@@ -1,5 +1,5 @@
 ---
-title: Set up your organization's settings in Cloud App Security
+title: Defina as configurações da sua organização no Cloud App Security
 description: Este artigo explica como fornecer informações sobre sua organização no Cloud App Security.
 keywords: ''
 author: shsagir
@@ -29,11 +29,11 @@ O procedimento a seguir fornece instruções para personalizar o portal do Micro
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-For portal access, it's necessary to add the following IP addresses to your Firewall's allow list to provide access for the Cloud App Security portal:
+Para acesso ao portal, é necessário adicionar os seguintes endereços IP à lista de permissões do firewall para fornecer acesso ao portal de Cloud App Security:
 
 * 104.42.231.28
 
-For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall’s allow list to provide access for the Cloud App Security GCC High portal:
+Para clientes de GCC do governo dos EUA, também é necessário adicionar os seguintes endereços IP à lista de permissões do firewall para fornecer acesso ao portal do Cloud App Security GCC High:
 
 * 52.227.143.223
 * 13.72.19.4
@@ -43,7 +43,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 ## <a name="set-up-the-portal"></a>Configurar o portal
 
-1. In the Cloud App Security portal, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "ícone de configurações") and select **Settings** to configure your organization's details.
+1. No portal de Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](./media/settings-icon.png "ícone de configurações") e selecione **configurações** para configurar os detalhes da sua organização.
 
 1. Em **Detalhes da organização**, é importante que você forneça um **Nome de exibição da organização** para sua organização. Ele é exibido em emails e páginas da Web enviadas do sistema.
 
@@ -55,20 +55,20 @@ For US Government GCC High customers, it's also necessary to add the following I
 
     * Os usuários em domínios que não estão configurados como internos são marcados como externos. Os usuários externos não são verificados quanto a arquivos ou atividades.
 
-1. Under **Auto sign out**, specify the amount of time a session can remain inactive before the session is automatically signed out.
+1. Em **saída automática**, especifique a quantidade de tempo que uma sessão pode permanecer inativa antes que a sessão seja desconectada automaticamente.
 
 1. Se você estiver se integrando com a integração da Proteção de Informações do Azure, confira [Integração da Proteção de Informações do Azure](azip-integration.md) para obter informações.
 
     * Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-1. If you're integrating with Azure Advanced Threat Protection integration, see [Azure Advanced Threat Protection Integration](azip-integration.md) for information.
+1. Se você estiver integrando com a integração da proteção avançada contra ameaças do Azure, consulte [integração da proteção avançada contra ameaças do Azure](azip-integration.md) para obter informações.
 
 1. Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **Exportar configurações do portal** para criar um arquivo JSON de todas as suas configurações do portal, incluindo regras de política, grupos de usuários e intervalos de endereços IP.
 
 > [!NOTE]
 > Se você usa o ExpressRoute, o Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado a ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para aprimorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
 >
-> Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+> Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da ExpressRoute e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
 
 ## <a name="next-steps"></a>Próximas etapas
 

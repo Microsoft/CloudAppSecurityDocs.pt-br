@@ -33,14 +33,14 @@ Para configurar suas preferências como um administrador do Microsoft Cloud App 
   
 1.  Clique em **Configurações de conta**. Aqui você pode definir e renovar a senha de acesso para o portal do Cloud App Security.  
   
-     ![custom user settings](./media/custom-user-settings.png "configurações personalizadas do usuário")  
+     ![configurações de usuário personalizadas](./media/custom-user-settings.png "configurações personalizadas do usuário")  
   
 2.  Clique em **Notificações** e defina as preferências de notificação de email e texto para os emails recebidos do sistema.  Você pode definir a gravidade que determina para quais alertas e violações você deseja receber emails. A gravidade é definida por política. Quando as violações forem disparadas, você receberá uma notificação por email dependendo da configuração daqui e da configuração de Gravidade na política que foi violada. Os emails são enviados para o alias associado à conta de usuário do administrador usada para entrar no Cloud App Security. Insira um número de telefone para permitir que o Cloud App Security envie mensagens de texto quando alertas e notificações forem enviados e defina o nível de gravidade para o qual você deseja receber notificações por mensagem de texto.  
   
     > [!NOTE] 
     > O número máximo de alertas enviados por meio de mensagem de texto é 10 por número de telefone por dia. O dia é calculado de acordo com o fuso horário UTC. 
   
-    ![notification settings](./media/notification-settings.png "configurações de notificação")  
+    ![configurações de notificação](./media/notification-settings.png "configurações de notificação")  
   
 3. Quando terminar, clique em **Salvar**.  
   

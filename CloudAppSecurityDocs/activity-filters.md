@@ -72,10 +72,10 @@ Você pode exibir mais informações sobre cada atividade clicando na própria a
  - Exibir atividades do mesmo tipo
  - Exibir todas as atividades do mesmo usuário
  - Exibir atividades do mesmo endereço IP
- - View activities from the same geographic location
+ - Exibir atividades da mesma localização geográfica
  - Exibir atividades do mesmo período de tempo (48 horas)
  
-![activity drawer](./media/activity-drawer.png "gaveta atividade")  
+![gaveta de atividade](./media/activity-drawer.png "gaveta atividade")  
   
 Para obter uma lista das ações de governança disponíveis, consulte [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
 
