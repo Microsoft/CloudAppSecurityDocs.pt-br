@@ -5,34 +5,33 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09a5702f5a1e1d28dc64172bf6a8204d2bfce5d0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 79b4bbd6e73a07820524df571ddf9cebe407c5af
+ms.sourcegitcommit: d6ba570c9fbb3c176dab2004c5712c889c759eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460550"
+ms.lasthandoff: 12/01/2019
+ms.locfileid: "74666744"
 ---
 # <a name="policy-template-reference"></a>Referência de modelo de política
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-Este artigo fornece informações sobre modelos de política incluídos no Microsoft Cloud App Security. 
+Este artigo fornece informações sobre modelos de política incluídos no Microsoft Cloud App Security.
 
 ## <a name="policy-templates"></a>Modelos de Política
 
 É recomendável iniciar a criação de políticas com base em um modelo existente sempre que possível para facilidade de uso. Esta tabela apresenta modelos de política existentes no Microsoft Cloud App Security.
 
-|Categoria de risco|Nome do modelo|Descrição|
+|Categoria de risco|Nome do modelo|Description|
 |-----|----|----|
 |Cloud Discovery|Comportamentos anormais em usuários descobertos|Alerta ao detectar comportamentos anormais em usuários e aplicativos descobertos, como: grandes quantidades de dados carregados em comparação com outros usuários, grandes transações de usuário em comparação com o histórico do usuário.|
 |Cloud Discovery|Comportamentos anormais de endereços IP descobertos|Alertas ao detectar comportamentos anômalos em endereços IP e aplicativos descobertos, como: grandes quantidades de dados carregados em comparação com outros endereços IP, transações grandes de aplicativo em comparação com o histórico do endereço IP.|
@@ -66,12 +65,11 @@ Este artigo fornece informações sobre modelos de política incluídos no Micro
 |Controle de compartilhamento|Arquivo compartilhado com domínio não autorizado|Alertar quando um arquivo for compartilhado com um domínio não autorizado (por exemplo, de seu concorrente).|
 |Controle de compartilhamento|Certificados digitais compartilhados (extensões de arquivo)|Alerta quando um arquivo que contém os certificados digitais publicamente é compartilhado. Use este modelo para gerenciar o armazenamento do AWS.|
 |Controle de compartilhamento|Buckets do S3 acessíveis publicamente (AWS)|Alertar quando um bucket do S3 do AWS for compartilhado publicamente.|
-|Controle de compartilhamento|Arquivos obsoletos compartilhados externamente|Localize arquivos compartilhados externamente que não foram abertos nem modificados por seis meses.|
+|Controle de compartilhamento|Arquivos obsoletos compartilhados externamente|Alertar quando arquivos compartilhados externamente não tiverem sido modificados por pelo menos 6 meses.|
 
+## <a name="next-steps"></a>Próximas etapas
 
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-## <a name="next-steps"></a>Próximas etapas 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
