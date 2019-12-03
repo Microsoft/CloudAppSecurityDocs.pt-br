@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/06/2019
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 710c42d0fa307c30919ac8383e7e46881ae0b131
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
-ms.translationtype: MT
+ms.openlocfilehash: b9c354d752b9d960669223c4928453acf323d4bb
+ms.sourcegitcommit: 84d56e4953dd771b099261e10a59cf611dd6280a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461155"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74669332"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -35,7 +35,7 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Falhas de logon
 * Atividade do administrador
 * Contas inativas
-* Location
+* Local
 * Viagem impossível
 * Agente de dispositivo e usuário
 * Taxa de atividade
@@ -147,6 +147,9 @@ Para afetar o mecanismo de detecção de anomalias para suprimir ou mostrar aler
 * Na política de Viagem Impossível, você pode definir o controle deslizante de sensibilidade para determinar o nível de comportamento anômalo necessário antes que um alerta seja disparado. Por exemplo, se você definir como baixo, ele suprimirá os alertas de Viagem Impossível dos locais comuns de um usuário e, se você definir como alto, ele mostrará esses alertas.
 
 * Você também pode configurar se os alertas de Atividade de país não frequente, endereços IP anônimos, endereços IP suspeitos e viagem impossível devem analisar os logons com falha e bem-sucedidos ou apenas os bem-sucedidos.
+
+> [!NOTE]
+> Por padrão, protocolos de entrada herdados, como aqueles que não usam a autenticação multifator (por exemplo, WS-Trust), não são monitorados pela política de viagem impossível. Se sua organização usa protocolos herdados, para evitar atividades relevantes ausentes, edite a política e, em **Configuração avançada**, defina **analisar as atividades de entrada** para **todas as**entradas.
 
 ## <a name="scope-anomaly-detection-policies"></a>Definir políticas de detecção de anomalias
 
