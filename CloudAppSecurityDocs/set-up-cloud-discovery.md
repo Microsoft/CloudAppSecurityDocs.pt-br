@@ -10,16 +10,16 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f6c3408b7887ac35924ff647bbe67d8525bef9ed
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: fe21bbb39b52981d7aeba0839367d2fd54073983
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997402"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721095"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 O Cloud Discovery analisa seus logs de tráfego com base no catálogo de mais de 16.000 aplicativos de nuvem do Microsoft Cloud App Security. Os aplicativos são classificados e pontuados com base em mais de 80 fatores de risco para fornecer visibilidade contínua sobre o uso da nuvem, sombra de ti e a sombra de risco que ela representa em sua organização.
 
@@ -31,12 +31,12 @@ Há dois tipos de relatórios que você pode gerar:
 
 - **Relatórios contínuos** – analisam todos os logs que são encaminhados da sua rede usando o Cloud App Security. Eles oferecem maior visibilidade em todos os dados e identificam automaticamente usos anormais com o mecanismo de detecção de anomalias do Machine Learning ou por meio de políticas personalizadas que você definir. Esses relatórios podem ser criados conectando-se das seguintes maneiras:
 
-     - [Integração do Microsoft defender ATP](wdatp-integration.md): O Cloud App Security integra-se com a ATP (proteção avançada contra ameaças) do Microsoft defender nativamente, para simplificar a distribuição de Cloud Discovery, estender os recursos de Cloud Discovery além da rede corporativa e habilitar a investigação baseada em computador.
-     - [Coletor de logs](discovery-docker.md): Os coletores de log permitem que você automatize facilmente o upload de logs da sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
-     - [Integração do Zscaler](zscaler-integration.md): Se você trabalha com o Cloud App Security e o Zscaler, pode integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. Juntos, o Cloud App Security e o Zscaler proporcionam uma implantação perfeita do Cloud Discovery, o bloqueio automático de aplicativos não sancionados e a avaliação de riscos diretamente no portal do Zscaler.
-     - [integração do iboss](iboss-integration.md): Se você trabalha com o Cloud App Security e o iboss, é possível integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. Juntos, Cloud App Security e iboss fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do iboss.
+  - [Integração do Microsoft defender ATP: o](wdatp-integration.md)Cloud app Security integra-se com o Microsoft defender com segurança (ATP) nativamente, para simplificar a distribuição de Cloud Discovery, estender os recursos de Cloud Discovery além da rede corporativa e habilitar a investigação baseada em computador.
+  - [Coletor de logs](discovery-docker.md): os coletores de logs permitem automatizar facilmente o carregamento de logs da rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
+  - [Integração do Zscaler](zscaler-integration.md): se trabalha com o Cloud App Security e o Zscaler, você pode integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. Juntos, o Cloud App Security e o Zscaler proporcionam uma implantação perfeita do Cloud Discovery, o bloqueio automático de aplicativos não sancionados e a avaliação de riscos diretamente no portal do Zscaler.
+  - [integração do iboss](iboss-integration.md): se você trabalha com o Cloud app Security e o iboss, você pode integrar os dois produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e iboss fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do iboss.
 
-## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Fluxo do processo de log: Dos dados brutos à avaliação de risco
+## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Fluxo do processo de log: dos dados brutos a avaliação de riscos
 
 O processo de geração de uma avaliação de riscos consiste nas seguintes etapas. O processo leva de alguns minutos a várias horas, dependendo da quantidade de dados processados.
 
@@ -126,8 +126,11 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
+> [!div class="nextstepaction"]
+> [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
-[Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
+> [!div class="nextstepaction"]
+> [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)
+> [!div class="nextstepaction"]
+> [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)
