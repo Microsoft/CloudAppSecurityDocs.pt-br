@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 387a9a9184bb805db7659d6f67eae26239f812f3
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 89a14c0fa629a0affd9fde58b1faf4c3716de143
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461069"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719549"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar o AWS ao Microsoft Cloud App Security
 
@@ -177,7 +176,8 @@ Siga o [How to Connect AWS Security Auditing](#how-to-connect-aws-security-audit
 1. Na página **conectores de aplicativos** , para fornecer as credenciais do conector AWS, siga um destes procedimentos:
 
     **Para um novo conector**
-    1. Clique no sinal de adição seguido por **Amazon Web Services**.<br>
+
+    1. Clique no sinal de adição seguido por **Amazon Web Services**.<br />
 
         ![conectar AWS](media/connect-aws.png "conectar AWS")
 
@@ -190,6 +190,7 @@ Siga o [How to Connect AWS Security Auditing](#how-to-connect-aws-security-audit
         ![Conectar a configuração do AWS app Security](media/aws-connect-app-config.png "Conectar a configuração do AWS app Security")
 
     **Para um conector existente**
+
     1. Na lista de conectores, na linha na qual o conector AWS aparece, clique em **conectar configuração de segurança**.
 
         ![Captura de tela da página aplicativos conectados, mostrando o link Editar configuração de segurança](media/aws-connect-app-edit-config.png)
@@ -204,6 +205,7 @@ Siga o [How to Connect AWS Security Auditing](#how-to-connect-aws-security-audit
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f184081a9911cb04a281419ae5c8f2048c7a690d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 70f6e5441b870b52599da150355859275851c1df
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461396"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720192"
 ---
 # <a name="working-with-the-dashboard"></a>Trabalhar com o painel
 
@@ -29,14 +28,13 @@ ms.locfileid: "74461396"
 Este artigo descreve o que você deve fazer com o Cloud App Security diariamente.  Depois de ativar o Microsoft Cloud App Security, você precisará:
 
 - Configurar fluxos de dados
-- Sancione aplicativos que você deseja permitir que as pessoas usem 
-- Configure políticas para monitorar seu ambiente de nuvem. 
+- Sancione aplicativos que você deseja permitir que as pessoas usem
+- Configure políticas para monitorar seu ambiente de nuvem.
 
-Em seguida, você pode usar o Cloud App Security para controlar e proteger sua nuvem e gerenciar os riscos.  
+Em seguida, você pode usar o Cloud App Security para controlar e proteger sua nuvem e gerenciar os riscos.
 
+## <a name="check-the-dashboard"></a>Verificar o painel
 
-
-## <a name="check-the-dashboard"></a>Verificar o painel  
 O painel do Cloud App Security fornece uma visão geral das atividades e recursos, incluindo:
 
 - Alertas abertos
@@ -46,12 +44,13 @@ O painel do Cloud App Security fornece uma visão geral das atividades e recurso
 - Tendências de uso do aplicativo conectado no ambiente de nuvem
 - Usuários principais por detecção de ameaças
 
-É recomendável verificar o painel diariamente para ver quais novos alertas foram acionados. É um bom lugar para ficar atento à integridade do seu ambiente de nuvem. O painel ajuda você a ter uma noção do que está acontecendo.  
+É recomendável verificar o painel diariamente para ver quais novos alertas foram acionados. É um bom lugar para ficar atento à integridade do seu ambiente de nuvem. O painel ajuda você a ter uma noção do que está acontecendo.
 
-![Painel do Cloud App Security](./media/dashboard.png "painel")  
+![Painel do Cloud App Security](media/dashboard.png "painel")
 
+## <a name="next-steps"></a>Próximas etapas
 
-## <a name="next-steps"></a>Próximas etapas  
-Para obter mais informações sobre como investigar alertas, consulte [Investigar](investigate.md).  
+> [!div class="nextstepaction"]
+> [Investigar alertas](investigate.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]

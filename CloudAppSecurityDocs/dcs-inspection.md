@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4e00f152fcb09f2133805157b85b2a930ad3aca
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: badb9427ba4a5eed267eb95f3b6d5c66ed058b98
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461331"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720658"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integração dos Serviços de Classificação de Dados da Microsoft
 
@@ -36,10 +35,12 @@ O Microsoft Cloud App Security permite que você use nativamente o Serviço de C
 Você tem a opção de definir o **Método de inspeção** para usar o **Serviço de Classificação de Dados da Microsoft** sem precisar fazer nenhuma configuração adicional. Essa opção é útil ao criar uma política de prevenção de vazamento de dados para seus arquivos no Microsoft Cloud App Security.
 
 1. Na página [política de arquivo](data-protection-policies.md), em **Método de inspeção**, selecione **Serviço de Classificação de Dados**. Você também pode definir o **método de inspeção** na página [política de sessão](session-policy-aad.md) com download de arquivo de **controle (com DLP)** selecionado.
-     ![Configuração do serviço de classificação de dados](./media/dcs-enable.png)
+
+    ![Configuração do serviço de classificação de dados](media/dcs-enable.png)
 2. Selecione se a política deve ser aplicada quando **qualquer** ou **todos** os critérios são atendidos.
 3. **Escolha o tipo de inspeção** selecionando os **Tipos de informações confidenciais**.
- ![Configuração do serviço de classificação de dados](./media/dcs-sensitive-information-type.png)
+
+    ![Configuração do serviço de classificação de dados](media/dcs-sensitive-information-type.png)
 
 4. Você pode usar os [tipos de informações confidenciais padrão](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) para definir o que acontece com arquivos protegidos pelo Microsoft Cloud App Security. Você também pode reutilizar qualquer um dos seus [tipos de informações confidenciais personalizadas do Office 365](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
     > [!NOTE]
@@ -53,6 +54,7 @@ Definir essas políticas permite que você amplie facilmente a força dos recurs
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

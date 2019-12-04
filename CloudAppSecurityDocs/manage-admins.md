@@ -11,20 +11,19 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 820b75ae632cc1cc10a64c66125da01d77ff9b14
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 0243d1a75e4f322406ef768dddc898b58d3fe294
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084163"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720507"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security é compatível com o controle de acesso baseado em função. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, consulte os artigos para [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
@@ -32,11 +31,11 @@ O Microsoft Cloud App Security é compatível com o controle de acesso baseado e
 
 Por padrão, as seguintes funções de administrador do Office 365 e [do Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Cloud app Security:
 
-- **Administrador global e administrador de segurança:** Os administradores com **Acesso completo** têm permissões completas no Cloud App Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
+- **Administrador global e Administrador de segurança:** os administradores com **Acesso completo** têm permissões completas no Cloud App Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
 
-- **Administrador de conformidade:** Tem permissões somente leitura e pode gerenciar alertas. Pode criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios internos em Gerenciamento de dados.
+- **Administrador de conformidade:** tem permissões somente leitura e pode gerenciar alertas. Pode criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios internos em Gerenciamento de dados.
 
-- **Leitor de segurança:** Tem permissões somente leitura e pode gerenciar alertas. O Leitor de segurança não tem permissão para executar as seguintes ações:
+- **Leitor de segurança:** tem permissões somente leitura e pode gerenciar alertas. O Leitor de segurança não tem permissão para executar as seguintes ações:
 
   - Criar políticas e editar as existentes
   - Executar ações de controle
@@ -79,9 +78,9 @@ Além disso, as seguintes Cloud App Security funções de administrador específ
   - Extensões de segurança – permissões somente para o token de API com usuários do grupo
   - Ações de governança – somente para os usuários específicos do grupo
 
-- **Cloud Discovery administrador global:**  Tem permissão para exibir e editar todos os dados e configurações do Cloud Discovery. O administrador de Descoberta Global tem acesso da seguinte maneira:
+- **Cloud Discovery administrador global:**  Tem permissão para exibir e editar todos os Cloud Discovery configurações e dados. O administrador de Descoberta Global tem acesso da seguinte maneira:
 
-  - Configurações
+  - Settings
     - Configurações do sistema – somente exibição
     - Configurações do Cloud Discovery – exibir e editar tudo (permissões de anonimização dependem se ele recebeu autorização durante a atribuição de função)
   - Atividade do Cloud Discovery – todas as permissões
@@ -107,19 +106,19 @@ Por exemplo, caso deseje atribuir a Sara, um Leitor de segurança no Azure Activ
 
 Adicione também outros administradores ao Cloud App Security sem adicionar usuários a funções administrativas do Azure Active Directory. Para adicionar outros administradores, realize as seguintes etapas:
 
-   >[!IMPORTANT]
-   > Somente Administradores globais ou Administradores de segurança podem conceder acesso a outros usuários ao Cloud App Security.
+> [!IMPORTANT]
+> Somente Administradores globais ou Administradores de segurança podem conceder acesso a outros usuários ao Cloud App Security.
 
-1. Clique na engrenagem de configurações ![ícone de configurações](./media/settings-icon.png "ícone de configurações") e, em seguida, em **Gerenciar acesso de administrador**.
+1. Clique no ícone configurações ![configurações](media/settings-icon.png "ícone de configurações") de engrenagem e **gerenciar acesso de administrador**.
 
 2. Clique no sinal de adição para adicionar os administradores que devem ter acesso ao Cloud App Security. Você pode digitar um endereço de email interno ou externo para permitir que administradores internos da organização ou MSSPs (Provedores de Serviço de Segurança Gerenciada) externos administrem seus alertas de segurança.
-  
-   ![adicionar administradores](./media/add-admin.png)
 
-3. Em seguida, clique na lista suspensa para definir o tipo de função do administrador, **Administrador global**, **Leitor de segurança**, **Administrador de conformidade** ou **Administrador de aplicativo/instância**. Se você selecionar **Administrador de aplicativo/instância**, selecione o aplicativo e a instância aos quais o administrador terá permissões.
+    ![adicionar administradores](media/add-admin.png)
 
-     >[!NOTE]
-      >Qualquer administrador, cujo acesso é limitado, que tentar acessar uma página restrita ou executar uma ação restrita receberá um erro indicando que ele não tem permissão para acessar a página ou executar a ação.
+3. Em seguida, clique na lista suspensa para definir o tipo de função que o administrador tem, **administrador global**, **leitor de segurança**, administrador de **conformidade**ou **administrador de aplicativo/instância**. Se você selecionar **administrador de aplicativo/instância**, selecione o aplicativo e a instância para o qual o administrador tem permissões.
+
+    >[!NOTE]
+    >Qualquer administrador, cujo acesso é limitado, que tentar acessar uma página restrita ou executar uma ação restrita receberá um erro indicando que ele não tem permissão para acessar a página ou executar a ação.
 
 4. Clique em **Adicionar administrador**.
 
@@ -141,8 +140,9 @@ Cloud App Security permite que você convide provedores de serviço de seguranç
 
 Para alternar locatários, depois de receber permissões para vários locatários, clique no ícone de usuário. Você verá uma lista dos locatários para os quais você tem permissões. Selecione o locatário que deseja gerenciar.
 
-![escolher locatário](./media/choose-tenant.png "escolher locatário")
+![escolher locatário](media/choose-tenant.png "escolher locatário")
 
 ## <a name="next-steps"></a>Próximas etapas  
 
-[Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)

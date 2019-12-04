@@ -10,20 +10,16 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 14209e0b394571ee0d71784cb4c50683226a7a2e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 290429e345e6b814a34a3e9214b5f69fdcbf7ddf
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460631"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720938"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
 *Aplica-se ao: Microsoft Cloud App Security*
-
->[!div class="step-by-step"]
-[« Anterior: Introdução ao Controle de Aplicativo de Acesso Condicional](proxy-intro-aad.md)<br>
-[Em seguida: integrar e implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
 
 Os controles de sessão no Microsoft Cloud App Security funcionam com os aplicativos em destaque. Para obter uma lista de aplicativos que são apresentados por Cloud App Security para trabalhar prontos para uso, consulte [proteger aplicativos com Microsoft Cloud App Security controle de aplicativos de acesso condicional](proxy-intro-aad.md#featured-apps).
 
@@ -57,7 +53,7 @@ Siga estas etapas para configurar aplicativos em destaque para serem controlados
 
 1. Adicione **Atribuições de condição** ou **Controles de concessão** aplicáveis (opcional).
 
-   ![Acesso condicional do Azure AD](./media/azure-ad-caac-policy.png)
+    ![Acesso condicional do Azure AD](media/azure-ad-caac-policy.png)
 
 1. Clique em **habilitar** e **salvar**.
 
@@ -74,12 +70,12 @@ Cloud App Security sincronizará os detalhes da política com seus servidores pa
 
 As instruções acima ajudaram a criar uma política interna do Cloud App Security para aplicativos em destaque diretamente no Azure AD. Nesta etapa, verifique se os controles de acesso e sessão estão configurados para esses aplicativos.
 
-1. No portal de Cloud App Security, clique no ícone configurações engrenagem ![configurações](./media/settings-icon.png "ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
+1. No portal de Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
 
 1. Na tabela de aplicativos Controle de Aplicativos de Acesso Condicional, examine a coluna **controles disponíveis** e verifique se o controle de **acesso** e a **sessão** são exibidos para seus aplicativos.
 
-   > [!NOTE]
-   > Se o controle de sessão não aparecer para um aplicativo, ele ainda não estará disponível para esse aplicativo específico. Você pode adicioná-lo imediatamente como um [aplicativo personalizado](proxy-deployment-any-app.md)ou pode abrir uma solicitação para adicioná-lo como um aplicativo em destaque clicando em **solicitar controle de sessão**.
+    > [!NOTE]
+    > Se o controle de sessão não aparecer para um aplicativo, ele ainda não estará disponível para esse aplicativo específico. Você pode adicioná-lo imediatamente como um [aplicativo personalizado](proxy-deployment-any-app.md)ou pode abrir uma solicitação para adicioná-lo como um aplicativo em destaque clicando em **solicitar controle de sessão**.
     >
     >![Solicitação de Controle de Aplicativos de Acesso Condicional](media/caac-request.png)
 
@@ -91,19 +87,28 @@ As instruções acima ajudaram a criar uma política interna do Cloud App Securi
 
 1. Você pode filtrar clicando em **Avançado** e, em seguida, usando a filtragem **Origem é igual a Controle de acesso**.
 
-    ![Filtre usando o acesso condicional do Azure AD](./media/sso-logon.png)
+    ![Filtre usando o acesso condicional do Azure AD](media/sso-logon.png)
 
-1. É recomendável que você entre em aplicativos móveis e da área de trabalho em dispositivos gerenciados e não gerenciados. Isso serve para garantir que as atividades sejam capturadas corretamente no log de atividades.<br>
+1. É recomendável que você entre em aplicativos móveis e da área de trabalho em dispositivos gerenciados e não gerenciados. Isso serve para garantir que as atividades sejam capturadas corretamente no log de atividades.<br />
 Para verificar se a atividade é capturada corretamente, clique em um log de logon único na atividade para abrir a gaveta de atividades. Verifique se a **Marca de agente do usuário** reflete corretamente se o dispositivo é um cliente nativo (o que significa um aplicativo móvel ou da área de trabalho) ou um dispositivo gerenciado (em conformidade, ingressado no domínio ou certificado do cliente válido).
 
 > [!NOTE]
 > Depois de implantado, você não pode remover um aplicativo da página de Controle de Aplicativos de Acesso Condicional. Desde que você não defina uma política de acesso ou sessão no aplicativo, o Controle de Aplicativos de Acesso Condicional não alterará comportamentos para o aplicativo.
 
->[!div class="step-by-step"]
-[« Anterior: Introdução ao Controle de Aplicativo de Acesso Condicional](proxy-intro-aad.md)<br>[Em seguida: integrar e implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
-
 ## <a name="next-steps"></a>Próximas etapas
 
-[Trabalhando com Cloud App Security Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
+> [!div class="nextstepaction"]
+> [Como criar uma política de acesso](access-policy-aad.md)
+
+## <a name="see-also"></a>Consulte também
+
+> [!div class="nextstepaction"]
+> [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Trabalhar com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

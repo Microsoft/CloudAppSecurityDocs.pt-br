@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0879c468f48c68214db8a4ff77e5f7ccb0eba252
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: db16695ffa6cc9c20d04616553256cba95de1550
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458403"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720516"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitar o coletor de logs por trás de um proxy
 
@@ -38,42 +37,48 @@ Verifique se você executou as etapas necessárias, executou o Docker em um comp
 
 No shell, verifique se o contêiner foi criado e está em execução usando o seguinte comando:
 
-    bash
-    docker ps
+```bash
+docker ps
+```
 
-![Docker PS](./media/docker-1.png "Docker PS")
+![Docker PS](media/docker-1.png)
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copie o Certificado de Autoridade de Certificação raiz do proxy para o contêiner
 
 De sua máquina virtual, copie o Certificado de Autoridade de Certificação para o contêiner do Cloud App Security. No exemplo a seguir, o contêiner é denominado *Ubuntu LogCollector* e o Certificado de Autoridade de Certificação é denominado *Proxy-CA.crt*.
 Executar o comando no host do Ubuntu. Copia o certificado em uma pasta no contêiner em execução:
 
-    bash
-    docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
+```bash
+docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
+```
 
 ### <a name="set-the-configuration-to-work-with-the-ca-certificate"></a>Defina a configuração para trabalhar com o Certificado de Autoridade de Certificação
 
 1. Vá para o contêiner, usando o comando a seguir. Ele abrirá o bash no contêiner do coletor de logs:
 
-        bash
-        docker exec -it Ubuntu-LogCollector /bin/bash
+    ```bash
+    docker exec -it Ubuntu-LogCollector /bin/bash
+    ```
 
 2. Do bash dentro do contêiner, vá para o diretório JRE do Java. Para evitar um erro de caminho relacionado com a versão, use este comando:
 
-       bash
-       cd 'find /opt/jdk/*/jre -iname bin'
+    ```bash
+    cd 'find /opt/jdk/*/jre -iname bin'
+    ```
 
 3. Importe o certificado raiz que você copiou anteriormente da pasta de *descoberta* para o repositório de chaves do Java e defina uma senha. A senha padrão é "changeit":
 
-       bash
-       ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ```bash
+    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ```
 
 4. Valide que o certificado foi importado corretamente para o repositório de chaves da Autoridade de Certificação, usando o comando a seguir para procurar o alias que você forneceu durante a importação (*SelfSignedCert*):
 
-       bash
-       ./keytool --list --keystore ../lib/security/cacerts | grep self
+    ```bash
+    ./keytool --list --keystore ../lib/security/cacerts | grep self
+    ```
 
-![keytool](./media/docker-2.png "keytool")
+    ![keytool](media/docker-2.png "keytool")
 
 Você deve ver seu Certificado de Autoridade de Certificação importado do proxy.
 
@@ -83,25 +88,26 @@ O contêiner está pronto.
 
 Execute o comando **collector_config** usando o token da API que você usou durante a criação de seu coletor de logs:
 
-![Token de API](./media/docker-3.png "Token de API")
+![Token de API](media/docker-3.png "Token de API")
 
 Quando você executar o comando, especifique seu próprio token da API:
 
-      bash
-      collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
+```bash
+collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
+```
 
-
-![Atualização de configuração](./media/docker-4.png "Atualização de configuração")
+![Atualização de configuração](media/docker-4.png "Atualização de configuração")
 
 O coletor de logs consegue agora se comunicar com o Cloud App Security. Depois de enviar dados a ele, o status será alterado de **Íntegro** para **Conectado** no portal do Cloud App Security.
 
-![Status](./media/docker-5.png "Status")
+![Estado](media/docker-5.png "Status")
 
 >[!NOTE]
 > Se você precisar atualizar a configuração do coletor de logs, para adicionar ou remover uma fonte de dados, por exemplo, normalmente precisará **excluir** o contêiner e executar as etapas anteriores novamente. Para evitar isso, você pode executar novamente a ferramenta *collector_config* com o novo token da API gerado no portal do Cloud App Security.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Políticas de atividade de usuário](user-activity-policies.md)
+> [!div class="nextstepaction"]
+> [Políticas de atividade de usuário](user-activity-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

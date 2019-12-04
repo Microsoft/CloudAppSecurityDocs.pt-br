@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1689bccc5c2dd55ca719159697986f7c317be1af
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 406851d56a484ee2b49104c813cd371952c10746
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461378"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720702"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 
@@ -27,7 +27,7 @@ ms.locfileid: "74461378"
 
 As políticas de arquivos permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de nuvem. As políticas podem ser configuradas para fornecer verificações de conformidade contínuas, tarefas de Descoberta Eletrônica legais, DLP para conteúdo confidencial compartilhado publicamente e muito mais casos de uso. O Cloud App Security pode monitorar qualquer tipo de arquivo com base em mais de 20 filtros de metadados (como por exemplo, nível de acesso e tipo de arquivo).
 
-### <a name="supported-file-types"></a>Tipos de arquivos com suporte
+## <a name="supported-file-types"></a>Tipos de arquivos com suporte
 
 Mecanismos de DLP internos do Cloud App Security executam inspeção de conteúdo extraindo texto de todos os tipos de arquivo comuns (mais de 100), incluindo Office, Open Office, arquivos compactados, vários formatos de texto avançado, XML, HTML e muito mais.
 
@@ -94,7 +94,7 @@ Para criar uma nova política de arquivos, siga este procedimento:
 
 1. Depois de criar sua política, você poderá exibi-la na guia **política de arquivo** . Você sempre pode editar uma política, calibrar seus filtros ou alterar as ações automatizadas. A política é habilitada automaticamente no momento da criação e inicia a verificação de seus arquivos de nuvem imediatamente.  Tenha muito cuidado ao definir as ações de controle, elas podem causar uma perda irreversível de permissões de acesso para seus arquivos. É recomendável restringir os filtros para representar exatamente os arquivos nos quais você deseja agir usando vários campos de pesquisa. Quanto mais restritos forem os filtros, melhor. Para obter orientação, você pode usar o botão **Editar e visualizar resultados** na seção Filtros.
 
-    ![edição de política de arquivo e visualizar os resultados](./media/file-policy-edit-and-preview-results.png)
+    ![edição de política de arquivo e visualizar os resultados](media/file-policy-edit-and-preview-results.png)
 
 1. Para exibir correspondências de política de arquivo, os arquivos com suspeita de violar a política, clique em **Controle** e **Políticas**. Filtre os resultados para exibir somente as políticas do arquivo usando o filtro **Tipo** na parte superior. Para obter mais informações sobre as correspondências para cada política, clique em uma política. Isso exibe os arquivos de "Correspondência agora" para a política. Clique na guia **Histórico** para ver um histórico de até seis meses anteriores de arquivos que correspondem à política.
 
@@ -128,6 +128,7 @@ Para simplificar ainda mais a investigação, agora você pode criar consultas p
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

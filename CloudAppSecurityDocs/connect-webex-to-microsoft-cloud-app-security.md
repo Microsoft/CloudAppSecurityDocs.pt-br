@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2f35d499398f6d538b552678d5c30740e2f5d5ea
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e3a3f99dd64526439c9c5f4967a2918c33dfdde9
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460836"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719754"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conectar o Cisco WebEx ao Microsoft Cloud App Security
 
@@ -38,7 +38,7 @@ Este artigo fornece instruções para conectar Microsoft Cloud App Security à s
 
 1. Na página **conectores de aplicativos** , clique no botão de adição seguido pelo **Cisco WebEx**.
 
-    ![conectar WebEx](./media/cisco-webex.png "conectar WebEx")
+    ![conectar WebEx](media/cisco-webex.png "conectar WebEx")
 
 1. No pop-up, insira o nome da instância deste conector.
 

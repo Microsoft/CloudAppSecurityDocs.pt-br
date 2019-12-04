@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 038e46762ddc24934e9e926cd6a29ae3ec11067a
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 90cd689f45d3889d457e0ab6b953baff8cb8f79d
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459190"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720398"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Integrar o Cloud App Security com o Zscaler
 
@@ -36,23 +35,23 @@ Se você trabalha com o Cloud App Security e o Zscaler, pode integrar os dois pr
 
 - Uma licença válida do Microsoft Cloud App Security
 - Uma licença válida do Zscaler Cloud 5.6
-- Uma assinatura ativa do Zscaler NSS 
+- Uma assinatura ativa do Zscaler NSS
 
 ## <a name="deployment"></a>Implantação
 
 1. No portal do Zscaler, execute as etapas necessárias para concluir a [integração de parceiro do Zscaler com o Microsoft Cloud App Security](https://help.zscaler.com/zia/configuring-mcas-integration).
 2. No portal do Cloud App Security, execute as seguintes etapas de integração:
-    1. Clique no ícone de configurações e selecione **Configurações do Cloud Discovery**. 
+    1. Clique no ícone de configurações e selecione **Configurações do Cloud Discovery**.
     2. Clique na guia **Carregamento de log automático** e em **Adicionar fonte de dados**.
     3. Na página **Adicionar fonte de dados**, insira as seguintes configurações:
 
-       - Nome = NSS
-       - Fonte = Zscaler QRadar LEEF
-       - Tipo de receptor = Syslog - UDP
+        - Nome = NSS
+        - Fonte = Zscaler QRadar LEEF
+        - Tipo de receptor = Syslog - UDP
 
-         ![fonte de dados Zscaler](./media/data-source-zscaler.png)
+        ![fonte de dados Zscaler](media/data-source-zscaler.png)
 
-    4. Clique em **Exibir exemplo de arquivo de log esperado**. Em seguida, clique em **Baixar log de exemplo** para exibir um exemplo de log de descoberta e verificar se ele corresponde aos seus logs.<br>
+    4. Clique em **Exibir exemplo de arquivo de log esperado**. Em seguida, clique em **Baixar log de exemplo** para exibir um exemplo de log de descoberta e verificar se ele corresponde aos seus logs.<br />
 
 3. Investigue os aplicativos na nuvem descobertos em sua rede. Para obter mais informações e as etapas de investigação, confira [Trabalhando com o Cloud Discovery](working-with-cloud-discovery-data.md).
 
@@ -60,7 +59,7 @@ Se você trabalha com o Cloud App Security e o Zscaler, pode integrar os dois pr
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

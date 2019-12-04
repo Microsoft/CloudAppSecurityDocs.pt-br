@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6fc5d998bc174096d7530a37407137bfbf71d50d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: c4f914fed75e30aca3b9d87d911c729dff0b77c0
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461321"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719924"
 ---
 # <a name="investigate"></a>Investigar
 
@@ -27,11 +27,11 @@ ms.locfileid: "74461321"
 
 Depois que o Microsoft Cloud App Security for executado no ambiente de nuvem, você precisará de um estágio de aprendizado e investigação. Saiba como usar as ferramentas do Microsoft Cloud App Security para obter uma compreensão mais profunda do que está acontecendo em seu ambiente de nuvem. De acordo com seu ambiente específico e como ele está sendo usado, você pode identificar os requisitos para proteger sua organização contra riscos. Este artigo descreve como fazer uma investigação para obter uma melhor compreensão sobre seu ambiente de nuvem.
 
-## <a name="dashboards"></a>Dashboards
+## <a name="dashboards"></a>Painéis
 
 Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos no seu ambiente de nuvem:
 
-|Painel|Descrição|
+|Dashboard|Description|
 |---------------|-----------------|
 |Painel principal|Visão geral do status de nuvem (usuários, arquivos, atividades) e ações necessárias (alertas, violações de atividade e violações de conteúdo).|
 |Painel do aplicativo: visão geral|Visão geral do uso do aplicativo por local, gráficos de uso por número de usuários.|
@@ -55,9 +55,9 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
 - No console do Cloud App Security, acesse o Catálogo de aplicativos ou Aplicativos descobertos.
 
-- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](./media/sanction-three-dots.png "Marcar como pontos aprovados") e selecione **Marcar como sancionado**.
+- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](media/sanction-three-dots.png "Marcar como pontos aprovados") e selecione **Marcar como sancionado**.
 
-    ![Marcar como aprovado](./media/mark-as-sanctioned.png "Marcar como aprovado")
+    ![Marcar como aprovado](media/mark-as-sanctioned.png "Marcar como aprovado")
 
 ## <a name="use-the-investigation-tools"></a>Usar as ferramentas de investigação
 
@@ -113,7 +113,7 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
     - Quantos usuários o implantaram? Quão comuns são esses aplicativos em geral?
 
-    ![Painel do aplicativo](./media/investigate-app.png "investigar aplicativo")
+    ![Painel do aplicativo](media/investigate-app.png "investigar aplicativo")
 
 5. Acesse o **Painel do Cloud Discovery** e verifique os seguintes itens:
 
@@ -143,7 +143,7 @@ Digamos que você supõe que não há nenhum acesso ao seu ambiente de nuvem por
 
 5. Em **Atividades que correspondem a todos os seguintes**, escolha **+** para adicionar um filtro. Role a página para baixo até **Marca de IP** e, em seguida, escolha **Tor**.
 
-    ![Exemplo de política para IPs arriscados](./media/example-policy-risky-ips.png "exemplo de ips arriscados de política")
+    ![Exemplo de política para IPs arriscados](media/example-policy-risky-ips.png "exemplo de ips arriscados de política")
 
 Agora que você tem a política em vigor, está surpreso ao ver que recebe um alerta de que a política foi violada.
 

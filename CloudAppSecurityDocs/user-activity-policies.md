@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1f860400ec95d0aa2584eb1fd4a8682bb5a9ac58
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5272eec53b28fd55886586d06a035f36f70e6e8f
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459586"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720439"
 ---
 # <a name="activity-policies"></a>Políticas de atividade
 
@@ -41,7 +41,7 @@ Para criar uma nova política de atividade, siga este procedimento:
 
 2. Clique em **Criar política** e selecione **Política de atividade**.
 
-     ![menu de política de atividade](./media/activity-policy-menu.png)
+     ![menu de política de atividade](media/activity-policy-menu.png)
 
 3. Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
 
@@ -60,17 +60,17 @@ Veja esses exemplos:
 
 - Vários logons com falha
 
-     Você pode definir uma política para receber um alerta quando ocorrer um grande número de logons com falha em um curto período. Para configurar esse tipo de política, escolha o filtro de atividade apropriado na página **Nova Política de Atividade**.
+    Você pode definir uma política para receber um alerta quando ocorrer um grande número de logons com falha em um curto período. Para configurar esse tipo de política, escolha o filtro de atividade apropriado na página **Nova Política de Atividade**.
 
-     No campo **Filtros de atividade**, configure os parâmetros para os quais o alerta será disparado.
+    No campo **Filtros de atividade**, configure os parâmetros para os quais o alerta será disparado.
 
-     ![Exemplo de política para várias tentativas de entrada com falha](./media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de várias tentativas de logon com falha")
+    ![Exemplo de política para várias tentativas de entrada com falha](media/multiple-failed-log-on-attempts-policy-example.png "exemplo de política de várias tentativas de logon com falha")
 
 - Alta taxa de downloads
 
-     Você pode definir a política para que você receba um alerta quando houve um nível inesperado ou não característico de atividade de download. Para configurar esse tipo de política, nos parâmetros de **Taxa**, escolha os parâmetros para disparar o alerta.
+    Você pode definir a política para que você receba um alerta quando houve um nível inesperado ou não característico de atividade de download. Para configurar esse tipo de política, nos parâmetros de **Taxa**, escolha os parâmetros para disparar o alerta.
 
-     ![exemplo de alta taxa de download](./media/high-download-rate-example.png "exemplo de alta taxa de downloads")
+    ![exemplo de alta taxa de download](media/high-download-rate-example.png "exemplo de alta taxa de downloads")
 
 ## <a name="activity-policy-reference"></a>Referência de política de atividade
 
@@ -89,6 +89,7 @@ Cada política é composta pelas seguintes partes:
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Políticas de proteção de dados](data-protection-policies.md)
+> [!div class="nextstepaction"]
+> [Políticas de proteção de dados](data-protection-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

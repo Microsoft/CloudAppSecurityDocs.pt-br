@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a9d504193061091352985a616893f2220c5d040
-ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
+ms.openlocfilehash: a63546a3404cdf4c48a56b800f5d80d09ee5971e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71263267"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719359"
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
-*Aplica-se a: Microsoft Cloud App Security*
+*Aplica-se ao: Microsoft Cloud App Security*
 
 O painel do Cloud Discovery foi projetado para fornecer mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização. Ele fornece uma visão geral rápida de quais tipos de aplicativos estão sendo usados, seus alertas abertos e os níveis de risco dos aplicativos em sua organização. Ele também mostra quem são os principais usuários do aplicativo e fornece um mapa do local da Matriz de Aplicativo. O Painel do Cloud Discovery tem muitas opções para filtrar os dados. A filtragem permite que você gere exibições específicas dependendo do que você está mais interessado usando gráficos de fácil compreensão para apresentar o panorama completo em uma visão geral.
 
-![painel do Cloud Discovery](./media/cloud-discovery-dashboard.png)
+![painel do Cloud Discovery](media/cloud-discovery-dashboard.png)
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Examinar o Painel do Cloud Discovery
 
@@ -58,7 +58,7 @@ Por exemplo, se você quiser identificar aplicativos de colaboração e de armaz
 
 1. Defina o **Fator de risco de segurança** como **Criptografia de dados em repouso** é igual a **Não tem suporte**. Em seguida, defina **Pontuação de risco** como igual a 6 ou menos.
 
-![Filtros dos aplicativos descobertos](./media/discovered-app-filters.png)
+![Filtros dos aplicativos descobertos](media/discovered-app-filters.png)
 
 Depois que os resultados são filtrados, você pode [cancelar a sanção e bloqueá-los](governance-discovery.md) usando a caixa de seleção de ação em massa para cancelar a sanção de todos eles em uma ação só. Depois que eles tiverem a sanção cancelada, você poderá usar um script de bloqueio para impedir que sejam usados em seu ambiente.
 
@@ -68,7 +68,7 @@ Por exemplo, você pode diferenciar entre os diferentes sites do SharePoint.
 
 Isso tem suporte apenas em firewalls e proxies que contêm dados de URL de destino. Para obter informações, confira a lista de dispositivos compatíveis em [Proxies e firewalls compatíveis](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-![informações de subdomínio](./media/discovery-domains.png)
+![informações de subdomínio](media/discovery-domains.png)
 
 ## <a name="discover-resources-and-custom-apps"></a>Descubra recursos e aplicativos personalizados
 
@@ -83,11 +83,11 @@ Para exibir os recursos descobertos:
 
 1. No portal do Cloud App Security, selecione **Descobrir** e **Recursos descobertos**.
 
-    ![Menu Recursos descobertos](./media/discovered-resources-menu.png)
+    ![Menu Recursos descobertos](media/discovered-resources-menu.png)
 
 1. Na página de recursos descobertos, você pode fazer drill down em cada recurso para ver quais tipos de transações ocorreram, quem as acessou e, em seguida, fazer drill down para investigar ainda mais os usuários.
 
-   ![Recursos de descoberta](./media/discovery-resources.png)
+   ![Recursos de descoberta](media/discovery-resources.png)
 
 1. Para aplicativos personalizados, clique em três botões no fim da linha e selecione **Adicionar aplicativo personalizado**. Isso abrirá a janela **Adicionar aplicativo personalizado** que permite que você nomeie e identifique o aplicativo para que ele possa ser incluído no painel do Cloud Discovery.
 
@@ -115,7 +115,7 @@ Para criar uma exclusão:
 
 1. Adicione um alias do usuário, um endereço IP ou um nome do computador. É recomendável adicionar informações sobre por que a exclusão foi feita.
 
-    ![excluir usuário](./media/exclude-user.png "excluir usuário")
+    ![excluir usuário](media/exclude-user.png "excluir usuário")
 
 ## <a name="manage-continuous-reports"></a>Gerenciar relatórios contínuos
 
@@ -139,7 +139,7 @@ Para criar um novo relatório contínuo:
 
 1. Defina os filtros que você deseja nos dados. Esses filtros podem ser **Grupos de usuários**, **Marcas de endereço IP** ou **Intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).
 
-    ![criar relatório contínuo personalizado](./media/create-custom-continuous-report.png)
+    ![criar relatório contínuo personalizado](media/create-custom-continuous-report.png)
 
 > [!NOTE]
 > Todos os relatórios personalizados são limitados a no máximo 1 GB de dados não compactados. Se houver mais de 1 GB de dados, o primeiro GB de dados será exportado para o relatório.
@@ -164,15 +164,18 @@ Para excluir os dados do Cloud Discovery:
 
 1. Clique no botão **Excluir**.
 
-    ![excluir dados](./media/delete-data.png "excluir dados")
+    ![excluir dados](media/delete-data.png "excluir dados")
 
     > [!NOTE]
     > O processo de exclusão leva alguns minutos e não é imediato.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
+> [!div class="nextstepaction"]
+> [Criar instantâneo de relatórios do Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
-[Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
+> [!div class="nextstepaction"]
+> [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)
+> [!div class="nextstepaction"]
+> [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)

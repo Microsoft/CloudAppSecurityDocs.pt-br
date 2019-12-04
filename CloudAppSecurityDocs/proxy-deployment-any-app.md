@@ -12,20 +12,16 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: f6de75de67bc81b1f12da30cc7a54a6d6b95b324
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: a4d58378bc8502a9022f51d3794d3175df8596de
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460615"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720857"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 
 *Aplica-se ao: Microsoft Cloud App Security*
-
->[!div class="step-by-step"]
-[«Anterior: implantar Controle de Aplicativos de Acesso Condicional para aplicativos em destaque](proxy-deployment-aad.md)<br>
-[Próximo: Como criar uma política de sessão »](session-policy-aad.md)
 
 Os controles de sessão no Microsoft Cloud App Security podem ser configurados para trabalhar com qualquer aplicativo Web. Este artigo descreve como integrar e implantar aplicativos de linha de negócios personalizados, aplicativos SaaS sem recursos e aplicativos locais hospedados por meio do proxy de aplicativo Azure Active Directory (Azure AD) com controles de sessão.
 
@@ -74,7 +70,7 @@ Siga estas etapas para configurar qualquer aplicativo a ser controlado pelo Clou
 
 1. Em **controles de acesso**, clique em **sessão**, selecione **usar controle de aplicativos de acesso condicional** e escolha as políticas internas (**monitorar somente** ou **bloquear downloads**) ou **use a política personalizada** para definir uma política avançada no Cloud app Security e clique em **selecionar**.
 
-   ![Acesso condicional do Azure AD](./media/azure-ad-caac-policy.png)
+    ![Acesso condicional do Azure AD](media/azure-ad-caac-policy.png)
 
 1. Opcional: Adicione condições e conceda controles conforme necessário.
 
@@ -82,7 +78,7 @@ Siga estas etapas para configurar qualquer aplicativo a ser controlado pelo Clou
 
 ## Etapa 2: configurar os usuários que implantarão o aplicativo<a name="conf-users"></a>
 
-1. No Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](./media/settings-icon.png "ícone de configurações") e selecione **configurações**.
+1. No Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações") e selecione **configurações**.
 
 1. Em **controle de aplicativos de acesso condicional**, selecione **integração do aplicativo/manutenção**.
 
@@ -92,16 +88,16 @@ Siga estas etapas para configurar qualquer aplicativo a ser controlado pelo Clou
 
 ## Etapa 3: configurar o aplicativo que você está implantando<a name="conf-app"></a>
 
-Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
+Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Execute um destes procedimentos:
 
-| Status do aplicativo | Descrição | Etapas |
+| Status do aplicativo | Description | Etapas |
 | --- | --- | --- |
-| Não reconhecido | Você verá uma página aplicativo não reconhecido solicitando que você configure seu aplicativo. | 1. [adicione o aplicativo ao controle de aplicativos de acesso condicional](#add-app).<br> 2. [adicione os domínios para o aplicativo](#add-domains)e, em seguida, retorne ao aplicativo e atualize a página.<br> 3. [Instale os certificados para o aplicativo](#install-certs). |
-| Identificado | Você verá uma página de integração solicitando que você continue o processo de configuração do aplicativo. | - [instalar os certificados para o aplicativo](#install-certs). <br><br> **Observação:** Verifique se o aplicativo está configurado com todos os domínios necessários para que o aplicativo funcione corretamente. Para configurar domínios adicionais, vá para [adicionar os domínios do aplicativo](#add-domains)e, em seguida, retorne à página do aplicativo. |
+| Não reconhecido | Você verá uma página aplicativo não reconhecido solicitando que você configure seu aplicativo. | 1. [adicione o aplicativo ao controle de aplicativos de acesso condicional](#add-app).<br /> 2. [adicione os domínios para o aplicativo](#add-domains)e, em seguida, retorne ao aplicativo e atualize a página.<br /> 3. [Instale os certificados para o aplicativo](#install-certs). |
+| Identificado | Você verá uma página de integração solicitando que você continue o processo de configuração do aplicativo. | - [instalar os certificados para o aplicativo](#install-certs). <br /><br /> **Observação:** Verifique se o aplicativo está configurado com todos os domínios necessários para que o aplicativo funcione corretamente. Para configurar domínios adicionais, vá para [adicionar os domínios do aplicativo](#add-domains)e, em seguida, retorne à página do aplicativo. |
 
 ### Para adicionar um novo aplicativo<a name="add-app"></a>
 
-1. Na barra de menus, clique no ícone configurações engrenagem ![configurações](./media/settings-icon.png "ícone de configurações")e selecione **controle de aplicativos de acesso condicional**.
+1. Na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações")e selecione **controle de aplicativos de acesso condicional**.
 
 1. Clique em **Exibir novos aplicativos**.
 
@@ -109,8 +105,8 @@ Vá para o aplicativo que você está implantando. A página que você vê depen
 
 1. Na tela que é aberta, você pode ver uma lista de novos aplicativos. Para cada aplicativo que você estiver integrando, clique no sinal de **+** e, em seguida, clique em **Adicionar**.
 
-   > [!NOTE]
-   > Se um aplicativo não for exibido no catálogo de aplicativos do Cloud App Security, ele será exibido na caixa de diálogo nos aplicativos não identificados juntamente com a URL de logon. Ao clicar no sinal + desses aplicativos, você pode integrar o aplicativo como um aplicativo personalizado.
+    > [!NOTE]
+    > Se um aplicativo não for exibido no catálogo de aplicativos do Cloud App Security, ele será exibido na caixa de diálogo nos aplicativos não identificados juntamente com a URL de logon. Ao clicar no sinal + desses aplicativos, você pode integrar o aplicativo como um aplicativo personalizado.
 
     ![Controle de Aplicativos de Acesso Condicional, aplicativos do Azure AD descobertos](media/caac-discovered-aad-apps.png)
 
@@ -128,7 +124,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
 1. No painel domínios descobertos, anote os nomes de domínio ou exporte a lista como um arquivo. csv.
     > [!NOTE]
     > O painel exibe uma lista de domínios descobertos que não estão associados no aplicativo. Os nomes de domínio são totalmente qualificados.
-1. Vá para Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](./media/settings-icon.png "ícone de configurações") e selecione **controle de aplicativos de acesso condicional**.
+1. Vá para Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações") e selecione **controle de aplicativos de acesso condicional**.
 1. Na lista de aplicativos, na linha na qual o aplicativo que você está implantando aparece, escolha os três pontos no final da linha e, em **detalhes do aplicativo**, escolha **Editar**.
     > [!TIP]
     > Para exibir a lista de domínios configurados no aplicativo, clique em **Exibir domínios de aplicativo**.
@@ -150,7 +146,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
     > [!NOTE]
     > Para que os certificados sejam reconhecidos, depois de instalar o certificado, você deve reiniciar o navegador e ir para a mesma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Clique em **Continuar**.
+1. Clique em **Continue**.
 
 ## Etapa 4: verificar se o aplicativo está funcionando corretamente<a name="verify-app"></a>
 
@@ -167,7 +163,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
 
 Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produção de sua organização, execute as etapas a seguir.
 
-1. Em Cloud App Security, clique no ícone configurações engrenagem ![configurações](./media/settings-icon.png "ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
+1. Em Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
 1. Na lista de aplicativos, na linha na qual o aplicativo que você está implantando aparece, escolha os três pontos no final da linha e escolha **Editar aplicativo**.
 1. Selecione **usar com controle de aplicativos de acesso condicional** e, em seguida, clique em **salvar**.
 
@@ -177,12 +173,20 @@ Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produ�
 1. Atualize a política criada anteriormente para incluir os usuários, grupos e controles relevantes necessários.
 1. Em **sessão** > **usar controle de aplicativos de acesso condicional**, se você tiver selecionado **usar política personalizada**, vá para Cloud app Security e crie uma política de sessão correspondente. Para saber mais, confira [Políticas de sessão](session-policy-aad.md).
 
->[!div class="step-by-step"]
-[«Anterior: implantar Controle de Aplicativos de Acesso Condicional para aplicativos em destaque](proxy-deployment-aad.md)<br>
-[Próximo: Como criar uma política de sessão »](session-policy-aad.md)
-
 ## <a name="next-steps"></a>Próximas etapas
 
-[Trabalhar com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)
+> [!div class="nextstepaction"]
+> [Como criar uma política de sessão»](session-policy-aad.md)
+
+## <a name="see-also"></a>Consulte também
+
+> [!div class="nextstepaction"]
+> [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Trabalhar com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Implantar Controle de Aplicativos de Acesso Condicional para aplicativos em destaque](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

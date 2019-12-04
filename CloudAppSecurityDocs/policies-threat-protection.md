@@ -7,20 +7,18 @@ ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
-ms.assetid: 7c8d5bfd-194e-40ba-b0b0-dfae80f45ecb
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b5c2ecdc6093c955448faa3a603d4f4ce6bdf6f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 405bdd5636bdcdf93dbfc858ecc6578d1a43c402
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460574"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720906"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 
 *Aplica-se ao: Microsoft Cloud App Security*
-
 
 Cloud App Security permite identificar o uso de alto risco e problemas de segurança na nuvem, detectar comportamento anormal do usuário e evitar ameaças em seus aplicativos de nuvem aprovados. Obtenha visibilidade das atividades de usuário e administrador e defina políticas para alertar automaticamente quando um comportamento suspeito ou atividades específicas consideradas arriscadas forem detectadas. Desenhe com a vasta quantidade de dados de pesquisa de ameaças e segurança da Microsoft para ajudar a garantir que seus aplicativos aprovados tenham todos os controles de segurança de que você precisa em vigor e o ajudem a manter o controle sobre eles.
 
@@ -45,15 +43,16 @@ Detecção automática de acesso de usuário ou atividade de 2 locais diferentes
 Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou integrados usando o [controle de aplicativo de acesso condicional com controles de sessão](proxy-deployment-aad.md).
 ### <a name="steps"></a>Etapas
 
-1.  Essa detecção é automaticamente configurada para alertar você quando houver acesso de locais impossíveis. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
-2. Opcional: você pode [Personalizar políticas de detecção de anomalias](anomaly-detection-policy.md#scope-anomaly-detection-policies): 
+1. Essa detecção é automaticamente configurada para alertar você quando houver acesso de locais impossíveis. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
+2. Opcional: você pode [Personalizar políticas de detecção de anomalias](anomaly-detection-policy.md#scope-anomaly-detection-policies):
+
     - Personalizar o escopo de detecção em termos de usuários e grupos
 
     - Escolha os tipos de entradas a serem consideradas
 
     - Definir sua preferência de sensibilidade para alertas
 
-3.  Crie a política de detecção de anomalias.
+3. Crie a política de detecção de anomalias.
 
 ## <a name="detect-suspicious-activity-from-an-on-leave-employee"></a>Detectar atividades suspeitas de um funcionário "de saída"
 
@@ -67,15 +66,15 @@ Detectar quando um usuário, quem está na licença não paga e não deve estar 
 
 ### <a name="steps"></a>Etapas
 
-1.  Na tela [grupos de usuários](user-groups.md) , clique em **Criar grupo de usuários** e importe o grupo do Azure ad relevante.
+1. Na tela [grupos de usuários](user-groups.md) , clique em **Criar grupo de usuários** e importe o grupo do Azure ad relevante.
 
-2.  Na página **políticas** , crie uma nova **política de atividade**.
+2. Na página **políticas** , crie uma nova **política de atividade**.
 
-3.  Defina o **grupo de usuários** de filtro igual ao nome dos grupos de usuários que você criou no Azure ad para os usuários de licença não paga.
+3. Defina o **grupo de usuários** de filtro igual ao nome dos grupos de usuários que você criou no Azure ad para os usuários de licença não paga.
 
-4.  Opcional: defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Você pode escolher **suspender usuário**.
+4. Opcional: defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Você pode escolher **suspender usuário**.
 
-6.  Crie a política de arquivo.
+5. Crie a política de arquivo.
 
 ## <a name="detect-and-notify-when-outdated-browser-os-is-used"></a>Detectar e notificar quando um sistema operacional de navegador desatualizado for usado
 
@@ -87,13 +86,13 @@ Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicati
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de atividade**.
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2.  Defina a **marca de agente de usuário** de filtro igual ao **navegador desatualizado** e ao **sistema operacional desatualizado**.
+2. Defina a **marca de agente de usuário** de filtro igual ao **navegador desatualizado** e ao **sistema operacional desatualizado**.
 
 3. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos**, selecione **notificar usuário**, para que os usuários possam agir sobre o alerta e atualizar os componentes necessários.
 
-5.  Crie a política de atividade.
+4. Crie a política de atividade.
 
 ## <a name="detect-and-alert-when-admin-activity-is-detected-on-risky-ip-addresses"></a>Detectar e alertar quando a atividade de administrador for detectada em endereços IP arriscados
 
@@ -102,22 +101,22 @@ Detecte as atividades de administrador realizadas a partir de e o endereço IP q
 ### <a name="prerequisites"></a>Pré-requisitos
 
 - Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
- 
+
 - Na engrenagem de configurações, selecione **intervalos de endereços IP** e clique em + para adicionar intervalos de endereços IP para suas sub-redes internas e seus endereços IP públicos de saída. Defina a **categoria** como **interna**.
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de atividade**.
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2.  Defina **agir** para **atividade única**.
+2. Defina **agir** para **atividade única**.
 
-3.  Definir o **endereço IP** do filtro como **categoria** é igual a **arriscado**
+3. Definir o **endereço IP** do filtro como **categoria** é igual a **arriscado**
 
-4.  Defina a **atividade administrativa** do filtro como **true**
+4. Defina a **atividade administrativa** do filtro como **true**
 
-5.  Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos**, selecione **notificar usuário**, para que os usuários possam agir sobre o alerta e atualizar os componentes necessários do **CC do gerente do usuário**.
+5. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos**, selecione **notificar usuário**, para que os usuários possam agir sobre o alerta e atualizar os componentes necessários do **CC do gerente do usuário**.
 
-7.  Crie a política de atividade.
+6. Crie a política de atividade.
 
 ## <a name="detect-activities-by-service-account-from-external-ip-addresses"></a>Detectar atividades por conta de serviço de endereços IP externos
 
@@ -132,15 +131,15 @@ Detectar as atividades da conta de serviço provenientes de endereços IP não i
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de atividade**.
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2.  Defina o **usuário** de filtro para **nomear** e, em seguida, **comece com** e insira sua Convenção de nomenclatura, como svc.
+2. Defina o **usuário** de filtro para **nomear** e, em seguida, **comece com** e insira sua Convenção de nomenclatura, como svc.
 
-3.  Defina o filtro **endereço IP** como **categoria** não é igual a **outros** e **corporativos**.
+3. Defina o filtro **endereço IP** como **categoria** não é igual a **outros** e **corporativos**.
 
-4.  Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços.
+4. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços.
 
-5.  Crie a política.
+5. Crie a política.
 
 ## <a name="detect-mass-download-data-exfiltration"></a>Detectar download em massa (data vazamento)
 
@@ -152,14 +151,14 @@ Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicati
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de atividade**.
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2.  Defina os **endereços IP** de filtro como **marca** não é igual a **Microsoft Azure**. Isso excluirá atividades não interativas baseadas em computador.
+2. Defina os **endereços IP** de filtro como **marca** não é igual a **Microsoft Azure**. Isso excluirá atividades não interativas baseadas em computador.
 
-3.  Defina os **tipos de atividade** de filtro igual a e selecione todas as atividades de download relevantes.
+3. Defina os **tipos de atividade** de filtro igual a e selecione todas as atividades de download relevantes.
 
 4. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços.
-5.  Crie a política.
+5. Crie a política.
 
 ## <a name="detect-potential-ransomware-activity"></a>Detectar a possível atividade de ransomware
 
@@ -171,9 +170,9 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 ### <a name="steps"></a>Etapas
 
-- Essa detecção é automaticamente configurada para alertar você quando houver um risco de Ransomeware potencial detectado. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).  
+1. Essa detecção é automaticamente configurada para alertar você quando houver um risco de Ransomeware potencial detectado. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
 
-- É possível configurar o **escopo** da detecção e personalizar as ações de governança a serem executadas quando um alerta for disparado. Para obter mais informações sobre como Cloud App Security identifica ransomware, consulte [protegendo sua organização contra ransomware](use-case-ransomware.md).
+2. É possível configurar o **escopo** da detecção e personalizar as ações de governança a serem executadas quando um alerta for disparado. Para obter mais informações sobre como Cloud App Security identifica ransomware, consulte [protegendo sua organização contra ransomware](use-case-ransomware.md).
 
 > [!NOTE]
 > Isso se aplica ao Office 365, G Suite, Box e dropbox.
@@ -188,7 +187,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 ### <a name="steps"></a>Etapas
 
-- Essa detecção é automaticamente configurada para alertar quando há um arquivo que pode conter malware. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).  
+- Essa detecção é automaticamente configurada para alertar quando há um arquivo que pode conter malware. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
 
 ## <a name="detect-rogue-admin-takeover"></a>Detectar tomada de administrador não autorizado
 
@@ -200,16 +199,16 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de atividade**.
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2.  Defina **agir** para a **atividade repetida** e personalize as **atividades repetidas mínimas** e defina um **período de tempo** para estar em conformidade com a política da sua organização.
+2. Defina **agir** para a **atividade repetida** e personalize as **atividades repetidas mínimas** e defina um **período de tempo** para estar em conformidade com a política da sua organização.
 
-3.  Defina o **usuário** de filtro para **do grupo** igual a e selecione todos os grupos de administradores relacionados como **ator apenas**.
+3. Defina o **usuário** de filtro para **do grupo** igual a e selecione todos os grupos de administradores relacionados como **ator apenas**.
 
-4.  Defina o **tipo de atividade** de filtro igual a todas as atividades relacionadas a atualizações de senha, alterações e redefinições.
+4. Defina o **tipo de atividade** de filtro igual a todas as atividades relacionadas a atualizações de senha, alterações e redefinições.
 
 5. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços.
-6.  Crie a política.
+6. Crie a política.
 
 ## <a name="detect-suspicious-inbox-manipulation-rules"></a>Detectar regras de manipulação de caixa de entrada suspeitas
 
@@ -221,11 +220,10 @@ Se uma regra de caixa de entrada suspeita foi definida na caixa de entrada de um
 
 ### <a name="steps"></a>Etapas
 
-- Essa detecção é automaticamente configurada para alertar você quando houver um conjunto de regras de caixa de entrada suspeita. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).  
-
+- Essa detecção é automaticamente configurada para alertar você quando houver um conjunto de regras de caixa de entrada suspeita. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
 
 ## <a name="detect-leaked-credentials"></a>Detectar credenciais vazadas
-  
+
 Quando os criminosos virtuais comprometem senhas válidas de usuários legítimos, eles geralmente compartilham essas credenciais. Normalmente, isso é feito postando-os publicamente na Web escura ou colando sites ou negociando ou vendendo as credenciais no mercado preto.
 
 Cloud App Security utiliza a inteligência contra ameaças da Microsoft para corresponder essas credenciais para aquelas usadas dentro de sua organização.
@@ -236,8 +234,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 ### <a name="steps"></a>Etapas
 
-Essa detecção é automaticamente configurada para alertar você quando um possível vazamento de credencial for detectado. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).  
-
+Essa detecção é automaticamente configurada para alertar você quando um possível vazamento de credencial for detectado. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
 
 ## <a name="detect-anomalous-file-downloads"></a>Detectar downloads de arquivos anormais
 
@@ -249,19 +246,23 @@ Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicati
 
 ### <a name="steps"></a>Etapas
 
-- Essa detecção é automaticamente configurada para alertar quando ocorre um download anormal. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).  
-- É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
+1. Essa detecção é automaticamente configurada para alertar quando ocorre um download anormal. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
+
+2. É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
 
 ## <a name="detect-anomalous-file-shares-by-a-user"></a>Detectar compartilhamentos de arquivos anormais por um usuário
 
 Detectar quando os usuários executam várias atividades de compartilhamento de arquivos em uma única sessão em relação à linha de base aprendida, o que pode indicar uma tentativa de violação.
 
 ### <a name="prerequisites"></a>Pré-requisitos
+
 Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou integrados usando o [controle de aplicativo de acesso condicional com controles de sessão](proxy-deployment-aad.md).
+
 ### <a name="steps"></a>Etapas
 
-- Essa detecção é automaticamente configurada para alertar você quando os usuários executam vários compartilhamento de arquivos. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).  
-- É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
+1. Essa detecção é automaticamente configurada para alertar você quando os usuários executam vários compartilhamento de arquivos. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
+
+2. É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
 
 ## <a name="detect-anomalous-activities-from-infrequent-country"></a>Detectar atividades anômalas de um país infrequente
 
@@ -273,8 +274,9 @@ Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicati
 
 ### <a name="steps"></a>Etapas
 
-- Essa detecção é automaticamente configurada para alertar quando ocorre uma atividade anômala de um país infrequente. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).  
-- É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
+1. Essa detecção é automaticamente configurada para alertar quando ocorre uma atividade anômala de um país infrequente. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
+
+2. É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
 
 > [!NOTE]
 > Detectar locais anormais exige um período de aprendizado inicial de 7 dias. Durante o período de aprendizagem, Cloud App Security não gera alertas para novos locais.
@@ -289,14 +291,13 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 ### <a name="steps"></a>Etapas
 
-- Essa detecção é automaticamente configurada para alertar quando uma atividade é executada por um funcionário encerrado. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).  
-- É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
+1. Essa detecção é automaticamente configurada para alertar quando uma atividade é executada por um funcionário encerrado. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
 
+2. É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
 
-## <a name="next-steps"></a>Próximas etapas 
+## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

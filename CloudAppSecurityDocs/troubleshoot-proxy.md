@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 71126072096d9a2ba156c6c3e6b3c17dc0d619b3
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: d98721a4ca08b3e415b8b0fff40676af1b3d37e6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460117"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720982"
 ---
 # <a name="troubleshooting-conditional-access-app-control"></a>Solução de problemas Controle de Aplicativos de Acesso Condicional
 
@@ -28,7 +28,7 @@ Este artigo prohvides uma lista de possíveis problemas de Controle de Aplicativ
 
 ### <a name="the-sign-in-to-the-app-is-not-working"></a>A entrada no aplicativo não está funcionando
 
-1. No Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](./media/settings-icon.png "ícone de configurações") e selecione **controle de aplicativos de acesso condicional**.
+1. No Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações") e selecione **controle de aplicativos de acesso condicional**.
 1. Na lista de aplicativos, na linha na qual o aplicativo que você está configurando aparece, escolha os três pontos no final da linha e escolha **Editar aplicativo**.
 1. Clique em **tratamento de nonce** para expandir a seção e, em seguida, selecione **habilitar manipulação de nonce**.
 
@@ -50,7 +50,7 @@ As etapas a seguir se baseiam no uso do Fiddler como a ferramenta de registro de
 1. Vá para a URL que você copiou anteriormente e autentique, se necessário.
 1. Na ferramenta de registro de tráfego, procure a solicitação correspondente ao domínio e ao caminho com base no protocolo que você está usando.
 
-    | Protocol | Domínio | `Path` | Nome do campo de estado |
+    | Protocolo | Domain | Caminho | Nome do campo de estado |
     | --- | --- | --- | --- |
     | OIDC | `https://login.microsoftonline.com` | /common/oauth2/authorize | state |
     | SAML 2.0 | `https://login.microsoftonline.com` | *ID*de //saml2 | RelayState |
@@ -60,6 +60,7 @@ As etapas a seguir se baseiam no uso do Fiddler como a ferramenta de registro de
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Implantar o Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Implantar o Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 62d7dc1d7dd9fc36c4c974afaad09b2659be5e51
-ms.sourcegitcommit: 02d63f48df393fa077bb16787c04dfae4be2f96d
+ms.openlocfilehash: e5853882b7f95a492f4d8647af154f855d4f1d19
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74553601"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720287"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 
@@ -39,13 +39,13 @@ Para criar uma nova política de aplicativo OAuth:
 
 1. Filtre os aplicativos de acordo com suas necessidades, por exemplo, é possível exibir todos os aplicativos que solicitaram **Permissões** para **Modificar calendários em sua caixa de correio**.
 1. Clique no botão **Nova política da pesquisa**.
-    ![nova política da pesquisa](./media/app-permissions-filter.png)
+    ![nova política da pesquisa](media/app-permissions-filter.png)
 1. É possível usar o filtro **Uso da comunidade** para receber informações se a permissão a esse aplicativo é comum, incomum ou rara. Esse filtro poderá ser útil se um aplicativo do caso raro solicitar permissões com um alto nível de gravidade ou solicitar permissão de muitos usuários.
 1. Você pode definir a política de acordo com as associações a grupo dos usuários que autorizaram os aplicativos. Por exemplo, um administrador poderá decidir definir uma política que revogue aplicativos incomuns se eles solicitarem permissões altas apenas se o usuário que autorizou as permissões for membro do grupo de administradores.
 
 Como alternativa, também é possível criar a política clicando em **Controle** e, em seguida, em **Políticas**. Em seguida, clique em **Criar política** seguido por **Política de aplicativo OAuth**.
 
-   ![nova política de aplicativo OAuth](./media/app-permissions-policy.png)
+   ![nova política de aplicativo OAuth](media/app-permissions-policy.png)
 
 ## <a name="oauth-app-anomaly-detection-policies"></a>Políticas de detecção de anomalias do aplicativo OAuth
 

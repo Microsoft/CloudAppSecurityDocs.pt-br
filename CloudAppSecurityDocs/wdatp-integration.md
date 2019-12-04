@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aeddfb56542309b0ee6b1f0d4cdec85bb36a120e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 90efa85fccd71e488f80db290b09b1636013304b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459439"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720383"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
 
@@ -36,8 +35,6 @@ Microsoft Cloud App Security usa a integração nativa com o Microsoft defender 
 
 > [!NOTE]
 > Quer experimentar o Microsoft defender ATP? [Inscreva-se para uma avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
->
-
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -65,7 +62,7 @@ Para habilitar a integração com o Cloud App Security do Microsoft defender ATP
 > Demora até duas horas para os dados serem exibidos no Cloud App Security após você habilitar a integração.
 >
 
-   ![Configurações do WD ATP](./media/wdatp-settings.png)
+![Configurações do WD ATP](media/wdatp-settings.png)
 
 ## <a name="investigate-machines-in-cloud-app-security"></a>Investigar computadores no Cloud App Security
 
@@ -73,35 +70,40 @@ Depois de integrar o Microsoft defender ATP com o Cloud App Security, você pode
 
 1. No portal do Cloud App Security, clique em **Cloud Discovery** e, em seguida, **Painel do Cloud Discovery**.
 2. Na barra de navegação superior, em **Relatórios contínuos**, selecione **Usuários de ponto de extremidade do Win10**.
-  ![Relatório do WD ATP](./media/win10-dashboard-report.png)
+  ![Relatório do WD ATP](media/win10-dashboard-report.png)
 3. Na parte superior, você verá o número de computadores descobertos adicionados após a integração.
 4. Clique na guia **Computadores**.
 5. Faça uma busca detalhada em cada computador listado e use as guias para exibir os dados de investigação. Encontre correlações entre os computadores, os usuários, os endereços IP e os aplicativos envolvidos em incidentes:
-   - **Visão geral**
-      - Transações: informações sobre o número de transações que ocorreram no computador durante o período de tempo selecionado.
-      - Tráfego total: informações sobre a quantidade total de tráfego (em MB) durante o período de tempo selecionado.
-     - Carregamentos: informações sobre a quantidade total de tráfego (em MB) carregados pelo computador durante o período de tempo selecionado.
-     - Downloads: informações sobre a quantidade total de tráfego (em MB) baixados pelo computador durante o período de tempo selecionado.
-   - **Aplicativos descobertos**<br>
+
+    - **Visão geral**
+        - Transações: informações sobre o número de transações que ocorreram no computador durante o período de tempo selecionado.
+        - Tráfego total: informações sobre a quantidade total de tráfego (em MB) durante o período de tempo selecionado.
+        - Carregamentos: informações sobre a quantidade total de tráfego (em MB) carregados pelo computador durante o período de tempo selecionado.
+        - Downloads: informações sobre a quantidade total de tráfego (em MB) baixados pelo computador durante o período de tempo selecionado.
+    - **Aplicativos descobertos**  
   Lista todos os aplicativos descobertos que foram acessados pelo computador.
-   - **Histórico de usuários**<br>
+    - **Histórico de usuários**  
     Lista todos os usuários que se conectaram ao computador.
-   - **Histórico de endereços IP**<br>
+    - **Histórico de endereços IP**  
     Lista todos os endereços IP que foram atribuídos ao computador.
- ![Visão geral de computadores](./media/machines-overview.png)
- 
-Assim como acontece com qualquer outra fonte do Cloud Discovery, é possível exportar os dados do relatório de usuários de ponto de extremidade do Win10 para uma investigação adicional. 
+ ![Visão geral de computadores](media/machines-overview.png)
+
+Assim como acontece com qualquer outra fonte do Cloud Discovery, é possível exportar os dados do relatório de usuários de ponto de extremidade do Win10 para uma investigação adicional.
 
 > [!NOTE]
+>
 > - O defender ATP encaminha dados para Cloud App Security em partes de ~ 4 MB (~ 4000 transações de ponto de extremidade)
 > - Se o limite de 4 MB não for atingido em 1 hora, o defender ATP relatará todas as transações executadas na última hora.
+> - Se o dispositivo de ponto de extremidade estiver protegido por um proxy de encaminhamento, o volume de tráfego não será visível para o Microsoft defender ATP e, portanto, não será incluído nos relatórios do Cloud Discovery. Para obter mais informações, consulte [monitorando a conexão de rede por trás do proxy de encaminhamento](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
-## <a name="related-videos"></a>Vídeos Relacionados
+## <a name="next-steps"></a>Próximas etapas
 
-[Sombra da descoberta de ti além da rede corporativa com Microsoft defender ATP e Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
-## <a name="next-steps"></a>Próximas etapas 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md) 
+## <a name="related-videos"></a>Vídeos relacionados
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+> [!div class="nextstepaction"]
+> [Descoberta de ti de sombra além da rede corporativa](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

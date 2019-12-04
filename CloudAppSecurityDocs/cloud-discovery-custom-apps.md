@@ -11,43 +11,42 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6cc2d82fea2c5f207fccda3a5964c59a57640921
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 768248178042ecc7c3af5289ea1b6c27aa92b37e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461124"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719236"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Adicionar aplicativos personalizados ao Cloud Discovery
 
 *Aplica-se ao: Microsoft Cloud App Security*
-    
+
 O Cloud Discovery analisa os logs de tráfego no catálogo de aplicativos de nuvem do Microsoft Cloud App Security. Há mais de 16 mil aplicativos de nuvem no catálogo de aplicativos de nuvem. O catálogo contém apenas aplicativos de nuvem disponíveis publicamente, para os quais o Cloud App Security fornece visibilidade e informações sobre o risco.
 
 Para ganhar visibilidade dos aplicativos de nuvem excluídos do catálogo de aplicativos de nuvem, o Cloud App Security permite que você descubra o uso de aplicativos de nuvem personalizados (aplicativos de LOB) que foram desenvolvidos ou atribuídos especificamente para sua organização.
 
-Ao adicionar um novo aplicativo de nuvem personalizado, o Cloud App Security é capaz de corresponder mensagens de log de tráfego de proxy e de firewall carregadas no aplicativo e, em seguida, fornecer visibilidade do uso desse aplicativo na organização nas páginas do Cloud Discovery. Por exemplo, quantos usuários usam o aplicativo, quantos endereços IP de origem exclusivos usam o aplicativo e a quantidade de tráfego transmitido para dentro e para fora do aplicativo. 
+Ao adicionar um novo aplicativo de nuvem personalizado, o Cloud App Security é capaz de corresponder mensagens de log de tráfego de proxy e de firewall carregadas no aplicativo e, em seguida, fornecer visibilidade do uso desse aplicativo na organização nas páginas do Cloud Discovery. Por exemplo, quantos usuários usam o aplicativo, quantos endereços IP de origem exclusivos usam o aplicativo e a quantidade de tráfego transmitido para dentro e para fora do aplicativo.
 
 ## <a name="add-a-new-custom-cloud-app"></a>Adicionar um novo aplicativo de nuvem personalizado
 
-1. No portal do Cloud App Security, clique em **Descobrir** e em **Painel do Cloud Discovery**. 
-  
-   ![menu do painel do cloud discovery](./media/cloud-discovery-dashboard-menu.png)
+1. No portal do Cloud App Security, clique em **Descobrir** e em **Painel do Cloud Discovery**.
 
-2. No canto superior direito, clique nos três pontos e, em seguida, selecione **Adicionar novo aplicativo personalizado**. 
+    ![menu do painel do cloud discovery](media/cloud-discovery-dashboard-menu.png)
 
-   ![menu adicionar aplicativo personalizado](./media/add-custom-app-menu.png)
+2. No canto superior direito, clique nos três pontos e, em seguida, selecione **Adicionar novo aplicativo personalizado**.
+
+    ![menu adicionar aplicativo personalizado](media/add-custom-app-menu.png)
 
 3. Preencha os campos para definir o novo registro de aplicativo que será listado no catálogo de aplicativos de nuvem e no Cloud Discovery após a descoberta nos logs de firewall.
 
-   ![aplicativo personalizado](./media/add-custom-app.png)
+    ![aplicativo personalizado](media/add-custom-app.png)
 
 4. Em **Domínios**, preencha os domínios exclusivos que são usados ao acessar o aplicativo personalizado. Esses domínios são usados para corresponder às mensagens do log de tráfego para esse aplicativo. Se a fonte de dados que você estiver usando não contiver informações sobre a URL do aplicativo, preencha os campos de endereço **IPv4** e **IPv6**.
-5. Adicione a **Plataforma de hospedagem** e a **ID da Assinatura do Azure**. Opcionalmente, especifique a **Unidade de negócios** do aplicativo. 
+5. Adicione a **Plataforma de hospedagem** e a **ID da Assinatura do Azure**. Opcionalmente, especifique a **Unidade de negócios** do aplicativo.
 6. Atribua uma **Pontuação** de risco e adicione **Anotações do Aplicativo** para ajudá-lo a acompanhar as alterações deste registro.
 7. Clique em **Criar**.
 
@@ -57,13 +56,12 @@ A qualquer momento, você pode clicar nas reticências no final da linha para ed
 
 >[!NOTE]
 > Aplicativos personalizados são marcados automaticamente com a marca **Aplicativo personalizado** depois de adicioná-los. A marca desse aplicativo não pode ser removida.
-Para exibir todos os seus aplicativos personalizados, defina o filtro **Marca do aplicativo** igual a "Aplicativo personalizado". 
-<!-- -  By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
+Para exibir todos os seus aplicativos personalizados, defina o filtro **Marca do aplicativo** igual a "Aplicativo personalizado".
+<!-- - By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
 
-  
-## <a name="next-steps"></a>Próximas etapas 
-[Políticas de atividade de usuário](user-activity-policies.md)   
+## <a name="next-steps"></a>Próximas etapas
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+> [!div class="nextstepaction"]
+> [Políticas de atividade de usuário](user-activity-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2980fa8d9d784ce0e3169ed42359522885fcf320
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5cea905e2d7e0b157d757fef1056c2e7a289153c
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460658"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719603"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Monitorar alertas no Cloud App Security
 
@@ -30,29 +29,28 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
 ## <a name="monitoring-your-alerts"></a>Monitorando os alertas
 
-É uma boa ideia examinar todos os seus alertas. Entender o motivo pelo qual um alerta está ocorrendo permite que você o use como uma ferramenta para modificar as políticas. 
+É uma boa ideia examinar todos os seus alertas. Entender o motivo pelo qual um alerta está ocorrendo permite que você o use como uma ferramenta para modificar as políticas.
 
 **Para exibir alertas:** No portal de Microsoft Cloud App Security, clique em **alertas**.
 
+![Menu Alerta](media/alert-menu.png)
 
-![Menu Alerta](./media/alert-menu.png)
+- **Ignore** um alerta depois de vê-lo e determinar que ele não é de interesse.
+  - Insira um **comentário** para explicar o motivo pelo qual você ignorou o alerta
+  - **Envie-nos comentários sobre este alerta** a serem examinados por nossa equipe de pesquisa de segurança para melhoria dos alertas.
 
- - **Ignore** um alerta depois de vê-lo e determinar que ele não é de interesse. 
-     - Insira um **comentário** para explicar o motivo pelo qual você ignorou o alerta 
-     - **Envie-nos comentários sobre este alerta** a serem examinados por nossa equipe de pesquisa de segurança para melhoria dos alertas.
+- **Resolva** o alerta se você investigá-lo e atenue o risco.
 
-- **Resolva** o alerta se você investigá-lo e atenue o risco. 
+  - O alerta não será mais exibido na tabela de alertas.
+  - **Marque-o como não lido** se você começou a investigar um problema, mas deseja garantir que se lembrará de continuar.
+  - **Ajuste a política** que correspondeu ao alerta para melhorar as correspondências futuras de alerta.
+  - Resolver um alerta oferece a opção de inserir um comentário e **Enviar comentários para a equipe do Cloud App Security**.
 
-     - O alerta não será mais exibido na tabela de alertas.
-     - **Marque-o como não lido** se você começou a investigar um problema, mas deseja garantir que se lembrará de continuar. 
-     -  **Ajuste a política** que correspondeu ao alerta para melhorar as correspondências futuras de alerta. 
-     - Resolver um alerta oferece a opção de inserir um comentário e **Enviar comentários para a equipe do Cloud App Security**.
- 
 ## <a name="built-in-alerts"></a>Alertas internos
 
-Os seguintes tipos de alertas serão exibidos. 
+Os seguintes tipos de alertas serão exibidos.
 
-|Nome do alerta|AlertID|Descrição|
+|Nome do alerta|AlertID|Description|
 |----|----|----|
 |Novo local|ALERT_GEOLOCATION_NEW_COUNTRY|Um novo local foi detectado desde o início da verificação (até seis meses). Esse alerta é mostrado apenas uma vez para cada país em toda a sua organização. |
 |Novo usuário administrador|ALERT_ADMIN_USER|Um novo administrador foi detectado para um aplicativo específico. Esse administrador pode ser alguém que é administrador em um aplicativo e agora é administrador em outro. Este alerta relaciona-se ao tipo de administrador específico, por isso ele aparecerá sempre que o tipo de administrador for alterado. Se um usuário perder os privilégios de administrador e obtê-los novamente, esse alerta será exibido.|
@@ -62,11 +60,11 @@ Os seguintes tipos de alertas serão exibidos.
 
 ## <a name="custom-alerts"></a>Alertas Personalizados
 
-Os seguintes tipos de alertas serão exibidos. 
+Os seguintes tipos de alertas serão exibidos.
 
-|Nome do alerta|AlertID|Descrição|
+|Nome do alerta|AlertID|Description|
 |----|----|----|
-|Alerta de atividade suspeita|ALERT_SUSPICIOUS_ACTIVITY|Atividades suspeitas são pontuadas de acordo com o nível de suspeita da atividade anormal (há uma conta inativa envolvida? Ele é de um novo local?) Esses critérios são todos calculados juntos para fornecer uma pontuação de risco com base nos seguintes fatores de risco: <br>O usuário é administrador <br>Usuário estritamente remoto<br>Proxy anônimo<br> A sessão inteira é composta por logons com falha<br>Vários logons com falha<br>Novo (administrador)<br>IP/ISP/país/agente de usuário para usuário/locatário<br> IP/ISP/país/agente de usuário usado somente pelo usuário (administrador)<br>Primeira atividade de usuário (administrador) em muito tempo<br>Primeira vez que essa atividade administrativa específica é executada em muito tempo<br>Essa atividade administrativa específica não é comum/nunca foi executada antes<br>Esse IP tinha apenas logons com falha no passado<br>Viagem impossível|
+|Alerta de atividade suspeita|ALERT_SUSPICIOUS_ACTIVITY|Atividades suspeitas são pontuadas de acordo com o nível de suspeita da atividade anormal (há uma conta inativa envolvida? Ele é de um novo local?) Esses critérios são todos calculados juntos para fornecer uma pontuação de risco com base nos seguintes fatores de risco: <br />O usuário é administrador <br />Usuário estritamente remoto<br />Proxy anônimo<br /> A sessão inteira é composta por logons com falha<br />Vários logons com falha<br />Novo (administrador)<br />IP/ISP/país/agente de usuário para usuário/locatário<br /> IP/ISP/país/agente de usuário usado somente pelo usuário (administrador)<br />Primeira atividade de usuário (administrador) em muito tempo<br />Primeira vez que essa atividade administrativa específica é executada em muito tempo<br />Essa atividade administrativa específica não é comum/nunca foi executada antes<br />Esse IP tinha apenas logons com falha no passado<br />Viagem impossível|
 |Alerta de uso de nuvem suspeito|ALERT_DISCOVERY_ANOMALY_DETECTION|A detecção de anomalias do Cloud Discovery verifica o padrão de comportamento normal e procura por usuários ou aplicativos que são usados de maneira incomum. |
 |Violação de política de atividade|ALERT_CABINET_EVENT_MATCH_AUDIT|Esse alerta informa quando uma correspondência de política foi detectada.|
 |Violação de política de arquivos|ALERT_CABINET_EVENT_MATCH_FILE|Esse alerta informa quando uma correspondência de política foi detectada.|
@@ -75,8 +73,9 @@ Os seguintes tipos de alertas serão exibidos.
 |Novo serviço descoberto|ALERT_CABINET_DISCOVERY_NEW_SERVICE|Um novo aplicativo foi descoberto.|
 |Uso de conta pessoal|ALERT_PERSONAL_USER_SAGE|Com base em nomes de usuário, o mecanismo de detecção procura contas pessoais e compartilhamentos de arquivos. |
 
-## <a name="next-steps"></a>Próximas etapas 
+## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]

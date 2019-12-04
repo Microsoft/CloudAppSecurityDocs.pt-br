@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b9c354d752b9d960669223c4928453acf323d4bb
-ms.sourcegitcommit: 84d56e4953dd771b099261e10a59cf611dd6280a
-ms.translationtype: HT
+ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74669332"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720295"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -46,7 +46,7 @@ Com base nos resultados da política, os alertas de segurança são disparados. 
 
 É possível ver as políticas de detecção de anomalias no portal clicando em **Controle** e em **Políticas**. Selecione **Política de detecção de anomalias** para o tipo de política.
 
- ![novas políticas de detecção de anomalias](./media/new-anomaly-detection-policies.png)
+ ![novas políticas de detecção de anomalias](media/new-anomaly-detection-policies.png)
 
 As seguintes políticas de detecção de anomalias estão disponíveis:
 
@@ -64,12 +64,12 @@ Quanto maior o nível de confidencialidade, menor a supressão que é aplicada c
 * Essa detecção identifica arquivos mal-intencionados no armazenamento em nuvem, sejam de aplicativos da Microsoft ou de aplicativos de terceiros. O Microsoft Cloud App Security usa a Inteligência Contra Ameaças da Microsoft para reconhecer se determinados arquivos estão associados a ataques de malware conhecidos e são possivelmente mal-intencionados. Essa política interna é desabilitada por padrão. Nem todo arquivo é examinado, mas é usada heurística para procurar arquivos que possam estar em risco. Depois que os arquivos são detectados, é exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo.
 
     > [!NOTE]
-    >- Para detecção de malware do Office 365, você precisa de uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
-    >- O Cloud App Security dá suporte à detecção de malware dos seguintes aplicativos:
-    >    - Caixa
-    >    - Dropbox
-    >    - G Suite
-    >    - Office 365
+    > * Para detecção de malware do Office 365, você precisa de uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
+    > * O Cloud App Security dá suporte à detecção de malware dos seguintes aplicativos:
+    >   * Caixa
+    >   * Dropbox
+    >   * G Suite
+    >   * Office 365
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
 
@@ -164,7 +164,7 @@ Para definir uma política de detecção de anomalias:
 1. Selecione **Incluir** para especificar os usuários e grupos para os quais essa política será aplicada. Qualquer usuário ou grupo não selecionado aqui não será considerado uma ameaça e não gerará um alerta.
 1. Selecione **Excluir** para especificar usuários para os quais essa política não será aplicada. Qualquer usuário selecionado aqui não será considerado uma ameaça e não gerará um alerta, mesmo se eles forem membros de grupos selecionados em **Incluir**.
 
-    ![escopo de detecção de anomalias](./media/anomaly-detection-scoping.png)
+    ![escopo de detecção de anomalias](media/anomaly-detection-scoping.png)
 
 ## <a name="triage-anomaly-detection-alerts"></a>Triagem de alertas de detecção de anomalias
 
@@ -172,16 +172,17 @@ Você pode triar rapidamente os vários alertas disparados pelas novas política
 
 1. No **Log de atividades**, você pode abrir uma atividade para exibir a gaveta Atividades. Clique em **usuário** para exibir a guia insights do usuário. Essa guia inclui informações como o número de alertas, atividades e o local em que eles se conectaram, o que é importante em uma investigação.
 
-    ![detecção de anomalias alert1](./media/anomaly-alert-user1.png) ![detecção de anomalias alert1](./media/anomaly-alert-user2.png)
+    ![detecção de anomalias alert1](media/anomaly-alert-user1.png) ![detecção de anomalias alert1](media/anomaly-alert-user2.png)
 
 1. Isso permite que você entenda quais são as atividades suspeitas que o usuário executou e ter maior confiança sobre o comprometimento da conta. Por exemplo, um alerta de vários logons com falha pode realmente ser suspeito e indicar um ataque de força bruta em potencial, mas também pode ser um erro de configuração do aplicativo, fazendo com que o alerta seja um verdadeiro positivo benigno. No entanto, se você vir um alerta de vários logons com falha com atividades suspeitas adicionais, então há uma grande probabilidade de que a conta foi comprometida. No exemplo a seguir, você pode ver que o alerta **Várias tentativas de logon com falha** foi seguido de uma **Atividade de um endereço IP TOR** e de uma **Atividade de viagem impossível**, ambas fortes indicadores de comprometimento (IOCs) por si próprias. Como se isso já não fosse suspeito, é possível ver que o mesmo usuário realizou uma **Atividade de download em massa**, que em geral indica que o invasor está executando uma extração de dados.
 
-    ![alerta de detecção de anomalias1](./media/anomaly-alert-user3.png)
+    ![alerta de detecção de anomalias1](media/anomaly-alert-user3.png)
 
 1. Para arquivos infectados por malware, depois que os arquivos forem detectados, será exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

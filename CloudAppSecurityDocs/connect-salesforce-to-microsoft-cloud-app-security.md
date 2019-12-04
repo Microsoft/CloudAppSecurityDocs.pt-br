@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4d4e3798b0b404a8c58317880c08e6c045389d45
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 6121851590f31189cbee7cbeab2efd77a842f964
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461404"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720029"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar o Salesforce ao Microsoft Cloud App Security
 
@@ -45,12 +45,12 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
     * Em **Gerenciar Usuários**, vá para a página **Perfis de Usuário**.
 
-        ![perfis do Salesforce Manage Users](./media/salesforce-manageusers-profiles.png "perfis do Salesforce Manage Users")
+        ![perfis do Salesforce Manage Users](media/salesforce-manageusers-profiles.png "perfis do Salesforce Manage Users")
 
     * Crie um novo perfil clicando em **Novo**.
     * Escolha o perfil que você acabou de criar para implantar o Cloud App Security e clique em **Editar**. Esse perfil será usado para a conta de serviço do Cloud App Security para configurar o conector do aplicativo.
 
-         ![Perfil de edição do Salesforce](./media/salesforce-edit-profile.png "editar perfil do salesforce")
+         ![Perfil de edição do Salesforce](media/salesforce-edit-profile.png "editar perfil do salesforce")
 
     * Certifique-se de ter as seguintes caixas de seleção habilitadas:
       * **API Habilitada**
@@ -65,11 +65,11 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
     1. Vá para a página de configuração do Salesforce.
 
-        ![configuração do Salesforce](./media/salesforce-setup.png "configuração do salesforce")
+        ![configuração do Salesforce](media/salesforce-setup.png "configuração do salesforce")
 
     1. No menu lateral, selecione **Gerenciar Usuários** e clique em **Usuários**.
 
-        ![usuários do menu do Salesforce](./media/salesforce-menu-users.png "usuários do menu do salesforce")
+        ![usuários do menu do Salesforce](media/salesforce-menu-users.png "usuários do menu do salesforce")
 
     1. Selecione o usuário administrativo atual para seu usuário do Cloud App Security dedicado.
 
@@ -77,7 +77,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
         Se ela não estiver selecionada, clique em **Editar** e, em seguida, marque a caixa de seleção.
 
-        ![usuário de conteúdo do Salesforce CRM](./media/salesforce-crm-content-user.png "usuário do conteúdo crm do salesforce")
+        ![usuário de conteúdo do Salesforce CRM](media/salesforce-crm-content-user.png "usuário do conteúdo crm do salesforce")
 
     1. Clique em **Salvar**.
 
@@ -85,13 +85,13 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
 1. Na página **Conectores de aplicativos**, clique no botão de mais antes de **Salesforce**.
 
-    ![conectar o Salesforce](./media/connect-salesforce.png "conectar o salesforce")
+    ![conectar o Salesforce](media/connect-salesforce.png "conectar o salesforce")
 
 1. Na página de configurações do Salesforce, na guia API, clique em **Seguir este link**, dependendo de qual instância que você deseja instalar.
 
 1. Isso abre a página de entrada do Salesforce. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Salesforce da sua equipe.
 
-    ![entrada do Salesforce](./media/salesforce-logon.png "logon do salesforce")
+    ![entrada do Salesforce](media/salesforce-logon.png "logon do salesforce")
 
 1. O Salesforce perguntará se você deseja permitir que o Cloud App Security acesse o log de atividades e as informações da sua equipe e realize quaisquer atividades como qualquer membro da equipe. Para continuar, clique em **Permitir**.
 
@@ -117,6 +117,7 @@ Eventos do Salesforce são processados pelo Cloud App Security da seguinte manei
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

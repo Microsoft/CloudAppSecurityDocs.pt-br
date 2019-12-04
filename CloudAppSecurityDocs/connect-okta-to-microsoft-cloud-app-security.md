@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c51cbcb3d8f08fb7b1fc1fc4668905ae11eaeed0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 78f2b04a149a2723fbbe527fedd843b1fa4d5d5b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461099"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719778"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Conectar o Okta ao Microsoft Cloud App Security
 
@@ -39,25 +39,25 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
     - Clique em **Segurança** e em **API**.
 
-         ![API Okta](./media/okta-api.png "API Okta")
+         ![API Okta](media/okta-api.png "API Okta")
 
     - Clique em **Create Token (Criar Token)** .
 
-         ![Okta criar token](./media/okta-createtoken.jpg "Okta criar token")
+         ![Okta criar token](media/okta-createtoken.jpg "Okta criar token")
 
     - No pop-up **Criar Token**, dê um nome ao token do Cloud App Security e clique em **Criar Token**.
 
-         ![Pop-up de token Okta](./media/okta-token-popup.png "Pop-up de token Okta")
+         ![Pop-up de token Okta](media/okta-token-popup.png "Pop-up de token Okta")
 
     - No pop-up **Token created successfully (Token criado com êxito)** , copie o **Token value (Valor do token)** .
 
-         ![Valor do token Okta](./media/okta-token-value.png "Valor do token Okta")
+         ![Valor do token Okta](media/okta-token-value.png "Valor do token Okta")
 
 1. No console do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.
 
 1. Na **página Conectores de aplicativos**, clique no botão de mais e depois em **Okta**.
 
-    ![conectar Okta](./media/connect-okta.png "conectar Okta")
+    ![conectar Okta](media/connect-okta.png "conectar Okta")
 
 1. No pop-up que abrir, no campo **Domain (Domínio)** , insira seu domínio do Okta e cole seu token no campo **Token**.
 
@@ -71,6 +71,7 @@ Depois de conectar o Okta, você receberá eventos por 60 dias antes da conexão
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

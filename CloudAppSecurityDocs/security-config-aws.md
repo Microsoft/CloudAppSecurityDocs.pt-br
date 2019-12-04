@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e41902fd34f113412b02fb7c4377b226cd18fc0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: fa4fe701de12753d754f0b5dcc9605a1ea4d0ac8
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460454"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721027"
 ---
 # <a name="security-configuration-for-aws"></a>Configuração de segurança para o AWS
 
@@ -41,14 +40,15 @@ Microsoft Cloud App Security fornece uma avaliação de configuração de segura
     - O Microsoft Cloud App Security fornece recomendações apenas para as 50 principais assinaturas.
     - Pode levar até 15 minutos para que as alterações entrem em vigor.
 
-     ![menu de configuração de segurança](media/security-configuration-menu.png)
+    ![menu de configuração de segurança](media/security-configuration-menu.png)
 
-1. Você pode filtrar as recomendações por tipo, por recurso e por contas. Além disso, você pode clicar no ícone de configuração de segurança ![Ícone ASC](./media/asc-icon.png) para abrir a recomendação no Hub de segurança do Amazon para obter mais informações e aprofundar-se na recomendação.
+1. Você pode filtrar as recomendações por tipo, por recurso e por contas. Além disso, você pode clicar no ícone de configuração de segurança ![Ícone ASC](media/asc-icon.png) para abrir a recomendação no Hub de segurança do Amazon para obter mais informações e aprofundar-se na recomendação.
 
-   ![configuração de segurança](media/security-configuration-aws.png)
+    ![configuração de segurança](media/security-configuration-aws.png)
 
-## <a name="next-steps"></a>Próximas etapas 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+## <a name="next-steps"></a>Próximas etapas
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

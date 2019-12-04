@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3a0756e8e2ffc9d351013b03e037fa996cbf341f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: b31876240187e3f95ff2a8d10632b54de37e6ed6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460992"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720754"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conectar o workday ao Microsoft Cloud App Security (versão prévia)
 
@@ -33,10 +33,10 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 
 | Área funcional | Política de segurança de domínio | Política de segurança de subdomínio | Permissões de relatório/tarefa | Permissões de integração |
 | --- | --- | --- | --- | --- |
-| Sistema | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
-| Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
-| Sistema | Auditoria do sistema | | Exibir | Get |
-| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: relatórios de trabalho públicos | Exibir | Get |
+| System (sistema) | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
+| System (sistema) | Administração de Segurança | | Exibir, modificar | Obter, colocar |
+| System (sistema) | Auditoria do sistema | | Exiba os | Get |
+| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: relatórios de trabalho públicos | Exiba os | Get |
 
 > [!NOTE]
 >
@@ -73,7 +73,7 @@ Para obter mais informações sobre como configurar usuários de integração do
 
 1. Depois de registrado, anote os parâmetros a seguir e clique em **concluído**.
 
-    * ID do cliente
+    * ID do Cliente
     * Segredo do cliente
     * Ponto de extremidade da API REST do workday
     * Ponto de extremidade do token
@@ -108,6 +108,7 @@ Para obter mais informações sobre como configurar usuários de integração do
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8464851432d8fce81baa624738c6f73da1d68413
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 43ab4126445f8f0ef36c88253c93d8b89bfa4eda
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461361"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720741"
 ---
 # <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
 
@@ -31,7 +31,7 @@ Depois de examinar a lista de aplicativos descobertos em seu ambiente, você pod
 
 Você pode cancelar a sanção um aplicativo de risco específico clicando nos três pontos no final da linha. Em seguida, selecione **Cancelar sanção**. O cancelamento de sanção de um aplicativo não bloqueia o uso, mas permite monitorar seu uso mais facilmente com os filtros do Cloud Discovery. Em seguida, você pode notificar os usuários do aplicativo não sancionado e sugerir um aplicativo alternativo seguro para seu uso.
 
-![Marcar como não sancionado](./media/tag-as-unsanctioned.png)
+![Marcar como não sancionado](media/tag-as-unsanctioned.png)
 
 Se você tiver uma lista de aplicativos que deseja sancionar ou cancelar a sanção, use a caixa de seleção para marcar os aplicativos que deseja gerenciar e, em seguida, selecione a ação.
 
@@ -44,21 +44,21 @@ Para consultar uma lista de aplicativos não sancionados, você pode [gerar um s
 
 O Cloud App Security permite que você bloqueie o acesso a aplicativos não sancionados usando os dispositivos de segurança locais existentes. Gere um script de bloqueio dedicado e importe-o para seu dispositivo. Essa solução não exige o redirecionamento de todo o tráfego da Web da organização para um proxy.
 
-1. No painel do Cloud Discovery, marque quaisquer aplicativos que deseja bloquear como **Não sancionado**.
+1. No painel de Descoberta de nuvem, marque quaisquer aplicativos que você deseja bloquear como **Não sancionados**.
 
-    ![Marcar como não sancionado](./media/tag-as-unsanctioned.png)
+    ![Marcar como não sancionado](media/tag-as-unsanctioned.png)
 
 2. Na barra de título, clique nos três pontos e selecione **Gerar script de bloqueio...** .
 
-    ![Gerar script de bloqueio](./media/generate-block-script.png)
+    ![Gerar script de bloqueio](media/generate-block-script.png)
 
 3. Em **Gerar script de bloqueio**, selecione o dispositivo para o qual deseja gerar o script de bloqueio.
 
-    ![Pop-up de Gerar script de bloqueio](./media/generate-block-script-popup.png)
+    ![Pop-up de Gerar script de bloqueio](media/generate-block-script-popup.png)
 
 4. Em seguida, clique no botão Gerar script para criar um script de bloqueio para todos os aplicativos não sancionados. Por padrão, o arquivo será nomeado com a data em que foi exportado e o tipo de dispositivo selecionado. *2017-02-19_CAS_Fortigate_block_script.txt* é um nome de arquivo de exemplo
 
-   ![Botão Gerar script de bloqueio](./media/generate-block-script-button.png)
+   ![Botão Generate block script (Gerar script de bloqueio)](media/generate-block-script-button.png)
 
 5. Importe o arquivo criado para seu dispositivo.
 

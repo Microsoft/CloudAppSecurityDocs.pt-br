@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd11c5a35761f21cc928a3debbc05a58ef56b6d1
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: ad21cce1ffda835dc45badccc07689ca300cf377
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459986"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721070"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solucionando problemas de Cloud Discovery
 
@@ -32,14 +31,13 @@ Este artigo apresenta uma lista de erros do Cloud Discovery e as recomendações
 
 Se você integrou o Microsoft defender ATP com o Cloud App Security e não vê os resultados da integração – não há um relatório de **usuários de ponto de extremidade Win10** -Verifique se os computadores aos quais você está se conectando são o Windows 10 versão 1809 ou posterior, e que você aguardou as duas horas necessárias para que os dados sejam acessíveis.
 
-
 ## <a name="log-parsing-errors"></a>Erros de análise de log
 
 Você pode controlar o processamento dos registros do Cloud Discovery usando o log de governança. Este artigo fornece as ações de resolução a serem executadas para cada erro que pode ser exibido.
 
 ### <a name="governance-log-errors"></a>Erros de log de governança
 
-|Erro|Descrição|Resolução|
+|Erro do|Description|Resolução|
 |----|----|----|
 |Tipo de arquivo sem suporte|O arquivo carregado não é um arquivo de log válido (por exemplo, um arquivo de imagem).|Carregue um arquivo de **texto**, **zip ou **gzip** que foi exportado diretamente do seu firewall ou proxy.|
 |O formato de log não corresponde|O formato de log carregado não corresponde ao esperado para esta fonte de dados.|1. Verifique se o log não está corrompido. <br /> 2. Compare e corresponda ao seu log com o formato de exemplo mostrado na página carregar.|
@@ -65,8 +63,8 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 |Dados de descoberta foram carregados e analisados com êxito, mas o painel do Cloud Discovery parece vazio|O painel pode estar filtrado por dados que os logs não têm e, portanto, não há dados a serem exibidos. Tente alterar os filtros no painel do Cloud Discovery para mostrar os diferentes tipos de dados para ver os resultados.|
 
 ## <a name="next-steps"></a>Próximas etapas
-  
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
+[!INCLUDE [Open support ticket](includes/support.md)]

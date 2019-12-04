@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b333509cd00b2a17b3a3984da30e4e8142daf88
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e4675430b45e92579cd4c692247c5a481bad233e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460738"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720714"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
@@ -35,15 +35,15 @@ Quando você observa a página **Política**, as várias políticas e modelos po
 
 Os seguintes tipos de políticas podem ser criados:
 
-|Ícone Tipo de política|Tipo de política|Uso|
+|Ícone Tipo de política|Tipo de política|Use objetos de|
 |-----|-----------------|---------|
-|![ícone de política de acesso](./media/proxy-policy.png)|Política de acesso|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem.|
-|![ícone de política de atividade](./media/activity_policy.png)|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|
-|![ícone de política de detecção de anomalias](./media/anomaly_detection_policy.png)|Política de detecção de anomalias|As políticas de detecção de anomalias permitem que você procure atividades incomuns na sua nuvem. A detecção baseia-se nos fatores de risco que você define para alertá-lo quando algo diferente da linha de base de sua organização ou da atividade regular do usuário acontece.|
-|![ícone de política do cloud discovery](./media/discovery_policy.png)|Política de descoberta de aplicativo|As políticas de descoberta de aplicativo permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização.|
-|![ícone de política de detecção de anomalias](./media/anomaly_detection_policy.png)|Política de detecção de anomalias do Cloud Discovery|As políticas de detecção de anomalias do Cloud Discovery analisam os logs usados para descobrir aplicativos de nuvem e pesquisa ocorrências incomuns. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico.|
-|![ícone de política de arquivos](./media/file_policy.png)|Política de arquivos|As políticas de arquivos permitem que você examine seus aplicativos de nuvem quanto a tipos de arquivo ou arquivos especificados (compartilhados, compartilhados com domínios externos), dados (informações proprietárias, dados pessoais, informações de cartão de crédito e outros tipos de dados) e aplique ações de governança aos arquivos (as ações de governança são específicas do aplicativo de nuvem).|
-|![Ícone de política de sessão](./media/proxy-policy.png)|Política de sessão|Políticas de sessão fornecem monitoramento em tempo real e controle sobre a atividade do usuário nos seus aplicativos de nuvem.|
+|![ícone de política de acesso](media/proxy-policy.png)|Política de acesso|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem.|
+|![ícone de política de atividade](media/activity_policy.png)|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|
+|![ícone de política de detecção de anomalias](media/anomaly_detection_policy.png)|Política de detecção de anomalias|As políticas de detecção de anomalias permitem que você procure atividades incomuns na sua nuvem. A detecção baseia-se nos fatores de risco que você define para alertá-lo quando algo diferente da linha de base de sua organização ou da atividade regular do usuário acontece.|
+|![ícone de política do cloud discovery](media/discovery_policy.png)|Política de descoberta de aplicativo|As políticas de descoberta de aplicativo permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização.|
+|![ícone de política de detecção de anomalias](media/anomaly_detection_policy.png)|Política de detecção de anomalias do Cloud Discovery|As políticas de detecção de anomalias do Cloud Discovery analisam os logs usados para descobrir aplicativos de nuvem e pesquisa ocorrências incomuns. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico.|
+|![ícone de política de arquivos](media/file_policy.png)|Política de arquivos|As políticas de arquivos permitem que você examine seus aplicativos de nuvem quanto a tipos de arquivo ou arquivos especificados (compartilhados, compartilhados com domínios externos), dados (informações proprietárias, dados pessoais, informações de cartão de crédito e outros tipos de dados) e aplique ações de governança aos arquivos (as ações de governança são específicas do aplicativo de nuvem).|
+|![Ícone de política de sessão](media/proxy-policy.png)|Política de sessão|Políticas de sessão fornecem monitoramento em tempo real e controle sobre a atividade do usuário nos seus aplicativos de nuvem.|
 
 ## <a name="identifying-risk"></a>Identificando o risco
 
@@ -101,7 +101,7 @@ Para criar uma política de **Modelo de política**, execute estas etapas:
 
 1. No console, clique em **Controlar** seguido por **Modelos**.
 
-    ![Criar a política com base em um modelo](./media/create-policy-from-template.png)
+    ![Criar a política com base em um modelo](media/create-policy-from-template.png)
 
 1. Clique no **+** na extrema direita da linha do modelo que deseja usar. Uma página de criação de política é aberta contendo a configuração predefinida do modelo.
 
@@ -123,11 +123,11 @@ Para criar uma política com base nos resultados da investigação, siga estas e
 
 1. Use os filtros na parte superior da página para limitar os resultados da pesquisa à área suspeita. Por exemplo, na página do Log de atividades, clique em **Tipo de atividade** e selecione **Gravar administradores** na operação do Azure. Em seguida, em **Endereço IP**, selecione **Categoria** e defina o valor para não incluir as categorias de endereço IP que você criou para seus domínios reconhecidos, como os endereços IP de administração, corporativos e de VPN.
 
-    ![Criar arquivo com base na investigação](./media/create-file-from-investigation.png)
+    ![Criar arquivo com base na investigação](media/create-file-from-investigation.png)
 
 1. No canto superior direito do console, clique em **Nova política da pesquisa**.
 
-    ![Botão Nova política da pesquisa](./media/new-policy-from-search-button.png)
+    ![Botão Nova política da pesquisa](media/new-policy-from-search-button.png)
 
 1. Uma página de criação de política é aberta, contendo os filtros usados na sua investigação.
 
@@ -137,7 +137,7 @@ Para criar uma política com base nos resultados da investigação, siga estas e
     > Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe.  
 **É igual a** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt.
 
-    ![criar política de atividade com base na investigação](./media/create-activity-policy-from-investigation.png)
+    ![criar política de atividade com base na investigação](media/create-activity-policy-from-investigation.png)
 
     > [!NOTE]
     > Para obter mais informações sobre como definir campos de política, consulte a documentação da política correspondente:
@@ -165,11 +165,11 @@ Depois de criar uma política, é possível habilitá-la ou desabilitá-la. Desa
 
 - Para habilitar uma política, na página **Política**, clique nas reticências no final da linha da política que você deseja habilitar. Selecione **Habilitar**.
 
-    ![Habilitar política](./media/enable-policy.png)
+    ![Habilitar política](media/enable-policy.png)
 
 - Para desabilitar uma política, na página **Política**, clique nas reticências no final da linha da política que você deseja desabilitar. Selecione **Desabilitar**.
 
-    ![Desabilitar política](./media/disable-policy.png)
+    ![Desabilitar política](media/disable-policy.png)
 
 Por padrão, depois de criar uma política, ela será habilitada.
 
@@ -191,10 +191,11 @@ Para baixar o relatório exportado:
 
 1. Na tabela, selecione o relatório relevante no **relatório visão geral** da lista de políticas e clique em baixar.
 
-    ![botão de download](./media/download-button.png)
+    ![botão de download](media/download-button.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

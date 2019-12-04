@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4dd033c3cf181e2e18e8ab8e2fc1d48b62865901
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 37b4f17539b0d160e8650f5478741f0941e50648
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461009"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719872"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
@@ -37,7 +37,7 @@ Para acessar a guia OAuth:
 
 No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos OAuth**.
 
-![permissões de aplicativo](./media/app-permissions.png)
+![permissões de aplicativo](media/app-permissions.png)
 
 A página de aplicativos OAuth fornece as seguintes informações sobre cada aplicativo OAuth que recebeu permissões:
 
@@ -53,34 +53,34 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 |Estado do aplicativo|Um administrador pode marcar um aplicativo como aprovado, vetado ou deixar como indeterminado.|Office 365, G Suite, Salesforce|
 |Uso da comunidade|Mostra quão popular o aplicativo é entre todos os seus usuários (comum, incomum, raro)|Office 365, G Suite, Salesforce|
 |Última autorização|A data mais recente em que um usuário concedeu permissões para este aplicativo.|Office 365, Salesforce|
-|Publicador|O nome do fornecedor que oferece o aplicativo.|Office 365|
+|Publisher|O nome do fornecedor que oferece o aplicativo.|Office 365|
 |Usado pela última vez|A data mais recente em que este aplicativo foi usado por alguém em sua organização.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Vetar ou aprovar um aplicativo
 
 1. Na página de **Aplicativos OAuth**, clique no aplicativo para abrir a **Gaveta de aplicativo** para exibir mais informações sobre o aplicativo e as permissões que foram concedida a ele.
 
-   - Clique no link **Permissões** para exibir uma lista completa das permissões que foram concedidas ao aplicativo.
-   - Em **Uso da comunidade**, você pode exibir o quão comum o aplicativo é em outras organizações.
-   - Clique no link **Atividade relacionada** para exibir as atividades que estão listadas no log de governança relacionado a esse aplicativo.
+    - Clique no link **Permissões** para exibir uma lista completa das permissões que foram concedidas ao aplicativo.
+    - Em **Uso da comunidade**, você pode exibir o quão comum o aplicativo é em outras organizações.
+    - Clique no link **Atividade relacionada** para exibir as atividades que estão listadas no log de governança relacionado a esse aplicativo.
 
 2. Para vetar o aplicativo, clique no ícone de vetar no final da linha do aplicativo na tabela.
 
-     ![ícone de vetar aplicativo](./media/ban-app-icon.png)
+    ![ícone de vetar aplicativo](media/ban-app-icon.png)
 
     - Você pode escolher se deseja informar os usuários de que o aplicativo instalado e autorizado foi vetado. A notificação permite que os usuários saibam que o aplicativo será desabilitado e eles não terão acesso ao aplicativo conectado. Se não quiser que eles saibam, cancele a seleção de **Notificar os usuários que concederam acesso a esse aplicativo vetado** na caixa de diálogo.
     - Recomendamos informar os usuários do aplicativo de que ele está prestes a ter o uso vetado.
 
-      ![vetar aplicativo](./media/ban-app.png)
+    ![vetar aplicativo](media/ban-app.png)
 
 3. Digite a mensagem que você deseja enviar para os usuários do aplicativo em Inserir uma caixa de mensagem de notificação personalizada. Clique em **Vetar aplicativo** para enviar o email e vetar o aplicativo dos usuários do aplicativo conectado.
 
 4. Para aprovar o aplicativo, clique no ícone de aprovar no final da linha na tabela.
 
-   ![aprovar aplicativo](./media/approve-app.png)
+    ![aprovar aplicativo](media/approve-app.png)
 
-   - O ícone fica verde e o aplicativo é aprovado para todos os usuários do aplicativo conectado.
-   - Quando você marca um aplicativo como aprovado, não há nenhum efeito sobre o usuário final. Essa alteração de cor destina-se a ajudá-lo a ver os aplicativos que você aprovou para separá-los daqueles que você ainda não examinou.
+    - O ícone fica verde e o aplicativo é aprovado para todos os usuários do aplicativo conectado.
+    - Quando você marca um aplicativo como aprovado, não há nenhum efeito sobre o usuário final. Essa alteração de cor destina-se a ajudá-lo a ver os aplicativos que você aprovou para separá-los daqueles que você ainda não examinou.
 
 ## <a name="revoke-app-and-notify-user"></a>Revogar aplicativo e notificar o usuário
 
@@ -89,7 +89,7 @@ Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo 
 1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *você autorizou o aplicativo para acessar sua conta do G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere a concessão ou a revogação das permissões que você deu a esse aplicativo em sua conta do G Suite. Para revogar o acesso ao aplicativo, acesse: https://security.google.com/settings/security/permissions?hl=en&pli=1 selecione o aplicativo e clique em ' revogar acesso ' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
 2. Você também pode revogar permissões para usar o aplicativo para o usuário. Clique no ícone no final da linha de aplicativo na tabela e selecionando **Revogar aplicativo**.
 
-    ![revogar aplicativo](./media/revoke-app.png)
+    ![revogar aplicativo](media/revoke-app.png)
 
 ## <a name="query-oauth-apps"></a>Aplicativos OAuth de consulta
 
@@ -117,11 +117,12 @@ Se algum aplicativo OAuth que pareça mal-intencionado for descoberto na sua org
 
 1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Relatar aplicativo**.
 
-    ![reportar aplicativo](./media/report-app.png)
+    ![reportar aplicativo](media/report-app.png)
 2. Na tela **Relatar este aplicativo**, você pode selecionar se deseja relatar o aplicativo como mal-intencionado ou relatar outro problema com a maneira como o Cloud App Security percebe o aplicativo. Por exemplo, você pode usar **Editor incorreto**, **Permissões incorretas** ou **Outro**. Os dados que você envia são usados para atualizar a pontuação de risco do aplicativo, bem como outras análises sobre ele.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

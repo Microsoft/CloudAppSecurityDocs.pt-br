@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5e5d6c141777c2e6351d8a98448a29f6d36dca5d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 777e672436220642df6ea739c0f2e381487dd9ee
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459458"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720366"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importar grupos de usuários de aplicativos conectados
 
@@ -48,10 +48,10 @@ Você pode importar qualquer grupo de seus aplicativos conectados. Por exemplo, 
 
 ## <a name="how-to-import-user-groups"></a>Como importar grupos de usuários
 
-1. Na barra de menus, clique no ícone configurações ícones ![configurações](./media/settings-icon.png "ícone de configurações") e selecione **grupos de usuários**.
+1. Na barra de menus, clique no ícone configurações ícones ![configurações](media/settings-icon.png "ícone de configurações") e selecione **grupos de usuários**.
 1. Clique em **Importar grupo de usuários**.
 
-    ![Importar grupos de usuários](./media/user-groups-add.png)
+    ![Importar grupos de usuários](media/user-groups-add.png)
 
 1. Selecione o aplicativo do qual deseja importar o grupo de usuários. A lista de aplicativos dependerá de qual Conector de Aplicativo você implantou.
 1. Selecione o grupo a ser importado. A lista de grupos disponíveis será uma lista de todos os grupos de usuário existente no próprio aplicativo. Caso deseje adicionar um novo grupo, você precisará fazê-lo diretamente no próprio aplicativo. Em seguida, quando o grupo for exibido na lista aqui, selecione-o.

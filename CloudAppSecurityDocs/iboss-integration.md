@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 920d4272-685b-4c4d-9b31-94a2c6f3503e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14aa55ef1218aa5b95ee14c07791aa538f938e19
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: f60f4ec7dc9ff241cc4d4ba45bca9a50a2e50a00
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461179"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719955"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Integrar o Cloud App Security com o iboss
 
@@ -40,27 +39,27 @@ Se você trabalha com o Cloud App Security e o iboss, é possível integrar os d
 ## <a name="deployment"></a>Implantação
 
 1. No portal do Cloud App Security, execute as seguintes etapas de integração:
-    1. Clique no ícone de configurações e selecione **Configurações do Cloud Discovery**. 
+    1. Clique no ícone de configurações e selecione **Configurações do Cloud Discovery**.
     2. Selecione a guia **Upload de log automático** e, em seguida, **Adicionar fonte de dados**.
     3. Na página **Adicionar fonte de dados**, insira as seguintes configurações:
 
-       - Nome = iboss
-       - Fonte = gateway de nuvem seguro do iboss
-       - Tipo de receptor = Syslog - UDP
+        - Nome = iboss
+        - Fonte = gateway de nuvem seguro do iboss
+        - Tipo de receptor = Syslog - UDP
 
-         ![fonte de dados iboss](./media/iboss-integration.png)
+        ![fonte de dados iboss](media/iboss-integration.png)
 
-    4. Clique em **Exibir exemplo de arquivo de log esperado**. Em seguida, clique em **Baixar log de exemplo** para exibir um exemplo de log de descoberta e verificar se ele corresponde aos seus logs.<br>
+    4. Clique em **Exibir exemplo de arquivo de log esperado**. Em seguida, clique em **Baixar log de exemplo** para exibir um exemplo de log de descoberta e verificar se ele corresponde aos seus logs.<br />
 
-3. Investigue os aplicativos na nuvem descobertos em sua rede. Para obter mais informações e as etapas de investigação, confira [Trabalhando com o Cloud Discovery](working-with-cloud-discovery-data.md).
+1. Investigue os aplicativos na nuvem descobertos em sua rede. Para obter mais informações e as etapas de investigação, confira [Trabalhando com o Cloud Discovery](working-with-cloud-discovery-data.md).
 
-4. Qualquer aplicativo que você definir como não sancionado no Cloud App Security receberá o ping do iboss a cada dez minutos e será automaticamente bloqueado pelo iboss. Para saber mais sobre como cancelar a sanção de aplicativos, confira [Sanção/cancelamento de um aplicativo](governance-discovery.md#BKMK_SanctionApp).
+1. Qualquer aplicativo que você definir como não sancionado no Cloud App Security receberá o ping do iboss a cada dez minutos e será automaticamente bloqueado pelo iboss. Para saber mais sobre como cancelar a sanção de aplicativos, confira [Sanção/cancelamento de um aplicativo](governance-discovery.md#BKMK_SanctionApp).
 
-5. Para configurar o iboss para enviar logs de tráfego ao Microsoft Cloud App Security, entre em contato com suporte do iboss.
+1. Para configurar o iboss para enviar logs de tráfego ao Microsoft Cloud App Security, entre em contato com suporte do iboss.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

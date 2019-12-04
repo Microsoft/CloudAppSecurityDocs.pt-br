@@ -11,30 +11,27 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ef3da968aeb3148365937f94110108a9785894ce
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 83969121e83bfa2efae352fc66de00766c23e5d9
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458788"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720237"
 ---
 # <a name="content-inspection"></a>Inspeção de conteúdo
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
+Ao habilitar a inspeção de conteúdo, você poderá escolher se deseja usar expressões predefinidas ou pesquisar outras expressões personalizadas.
 
-Ao habilitar a inspeção de conteúdo, você poderá escolher se deseja usar expressões predefinidas ou pesquisar outras expressões personalizadas.  
+É possível especificar uma expressão regular para excluir um arquivo dos resultados. Essa opção será muito útil se você tiver um padrão de palavra-chave de classificação interno que deseja excluir da política.
 
-É possível especificar uma expressão regular para excluir um arquivo dos resultados. Essa opção será muito útil se você tiver um padrão de palavra-chave de classificação interno que deseja excluir da política.  
-   
-Você pode definir o número mínimo de violações de conteúdo que deseja corresponder antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.  
+Você pode definir o número mínimo de violações de conteúdo que deseja corresponder antes de o arquivo ser considerado uma violação. Por exemplo, você poderá escolher 10 se quiser ser alertado sobre arquivos com pelo menos 10 números de cartão de crédito encontrados em seu conteúdo.
 
-Quando o conteúdo é comparado com a expressão selecionada, o texto de violação é substituído por caracteres "X". Por padrão, as violações são mascaradas e mostradas em seu contexto, exibindo 100 caracteres antes e após a violação. Os números no contexto da expressão são substituídos por caracteres "#" e nunca são armazenados no Cloud App Security. Você pode selecionar a opção para **Remover a máscara dos últimos quatro caracteres de uma violação** para remover a máscara dos últimos quatro caracteres da própria violação. É necessário definir quais tipos de dados a expressão regular pesquisa: conteúdo, metadados e/ou nome do arquivo. Por padrão, ela pesquisa o conteúdo e os metadados. 
-
+Quando o conteúdo é comparado com a expressão selecionada, o texto de violação é substituído por caracteres "X". Por padrão, as violações são mascaradas e mostradas em seu contexto, exibindo 100 caracteres antes e após a violação. Os números no contexto da expressão são substituídos por caracteres "#" e nunca são armazenados no Cloud App Security. Você pode selecionar a opção para **Remover a máscara dos últimos quatro caracteres de uma violação** para remover a máscara dos últimos quatro caracteres da própria violação. É necessário definir quais tipos de dados a expressão regular pesquisa: conteúdo, metadados e/ou nome do arquivo. Por padrão, ela pesquisa o conteúdo e os metadados.
 
 ## <a name="content-inspection-for-protected-files"></a>Inspeção de conteúdo para arquivos protegidos
 
@@ -47,10 +44,9 @@ Para dar as permissões necessárias ao Cloud App Security:
 3. Siga os prompts para permitir as permissões necessárias no Azure Active Directory.
 4. Você pode definir as configurações de acordo com a política de arquivo para determinar quais políticas examinarão os arquivos protegidos.
 
-
-
 ## <a name="next-steps"></a>Próximas etapas
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

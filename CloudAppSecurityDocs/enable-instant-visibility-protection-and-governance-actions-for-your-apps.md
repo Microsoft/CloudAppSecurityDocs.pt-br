@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e22b7d7f1b59c49470426080bf822fa070a1af6d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 0aa55a99017a1768bf58fd2c2a40688c1a5c95e6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458154"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720248"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -68,22 +68,22 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 
 > [!div class="mx-tableFixed"]
 >
-> | | AWS | Caixa | Dropbox | GCP | G Suite | Office 365 | Okta | Serviço agora | Salesforce | Webex | Workday |
+> | | AWS | Caixa | Dropbox | GCP | G Suite | Office 365 | Okta | Serviço agora | Salesforce | WebEx | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
 > | **Listar contas** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 > | **Listar grupos** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
 > | **Listar privilégios** | | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Não pported por provedor |
 > | **Governança de usuário** | | ✔ | Em breve | Conexão do pacote G do assunto | ✔ | ✔ | | Em breve | ✔ | Em breve | t com suporte do provedor |
 > | **Atividade de logon** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **Atividade do usuário** | Não aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o lesforce Shield | ✔ | ✔ |
+> | **Atividade do usuário** | Não Aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o lesforce Shield | ✔ | ✔ |
 > | **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
-> | **DLP – verificação periódica** | | ✔ | Em breve | Não aplicável | ✔ | ✔ | Não aplicável | | | | Sem suporte do ovider |
-> | **DLP – verificação quase em tempo real** | | ✔ | ✔ | Não aplicável | ✔-requer o Google Business Enterprise | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-> | **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | Não aplicável | | ✔ | Sem suporte do ovider |
-> | **Governança de arquivos** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | | Sem suporte pelo provedor |
-> | **Exibir permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Chegando em | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
-> | **Revogar permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Ming em breve | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
-> | **Aplique os rótulos da Proteção de Informações do Azure** | Não aplicável | ✔ | | Não aplicável | ✔ | ✔ | Não aplicável | | | Não aplicável | Não aplicável |
+> | **DLP – verificação periódica** | | ✔ | Em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | | | Sem suporte do ovider |
+> | **DLP – verificação quase em tempo real** | | ✔ | ✔ | Não Aplicável | ✔-requer o Google Business Enterprise | ✔ | Não Aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+> | **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | Não Aplicável | | ✔ | Sem suporte do ovider |
+> | **Governança de arquivos** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | | Sem suporte pelo provedor |
+> | **Exibir permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Chegando em | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não Aplicável | Não Aplicável |
+> | **Revogar permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Ming em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não Aplicável | Não Aplicável |
+> | **Aplique os rótulos da Proteção de Informações do Azure** | Não Aplicável | ✔ | | Não Aplicável | ✔ | ✔ | Não Aplicável | | | Não Aplicável | Não Aplicável |
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -101,27 +101,29 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 | Azure | | Administrador global |
 | AWS | | Usuário recém-criado |
 | Caixa | Enterprise | É altamente recomendável que você se conecte ao box como um administrador. Conectar-se como um coadministrador resultará em apenas visibilidade parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
-| Dropbox | Business/Enterprise | Administrador |
+| Dropbox | Business/Enterprise | Administração |
 | GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (não de avaliação) | Administrador |
-| Salesforce | | Administrador |
+| Okta | Enterprise (não de avaliação) | Administração |
+| Salesforce | | Administração |
 | ServiceNow | Eureka e superior | Função admin + RestAPI |
-| Webex | | Admin + administrador de conformidade |
+| WebEx | | Admin + administrador de conformidade |
 | Workday | | Consulte os [pré-requisitos do workday de conexão](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
 
 O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos do Cloud App Security e o tráfego enviado a ele, incluindo o upload de logs de descoberta, são roteados por meio do **emparelhamento público** do ExpressRoute para aprimorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
-Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da ExpressRoute e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 
 ## <a name="check-out-this-video"></a>Confira este vídeo!
 
-[Microsoft Cloud App Security – API REST e Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [!div class="nextstepaction"]
+> [Microsoft Cloud App Security – API REST e Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

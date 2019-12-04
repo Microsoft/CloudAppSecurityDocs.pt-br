@@ -11,29 +11,24 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a74d63d62809860479110c26def76873c66c8dd
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 3e5ed247c5769a4acdb3cae0d8792328b374f042
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460989"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719684"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
-[« ANTERIOR: Como criar uma política de sessão](session-policy-aad.md)<br>
-[PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
-
-As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, localização, dispositivo e aplicativo. Crie políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são ingressados no domínio e não gerenciados pelo Windows Intune distribuindo certificados do cliente para dispositivos gerenciados ou usando certificados existentes, como certificados MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado. 
+As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, localização, dispositivo e aplicativo. Crie políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são ingressados no domínio e não gerenciados pelo Windows Intune distribuindo certificados do cliente para dispositivos gerenciados ou usando certificados existentes, como certificados MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado.
 
 > [!NOTE]
-> Em vez de permitir ou bloquear o acesso por completo, com as [políticas de sessão](session-policy-aad.md), é possível permitir o acesso durante o monitoramento da sessão e/ou limitar atividades de sessão específicas. 
+> Em vez de permitir ou bloquear o acesso por completo, com as [políticas de sessão](session-policy-aad.md), é possível permitir o acesso durante o monitoramento da sessão e/ou limitar atividades de sessão específicas.
 
 ## <a name="prerequisites-to-using-access-policies"></a>Pré-requisitos para uso das políticas de acesso
 
@@ -48,50 +43,51 @@ As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento
 
 As políticas de acesso condicional do Azure Active Directory e as políticas de sessão do Cloud App Security trabalham juntas para examinar cada sessão de usuário e tomar decisões de política para cada aplicativo. Para configurar uma política de acesso condicional no Azure AD, siga este procedimento:
 
-1. Configure uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) com atribuições de usuário ou grupo de usuários e o aplicativo que você deseja controlar com o Controle de Aplicativos de Acesso Condicional. 
+1. Configure uma [política de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) com atribuições de usuário ou grupo de usuários e o aplicativo que você deseja controlar com o Controle de Aplicativos de Acesso Condicional.
 
-   > [!NOTE]
-   > Apenas os aplicativos que foram [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md) serão afetados por essa política. 
+    > [!NOTE]
+    > Apenas os aplicativos que foram [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md) serão afetados por essa política.
 
 2. Encaminhe usuários para o Microsoft Cloud App Security selecionando **Usar restrições impostas pelo Controle de Aplicativos de Acesso Condicional** em **Sessão**.
- 
-## <a name="create-a-cloud-app-security-access-policy"></a>Criar uma política de acesso do Cloud App Security 
+
+## <a name="create-a-cloud-app-security-access-policy"></a>Criar uma política de acesso do Cloud App Security
 
 Para criar uma nova política de acesso, siga este procedimento:
 
 1. No portal, selecione **Controle** e, em seguida, **Políticas**.
-2. Na página **Políticas**, clique em **Criar política** e selecione **Política de acesso**.  
+2. Na página **Políticas**, clique em **Criar política** e selecione **Política de acesso**.
 
 3. Na janela **Política de acesso**, atribua um nome à política, como *Bloquear o acesso em dispositivos não gerenciados*.
 
-4. Na seção **Atividades que correspondem a todos os seguintes**, em **Origem da atividade**, selecione os filtros de atividade adicionais a serem aplicados à política. Os filtros incluem as seguintes opções: 
-     
-   - **Marcas de dispositivo**: use este filtro para identificar dispositivos não gerenciados.
+4. Na seção **Atividades que correspondem a todos os seguintes**, em **Origem da atividade**, selecione os filtros de atividade adicionais a serem aplicados à política. Os filtros incluem as seguintes opções:
 
-   - **Local**: use este filtro para identificar locais desconhecidos (e, portanto, arriscados). 
+    - **Marcas de dispositivo**: use este filtro para identificar dispositivos não gerenciados.
 
-   - **Endereço IP**: use nesse filtro para filtrar por endereços IP ou usar marcas de endereço IP atribuídas anteriormente. 
+    - **Local**: use este filtro para identificar locais desconhecidos (e, portanto, arriscados).
 
-   - **Marca de agente do usuário**: use esse filtro para habilitar que a heurística identifique os aplicativos móveis e de área de trabalho. Esse filtro pode ser definido como igual a ou não é igual a. Os valores devem ser testados nos aplicativos móveis e da área de trabalho para cada aplicativo na nuvem.
-  
-5. Em **Ações**, selecione uma das seguintes opções: 
+    - **Endereço IP**: use nesse filtro para filtrar por endereços IP ou usar marcas de endereço IP atribuídas anteriormente.
+
+    - **Marca de agente do usuário**: use esse filtro para habilitar que a heurística identifique os aplicativos móveis e de área de trabalho. Esse filtro pode ser definido como igual a ou não é igual a. Os valores devem ser testados nos aplicativos móveis e da área de trabalho para cada aplicativo na nuvem.
+
+5. Em **Ações**, selecione uma das seguintes opções:
 
     - **Permitir**: defina essa ação para permitir o acesso explicitamente de acordo com os filtros de política definidos.
 
-    - **Bloquear**: defina essa ação para bloquear o acesso explicitamente de acordo com os filtros de política definidos. 
+    - **Bloquear**: defina essa ação para bloquear o acesso explicitamente de acordo com os filtros de política definidos.
 
 6. Você pode **Criar um alerta para cada evento correspondente com a gravidade da política** e configurar um limite de alerta e selecionar se você deseja o alerta como um email, uma mensagem de texto ou ambos.
 
+## <a name="next-steps"></a>Próximas etapas
 
+> [!div class="nextstepaction"]
+> [Bloqueando downloads em dispositivos não gerenciados usando controles de sessão](use-case-proxy-block-session-aad.md)
 
->[!div class="step-by-step"]
-[« ANTERIOR: Como criar uma política de sessão](session-policy-aad.md)<br>
-[PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
+## <a name="see-also"></a>Consulte também
 
- 
-## <a name="next-steps"></a>Próximas etapas  
-[Bloqueando downloads em dispositivos não gerenciados, usando funcionalidades de Controle de Aplicativo de Acesso Condicional do Azure AD](use-case-proxy-block-session-aad.md)   
+> [!div class="nextstepaction"]
+> [Como criar uma política de sessão](session-policy-aad.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+> [!div class="nextstepaction"]
+> [Explore os casos de uso populares»](use-case-proxy-block-session-aad.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

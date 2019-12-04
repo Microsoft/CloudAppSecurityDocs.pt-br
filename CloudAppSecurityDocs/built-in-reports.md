@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9dfc6e859b28450d32fcb7ce925ad5209dd0c5f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 3d87522306932229b9defd05e760672e875a28ab
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458348"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720161"
 ---
 # <a name="generate-data-management-reports"></a>Gerar relatórios de gerenciamento de dados
 
@@ -30,17 +29,18 @@ O Microsoft Cloud App Security permite gerar relatórios que oferecem uma visão
 
 Como gerar esses relatórios
 
-1. Vá para **Arquivos**. 
+1. Vá para **Arquivos**.
 2. No canto superior direito, clique nos três pontos e em **Relatórios de gerenciamento de dados**, selecione um dos seguintes relatórios.
 
- ![relatórios](./media/reports.png)
+    ![relatórios](media/reports.png)
 
-## <a name="data-sharing-overview"></a>Visão geral do compartilhamento de dados 
+## <a name="data-sharing-overview"></a>Visão geral do compartilhamento de dados
 
 Este relatório lista o número de arquivos armazenados nos aplicativos de nuvem, divididos de acordo com as permissões de acesso. O compartilhamento se tornou muito fácil com serviços de nuvem devido à facilidade de acesso e onipresença. Um **Arquivo particular** não é compartilhado com ninguém exceto com seu proprietário. Se o arquivo for compartilhado, o Cloud App Security diferenciará entre quatro tipos de estados:
+
 - Um arquivo **Compartilhado publicamente (Internet)** é um arquivo que pode ser acessado sem qualquer autenticação, até mesmo por um resultado de mecanismo de pesquisa.
- - Um arquivo **Compartilhado publicamente** é um arquivo que pode ser acessado sem qualquer autenticação, usando um link.
- - Um arquivo **Compartilhado externamente** é um arquivo que pode ser acessado por pessoas fora da organização, após se autenticarem no aplicativo de nuvem.
+- Um arquivo **Compartilhado publicamente** é um arquivo que pode ser acessado sem qualquer autenticação, usando um link.
+- Um arquivo **Compartilhado externamente** é um arquivo que pode ser acessado por pessoas fora da organização, após se autenticarem no aplicativo de nuvem.
 - Um arquivo **Compartilhado internamente** é um arquivo que pode ser acessado por todos ou por alguns usuários da sua organização.
 
 ## <a name="outbound-sharing-by-domain"></a>Compartilhamento de saída por domínio
@@ -51,11 +51,9 @@ Este relatório lista os domínios com os quais os arquivos corporativos são co
 
 Isso lista os usuários que estão compartilhando arquivos corporativos com o mundo exterior. Os arquivos compartilhados externamente são compartilhados com colaboradores externos específicos. Os arquivos compartilhados publicamente são acessíveis para qualquer pessoa na Internet, por meio de um link privado. Esses arquivos podem ser encontrados somente por pessoas que são explicitamente expostas ao link. Os arquivos compartilhados publicamente (Internet) podem ser acessados por qualquer pessoa na Internet, até mesmo por meio de um resultado de mecanismo de pesquisa. Se você encontrar usuários que compartilham um número excessivo de arquivos, é recomendável investigar o motivo. Você pode investigar usando a guia arquivos e, em seguida, entre em contato com esses usuários para compreender melhor o uso do compartilhamento externo.
 
+## <a name="next-steps"></a>Próximas etapas
 
-  
-## <a name="next-steps"></a>Próximas etapas 
-[Controle](control.md)   
+> [!div class="nextstepaction"]
+> [Controle](control.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

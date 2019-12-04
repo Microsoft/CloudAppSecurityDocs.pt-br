@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f59f6b28ec6374f609b831d413b76a8aa5c6900e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 9b3b09d2bf374f4503e5559530c8f6bbc9a7b098
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458327"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720138"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
@@ -29,63 +28,54 @@ ms.locfileid: "74458327"
 A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Microsoft Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Quando necessário, para uma investigação de segurança específica (por exemplo, devido a uma violação de segurança ou atividade de usuário suspeita), os administradores podem resolver o nome de usuário real. Se um administrador tiver algum motivo para suspeitar de um usuário específico, ele também poderá pesquisar o nome de usuário criptografado de um nome de usuário conhecido e começar a investigação usando o nome de usuário criptografado. Toda conversão de nome de usuário é auditada no **Log de governança** do portal.
 
 Pontos principais:
--   Nenhuma informação particular é armazenada nem exibida. Somente informações criptografadas.
--   Dados particulares são criptografados usando AES-128 com uma chave dedicada por locatário.
--   A resolução de nomes de usuário é realizada ad hoc e por nome de usuário decifrando um determinado nome de usuário criptografado.
 
+- Nenhuma informação particular é armazenada nem exibida. Somente informações criptografadas.
+- Dados particulares são criptografados usando AES-128 com uma chave dedicada por locatário.
+- A resolução de nomes de usuário é realizada ad hoc e por nome de usuário decifrando um determinado nome de usuário criptografado.
 
 ## <a name="how-data-anonymization-works"></a>Como funciona a anonimização de dados
 
-1. Há três maneiras de aplicar a anonimização de dados: 
-    
-   - Você pode definir que os dados de um arquivo de log específico sejam anonimizados [criando um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e selecionando **Anonimizar informações particulares**.
+1. Há três maneiras de aplicar a anonimização de dados:
 
-     ![Torne anônimos dados de instantâneo](./media/anonymize-log.png)
+    - Você pode definir que os dados de um arquivo de log específico sejam anonimizados [criando um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e selecionando **Anonimizar informações particulares**.  
+    ![Anonimizar dados de instantâneo](media/anonymize-log.png)
 
-   - Você pode definir a anonimização dos dados de um [upload automatizado para uma nova fonte de dados](configure-automatic-log-upload-for-continuous-reports.md) selecionando **Anonimizar informações particulares** ao adicionar a nova fonte de dados.  
-  
-     ![Torne anônimos dados de log](./media/anonymize-autolog.png)
+    - Você pode definir a anonimização dos dados de um [upload automatizado para uma nova fonte de dados](configure-automatic-log-upload-for-continuous-reports.md) selecionando **Anonimizar informações particulares** ao adicionar a nova fonte de dados.  
+    ![Anonimizar dados de log](media/anonymize-autolog.png)
 
-   - Você pode definir no Cloud App Security que o padrão seja anonimizar todos os dados de relatórios de instantâneos de arquivos de log carregados e de relatórios contínuos dos coletores de log da seguinte maneira:
-     
-     1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
-     
-     2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**. Você pode selecionar **Anonimizar as informações do computador por padrão no relatório 'Usuários do Ponto de Extremidade do Win10'** .
+    - Você pode definir no Cloud App Security que o padrão seja anonimizar todos os dados de relatórios de instantâneos de arquivos de log carregados e de relatórios contínuos dos coletores de log da seguinte maneira:
 
-     3. Em Chave de criptografia, selecione se deseja **Usar a chave dedicada gerada para seu portal** ou **Usar uma chave personalizada**. Se você **Usar uma chave personalizada**, digite uma chave de criptografia UTF8 de 16 bytes.
-     4. Clique em **Salvar**.
- 
-        ![Anonimização](./media/anonymizer1.png)
-  
+    1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
+
+    2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**. Você pode selecionar **Anonimizar as informações do computador por padrão no relatório 'Usuários do Ponto de Extremidade do Win10'** .
+
+    3. Em Chave de criptografia, selecione se deseja **Usar a chave dedicada gerada para seu portal** ou **Usar uma chave personalizada**. Se você **Usar uma chave personalizada**, digite uma chave de criptografia UTF8 de 16 bytes.
+    4. Clique em **Salvar**.
+
+    ![Anonimização](media/anonymizer1.png)
 
 2. Quando a Anonimização está selecionada, o Cloud App Security analisa o log de tráfego e extrai atributos específicos de dados.
 3. O Cloud App Security substitui o nome de usuário por um nome de usuário criptografado.
 4. Em seguida, ele analisa os dados de uso de nuvem e gera relatórios do Cloud Discovery com base nos dados anonimizados.
- 
-   ![Torne anônimo o painel do Cloud Discovery](./media/anonymize-dashboard.png)
- 
-5. Para uma investigação específica, como ao investigar um alerta de uso anômalo, você poderá resolver o nome de usuário específico no portal e fornecer uma justificativa comercial. 
-   Esta página também pode ser usada para pesquisar o nome de usuário criptografado de um nome de usuário conhecido. 
 
-   1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
-   2. Na guia **Anonimização**, em **Anonimizar e resolver nomes de usuário**, insira uma justificativa explicando porque você está executando a resolução.
-   3. Em **Inserir nome de usuário a ser resolvido**, selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver**. 
+    ![Torne anônimo o painel do Cloud Discovery](media/anonymize-dashboard.png)
 
-   ![Anonimização](./media/anonymizer.png)
+5. Para uma investigação específica, como ao investigar um alerta de uso anômalo, você poderá resolver o nome de usuário específico no portal e fornecer uma justificativa comercial.
+   Esta página também pode ser usada para pesquisar o nome de usuário criptografado de um nome de usuário conhecido.
 
-6. A ação é auditada no **Log de governança** do portal. 
+    1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
+    2. Na guia **Anonimização**, em **Anonimizar e resolver nomes de usuário**, insira uma justificativa explicando porque você está executando a resolução.
+    3. Em **Inserir nome de usuário a ser resolvido**, selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver**.
 
-    ![Anonimização](./media/anonymize-gov-log.png)
+    ![Anonimização](media/anonymizer.png)
 
+6. A ação é auditada no **Log de governança** do portal.
 
+    ![Anonimização](media/anonymize-gov-log.png)
 
+## <a name="next-steps"></a>Próximas etapas
 
-  
-      
-## <a name="next-steps"></a>Próximas etapas 
-[Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)   
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-    
-      
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2691be1e80bbeebf3c36f7cd25b2cb1df0dbc560
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 89c0c08ceeda2e9bcc8d541e060f593a4d357540
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460007"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720955"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
 
@@ -32,10 +31,9 @@ Este artigo apresenta uma lista de mensagens de erro do conector do Aplicativo d
 
 Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do conector de aplicativos após a tentativa de conectar um aplicativo de nuvem usando o conector de aplicativos de API.
 
-
 > [!div class="mx-tableFixed"]
 > 
-> |Mensagem de erro|Aplicativo relevante|Descrição|Resolução|
+> |Mensagem de erro|Aplicativo relevante|Description|Resolução|
 > |----|----|----|------------|
 > |HttpRequestFailure: O servidor retornou: 400 Solicitação inválida: {"error":{"code":"AF20012","message":"A ID de locatário especificada (insira Tenant_ID aqui) está configurada incorretamente no sistema."|Office 365 |Não foi encontrada nenhuma licença atribuída do Office 365. |Atribua pelo menos uma licença do Office 365 ao seu locatário.| 
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Caixa|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
@@ -67,7 +65,7 @@ Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do con
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
-

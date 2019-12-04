@@ -14,19 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4b800afa927b8a9151837cfbff76478c98bf71f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 39b3721a2a19c59f7c8d1a1376aa54efee455f65
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460544"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720478"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
 *Aplica-se ao: Microsoft Cloud App Security*
-
->[!div class="step-by-step"]
-[PRÓXIMO: Implantar o Controle de Aplicativo de Acesso Condicional »](proxy-deployment-aad.md)
 
 No espaço de trabalho de hoje, muitas vezes não é suficiente saber o que está acontecendo em seu ambiente de nuvem após o fato. Você deseja interromper violações e vazamentos em tempo real antes que os funcionários intencional ou inadvertidamente coloquem seus dados e sua organização em risco. É importante permitir que os usuários em sua organização aproveitem ao máximo os serviços e as ferramentas disponíveis a eles em aplicativos de nuvem e que eles tragam os próprios dispositivos para o trabalho. Ao mesmo tempo, são necessárias ferramentas para ajudar a proteger sua organização contra vazamentos de dados e roubo de dados, em tempo real. Juntamente com o Azure Active Directory, o Microsoft Cloud App Security oferece esses recursos em uma experiência holística e integrada com o Controle de Aplicativo de Acesso Condicional.
 
@@ -78,7 +75,7 @@ Para configurar uma política para aproveitar o gerenciamento de dispositivos po
 1. Carregue um ou mais certificados raiz ou intermediários.
 1. Depois que o certificado for carregado, você poderá criar [políticas de acesso](access-policy-aad.md) e políticas de [sessão](session-policy-aad.md) com base na **marca do dispositivo** e no **certificado de cliente válido**.
 
-    ![ID do dispositivo do Controle de Aplicativos de Acesso Condicional](./media/caac-device-id.png)
+    ![ID do dispositivo do Controle de Aplicativos de Acesso Condicional](media/caac-device-id.png)
 
 > [!NOTE]
 > Um certificado será solicitado de um usuário apenas se a sessão corresponder a uma política que use o filtro de certificado do cliente válido.
@@ -148,7 +145,7 @@ O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicat
 - Power BI
 - Salesforce
 - ServiceNow
-- SharePonot Onlnoe
+- SharePoint online
 - Slack
 - Tableau
 - Microsoft Teams (versão prévia)
@@ -164,18 +161,18 @@ Veja a seguir uma lista de aplicativos em destaque com suporte no Office 365 Clo
 - Exchange Online
 - OneDrive for Business
 - Power BI
-- SharePonot Onlnoe
+- SharePoint online
 - Microsoft Teams (versão prévia)
 - Yammer (versão prévia)
 
 Se você estiver interessado em um aplicativo específico em destaque, [envie-nos detalhes sobre o aplicativo](mailto:casfeedback@microsoft.com). Envie o caso de uso em que você está interessado para integrá-lo.
 
-> [!div class="step-by-step"]
-> [PRÓXIMO: Implantar o Controle de Aplicativo de Acesso Condicional »](proxy-deployment-aad.md)
-
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Implantar o controle de aplicativo de acesso condicional para aplicativos do Azure AD](proxy-deployment-aad.md)
+> [Implantar Controle de Aplicativos de Acesso Condicional para aplicativos em destaque](proxy-deployment-aad.md)
+
+> [!div class="nextstepaction"]
+> [Implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

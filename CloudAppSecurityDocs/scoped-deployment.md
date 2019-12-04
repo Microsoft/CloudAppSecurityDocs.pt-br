@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9075aeedfb21f074bcbde1e9bf5ea136bb5d948
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 433488b7302d3f66255bb1bfa04b630d8dbb1b7d
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460431"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721047"
 ---
 # Implantação com escopo <a name="scoped-deployment"></a> 
 
@@ -33,22 +33,22 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
 
 - Para definir o escopo de sua implantação, primeiro [importe grupos de usuários](user-groups.md) no Microsoft Cloud App Security. Por padrão, você verá os seguintes grupos:
 
-    - Grupo de usuários de **aplicativo** – um grupo integrado que lhe permite ver as atividades executadas pelos aplicativos do Office 365 e do Azure AD.
+  - Grupo de usuários de **aplicativo** – um grupo integrado que lhe permite ver as atividades executadas pelos aplicativos do Office 365 e do Azure AD.
 
-    - Grupo de **usuários externos** – todos os usuários que não são membros de qualquer um dos domínios gerenciados que você configurou para sua organização.
+  - Grupo de **usuários externos** – todos os usuários que não são membros de qualquer um dos domínios gerenciados que você configurou para sua organização.
 
 - A definição de uma regra de inclusão excluirá automaticamente todos os grupos que não estejam dentro do grupo incluído. Por exemplo, se você definir uma regra para incluir todos os membros dos grupos de escritórios dos EUA, os grupos que não forem desse grupo não serão monitorados.
 
 - Grupos de usuários excluídos substituem os grupos de usuários incluídos. Isso significa que se você incluir o grupo de usuários "Funcionários do Reino Unido", mas excluir "Marketing", os membros de marketing do Reino Unido não serão monitorados, mesmo se forem membros do grupo **Funcionários do Reino Unido**.
 
-1. Na barra de menus, clique na engrenagem de configurações e selecione **Implantação com escopo**.  
+1. Na barra de menus, clique na engrenagem de configurações e selecione **Implantação com escopo**.
 
-    ![ícone de configurações](./media/settings-icon.png "ícone de configurações")
+    ![ícone de configurações](media/settings-icon.png "ícone de configurações")
 
 2. Para definir o escopo de sua implantação a fim de incluir ou excluir grupos específicos, primeiro [importe grupos de usuários](user-groups.md) no Microsoft Cloud App Security.
 
 3. Para definir grupos específicos para monitoramento do Microsoft Cloud App Security, na guia **Incluir**, clique no ícone de sinal de adição.
-    ![ícone](./media/plus-icon.png)
+    ![ícone](media/plus-icon.png)
 
 4. Na caixa de diálogo **Criar nova regra de inclusão**, realize as seguintes etapas:
 
@@ -56,11 +56,11 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
     2. Em **Selecionar grupos de usuários**, selecione todos os grupos que você quer monitorar com o Cloud App Security.
     3. Selecione se você quer aplicar esta regra a todos os aplicativos conectados ou apenas a **aplicativos específicos**. Se você selecionar **aplicativos específicos**, a regra afetará apenas o monitoramento dos aplicativos que você selecionar. Por exemplo, se você selecionar **Usuários da equipe da interface do usuário** e **Caixa**, o Cloud App Security monitorará apenas a atividade Caixa para usuários no grupo de usuários da equipe da interface do usuário e para todos os outros aplicativos, o Cloud App Security monitorará todas as atividades de todos os usuários.
 
-        ![regra de inclusão](./media/include-rule.png)
+        ![regra de inclusão](media/include-rule.png)
 
 5. Para definir a exclusão de grupos específicos do monitoramento, na guia **Excluir**, clique no ícone do sinal de adição.
 
-   ![ícone](./media/plus-icon.png)
+   ![ícone](media/plus-icon.png)
 
 6. Na caixa de diálogo **Criar nova regra de Exclusão**, defina os seguintes parâmetros:
 
@@ -68,7 +68,7 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
     Em **Selecionar grupos de usuários**, selecione todos os grupos que você não quer que o Cloud App Security monitore.
     2. Selecione se você quer aplicar esta regra a todos os aplicativos conectados ou apenas a **aplicativos específicos**. Se você selecionar **Aplicativos específicos**, o Cloud App Security deixará de monitorar o grupo selecionado apenas para os aplicativos selecionados. Isso significa que, se você selecionar os **usuários** e **Active Directory**da equipe de interface de usuário do grupo, Cloud app Security monitorará toda a atividade do usuário, exceto as atividades de Active Directory que são executadas por usuários da equipe da interface do usuário.
 
-       ![regra de exclusão](./media/exclude-rule.png)
+       ![regra de exclusão](media/exclude-rule.png)
 
 ## <a name="example-results-for-include-and-exclude-rules"></a>Resultados de exemplo para incluir e excluir regras
 
@@ -85,9 +85,9 @@ As seguintes atividades de usuário são monitoradas:
 
 |User|Associação de grupo|Atividades monitoradas|
 |----|----|----|
-|Manuela|Alemanha todos os usuários<br>Vendas globais<br>Gerentes de vendas|Nenhum|
+|Manuela|Alemanha todos os usuários<br />Vendas globais<br />Gerentes de vendas|Não|
 |Davi|Vendas globais|Office 365 e todos os subaplicativos, exceto o Power BI|
-|Barros|Vendas globais<br>Gerentes de vendas|Office 365 e todos os subaplicativos|
+|Barros|Vendas globais<br />Gerentes de vendas|Office 365 e todos os subaplicativos|
 |Diogo|Gerentes de vendas|Apenas Power BI|
 
 > [!NOTE]
@@ -96,6 +96,7 @@ As seguintes atividades de usuário são monitoradas:
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

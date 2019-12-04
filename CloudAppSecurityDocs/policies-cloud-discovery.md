@@ -7,15 +7,14 @@ ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
-ms.assetid: 570da960-771d-484f-932d-b086f2ec2978
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1d8d7b5f9225728b4a9cb059b8a12b83dab8240d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 58208567133bf9c8257e456a415c60ab3dacee0b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460650"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719197"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
 
@@ -35,16 +34,16 @@ Configure o upload de log automático para relatórios Cloud Discovery contínuo
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de descoberta de aplicativo**
+1. Na página **políticas** , crie uma nova **política de descoberta de aplicativo**
 
-2.  No campo **modelo de política** , selecione **novo aplicativo de alto volume** ou **novo aplicativo popular** e aplique o modelo.
+2. No campo **modelo de política** , selecione **novo aplicativo de alto volume** ou **novo aplicativo popular** e aplique o modelo.
 
-3.  Personalize filtros de política para atender aos requisitos da sua organização.
+3. Personalize filtros de política para atender aos requisitos da sua organização.
 
-4.  Configure as ações a serem executadas quando um alerta for disparado.
+4. Configure as ações a serem executadas quando um alerta for disparado.
 
 > [!NOTE]
->  Um alerta é gerado uma vez para cada novo aplicativo que não foi descoberto nos últimos 90 dias.
+> Um alerta é gerado uma vez para cada novo aplicativo que não foi descoberto nos últimos 90 dias.
 
 ## <a name="detect-new-risky-or-non-compliant-app-use"></a>Detectar novo uso de aplicativo arriscado ou não compatível
 
@@ -56,21 +55,21 @@ Configure o upload de log automático para relatórios Cloud Discovery contínuo
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de descoberta de aplicativo.**
+1. Na página **políticas** , crie uma nova **política de descoberta de aplicativo.**
 
-2.  No campo **modelo de política** , selecione o **novo modelo de aplicativo arriscado** e aplique o modelo.
+2. No campo **modelo de política** , selecione o **novo modelo de aplicativo arriscado** e aplique o modelo.
 
-3.  Em **aplicativo que corresponde a todos os itens a seguir** , defina o controle deslizante de [Pontuação de risco](risk-score.md) e o fator de risco de conformidade para personalizá-lo é o nível de risco para o qual você deseja disparar um alerta e defina os outros filtros de política para atender aos requisitos de segurança de sua organização.
+3. Em **aplicativo que corresponde a todos os itens a seguir** , defina o controle deslizante de [Pontuação de risco](risk-score.md) e o fator de risco de conformidade para personalizá-lo é o nível de risco para o qual você deseja disparar um alerta e defina os outros filtros de política para atender aos requisitos de segurança de sua organização.
 
-    1.  Opcional: para obter detecções mais significativas, personalize a quantidade de tráfego que irá disparar um alerta.
+    1. Opcional: para obter detecções mais significativas, personalize a quantidade de tráfego que irá disparar um alerta.
 
-        1.  Marque a caixa de seleção **disparar uma correspondência de política se todos os itens a seguir ocorrerem no mesmo dia** .
+    2. Marque a caixa de seleção **disparar uma correspondência de política se todos os itens a seguir ocorrerem no mesmo dia** .
 
-        2.  Selecione o **tráfego diário** maior que 2000 GB (ou outro).
+    3. Selecione o **tráfego diário** maior que 2000 GB (ou outro).
 
-4.  Configure ações de governança a serem executadas quando um alerta for disparado. Em **governança**, selecione **aplicativo de marca como não aprovado.**<br>O acesso ao aplicativo será bloqueado automaticamente quando a política for correspondida.
+4. Configure ações de governança a serem executadas quando um alerta for disparado. Em **governança**, selecione **aplicativo de marca como não aprovado.**<br />O acesso ao aplicativo será bloqueado automaticamente quando a política for correspondida.
 
-5.  Opcional: Aproveite [Cloud app Security integrações nativas](set-up-cloud-discovery.md) com gateways Web seguros para bloquear o acesso ao aplicativo.
+5. Opcional: Aproveite [Cloud app Security integrações nativas](set-up-cloud-discovery.md) com gateways Web seguros para bloquear o acesso ao aplicativo.
 
 ## <a name="detect-use-of-unsanctioned-business-apps"></a>Detectar o uso de aplicativos de negócios não aprovados
 
@@ -78,19 +77,19 @@ Você pode detectar quando seus funcionários continuam a usar aplicativos não 
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
--   Configure o upload de log automático para relatórios Cloud Discovery contínuos, conforme descrito em [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
+- Configure o upload de log automático para relatórios Cloud Discovery contínuos, conforme descrito em [Configurar upload de log automático para relatórios contínuos](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Etapas
 
-1.  No catálogo de aplicativos de nuvem, pesquise seus aplicativos prontos para a empresa e marque-os com uma [marca de aplicativo personalizada](discovered-app-queries.md#creating-and-managing-custom-app-tags).
+1. No catálogo de aplicativos de nuvem, pesquise seus aplicativos prontos para a empresa e marque-os com uma [marca de aplicativo personalizada](discovered-app-queries.md#creating-and-managing-custom-app-tags).
 
-2.  Siga as etapas em [detectar novo uso de aplicativo grande ou de alto volume](#detect-volume).
+2. Siga as etapas em [detectar novo uso de aplicativo grande ou de alto volume](#detect-volume).
 
-3.  Adicione um filtro de **marca de aplicativo** e escolha as marcas de aplicativo que você criou para seus aplicativos prontos para os negócios.
+3. Adicione um filtro de **marca de aplicativo** e escolha as marcas de aplicativo que você criou para seus aplicativos prontos para os negócios.
 
-4.  Configure ações de governança a serem executadas quando um alerta for disparado. Em governança, selecione **aplicativo de marca como não aprovado**.<br>O acesso ao aplicativo será bloqueado automaticamente quando a política for correspondida.
+4. Configure ações de governança a serem executadas quando um alerta for disparado. Em governança, selecione **aplicativo de marca como não aprovado**.<br />O acesso ao aplicativo será bloqueado automaticamente quando a política for correspondida.
 
-5.  Opcional: Aproveite [Cloud app Security integrações nativas](set-up-cloud-discovery.md) com gateways Web seguros para bloquear o acesso ao aplicativo.
+5. Opcional: Aproveite [Cloud app Security integrações nativas](set-up-cloud-discovery.md) com gateways Web seguros para bloquear o acesso ao aplicativo.
 
 ## <a name="detect-unusual-usage-patterns-on-your-network"></a>Detectar padrões de uso incomuns em sua rede
 
@@ -102,18 +101,18 @@ Configure o upload de log automático para relatórios Cloud Discovery contínuo
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de detecção de anomalias Cloud Discovery**.
+1. Na página **políticas** , crie uma nova **política de detecção de anomalias Cloud Discovery**.
 
-2.  No campo **modelo de política** , selecione **comportamento anormal em usuários descobertos** ou **comportamento anormal em endereços IP descobertos**.
+2. No campo **modelo de política** , selecione **comportamento anormal em usuários descobertos** ou **comportamento anormal em endereços IP descobertos**.
 
-3.  Personalize os filtros para atender aos requisitos da sua organização.
+3. Personalize os filtros para atender aos requisitos da sua organização.
 
 4. Se você quiser ser alertado somente quando houver anomalias envolvendo aplicativos arriscados, use os filtros de **Pontuação de risco** e defina o intervalo no qual os aplicativos são considerados arriscados.
 
-4.  Use o controle deslizante para **selecionar a sensibilidade de detecção de anomalias**.
+5. Use o controle deslizante para **selecionar a sensibilidade de detecção de anomalias**.
 
 > [!NOTE]
->  Após o carregamento de log contínuo ser estabelecido, o mecanismo de detecção de anomalias leva alguns dias até que uma linha de base (período de aprendizagem) seja estabelecida para o comportamento esperado em sua organização. Depois que uma linha de base é estabelecida, você começa a receber alertas com base em discrepâncias do comportamento de tráfego esperado entre aplicativos de nuvem feitos por usuários ou de endereços IP.
+> Após o carregamento de log contínuo ser estabelecido, o mecanismo de detecção de anomalias leva alguns dias até que uma linha de base (período de aprendizagem) seja estabelecida para o comportamento esperado em sua organização. Depois que uma linha de base é estabelecida, você começa a receber alertas com base em discrepâncias do comportamento de tráfego esperado entre aplicativos de nuvem feitos por usuários ou de endereços IP.
 
 ## <a name="detect-data-exfiltration-to-unsanctioned-storage-apps"></a>Detectar dados vazamento a aplicativos de armazenamento não aprovados
 
@@ -125,13 +124,13 @@ Configure o upload de log automático para relatórios Cloud Discovery contínuo
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , edite os dados de política internos **vazamento para aplicativos não aprovados**.
+1. Na página **políticas** , edite os dados de política internos **vazamento para aplicativos não aprovados**.
 
-2.  Selecione a **categoria filtrar aplicativo** é igual ao **armazenamento em nuvem**.
+2. Selecione a **categoria filtrar aplicativo** é igual ao **armazenamento em nuvem**.
 
-3.  Marque a caixa de seleção para **criar um alerta para cada evento de correspondência com a severidade da política**.
+3. Marque a caixa de seleção para **criar um alerta para cada evento de correspondência com a severidade da política**.
 
-4.  Configure as ações a serem tomadas quando um alerta for disparado.
+4. Configure as ações a serem tomadas quando um alerta for disparado.
 
 ## <a name="detect-risky-oauth-apps"></a>Detectar aplicativos OAuth arriscados
 
@@ -143,23 +142,22 @@ Você deve ter o G Suite, o Office 365 ou o aplicativo Salesforce conectado usan
 
 ### <a name="steps"></a>Etapas
 
-1.  Na página **políticas** , crie uma nova **política de aplicativo OAuth**.
+1. Na página **políticas** , crie uma nova **política de aplicativo OAuth**.
 
-2.  Selecione o **aplicativo** de filtro e defina o aplicativo que a política deve abranger, G Suite, Office 365 ou Salesforce.
+2. Selecione o **aplicativo** de filtro e defina o aplicativo que a política deve abranger, G Suite, Office 365 ou Salesforce.
 
-3.  Selecione filtro de **nível de permissão** é igual a **alto** (disponível para o G Suite e O365).
+3. Selecione filtro de **nível de permissão** é igual a **alto** (disponível para o G Suite e O365).
 
-4.  Adicionar o filtro **uso da Comunidade** é igual a **raro**.
+4. Adicionar o filtro **uso da Comunidade** é igual a **raro**.
 
-4.  Configure as ações a serem tomadas quando um alerta for disparado. Por exemplo, para o Office 365, marque **revogar aplicativo** para aplicativos OAuth detectados pela política.
+5. Configure as ações a serem tomadas quando um alerta for disparado. Por exemplo, para o Office 365, marque **revogar aplicativo** para aplicativos OAuth detectados pela política.
 
 > [!NOTE]
->  Com suporte para o G Suite, o Office 365 e as lojas de aplicativos do Salesforce.
+> Com suporte para o G Suite, o Office 365 e as lojas de aplicativos do Salesforce.
 
-## <a name="next-steps"></a>Próximas etapas 
+## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
