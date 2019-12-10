@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bd4788bfa165a709c22d388dc521e65b6fd405e1
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 36fd0d90c81d9038aae5d97cc5ba1cbfd193f04d
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459778"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720883"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: Proteger arquivos com quarentena do administrador
 
@@ -31,44 +30,46 @@ ms.locfileid: "74459778"
 Este tutorial ajuda você a usar o Microsoft Cloud App Security para detectar arquivos indesejados armazenados na nuvem que o deixam vulnerável e a executar uma ação imediata para interrompê-los enquanto agem e bloquear os arquivos que representam uma ameaça usando a **Quarentena do administrador** para proteger os arquivos na nuvem, corrigir problemas e impedir vazamentos futuros.
 
 > [!div class="checklist"]
-> * Entender como funciona a quarentena 
+>
+> * Entender como funciona a quarentena
 > * Configurar a quarentena do administrador
 
 ## <a name="understand-how-quarantine-works"></a>Entender como funciona a quarentena
 
 >[!NOTE]
-> - Para obter uma lista de aplicativos que dão suporte à quarentena do administrador, consulte a lista de [ações de governança](governance-actions.md).
-> - Se um arquivo no SharePoint ou OneDrive for detectado como sendo malware, ele não será posto em quarentena no portal do Cloud App Security.
+>
+> * Para obter uma lista de aplicativos que dão suporte à quarentena do administrador, consulte a lista de [ações de governança](governance-actions.md).
+> * Se um arquivo no SharePoint ou OneDrive for detectado como sendo malware, ele não será posto em quarentena no portal do Cloud App Security.
 
 1. Quando um arquivo corresponde a uma política, a opção **Quarentena do administrador** estará disponível para o arquivo.
 
 2. Execute uma das seguintes ações para colocar o arquivo em quarentena:
 
-   - Aplique manualmente a ação **quarentena do administrador**:
+    * Aplique manualmente a ação **quarentena do administrador**:
 
-     ![ação de quarentena](./media/quarantine-action.png)
+    ![ação de quarentena](media/quarantine-action.png)
 
-   - Defina-o como uma ação de quarentena automatizada na política:
+    * Defina-o como uma ação de quarentena automatizada na política:
 
-     ![colocar em quarentena automaticamente](./media/quarantine-automated.png)
+    ![colocar em quarentena automaticamente](media/quarantine-automated.png)
 
 3. Quando a **Quarentena do administrador** é aplicada, as seguintes ações ocorrem em segundo plano:
 
-   1. O arquivo original é movido para a pasta de quarentena de administrador que você definir.
-   2. O arquivo original é excluído.
-   3. Um arquivo de marca de exclusão é carregado para o local do arquivo original.
+    1. O arquivo original é movido para a pasta de quarentena de administrador que você definir.
+    2. O arquivo original é excluído.
+    3. Um arquivo de marca de exclusão é carregado para o local do arquivo original.
 
-      ![marca de exclusão de quarentena](./media/quarantine-tombstone.png)
+    ![marca de exclusão de quarentena](media/quarantine-tombstone.png)
 
-   4. O usuário só pode acessar o arquivo de marca de exclusão. No arquivo, ele pode ler as diretrizes personalizadas fornecidas pela TI e a ID de correlação a ser fornecida à IT para liberar o arquivo.
+    4. O usuário só pode acessar o arquivo de marca de exclusão. No arquivo, ele pode ler as diretrizes personalizadas fornecidas pela TI e a ID de correlação a ser fornecida à IT para liberar o arquivo.
 
 4. Quando você receber o alerta que um arquivo tiver sido colocado em quarentena, investigue o arquivo na página de **Alertas** do Cloud App Security:
 
-   ![alertas de quarentena](./media/quarantine-alerts.png)
+    ![alertas de quarentena](media/quarantine-alerts.png)
 
 5. Também no **Relatório de política** na guia **Em quarentena**:
 
-   ![relatório de quarentena](./media/quarantine-report.png)
+    ![relatório de quarentena](media/quarantine-report.png)
 
 6. Depois que um arquivo foi colocado em quarentena, use o processo a seguir para corrigir a situação de ameaça:
 
@@ -77,15 +78,16 @@ Este tutorial ajuda você a usar o Microsoft Cloud App Security para detectar ar
     3. Se você achar que o arquivo está violando a política corporativa, execute o processo de RI (Resposta a Incidentes) da organização.
     4. Se você achar que o arquivo é inofensivo, poderá restaurar o arquivo da quarentena. Nesse momento, o arquivo original é liberado, ou seja, ele é copiado para a localização original, a marca de exclusão é excluída e o usuário pode acessar o arquivo.
 
-       ![restauração da quarentena](./media/quarantine-restore.png)
+      ![restauração da quarentena](media/quarantine-restore.png)
 
 7. Valide se a política é executada corretamente. Em seguida, você poderá usar as ações de governança automáticas na política para impedir outras perdas e aplicar automaticamente uma Quarentena do administrador quando a política for correspondida.
 
 > [!NOTE]
 > Quando você restaurar um arquivo:
-> - Compartilhamentos originais não são restaurados, a herança da pasta padrão é aplicada.
-> - O arquivo restaurado contém apenas a versão mais recente.
-> - O gerenciamento de acesso de site de pasta de quarentena é responsabilidade do cliente.
+>
+> * Compartilhamentos originais não são restaurados, a herança da pasta padrão é aplicada.
+> * O arquivo restaurado contém apenas a versão mais recente.
+> * O gerenciamento de acesso de site de pasta de quarentena é responsabilidade do cliente.
 
 ## <a name="set-up-admin-quarantine"></a>Configurar a quarentena do administrador
 
@@ -96,14 +98,16 @@ Este tutorial ajuda você a usar o Microsoft Cloud App Security para detectar ar
     - Uma política ICAP de terceiros, como uma política que procura o Vontu
 
 2. Defina um local de quarentena:
-   1. Para o Office 365 SharePoint ou o OneDrive for Business, você não pode colocar arquivos na quarentena do administrador como parte de uma política enquanto não configurá-la: ![configurações de quarentena](./media/quarantine-warning.png)
+   1. Para o Office 365 SharePoint ou o OneDrive for Business, você não pode colocar arquivos na quarentena do administrador como parte de uma política enquanto não configurá-la: ![configurações de quarentena](media/quarantine-warning.png)
 
       Para definir configurações de quarentena, na engrenagem de configurações, acesse **Configurações**. Forneça uma localização para os arquivos em quarentena e uma notificação de usuário que o usuário receberá quando seu arquivo for colocado em quarentena.
-      ![configurações de quarentena](./media/quarantine-settings.png)
+      ![configurações de quarentena](media/quarantine-settings.png)
 
    2. Para o Box, a mensagem do usuário e a localização da pasta de quarentena não podem ser personalizadas. A localização da pasta é a unidade do administrador que conectou o Box ao Cloud App Security e a mensagem do usuário é: Este arquivo foi colocado em quarentena na unidade do administrador, pois pode violar as políticas de segurança e conformidade de sua empresa. Entre em contato com seu administrador de TI para obter ajuda.
 
-## <a name="next-steps"></a>Próximas etapas 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+## <a name="next-steps"></a>Próximas etapas
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

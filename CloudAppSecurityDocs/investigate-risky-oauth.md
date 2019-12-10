@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e27aa1efc0abfa5af6d7005015062b7d8c43dcac
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 45d89b489fe017e0bc3f71c7785a4007b1a447e4
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460701"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720628"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>Tutorial: Investigar aplicativos de OAuth arriscados
 
@@ -29,13 +29,13 @@ O OAuth é um padrão aberto para autenticação e autorização baseada em toke
 
 Por exemplo, um aplicativo que analisa o calendário do usuário e fornece conselhos sobre produtividade precisa acessar o calendário do usuário. Em vez de fornecer as credenciais do usuário, o OAuth permite que o aplicativo obtenha acesso aos dados somente com base em um token gerado quando o usuário fornece consentimento para uma página, o que pode ser visto na imagem abaixo.
 
- ![Permissão do aplicativo OAuth](./media/oauth-permission.png)
+![Permissão do aplicativo OAuth](media/oauth-permission.png)
 
 Muitos aplicativos de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem. Quando os usuários instalam esses aplicativos, eles geralmente clicam em **aceitar** sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo. Aceitar permissões de aplicativo de terceiros é um risco potencial para a segurança da sua organização.
 
 Por exemplo, a seguinte página de consentimento do aplicativo OAuth pode parecer legítima para o usuário médio, no entanto, o "Gerenciador de APIs do Google" não precisa solicitar permissões para o Google em si. Portanto, isso indica que o aplicativo pode ser uma tentativa de phishing sem relação alguma com o Google.
 
-![Phishing OAuth](./media/oauth-phishing.png)
+![Phishing OAuth](media/oauth-phishing.png)
 
 Como administrador de segurança, você precisa de visibilidade e controle sobre os aplicativos em seu ambiente, o que inclui as permissões que eles têm. Você precisa ter a capacidade de evitar o uso de aplicativos que exijam permissões para recursos que você deseja revogar. Portanto, o Microsoft Cloud App Security fornece a capacidade de investigar e monitorar as permissões de aplicativos que seus usuários concederam. Esse artigo destina-se a ajudar você a investigar os aplicativos de OAuth em sua organização, e se concentrar nos aplicativos com maior probabilidade de levantar suspeitas.
 
@@ -59,7 +59,7 @@ Você pode definir políticas para enviar automaticamente notificações quando 
     - Defina o filtro **Nível de permissão** em gravidade alta e **Uso da comunidade** em não é comum. Usando esse filtro, você pode se concentrar em aplicativos que são potencialmente muito arriscados e que talvez os usuários tenham subestimado o risco.
     - Em **Permissões**, selecione todas as opções que sejam particularmente arriscadas em um contexto específico. Por exemplo, você pode selecionar todos os filtros que fornecem permissão de acesso ao email, como **Acesso completo a todas as caixas de correio** e, em seguida, examinar a lista de aplicativos para se certificar de que todos eles realmente precisam de acesso relacionado à caixa de correio. Isso pode ajudá-lo a investigar em um contexto específico e encontrar aplicativos que parecem legítimos, mas com permissões desnecessárias. É provável que esses aplicativos sejam mais arriscados.
 
-            ![OAuth phishing](./media/oauth-filters.png)
+        ![Phishing OAuth](media/oauth-filters.png)
 
     - Selecione a consulta salva em **Aplicativos autorizados por usuários externos**. Ao usar esse filtro, você poderá encontrar aplicativos que talvez não estejam alinhados com os padrões de segurança da sua empresa.
 1. Depois de analisar seus aplicativos, você poderá se concentrar nos aplicativos nas consultas que parecem legítimos, mas que na verdade podem oferecer riscos. Use os filtros para encontrá-los:
@@ -68,7 +68,7 @@ Você pode definir políticas para enviar automaticamente notificações quando 
 1. Clique em cada aplicativo para abrir a gaveta de aplicativos e verifique se o aplicativo tem um nome, editor ou site suspeitos.
 1. Examine a lista de aplicativos e aplicativos de destino cuja data em **Última autorização** não seja recente. Pode ser que esses aplicativos não sejam mais necessários.
 
-    ![Gaveta de aplicativo OAuth](./media/oauth-drawer.png)
+    ![Gaveta de aplicativo OAuth](media/oauth-drawer.png)
 
 ## <a name="how-to-investigate"></a>Como investigar
 
@@ -98,6 +98,7 @@ Depois de determinar que um aplicativo OAuth é arriscado, o Cloud App Security 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

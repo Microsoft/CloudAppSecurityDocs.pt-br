@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 132e4860a1f69f23d92001b2390aa46b3fed2b05
-ms.sourcegitcommit: 71ce3747f3f29dd8133457e4b9efbe0f8734309d
+ms.openlocfilehash: 783e959fdda7b8e3b66171f20034985f9f993513
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74461788"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720844"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar a TI sombra na sua rede
 
@@ -40,7 +40,7 @@ Este tutorial fornece instruções de como usar o Cloud Discovery para descobrir
 
 Use esse processo para distribuir o Cloud Discovery de TI sombra na sua organização.
 
-![ciclo de vida da TI sombra](./media/shadow-it-lifecycle.png)
+![ciclo de vida da TI sombra](media/shadow-it-lifecycle.png)
 
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>Fase 1: Descobrir e identificar a TI sombra
 
@@ -102,6 +102,7 @@ A natureza dos aplicativos de nuvem significa que eles são atualizados diariame
 
 ## <a name="see-also"></a>Consulte Também
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

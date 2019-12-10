@@ -11,12 +11,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f79fea252ed16a603b75ea20e5641b3be2f963f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460876"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720674"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: Começar a usar o Microsoft Cloud App Security
 
@@ -33,7 +33,7 @@ Sua organização deve ter uma licença para usar o Cloud App Security. Para obt
 
 - Sua organização deve ter uma licença para usar o Cloud App Security. Para obter detalhes do preço, consulte a [folha de dados de licenciamento do Cloud App Security](https://aka.ms/mcaslicensing).
 
-     Para obter suporte para a ativação de locatário, consulte [Contatar o suporte comercial do Office 365 ‑ Ajuda para Administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+    Para obter suporte para a ativação de locatário, consulte [Contatar o suporte comercial do Office 365 ‑ Ajuda para Administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 - Depois de obter uma licença do Cloud App Security, você receberá um email com informações de ativação e um link para o portal do Cloud App Security.
 
 - Para configurar o Cloud App Security, você deve ser um Administrador Global ou um Administrador de Segurança no Azure Active Directory ou Office 365. É importante entender que um usuário que recebe uma função administrativa terá as mesmas permissões em todos os aplicativos na nuvem assinados por sua organização. Isso ocorrerá independentemente de você atribuir a função no Centro de administração do Microsoft 365, no portal clássico do Azure ou usando o módulo do Azure AD para o [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Para obter mais informações, consulte [Atribuir funções de administrador no Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) e [Atribuindo funções de administrador no Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
@@ -87,10 +87,10 @@ Tarefa necessária: Habilitar o Cloud App Security para exibir o uso do aplicati
 1. Se você usar o [Zscaler, integre-o](zscaler-integration.md) ao Cloud App Security.
 1. Para ter a cobertura completa, crie um relatório contínuo do Cloud Discovery
 
-   1. No ícone de engrenagem, selecione **Configurações do Cloud Discovery**.
-   1. Escolha **Upload automático de log**.
-   1. Na guia **Fontes de dados**, adicione suas fontes.
-   1. Na guia **Coletores de logs**, configure o coletor de logs.
+    1. No ícone de engrenagem, selecione **Configurações do Cloud Discovery**.
+    1. Escolha **Upload automático de log**.
+    1. Na guia **Fontes de dados**, adicione suas fontes.
+    1. Na guia **Coletores de logs**, configure o coletor de logs.
 
 ### <a name="to-create-a-snapshot-cloud-discovery-report"></a>Criar um relatório de instantâneos do Cloud Discovery
 
@@ -143,7 +143,7 @@ Tarefa recomendada: Definir configurações importantes
 1. Insira os **detalhes**, o **local**, as **marcas** e a **categoria** do intervalo de IP.
 1. Escolha **Criar**.
 
-   Agora, você pode usar marcas de IP ao criar políticas e ao filtrar e criar relatórios contínuos.
+    Agora, você pode usar marcas de IP ao criar políticas e ao filtrar e criar relatórios contínuos.
 
 ### <a name="to-create-continuous-reports"></a>Para criar relatórios contínuos
 
@@ -166,6 +166,7 @@ Essas configurações ajudam a oferecer um melhor controle dos recursos no conso
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Configurar políticas [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
+> [!div class="nextstepaction"]
+> [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].
