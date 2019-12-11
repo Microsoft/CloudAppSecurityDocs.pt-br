@@ -6,12 +6,12 @@ ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
-ms.openlocfilehash: df591023c15990ec4c00060c34a9d5671b5da3b1
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084942"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720533"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Estender a governança para correção de ponto de extremidade
 
@@ -22,6 +22,7 @@ Por exemplo, ao detectar uma possível ameaça de malware, é possível usar flu
 Neste tutorial, você aprenderá a configurar uma ação de governança de política para usar um fluxo de trabalho para executar uma verificação antivírus em um ponto de extremidade em que um usuário mostra sinais de comportamento suspeito.
 
 > [!div class="checklist"]
+>
 > * 1: [Gerar um token de API do Cloud App Security](#generate-token)
 > * 2: [Criar um fluxo para executar um exame antivírus](#create-flow)
 > * 3: [Configurar o fluxo](#configure-flow)
@@ -43,7 +44,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 > [!NOTE]
 > Se você tiver criado anteriormente um fluxo de trabalho usando um conector do Cloud App Security, o Microsoft Flow reutilizará automaticamente o token e você poderá ignorar esta etapa.
 
-1. Na barra de menus do Cloud App Security, clique na engrenagem de configurações ![ícone de configurações](./media/settings-icon.png "settings icon") e selecione **Extensões de segurança**.
+1. Na barra de menus do Cloud App Security, clique na engrenagem de configurações ![ícone de configurações](media/settings-icon.png "ícone de configurações") e selecione **Extensões de segurança**.
 
 1. Na página **Extensões de segurança**, clique no botão de adição para gerar um novo token de API.
 1. Na janela pop-up **Gerar novo token**, insira o nome do token (por exemplo, "Flow-Token") e, em seguida, clique em **Gerar**.
@@ -59,6 +60,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 > Se você tiver criado anteriormente um fluxo usando um conector do Defender ATP, o Flow reutilizará automaticamente o conector e você poderá ignorar a etapa **Entrar**.
 
 1. Vá para o [portal do Microsoft Flow](https://flow.microsoft.com/) e selecione Modelos.
+
     ![Captura de tela da página principal do Microsoft Flow mostrando a seleção de modelos.](media/tutorial-flow-templates.png)
 
 1. Pesquise "Cloud App Security" e selecione **Executar exame antivírus usando o Windows Defender em um alerta do Cloud App Security**.
@@ -113,4 +115,4 @@ Agora, cada alerta gerado para essa política iniciará o fluxo para executar a 
 ## <a name="see-also"></a>Consulte Também
 
 > [!div class="nextstepaction"]
-[Integrar-se ao Microsoft Flow para automação de alertas personalizada](flow-integration.md)
+> [Integrar-se ao Microsoft Flow para automação de alertas personalizada](flow-integration.md)

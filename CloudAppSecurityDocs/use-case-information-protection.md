@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 69c025162539ec43742732455a90f96cd3149cc8
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 77face48858ae577c4eb2aa4fd85f7fc39c81377
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459676"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720788"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
 
@@ -31,9 +30,9 @@ Em um mundo perfeito, todos os seus funcionários entendem a importância da pro
 Este tutorial ajuda você a identificar quais permissões públicas são definidas em um documento que é salvo no seu armazenamento em nuvem, para que você seja alertado quando ocorrer uma violação. Além disso, você pode aplicar automaticamente o rótulo de classificação **Confidencial** da Proteção de Informações do Azure para fornecer uma criptografia adicional aos arquivos.
 
 > [!div class="checklist"]
-> * Configurar a proteção de dados 
+>
+> * Configurar a proteção de dados
 > * Validar sua política
-
 
 ## <a name="enhanced-data-level-encryption-protection"></a>Proteção de criptografia de nível de dados avançada
 
@@ -51,8 +50,8 @@ Use o Cloud App Security com a Proteção de Informações do Azure para inserir
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- [Habilitar o Cloud App Security e a Proteção de Informações do Azure](azip-integration.md) no locatário.
-- [Conectar o Box](connect-box-to-microsoft-cloud-app-security.md) ao Cloud App Security.
+* [Habilitar o Cloud App Security e a Proteção de Informações do Azure](azip-integration.md) no locatário.
+* [Conectar o Box](connect-box-to-microsoft-cloud-app-security.md) ao Cloud App Security.
 
 ## <a name="set-up-data-protection"></a>Configurar a proteção de dados
 
@@ -60,14 +59,14 @@ Vamos configurar uma política que procura números de cartão de crédito em ar
 
 1. Comece a proteger os dados armazenados no Box configurando uma política que criptografará todos os dados confidenciais armazenados no Box:
 
-    1. Na guia **Controle**, clique em [**Políticas**](control-cloud-apps-with-policies.md). 
+    1. Na guia **Controle**, clique em [**Políticas**](control-cloud-apps-with-policies.md).
 
     2. Clique em **Criar política** e selecione **Política de arquivo**.
 
     3. Chame a política de *Proteção de dados do Box*.
 
     4. Em **Criar um filtro para os arquivos em que esta política atuará**, defina seus dados confidenciais e proprietários como destino.
-        - Por exemplo, selecione **Pasta pai** igual a **Dados do cliente** no Box e selecione **Proprietário** igual à equipe de finanças.
+        * Por exemplo, selecione **Pasta pai** igual a **Dados do cliente** no Box e selecione **Proprietário** igual à equipe de finanças.
 
     5. Nessa pasta, procure arquivos que contenham informações de cartão de crédito. Em **Método de inspeção de conteúdo**, selecione **DLP interno**, selecione **Incluir arquivos que correspondam a uma expressão predefinida** e selecione **Todos os países: Finanças: Número de cartão de crédito**.
 
@@ -75,9 +74,9 @@ Vamos configurar uma política que procura números de cartão de crédito em ar
 
     7. Como o [Cloud App Security está integrado com a Proteção de Informações do Azure](azip-integration.md), você pode selecionar da lista existente de rótulos de classificação a ser usada para proteger os dados.
 
-    8. Clique em **Criar**. 
+    8. Clique em **Criar**.
 
-   ![Adicionar rótulo de classificação à política](./media/aip-auto-policy.png)
+   ![Adicionar rótulo de classificação à política](media/aip-auto-policy.png)
 
 2. Investigar suas correspondências
 
@@ -88,18 +87,17 @@ Vamos configurar uma política que procura números de cartão de crédito em ar
 ## <a name="validate-your-policy"></a>Validar sua política
 
 1. Para simular um alerta, acesse sua conta do Box e tente acessar um arquivo da pasta **Dados do cliente**.
-2. Vá para o relatório de políticas. Uma correspondência de política do arquivo deve aparecer em breve. 
+2. Vá para o relatório de políticas. Uma correspondência de política do arquivo deve aparecer em breve.
 3. Você pode clicar na correspondência para ver quais arquivos foram protegidos. A correspondência em si será mascarada para proteger os dados confidenciais.
 
 >[!NOTE]
 >
-> - O Cloud App Security atualmente dá suporte à aplicação automática de rótulos da Proteção de Informações do Azure no Box, no GSuite, no SharePoint e no OneDrive for Business.
-> - Quando um documento é rotulado usando o Cloud App Security, as marcações visuais não são aplicadas imediatamente, e sim quando esse documento é aberto em um aplicativo do Office e é salvo pela primeira vez. Para obter mais informações, consulte [How to configure a label for visual markings for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied) (Como configurar um rótulo para marcações visuais na Proteção de Informações do Azure).
+> \* – O Cloud App Security atualmente dá suporte à aplicação automática de rótulos da Proteção de Informações do Azure no Box, no GSuite, no SharePoint e no OneDrive for Business.
+> \* – Quando um documento é rotulado usando o Cloud App Security, as marcações visuais não são aplicadas imediatamente, e sim quando esse documento é aberto em um aplicativo do Office e é salvo pela primeira vez. Para obter mais informações, consulte [How to configure a label for visual markings for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied) (Como configurar um rótulo para marcações visuais na Proteção de Informações do Azure).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
