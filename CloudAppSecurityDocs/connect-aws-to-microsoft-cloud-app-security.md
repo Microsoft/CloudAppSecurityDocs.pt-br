@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 89a14c0fa629a0affd9fde58b1faf4c3716de143
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74719549"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar o AWS ao Microsoft Cloud App Security
@@ -148,7 +148,7 @@ Como você pode adicionar uma ou ambas as conexões, as etapas neste artigo são
 
 ## <a name="how-to-connect-aws-security-configuration-to-cloud-app-security"></a>Como conectar a configuração de segurança do AWS ao Cloud App Security
 
-Siga o [How to Connect AWS Security Auditing](#how-to-connect-aws-security-auditing-to-cloud-app-security) Steps to Get to the [Permissions](#set-permissions) Page.
+Siga o [How to Connect AWS Security Auditing](#how-to-connect-aws-security-auditing-to-cloud-app-security) Steps to Get to The [Permissions](#set-permissions)   Page.
 
 1. Na página permissões, clique em **anexar políticas existentes diretamente**, aplique as políticas **AWSSecurityHubReadOnlyAccess** e **SecurityAudit** e clique em **próximas marcas**.
 

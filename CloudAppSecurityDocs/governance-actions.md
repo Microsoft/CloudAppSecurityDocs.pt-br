@@ -18,7 +18,7 @@ ms.openlocfilehash: 5ae82c1acddf3bbf1ee711a108234d6b69cd8ee4
 ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74733704"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
@@ -73,7 +73,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
   - **Herdar permissões do pai** – essa ação de governança permite remover o conjunto de permissões específicas para um arquivo ou uma pasta no Office 365. Em seguida, reverta para as permissões definidas para a pasta pai.
 
-  - **Lixeira** – mova o arquivo para a pasta da lixeira. (Caixa, Dropbox, Google Drive, OneDrive, SharePoint)
+  - **Lixeira** – mova o arquivo para a pasta da lixeira. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
    ![alertas de policy_create](media/policy_create-alerts.png "alertas de policy_create")
 
@@ -137,7 +137,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Revogar o aplicativo|Revogue as permissões de um aplicativo de terceiros para o Google ou Salesforce. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras. | G Suite, Salesforce|
 |Painel do aplicativo > Permissões de aplicativo | Conta | Revogar o usuário do aplicativo|Você pode revogar usuários específicos ao clicar no número em Usuários. A tela exibirá os usuários específicos e você poderá usar o X para excluir permissões para qualquer usuário.| G Suite, Salesforce|
 |Descobrir > Aplicativos descobertos/Endereços IP/Usuários| Cloud Discovery | Exportar dados de descoberta | Cria um CSV dos dados de descoberta. | Descoberta |
-|Política de arquivos|Arquivo |Lixeira|Move o arquivo na lixeira do usuário.| Caixa, Dropbox, Google Drive, OneDrive, SharePoint |
+|Política de arquivos|Arquivo |Lixeira|Move o arquivo na lixeira do usuário.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Política de Arquivos|Arquivo | Notificar o último editor de arquivo |Envia um email para notificar a última pessoa que editou o arquivo que ele viola uma política. |G Suite, Box|
 |Política de Arquivos|Arquivo |Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir. | Todos os aplicativos |
 |Política de arquivos, Atividade de política | Arquivo, Atividade | Notificar usuários específicos |Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.| Todos os aplicativos |

@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d28257e073227c34a81577558ac2e7c149e373b2
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720420"
 ---
 # <a name="attest-your-app"></a>Atestar seu aplicativo
@@ -38,14 +38,14 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 | Data center| Geral | Matriz de códigos do país * | Fechar lista – fornecida no questionário (seleção múltipla) | O país no qual o data center reside (pode ser vários locais) |
 | Empresa de hospedagem | Geral | Cadeia de caracteres | Texto livre | O nome da empresa que fornece Hospedagem de servidor para o aplicativo. |
 | Fundada | Geral | Inteiro | AAAA (não depois de 2019) | O ano em que o provedor foi fundado. |
-| Pressionado | Geral | Cadeia de caracteres | Privado, público | Exibe se o provedor é uma empresa pública ou privada |
+| Holding | Geral | Cadeia de caracteres | Privado, público | Exibe se o provedor é uma empresa pública ou privada |
 | Domínio do aplicativo | Geral | Matriz de URL * | Texto livre | A lista de domínios que são usados para interagir com o serviço (por exemplo, ' teams.microsoft.com ' para Microsoft Teams) |
 | Termos de serviço | Geral | URL | Texto livre | Este aplicativo fornece um conjunto de regulamentos que os usuários devem concordar em seguir para usar o aplicativo? |
 | Política de privacidade | Geral | URL | Texto livre | Um link para um documento de associação legal relacionado a como esse provedor lida com informações de cliente, cliente ou funcionário coletadas como parte do aplicativo. |
 | URL de logon | Geral | Matriz de URL * | Texto livre | A URL por meio da qual os usuários fazem logon no aplicativo. |
 | Fornecedor | Geral | Cadeia de caracteres | Texto livre | O nome do fornecedor que fornece este aplicativo. |
 | Tipos de dados | Geral | Cadeia de caracteres | Fechar lista – fornecido no questionário | Quais tipos de dados podem ser carregados pelo usuário para o aplicativo?|
-| Principal | Geral | URL | Texto livre | A URL de home page do provedor. |
+| Home page | Geral | URL | Texto livre | A URL de home page do provedor. |
 | Plano de recuperação de desastre | Geral | Booliano | True, False | Este aplicativo tem um plano de recuperação de desastres que inclui uma estratégia de backup e restauração? |
 | Violação mais recente | Segurança | Data | MMM-dd-aaaa | O incidente mais recente em que dados confidenciais, protegidos ou confidenciais pertencentes ao aplicativo foram exibidos, roubados ou usados por um indivíduo não autorizado para fazer isso. |
 | Método de criptografia de dados em repouso | Segurança | Cadeia de caracteres | Fechar lista – fornecido no questionário | O tipo de criptografia de dados em repouso executado no aplicativo. |
@@ -70,7 +70,7 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 | Cabeçalhos de segurança HTTP: X-XSS-Protection | Segurança | Booliano | True, False | Os cabeçalhos HTTP X-XSS-Protection são implementados pelo aplicativo em seu site? |
 | Oferece suporte a SAML | Segurança | Booliano | True, False | Este aplicativo dá suporte ao padrão SAML para a troca de dados de autenticação e autorização? |
 | Protegido contra AFOGAdo | Segurança | Booliano | True, False | Os servidores de aplicativos estão protegidos contra ataques de afoga? |
-| Teste de penetração | Segurança | Booliano | True, False | Este aplicativo executa testes de penetração para detectar e avaliar vulnerabilidades de rede? |
+| Testes de penetração | Segurança | Booliano | True, False | Este aplicativo executa testes de penetração para detectar e avaliar vulnerabilidades de rede? |
 | Requer autenticação do usuário | Segurança | Booliano | True, False | Este aplicativo requer autenticação e não permite o uso anônimo? |
 | Política de senha: limite de comprimento da senha | Segurança | Booliano | True, False | Este aplicativo impõe um limite de comprimento para a criação de senha? |
 | Política de senha: combinação de caracteres | Segurança | Booliano | True, False | Este aplicativo impõe uma combinação de caracteres na criação de senha? |
@@ -91,7 +91,7 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 | SOX | Conformidade | Booliano | True, false, N/A | Este aplicativo está em conformidade com SOX, legislação dos EUA destinado à proteção de acionistas e ao público geral de erros e fraudes de contabilidade, além de melhorar a precisão das divulgações corporativas? |
 | SP 800-53 | Conformidade | Booliano | True, false, N/A | Este aplicativo está em conformidade com o SP80053, os controles de segurança recomendados para organizações e sistemas de informações federais? |
 | SSAE 16 | Conformidade | Booliano | True, false, N/A | Este aplicativo está em conformidade com o padrão SSAE 16 para auditar os controles de conformidade internos da organização de serviços e os processos de relatório? |
-| Versão do PCI DSS | Conformidade | Cadeia de caracteres | 1, 2, 3, 3,1, 3,2, N/A | A versão do protocolo PCI-DSS com suporte por este aplicativo. |
+| Versão do PCI DSS | Conformidade | Cadeia de caracteres | 1, 2, 3, 3.1, 3.2, N/A | A versão do protocolo PCI-DSS com suporte por este aplicativo. |
 | ISO 27018 | Conformidade | Booliano | True, false, N/A | Este aplicativo está em conformidade com o ISO 27018, que estabelece controles e diretrizes comumente aceitos para processar e proteger informações de identificação pessoal (PII) em um ambiente de computação em nuvem pública? |
 | GLBA | Conformidade | Booliano | True, false, N/A | Este aplicativo está em conformidade com a lei Gramm-Leach-Bliley (GLBA), que exige que as instituições financeiras estabeleçam padrões para proteger a segurança e a confidencialidade das informações pessoais dos clientes? |
 | Nível de FedRAMP | Conformidade | Cadeia de caracteres | Alta, moderada, baixa, N/A | O nível da solução compatível com FedRAMP fornecida por este aplicativo. |

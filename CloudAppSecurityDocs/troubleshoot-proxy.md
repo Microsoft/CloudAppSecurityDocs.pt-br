@@ -12,10 +12,10 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: d98721a4ca08b3e415b8b0fff40676af1b3d37e6
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720982"
 ---
 # <a name="troubleshooting-conditional-access-app-control"></a>Solução de problemas Controle de Aplicativos de Acesso Condicional
@@ -53,7 +53,7 @@ As etapas a seguir se baseiam no uso do Fiddler como a ferramenta de registro de
     | Protocolo | Domain | Caminho | Nome do campo de estado |
     | --- | --- | --- | --- |
     | OIDC | `https://login.microsoftonline.com` | /common/oauth2/authorize | state |
-    | SAML 2.0 | `https://login.microsoftonline.com` | *ID*de //saml2 | RelayState |
+    | SAML 2.0 | `https://login.microsoftonline.com` | /*id*/saml2 | RelayState |
 
 1. Selecione a solicitação e, na guia **inspetores** , selecione **WebForms**.
 1. Criar uma cadeia de caracteres Regex com base no 

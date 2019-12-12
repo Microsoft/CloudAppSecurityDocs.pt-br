@@ -14,10 +14,10 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 62757b46f40127bb8d312435cd420fdb1e2f3865
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74458494"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local

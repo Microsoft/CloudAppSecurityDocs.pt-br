@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 65237f7be2218dad16c09f3940ca53c478d022bc
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74461197"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security (versão prévia)
@@ -74,7 +74,7 @@ Crie um projeto dedicado no GCP em sua organização para habilitar o isolamento
 1. Em **administrador de & iam**, clique em **iam**.
 
     1. Mudar para o nível da organização.
-    1. Clique em **Adicionar**.
+    1. Clique em **ADICIONAR**.
     1. Na caixa **novos membros** , Cole o valor de **email** que você copiou anteriormente.
     1. Especifique a **função** como **gravador de configuração de logs** e clique em **salvar**.
 

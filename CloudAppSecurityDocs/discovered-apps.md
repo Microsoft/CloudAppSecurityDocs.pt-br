@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: a63546a3404cdf4c48a56b800f5d80d09ee5971e
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74719359"
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
@@ -99,7 +99,7 @@ Para gerar um relatório executivo do Cloud Discovery:
 
 1. No **painel Cloud Discovery**, clique nos três pontos no canto superior direito do painel e, em seguida, selecione **gerar relatório executivo Cloud Discovery**.
 1. Opcionalmente, altere o nome do relatório.
-1. Clique em **gerar**.
+1. Clique em **Gerar**.
 
 ## <a name="exclude-entities"></a>Excluir entidades
 

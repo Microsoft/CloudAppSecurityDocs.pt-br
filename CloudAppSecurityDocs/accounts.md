@@ -18,7 +18,7 @@ ms.openlocfilehash: fe538419f86076977b5484c5571d65623eb9cdd7
 ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74733715"
 ---
 # <a name="accounts"></a>Contas

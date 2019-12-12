@@ -10,10 +10,10 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 405bdd5636bdcdf93dbfc858ecc6578d1a43c402
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720906"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
@@ -224,7 +224,7 @@ Se uma regra de caixa de entrada suspeita foi definida na caixa de entrada de um
 
 ## <a name="detect-leaked-credentials"></a>Detectar credenciais vazadas
 
-Quando os criminosos virtuais comprometem senhas válidas de usuários legítimos, eles geralmente compartilham essas credenciais. Normalmente, isso é feito postando-os publicamente na Web escura ou colando sites ou negociando ou vendendo as credenciais no mercado preto.
+Quando os criminosos virtuais comprometem senhas válidas de usuários legítimos, eles geralmente compartilham essas credenciais. Geralmente, isso é feito postando-as publicamente na dark Web ou em paste sites, ou então permutando-as ou vendendo-as no mercado negro.
 
 Cloud App Security utiliza a inteligência contra ameaças da Microsoft para corresponder essas credenciais para aquelas usadas dentro de sua organização.
 

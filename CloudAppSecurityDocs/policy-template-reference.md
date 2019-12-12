@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 79b4bbd6e73a07820524df571ddf9cebe407c5af
-ms.sourcegitcommit: d6ba570c9fbb3c176dab2004c5712c889c759eeb
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74666744"
 ---
 # <a name="policy-template-reference"></a>Referência de modelo de política

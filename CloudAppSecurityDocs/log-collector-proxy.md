@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: db16695ffa6cc9c20d04616553256cba95de1550
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720516"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitar o coletor de logs por trás de um proxy
@@ -41,7 +41,7 @@ No shell, verifique se o contêiner foi criado e está em execução usando o se
 docker ps
 ```
 
-![Docker PS](media/docker-1.png)
+![docker ps](media/docker-1.png)
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copie o Certificado de Autoridade de Certificação raiz do proxy para o contêiner
 
@@ -96,11 +96,11 @@ Quando você executar o comando, especifique seu próprio token da API:
 collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 ```
 
-![Atualização de configuração](media/docker-4.png "Atualização de configuração")
+![Atualização de configuração](media/docker-4.png "Atualização da configuração")
 
 O coletor de logs consegue agora se comunicar com o Cloud App Security. Depois de enviar dados a ele, o status será alterado de **Íntegro** para **Conectado** no portal do Cloud App Security.
 
-![Estado](media/docker-5.png "Status")
+![Status](media/docker-5.png "Status")
 
 >[!NOTE]
 > Se você precisar atualizar a configuração do coletor de logs, para adicionar ou remover uma fonte de dados, por exemplo, normalmente precisará **excluir** o contêiner e executar as etapas anteriores novamente. Para evitar isso, você pode executar novamente a ferramenta *collector_config* com o novo token da API gerado no portal do Cloud App Security.

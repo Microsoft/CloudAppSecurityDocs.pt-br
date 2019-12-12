@@ -8,10 +8,10 @@ ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74143463"
 ---
 # <a name="cloud-app-security-best-practices"></a>Práticas recomendadas de Cloud App Security
@@ -186,7 +186,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 **Detalhe**: Use controle de aplicativos de acesso condicional para definir controles em seus aplicativos SaaS. Você pode criar políticas de sessão para monitorar suas sessões de alto risco e de confiança baixa. Da mesma forma, você pode criar políticas de sessão para bloquear e proteger downloads por usuários tentando acessar dados confidenciais de dispositivos não gerenciados ou arriscados. Se você não criar políticas de sessão para monitorar sessões de alto risco, perderá a capacidade de bloquear e proteger os downloads no cliente Web, bem como a capacidade de monitorar a sessão de baixa confiança tanto na Microsoft quanto em aplicativos de terceiros.  
 **Para obter mais informações**:
 
-* [Proteger aplicativos com Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
+* [Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Políticas de sessão](session-policy-aad.md)
 
 ---
@@ -200,7 +200,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 **Detalhe**: para proteger a colaboração em seu ambiente, você pode criar uma política de sessão para monitorar sessões entre seus usuários internos e externos. Isso não apenas oferece a capacidade de monitorar a sessão entre os usuários (e notificá-los de que suas atividades de sessão estão sendo monitoradas), mas também permite que você limite atividades específicas também. Ao criar políticas de sessão para monitorar a atividade, você pode escolher os aplicativos e os usuários que deseja monitorar.  
 **Para obter mais informações**:
 
-* [Proteger aplicativos com Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
+* [Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Políticas de sessão](session-policy-aad.md)
 
 ---

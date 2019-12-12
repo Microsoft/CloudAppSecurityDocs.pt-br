@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 5636c6a0aa51d17847560a122248e625137840cb
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460936"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integração da proteção avançada contra ameaças do Azure
@@ -44,7 +44,7 @@ Para habilitar a integração de Cloud App Security com o Azure ATP:
 
 1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**.
 
-   ![Menu configurações](media/azip-system-settings.png)
+   ![Menu Configurações](media/azip-system-settings.png)
 
 1. Em **proteção contra ameaças**, selecione **Azure ATP**.
 

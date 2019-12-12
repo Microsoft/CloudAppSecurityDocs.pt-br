@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 8/22/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 91a262f81dbcb49c81df869c869cd81d2ada9766
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74719980"
 ---
 # <a name="microsoft-cloud-app-security-e-books"></a>Livros eletrônicos do Microsoft Cloud App Security

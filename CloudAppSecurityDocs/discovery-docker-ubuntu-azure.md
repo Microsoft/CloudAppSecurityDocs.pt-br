@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460816"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalação e configuração no Ubuntu ou RHEL no Azure
@@ -116,12 +116,12 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     1. Vá para **regras de segurança de entrada** e clique em **Adicionar**, ![Ubuntu Azure](media/ubuntu-azure.png)
     1. Adicionar as seguintes regras (no modo **Avançado**):
 
-    |Name|Intervalos de porta de destino|Protocol|Origem|Destino|
+    |Nome|Intervalos de porta de destino|Protocolo|Origem|Destination|
     |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<Sub-rede do endereço IP do dispositivo>|Any|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|Any|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<Sub-rede do endereço IP do dispositivo>|Any|
-    |caslogcollector_syslogs_udp|514-600|UDP|<Sub-rede do endereço IP do dispositivo>|Any|
+    |caslogcollector_ftp|21|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
+    |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
+    |caslogcollector_syslogs_tcp|601-700|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
+    |caslogcollector_syslogs_udp|514-600|UDP|<Sub-rede do endereço IP do dispositivo>|qualquer|
 
     ![Regras do Azure no Ubuntu](media/inbound-rule.png)
 

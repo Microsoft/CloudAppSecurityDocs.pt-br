@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: b31876240187e3f95ff2a8d10632b54de37e6ed6
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720754"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conectar o workday ao Microsoft Cloud App Security (versão prévia)
@@ -36,7 +36,7 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 | System (sistema) | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
 | System (sistema) | Administração de Segurança | | Exibir, modificar | Obter, colocar |
 | System (sistema) | Auditoria do sistema | | Exiba os | Get |
-| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: relatórios de trabalho públicos | Exiba os | Get |
+| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: Relatórios de trabalho público | Exiba os | Get |
 
 > [!NOTE]
 >
