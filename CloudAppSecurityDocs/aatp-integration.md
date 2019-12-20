@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/20/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,29 +14,28 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2278a7a156525450c2ad4d8e75ee7a1aeb98fb0b
-ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
+ms.openlocfilehash: c38ccba7b6d9729ebdd80f005d9630270726d209
+ms.sourcegitcommit: d493fc811a68387398615ff6288a300bb1f0fce7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2019
-ms.locfileid: "75033364"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75310405"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integração da proteção avançada contra ameaças do Azure
 
-*Aplica-se ao: Microsoft Cloud App Security*
-
-O Microsoft Cloud App Security integra-se com o Azure ATP (proteção avançada contra ameaças do Azure) para fornecer UEBA (análise comportamental de entidade de usuário) em um ambiente híbrido-ambos os aplicativos de nuvem e locais, para obter mais informações, consulte [tutorial: investigar usuários arriscados](tutorial-ueba.md) para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo Azure ATP, consulte [o que é o Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
+*Aplica-se a: Microsoft Cloud app Security* o Git Microsoft Cloud app Security integra-se com o Azure ATP (proteção avançada contra ameaças do Azure) para fornecer Ueba (análise comportamental de entidade de usuário) em um ambiente híbrido – tanto no aplicativo de nuvem quanto no local, para obter mais informações, consulte [tutorial: investigar usuários arriscados](tutorial-ueba.md). Para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo Azure ATP, consulte [o que é o Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para fazer uma investigação completa em um ambiente híbrido, é necessário:
 
 - Uma licença válida do ATP do Azure vinculada à instância do Azure Active Directory
-- Você deve ser um administrador global para habilitar a integração entre o Azure ATP e o Microsoft Cloud App Security
-- Se não tiver o Azure ATP, experimente-o agora
+- Você deve ser um administrador global Azure Active Directory para habilitar a integração entre o Azure ATP e o Cloud App Security
 
->[!NOTE]
->Se você não tiver uma assinatura para Microsoft Cloud App Security, ainda poderá usar o portal de Cloud App Security para obter informações do Azure ATP.
+> [!NOTE]
+>
+> - Se você não tiver uma assinatura para Microsoft Cloud App Security, ainda poderá usar Cloud App Security para obter insights do Azure ATP.
+> - Os administradores do Azure ATP podem exigir novas permissões para acessar Cloud App Security. Para saber como atribuir permissões a Cloud App Security, consulte [gerenciar o acesso de administrador](manage-admins.md).
 
 ## <a name="enable-azure-atp"></a>Habilitar o Azure ATP
 
@@ -44,7 +43,7 @@ Para habilitar a integração de Cloud App Security com o Azure ATP:
 
 1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**.
 
-   ![Menu Configurações](media/azip-system-settings.png)
+    ![Menu configurações](media/azip-system-settings.png)
 
 1. Em **proteção contra ameaças**, selecione **Azure ATP**.
 

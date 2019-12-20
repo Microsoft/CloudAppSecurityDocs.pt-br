@@ -9,18 +9,18 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 65237f7be2218dad16c09f3940ca53c478d022bc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: e03f24023968d9e3169aef8636061b8adf05d646
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74461197"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189733"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security (versão prévia)
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do Google Cloud Platform (GCP) existente usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre o uso do GCP.
+Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do Google Cloud Platform (GCP) existente usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre o uso do GCP. Para obter informações sobre como Cloud App Security protege o GCP, consulte [proteger o GCP](protect-gcp.md).
 
 > [!NOTE]
 > As instruções para conectar seu ambiente GCP seguem as [recomendações do Google](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) para consumir logs agregados. A integração aproveita o Google StackDriver e consumirá recursos adicionais que podem afetar sua cobrança. Os recursos consumidos são:
@@ -74,7 +74,7 @@ Crie um projeto dedicado no GCP em sua organização para habilitar o isolamento
 1. Em **administrador de & iam**, clique em **iam**.
 
     1. Mudar para o nível da organização.
-    1. Clique em **ADICIONAR**.
+    1. Clique em **Adicionar**.
     1. Na caixa **novos membros** , Cole o valor de **email** que você copiou anteriormente.
     1. Especifique a **função** como **gravador de configuração de logs** e clique em **salvar**.
 

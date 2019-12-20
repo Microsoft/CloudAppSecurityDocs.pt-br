@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a1af86b66387d8bb4274c48e5b1ab0e449ed1aed
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 2606263d1a033d09116111d08ed7f69c96814f68
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719210"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189767"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do ServiceNow usando a API do conector de aplicativos. Essa conexão fornece visibilidade e controle sobre o uso do ServiceNow.
+Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do ServiceNow usando a API do conector de aplicativos. Essa conexão fornece visibilidade e controle sobre o uso do ServiceNow. Para obter informações sobre como Cloud App Security protege o ServiceNow, consulte [proteger o servicenow](protect-servicenow.md).
 
 > [!NOTE]
 > É recomendável implantar o ServiceNow usando os tokens de aplicativo OAuth, disponíveis para Fuji e versões posteriores (consulte a [documentação do ServiceNow](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) relevante).
@@ -47,7 +47,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
     ![Novo perfil de OAuth ServiceNow](media/servicenow-app-registry.png)
 
-4. Em **Que tipo de aplicativo OAuth?** , clique em **Criar um ponto de extremidade de API do OAuth para clientes externos**.
+4. Em **Que tipo de aplicativo OAuth?**, clique em **Criar um ponto de extremidade de API do OAuth para clientes externos**.
 
     ![Tipo de OAuth ServiceNow](media/servicenow-oauth-app-type.png)
 
