@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 39b3721a2a19c59f7c8d1a1376aa54efee455f65
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 8ff7c303b6dfa209c3d37ed7334f3276b36371ff
+ms.sourcegitcommit: 8309406e636b1adbe4d44ecec51aef5e849310f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720478"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597522"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -30,9 +30,7 @@ No espaço de trabalho de hoje, muitas vezes não é suficiente saber o que est�
 > [!NOTE]
 > Para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você precisa de uma [licença Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)e uma assinatura do Active Microsoft Cloud app Security ou licença do Office 365 e5. Para obter uma lista de aplicativos em destaque incluídos no Office 365 e5, consulte [aplicativos em destaque do office 365](#O365-apps).
 
-Licença do Office 365 e5. Para obter uma lista de aplicativos incluídos com o Office 365 E5 com suporte, consulte aplicativos em destaque do Office 365
-
-## <a name="how-it-works"></a>Como funciona
+## <a name="how-it-works"></a>Como isso funciona
 
 Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy reverso e é exclusivamente integrado ao acesso condicional do Azure AD. O acesso condicional do Azure AD permite que você aplique controles de acesso nos aplicativos da sua organização com base em determinadas condições. As condições definem a *quem* (usuário ou grupo de usuários), a *quais* (quais aplicativos de nuvem) e *onde* (quais locais e redes) uma política de acesso condicional é aplicada. Depois de determinar as condições, é possível encaminhar os usuários ao Microsoft Cloud App Security para proteger dados com o Controle de Aplicativos de Acesso Condicional, aplicando controles de acesso e de sessão.
 
