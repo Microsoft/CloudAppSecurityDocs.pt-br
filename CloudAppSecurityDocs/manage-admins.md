@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/6/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0243d1a75e4f322406ef768dddc898b58d3fe294
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: bda8b1e35b4a097a3ef753fb81a9293650305333
+ms.sourcegitcommit: a54a8437d6b03d457314e69b372e908976b7b1ad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720507"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75545210"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -34,6 +34,10 @@ Por padrão, as seguintes funções de administrador do Office 365 e [do Azure A
 - **Administrador global e Administrador de segurança:** os administradores com **Acesso completo** têm permissões completas no Cloud App Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
 
 - **Administrador de conformidade:** tem permissões somente leitura e pode gerenciar alertas. Pode criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios internos em Gerenciamento de dados.
+
+- **Administrador de dados de conformidade:** Tem permissões somente leitura, pode criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios de descoberta.
+
+- **Operador de segurança:** Tem permissões somente leitura e pode gerenciar alertas.
 
 - **Leitor de segurança:** tem permissões somente leitura e pode gerenciar alertas. O Leitor de segurança não tem permissão para executar as seguintes ações:
 

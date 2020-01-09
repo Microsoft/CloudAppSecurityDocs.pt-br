@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62757b46f40127bb8d312435cd420fdb1e2f3865
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 7f436f36b5ab41b8b952dca7dc2534611eb8401a
+ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74458494"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492108"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -28,7 +28,7 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* SO: **Windows 10** (atualização para criadores do outono) ou Windows Server **versão 1709 +**
+* Sistema operacional: **Windows 10** (atualização para criadores de outono), Windows Server **versão 1709 +** (SAC) ou **Windows Server 2019 (LTSC)**
 
 * Espaço em disco: 250 GB
 

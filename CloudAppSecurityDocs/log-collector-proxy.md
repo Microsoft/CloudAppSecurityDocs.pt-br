@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db16695ffa6cc9c20d04616553256cba95de1550
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: c5d4132dd88f8bf7364a77ee8a3e282c1af7fa02
+ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720516"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492088"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitar o coletor de logs por trás de um proxy
 
@@ -60,16 +60,16 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     docker exec -it Ubuntu-LogCollector /bin/bash
     ```
 
-2. Do bash dentro do contêiner, vá para o diretório JRE do Java. Para evitar um erro de caminho relacionado com a versão, use este comando:
+2. Do bash dentro do contêiner, vá para a pasta Java *JRE* . Para evitar um erro de caminho relacionado com a versão, use este comando:
 
     ```bash
     cd 'find /opt/jdk/*/jre -iname bin'
     ```
 
-3. Importe o certificado raiz que você copiou anteriormente da pasta de *descoberta* para o repositório de chaves do Java e defina uma senha. A senha padrão é "changeit":
+3. Importe o certificado raiz que você copiou anteriormente, da pasta de *descoberta* para o repositório de chaves Java e defina uma senha. A senha padrão é "changeit". Para obter informações sobre como alterar a senha, consulte [como alterar a senha do repositório de chaves Java](#how-to-change-the-java-keystore-password).
 
     ```bash
-    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass <password>
     ```
 
 4. Valide que o certificado foi importado corretamente para o repositório de chaves da Autoridade de Certificação, usando o comando a seguir para procurar o alias que você forneceu durante a importação (*SelfSignedCert*):
@@ -104,6 +104,34 @@ O coletor de logs consegue agora se comunicar com o Cloud App Security. Depois d
 
 >[!NOTE]
 > Se você precisar atualizar a configuração do coletor de logs, para adicionar ou remover uma fonte de dados, por exemplo, normalmente precisará **excluir** o contêiner e executar as etapas anteriores novamente. Para evitar isso, você pode executar novamente a ferramenta *collector_config* com o novo token da API gerado no portal do Cloud App Security.
+
+## <a name="how-to-change-the-java-keystore-password"></a>Como alterar a senha do repositório de chaves Java
+
+1. Interrompa o servidor do repositório de chaves Java.
+1. Abra um shell bash dentro do contêiner e vá para a pasta *AppData/conf* .
+1. Altere a senha do repositório de chaves do servidor usando este comando:
+
+    ```bash
+    keytool -storepasswd -new newStorePassword -keystore server.keystore
+    -storepass changeit
+    ```
+
+    > [!NOTE]
+    > A senha padrão do servidor é *changeit*.
+
+1. Altere a senha do certificado usando este comando:
+
+    ```bash
+    keytool -keypasswd -alias server -keypass changeit -new newKeyPassword -keystore server.keystore -storepass newStorePassword
+    ```
+
+    > [!NOTE]
+    > O alias do servidor padrão é *servidor*.
+
+1. Em um editor de texto, abra o arquivo *Server-install\conf\server\secured-installed.Properties* e, em seguida, adicione as linhas de código a seguir e salve as alterações:
+    1. Especifique a nova senha do repositório de chaves Java para o servidor: `server.keystore.password=newStorePassword`
+    1. Especifique a nova senha de certificado para o servidor: `server.key.password=newKeyPassword`
+1. Inicie o servidor.
 
 ## <a name="next-steps"></a>Próximas etapas
 
