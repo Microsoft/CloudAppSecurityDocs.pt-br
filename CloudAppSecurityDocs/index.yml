@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 05dd9156cddd6c94f4523d100b275c1ced42ba17
-  ms.sourcegitcommit: f3a6e9c4367d0ddfe4a23f417eb14de246fccd03
+  ms.openlocfilehash: 36f40dda4b6c169dae50100ccf457fc0f5c99801
+  ms.sourcegitcommit: 446041f0e7adf6688bf63d402838844baa3342bb
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/24/2019
-  ms.locfileid: "74457860"
+  ms.lasthandoff: 01/06/2020
+  ms.locfileid: "75667233"
 landingContent:
 - title: Sobre o Cloud App Security
   linkLists:
@@ -47,8 +47,10 @@ landingContent:
     links:
     - text: Investigar usuários arriscados
       url: tutorial-ueba.md
-    - text: Investigar aplicativos de OAuth arriscados
+    - text: Investigar aplicativos OAuth arriscados
       url: investigate-risky-oauth.md
+    - text: Proteger qualquer aplicativo em sua organização em tempo real
+      url: tutorial-proxy.md
     - text: Bloquear o download de informações confidenciais
       url: use-case-proxy-block-session-aad.md
     - text: Proteger arquivos com quarentena do administrador
@@ -97,7 +99,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Descobrir e identificar a TI sombra
+    - text: Descobrir e identificar TI sombra
       url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
     - text: Avaliar e analisar
       url: tutorial-shadow-it.md#phase-2-evaluate-and-analyze
@@ -135,7 +137,7 @@ landingContent:
     links:
     - text: Leia nossos livros eletrônicos
       url: e-books.md
-    - text: Explore o Microsoft 365, uma solução completa que inclui o Cloud App Security
+    - text: Explorar o Microsoft 365, uma solução completa que inclui o Cloud App Security
       url: https://docs.microsoft.com/microsoft-365/
   - linkListType: video
     links:
