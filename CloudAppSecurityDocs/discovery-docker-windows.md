@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7f436f36b5ab41b8b952dca7dc2534611eb8401a
-ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
+ms.openlocfilehash: 9122a5c5cdde5f2a1ed02946970825b75155acc2
+ms.sourcegitcommit: fb0d93ca2469a7941a098ae3b5564e7fc327e89f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492108"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75777124"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -41,7 +41,7 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 * A virtualização no sistema operacional deve ser habilitada com o Hyper-V
 
 > [!IMPORTANT]
-> Um usuário deve estar conectado para que o Docker colete logs. Recomendamos que o usuário do Docker se desconecte sem sair.
+> Um usuário deve estar conectado para que o Docker colete logs. Recomendamos que os usuários do Docker se desconectem sem sair.
 
 > [!NOTE]
 > Se você tiver um coletor de logs existente e quiser removê-lo antes de implantá-lo novamente, ou se simplesmente quiser removê-lo, execute os seguintes comandos:
