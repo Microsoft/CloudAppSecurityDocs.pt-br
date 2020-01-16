@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e4932b8e96638f4b645ee48ddd694b3c121a9e1
-ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
+ms.openlocfilehash: 4d945a13f2cab9b11c74dae5aa6ff93eae5f3ba5
+ms.sourcegitcommit: dabfa885ebb82db25a92127d87e8d1283340e834
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2019
-ms.locfileid: "75033337"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76020762"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 
@@ -173,7 +173,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 ### <a name="steps"></a>Etapas
 
-1. Essa detecção é automaticamente configurada para alertar você quando houver um risco de Ransomeware potencial detectado. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
+1. Essa detecção é automaticamente configurada para alertar você quando houver um risco de ransomware potencial detectado. Você não precisa realizar nenhuma ação para configurar essa política. Para obter mais informações, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md).
 
 2. É possível configurar o **escopo** da detecção e personalizar as ações de governança a serem executadas quando um alerta for disparado. Para obter mais informações sobre como Cloud App Security identifica ransomware, consulte [protegendo sua organização contra ransomware](use-case-ransomware.md).
 

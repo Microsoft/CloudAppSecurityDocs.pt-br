@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/23/2019
+ms.date: 01/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,25 +14,27 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8ff7c303b6dfa209c3d37ed7334f3276b36371ff
-ms.sourcegitcommit: 8309406e636b1adbe4d44ecec51aef5e849310f6
+ms.openlocfilehash: b3517591eba70dde048041c7b55a57679e7cc829
+ms.sourcegitcommit: dabfa885ebb82db25a92127d87e8d1283340e834
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597522"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76020771"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
 *Aplica-se ao: Microsoft Cloud App Security*
 
-No espaço de trabalho de hoje, muitas vezes não é suficiente saber o que está acontecendo em seu ambiente de nuvem após o fato. Você deseja interromper violações e vazamentos em tempo real antes que os funcionários intencional ou inadvertidamente coloquem seus dados e sua organização em risco. É importante permitir que os usuários em sua organização aproveitem ao máximo os serviços e as ferramentas disponíveis a eles em aplicativos de nuvem e que eles tragam os próprios dispositivos para o trabalho. Ao mesmo tempo, são necessárias ferramentas para ajudar a proteger sua organização contra vazamentos de dados e roubo de dados, em tempo real. Juntamente com o Azure Active Directory, o Microsoft Cloud App Security oferece esses recursos em uma experiência holística e integrada com o Controle de Aplicativo de Acesso Condicional.
+No espaço de trabalho de hoje, muitas vezes não é suficiente saber o que está acontecendo em seu ambiente de nuvem após o fato. Você deseja interromper violações e vazamentos em tempo real antes que os funcionários intencional ou inadvertidamente coloquem seus dados e sua organização em risco. É importante permitir que os usuários em sua organização aproveitem ao máximo os serviços e as ferramentas disponíveis a eles em aplicativos de nuvem e que eles tragam os próprios dispositivos para o trabalho. Ao mesmo tempo, são necessárias ferramentas para ajudar a proteger sua organização contra vazamentos de dados e roubo de dados, em tempo real. Junto com o Azure Active Directory (Azure AD), o Microsoft Cloud App Security fornece esses recursos em uma experiência holística e integrada com o Controle de Aplicativos de Acesso Condicional.
 
 > [!NOTE]
-> Para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você precisa de uma [licença Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)e uma assinatura do Active Microsoft Cloud app Security ou licença do Office 365 e5. Para obter uma lista de aplicativos em destaque incluídos no Office 365 e5, consulte [aplicativos em destaque do office 365](#O365-apps).
+>
+> - Para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você precisa de uma [licença Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)e uma assinatura do Active Microsoft Cloud app Security ou licença do Office 365 e5. Para obter uma lista de aplicativos em destaque incluídos no Office 365 e5, consulte [aplicativos em destaque do office 365](#O365-apps).
+> - Controles de acesso e sessão também oferecem suporte a aplicativos configurados com provedores de identidade diferentes do Azure AD. Para obter mais informações sobre esse cenário, envie um email para mcaspreview@microsoft.com.
 
 ## <a name="how-it-works"></a>Como isso funciona
 
-Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy reverso e é exclusivamente integrado ao acesso condicional do Azure AD. O acesso condicional do Azure AD permite que você aplique controles de acesso nos aplicativos da sua organização com base em determinadas condições. As condições definem a *quem* (usuário ou grupo de usuários), a *quais* (quais aplicativos de nuvem) e *onde* (quais locais e redes) uma política de acesso condicional é aplicada. Depois de determinar as condições, é possível encaminhar os usuários ao Microsoft Cloud App Security para proteger dados com o Controle de Aplicativos de Acesso Condicional, aplicando controles de acesso e de sessão.
+O Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy reverso e é exclusivamente integrado ao acesso condicional do Azure AD. O acesso condicional do Azure AD permite que você aplique controles de acesso nos aplicativos da sua organização com base em determinadas condições. As condições definem *quem* (usuário ou grupo de usuários) e *o que* (quais aplicativos de nuvem) e *onde* (quais locais e redes) uma política de acesso condicional é aplicada. Depois de determinar as condições, é possível encaminhar os usuários ao Microsoft Cloud App Security para proteger dados com o Controle de Aplicativos de Acesso Condicional, aplicando controles de acesso e de sessão.
 
 O Controle de Aplicativo de Acesso Condicional permite o monitoramento e controle em tempo real do acesso e das sessões do aplicativo com base nas políticas de acesso e de sessão. As políticas de acesso e de sessão são utilizadas dentro do portal do Cloud App Security para refinar ainda mais os filtros e definir as ações a serem executadas em relação a um usuário. Com as políticas de acesso e de sessão, é possível:
 
@@ -61,26 +63,15 @@ Esse método não exige que você instale nada no dispositivo, tornando-o ideal 
 
 ## <a name="managed-device-identification"></a>Identificação do dispositivo gerenciado
 
-O Controle de Aplicativo de Acesso Condicional permite que você crie políticas que levam em conta se um dispositivo é gerenciado ou não. Para identificar se um dispositivo é gerenciado ou não, o recurso usa:
+O Controle de Aplicativo de Acesso Condicional permite que você crie políticas que levam em conta se um dispositivo é gerenciado ou não. Para identificar o estado de um dispositivo, você pode configurar políticas de acesso e sessão para verificar:
 
-- Dispositivos em conformidade
-- Dispositivos ingressados em domínio
-- Implantação de certificados do cliente
+- Dispositivos em conformidade com o Microsoft Intune (Intune)
+- Dispositivos híbridos ingressados no Azure AD
+- Presença de certificados de cliente em uma cadeia confiável
 
-Para configurar uma política para aproveitar o gerenciamento de dispositivos por meio de certificados de cliente:
+### <a name="intune-compliant-and-hybrid-azure-ad-joined-devices"></a>Dispositivos ingressados no Azure AD híbrido e em conformidade com o Intune
 
-1. Vá até a engrenagem de configurações e selecione **Identificação de dispositivo**.
-1. Carregue um ou mais certificados raiz ou intermediários.
-1. Depois que o certificado for carregado, você poderá criar [políticas de acesso](access-policy-aad.md) e políticas de [sessão](session-policy-aad.md) com base na **marca do dispositivo** e no **certificado de cliente válido**.
-
-    ![ID do dispositivo do Controle de Aplicativos de Acesso Condicional](media/caac-device-id.png)
-
-> [!NOTE]
-> Um certificado será solicitado de um usuário apenas se a sessão corresponder a uma política que use o filtro de certificado do cliente válido.
-
-### <a name="compliant-and-domain-joined-devices"></a>Dispositivos em conformidade e ingressados em domínio
-
-O acesso condicional do Azure AD permite que informações do dispositivo em conformidade e ingressado em domínio sejam passadas diretamente para o Microsoft Cloud App Security. Nele, uma política de acesso ou de sessão que usa o estado do dispositivo como filtro pode ser desenvolvida. Para obter mais informações, consulte a [Introdução ao gerenciamento de dispositivos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+O acesso condicional do Azure AD permite que informações de dispositivo associado e em conformidade sejam passadas diretamente para o Microsoft Cloud App Security. Nele, uma política de acesso ou de sessão que usa o estado do dispositivo como filtro pode ser desenvolvida. Para obter mais informações, consulte a [Introdução ao gerenciamento de dispositivos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
 > Alguns navegadores podem exigir configuração adicional, como a instalação de uma extensão. Para obter mais informações, consulte [suporte ao navegador de acesso condicional](https://go.microsoft.com/fwlink/?linkid=2102732).
@@ -101,25 +92,39 @@ Quando uma verificação de certificado de cliente é executada, o Cloud App Sec
 > [!NOTE]
 > A maioria dos principais navegadores dá suporte à execução de uma verificação de certificado de cliente. No entanto, os aplicativos móveis e de desktop geralmente aproveitam os navegadores internos que podem não dar suporte a essa verificação e, portanto, afetam a autenticação para esses aplicativos.
 
-Saiba mais sobre como implantar certificados do cliente em [Implantar Controle de Aplicativo de Acesso Condicional para aplicativos do Azure AD](proxy-deployment-aad.md).
+Para configurar uma política para aproveitar o gerenciamento de dispositivos por meio de certificados de cliente:
+
+1. No Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações") e selecione **configurações**.
+
+1. Selecione a guia **identificação do dispositivo** .
+1. Carregue quantos certificados raiz ou intermediários forem necessários.
+
+Depois que os certificados forem carregados, você poderá criar políticas de acesso e sessão com base na **marca do dispositivo** e no **certificado de cliente válido**.
 
 ## <a name="supported-apps-and-clients"></a>Clientes e aplicativos compatíveis
 
-O Controle de Aplicativos de Acesso Condicional atualmente dá suporte a aplicativos SAML e Open ID Connect configurados com logon único, juntamente com aplicativos Web hospedados localmente configurados com o [proxy de aplicativo Azure ad](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+Os controles de sessão e de acesso podem ser aplicados a qualquer logon único interativo, usando o SAML 2,0 ou os protocolos de autenticação do Open ID Connect. Você também pode aplicar esses controles a aplicativos hospedados localmente configurados com o [proxy de aplicativo Azure ad](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). Além disso, os controles de acesso podem ser aplicados a aplicativos cliente móveis e de desktop nativos.
+
+Cloud App Security identifica aplicativos usando as informações disponíveis em seu catálogo de aplicativos de nuvem. Algumas organizações e usuários personalizam aplicativos adicionando plug-ins. No entanto, para que os controles de sessão funcionem corretamente com esses plug-ins, os domínios personalizados associados devem ser adicionados ao respectivo aplicativo no catálogo.
+
 > [!NOTE]
-> O Controle de Aplicativos de Acesso Condicional também é compatível com aplicativos configurados com outros provedores de identidade além do Azure AD. Para obter mais informações sobre esse cenário, envie um email para mcaspreview@microsoft.com.
+> O aplicativo autenticador, entre outros fluxos de entrada do aplicativo cliente nativo, usa um fluxo de entrada não interativo e não pode ser usado com controles de acesso.
+
+### <a name="access-controls"></a>Controles de acesso
+
+Muitas organizações que optam por usar controles de sessão para aplicativos de nuvem para controlar as atividades na sessão, também aplicam controles de acesso para bloquear o mesmo conjunto de aplicativos de cliente móvel e de desktop nativos, fornecendo, assim, segurança abrangente para os aplicativos.
+
+Você pode bloquear o acesso a aplicativos cliente móveis nativos e de desktop com políticas de acesso, definindo o filtro de **aplicativo cliente** como **móvel e área de trabalho**. Alguns aplicativos cliente nativos podem ser reconhecidos individualmente, enquanto outros que fazem parte de um pacote de aplicativos só podem ser identificados como seu aplicativo de nível superior. Por exemplo, aplicativos como o SharePoint Online só podem ser reconhecidos pela criação de uma política de acesso aplicada aos aplicativos do Office 365.
+
+> [!NOTE]
+> A menos que o filtro de **aplicativo cliente** seja definido especificamente como **móvel e área de trabalho**, a política de acesso resultante só se aplicará a sessões do navegador. O motivo para isso é evitar a proxy inadvertidamente de sessões de usuário, o que pode ser um subproduto do uso desse filtro. Embora a maioria dos principais navegadores dê suporte à execução de uma verificação de certificado de cliente, alguns aplicativos móveis e de área de trabalho usam navegadores internos que podem não dar suporte a essa verificação. Portanto, o uso desse filtro pode afetar a autenticação para esses aplicativos.
+
+### <a name="session-controls"></a>Controles de sessão
 
 **O controle de sessão está disponível para todos os navegadores, nas principais plataformas e em todos os sistemas operacionais**. É recomendável usar o Internet Explorer 11, o Microsoft Edge (mais recente), o Google Chrome (mais recente), o Mozilla Firefox (mais recente) ou o Apple Safari (mais recente). O acesso a aplicativos móveis e de área de trabalho também pode ser bloqueado ou permitido.
 
 > [!NOTE]
-> Usar o filtro de **aplicativo cliente** nas políticas de acesso pode fazer com que a sessão de usuário resultante seja modificada por Cloud app Security.
->
-> Em políticas de acesso, ao usar o filtro de **aplicativo cliente** , ele assume como padrão a **mobilidade e a área de trabalho**. Isso pode fazer com que a sessão de usuário resultante seja modificada por um Cloud App Security. Para anular esse comportamento, defina o valor como **navegador**.
->
-> Por padrão, avaliar se um aplicativo é móvel ou a área de trabalho pode fazer com que a sessão de usuário resultante seja modificada por Cloud App Security. Para evitar esse comportamento, defina o filtro de aplicativo cliente em suas políticas de acesso como sendo igual ao **navegador**.
-
-> [!NOTE]
-> O Cloud App Security usa protocolos TLS 1.2+ para fornecer a melhor criptografia do setor. Aplicativos cliente nativos e navegadores que não são compatíveis com TLS 1.2+ não estarão acessíveis quando configurados com controle de sessão. No entanto, aplicativos SaaS que usam TLS 1.1 ou inferior aparecerão no navegador como usando TLS 1.2+ quando configurados com o Cloud App Security.
+> O Cloud App Security usa protocolos TLS 1.2+ para fornecer a melhor criptografia do setor. Aplicativos cliente nativos e navegadores que não dão suporte a TLS 1.2 +, não estarão acessíveis quando configurados com controle de sessão. No entanto, aplicativos SaaS que usam TLS 1.1 ou inferior aparecerão no navegador como usando TLS 1.2+ quando configurados com o Cloud App Security.
 
 <a name="featured-apps"></a>Ao integrar nativamente com o Azure AD, qualquer aplicativo configurado com SAML ou Open ID Connect você pode integrar qualquer aplicativo por conta própria. Além disso, os aplicativos a seguir são apresentados por Cloud App Security e já estão integrados e prontos para uso em qualquer locatário:
 
@@ -171,6 +176,6 @@ Se você estiver interessado em um aplicativo específico em destaque, [envie-no
 > [Implantar o Controle de Aplicativo de Acesso Condicional para aplicativos em destaque](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
-> [Implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
+> [Implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
