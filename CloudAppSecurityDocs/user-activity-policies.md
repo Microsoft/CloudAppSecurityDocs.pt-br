@@ -5,17 +5,17 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 01/12/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5272eec53b28fd55886586d06a035f36f70e6e8f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 3ed582468edbfae7b180fdccc0ba110a1eb694df
+ms.sourcegitcommit: 38cca5e4f0e69bb33f89d1c4347a14c994d16b65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720439"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76123093"
 ---
 # <a name="activity-policies"></a>Políticas de atividade
 
@@ -24,6 +24,9 @@ ms.locfileid: "74720439"
 As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.
 
 Depois de definir uma política de detecção de atividades, ele começará a gerar alertas, os quais são gerados apenas em atividades que ocorrem depois da criação da política.
+
+> [!NOTE]
+> As políticas que disparam mais de 50.000 correspondências por dia, para três dos últimos 7 dias, são automaticamente desabilitadas. Você pode tentar refinar as políticas adicionando filtros adicionais ou, se estiver usando políticas para fins de relatório, considere [salvá-las como consultas](activity-filters-queries.md#activity-queries) em vez disso.
 
 ## <a name="custom-alerts"></a>Alertas personalizados
 
