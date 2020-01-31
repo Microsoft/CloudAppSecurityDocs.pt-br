@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e7e77e0875d6eca37a8add22cb631fc86cf7138
-ms.sourcegitcommit: 6658e305313ab84c6df7632549af373ea2faec14
+ms.openlocfilehash: fbea8df8a5fb16fabde89a48d8ac8227fb37a1c5
+ms.sourcegitcommit: f81dd93841d7e5d01a1edaaf464c8656c4e7efda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76550200"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76814226"
 ---
 #  <a name="IPtagsandRanges"></a> Trabalhando com marcações e intervalos de IP
 
@@ -33,9 +33,14 @@ O Cloud App Security é pré-configurado com intervalos de IP internos de proved
 >
 > - Para usar essas marcações internas como parte de uma pesquisa, consulte a ID na documentação da API do Cloud App Security.
 > - Você pode adicionar intervalos de IP em massa por meio da criação de um script usando a **API de intervalos de endereço IP**.
+> - Você não pode adicionar intervalos de IP com endereços IP sobrepostos.
 > - Para exibir a documentação da API, na barra de menus do portal do Cloud App Security, clique no ponto de interrogação e, em seguida, em **Documentação da API**.
 
 As marcas de endereço IP internas e as marcas de IP personalizadas são consideradas de maneira hierárquica. As marcas de IP personalizadas têm precedência sobre as marcas de IP internas. Por exemplo, se um endereço IP estiver marcado como **De risco** com base na inteligência contra ameaças, mas houver uma marca de IP personalizada que o identifica como **Corporativo**, as marcas e a categoria personalizadas terão precedência.
+
+>[!NOTE]
+> Quando um endereço IP é marcado como corporativo, ele é refletido no portal e os endereços IP são excluídos de dispararem detecções específicas (por exemplo, viagem impossível), pois são considerados confiáveis.
+>
 
 ## <a name="create-an-ip-address-range"></a>Criar um intervalo de endereços IP
 
