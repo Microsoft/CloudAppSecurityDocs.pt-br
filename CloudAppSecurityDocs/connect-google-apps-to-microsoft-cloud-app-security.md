@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f688c4ab78fc366518146e761cc01e2edfe5dc30
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 06c6a2db19332bb49e86220464a7eff459657b4b
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189716"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912272"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar o G Suite ao Microsoft Cloud App Security
 
@@ -83,7 +83,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
     ![Criar chave de conta de serviço no Google](media/google9.png)
 
-1. Na tela **Credentials (Credenciais)**, clique em **Manage service accounts (Gerenciar contas de serviço)** na extrema direita. Copie o **email** atribuído à sua conta de serviço-você precisará dele mais tarde.
+1. Na tela **Credentials (Credenciais)** , clique em **Manage service accounts (Gerenciar contas de serviço)** na extrema direita. Copie o **email** atribuído à sua conta de serviço-você precisará dele mais tarde.
 
     ![Conta de serviço de credenciais do G Suite](media/google10.png)
 
@@ -118,13 +118,13 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
 1. Clique na **Integração de interface do usuário da unidade** e preencha as informações a seguir:
 
-    * **Application Name (Nome do Aplicativo)**: Microsoft Cloud App Security.
+    * **Application Name (Nome do Aplicativo)** : Microsoft Cloud App Security.
 
     * **Short Description & Long Description (Descrição curta e descrição longa)** (opcional): o Microsoft Cloud App Security fornece a visibilidade dos aplicativos de nuvem, ajudando a controlar, investigar e administrar o uso do aplicativo de nuvem, proteger dados corporativos e detectar atividades suspeitas para qualquer aplicativo de nuvem.
 
     * O Google exige que você carregue pelo menos um ícone do aplicativo. Acesse [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) para baixar um arquivo zip que contém os ícones do Cloud App Security. Em seguida, no **ícone do aplicativo**, clique em **Selecionar** ao lado da imagem 128x128 e arraste-a para a tela pop-up. Clique em **Selecionar** ao lado da imagem 32x32 e arraste-a para a tela pop-up.
 
-    * Role para baixo e, na seção **integração de unidade** , digite a seguinte URL em **abrir url:**
+    * Role para baixo e, na seção **integração de unidade** , digite a seguinte URL em **abrir url:** 
     `https://portal.cloudappsecurity.com/#/services/11770?tab=files`
 
     ![Editar o Google Drive](media/google15.png)
@@ -146,11 +146,11 @@ Na **Descrição do aplicativo** digite "O Microsoft Cloud App Security fornece 
 
     * Desmarque a caixa de seleção **habilitar instalação individual** .
 
-    * Configure as quatro imagens necessárias em **Application icons (Ícones de aplicativo)**.
+    * Configure as quatro imagens necessárias em **Application icons (Ícones de aplicativo)** .
 
     As imagens podem ser encontradas em: [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)
 
-    * Preencha as seguintes **Support URLs (URLs de suporte)**:
+    * Preencha as seguintes **Support URLs (URLs de suporte)** :
 
     * **URL dos Termos de serviço**: https://go.microsoft.com/fwlink/?LinkID=733268
 
@@ -178,7 +178,7 @@ Na **Descrição do aplicativo** digite "O Microsoft Cloud App Security fornece 
 `https://www.googleapis.com/auth/admin.directory.user`
 
     * Em **Visibilidade**, selecione **Meu domínio** (não público).
-    * Clique em **Save Changes (Salvar Alterações)**.
+    * Clique em **Save Changes (Salvar Alterações)** .
         ![](media/google-visibility.png) de visibilidade do Google
 1. No console de administração do Google, vá para [gerenciar o controle de acesso do aplicativo](https://admin.google.com/). Localize a linha de **administrador do G Suite** e verifique se ela tem acesso **irrestrito** .
 
@@ -223,6 +223,8 @@ Na **Descrição do aplicativo** digite "O Microsoft Cloud App Security fornece 
 Depois de conectar o G Suite, você receberá eventos por 60 dias antes da conexão.
 
 Após conectar o G Suite, o Cloud App Security realiza uma verificação completa. Dependendo de quantos arquivos e usuários você tiver, a verificação completa poderá levar algum tempo. Para habilitar a verificação quase em tempo real, os arquivos nos quais a atividade é detectada são movidos para o início da fila de verificação. Por exemplo, um arquivo editado, atualizado ou compartilhado é verificado imediatamente. Isso não é aplicável a arquivos que não são modificados por natureza. Por exemplo, os arquivos que são exibidos, visualizados, impressos ou exportados são verificados durante a verificação regular.
+
+Se você tiver problemas para conectar o aplicativo, consulte [Solucionando problemas de conectores de aplicativos](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

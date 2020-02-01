@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/20/2019
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d28257e073227c34a81577558ac2e7c149e373b2
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f2149e984f56385acd4d4e90ec6ea50f18bcc611
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720420"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912105"
 ---
 # <a name="attest-your-app"></a>Atestar seu aplicativo
 
@@ -29,7 +29,7 @@ Se seu aplicativo já estiver listado no catálogo de aplicativos de nuvem ou se
 
 Siga os atributos de serviço descritos abaixo para concluir com êxito o envio do questionário:
 
-| Campo | Categoria de informações | Tipo | Valores aceitos | Description |
+| Campo | Categoria de informações | Digite | Valores aceitos | Description |
 |------|-------|------|---------|----------|
 | Nome do aplicativo | Geral | Cadeia de caracteres | Texto livre | O nome do seu aplicativo como deve aparecer no catálogo de aplicativos de nuvem. |
 | Description | Geral | Cadeia de caracteres | Texto livre | Breve explicação do que seu aplicativo permite que os usuários façam ou alcancem. |
@@ -38,14 +38,14 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 | Data center| Geral | Matriz de códigos do país * | Fechar lista – fornecida no questionário (seleção múltipla) | O país no qual o data center reside (pode ser vários locais) |
 | Empresa de hospedagem | Geral | Cadeia de caracteres | Texto livre | O nome da empresa que fornece Hospedagem de servidor para o aplicativo. |
 | Fundada | Geral | Inteiro | AAAA (não depois de 2019) | O ano em que o provedor foi fundado. |
-| Holding | Geral | Cadeia de caracteres | Privado, público | Exibe se o provedor é uma empresa pública ou privada |
-| Domínio do aplicativo | Geral | Matriz de URL * | Texto livre | A lista de domínios que são usados para interagir com o serviço (por exemplo, ' teams.microsoft.com ' para Microsoft Teams) |
+| Pressionado | Geral | Cadeia de caracteres | Privado, público | Exibe se o provedor é uma empresa pública ou privada |
+| Domínio do aplicativo | Geral | Matriz de URL * | Texto livre | A lista de domínios específicos que são usados para interagir com o serviço. Por exemplo, ' teams.microsoft.com ' para Microsoft Teams e não o domínio genérico ' microsoft.com '. |
 | Termos de serviço | Geral | URL | Texto livre | Este aplicativo fornece um conjunto de regulamentos que os usuários devem concordar em seguir para usar o aplicativo? |
 | Política de privacidade | Geral | URL | Texto livre | Um link para um documento de associação legal relacionado a como esse provedor lida com informações de cliente, cliente ou funcionário coletadas como parte do aplicativo. |
 | URL de logon | Geral | Matriz de URL * | Texto livre | A URL por meio da qual os usuários fazem logon no aplicativo. |
 | Fornecedor | Geral | Cadeia de caracteres | Texto livre | O nome do fornecedor que fornece este aplicativo. |
 | Tipos de dados | Geral | Cadeia de caracteres | Fechar lista – fornecido no questionário | Quais tipos de dados podem ser carregados pelo usuário para o aplicativo?|
-| Home page | Geral | URL | Texto livre | A URL de home page do provedor. |
+| Principal | Geral | URL | Texto livre | A URL de home page do provedor. |
 | Plano de recuperação de desastre | Geral | Booliano | True, False | Este aplicativo tem um plano de recuperação de desastres que inclui uma estratégia de backup e restauração? |
 | Violação mais recente | Segurança | Data | MMM-dd-aaaa | O incidente mais recente em que dados confidenciais, protegidos ou confidenciais pertencentes ao aplicativo foram exibidos, roubados ou usados por um indivíduo não autorizado para fazer isso. |
 | Método de criptografia de dados em repouso | Segurança | Cadeia de caracteres | Fechar lista – fornecido no questionário | O tipo de criptografia de dados em repouso executado no aplicativo. |
@@ -70,7 +70,7 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 | Cabeçalhos de segurança HTTP: X-XSS-Protection | Segurança | Booliano | True, False | Os cabeçalhos HTTP X-XSS-Protection são implementados pelo aplicativo em seu site? |
 | Oferece suporte a SAML | Segurança | Booliano | True, False | Este aplicativo dá suporte ao padrão SAML para a troca de dados de autenticação e autorização? |
 | Protegido contra AFOGAdo | Segurança | Booliano | True, False | Os servidores de aplicativos estão protegidos contra ataques de afoga? |
-| Testes de penetração | Segurança | Booliano | True, False | Este aplicativo executa testes de penetração para detectar e avaliar vulnerabilidades de rede? |
+| Teste de penetração | Segurança | Booliano | True, False | Este aplicativo executa testes de penetração para detectar e avaliar vulnerabilidades de rede? |
 | Requer autenticação do usuário | Segurança | Booliano | True, False | Este aplicativo requer autenticação e não permite o uso anônimo? |
 | Política de senha: limite de comprimento da senha | Segurança | Booliano | True, False | Este aplicativo impõe um limite de comprimento para a criação de senha? |
 | Política de senha: combinação de caracteres | Segurança | Booliano | True, False | Este aplicativo impõe uma combinação de caracteres na criação de senha? |

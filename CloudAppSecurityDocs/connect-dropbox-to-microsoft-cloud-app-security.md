@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c28c9a1c754b086f5cb0c9c8ec889f44fc6697a2
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: cc1d0b563d7d155fdd9f0aab55b4fe117ddfd6bc
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189665"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912067"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar o Dropbox ao Microsoft Cloud App Security
 
@@ -57,6 +57,8 @@ Depois de conectar o Dropbox, você receberá eventos por 60 dias antes da conex
 
 > [!NOTE]
 > Todos os eventos do Dropbox de adição de arquivo são exibidos no Cloud App Security como Carregar arquivo para alinhamento com todos os outros aplicativos conectados ao Cloud App Security.
+
+Se você tiver problemas para conectar o aplicativo, consulte [Solucionando problemas de conectores de aplicativos](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

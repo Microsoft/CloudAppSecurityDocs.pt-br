@@ -9,12 +9,12 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e03f24023968d9e3169aef8636061b8adf05d646
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: bf9260d0fc4c68ac27638fbefbfdd738a89ccd22
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189733"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912248"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security (versão prévia)
 
@@ -140,13 +140,15 @@ Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.
 
 O teste pode levar alguns minutos. Quando ele for concluído, você receberá uma notificação de Êxito ou Falha. Depois de receber uma notificação de êxito, clique em **Concluído**.
 
+Se você tiver problemas para conectar o aplicativo, consulte [Solucionando problemas de conectores de aplicativos](troubleshooting-api-connectors-using-error-messages.md).
+
 ## <a name="aggregated-export-sink"></a>Coletor de exportação agregado
 
 Atualmente, desabilitar o coletor de exportação agregado só é possível por meio do Google Cloud Shell.
 
 ### <a name="to-disable-aggregated-export-sink"></a>Para desabilitar o coletor de exportação agregado
 
-| Etapa | Script | Para obter mais informações |
+| Etapa | script | Para obter mais informações |
 |-|-|-|
 | 1. iniciar uma sessão do Google Cloud Shell. | | [Usando Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
 | 2. defina o projeto atual. | `gcloud config set project {PROJECT_ID}` | [conjunto de configuração gcloud](https://cloud.google.com/sdk/gcloud/reference/config/set) |

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3b69525ff6db246a48fa639274c8e9dc8295f360
-ms.sourcegitcommit: 904407680e8657c6b83f8240abefeb66703e8807
+ms.openlocfilehash: 032ed68260e178c176c631b41eb7dc64e869cbd3
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75553674"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912190"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conectar o workday ao Microsoft Cloud App Security (versão prévia)
 
@@ -44,7 +44,7 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 | System (sistema) | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
 | System (sistema) | Administração de Segurança | | Exibir, modificar | Obter, colocar |
 | System (sistema) | Auditoria do sistema | | Exiba os | Get |
-| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: Relatórios de trabalho público | Exiba os | Get |
+| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: relatórios de trabalho públicos | Exiba os | Get |
 
 > [!NOTE]
 >
@@ -113,6 +113,8 @@ Para obter mais informações sobre como configurar usuários de integração do
 
 > [!NOTE]
 > Depois de conectar o workday, você receberá eventos por sete dias antes da conexão.
+
+Se você tiver problemas para conectar o aplicativo, consulte [Solucionando problemas de conectores de aplicativos](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

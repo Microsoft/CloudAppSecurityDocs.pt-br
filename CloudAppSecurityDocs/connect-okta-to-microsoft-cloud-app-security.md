@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c72aa0edf8a2a70b501f79c97e8dd85b466602c7
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: df64be6f8e3d8739934ae575ee90f3813dabaae6
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189648"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912306"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Conectar o Okta ao Microsoft Cloud App Security
 
@@ -41,7 +41,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
          ![API Okta](media/okta-api.png "API Okta")
 
-    - Clique em **Create Token (Criar Token)**.
+    - Clique em **Create Token (Criar Token)** .
 
          ![Okta criar token](media/okta-createtoken.jpg "Okta criar token")
 
@@ -49,7 +49,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
          ![Pop-up de token Okta](media/okta-token-popup.png "Pop-up de token Okta")
 
-    - No pop-up **Token created successfully (Token criado com êxito)**, copie o **Token value (Valor do token)**.
+    - No pop-up **Token created successfully (Token criado com êxito)** , copie o **Token value (Valor do token)** .
 
          ![Valor do token Okta](media/okta-token-value.png "Valor do token Okta")
 
@@ -59,7 +59,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
     ![conectar Okta](media/connect-okta.png "conectar Okta")
 
-1. No pop-up que abrir, no campo **Domain (Domínio)**, insira seu domínio do Okta e cole seu token no campo **Token**.
+1. No pop-up que abrir, no campo **Domain (Domínio)** , insira seu domínio do Okta e cole seu token no campo **Token**.
 
 1. Clique em **Conectar** para criar o token para o Okta no Cloud App Security.
 
@@ -68,6 +68,8 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
     O teste pode levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.
 
 Depois de conectar o Okta, você receberá eventos por 60 dias antes da conexão.
+
+Se você tiver problemas para conectar o aplicativo, consulte [Solucionando problemas de conectores de aplicativos](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
