@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/01/2019
+ms.date: 01/30/2020
 ms.topic: overview
 ms.prod: ''
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.suite: ems
-ms.openlocfilehash: 8b9c8d975176ff3d8fe4200316b8e3446e830414
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 08271db964102cda85e424f5ef79bca025afaef7
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74553629"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912231"
 ---
 # <a name="microsoft-cloud-app-security-for-us-government-gcc-high"></a>Microsoft Cloud App Security para US Government GCC High
 
@@ -31,4 +31,4 @@ Para saber mais sobre a oferta de GCC High para o Microsoft Cloud App Security p
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Saiba mais sobre o Government GCC High](/enterprise-mobility-security/solution/ems-security-govt-description)
+> [Saiba mais sobre o Government GCC High](/enterprise-mobility-security/solutions/ems-govt-service-description)
