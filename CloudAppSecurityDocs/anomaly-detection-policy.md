@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/1/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: aa1da4946f115a5cf53279d95d3c81c59bc63aef
+ms.sourcegitcommit: 63007af53dafe14ef335e761a723fcbcb1581476
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720295"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76992450"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -41,6 +41,13 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Taxa de atividade
 
 Com base nos resultados da política, os alertas de segurança são disparados. O Cloud App Security examina cada sessão do usuário na nuvem e alerta você quando acontece algo diferente da linha de base da sua organização ou da atividade regular do usuário.
+
+Além dos alertas de Cloud App Security nativos, você também obterá os seguintes alertas de detecção com base nas informações recebidas da proteção de identidade do Azure Active Directory (AD):
+
+* Credenciais vazadas: disparadas quando as credenciais válidas de um usuário tiverem sido vazadas. Para obter mais informações, consulte [detecção de credenciais vazadas do Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
+* Entrada arriscada: combina várias detecções de entrada Azure AD Identity Protection em uma única detecção (desabilitada por padrão). Para obter mais informações, consulte [detecções de risco de entrada do Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+
+Essas políticas serão exibidas na página políticas de Cloud App Security e poderão ser habilitadas ou desabilitadas, mas não editadas.
 
 ## <a name="anomaly-detection-policies"></a>Políticas de detecção de anomalias
 
