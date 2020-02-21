@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7cd509909b49d8c00acd6cebc8c1d8d48e580c66
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 3f3aef39e134e34c46bc97a559bc3c19d4434f84
+ms.sourcegitcommit: 6e266262b9b54e991acb8230a04e865628820557
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190156"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77495696"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-salesforce-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente do Salesforce
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Como um grande provedor de nuvem do CRM, o Salesforce incorpora grandes quantidades de informações confidenciais sobre clientes, guias de preços e principais negócios de sua organização. Sendo um aplicativo essencial para os negócios, o Salesforce é acessado e usado por pessoas dentro da sua organização e por outras pessoas fora dele (como parceiros e prestadores de trabalho) para várias finalidades. Em muitos casos, uma grande proporção de seus usuários acessando o Salesforce tem baixa conscientização da segurança e pode colocar suas informações confidenciais em risco ao compartilhá-lo involuntariamente. Em outras instâncias, os atores mal-intencionados podem obter acesso aos seus ativos mais confidenciais relacionados ao cliente.
 
@@ -29,7 +29,6 @@ Conectar o Salesforce ao Cloud App Security oferece informações aprimoradas so
 - Privilégios elevados
 - Reconhecimento de segurança insuficiente
 - Aplicativos de terceiros mal-intencionados e Complementos do Google
-- Malware
 - Ransomware
 - BYOD (Traga seu próprio dispositivo) não gerenciado
 
@@ -46,10 +45,10 @@ Conectar o Salesforce ao Cloud App Security oferece informações aprimoradas so
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Tipo | Nome |
+| Tipo | {1&gt;Nome&lt;1} |
 | ---- | ---- |
-| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividades administrativas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de exclusão de arquivo incomum](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de compartilhamento de arquivos incomum](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades representadas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de download de vários arquivos incomuns](anomaly-detection-policy.md#unusual-activities-by-user) |
-| Modelo de política de atividade | Logon de um endereço IP com risco<br />Download em massa por um único usuário<br />Atividade de ransomware potencial |
+| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de um país infrequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividades administrativas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de exclusão de arquivo incomum](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de compartilhamento de arquivos incomum](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades representadas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de download de vários arquivos incomuns](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Modelo de política de atividade | Logon de um endereço IP arriscado<br />Download em massa por um único usuário<br />Atividade de ransomware potencial |
 | Modelo de política de arquivo | Detectar um arquivo compartilhado com um domínio não autorizado<br />Detectar um arquivo compartilhado com endereços de email pessoais<br />Detectar arquivos com PII/PCI/PHI |
 
 Para obter mais informações sobre como criar políticas, consulte [criar uma política](control-cloud-apps-with-policies.md#create-a-policy).
@@ -69,7 +68,7 @@ Para obter mais informações sobre como corrigir ameaças de aplicativos, consu
 
 Examine nossas práticas recomendadas para [proteger e colaborar com usuários externos](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) e [bloquear e proteger o download de dados confidenciais para dispositivos não gerenciados ou arriscados](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Como conectar o Salesforce ao Microsoft Cloud App Security](connect-salesforce-to-microsoft-cloud-app-security.md)
