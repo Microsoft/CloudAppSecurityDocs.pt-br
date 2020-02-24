@@ -53,6 +53,8 @@
       href: discovered-apps.md
     - name: Trabalhar com aplicativos conectados
       items:
+        - name: Proteger aplicativos conectados
+          href: protect-connected-apps.md
         - name: Proteger o AWS
           href: protect-aws.md
         - name: Proteger o Azure

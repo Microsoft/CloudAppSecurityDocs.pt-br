@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 36f40dda4b6c169dae50100ccf457fc0f5c99801
-  ms.sourcegitcommit: 446041f0e7adf6688bf63d402838844baa3342bb
+  ms.openlocfilehash: 57482c7e683641ed8f78fc5dabd2aff4c4bb1d46
+  ms.sourcegitcommit: a14ce5fd805e2a470a03578f73114a818441e6c1
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 01/06/2020
-  ms.locfileid: "75667233"
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77507793"
 landingContent:
 - title: Sobre o Cloud App Security
   linkLists:
@@ -71,6 +71,8 @@ landingContent:
       url: risk-score.md
     - text: Trabalhando com aplicativos descobertos
       url: discovered-apps.md
+    - text: Proteger aplicativos conectados
+      url: protect-connected-apps.md
 - title: Práticas recomendadas
   linkLists:
   - linkListType: get-started
