@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 40105f8e4a43f61d5f5c00c3fab1c6b58b03e940
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: e0fb859ee6036340c75d6062f1c62a9ad4a76840
+ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190146"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77566903"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente do Office 365
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Como um pacote de produtividade importante que fornece armazenamento de arquivos em nuvem, colaboração, BI e ferramentas de CRM, o Office 365 permite que os usuários compartilhem seus documentos em sua organização e parceiros de maneira simplificada e eficiente. Usar o Office 365 pode expor seus dados confidenciais não apenas internamente, mas também para colaboradores externos, ou ainda pior disponibilizá-los publicamente por meio de um link compartilhado. Esses incidentes podem ocorrer devido a um ator mal-intencionado ou por um funcionário inconsciente. O Office 365 também fornece um grande sistema de eco de aplicativos de terceiros para ajudar a aumentar a produtividade. O uso desses aplicativos pode expor sua organização ao risco de aplicativos mal-intencionados ou uso de aplicativos com permissões excessivas.
 
@@ -30,7 +30,7 @@ O uso do conector do Office 365 fornece proteção para os seguintes produtos:
 - OneDrive
 - Power BI
 - SharePoint
-- Responsáveis
+- Equipes
 
 ## <a name="main-threats"></a>Principais ameaças
 
@@ -56,12 +56,12 @@ O uso do conector do Office 365 fornece proteção para os seguintes produtos:
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Tipo | Nome |
+| Tipo | {1&gt;Nome&lt;1} |
 | ---- | ---- |
-| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Detecção de malware](anomaly-detection-policy.md#malware-detection)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividade de exclusão de email suspeito (versão prévia)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Caixa de entrada suspeita encaminhando](anomaly-detection-policy.md#suspicious-inbox-forwarding)[atividades incomuns de exclusão de arquivo](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de compartilhamento de arquivos incomum](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de download de vários arquivos incomuns](anomaly-detection-policy.md#unusual-activities-by-user) |
-| Modelo de política de atividade | Logon de um endereço IP com risco<br />Download em massa por um único usuário<br />Atividade de ransomware potencial |
+| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de um país infrequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Detecção de malware](anomaly-detection-policy.md#malware-detection)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividade de exclusão de email suspeito (versão prévia)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Caixa de entrada suspeita encaminhando](anomaly-detection-policy.md#suspicious-inbox-forwarding)[atividades incomuns de exclusão de arquivo](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de compartilhamento de arquivos incomum](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de download de vários arquivos incomuns](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Modelo de política de atividade | Logon de um endereço IP arriscado<br />Download em massa por um único usuário<br />Atividade de ransomware potencial |
 | Modelo de política de arquivo | Detectar um arquivo compartilhado com um domínio não autorizado<br />Detectar um arquivo compartilhado com endereços de email pessoais<br />Detectar arquivos com PII/PCI/PHI |
-| Política de detecção de anomalias do aplicativo OAuth | [Nome do aplicativo OAuth enganoso](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Nome do editor enganoso para um aplicativo OAuth](app-permission-policy.md#oauth-app-anomaly-detection-policies) |
+| Política de detecção de anomalias do aplicativo OAuth | [Nome do aplicativo OAuth enganoso](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Nome do editor enganoso para um aplicativo OAuth](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Consentimento de aplicativo OAuth mal-intencionado](anomaly-detection-policy.md#unusual-activities-by-user) |
 
 Para obter mais informações sobre como criar políticas, consulte [criar uma política](control-cloud-apps-with-policies.md#create-a-policy).
 
@@ -71,7 +71,7 @@ Além de monitorar possíveis ameaças, você pode aplicar e automatizar as segu
 
 | Tipo | Ação |
 | ---- | ---- |
-| Governança de dados | **OneDrive:**<br /> -Herdar permissões de pasta pai<br /> -Tornar o arquivo/pasta particular<br /> -Colocar arquivo/pasta na quarentena do administrador<br /> -Colocar arquivo/pasta na quarentena do usuário<br /> -Lixeira/arquivo/pasta<br /> -Remover um colaborador específico<br /> -Remover colaboradores externos no arquivo/pasta<br /> -Aplicar rótulo de classificação da proteção de informações do Azure<br /> -Remover rótulo de classificação da proteção de informações do Azure<br /> **SharePoint:**<br /> -Herdar permissões de pasta pai<br /> -Tornar o arquivo/pasta particular<br /> -Colocar arquivo/pasta na quarentena do administrador<br /> -Colocar arquivo/pasta na quarentena do usuário<br /> -Colocar arquivo/pasta em quarentena do usuário e adicionar permissões de proprietário<br /> -Lixeira/arquivo/pasta<br /> -Remover colaboradores externos no arquivo/pasta<br /> -Remover um colaborador específico<br /> -Aplicar rótulo de classificação da proteção de informações do Azure<br /> -Remover rótulo de classificação da proteção de informações do Azure |
+| Governança de dados | **For**<br /> -Herdar permissões de pasta pai<br /> -Tornar o arquivo/pasta particular<br /> -Colocar arquivo/pasta na quarentena do administrador<br /> -Colocar arquivo/pasta na quarentena do usuário<br /> -Lixeira/arquivo/pasta<br /> -Remover um colaborador específico<br /> -Remover colaboradores externos no arquivo/pasta<br /> -Aplicar rótulo de classificação da proteção de informações do Azure<br /> -Remover rótulo de classificação da proteção de informações do Azure<br /> **Services**<br /> -Herdar permissões de pasta pai<br /> -Tornar o arquivo/pasta particular<br /> -Colocar arquivo/pasta na quarentena do administrador<br /> -Colocar arquivo/pasta na quarentena do usuário<br /> -Colocar arquivo/pasta em quarentena do usuário e adicionar permissões de proprietário<br /> -Lixeira/arquivo/pasta<br /> -Remover colaboradores externos no arquivo/pasta<br /> -Remover um colaborador específico<br /> -Aplicar rótulo de classificação da proteção de informações do Azure<br /> -Remover rótulo de classificação da proteção de informações do Azure |
 | Governança de usuário | -Notificar o usuário sobre o alerta (por meio do Azure AD)<br /> -Exigir que o usuário entre novamente (por meio do Azure AD)<br /> – Suspender usuário (por meio do Azure AD) |
 | Governança de aplicativo OAuth | -Revogar permissão de aplicativo OAuth |
 
@@ -81,7 +81,7 @@ Para obter mais informações sobre como corrigir ameaças de aplicativos, consu
 
 Examine nossas práticas recomendadas para [proteger e colaborar com usuários externos](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) e [bloquear e proteger o download de dados confidenciais para dispositivos não gerenciados ou arriscados](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Como conectar o Office 365 ao Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
