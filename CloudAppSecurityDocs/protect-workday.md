@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9a08b00cabaa7829663d391073a9a4935efdee58
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 9ee405188d0f338bfe43ca9a08730baa6054a844
+ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190026"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78274638"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente workday
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Como uma solução HCM principal, o workday mantém algumas das informações mais confidenciais em sua organização, como dados pessoais de funcionários, contratos, detalhes de fornecedores e muito mais. Impedir a exposição desses dados exige monitoramento contínuo para impedir que quaisquer atores maliciosos ou pessoas sem reconhecimento de segurança invasão as informações confidenciais.
 
@@ -38,9 +38,10 @@ Conectar o workday ao Cloud App Security oferece informações aprimoradas sobre
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Tipo | Nome |
+| Digite | Name |
 | ---- | ---- |
-| Modelo de política de atividade | Logon de um endereço IP com risco |
+| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de um país infrequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel) |
+| Modelo de política de atividade | Logon de um endereço IP arriscado |
 
 Para obter mais informações sobre como criar políticas, consulte [criar uma política](control-cloud-apps-with-policies.md#create-a-policy).
 
