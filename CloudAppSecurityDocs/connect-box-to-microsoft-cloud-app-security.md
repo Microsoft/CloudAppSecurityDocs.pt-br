@@ -1,6 +1,6 @@
 ---
-title: Conectar o Box ao Cloud App Security
-description: Este artigo fornece informações sobre como conectar o aplicativo Box ao Cloud App Security usando o conector de API para obter visibilidade e controle sobre o uso.
+title: Conectar caixa a Cloud App Security
+description: Este artigo fornece informações sobre como conectar seu aplicativo Box ao Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,74 +14,74 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01f73d9da14aa77ce579620b6acb17e8759223fe
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: 54db3f2b49150e37108fa7d376797df72f23a3d0
+ms.sourcegitcommit: be2c558eee71de02ec29632fc58256d49de0f86f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912207"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78304865"
 ---
-# <a name="connect-box-to-microsoft-cloud-app-security"></a>Conectar o Box ao Microsoft Cloud App Security
+# <a name="connect-box-to-microsoft-cloud-app-security"></a>Conectar caixa a Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
-Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do Box usando as APIs do Conector de Aplicativos. Essa conexão fornece visibilidade e controle sobre o uso do Box. Para obter informações sobre como Cloud App Security proteger a caixa, consulte [proteger caixa](protect-box.md).
+Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta de caixa existente usando as APIs do conector de aplicativo. Essa conexão fornece visibilidade e controle sobre o uso da caixa. Para obter informações sobre como Cloud App Security proteger a caixa, consulte [proteger caixa](protect-box.md).
 
-## <a name="how-to-connect-box-to-cloud-app-security"></a>Como conectar o Box ao Cloud App Security
+## <a name="how-to-connect-box-to-cloud-app-security"></a>Como conectar a caixa ao Cloud App Security
 
 > [!NOTE]
-> A implantação com uma conta que não seja uma conta de administrador leva a uma falha no teste da API e não permite que Cloud App Security verifique todos os arquivos no Box. Se isso for um problema para você, é possível realizar a implantação com um coadministrador que tenha todos os privilégios selecionados, mas o teste da API continuará a falhar e os arquivos pertencentes a outros administradores no Box não forem verificados.
+> A implantação com uma conta que não é uma conta de administrador leva a uma falha no teste de API e não permite que Cloud App Security Verifique todos os arquivos no box. Se esse for um problema para você, você poderá implantar com um coadministrador que tenha todos os privilégios verificados, mas o teste de API continuará a falhar e os arquivos pertencentes a outros administradores no box não serão verificados.
 
 1. Se você restringir o acesso de permissão do aplicativo, siga esta etapa. Caso contrário, pule para a etapa 2.
 
-    - No console de administração do Box, clique no ícone de configurações seguido por **Business settings** ou **Enterprise settings**.
+    - No console do administrador do box, clique no ícone de configurações seguido por **configurações de negócios** ou **configurações empresariais**.
 
          ![configurações de negócios do box](media/box-business-settings.png "configurações de negócios do box")
 
-    - Clique na guia **Aplicativos**.
+    - Clique na guia **aplicativos** .
 
          ![aplicativos do box](media/box-apps.png "aplicativos do box")
 
-    - Se **Aplicativos Não Publicados** for selecionado, na caixa de texto **Exceto para** adicione o número de série do aplicativo do Cloud App Security:
+    - Se **aplicativos não publicados** estiverem selecionados, na caixa de texto **exceto para** , adicione o número de série do aplicativo Cloud app Security:
 
-         |Data center|Número de série do Microsoft Cloud App Security|
+         |Data Center|Número de série Microsoft Cloud App Security|
          |----|----|
          |US1| `nduj1o3yavu30dii7e03c3n7p49cj2qh`|
-         |US2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
+         |DOS EUA 2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
          |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
          |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        Em seguida, clique em **Salvar**. Para obter informações sobre como ver a qual data center do Cloud App Security você está conectado, consulte [Tokens de API](api-tokens.md).
+        Em seguida, clique em **Salvar**. Para obter informações sobre como ver a quais Cloud App Security data center você está conectado, consulte [exibir seus data center](network-requirements.md#view-your-data-center).
 
-    ![configurações do box exceto para](media/box-settings-except-for.png)
+    ![configurações de caixa, exceto para](media/box-settings-except-for.png)
 
     > [!NOTE]
-    > Se você for um cliente Adallom existente e a URL do seu console for para o Adallom e não para o Cloud App Security, use este número de série do aplicativo: bwahmilhdlpbqy2ongkl119o3lrkoshc.
+    > Se você for um cliente Adallom existente e a URL do console for para Adallom e não Cloud App Security, use este número de série do aplicativo: bwahmilhdlpbqy2ongkl119o3lrkoshc.
 
-2. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.
+2. No portal de Cloud App Security, clique em **investigar** e em **aplicativos conectados**.
 
-3. Na página **Conectores de aplicativos**, clique no botão de sinal de mais e selecione **Box**.
+3. Na página **conectores de aplicativos** , clique no botão de sinal de adição e selecione **caixa**.
 
-    ![caixa de conexão](media/connect-box.png "conectar o box")
+    ![caixa de conexão](media/connect-box.png "caixa de conexão")
 
-4. No pop-up **Configurações do Box**, clique em **Seguir esse link**.
+4. No pop-up **configurações do box** , clique em **seguir este link**.
 
-5. A página de entrada do Box é aberta. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Box da sua equipe.
+5. A página de entrada do Box é aberta. Insira suas credenciais para permitir que Cloud App Security acesso ao aplicativo de caixa da sua equipe.
 
-6. O Box pergunta se você deseja permitir que o Cloud App Security acesse o log de atividades e as informações da sua equipe e realize atividades como qualquer membro da equipe. Para continuar, clique em **Permitir**.
+6. Box pergunta se você deseja permitir Cloud App Security acesso às informações da sua equipe, ao log de atividades e executar atividades como um membro da equipe. Para continuar, clique em **Permitir**.
 
-7. De volta ao portal do Cloud App Security, você deve receber uma mensagem dizendo que o Box foi conectado com êxito.
+7. De volta ao portal de Cloud App Security, você deve receber uma mensagem dizendo que a caixa foi conectada com êxito.
 
 8. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.
 
-    O teste pode levar alguns minutos. Depois de receber uma notificação de êxito, clique em **Fechar**.
+    O teste pode levar alguns minutos. Depois de receber um aviso de êxito, clique em **fechar**.
 
-O Box agora está conectado ao Cloud App Security.
+A caixa agora está conectada a Cloud App Security.
 
-Depois de conectar o Box, você receberá eventos por 60 dias antes da conexão.
+Após a caixa de conexão, você receberá eventos de 60 dias antes da conexão.
 
-Após conectar o Box, o Cloud App Security realizará uma verificação completa. Dependendo de quantos arquivos e usuários você tiver, a verificação completa poderá levar algum tempo. Para habilitar a verificação quase em tempo real, os arquivos nos quais as atividades são detectadas são movidos para o início da fila de verificação. Por exemplo, um arquivo editado, atualizado ou compartilhado é verificado imediatamente, em vez de aguardar o processo de verificação normal. A verificação quase em tempo real não se aplica a arquivos que não são modificados por natureza. Por exemplo, os arquivos que são exibidos, visualizados, impressos ou exportados são verificados como parte da verificação agendada regularmente.
+Após a caixa de conexão, Cloud App Security executa uma verificação completa. Dependendo de quantos arquivos e usuários você tem, concluir a verificação completa pode levar algum tempo. Para habilitar a verificação quase em tempo real, os arquivos nos quais as atividades são detectadas são movidos para o início da fila de verificação. Por exemplo, um arquivo que é editado, atualizado ou compartilhado é verificado imediatamente, em vez de aguardar o processo de verificação regular. A verificação quase em tempo real não se aplica a arquivos que não são modificados de forma inerente. Por exemplo, os arquivos que são exibidos, visualizados, impressos ou exportados são verificados como parte da verificação agendada regularmente.
 
 Se você tiver problemas para conectar o aplicativo, consulte [Solucionando problemas de conectores de aplicativos](troubleshooting-api-connectors-using-error-messages.md).
 

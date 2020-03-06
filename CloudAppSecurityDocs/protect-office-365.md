@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c685f973f597cedd653704964a8dace06331f313
-ms.sourcegitcommit: 7581611b4231fddbb3926a8dd1b0b16e6ea90ea5
+ms.openlocfilehash: eaf8218f45da787e361fe4e1627bb2cdfc4afeb1
+ms.sourcegitcommit: 27c45aa35c11c4ce54edbe10a9d22cf6b452fbe6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204070"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78304791"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente do Office 365
 
@@ -24,13 +24,19 @@ Conectar o Office 365 ao Cloud App Security oferece informações aprimoradas so
 
 O uso do conector do Office 365 fornece proteção para os seguintes produtos:
 
-- Office 365
 - CRM do Dynamics 365
 - Exchange
+- Office 365
 - OneDrive
+- Automatizar energia
 - Power BI
 - SharePoint
+- Skype for Business
 - Equipes
+- Yammer
+
+> [!NOTE]
+> O Cloud App Security se integra diretamente aos [logs de auditoria do Office 365](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) e recebe todos os eventos auditados de **todos os serviços com suporte**, como PowerApps, Forms, Sway e Stream.
 
 ## <a name="main-threats"></a>Principais ameaças
 
