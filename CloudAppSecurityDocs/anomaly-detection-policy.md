@@ -15,19 +15,19 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77566862"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342094"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenha análise comportamental e detecção de anomalias instantâneas
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-As políticas de detecção de anomalias do Microsoft Cloud App Security fornecem UEBA (análise comportamental do usuário e entidade) e o ML (aprendizado de máquina) prontos para que você possa executar imediatamente a detecção avançada de ameaças em seu ambiente de nuvem. Como elas são habilitadas automaticamente, as novas políticas de detecção de anomalias fornecem resultados imediatos, fornecendo detecções imediatas, direcionando a várias anomalias comportamentais entre seus usuários e os computadores e dispositivos conectados à sua rede.  Além disso, as novas políticas expõem mais dados do mecanismo de detecção de Cloud App Security, para ajudá-lo a acelerar o processo de investigação e a conter ameaças contínuas.
+As políticas de detecção de anomalias do Microsoft Cloud App Security fornecem UEBA (análise comportamental do usuário e entidade) e o ML (aprendizado de máquina) prontos para que você possa executar imediatamente a detecção avançada de ameaças em seu ambiente de nuvem. Como elas são habilitadas automaticamente, as novas políticas de detecção de anomalias fornecem resultados imediatos, fornecendo detecções imediatas, direcionando a várias anomalias comportamentais entre seus usuários e os computadores e dispositivos conectados à sua rede.  Além disso, as novas políticas expõem mais dados do mecanismo de detecção do Cloud App Security para ajudar a agilizar o processo de investigação e conter as ameaças em andamento.
 
-As políticas de detecção de anomalias são habilitadas automaticamente, mas Cloud App Security tem um período de aprendizado inicial de sete dias durante o qual nem todos os alertas de detecção de anomalias são gerados. Depois disso, cada sessão é comparada com a atividade, quando os usuários estavam ativos, endereços IP, dispositivos, etc. detectados no último mês e na pontuação de risco dessas atividades.  Essas detecções fazem parte do mecanismo de detecção de anomalias heurística que cria o perfil de seu ambiente e dispara alertas em relação a uma linha de base que foi aprendida na atividade da sua organização. Essas detecções também usam algoritmos de aprendizado de máquina criados para criar o perfil dos usuários e o padrão de entrada para reduzir os falsos positivos.
+As políticas de detecção de anomalias são habilitadas automaticamente, mas Cloud App Security tem um período de aprendizado inicial de sete dias durante o qual nem todos os alertas de detecção de anomalias são gerados. Depois disso, cada sessão é comparada à atividade, quando os usuários estavam ativos, os endereços IP, os dispositivos, entre outros itens detectados ao longo do mês anterior e a pontuação de risco dessas atividades.  Essas detecções fazem parte do mecanismo de detecção de anomalias heurística que cria o perfil de seu ambiente e dispara alertas em relação a uma linha de base que foi aprendida na atividade da sua organização. Essas detecções também usam algoritmos de aprendizado de máquina criados para criar o perfil dos usuários e o padrão de entrada para reduzir os falsos positivos.
 
 As anomalias são detectadas por meio da verificação da atividade do usuário. O risco é avaliado examinando mais de 30 indicadores de risco diferentes, agrupados em fatores de risco, da seguinte maneira:
 
@@ -59,14 +59,14 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 
 ### <a name="impossible-travel"></a>Viagem impossível
 
-* Essa detecção identifica duas atividades do usuário (é uma única ou várias sessões) provenientes de locais geograficamente distantes dentro de um período de tempo menor do que o tempo que teria levado para o usuário viajar do primeiro local para o segundo, indicando se um usuário diferente está usando as mesmas credenciais. Essa detecção usa um algoritmo de aprendizado de máquina que ignora "falsos positivos" claros que contribuem para a condição de viagem impossível, como VPNs e locais usados regularmente por outros usuários na organização. A detecção tem um período de aprendizado inicial de sete dias durante o qual ele aprende o padrão de atividade de um novo usuário. A detecção de viagem impossível identifica atividades de usuário incomuns e impossíveis entre dois locais. A atividade deve ser incomum o suficiente para ser considerada um indicador de comprometimento e digno de um alerta. Para fazer isso funcionar, a lógica de detecção inclui diferentes níveis de supressão para tratar de cenários que podem disparar falsos positivos, como atividades de VPN. O controle deslizante sensibilidade permite que você afete o algoritmo e defina o quão estrito é a lógica de detecção. Quanto maior o nível de sensibilidade, menor será a supressão aplicada como parte da lógica de detecção. Dessa forma, você pode adaptar a detecção de acordo com suas necessidades de cobertura e seus destinos de SNR.
+* Essa detecção identifica duas atividades do usuário (é uma única ou várias sessões) provenientes de locais geograficamente distantes em um período de tempo menor que o tempo que teria levado para o usuário viajar do primeiro local para o segundo, indicando que um usuário diferente está usando as mesmas credenciais. Essa detecção usa um algoritmo de aprendizado de máquina que ignora "falsos positivos" claros que contribuem para a condição de viagem impossível, como VPNs e locais usados regularmente por outros usuários na organização. A detecção tem um período inicial de aprendizado de sete dias, durante o qual aprende o padrão de atividade de um novo usuário. A detecção de viagem impossível identifica atividades de usuário incomuns e impossíveis entre dois locais. A atividade deve ser incomum o suficiente para ser considerada um indicador de comprometimento e digno de um alerta. Para fazer isso funcionar, a lógica de detecção inclui diferentes níveis de supressão para tratar de cenários que podem disparar falsos positivos, como atividades de VPN. O controle deslizante sensibilidade permite que você afete o algoritmo e defina o quão estrito é a lógica de detecção. Quanto maior o nível de sensibilidade, menor será a supressão aplicada como parte da lógica de detecção. Dessa forma, você pode adaptar a detecção de acordo com suas necessidades de cobertura e seus destinos de SNR.
 
     > [!NOTE]
     > Quando os endereços IP em ambos os lados da viagem são [marcados como corporativos](ip-tags.md), a viagem é considerada confiável e excluída do disparo da detecção de viagem impossível. No entanto, se o endereço IP de apenas um dos lados da viagem for marcado como corporativo, a detecção será disparada como normal.
 
 ### <a name="activity-from-infrequent-country"></a>Atividade de um país infrequente
 
-* Essa detecção considera os locais de atividades anteriores para determinar locais novos e infrequentes. O mecanismo de detecção de anomalias armazena informações sobre os locais anteriores usados pelos usuários na organização. Um alerta é disparado quando ocorre uma atividade de um local que não foi recentemente ou nunca foi visitado por nenhum usuário na organização.
+* Essa detecção considera os locais de atividades anteriores para determinar os locais novos e pouco frequentes. O mecanismo de detecção de anomalias armazena informações sobre locais anteriores usados por usuários na organização. Um alerta é disparado quando ocorre uma atividade de um local que não foi recentemente ou nunca foi visitado por nenhum usuário na organização.
 
 ### <a name="malware-detection"></a>Detecção de malware
 
@@ -82,11 +82,11 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
 
-* Essa detecção identifica que os usuários estavam ativos de um endereço IP que foi identificado como um endereço IP de proxy anônimo. Esses proxies são usados por pessoas que desejam ocultar o endereço IP do dispositivo e podem ser usados para uma intenção mal-intencionada. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP com marcas de tipo de mis que são amplamente usadas por usuários na organização.
+* Essa detecção identifica que os usuários estavam ativos com base em um endereço IP que foi identificado como um endereço IP de proxy anônimo. Esses proxies geralmente são usados por usuários que desejam ocultar o endereço IP de seu dispositivo e podem ser usados com objetivos mal-intencionados. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP com marcas de tipo de mis que são amplamente usadas por usuários na organização.
 
 ### <a name="ransomware-activity"></a>Atividade de ransomware
 
-* Cloud App Security estendeu seus recursos de detecção de ransomware com detecção de anomalias para garantir uma cobertura mais abrangente contra ataques de ransomware sofisticados. Usando nossa experiência de pesquisa de segurança para identificar os padrões comportamentais que refletem a atividade de ransomware, Cloud App Security garante uma proteção holística e abrangente. Se Cloud App Security identificar, por exemplo, uma alta taxa de carregamentos de arquivos ou atividades de exclusão de arquivos, ele poderá representar um processo de criptografia adverso. Esses dados são coletados nos logs recebidos de APIs conectadas e, em seguida, combinados com padrões de comportamento conhecidos e inteligência contra ameaças, por exemplo, extensões de ransomware conhecidas. Para obter mais informações sobre como Cloud App Security detecta ransomware, consulte [protegendo sua organização contra ransomware](use-case-ransomware.md).
+* O Cloud App Security ampliou seus recursos de detecção de ransomware com a detecção de anomalias para garantir uma cobertura mais abrangente contra ataques sofisticados de ransomware. Usando nossa experiência de pesquisa de segurança para identificar os padrões comportamentais que refletem a atividade de ransomware, o Cloud App Security garante uma proteção holística e robusta. Se Cloud App Security identificar, por exemplo, uma alta taxa de carregamentos de arquivos ou atividades de exclusão de arquivos, ele poderá representar um processo de criptografia adverso. Esses dados são coletados nos logs recebidos de APIs conectadas e, em seguida, combinados com padrões de comportamento conhecidos e inteligência contra ameaças, por exemplo, extensões de ransomware conhecidas. Para obter mais informações sobre como Cloud App Security detecta ransomware, consulte [protegendo sua organização contra ransomware](use-case-ransomware.md).
 
 ### <a name="activity-performed-by-terminated-user"></a>Atividade executada por usuário encerrado
 
@@ -108,7 +108,7 @@ A detecção procura por usuários cuja conta foi encerrada no Azure AD, mas ain
 
 ### <a name="suspicious-inbox-manipulation-rules"></a>Regras de manipulação de caixa de entrada suspeitas
 
-* Essa detecção faz o perfil do seu ambiente e dispara alertas quando regras suspeitas que excluem ou movem mensagens ou pastas são definidas na caixa de entrada de um usuário. Isso pode indicar que a conta do usuário está comprometida, que as mensagens estão sendo intencionalmente ocultas e que a caixa de correio está sendo usada para distribuir spam ou malware na sua organização.
+* Essa detecção faz o perfil do seu ambiente e dispara alertas quando regras suspeitas que excluem ou movem mensagens ou pastas são definidas na caixa de entrada de um usuário. Pode indicar que a conta de usuário está comprometida, que as mensagens foram ocultadas de forma intencional e que a caixa de correio está sendo usada para enviar spam e malware em sua organização.
 
 ### <a name="suspicious-email-deletion-activity-preview"></a>Atividade de exclusão de email suspeito (versão prévia)
 
@@ -153,7 +153,7 @@ Você pode habilitar ações de correção automatizadas em alertas gerados por 
 
 Para afetar o mecanismo de detecção de anomalias para suprimir ou Surface os alertas de acordo com suas preferências:
 
-* Na política de viagem impossível, você pode definir o controle deslizante de sensibilidade para determinar o nível de comportamento anormal necessário antes que um alerta seja disparado. Por exemplo, se você defini-lo como baixo, ele suprimirá os alertas de viagem impossíveis dos locais comuns de um usuário e, se você defini-lo como alto, ele causará a superfície desses alertas. Você pode escolher entre os seguintes níveis de sensibilidade:
+* Na política Viagem Impossível, você pode definir o controle deslizante de sensibilidade para determinar o nível de comportamento anormal necessário antes que um alerta seja disparado. Por exemplo, se você defini-lo como baixo, ele suprimirá os alertas de viagem impossíveis dos locais comuns de um usuário e, se você defini-lo como alto, ele causará a superfície desses alertas. Você pode escolher entre os seguintes níveis de sensibilidade:
 
   * **Baixo**: supressões de sistema, locatário e usuário
   * **Médio**: supressões do sistema e do usuário
@@ -175,7 +175,7 @@ Para afetar o mecanismo de detecção de anomalias para suprimir ou Surface os a
 ## <a name="scope-anomaly-detection-policies"></a>Políticas de detecção de anomalias de escopo
 
 Cada política de detecção de anomalias pode ter escopo independente para que se aplique somente aos usuários e grupos que você deseja incluir e excluir na política.
-Por exemplo, você pode definir a atividade de detecção de Condado infrequente para ignorar um usuário específico que viaja com frequência.
+Por exemplo, você pode definir a detecção de Atividade de região pouco frequente para ignorar um usuário específico que viaja com frequência.
 
 Para fazer o escopo de uma política de detecção de anomalias:
 
