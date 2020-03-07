@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 770439dea68e73679ebf2fae7ed1eaf1af3f8005
-ms.sourcegitcommit: 7581611b4231fddbb3926a8dd1b0b16e6ea90ea5
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204104"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342362"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas Microsoft Cloud App Security
 
@@ -29,7 +29,7 @@ Este artigo descreve as opções de suporte e solução de problemas disponívei
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Gerenciar solicitações de suporte para Cloud App Security
 
-A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para Microsoft Cloud App Security. O suporte está disponível online e por telefone para assinaturas de avaliação e pagas. O suporte técnico online está disponível em inglês e japonês. O suporte telefônico e o suporte de cobrança online estão disponíveis em outros idiomas.
+A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para Microsoft Cloud App Security. O suporte está disponível online e por telefone para assinaturas de avaliação e pagas. O suporte técnico online está disponível apenas em inglês e japonês. O suporte telefônico e o suporte de cobrança online estão disponíveis em outros idiomas.
 
 Como administrador, você pode usar a opção **ajuda + suporte** para arquivar uma solicitação de suporte online para Cloud App Security da portal do Azure. Para criar uma solicitação de suporte, é necessário atribuir uma das seguintes funções de administrador à sua conta [no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
@@ -98,6 +98,6 @@ A equipe de Cloud App Security sempre está ansiosos para ouvir suas ideias sobr
 
 * **Comentários**sobre a documentação: nosso novo sistema de comentários foi criado com base nos problemas do github. Para fornecer comentários sobre a documentação, você deve primeiro criar uma conta do GitHub. Leia sobre essa alteração em [nossa postagem no blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Leia sobre as noções básicas de [introdução ao Cloud app Security](getting-started-with-cloud-app-security.md)
