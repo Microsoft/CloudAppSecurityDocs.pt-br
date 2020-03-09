@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bedf7e135e0204427b492c8106f1db13fb538195
-ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
+ms.openlocfilehash: 8087effca6ceee2c65a9660391ac5606d8ef05e6
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567167"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927794"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional
 
@@ -54,7 +54,11 @@ Controle de Aplicativos de Acesso Condicional permite que o acesso de aplicativo
 
 A criação de uma política de sessão com o Controle de Aplicativos de Acesso Condicional permite controlar as sessões de usuário redirecionando o usuário por meio de um proxy reverso em vez de diretamente para o aplicativo. A partir de então, as solicitações e respostas do usuário passam por Cloud App Security em vez de diretamente para o aplicativo.
 
-Quando uma sessão é protegida por proxy, todas as URLs e cookies relevantes são substituídos por Cloud App Security. Por exemplo, se o aplicativo retornar uma página com links cujos domínios terminam com myapp.com, o link será substituído por domínios que terminam com algo como: myapp.com.us.cas.ms
+Quando uma sessão é protegida por proxy, todas as URLs e cookies relevantes são substituídos por Cloud App Security. Por exemplo, se o aplicativo retornar uma página com links cujos domínios terminem com `myapp.com`, o domínio do link será sufixado com algo como `*.cas.ms`, da seguinte maneira:
+
+|URL do aplicativo|URL substituída|
+|---|---|
+|`myapp.com`|`myapp.com.us.cas.ms`|
 
 Esse método não exige que você instale nada no dispositivo, tornando-o ideal ao monitorar ou controlar sessões de dispositivos não gerenciados ou de usuários de parceiros.
 
@@ -170,7 +174,7 @@ Veja a seguir uma lista de aplicativos em destaque com suporte no Office 365 Clo
 
 Se você estiver interessado em um aplicativo específico em destaque, [envie-nos detalhes sobre o aplicativo](mailto:casfeedback@microsoft.com). Lembre-se de enviar o caso de uso no qual você está interessado para fazer uma integração.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Implantar Controle de Aplicativos de Acesso Condicional para aplicativos em destaque](proxy-deployment-aad.md)

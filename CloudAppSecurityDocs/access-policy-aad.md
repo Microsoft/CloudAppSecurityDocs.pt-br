@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4f0fc4fa4bef878f6b248357f8c9bae97e52bbce
-ms.sourcegitcommit: 11ae264d365e403f7761e880e82aad80afc31228
+ms.openlocfilehash: 5ab52bf417a6a0a6fea583fac9f64f70ea78e4a3
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77674588"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927743"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
@@ -77,17 +77,17 @@ Para criar uma nova política de acesso, siga este procedimento:
 
 6. Você pode **criar um alerta para cada evento de correspondência com a severidade da política** e definir um limite de alerta e selecionar se deseja o alerta como um email, uma mensagem de texto ou ambos.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
+
+> [!div class="nextstepaction"]
+> [«ANTERIOR: como criar uma política de sessão](session-policy-aad.md)
+
+> [!div class="nextstepaction"]
+> [Em seguida: Explore os casos de uso populares»](use-case-proxy-block-session-aad.md)
+
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando controles de sessão](use-case-proxy-block-session-aad.md)
-
-## <a name="see-also"></a>Consulte também
-
-> [!div class="nextstepaction"]
-> [Como criar uma política de sessão](session-policy-aad.md)
-
-> [!div class="nextstepaction"]
-> [Explore os casos de uso populares»](use-case-proxy-block-session-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

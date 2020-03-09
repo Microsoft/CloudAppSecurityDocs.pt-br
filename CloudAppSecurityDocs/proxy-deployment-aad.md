@@ -1,6 +1,6 @@
 ---
-title: Implantar o Controle de Aplicativos de Acesso Condicional do Cloud App Security em aplicativos do Azure AD
-description: Este artigo fornece informações sobre como implantar os recursos de proxy reverso do Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security para aplicativos do Azure AD.
+title: Implantar Cloud App Security Controle de Aplicativos de Acesso Condicional para aplicativos do Azure AD
+description: Este artigo fornece informações sobre como implantar o Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional recursos de proxy reverso para aplicativos do Azure AD.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 290429e345e6b814a34a3e9214b5f69fdcbf7ddf
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 0fc3f43aa76f64d1228a6e45d2fdc743a494a8e3
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720938"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927791"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Os controles de sessão no Microsoft Cloud App Security funcionam com os aplicativos em destaque. Para obter uma lista de aplicativos que são apresentados por Cloud App Security para trabalhar prontos para uso, consulte [proteger aplicativos com Microsoft Cloud App Security controle de aplicativos de acesso condicional](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
-Para implantar o Controle de Aplicativos de Acesso Condicional nos aplicativos do Azure AD, você precisa de uma [licença do Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) válida, bem como uma licença do Cloud App Security.
+Para implantar Controle de Aplicativos de Acesso Condicional para aplicativos do Azure AD, você precisa de uma [licença válida para Azure ad Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) , bem como uma licença de Cloud app Security.
 
 ## <a name="to-deploy-featured-apps"></a>Para implantar aplicativos em destaque
 
@@ -43,15 +43,15 @@ Siga estas etapas para configurar aplicativos em destaque para serem controlados
 
 1. Em Azure Active Directory, em **segurança**, clique em **acesso condicional**.
 
-1. Clique em **Nova política** e crie uma política.
+1. Clique em **nova política** e crie uma nova política.
 
-1. Na política TESTE, em **Usuários**, atribua um usuário de teste ou um usuário que possa ser usado para um logon e uma verificação iniciais.
+1. Na política de teste, em **usuários**, atribua um usuário de teste ou usuário que pode ser usado para um logon inicial e uma verificação.
 
-1. Na política de TESTE, em **Aplicativo de nuvem**, atribua os aplicativos que você deseja controlar com o Controle de Aplicativo de Acesso Condicional.
+1. Na política de teste, em **aplicativo de nuvem**, atribua os aplicativos que você deseja controlar com controle de aplicativos de acesso condicional.
 
-1. Em **Sessão**, defina a política para usar uma das políticas internas, **Somente monitorar** ou **Bloquear downloads**. Ou selecione **Usar política personalizada** para definir uma política avançada no portal do Cloud App Security.
+1. Em **sessão**, defina a política para usar qualquer uma das políticas internas, **monitorar apenas** ou **bloquear downloads**. Ou selecione **usar política personalizada** para definir uma política avançada no portal de Cloud app Security.
 
-1. Adicione **Atribuições de condição** ou **Controles de concessão** aplicáveis (opcional).
+1. Adicione quaisquer **atribuições de condição** ou **controles de concessão** aplicáveis (opcional).
 
     ![Acesso condicional do Azure AD](media/azure-ad-caac-policy.png)
 
@@ -62,13 +62,13 @@ Siga estas etapas para configurar aplicativos em destaque para serem controlados
 > [!NOTE]
 > Antes de continuar, certifique-se de primeiro sair das sessões existentes.
 
-Depois de criar a política, entre em cada aplicativo configurado nessa política. Entre usando um usuário configurado na política.
+Depois de criar a política, entre em cada aplicativo configurado nessa política. Certifique-se de entrar usando um usuário configurado na política.
 
-Cloud App Security sincronizará os detalhes da política com seus servidores para cada novo aplicativo no qual você entrar. Isso poderá levar até um minuto.
+Cloud App Security sincronizará os detalhes da política com seus servidores para cada novo aplicativo no qual você entrar. Isso pode levar até um minuto.
 
 ## Etapa 3: verificar se os aplicativos estão configurados para usar controles de acesso e sessão<a name="portal"></a>
 
-As instruções acima ajudaram a criar uma política interna do Cloud App Security para aplicativos em destaque diretamente no Azure AD. Nesta etapa, verifique se os controles de acesso e sessão estão configurados para esses aplicativos.
+As instruções acima ajudaram você a criar uma política de Cloud App Security interna para aplicativos em destaque diretamente no Azure AD. Nesta etapa, verifique se os controles de acesso e sessão estão configurados para esses aplicativos.
 
 1. No portal de Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
 
@@ -77,38 +77,30 @@ As instruções acima ajudaram a criar uma política interna do Cloud App Securi
     > [!NOTE]
     > Se o controle de sessão não aparecer para um aplicativo, ele ainda não estará disponível para esse aplicativo específico. Você pode adicioná-lo imediatamente como um [aplicativo personalizado](proxy-deployment-any-app.md)ou pode abrir uma solicitação para adicioná-lo como um aplicativo em destaque clicando em **solicitar controle de sessão**.
     >
-    >![Solicitação de Controle de Aplicativos de Acesso Condicional](media/caac-request.png)
+    >![Solicitação de controle de aplicativo de acesso condicional](media/caac-request.png)
 
 ## Etapa 4: testar a implantação<a name="test"></a>
 
-1. Primeiro saia das sessões existentes. Em seguida, tente entrar em cada aplicativo que foi implantado com êxito. Entre usando um usuário que corresponda à política configurada no Azure AD.
+1. Primeiro saia de todas as sessões existentes. Em seguida, tente entrar em cada aplicativo que foi implantado com êxito. Entre usando um usuário que corresponda à política configurada no Azure AD.
 
-1. No portal do Cloud App Security, em **Investigar**, selecione **Log de atividades** e garanta que as atividades de logon sejam capturadas para cada aplicativo.
+1. No portal de Cloud App Security, em **investigar**, selecione **log de atividades**e certifique-se de que as atividades de logon sejam capturadas para cada aplicativo.
 
-1. Você pode filtrar clicando em **Avançado** e, em seguida, usando a filtragem **Origem é igual a Controle de acesso**.
+1. Você pode filtrar clicando em **avançado**e, em seguida, filtrando usando **código-fonte igual ao controle de acesso**.
 
-    ![Filtre usando o acesso condicional do Azure AD](media/sso-logon.png)
+    ![Filtrar usando o acesso condicional do Azure AD](media/sso-logon.png)
 
-1. É recomendável que você entre em aplicativos móveis e da área de trabalho em dispositivos gerenciados e não gerenciados. Isso serve para garantir que as atividades sejam capturadas corretamente no log de atividades.<br />
-Para verificar se a atividade é capturada corretamente, clique em um log de logon único na atividade para abrir a gaveta de atividades. Verifique se a **Marca de agente do usuário** reflete corretamente se o dispositivo é um cliente nativo (o que significa um aplicativo móvel ou da área de trabalho) ou um dispositivo gerenciado (em conformidade, ingressado no domínio ou certificado do cliente válido).
+1. É recomendável que você entre em aplicativos móveis e de área de trabalho de dispositivos gerenciados e não gerenciados. Isso é para garantir que as atividades sejam capturadas corretamente no log de atividades.<br />
+Para verificar se a atividade foi capturada corretamente, clique em uma atividade fazer logon único para que ela abra a gaveta de atividade. Verifique se a **marca do agente do usuário** reflete corretamente se o dispositivo é um cliente nativo (ou seja, um aplicativo móvel ou de área de trabalho) ou se o dispositivo é um dispositivo gerenciado (em conformidade, ingressado no domínio ou um certificado de cliente válido).
 
 > [!NOTE]
-> Depois de implantado, você não pode remover um aplicativo da página de Controle de Aplicativos de Acesso Condicional. Desde que você não defina uma política de acesso ou sessão no aplicativo, o Controle de Aplicativos de Acesso Condicional não alterará comportamentos para o aplicativo.
+> Depois de implantado, você não pode remover um aplicativo da página Controle de Aplicativos de Acesso Condicional. Desde que você não defina uma sessão ou política de acesso no aplicativo, a Controle de Aplicativos de Acesso Condicional não alterará nenhum comportamento para o aplicativo.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Como criar uma política de acesso](access-policy-aad.md)
-
-## <a name="see-also"></a>Consulte também
+> [«ANTERIOR: introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
-> [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Trabalhar com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
+> [Em seguida: integrar e implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
