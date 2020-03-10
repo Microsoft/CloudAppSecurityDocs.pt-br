@@ -11,11 +11,11 @@ ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74733687"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342872"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
 
