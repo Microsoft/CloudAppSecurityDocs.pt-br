@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7a2a4cffd2d69c606e5f00743b9bd544638e9bd9
-ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
+ms.openlocfilehash: 23e8b6ef8045334555cedd38ef54e5866bc8b974
+ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77566922"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78274660"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -25,6 +25,26 @@ ms.locfileid: "77566922"
 Este artigo é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security.
 
 Feed RSS: Receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-169"></a>Cloud App Security versão 169
+
+Lançado em 1º de março de 2020
+
+- **Nova detecção para Workday**  
+Nós expandimos nossos alertas atuais de comportamento anormal para o Workday. Os novos alertas incluem as seguintes detecções de localização geográfica de usuário:
+  - [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)
+  - [Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)
+  - [Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)
+  - [Viagem impossível](anomaly-detection-policy.md#impossible-travel)
+
+- **Coleta aprimorada de logs do Salesforce**  
+O Cloud App Security agora dá suporte ao log de eventos por hora do Salesforce. Os logs de eventos por hora oferecem monitoramento acelerado, quase em tempo real, das atividades do usuário. Para saber mais, confira [Conectar o Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md).
+
+- **Suporte para a configuração de segurança do AWS usando uma conta principal**  
+O Cloud App Security agora dá suporte ao uso de uma conta principal. Conectar sua conta principal permite que você receba recomendações de segurança para todas as contas de membros em todas as regiões. Para obter mais informações sobre como se conectar a uma conta principal, confira [Como conectar a configuração de segurança do AWS ao Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md#how-to-connect-aws-security-configuration-to-cloud-app-security).
+
+- **Suporte a controles de sessão para navegadores modernos**  
+Agora os controles de sessão do Cloud App Security incluem suporte para o novo navegador Microsoft Edge baseado no Chromium. Apesar de continuarmos a dar suporte às versões mais recentes do Internet Explorer e à versão herdada do Microsoft Edge, o suporte será limitado, e recomendamos usar o novo navegador Microsoft Edge.
 
 ## <a name="cloud-app-security-release-165-166-167-and-168"></a>Cloud App Security versão 165, 166, 167 e 168
 
@@ -102,7 +122,7 @@ Lançamos para os administradores a capacidade de personalizar a página de ater
 
 - **Novas detecções**  
 
-  - **Alterações suspeitas no serviço de log do AWS (versão prévia)**: alerta quando um usuário faz alterações no serviço de log CloudTrail. Por exemplo, os invasores geralmente desativam a auditoria no CloudTrail para ocultar os vestígios de seu ataque.
+  - **Alterações suspeitas no serviço de log do AWS (versão prévia)** : alerta quando um usuário faz alterações no serviço de log CloudTrail. Por exemplo, os invasores geralmente desativam a auditoria no CloudTrail para ocultar os vestígios de seu ataque.
 
   - **Múltiplas atividades de criação de VM**: Alerta quando um usuário executa um número incomum de atividades de criação de VM em comparação com a linha de base aprendida. Agora se aplica ao AWS.
 
