@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: f37fab4f9d611577deecb4884838431144f1647d
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342821"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285270"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividade
 
@@ -152,7 +152,7 @@ Cloud App Security também fornece **consultas sugeridas**. As consultas sugerid
 
 Além disso, você pode usar as consultas sugeridas como um ponto de partida para uma nova consulta. Primeiro, selecione uma das consultas sugeridas. Em seguida, faça as alterações conforme necessário e, por fim, clique em **salvar como** para criar uma nova **consulta salva**.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)

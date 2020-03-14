@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 9d007c4760ace7a4337e4738406016576fa04171
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342668"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285300"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 
@@ -63,7 +63,7 @@ Além das políticas de aplicativo OAuth que você pode criar, há as seguintes 
 > [!NOTE]
 > As políticas de detecção de anomalias só estão disponíveis para aplicativos OAuth que são autorizados em seu Azure Active Directory.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Políticas de proteção de dados](data-protection-policies.md)

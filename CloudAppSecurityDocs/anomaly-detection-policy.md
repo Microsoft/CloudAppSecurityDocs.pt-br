@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342094"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285310"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenha análise comportamental e detecção de anomalias instantâneas
 
@@ -201,7 +201,7 @@ Você pode fazer uma triagem dos vários alertas disparados pelas novas polític
 
 1. Para arquivos infectados por malware, depois que os arquivos forem detectados, você poderá ver uma lista de **arquivos infectados**. Clique no nome do arquivo de malware na gaveta do arquivo para abrir um relatório de malware que fornece informações sobre esse tipo de malware com o qual o arquivo está infectado.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)

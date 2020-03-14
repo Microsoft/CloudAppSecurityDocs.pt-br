@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ca5fdade4d00e93d8adf6a79f3534be9e6ac7481
-ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
+ms.openlocfilehash: 06a9b0fc0a732f745d370fe28541b0a753bfe0cc
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567150"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285720"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -82,7 +82,7 @@ Para criar uma nova política de sessão, siga este procedimento:
     >[!NOTE]
     >As políticas de sessão não dão suporte a aplicativos móveis e de desktop. Aplicativos móveis e aplicativos de área de trabalho também podem ser bloqueados ou permitidos pela criação de uma política de acesso.
 
-1. Se você selecionou a opção para **controlar o download do arquivo (com DLP)**:
+1. Se você selecionou a opção para **controlar o download do arquivo (com DLP)** :
 
     1. Em **origem da atividade** nos **arquivos correspondentes a todas as seções a seguir** , selecione filtros de arquivo adicionais para aplicar à política. Esses filtros podem incluir as seguintes opções:
 
@@ -94,11 +94,11 @@ Para criar uma nova política de sessão, siga este procedimento:
 
     3. Em **ações**, selecione um dos seguintes itens:
 
-        * **Testar (monitorar todas as atividades)**: defina essa ação para permitir o download explicitamente de acordo com os filtros de política definidos.
+        * **Testar (monitorar todas as atividades)** : defina essa ação para permitir o download explicitamente de acordo com os filtros de política definidos.
 
-        * **Bloquear (bloquear arquivo baixar e monitorar todas as atividades)**: defina esta ação para bloquear explicitamente o download de acordo com os filtros de política definidos. Para obter mais informações, consulte [como bloquear download funciona](#block-download).
+        * **Bloquear (bloquear arquivo baixar e monitorar todas as atividades)** : defina esta ação para bloquear explicitamente o download de acordo com os filtros de política definidos. Para obter mais informações, consulte [como bloquear download funciona](#block-download).
 
-        * **Proteger (Aplicar rótulo de classificação para baixar e monitorar todas as atividades)**: essa opção só estará disponível se você selecionou **controlar download de arquivo (com DLP)** em **política de sessão**. Se sua organização usa a proteção de informações do Azure, você pode definir uma **ação** para aplicar um rótulo de classificação definido na proteção de informações do Azure ao arquivo. Para obter mais informações, consulte [como proteger o download funciona](#protect-download).
+        * **Proteger (Aplicar rótulo de classificação para baixar e monitorar todas as atividades)** : essa opção só estará disponível se você selecionou **controlar download de arquivo (com DLP)** em **política de sessão**. Se sua organização usa a proteção de informações do Azure, você pode definir uma **ação** para aplicar um rótulo de classificação definido na proteção de informações do Azure ao arquivo. Para obter mais informações, consulte [como proteger o download funciona](#protect-download).
 
 1. Você pode **criar um alerta para cada evento correspondente com a severidade da política** e definir um limite de alerta. Selecione se você deseja o alerta como um email, uma mensagem de texto ou ambos.
 
@@ -168,11 +168,15 @@ Por exemplo, você pode criar uma política que verifica o conteúdo de um arqui
 
 Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de informações do Azure, uma mensagem poderá ser exibida explicando que o arquivo contém conteúdo confidencial que requer um rótulo apropriado. Da mesma forma, se um usuário tentar carregar um documento de um dispositivo não gerenciado, uma mensagem com instruções sobre como registrar esse dispositivo ou um que fornece mais explicações sobre por que o dispositivo deve ser registrado pode ser exibida.
 
->[!div class="step-by-step"]
-> [«Anterior: integração e implantação controle de aplicativos de acesso condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
-> [próximo: como criar uma política de acesso»](access-policy-aad.md)
+## <a name="next-steps"></a>Próximas etapas
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+>[!div class="nextstepaction"]
+> [«ANTERIOR: integração e implantação Controle de Aplicativos de Acesso Condicional para qualquer aplicativo»](proxy-deployment-any-app.md)
+
+>[!div class="nextstepaction"]
+> [Em seguida: como criar uma política de acesso»](access-policy-aad.md)
+
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando o Azure AD Controle de Aplicativos de Acesso Condicional](use-case-proxy-block-session-aad.md)

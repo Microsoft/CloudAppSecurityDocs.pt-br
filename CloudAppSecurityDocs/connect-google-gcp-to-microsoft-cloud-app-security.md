@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.openlocfilehash: bf9260d0fc4c68ac27638fbefbfdd738a89ccd22
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342702"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285530"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security (versão prévia)
 
@@ -33,7 +33,7 @@ Este artigo fornece instruções para conectar Microsoft Cloud App Security à s
 
 Recomendamos que você use um projeto dedicado para a integração e restrinja o acesso ao projeto para manter a integração estável e evitar exclusões/modificações do processo de instalação. Além disso, se sua instância do GCP fizer parte de uma instância do G Suite que já está conectada a Cloud App Security, recomendamos seguir o **para uma instância do GCP que faça parte de uma organização conectada do g Suite** quando você adicionar os detalhes de conexão do GCP.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Prerequisites
 
 O usuário de integração do GCP deve ter as seguintes permissões:
 
@@ -148,14 +148,14 @@ Atualmente, desabilitar o coletor de exportação agregado só é possível por 
 
 ### <a name="to-disable-aggregated-export-sink"></a>Para desabilitar o coletor de exportação agregado
 
-| Etapa | Script | Para obter mais informações |
+| Etapa | script | Para obter mais informações |
 |-|-|-|
 | 1. iniciar uma sessão do Google Cloud Shell. | | [Usando Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
 | 2. defina o projeto atual. | `gcloud config set project {PROJECT_ID}` | [conjunto de configuração gcloud](https://cloud.google.com/sdk/gcloud/reference/config/set) |
 | 3. liste os coletores de nível de organização. | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [lista de coletores de log gcloud](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
 | 4. exclua o coletor relevante. | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [exclusão de coletores de log gcloud](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)

@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d3b5b62664abc9e82ad726e60c5105ef29ae0b16
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342855"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285480"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas do Cloud Discovery
 
@@ -96,7 +96,7 @@ Cloud App Security pesquisa todos os logs em seu Cloud Discovery para obter anom
 
 ![nova política de anomalias de descoberta](media/new-discovery-anomaly-policy.png "nova política de anomalias de descoberta")
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Políticas de atividade do usuário](user-activity-policies.md)

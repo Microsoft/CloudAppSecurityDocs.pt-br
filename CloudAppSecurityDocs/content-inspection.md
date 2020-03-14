@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 83969121e83bfa2efae352fc66de00766c23e5d9
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342075"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285500"
 ---
 # <a name="content-inspection"></a>Inspeção de conteúdo
 
@@ -44,7 +44,7 @@ Para fornecer ao Cloud app Security as permissões necessárias:
 3. Siga o prompt para permitir as permissões necessárias no Azure Active Directory.
 4. Você pode definir as configurações por política de arquivo para determinar quais políticas verificará arquivos protegidos.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)

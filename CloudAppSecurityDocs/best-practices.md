@@ -8,15 +8,15 @@ ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74143463"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285320"
 ---
 # <a name="cloud-app-security-best-practices"></a>Práticas recomendadas de Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece as práticas recomendadas para proteger sua organização usando Microsoft Cloud App Security. Essas práticas recomendadas são de nossa experiência com Cloud App Security e as experiências de clientes como você.
 
@@ -43,8 +43,8 @@ A integração do Cloud App Security à proteção avançada contra ameaças do 
 **Para obter mais informações**:
 
 * [Integração do Microsoft defender ATP com o Cloud App Security](wdatp-integration.md)
-* [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
-* [Descobrir e gerenciar o TI sombra na sua rede](tutorial-shadow-it.md)
+* [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+* [Descubra e gerencie a ti de sombra em sua rede](tutorial-shadow-it.md)
 
 ---
 
@@ -159,7 +159,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 **Para obter mais informações**:
 
 * [Conectar aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Filtros de arquivos](file-filters.md)
+* [Filtros de arquivo](file-filters.md)
 * [Inspeção de conteúdo](content-inspection.md)
 
 ---
@@ -186,7 +186,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 **Detalhe**: Use controle de aplicativos de acesso condicional para definir controles em seus aplicativos SaaS. Você pode criar políticas de sessão para monitorar suas sessões de alto risco e de confiança baixa. Da mesma forma, você pode criar políticas de sessão para bloquear e proteger downloads por usuários tentando acessar dados confidenciais de dispositivos não gerenciados ou arriscados. Se você não criar políticas de sessão para monitorar sessões de alto risco, perderá a capacidade de bloquear e proteger os downloads no cliente Web, bem como a capacidade de monitorar a sessão de baixa confiança tanto na Microsoft quanto em aplicativos de terceiros.  
 **Para obter mais informações**:
 
-* [Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)
+* [Proteger aplicativos com Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
 * [Políticas de sessão](session-policy-aad.md)
 
 ---
@@ -200,7 +200,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 **Detalhe**: para proteger a colaboração em seu ambiente, você pode criar uma política de sessão para monitorar sessões entre seus usuários internos e externos. Isso não apenas oferece a capacidade de monitorar a sessão entre os usuários (e notificá-los de que suas atividades de sessão estão sendo monitoradas), mas também permite que você limite atividades específicas também. Ao criar políticas de sessão para monitorar a atividade, você pode escolher os aplicativos e os usuários que deseja monitorar.  
 **Para obter mais informações**:
 
-* [Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security](proxy-intro-aad.md)
+* [Proteger aplicativos com Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
 * [Políticas de sessão](session-policy-aad.md)
 
 ---
@@ -273,7 +273,7 @@ Ao ignorar alertas, é importante investigar e entender por que eles não têm i
 **Detalhe**: conectar cada um desses aplicativos de armazenamento em nuvem para Cloud app Security ajuda a melhorar seus recursos de detecções de ameaças. Ao monitorar atividades administrativas e de entrada para esses serviços, você pode detectar e ser notificado sobre possíveis ataques de força bruta, uso mal-intencionado de uma conta de usuário com privilégios e outras ameaças em seu ambiente. Por exemplo, você pode identificar riscos como exclusões incomuns de VMs ou até mesmo atividades de representação nesses aplicativos.  
 **Para obter mais informações**:
 
-* [Conectar o Microsoft Azure ao Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
+* [Conectar o Azure ao Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
 * [Conectar o AWS ao Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md)
 
 ---
