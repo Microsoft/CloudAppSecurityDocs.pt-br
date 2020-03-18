@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: 4c85117dfd4080946fa5e1a205ec9fc890dea199
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342753"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79241815"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar o Shadow IT na sua rede
 
