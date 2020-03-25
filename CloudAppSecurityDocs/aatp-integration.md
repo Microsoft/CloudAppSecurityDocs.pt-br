@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0605d54b8af24b2b060e96788349e2cfe45abaac
-ms.sourcegitcommit: 661228206512c6c8dcb30fdce59b2c038cf2fe69
+ms.openlocfilehash: 44ede581e5f646695110975aa7a842e60e418bd4
+ms.sourcegitcommit: f396474ead281430c7a63d1172ab7288c9878f13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204261"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80151999"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integração da proteção avançada contra ameaças do Azure
 
 *Aplica-se a: Microsoft Cloud app Security* o Git Microsoft Cloud app Security integra-se com o Azure ATP (proteção avançada contra ameaças do Azure) para fornecer Ueba (análise comportamental de entidade de usuário) em um ambiente híbrido – tanto no aplicativo de nuvem quanto no local, para obter mais informações, consulte [tutorial: investigar usuários arriscados](tutorial-ueba.md). Para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo Azure ATP, consulte [o que é o Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para fazer uma investigação completa em um ambiente híbrido, é necessário:
 
@@ -76,7 +76,17 @@ Para desabilitar a integração de Cloud App Security com o Azure ATP:
 > [!NOTE]
 > Quando a integração está desabilitada, os dados existentes do Azure ATP são mantidos de acordo com as políticas de retenção Cloud App Security, mas a seção de avaliações de segurança de identidade é removida.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="known-issues"></a>Problemas conhecidos
+
+### <a name="missing-siem-alert-updates"></a>Atualizações de alerta do SIEM ausentes
+
+Esse problema afeta os alertas que são disparados mais de uma vez. A primeira instância do alerta é enviada para o SIEM, mas os gatilhos subsequentes do mesmo alerta não são enviados.
+
+#### <a name="resolution"></a>Resolução
+
+Não há solução conhecida.
+
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
