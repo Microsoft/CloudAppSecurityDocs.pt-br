@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/04/2020
+ms.date: 03/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: dd637bc49d65452cedc13841686ea267134ef15e
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285310"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291233"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenha análise comportamental e detecção de anomalias instantâneas
 
@@ -59,7 +59,7 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 
 ### <a name="impossible-travel"></a>Viagem impossível
 
-* Essa detecção identifica duas atividades do usuário (é uma única ou várias sessões) provenientes de locais geograficamente distantes em um período de tempo menor que o tempo que teria levado para o usuário viajar do primeiro local para o segundo, indicando que um usuário diferente está usando as mesmas credenciais. Essa detecção usa um algoritmo de aprendizado de máquina que ignora "falsos positivos" claros que contribuem para a condição de viagem impossível, como VPNs e locais usados regularmente por outros usuários na organização. A detecção tem um período inicial de aprendizado de sete dias, durante o qual aprende o padrão de atividade de um novo usuário. A detecção de viagem impossível identifica atividades de usuário incomuns e impossíveis entre dois locais. A atividade deve ser incomum o suficiente para ser considerada um indicador de comprometimento e digno de um alerta. Para fazer isso funcionar, a lógica de detecção inclui diferentes níveis de supressão para tratar de cenários que podem disparar falsos positivos, como atividades de VPN. O controle deslizante sensibilidade permite que você afete o algoritmo e defina o quão estrito é a lógica de detecção. Quanto maior o nível de sensibilidade, menor será a supressão aplicada como parte da lógica de detecção. Dessa forma, você pode adaptar a detecção de acordo com suas necessidades de cobertura e seus destinos de SNR.
+* Essa detecção identifica duas atividades do usuário (é uma única ou várias sessões) provenientes de locais geograficamente distantes em um período de tempo menor que o tempo que teria levado para o usuário viajar do primeiro local para o segundo, indicando que um usuário diferente está usando as mesmas credenciais. Essa detecção usa um algoritmo de aprendizado de máquina que ignora "falsos positivos" claros que contribuem para a condição de viagem impossível, como VPNs e locais usados regularmente por outros usuários na organização. A detecção tem um período de aprendizado inicial de sete dias durante o qual ele aprende o padrão de atividade de um novo usuário. A detecção de viagem impossível identifica atividades de usuário incomuns e impossíveis entre dois locais. A atividade deve ser incomum o suficiente para ser considerada um indicador de comprometimento e digno de um alerta. Para fazer isso funcionar, a lógica de detecção inclui diferentes níveis de supressão para tratar de cenários que podem disparar falsos positivos, como atividades de VPN. O controle deslizante sensibilidade permite que você afete o algoritmo e defina o quão estrito é a lógica de detecção. Quanto maior o nível de sensibilidade, menor será a supressão aplicada como parte da lógica de detecção. Dessa forma, você pode adaptar a detecção de acordo com suas necessidades de cobertura e seus destinos de SNR.
 
     > [!NOTE]
     > Quando os endereços IP em ambos os lados da viagem são [marcados como corporativos](ip-tags.md), a viagem é considerada confiável e excluída do disparo da detecção de viagem impossível. No entanto, se o endereço IP de apenas um dos lados da viagem for marcado como corporativo, a detecção será disparada como normal.
@@ -82,7 +82,7 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
 
-* Essa detecção identifica que os usuários estavam ativos com base em um endereço IP que foi identificado como um endereço IP de proxy anônimo. Esses proxies geralmente são usados por usuários que desejam ocultar o endereço IP de seu dispositivo e podem ser usados com objetivos mal-intencionados. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP com marcas de tipo de mis que são amplamente usadas por usuários na organização.
+* Essa detecção identifica que os usuários estavam ativos com base em um endereço IP que foi identificado como um endereço IP de proxy anônimo. Esses proxies são usados por pessoas que desejam ocultar o endereço IP do dispositivo e podem ser usados para uma intenção mal-intencionada. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP com marcas de tipo de mis que são amplamente usadas por usuários na organização.
 
 ### <a name="ransomware-activity"></a>Atividade de ransomware
 
@@ -108,7 +108,7 @@ A detecção procura por usuários cuja conta foi encerrada no Azure AD, mas ain
 
 ### <a name="suspicious-inbox-manipulation-rules"></a>Regras de manipulação de caixa de entrada suspeitas
 
-* Essa detecção faz o perfil do seu ambiente e dispara alertas quando regras suspeitas que excluem ou movem mensagens ou pastas são definidas na caixa de entrada de um usuário. Pode indicar que a conta de usuário está comprometida, que as mensagens foram ocultadas de forma intencional e que a caixa de correio está sendo usada para enviar spam e malware em sua organização.
+* Essa detecção faz o perfil do seu ambiente e dispara alertas quando regras suspeitas que excluem ou movem mensagens ou pastas são definidas na caixa de entrada de um usuário. Isso pode indicar que a conta do usuário está comprometida, que as mensagens estão sendo intencionalmente ocultas e que a caixa de correio está sendo usada para distribuir spam ou malware na sua organização.
 
 ### <a name="suspicious-email-deletion-activity-preview"></a>Atividade de exclusão de email suspeito (versão prévia)
 
@@ -126,6 +126,7 @@ Essas detecções identificam os usuários que executam:
 * Atividades de compartilhamento de relatório Power BI incomum (versão prévia)
 * Várias atividades de criação de VM incomuns (versão prévia)
 * Várias atividades de exclusão de armazenamento incomum (visualização)
+* Região incomum para recurso de nuvem (visualização)
 
 Essas políticas procuram atividades em uma única sessão em relação à linha de base aprendida, o que pode indicar uma tentativa de violação. Essas detecções aproveitam um algoritmo de aprendizado de máquina que faz o perfil do padrão de logon dos usuários e reduz os falsos positivos. Essas detecções fazem parte do mecanismo de detecção de anomalias heurística que cria o perfil de seu ambiente e dispara alertas em relação a uma linha de base que foi aprendida na atividade da sua organização.
 
@@ -141,7 +142,7 @@ Essas políticas procuram atividades em uma única sessão em relação à linha
 
 * Essa política faz o perfil do seu ambiente e dispara alertas quando os usuários excluem várias VMs em uma única sessão, em relação à linha de base em sua organização. Isso pode indicar uma tentativa de violação.
 
-## Habilitar governança automatizada<a name="adp-automated-gov"></a>
+## <a name="enable-automated-governance"></a>Habilitar governança automatizada<a name="adp-automated-gov"></a>
 
 Você pode habilitar ações de correção automatizadas em alertas gerados por políticas de detecção de anomalias.
 
@@ -201,7 +202,7 @@ Você pode fazer uma triagem dos vários alertas disparados pelas novas polític
 
 1. Para arquivos infectados por malware, depois que os arquivos forem detectados, você poderá ver uma lista de **arquivos infectados**. Clique no nome do arquivo de malware na gaveta do arquivo para abrir um relatório de malware que fornece informações sobre esse tipo de malware com o qual o arquivo está infectado.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
