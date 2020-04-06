@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2dcfbaa4cfb676aafcb996efaa243adeedaf93f7
-ms.sourcegitcommit: 06437f58d452294cf53d1ad86f7cb857569cd5ba
+ms.openlocfilehash: 7c309455b6c7c5a1d46421316eb589038f162726
+ms.sourcegitcommit: 288c279a0d2dd62a8ad8d7425c3e9e98857bf5f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2020
-ms.locfileid: "77369550"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666489"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 
@@ -29,7 +29,7 @@ As políticas de arquivo permitem impor uma ampla variedade de processos automat
 
 ## <a name="supported-file-types"></a>Tipos de arquivos com suporte
 
-Os mecanismos de DLP internos da Cloud App Security executam a inspeção de conteúdo extraindo o texto de todos os tipos de arquivo comuns (100 +), incluindo Office, Open Office, arquivos compactados, vários formatos de texto avançados, XML, HTML e muito mais.
+Os mecanismos de DLP internos do Cloud App Security executam a inspeção de conteúdo extraindo o texto de todos os tipos de arquivo comuns (100 +), incluindo Office, Open Office, arquivos compactados, vários formatos de texto avançados, XML, HTML e muito mais.
 
 ## <a name="policies"></a>Políticas
 
@@ -75,7 +75,7 @@ Para criar uma nova política de arquivo, siga este procedimento:
 
 1. **Crie um filtro para os arquivos que esta política atuará** para definir quais aplicativos descobertos disparam essa política. Restrinja os filtros de política até alcançar um conjunto preciso de arquivos com os quais você deseja agir. Seja o mais restritivo possível para evitar falsos positivos. Por exemplo, se você quiser remover permissões públicas, lembre-se de adicionar o filtro **público** , se desejar remover um usuário externo, use o filtro "externo", etc.
    > [!NOTE]
-   > Ao usar os filtros de política, o **contém** pesquisas somente por palavras completas – separadas por comas, pontos, espaços ou sublinhados. Por exemplo, se você Pesquisar **malware** ou **vírus**, ele encontrará virus_malware_file. exe, mas não encontrará o malwarevirusfile. exe. Se você Pesquisar **malware. exe**, encontrará todos os arquivos com malware ou exe em seu nome de arquivo, enquanto se procurar por **"malware. exe"** (com as aspas), você encontrará apenas os arquivos que contêm exatamente "malware. exe". **Equals** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar por **malware. exe** , ele encontra malware. exe, mas não malware. exe. txt.
+   > Ao usar os filtros de política, **Contains** pesquisa apenas palavras completas – separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **virus**, ela encontrará virus_malware_file.exe, mas não encontrará malwarevirusfile.exe. Se você Pesquisar **malware. exe**, encontrará todos os arquivos com malware ou exe em seu nome de arquivo, enquanto se procurar por **"malware. exe"** (com as aspas), você encontrará apenas os arquivos que contêm exatamente "malware. exe". **Equals** pesquisa somente a cadeia de caracteres completa; por exemplo, se você pesquisar **malware.exe**, ela encontrará malware.exe, mas não malware.exe.txt.
 1. No primeiro filtro **aplicar a** , selecione **todos os arquivos, excluindo pastas selecionadas** ou **pastas selecionadas** para o box, SharePoint, Dropbox, onedrive, em que você pode impor a política de arquivo em todos os arquivos no aplicativo ou em pastas específicas. Você é redirecionado para entrar no aplicativo de nuvem e, em seguida, adiciona as pastas relevantes.
 
 1. Sob o segundo **aplicar ao** filtro, selecione **todos os proprietários de arquivo**, **proprietários de arquivos de grupos de usuários selecionados** ou **todos os proprietários de arquivos, excluindo grupos selecionados**. Em seguida, selecione os grupos de usuários relevantes para determinar quais usuários e grupos devem ser incluídos na política.
@@ -126,7 +126,7 @@ Para tornar a investigação ainda mais simples, agora você pode criar consulta
 
 1. Para usar essa consulta novamente no futuro, em **consultas**, role para baixo até **consultas salvas** e selecione sua consulta.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d45711d5dfd5f0a7a3ae30df1e5e90425ff631ff
-ms.sourcegitcommit: be2c558eee71de02ec29632fc58256d49de0f86f
+ms.openlocfilehash: f596bd5161a5c7e0603ff934848ab6fa110647bf
+ms.sourcegitcommit: 288c279a0d2dd62a8ad8d7425c3e9e98857bf5f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304891"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666502"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
 
@@ -38,7 +38,7 @@ Depois que as informações de tráfego forem coletadas, você estará pronto pa
 > [!NOTE]
 > Quer experimentar o Microsoft defender ATP? [Inscreva-se para uma avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 - Licença de Microsoft Cloud App Security
 - Licença do Microsoft defender ATP
@@ -99,7 +99,7 @@ Assim como em qualquer outra fonte de Cloud Discovery, você pode exportar os da
 >
 > - O Microsoft defender ATP encaminha dados para Cloud App Security em partes de ~ 4 MB (~ 4000 transações de ponto de extremidade)
 > - Se o limite de 4 MB não for atingido em 1 hora, o Microsoft defender ATP relatará todas as transações executadas na última hora.
-> - Se o dispositivo de ponto de extremidade estiver protegido por um proxy de encaminhamento, o volume de tráfego não será visível para o Microsoft defender ATP e, portanto, não será incluído nos relatórios do Cloud Discovery. Para obter mais informações, consulte [monitorando a conexão de rede por trás do proxy de encaminhamento](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Se o dispositivo de ponto de extremidade estiver protegido por um proxy de encaminhamento, os dados de tráfego não serão visíveis para o Microsoft defender ATP e, portanto, não serão incluídos nos relatórios do Cloud Discovery. Para obter mais informações, consulte [monitorando a conexão de rede por trás do proxy de encaminhamento](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="block-access-to-unsanctioned-cloud-apps"></a>Bloquear o acesso a aplicativos de nuvem não aprovados
 
@@ -138,7 +138,7 @@ Cada tentativa de acessar um aplicativo não aprovado dispara um alerta na centr
 > - No momento, não há suporte para URLs completas em aplicativos não aprovados. Portanto, quando aplicativos sem sanções configurados com URLs completas, eles não são propagados para o Microsoft defender ATP e não serão bloqueados. Por exemplo, não há suporte para `google.com/drive`, enquanto `drive.google.com` tem suporte.
 > - As notificações no navegador podem variar entre diferentes navegadores.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
