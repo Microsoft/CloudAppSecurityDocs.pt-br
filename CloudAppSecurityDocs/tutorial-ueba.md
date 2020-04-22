@@ -11,10 +11,10 @@ ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79241805"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
@@ -36,7 +36,7 @@ Este tutorial fornece instruções sobre como usar o Cloud App Security para inv
 > * 3: [Investigar mais os usuários](#investigate)
 > * 4: [Proteger a organização](#protect)
 
-## Entender a pontuação de prioridade de investigação<a name="risk-score"></a>
+## <a name="understand-the-investigation-priority-score"></a>Entender a pontuação de prioridade de investigação<a name="risk-score"></a>
 
 A pontuação de prioridade de investigação é uma pontuação que o Cloud App Security fornece a cada usuário para que você saiba o nível de risco de um usuário em relação aos outros usuários da sua organização.
 
@@ -58,13 +58,13 @@ A pontuação de alerta representa o impacto potencial de um alerta específico 
 * **Pontuação de atividade**  
 A pontuação de atividade determina a probabilidade de um usuário específico realizar uma determinada atividade, com base no aprendizado comportamental desse usuário e dos colegas dele. As atividades identificadas como mais anormais recebem as pontuações mais altas.
 
-## Fase 1: Conectar-se aos aplicativos que você deseja proteger<a name="connect-apps-protect"></a>
+## <a name="phase-1-connect-to-the-apps-you-want-to-protect"></a>Fase 1: Conectar-se aos aplicativos que você deseja proteger<a name="connect-apps-protect"></a>
 
 1. Conecte pelo menos um aplicativo ao Microsoft Cloud App Security usando os [conectores de API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). É recomendável que você comece conectando o [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 1. Conecte outros aplicativos usando o [proxy para obter controle de aplicativos de acesso condicional](proxy-deployment-aad.md).
 1. Para habilitar insights em seu ambiente local, configure o Cloud App Security para [integrar-se ao seu ambiente do ATP do Azure](aatp-integration.md).
 
-## Fase 2: Identificar os principais usuários arriscados<a name="identify"></a>
+## <a name="phase-2-identify-top-risky-users"></a>Fase 2: Identificar os principais usuários arriscados<a name="identify"></a>
 
 Para identificar quem são os usuários mais arriscados no Cloud App Security:
 
@@ -89,7 +89,7 @@ A página Usuário permite responder às seguintes questões:
   >[!NOTE]
   >É importante lembrar que, embora a página Usuário forneça informações de todas as atividades sobre dispositivos, recursos e contas, a pontuação da prioridade de investigação é a soma de todos os alertas e as atividades arriscadas dos últimos sete dias.
 
-## Fase 3: Investigar mais os usuários<a name="investigate"></a>
+## <a name="phase-3-further-investigate-users"></a>Fase 3: Investigar mais os usuários<a name="investigate"></a>
 
 Ao investigar um usuário com base em um alerta ou se você notou um alerta em um sistema externo, pode haver atividades que, sozinhas, talvez não sejam motivo de alarme, mas quando o Cloud App Security as agrega junto a outras atividades, o alerta pode ser uma indicação de um evento suspeito.
 
@@ -99,7 +99,7 @@ Quando investiga um usuário, você quer fazer as seguintes perguntas sobre as a
 
 * Acesse o **Log de atividades** para entender por que esta atividade recebeu uma classificação alta, enquanto outras não. Você pode definir a **Prioridade de investigação** para **Está definida** para entender quais atividades são suspeitas. Por exemplo, você pode filtrar com base na Prioridade de investigação por todas as atividades que ocorreram na Ucrânia. Então você pode ver se havia outras atividades arriscadas de onde o usuário se conectou. Além disso, você pode facilmente dinamizar para outras quedas de análise, como atividades de nuvem não anômalas ou atividades locais, para continuar a investigação.
 
-## Fase 4: Proteger a organização<a name="protect"></a>
+## <a name="phase-4-protect-your-organization"></a>Fase 4: Proteger a organização<a name="protect"></a>
 
 Se, por meio da sua investigação, você concluir que um usuário está comprometido, siga estas etapas para atenuar o risco.
 

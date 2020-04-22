@@ -8,10 +8,10 @@ ms.topic: tutorial
 ms.date: 01/01/2020
 ms.collection: M365-security-compliance
 ms.openlocfilehash: fec6182d004b934f564291e4ca9f4fe06aa8d723
-ms.sourcegitcommit: 446041f0e7adf6688bf63d402838844baa3342bb
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "75667556"
 ---
 # <a name="tutorial-protect-any-apps-in-use-in-your-organization-in-real-time"></a>Tutorial: Proteger em tempo real qualquer aplicativo usado em sua organização
