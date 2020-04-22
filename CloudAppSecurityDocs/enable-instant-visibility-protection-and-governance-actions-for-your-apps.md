@@ -16,7 +16,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0aa55a99017a1768bf58fd2c2a40688c1a5c95e6
 ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/13/2020
 ms.locfileid: "79285340"
@@ -87,7 +87,7 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 
 ## <a name="prerequisites"></a>Prerequisites
 
-- Para alguns aplicativos, pode ser necessário para os endereços IP da lista branca para permitir que Cloud App Security coletem logs e forneçam acesso ao console do Cloud App Security. Para obter mais informações, consulte [requisitos de rede](network-requirements.md).
+- Para alguns aplicativos, pode ser necessário para os endereços IP da lista de permissões para permitir que Cloud App Security coletem logs e forneçam acesso ao console do Cloud App Security. Para obter mais informações, consulte [requisitos de rede](network-requirements.md).
 
 - Para cada aplicativo que desejar conectar com a integração de API do Cloud App Security, recomendamos criar uma conta de serviço de administrador dedicada ao Cloud App Security.
 
