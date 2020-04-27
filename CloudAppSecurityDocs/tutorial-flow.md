@@ -7,10 +7,10 @@ ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
 ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "74720533"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Estender a governança para correção de ponto de extremidade
@@ -35,16 +35,16 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você precisa ter um [plano válido do Microsoft Flow](https://flow.microsoft.com/pricing)
+* Você precisa ter um plano válido do [Microsoft Flow](https://flow.microsoft.com/pricing)
 * Você precisa ter um plano válido do Microsoft Defender ATP
 * O ambiente do Microsoft Flow deve ser sincronizado com o Azure AD, monitorado pelo Defender ATP e ingressado no domínio
 
-## Fase 1: Gerar um token de API do Cloud App Security<a name="generate-token"></a>
+## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>Fase 1: Gerar um token de API do Cloud App Security<a name="generate-token"></a>
 
 > [!NOTE]
 > Se você tiver criado anteriormente um fluxo de trabalho usando um conector do Cloud App Security, o Microsoft Flow reutilizará automaticamente o token e você poderá ignorar esta etapa.
 
-1. Na barra de menus do Cloud App Security, clique na engrenagem de configurações ![ícone de configurações](media/settings-icon.png "ícone de configurações") e selecione **Extensões de segurança**.
+1. Na barra de menus do Cloud App Security, clique na engrenagem de configurações ![ícone de configurações](media/settings-icon.png "Ícone de configurações") e selecione **Extensões de segurança**.
 
 1. Na página **Extensões de segurança**, clique no botão de adição para gerar um novo token de API.
 1. Na janela pop-up **Gerar novo token**, insira o nome do token (por exemplo, "Flow-Token") e, em seguida, clique em **Gerar**.
@@ -54,7 +54,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 
     ![Captura de tela da janela do token mostrando o token e o processo de cópia.](media/tutorial-flow-token-copy.png)
 
-## Fase 2: Criar um fluxo para executar um exame antivírus<a name="create-flow"></a>
+## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>Fase 2: Criar um fluxo para executar um exame antivírus<a name="create-flow"></a>
 
 > [!NOTE]
 > Se você tiver criado anteriormente um fluxo usando um conector do Defender ATP, o Flow reutilizará automaticamente o conector e você poderá ignorar a etapa **Entrar**.
@@ -71,7 +71,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 
     ![Captura de tela da página de modelos do Microsoft Flow mostrando o processo de entrada.](media/tutorial-flow-templates-signin.png)
 
-## Fase 3: Configurar o fluxo<a name="configure-flow"></a>
+## <a name="phase-3-configure-the-flow"></a>Fase 3: Configurar o fluxo<a name="configure-flow"></a>
 
 > [!NOTE]
 > Se você tiver criado anteriormente um fluxo usando um conector do Azure AD, o Microsoft Flow reutilizará automaticamente o token e você poderá ignorar esta etapa.
@@ -98,7 +98,7 @@ Se você não tiver um plano do Microsoft Flow, [inscreva-se para uma conta de a
 
     ![Captura de tela da página de fluxo mostrando a seção de configuração do exame.](media/tutorial-flow-templates-scan.png)
 
-## Fase 4: Configurar uma política para executar o fluxo<a name="configure-policy"></a>
+## <a name="phase-4-configure-a-policy-to-run-the-flow"></a>Fase 4: Configurar uma política para executar o fluxo<a name="configure-policy"></a>
 
 1. No Cloud App Security, clique em **Controle** e em **Políticas**.
 

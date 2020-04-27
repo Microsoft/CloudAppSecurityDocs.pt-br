@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/24/2019
+ms.date: 03/31/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 097f1dcdf7cb360dc38ce138ee373d6d506bdda8
-ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
+ms.openlocfilehash: e4dea21cdd9566781176a0d482bd2c45a6131ac5
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78927764"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81228470"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloquear o download de informações confidenciais
 
@@ -38,22 +38,29 @@ Um gerente de conta em sua organização deseja verificar algo no Salesforce em 
 
 ## <a name="the-solution"></a>A solução
 
-Proteja sua organização monitorando e controlando o uso de aplicativos de nuvem usando o acesso condicional do Azure AD e o Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security.
+Proteja sua organização monitorando e controlando o uso de aplicativos na nuvem com uma solução IdP e o Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Uma licença válida do Azure AD Premium P1
-* Configurar um aplicativo de nuvem para SSO no Azure AD
+* Uma licença válida do Azure AD Premium P1 ou a licença exigida pela sua solução de IdP (provedor de identidade)
+* Configure um aplicativo na nuvem para SSO usando um dos seguintes protocolos de autenticação:
+
+    |IdP|Protocolos|
+    |---|---|
+    |Azure AD|SAML 2.0 ou OpenID Connect|
+    |Outros|SAML 2.0|
 * Verificar se o [aplicativo está implantado no Cloud App Security](proxy-deployment-aad.md)
 
 ## <a name="create-a-block-download-policy-for-unmanaged-devices"></a>Criar uma política de bloqueio de download para dispositivos não gerenciados
 
 As políticas de sessão do Cloud App Security permitem restringir uma sessão com base no estado do dispositivo. Para realizar o controle de uma sessão usando seu dispositivo como uma condição, crie uma política de acesso condicional E uma política de sessão.
 
-### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>Etapa 1: criar uma política de acesso condicional do Azure AD
+### <a name="step-1-configure-your-idp-to-work-with-cloud-app-security"></a>Etapa 1: Configurar seu IdP para trabalhar com o Cloud App Security
 
-1. Crie uma política de acesso condicional do Azure AD com usuários e aplicativos atribuídos.
-2. Dentro da política de acesso condicional, em controles de sessão, selecione **Usar as restrições impostas do Controle de Aplicativos de Acesso Condicional**.
+Para verificar se você configurou sua solução de IdP para trabalhar com o Cloud App Security, faça o seguinte:
+
+* Para [Acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+* Para outras soluções do IdP, consulte [Configurar a integração com outras soluções de IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 Depois de concluir essa tarefa, vá para o portal do Cloud App Security e crie uma política de sessão para monitorar e controlar os downloads de arquivos na sessão.
 
