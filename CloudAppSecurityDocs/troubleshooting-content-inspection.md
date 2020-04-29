@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: be3c76516217e9cc36a06c85d778a717609ba254
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: b0d1afdd63cc7c92f520cc17c1d90ff83bf4ec23
+ms.sourcegitcommit: 82aaa76581fa76e207c754bb0855c24c2233fb44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721139"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81738044"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solução de problemas de inspeção de conteúdo
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece uma lista de status de inspeção de conteúdo e seus significados.
 
@@ -31,17 +31,17 @@ Este artigo fornece uma lista de status de inspeção de conteúdo e seus signif
 
 A tabela lista cada status de inspeção de conteúdo e sua descrição.
 
-|Status da inspeção de conteúdo|Description|
-|----|----|
+|Status da inspeção de conteúdo|Descrição|
+|---|---|
 |Concluído|A inspeção de conteúdo foi concluída com êxito.|
-|Não Aplicável|A inspeção de conteúdo não era aplicável a este arquivo. Esse status pode aparecer porque nenhuma política requer a inspeção de conteúdo desse arquivo ou porque não há suporte para esse tipo de arquivo.|
+|Não aplicável|A inspeção de conteúdo não era aplicável a este arquivo. Esse status pode aparecer porque nenhuma política requer a inspeção de conteúdo desse arquivo ou porque não há suporte para esse tipo de arquivo.|
 |Pending (Pendente)|O arquivo está na fila de inspeção de conteúdo no momento.|
 |Falha: Erro no download|O Microsoft Cloud App Security não pôde baixar o arquivo para inspeção.|
 |Falha: O arquivo está criptografado|O arquivo não pôde ser descriptografado.|
 |Falha: O arquivo está corrompido|O arquivo está corrompido de alguma forma e não pôde ser inspecionado.|
 |Falha: Erro interno|Ocorreu um erro indeterminado ao tentar verificar o arquivo.|
 |Falha: Erro do DLP externo|Algo em seu DLP externo deu errado, causando uma falha ao inspecionar o conteúdo no Cloud App Security.|
-|Falha: tamanho do arquivo excedido|O limite do arquivo varia dependendo do tamanho do arquivo e do número de caracteres.|
+|Falha: tamanho do arquivo excedido|O arquivo excedeu o tamanho de arquivo máximo de 50 MB ou 1 milhão caracteres.|
 |Falha: Acesso ao arquivo negado|O arquivo é externo à sua nuvem e não pôde ser acessado pelo Cloud App Security.|
 |Falha: O arquivo foi excluído|O arquivo não existe mais na sua nuvem e não pôde ser inspecionado.|
 |Falha: tipo de arquivo sem suporte|O Cloud App Security não pode executar a inspeção de conteúdo nesse tipo de arquivo. Esse status pode aparecer porque não há suporte para o tipo de arquivo ou porque o arquivo não está no formato do tipo de arquivo esperado.|

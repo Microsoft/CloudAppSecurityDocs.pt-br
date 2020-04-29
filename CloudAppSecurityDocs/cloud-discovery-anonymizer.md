@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 01/29/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a57355a76037a33072872ed18a7567587eae860
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: b4d8a2c91d87df35445615e36b5caeb7d89de4f4
+ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912124"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81662309"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Microsoft Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Quando necessário, para uma investigação de segurança específica (por exemplo, devido a uma violação de segurança ou atividade de usuário suspeita), os administradores podem resolver o nome de usuário real. Se um administrador tiver algum motivo para suspeitar de um usuário específico, ele também poderá pesquisar o nome de usuário criptografado de um nome de usuário conhecido e começar a investigação usando o nome de usuário criptografado. Toda conversão de nome de usuário é auditada no **Log de governança** do portal.
 
@@ -47,8 +47,8 @@ Pontos principais:
 
     1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
 
-    2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**. Você pode selecionar **Anonimizar as informações do computador por padrão no relatório 'Usuários do Ponto de Extremidade do Win10'** .
-    3. Clique em **Salvar**.
+    2. Na guia Anonimização, para anonimizar os nomes de usuário por padrão, selecione **Anonimizar informações particulares por padrão em novos relatórios e fontes de dados**. Você pode selecionar **Anonimizar as informações do computador por padrão no relatório 'Usuários do Ponto de Extremidade do Win10'**.
+    3. Clique em **Save** (Salvar).
 
     ![Anonimização](media/anonymizer1.png)
 
@@ -58,14 +58,46 @@ Pontos principais:
 
     ![Torne anônimo o painel do Cloud Discovery](media/anonymize-dashboard.png)
 
-5. Para uma investigação específica, como ao investigar um alerta de uso anômalo, você poderá resolver o nome de usuário específico no portal e fornecer uma justificativa comercial.
-   Esta página também pode ser usada para pesquisar o nome de usuário criptografado de um nome de usuário conhecido.
+5. Para uma investigação específica, como uma investigação de um alerta de uso anormal, você pode resolver o nome de usuário específico no portal e fornecer uma justificativa de negócios.
+
+    > [!NOTE]
+    > As etapas a seguir também funcionam para nomes de computador na guia **computadores** .
+
+    **Para resolver um único nome de usuário**
+
+    1. Clique nos três pontos no final da linha do usuário que você deseja resolver e selecione **desanônimos do usuário**.
+
+        ![Tornar a tabela de usuário anônimo](media/anonymize-user-table.png)
+
+    1. No pop-up, insira a justificativa para resolver o nome de usuário e clique em **resolver**. Na linha relevante, o nome de usuário resolvido é exibido.
+
+        > [!NOTE]
+        > Esta ação é auditada.
+
+        ![Tornar anônimo resolver pop-up](media/anonymize-resolve-dialog.png)
+
+    A seguinte maneira alternativa de resolver nomes de usuário únicos também pode ser usada para pesquisar o nome de usu Encrypted de um nome de usuário conhecido.
 
     1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
-    2. Na guia **Anonimização**, em **Anonimizar e resolver nomes de usuário**, insira uma justificativa explicando porque você está executando a resolução.
-    3. Em **Inserir nome de usuário a ser resolvido**, selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver**.
 
-    ![Anonimização](media/anonymizer.png)
+    1. Na guia **Anonimização**, em **Anonimizar e resolver nomes de usuário**, insira uma justificativa explicando porque você está executando a resolução.
+    1. Em **Inserir nome de usuário a ser resolvido**, selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver**.
+
+        ![Anonimização](media/anonymizer.png)
+
+    **Para resolver vários nomes de acessações**
+
+    1. Marque as caixas de seleção que aparecem quando você passa o mouse sobre os ícones de usuário pelos usuários que você deseja resolver ou, no canto superior esquerdo, marque a caixa de seleção **seleção em massa** .
+
+        ![Tornar anônimo a resolução em massa](media/anonymize-bulk-resolve.png)
+
+    1. Clique em **desanônimoize o usuário**.
+    1. No pop-up, insira a justificativa para resolver o nome de usuário e clique em **resolver**. Nas linhas relevantes, os nomes de userresolvedos são exibidos.
+
+        > [!NOTE]
+        > Esta ação é auditada.
+
+        ![Tornar anônimo resolver pop-up](media/anonymize-resolve-dialog.png)
 
 6. A ação é auditada no **Log de governança** do portal.
 

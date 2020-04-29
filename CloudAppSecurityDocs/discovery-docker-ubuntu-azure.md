@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 09880e0702133fbca8ae0001d40aff098b2fa4d6
+ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460816"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81477550"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalação e configuração no Ubuntu ou RHEL no Azure
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Configure o carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL (Red Hat Enterprise Linux) no Azure. Este artigo descreve como configurar o upload automático de logs.
 
@@ -49,11 +49,14 @@ Configure o carregamento de log automático para relatórios contínuos no Cloud
 
 ## <a name="log-collector-performance"></a>Desempenho do coletor de logs
 
-O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB por hora. Os principais gargalos no processo de coleta de logs são:
+O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB por hora, composta de até 10 fontes de dados. Os principais gargalos no processo de coleta de logs são:
 
 * Largura de banda da rede – a largura de banda da rede determina a velocidade de upload do log.
 
-* Desempenho de E/S da máquina virtual – determina a velocidade em que os logs são gravados no disco do coletor de logs. O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se a configuração geralmente excede 50 GB por hora, recomendamos que você divida o tráfego entre vários coletores de logs.
+* Desempenho de e/s da máquina virtual-determina a velocidade na qual os logs são gravados no disco do coletor de logs. O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se a configuração normalmente excede 50 GB por hora, recomendamos que você divida o tráfego entre vários coletores de logs.
+
+> [!NOTE]
+> Se você precisar de mais de 10 fontes de dados, recomendamos que você divida as fontes de dados entre vários coletores de logs.
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração  
 
@@ -68,7 +71,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 1. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
 
     1. Clique em **Adicionar fonte de dados**.  
-    ![adicionar uma fonte de dados](media/add-data-source.png)
+    ![Adicionar uma fonte de dados](media/add-data-source.png)
     1. Atribua o **Nome** do proxy ou firewall.  
       ![ubuntu1](media/ubuntu1.png)
     1. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
@@ -86,7 +89,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 1. Vá para a guia **Coletores de logs** na parte superior.
 
     1. Clique em **Adicionar coletor de logs**.
-    1. Atribua um **nome** ao coletor de logs.
+    1. Dê um **nome**ao coletor de logs.
     1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
     1. Selecione todas as **fontes de dados** que você deseja conectar ao coletor e clique em **Atualizar** para salvar a configuração.  
     ![ubuntu2](media/ubuntu2.png)
@@ -113,15 +116,15 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
     1. Na exibição do computador, acesse **Rede**, selecione a interface relevante clicando duas vezes nela.
     1. Acesse **Grupo de Segurança de Rede** e selecione o grupo de segurança de rede relevante.
-    1. Vá para **regras de segurança de entrada** e clique em **Adicionar**, ![Ubuntu Azure](media/ubuntu-azure.png)
+    1. Vá para **regras de segurança de entrada** e clique em ![ **Adicionar**, Ubuntu Azure](media/ubuntu-azure.png)
     1. Adicionar as seguintes regras (no modo **Avançado**):
 
-    |Nome|Intervalos de porta de destino|Protocolo|Origem|Destination|
+    |Nome|Intervalos de portas de destino|Protocolo|Fonte|Destino|
     |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<Sub-rede do endereço IP do dispositivo>|qualquer|
-    |caslogcollector_syslogs_udp|514-600|UDP|<Sub-rede do endereço IP do dispositivo>|qualquer|
+    |caslogcollector_ftp|21|TCP|<Sub-rede do endereço IP do dispositivo>|Qualquer|
+    |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|Qualquer|
+    |caslogcollector_syslogs_tcp|601-700|TCP|<Sub-rede do endereço IP do dispositivo>|Qualquer|
+    |caslogcollector_syslogs_udp|514-600|UDP|<Sub-rede do endereço IP do dispositivo>|Qualquer|
 
     ![Regras do Azure no Ubuntu](media/inbound-rule.png)
 
@@ -175,7 +178,7 @@ Se houver problemas durante a implantação, confira [Solução de problemas do 
 
 Verifique se os logs estão sendo carregados no Cloud App Security e se os relatórios são gerados. Após a verificação, crie relatórios personalizados. Crie relatórios de descoberta personalizados com base em grupos de usuários do Azure Active Directory. Por exemplo, caso deseje ver o uso de nuvem de seu departamento de marketing, importe o grupo de marketing usando o recurso Importar grupo de usuários. Em seguida, crie um relatório personalizado para esse grupo. Você também pode personalizar um relatório com base na marca do endereço IP ou intervalos de endereços IP.
 
-1. No portal do Cloud App Security, na engrenagem Configurações, selecione Configurações do Cloud Discovery e, em seguida, **Relatórios contínuos**. 
+1. No portal de Cloud App Security, sob as configurações engrenagem, selecione Cloud Discovery configurações e, em seguida, selecione **relatórios contínuos**. 
 1. Clique no botão **Criar relatório** e preencha os campos.
 1. Em **Filtros**, você pode filtrar os dados de acordo com a fonte de dados, por [grupo de usuários importados](user-groups.md) ou por [marcas e intervalos de endereços IP](ip-tags.md). 
 

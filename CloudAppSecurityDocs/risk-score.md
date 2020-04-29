@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9ea1b9524fe262bc6364e5150426622d4efddfbc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 3c502e58ffcec4c99378bebcd9857368e0db41f0
+ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721080"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81235066"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabalhar com pontuações de risco do aplicativo
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Catálogo de Aplicativos de Nuvem fornece uma visão completa do que o Cloud Discovery identifica. O Cloud Discovery analisa seus logs de tráfego com base no catálogo de mais de 16.000 aplicativos de nuvem do Microsoft Cloud App Security. Os aplicativos são classificados e pontuados com base mais de 70 fatores de risco para fornecer visibilidade contínua do uso de nuvem, TI Sombra e o risco que a TI Sombra representa para sua organização. Este artigo fornece instruções sobre como usar e personalizar a pontuação de risco do aplicativo Cloud App Security.
 
@@ -76,9 +76,9 @@ Se você encontrar um novo aplicativo em seu ambiente que ainda não tenha sido 
 
     ![Sugerir um aplicativo no Cloud App Security](media/suggest-new-app.png)
 
-2. No pop-up **Sugerir novo aplicativo de nuvem**, preencha os detalhes sobre o novo. Inclua o nome e o domínio do aplicativo.
+2. No pop-up **sugerir novo aplicativo de nuvem** , preencha os detalhes sobre o novo. Inclua o nome e o domínio do aplicativo.
 
-    ![Sugerir um pop-up de aplicativo para o Cloud App Security](media/suggest-new-app-popup.png)
+    ![Sugerir um pop-up de aplicativo para Cloud App Security](media/suggest-new-app-pop-up.png)
 
 3. É recomendável marcar a caixa de seleção para permitir que os analistas do Cloud App Security contatem você caso sejam necessárias informações adicionais sobre o aplicativo. Preencher informações de contato permite que você seja atualizado quando a análise for concluída.
 
@@ -88,9 +88,9 @@ Se você encontrar um novo aplicativo em seu ambiente que ainda não tenha sido 
 
     ![Solicitar atualização de pontuação](media/request-score-update.png)
 
-2. No pop-up **Sugerir um aperfeiçoamento**, selecione se você deseja solicitar uma atualização de pontuação, sugerir um novo fator de risco ou atualizar dados de aplicativo.
+2. No pop-up **sugerir um aperfeiçoamento** , selecione se deseja solicitar uma atualização de pontuação, sugerir um novo fator de risco ou atualizar dados de aplicativo.
 
-    ![sugestão e melhoria ao Cloud App Security](media/suggest-improvement-popup.png)
+    ![sugestão e melhoria ao Cloud App Security](media/suggest-improvement-pop-up.png)
 
 3. É recomendável marcar a caixa de seleção para permitir que os analistas do Cloud App Security contatem você caso sejam necessárias informações adicionais sobre o aplicativo. Preencher informações de contato permite que você seja atualizado quando a análise for concluída.
 
@@ -98,7 +98,7 @@ Se você encontrar um novo aplicativo em seu ambiente que ainda não tenha sido 
 
 O Cloud Discovery oferece dados importantes com relação à credibilidade e à confiabilidade dos aplicativos de nuvem que são usados em todo o ambiente. No portal, cada aplicativo descoberto é exibido junto com uma pontuação total. A pontuação representa a avaliação do Cloud App Security da maturidade do uso desse aplicativo específico para empresas. A pontuação total de qualquer aplicativo em particular é uma média ponderada de três subtotais relacionados a três subcategorias que o Cloud App Security considera ao avaliar a confiabilidade:
 
-- **Geral** - essa categoria se refere a informações básicas sobre a empresa que produz o aplicativo, incluindo o seu domínio, ano de fundação e popularidade. Esses campos devem mostrar a estabilidade da empresa no nível mais básico.
+- **Geral** – essa categoria se refere a fatos básicos sobre a empresa que produz o aplicativo, incluindo seu domínio, ano encontrado e popularidade. Esses campos devem mostrar a estabilidade da empresa no nível mais básico.
 
 - **Segurança** – a categoria de segurança considera todos os padrões que lidam com a segurança física dos dados utilizados pelo aplicativo descoberto. Essa categoria inclui campos como autenticação multifator, criptografia, classificação de dados e propriedade dos dados.
 
@@ -116,7 +116,7 @@ Cada uma das categorias é composta por várias propriedades específicas. De ac
 
 3. Além disso, você pode definir se determinados valores não estão disponíveis ou não são aplicáveis no cálculo da pontuação. Quando incluídos, valores N/A têm uma contribuição negativa para a pontuação calculada.
 
-    ![score](media/score.png "métricas de Pontuação")
+    ![placar](media/score.png "métricas de Pontuação")
 
 Todas as informações necessárias para compreender como as classificações de risco do Cloud App Security se comparam estão disponíveis no portal do Cloud App Security. Para melhor compreender o peso de um fator de risco na categoria de risco específico, use o botão "i" à direita de cada nome de campo no perfil do aplicativo. Isso fornece informações sobre exatas como o Cloud App Security pontua um fator de risco específico. A pontuação é o valor do fator de risco em uma escala de 1 a 10 mais o seu peso na categoria de risco:
 
@@ -131,7 +131,7 @@ Para compreender o peso de uma categoria risco na pontuação total do aplicativ
 Para substituir a pontuação de risco, na tabela **Aplicativos descobertos** ou no **Catálogo de aplicativos de nuvem**, clique nos três pontos à direita de qualquer aplicativo e selecione **Substituir a pontuação do aplicativo**.
 Você pode substituir a pontuação de risco de um aplicativo sem alterar a maneira como ele é avaliado para que você obtenha resultados imediatos para sua organização. Por exemplo, a pontuação de risco de um aplicativo LOB que você usa é 8. No entanto, o aplicativo é sancionado e incentivado por sua organização. Você talvez queira alterar a pontuação de risco para 10 para o aplicativo de LOB.
 
-![substituir a pontuação de risco do aplicativo Cloud app Security](media/override-risk-score.png)
+![substituir a pontuação de risco do aplicativo do Cloud App Security](media/override-risk-score.png)
 
 Depois de atualizar a pontuação, você pode incluir observações do aplicativo para tornar sua justificativa de negócios para modificar esta pontuação de aplicativo clara para outros administradores.
 
