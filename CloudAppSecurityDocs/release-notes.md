@@ -4,19 +4,19 @@ description: Este artigo é atualizado com frequência para você saber quais s�
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 04/26/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 619bce7e6f3931a53a5891c6c5ff0db223c384cf
-ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
+ms.openlocfilehash: 563710ad526f3030d4ef9db30dd855957d1db2a0
+ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80291244"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82161785"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -25,6 +25,29 @@ ms.locfileid: "80291244"
 Este artigo é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security.
 
 Feed RSS: Receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-173-and-174"></a>Cloud App Security versões 173 e 174
+
+Lançado em 26 de abril de 2020
+
+- **Novo formato CEF de agente SEIM para alertas**  
+Como parte de nosso esforço para enriquecer as informações de alerta fornecidas nos arquivos CEF usados por servidores SIEM genéricos, estendemos o formato para incluir os seguintes campos de cliente:
+  - Endereço IPv4
+  - Endereço IPv6
+  - Local do endereço IP
+
+    Para obter mais informações, confira [Formato de arquivo CEF](siem.md#sample-cloud-app-security-alerts-in-cef-format).
+- **Lógica de detecção aprimorada: viagem impossível**  
+Atualizamos a lógica de detecção para viagem impossível a fim de fornecer precisão aprimorada e volume de alerta reduzido. Confira mais informações sobre essa política de detecção de anomalias em [Viagem impossível](anomaly-detection-policy.md#impossible-travel).
+
+## <a name="cloud-app-security-release-172"></a>Cloud App Security versão 172
+
+Lançado em 5 de abril de 2020
+
+- **Controles de acesso e de sessão aprimorados com qualquer IdP (versão prévia)**  
+Agora os controles de acesso e sessão têm suporte para aplicativos SAML configurados com qualquer provedor de identidade. A versão prévia pública desse novo recurso está sendo distribuída gradualmente. Para configurar esses controles, consulte o [Guia de implantação](proxy-deployment-aad.md).
+- **Nova identificação em massa de usuários e computadores**  
+Expandimos e simplificamos o processo de identificação de um ou mais usuários e computadores sob investigação. Para obter mais informações sobre a identificação em massa, consulte [Como funciona a anonimização de dados](cloud-discovery-anonymizer.md#how-data-anonymization-works).
 
 ## <a name="cloud-app-security-release-170-and-171"></a>Cloud App Security versão 170 e 171
 
