@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 05/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09880e0702133fbca8ae0001d40aff098b2fa4d6
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 5b952a924b7b26e4d45ffb981698f660e53a0558
+ms.sourcegitcommit: baa9cb55d9d82808602a58ee24eeba7d83e92742
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477550"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "82739029"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalação e configuração no Ubuntu ou RHEL no Azure
 
@@ -29,7 +29,7 @@ Configure o carregamento de log automático para relatórios contínuos no Cloud
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Sistema operacional: Ubuntu 14, 4 e 16, 4 (para versões mais recentes, contate o suporte), RHEL 7,2 ou superior ou CentOS 7,2 ou superior
+* Sistema operacional: Ubuntu 16, 4 e 18, 4, RHEL 7,2 ou superior ou CentOS 7,2 ou superior
 
 * Espaço em disco: 250 GB
 
@@ -158,7 +158,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
-Configure os proxies e os firewalls de rede para periodicamente exportar logs para a porta do Syslog dedicada do diretório de FTP de acordo com as instruções na caixa de diálogo. Por exemplo:
+Configure os proxies e os firewalls de rede para periodicamente exportar logs para a porta do Syslog dedicada do diretório de FTP de acordo com as instruções na caixa de diálogo. Por exemplo: 
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
