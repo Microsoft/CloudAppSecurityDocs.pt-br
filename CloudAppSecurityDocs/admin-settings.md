@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c81af777d65e0815524dad02c795e8b06a76894b
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 8308aaf9fc46b4438dbfb356598ce0abd1f82b30
+ms.sourcegitcommit: a9653e6e5fbf8cb1d194924fb260853c541d1ac1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662252"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82888095"
 ---
 # <a name="admin-user-settings"></a>Configurações do usuário administrador
 
@@ -35,10 +35,12 @@ Para configurar suas preferências como um administrador do Microsoft Cloud App 
 
     ![configurações personalizadas do usuário](media/custom-language-settings.png)
 
-2. Clique em **Notificações** e defina as preferências de notificação de email e texto para os emails recebidos do sistema.  Você pode definir a gravidade que determina para quais alertas e violações você deseja receber emails. A gravidade é definida por política. Quando as violações forem disparadas, você receberá uma notificação por email dependendo da configuração daqui e da configuração de Gravidade na política que foi violada. Os emails são enviados para o alias associado à conta de usuário do administrador usada para entrar no Cloud App Security. Insira um número de telefone para permitir que o Cloud App Security envie mensagens de texto quando alertas e notificações forem enviados e defina o nível de gravidade para o qual você deseja receber notificações por mensagem de texto.
+2. Clique em **Notificações** e defina as preferências de notificação de email e texto para os emails recebidos do sistema. Você pode definir a gravidade que determina para quais alertas e violações você deseja receber emails. A gravidade é definida por política. Quando as violações forem disparadas, você receberá uma notificação por email dependendo da configuração daqui e da configuração de Gravidade na política que foi violada. Os emails são enviados para o alias associado à conta de usuário do administrador usada para entrar no Cloud App Security. Insira um número de telefone para permitir que o Cloud App Security envie mensagens de texto quando alertas e notificações forem enviados e defina o nível de gravidade para o qual você deseja receber notificações por mensagem de texto.
 
     > [!NOTE]
-    > O número máximo de alertas enviados por meio de mensagem de texto é 10 por número de telefone por dia. O dia é calculado de acordo com o fuso horário UTC.
+    >
+    > - O número máximo de alertas enviados por meio de mensagem de texto é 10 por número de telefone por dia. O dia é calculado de acordo com o fuso horário UTC.
+    > - As notificações não são enviadas para eventos Azure Active Directory IPC.
 
     ![configurações de notificação](media/notification-settings.png)
 
