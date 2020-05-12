@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 57482c7e683641ed8f78fc5dabd2aff4c4bb1d46
-  ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+  ms.openlocfilehash: d5933b0fccf234ae45705e211d8422dde719a8d1
+  ms.sourcegitcommit: 5e8dd22b6c9a5c18dbb704ccc8d8b12b33b66955
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/21/2020
-  ms.locfileid: "77507793"
+  ms.lasthandoff: 05/10/2020
+  ms.locfileid: "83004304"
 landingContent:
 - title: Sobre o Cloud App Security
   linkLists:
@@ -45,6 +45,8 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
+    - text: Detectar e gerenciar atividades suspeitas
+      url: tutorial-suspicious-activity.md
     - text: Investigar usuários arriscados
       url: tutorial-ueba.md
     - text: Investigar aplicativos OAuth arriscados
