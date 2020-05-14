@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 162a3e6705ed772cc43c141afd135cfbda3bdad5
-ms.sourcegitcommit: 30077ab7e3dd25249924e178581cf5eb1e7085bd
+ms.openlocfilehash: 8b6e6746951616f1a6b4241d818e75dc7755f121
+ms.sourcegitcommit: a693d0bc9102a8320f9933d80ab9357f449d5316
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82093581"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83369335"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -83,6 +83,7 @@ Além disso, os itens a seguir devem estar na lista de permissões, dependendo d
 Para habilitar Cloud App Security proxy reverso, adicione a **porta de saída 443** para os seguintes endereços IP e nomes DNS à lista de permissões do firewall:
 
     *.cas.ms
+    mcasproxy.azureedge.net
 
 Além disso, os itens a seguir devem estar na lista de permissões, dependendo do data center usado:
 
@@ -187,12 +188,12 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 
   | Data center |                        URL                                 |
   |-------------|------------------------------------------------------------|
-  |     US1     | https:\//adaprodconsole.blob.Core.Windows.net/             |
-  |     US2     | https:\//prod03use2console1.blob.Core.Windows.net/         |
-  |     US3     | https:\//prod5usw2console1.blob.Core.Windows.net/          |
-  |     EU1     | https:\//prod02euwconsole1.blob.Core.Windows.net/          |
-  |     EU2     | https:\//prod4uksconsole1.blob.Core.Windows.net/           |
-  |   Gov US1   | https:\//gprd1usgvconsole1.blob.Core.usgovcloudapi.net/    |
+  |     US1     | https: \/ /adaprodconsole.blob.Core.Windows.net/             |
+  |     US2     | https: \/ /prod03use2console1.blob.Core.Windows.net/         |
+  |     US3     | https: \/ /prod5usw2console1.blob.Core.Windows.net/          |
+  |     EU1     | https: \/ /prod02euwconsole1.blob.Core.Windows.net/          |
+  |     EU2     | https: \/ /prod4uksconsole1.blob.Core.Windows.net/           |
+  |   Gov US1   | https: \/ /gprd1usgvconsole1.blob.Core.usgovcloudapi.net/    |
 
 > [!NOTE]
 >
