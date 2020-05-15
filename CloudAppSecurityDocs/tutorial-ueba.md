@@ -4,18 +4,18 @@ description: Este tutorial descreve o processo para investigar usuários arrisca
 keywords: ''
 author: shsagir
 ms.author: shsagir
-ms.date: 12/03/2019
+ms.date: 04/28/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 7316a1b24e45219b55912e75b48b0c2e590bd34f
+ms.sourcegitcommit: 1288ef3b69b2fefc3015e61cb9f485c0c8e6c682
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79241805"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82888300"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
 
@@ -85,6 +85,8 @@ A página Usuário permite responder às seguintes questões:
     Confira a parte superior do painel direito para ver se vale a pena investigar o usuário. Qual é a [pontuação de risco](#risk-score) do funcionário?
     * Que risco o usuário representa para a organização?  
     Observe a lista no painel inferior, que fornece as atividades e os alertas relacionados ao usuário para ajudá-lo a compreender que tipo de risco ele representa. Na linha do tempo, clique em cada linha para analisar detalhadamente a atividade ou o alerta em si. Você também pode clicar no número ao lado da atividade para entender as evidências que influenciaram a pontuação.
+    * Qual é o risco para os outros ativos em sua organização?  
+    Selecione a guia **Caminhos de movimento lateral** para entender quais caminhos um invasor pode usar para obter controle de outros ativos em sua organização. Por exemplo, mesmo que o usuário que você está investigando tenha uma conta não confidencial, um invasor poderá usar conexões com a conta para descobrir e tentar comprometer contas confidenciais em sua rede. Para obter mais informações, confira [Usar caminhos de movimento lateral](/azure-advanced-threat-protection/investigate-lateral-movement-path).
 
   >[!NOTE]
   >É importante lembrar que, embora a página Usuário forneça informações de todas as atividades sobre dispositivos, recursos e contas, a pontuação da prioridade de investigação é a soma de todos os alertas e as atividades arriscadas dos últimos sete dias.
@@ -99,13 +101,13 @@ Quando investiga um usuário, você quer fazer as seguintes perguntas sobre as a
 
 * Acesse o **Log de atividades** para entender por que esta atividade recebeu uma classificação alta, enquanto outras não. Você pode definir a **Prioridade de investigação** para **Está definida** para entender quais atividades são suspeitas. Por exemplo, você pode filtrar com base na Prioridade de investigação por todas as atividades que ocorreram na Ucrânia. Então você pode ver se havia outras atividades arriscadas de onde o usuário se conectou. Além disso, você pode facilmente dinamizar para outras quedas de análise, como atividades de nuvem não anômalas ou atividades locais, para continuar a investigação.
 
-## <a name="phase-4-protect-your-organization"></a>Fase 4: Proteger a organização<a name="protect"></a>
+## <a name="phase-4-protect-your-organizationj"></a>Fase 4: proteger a organização<a name="protect"></a>j
 
 Se, por meio da sua investigação, você concluir que um usuário está comprometido, siga estas etapas para atenuar o risco.
 
 * Contate o usuário – Usando as informações de contato do usuário integradas ao Cloud App Security do Active Directory, é possível fazer uma busca detalhada de cada alerta e atividade para resolver a identidade do usuário. Verifique se que o usuário está familiarizado com as atividades.
 
-* Diretamente do portal do Cloud App Security, clique no controle **Ações do Usuário** e escolha se deseja solicitar que o usuário entre novamente, suspender o usuário ou confirmar que o usuário está comprometido.
+* Diretamente do portal do Cloud App Security, clique no controle **Ações do usuário** e escolha se deseja solicitar que o usuário entre novamente, suspender o usuário ou confirmar que o usuário está comprometido.
 
 * No caso de uma identidade comprometida, é possível pedir ao usuário para redefinir a senha, verificando se ela atende às diretrizes de melhor prática quanto ao tamanho e à complexidade.
 * Se fizer uma busca detalhada em um alerta e determinar que a atividade não o acionou, na [Gaveta de atividades](activity-filters.md), clique no link **Enviar comentários** para que possamos refinar nosso sistema de alertas especialmente para sua organização.
