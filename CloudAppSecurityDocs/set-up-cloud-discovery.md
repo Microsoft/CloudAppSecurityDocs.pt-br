@@ -5,17 +5,17 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 05/17/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a4ee042c3f24fe2fa5f15fa5ce3eb2ca0f7f2be1
-ms.sourcegitcommit: a693d0bc9102a8320f9933d80ab9357f449d5316
+ms.openlocfilehash: a88c3d90b96d173428ccd22c94731ca82f4f920b
+ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83369318"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83579759"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -35,6 +35,7 @@ Há dois tipos de relatórios que você pode gerar:
   - [Coletor de logs](discovery-docker.md): os coletores de logs permitem automatizar facilmente o carregamento de logs da rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
   - [Integração do Zscaler](zscaler-integration.md): se trabalha com o Cloud App Security e o Zscaler, você pode integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. Juntos, o Cloud App Security e o Zscaler proporcionam uma implantação perfeita do Cloud Discovery, o bloqueio automático de aplicativos não sancionados e a avaliação de riscos diretamente no portal do Zscaler.
   - [integração do iboss](iboss-integration.md): se você trabalha com o Cloud app Security e o iboss, você pode integrar os dois produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e iboss fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do iboss.
+  - [Integração do Corrata](corrata-integration.md): se você trabalha com o Cloud app Security e o Corrata, você pode integrar os dois produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e Corrata fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do Corrata.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Fluxo do processo de log: dos dados brutos a avaliação de riscos
 
@@ -64,6 +65,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 - Cisco Meraki – log de URLs
 - Clavister NGFW (Syslog)
 - ContentKeeper
+- Corrata
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
@@ -95,7 +97,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | Não |
 | Blue Coat | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
-| Ponto de verificação | Não | **Sim** | Não | **Sim** | Não | Não |
+| Ponto de Verificação | Não | **Sim** | Não | **Sim** | Não | Não |
 | Cisco ASA (Syslog) | Não | **Sim** | Não | **Sim** | **Sim** | Não |
 | Cisco ASA com FirePOWER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Cisco Cloud Web Security |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
@@ -104,6 +106,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 | Cisco Meraki | **Sim** | **Sim** | Não | **Sim** | Não | Não |
 | Clavister NGFW (Syslog) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | ContentKeeper | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
+| Corrata | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | SonicWall (anteriormente conhecido como Dell) | **Sim** | **Sim** | Não | **Sim** | **Sim** | **Sim** |
 | Digital Arts i-FILTER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | ForcePoint LEEF |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/03/2019
+ms.date: 05/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fe538419f86076977b5484c5571d65623eb9cdd7
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5a32b56b0ad310f5c7572f8113e4a9a33b722059
+ms.sourcegitcommit: d72c768e9a5fe087995ab1185ca33ef68168bee6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74733715"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83704276"
 ---
 # <a name="accounts"></a>Contas
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security proporciona visibilidade das contas de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security lerá as informações da conta associadas aos aplicativos conectados. A página Contas permite que você investigue essas contas, as permissões, os grupos dos quais são membros, os aliases delas e os aplicativos que elas estão usando. Além disso, quando o Cloud App Security detecta uma nova conta que não foi vista anteriormente em um dos aplicativos conectados, como nas atividades ou no compartilhamento de arquivos, a conta é adicionada à lista de contas deste aplicativo. Isso permite que você tenha visibilidade sobre a atividade de usuários externos interagindo com seus aplicativos em nuvem.
 
@@ -60,7 +60,7 @@ Veja a seguir uma lista de filtros de contas que podem ser aplicados. A maioria 
 * **Visto pela última vez em**: o filtro **Visto pela última vez em** permite localizar as contas que estão inativas e cujos usuários não executaram nenhuma atividade há algum tempo.
 * **Organização**: permite que você filtre os membros de grupos organizacionais específicos definidos em seus aplicativos conectados.
 * **Mostrar apenas administradores**: filtros para contas e usuários que são administradores.
-* **Status**: filtre com base no status da conta de usuário de N/D, em estágios, ativo, suspenso ou excluído.
+* **Status**: filtre com base no status da conta de usuário de N/D, em estágios, ativo, suspenso ou excluído. Um status de não disponível (N/A) é normal e pode aparecer, por exemplo, para contas anônimas.
 * **Tipo**: permite que você filtre para o usuário ou o tipo de conta.
 * **Nome de usuário**: permite que você filtre para usuários específicos.
 
