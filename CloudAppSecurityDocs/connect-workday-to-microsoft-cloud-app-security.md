@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 556e47a29c33fa898082a8148e3f3b431b30ac2a
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 652ab059cef9c911af4dc58a7cb4b79c679aed30
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241271"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854262"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conectar o workday ao Microsoft Cloud App Security (versão prévia)
 
@@ -41,10 +41,10 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 
 | Área funcional | Política de segurança de domínio | Política de segurança de subdomínio | Permissões de relatório/tarefa | Permissões de integração |
 | --- | --- | --- | --- | --- |
-| System (sistema) | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
-| System (sistema) | Administração de Segurança | | Exibir, modificar | Obter, colocar |
-| System (sistema) | Auditoria do sistema | | Exibir | Obter |
-| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: Relatórios de trabalho público | Exibir | Obter |
+| Sistema | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
+| Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
+| Sistema | Auditoria do sistema | | Visualizar | Obter |
+| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: Relatórios de trabalho público | Visualizar | Obter |
 
 > [!NOTE]
 >
@@ -74,6 +74,7 @@ Para obter mais informações sobre como configurar usuários de integração do
     | Tipo de concessão de cliente | Concessão de código de autorização |
     | Tipo de token de acesso | Portador |
     | URI de redirecionamento | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Tokens de atualização sem expiração | Yes |
     | Escopos OAuth2 | **Equipe** e **sistema** |
     | Escopo (áreas funcionais) | **Equipe** e **sistema** |
 
@@ -81,7 +82,7 @@ Para obter mais informações sobre como configurar usuários de integração do
 
 1. Depois de registrado, anote os parâmetros a seguir e clique em **concluído**.
 
-    * ID do cliente
+    * ID do Cliente
     * Segredo do cliente
     * Ponto de extremidade da API REST do workday
     * Ponto de extremidade do token

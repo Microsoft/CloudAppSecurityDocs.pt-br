@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 05/25/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b0d1afdd63cc7c92f520cc17c1d90ff83bf4ec23
-ms.sourcegitcommit: 82aaa76581fa76e207c754bb0855c24c2233fb44
+ms.openlocfilehash: 3831d576d3ead9164924557a8b097b78f39808cf
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738044"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854178"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solução de problemas de inspeção de conteúdo
 
@@ -41,7 +41,8 @@ A tabela lista cada status de inspeção de conteúdo e sua descrição.
 |Falha: O arquivo está corrompido|O arquivo está corrompido de alguma forma e não pôde ser inspecionado.|
 |Falha: Erro interno|Ocorreu um erro indeterminado ao tentar verificar o arquivo.|
 |Falha: Erro do DLP externo|Algo em seu DLP externo deu errado, causando uma falha ao inspecionar o conteúdo no Cloud App Security.|
-|Falha: tamanho do arquivo excedido|O arquivo excedeu o tamanho de arquivo máximo de 50 MB ou 1 milhão caracteres.|
+|Falha: tamanho do arquivo excedido|O arquivo excedeu o tamanho de arquivo máximo de 50 MB.|
+|Falha: o arquivo é muito longo e foi parcialmente verificado|O arquivo excedeu o máximo de 1 milhão caracteres. Para a parte do conteúdo que foi examinado, as correspondências de política relevantes foram aplicadas.|
 |Falha: Acesso ao arquivo negado|O arquivo é externo à sua nuvem e não pôde ser acessado pelo Cloud App Security.|
 |Falha: O arquivo foi excluído|O arquivo não existe mais na sua nuvem e não pôde ser inspecionado.|
 |Falha: tipo de arquivo sem suporte|O Cloud App Security não pode executar a inspeção de conteúdo nesse tipo de arquivo. Esse status pode aparecer porque não há suporte para o tipo de arquivo ou porque o arquivo não está no formato do tipo de arquivo esperado.|

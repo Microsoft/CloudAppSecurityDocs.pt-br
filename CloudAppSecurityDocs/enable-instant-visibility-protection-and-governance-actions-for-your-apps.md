@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/12/2019
+ms.date: 05/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fe0a057318f1b9a55d60e807c2bbaf8fd89aa682
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 5c12226c36cba270ad5b54ffdb76cb8b228c2480
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662209"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854179"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -36,7 +36,7 @@ O Cloud App Security agora dá suporte a várias instâncias do mesmo aplicativo
 > [!NOTE]
 > Não há suporte para várias instâncias no Office 365 e no Azure.
 
-## <a name="how-it-works"></a>Como isso funciona
+## <a name="how-it-works"></a>Como ele funciona
 
 O Cloud App Security é implantado com privilégios de administrador do sistema para permitir o acesso completo a todos os objetos em seu ambiente.
 
@@ -52,7 +52,7 @@ Dependendo do aplicativo ao qual você está se conectando, a conexão de API pe
 
 - **Dados da conta** – visibilidade de usuários, contas, informações de perfil, grupos de status (suspenso, ativo, desabilitado) e privilégios.
 
-- **Trilha de auditoria** – visibilidade das atividades do usuário, atividades de administração e atividades de entrada.
+- **Trilha de auditoria** -visibilidade das atividades do usuário, atividades administrativas, atividades de entrada.
 
 - **Verificação de dados** – verificação de dados não estruturados usando dois processos: periodicamente (a cada 12 horas) e verificação em tempo real (disparada sempre que uma alteração é detectada).
 
@@ -99,12 +99,12 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 | Azure | | Administrador global |
 | AWS | | Usuário recém-criado |
 | Box | Enterprise | É altamente recomendável que você se conecte ao box como um administrador. Conectar-se como um coadministrador resultará em apenas visibilidade parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
-| Dropbox | Business/Enterprise | Administrador |
+| Dropbox | Business/Enterprise | Admin |
 | GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (não de avaliação) | Administrador |
-| Salesforce | | Administrador |
+| Okta | Enterprise (não de avaliação) | Admin |
+| Salesforce | | Admin |
 | ServiceNow | Eureka e superior | Função admin + RestAPI |
 | Webex | | Admin + administrador de conformidade |
 | Workday | | Consulte os [pré-requisitos do workday de conexão](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
