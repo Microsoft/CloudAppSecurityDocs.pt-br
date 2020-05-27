@@ -4,19 +4,19 @@ description: Este artigo é atualizado com frequência para você saber quais s�
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/26/2020
+ms.date: 05/17/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 563710ad526f3030d4ef9db30dd855957d1db2a0
-ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
+ms.openlocfilehash: 0ab614ab612fc628b42780d11beba4e0f57f0ad4
+ms.sourcegitcommit: bea164d19469c0a7ef9bc47b128f3ba0b1b14591
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82161785"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83748016"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -26,11 +26,26 @@ Este artigo é atualizado com frequência para você saber quais são as novidad
 
 Feed RSS: Receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## <a name="cloud-app-security-release-175"></a>Cloud App Security versão 175
+
+Lançado em 17 de maio de 2020
+
+- **Nova integração do Shadow IT Discovery ao Corrata (versão prévia)**  
+Adicionamos integração nativa ao Corrata fornecendo visibilidade do Shadow IT sobre o uso do aplicativo e o controle do acesso dele. Para obter mais informações, confira [Integrar o Cloud App Security ao Corrata](corrata-integration.md).
+
+- **Novos analisadores de log do Cloud Discovery**  
+O Cloud Discovery do Cloud App Security analisa uma ampla variedade de logs de tráfego para classificar e pontuar os aplicativos. Agora o Cloud Discovery inclui um analisador de log interno para dar suporte aos formatos de log do Corrata e do Cisco ASA com FirePOWER 6.4. Para acessar a lista de dispositivos com suporte, confira [Proxies e firewalls com suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **Painel aprimorado (implementação gradual)** Como parte dos nossos aprimoramentos contínuos no design do portal, agora estamos implementando gradualmente o painel do Cloud App Security aprimorado. O painel foi modernizado com base em seus comentários e oferece uma experiência de usuário aprimorada com conteúdo e dados atualizados. Para obter mais informações, confira [Implantação gradual do nosso painel aprimorado](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard).
+
+- **Governança aprimorada: Confirmar Usuário Comprometido para detecções de anomalias**  
+Expandimos nossas ações de governança atuais para políticas de anomalias para incluir **Confirmar Usuário Comprometido** permitindo que você proteja proativamente seu ambiente contra atividades suspeitas do usuário. Para obter mais informações, confira [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
+
 ## <a name="cloud-app-security-release-173-and-174"></a>Cloud App Security versões 173 e 174
 
 Lançado em 26 de abril de 2020
 
-- **Novo formato CEF de agente SEIM para alertas**  
+- **Novo formato CEF de agente SIEM para alertas**  
 Como parte de nosso esforço para enriquecer as informações de alerta fornecidas nos arquivos CEF usados por servidores SIEM genéricos, estendemos o formato para incluir os seguintes campos de cliente:
   - Endereço IPv4
   - Endereço IPv6

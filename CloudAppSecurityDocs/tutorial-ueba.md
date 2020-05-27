@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 7316a1b24e45219b55912e75b48b0c2e590bd34f
-ms.sourcegitcommit: 1288ef3b69b2fefc3015e61cb9f485c0c8e6c682
+ms.openlocfilehash: 89da56403cbd6239094e58bebdd2a78ef3558edc
+ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82888300"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83579776"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
 
@@ -48,7 +48,7 @@ A pontuação de prioridade de investigação se baseia em alertas de segurança
 
 Quando clica no valor da pontuação de um alerta ou de uma atividade, você exibe a evidência que explica como o Cloud App Security pontuou a atividade.
 
-Todos os usuários do Microsoft Azure AD têm uma pontuação de prioridade de investigação, que é constantemente atualizada com base em impacto e comportamento recentes, gerada sobre dados avaliados nos serviços ATP do Azure, Microsoft Cloud App Security e Azure AD Identity Protection. Agora você pode compreender de imediato quem são os usuários de maior risco filtrando de acordo com a **Pontuação de prioridade de investigação**, verificar diretamente o impacto sobre os negócios e investigar todas as atividades relacionadas, independentemente de estarem comprometidas, apropriando dados ou atuando como ameaças internas.
+Todos os usuários do Azure AD têm uma pontuação de prioridade de investigação dinâmica constantemente atualizada com base em impacto e comportamento recentes, criada com base em dados avaliados do ATP do Azure e Cloud App Security. Agora você pode compreender de imediato quem são os usuários de maior risco filtrando de acordo com a **Pontuação de prioridade de investigação**, verificar diretamente o impacto sobre os negócios e investigar todas as atividades relacionadas, independentemente de estarem comprometidas, apropriando dados ou atuando como ameaças internas.
 
 O Cloud App Security usa os seguintes critérios para avaliar riscos:
 
@@ -101,7 +101,7 @@ Quando investiga um usuário, você quer fazer as seguintes perguntas sobre as a
 
 * Acesse o **Log de atividades** para entender por que esta atividade recebeu uma classificação alta, enquanto outras não. Você pode definir a **Prioridade de investigação** para **Está definida** para entender quais atividades são suspeitas. Por exemplo, você pode filtrar com base na Prioridade de investigação por todas as atividades que ocorreram na Ucrânia. Então você pode ver se havia outras atividades arriscadas de onde o usuário se conectou. Além disso, você pode facilmente dinamizar para outras quedas de análise, como atividades de nuvem não anômalas ou atividades locais, para continuar a investigação.
 
-## <a name="phase-4-protect-your-organizationj"></a>Fase 4: proteger a organização<a name="protect"></a>j
+## <a name="phase-4-protect-your-organization"></a>Fase 4: Proteger a organização<a name="protect"></a>
 
 Se, por meio da sua investigação, você concluir que um usuário está comprometido, siga estas etapas para atenuar o risco.
 

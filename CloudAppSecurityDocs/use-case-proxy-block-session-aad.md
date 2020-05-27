@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e4dea21cdd9566781176a0d482bd2c45a6131ac5
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 57fac7776efbb617a382a30f6bf68ac2578ad0a6
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81228470"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551282"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloquear o download de informações confidenciais
 
@@ -78,7 +78,7 @@ Depois de concluir essa tarefa, vá para o portal do Cloud App Security e crie u
 
 6. Em **Origem da atividade**, na seção **Atividades correspondentes ao seguinte**, selecione os filtros:
 
-   * **Marca do dispositivo**: Selecione **Não é igual a**. Em seguida, selecione **Em conformidade**, **Ingressado no domínio** ou **Certificado de cliente válido**. Sua seleção depende do método usado na sua organização para identificar os dispositivos gerenciados.
+   * **Marca do dispositivo**: Selecione **Não é igual a**. Em seguida, selecione **Em conformidade com o Intune**, **Ingressado no Azure AD híbrido** ou **Certificado de cliente válido**. Sua seleção depende do método usado na sua organização para identificar os dispositivos gerenciados.
 
    * **Aplicativo**: selecione o aplicativo que você deseja controlar.
 

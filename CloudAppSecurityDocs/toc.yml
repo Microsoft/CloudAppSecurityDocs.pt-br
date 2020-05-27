@@ -10,9 +10,9 @@
       href: release-notes.md
     - name: Comparar
       items:
-        - name: Office 365
+        - name: Office 365 Cloud App Security
           href: editions-cloud-app-security-o365.md
-        - name: Azure AD
+        - name: Cloud App Discovery do Azure AD
           href: editions-cloud-app-security-aad.md
         - name: US Government GCC High
           href: editions-cloud-app-security-gcc.md
@@ -33,6 +33,8 @@
       href: tutorial-ueba.md
     - name: Investigar aplicativos OAuth arriscados
       href: investigate-risky-oauth.md
+    - name: Descobrir e proteger informações confidenciais
+      href: tutorial-dlp.md
     - name: Proteger qualquer aplicativo em sua organização em tempo real
       href: tutorial-proxy.md
     - name: Bloquear o download de informações confidenciais
