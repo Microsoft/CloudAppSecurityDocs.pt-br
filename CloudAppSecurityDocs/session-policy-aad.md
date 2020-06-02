@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b6bd39d420b113a85d9d171ab076769240b9d00
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 47aa53855f83a2898616d17e6d4b12786bc7d893
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81228487"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250665"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -40,9 +40,9 @@ Por exemplo, é possível decidir que, de dispositivos não gerenciados ou, para
 
 * Azure AD Premium licença P1 ou a licença exigida pela sua solução IdP (provedor de identidade)
 * Os aplicativos relevantes devem ser [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)
-* Verifique se você configurou sua solução IdP para trabalhar com Cloud App Security, da seguinte maneira:
-  * Para [acesso condicional do Azure ad](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure ad](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  * Para outras soluções IdP, consulte [Configurar a integração com outras soluções IDP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
+* Para verificar se você configurou sua solução de IdP para trabalhar com o Cloud App Security, faça o seguinte:
+  * Para [Acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  * Para outras soluções do IdP, consulte [Configurar a integração com outras soluções de IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Criar uma política de sessão do Cloud App Security
 
@@ -100,7 +100,7 @@ Se você não desejar notificar o usuário de que ele está sendo monitorado, po
 
 2. Em seguida, no **Controle de Aplicativo de Acesso Condicional**, marque a caixa de seleção **Monitoramento de usuário** e desmarque **Notificar os usuários**.
 
-Para manter o usuário dentro da sessão, o Controle de Aplicativo de Acesso Condicional substitui todas as URLs relevantes, os scripts Java e os cookies dentro da sessão do aplicativo por URLs do Microsoft Cloud App Security. Por exemplo, se o aplicativo retornar uma página com links cujos domínios terminam com myapp.com, Controle de Aplicativos de Acesso Condicional substituirá os links com domínios que terminam com algo como myapp.com.us.cas.ms. Dessa forma, toda a sessão é monitorada pelo Microsoft Cloud App Security.
+Para manter o usuário dentro da sessão, o Controle de Aplicativo de Acesso Condicional substitui todas as URLs relevantes, os scripts Java e os cookies dentro da sessão do aplicativo por URLs do Microsoft Cloud App Security. Por exemplo, se o aplicativo retornar uma página com links cujos domínios terminam com myapp.com, Controle de Aplicativos de Acesso Condicional substituirá os links com domínios que terminam com algo como `myapp.com.mcas.ms` . Dessa forma, toda a sessão é monitorada pelo Microsoft Cloud App Security.
 
 O Controle de Aplicativo de Acesso Condicional registra os logs de tráfego de todas as sessões de usuário que são roteadas por ele. Os logs de tráfego incluem o agente do usuário, o tempo, o IP, as URLs visitadas e o número de bytes carregados e baixados. Esses logs são analisados e um relatório contínuo, **Controle de Aplicativos de Acesso Condicional do Cloud App Security**, é adicionado à lista de relatórios do Cloud Discovery no painel do Cloud Discovery.
 
@@ -110,7 +110,7 @@ Para exportar esses logs:
 2. No lado direito da tabela, clique no botão Exportar.
 
     ![botão exportar](./media/export-button.png)
-3. Selecione o intervalo do relatório e clique em **Exportar**. Esse processo pode demorar algum tempo.
+3. Selecione o intervalo do relatório e clique em **Exportar**. Esse processo pode levar algum tempo.
 
 Para baixar o log exportado:
 

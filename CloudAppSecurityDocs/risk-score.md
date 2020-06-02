@@ -14,24 +14,24 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c502e58ffcec4c99378bebcd9857368e0db41f0
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 1b69c92be4a3e095b76eee3d458820dac5d218a9
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81235066"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250682"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabalhar com pontuações de risco do aplicativo
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Catálogo de Aplicativos de Nuvem fornece uma visão completa do que o Cloud Discovery identifica. O Cloud Discovery analisa seus logs de tráfego com base no catálogo de mais de 16.000 aplicativos de nuvem do Microsoft Cloud App Security. Os aplicativos são classificados e pontuados com base mais de 70 fatores de risco para fornecer visibilidade contínua do uso de nuvem, TI Sombra e o risco que a TI Sombra representa para sua organização. Este artigo fornece instruções sobre como usar e personalizar a pontuação de risco do aplicativo Cloud App Security.
+O Catálogo de Aplicativos de Nuvem fornece uma visão completa do que o Cloud Discovery identifica. O Cloud Discovery analisa seus logs de tráfego com base no catálogo de mais de 16.000 aplicativos de nuvem do Microsoft Cloud App Security. Os aplicativos são classificados e pontuados com base em mais de 80 fatores de risco para fornecer visibilidade contínua sobre o uso da nuvem, Shadow IT e a sombra de risco que ele representa para sua organização. Este artigo fornece instruções sobre como usar e personalizar a pontuação de risco do aplicativo Cloud App Security.
 
 ## <a name="the-cloud-app-catalog"></a>O catálogo de Aplicativos de Nuvem
 
 O **Catálogo de aplicativos de nuvem** classifica o risco para seus aplicativos de nuvem com base em certificações regulatórias, padrões da indústria e práticas recomendadas. Quatro processos complementares são executados no Catálogo de aplicativos de nuvem para mantê-lo atualizado:
 
-1. Extração de dados automatizada diretamente do aplicativo de nuvem. A extração é para atributos como conformidade com SOC 2, termos de serviço, URL de entrada, política de privacidade e localização da sede.
+1. Extração de dados automatizada diretamente do aplicativo de nuvem. A extração é para atributos como conformidade com SOC 2, termos de serviço, URL de entrada, política de privacidade e local de HQ.
 2. Extração de dados avançada automatizada dos algoritmos do Cloud App Security (para atributos como cabeçalhos de segurança HTTP).
 3. Análise contínua da equipe de analistas de nuvem do Cloud App Security (para atributos como criptografia em repouso).
 4. Solicitações de revisão baseada no cliente, com base nas solicitações de envio de cliente para alterações no Catálogo de aplicativos de nuvem. Todas as solicitações são revisadas por nossa equipe de analistas de nuvem e atualizadas com base em suas descobertas.
@@ -108,7 +108,7 @@ O Cloud Discovery oferece dados importantes com relação à credibilidade e à 
 
 Cada uma das categorias é composta por várias propriedades específicas. De acordo com o algoritmo pontuação do Cloud App Security, cada propriedade recebe uma pontuação preliminar entre 0 e 10, dependendo do valor. Valores Verdadeiro/Falso receberão 10 ou 0 adequadamente. No entanto, propriedades contínuas, como a idade do domínio receberão um determinado valor dentro do espectro. A pontuação de cada propriedade será ponderada em relação a todos os outros campos existentes na categoria para criar o subtotal da categoria. Se você encontrar um aplicativo sem pontuação, isso normalmente indicará um aplicativo cujas propriedades são desconhecidas e, portanto, sem pontuação.
 
-É importante reservar um minuto para examinar e modificar os pesos padrão dados para a configuração de pontuação do Cloud Discovery. Por padrão, todos os vários parâmetros avaliados recebem um peso igual. Se houver determinados parâmetros que são mais ou menos importantes para sua organização, será importante alterá-los da seguinte maneira:
+É importante reservar um minuto para examinar e modificar os pesos padrão dados para a configuração de pontuação do Cloud Discovery. Por padrão, todos os vários parâmetros avaliados recebem o mesmo peso. Se houver determinados parâmetros que são mais ou menos importantes para sua organização, será importante alterá-los da seguinte maneira:
 
 1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.
 
@@ -116,13 +116,13 @@ Cada uma das categorias é composta por várias propriedades específicas. De ac
 
 3. Além disso, você pode definir se determinados valores não estão disponíveis ou não são aplicáveis no cálculo da pontuação. Quando incluídos, valores N/A têm uma contribuição negativa para a pontuação calculada.
 
-    ![placar](media/score.png "métricas de Pontuação")
+    ![score](media/score.png "métricas de Pontuação")
 
-Todas as informações necessárias para compreender como as classificações de risco do Cloud App Security se comparam estão disponíveis no portal do Cloud App Security. Para melhor compreender o peso de um fator de risco na categoria de risco específico, use o botão "i" à direita de cada nome de campo no perfil do aplicativo. Isso fornece informações sobre exatas como o Cloud App Security pontua um fator de risco específico. A pontuação é o valor do fator de risco em uma escala de 1 a 10 mais o seu peso na categoria de risco:
+Todas as informações necessárias para compreender como as classificações de risco do Cloud App Security se comparam estão disponíveis no portal do Cloud App Security. Para entender melhor o peso de um fator de risco em uma categoria de risco específica, use o botão "i" à direita de cada nome de campo no perfil do aplicativo. Isso fornece informações sobre exatas como o Cloud App Security pontua um fator de risco específico. A pontuação é o valor do fator de risco em uma escala de 1 a 10 mais o seu peso na categoria de risco:
 
 ![cálculo de risco](media/cac-weight.png)
 
-Para compreender o peso de uma categoria risco na pontuação total do aplicativo, passe o mouse sobre a pontuação da categoria de risco:
+Para entender o peso de uma categoria de risco na pontuação total do aplicativo, passe o mouse sobre a pontuação da categoria de risco:
 
 ![peso da categoria de risco](media/risk-category-weight.png)
 
