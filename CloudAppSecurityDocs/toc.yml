@@ -123,11 +123,11 @@
               href: create-snapshot-cloud-discovery-reports.md
             - name: Configurar upload de log automático para relatórios contínuos
               href: discovery-docker.md
-            - name: Docker no Windows
+            - name: Docker no Windows local
               href: discovery-docker-windows.md
-            - name: Docker no Ubuntu e no RHEL local
+            - name: Docker no Linux local
               href: discovery-docker-ubuntu.md
-            - name: Docker no Ubuntu no Azure
+            - name: Docker no Linux no Azure
               href: discovery-docker-ubuntu-azure.md
             - name: Configuração de FTP do coletor de logs
               href: log-collector-ftp.md
