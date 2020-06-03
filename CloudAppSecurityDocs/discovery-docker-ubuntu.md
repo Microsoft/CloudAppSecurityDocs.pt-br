@@ -1,11 +1,11 @@
 ---
-title: Configurar o upload automático de logs usando o Docker local
-description: Este artigo descreve o processo de configuração do upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou no RHEL em um servidor local.
+title: Configurar o upload de log automático usando o Docker local
+description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Linux em um servidor local.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,22 +14,25 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: baa86eb5a0d21a69fd747e0d7ef1c4d5863deddf
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: cbd419984f5b3cca55727b7795210edd9b4d5afe
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460784"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274607"
 ---
-# <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker no Ubuntu e no RHEL local
+# <a name="docker-on-linux-on-premises"></a>Docker no Linux local
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
-Configure o upload automático de logs para relatórios contínuos no Cloud App Security usando um Docker em um servidor local do Ubuntu ou do RHEL.
+Você pode configurar o upload de log automático para relatórios contínuos no Cloud App Security usando um Docker em um servidor Ubuntu, Red Hat Enterprise Linux (RHEL) ou CentOS local.
 
-## <a name="technical-requirements"></a>Requisitos técnicos
+## <a name="prerequisites"></a>Pré-requisitos
 
-* Sistema operacional: Ubuntu 14, 4, 16, 4 e 18, 4; RHEL 7,2 ou superior ou CentOS 7,2 ou superior 
+* sistema operacional:
+    * Ubuntu 14, 4, 16, 4 e 18, 4
+    * RHEL 7,2 ou superior
+    * CentOS 7,2 ou superior
 
 * Espaço em disco: 250 GB
 
@@ -53,7 +56,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 * Largura de banda da rede – a largura de banda da rede determina a velocidade de upload do log.
 
-* Desempenho de E/S da máquina virtual – determina a velocidade em que os logs são gravados no disco do coletor de logs. O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se a configuração geralmente excede 50 GB por hora, recomendamos que você divida o tráfego entre vários coletores de logs.
+* Desempenho de e/s da máquina virtual-determina a velocidade na qual os logs são gravados no disco do coletor de logs. O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se a configuração geralmente excede 50 GB por hora, recomendamos que você divida o tráfego entre vários coletores de logs.
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração  
 
@@ -68,7 +71,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 1. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
 
     1. Clique em **Adicionar fonte de dados**.  
-    ![adicionar uma fonte de dados](media/add-data-source.png)
+    ![Adicionar uma fonte de dados](media/add-data-source.png)
     1. Atribua o **Nome** do proxy ou firewall.  
     ![ubuntu1](media/ubuntu1.png)
     1. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
@@ -86,7 +89,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 1. Vá para a guia **Coletores de logs** na parte superior.
 
     1. Clique em **Adicionar coletor de logs**.
-    1. Atribua um **nome** ao coletor de logs.
+    1. Dê um **nome**ao coletor de logs.
     1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
     1. Selecione todas as **fontes de dados** que você deseja conectar ao coletor e clique em **Atualizar** para salvar a configuração.
 
@@ -140,8 +143,8 @@ As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantaç�
 
 1. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs <collector_name>`
 
-Você deve ver a mensagem: **concluída com êxito!** 
-![ubuntu8](media/ubuntu8.png)
+Você verá a mensagem: **concluído com êxito!** 
+ ![ ubuntu8](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
@@ -165,7 +168,7 @@ Se houver problemas durante a implantação, confira [Solução de problemas do 
 
 Verifique se os logs estão sendo carregados no Cloud App Security e se os relatórios são gerados. Após a verificação, crie relatórios personalizados. Crie relatórios de descoberta personalizados com base em grupos de usuários do Azure Active Directory. Por exemplo, caso deseje ver o uso de nuvem de seu departamento de marketing, importe o grupo de marketing usando o recurso Importar grupo de usuários. Em seguida, crie um relatório personalizado para esse grupo. Você também pode personalizar um relatório com base na marca do endereço IP ou intervalos de endereços IP.
 
-1. No portal do Cloud App Security, na engrenagem Configurações, selecione Configurações do Cloud Discovery e, em seguida, **Relatórios contínuos**.
+1. No portal de Cloud App Security, sob as configurações engrenagem, selecione Cloud Discovery configurações e, em seguida, selecione **relatórios contínuos**.
 1. Clique no botão **Criar relatório** e preencha os campos.
 1. Em **Filtros**, você pode filtrar os dados de acordo com a fonte de dados, por [grupo de usuários importados](user-groups.md) ou por [marcas e intervalos de endereços IP](ip-tags.md).
 

@@ -1,11 +1,11 @@
 ---
 title: Configurar o upload automático de logs usando o Docker no Azure
-description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL no Azure.
+description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Linux no Azure.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/04/2020
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,22 +14,25 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5b952a924b7b26e4d45ffb981698f660e53a0558
-ms.sourcegitcommit: baa9cb55d9d82808602a58ee24eeba7d83e92742
+ms.openlocfilehash: b481ff78df6c563512f867d53e906df9a7cfd0fb
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "82739029"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274590"
 ---
-# <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalação e configuração no Ubuntu ou RHEL no Azure
+# <a name="docker-on-linux-in-azure"></a>Docker no Linux no Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Configure o carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu ou o RHEL (Red Hat Enterprise Linux) no Azure. Este artigo descreve como configurar o upload automático de logs.
+Você pode configurar o upload de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu, Red Hat Enterprise Linux (RHEL) ou CentOS no Azure.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Sistema operacional: Ubuntu 16, 4 e 18, 4, RHEL 7,2 ou superior ou CentOS 7,2 ou superior
+* sistema operacional:
+    * Ubuntu 14, 4, 16, 4 e 18, 4
+    * RHEL 7,2 ou superior
+    * CentOS 7,2 ou superior
 
 * Espaço em disco: 250 GB
 
@@ -116,7 +119,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 
     1. Na exibição do computador, acesse **Rede**, selecione a interface relevante clicando duas vezes nela.
     1. Acesse **Grupo de Segurança de Rede** e selecione o grupo de segurança de rede relevante.
-    1. Vá para **regras de segurança de entrada** e clique em ![ **Adicionar**, Ubuntu Azure](media/ubuntu-azure.png)
+    1. Vá para **regras de segurança de entrada** e clique em **Adicionar**, ![ Ubuntu Azure](media/ubuntu-azure.png)
     1. Adicionar as seguintes regras (no modo **Avançado**):
 
     |Nome|Intervalos de portas de destino|Protocolo|Fonte|Destino|
@@ -158,7 +161,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
-Configure os proxies e os firewalls de rede para periodicamente exportar logs para a porta do Syslog dedicada do diretório de FTP de acordo com as instruções na caixa de diálogo. Por exemplo: 
+Configure os proxies e os firewalls de rede para periodicamente exportar logs para a porta do Syslog dedicada do diretório de FTP de acordo com as instruções na caixa de diálogo. Por exemplo:
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\

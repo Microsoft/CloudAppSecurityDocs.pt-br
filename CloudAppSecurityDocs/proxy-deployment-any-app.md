@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 32052630526fcd15114399e2295ca9a111233050
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: ddbcbbe72c83f926b8307904a9d5e2bb2731dcba
+ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241441"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84275788"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 
@@ -39,7 +39,7 @@ Para obter uma lista de aplicativos que são apresentados por Cloud App Security
 
     |IdP|Protocolos|
     |---|---|
-    |Azure AD|SAML 2,0 ou OpenID Connect|
+    |Azure AD|SAML 2.0 ou OpenID Connect|
     |Outros|SAML 2.0|
 
 ## <a name="to-deploy-any-app"></a>Para implantar qualquer aplicativo
@@ -67,7 +67,7 @@ Siga estas etapas para configurar qualquer aplicativo a ser controlado pelo Clou
 
 Use as etapas a seguir para criar uma política de acesso condicional do Azure AD que roteia sessões de aplicativo para Cloud App Security. Para outras soluções IdP, consulte [Configurar a integração com outras soluções IDP](#configure-integration-with-other-idp-solutions).
 
-1. No Azure AD, navegue até **segurança** > **acesso condicional**.
+1. No Azure AD, navegue até **segurança**  >  **acesso condicional**.
 
 1. No painel **acesso condicional** , na barra de ferramentas na parte superior, clique em **nova política**.
 
@@ -89,7 +89,7 @@ Use as etapas a seguir para criar uma política de acesso condicional do Azure A
 
 Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad).
 
-1. Em Cloud app Security, navegue para **investigar** > **aplicativos** > conectados**controle de aplicativos de acesso condicional aplicativos**.
+1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
 1. Clique no sinal de adição e, no pop-up, selecione o aplicativo que você deseja implantar e clique em **Iniciar assistente**.
 1. Na página **informações do aplicativo** , preencha o formulário usando as informações da página de configuração de logon único do seu aplicativo e clique em **Avançar**.
@@ -102,7 +102,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 1. Na página **provedor de identidade** , use as etapas fornecidas para configurar um novo aplicativo no portal do IDP e clique em **Avançar**.
     1. Vá para o portal do IdP e crie um novo aplicativo SAML personalizado.
-    1. Copie a configuração de logon único do aplicativo existente `<app_name>` para o novo aplicativo personalizado.
+    1. Copie a configuração de logon único do `<app_name>` aplicativo existente para o novo aplicativo personalizado.
     1. Atribua usuários ao novo aplicativo personalizado.
     1. Copie as informações de configuração de logon único dos aplicativos, você precisará dela na próxima etapa.
 
@@ -136,9 +136,11 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
     1. No campo URL de logon único, insira a URL de logon único anotada anteriormente.
         > [!NOTE]
         > Alguns provedores podem se referir à URL de logon único como a *URL de resposta*.
-    1. Adicione os atributos e valores anotados anteriormente para as propriedades de aplicativos.
+    1. Adicione os atributos e os valores anotados anteriormente nas propriedades do aplicativo.
         > [!NOTE]
-        > Alguns provedores podem se referir a eles como *atributos de usuário* ou *declarações*.
+        >
+        > - Alguns provedores podem se referir a eles como *atributos de usuário* ou *declarações*.
+        > - Ao criar um novo aplicativo SAML, o provedor de identidade Okta limita os atributos a 1024 caracteres. Para atenuar essa limitação, primeiro crie o aplicativo sem os atributos relevantes. Depois de criar o aplicativo, edite-o e, em seguida, adicione os atributos relevantes.
     1. Verifique se o identificador de nome está no formato de endereço de email.
     1. Salve suas configurações.
 1. Na página **alterações do aplicativo** , faça o seguinte e clique em **Avançar**. Você precisará das informações na próxima etapa.
@@ -209,7 +211,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
     > Para exibir a lista de domínios configurados no aplicativo, clique em **Exibir domínios de aplicativo**.
 1. Em **domínios definidos pelo usuário**, insira todos os domínios que você deseja associar a esse aplicativo e, em seguida, clique em **salvar**.
     > [!NOTE]
-    > Você pode usar o caractere curinga * como um espaço reservado para qualquer caractere. Ao adicionar domínios, decida se deseja adicionar domínios específicos (`sub1.contoso.com`,`sub2.contoso.com`) ou vários domínios (`*.contoso.com`).
+    > Você pode usar o caractere curinga * como um espaço reservado para qualquer caractere. Ao adicionar domínios, decida se deseja adicionar domínios específicos ( `sub1.contoso.com` , `sub2.contoso.com` ) ou vários domínios ( `*.contoso.com` ).
 
 ### <a name="to-install-root-certificates"></a>Para instalar certificados raiz<a name="install-certs"></a>
 
@@ -225,7 +227,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
     > [!NOTE]
     > Para que os certificados sejam reconhecidos, depois de instalar o certificado, você deve reiniciar o navegador e ir para a mesma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Clique em **Continue**.
+1. Clique em **Continuar**.
 
 ## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Etapa 4: verificar se o aplicativo está funcionando corretamente<a name="verify-app"></a>
 
@@ -250,7 +252,7 @@ Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produ�
 
 1. No Azure AD, em **segurança**, clique em **acesso condicional**.
 1. Atualize a política criada anteriormente para incluir os usuários, grupos e controles relevantes necessários.
-1. Em uso da **sessão** > **controle de aplicativos de acesso condicional**, se você selecionou **usar política personalizada**, vá para Cloud app Security e crie uma política de sessão correspondente. Para mais informações, confira [Políticas da sessão](session-policy-aad.md).
+1. Em uso da **sessão**  >  **controle de aplicativos de acesso condicional**, se você selecionou **usar política personalizada**, vá para Cloud app Security e crie uma política de sessão correspondente. Para mais informações, confira [Políticas da sessão](session-policy-aad.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
