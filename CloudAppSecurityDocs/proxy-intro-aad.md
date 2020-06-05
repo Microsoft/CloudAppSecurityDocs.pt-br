@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 65919019460b71907b33ec841b6d7c7b9d4b7143
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 75a9c50b91b0aca0183af548bee6d6265be59e96
+ms.sourcegitcommit: b00cf17cc91d7a08cae5a602a6db05269643aa95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250733"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84415688"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ No local de trabalho atual, geralmente não é suficiente saber o que está acon
 >
 > - Para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você precisa de uma [licença Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)ou a licença exigida por sua solução IDP, bem como uma licença de Cloud app Security.
 
-## <a name="how-it-works"></a>Como ele funciona
+## <a name="how-it-works"></a>Como isso funciona
 
 Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy reverso e se integra ao IdP. Ao integrar com o acesso condicional do Azure AD, você pode configurar aplicativos para trabalhar com Controle de Aplicativos de Acesso Condicional com apenas alguns cliques, permitindo que você imponha de forma fácil e seletiva os controles de acesso e de sessão nos aplicativos da sua organização com base em qualquer condição no acesso condicional. As condições definem *quem* (usuário ou grupo de usuários) e *o que* (quais aplicativos de nuvem) e *onde* (quais locais e redes) uma política de acesso condicional é aplicada. Depois de determinar as condições, você pode encaminhar os usuários para Cloud App Security em que você pode proteger dados com Controle de Aplicativos de Acesso Condicional aplicando controles de acesso e sessão.
 
@@ -127,7 +127,7 @@ Você pode bloquear o acesso a aplicativos cliente móveis nativos e de desktop 
 
 ### <a name="session-controls"></a>Controles de sessão
 
-Embora os controles de sessão sejam criados para funcionar com qualquer navegador em qualquer plataforma principal em qualquer sistema operacional, damos suporte ao Microsoft Edge (mais recente), ao Google Chrome (mais recente), ao Mozilla Firefox (mais recente) ou ao Apple Safari (mais recente). O acesso a aplicativos móveis e de área de trabalho também pode ser bloqueado ou permitido.
+Embora os controles de sessão sejam criados para funcionar com qualquer navegador em qualquer plataforma principal em qualquer sistema operacional, damos suporte ao [Microsoft Edge](https://www.microsoft.com/edge) (mais recente), ao Google Chrome (mais recente), ao Mozilla Firefox (mais recente) ou ao Apple Safari (mais recente). O acesso a aplicativos móveis e de área de trabalho também pode ser bloqueado ou permitido.
 
 > [!NOTE]
 > O Cloud App Security usa protocolos TLS 1.2+ para fornecer a melhor criptografia do setor. Aplicativos cliente nativos e navegadores que não dão suporte a TLS 1.2 +, não estarão acessíveis quando configurados com controle de sessão. No entanto, aplicativos SaaS que usam TLS 1.1 ou inferior aparecerão no navegador como usando TLS 1.2+ quando configurados com o Cloud App Security.
@@ -154,7 +154,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Power BI
 - Salesforce
 - ServiceNow
-- SharePoint online
+- SharePoint Online
 - Margem de atraso
 - Tableau
 - Microsoft Teams (versão prévia)
@@ -163,14 +163,14 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Workplace by Facebook
 - Yammer (versão prévia)
 
-### <a name="office-365-featured-apps"></a><a id="O365-apps" />Aplicativos em destaque do Office 365
+### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Aplicativos em destaque do Office 365
 
 Veja a seguir uma lista de aplicativos em destaque com suporte no Office 365 Cloud App Security. Para usar esses aplicativos com Cloud App Security, você deve ter uma licença do Office 365 e5.
 
 - Exchange Online
 - OneDrive for Business
 - Power BI
-- SharePoint online
+- SharePoint Online
 - Microsoft Teams (versão prévia)
 - Yammer (versão prévia)
 
@@ -179,7 +179,7 @@ Se você estiver interessado em um aplicativo específico em destaque, [envie-no
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque](proxy-deployment-aad.md)
+> [Implantar o Controle de Aplicativo de Acesso Condicional para aplicativos em destaque](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [Implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo](proxy-deployment-any-app.md)
