@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/19/2020
+ms.date: 06/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e828181c52b10c80e2e94d5e871c13ef444d45c3
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 0965c492c7f837810bc68b2b97645e89bdd03e75
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662226"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486301"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -55,6 +55,9 @@ Por padrão, as seguintes funções de administrador do Office 365 e [do Azure A
 
 - **Leitor global:** Tem acesso completo somente leitura a todos os aspectos de Microsoft Cloud App Security. Não é possível alterar nenhuma configuração ou executar ações.
 
+> [!NOTE]
+> As funções do Office 365 e do Azure AD não são listadas na página **gerenciar acesso de administrador** .
+
 Além disso, as seguintes Cloud App Security funções de administrador específicas podem ser configuradas no portal de Cloud App Security:
 
 - **Administrador de aplicativo/instância:** Tem permissões completas ou somente leitura para todos os dados em Microsoft Cloud App Security que lidam exclusivamente com o aplicativo ou instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas:
@@ -85,7 +88,7 @@ Além disso, as seguintes Cloud App Security funções de administrador específ
 
 - **Cloud Discovery administrador global:**  Tem permissão para exibir e editar todos os Cloud Discovery configurações e dados. O administrador de Descoberta Global tem acesso da seguinte maneira:
 
-  - Settings
+  - Configurações
     - Configurações do sistema – somente exibição
     - Configurações do Cloud Discovery – exibir e editar tudo (permissões de anonimização dependem se ele recebeu autorização durante a atribuição de função)
   - Atividade do Cloud Discovery – todas as permissões
@@ -129,7 +132,7 @@ Adicione também outros administradores ao Cloud App Security sem adicionar usu�
 
 ## <a name="admin-activity-auditing"></a>Auditoria de atividade do administrador
 
-Cloud App Security permite exportar um log de todas as atividades de administrador, incluindo a auditoria de um administrador investigando um usuário específico ou exibindo alertas específicos.
+Cloud App Security permite exportar um log de atividades de entrada de administrador e uma auditoria de exibições de um usuário específico ou alertas executados como parte de uma investigação.
 
 Para exportar um log, execute as seguintes etapas:
 
@@ -150,4 +153,4 @@ Além disso, para permitir que os MSSPs forneçam serviços em vários locatári
 ## <a name="next-steps"></a>Próximas etapas  
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)

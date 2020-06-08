@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 06a85abdda78f4f3b160b63198871dfb7f68db84
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 6369646c8b4cd10e1b2c236369693f4e8c92d878
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662407"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486290"
 ---
-# <a name="azure-information-protection-integration"></a>Integração da Proteção de Informações do Azure
+# <a name="azure-information-protection-integration"></a>Integração à Proteção de Informações do Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -59,7 +59,7 @@ Atualmente, este recurso está disponível para arquivos armazenados nas platafo
 
 Os arquivos que foram rotulados com proteção fora do Cloud App Security não podem ser alterados pelo Cloud App Security. No entanto, você pode verificar esses arquivos concedendo permissões para [inspecionar o conteúdo de arquivos protegidos](content-inspection.md#content-inspection-for-protected-files).
 
-## <a name="how-it-works"></a>Como isso funciona
+## <a name="how-it-works"></a>Como ele funciona
 
 Provavelmente, você já conhece os rótulos de classificação de arquivos da [Proteção de Informações do Azure](https://docs.microsoft.com/azure/information-protection/what-is-information-protection). As marcações de classificação da Proteção de Informações do Azure são exibidas no Cloud App Security. Assim que você integrar o Cloud App Security à Proteção de Informações do Azure, o Cloud App Security verificará os arquivos da seguinte maneira:
 
@@ -124,7 +124,7 @@ Para ignorar o conjunto de rótulos de classificação de fora da organização,
 > [!NOTE]
 > É possível remover rótulos apenas quando eles não incluem proteção e são aplicados no Cloud App Security, exceto os aplicados diretamente na Proteção de Informações.
 
-Para obter mais informações sobre como Cloud App Security e a proteção de informações do Azure funcionam em conjunto, consulte [proteger dados contra erros do usuário](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
+Para obter mais informações sobre como Cloud App Security e a proteção de informações do Azure funcionam em conjunto, consulte [aplicar automaticamente rótulos de classificação da proteção de informações do Azure](use-case-information-protection.md).
 
 ### <a name="automatically-label-files"></a>Rotular arquivos automaticamente
 

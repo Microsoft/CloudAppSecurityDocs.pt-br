@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4f914fed75e30aca3b9d87d911c729dff0b77c0
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: a4ea4e8e49cd2787a2c571cd8bbc9bc8f438e72b
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719924"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486321"
 ---
 # <a name="investigate"></a>Investigar
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Depois que o Microsoft Cloud App Security for executado no ambiente de nuvem, você precisará de um estágio de aprendizado e investigação. Saiba como usar as ferramentas do Microsoft Cloud App Security para obter uma compreensão mais profunda do que está acontecendo em seu ambiente de nuvem. De acordo com seu ambiente específico e como ele está sendo usado, você pode identificar os requisitos para proteger sua organização contra riscos. Este artigo descreve como fazer uma investigação para obter uma melhor compreensão sobre seu ambiente de nuvem.
 
@@ -31,7 +31,7 @@ Depois que o Microsoft Cloud App Security for executado no ambiente de nuvem, vo
 
 Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos no seu ambiente de nuvem:
 
-|Dashboard|Description|
+|Painel|Descrição|
 |---------------|-----------------|
 |Painel principal|Visão geral do status de nuvem (usuários, arquivos, atividades) e ações necessárias (alertas, violações de atividade e violações de conteúdo).|
 |Painel do aplicativo: visão geral|Visão geral do uso do aplicativo por local, gráficos de uso por número de usuários.|
@@ -49,7 +49,7 @@ Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos
 *(Somente Salesforce)*|Visão geral de usuários por tipo de usuário privilegiado.|
 |Painel do usuário|Uma visão geral completa do perfil do usuário na nuvem, locais, atividades recentes, alertas relacionados.|
 
-## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />marcar aplicativos como aprovados ou não aprovados
+## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Marcar aplicativos como aprovados ou não aprovados
 
 Uma etapa importante para entender sua nuvem é marcar os aplicativos como sancionados ou não sancionados. Depois de sancionar um aplicativo, você poderá filtrar pelos aplicativos que não estão sancionados e iniciar a migração para aplicativos sancionadas do mesmo tipo.
 
@@ -57,7 +57,7 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
 - Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](media/sanction-three-dots.png "Marcar como pontos aprovados") e selecione **Marcar como sancionado**.
 
-    ![Marcar como aprovado](media/mark-as-sanctioned.png "Marcar como aprovado")
+    ![Marcar como sancionado](media/mark-as-sanctioned.png "Marcar como aprovado")
 
 ## <a name="use-the-investigation-tools"></a>Usar as ferramentas de investigação
 
@@ -127,7 +127,7 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
     - Para a solução alternativa, deseja cancelar a sanção para algum aplicativo de nuvem na sua organização?
 
-    - Há aplicativos de nuvem que são usados, mas não estão em conformidade com a política da sua organização?
+    - Há aplicativos de nuvem que são usados, mas que não estão em conformidade com a política da sua organização?
 
 ## <a name="sample-investigation"></a>Investigação de amostra
 
@@ -137,7 +137,7 @@ Digamos que você supõe que não há nenhum acesso ao seu ambiente de nuvem por
 
 2. Escolha a **Política de atividade** para o **Tipo**.
 
-3. No final da linha **Logon de um endereço IP de risco**, escolha o sinal de adição ( **+** ) para criar uma política.
+3. No final da linha **Logon de um endereço IP de risco**, escolha o sinal de adição (**+**) para criar uma política.
 
 4. Altere o nome da política para poder identificá-lo.
 
