@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ab614ab612fc628b42780d11beba4e0f57f0ad4
-ms.sourcegitcommit: bea164d19469c0a7ef9bc47b128f3ba0b1b14591
+ms.openlocfilehash: 09c2f8ca89a53372f9d40190c430fd4be1615612
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83748016"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250699"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -25,6 +25,31 @@ ms.locfileid: "83748016"
 Este artigo é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security.
 
 Feed RSS: Receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-176"></a>Cloud App Security versão 176
+
+Lançado em 31 de maio de 2020
+
+- **Novo recurso de privacidade da atividade**  
+Aprimoramos sua capacidade de determinar de forma granular quais usuários você deseja monitorar com a funcionalidade de tornar as atividades privadas. Esse novo recurso permite que você especifique usuários com base na associação de grupo cujas atividades estarão ocultas por padrão. Somente administradores autorizados têm a opção de exibir essas atividades privadas, com cada instância sendo auditada no log de governança. Para obter mais informações, confira [Privacidade de atividades](activity-privacy.md).
+
+- **Nova integração com a Galeria do Azure AD (Azure Active Directory)**  
+Aproveitamos nossa integração nativa com o Azure AD para dar a você a capacidade de navegar diretamente de um aplicativo no catálogo de aplicativos na nuvem para o aplicativo da Galeria do Azure AD correspondente e gerenciá-lo na galeria. Para obter mais informações, confira [Gerenciar aplicativos com a Galeria do Azure AD](tutorial-shadow-it.md#gallery-apps).
+
+- **Nova opção de comentários disponível em políticas selecionadas**  
+Estamos interessados em receber seus comentários e saber como podemos ajudar. Agora, uma nova caixa de diálogo de comentários oferece a você a oportunidade de ajudar a melhorar o Cloud App Security, ao criar, modificar ou excluir um arquivo, a detecção de anomalias ou uma política de sessão.
+
+- **Proxy de sufixo avançado para controles de sessão (distribuição gradual)**  
+A partir de 7 de junho de 2020, distribuiremos gradualmente nossos controles avançados de sessão de proxy para usar um sufixo unificado que não inclui regiões nomeadas. Por exemplo, os usuários verão o sufixo `<AppName>.mcas.ms` em vez de `<AppName>.<Region>.cas.ms`. Se você adiciona com frequência domínios na lista de proibições de seus dispositivos de rede ou gateways, certifique-se de colocar todos os domínios listados em [Controles de acesso e sessão](network-requirements.md#access-and-session-controls).
+
+- **Melhorias de desempenho para controles de sessão (distribuição gradual)**  
+Fizemos melhorias significativas no desempenho da rede para nosso serviço de proxy. O serviço aprimorado é ainda mais simplificado e fornece maior capacidade de resposta ao usar controles de sessão.
+
+- **Nova detecção de atividade arriscada: falha de logon incomum**  
+Expandimos nossa capacidade atual de detecção de comportamentos arriscados. A nova detecção agora está disponível pronta para uso e habilitada automaticamente para alertá-lo quando uma tentativa de logon com falha incomum for identificada. Tentativas de logon com falha incomum podem ser uma indicação de um possível ataque de força bruta de *password spraying* (também conhecido como o método *baixo e lento*). Essa detecção afeta a [pontuação de prioridade de investigação](tutorial-ueba.md) geral do usuário.
+
+- **Experiência de tabela avançada**  
+Adicionamos a capacidade de redimensionar larguras de coluna de tabela para que você possa ampliar ou estreitar colunas a fim de personalizar e aprimorar a forma como as tabelas são exibidas. Você também pode restaurar o layout original selecionando o menu configurações de tabela e escolhendo **Largura padrão**.
 
 ## <a name="cloud-app-security-release-175"></a>Cloud App Security versão 175
 
@@ -36,7 +61,7 @@ Adicionamos integração nativa ao Corrata fornecendo visibilidade do Shadow IT 
 - **Novos analisadores de log do Cloud Discovery**  
 O Cloud Discovery do Cloud App Security analisa uma ampla variedade de logs de tráfego para classificar e pontuar os aplicativos. Agora o Cloud Discovery inclui um analisador de log interno para dar suporte aos formatos de log do Corrata e do Cisco ASA com FirePOWER 6.4. Para acessar a lista de dispositivos com suporte, confira [Proxies e firewalls com suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-- **Painel aprimorado (implementação gradual)** Como parte dos nossos aprimoramentos contínuos no design do portal, agora estamos implementando gradualmente o painel do Cloud App Security aprimorado. O painel foi modernizado com base em seus comentários e oferece uma experiência de usuário aprimorada com conteúdo e dados atualizados. Para obter mais informações, confira [Implantação gradual do nosso painel aprimorado](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard).
+- **Painel aprimorado (implementação gradual)** Como parte dos nossos aprimoramentos contínuos no design do portal, agora estamos implementando gradualmente o painel do Cloud App Security aprimorado. O painel foi modernizado com base em seus comentários e oferece uma experiência de usuário aprimorada com conteúdo e dados atualizados. Para obter mais informações, confira [Implantação gradual do nosso painel aprimorado](daily-activities-to-protect-your-cloud-environment.md).
 
 - **Governança aprimorada: Confirmar Usuário Comprometido para detecções de anomalias**  
 Expandimos nossas ações de governança atuais para políticas de anomalias para incluir **Confirmar Usuário Comprometido** permitindo que você proteja proativamente seu ambiente contra atividades suspeitas do usuário. Para obter mais informações, confira [Ações de governança de atividade](governance-actions.md#activity-governance-actions).

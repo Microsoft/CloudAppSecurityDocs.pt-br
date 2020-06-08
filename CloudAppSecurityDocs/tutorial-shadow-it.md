@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 4c85117dfd4080946fa5e1a205ec9fc890dea199
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: dac3da3d91df0d75d57a29fa463705a1561f9ef9
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79241815"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250631"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar o Shadow IT na sua rede
 
@@ -81,6 +81,10 @@ Agora que o Cloud Discovery está em execução na sua rede, examine os relatór
 ### <a name="phase-3-manage-your-apps"></a>Fase 3: Gerenciar seus aplicativos
 
 * **Gerenciar aplicativos de nuvem**: o Cloud App Security ajuda no processo de gerenciamento do uso do aplicativo em sua organização. Depois de identificar os diferentes padrões e comportamentos usados em sua organização, você pode criar marcas de aplicativo personalizadas para classificar cada aplicativo de acordo com o status ou justificativa comercial. Essas tags então podem ser usadas para fins de monitoramento específicos, por exemplo, identificar o alto tráfego que está indo para os aplicativos marcados como aplicativos de armazenamento em nuvem arriscados. As marcas de aplicativo podem ser gerenciadas em **Configurações do Cloud Discovery** > **Marcas de aplicativo**. Essas marcas podem ser usadas posteriormente para filtrar nas páginas do Cloud Discovery e criar políticas usando-as.
+
+* **Gerencie aplicativos descobertos usando a galeria do Azure AD (Azure Active Directory)** <a name ="gallery-apps"></a>: O Cloud App Security também aproveita sua integração nativa com o Azure AD para permitir que você gerencie seus aplicativos descobertos na galeria do Azure AD. Para aplicativos que já aparecem nessa galeria, você pode aplicar o logon único e gerenciar o aplicativo com o Azure AD. Para fazer isso, na linha em que o aplicativo relevante é exibido, escolha os três pontos no final da linha e, em seguida, escolha **Gerenciar aplicativo com o Azure AD**.
+
+    ![ciclo de vida do Shadow IT](media/manage-app-in-azure-ad-gallery.png)
 
 * **Monitoramento contínuo**: agora que você investigou minuciosamente os aplicativos, talvez queira definir políticas que os monitorem e forneçam controle quando necessário.
 
