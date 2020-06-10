@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9ee57badde1ca055f3743a71cb9197e301cf724b
-ms.sourcegitcommit: ac4b95969a468a740a6d3606392151f1c019148e
+ms.openlocfilehash: 5b4691cdc29199d65b6ac0a2884b8b5a82263c5e
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200565"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566973"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -45,7 +45,7 @@ Com base nos resultados da política, os alertas de segurança são disparados. 
 Além dos alertas de Cloud App Security nativos, você também obterá os seguintes alertas de detecção com base nas informações recebidas da proteção de identidade do Azure Active Directory (AD):
 
 * Credenciais vazadas: disparadas quando as credenciais válidas de um usuário tiverem sido vazadas. Para obter mais informações, consulte [detecção de credenciais vazadas do Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
-* Entrada arriscada: combina várias detecções de entrada Azure AD Identity Protection em uma única detecção (desabilitada por padrão). Para obter mais informações, consulte [detecções de risco de entrada do Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+* Entrada arriscada: combina várias detecções de entrada Azure AD Identity Protection em uma única detecção. Para obter mais informações, consulte [detecções de risco de entrada do Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
 Essas políticas serão exibidas na página políticas de Cloud App Security e poderão ser habilitadas ou desabilitadas, mas não editadas.
 
@@ -99,7 +99,7 @@ A detecção procura usuários cuja conta foi encerrada no Azure AD, mas ainda e
 
 * A detecção identifica que os usuários estavam ativos com base em um endereço IP identificado como arriscado pela Microsoft Threat Intelligence. Esses endereços IP estão envolvidos em atividades mal-intencionadas, como Botnet C&C, e podem indicar uma conta comprometida. Essa detecção usa um algoritmo de aprendizado de máquina que reduz "falsos positivos", como endereços IP marcados incorretamente usados amplamente por usuários da organização.
 
-### <a name="suspicious-inbox-forwarding"></a>Encaminhamento de caixa de entrada suspeito
+### <a name="suspicious-inbox-forwarding"></a>Encaminhamento suspeito da caixa de entrada
 
 * Essa detecção procura regras de encaminhamento de email suspeito, por exemplo, se um usuário criou uma regra de caixa de entrada que encaminha uma cópia de todos os emails para um endereço externo.
 
@@ -157,16 +157,16 @@ Para afetar o mecanismo de detecção de anomalias para suprimir ou mostrar aler
 * Na política Viagem Impossível, você pode definir o controle deslizante de sensibilidade para determinar o nível de comportamento anormal necessário antes que um alerta seja disparado. Por exemplo, se você defini-lo como baixo, ele suprimirá os alertas de viagem impossíveis dos locais comuns de um usuário e, se você defini-lo como alto, ele causará a superfície desses alertas. Você pode escolher entre os seguintes níveis de sensibilidade:
 
   * **Baixo**: supressões de sistema, locatário e usuário
-  * **Médio**: supressões do sistema e do usuário
-  * **Alta**: somente supressões do sistema
+  * **Média**: supressões de sistema e usuário
+  * **Alta**: apenas supressões de sistema
 
-    Em que:
+    Sendo que:
 
     | Tipo de supressão | Descrição |
     | --- | --- |
-    | **Sistema** | Detecções internas que são sempre suprimidas. |
-    | **Locatário** | Atividades comuns com base na atividade anterior no locatário. Por exemplo, suprimir atividades de um ISP anteriormente alertado em sua organização. |
-    | **Usuário** | Atividades comuns com base na atividade anterior do usuário específico. Por exemplo, suprimir atividades de um local que é comumente usado pelo usuário. |
+    | **System** | Detecções internas que são sempre suprimidas. |
+    | **Locatário** | Atividades comuns com base nas atividades anteriores no locatário. Por exemplo, suprimir atividades de um ISP alertado anteriormente em sua organização. |
+    | **Usuário** | Atividades comuns com base nas atividades anteriores do usuário específico. Por exemplo, suprimir atividades de um local que é normalmente usado pelo usuário. |
 
 * Você também pode configurar se os alertas de atividade de um país infrequente, endereços IP anônimos, endereços IP suspeitos e viagens impossíveis devem analisar logons com falha e com êxito ou apenas logons bem-sucedidos.
 
@@ -180,7 +180,7 @@ Por exemplo, você pode definir a detecção de Atividade de região pouco frequ
 
 Para definir uma política de detecção de anomalias:
 
-1. Clique em**políticas**de **controle** > e defina o filtro de **tipo** como política de **detecção de anomalias**.
+1. Clique em políticas de **controle**  >  **Policies**e defina o filtro de **tipo** como **política de detecção de anomalias**.
 1. Clique na política que você deseja definir.
 1. Em **Escopo**, altere o menu suspenso da configuração padrão de **Todos os usuários e grupos** para **Usuários e grupos específicos**.
 1. Selecione **Incluir** para especificar os usuários e grupos para os quais essa política será aplicada. Qualquer usuário ou grupo não selecionado aqui não será considerado uma ameaça e não gerará um alerta.
@@ -194,7 +194,7 @@ Você pode triar rapidamente os vários alertas disparados pelas novas política
 
 1. No **Log de atividades**, você pode abrir uma atividade para exibir a gaveta Atividades. Clique em **usuário** para exibir a guia insights do usuário. Essa guia inclui informações como o número de alertas, atividades e o local em que eles se conectaram, o que é importante em uma investigação.
 
-    ![detecção de anomalias](media/anomaly-alert-user1.png) ![alert1 detecção de anomalias alert1](media/anomaly-alert-user2.png)
+    ![detecção de anomalias alert1 ](media/anomaly-alert-user1.png) ![ detecção de anomalias alert1](media/anomaly-alert-user2.png)
 
 1. Isso permite que você entenda quais são as atividades suspeitas que o usuário executou e ter maior confiança sobre o comprometimento da conta. Por exemplo, um alerta de vários logons com falha pode realmente ser suspeito e indicar um ataque de força bruta em potencial, mas também pode ser um erro de configuração do aplicativo, fazendo com que o alerta seja um verdadeiro positivo benigno. No entanto, se você vir um alerta de vários logons com falha com atividades suspeitas adicionais, então há uma grande probabilidade de que a conta foi comprometida. No exemplo a seguir, você pode ver que o alerta **Várias tentativas de logon com falha** foi seguido de uma **Atividade de um endereço IP TOR** e de uma **Atividade de viagem impossível**, ambas fortes indicadores de comprometimento (IOCs) por si próprias. Se isso não era suspeito, você pode ver que o mesmo usuário realizou uma **atividade de download em massa**, que é geralmente um indicador do invasor que executa vazamento de dados.
 

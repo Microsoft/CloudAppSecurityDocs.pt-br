@@ -1,6 +1,6 @@
 ---
-title: Guia de investigação de alertas Cloud App Security
-description: Este artigo explica como investigar os alertas de Cloud App Security emitidos quando são detectados ataques em sua organização.
+title: Guia de investigação de alertas de detecção de anomalias Cloud App Security
+description: Este artigo explica como investigar os Cloud App Security alertas de detecção de anomalias emitidos quando são detectados ataques em sua organização.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e59acc35811b69d30616c32af5876e89e576a2e7
-ms.sourcegitcommit: 9538de5f3034a65626710648d22e2e186d77041a
+ms.openlocfilehash: 15b8a8eab3558443831b415c3d6ddef554879b09
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84512051"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566916"
 ---
-# <a name="how-to-investigate-anomaly-alerts"></a>Como investigar os alertas de anomalias
+# <a name="how-to-investigate-anomaly-detection-alerts"></a>Como investigar alertas de detecção de anomalias
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ Microsoft Cloud App Security fornece detecções de segurança e alertas para at
 
 ## <a name="mitre-attck"></a>MITRE ATT \& CK
 
-Para explicar e tornar mais fácil mapear a relação entre Cloud App Security alertas e a conhecida matriz MITRE ATT&CK, nós categorizamos os alertas por sua tática MITRE ATT \& CK correspondente. Essa referência adicional torna mais fácil entender a técnica de ataques suspeitos potencialmente em uso quando um alerta de Cloud App Security é disparado.
+Para explicar e tornar mais fácil mapear a relação entre Cloud App Security alertas e a conhecida matriz MITRE ATT \& CK, nós categorizamos os alertas por sua tática Mitre ATT \& CK correspondente. Essa referência adicional torna mais fácil entender a técnica de ataques suspeitos potencialmente em uso quando um alerta de Cloud App Security é disparado.
 
 Este guia fornece informações sobre a investigação e correção de Cloud App Security alertas nas categorias a seguir.
 
@@ -49,12 +49,12 @@ Este guia fornece informações sobre a investigação e correção de Cloud App
 Seguindo a investigação correta, todos os Cloud App Security alertas podem ser classificados como um dos seguintes tipos de atividade:
 
 - **Verdadeiro positivo (TP)**: um alerta sobre uma atividade mal-intencionada confirmada.
-- **Verdadeiro positivo benigno (B-TP)**: um alerta em uma atividade suspeita, mas não mal-intencionada, como um teste de penetração ou outra ação suspeita autorizada.
+- **Verdadeiro positivo benigno (B-TP)**: um alerta sobre atividades suspeitas, mas não mal-intencionadas, como um teste de penetração ou outra ação suspeita autorizada.
 - **Falso positivo (FP)**: um alerta em uma atividade não mal-intencionada.
 
 ## <a name="general-investigation-steps"></a>Etapas de investigação geral
 
-Você pode usar as seguintes diretrizes gerais ao investigar qualquer tipo de alerta para obter uma compreensão mais clara da ameaça potencial.
+Você deve usar as seguintes diretrizes gerais ao investigar qualquer tipo de alerta para obter uma compreensão mais clara da ameaça potencial antes de aplicar a ação recomendada.
 
 - Examine a pontuação de [prioridade de investigação](tutorial-ueba.md#understand-the-investigation-priority-score) do usuário e compare com o restante da organização. Isso ajudará a identificar quais usuários em sua organização representam o maior risco.
 - Se você identificar uma **TP**, examine todas as atividades do usuário para entender o impacto.
@@ -139,7 +139,7 @@ Atividade de um endereço IP que foi identificado como arriscado pela inteligên
 
 Atividade do mesmo usuário em locais diferentes dentro de um período de tempo menor do que o tempo de viagem esperado entre os dois locais. Isso pode indicar uma violação de credencial, no entanto, também é possível que o local real do usuário seja mascarado, por exemplo, usando uma VPN.
 
-Para melhorar a precisão e o alerta apenas quando há uma indicação forte para uma violação, Cloud App Security estabelece uma linha de base em cada usuário na organização e alertará somente quando o comportamento incomum for detectado. A política de viagem impossível pode ser ajustada aos seus requisitos.
+Para melhorar a precisão e o alerta apenas quando há uma indicação forte de uma violação, Cloud App Security estabelece uma linha de base em cada usuário na organização e alertará somente quando o comportamento incomum for detectado. A política de viagem impossível pode ser ajustada aos seus requisitos.
 
 **Período de aprendizado**
 
@@ -230,7 +230,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. **TP**: se você for confirmar que as exclusões não foram autorizadas.
 
     **Ação recomendada**: suspenda o usuário, redefina sua senha e verifique todos os dispositivos em busca de ameaças mal-intencionadas. Examine todas as atividades do usuário para outros indicadores de comprometimento e explore o escopo do impacto.
-1. **FP**: se, após sua investigação, você conseguir confirmar se o administrador foi autorizado a executar essas atividades de exclusão.
+1. **FP**: se depois de sua investigação, você poderá confirmar se o administrador foi autorizado a executar essas atividades de exclusão.
 
     **Ação recomendada**: ignorar o alerta.
 
@@ -250,12 +250,12 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 
 **TP**, **B-TP**ou **FP**?
 
-Para melhorar a precisão e o alerta apenas quando há uma indicação forte para uma violação, essa detecção estabelece uma linha de base em cada ambiente na organização para reduzir os incidentes **de B-TP** , como um administrador, legitimamente, criava mais VMs do que a linha de base estabelecida e apenas alerta quando o comportamento incomum é detectado.
+Para melhorar a precisão e o alerta apenas quando há uma indicação forte de uma violação, essa detecção estabelece uma linha de base em cada ambiente na organização para reduzir os incidentes **de B-TP** , como um administrador, legitimamente, criava mais VMs do que a linha de base estabelecida e apenas alerta quando o comportamento incomum é detectado.
 
 - **TP**: se for possível confirmar se as atividades de criação não foram executadas por um usuário legítimo.
 
     **Ação recomendada**: suspenda o usuário, redefina sua senha e verifique todos os dispositivos em busca de ameaças mal-intencionadas. Examine todas as atividades do usuário para outros indicadores de comprometimento e explore o escopo do impacto. Além disso, contate o usuário, confirme suas ações legítimas e certifique-se de desabilitar ou excluir quaisquer VMs comprometidas.
-- **B-TP**: se, após sua investigação, você poderá confirmar se o administrador foi autorizado a executar essas atividades de criação.
+- **B-TP**: se depois de sua investigação, você poderá confirmar se o administrador foi autorizado a executar essas atividades de criação.
 
     **Ação recomendada**: ignorar o alerta.
 
@@ -263,6 +263,30 @@ Para melhorar a precisão e o alerta apenas quando há uma indicação forte par
 
 1. Examine todas as atividades do usuário para outros indicadores de comprometimento.
 1. Examine os recursos criados ou modificados pelo usuário e verifique se eles estão em conformidade com as políticas da sua organização.
+
+### <a name="suspicious-creation-activityfor-cloudregion-preview"></a>Atividade de criação suspeita para a região de nuvem (versão prévia)
+
+Atividades que indicam que um usuário realizou uma ação de criação de recurso incomum em uma região AWS não comum quando comparado à linha de base aprendida. A criação de recursos em regiões de nuvem incomuns pode indicar uma tentativa de executar uma atividade mal-intencionada, como operações de mineração de criptografia de dentro da sua organização.
+
+**Período de aprendizado**
+
+O estabelecimento do padrão de atividade de um novo usuário requer um período de aprendizado inicial de sete dias durante o qual os alertas não são disparados para novos locais.
+
+**TP**, **B-TP**ou **FP**?
+
+Para melhorar a precisão e o alerta apenas quando há uma indicação forte de uma violação, essa detecção estabelece uma linha de base em cada ambiente na organização para reduzir os incidentes **de B-TP** .
+
+- **TP**: se for possível confirmar se as atividades de criação não foram executadas por um usuário legítimo.
+
+    **Ação recomendada**: suspenda o usuário, redefina sua senha e verifique todos os dispositivos em busca de ameaças mal-intencionadas. Examine todas as atividades do usuário para outros indicadores de comprometimento e explore o escopo do impacto. Além disso, contate o usuário, confirme suas ações legítimas e certifique-se de desabilitar ou excluir todos os recursos comprometidos de nuvem.
+- **B-TP**: se depois de sua investigação, você poderá confirmar se o administrador foi autorizado a executar essas atividades de criação.
+
+    **Ação recomendada**: ignorar o alerta.
+
+**Entender o escopo da violação**
+
+1. Examine todas as atividades do usuário para outros indicadores de comprometimento.
+1. Examine os recursos criados e verifique se eles estão em conformidade com as políticas da sua organização.
 
 ## <a name="persistence-alerts"></a>Alertas de persistência
 
@@ -276,7 +300,7 @@ A atividade executada por um usuário encerrado pode indicar que um funcionário
 
 1. **TP**: se você conseguir confirmar se o usuário encerrado ainda tem acesso a determinados recursos corporativos e está executando atividades.
 
-    **Ação recomendada**: suspenda o usuário e verifique se todo o acesso foi removido.
+    **Ação recomendada**: desabilite o usuário.
 1. **B-TP**: se for possível determinar se o usuário foi desabilitado temporariamente ou se foi excluído e registrado novamente.
 
     **Ação recomendada**: ignorar o alerta.
@@ -369,7 +393,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. **TP**: se for possível confirmar se a atividade não foi executada por um administrador legítimo.
 
     **Ação recomendada**: suspenda o usuário, marque o usuário como comprometido e Redefina sua senha.
-1. **FP**: se você conseguir confirmar que um administrador executou de forma legítima mais atividades administrativas do que a linha de base estabelecida.
+1. **FP**: se você conseguir confirmar que um administrador executou legitimamente o volume incomum de atividades administrativas.
 
     **Ação recomendada**: ignorar o alerta.
 
@@ -579,7 +603,7 @@ Atividades em uma única sessão que indica que um usuário realizou um número 
 
 **TP**, **B-TP**ou **FP**?
 
-Para melhorar a precisão e o alerta somente quando houver uma indicação forte para uma violação, essa detecção estabelecerá uma linha de base em cada ambiente na organização para reduzir os incidentes **de B-TP** e somente alertará quando o comportamento incomum for detectado.
+Para melhorar a precisão e o alerta somente quando houver uma indicação forte de uma violação, essa detecção estabelecerá uma linha de base em cada ambiente na organização para reduzir os incidentes **de B-TP** e somente alertará quando o comportamento incomum for detectado.
 
 **Período de aprendizado**
 
@@ -588,7 +612,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 - **TP**: se for possível confirmar se as exclusões não foram autorizadas.
 
     **Ação recomendada**: suspenda o usuário, redefina sua senha e verifique todos os dispositivos em busca de ameaças mal-intencionadas. Examine todas as atividades do usuário para outros indicadores de comprometimento e explore o escopo do impacto.
-- **B-TP**: se, após sua investigação, você poderá confirmar se o administrador foi autorizado a executar essas atividades de exclusão.
+- **B-TP**: se depois de sua investigação, você poderá confirmar se o administrador foi autorizado a executar essas atividades de exclusão.
 
     **Ação recomendada**: ignorar o alerta.
 
@@ -649,7 +673,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. Examine as atividades de exclusão e crie uma lista de arquivos excluídos. Se necessário, recupere os arquivos excluídos.
 1. Opcionalmente, crie um guia estratégico usando a automatização de energia para contatar os usuários e seus gerentes para verificar a atividade.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 > [!div class="nextstepaction"]
 > [Investigar usuários arriscados](tutorial-ueba.md)

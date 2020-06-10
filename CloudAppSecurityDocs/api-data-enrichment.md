@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 790389f16409b5554fe44e0b20d2f584b0fd0fe5
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 22f19d6d1b03cec31f36f37a0b1bd112927af781
+ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505405"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84563875"
 ---
 # <a name="create-ip-address-range---data-enrichment-api"></a>Criar intervalo de endereços IP-API de enriquecimento de dados
 
@@ -26,7 +26,7 @@ Execute a solicitação POST para adicionar um novo intervalo de endereços IP.
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```rest
-POST /cas/api/subnet/
+POST /api/subnet/
 ```
 
 ## <a name="request-body-parameters"></a>Parâmetros do corpo da solicitação
@@ -56,7 +56,7 @@ Atualmente, há suporte para as seguintes categorias:
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/cas/api/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",

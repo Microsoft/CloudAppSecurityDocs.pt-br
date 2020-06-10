@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 8ef1a89651105b3bb324ec8571b52dde94cb0cc4
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: df70a9408b88692b9faf789a00b5f307c0af24ee
+ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505225"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84563892"
 ---
 # <a name="cloud-app-security-rest-api"></a>API REST do Cloud App Security
 
@@ -70,12 +70,12 @@ A tabela a seguir descreve as ações com suporte:
 
 |Recurso|Verbos HTTP|Rotas de URI|
 |---|---|---|
-|Descoberta|GET, POST ou PUT|/api/v1/discovery|
-|Enriquecimento de dados|POST|/cas/api/subnet|
-|Atividades|GET ou POST|/api/v1/activities|
-|Alertas|GET ou POST|/api/v1/alerts|
-|Entidades|GET ou POST|/api/v1/entities|
-|Arquivos|GET ou POST|/api/v1/files|
+|Descoberta|GET, POST ou PUT|/api/v1/discovery/|
+|Enriquecimento de dados|POST|/api/subnet/|
+|Atividades|GET ou POST|/api/v1/activities/|
+|Alertas|GET ou POST|/api/v1/alerts/|
+|Entidades|GET ou POST|/api/v1/entities/|
+|Arquivos|GET ou POST|/api/v1/files/|
 
 Em que **Resource** representa um grupo de entidades relacionadas.
 

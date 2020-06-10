@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0965c492c7f837810bc68b2b97645e89bdd03e75
-ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
+ms.openlocfilehash: face06e83dc57a3722298bf2e22846334ca811b2
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84486301"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566817"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -56,7 +56,7 @@ Por padrão, as seguintes funções de administrador do Office 365 e [do Azure A
 - **Leitor global:** Tem acesso completo somente leitura a todos os aspectos de Microsoft Cloud App Security. Não é possível alterar nenhuma configuração ou executar ações.
 
 > [!NOTE]
-> As funções do Office 365 e do Azure AD não são listadas na página **gerenciar acesso de administrador** .
+> As funções do Office 365 e do Azure AD não estão listadas na página **gerenciar acesso de administrador** .
 
 Além disso, as seguintes Cloud App Security funções de administrador específicas podem ser configuradas no portal de Cloud App Security:
 
@@ -121,12 +121,15 @@ Adicione também outros administradores ao Cloud App Security sem adicionar usu�
 
 2. Clique no sinal de adição para adicionar os administradores que devem ter acesso ao Cloud App Security. Você pode digitar um endereço de email interno ou externo para permitir que administradores internos da organização ou MSSPs (Provedores de Serviço de Segurança Gerenciada) externos administrem seus alertas de segurança.
 
+    > [!NOTE]
+    > Para conceder acesso ao portal ao MSSPs, você deve adicionar usuários do MSSP ao Azure AD como usuários convidados. Para obter mais informações, consulte [adicionar Azure Active Directory usuários de colaboração B2B no portal do Azure](/azure/active-directory/b2b/add-users-administrator).
+
     ![adicionar administradores](media/add-admin.png)
 
 3. Em seguida, clique na lista suspensa para definir o tipo de função que o administrador tem, **administrador global**, **leitor de segurança**, administrador de **conformidade**ou **administrador de aplicativo/instância**. Se você selecionar **administrador de aplicativo/instância**, selecione o aplicativo e a instância para o qual o administrador tem permissões.
 
     >[!NOTE]
-    >Qualquer administrador, cujo acesso é limitado, que tentar acessar uma página restrita ou executar uma ação restrita receberá um erro indicando que ele não tem permissão para acessar a página ou executar a ação.
+    > Qualquer administrador, cujo acesso é limitado, que tentar acessar uma página restrita ou executar uma ação restrita receberá um erro indicando que ele não tem permissão para acessar a página ou executar a ação.
 
 4. Clique em **Adicionar administrador**.
 
