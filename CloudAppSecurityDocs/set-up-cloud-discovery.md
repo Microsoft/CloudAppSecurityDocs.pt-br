@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a88c3d90b96d173428ccd22c94731ca82f4f920b
-ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
+ms.openlocfilehash: 7e7635cf2fd7400376ec5a57919d2804ab8ab6b1
+ms.sourcegitcommit: 211dcc2850a7b1513f93ccc83e8e152bc941f253
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83579759"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84654412"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -95,22 +95,22 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 
 | Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de Usuário | IP de Origem | Tráfego total | Bytes carregados |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | Não |
+| Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | No |
 | Blue Coat | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
-| Ponto de Verificação | Não | **Sim** | Não | **Sim** | Não | Não |
+| Ponto de Verificação | Não | **Sim** | Não | **Sim** | Não | No |
 | Cisco ASA (Syslog) | Não | **Sim** | Não | **Sim** | **Sim** | Não |
 | Cisco ASA com FirePOWER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Cisco Cloud Web Security |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 | Cisco FWSM | Não | **Sim** | Não | **Sim** | **Sim** | Não |
 | Cisco Ironport WSA | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
-| Cisco Meraki | **Sim** | **Sim** | Não | **Sim** | Não | Não |
+| Cisco Meraki | **Sim** | **Sim** | Não | **Sim** | Não | No |
 | Clavister NGFW (Syslog) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | ContentKeeper | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Corrata | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | SonicWall (anteriormente conhecido como Dell) | **Sim** | **Sim** | Não | **Sim** | **Sim** | **Sim** |
 | Digital Arts i-FILTER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | ForcePoint LEEF |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
-| Nuvem do ForcePoint Web Security |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
+| Nuvem do ForcePoint Web Security\* |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 | FortiGate | Não | **Sim** | Não | **Sim** | **Sim** | **Sim** |
 | Fortinet FortiOS |**Sim**|**Sim**|Não|**Sim**|**Sim**|**Sim**|
 | iboss |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
@@ -126,6 +126,8 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 | Websense – Relatório de detalhes investigativo (CSV) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Websense – log de atividades de Internet (CEF) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Zscaler | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
+
+\*Não há suporte para as versões 8,5 e posteriores do Forcepoint Web Security Cloud
 
 ## <a name="next-steps"></a>Próximas etapas
 
