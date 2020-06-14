@@ -205,6 +205,8 @@
           items:
             - name: Gerenciar alertas
               href: managing-alerts.md
+        - name: Investigar alertas de detecção de anomalias
+          href: investigate-anomaly-alerts.md
     - name: Control
       href: control.md
       items:
@@ -280,6 +282,74 @@
           href: policies-threat-protection.md
         - name: Políticas de proteção de informações
           href: policies-information-protection.md
+    - name: API REST
+      items:
+        - name: Introdução
+          href: api-introduction.md
+        - name: Autenticação
+          href: api-authentication.md
+        - name: Cloud Discovery
+          items:
+            - name: Visão geral
+              href: api-discovery.md
+            - name: Iniciar upload de arquivo
+              href: api-discovery-initiate.md
+            - name: Realizar upload de arquivo
+              href: api-discovery-perform.md
+            - name: Finalizar upload de arquivo
+              href: api-discovery-finalize.md
+            - name: Gerar script de bloco
+              href: api-discovery-script.md
+        - name: Aprimoramento de documento
+          items:
+            - name: Criar intervalo de endereços IP
+              href: api-data-enrichment.md
+        - name: Atividades
+          items:
+            - name: Visão geral
+              href: api-activities.md
+            - name: Listar atividades
+              href: api-activities-list.md
+            - name: Buscar atividade
+              href: api-activities-fetch.md
+            - name: Comentários sobre a atividade
+              href: api-activities-feedback.md
+        - name: Alertas
+          items:
+            - name: Visão geral
+              href: api-alerts.md
+            - name: Listar alertas
+              href: api-alerts-list.md
+            - name: Ignorar em massa
+              href: api-alerts-bulk-dismiss.md
+            - name: Resolver em massa
+              href: api-alerts-bulk-resolve.md
+            - name: Buscar alerta
+              href: api-alerts-fetch.md
+            - name: Ignorar alerta
+              href: api-alerts-dismiss.md
+            - name: Marcar alerta como lido
+              href: api-alerts-mark-read.md
+            - name: Marcar alerta como não lido
+              href: api-alerts-mark-unread.md
+        - name: Entities
+          items:
+            - name: Visão geral
+              href: api-entities.md
+            - name: Listar entidades
+              href: api-entities-list.md
+            - name: Buscar entidade
+              href: api-entities-fetch.md
+            - name: Buscar árvore de entidades
+              href: api-entities-fetch-tree.md
+        - name: Arquivos
+          items:
+            - name: Visão geral
+              href: api-files.md
+            - name: Listar arquivos
+              href: api-files-list.md
+            - name: Buscar arquivo
+              href: api-files-fetch.md
     - name: Solução de problemas
       items:
         - name: Solução de problemas do Cloud Discovery
