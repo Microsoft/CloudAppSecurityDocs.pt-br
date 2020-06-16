@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7e7635cf2fd7400376ec5a57919d2804ab8ab6b1
-ms.sourcegitcommit: 211dcc2850a7b1513f93ccc83e8e152bc941f253
+ms.openlocfilehash: ca5d9d10b9c2270e3f8a8b391a42a8e2344a7aa7
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84654412"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801160"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -89,21 +89,24 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 > [!NOTE]
 > O Cloud Discovery oferece suporte a endereços IPv4 e IPv6.
 
-Se não houver suporte para seu log, selecione **Outro** como a **Fonte de dados** e especifique o dispositivo e o log que você está tentando carregar. O log será examinado pela equipe de analista de nuvem do Cloud App Security e você será notificado se for adicionado suporte para seu tipo de log. Como alternativa, você pode definir um analisador personalizado que corresponda ao seu formato. Para obter mais informações, consulte [Usar um analisador de log personalizado](custom-log-parser.md).
+Se o log não tiver suporte ou se você estiver usando um formato de log recentemente liberado de uma das fontes de dados com suporte e o carregamento estiver falhando, selecione **outro** como a **fonte de dados** e especifique o dispositivo e o log que você está tentando carregar. O log será examinado pela equipe de analista de nuvem do Cloud App Security e você será notificado se for adicionado suporte para seu tipo de log. Como alternativa, você pode definir um analisador personalizado que corresponda ao seu formato. Para obter mais informações, consulte [Usar um analisador de log personalizado](custom-log-parser.md).
+
+> [!NOTE]
+> A lista de dispositivos com suporte a seguir pode não funcionar com os formatos de log liberados recentemente. Se você estiver usando um formato recentemente liberado e o carregamento estiver falhando, [use um analisador de log personalizado](custom-log-parser.md) e, se necessário, abra um caso de suporte.
 
 Atributos de dados (de acordo com a documentação do fornecedor):
 
 | Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de Usuário | IP de Origem | Tráfego total | Bytes carregados |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | No |
+| Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | Não |
 | Blue Coat | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
-| Ponto de Verificação | Não | **Sim** | Não | **Sim** | Não | No |
+| Ponto de Verificação | Não | **Sim** | Não | **Sim** | Não | Não |
 | Cisco ASA (Syslog) | Não | **Sim** | Não | **Sim** | **Sim** | Não |
 | Cisco ASA com FirePOWER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Cisco Cloud Web Security |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 | Cisco FWSM | Não | **Sim** | Não | **Sim** | **Sim** | Não |
 | Cisco Ironport WSA | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
-| Cisco Meraki | **Sim** | **Sim** | Não | **Sim** | Não | No |
+| Cisco Meraki | **Sim** | **Sim** | Não | **Sim** | Não | Não |
 | Clavister NGFW (Syslog) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | ContentKeeper | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Corrata | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |

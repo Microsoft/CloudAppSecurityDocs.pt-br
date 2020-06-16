@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e8a5863b0643ed99f5bd28f04b0634dc822602c7
-ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
+ms.openlocfilehash: 99cdf5ec406287dd1458b75c8d5d76c2f027918b
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84274624"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801177"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -44,7 +44,9 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 * A virtualização no sistema operacional deve ser habilitada com o Hyper-V
 
 > [!IMPORTANT]
-> Um usuário deve estar conectado para que o Docker colete logs. Recomendamos que os usuários do Docker se desconectem sem sair.
+>
+> * Um usuário deve estar conectado para que o Docker colete logs. Recomendamos que os usuários do Docker se desconectem sem sair.
+> * O Docker for Windows não é oficialmente suportado em cenários de virtualização aninhados. Se você ainda planeja usar a virtualização aninhada, consulte o [guia oficial do Docker](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
 
 > [!NOTE]
 > Se você tiver um coletor de logs existente e quiser removê-lo antes de implantá-lo novamente, ou se simplesmente quiser removê-lo, execute os seguintes comandos:

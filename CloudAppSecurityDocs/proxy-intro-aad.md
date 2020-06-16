@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75a9c50b91b0aca0183af548bee6d6265be59e96
-ms.sourcegitcommit: b00cf17cc91d7a08cae5a602a6db05269643aa95
+ms.openlocfilehash: 84d78ef48ed141c62934b8b91137d601c1fff666
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415688"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800820"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ No local de trabalho atual, geralmente não é suficiente saber o que está acon
 >
 > - Para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você precisa de uma [licença Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)ou a licença exigida por sua solução IDP, bem como uma licença de Cloud app Security.
 
-## <a name="how-it-works"></a>Como isso funciona
+## <a name="how-it-works"></a>Como ele funciona
 
 Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy reverso e se integra ao IdP. Ao integrar com o acesso condicional do Azure AD, você pode configurar aplicativos para trabalhar com Controle de Aplicativos de Acesso Condicional com apenas alguns cliques, permitindo que você imponha de forma fácil e seletiva os controles de acesso e de sessão nos aplicativos da sua organização com base em qualquer condição no acesso condicional. As condições definem *quem* (usuário ou grupo de usuários) e *o que* (quais aplicativos de nuvem) e *onde* (quais locais e redes) uma política de acesso condicional é aplicada. Depois de determinar as condições, você pode encaminhar os usuários para Cloud App Security em que você pode proteger dados com Controle de Aplicativos de Acesso Condicional aplicando controles de acesso e sessão.
 
@@ -42,6 +42,8 @@ O Controle de Aplicativo de Acesso Condicional permite o monitoramento e control
 - **Proteger no download**: em vez de bloquear o download de documentos confidenciais, você pode exigir que os documentos sejam rotulados e protegidos com a proteção de informações do Azure. Essa ação garante que o documento esteja protegido e o acesso do usuário seja restrito em uma sessão potencialmente arriscada.
 
 - **Impedir o carregamento de arquivos sem rótulo**: antes de um arquivo confidencial ser carregado, distribuído e usado por outros, é importante certificar-se de que o arquivo tem o rótulo e a proteção corretos. Você pode garantir que arquivos sem rótulo com conteúdo confidencial sejam impedidos de serem carregados até que o usuário classificar o conteúdo.
+
+- **Bloquear possíveis malwares**: você pode proteger seu ambiente contra malware bloqueando o upload de arquivos potencialmente mal-intencionados. Qualquer arquivo carregado ou baixado pode ser verificado em relação à inteligência contra ameaças da Microsoft e bloqueado instantaneamente.
 
 - **Monitorar sessões de usuário para fins de conformidade**: os usuários arriscados são monitorados quando entram em aplicativos e suas ações são registradas de dentro da sessão. É possível investigar e analisar o comportamento do usuário para compreender onde e sob quais condições as políticas de sessão deverão ser aplicadas no futuro.
 
@@ -154,8 +156,8 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Power BI
 - Salesforce
 - ServiceNow
-- SharePoint Online
-- Margem de atraso
+- SharePoint online
+- Slack
 - Tableau
 - Microsoft Teams (versão prévia)
 - Workday
@@ -170,7 +172,7 @@ Veja a seguir uma lista de aplicativos em destaque com suporte no Office 365 Clo
 - Exchange Online
 - OneDrive for Business
 - Power BI
-- SharePoint Online
+- SharePoint online
 - Microsoft Teams (versão prévia)
 - Yammer (versão prévia)
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5b4691cdc29199d65b6ac0a2884b8b5a82263c5e
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: 85cf523e8cc733156c2365da114cc893b022e1e3
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566973"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801143"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -47,7 +47,7 @@ Além dos alertas de Cloud App Security nativos, você também obterá os seguin
 * Credenciais vazadas: disparadas quando as credenciais válidas de um usuário tiverem sido vazadas. Para obter mais informações, consulte [detecção de credenciais vazadas do Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
 * Entrada arriscada: combina várias detecções de entrada Azure AD Identity Protection em uma única detecção. Para obter mais informações, consulte [detecções de risco de entrada do Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
-Essas políticas serão exibidas na página políticas de Cloud App Security e poderão ser habilitadas ou desabilitadas, mas não editadas.
+Essas políticas serão exibidas na página políticas de Cloud App Security e poderão ser habilitadas ou desabilitadas.
 
 ## <a name="anomaly-detection-policies"></a>Políticas de detecção de anomalias
 
@@ -70,9 +70,12 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 
 ### <a name="malware-detection"></a>Detecção de malware
 
-* Essa detecção identifica arquivos mal-intencionados no armazenamento em nuvem, sejam de aplicativos da Microsoft ou de aplicativos de terceiros. O Microsoft Cloud App Security usa a Inteligência Contra Ameaças da Microsoft para reconhecer se determinados arquivos estão associados a ataques de malware conhecidos e são possivelmente mal-intencionados. Essa política interna é desabilitada por padrão. Nem todo arquivo é examinado, mas é usada heurística para procurar arquivos que possam estar em risco. Depois que os arquivos são detectados, é exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo.
+* Essa detecção identifica arquivos mal-intencionados no armazenamento em nuvem, sejam de aplicativos da Microsoft ou de aplicativos de terceiros. O Microsoft Cloud App Security usa a Inteligência Contra Ameaças da Microsoft para reconhecer se determinados arquivos estão associados a ataques de malware conhecidos e são possivelmente mal-intencionados. Essa política interna é desabilitada por padrão. Nem todo arquivo é examinado, mas é usada heurística para procurar arquivos que possam estar em risco. Depois que os arquivos são detectados, é exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta do arquivo para abrir um relatório de malware que fornece informações sobre o tipo de malware com o qual o arquivo está infectado.
+
+    Você pode usar essa detecção em tempo real usando políticas de sessão para controlar uploads e downloads de arquivos.
 
     > [!NOTE]
+    >
     > * Para detecção de malware do Office 365, você precisa de uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
     > * O Cloud App Security dá suporte à detecção de malware dos seguintes aplicativos:
     >   * Box

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75ee564e0001b76ea38f345cec24c02d567ed200
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 353cff79b3e76c3f63380194ea055a92f13c0ce8
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477498"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800768"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integração dos Serviços de Classificação de Dados da Microsoft
 
@@ -34,7 +34,7 @@ O Microsoft Cloud App Security permite que você use nativamente o Serviço de C
 
 Você tem a opção de definir o **Método de inspeção** para usar o **Serviço de Classificação de Dados da Microsoft** sem precisar fazer nenhuma configuração adicional. Essa opção é útil ao criar uma política de prevenção de vazamento de dados para seus arquivos no Microsoft Cloud App Security.
 
-1. Na página [política de arquivo](data-protection-policies.md), em **Método de inspeção**, selecione **Serviço de Classificação de Dados**. Você também pode definir o **método de inspeção** na página [política de sessão](session-policy-aad.md) com download de arquivo de **controle (com DLP)** selecionado.
+1. Na página [política de arquivo](data-protection-policies.md), em **Método de inspeção**, selecione **Serviço de Classificação de Dados**. Você também pode definir o **método de inspeção** na página [política de sessão](session-policy-aad.md) com o **download do arquivo de controle (com inspeção)** selecionado.
 
     ![Configuração do serviço de classificação de dados](media/dcs-enable.png)
 2. Selecione se a política deve ser aplicada quando **qualquer** ou **todos** os critérios são atendidos.

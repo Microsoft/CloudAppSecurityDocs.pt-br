@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3a5f6f6eb607faac7aec7eb9dda3ec1d66cadb5f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 681a2389b0a1a47013bdec2d4925cf47326330a9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719710"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800819"
 ---
 # <a name="information-protection-policies"></a>Políticas de proteção de informações
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Cloud App Security políticas de arquivo permitem impor uma ampla variedade de processos automatizados. As políticas podem ser definidas para fornecer proteção de informações, incluindo verificações de conformidade contínuas, tarefas de eDiscovery legais e DLP para conteúdo confidencial compartilhado publicamente.
 
@@ -218,7 +218,7 @@ Você deve ter uma instância AWS conectada usando os [conectores de aplicativos
 
 1. Na página **políticas** , crie uma nova **política de arquivo**.
 
-2. Selecione e aplique o modelo de política de **buckets S3 publicamente acessíveis (AWS)** .
+2. Selecione e aplique o modelo de política de **buckets S3 publicamente acessíveis (AWS)**.
 
 3. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Por exemplo, defina AWS para **tornar privado** o que tornaria os buckets S3 privados.
 
@@ -261,7 +261,7 @@ Impedir que os dados da empresa sejam exfiltrateddos por usuários externos, blo
 
 1. Na página **políticas** , crie uma nova **política de sessão**.
 
-2. Em **Tipo de controle de sessão**, selecione **Download do arquivo de controle (com DLP)** .
+2. Em **tipo de controle de sessão**, selecione **controle de arquivo baixar (com inspeção)**.
 
 3. Em **filtros de atividade**, **selecione usuário** e defina-o como **do grupo** igual a **usuários externos**.
 
@@ -320,7 +320,7 @@ Impedir que os usuários carreguem dados desprotegidos na nuvem, utilizando [con
 
 1. Na página **políticas** , crie uma nova **política de sessão**.
 
-2. Em **tipo de controle de sessão**, selecione **controle de carregamento de arquivo (com DLP)** ou **download de arquivo de controle (com DLP)** .
+2. Em **tipo de controle de sessão**, selecione **controlar carregamento de arquivo (com inspeção)** ou **baixar arquivo de controle (com inspeção)**.
 
    >[!NOTE]
    > Você não precisa definir nenhum filtro para permitir que essa política se aplique a todos os usuários e aplicativos.

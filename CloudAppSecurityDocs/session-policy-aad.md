@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 47aa53855f83a2898616d17e6d4b12786bc7d893
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 1578a945e461d69a78f56f000b494235245002b9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250665"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800785"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -55,7 +55,7 @@ Para criar uma nova política de sessão, siga este procedimento:
 
     1. Selecione **Apenas monitorar** se você quiser apenas monitorar atividades por usuários. Essa seleção criará uma política Apenas monitorar para os aplicativos selecionados em que todas as entradas, downloads heurísticos e tipos de Atividade serão baixados.
 
-    1. Selecione **Controlar download de arquivos (com DLP)** se quiser monitorar as atividades do usuário. Você pode executar ações adicionais, como bloquear ou proteger downloads para usuários.
+    1. Selecione **controlar arquivo baixar (com inspeção)** se você quiser monitorar as atividades do usuário. Você pode executar ações adicionais, como bloquear ou proteger downloads para usuários.
     1. Selecione **bloquear atividades** para bloquear atividades específicas, que você pode selecionar usando o filtro de **tipo de atividade** . Todas as atividades de aplicativos selecionados serão monitoradas (e relatadas no Log de atividades). As atividades específicas que você selecionar serão bloqueadas se você selecionar a ação **Bloquear**. As atividades específicas selecionadas gerarão alertas se você selecionar a ação **Testar** e ativar os alertas.
 1. Em **Origem da atividade** na seção **Atividades que correspondem a todos os seguintes**, selecione os filtros de atividade adicionais a serem aplicados na política. Esses filtros podem incluir as seguintes opções:
 
@@ -70,7 +70,7 @@ Para criar uma nova política de sessão, siga este procedimento:
     >[!NOTE]
     >As políticas de sessão não dão suporte a aplicativos móveis e de desktop. Os aplicativos móveis e aplicativos da área de trabalho também podem ser bloqueados ou permitidos por meio da criação de uma política de acesso.
 
-1. Se você tiver selecionado a opção de **download do arquivo de controle (com DLP)**:
+1. Se você selecionou a opção para **controlar o download do arquivo (com inspeção)**:
 
     1. Em **Origem da atividade** na seção **Arquivos que correspondem a todos os seguintes**, selecione os filtros de arquivos adicionais a serem aplicados na política. Esses filtros podem incluir as seguintes opções:
 
@@ -86,7 +86,7 @@ Para criar uma nova política de sessão, siga este procedimento:
 
         * **Bloquear (bloquear o download de arquivos e monitorar todas as atividades)**: defina essa ação para bloquear explicitamente o download de acordo com os filtros de política que você definir. Para obter mais informações, consulte [Como funciona o bloqueio de download](#block-download).
 
-        * **Proteger (aplicar o rótulo de classificação para baixar e monitorar todas as atividades)**: essa opção só estará disponível se você selecionar **Controlar download de arquivos (com DLP)** em **Política de sessão**. Se sua organização usa a Proteção de Informações do Azure, você pode definir uma **Ação** para aplicar um rótulo de classificação configurado na Proteção de Informações do Azure para o arquivo. Para obter mais informações, consulte [Como funciona o a proteção de download](#protect-download).
+        * **Proteger (Aplicar rótulo de classificação para baixar e monitorar todas as atividades)**: essa opção só estará disponível se você tiver selecionado **controlar download de arquivo (com inspeção)** em **política de sessão**. Se sua organização usa a Proteção de Informações do Azure, você pode definir uma **Ação** para aplicar um rótulo de classificação configurado na Proteção de Informações do Azure para o arquivo. Para obter mais informações, consulte [Como funciona o a proteção de download](#protect-download).
 
 1. Você pode **Criar um alerta para cada evento correspondente com a gravidade da política** e definir um limite de alerta. Selecione se deseja que o alerta seja enviado como um email, como uma mensagem de texto ou ambos.
 
@@ -146,9 +146,17 @@ O Cloud App Security atualmente dá suporte à aplicação de [Rótulos de class
 
 ## <a name="protect-uploads-of-sensitive-files"></a><a name="protect-upload"></a>Proteger uploads de arquivos confidenciais
 
-Quando o **carregamento de arquivo de controle (com DLP)** é definido como o **tipo de controle de sessão** na política de sessão de Cloud app Security, controle de aplicativos de acesso condicional impede que um usuário carregue um arquivo de acordo com os filtros de arquivo da política. Quando um evento de upload é reconhecido, Controle de Aplicativos de Acesso Condicional intervi em tempo real para determinar se o arquivo é confidencial e precisa de proteção. Se o arquivo tiver dados confidenciais e não tiver um rótulo adequado, o carregamento do arquivo será bloqueado.
+Quando o **carregamento de arquivo de controle (com inspeção)** é definido como o **tipo de controle de sessão** na política de sessão de Cloud app Security, controle de aplicativos de acesso condicional impede que um usuário carregue um arquivo de acordo com os filtros de arquivo da política. Quando um evento de upload é reconhecido, Controle de Aplicativos de Acesso Condicional intervi em tempo real para determinar se o arquivo é confidencial e precisa de proteção. Se o arquivo tiver dados confidenciais e não tiver um rótulo adequado, o carregamento do arquivo será bloqueado.
 
 Por exemplo, você pode criar uma política que verifica o conteúdo de um arquivo para determinar se ele contém uma correspondência de conteúdo confidencial, como um número de seguro social. Se ele contiver conteúdo confidencial e não for rotulado com um rótulo confidencial da proteção de informações do Azure, o upload do arquivo será bloqueado. Quando o arquivo é bloqueado, você pode [exibir uma mensagem personalizada para o usuário](#educate-protect) instruindo-o sobre como rotular o arquivo para carregá-lo. Ao fazer isso, você garante que os arquivos armazenados em seus aplicativos de nuvem estejam em conformidade com suas políticas.
+
+## <a name="block-malware-on-upload"></a>Bloquear malware ao carregar
+
+Quando o **carregamento de arquivo de controle (com inspeção)**   é definido como o **tipo de controle de sessão** e a **detecção de malware** é definida como o **método de inspeção** na política de sessão de Cloud app Security, controle de aplicativos de acesso condicional impede que um usuário carregue um arquivo em tempo real se for detectado malware. Os arquivos são verificados usando o mecanismo de inteligência contra ameaças da Microsoft.
+
+Você pode exibir os arquivos sinalizados como possíveis malwares usando o filtro **potencial detectado de malware** no log de atividades.
+
+Você também pode configurar políticas de sessão para bloquear o malware no download.
 
 ## <a name="educate-users-to-protect-sensitive-files"></a><a name="educate-protect"></a>Instrua os usuários a proteger arquivos confidenciais
 
@@ -164,7 +172,7 @@ Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de 
 >[!div class="nextstepaction"]
 > [PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando o Azure AD Controle de Aplicativos de Acesso Condicional](use-case-proxy-block-session-aad.md)

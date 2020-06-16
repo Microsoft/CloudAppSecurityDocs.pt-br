@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 15b8a8eab3558443831b415c3d6ddef554879b09
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: 08eec9c9a8e684d53b0947ce186d661bf5e7d961
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566916"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800802"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Como investigar alertas de detecção de anomalias
 
@@ -75,7 +75,7 @@ Atividade de um endereço IP que foi identificado como um endereço IP de proxy 
 
 **TP**, **B-TP**ou **FP**?
 
-Essa detecção usa um algoritmo de aprendizado de máquina que reduz incidentes **B-TP** , como endereços IP com marcas de tipo inalteradas que são amplamente usadas por usuários na organização.
+Essa detecção usa um algoritmo de aprendizado de máquina que reduz incidentes **B-TP** , como endereços IP com marcas de tipo de mis que são amplamente usadas por usuários na organização.
 
 1. **TP**: se você conseguir confirmar que a atividade foi executada a partir de um endereço IP anônimo ou Tor.
 
@@ -673,7 +673,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. Examine as atividades de exclusão e crie uma lista de arquivos excluídos. Se necessário, recupere os arquivos excluídos.
 1. Opcionalmente, crie um guia estratégico usando a automatização de energia para contatar os usuários e seus gerentes para verificar a atividade.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Investigar usuários arriscados](tutorial-ueba.md)
