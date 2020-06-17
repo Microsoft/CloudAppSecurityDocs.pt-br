@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 99cdf5ec406287dd1458b75c8d5d76c2f027918b
-ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
+ms.openlocfilehash: ce6525373c8cb9be6a1e70085f5f3bda3dbd11fa
+ms.sourcegitcommit: 1f8f19312ce70e62b6aa0b94db06af07f881fefa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/16/2020
-ms.locfileid: "84801177"
+ms.locfileid: "84811266"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -29,9 +29,9 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * sistema operacional:
-    * **Windows 10** (atualização para criadores do outono)
-    * Windows Server **versão 1709 +** (SAC)
-    * **Windows Server 2019 (LTSC)**
+  * **Windows 10** (atualização para criadores do outono)
+  * Windows Server **versão 1709 +** (SAC)
+  * **Windows Server 2019 (LTSC)**
 
 * Espaço em disco: 250 GB
 
@@ -46,6 +46,7 @@ Você pode configurar o upload automático de log para relatórios contínuos no
 > [!IMPORTANT]
 >
 > * Um usuário deve estar conectado para que o Docker colete logs. Recomendamos que os usuários do Docker se desconectem sem sair.
+> * Não há suporte oficialmente para Docker for Windows em cenários de virtualização VMWare.
 > * O Docker for Windows não é oficialmente suportado em cenários de virtualização aninhados. Se você ainda planeja usar a virtualização aninhada, consulte o [guia oficial do Docker](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
 
 > [!NOTE]
