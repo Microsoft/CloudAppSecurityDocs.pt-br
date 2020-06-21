@@ -1,11 +1,11 @@
 ---
-title: Integrar o Flow ao Cloud App Security para obter automação de alerta personalizada
-description: Este artigo fornece informações de como obter a automação de alerta personalizada integrando o Flow ao Cloud App Security.
+title: Integre a automatização de energia da Microsoft com o Microsoft Cloud App Security para obter automação de alerta personalizada
+description: Este artigo fornece informações sobre como obter a automação de alertas personalizada integrando a automatização de energia da Microsoft com o Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/18/2019
+ms.date: 04/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -13,51 +13,53 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76115cb85be2f20f6d57f2e016d1a7d4548d05d1
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f63e873d2b65781a3bca7209c020696bf2957171
+ms.sourcegitcommit: 4e2b905c8770d411df68372c29154d30b2cf195e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719995"
+ms.lasthandoff: 06/21/2020
+ms.locfileid: "85123200"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integrar com o Flow para automação de alerta personalizada
+# <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integre-se ao Microsoft Power Automate para automação de alerta personalizada
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
-O Cloud App Security integra-se ao [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) para fornecer guias estratégicos de automação e orquestração de alerta personalizadas. Usando o [ecossistema de conectores](https://docs.microsoft.com/connectors/) disponível no Microsoft Flow, você pode automatizar o disparo de guias estratégicos quando o Cloud App Security gera alertas. Por exemplo, crie automaticamente um problema nos sistemas de tíquete usando o [conector do ServiceNow](https://docs.microsoft.com/connectors/service-now/) ou envie um email de aprovação para executar uma ação de governança personalizada quando um alerta é disparado no Cloud App Security.
+O Cloud App Security integra-se com a [automatização de energia da Microsoft](https://docs.microsoft.com/flow/getting-started) para fornecer automação de alerta personalizada e guias estratégicos de orquestração. Usando o [ecossistema de conectores](https://docs.microsoft.com/connectors/) disponíveis na automatização de energia, você pode automatizar o disparo de guias estratégicos quando Cloud app Security gera alertas. Por exemplo, crie automaticamente um problema nos sistemas de tíquete usando o [conector do ServiceNow](https://docs.microsoft.com/connectors/service-now/) ou envie um email de aprovação para executar uma ação de governança personalizada quando um alerta é disparado no Cloud App Security.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Você precisa ter um [plano válido do Microsoft Flow](https://flow.microsoft.com/pricing)
+- Você deve ter um plano válido de [automatização de energia da Microsoft](https://flow.microsoft.com/pricing)
 
-## <a name="how-it-works"></a>Como funciona
+## <a name="how-it-works"></a>Como ele funciona
 
-Por conta própria, o Cloud App Security fornece opções predefinidas de governança, como suspender o usuário ou tornar o arquivo privado durante a definição de políticas. Ao criar um guia estratégico no Microsoft Flow usando o conector do Cloud App Security, você pode criar fluxos de trabalho para habilitar as opções de governança personalizadas para suas políticas. Depois que o guia estratégico é criado no Flow, basta associá-lo a uma política no Cloud App Security para enviar alertas ao Flow. O Microsoft Flow oferece vários conectores e condições para criar um fluxo de trabalho personalizado para sua organização.
+Por conta própria, Cloud App Security fornece opções de governança predefinidas, como suspender um usuário ou tornar um arquivo privado ao definir políticas. Ao criar um guia estratégico na automação de energia usando o conector de Cloud App Security, você pode criar fluxos de trabalho para habilitar opções de governança personalizadas para suas políticas. Depois que o guia estratégico é criado na automatização de energia, basta associá-lo a uma política no Cloud App Security para enviar alertas para a automatização de energia. A automatização de energia da Microsoft oferece vários conectores e condições para criar um fluxo de trabalho personalizado para sua organização.
 
-O [conector do Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/) no Flow é compatível com gatilhos e ações automatizados. O Flow é disparado automaticamente quando o Cloud App Security gera um alerta. As ações incluem a alteração do status de alerta no Cloud App Security.
+O [conector de Cloud app Security](https://docs.microsoft.com/connectors/cloudappsecurity/) no Power Automate dá suporte a gatilhos e ações automatizadas. A automatização de energia é disparada automaticamente quando Cloud App Security gera um alerta. As ações incluem a alteração do status de alerta no Cloud App Security.
 
-## <a name="how-to-create-playbooks-with-microsoft-flow"></a>Como criar guias estratégicos com o Microsoft Flow
+## <a name="how-to-create-playbooks-with-power-automate"></a>Como criar guias estratégicos com o Power Automate
 
 1. [Criar um token de API](api-tokens.md) no Cloud App Security.
 
-2. Navegue até o [portal do Microsoft Flow](https://flow.microsoft.com) e escolha [**Criar um novo fluxo do zero**](https://docs.microsoft.com/flow/get-started-logic-flow).
+2. Navegue até o [portal de automatização de energia](https://flow.microsoft.com), selecione **meus fluxos**, selecione **novo**e, no menu suspenso, selecione **automatizado de em branco**.
 
-3. Em gatilhos e conectores de pesquisa, digite **Cloud App Security** e selecione **Quando um alerta é gerado**.
+    ![Automatizar a criação de novo fluxo](media/flow-create-new.png)
 
-    ![Flow – Quando um alerta é gerado](media/flow-when-alert.png)
+3. Forneça um nome para o fluxo e, em **escolha o gatilho do fluxo**, digite **Cloud app Security** e selecione **quando um alerta é gerado**.
+
+    ![Automatizar a energia quando um alerta é gerado](media/flow-when-alert.png)
 
 4. Em **Configurações de autenticação**, cole o token de API da etapa 1.
 
 5. Defina o fluxo de trabalho que deverá ser disparado quando uma política no Cloud App Security gerar um alerta. Você pode adicionar uma ação, uma condição lógica, condições de mudança entre maiúsculas e minúsculas ou loops e salvar o guia estratégico.
 
-    ![Fluxo de trabalho do Flow](media/flow-workflow.png)
+    ![Fluxo de trabalho de automação de energia](media/flow-workflow.png)
 
-6. No portal do Cloud App Security, acesse **Políticas** e na linha da política cujos alertas você deseja encaminhar ao Flow, clique nos três pontos e selecione **Configurações**.
-7. Em **Alertas**, selecione **Enviar alertas ao Flow** e escolha o nome do guia estratégico no menu suspenso.
+6. No portal de Cloud App Security, vá para **políticas** e, na linha da política cujos alertas você deseja encaminhar para a automatização de energia, clique nos três pontos e selecione **configurações**.
+7. Em **alertas**, selecione **enviar alertas para a automatização de energia** e escolha o nome do guia estratégico no menu suspenso.
 
-    ![Habilitar o Flow no portal do Cloud App Security](media/flow-mcas-config.png)
+    ![Habilitar a automatização de energia no portal Cloud App Security](media/flow-mcas-config.png)
 
-8. Os guias estratégicos do Cloud App Security que você criou ou para os quais recebeu acesso podem ser vistos na tela **Extensões de segurança**.
+8. Cloud App Security guias estratégicos que você criou ou com acesso concedido podem ser vistos na tela extensões de **segurança** .
 
     ![exibir guias estratégicos no Cloud App Security](media/flow-extensions.png)
 
