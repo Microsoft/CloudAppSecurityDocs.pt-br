@@ -4,19 +4,19 @@ description: Este artigo é atualizado com frequência para você saber quais s�
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/17/2020
+ms.date: 06/16/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09c2f8ca89a53372f9d40190c430fd4be1615612
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 2ec05e43341dbabb6c01219c150599d2245840b9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250699"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800853"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -25,6 +25,35 @@ ms.locfileid: "84250699"
 Este artigo é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security.
 
 Feed RSS: Receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-177"></a>Cloud App Security versão 177
+
+Lançado em 14 de junho de 2020
+
+- **Nova detecção de malware em tempo real (versão prévia, distribuição gradual)**  
+Expandimos nossos controles de sessão para detectar possível malware usando a inteligência contra ameaças da Microsoft após uploads ou downloads de arquivos. A nova detecção agora está disponível pronta para uso e pode ser configurada para bloquear automaticamente os arquivos identificados como possível malware. Para obter mais informações, confira [Bloquear malware no upload](session-policy-aad.md#block-malware-on-upload).
+
+- **Novo suporte de token de acesso para controles de acesso e sessão**  
+Adicionamos a capacidade de tratar o token de acesso e as solicitações de código como logons ao integrar aplicativos a controles de sessão e acesso. Para usar tokens, clique no ícone de engrenagem de configurações, selecione **Controle de Aplicativos de Acesso Condicional**, edite o aplicativo relevante (menu de três pontos > **Editar aplicativo**), selecione **Tratar as solicitações de token de acesso e código como logons de aplicativo** e clique em **Salvar**. Para obter mais informações sobre a integração de aplicativos, confira [Integrar e implantar qualquer aplicativo](proxy-deployment-any-app.md) e [Implantar aplicativos em destaque](proxy-deployment-aad.md).
+
+<!--
+- **New OAuth app policy templates**  
+Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
+
+  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
+  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
+  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
+  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
+-->
+
+- **Sufixo de URL de proxy avançado para controles de sessão (distribuição gradual)**  
+Em 7 de junho de 2020, começamos a distribuir gradualmente nossos controles avançados de sessão de proxy para usar um sufixo unificado que não inclui regiões nomeadas. Por exemplo, os usuários verão o sufixo `<AppName>.mcas.ms` em vez de `<AppName>.<Region>.cas.ms`. Se você adiciona com frequência domínios na lista de proibições de seus dispositivos de rede ou gateways, certifique-se de colocar todos os domínios listados em [Controles de acesso e sessão](network-requirements.md#access-and-session-controls).
+
+- **Nova documentação**  
+A documentação do Cloud App Security foi expandida para incluir o novo conteúdo a seguir:
+
+  - **[Usar a API REST do Cloud App Security](api-introduction.md)** : saiba mais sobre nossas funcionalidades de API e comece a integrar seus aplicativos com o Cloud App Security.
+  - **[Investigar alertas de detecção de anomalias](investigate-anomaly-alerts.md)** : familiarize-se com os alertas de UEBA disponíveis e o que eles significam, identifique o risco que eles representam, compreenda o escopo de uma violação e a ação que pode corrigir a situação.
 
 ## <a name="cloud-app-security-release-176"></a>Cloud App Security versão 176
 
@@ -39,7 +68,7 @@ Aproveitamos nossa integração nativa com o Azure AD para dar a você a capacid
 - **Nova opção de comentários disponível em políticas selecionadas**  
 Estamos interessados em receber seus comentários e saber como podemos ajudar. Agora, uma nova caixa de diálogo de comentários oferece a você a oportunidade de ajudar a melhorar o Cloud App Security, ao criar, modificar ou excluir um arquivo, a detecção de anomalias ou uma política de sessão.
 
-- **Proxy de sufixo avançado para controles de sessão (distribuição gradual)**  
+- **Sufixo de URL de proxy avançado para controles de sessão (distribuição gradual)**  
 A partir de 7 de junho de 2020, distribuiremos gradualmente nossos controles avançados de sessão de proxy para usar um sufixo unificado que não inclui regiões nomeadas. Por exemplo, os usuários verão o sufixo `<AppName>.mcas.ms` em vez de `<AppName>.<Region>.cas.ms`. Se você adiciona com frequência domínios na lista de proibições de seus dispositivos de rede ou gateways, certifique-se de colocar todos os domínios listados em [Controles de acesso e sessão](network-requirements.md#access-and-session-controls).
 
 - **Melhorias de desempenho para controles de sessão (distribuição gradual)**  
@@ -93,7 +122,7 @@ Expandimos e simplificamos o processo de identificação de um ou mais usuários
 
 Lançado em 22 de março de 2020
 
-- **Nova detecção de anomalia: uso de região incomum para recursos da nuvem (versão prévia)**  
+- **Nova detecção de anomalia: região incomum para recurso de nuvem (versão prévia)**  
 Expandimos nossa capacidade atual de detecção de comportamentos anômalos para a AWS. A nova detecção já está disponível e pronta para uso, habilitada automaticamente para alertá-lo quando um recurso é criado em uma região da AWS onde atividades geralmente não são executadas. Os invasores geralmente aproveitam os créditos da AWS de uma organização para realizar atividades mal-intencionadas, como criptomineração. Detectar esse comportamento anômalo pode ajudar a mitigar um ataque.
 
 - **Novos modelos de política de atividade para o Microsoft Teams**  
@@ -201,7 +230,7 @@ Lançamos para os administradores a capacidade de personalizar a página de ater
 
 - **Novas detecções**  
 
-  - **Alterações suspeitas no serviço de log do AWS (versão prévia)** : alerta quando um usuário faz alterações no serviço de log CloudTrail. Por exemplo, os invasores geralmente desativam a auditoria no CloudTrail para ocultar os vestígios de seu ataque.
+  - **Alterações suspeitas no serviço de log da AWS (versão prévia)** : alerta quando um usuário faz alterações no serviço de log CloudTrail. Por exemplo, os invasores geralmente desativam a auditoria no CloudTrail para ocultar os vestígios de seu ataque.
 
   - **Múltiplas atividades de criação de VM**: Alerta quando um usuário executa um número incomum de atividades de criação de VM em comparação com a linha de base aprendida. Agora se aplica ao AWS.
 
@@ -334,7 +363,7 @@ Agora você pode configurar a saída automática de sessões de administrador pa
 
 Lançado em 9 de junho de 2019
 
-- **UEBA híbrido - integração nativa com o ATP do Azure (versão prévia)**  
+- **UEBA híbrido – Integração nativa com o ATP do Azure (versão prévia)**  
 O Cloud App Security agora nativamente é integrado com o ATP do Azure para fornecer uma exibição única de atividades de identidade em aplicativos de nuvem e sua rede local. Para saber mais, confira [Integração com a Proteção Avançada contra Ameaças do Azure](aatp-integration.md).
 - **Aprimoramentos do UEBA**  
 Para ajudá-lo a identificar ameaças que não são tão evidentes, o Cloud App Security agora usa a exclusiva criação de perfil para fornecer as pontuações de risco para alertas e atividades individuais. As pontuações de risco podem ser usadas para identificar as atividades que não são suficientemente suspeitas para disparar alertas. No entanto, ao agregar as pontuações de risco à **Pontuação de prioridade de investigação** de um usuário, o Cloud App Security ajuda a identificar comportamentos de risco e concentrar sua investigação. Essas novas funcionalidades agora estão disponíveis em nossa página de usuário reprojetada.

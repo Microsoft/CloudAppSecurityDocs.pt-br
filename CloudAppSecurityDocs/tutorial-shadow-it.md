@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: dac3da3d91df0d75d57a29fa463705a1561f9ef9
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 66b70832dcdcc3c741a8eb330bc15050afbd70c8
+ms.sourcegitcommit: c981486f4ef211bce41dca1691aa0d47d180dd5e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250631"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84481730"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar o Shadow IT na sua rede
 

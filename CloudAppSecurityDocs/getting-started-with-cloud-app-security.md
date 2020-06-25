@@ -4,19 +4,19 @@ description: Esse início rápido descreve o processo para pôr o Cloud App Secu
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/23/2019
+ms.date: 06/07/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 0ba3ba9d063e35c0dc95def25c2c69d351e24f22
+ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720674"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84611198"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: introdução ao Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ Esse início rápido fornece etapas para pôr o Cloud App Security em funcioname
 Sua organização deve ter uma licença de uso do Cloud App Security. Para obter detalhes do preço, consulte a [folha de dados de licenciamento do Cloud App Security](https://aka.ms/mcaslicensing).
 
 >[!NOTE]
->Você não precisa de uma licença do Office 365 para usar o Cloud App Security.
+>O Cloud App Security não requer nenhuma licença do Office 365.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -42,9 +42,9 @@ Sua organização deve ter uma licença de uso do Cloud App Security. Para obter
 
 ## <a name="to-access-the-portal"></a>Para acessar o portal
 
-Para acessar o portal do Cloud App Security, acesse [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). Você também pode acessar o portal por meio do **Centro de administração do Microsoft 365**, da seguinte maneira:
+Para acessar o portal do Cloud App Security, acesse [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). Você também pode acessar o portal por meio do **[Centro de administração do Microsoft 365](https://security.microsoft.com)** , da seguinte maneira:
 
-1. No Centro de administração do Microsoft 365, clique no ícone do **Inicializador de aplicativo**![Ícone do iniciador do aplicativo do Office 365](media/o365-admin-centers-icon.png) e selecione **Segurança**.
+1. No centro de administração do Microsoft 365, no menu lateral, clique em **Mostrar tudo** e selecione **Segurança**.
 
     ![Acesso do Office 365](media/access-from-o365.png)
 
