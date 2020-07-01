@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5af7efa448e7d93902e9d8845dd97479b7c53df7
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 13e1260fd86a4b252e56e43917fdd84fc67ebc01
+ms.sourcegitcommit: 7811a0d33e1756782222f20df02acae2f3ea4afe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624385"
+ms.locfileid: "85795780"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Integração do Azure Active Directory Identity Protection
 
@@ -73,10 +73,6 @@ As seguintes políticas estão disponíveis:
 |---|---|---|---|
 |Credenciais vazadas|Mostra alertas de credenciais vazadas, as credenciais válidas do usuário foram vazadas|habilitado|Todos os alertas de recebimento baixo|
 |Entrada arriscada|Agrega várias detecções de entrada arriscadas, entradas que não foram executadas pelo usuário|habilitado|Alto-receber alertas de alta severidade|
-
-## <a name="remediating-risky-users"></a>Corrigindo usuários arriscados
-
-As políticas de proteção de identidade podem ser usadas para corrigir automaticamente os usuários arriscados definindo o nível de risco do usuário como alto. Quando um usuário é definido como alto, o algoritmo avançado de análise de risco do usuário leva em consideração o novo status do usuário, bem como o status de *Gerenciamento do dispositivo do computador* . Isso faz com que as ações de política relevantes definidas no Azure AD sejam impostas, como redefinir a senha do usuário, exigir autenticação MFA ou forçar o usuário a usar um dispositivo gerenciado. Para obter mais informações, consulte [como o AD do Azure usa meus comentários de risco](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback) e [ações de governança](accounts.md#governance-actions).
 
 ## <a name="next-steps"></a>Próximas etapas
 
