@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 01/06/2020
+ms.date: 06/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3441f2b78c015ba38185ca2c584a347985b9a71f
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: 930710dc9524bd873318291b18b71d6acd33ad5c
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912224"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623883"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar o AWS ao Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece instruções para conectar sua conta do Amazon Web Services (AWS) existente para Microsoft Cloud App Security usando as APIs do conector. Para obter informações sobre como Cloud App Security protege o AWS, consulte [proteger o AWS](protect-aws.md).
 
@@ -35,6 +35,10 @@ Você pode conectar um ou ambos os AWS a seguir para Cloud App Security conexõe
 Como você pode adicionar uma ou ambas as conexões, as etapas neste artigo são escritas como instruções independentes. Se você já tiver adicionado uma das conexões, quando relevante, edite as configurações existentes.
 
 ## <a name="how-to-connect-aws-security-auditing-to-cloud-app-security"></a>Como conectar a auditoria de segurança do AWS ao Cloud App Security
+
+Use as etapas a seguir para configurar a auditoria do AWS e, em seguida, conectá-la ao Cloud App Security.
+
+### <a name="step-1-configure-amazon-web-services-auditing"></a>Etapa 1: configurar a auditoria de Amazon Web Services
 
 1. No [console do Amazon Web Services](https://console.aws.amazon.com/), em **segurança, identidade & conformidade**, clique em **iam**.
 
@@ -81,7 +85,7 @@ Como você pode adicionar uma ou ambas as conexões, as etapas neste artigo são
 
      ![Código AWS](media/aws-code.png "Código AWS")
 
-1. Clique em **Examinar política**.
+1. Clique em **Revisar política**.
 
 1. Forneça um **Nome** e clique em **Criar política**.
 
@@ -114,6 +118,8 @@ Como você pode adicionar uma ou ambas as conexões, as etapas neste artigo são
     > [!NOTE]
     > Depois de conectar o AWS, você receberá eventos por sete dias antes da conexão. Se você acabou de habilitar CloudTrail, receberá eventos a partir do momento em que habilitou o CloudTrail.
 
+### <a name="step-2-connect-amazon-web-services-auditing-to-cloud-app-security"></a>Etapa 2: conectar Amazon Web Services auditoria ao Cloud App Security
+
 1. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.
 
 1. Na página **conectores de aplicativos** , para fornecer as credenciais do conector AWS, siga um destes procedimentos:
@@ -126,7 +132,7 @@ Como você pode adicionar uma ou ambas as conexões, as etapas neste artigo são
 
     1. No pop-up, forneça um nome para o conector e clique em **conectar Amazon Web Services**.
 
-        ![Nome do conector do AWS](media/aws-connect-name.png)
+        ![Nome do conector do AWS](media/connect-aws-name.png)
 
     1. Na página conectar o Amazon Web Services, selecione **auditoria de segurança**, Cole a **chave de acesso** e a **chave secreta** do arquivo. csv nos campos relevantes e clique em **conectar**.
 
@@ -142,9 +148,9 @@ Como você pode adicionar uma ou ambas as conexões, as etapas neste artigo são
 
         ![Conectar a auditoria do AWS app Security](media/aws-connect-app-edit-audit-creds.png "Conectar a auditoria do AWS app Security")
 
-1. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.  
+1. Clique em **testar API** para ter certeza de que a conexão foi bem-sucedida.
 
-    O teste pode levar alguns minutos. Quando ele for concluído, você receberá uma notificação de Êxito ou Falha. Depois de receber uma notificação de êxito, clique em **Concluído**.
+    O teste pode levar alguns minutos. Quando tiver terminado, você receberá uma notificação de êxito ou falha. Depois de receber uma notificação de êxito, clique em **Concluído**.
 
 ## <a name="how-to-connect-aws-security-configuration-to-cloud-app-security"></a>Como conectar a configuração de segurança do AWS ao Cloud App Security
 
@@ -178,7 +184,9 @@ Antes de poder conectar a configuração de segurança do AWS, verifique se voc�
 > [!NOTE]
 > Se você estiver usando uma [conta mestre do AWS](https://aws.amazon.com/security-hub/faqs/), use as etapas a seguir para conectar-se à conta mestre. Conectar sua conta mestra permite que você receba recomendações para todas as contas de membro em todas as regiões.
 
-1. Siga o *How to Connect AWS Security Auditing* Steps to Get to The [Permissions](#set-permissions)   Page.
+### <a name="step-1-configure-amazon-web-services-security-configuration"></a>Etapa 1: configurar Amazon Web Services configuração de segurança
+
+1. Siga o *How to Connect AWS Security Auditing* Steps to Get to the [Permissions](#set-permissions) Page.
 
 1. Na página permissões, clique em **anexar políticas existentes diretamente**, aplique as políticas **AWSSecurityHubReadOnlyAccess** e **SecurityAudit** e clique em **próximas marcas**.
 
@@ -201,37 +209,29 @@ Antes de poder conectar a configuração de segurança do AWS, verifique se voc�
 
     ![Baixar CSV no AWS](media/aws-download-csv.png "Baixar CSV no AWS")
 
-1. No portal do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.
+### <a name="step-2-connect-amazon-web-services-security-configuration-to-cloud-app-security"></a>Etapa 2: conectar Amazon Web Services configuração de segurança ao Cloud App Security
 
-1. Na página **conectores de aplicativos** , para fornecer as credenciais do conector AWS, siga um destes procedimentos:
+1. Em Cloud App Security, clique em **investigar**e, em seguida, selecione **aplicativos conectados**.
 
-    **Para um novo conector**
+1. Na guia **aplicativos de configuração de segurança** , clique no botão de adição e, em seguida, selecione **Amazon Web Services**.
 
-    1. Clique no sinal de adição seguido por **Amazon Web Services**.<br />
+    ![conectar AWS](media/connect-aws-security-configuration.png)
 
-        ![conectar AWS](media/connect-aws.png "conectar AWS")
+1. Na página **nome da instância** , escolha o tipo de instância e clique em **Avançar**.
 
-    1. No pop-up, forneça um nome para o conector e clique em **conectar Amazon Web Services**.
+    - Para um conector existente, escolha a instância relevante.
+
+        ![Seleção de instância de AWS](media/connect-aws-existing-instance.png)
+
+    - Para um novo conector, forneça um nome para a instância.
 
         ![Nome do conector do AWS](media/aws-connect-name.png)
 
-    1. Na página conectar o Amazon Web Services, selecione **configuração de segurança**, Cole **a chave de acesso** e a **chave secreta** do arquivo. csv nos campos relevantes e clique em **conectar**.
+1. Na página **detalhes da conta** , Cole a **chave de acesso** e a **chave secreta** do arquivo. csv nos campos relevantes e clique em **Avançar**.
 
-        ![Conectar a configuração do AWS app Security](media/aws-connect-app-config.png "Conectar a configuração do AWS app Security")
+    ![Detalhes da conta do AWS Connect](media/aws-connect-account-details.png)
 
-    **Para um conector existente**
-
-    1. Na lista de conectores, na linha na qual o conector AWS aparece, clique em **conectar configuração de segurança**.
-
-        ![Captura de tela da página aplicativos conectados, mostrando o link Editar configuração de segurança](media/aws-connect-app-edit-config.png)
-
-    1. Na página conectar Amazon Web Services, Cole a **chave de acesso** e a **chave secreta** do arquivo. csv nos campos relevantes e clique em **conectar**.
-
-        ![Conectar a configuração do AWS app Security](media/aws-connect-app-edit-config-creds.png "Conectar a configuração do AWS app Security")
-
-1. Certifique-se de que a conexão foi bem-sucedida clicando em **Testar API**.  
-
-    O teste pode levar alguns minutos. Quando ele for concluído, você receberá uma notificação de Êxito ou Falha. Depois de receber uma notificação de êxito, clique em **Concluído**.
+1. Na página **concluído** , verifique se a conexão foi bem-sucedida e clique em **concluído**.
 
 Se você tiver problemas para conectar o aplicativo, consulte [Solucionando problemas de conectores de aplicativos](troubleshooting-api-connectors-using-error-messages.md).
 

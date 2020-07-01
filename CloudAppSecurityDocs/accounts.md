@@ -1,5 +1,5 @@
 ---
-title: Visibilidade das contas de aplicativos na nuvem – Cloud App Security | Microsoft Docs
+title: Visibilidade das contas de aplicativo de nuvem-Cloud App Security
 description: Este artigo fornece informações sobre como examinar as contas de seus aplicativos conectados.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5a32b56b0ad310f5c7572f8113e4a9a33b722059
-ms.sourcegitcommit: d72c768e9a5fe087995ab1185ca33ef68168bee6
+ms.openlocfilehash: b9cde676dad0b86633124d1f485c1f2276cbb208
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83704276"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624436"
 ---
 # <a name="accounts"></a>Contas
 

@@ -1,11 +1,11 @@
 ---
-title: Ações de governança para controlar aplicativos conectados – Cloud App Security | Microsoft Docs
+title: Ações de governança para controlar aplicativos conectados-Cloud App Security
 description: Este artigo lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security e as mensagens de log que as rastreiam.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/03/2019
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 628e34d5ac13af3d99e2b92d33b3e7c3f8d63aec
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 14ef18bb57d979dc5ddabc3ef8a7ff0c724ff619
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662298"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624566"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
@@ -46,7 +46,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
 - **Ações de governança em aplicativos** – ações granulares podem ser impostas por aplicativo, ações específicas variam dependendo da terminologia do aplicativo.
 
-  - **Rotulação**
+  - **Rotulagem**
     - **Aplicar rótulo** – Capacidade de adicionar um rótulo de classificação da Proteção de Informações do Azure.
     - **Remover rótulo** – Capacidade de remover um rótulo de classificação da Proteção de Informações do Azure.
   - **Alterar compartilhamento**
@@ -117,7 +117,7 @@ Após a criação de várias políticas, pode surgir uma situação na qual as a
 
 O log de governança fornece um registro de status de cada tarefa que você definir no Cloud App Security para execução, incluindo tarefas manuais e automáticas. Essas tarefas incluem aquelas definidas em políticas, as ações de governança definidas em arquivos e usuários e qualquer outra ação definida para execução no Cloud App Security. O Log de governança também fornece informações sobre o êxito ou falha dessas ações. Você pode optar por repetir ou reverter algumas das ações de governança do log de governança.
 
-Para exibir o log de governança, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações") e selecione **log de governança**.
+Para exibir o log de governança, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações") e selecione **log de governança**.
 
 A tabela a seguir é a lista completa de ações que o portal do Cloud App Security permite que você execute. Essas ações são habilitadas em vários locais por todo o console, conforme descrito na coluna **Localização**. Cada ação de governança realizada é relacionada no Log de Governança.
 Para obter informações sobre como as ações de governança são tratadas quando há conflitos de política, consulte [Conflitos de política](control-cloud-apps-with-policies.md).
@@ -135,7 +135,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Cancelar veto de aplicativo| No Google e no Salesforce: remove o veto do aplicativo e permite que os usuários concedam permissões ao aplicativo de terceiros com suas contas do Google ou do Salesforce. No Office 365: restaura as permissões do aplicativo de terceiros para o Office. |G Suite, Salesforce, Office |
 |Painel do aplicativo > Permissões de aplicativo |Permissões| Desabilitar permissões de aplicativo | Revoga as permissões de um aplicativo de terceiros para o Google, o Salesforce ou o Office. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras.|G Suite, Salesforce, Office |
 |Painel do aplicativo > Permissões de aplicativo |Permissões| Habilitar permissões de aplicativo |Concede as permissões de um aplicativo de terceiros para o Google, o Salesforce ou o Office. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras.|G Suite, Salesforce, Office |
-|Painel do aplicativo > Permissões de aplicativo |Permissões| Vetar aplicativo | No Google e Salesforce: revoga as permissões de um aplicativo de terceiros para o Google ou Salesforce e impede que ele receba permissões no futuro. No Office 365: não concede a permissão de aplicativos de terceiros para acessar o Office, mas não os revoga. |G Suite, Salesforce, Office |
+|Painel do aplicativo > Permissões de aplicativo |Permissões| Vetar aplicativo | No Google e Salesforce: revoga as permissões de um aplicativo de terceiros para o Google ou Salesforce e impede que ele receba permissões no futuro. No Office 365: o não permite a permissão de aplicativos de terceiros para acessar o Office, mas não os revoga. |G Suite, Salesforce, Office |
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Revogar o aplicativo|Revogue as permissões de um aplicativo de terceiros para o Google ou Salesforce. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras. | G Suite, Salesforce|
 |Painel do aplicativo > Permissões de aplicativo | Conta | Revogar o usuário do aplicativo|Você pode revogar usuários específicos ao clicar no número em Usuários. A tela exibirá os usuários específicos e você poderá usar o X para excluir permissões para qualquer usuário.| G Suite, Salesforce|
 |Descobrir > Aplicativos descobertos/Endereços IP/Usuários| Cloud Discovery | Exportar dados de descoberta | Cria um CSV dos dados de descoberta. | Descoberta |
@@ -151,7 +151,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Política de arquivos, Política de atividade, Alertas | Aplicativo |Exigir que os usuários entrem novamente| Você pode exigir que os usuários entrem novamente no Office 365 e em todos os aplicativos do Azure AD como uma correção rápida e eficaz para alertas de atividade do usuário suspeita e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário. | Office 365, Azure AD |
 |Arquivos |Arquivo |Restaurar da quarentena do usuário |Restaura um usuário de ser colocado em quarentena. |Box |
 |Arquivos |Arquivo | Conceder permissões de leitura para mim| Concede permissões de leitura do arquivo para você mesmo, de forma que você possa acessar o arquivo e entender se ele tem uma violação ou não.| G Suite|
-|Arquivos |Arquivo | Permitir que os editores compartilhem | No Google Drive, a permissão de editor padrão de um arquivo permite o compartilhamento também. Esta ação de governança é o oposto da ação Remover a capacidade do editor de compartilhar, e permite que o editor compartilhe o arquivo. | G Suite|
+|Arquivos |Arquivo | Permitir que os editores compartilhem | No Google Drive, a permissão de editor padrão de um arquivo permite o compartilhamento também. Essa ação de governança é o oposto da capacidade de remover o editor de compartilhar e permite que o editor Compartilhe o arquivo. | G Suite|
 |Arquivos |Arquivo | Proteger | Proteja um arquivo com a Proteção de Informações do Azure aplicando um modelo da organização. | Office 365 (SharePoint e OneDrive) |
 |Arquivos |Arquivo | Revogar formulário de permissões de leitura para mim | Revoga permissões de leitura do arquivo para você mesmo, útil após conceder permissão a si próprio para entender se um arquivo tem uma violação ou não.| G Suite|
 |Arquivos, Política de arquivo|Arquivo | Transferir a propriedade do arquivo | Altera o proprietário - na política em que você escolher um proprietário específico. | G Suite|

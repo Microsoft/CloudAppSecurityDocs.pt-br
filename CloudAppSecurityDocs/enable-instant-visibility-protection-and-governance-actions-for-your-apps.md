@@ -1,11 +1,11 @@
 ---
-title: Conectar aplicativos para obter visibilidade e controle – Cloud App Security | Microsoft Docs
+title: Conecte os aplicativos para obter visibilidade e controle Cloud App Security
 description: Este artigo descreve o processo para conexão de aplicativos com conectores de API aos aplicativos na nuvem de sua organização.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c12226c36cba270ad5b54ffdb76cb8b228c2480
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 5c48fff030c1f008d9361796eafe4ba49b8b0b82
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83854179"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624545"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -73,15 +73,15 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 | **Listar privilégios** | | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
 | **Governança de usuário** | | ✔ | Em breve | Conexão do pacote G do assunto | ✔ | ✔ | | Em breve | ✔ | Em breve | Sem suporte pelo provedor |
 | **Atividade de logon** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Atividade do usuário** | Não aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
+| **Atividade do usuário** | Não Aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
 | **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação periódica** | | ✔ | Em breve | Não aplicável | ✔ | ✔ | Não aplicável | | | | Sem suporte pelo provedor |
-| **DLP – verificação quase em tempo real** | | ✔ | ✔ | Não aplicável | ✔-requer o Google Business Enterprise | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | Não aplicável | | ✔ | Sem suporte pelo provedor |
-| **Governança de arquivos** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | | Sem suporte pelo provedor |
-| **Exibir permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Chegando em | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
-| **Revogar permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Ming em breve | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
-| **Aplique os rótulos da Proteção de Informações do Azure** | Não aplicável | ✔ | | Não aplicável | ✔ | ✔ | Não aplicável | | | Não aplicável | Não aplicável |
+| **DLP – verificação periódica** | | ✔ | Em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | | | Sem suporte pelo provedor |
+| **DLP – verificação quase em tempo real** | | ✔ | ✔ | Não Aplicável | ✔-requer o Google Business Enterprise | ✔ | Não Aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não aplicável | Não aplicável | | ✔ | Sem suporte pelo provedor |
+| **Governança de arquivos** | ✔ | ✔ | ✔ | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | | Sem suporte pelo provedor |
+| **Exibir permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Chegando em | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não aplicável | Não aplicável |
+| **Revogar permissões de aplicativo** | Não Aplicável | Sem suporte pelo provedor | Ming em breve | Não Aplicável | ✔ | ✔ | Não Aplicável | | ✔ | Não aplicável | Não aplicável |
+| **Aplique os rótulos da Proteção de Informações do Azure** | Não Aplicável | ✔ | | Não Aplicável | ✔ | ✔ | Não aplicável | | | Não aplicável | Não aplicável |
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -100,6 +100,7 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 | AWS | | Usuário recém-criado |
 | Box | Enterprise | É altamente recomendável que você se conecte ao box como um administrador. Conectar-se como um coadministrador resultará em apenas visibilidade parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
 | Dropbox | Business/Enterprise | Admin |
+| GitHub | Nuvem empresarial do GitHub | Proprietário |
 | GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
@@ -114,6 +115,15 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do **emparelhamento público** do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
 Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
 
+## <a name="disable-app-connectors"></a>Desabilitar conectores de aplicativos
+
+Para desabilitar aplicativos conectados:
+
+1. Na página **aplicativos conectados** , na linha relevante, clique nos três pontos e selecione **desabilitar conector de aplicativo**.
+1. No pop-up, clique em **desabilitar instância do conector de aplicativo** para confirmar a ação.
+
+Uma vez desabilitada, a instância do conector interromperá o consumo de dados do conector.
+
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
@@ -124,4 +134,4 @@ Para obter mais informações sobre o emparelhamento público, consulte [Circuit
 ## <a name="check-out-this-video"></a>Confira este vídeo!
 
 > [!div class="nextstepaction"]
-> [Microsoft Cloud App Security – API REST e Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [Microsoft Cloud App Security – APIs REST e tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

@@ -1,5 +1,5 @@
 ---
-title: Políticas de Cloud Discovery – Cloud App Security | Microsoft Docs
+title: Políticas de Cloud Discovery – Cloud App Security
 description: Este artigo descreve as etapas para configurar muitas políticas de Cloud Discovery no Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,22 +9,22 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 58208567133bf9c8257e456a415c60ab3dacee0b
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f76e77edff81d8104ecafa3ba03d146400a86dea
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719197"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624916"
 ---
-# <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
+# <a name="cloud-discovery-policies"></a>Políticas do Cloud Discovery
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece uma visão geral de como começar a usar o Cloud App Security para obter visibilidade em sua organização em Shadow IT usando Cloud Discovery.
 
 Cloud App Security permite que você descubra e analise aplicativos de nuvem que estão em uso no ambiente da sua organização. O painel de Cloud Discovery mostra todos os aplicativos de nuvem em execução no ambiente e os categoriza por função e preparação para a empresa. Para cada aplicativo, descubra os usuários associados, os endereços IP, os computadores, as transações e realiza a avaliação de risco sem a necessidade de instalar um agente em seus dispositivos de ponto de extremidade.
 
-## Detectar novo uso de aplicativo de alto volume ou amplo<a name= "detect-volume"></a>
+## <a name="detect-new-high-volume-or-wide-app-use"></a>Detectar novo uso de aplicativo de alto volume ou amplo<a name= "detect-volume"></a>
 
 Detecte novos aplicativos que são altamente usados, em termos de número de usuários ou quantidade de tráfego em sua organização.
 

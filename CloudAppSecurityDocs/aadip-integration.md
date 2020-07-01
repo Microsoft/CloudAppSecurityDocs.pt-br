@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f5603102aa393c676b82fc179094526933e93f68
-ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
+ms.openlocfilehash: 5af7efa448e7d93902e9d8845dd97479b7c53df7
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295777"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624385"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Integração do Azure Active Directory Identity Protection
 
@@ -27,11 +27,11 @@ ms.locfileid: "80295777"
 
 O Microsoft Cloud App Security integra-se com o Azure Active Directory Identity Protection (proteção de identidade) para fornecer UEBA (análise comportamental de entidade de usuário) em um ambiente híbrido. Para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pela proteção de identidade, consulte [o que é a proteção de identidade?](/azure/active-directory/identity-protection/overview-identity-protection).
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 - Uma conta de administrador Cloud App Security para habilitar a integração entre o Identity Protection e o Cloud App Security.
 
-## <a name="enable-identity-protection"></a>Habilitar a proteção de identidade
+## <a name="enable-identity-protection"></a>Habilitar o Identity Protection
 
 > [!NOTE]
 > O recurso de proteção de identidade é habilitado por padrão. No entanto, se o recurso foi desabilitado, você pode usar estas etapas para habilitá-lo.
@@ -40,7 +40,7 @@ Para habilitar a integração de Cloud App Security com a proteção de identida
 
 1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**.
 
-    ![Menu configurações](media/azip-system-settings.png)
+    ![Menu Configurações](media/azip-system-settings.png)
 
 1. Em **proteção contra ameaças**, selecione **Azure ad Identity Protection**.
 
@@ -69,12 +69,16 @@ As políticas de proteção de identidade podem ser ajustadas para a necessidade
 
 As seguintes políticas estão disponíveis:
 
-|Política|Descrição|Estado padrão|Severidade padrão|
+|Política|Descrição|Estado padrão|Gravidade padrão|
 |---|---|---|---|
-|Credenciais vazadas|Mostra alertas de credenciais vazadas, as credenciais válidas do usuário foram vazadas|Habilitado|Todos os alertas de recebimento baixo|
-|Entrada arriscada|Agrega várias detecções de entrada arriscadas, entradas que não foram executadas pelo usuário|Habilitado|Alto-receber alertas de alta severidade|
+|Credenciais vazadas|Mostra alertas de credenciais vazadas, as credenciais válidas do usuário foram vazadas|habilitado|Todos os alertas de recebimento baixo|
+|Entrada arriscada|Agrega várias detecções de entrada arriscadas, entradas que não foram executadas pelo usuário|habilitado|Alto-receber alertas de alta severidade|
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="remediating-risky-users"></a>Corrigindo usuários arriscados
+
+As políticas de proteção de identidade podem ser usadas para corrigir automaticamente os usuários arriscados definindo o nível de risco do usuário como alto. Quando um usuário é definido como alto, o algoritmo avançado de análise de risco do usuário leva em consideração o novo status do usuário, bem como o status de *Gerenciamento do dispositivo do computador* . Isso faz com que as ações de política relevantes definidas no Azure AD sejam impostas, como redefinir a senha do usuário, exigir autenticação MFA ou forçar o usuário a usar um dispositivo gerenciado. Para obter mais informações, consulte [como o AD do Azure usa meus comentários de risco](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback) e [ações de governança](accounts.md#governance-actions).
+
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)

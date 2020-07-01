@@ -1,5 +1,5 @@
 ---
-title: Controlar quais aplicativos OAuth na nuvem de terceiros recebem permissões – Cloud App Security | Microsoft Docs
+title: Controlar quais aplicativos OAuth de nuvem de terceiros obtêm permissões-Cloud App Security
 description: Este artigo fornece informações sobre como você pode controlar, vetar e autorizar permissões de aplicativos OAuth de terceiros.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 62968b15a69ec67a828c3512fe9718b2a48cc25e
-ms.sourcegitcommit: 9538de5f3034a65626710648d22e2e186d77041a
+ms.openlocfilehash: 084491b7c74019d2145439f66ce5a90482091ed9
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507161"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624652"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
@@ -53,7 +53,7 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 |Estado do aplicativo|Um administrador pode marcar um aplicativo como aprovado, vetado ou deixar como indeterminado.|Office 365, G Suite, Salesforce|
 |Uso da comunidade|Mostra quão popular o aplicativo é entre todos os seus usuários (comum, incomum, raro)|Office 365, G Suite, Salesforce|
 |Última autorização|A data mais recente em que um usuário concedeu permissões para este aplicativo.|Office 365, Salesforce|
-|Publicador|O nome do fornecedor que oferece o aplicativo.|Office 365|
+|Publisher|O nome do fornecedor que oferece o aplicativo.|Office 365|
 |Usado pela última vez|A data mais recente em que este aplicativo foi usado por alguém em sua organização.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Vetar ou aprovar um aplicativo
@@ -107,7 +107,7 @@ Para exportar o log, execute as seguintes etapas:
 
 1. Na página **aplicativos OAuth** , na linha em que o aplicativo relevante aparece, em **autorizado por**, clique no link mostrando o número de usuários que autorizaram o aplicativo.
 
-1. Na janela pop-up, clique em **Exportar**.
+1. No pop-up, clique em **Exportar**.
 
     ![Captura de tela mostrando a exportação da auditoria de aplicativo OAuth](media/oauth-export-users.png)
 

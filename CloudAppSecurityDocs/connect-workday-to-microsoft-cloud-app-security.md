@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/31/2019
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 652ab059cef9c911af4dc58a7cb4b79c679aed30
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 0229d6ea079be49b9273840e628e1104c7dda53d
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83854262"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623300"
 ---
-# <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conectar o workday ao Microsoft Cloud App Security (versão prévia)
+# <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -43,8 +43,8 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 | --- | --- | --- | --- | --- |
 | Sistema | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
 | Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
-| Sistema | Auditoria do sistema | | Visualizar | Obter |
-| Pessoal | Dados de trabalho: pessoal | Dados de trabalho: Relatórios de trabalho público | Visualizar | Obter |
+| Sistema | Auditoria do sistema | | Exibir | Obter |
+| Pessoal | Dados de trabalho: pessoal | Dados do Trabalhador: Relatórios do Trabalhador Público | Exibir | Obter |
 
 > [!NOTE]
 >
@@ -74,7 +74,7 @@ Para obter mais informações sobre como configurar usuários de integração do
     | Tipo de concessão de cliente | Concessão de código de autorização |
     | Tipo de token de acesso | Portador |
     | URI de redirecionamento | `https://portal.cloudappsecurity.com/api/oauth/connect` |
-    | Tokens de atualização sem expiração | Yes |
+    | Tokens de atualização sem expiração | Sim |
     | Escopos OAuth2 | **Equipe** e **sistema** |
     | Escopo (áreas funcionais) | **Equipe** e **sistema** |
 
@@ -104,7 +104,7 @@ Para obter mais informações sobre como configurar usuários de integração do
 
     ![Captura de tela de preenchimento de detalhes do aplicativo](media/connect-workday-add-app-connect-details.png)
 
-1. No workday, um pop-up perguntará se você deseja permitir Cloud App Security acesso à sua conta do workday. Para continuar, clique em **Permitir**.
+1. No workday, um pop-up é exibido perguntando se você deseja permitir Cloud App Security acesso à sua conta do workday. Para continuar, clique em **Permitir**.
 
     ![Captura de tela da autorização do acesso ao aplicativo](media/connect-workday-add-app-allow.png)
 

@@ -1,11 +1,11 @@
 ---
-title: Criar políticas em aplicativos do Cloud Discovery – Cloud App Security | Microsoft Docs
+title: Criar políticas em aplicativos Cloud Discovery-Cloud App Security
 description: Este artigo fornece informações sobre como trabalhar com políticas do Cloud Discovery.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 72df9c27cd27fea1f35a67eb7ca3ab56209c6992
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 4434bd5faf1ab8aa30391d3434df71e6db557096
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477524"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623326"
 ---
-# <a name="cloud-discovery-policies"></a>Políticas de Cloud Discovery
+# <a name="cloud-discovery-policies"></a>Políticas do Cloud Discovery
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -59,12 +59,14 @@ As políticas de descoberta permitem que você defina alertas que notificam quan
 
 9. Clique em **Criar**.
 
+> [!NOTE]
+> Políticas de descoberta recém-criadas (ou políticas com relatórios contínuos atualizados) disparam um alerta uma vez em 90 dias por aplicativo por relatório contínuo, independentemente de haver alertas existentes para o mesmo aplicativo. Portanto, por exemplo, se você criar uma política para descobrir novos aplicativos populares, ele poderá disparar alertas adicionais para aplicativos que já foram descobertos e alertados.
+
 Por exemplo, se você estiver interessado em descobrir aplicativos de hospedagem arriscados encontrados em seu ambiente de nuvem, defina sua política da seguinte maneira:
 
 Defina os filtros de política para descobrir todos os serviços encontrados na categoria **serviços de hospedagem** que têm uma pontuação de risco igual a 1, indicando que eles são altamente arriscados.
 
- Defina os limites que devem disparar um alerta para um determinado aplicativo descoberto na parte inferior. Por exemplo, alertar apenas se mais de 100 usuários no ambiente usaram o aplicativo e se eles baixaram uma determinada quantidade de dados do serviço.
-Além disso, você pode definir o limite de alertas diários que deseja receber.
+Defina os limites que devem disparar um alerta para um determinado aplicativo descoberto na parte inferior. Por exemplo, alertar apenas se mais de 100 usuários no ambiente usaram o aplicativo e se eles baixaram uma determinada quantidade de dados do serviço. Além disso, você pode definir o limite de alertas diários que deseja receber.
 
 ![exemplo de política de descoberta de aplicativo](media/app-discovery-policy-example.png "exemplo de política de descoberta de aplicativo")
 

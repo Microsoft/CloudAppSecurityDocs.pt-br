@@ -1,5 +1,5 @@
 ---
-title: Visão geral do cenário de proteção contra ameaças – Cloud App Security | Microsoft Docs
+title: Visão geral do cenário de proteção contra ameaças-Cloud App Security
 description: Este tópico descreve o cenário para proteger sua organização contra ameaças em seu ambiente de nuvem.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 36cab094e0bd971ef9d36b0c9d7d3528a686e3da
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: d5080886b2b21c345b7ec65c3874ec0a3192b4fc
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720483"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624789"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protegendo sua organização contra ransonware
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 No último grande ataque de ransomware, WannaCry atingiu o mundo cibernético com grande força, infectando uma estimativa de 200 mil computadores em 150 países. Com o aumento de ataques de ransomware nos últimos anos, uma média de 25 mil ataques por mês em 2015 e 56 mil em 2016, ser proativo em relação à garantia de que sua rede não esteja em risco está se tornando uma necessidade de segurança cibernética. Este artigo explica como você pode usar o Cloud App Security para monitorar sua nuvem, detectar e atenuar ameaças e aplicar as melhores práticas para proteger seu ambiente contra ransomware.
 
@@ -44,11 +44,11 @@ Detecte potencial ransomware em seu ambiente de nuvem ao criar uma política par
 
 ## <a name="out-of-the-box-protection"></a>Proteção pronta para uso
 
-[Conecte](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md), pelo menos, um aplicativo na nuvem (Office 365, G Suite, Box e Dropbox) ao Cloud App Security.
+[Conecte](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) pelo menos um aplicativo de nuvem (Office 365, G Suite, Box e Dropbox) para Cloud app Security.
 
 1. Por padrão, o Cloud App Security examina sua rede para estabelecer uma linha de base, na qual aprende padrões sobre o que seus usuários costumam fazer na nuvem, quando o fazem e o que fazem normalmente.
 
-2. As [políticas de detecção de ameaças](anomaly-detection-policy.md) automatizadas do Cloud App Security iniciam a execução em segundo plano no momento em que você se conecta. Uma dessas políticas procura atividade de ransomware para garantir uma cobertura abrangente contra ataques de ransomware sofisticados. Usando nossa experiência com pesquisa de segurança para identificar padrões de comportamentos que refletem a atividade de ransomware, o Cloud App Security garante a proteção holística e robusta. Por exemplo, se o Cloud App Security identificar uma taxa alta de uploads de arquivos ou atividades de exclusão de arquivo, isso poderá representar um processo de criptografia adverso. Esses dados são coletados nos logs recebidos de APIs conectadas e são combinados com padrões comportamentais aprendidos e inteligência contra ameaças, por exemplo, extensões de ransomware conhecidas.
+2. As [políticas de detecção de ameaças](anomaly-detection-policy.md) automatizadas do Cloud App Security iniciam a execução em segundo plano no momento em que você se conecta. Uma dessas políticas procura atividade de ransomware para garantir uma cobertura abrangente contra ataques de ransomware sofisticados. Usando nossa experiência de pesquisa de segurança para identificar os padrões comportamentais que refletem a atividade de ransomware, o Cloud App Security garante uma proteção holística e robusta. Por exemplo, se o Cloud App Security identificar uma taxa alta de uploads de arquivos ou atividades de exclusão de arquivo, isso poderá representar um processo de criptografia adverso. Esses dados são coletados nos logs recebidos de APIs conectadas e são combinados com padrões comportamentais aprendidos e inteligência contra ameaças, por exemplo, extensões de ransomware conhecidas.
 
 ## <a name="next-steps"></a>Próximas etapas
 

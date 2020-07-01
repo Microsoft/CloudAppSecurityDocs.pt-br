@@ -1,5 +1,5 @@
 ---
-title: Monitorar e proteger arquivos em aplicativos na nuvem – Cloud App Security | Microsoft Docs
+title: Monitorar e proteger arquivos em aplicativos de nuvem – Cloud App Security
 description: Este artigo descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e os arquivos em uso nos aplicativos na nuvem de sua organização.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 345f3bea6e204598a3ce4af7c06d7c1540fec032
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 317595b377d19b1d6f9a06b316cb14e4d1ad4c1c
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241458"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624588"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 
@@ -75,7 +75,7 @@ Para criar uma nova política de arquivos, siga este procedimento:
 
 1. **Crie um filtro para os arquivos em que esta política atuará** para definir quais aplicativos descobertos disparam essa política. Restrinja os filtros de política até chegar ao conjunto mais preciso de arquivos nos quais você deseja agir. Seja o mais restritivo possível para evitar falsos positivos. Por exemplo, se você quiser remover permissões públicas, lembre-se de adicionar o filtro **público** , se desejar remover um usuário externo, use o filtro "externo", etc.
    > [!NOTE]
-   > Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se você Pesquisar **malware. exe**, encontrará todos os arquivos com malware ou exe em seu nome de arquivo, enquanto se procurar por **"malware. exe"** (com as aspas), você encontrará apenas os arquivos que contêm exatamente "malware. exe". **É igual a** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt.
+   > Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se você Pesquisar **malware.exe**, encontrará todos os arquivos com malware ou exe em seu nome de arquivo, enquanto se procurar por **"malware.exe"** (com as aspas), você encontrará apenas os arquivos que contêm exatamente "malware.exe". **É igual a** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar **malware.exe**, ele localizará malware.exe, mas não malware.exe.txt.
 1. No primeiro filtro **Aplicar a**, selecione **todos os arquivos, excluindo pastas selecionadas** ou **pastas selecionadas** para Box, SharePoint, Dropbox, OneDrive, em que você pode aplicar a política a todas as políticas de arquivos a todos os arquivos no aplicativo ou a pastas específicas. Você é redirecionado a entrar no aplicativo de nuvem e, em seguida, adicionar as pastas relevantes.
 
 1. No segundo filtro **Aplicar a**, selecione **todos os proprietários de arquivos**, **proprietários de arquivo de grupos de usuários selecionados** ou **todos os proprietários de arquivos, excluindo grupos selecionados**. Em seguida, selecione os grupos de usuários relevantes para determinar quais usuários e grupos devem ser incluídos na política.

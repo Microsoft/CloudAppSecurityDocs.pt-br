@@ -1,5 +1,5 @@
 ---
-title: Usar dados do Cloud Discovery para detectar comportamento de risco – Cloud App Security | Microsoft Docs
+title: Usar dados de Cloud Discovery para detectar comportamento arriscado – Cloud App Security
 description: Este tópico fornece instruções sobre como trabalhar com os dados do Cloud Discovery, incluindo trabalhar com a pontuação de risco do aplicativo.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6e58d3a621f6384fcc011aeb293e01472ee082cc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 05af62c1754484572ff36510aedca113cdae8d5e
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721176"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624720"
 ---
 # <a name="working-with-discovery-data"></a>Trabalhando com os dados de descoberta
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O painel do Cloud Discovery foi projetado para fornecer mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização. Ele fornece uma visão geral rápida de quais tipos de aplicativos estão sendo usados, os alertas abertos e os níveis de risco dos aplicativos na sua organização. Ele também mostra quem são os principais usuários do aplicativo e fornece um mapa do local da Matriz de Aplicativo. O Painel do Cloud Discovery tem muitas opções para filtrar os dados. A filtragem permite que você gere exibições específicas dependendo do que você está mais interessado usando gráficos de fácil compreensão para apresentar o panorama completo em uma visão geral.
 
@@ -77,7 +77,7 @@ Para criar um novo relatório contínuo:
 
 5. Selecione as fontes de dados que você deseja incluir.
 
-6. Defina os filtros que você deseja nos dados. Esses filtros podem ser **Grupos de usuários**, **Marcas de endereço IP** ou **Intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).
+6. Defina os filtros que você deseja nos dados. Esses filtros podem ser **grupos de usuários**, **marcas de endereço IP**ou **intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).
 
     ![criar relatório contínuo personalizado](media/create-custom-continuous-report.png)
 
@@ -102,7 +102,7 @@ Para excluir os dados do Cloud Discovery:
 
     É importante ter certeza de que deseja excluir os dados antes de continuar. Isso não poderá ser desfeito e excluirá **todos** os dados do Cloud Discovery no sistema.
 
-3. Clique no botão **Excluir**.
+3. Clique no botão **Excluir** .
 
     ![excluir dados](media/delete-data.png "excluir dados")
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85cf523e8cc733156c2365da114cc893b022e1e3
-ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
+ms.openlocfilehash: d5ebc12c77fa8e2a9b3b1ccb006493a02771c296
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84801143"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624349"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -116,6 +116,11 @@ A detecção procura usuários cuja conta foi encerrada no Azure AD, mas ainda e
 ### <a name="suspicious-email-deletion-activity-preview"></a>Atividade de exclusão de email suspeito (versão prévia)
 
 * Essa política faz o perfil do seu ambiente e dispara alertas quando um usuário executa atividades suspeitas de exclusão de email em uma única sessão. Essa política pode indicar que as caixas de correio de um usuário podem ser comprometidas por possíveis vetores de ataque, como a comunicação de comando e controle (C&C/C2) por email.
+
+> [!NOTE]
+> O Cloud App Security integra-se ao Office ATP (proteção avançada contra ameaças do Office) para fornecer proteção para o Exchange Online, incluindo a URL denotação, a proteção contra malware e muito mais. Quando o Office ATP estiver habilitado, você começará a ver alertas no log de atividades do Cloud App Security.
+
+<!-- // MATP? Delay tile start appearing? -->
 
 ### <a name="unusual-activities-by-user"></a>Atividades incomuns (por usuário)
 

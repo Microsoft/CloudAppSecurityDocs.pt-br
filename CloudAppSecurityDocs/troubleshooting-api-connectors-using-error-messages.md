@@ -1,5 +1,5 @@
 ---
-title: Solução de problemas de mensagens de erro do Conector de aplicativos – Cloud App Security | Microsoft Docs
+title: Solucionar problemas de mensagens de erro do conector de aplicativo-Cloud App Security
 description: Este artigo apresenta uma lista de mensagens de erro do conector do Aplicativo de API, além das recomendações de resolução para cada uma.
 keywords: ''
 author: shsagir
@@ -14,35 +14,35 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01cc9153a2d93a9a565750e1d0c6d41b2f72163f
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: 136950e683308bbea34a259477036ec0cfbbea72
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912051"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624856"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo apresenta uma lista de mensagens de erro do conector do Aplicativo de API, além das recomendações de resolução para cada erro.
 
-## <a name="troubleshooting"></a>Solução de Problemas
+## <a name="troubleshooting"></a>Solução de problemas
 
 Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do conector de aplicativos após a tentativa de conectar um aplicativo de nuvem usando o conector de aplicativos de API.
 
 > [!div class="mx-tableFixed"]
 >
-> |Mensagem de erro|Aplicativo relevante|Description|Resolução|
+> |Mensagem de erro|Aplicativo relevante|Descrição|Resolução|
 > |----|----|----|------------|
 > |HttpRequestFailure: O servidor retornou: 500 Erro interno do servidor|Todos os aplicativos|Ocorreu um erro no aplicativo.|Verificar o status do aplicativo|
-> |Tempo limite do serviço excedido|Todos os aplicativos|Foi detectado um tempo limite excedido de conexão entre o Cloud App Security e o aplicativo. Isso pode ocorrer devido a um problema com o aplicativo.|Tente novamente mais tarde.|
+> |Tempo limite do serviço excedido|Todos os aplicativos|Foi detectado um tempo limite excedido de conexão entre o Cloud App Security e o aplicativo. Isso pode ocorrer devido a um problema com o aplicativo.|Tente novamente depois.|
 > |NullPointerException|AWS|Erro interno|Contate o suporte|
-> |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Caixa|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
-> |BoxRestException: Falha ao analisar a resposta.|Caixa|Erro interno|Clique no link “Teste agora” novamente para testar a conexão com o Box.|
-> |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"Invalid refresh token"}'|Caixa|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
-> |BoxServerException: O usuário não pode acessar esse recurso sem ter uma conta enterprise|Caixa|A conta do Box não é uma conta da empresa.|Atualize sua licença do Box para a versão Enterprise e siga o processo para conectar o Box ao Cloud App Security novamente.|
-> |BoxServerException: não autorizado – Não é possível autorizar com este serviço|Caixa|O Administrador do Box excluiu o aplicativo do Cloud App Security no Box.|Siga o processo para conectar o Box ao Cloud App Security novamente.|
+> |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Box|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
+> |BoxRestException: Falha ao analisar a resposta.|Box|Erro interno|Clique no link “Teste agora” novamente para testar a conexão com o Box.|
+> |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"Invalid refresh token"}'|Box|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
+> |BoxServerException: O usuário não pode acessar esse recurso sem ter uma conta enterprise|Box|A conta do Box não é uma conta da empresa.|Atualize sua licença do Box para a versão Enterprise e siga o processo para conectar o Box ao Cloud App Security novamente.|
+> |BoxServerException: não autorizado – Não é possível autorizar com este serviço|Box|O Administrador do Box excluiu o aplicativo do Cloud App Security no Box.|Siga o processo para conectar o Box ao Cloud App Security novamente.|
 > |HttpRequestFailure: o servidor retornou: 401 não autorizado|Exchange Online|Usuário ou senha incorretos|Verifique se o nome de usuário e a senha estão corretos e siga o processo para conectar o Exchange Online ao Cloud App Security novamente.|
 > |HttpRequestFailure: o servidor retornou: 404 não encontrado|Exchange Online|O usuário que você está usando para fazer logon no Exchange Online não tem uma caixa de correio principal no Exchange Online (por exemplo, um usuário que não existe no Azure AD ou um usuário existe no Azure AD, mas não tem uma licença do Exchange Online).|Siga o processo para conectar o Exchange Online ao Cloud App Security novamente usando uma nova conta de administrador.|
 > |GoogleJsonResponseException: 401 Não autorizado|G Suite|Acesso negado Você não está autorizado a ler registros de atividade. O usuário de logon no G Suite deve ser um administrador.|Siga o processo para conectar o G Suite ao Cloud App Security novamente usando uma conta de administrador.|

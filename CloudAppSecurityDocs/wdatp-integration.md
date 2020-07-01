@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/24/2019
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b2106faed750a2eba06ae505a6d7d9cf17ca1be
-ms.sourcegitcommit: f8d170b0da8e8d7f723ddc9e845595f64dc79a02
+ms.openlocfilehash: 3c0bb1f5a3ff0241067d23bd455865d40c29c652
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85323766"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624809"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
 
@@ -54,6 +54,8 @@ Por conta própria, o Cloud App Security coleta logs dos seus pontos de extremid
 
 Para permitir que você execute Cloud Discovery em outras plataformas, é melhor usar o [coletor de logs](discovery-docker.md)do Cloud app Security, juntamente com a integração do Microsoft defender ATP para monitorar suas máquinas com Windows 10.
 
+[Assista a nossos vídeos](#related-videos) mostrando os benefícios de usar o Microsoft defender ATP com o Cloud app Security.
+
 ## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Como integrar o Microsoft defender ATP com o Cloud App Security
 
 Para habilitar a integração do Microsoft defender ATP com o Cloud App Security:
@@ -81,10 +83,11 @@ Depois de integrar o Microsoft defender ATP com o Cloud App Security, você pode
 5. Faça uma busca detalhada em cada computador listado e use as guias para exibir os dados de investigação. Encontre correlações entre os computadores, os usuários, os endereços IP e os aplicativos envolvidos em incidentes:
 
     - **Visão geral**
-        - Transações: informações sobre o número de transações que ocorreram no computador durante o período de tempo selecionado.
-        - Tráfego total: informações sobre a quantidade total de tráfego (em MB) durante o período de tempo selecionado.
+        - **Nível de risco do computador**: mostra o quão arriscado o perfil da máquina é relativo a outros computadores em sua organização, conforme indicado pela severidade (alta, média, baixa, informativa). Cloud App Security usa perfis de computador do Microsoft defender ATP para cada computador com base na análise avançada. A atividade que é anômala para a linha de base de um computador é avaliada e determina o nível de risco da máquina. Use o nível de risco do computador para determinar quais computadores investigar primeiro.
+        - **Transações**: informações sobre o número de transações que ocorreram no computador durante o período de tempo selecionado.
+        - **Tráfego total**: informações sobre a quantidade total de tráfego (em MB) durante o período de tempo selecionado.
         - Carregamentos: informações sobre a quantidade total de tráfego (em MB) carregados pelo computador durante o período de tempo selecionado.
-        - Downloads: informações sobre a quantidade total de tráfego (em MB) baixados pelo computador durante o período de tempo selecionado.
+        - **Downloads**: informações sobre a quantidade total de tráfego (em MB) baixados pelo computador durante o período de tempo selecionado.
     - **Aplicativos Descobertos**  
   Lista todos os aplicativos descobertos que foram acessados pelo computador.
     - **Histórico de usuários**  
@@ -144,6 +147,9 @@ Cada tentativa de acessar um aplicativo não aprovado dispara um alerta na centr
 > [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Descobrir e bloquear a ti sombra usando o Microsoft defender ATP](https://www.youtube.com/watch?v=MsHkTOoqSQo)
 
 > [!div class="nextstepaction"]
 > [Descoberta de TI sombra além da rede corporativa](https://www.youtube.com/watch?v=f8hbvbY1Hnc)

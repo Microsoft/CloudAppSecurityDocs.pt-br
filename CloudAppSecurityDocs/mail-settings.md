@@ -1,5 +1,5 @@
 ---
-title: Definir preferências de notificação por email – Cloud App Security | Microsoft Docs
+title: Definir preferências de notificação de email-Cloud App Security
 description: Este artigo oferece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,23 +14,23 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e362314a62399c15e662e20d13ea660015666b3d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 77bf7eeadf64108ca62a12d485aadba21e8d8848
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719900"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624619"
 ---
 # <a name="email-notification-preferences"></a>Preferências de notificação por email
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security para seus usuários quando uma violação é detectada.
 
 > [!NOTE]
 > Essa personalização só afeta as notificações enviadas aos usuários finais, não as notificações enviadas aos administradores do Cloud App Security.
 
-## <a name="mailsettings"></a> Definir as preferências de notificação de email
+## <a name="set-email-notification-preferences"></a><a name="mailsettings"></a> Definir as preferências de notificação de email
 
  O Microsoft Cloud App Security permite que você personalize as notificações de email enviadas aos usuários finais envolvidas nas violações. Para definir parâmetros para notificações por email, siga este procedimento. Para obter informações sobre o endereço IP do servidor de email do Microsoft Cloud App Security que você deve incluir na lista de permissões em seu serviço antispam, consulte [Requisitos de rede](network-requirements.md).
 

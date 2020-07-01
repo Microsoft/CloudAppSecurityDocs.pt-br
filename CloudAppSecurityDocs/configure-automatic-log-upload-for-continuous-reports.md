@@ -1,5 +1,5 @@
 ---
-title: Configurar o upload automático de logs para relatórios contínuos – Cloud App Security | Microsoft Docs
+title: Configurar o upload de log automático para relatórios contínuos-Cloud App Security
 description: Este artigo fornece informações sobre como fazer upload de logs para criar relatórios automáticos do Cloud Discovery.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b718641a17860bf3edb8ffc5f78c07b805b38bab
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: ebbe2f53f184cf8668a9cf3443ade3dedb42733f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720077"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623346"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 > [!WARNING]
 > É altamente recomendável configurar o upload de logs usando o [Docker](discovery-docker.md) para obter uma implantação mais flexível.
@@ -49,7 +49,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
 
-1. Vá para a página configuração de carregamento automatizada: no portal de Cloud App Security, clique no ícone configurações ![ícones de configurações, seguido](media/settings-icon.png "ícone de configurações")por **coletores de log**.
+1. Vá para a página configuração de carregamento automatizada: no portal de Cloud App Security, clique no ícone configurações ![ícones de configurações, seguido](media/settings-icon.png "Ícone de configurações")por **coletores de log**.
 
 2. Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:
 
@@ -107,7 +107,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 
 10. Clique na máquina virtual na tabela **Máquinas Virtuais** e clique em **Iniciar**.
 
-11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. O prompt de entrada será exibido. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, entre usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que você copiou quando criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando: `sudo network_config`
+11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. O prompt de entrada será exibido. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, entre usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que você copiou quando criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:`sudo network_config`
     > [!NOTE]
     > A máquina virtual é pré-configurada para obter um endereço IP de um servidor DHCP. Se precisar configurar endereços IP estáticos, gateway padrão, nome do host, servidores DNS e NTPS, você poderá usar o utilitário **network_config** ou realizar alterações manualmente.
 
@@ -117,7 +117,7 @@ Neste ponto, seu coletor de logs deve estar conectado à rede e deverá poder al
 
 Na primeira vez que você entrar no coletor de logs e importar a configuração do coletor de logs do portal, faça o seguinte.
 
-1. Entre no coletor de logs por SSH usando as credenciais de administrador interativo fornecidas no portal. (Se esta for a primeira vez que você faz logon no console, será necessário alterar a senha e entrar novamente após a alteração. Se você estiver usando uma sessão do terminal, poderá ser necessário reiniciá-la. ) simples
+1. Entre no coletor de logs por SSH usando as credenciais de administrador interativo fornecidas no portal. (Se esta for a primeira vez que você faz logon no console, será necessário alterar a senha e entrar novamente após a alteração. Se você estiver usando uma sessão do terminal, poderá ser necessário reiniciá-la. )
 2. Execute o utilitário de configuração do coletor com o token de acesso fornecido quando você criou o coletor de logs. `sudo collector_config <access token>`
 3. Insira o domínio do console, por exemplo: `contoso.portal.cloudappsecurity.com` Isso está disponível na URL que você vê depois de fazer logon no portal do Cloud App Security.
 4. Insira o nome do coletor de logs que quer configurar, por exemplo: **CloudAppSecurityLogCollector01** ou **NewYork** da imagem anterior.
@@ -129,7 +129,7 @@ Na primeira vez que você entrar no coletor de logs e importar a configuração 
 
     c. Insira seu domínio de console, por exemplo: `contoso.portal.cloudappsecurity.com`
 
-    d. Insira o nome do coletor de logs que você deseja configurar, por exemplo: `CloudAppSecurityLogCollector01`
+    d. Insira o nome do coletor de logs que você deseja configurar, por exemplo:`CloudAppSecurityLogCollector01`
 
 ### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Etapa 4 — Configuração local de seus dispositivos de rede
 
@@ -137,7 +137,7 @@ Configure seus proxies e firewalls de rede para periodicamente exportar logs par
 
 `London Zscaler - Destination path: 614`
 
-BlueCoat_HQ-caminho de destino: \<< machine_name > > \ BlueCoat_HQ \
+BlueCoat_HQ-caminho de destino: \<<machine_name>> \ BlueCoat_HQ \
 
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Etapa 5 — Verificar a implantação bem-sucedida no portal do Cloud App Security
 
@@ -165,6 +165,6 @@ Depois de verificar que os logs estão sendo carregados no Cloud App Security e 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Trabalhando com os dados do Cloud Discovery](working-with-cloud-discovery-data.md)
+> [Trabalhando com dados do Cloud Discovery](working-with-cloud-discovery-data.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

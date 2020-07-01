@@ -1,5 +1,5 @@
 ---
-title: Políticas de proteção de informações-Cloud App Security | Microsoft Docs
+title: Políticas de proteção de informações-Cloud App Security
 description: Este tópico descreve as etapas para configurar muitas políticas de proteção de informações no Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 681a2389b0a1a47013bdec2d4925cf47326330a9
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: fcec14fa59661c2d1f066d531779f433dc257070
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800819"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624893"
 ---
 # <a name="information-protection-policies"></a>Políticas de proteção de informações
 

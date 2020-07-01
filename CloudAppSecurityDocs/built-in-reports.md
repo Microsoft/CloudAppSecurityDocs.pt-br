@@ -1,5 +1,5 @@
 ---
-title: Gerar relatórios – Microsoft Cloud App Security | Microsoft Docs
+title: Gerar relatórios-Microsoft Cloud App Security
 description: Este artigo fornece instruções para gerar relatórios de gerenciamento de dados no Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3d87522306932229b9defd05e760672e875a28ab
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 88cf54f981ef02b76cd3286f3171e98f5f33752b
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720161"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624315"
 ---
 # <a name="generate-data-management-reports"></a>Gerar relatórios de gerenciamento de dados
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security permite gerar relatórios que oferecem uma visão geral dos arquivos nos seus aplicativos de nuvem.
 
@@ -39,8 +39,8 @@ Como gerar esses relatórios
 Este relatório lista o número de arquivos armazenados nos aplicativos de nuvem, divididos de acordo com as permissões de acesso. O compartilhamento se tornou muito fácil com serviços de nuvem devido à facilidade de acesso e onipresença. Um **Arquivo particular** não é compartilhado com ninguém exceto com seu proprietário. Se o arquivo for compartilhado, o Cloud App Security diferenciará entre quatro tipos de estados:
 
 - Um arquivo **Compartilhado publicamente (Internet)** é um arquivo que pode ser acessado sem qualquer autenticação, até mesmo por um resultado de mecanismo de pesquisa.
-- Um arquivo **Compartilhado publicamente** é um arquivo que pode ser acessado sem qualquer autenticação, usando um link.
-- Um arquivo **Compartilhado externamente** é um arquivo que pode ser acessado por pessoas fora da organização, após se autenticarem no aplicativo de nuvem.
+- Um arquivo **compartilhado publicamente** é um arquivo que pode ser acessado sem nenhuma autenticação, usando um link.
+- Um arquivo **compartilhado externamente** é um arquivo que pode ser acessado por indivíduos fora da organização, depois de autenticar-se para o aplicativo de nuvem.
 - Um arquivo **Compartilhado internamente** é um arquivo que pode ser acessado por todos ou por alguns usuários da sua organização.
 
 ## <a name="outbound-sharing-by-domain"></a>Compartilhamento de saída por domínio

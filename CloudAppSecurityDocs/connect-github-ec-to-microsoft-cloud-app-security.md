@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/02/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,16 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3941ea5141049f23ed8a187df5c29192883203c8
-ms.sourcegitcommit: 0e8065703810347c86567d636293bf6d41df1a84
+ms.openlocfilehash: f39ede3da1483acb4fd47c0708e3c244ff458aa5
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85256102"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623343"
 ---
-# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security-preview"></a>Conectar o GitHub Enterprise Cloud a Microsoft Cloud App Security (versão prévia)
+# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>Conectar o GitHub Enterprise Cloud a Microsoft Cloud App Security
 
 *Aplica-se a: Microsoft Cloud App Security*
-
-O conector de API de nuvem empresarial do GitHub está atualmente em visualização privada e sendo distribuído gradualmente. Esta versão de visualização é fornecida sem um contrato de nível de serviço e não é recomendada para cargas de trabalho de produção. Alguns recursos podem não ter suporte ou podem ter restrição de recursos. Para obter mais informações, consulte [Termos de Uso Complementares de Versões Prévias do Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua organização de nuvem empresarial do GitHub existente usando as APIs do conector de aplicativo. Essa conexão fornece visibilidade e controle sobre o uso de nuvem empresarial do GitHub de sua organização. Para obter mais informações sobre como Cloud App Security protege o GitHub Enterprise Cloud, consulte [proteger o GitHub Enterprise](protect-github.md).
 

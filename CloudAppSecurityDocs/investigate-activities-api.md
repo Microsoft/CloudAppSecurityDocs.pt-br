@@ -1,5 +1,5 @@
 ---
-title: Investigar atividades usando a API-Cloud App Security | Microsoft Docs
+title: Investigar atividades usando a API-Cloud App Security
 description: Este artigo fornece informações sobre como usar a API para investigar a atividade do usuário no Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5e51cc05bed73650495fe3df3829c7a1fca08b79
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: b85675f31e6e306ae6f62b2c8f3b50053f3adeb0
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719952"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624514"
 ---
 # <a name="investigate-activities-using-the-api"></a>Investigar atividades usando a API
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security fornece uma API REST com suporte total para permitir que você interaja programaticamente com o serviço.
 
@@ -37,14 +37,14 @@ O modo de API de atividades Cloud App Security é otimizado para verificação e
 **Para usar a API de verificação de atividade:**
 
 1. Execute a consulta em seus dados.
-1. Se houver mais registros do que o que pudesse ser listado em uma única verificação, você receberá um comando de retorno com `nextQueryFilters` que deve ser executado. Você receberá esse comando sempre que examinar até que a consulta tenha retornado todos os resultados.
+1. Se houver mais registros do que o que pudesse ser listado em uma única verificação, você receberá um comando de retorno com o `nextQueryFilters` que deve ser executado. Você receberá esse comando sempre que examinar até que a consulta tenha retornado todos os resultados.
 
 **Parâmetros do corpo da solicitação**:
 
 - "filtros": filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de atividade](activity-filters.md) para obter mais informações. Para evitar que suas solicitações sejam limitadas, lembre-se de incluir uma limitação em sua consulta, por exemplo, consultar as atividades do último dia ou filtrar um aplicativo específico.
 - "ISSCAN": booliano. Habilita o modo de verificação.
 - "sortDirection": a direção da classificação, os valores possíveis são "ASC" e "desc"
-- "SortField": campos usados para classificar atividades. Os possíveis valores são:
+- "SortField": campos usados para classificar atividades. Os valores possíveis são:
   - data-a data em que a atividade ocorreu (esse é o padrão).
   - Created-o carimbo de data/hora quando a atividade foi salva.
 - "Limit": inteiro. No modo de verificação, entre 500 e 5000 (o padrão é 500). Controla o número de iterações usadas para verificar todos os dados.
