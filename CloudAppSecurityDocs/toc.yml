@@ -67,6 +67,8 @@
           href: protect-box.md
         - name: Proteger o Dropbox
           href: protect-dropbox.md
+        - name: Proteger o GitHub
+          href: protect-github.md
         - name: Proteger o GCP
           href: protect-gcp.md
         - name: Proteger o G Suite
@@ -155,6 +157,8 @@
           href: connect-box-to-microsoft-cloud-app-security.md
         - name: Conectar o Dropbox
           href: connect-dropbox-to-microsoft-cloud-app-security.md
+        - name: Conectar o GitHub
+          href: connect-github-ec-to-microsoft-cloud-app-security.md
         - name: Conectar o G Suite
           href: connect-google-apps-to-microsoft-cloud-app-security.md
         - name: Conectar o GCP
@@ -196,10 +200,14 @@
           href: manage-app-permissions.md
         - name: Configuração de segurança
           items:
-            - name: Configuração de segurança para o Azure
+            - name: Visão geral
               href: security-config.md
+            - name: Configuração de segurança para o Azure
+              href: security-config-azure.md
             - name: Configuração de segurança para o AWS
               href: security-config-aws.md
+            - name: Configuração de segurança para o GCP
+              href: security-config-gcp.md
         - name: Monitorar aplicativos
           href: monitor-alerts.md
           items:
