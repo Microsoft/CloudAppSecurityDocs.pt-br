@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: face06e83dc57a3722298bf2e22846334ca811b2
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: ed9b4a8b34f0a6b0d4e0ecab3977c97cf0ec1491
+ms.sourcegitcommit: 5ea18a81e5fffacf81cda6eb545ed95d822426da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566817"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85846018"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -117,12 +117,9 @@ Adicione também outros administradores ao Cloud App Security sem adicionar usu�
 > [!IMPORTANT]
 > Somente Administradores globais ou Administradores de segurança podem conceder acesso a outros usuários ao Cloud App Security.
 
-1. Clique no ícone configurações ![configurações](media/settings-icon.png "ícone de configurações") de engrenagem e **gerenciar acesso de administrador**.
+1. Clique no ícone configurações ![configurações](media/settings-icon.png "Ícone de configurações") de engrenagem e **gerenciar acesso de administrador**.
 
 2. Clique no sinal de adição para adicionar os administradores que devem ter acesso ao Cloud App Security. Você pode digitar um endereço de email interno ou externo para permitir que administradores internos da organização ou MSSPs (Provedores de Serviço de Segurança Gerenciada) externos administrem seus alertas de segurança.
-
-    > [!NOTE]
-    > Para conceder acesso ao portal ao MSSPs, você deve adicionar usuários do MSSP ao Azure AD como usuários convidados. Para obter mais informações, consulte [adicionar Azure Active Directory usuários de colaboração B2B no portal do Azure](/azure/active-directory/b2b/add-users-administrator).
 
     ![adicionar administradores](media/add-admin.png)
 
@@ -147,7 +144,7 @@ Para exportar um log, execute as seguintes etapas:
 
 ## <a name="invite-external-admins"></a>Convidar administradores externos
 
-Cloud App Security permite que você convide provedores de serviço de segurança gerenciados externos (MSSPs) como administradores do seu portal de Cloud App Security. Os usuários externos agora podem ser configurados como administradores e atribuídos a qualquer uma das funções disponíveis no Cloud App Security. Para adicionar usuários externos, forneça um endereço de email externo nas etapas em [adicionar administradores adicionais](#add-additional-admins).
+Cloud App Security permite que você convide provedores de serviço de segurança gerenciados externos (MSSPs) como administradores do seu portal de Cloud App Security. Os usuários externos agora podem ser configurados como administradores e atribuídos a qualquer uma das funções disponíveis no Cloud App Security. Para adicionar usuários externos, verifique se Cloud App Security está habilitado no locatário de origem e, em seguida, forneça um endereço de email externo nas etapas em [adicionar administradores adicionais](#add-additional-admins).
 
 Além disso, para permitir que os MSSPs forneçam serviços em vários locatários de cliente, os Administradores que têm direitos de acesso a mais de um locatário agora podem alternar locatários com facilidade no portal. Para alternar locatários, depois de receber permissões para vários locatários, clique no ícone de usuário. Você verá uma lista dos locatários para os quais você tem permissões. Selecione o locatário que deseja gerenciar.
 
