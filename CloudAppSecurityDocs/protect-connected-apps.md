@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4bb689262eaf2784d3394aea9dd76723f452e07
-ms.sourcegitcommit: a14ce5fd805e2a470a03578f73114a818441e6c1
+ms.openlocfilehash: 9130c75680ec6cb095d3995cd4a5aee3329f3189
+ms.sourcegitcommit: 9395620dfc916b0954207c4fe26f58c76cdfe0d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77519402"
+ms.lasthandoff: 07/05/2020
+ms.locfileid: "85953684"
 ---
 # <a name="protecting-connected-apps"></a>Protegendo aplicativos conectados
 
@@ -29,20 +29,21 @@ Quando um aplicativo é conectado usando um ou mais desses métodos, você obté
 
 A amplitude do suporte para cada aplicativo depende da riqueza de suas APIs. Use os links a seguir para saber mais sobre como Cloud App Security protege os aplicativos conectados e os riscos que esses aplicativos expõem. Para cada aplicativo, examine a lista de detecções de anomalias internas disponíveis, explore modelos de política prontos para uso para monitoramento e alertas em atividades arriscadas e descubra quais ações de governança automatizadas podem ser aplicadas.
 
-- [Proteger AWS](protect-aws.md)
+- [Proteger o AWS](protect-aws.md)
 - [Proteger o Azure](protect-azure.md)
-- [Caixa proteger](protect-box.md)
+- [Proteger o Box](protect-box.md)
 - [Proteger o Dropbox](protect-dropbox.md)
-- [Proteger GCP](protect-gcp.md)
+- [Proteger o GitHub Enterprise Cloud](protect-github.md)
+- [Proteger o GCP](protect-gcp.md)
 - [Proteger o G Suite](protect-gsuite.md)
 - [Proteger o Office 365](protect-office-365.md)
-- [Proteger Okta](protect-okta.md)
+- [Proteger o Okta](protect-okta.md)
 - [Proteger o Salesforce](protect-salesforce.md)
 - [Proteger o ServiceNow](protect-servicenow.md)
-- [Proteger WebEx](protect-webex.md)
-- [Proteger o workday](protect-workday.md)
+- [Proteger o Webex](protect-webex.md)
+- [Proteger o Workday](protect-workday.md)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Conectar aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
