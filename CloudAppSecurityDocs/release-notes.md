@@ -4,19 +4,18 @@ description: Este artigo é atualizado com frequência para você saber quais s�
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/16/2020
+ms.date: 06/28/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2ec05e43341dbabb6c01219c150599d2245840b9
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
-ms.translationtype: HT
+ms.openlocfilehash: ff7ac3fb2a6cda0a411ac02f161ce32f5b037a9e
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800853"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85625067"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -26,17 +25,35 @@ Este artigo é atualizado com frequência para você saber quais são as novidad
 
 Feed RSS: Receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
-## <a name="cloud-app-security-release-177"></a>Cloud App Security versão 177
+## <a name="cloud-app-security-release-178"></a>Cloud App Security versão 178
 
-Lançado em 14 de junho de 2020
+Lançado em 28 de junho de 2020
 
-- **Nova detecção de malware em tempo real (versão prévia, distribuição gradual)**  
-Expandimos nossos controles de sessão para detectar possível malware usando a inteligência contra ameaças da Microsoft após uploads ou downloads de arquivos. A nova detecção agora está disponível pronta para uso e pode ser configurada para bloquear automaticamente os arquivos identificados como possível malware. Para obter mais informações, confira [Bloquear malware no upload](session-policy-aad.md#block-malware-on-upload).
+- **Novas configurações de segurança para a Google Cloud Platform (distribuição gradual)**  
+Expandimos as nossas configurações de segurança de várias nuvens para fornecer recomendações de segurança para a Google Cloud Platform, com base no parâmetro de comparação da CIS para GCP. Com essa nova funcionalidade, o Cloud App Security fornece às organizações uma única exibição para monitorar o status de conformidade em todas as plataformas de nuvem, incluindo [assinaturas do Azure](security-config-azure.md), [contas da AWS](security-config-aws.md) e agora [projetos da GCP](security-config-gcp.md).
 
-- **Novo suporte de token de acesso para controles de acesso e sessão**  
-Adicionamos a capacidade de tratar o token de acesso e as solicitações de código como logons ao integrar aplicativos a controles de sessão e acesso. Para usar tokens, clique no ícone de engrenagem de configurações, selecione **Controle de Aplicativos de Acesso Condicional**, edite o aplicativo relevante (menu de três pontos > **Editar aplicativo**), selecione **Tratar as solicitações de token de acesso e código como logons de aplicativo** e clique em **Salvar**. Para obter mais informações sobre a integração de aplicativos, confira [Integrar e implantar qualquer aplicativo](proxy-deployment-any-app.md) e [Implantar aplicativos em destaque](proxy-deployment-aad.md).
+- **Novos conectores de aplicativos em GA**  
+Adicionamos os seguintes conectores de aplicativos ao nosso portfólio de conectores de API em disponibilidade geral, proporcionando a você mais visibilidade e controle sobre como os seus aplicativos são usados na sua organização:
+  - [GitHub Enterprise Cloud](protect-github.md)
+  - [Google Cloud Platform](protect-gcp.md)
+  - [Workday](protect-workday.md)
+
+- **Nova detecção de malware em tempo real em GA**  
+Expandimos os nossos controles de sessão para detectar um possível malware usando a Inteligência contra Ameaças da Microsoft em uploads ou downloads de arquivos. A nova detecção agora está em disponibilidade geral pronta para uso e pode ser configurada para bloquear automaticamente os arquivos identificados como possível malware. Para obter mais informações, confira [Bloquear malware no upload](session-policy-aad.md#block-malware-on-upload).
+
+- **Controles de acesso e de sessão aprimorados com qualquer IdP em GA**  
+O suporte aos controles de acesso e de sessão para aplicativos SAML configurados com qualquer provedor de identidade agora está em disponibilidade geral. Para obter informações sobre como configurar esses controles, confira o [Guia de implantação](proxy-deployment-aad.md).
+
+- **Aprimoramento na investigação de computadores suspeitos**  
+O Cloud App Security fornece a capacidade de identificar computadores suspeitos como parte da sua investigação de descoberta de TI sombra. Agora, adicionamos o **Nível de risco do computador** da Proteção Avançada contra Ameaças do Microsoft Defender à página **computadores** fornecendo mais contexto a analistas quando eles investigarem computadores na sua organização. Para obter mais informações, confira [Investigar computadores no Cloud App Security](wdatp-integration.md#investigate-machines-in-cloud-app-security).
+
+- **Novo recurso: conector de aplicativo de desabilitação de autoatendimento (distribuição gradual)**  
+Adicionamos a capacidade de desabilitar conectores de aplicativos diretamente no Cloud App Security. Para mais informações, confira [Desabilitar conectores do aplicativo](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#disable-app-connectors).
 
 <!--
+- **Enhanced detection logic: Ransomware activity (gradual rollout)**  
+We've updated the detection logic for Ransomware activity to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Ransomware activity](anomaly-detection-policy.md#ransomware-activity).
+
 - **New OAuth app policy templates**  
 Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
 
@@ -45,6 +62,16 @@ Cloud App Security now provides the following new OAuth app policy templates ena
   - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
   - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
 -->
+
+## <a name="cloud-app-security-release-177"></a>Cloud App Security versão 177
+
+Lançado em 14 de junho de 2020
+
+- **Nova detecção de malware em tempo real (versão prévia, distribuição gradual)**  
+Expandimos os nossos controles de sessão para detectar um possível malware usando a Inteligência contra Ameaças da Microsoft em uploads ou downloads de arquivos. A nova detecção agora está disponível pronta para uso e pode ser configurada para bloquear automaticamente os arquivos identificados como possível malware. Para obter mais informações, confira [Bloquear malware no upload](session-policy-aad.md#block-malware-on-upload).
+
+- **Novo suporte de token de acesso para controles de acesso e sessão**  
+Adicionamos a capacidade de tratar o token de acesso e as solicitações de código como logons ao integrar aplicativos a controles de sessão e acesso. Para usar tokens, clique no ícone de engrenagem de configurações, selecione **Controle de Aplicativos de Acesso Condicional**, edite o aplicativo relevante (menu de três pontos > **Editar aplicativo**), selecione **Tratar as solicitações de token de acesso e código como logons de aplicativo** e clique em **Salvar**. Para obter mais informações sobre a integração de aplicativos, confira [Integrar e implantar qualquer aplicativo](proxy-deployment-any-app.md) e [Implantar aplicativos em destaque](proxy-deployment-aad.md).
 
 - **Sufixo de URL de proxy avançado para controles de sessão (distribuição gradual)**  
 Em 7 de junho de 2020, começamos a distribuir gradualmente nossos controles avançados de sessão de proxy para usar um sufixo unificado que não inclui regiões nomeadas. Por exemplo, os usuários verão o sufixo `<AppName>.mcas.ms` em vez de `<AppName>.<Region>.cas.ms`. Se você adiciona com frequência domínios na lista de proibições de seus dispositivos de rede ou gateways, certifique-se de colocar todos os domínios listados em [Controles de acesso e sessão](network-requirements.md#access-and-session-controls).
@@ -75,7 +102,7 @@ A partir de 7 de junho de 2020, distribuiremos gradualmente nossos controles ava
 Fizemos melhorias significativas no desempenho da rede para nosso serviço de proxy. O serviço aprimorado é ainda mais simplificado e fornece maior capacidade de resposta ao usar controles de sessão.
 
 - **Nova detecção de atividade arriscada: falha de logon incomum**  
-Expandimos nossa capacidade atual de detecção de comportamentos arriscados. A nova detecção agora está disponível pronta para uso e habilitada automaticamente para alertá-lo quando uma tentativa de logon com falha incomum for identificada. Tentativas de logon com falha incomum podem ser uma indicação de um possível ataque de força bruta de *password spraying* (também conhecido como o método *baixo e lento*). Essa detecção afeta a [pontuação de prioridade de investigação](tutorial-ueba.md) geral do usuário.
+Expandimos a nossa capacidade atual de detecção de comportamentos suspeitos. A nova detecção agora está disponível pronta para uso e habilitada automaticamente para alertá-lo quando uma tentativa de logon com falha incomum for identificada. Tentativas de logon com falha incomum podem ser uma indicação de um possível ataque de força bruta de *password spraying* (também conhecido como o método *baixo e lento*). Essa detecção afeta a [pontuação de prioridade de investigação](tutorial-ueba.md) geral do usuário.
 
 - **Experiência de tabela avançada**  
 Adicionamos a capacidade de redimensionar larguras de coluna de tabela para que você possa ampliar ou estreitar colunas a fim de personalizar e aprimorar a forma como as tabelas são exibidas. Você também pode restaurar o layout original selecionando o menu configurações de tabela e escolhendo **Largura padrão**.
@@ -93,14 +120,14 @@ O Cloud Discovery do Cloud App Security analisa uma ampla variedade de logs de t
 - **Painel aprimorado (implementação gradual)** Como parte dos nossos aprimoramentos contínuos no design do portal, agora estamos implementando gradualmente o painel do Cloud App Security aprimorado. O painel foi modernizado com base em seus comentários e oferece uma experiência de usuário aprimorada com conteúdo e dados atualizados. Para obter mais informações, confira [Implantação gradual do nosso painel aprimorado](daily-activities-to-protect-your-cloud-environment.md).
 
 - **Governança aprimorada: Confirmar Usuário Comprometido para detecções de anomalias**  
-Expandimos nossas ações de governança atuais para políticas de anomalias para incluir **Confirmar Usuário Comprometido** permitindo que você proteja proativamente seu ambiente contra atividades suspeitas do usuário. Para obter mais informações, confira [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
+Expandimos as nossas ações de governança atuais para políticas de anomalias para incluir **Confirmar Usuário Comprometido** permitindo que você proteja proativamente o seu ambiente contra atividades suspeitas do usuário. Para obter mais informações, confira [Ações de governança de atividade](governance-actions.md#activity-governance-actions).
 
 ## <a name="cloud-app-security-release-173-and-174"></a>Cloud App Security versões 173 e 174
 
 Lançado em 26 de abril de 2020
 
 - **Novo formato CEF de agente SIEM para alertas**  
-Como parte de nosso esforço para enriquecer as informações de alerta fornecidas nos arquivos CEF usados por servidores SIEM genéricos, estendemos o formato para incluir os seguintes campos de cliente:
+Como parte do nosso esforço para enriquecer as informações de alerta fornecidas nos arquivos CEF usados por servidores SIEM genéricos, estendemos o formato para incluir os seguintes campos de cliente:
   - Endereço IPv4
   - Endereço IPv6
   - Local do endereço IP
@@ -123,7 +150,7 @@ Expandimos e simplificamos o processo de identificação de um ou mais usuários
 Lançado em 22 de março de 2020
 
 - **Nova detecção de anomalia: região incomum para recurso de nuvem (versão prévia)**  
-Expandimos nossa capacidade atual de detecção de comportamentos anômalos para a AWS. A nova detecção já está disponível e pronta para uso, habilitada automaticamente para alertá-lo quando um recurso é criado em uma região da AWS onde atividades geralmente não são executadas. Os invasores geralmente aproveitam os créditos da AWS de uma organização para realizar atividades mal-intencionadas, como criptomineração. Detectar esse comportamento anômalo pode ajudar a mitigar um ataque.
+Expandimos a nossa capacidade atual de detecção de comportamentos anormais para a AWS. A nova detecção já está disponível e pronta para uso, habilitada automaticamente para alertá-lo quando um recurso é criado em uma região da AWS onde atividades geralmente não são executadas. Os invasores geralmente aproveitam os créditos da AWS de uma organização para realizar atividades mal-intencionadas, como criptomineração. Detectar esse comportamento anômalo pode ajudar a mitigar um ataque.
 
 - **Novos modelos de política de atividade para o Microsoft Teams**  
 O Cloud App Security agora oferece os novos modelos de política de atividade abaixo, permitindo detectar atividades potencialmente suspeitas no Microsoft Teams:
@@ -139,7 +166,7 @@ Agora você pode controlar a gravidade dos alertas da Proteção de Identidade d
 Lançado em 1º de março de 2020
 
 - **Nova detecção para Workday**  
-Nós expandimos nossos alertas atuais de comportamento anormal para o Workday. Os novos alertas incluem as seguintes detecções de localização geográfica de usuário:
+Expandimos os nossos alertas atuais de comportamento anormal para o Workday. Os novos alertas incluem as seguintes detecções de localização geográfica de usuário:
   - [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)
   - [Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)
   - [Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)
@@ -162,7 +189,7 @@ Lançado em 16 de fevereiro de 2020
 O Cloud App Security estendeu a integração nativa com a Microsoft Defender ATP (Proteção Avançada contra Ameaças). Agora, você pode bloquear o acesso a aplicativos marcados como não sancionados usando o recurso de proteção de rede do Microsoft Defender ATP. Para saber mais, confira [Bloquear o acesso a aplicativos na nuvem não sancionados](wdatp-integration.md#block-access-to-unsanctioned-cloud-apps).
 
 - **Nova detecção de anomalias de aplicativos OAuth**  
-Expandimos nossa capacidade atual de detectar consentimento a aplicativos OAuth mal-intencionados. A nova detecção já está disponível e pronta para uso, habilitada de forma automática para alertar você quando um aplicativo OAuth potencialmente mal-intencionado é autorizado em seu ambiente. Essa detecção aproveita a especialização da Microsoft em pesquisa de segurança e inteligência contra ameaças para identificar aplicativos mal-intencionados.
+Expandimos a nossa capacidade atual de detectar consentimento a aplicativos OAuth mal-intencionados. A nova detecção já está disponível e pronta para uso, habilitada de forma automática para alertar você quando um aplicativo OAuth potencialmente mal-intencionado é autorizado em seu ambiente. Essa detecção aproveita a especialização da Microsoft em pesquisa de segurança e inteligência contra ameaças para identificar aplicativos mal-intencionados.
 
 - **Atualizações do coletor de logs**  
 O coletor de logs baseado no Docker foi aprimorado com as seguintes atualizações importantes:
@@ -328,7 +355,7 @@ Desde que liberamos a versão prévia do Controle de Aplicativos de Acesso Condi
 O Cloud App Security está lançando gradualmente a capacidade de fazer uma avaliação da configuração de segurança do ambiente do Amazon Web Services para conformidade com CIS e oferece recomendações sobre controles de segurança e configurações ausentes. Essa capacidade fornece às organizações uma exibição única para monitorar o status de conformidade de todas as contas do AWS conectadas.
 
 - **Detecções de anomalias do aplicativo OAuth**  
-Expandimos nossa capacidade atual de detectar aplicativos OAuth suspeitos. Agora há quatro novas detecções prontas para uso, que analisam os metadados de aplicativos OAuth autorizados em sua organização para identificar aqueles que são potencialmente mal-intencionados.
+Expandimos a nossa capacidade atual de detectar aplicativos OAuth suspeitos. Agora há quatro novas detecções prontas para uso, que analisam os metadados de aplicativos OAuth autorizados em sua organização para identificar aqueles que são potencialmente mal-intencionados.
 
 ## <a name="cloud-app-security-release-153"></a>Cloud App Security versão 153
 

@@ -1,5 +1,5 @@
 ---
-title: Investigar aplicativos OAuth arriscados – Cloud App Security | Microsoft Docs
+title: Investigar aplicativos OAuth suspeitos – Cloud App Security
 description: Este artigo fornece informações sobre como investigar aplicativos OAuth arriscados no Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,11 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 889f36e89a55072df97c0668832f4aad0a942721
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
-ms.translationtype: HT
+ms.openlocfilehash: 2c6b6ffc3b2c89dc107f223e1f0177df4fa8155b
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "77374204"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624689"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>Tutorial: Investigar aplicativos OAuth arriscados
 

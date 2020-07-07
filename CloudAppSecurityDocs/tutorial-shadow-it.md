@@ -1,11 +1,11 @@
 ---
-title: Descobrir e gerenciar o Shadow IT | Microsoft Docs
+title: Descobrir e gerenciar a TI Sombra
 description: Este tutorial descreve o processo para aplicar automaticamente rótulos de classificação da proteção de informações do Azure no Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/11/2019
+ms.date: 06/29/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -13,12 +13,11 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 66b70832dcdcc3c741a8eb330bc15050afbd70c8
-ms.sourcegitcommit: c981486f4ef211bce41dca1691aa0d47d180dd5e
-ms.translationtype: HT
+ms.openlocfilehash: 2a9ef4658cb363e98397341faffc69d6c961808f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84481730"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624936"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar o Shadow IT na sua rede
 
@@ -70,13 +69,16 @@ Agora que o Cloud Discovery está em execução na sua rede, examine os relatór
 
     * Para fazer drill down no aplicativo a fim de entender mais sobre a conformidade, clique no nome do aplicativo e, em seguida, clique na guia **Informações** para ver detalhes sobre os fatores de risco de conformidade do aplicativo.
 
+    > [!TIP]
+    > Seja notificado quando um aplicativo descoberto estiver associado a uma violação de segurança publicada recentemente usando o alerta interno **Violação de segurança de aplicativo descoberto**. Investigue todos os usuários, endereços IP e dispositivos que acessaram o aplicativo com violação nos últimos 90 dias e aplique os controles relevantes.
+
 1. **Analisar o uso**: agora que você sabe se deseja ou não que o aplicativo seja usado na sua organização, você quer investigar como e quem o está usando. Se ele for usado apenas de uma maneira limitada em sua organização, talvez esteja tudo bem. Porém, se o uso estiver aumentando, você deseja ser notificado sobre ele para que possa decidir se deve bloquear o aplicativo.
 
     * No portal do Cloud App Security, em **Descobrir**, clique em **Aplicativos descobertos** e faça uma busca detalhada clicando no aplicativo específico que você deseja investigar. A guia **Usar** permite que você saiba quantos usuários ativos estão usando o aplicativo e a quantidade de tráfego que ele está gerando. Isso já pode dar uma visão muito boa do que está acontecendo com o aplicativo. Em seguida, se você quiser ver quem, especificamente, está usando o aplicativo, poderá fazer uma busca mais detalhada clicando em **Total de usuários ativos**. Essa etapa importante pode fornecer informações pertinentes. Por exemplo, se você descobrir que todos os usuários de um aplicativo específico são do departamento de marketing, talvez haja uma necessidade comercial para esse aplicativo e, se ele for arriscado, você deverá conversar com os funcionários sobre um alternativa antes de bloqueá-lo.
 
     * Aprofunde-se ainda mais investigando o uso de aplicativos descobertos. Exiba os subdomínios e recursos para saber mais sobre atividades específicas, acesso a dados e uso de recursos em seus serviços de nuvem. Para obter mais informações, confira [Ver mais sobre aplicativos descobertos](discovered-apps.md#deep-dive-into-discovered-apps) e [Descobrir recursos e aplicativos personalizados](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. Use o catálogo de aplicativos de nuvem e filtre os aplicativos que pertencem à mesma categoria de aplicativo. Além disso, usando os filtros avançados, identifique soluções que estejam em conformidade com os diferentes controles de segurança necessários para manter a conformidade com a política da organização.
+1. **Identificar aplicativos alternativos**: Use o catálogo de aplicativos de nuvem e filtre os aplicativos que pertencem à mesma categoria de aplicativo. Além disso, usando os filtros avançados, identifique soluções que estejam em conformidade com os diferentes controles de segurança necessários para manter a conformidade com a política da organização.
 
 ### <a name="phase-3-manage-your-apps"></a>Fase 3: Gerenciar seus aplicativos
 
