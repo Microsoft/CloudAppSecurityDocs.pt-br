@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10faf7a844c64efb621e6b8e1cf14b79443b322d
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: ff18286f75a3f5a306f7ac1c08ecff3ad98a01a5
+ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241475"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046055"
 ---
-# <a name="discovered-app-filters-and-queries"></a>Consultas e filtros de aplicativos descobertos
+# <a name="discovered-app-filters-and-queries"></a>Filtros e consultas do aplicativo descoberto
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -45,8 +45,7 @@ Há filtros de aplicativos Descoberto básicos e avançados. Para alcançar um f
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Criando e gerenciando marcas de aplicativo personalizadas
 
-Você pode criar uma marca de aplicativo personalizada.
-Essas marcas podem ser usadas como filtros para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. Por exemplo, lista de observação personalizada, atribuição a uma unidade de negócios específica ou aprovações personalizadas, como "aprovado pelo departamento jurídico".
+Você pode criar uma marca de aplicativo personalizada. Essas marcas podem ser usadas como filtros para aprofundar-se nos tipos específicos de aplicativos que você deseja investigar. Por exemplo, lista de observação personalizada, atribuição para uma unidade de negócios específica ou aprovações personalizadas, como "aprovadas por ofício". As marcas de aplicativo também podem ser usadas em políticas de descoberta de aplicativo em filtros ou aplicando marcas a aplicativos como parte das ações de governança de política.
 
 Para criar uma marca de aplicativo personalizada:
 
@@ -64,7 +63,7 @@ Para criar uma marca de aplicativo personalizada:
 
 ## <a name="discovered-app-queries"></a>Consultas de aplicativos descobertos
 
-Para simplificar ainda mais a investigação, você pode criar consultas personalizadas e salvá-las para uso posterior.
+Para fazer uma investigação ainda mais simples, você pode criar consultas personalizadas e salvá-las para uso posterior.
 
 1. Na página **Aplicativos descobertos**, use os filtros, conforme descrito acima, para fazer drill down em seus aplicativos, conforme necessário.
 
@@ -94,7 +93,7 @@ O Cloud App Security também fornece **Consultas sugeridas** e permite salvar co
 
 - **Aplicativos de nuvem corporativa que têm criptografia fraca** – filtra todos os seus aplicativos descobertos para exibir somente aplicativos que são arriscados porque não criptografam dados em repouso e não oferecem suporte a nenhum protocolo de criptografia.
 
-- **Aplicativos na nuvem prontos para RGPD** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que estão prontos para o RGPD. Como a conformidade com o RGPD é uma das principais prioridades, essa consulta ajuda a identificar facilmente os aplicativos que estão preparados para o RGPD e reduz as ameaças ao avaliar o risco dos aplicativos que não estão preparados para o RGPD.
+- **Aplicativos na nuvem prontos para RGPD** – filtra todos os aplicativos descobertos para exibir apenas os aplicativos que estão prontos para o RGPD. Como a conformidade do GDPR é uma prioridade máxima, essa consulta ajuda você a identificar facilmente os aplicativos que estão GDPR prontos e mitigar a ameaça, avaliando o risco daqueles que não são.
 
 ![consultar aplicativos descobertos](media/queries-discovered-apps.png)
 

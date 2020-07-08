@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1578a945e461d69a78f56f000b494235245002b9
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 7ad7bc15a2ea70a9b1166f30024afc0bfe17ae27
+ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800785"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046089"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -34,6 +34,7 @@ Por exemplo, é possível decidir que, de dispositivos não gerenciados ou, para
 * [Bloquear atividades específicas](#block-activities)
 * [Proteger arquivos no download](#protect-download)
 * [Proteger uploads de arquivos confidenciais](#protect-upload)
+* [Bloquear malware ao carregar](#block-malware-on-upload)
 * [Instrua os usuários a proteger arquivos confidenciais](#educate-protect)
 
 ## <a name="prerequisites-to-using-session-policies"></a>Pré-requisitos para usar políticas de sessão
@@ -160,7 +161,7 @@ Você também pode configurar políticas de sessão para bloquear o malware no d
 
 ## <a name="educate-users-to-protect-sensitive-files"></a><a name="educate-protect"></a>Instrua os usuários a proteger arquivos confidenciais
 
-É importante instruir os usuários quando eles estiverem violando uma política, para que eles aprendam a cumprir suas políticas organizacionais. Como cada empresa tem necessidades e políticas exclusivas, Cloud App Security permite que você personalize os filtros de uma política e a mensagem que ele exibe para o usuário quando uma violação é detectada. Você pode fornecer orientações específicas para seus usuários, como fornecer instruções sobre como rotular um arquivo apropriadamente ou como registrar um dispositivo não gerenciado, para garantir que os arquivos sejam carregados com êxito.
+É importante instruir os usuários quando eles estiverem violando uma política para que eles aprendam a cumprir suas políticas organizacionais. Como cada empresa tem necessidades e políticas exclusivas, Cloud App Security permite que você personalize os filtros de uma política e a mensagem que ele exibe para o usuário quando uma violação é detectada. Você pode fornecer orientações específicas para seus usuários, como fornecer instruções sobre como rotular um arquivo apropriadamente ou como registrar um dispositivo não gerenciado, para garantir que os arquivos sejam carregados com êxito.
 
 Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de informações do Azure, uma mensagem poderá ser exibida explicando que o arquivo contém conteúdo confidencial que requer um rótulo apropriado. Da mesma forma, se um usuário tentar carregar um documento de um dispositivo não gerenciado, uma mensagem com instruções sobre como registrar esse dispositivo ou um que fornece mais explicações sobre por que o dispositivo deve ser registrado pode ser exibida.
 
@@ -172,7 +173,7 @@ Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de 
 >[!div class="nextstepaction"]
 > [PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando o Azure AD Controle de Aplicativos de Acesso Condicional](use-case-proxy-block-session-aad.md)
