@@ -27,7 +27,7 @@
   items:
     - name: Descobrir e gerenciar TI sombra
       href: tutorial-shadow-it.md
-    - name: Detectar e gerenciar atividades suspeitas
+    - name: detectar atividade de usuário suspeita com UEBA
       href: tutorial-suspicious-activity.md
     - name: Investigar usuários arriscados
       href: tutorial-ueba.md

@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de token de API no Cloud App Security
+title: Gerenciando tokens de API
 description: Este artigo fornece informações sobre como gerar tokens de API para o Cloud App Security.
 keywords: ''
 author: shsagir
@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 933c2beb8285f4f76f61406ab4981153b81913cc
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: e4dba7ef7ff73c7e4b6b784bce68d4e71b0b854e
+ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505415"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86122607"
 ---
 # <a name="managing-api-tokens"></a>Gerenciando tokens de API
 
@@ -46,9 +46,6 @@ A guia tokens de API permite que você ajude a gerenciar todos os tokens de API 
     ![Token de API do Cloud App Security](media/generate-api-token.png)
 
     A URL genérica do portal continuará a funcionar, mas será consideravelmente mais lenta do que a URL personalizada fornecida com o token. Se você esquecer a URL a qualquer momento, você poderá exibi-la indo até o ícone **?** no menu e selecionando **Sobre**.
-
-> [!NOTE]
-> Se você estiver usando Azure Active Directory Privileged Identity Management ativação de função, seu token de API só será eficaz quando a função for ativada. Para obter mais informações, consulte [Ativar minhas funções do Azure AD no PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
 
 ## <a name="api-token-management"></a>Gerenciamento de token de API
 

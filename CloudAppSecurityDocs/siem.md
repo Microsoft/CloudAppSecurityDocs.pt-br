@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 546912761fb854adecc9d7626465b694f02b20b7
-ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
+ms.openlocfilehash: 9b2b4cfc8c3807f5acd7540390a3b44604e49d84
+ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82161802"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137974"
 ---
 # <a name="generic-siem-integration"></a>Integração genérica ao SIEM
 
@@ -73,21 +73,21 @@ A integração ao SIEM é realizada em três etapas:
 
 1. No portal de Cloud App Security, sob as **configurações** engrenagem, clique em **extensões de segurança**.
 
-1. Na guia **agentes Siem** , clique em Adicionar (**+**) e escolha **Siem genérico**.
+1. Na guia **agentes Siem** , clique em Adicionar ( **+** ) e escolha **Siem genérico**.
 
     ![Captura de tela mostrando o menu Adicionar integração SIEM](media/siem0.png)
 
 1. No assistente, clique em **Iniciar Assistente**.
-1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Próximo**.
+1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Avançar**.
 
     ![Configurações gerais do SIEM](media/siem1.png)
 
 1. Digite o endereço IP ou nome de host do **Host do syslog remoto** e o **Número da porta do syslog**. Selecione TCP ou UDP como o protocolo do Syslog Remoto.
-    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Próximo**.
+    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Avançar**.
 
     ![Configurações do Syslog Remoto](media/siem2.png)
 
-1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Próximo**.
+1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Avançar**.
 
    ![Configurações de tipos de dados](media/siem3.png)
 
@@ -116,7 +116,7 @@ A integração ao SIEM é realizada em três etapas:
 Quando as seguintes variáveis são usadas:
 
 * DIRNAME é o caminho para o diretório que você deseja usar para os logs locais de depuração do agente.
-* O endereço [:P classificar] é o endereço do servidor proxy e a porta que o servidor usa para se conectar ao * nto.
+* O endereço [:P classificar] é o endereço do servidor proxy e a porta que o servidor usa para se conectar à Internet.
 * TOKEN é o token do agente SIEM copiado na etapa anterior.
 
 Você pode digitar -h a qualquer momento para obter ajuda.
@@ -155,21 +155,21 @@ O texto a seguir é um exemplo de arquivo de log de alertas:
 
 | Aplicável a | Nome do campo CEF | Descrição |
 | --- | --- | --- |
-| Atividades/Alertas | start | Carimbo de data/hora da atividade ou do alerta |
+| Atividades/Alertas | iniciar | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | end | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | rt | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | msg | Descrição da atividade ou do alerta, conforme mostrado no portal |
 | Atividades/Alertas | suser | Usuário de entidade da atividade ou do alerta |
 | Atividades/Alertas | destinationServiceName | Aplicativo de origem da atividade ou do alerta; por exemplo, Office 365, SharePoint e Box. |
-| Atividades/Alertas | Rótulo\<de>cs X | Cada rótulo tem um significado diferente, mas o rótulo em si é autoexplicativo; por exemplo, targetObjects (objetos de destino). |
+| Atividades/Alertas | cs\<X>Label | Cada rótulo tem um significado diferente, mas o rótulo em si é autoexplicativo; por exemplo, targetObjects (objetos de destino). |
 | Atividades/Alertas | cs\<X> | As informações correspondentes ao rótulo (o usuário de destino da atividade ou do alerta, de acordo com o exemplo de rótulo). |
 | Atividades | EVENT_CATEGORY_* | Categoria de alto nível da atividade |
-| Atividades | \<AÇÃO> | O tipo de atividade, conforme exibido no portal |
+| Atividades | \<ACTION> | O tipo de atividade, conforme exibido no portal |
 | Atividades | externalId | ID do evento |
 | Atividades | dvc | IP do dispositivo do cliente |
 | Atividades | requestClientApplication | Agente do usuário do dispositivo do cliente |
-| Alertas | \<tipo de alerta> | Por exemplo, "ALERT_CABINET_EVENT_MATCH_AUDIT" |
-| Alertas | \<nome> | O nome da política correspondente |
+| Alertas | \<alert type> | Por exemplo, "ALERT_CABINET_EVENT_MATCH_AUDIT" |
+| Alertas | \<name> | O nome da política correspondente |
 | Alertas | externalId | ID do Alerta |
 | Alertas | src | Endereço IPv4 do dispositivo cliente |
 | Alertas | c6a1 | Endereço IPv6 do dispositivo cliente |
