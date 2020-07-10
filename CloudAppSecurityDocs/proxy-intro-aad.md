@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ba00548c014126414319fb5860d2c7fab9fb26d
-ms.sourcegitcommit: 9a35b4e96db80ac85a4c0244ef6abd468d5774a9
+ms.openlocfilehash: c957afbd4b4fef2947b042c99b548edfacbcb5c0
+ms.sourcegitcommit: 5ae4c12ee43c9133b61731a95f81f771eeeb7d19
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853979"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86180549"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ No local de trabalho atual, geralmente não é suficiente saber o que está acon
 >
 > - Para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você precisa de uma [licença Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)ou a licença exigida por sua solução IDP, bem como uma licença de Cloud app Security.
 
-## <a name="how-it-works"></a>Como isso funciona
+## <a name="how-it-works"></a>Como ele funciona
 
 Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy reverso e se integra ao IdP. Ao integrar com o acesso condicional do Azure AD, você pode configurar aplicativos para trabalhar com Controle de Aplicativos de Acesso Condicional com apenas alguns cliques, permitindo que você imponha de forma fácil e seletiva os controles de acesso e de sessão nos aplicativos da sua organização com base em qualquer condição no acesso condicional. As condições definem *quem* (usuário ou grupo de usuários) e *o que* (quais aplicativos de nuvem) e *onde* (quais locais e redes) uma política de acesso condicional é aplicada. Depois de determinar as condições, você pode encaminhar os usuários para Cloud App Security em que você pode proteger dados com Controle de Aplicativos de Acesso Condicional aplicando controles de acesso e sessão.
 
@@ -107,6 +107,13 @@ Para configurar uma política para aproveitar o gerenciamento de dispositivos po
 1. Selecione a guia **identificação do dispositivo** .
 1. Carregue quantos certificados raiz ou intermediários forem necessários.
 
+    > [!TIP]
+    > Para testar como isso funciona, você pode usar nosso CA raiz de exemplo e certificado de cliente, da seguinte maneira:
+    >
+    > 1. Baixe o [certificado de cliente](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleClientCert.pfx)e a [AC raiz](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleRootCA.crt.pem) de exemplo.
+    > 1. Carregue a AC raiz para Cloud App Security.
+    > 1. Instale o certificado do cliente (password = Microsoft) nos dispositivos relevantes.
+
 Depois que os certificados forem carregados, você poderá criar políticas de acesso e sessão com base na **marca do dispositivo** e no **certificado de cliente válido**.
 
 ## <a name="supported-apps-and-clients"></a>Clientes e aplicativos compatíveis
@@ -116,7 +123,7 @@ Controles de sessão e de acesso podem ser aplicados a qualquer logon único int
 Cloud App Security identifica aplicativos usando as informações disponíveis em seu catálogo de aplicativos de nuvem. Algumas organizações e usuários personalizam aplicativos adicionando plug-ins. No entanto, para que os controles de sessão funcionem corretamente com esses plug-ins, os domínios personalizados associados devem ser adicionados ao respectivo aplicativo no catálogo.
 
 > [!NOTE]
-> O aplicativo autenticador, entre outros fluxos de entrada do aplicativo cliente nativo, usa um fluxo de entrada não interativo e não pode ser usado com controles de acesso.
+> O aplicativo Authenticator, entre outros fluxos de entrada do aplicativo cliente nativo, usa um fluxo de entrada não interativo e não pode ser usado com controles de acesso.
 
 ### <a name="access-controls"></a>Controles de acesso
 
@@ -158,7 +165,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Power BI
 - Salesforce
 - ServiceNow
-- SharePoint Online
+- SharePoint online
 - Slack
 - Tableau
 - Microsoft Teams (versão prévia)
@@ -174,7 +181,7 @@ Veja a seguir uma lista de aplicativos em destaque com suporte no Office 365 Clo
 - Exchange Online
 - OneDrive for Business
 - Power BI
-- SharePoint Online
+- SharePoint online
 - Microsoft Teams (versão prévia)
 - Yammer (versão prévia)
 
