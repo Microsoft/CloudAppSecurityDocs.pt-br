@@ -13,11 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 2a9ef4658cb363e98397341faffc69d6c961808f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 6145c6dade8729c3572f9c491ad9743899b3b92e
+ms.sourcegitcommit: 5f3b3f11bfb6f677b8666a4566e7abbb873567d1
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624936"
+ms.lasthandoff: 07/12/2020
+ms.locfileid: "86279994"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar o Shadow IT na sua rede
 
@@ -78,7 +79,7 @@ Agora que o Cloud Discovery está em execução na sua rede, examine os relatór
 
     * Aprofunde-se ainda mais investigando o uso de aplicativos descobertos. Exiba os subdomínios e recursos para saber mais sobre atividades específicas, acesso a dados e uso de recursos em seus serviços de nuvem. Para obter mais informações, confira [Ver mais sobre aplicativos descobertos](discovered-apps.md#deep-dive-into-discovered-apps) e [Descobrir recursos e aplicativos personalizados](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. **Identificar aplicativos alternativos**: Use o catálogo de aplicativos de nuvem e filtre os aplicativos que pertencem à mesma categoria de aplicativo. Além disso, usando os filtros avançados, identifique soluções que estejam em conformidade com os diferentes controles de segurança necessários para manter a conformidade com a política da organização.
+1. **Identificar aplicativos alternativos**: Use o catálogo de aplicativos na nuvem para identificar os aplicativos mais seguros com funcionalidades empresariais semelhantes aos dos aplicativos suspeitos detectados, mas que estão em conformidade com a política da sua organização. Faça isso usando os filtros avançados para encontrar os aplicativos na mesma categoria e que estão de acordo com seus diferentes controles de segurança.
 
 ### <a name="phase-3-manage-your-apps"></a>Fase 3: Gerenciar seus aplicativos
 
