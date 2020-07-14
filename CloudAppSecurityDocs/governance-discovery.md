@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c0df9e769608b2ca66de5b7a8889bfd648795a9
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: ad9f158a1e81a9aeaf7bb59a23da56e27260a6c5
+ms.sourcegitcommit: a76d7b8837a5ad17348eb1b2e1dcbe0bf8a2d0a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624576"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86282425"
 ---
 # <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
 
@@ -35,7 +35,7 @@ Você pode cancelar a sanção um aplicativo de risco específico clicando nos t
 
 Se você tiver uma lista de aplicativos que deseja sancionar ou cancelar a sanção, use a caixa de seleção para marcar os aplicativos que deseja gerenciar e, em seguida, selecione a ação.
 
-Para consultar uma lista de aplicativos não sancionados, você pode [gerar um script de bloco usando as APIs do Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+Para consultar uma lista de aplicativos não sancionados, você pode [gerar um script de bloco usando as APIs do Cloud App Security](api-discovery-script.md).
 
 > [!NOTE]
 > Se seu locatário usa a ATP (proteção avançada contra ameaças) do Microsoft defender, o Zscaler NSS ou o iboss, qualquer aplicativo marcado como não aprovado é bloqueado automaticamente pelo Cloud App Security, e as seções a seguir sobre a criação de scripts de bloqueio são desnecessárias. Para obter mais informações, consulte [integrar com o Microsoft defender ATP](wdatp-integration.md), [integrar com o Zscaler](zscaler-integration.md)e [integrar com o iboss](iboss-integration.md) , respectivamente.
