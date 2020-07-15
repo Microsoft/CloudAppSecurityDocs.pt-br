@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4b2d84c2c8f3260cf5e6048bc453a62c29cd95b9
-ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
+ms.openlocfilehash: bf6c12f3b41abf63ab3183f85d7dedcba21584c9
+ms.sourcegitcommit: b71546236cb97c0a22d0e82742a167f31555b275
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86122641"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308251"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -75,8 +75,8 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 | **Atividade de logon** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Atividade do usuário** | Não aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
 | **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação periódica** | | ✔ | Em breve | Não aplicável | ✔ | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação quase em tempo real** | | ✔ | ✔ | Não aplicável | ✔-requer o Google Business Enterprise | ✔ | Não aplicável | | | ✔ | Sem suporte pelo provedor |
+| **DLP – verificação periódica** | | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **DLP – verificação quase em tempo real** | | ✔ | | Não aplicável | ✔-requer o Google Business Enterprise | ✔ | Não aplicável | | | ✔ | Sem suporte pelo provedor |
 | **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | Não aplicável | | ✔ | Sem suporte pelo provedor |
 | **Governança de arquivos** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | | Sem suporte pelo provedor |
 | **Exibir permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Chegando em | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
@@ -117,12 +117,22 @@ Para obter mais informações sobre o emparelhamento público, consulte [Circuit
 
 ## <a name="disable-app-connectors"></a>Desabilitar conectores de aplicativos
 
+> [!NOTE]
+> Antes de desabilitar um conector de aplicativo, verifique se você tem os detalhes de conexão disponíveis, pois você precisará deles se quiser reabilitar o conector.
+
 Para desabilitar aplicativos conectados:
 
 1. Na página **aplicativos conectados** , na linha relevante, clique nos três pontos e selecione **desabilitar conector de aplicativo**.
 1. No pop-up, clique em **desabilitar instância do conector de aplicativo** para confirmar a ação.
 
 Uma vez desabilitada, a instância do conector interromperá o consumo de dados do conector.
+
+## <a name="re-enable-app-connectors"></a>Habilitar novamente os conectores de aplicativos
+
+Para reabilitar os aplicativos conectados:
+
+1. Na página **aplicativos conectados** , na linha relevante, clique nos três pontos e selecione **Editar aplicativo**. Isso inicia o processo para adicionar um conector.
+1. Adicione o conector usando as etapas no guia do conector de API relevante. Por exemplo, se você estiver reabilitando o GitHub, use as etapas em [conectar o GitHub Enterprise Cloud a Cloud app Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
