@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: ddbcbbe72c83f926b8307904a9d5e2bb2731dcba
-ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
+ms.openlocfilehash: 41c2617226653564398836ce7326521afde19f82
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84275788"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402249"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 
@@ -77,7 +77,7 @@ Use as etapas a seguir para criar uma política de acesso condicional do Azure A
 
 1. Em **atribuições**, clique em **aplicativos de nuvem**, atribua os aplicativos que você deseja controlar com controle de aplicativos de acesso condicional e, em seguida, clique em **concluído**.
 
-1. Em **controles de acesso**, clique em **sessão**, selecione **usar controle de aplicativos de acesso condicional** e escolha as políticas internas (**monitorar somente** ou **bloquear downloads**) ou **use a política personalizada** para definir uma política avançada no Cloud app Security e clique em **selecionar**.
+1. Em **controles de acesso**, clique em **sessão**, selecione **usar controle de aplicativos de acesso condicional** e escolha uma política interna (**monitorar somente** ou **bloquear downloads**) ou **use a política personalizada** para definir uma política avançada no Cloud app Security e clique em **selecionar**.
 
     ![Acesso condicional do Azure AD](media/azure-ad-caac-policy.png)
 
@@ -159,7 +159,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 ## <a name="step-2-configure-the-users-that-will-deploy-the-app"></a>Etapa 2: configurar os usuários que implantarão o aplicativo<a name="conf-users"></a>
 
-1. No Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações") e selecione **configurações**.
+1. No Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações") e selecione **configurações**.
 
 1. Em **controle de aplicativos de acesso condicional**, selecione **integração do aplicativo/manutenção**.
 
@@ -178,13 +178,13 @@ Vá para o aplicativo que você está implantando. A página que você vê depen
 
 ### <a name="to-add-a-new-app"></a>Para adicionar um novo aplicativo<a name="add-app"></a>
 
-1. Na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações")e selecione **controle de aplicativos de acesso condicional**.
+1. Na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações")e selecione **controle de aplicativos de acesso condicional**.
 
-1. Clique em **Exibir novos aplicativos**.
+1. Na faixa, clique em **Exibir novos aplicativos**.
 
     ![Controle de Aplicativos de Acesso Condicional, exibir novos aplicativos](media/caac-view-apps.png)
 
-1. Na tela que é aberta, você pode ver uma lista de novos aplicativos. Para cada aplicativo que você estiver integrando, clique no **+** sinal e, em seguida, clique em **Adicionar**.
+1. Na lista de novos aplicativos, para cada aplicativo que você está integrando, clique no **+** sinal e, em seguida, clique em **Adicionar**.
 
     > [!NOTE]
     > Se um aplicativo não for exibido no catálogo de aplicativos do Cloud App Security, ele será exibido na caixa de diálogo nos aplicativos não identificados juntamente com a URL de logon. Ao clicar no sinal + desses aplicativos, você pode integrar o aplicativo como um aplicativo personalizado.
@@ -205,7 +205,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
 1. No painel domínios descobertos, anote os nomes de domínio ou exporte a lista como um arquivo. csv.
     > [!NOTE]
     > O painel exibe uma lista de domínios descobertos que não estão associados no aplicativo. Os nomes de domínio são totalmente qualificados.
-1. Vá para Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações") e selecione **controle de aplicativos de acesso condicional**.
+1. Vá para Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações") e selecione **controle de aplicativos de acesso condicional**.
 1. Na lista de aplicativos, na linha na qual o aplicativo que você está implantando aparece, escolha os três pontos no final da linha e, em **detalhes do aplicativo**, escolha **Editar**.
     > [!TIP]
     > Para exibir a lista de domínios configurados no aplicativo, clique em **Exibir domínios de aplicativo**.
@@ -227,7 +227,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
     > [!NOTE]
     > Para que os certificados sejam reconhecidos, depois de instalar o certificado, você deve reiniciar o navegador e ir para a mesma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Clique em **Continuar**.
+1. Clique em **Continue**.
 
 ## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Etapa 4: verificar se o aplicativo está funcionando corretamente<a name="verify-app"></a>
 
@@ -244,7 +244,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
 
 Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produção de sua organização, execute as etapas a seguir.
 
-1. Em Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
+1. Em Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
 1. Na lista de aplicativos, na linha na qual o aplicativo que você está implantando aparece, escolha os três pontos no final da linha e escolha **Editar aplicativo**.
 1. Selecione **usar com controle de aplicativos de acesso condicional** e, em seguida, clique em **salvar**.
 

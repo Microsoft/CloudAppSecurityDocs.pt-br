@@ -1,6 +1,6 @@
 ---
-title: Definir escopo da implantação do Microsoft Cloud App Security
-description: Este artigo fornece informações sobre como definir o escopo de sua implantação do Cloud App Security, incluir e excluir usuários ou grupos específicos.
+title: Privacidade da atividade
+description: Este artigo fornece informações sobre como configurar o monitoramento de atividades para estar em conformidade com a política de privacidade do usuário.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -13,18 +13,18 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6cfc4421569a59c49c9a980af3ce2e0876d90bce
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 6de413cc6067ea43f5c2d677e421c09ffddcd94d
+ms.sourcegitcommit: 3464ce8ed73d1bfaf02e4e78007766ea18350d9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84253813"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402670"
 ---
 # <a name="activity-privacy"></a>Privacidade da atividade
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security fornece às empresas a capacidade de determinar de maneira granular quais usuários eles desejam monitorar com base na associação de grupo. A privacidade da atividade adiciona a capacidade de seguir os regulamentos de conformidade da sua organização sem comprometer a privacidade do usuário. Isso é feito permitindo que você monitore os usuários enquanto mantém sua privacidade ocultando suas atividades no log de atividades. Somente administradores autorizados têm a opção de optar por exibir essas atividades privadas, com cada instância sendo auditada no log de governança.
+O Microsoft Cloud App Security fornece às empresas a capacidade de determinar de maneira granular quais usuários eles desejam monitorar com base na associação de grupo. A privacidade da atividade adiciona a capacidade de seguir os regulamentos de conformidade da sua organização sem comprometer a privacidade do usuário. Isso é feito permitindo que você monitore os usuários enquanto mantém sua privacidade ocultando suas atividades no log de atividades. Somente administradores autorizados têm a opção de exibir essas atividades privadas, com cada instância sendo auditada no log de governança.
 
 ## <a name="configure-activity-privacy-user-groups"></a>Configurar grupos de usuários de privacidade da atividade
 
@@ -38,7 +38,7 @@ Para configurar os grupos de privacidade do usuário, você deve primeiro [impor
 
 1. Na barra de menus, clique nas configurações engrenagem e selecione **implantação e privacidade com escopo**.
 
-    ![ícone de configurações](media/settings-icon.png)
+    ![Ícone de configurações](media/settings-icon.png)
 
 1. Para definir grupos específicos a serem monitorados pelo Cloud App Security, na guia **privacidade da atividade** , clique no ícone de adição.
     ![icon](media/plus-icon.png)
@@ -54,7 +54,7 @@ Para configurar os grupos de privacidade do usuário, você deve primeiro [impor
 
 1. Na barra de menus, clique nas configurações engrenagem e selecione **gerenciar acesso de administrador**.
 
-    ![ícone de configurações](media/settings-icon.png)
+    ![Ícone de configurações](media/settings-icon.png)
 
 1. Para conceder permissão a administradores específicos para exibir atividades privadas, na guia **permissões de privacidade da atividade** , clique no ícone de adição.
     ![icon](media/plus-icon.png)

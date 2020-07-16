@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f63e873d2b65781a3bca7209c020696bf2957171
-ms.sourcegitcommit: 4e2b905c8770d411df68372c29154d30b2cf195e
+ms.openlocfilehash: 5d6491c27c5eeb4608f9712c3835194a9c252059
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2020
-ms.locfileid: "85123200"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402215"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integre-se ao Microsoft Power Automate para automação de alerta personalizada
 
@@ -28,9 +28,9 @@ O Cloud App Security integra-se com a [automatização de energia da Microsoft](
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Você deve ter um plano válido de [automatização de energia da Microsoft](https://flow.microsoft.com/pricing)
+- Você precisa ter um plano válido do [Microsoft Power Automate](https://flow.microsoft.com/pricing)
 
-## <a name="how-it-works"></a>Como ele funciona
+## <a name="how-it-works"></a>Como funciona
 
 Por conta própria, Cloud App Security fornece opções de governança predefinidas, como suspender um usuário ou tornar um arquivo privado ao definir políticas. Ao criar um guia estratégico na automação de energia usando o conector de Cloud App Security, você pode criar fluxos de trabalho para habilitar opções de governança personalizadas para suas políticas. Depois que o guia estratégico é criado na automatização de energia, basta associá-lo a uma política no Cloud App Security para enviar alertas para a automatização de energia. A automatização de energia da Microsoft oferece vários conectores e condições para criar um fluxo de trabalho personalizado para sua organização.
 
@@ -40,7 +40,7 @@ O [conector de Cloud app Security](https://docs.microsoft.com/connectors/cloudap
 
 1. [Criar um token de API](api-tokens.md) no Cloud App Security.
 
-2. Navegue até o [portal de automatização de energia](https://flow.microsoft.com), selecione **meus fluxos**, selecione **novo**e, no menu suspenso, selecione **automatizado de em branco**.
+2. Navegue até o [portal de automatização de energia](https://flow.microsoft.com), selecione **meus fluxos**, selecione **novo**e, na lista suspensa, selecione **automatizado de em branco**.
 
     ![Automatizar a criação de novo fluxo](media/flow-create-new.png)
 
@@ -55,7 +55,7 @@ O [conector de Cloud app Security](https://docs.microsoft.com/connectors/cloudap
     ![Fluxo de trabalho de automação de energia](media/flow-workflow.png)
 
 6. No portal de Cloud App Security, vá para **políticas** e, na linha da política cujos alertas você deseja encaminhar para a automatização de energia, clique nos três pontos e selecione **configurações**.
-7. Em **alertas**, selecione **enviar alertas para a automatização de energia** e escolha o nome do guia estratégico no menu suspenso.
+7. Em **alertas**, selecione **enviar alertas para poder automatizar** e escolha o nome do guia estratégico no menu suspenso.
 
     ![Habilitar a automatização de energia no portal Cloud App Security](media/flow-mcas-config.png)
 

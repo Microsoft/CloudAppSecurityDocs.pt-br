@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 317595b377d19b1d6f9a06b316cb14e4d1ad4c1c
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: b833af37dae275ff9ecdf382eeacc12d59ef3aed
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624588"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402181"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 
@@ -41,7 +41,7 @@ O mecanismo combina três aspectos em cada política:
 
 * Ações automatizadas para governança e correção. Para obter mais informações, consulte [Control](control.md) (Controlar).
     > [!NOTE]
-    > Somente a ação de governança da primeira política disparada é garantida para ser aplicada. Por exemplo, se uma política de arquivo já tiver aplicado um rótulo AIP a um arquivo, uma segunda política de arquivo não poderá aplicar outro rótulo de AIP a ele.
+    > Somente a ação de governança da primeira política disparada é garantida para ser aplicada. Por exemplo, se uma política de arquivo já tiver aplicado um rótulo de AIP (proteção de informações do Azure) a um arquivo, uma segunda política de arquivo não poderá aplicar outro rótulo de AIP a ela.
 
 Quando habilitada, a política examina continuamente seu ambiente de nuvem, identifica arquivos que correspondem aos filtros de contexto e conteúdo e aplica as ações automatizadas solicitadas. Essas políticas detectam e corrigem violações de informações em repouso ou quando novo conteúdo é criado. As políticas podem ser monitoradas usando alertas em tempo real ou relatórios gerados do console.
 

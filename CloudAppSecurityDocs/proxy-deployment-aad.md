@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: bfa910c78201a63a6e18c6e30f345c1e4361b23c
-ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
+ms.openlocfilehash: 11236b48d153e32166e3a12a4b13eb200479cbf9
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84275805"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402232"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
@@ -66,7 +66,7 @@ Use as etapas a seguir para criar uma política de acesso condicional do Azure A
 
 1. Em **atribuições**, clique em **aplicativos de nuvem**, atribua os aplicativos que você deseja controlar com controle de aplicativos de acesso condicional e, em seguida, clique em **concluído**.
 
-1. Em **controles de acesso**, clique em **sessão**, selecione **usar controle de aplicativos de acesso condicional** e escolha as políticas internas (**monitorar somente** ou **bloquear downloads**) ou **use a política personalizada** para definir uma política avançada no Cloud app Security e clique em **selecionar**.
+1. Em **controles de acesso**, clique em **sessão**, selecione **usar controle de aplicativos de acesso condicional** e escolha uma política interna (**monitorar somente** ou **bloquear downloads**) ou **use a política personalizada** para definir uma política avançada no Cloud app Security e clique em **selecionar**.
 
     ![Acesso condicional do Azure AD](media/azure-ad-caac-policy.png)
 
@@ -159,7 +159,7 @@ Cloud App Security sincronizará os detalhes da política com seus servidores pa
 
 As instruções acima ajudaram a criar uma política interna do Cloud App Security para aplicativos em destaque diretamente no Azure AD. Nesta etapa, verifique se os controles de acesso e sessão estão configurados para esses aplicativos.
 
-1. No portal de Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
+1. No portal de Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
 
 1. Na tabela Controle de Aplicativos de Acesso Condicional aplicativos, examine a coluna **controles disponíveis** e verifique se o controle de **acesso** ou o **acesso condicional do Azure ad**e o **controle de sessão** são exibidos para seus aplicativos.
 
