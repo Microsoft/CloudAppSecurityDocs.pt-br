@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 047f922f7040e06d740d8d75e37dd54774b5acb7
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0aff022a162dc099b5a6402570a832de1afcb074
+ms.sourcegitcommit: c37923e69f52ee0e755cca16b4ce88cbc5b01c0b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624946"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86473498"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -44,6 +44,7 @@ Para ver qual data center você está se conectando, execute as seguintes etapas
 
 Para acessar o portal de Cloud App Security, adicione a **porta de saída 443** para os seguintes endereços IP e nomes DNS à lista de permissões do firewall:
 
+```ini
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
     cdn.cloudappsecurity.com
@@ -56,12 +57,15 @@ Para acessar o portal de Cloud App Security, adicione a **porta de saída 443** 
     static2.sharepointonline.com
     dc.services.visualstudio.com
     *.blob.core.windows.net
+```
 
 Para clientes de GCC do governo dos EUA, também é necessário adicionar os seguintes nomes DNS à lista de permissões do firewall para fornecer acesso ao portal do Cloud App Security GCC High:
 
+```ini
     portal.cloudappsecurity.us
     *.portal.cloudappsecurity.us
     cdn.cloudappsecurity.com
+```
 
 Além disso, os itens a seguir devem estar na lista de permissões, dependendo do data center usado:
 
@@ -85,10 +89,12 @@ Configure o firewall para o proxy reverso usando as configurações relevantes p
 
 Para clientes comerciais, para habilitar Cloud App Security proxy reverso, adicione a **porta de saída 443** para os seguintes endereços IP e nomes DNS à lista de permissões do firewall:
 
+```ini
     *.cas.ms
     *.mcas.ms
     *.admin-mcas.ms
     mcasproxy.azureedge.net
+```
 
 Além disso, os itens a seguir devem estar na lista de permissões, dependendo do data center usado:
 
@@ -104,9 +110,11 @@ Além disso, os itens a seguir devem estar na lista de permissões, dependendo d
 
 Para clientes do governo dos EUA GCC High, para habilitar Cloud App Security proxy reverso, adicione a **porta de saída 443** para os seguintes nomes DNS à lista de permissões do firewall:
 
+```ini
     *.mcas-gov.us
     *.admin-mcas-gov.us
     mcasproxy.azureedge.net
+```
 
 ## <a name="siem-agent-connection"></a>Conexão do agente SIEM
 
@@ -202,9 +210,9 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 
 > [!NOTE]
 >
-> - Se o firewall exigir uma lista de acesso de endereço IP estático e não for compatível com a lista de permissões baseada em URL, permita que o coletor de logs inicie o tráfego de saída para os [Intervalos de IP do datacenter do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) na porta 443.
->- Permita que o coletor de logs inicie o tráfego de saída no portal do Cloud App Security.
->- Se você não especificou um proxy ao configurar o coletor de logs, precisará permitir conexões http http://ocsp.msocsp.com/ e OCSP.DigiCert.com na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
+> - Se o firewall exigir uma lista de acesso de endereço IP estático e não for compatível com a lista de permissões baseada em URL, permita que o coletor de logs inicie o tráfego de saída para os [Intervalos de IP do datacenter do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=56519) na porta 443.
+> - Permita que o coletor de logs inicie o tráfego de saída no portal do Cloud App Security.
+> - Se você não especificou um proxy ao configurar o coletor de logs, precisará permitir conexões http http://ocsp.msocsp.com/ e OCSP.DigiCert.com na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 
 ## <a name="next-steps"></a>Próximas etapas
 

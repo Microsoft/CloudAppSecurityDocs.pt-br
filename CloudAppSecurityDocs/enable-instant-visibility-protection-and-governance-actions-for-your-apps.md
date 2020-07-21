@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bf6c12f3b41abf63ab3183f85d7dedcba21584c9
-ms.sourcegitcommit: b71546236cb97c0a22d0e82742a167f31555b275
+ms.openlocfilehash: 84ba90f5959980815caa7170ab7bee9d11db263c
+ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86308251"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865485"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -36,7 +36,7 @@ O Cloud App Security agora dá suporte a várias instâncias do mesmo aplicativo
 > [!NOTE]
 > Não há suporte para várias instâncias no Office 365 e no Azure.
 
-## <a name="how-it-works"></a>Como funciona
+## <a name="how-it-works"></a>Como ele funciona
 
 O Cloud App Security é implantado com privilégios de administrador do sistema para permitir o acesso completo a todos os objetos em seu ambiente.
 
@@ -73,15 +73,15 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 | **Listar privilégios** | | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
 | **Governança de usuário** | | ✔ | Em breve | Conexão do pacote G do assunto | ✔ | ✔ | | Em breve | ✔ | Em breve | Sem suporte pelo provedor |
 | **Atividade de logon** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Atividade do usuário** | Não aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
+| **Atividade do usuário** | Não se aplica | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
 | **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação periódica** | | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação quase em tempo real** | | ✔ | | Não aplicável | ✔-requer o Google Business Enterprise | ✔ | Não aplicável | | | ✔ | Sem suporte pelo provedor |
-| **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | Não aplicável | | ✔ | Sem suporte pelo provedor |
-| **Governança de arquivos** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | | Sem suporte pelo provedor |
-| **Exibir permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Chegando em | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
-| **Revogar permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Ming em breve | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
-| **Aplique os rótulos da Proteção de Informações do Azure** | Não aplicável | ✔ | | Não aplicável | ✔ | ✔ | Não aplicável | | | Não aplicável | Não aplicável |
+| **DLP – verificação periódica** | | ✔ | ✔ | Não se aplica | ✔ | ✔ | Não se aplica | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **DLP – verificação quase em tempo real** | | ✔ | | Não se aplica | ✔-requer o Google Business Enterprise | ✔ | Não se aplica | | | ✔ | Sem suporte pelo provedor |
+| **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não se aplica | ✔ | ✔ | Não se aplica | Não se aplica | | ✔ | Sem suporte pelo provedor |
+| **Governança de arquivos** | ✔ | ✔ | ✔ | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | | Sem suporte pelo provedor |
+| **Exibir permissões de aplicativo** | Não se aplica | Sem suporte pelo provedor | Chegando em | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | Não se aplica | Não se aplica |
+| **Revogar permissões de aplicativo** | Não se aplica | Sem suporte pelo provedor | Ming em breve | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | Não se aplica | Não se aplica |
+| **Aplique os rótulos da Proteção de Informações do Azure** | Não se aplica | ✔ | | Não se aplica | ✔ | ✔ | Não se aplica | | | Não se aplica | Não se aplica |
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -99,13 +99,13 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 | Azure | | Administrador global |
 | AWS | | Usuário recém-criado |
 | Box | Enterprise | É altamente recomendável que você se conecte ao box como um administrador. Conectar-se como um coadministrador resultará em apenas visibilidade parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
-| Dropbox | Business/Enterprise | Administrador |
+| Dropbox | Business/Enterprise | Admin |
 | GitHub | GitHub Enterprise Cloud | Proprietário |
 | GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (não de avaliação) | Administrador |
-| Salesforce | | Administrador |
+| Okta | Enterprise (não de avaliação) | Admin |
+| Salesforce | | Admin |
 | ServiceNow | Eureka e superior | Função admin + RestAPI |
 | Webex | | Admin + administrador de conformidade |
 | Workday | | Consulte os [pré-requisitos do workday de conexão](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
@@ -118,7 +118,9 @@ Para obter mais informações sobre o emparelhamento público, consulte [Circuit
 ## <a name="disable-app-connectors"></a>Desabilitar conectores de aplicativos
 
 > [!NOTE]
-> Antes de desabilitar um conector de aplicativo, verifique se você tem os detalhes de conexão disponíveis, pois você precisará deles se quiser reabilitar o conector.
+>
+> - Antes de desabilitar um conector de aplicativo, verifique se você tem os detalhes de conexão disponíveis, pois você precisará deles se quiser reabilitar o conector.
+> - Essas etapas não podem ser usadas para desabilitar o conector do Azure.
 
 Para desabilitar aplicativos conectados:
 

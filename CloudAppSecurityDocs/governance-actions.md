@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14ef18bb57d979dc5ddabc3ef8a7ff0c724ff619
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: bf3d80fbea1847fc22d07164d25db0ec7c4149f6
+ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624566"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865435"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
@@ -75,7 +75,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
   - **Lixeira** – mova o arquivo para a pasta da lixeira. (Caixa, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![alertas de policy_create](media/policy_create-alerts.png "alertas de policy_create")
+   ![alertas de policy_create](media/policy_create-alerts.png)
 
 ## <a name="activity-governance-actions"></a>Ações de governança de atividade
 
@@ -97,7 +97,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
   - **Confirmar usuário comprometido** – defina o nível de risco do usuário como alto. Isso faz com que as ações de política relevantes definidas no Azure AD sejam impostas. Para obter mais informações sobre como o Azure AD funciona com níveis de risco, consulte [como o AD do Azure usa meus comentários de risco](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
 
-  ![Ações de governança de política de atividade de Cloud App Security](media/activity-policy-ref6.png "referência de política de atividade 6")
+  ![Ações de governança de política de atividade de Cloud App Security](media/activity-policy-ref6.png)
 
 ## <a name="governance-conflicts"></a>Conflitos de governança
 
@@ -122,7 +122,7 @@ Para exibir o log de governança, na barra de menus, clique no ícone configura�
 A tabela a seguir é a lista completa de ações que o portal do Cloud App Security permite que você execute. Essas ações são habilitadas em vários locais por todo o console, conforme descrito na coluna **Localização**. Cada ação de governança realizada é relacionada no Log de Governança.
 Para obter informações sobre como as ações de governança são tratadas quando há conflitos de política, consulte [Conflitos de política](control-cloud-apps-with-policies.md).
 
-| Location | Tipo de objeto de destino | Ação de governança |Descrição| Conectores relacionados|
+| Localização | Tipo de objeto de destino | Ação de governança |Description| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Contas |Arquivo |Remover colaborações do usuário | Remove todas as colaborações de um usuário específico para todos os arquivos - bom para as pessoas que estão saindo da empresa. |Box, G Suite|
 |Contas | Conta | Cancelar suspensão de usuário |Cancela a suspensão do usuário |G Suite, Box, Office, Salesforce|
@@ -143,7 +143,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Política de Arquivos|Arquivo | Notificar o último editor de arquivo |Envia um email para notificar a última pessoa que editou o arquivo que ele viola uma política. |G Suite, Box|
 |Política de Arquivos|Arquivo |Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir. | Todos os aplicativos |
 |Política de arquivos, Atividade de política | Arquivo, Atividade | Notificar usuários específicos |Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.| Todos os aplicativos |
-|Política de arquivo e Política de atividade | Arquivo, Atividade |Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação. |Todos |
+|Política de arquivo e Política de atividade | Arquivo, Atividade |Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação. |Tudo |
 |Política de arquivo e Arquivos|Arquivo | Remover a capacidade do editor de compartilhar|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança restringe essa opção e também o compartilhamento de arquivos com o proprietário.| G Suite|
 |Política de arquivo e Arquivos|Arquivo | [Colocar em quarentena do administrador](use-case-admin-quarantine.md) |Remove todas as permissões do arquivo e move o arquivo para uma pasta de quarentena em um local para o administrador. Essa ação permite que o administrador examine o arquivo e remova-o.| Office 365 SharePoint, OneDrive for Business, Box|
 |Política de arquivo e Arquivos|Arquivo | Aplicar rótulo de classificação|Aplica um rótulo de classificação da Proteção de Informações do Azure a arquivos automaticamente de acordo com as condições definidas na política.| Box, One Drive, G Suite, SharePoint |
