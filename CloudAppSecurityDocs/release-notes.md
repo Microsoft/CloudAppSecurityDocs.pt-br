@@ -11,11 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ff7ac3fb2a6cda0a411ac02f161ce32f5b037a9e
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 55e66016098e6b844686f539c7280b40e60ab993
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625067"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402266"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -484,7 +485,7 @@ Como parte dessa alteração, agora as políticas de detecção de malware inclu
 
 - **Atualizações de Acesso Condicional**  
 O Controle de Aplicativos de Acesso Condicional adicionou a capacidade de monitorar e bloquear as seguintes atividades:
-  - Carregamentos de arquivos em aplicativo – habilitação de cenários que impedem o upload de extensões de malware conhecidas e garantia de que os usuários protejam arquivos com o AIP antes do carregamento.
+  - Uploads de arquivo em qualquer aplicativo – habilitação de cenários que impedem o upload de extensões de malware conhecidas e garantia de que os usuários protejam arquivos com a Proteção de Informações do Azure antes do upload.
   - Copiar e colar em qualquer aplicativo – implementação de controles robustos de exfiltração dos dados, que já incluíam controle de download, impressão e atividades personalizadas, como compartilhamento.
   - Enviar mensagem – garantia de que dados de PII, como senhas, não sejam compartilhados em ferramentas de colaboração populares, como Slack, Salesforce e Workplace by Facebook.
   - Agora, as políticas de sessão incluem modelos internos para permitir que sua organização habilite com facilidade os populares monitoramento e controle em tempo real de seus aplicativos aprovados, como o **Carregamento de blocos com base na inspeção de conteúdo em tempo real**.
