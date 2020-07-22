@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14d8789d4be3aac4199470e8ae60f5505b4fae3b
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 7756d238514b786321ee5c0c4ba91910c3b3dfcf
+ms.sourcegitcommit: 8dbdfab8bb07f1bf128dfc85894a448b63a78148
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624976"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928008"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -56,7 +56,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 
 - Barracuda – firewall do aplicativo Web (W3C)
 - Blue Coat Proxy SG – log de acesso (W3C)
-- Ponto de Verificação
+- Check Point
 - Cisco ASA com FirePOWER
 - Firewall Cisco ASA (Para firewalls Cisco ASA, é necessário definir o nível de informações como 6)
 - Cisco Cloud Web Security
@@ -100,7 +100,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | Não |
 | Blue Coat | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
-| Ponto de Verificação | Não | **Sim** | Não | **Sim** | Não | Não |
+| Check Point | Não | **Sim** | Não | **Sim** | Não | Não |
 | Cisco ASA (Syslog) | Não | **Sim** | Não | **Sim** | **Sim** | Não |
 | Cisco ASA com FirePOWER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Cisco Cloud Web Security |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
@@ -123,8 +123,8 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 | MS TMG | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
 | Redes Palo Alto | Não | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Sophos | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | Não |
-| Squid (comum) | **Sim** | Não | **Sim** | **Sim** | Não | **Sim** |
-| Squid (nativo) | **Sim** | Não | **Sim** | **Sim** | Não | **Sim** |
+| Squid (comum) | **Sim** | Não | **Sim** | **Sim** | **Sim** | Não |
+| Squid (nativo) | **Sim** | Não | **Sim** | **Sim** | Não | Não |
 | Stormshield | Não | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Websense – Relatório de detalhes investigativo (CSV) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Websense – log de atividades de Internet (CEF) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |

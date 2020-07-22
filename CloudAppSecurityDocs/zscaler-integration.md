@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f4f7b05caa3c516294f08864b0a711b71be047f3
-ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
+ms.openlocfilehash: 0e7f32bd4f6213b4bce86232e40d15cf06e12c18
+ms.sourcegitcommit: c737a1ad67b4f7efa302d1aa92fce50f75c94d2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84611164"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86926716"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Integrar o Cloud App Security com o Zscaler
 
@@ -52,7 +52,7 @@ Se você trabalha com o Cloud App Security e o Zscaler, pode integrar os dois pr
         ![fonte de dados Zscaler](media/data-source-zscaler.png)
 
         > [!NOTE]
-        > Verifique se o nome da fonte de dados é idêntico ao nome do feed usado ao criar o feed Cloud App Security NSS. Para obter mais informações, consulte [adicionando Cloud app Security feeds do NSS](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
+        > Verifique se o nome da fonte de dados é **NSS.** Para obter mais informações sobre como configurar feeds do NSS, consulte [adicionando Cloud app Security feeds do NSS](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
     4. Clique em **Exibir exemplo de arquivo de log esperado**. Em seguida, clique em **Baixar log de exemplo** para exibir um exemplo de log de descoberta e verificar se ele corresponde aos seus logs.<br />
 

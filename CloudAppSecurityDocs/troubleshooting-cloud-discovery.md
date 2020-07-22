@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5d4bff251e40954e6505c9f1633a927366d78df6
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 082ca682594dbb8902605993d8ccfa1721d1c0ae
+ms.sourcegitcommit: c737a1ad67b4f7efa302d1aa92fce50f75c94d2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624829"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86926733"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solução de problemas do Cloud Discovery
 
@@ -42,7 +42,7 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 
 ### <a name="governance-log-errors"></a>Erros de log de governança
 
-|Erro|Descrição|Resolução|
+|Erro do|Descrição|Resolução|
 |----|----|----|
 |Tipo de arquivo sem suporte|O arquivo carregado não é um arquivo de log válido (por exemplo, um arquivo de imagem).|Carregue um arquivo de **texto**, * * zip ou **gzip** que foi exportado diretamente do seu firewall ou proxy.|
 |O formato de log não corresponde|O formato de log carregado não corresponde ao esperado para esta fonte de dados.|1. Verifique se o log não está corrompido. <br /> 2. Compare e corresponda ao seu log com o formato de exemplo mostrado na página carregar.|
@@ -56,7 +56,7 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 |----|----|
 |Não foi possível conectar ao coletor de logs por FTP| 1. Verifique se você está usando credenciais de FTP e não credenciais de SSH. <br />2. Verifique se o cliente FTP que você está usando não está definido como SFTP.  |
 |Falha ao atualizar a configuração do coletor | 1. Verifique se você inseriu o token de acesso mais recente. <br />2. Verifique no firewall se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443.|
-|Logs enviados ao coletor não aparecem no portal | 1. Verifique se há tarefas de análise com falha no log de governança.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Se houver, corrija o erro com a tabela de erros de Análise de Log acima.<br /> 2. caso contrário, verifique as fontes de dados e a configuração do coletor de logs no Portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Na página Fonte de dados, verifique se a fonte de dados que você está usando está devidamente configurada. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Na página Coletores de Logs, verifique se que a fonte de dados está vinculada ao coletor de logs correto. <br /> 3. Verifique a configuração local do computador do coletor de logs local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Faça logon no coletor de logs via SSH e execute o utilitário collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme se seu firewall ou proxy está enviando logs para o coletor de logs usando o protocolo definido (Syslog/TCP, Syslog/UDP ou FTP) e se ele está enviando para a porta e diretório corretos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Execute netstat no computador e verifique se ele recebe conexões de entrada de seu proxy ou firewall <br /> 4. Verifique se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443. |
+|Logs enviados ao coletor não aparecem no portal | 1. Verifique se há tarefas de análise com falha no log de governança.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Se houver, corrija o erro com a tabela de erros de Análise de Log acima.<br /> 2. caso contrário, verifique as fontes de dados e a configuração do coletor de logs no Portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Na página fonte de dados, verifique se o nome da fonte de dados é **NSS** e se está configurado corretamente. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Na página Coletores de Logs, verifique se que a fonte de dados está vinculada ao coletor de logs correto. <br /> 3. Verifique a configuração local do computador do coletor de logs local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Faça logon no coletor de logs via SSH e execute o utilitário collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme se seu firewall ou proxy está enviando logs para o coletor de logs usando o protocolo definido (Syslog/TCP, Syslog/UDP ou FTP) e se ele está enviando para a porta e diretório corretos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Execute netstat no computador e verifique se ele recebe conexões de entrada de seu proxy ou firewall <br /> 4. Verifique se o coletor de logs tem permissão para iniciar o tráfego de saída na porta 443. |
 |Status do coletor de logs: criado | A implantação do coletor de logs não foi concluída. Conclua as etapas de implantação locais de acordo com a guia de implantação.|
 |Status do coletor de logs: desconectado | Não há dados recebidos nas últimas 24 horas de qualquer uma das fontes de dados vinculados. |
 |Falha ao extrair a imagem do coletor mais recente| Se você receber esse erro durante a implantação do Docker, pode ser que você não tenha memória suficiente no computador host. Para verificar isso, execute este comando no host: `docker pull microsoft/caslogcollector` . Se ele retornar este erro: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` contate o administrador da máquina host para fornecer mais espaço.|
