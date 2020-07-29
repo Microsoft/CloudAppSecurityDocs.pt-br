@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55e66016098e6b844686f539c7280b40e60ab993
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: fcf90957167b9e51522e2f9f77a3c29958f6c9a2
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402266"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254637"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -454,7 +454,7 @@ O Cloud App Security Cloud Discovery agora inclui um analisador de log integrado
 Lançada em 31 de março de 2019
 
 - **Melhoria de viagem impossível**  
-A detecção de viagem impossível foi aprimorada com suporte dedicado para países vizinhos.
+A detecção de viagem impossível foi aprimorada com suporte dedicado para países/regiões vizinhos.
 - **Suporte de atributo adicional para o analisador de CEF genérico**  
 O suporte do analisador de log do Cloud Discovery para o formato CEF genérico foi aprimorado para dar suporte a atributos adicionais.
 - **Acesso com escopo aos relatórios do Cloud Discovery**  
@@ -776,7 +776,7 @@ O Microsoft Cloud App Security está estendendo seus recursos de monitoramento d
 
 - **Implantação com escopo** (distribuição gradual)  
 O Microsoft Cloud App Security fornece às empresas a capacidade de determinar granularmente quais usuários elas desejam monitorar e proteger com base na associação de grupo. Esse recurso permite selecionar usuários cujas atividades não serão exibidas para nenhum dos aplicativos protegidos. O recurso de monitoramento com escopo definido é especialmente útil para:
-  - Conformidade – se os seus regulamentos de conformidade exigirem que você não monitore usuários de determinados países devido a regulamentos locais.
+  - Conformidade – se os seus regulamentos de conformidade exigirem que você não monitore usuários de determinados países/regiões devido a regulamentos locais.
   - Licenciamento – se você quiser monitorar menos usuários para permanecer dentro dos limites de suas licenças do Microsoft Cloud App Security.
   Para saber mais, confira [Implantação com escopo](scoped-deployment.md).
 

@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: galz
 ms.suite: ems
-ms.openlocfilehash: 3b42c103d1c9143217c76fa9c8f3d346ae8f3252
-ms.sourcegitcommit: 5e8dd22b6c9a5c18dbb704ccc8d8b12b33b66955
+ms.openlocfilehash: 00646b44cb9c2095e3beaaa98f3528c6eb7b31db
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2020
-ms.locfileid: "83006200"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254815"
 ---
 # <a name="tutorial-detect-suspicious-user-activity-with-ueba"></a>Tutorial: detectar atividade de usuário suspeita com UEBA
 
@@ -138,10 +138,10 @@ Para evitar o excesso de alertas, configure a sensibilidade deles. Você pode us
 
 ## <a name="phase-4-tune-rule-based-detection-activity-policies"></a>Fase 4: ajustar as políticas (atividade) de detecção baseada em regras
 
-As [políticas de detecção baseada em regras](user-activity-policies.md) oferecem a capacidade de complementar as políticas de detecção de anomalias com requisitos específicos da organização. Recomendamos a criação de políticas baseadas em regras usando um dos nossos Modelos de política de atividade (acesse **Controle** > **Modelos** e defina o **Tipo** de filtro para **Política de atividade**) e, em seguida, [configure-os](activity-filters-queries.md) para detectar comportamentos que não são normais para seu ambiente. Por exemplo, para uma organização que não tem nenhuma presença em um país específico, faz sentido criar uma política que detecta as atividades anormais naquele país e alertá-los sobre elas. Para outras, que têm grandes filiais naquele país, as atividades realizadas nele seriam normais e não faria sentido detectá-las.
+As [políticas de detecção baseada em regras](user-activity-policies.md) oferecem a capacidade de complementar as políticas de detecção de anomalias com requisitos específicos da organização. Recomendamos a criação de políticas baseadas em regras usando um dos nossos Modelos de política de atividade (acesse **Controle** > **Modelos** e defina o **Tipo** de filtro para **Política de atividade**) e, em seguida, [configure-os](activity-filters-queries.md) para detectar comportamentos que não são normais para seu ambiente. Por exemplo, para uma organização que não tem nenhuma presença em um país/região específico, faz sentido criar uma política que detecte as atividades anormais naquele país e alertá-la sobre elas. Para outras, que têm grandes filiais naquele país, as atividades realizadas nele seriam normais e não faria sentido detectá-las.
 
 1. **Ajustar o volume de atividades**  
-Escolha o volume de atividades necessário antes que a detecção gere um alerta. Usando nosso exemplo de país, se você não tiver nenhuma presença em um país, até mesmo uma única atividade será significativa e garantirá um alerta. No entanto, uma única falha de logon pode ser um erro humano e apenas interessará se houver muitas falhas em um curto período.
+Escolha o volume de atividades necessário antes que a detecção gere um alerta. Usando nosso exemplo de país, se você não tiver nenhuma presença em um país/região, até mesmo uma única atividade será significativa e garantirá um alerta. No entanto, uma única falha de logon pode ser um erro humano e apenas interessará se houver muitas falhas em um curto período.
 2. **Ajustar os [filtros de atividade](activity-filters-queries.md)**  
 Defina os filtros necessários para detectar o tipo de atividade no qual você deseja alertas. Por exemplo, para detectar a atividade de um país, use o parâmetro **Local**.
 3. **Ajustar alertas**  

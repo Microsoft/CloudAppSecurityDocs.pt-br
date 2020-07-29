@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 77face48858ae577c4eb2aa4fd85f7fc39c81377
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 341bc297d31f53cf446baec553e3abd6eec1c6df
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720788"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254713"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
 
@@ -42,7 +42,7 @@ Esse nível forte de proteção vai junto com o arquivo. O arquivo continuará p
 
 ## <a name="the-threat"></a>A ameaça
 
-Um usuário da sua organização salva os arquivos confidenciais de informações do cliente no Box e os define para serem compartilhados com todos na organização. O usuário não percebe que não é somente sua equipe imediata que tem acesso a essa conta do Box, mas toda a equipe de suporte. Esse acesso inclui fornecedores, parceiros e visitantes que eventualmente visitam o escritório. Agora, qualquer pessoa com acesso à conta do Box da sua organização tem acesso a essas informações. Além de esse acesso poder ser perigoso para sua organização, ele pode estar violando regulamentos de informações pessoais em muitos países, causando possíveis problemas legais.
+Um usuário da sua organização salva os arquivos confidenciais de informações do cliente no Box e os define para serem compartilhados com todos na organização. O usuário não percebe que não é somente sua equipe imediata que tem acesso a essa conta do Box, mas toda a equipe de suporte. Esse acesso inclui fornecedores, parceiros e visitantes que eventualmente visitam o escritório. Agora, qualquer pessoa com acesso à conta do Box da sua organização tem acesso a essas informações. Esse acesso não só pode ser perigoso para sua organização, como também pode violar regulamentos de informações pessoais em muitos países/regiões, causando possíveis problemas legais.
 
 ## <a name="the-solution"></a>A solução
 
