@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5f149c3f1eeb960169feac803db7cd2e7f2e62c2
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 0c5cb9d6604fead5090c68ae74d9919d4ab0b3e4
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720200"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254611"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Como localizar relatórios internos preteridos
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Estamos atualizando a funcionalidade de relatórios internos inserindo-a em outras partes do portal. A atualização dessa funcionalidade está em andamento para melhoria dos relatórios do Microsoft Cloud App Security.
 
@@ -31,9 +31,9 @@ Estamos atualizando a funcionalidade de relatórios internos inserindo-a em outr
 
 Essa tabela ajuda você a exibir as informações fornecidas pelos relatórios preteridos usando outras funcionalidades do Cloud App Security:
 
-| Tipo de relatório | Nome do relatório interno | Description | Novo local dos dados |
+| Tipo de relatório | Nome do relatório interno | Descrição | Novo local dos dados |
 |----|----|----|----|
-| Segurança | Atividade | Esse relatório permite exibir uma lista dos países dos quais a atividade foi originada em seus aplicativos na nuvem. O relatório mostra diferentes parâmetros revelando o volume de atividades de cada país, como o número de eventos, o número de usuários e assim por diante. Isso ajuda você a obter uma visão geral da distribuição geográfica dos seus usuários. | Essas informações estão disponíveis para aplicativos, usuários e endereços IP específicos. Para cada aplicativo, clique no aplicativo. Nele, você pode ver o mapa de atividades com todos os locais. Para cada usuário, clique no usuário e na gaveta de insights do usuário. Nele, você pode ver os locais usados recentemente e o número de endereços IP e ISPs usados. Para cada endereço IP, clique no endereço IP específico. Na gaveta do endereço IP, você pode ver quantos usuários e administradores o utilizaram. |
+| Segurança | Atividade | Este relatório permite que você exiba uma lista de países/regiões da qual a atividade foi originada em seus aplicativos de nuvem. O relatório mostra parâmetros diferentes revelando o volume de atividade de cada país/região, como o número de eventos, o número de usuários e assim por diante. Isso ajuda você a obter uma visão geral da distribuição geográfica dos seus usuários. | Essas informações estão disponíveis para aplicativos, usuários e endereços IP específicos. Para cada aplicativo, clique no aplicativo. Nele, você pode ver o mapa de atividades com todos os locais. Para cada usuário, clique no usuário e na gaveta de insights do usuário. Nele, você pode ver os locais usados recentemente e o número de endereços IP e ISPs usados. Para cada endereço IP, clique no endereço IP específico. Na gaveta do endereço IP, você pode ver quantos usuários e administradores o utilizaram. |
 | Segurança | Uso de navegador | Os ataques baseados em navegador estão entre os vetores de ataques mais comuns. Os fornecedores investem grandes quantidades de recursos na proteção do software de navegação, criando um mecanismo de atualização efetivo para publicar atualizações nos pontos de extremidade. O uso de navegadores preteridos muito tempo depois de sua atualização estar vencida torna-os um alvo fácil para invasores que usam kits de exploração disponíveis. Essa funcionalidade permite que você obtenha uma lista dos navegadores desatualizados usados nos últimos 7 dias por usuários que acessam seus aplicativos na nuvem. Também permite saber se o uso de navegador desatualizado foi realizado por um robô. | Vá para o **Log de atividades** e abra **Filtros avançados**. Em seguida, defina o filtro para **Marca de agente do usuário** como igual a **Navegador desatualizado** e **Sistema operacional desatualizado** para ver uma lista de todos os sistemas operacionais e navegadores desatualizados em uso. |
 | Segurança | Endereços IP ‑ contas com privilégios| Esse relatório lista os endereços IP usados por dispositivos que executam atividades administrativas nos últimos 7 dias em seu ambiente de nuvem protegido pelo Cloud App Security. A data é baseada em logs de auditoria acumulados pelo Cloud App Security. Os endereços IP são associados a uma localização geográfica e a uma organização de origem. Essas informações permitem identificar os endereços IP suspeitos que se conectam aos seus aplicativos protegidos. Você pode exibir os logs de auditoria para cada endereço IP clicando nele. | Clique em um usuário específico. Em seguida, na gaveta de insights do usuário, você pode ver os locais usados recentemente e o número de endereços IP e ISPs usados. |
 | Gerenciamento de usuários | Contas inativas | Contas inativas são contas que têm acesso à sua instância de nuvem, mas não executaram nenhum evento durante os últimos 60 dias. Essa falta de ação sugere que essas contas não estão mais ativas e devem ser suspensas para impedir o acesso futuro por invasores ou ex-funcionários. Seguir essa prática recomendada não apenas melhora sua postura de segurança, mas também reduz os custos operacionais. | Acesse a página **Usuários e contas** e use o filtro **Visto pela última vez** para gerar uma lista de todos os usuários que não executaram nenhuma atividade recentemente. |

@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6b07d3dd484fba64b8feda1d5b5fb37a20cc09f3
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0815432cf7410ab4e122ab52a136b978d6dec430
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624305"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254594"
 ---
 # <a name="cloud-app-security-best-practices"></a>Práticas recomendadas de Cloud App Security
 
@@ -134,7 +134,7 @@ Cloud App Security fornece a capacidade de investigar e monitorar as permissões
 **Para obter mais informações**:
 
 * [Integração à Proteção de Informações do Azure](azip-integration.md)
-* [Tutorial: aplicar automaticamente rótulos de classificação da proteção de informações do Azure](use-case-information-protection.md)
+* [Tutorial: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure](use-case-information-protection.md)
 
 ---
 
@@ -232,7 +232,7 @@ As políticas de detecção de anomalias são disparadas quando há atividades i
 ---
 
 **Prática recomendada**: detectar atividade de locais ou países inesperados  
-**Detalhe**: Crie uma política de atividade para notificá-lo quando os usuários entrarem de locais ou países inesperados. Essas notificações podem alertá-lo sobre sessões possivelmente comprometidas em seu ambiente para que você possa detectar e corrigir ameaças antes que elas ocorram.  
+**Detalhe**: Crie uma política de atividade para notificá-lo quando os usuários entrarem de locais inesperados ou países/regiões. Essas notificações podem alertá-lo sobre sessões possivelmente comprometidas em seu ambiente para que você possa detectar e corrigir ameaças antes que elas ocorram.  
 **Para obter mais informações**:
 
 * [Políticas de proteção contra ameaças](policies-threat-protection.md)
@@ -289,7 +289,7 @@ Use essas recomendações para monitorar o status de conformidade e a postura de
 
 * [Configuração de segurança para o Azure](security-config.md)
 * [Configuração de segurança para o AWS](security-config-aws.md)
-* [Configuração de segurança para GCP](security-config-gcp.md)
+* [Configuração de segurança para o GCP](security-config-gcp.md)
 
 ---
 

@@ -14,22 +14,22 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 433488b7302d3f66255bb1bfa04b630d8dbb1b7d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5f0aa6f32f964d1f0bb5f2ad404bae65e9e95e0c
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721047"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254730"
 ---
-# Implantação com escopo <a name="scoped-deployment"></a> 
+# <a name="scoped-deployment"></a>Implantação com escopo<a name="scoped-deployment"></a> 
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Microsoft Cloud App Security permite definir o escopo da implantação. Escopo permite que você selecione alguns grupos de usuários a serem monitorados para aplicativos ou excluídos do monitoramento.
 
 ## <a name="include-or-exclude-user-groups"></a>Incluir ou excluir grupos de usuários
 
-Não convém usar o Microsoft Cloud App Security para todos os usuários em sua organização. O escopo é especialmente útil quando você deseja limitar a implantação devido a restrições de licença. Talvez você também precise limitar devido a regulamentos de conformidade que exigem que você não monitore usuário de certos países. Por exemplo, use a implantação no escopo para monitorar somente os funcionários baseado nos EUA. Como alternativa, você pode evitar mostrar todas as atividades para os usuários baseados na Alemanha.
+Não convém usar o Microsoft Cloud App Security para todos os usuários em sua organização. O escopo é especialmente útil quando você deseja limitar a implantação devido a restrições de licença. Talvez você também precise limitar devido a regulamentos de conformidade que exigem que você não monitore os usuários de determinados países/regiões. Por exemplo, use a implantação no escopo para monitorar somente os funcionários baseado nos EUA. Como alternativa, você pode evitar mostrar todas as atividades para os usuários baseados na Alemanha.
 
 - Para definir o escopo de sua implantação, primeiro [importe grupos de usuários](user-groups.md) no Microsoft Cloud App Security. Por padrão, você verá os seguintes grupos:
 
@@ -43,12 +43,12 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
 
 1. Na barra de menus, clique na engrenagem de configurações e selecione **Implantação com escopo**.
 
-    ![ícone de configurações](media/settings-icon.png "ícone de configurações")
+    ![Ícone de configurações](media/settings-icon.png "Ícone de configurações")
 
 2. Para definir o escopo de sua implantação a fim de incluir ou excluir grupos específicos, primeiro [importe grupos de usuários](user-groups.md) no Microsoft Cloud App Security.
 
 3. Para definir grupos específicos para monitoramento do Microsoft Cloud App Security, na guia **Incluir**, clique no ícone de sinal de adição.
-    ![ícone](media/plus-icon.png)
+    ![icon](media/plus-icon.png)
 
 4. Na caixa de diálogo **Criar nova regra de inclusão**, realize as seguintes etapas:
 
@@ -58,7 +58,7 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
 
         ![regra de inclusão](media/include-rule.png)
 
-5. Para definir a exclusão de grupos específicos do monitoramento, na guia **Excluir**, clique no ícone do sinal de adição.
+5. Para definir grupos específicos a serem excluídos do monitoramento, na guia **excluir** , clique no ícone de adição.
 
    ![ícone](media/plus-icon.png)
 
@@ -83,9 +83,9 @@ Se você criar as seguintes regras:
 
 As seguintes atividades de usuário são monitoradas:
 
-|User|Associação de grupo|Atividades monitoradas|
+|Usuário|Associação de grupo|Atividades monitoradas|
 |----|----|----|
-|Manuela|Alemanha todos os usuários<br />Vendas globais<br />Gerentes de vendas|Não|
+|Manuela|Alemanha todos os usuários<br />Vendas globais<br />Gerentes de vendas|Nenhum|
 |Davi|Vendas globais|Office 365 e todos os subaplicativos, exceto o Power BI|
 |Barros|Vendas globais<br />Gerentes de vendas|Office 365 e todos os subaplicativos|
 |Diogo|Gerentes de vendas|Apenas Power BI|

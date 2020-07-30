@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5485b179fe3a5bccfe969b93cd32a0954bd89bf6
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: b4be7d9e31f2fc0bf71175a9c7fb3d07c38262a4
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402198"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254798"
 ---
 # <a name="information-protection-policies"></a>Políticas de proteção de informações
 
@@ -129,9 +129,9 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 2. Defina o **tipo de atividade** de filtro para as atividades de arquivo e pasta que lhe interessam, como **Exibir**, **baixar**, **acessar**e **Modificar**.
 
-3. Definir o **local** do filtro não é igual e, em seguida, inserir os países dos quais sua organização espera atividade.
+3. Definir o **local** do filtro não é igual e, em seguida, inserir os países/regiões dos quais sua organização espera atividade.
 
-    1. Opcional: você pode usar a abordagem oposta e definir o filtro como **local** igual a se sua organização bloquear o acesso de países específicos.
+    1. Opcional: você pode usar a abordagem oposta e definir o filtro como **local** igual a se sua organização bloquear o acesso de países/regiões específicos.
 
 4. Opcional: Crie ações de **governança** a serem aplicadas à violação detectada (a disponibilidade varia entre os serviços), como **suspender usuário**.
 
