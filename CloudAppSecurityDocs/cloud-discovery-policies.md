@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4434bd5faf1ab8aa30391d3434df71e6db557096
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 8a434520f3e0ca3baa01167cae13856085e9a318
+ms.sourcegitcommit: 859934f13d0f7f7a24a5fb21856d415ef0f6889a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623326"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87378226"
 ---
-# <a name="cloud-discovery-policies"></a>Políticas do Cloud Discovery
+# <a name="create-cloud-discovery-policies"></a>Criar políticas de Cloud Discovery
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -60,7 +60,9 @@ As políticas de descoberta permitem que você defina alertas que notificam quan
 9. Clique em **Criar**.
 
 > [!NOTE]
-> Políticas de descoberta recém-criadas (ou políticas com relatórios contínuos atualizados) disparam um alerta uma vez em 90 dias por aplicativo por relatório contínuo, independentemente de haver alertas existentes para o mesmo aplicativo. Portanto, por exemplo, se você criar uma política para descobrir novos aplicativos populares, ele poderá disparar alertas adicionais para aplicativos que já foram descobertos e alertados.
+>
+> - Políticas de descoberta recém-criadas (ou políticas com relatórios contínuos atualizados) disparam um alerta uma vez em 90 dias por aplicativo por relatório contínuo, independentemente de haver alertas existentes para o mesmo aplicativo. Portanto, por exemplo, se você criar uma política para descobrir novos aplicativos populares, ele poderá disparar alertas adicionais para aplicativos que já foram descobertos e alertados.
+> - Os dados dos **relatórios de instantâneo** não disparam alertas em políticas de descoberta de aplicativo.
 
 Por exemplo, se você estiver interessado em descobrir aplicativos de hospedagem arriscados encontrados em seu ambiente de nuvem, defina sua política da seguinte maneira:
 

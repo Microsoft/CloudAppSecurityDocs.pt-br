@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 904dc2c6a86d135502c81fd3037b9b8ca4459d99
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: d8c3da684fefed2a1aadef2e33d734deaad56fcc
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625018"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296844"
 ---
 # <a name="security-configuration-for-aws"></a>Configuração de segurança para o AWS
 
@@ -44,6 +44,9 @@ Microsoft Cloud App Security fornece uma avaliação de configuração de segura
     ![menu de configuração de segurança](media/security-configuration-menu.png)
 
 1. Você pode filtrar as recomendações por tipo, por recurso e por contas. Além disso, você pode clicar no ícone de configuração de segurança ![Ícone ASC](media/asc-icon.png) para abrir a recomendação no Hub de segurança do Amazon para obter mais informações e aprofundar-se na recomendação.
+
+    > [!NOTE]
+    > Para simplificar ainda mais a investigação, você pode criar consultas personalizadas e salvá-las para uso posterior. Após concluir a criação da sua consulta, clique no botão **Salvar como** no canto superior direito dos filtros. No pop-up **Salvar consulta** , nomeie sua consulta.
 
     ![configuração de segurança](media/security-configuration-aws.png)
 

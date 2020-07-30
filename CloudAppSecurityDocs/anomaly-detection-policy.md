@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d5ebc12c77fa8e2a9b3b1ccb006493a02771c296
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: dff363a63cab2760cc953f7493a38b8ffda0d02f
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624349"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296798"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -120,7 +120,9 @@ A detecção procura usuários cuja conta foi encerrada no Azure AD, mas ainda e
 > [!NOTE]
 > O Cloud App Security integra-se ao Office ATP (proteção avançada contra ameaças do Office) para fornecer proteção para o Exchange Online, incluindo a URL denotação, a proteção contra malware e muito mais. Quando o Office ATP estiver habilitado, você começará a ver alertas no log de atividades do Cloud App Security.
 
-<!-- // MATP? Delay tile start appearing? -->
+### <a name="suspicious-oauth-app-file-download-activities"></a>Atividades suspeitas de download do arquivo de aplicativo OAuth
+
+* Examina os aplicativos OAuth conectados ao seu ambiente e dispara um alerta quando um aplicativo baixa vários arquivos do Microsoft SharePoint ou do Microsoft OneDrive de maneira incomum para o usuário. Isso pode indicar que a conta de usuário está comprometida.
 
 ### <a name="unusual-activities-by-user"></a>Atividades incomuns (por usuário)
 
@@ -176,7 +178,7 @@ Para afetar o mecanismo de detecção de anomalias para suprimir ou mostrar aler
     | **Locatário** | Atividades comuns com base nas atividades anteriores no locatário. Por exemplo, suprimir atividades de um ISP alertado anteriormente em sua organização. |
     | **Usuário** | Atividades comuns com base nas atividades anteriores do usuário específico. Por exemplo, suprimir atividades de um local que é normalmente usado pelo usuário. |
 
-* Você também pode configurar se os alertas de atividade de um país infrequente, endereços IP anônimos, endereços IP suspeitos e viagens impossíveis devem analisar logons com falha e com êxito ou apenas logons bem-sucedidos.
+* Você também pode configurar se os alertas de atividade de um país/região não frequente, endereços IP anônimos, endereços IP suspeitos e viagens impossíveis devem analisar logons com falha e com êxito ou apenas logons bem-sucedidos.
 
 > [!NOTE]
 > Por padrão, protocolos de entrada herdados, como aqueles que não usam a autenticação multifator (por exemplo, WS-Trust), não são monitorados pela política de viagem impossível. Se sua organização usa protocolos herdados, para evitar atividades relevantes ausentes, edite a política e, em **Configuração avançada**, defina **analisar as atividades de entrada** para **todas as**entradas.

@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bed434f721884050b95350023cb3a974bcd618f6
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 1fa2a1e9d0c46531284b674cf20dd512ecba292c
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624886"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254781"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 
@@ -278,7 +278,7 @@ Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicati
 
 ### <a name="steps"></a>Etapas
 
-1. Essa detecção é automaticamente configurada para alertar quando ocorre uma atividade anômala de um país infrequente. Você não precisa realizar nenhuma ação para configurar essa política. Confira mais informações em [Políticas de detecção de anomalias](anomaly-detection-policy.md).
+1. Essa detecção é automaticamente configurada para alertar quando ocorre uma atividade anômala de um país/região infrequente. Você não precisa realizar nenhuma ação para configurar essa política. Confira mais informações em [Políticas de detecção de anomalias](anomaly-detection-policy.md).
 
 2. É possível configurar o escopo da detecção e personalizar a ação a ser executada quando um alerta é disparado.
 

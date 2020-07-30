@@ -9,12 +9,12 @@ ms.date: 06/28/2020
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 275e81a80124f95131ee110f4dce33a5ba3dac13
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: a792ae503fda51e69d162cec0b5e32cd3710780f
+ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623660"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87377857"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security
 
@@ -71,10 +71,15 @@ Crie um projeto dedicado no GCP em sua organização para habilitar o isolamento
 
     ![Captura de tela mostrando a caixa de diálogo Criar projeto do GCP](media/connect-gcp-create-project.png)
 
-#### <a name="enable-the-pubsub-api"></a>Habilitar a API pub/sub
+#### <a name="enable-required-apis"></a>Habilitar APIs necessárias
 
 1. Alterne para o projeto dedicado.
-1. Vá para a guia pub/sub. Uma mensagem de ativação de serviço deve ser exibida.
+1. Vá para a guia **biblioteca** .
+1. Procure e selecione **API de log de nuvem**e, em seguida, na página da API, clique em **habilitar**.
+1. Pesquise e selecione **API pub/sub de nuvem**e, na página da API, clique em **habilitar**.
+
+    > [!NOTE]
+    > Certifique-se de não selecionar **API pub/sub Lite**.
 
 #### <a name="create-a-dedicated-service-account-for-the-security-auditing-integration"></a>Criar uma conta de serviço dedicada para a integração de auditoria de segurança
 
@@ -168,7 +173,7 @@ Atualmente, desabilitar o coletor de exportação agregado só é possível por 
 
 #### <a name="to-disable-aggregated-export-sink"></a>Para desabilitar o coletor de exportação agregado
 
-| Etapa | script | Para obter mais informações |
+| Etapa | Script | Para obter mais informações |
 |-|-|-|
 | 1. iniciar uma sessão do Google Cloud Shell. | | [Usando Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
 | 2. defina o projeto atual. | `gcloud config set project {PROJECT_ID}` | [conjunto de configuração gcloud](https://cloud.google.com/sdk/gcloud/reference/config/set) |

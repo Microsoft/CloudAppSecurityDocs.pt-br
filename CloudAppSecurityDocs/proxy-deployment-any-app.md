@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 41c2617226653564398836ce7326521afde19f82
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: c0676bf371e13be602fcbeea1625b19480a348a1
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402249"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296978"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 
@@ -227,7 +227,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
     > [!NOTE]
     > Para que os certificados sejam reconhecidos, depois de instalar o certificado, você deve reiniciar o navegador e ir para a mesma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Clique em **Continue**.
+1. Clique em **Continuar**.
 
 ## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Etapa 4: verificar se o aplicativo está funcionando corretamente<a name="verify-app"></a>
 
@@ -266,5 +266,8 @@ Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produ�
 
 > [!div class="nextstepaction"]
 > [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Solução de problemas de controles de acesso e de sessão](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

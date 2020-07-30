@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25809c1ace00b31df32c225f6b72a2b4e98a70d8
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: c67e950b2d3227e8c0e261d346dcd1eec5f22d89
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800717"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296704"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 
@@ -56,6 +56,7 @@ Além das políticas de aplicativo OAuth que você pode criar, há as seguintes 
 | Nome do aplicativo OAuth enganoso | Verifica os aplicativos OAuth conectados ao seu ambiente e dispara um alerta quando um aplicativo com um nome enganoso é detectado. Nomes enganosos, como cartas estrangeiras que se assemelham a letras latinas, podem indicar uma tentativa de disfarçar um aplicativo mal-intencionado como um aplicativo conhecido e confiável. |
 | Nome do editor enganoso para um aplicativo OAuth | Verifica os aplicativos OAuth conectados ao seu ambiente e dispara um alerta quando um aplicativo com um nome de editor enganoso é detectado. Nomes de Publicadores enganosos, como cartas estrangeiras semelhantes a letras latinas, podem indicar uma tentativa de disfarçar um aplicativo mal-intencionado como um aplicativo proveniente de um Publicador conhecido e confiável. |
 | Consentimento de aplicativo OAuth mal-intencionado | Verifica os aplicativos OAuth conectados ao seu ambiente e dispara um alerta quando um aplicativo potencialmente mal-intencionado é autorizado. Aplicativos OAuth mal-intencionados podem ser usados como parte de uma campanha de phishing em uma tentativa de comprometer os usuários. Essa detecção aproveita a especialização da Microsoft em pesquisa de segurança e inteligência contra ameaças para identificar aplicativos mal-intencionados. |
+| Atividades suspeitas de download do arquivo de aplicativo OAuth | Consulte [políticas de detecção de anomalias](anomaly-detection-policy.md#suspicious-oauth-app-file-download-activities) |
 
 <!--
 | OAuth apps authorized by external users | Scans OAuth apps connected to your environment and triggers an alert when an app was authorized by an external user. |

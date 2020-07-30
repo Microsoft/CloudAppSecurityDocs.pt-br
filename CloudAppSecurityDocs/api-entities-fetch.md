@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 536fe23d089d450c3ac1ce5bbfefb08dfb2ad383
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 0ff0a93866652a0a4cc2e927593a2a56800c64de
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505195"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254650"
 ---
 # <a name="fetch---entities-api"></a>API de busca-entidades
 
@@ -36,7 +36,7 @@ GET /api/v1/entities/<pk>/
 
 | Parâmetro | Descrição |
 | --- | --- |
-| pk | A ID da entidade |
+| pk | Um dicionário com a ID da entidade, o SaaS e detalhes da instância codificados como uma cadeia de caracteres base64. Por exemplo: `{"id":"3fa9f28b-eb0e-463a-ba7b-8089fe9991e2","saas":11161,"inst":0}` codificado como uma cadeia de caracteres base64. |
 
 ## <a name="example"></a>Exemplo
 

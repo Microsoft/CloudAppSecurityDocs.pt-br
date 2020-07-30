@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 23763911724e802d31e848ee1f8d6c42e346ffa4
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 88a86e60e632f781428f307c4e1cf6653f87836b
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81231966"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296779"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
@@ -34,9 +34,9 @@ As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento
 
 - Azure AD Premium licença P1 ou a licença exigida pela sua solução IdP (provedor de identidade)
 - Os aplicativos relevantes devem ser [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)
-- Verifique se você configurou sua solução IdP para trabalhar com Cloud App Security, da seguinte maneira:
-  - Para [acesso condicional do Azure ad](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure ad](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  - Para outras soluções IdP, consulte [Configurar a integração com outras soluções IDP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
+- Para verificar se você configurou sua solução de IdP para trabalhar com o Cloud App Security, faça o seguinte:
+  - Para [Acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  - Para outras soluções do IdP, consulte [Configurar a integração com outras soluções de IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Criar uma política de acesso do Cloud App Security
 
@@ -77,5 +77,8 @@ Para criar uma nova política de acesso, siga este procedimento:
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando controles de sessão](use-case-proxy-block-session-aad.md)
+
+> [!div class="nextstepaction"]
+> [Solução de problemas de controles de acesso e de sessão](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

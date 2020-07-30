@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7ad7bc15a2ea70a9b1166f30024afc0bfe17ae27
-ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
+ms.openlocfilehash: eabbad5f2ce6ca4649f0923e9bce248a6d28781f
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86046089"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296870"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -111,7 +111,7 @@ Para exportar esses logs:
 2. No lado direito da tabela, clique no botão Exportar.
 
     ![botão exportar](./media/export-button.png)
-3. Selecione o intervalo do relatório e clique em **Exportar**. Esse processo pode levar algum tempo.
+3. Selecione o intervalo do relatório e clique em **Exportar**. Esse processo pode demorar algum tempo.
 
 Para baixar o log exportado:
 
@@ -173,7 +173,10 @@ Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de 
 >[!div class="nextstepaction"]
 > [PRÓXIMO: Como criar uma política de acesso »](access-policy-aad.md)
 
-## <a name="see-also"></a>Consulte também
+> [!div class="nextstepaction"]
+> [Solução de problemas de controles de acesso e de sessão](troubleshooting-proxy.md)
+
+## <a name="see-also"></a>Confira também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando o Azure AD Controle de Aplicativos de Acesso Condicional](use-case-proxy-block-session-aad.md)

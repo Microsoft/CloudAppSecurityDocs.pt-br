@@ -1,5 +1,5 @@
 ---
-title: Solucionando problemas de acesso e controles de sessão
+title: Solução de problemas de controles de acesso e de sessão
 description: Este artigo fornece aos administradores diretrizes sobre como investigar e resolver o acesso comum e os controles de sessão.
 keywords: ''
 author: shsagir
@@ -11,14 +11,14 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: c473128c22f0369725260077b642d75ac50f559f
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: 6d2996fb77912b04d5a6d4aefe7edc8c77f27a21
+ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402328"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87377840"
 ---
-# <a name="troubleshooting-access-and-session-controls"></a>Solucionando problemas de acesso e controles de sessão
+# <a name="troubleshooting-access-and-session-controls"></a>Solução de problemas de controles de acesso e de sessão
 
 Este artigo fornece aos administradores diretrizes sobre como investigar e resolver problemas comuns de controle de acesso e sessão como experientes por [Administradores](#issues-experienced-by-admins) e [usuários finais](#issues-experienced-by-end-users).
 
@@ -154,7 +154,7 @@ O acesso condicional do Azure AD permite que as informações do dispositivo ass
 1. Se as atividades não estiverem sendo populadas no log de atividades Cloud App Security, vá para Azure AD e faça o seguinte:
     1. Em **monitoramento**de  >  **entradas**, verifique se há atividades de entrada nos logs.
     1. Selecione a entrada de log relevante para o dispositivo no qual você fez logon.
-    1. No painel de **detalhes** , na guia **informações do dispositivo** , verifique se o dispositivo é **gerenciado** (ingressado no Azure ad híbrido) ou em **conformidade** (compatível com o Intune). Se você não puder verificar o estado, tente outra entrada de log ou verifique se os dados do dispositivo estão configurados corretamente no Azure AD.
+    1. No painel **Detalhes**, na guia **Informações do dispositivo**, verifique se o dispositivo é **Gerenciado** (adicionado ao Azure Active Directory híbrido) ou **Em conformidade** (em conformidade com o Intune). Se você não puder verificar o estado, tente outra entrada de registro ou verifique se os dados do dispositivo estão configurados corretamente no Azure Active Directory.
     1. Para acesso condicional, alguns navegadores podem exigir configuração adicional, como a instalação de uma extensão. Use as informações no guia de [suporte do navegador de acesso condicional](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers) para configurar seu navegador.
     1. Se você ainda não vir as informações do dispositivo na página **entradas** , abra um tíquete de suporte para o Azure AD.
 
@@ -410,6 +410,7 @@ Esta seção é para usuários finais que usam aplicativos protegidos pelo Cloud
 - [Aparece uma página **incorreta**](#something-went-wrong-page-appears)
 - [As ações da área de transferência ou os controles de arquivo não estão sendo bloqueados](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [Os downloads não estão sendo protegidos](#downloads-are-not-being-protected)
+- [Navegando para uma URL específica de um aplicativo sufixado e o pouso em uma página genérica](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
 - [Considerações adicionais](#app-additional-considerations)
 
 ### <a name="user-monitoring-page-is-not-appearing"></a>A página de monitoramento do usuário não está aparecendo
@@ -431,7 +432,7 @@ Ao rotear um usuário por meio do Cloud App Security, você pode notificar o usu
     | Padrão | **Cabeçalho**:<br />O acesso a [nome do aplicativo aparecerá aqui] é monitorado<br />**Corpo**:<br />Para maior segurança, sua organização permite o acesso ao [o nome do aplicativo aparecerá aqui] no modo de monitor. O acesso só está disponível em um navegador da Web. |
     | Personalizado | **Cabeçalho**:<br />Use esta caixa para fornecer um título personalizado para informar os usuários que estão sendo monitorados.<br />**Corpo**:<br />Use esta caixa para adicionar informações personalizadas adicionais ao usuário, como a quem deve entrar em contato com perguntas e dá suporte às seguintes entradas: texto sem formatação, Rich Text, hiperlinks. |
 1. Clique em **Visualizar** para verificar a página de monitoramento de usuário que aparece antes de acessar um aplicativo.
-1. Clique em **Salvar**.
+1. Clique em **Save** (Salvar).
 
 ### <a name="not-able-to-access-app-from-a-third-party-identity-provider"></a>Não é possível acessar o aplicativo de um provedor de identidade de terceiros
 
@@ -502,6 +503,20 @@ Como um usuário final, o download de dados confidenciais em um dispositivo não
         - PDF * se a rotulagem unificada estiver habilitada
     - Se não houver suporte para o tipo de arquivo, na política de sessão, você poderá selecionar **Bloquear download de qualquer arquivo que não tenha suporte pela proteção nativa ou onde a proteção nativa não for bem-sucedida**.
 1. Se você ainda não conseguir ver a atividade bloqueada, abra um [tíquete de suporte](support-and-ts.md).
+
+### <a name="navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page"></a>Navegando para uma URL específica de um aplicativo sufixado e o pouso em uma página genérica
+
+Todos os proxies que as URLs de sufixo são suscetíveis à perda de contexto, um problema em que navegar até um link perde o caminho completo do link e normalmente atinge o home page do aplicativo. Cloud App Security está posicionado exclusivamente para resolver essa limitação e resolver a perda de contexto por meio de parceria com fornecedores da Microsoft e não Microsoft.
+
+Os aplicativos em nossa página de aplicativos em destaque marcados como **(versão prévia)** podem sofrer a perda de contexto. Para aplicativos que não estão em destaque experimentando perda de contexto, envie um tíquete de suporte. Estamos trabalhando com cada provedor de aplicativo individualmente para corrigir esses problemas principais.
+
+Como uma mitigação temporária, você pode solucionar problemas de perda de contexto da seguinte maneira:
+
+1. Navegue até uma URL na qual ocorra a perda de contexto.
+1. Anote o domínio da URL sufixada, incluindo o sufixo adicionado por Cloud App Security, por exemplo `https://www.yammer.com.us2.cas.ms` .
+1. Copie o caminho da URL original, por exemplo, se a URL específica original era `https://www.yammer.com/organization/threads/threadnumber` , copie `/organization/threads/threadnumber` .
+1. Acrescente o caminho copiado para o domínio com sufixo, por exemplo `https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber` .
+1. Navegue até a nova URL sufixada.
 
 <a name="app-additional-considerations"></a>
 

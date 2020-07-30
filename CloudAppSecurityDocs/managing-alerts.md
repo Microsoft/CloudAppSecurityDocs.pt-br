@@ -14,23 +14,23 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d159132c297216154c9c53dc5801e2c3519cc489
-ms.sourcegitcommit: 6658e305313ab84c6df7632549af373ea2faec14
+ms.openlocfilehash: 1ccd5a4bfedbad5edf1ee2e398b0da480f20fb38
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76550183"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254747"
 ---
 # <a name="manage-alerts"></a>Gerenciar alertas
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
 
 > [!NOTE]
 > Os alertas são gerenciados em suas respectivas políticas e podem ser configurados para serem enviados como email, mensagem de texto ou ambos.
 
-## <a name="manage-your-alerts"></a>Gerenciar os alertas
+## <a name="manage-your-alerts"></a>Gerenciar seus alertas
 
 Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais profundamente. Você talvez queira criar novas políticas com base no que encontrar. Por exemplo, talvez você veja um administrador se conectando da Groenlândia e ninguém na sua empresa nunca se conectou da Groenlândia antes. Você pode criar uma política que suspende automaticamente uma conta do administrador quando ela é usada para entrar nessa localização.
 
@@ -77,7 +77,7 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
 A tabela a seguir fornece uma lista dos tipos de alertas que podem ser disparados e recomenda maneiras pelas quais você pode resolvê-los.
 
-|Tipo de alerta|Description|Resolução recomendada|
+|Tipo de alerta|Descrição|Resolução recomendada|
 |----------------|-----------------|----------------------------|
 |Violação de política de atividade|Este tipo de alerta é o resultado de uma política que você criou.|Para trabalhar com esse tipo de alerta em massa, é recomendável trabalhar no Centro de políticas para mitigá-los.<br /><br /> Ajuste a política para excluir entidades ruidosas adicionando mais filtros e mais controles granulares.<br /><br />Se a política for precisa, o alerta for garantido e for uma violação que você deseja parar imediatamente, considere adicionar a correção automática à política.|
 |Violação de política de arquivos|Este tipo de alerta é o resultado de uma política que você criou.| Para trabalhar com esse tipo de alerta em massa, é recomendável trabalhar no Centro de políticas para mitigá-los.<br /><br /> Ajuste a política para excluir entidades ruidosas adicionando mais filtros e mais controles granulares.<br /><br />Se a política for precisa, o alerta for garantido e for uma violação que você deseja parar imediatamente, considere adicionar a correção automática à política.|
@@ -85,7 +85,7 @@ A tabela a seguir fornece uma lista dos tipos de alertas que podem ser disparado
 |Conta inativa|Este alerta é disparado quando uma conta não é usada durante 60 dias em um dos seus aplicativos de nuvem conectados.|Entre em contato com o usuário e o gerente do usuário para determinar se a conta ainda está ativa. Caso contrário, suspenda o usuário e encerre a licença para o aplicativo.|
 |Novo usuário administrador|Alerta você para as alterações em suas contas com privilégios para aplicativos conectados.|Confirme se as novas permissões de administrador na verdade são necessárias para o usuário. Se não forem, recomendamos revogar privilégios de administrador para reduzir a exposição.|
 |Novo local de administração|Alerta você para as alterações em suas contas com privilégios para aplicativos conectados.|Confirme se a entrada dessa localização anormal foi legítima. Se não for, recomendamos revogar as permissões de administrador ou suspender a conta para reduzir a exposição.|
-|Novo local|Um alerta informativo sobre o acesso a um aplicativo conectado de uma nova localização e é disparado apenas uma vez por país.|Investigue a atividade do usuário específico.|
+|Novo local|Um alerta informativo sobre o acesso a um aplicativo conectado de um novo local e é disparado apenas uma vez por país/região.|Investigue a atividade do usuário específico.|
 |Novo serviço descoberto|Este alerta é um alerta sobre TI sombra. Um novo aplicativo foi detectado pelo Cloud Discovery.|<ul><li>Avalie o risco do serviço com base no catálogo de aplicativos.</li><li>Analise a atividade para entender a predominância e os padrões de uso.</li><li>Decida se deseja sancionar ou cancelar a sanção do aplicativo.</li><br /></ul>Para aplicativos não sancionados:<br /><br /><ul><li>Talvez você queira bloquear uso no seu proxy ou firewall.</li><li>Se você tiver um aplicativo não sancionado e um aplicativo sancionado na mesma categoria, poderá exportar uma lista de usuários do aplicativo não sancionado. Em seguida, entre em contato com eles para migrá-los para o aplicativo sancionado.</li></ul></li>|
 |Atividade suspeita|Esse alerta permite que você saiba que foi detectada uma atividade anômala que não está alinhada com atividades esperadas ou usuários em sua organização.|Investigue o comportamento e confirme-o com o usuário.<br /><br />Este tipo de alerta é um ótimo lugar para começar a aprender mais sobre seu ambiente e criar novas políticas com esses alertas. Por exemplo, se alguém repentinamente carrega uma grande quantidade de dados para um dos seus aplicativos conectados, você pode definir uma regra para controlar esse tipo de comportamento anômalo.|
 |Uso de conta pessoal|Esse alerta informa que uma nova conta pessoal tem acesso a recursos em seus aplicativos conectados.|Remover as colaborações do usuário na conta externa.|

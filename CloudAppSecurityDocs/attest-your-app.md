@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55bbd68f012dbfd8053154e8f3e44c1af8cce9ae
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 296b4a4b882c15fe716eebe7b8975a938a34ca97
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624336"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254696"
 ---
 # <a name="attest-your-app"></a>Atestar seu aplicativo
 
@@ -31,24 +31,24 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 
 | Campo | Categoria de informações | Type | Valores aceitos | Descrição |
 |------|-------|------|---------|----------|
-| Nome do aplicativo | Geral | String | Texto livre | O nome do seu aplicativo como deve aparecer no catálogo de aplicativos de nuvem. |
-| Descrição | Geral | String | Texto livre | Breve explicação do que seu aplicativo permite que os usuários façam ou alcancem. |
-| Categoria| Geral | String | Fechar lista – fornecido no questionário | Classificação do aplicativo de acordo com o campo ao qual ele se relaciona. |
-| Matriz | Geral | Código do país | Fechar lista – fornecido no questionário | O país da sede do provedor.|
-| Data center| Geral | Matriz de códigos do país * | Fechar lista – fornecida no questionário (seleção múltipla) | O país no qual o data center reside (pode ser vários locais) |
-| Empresa de hospedagem | Geral | String | Texto livre | O nome da empresa que fornece Hospedagem de servidor para o aplicativo. |
+| Nome do aplicativo | Geral | Cadeia de caracteres | Texto livre | O nome do seu aplicativo como deve aparecer no catálogo de aplicativos de nuvem. |
+| Descrição | Geral | Cadeia de caracteres | Texto livre | Breve explicação do que seu aplicativo permite que os usuários façam ou alcancem. |
+| Categoria| Geral | Cadeia de caracteres | Fechar lista – fornecido no questionário | Classificação do aplicativo de acordo com o campo ao qual ele se relaciona. |
+| Matriz | Geral | Código do país | Fechar lista – fornecido no questionário | O país/região da sede do provedor.|
+| Data center| Geral | Matriz de códigos do país * | Fechar lista – fornecida no questionário (seleção múltipla) | O país/região no qual o data center reside (pode ser vários locais) |
+| Empresa de hospedagem | Geral | Cadeia de caracteres | Texto livre | O nome da empresa que fornece Hospedagem de servidor para o aplicativo. |
 | Fundada | Geral | Integer | AAAA (não depois de 2019) | O ano em que o provedor foi fundado. |
-| Holding | Geral | String | Privado, público | Exibe se o provedor é uma empresa pública ou privada |
+| Holding | Geral | Cadeia de caracteres | Privado, público | Exibe se o provedor é uma empresa pública ou privada |
 | Domínio do aplicativo | Geral | Matriz de URL * | Texto livre | A lista de domínios específicos que são usados para interagir com o serviço. Por exemplo, ' teams.microsoft.com ' para Microsoft Teams e não o domínio genérico ' microsoft.com '. |
 | Termos de serviço | Geral | URL | Texto livre | Este aplicativo fornece um conjunto de regulamentos que os usuários devem concordar em seguir para usar o aplicativo? |
 | Política de privacidade | Geral | URL | Texto livre | Um link para um documento de associação legal relacionado a como esse provedor lida com informações de cliente, cliente ou funcionário coletadas como parte do aplicativo. |
 | URL de logon | Geral | Matriz de URL * | Texto livre | A URL por meio da qual os usuários fazem logon no aplicativo. |
-| Fornecedor | Geral | String | Texto livre | O nome do fornecedor que fornece este aplicativo. |
-| Tipos de dados | Geral | String | Fechar lista – fornecido no questionário | Quais tipos de dados podem ser carregados pelo usuário para o aplicativo?|
+| Fornecedor | Geral | Cadeia de caracteres | Texto livre | O nome do fornecedor que fornece este aplicativo. |
+| Tipos de dados | Geral | Cadeia de caracteres | Fechar lista – fornecido no questionário | Quais tipos de dados podem ser carregados pelo usuário para o aplicativo?|
 | Home page | Geral | URL | Texto livre | A URL de home page do provedor. |
 | Plano de recuperação de desastre | Geral | Boolean | Verdadeiro, Falso | Este aplicativo tem um plano de recuperação de desastres que inclui uma estratégia de backup e restauração? |
 | Violação mais recente | Segurança | Data | MMM-dd-aaaa | O incidente mais recente em que dados confidenciais, protegidos ou confidenciais pertencentes ao aplicativo foram exibidos, roubados ou usados por um indivíduo não autorizado para fazer isso. |
-| Método de criptografia de dados em repouso | Segurança | String | Fechar lista – fornecido no questionário | O tipo de criptografia de dados em repouso executado no aplicativo. |
+| Método de criptografia de dados em repouso | Segurança | Cadeia de caracteres | Fechar lista – fornecido no questionário | O tipo de criptografia de dados em repouso executado no aplicativo. |
 | Autenticação Multifator | Segurança | Boolean | Verdadeiro, Falso | Este aplicativo dá suporte a soluções de autenticação multifator? |
 | Restrição de endereço IP | Segurança | Boolean | Verdadeiro, Falso | Este aplicativo dá suporte à restrição de endereços IP específicos pelo aplicativo? |
 | Trilha de auditoria do usuário | Segurança | Boolean | Verdadeiro, Falso | Este aplicativo dá suporte à disponibilidade da trilha de auditoria por conta de usuário? |
@@ -82,11 +82,11 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 | SOX | Conformidade | Boolean | True, false, N/A | Este aplicativo está em conformidade com SOX, legislação dos EUA destinado à proteção de acionistas e ao público geral de erros e fraudes de contabilidade, além de melhorar a precisão das divulgações corporativas? |
 | SP 800-53 | Conformidade | Boolean | Verdadeiro, Falso | Este aplicativo está em conformidade com o SP80053, os controles de segurança recomendados para organizações e sistemas de informações federais? |
 | SSAE 16 | Conformidade | Boolean | True, false, N/A | Este aplicativo está em conformidade com o padrão SSAE 16 para auditar os controles de conformidade internos da organização de serviços e os processos de relatório? |
-| Versão do PCI DSS | Conformidade | String | 1, 2, 3, 3,1, 3,2, N/A | A versão do protocolo PCI-DSS com suporte por este aplicativo. |
+| Versão do PCI DSS | Conformidade | Cadeia de caracteres | 1, 2, 3, 3,1, 3,2, N/A | A versão do protocolo PCI-DSS com suporte por este aplicativo. |
 | ISO 27018 | Conformidade | Boolean | True, false, N/A | Este aplicativo está em conformidade com o ISO 27018, que estabelece controles e diretrizes comumente aceitos para processar e proteger informações de identificação pessoal (PII) em um ambiente de computação em nuvem pública? |
 | GLBA | Conformidade | Boolean | True, false, N/A | Este aplicativo está em conformidade com a lei Gramm-Leach-Bliley (GLBA), que exige que as instituições financeiras estabeleçam padrões para proteger a segurança e a confidencialidade das informações pessoais dos clientes? |
-| Nível de FedRAMP | Conformidade | String | Alto, moderado, baixo, li-SaaS | O nível da solução compatível com FedRAMP fornecida por este aplicativo. |
-| Nível do CSA STAR | Conformidade | String | Autoavaliação, certificação, atestado, avaliação C-STAR, monitoramento contínuo | O nível do programa CSA STAR no qual o aplicativo é certificado |
+| Nível de FedRAMP | Conformidade | Cadeia de caracteres | Alto, moderado, baixo, li-SaaS | O nível da solução compatível com FedRAMP fornecida por este aplicativo. |
+| Nível do CSA STAR | Conformidade | Cadeia de caracteres | Autoavaliação, certificação, atestado, avaliação C-STAR, monitoramento contínuo | O nível do programa CSA STAR no qual o aplicativo é certificado |
 | Defesa de Privacidade | Conformidade | Boolean | True, false, N/A | Este aplicativo está em conformidade com a estrutura do Privacy Shield da UE-US, que impõe obrigações mais fortes em empresas dos EUA para proteger os dados pessoais do Europeans? |
 | ISO 27017 | Conformidade | Boolean | Verdadeiro, Falso | Este aplicativo está em conformidade com o ISO 27017, que estabelece controles e diretrizes comumente aceitos para processar e proteger as informações do usuário em um ambiente de computação em nuvem pública? |
 | COBIT | Conformidade | Boolean | Verdadeiro, Falso | Este aplicativo está em conformidade com o COBIT, que define as práticas recomendadas para governança e controle de sistemas de informações e tecnologia, além de alinhá-los com os princípios de negócios? |
@@ -109,7 +109,7 @@ Siga os atributos de serviço descritos abaixo para concluir com êxito o envio 
 | GDPR-direito de objeto | Legal | Boolean | True, false, N/A | Este aplicativo fornece aos indivíduos a capacidade de objeto para o processamento de seus dados pessoais em determinadas circunstâncias? |
 | GDPR-direito de acesso | Legal | Boolean | True, false, N/A | Esse aplicativo fornece aos indivíduos a capacidade de saber, mediante solicitação, quais dados pessoais uma empresa está usando e como ele está sendo usado? |
 | GDPR-direito de Portablility de dados | Legal | Boolean | True, false, N/A | Este aplicativo fornece aos indivíduos a capacidade de obter e reutilizar seus dados pessoais para suas próprias finalidades em diferentes serviços mediante solicitação? |
-| GDPR-direito de ser informado | Legal | Boolean | True, false, N/A | Este aplicativo informa as pessoas sobre as proteções apropriadas que ele leva quando os dados pessoais são transferidos para um país que não é da UE ou para uma organização internacional? |
+| GDPR-direito de ser informado | Legal | Boolean | True, false, N/A | Este aplicativo informa as pessoas sobre as proteções apropriadas que ele leva quando os dados pessoais são transferidos para um país/região não-UE ou para uma organização internacional? |
 | GDPR-direito de restrição de processamento | Legal | Boolean | True, false, N/A | Este aplicativo fornece aos indivíduos a capacidade de bloquear ou suprimir o processamento de dados pessoais? |
 | GDPR-direitos relacionados à tomada de decisões automatizadas | Legal | Boolean | True, false, N/A | Este aplicativo fornece aos indivíduos a capacidade de optar por não estar sujeito a uma decisão baseada apenas no processamento automatizado? Isso inclui a criação de perfil, que pode ter ramificações legais. |
 | GDPR-base ilegal para processamento | Legal | Boolean | True, false, N/A | Este aplicativo processa dados pessoais de forma legal, de acordo com o consentimento, contrato, obrigações legais, interesses vitais, interesses legítimos, categoria especial, dados e dados ataque criminais? |

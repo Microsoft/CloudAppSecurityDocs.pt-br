@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 08eec9c9a8e684d53b0947ce186d661bf5e7d961
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 00a4152258b27c6d992e4d7e5b0e4583cefad758
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800802"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254764"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Como investigar alertas de detecção de anomalias
 
@@ -90,7 +90,7 @@ Essa detecção usa um algoritmo de aprendizado de máquina que reduz incidentes
 
 ### <a name="activity-from-infrequent-country"></a>Atividade de país não frequente
 
-Atividade de um país que pode indicar atividades mal-intencionadas. Essa política faz o perfil do seu ambiente e dispara alertas quando a atividade é detectada de um local que não foi recentemente ou que nunca foi visitada por nenhum usuário na organização.
+Atividade de um país/região que pode indicar atividades mal-intencionadas. Essa política faz o perfil do seu ambiente e dispara alertas quando a atividade é detectada de um local que não foi recentemente ou que nunca foi visitada por nenhum usuário na organização.
 
 Por padrão, a política está configurada para incluir apenas atividades de entrada bem-sucedidas, mas pode ser configurada para incluir qualquer atividade de entrada. A política pode ser ainda mais delimitada para um subconjunto de usuários ou pode excluir usuários conhecidos por viajar para locais remotos.
 
@@ -204,13 +204,13 @@ O nome do editor OAuth enganoso para um aplicativo OAuth identifica aplicativos 
 
 **Entender o escopo da violação**
 
-1. Na página **aplicativos OAuth** , clique no aplicativo para abrir a gaveta do **aplicativo**e clique em **atividade relacionada**. Isso abre a página **log de atividades** filtrada para atividades executadas pelo aplicativo. Lembre-se de que alguns aplicativos realizam atividades que foram registradas como executadas por um usuário. Essas atividades são automaticamente filtradas dos resultados no log de atividades. Para uma investigação adicional usando o log de atividades, confira [Log de atividades](activity-filters.md).
+1. Na página **aplicativos OAuth** , clique no aplicativo para abrir a gaveta do **aplicativo**e clique em **atividade relacionada**. Isso abre a página **log de atividades** filtrada para atividades executadas pelo aplicativo. Lembre-se de que alguns aplicativos executam atividades que estão registradas como realizadas por um usuário. Essas atividades são automaticamente filtradas dos resultados no log de atividades. Confira mais investigações usando o log de atividades no [Log de atividades](activity-filters.md).
 1. Se você suspeitar de que um aplicativo é suspeito, recomendamos que investigue o nome do aplicativo e o Publicador em lojas de aplicativos diferentes. Ao verificar as lojas de aplicativos, concentre-se nos seguintes tipos de aplicativos:
     - Aplicativos com um número baixo de downloads.
-    - Aplicativos com uma classificação ou pontuação baixas ou comentários negativos.
-    - Aplicativos com um editor ou website suspeito.
+    - Aplicativos com baixa classificação ou pontuação ou comentários ruins.
+    - Aplicativos com um editor ou site suspeito.
     - Aplicativos que não foram atualizados recentemente. Isso pode indicar um aplicativo que não tem mais suporte.
-    - Aplicativos com permissões irrelevantes. Isso pode indicar que um aplicativo é arriscado.
+    - Aplicativos que têm permissões irrelevantes. Isso pode indicar que um aplicativo é arriscado.
 1. Se você ainda suspeitar que um aplicativo é suspeito, poderá pesquisar o nome do aplicativo, o editor e a URL online.
 
 ## <a name="execution-alerts"></a>Alertas de execução
@@ -673,7 +673,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. Examine as atividades de exclusão e crie uma lista de arquivos excluídos. Se necessário, recupere os arquivos excluídos.
 1. Opcionalmente, crie um guia estratégico usando a automatização de energia para contatar os usuários e seus gerentes para verificar a atividade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 > [!div class="nextstepaction"]
-> [Investigar usuários arriscados](tutorial-ueba.md)
+> [Investigar usuários suspeitos](tutorial-ueba.md)

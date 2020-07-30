@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a363ebb0c94735f4df8d2617f9d20c6bf7c8365
-ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
+ms.openlocfilehash: 70631351dc068d1932b1a97f77402bacd307b509
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83551299"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254577"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividade
 
@@ -82,7 +82,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 
 - Instância – a instância do aplicativo em que a atividade foi ou não foi executada.
 
-- Local – o país do qual a atividade foi executada.
+- Local – o país/região do qual a atividade foi executada.
 
 - Política correspondente – pesquisa atividades que corresponderam a uma política específica que foi definida no portal.
 
