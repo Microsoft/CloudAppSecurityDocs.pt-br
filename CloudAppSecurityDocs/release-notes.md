@@ -4,19 +4,19 @@ description: Este artigo é atualizado com frequência para você saber quais s�
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 07/20/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fcf90957167b9e51522e2f9f77a3c29958f6c9a2
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: de7d3e9c0da31dc6331df344673628c127a8805d
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254637"
+ms.locfileid: "87296987"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -25,6 +25,28 @@ ms.locfileid: "87254637"
 Este artigo é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security.
 
 Feed RSS: Receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-179-and-180"></a>Cloud App Security versões 179 e 180
+
+Lançado em 26 de julho de 2020
+
+- **Nova detecção de anomalia: Atividades suspeitas de download de arquivo do aplicativo OAuth**  
+Ampliamos nossas detecções de anomalias para incluir atividades suspeitas de download por um aplicativo OAuth. A nova detecção já está disponível, pronta para uso e habilitada automaticamente para alertar você quando um aplicativo OAuth baixa vários arquivos do Microsoft SharePoint ou do Microsoft OneDrive de maneira incomum para o usuário.
+
+- **Melhorias de desempenho com o cache de proxy para controles de sessão (distribuição gradual)**  
+Fizemos melhorias de desempenho adicionais em nossos controles de sessão, aprimorando nossos mecanismos de cache de conteúdo. O serviço aprimorado é ainda mais simplificado e fornece maior capacidade de resposta ao usar controles de sessão. Observe que os controles de sessão não armazenam em cache o conteúdo privado, alinhando-se com os padrões apropriados de armazenamento somente do conteúdo compartilhado (público). Para saber mais, confira [Como o controle de sessão funciona](proxy-intro-aad.md#how-session-control-works).
+
+- **Novo recurso: Salvar consultas de configuração de segurança**  
+Adicionamos a capacidade de salvar consultas dos nossos filtros de painel de configuração de segurança para o Azure, o AWS (Amazon Web Services) e o GCP (Google Cloud Platform). Isso pode ajudar a tornar futuras investigações ainda mais simples, reutilizando consultas comuns. Saiba mais sobre as [recomendações de configuração de segurança](security-config.md).
+
+- **Aprimoramento dos alertas de detecção de anomalias**  
+Ampliamos as informações fornecidas nos alertas de detecção de anomalias para incluir um mapeamento da tática MITRE ATT\&CK correspondente. Esse mapeamento ajudará você a entender a fase e o impacto do ataque e auxiliará nas suas investigações. Saiba mais sobre [Como investigar alertas de detecção de anomalias](investigate-anomaly-alerts.md).
+
+- **Lógica de detecção aprimorada: Atividade de ransomware**  
+Atualizamos a lógica de detecção para atividade de ransomware a fim de aumentar a precisão e reduzir o volume de alertas. Para saber mais sobre essa política de detecção de anomalias, confira [Atividade de ransomware](anomaly-detection-policy.md#ransomware-activity).
+
+- **Relatórios de Situação de Segurança de Identidade: Visibilidade das marcas**  
+Adicionamos marcas de entidade a relatórios de Situação de Segurança de Identidade que fornecem informações adicionais sobre as entidades. Por exemplo, a marca **Confidencial** ajuda a identificar usuários suspeitos e priorizar as investigações. Saiba mais sobre como [Investigar usuários suspeitos](tutorial-ueba.md).
 
 ## <a name="cloud-app-security-release-178"></a>Cloud App Security versão 178
 
@@ -50,19 +72,6 @@ O Cloud App Security fornece a capacidade de identificar computadores suspeitos 
 
 - **Novo recurso: conector de aplicativo de desabilitação de autoatendimento (distribuição gradual)**  
 Adicionamos a capacidade de desabilitar conectores de aplicativos diretamente no Cloud App Security. Para mais informações, confira [Desabilitar conectores do aplicativo](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#disable-app-connectors).
-
-<!--
-- **Enhanced detection logic: Ransomware activity (gradual rollout)**  
-We've updated the detection logic for Ransomware activity to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Ransomware activity](anomaly-detection-policy.md#ransomware-activity).
-
-- **New OAuth app policy templates**  
-Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
-
-  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
-  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
-  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
-  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
--->
 
 ## <a name="cloud-app-security-release-177"></a>Cloud App Security versão 177
 
@@ -106,7 +115,7 @@ Fizemos melhorias significativas no desempenho da rede para nosso serviço de pr
 Expandimos a nossa capacidade atual de detecção de comportamentos suspeitos. A nova detecção agora está disponível pronta para uso e habilitada automaticamente para alertá-lo quando uma tentativa de logon com falha incomum for identificada. Tentativas de logon com falha incomum podem ser uma indicação de um possível ataque de força bruta de *password spraying* (também conhecido como o método *baixo e lento*). Essa detecção afeta a [pontuação de prioridade de investigação](tutorial-ueba.md) geral do usuário.
 
 - **Experiência de tabela avançada**  
-Adicionamos a capacidade de redimensionar larguras de coluna de tabela para que você possa ampliar ou estreitar colunas a fim de personalizar e aprimorar a forma como as tabelas são exibidas. Você também pode restaurar o layout original selecionando o menu configurações de tabela e escolhendo **Largura padrão**.
+Adicionamos a capacidade de redimensionar larguras das colunas de tabela para que você possa ampliá-las ou estreitá-las a fim de personalizar e aprimorar a forma como as tabelas são exibidas. Você também pode restaurar o layout original selecionando o menu configurações de tabela e escolhendo **Largura padrão**.
 
 ## <a name="cloud-app-security-release-175"></a>Cloud App Security versão 175
 
