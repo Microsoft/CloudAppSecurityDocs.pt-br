@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 08/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 084491b7c74019d2145439f66ce5a90482091ed9
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: faf3be962650316a1c16f1b3db884dc16a0dc552
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624652"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027050"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
@@ -28,6 +28,9 @@ ms.locfileid: "85624652"
 Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365, o G Suite e o Salesforce. Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo. Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões de aplicativo do Microsoft Cloud App Security permitem que você veja quais aplicativos OAuth instalados pelo usuário têm acesso a dados do Office 365, dados do G Suite e dados do Salesforce. Cloud App Security informa quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365, G Suite e Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
 
 Para obter mais informações sobre a investigação de aplicativos OAuth, consulte [investigar aplicativos OAuth arriscados](investigate-risky-oauth.md).
+
+> [!NOTE]
+> Cloud App Security identifica apenas os aplicativos que solicitam permissões "delegadas". Para obter mais informações, consulte [permissões de aplicativo cliente](/azure/active-directory/develop/developer-glossary#permissions).
 
 ## <a name="working-with-the-oauth-apps-page"></a>Trabalhando com a página de aplicativos de OAuth
 
@@ -53,7 +56,7 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 |Estado do aplicativo|Um administrador pode marcar um aplicativo como aprovado, vetado ou deixar como indeterminado.|Office 365, G Suite, Salesforce|
 |Uso da comunidade|Mostra quão popular o aplicativo é entre todos os seus usuários (comum, incomum, raro)|Office 365, G Suite, Salesforce|
 |Última autorização|A data mais recente em que um usuário concedeu permissões para este aplicativo.|Office 365, Salesforce|
-|Publisher|O nome do fornecedor que oferece o aplicativo.|Office 365|
+|Editor|O nome do fornecedor que oferece o aplicativo.|Office 365|
 |Usado pela última vez|A data mais recente em que este aplicativo foi usado por alguém em sua organização.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Vetar ou aprovar um aplicativo

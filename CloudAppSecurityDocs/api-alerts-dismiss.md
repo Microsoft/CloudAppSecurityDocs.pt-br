@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 54c7b05a65c5a57e44381afe7c6f273a2cb364c7
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: cebdc20f52b295106a2147f9438990504819e857
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505545"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027016"
 ---
 # <a name="dismiss---alerts-api"></a>API de descartar alertas
 
@@ -37,7 +37,9 @@ POST /api/v1/alerts/<pk>/dismiss/
 
 ## <a name="request-body-parameters"></a>Parâmetros do corpo da solicitação
 
-| Parâmetro | Descrição | | Comentário | Um comentário sobre por que o alerta foi descartado |
+| Parâmetro | Descrição |
+| --- | --- |
+| comentário | Um comentário sobre por que o alerta foi descartado |
 
 ## <a name="example"></a>Exemplo
 

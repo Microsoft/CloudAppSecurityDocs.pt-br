@@ -5,17 +5,17 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 05/17/2020
+ms.date: 08/09/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7756d238514b786321ee5c0c4ba91910c3b3dfcf
-ms.sourcegitcommit: 8dbdfab8bb07f1bf128dfc85894a448b63a78148
+ms.openlocfilehash: 87d0aa487e71e308bddccfcf504356423e485584
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86928008"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88026948"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -56,7 +56,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 
 - Barracuda – firewall do aplicativo Web (W3C)
 - Blue Coat Proxy SG – log de acesso (W3C)
-- Check Point
+- Ponto de Verificação
 - Cisco ASA com FirePOWER
 - Firewall Cisco ASA (Para firewalls Cisco ASA, é necessário definir o nível de informações como 6)
 - Cisco Cloud Web Security
@@ -73,6 +73,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 - Juniper SRX
 - Juniper SSG
 - McAfee Secure Web Gateway
+- Segurança de Menlo (CEF)
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewall da série Palo Alto
 - Sonicwall (anteriormente conhecido como Dell)
@@ -100,7 +101,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | Não |
 | Blue Coat | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
-| Check Point | Não | **Sim** | Não | **Sim** | Não | Não |
+| Ponto de Verificação | Não | **Sim** | Não | **Sim** | Não | Não |
 | Cisco ASA (Syslog) | Não | **Sim** | Não | **Sim** | **Sim** | Não |
 | Cisco ASA com FirePOWER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Cisco Cloud Web Security |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
@@ -120,6 +121,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 | Juniper SRX | Não | **Sim** | Não | **Sim** | **Sim** | **Sim** |
 | Juniper SSG | Não | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | McAfee SWG | **Sim** | Não | Não | **Sim** | **Sim** | **Sim** |
+| Segurança de Menlo (CEF) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | MS TMG | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
 | Redes Palo Alto | Não | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Sophos | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | Não |

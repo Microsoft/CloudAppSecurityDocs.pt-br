@@ -1,6 +1,6 @@
 ---
-title: Informações de suporte e solução de problemas para Cloud App Security
-description: Este artigo descreve as opções de suporte e solução de problemas para Microsoft Cloud App Security
+title: Informações sobre suporte e solução de problemas do Cloud App Security
+description: Este artigo descreve as opções de suporte e solução de problemas do Microsoft Cloud App Security
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,33 +14,33 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 770439dea68e73679ebf2fae7ed1eaf1af3f8005
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: 80ae1af2a0f40adbaa1e989de8ec644d721a7f88
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285670"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88026982"
 ---
-# <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas Microsoft Cloud App Security
+# <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas do Microsoft Cloud App Security
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Este artigo descreve as opções de suporte e solução de problemas disponíveis para o Cloud App Security.
+Este artigo descreve as opções de suporte e solução de problemas disponíveis do Cloud App Security.
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Gerenciar solicitações de suporte para Cloud App Security
 
-A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para Microsoft Cloud App Security. O suporte está disponível online e por telefone para assinaturas de avaliação e pagas. O suporte técnico online está disponível em inglês e japonês. O suporte telefônico e o suporte de cobrança online estão disponíveis em outros idiomas.
+A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para o Microsoft Cloud App Security. O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas. O suporte técnico online está disponível em inglês e japonês. O suporte telefônico e o suporte de cobrança online estão disponíveis em outros idiomas.
 
-Como administrador, você pode usar a opção **ajuda + suporte** para arquivar uma solicitação de suporte online para Cloud App Security da portal do Azure. Para criar uma solicitação de suporte, é necessário atribuir uma das seguintes funções de administrador à sua conta [no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+Como administrador, você pode usar a opção **Ajuda + Suporte** para arquivar uma solicitação de suporte online do Cloud App Security por meio do portal do Azure. Para criar uma solicitação de suporte, a conta deve receber a atribuição de uma das seguintes [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
 * Administrador global
 
-* Administrador de serviços
+* Administrador de serviço
 
-Selecione **solicitação de suporte** para criar uma nova solicitação de suporte que abra a guia **noções básicas** da página *ajuda + suporte* do Azure seguindo o protocolo abaixo.
+Selecione **solicitação de suporte** para criar uma nova solicitação de suporte, que será aberta na guia **Básico** da página *Ajuda + Suporte* do Azure, de acordo com o protocolo abaixo.
 
 >[!NOTE]
-> Para obter suporte técnico com produtos de terceiros que funcionam com Microsoft Cloud App Security (por exemplo, Box, Salesforce e G Suite), entre em contato com o fornecedor do produto primeiro.
+> Para obter suporte técnico para produtos de terceiros que funcionam com o Microsoft Cloud App Security (por exemplo, Box, Salesforce e G Suite), primeiro contate o fornecedor desse produto.
 
 ### <a name="create-an-online-support-request"></a>Criar uma solicitação de suporte online
 
@@ -48,11 +48,11 @@ Selecione **solicitação de suporte** para criar uma nova solicitação de supo
 
 2. Na página **Ajuda + suporte** do Azure, selecione **Nova solicitação de suporte**.
 
-3. Na guia **noções básicas** , para a maioria dos problemas de suporte, escolha as seguintes opções:
+3. Para a maioria dos problemas de suporte, vá até a guia **Básico** e escolha as seguintes opções:
 
     * **Tipo de problema**: **Técnico**
 
-    * **Assinatura**: \<*sua assinatura*\>
+    * **Assinatura**:\<*your subscription*\>
 
     * **Serviço**: **segurança de aplicativo de nuvem**
 
@@ -62,41 +62,42 @@ Selecione **solicitação de suporte** para criar uma nova solicitação de supo
 
     * **Assunto**: Descreva brevemente o problema que você está tendo
 
-4. Na guia **detalhes** , preencha os detalhes do problema, o método de suporte, suas informações de contato e clique em **Avançar: revisar + criar**.
+4. Na guia **Detalhes**, preencha os detalhes de seu problema, o método de suporte, suas informações de contato e, em seguida, clique em **Avançar: Examinar + criar**.
 
-5. Examine as informações, verifique se estão corretas e, em seguida, escolha **Criar** para enviar sua solicitação de suporte.
+5. Verifique se as informações estão corretas e escolha **Criar** para enviar a solicitação de suporte.
 
 **Observação:** Se você tiver uma pergunta de cobrança ou de assinatura, poderá abrir um caso para obter suporte por meio do [centro de administração Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### <a name="view-open-support-requests"></a>Exibir solicitações de suporte abertas
 
-Você pode ver uma solicitação de suporte no portal do Azure. Para fazer isso:
+É possível exibir as solicitações de suporte no Portal do Azure. Para fazer isso:
 
 1. Entre no Azure [https://portal.azure.com](https://portal.azure.com/) com suas credenciais de administrador, selecione o **?** no canto superior direito do portal e selecione **Ajuda + suporte** para ir para a página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
-2. Na página **Ajuda + suporte**, é possível ver a lista de **Solicitações de suporte recentes** e selecioná-las para ver detalhes adicionais.
+2. Na página **Ajuda + Suporte**, você pode exibir a lista de **Solicitações recentes de suporte** e selecioná-las para exibir informações adicionais.
 
-## <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Solucionando problemas de status de Microsoft Cloud App Security
+## <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Solução de problemas de status do Microsoft Cloud App Security
 
-Verifique o [status atual de Microsoft Cloud app Security](https://status.cloudappsecurity.com/).
+Verifique o [status atual do serviço Microsoft Cloud App Security](https://status.cloudappsecurity.com/).
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
 * [Converse com uma comunidade de colegas](https://techcommunity.microsoft.com/t5/Microsoft-Cloud-App-Security/bd-p/MicrosoftCloudAppSecurity)
 
-* [Iniciar uma avaliação hoje](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
+* [Comece a usar uma avaliação hoje mesmo](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
-* [Mantenha-se atualizado com nosso blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Microsoft%20Cloud%20App%20Security)
+* [Fique atualizado com nosso blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Microsoft%20Cloud%20App%20Security)
 
-* Baixar [a folha de Cloud app Security](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
+* Baixe [a folha de dados do Cloud App Security](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
 
-## <a name="feedback"></a>Privacidade Jurídica
+<a name="feedback"></a>
+## <a name="how-to-provide-feedback"></a>Como fornecer comentários
 
-A equipe de Cloud App Security sempre está ansiosos para ouvir suas ideias sobre nosso produto. Forneça comentários usando uma das seguintes opções:
+A equipe do Cloud App Security está sempre disponível para receber opiniões sobre o produto. Forneça comentários usando uma das seguintes opções:
 
-* **Comentários sobre o produto**: enviar comentários para [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com).
+* **Comentários sobre o produto**: enviar comentários para [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com) .
 
-* **Comentários**sobre a documentação: nosso novo sistema de comentários foi criado com base nos problemas do github. Para fornecer comentários sobre a documentação, você deve primeiro criar uma conta do GitHub. Leia sobre essa alteração em [nossa postagem no blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+* **Comentários**sobre a documentação: nosso novo sistema de comentários foi criado com base nos problemas do github. Para fornecer comentários sobre a documentação, primeiro crie uma conta do GitHub. Leia sobre essa alteração em nossa [postagem no blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 ## <a name="next-steps"></a>Próximas etapas
 
