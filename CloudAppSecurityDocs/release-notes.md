@@ -4,19 +4,19 @@ description: Este artigo é atualizado com frequência para você saber quais s�
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/20/2020
+ms.date: 08/09/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: de7d3e9c0da31dc6331df344673628c127a8805d
-ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
+ms.openlocfilehash: b53977404f44c56fade4808e8d7668eb8b810373
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87296987"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88026999"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -25,6 +25,16 @@ ms.locfileid: "87296987"
 Este artigo é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security.
 
 Feed RSS: Receba uma notificação quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-181"></a>Cloud App Security versão 181
+
+Lançado em 9 de agosto de 2020
+
+- **Novo analisador de log Cloud Discovery da Menlo Security**  
+O Cloud Discovery do Cloud App Security analisa uma ampla variedade de logs de tráfego para classificar e pontuar os aplicativos. Agora o Cloud Discovery inclui um analisador de log interno para compatibilidade com o formato CEF da Menlo Security. Para acessar a lista de dispositivos com suporte, confira [Proxies e firewalls com suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **O nome do Cloud App Discovery do Azure AD (Active Directory) é exibido no portal**  
+Para licenças P1 e P2 do Azure AD, atualizamos o nome do produto no portal para **Cloud App Discovery**. Saiba mais sobre o [Cloud App Discovery](editions-cloud-app-security-aad.md).
 
 ## <a name="cloud-app-security-release-179-and-180"></a>Cloud App Security versões 179 e 180
 
@@ -848,7 +858,7 @@ Lançado em 4 de março de 2018
 
 - A funcionalidade de pesquisa nas páginas de usuário e endereço IP agora habilita o preenchimento automático para facilitar a localização do que você estiver procurando.
 
-- Agora você pode executar ações em massa nas páginas de configurações de Excluir entidades e Excluir endereço IP. Desse modo, é fácil selecionar vários usuários e grupos ou endereços IP e excluí-los do monitoramento como parte do Cloud Discovery em sua organização.
+- Agora você pode executar ações em massa nas páginas de configurações de Excluir entidades e Excluir endereço IP. Desse modo, é fácil selecionar vários usuários ou endereços IP e excluí-los do monitoramento como parte do Cloud Discovery em sua organização.
 
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security versão 117
 

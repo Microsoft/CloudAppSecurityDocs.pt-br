@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 44880f4e19fc317d09dbc091c2c4a4e9c9399a43
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 6aa884bf83e71964173b69d9ca11a5a86e3cef9f
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254679"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027033"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Segurança e privacidade de dados do Microsoft Cloud App Security
 
@@ -36,7 +36,7 @@ Para ajudar as organizações a atender aos requisitos nacionais, regionais e es
 
 O Microsoft Cloud App Security atende a muitos padrões de conformidade internacionais e específicos do setor, que incluem, entre outros:
 
-| |Título|Descrição|
+| Organização |Título|Descrição|
 |----|----|----|
 |![Logotipo CSA](media/csastar-attest.png)|Atestado CSA STAR|Os serviços Azure e Intune receberam a certificação Cloud Security Alliance STAR Attestation com base em uma auditoria independente.|
 |![Logotipo CSA](media/csastar.png)|Certificação CSA STAR|Os serviços Azure, Intune e Power BI receberam a certificação Cloud Security Alliance STAR no nível Ouro.|
@@ -51,7 +51,9 @@ O Microsoft Cloud App Security atende a muitos padrões de conformidade internac
 |![Logotipo SOC](media/soc-logo.png)|SOC 3|Os serviços em nuvem da Microsoft estão em conformidade com os padrões SOC (Service Organization Controls) para segurança operacional.|
 |![Logotipo G-Cloud](media/g-cloud.png)|UK G-Cloud|A Crown Commercial Service renovou a classificação dos serviços em nuvem da Microsoft como Government Cloud v6.|
 
-<!--|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|-->
+<!--
+|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|
+-->
 
 Para saber mais, confira [Ofertas de conformidade da Microsoft](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) e selecione o Cloud App Security.  
 
@@ -60,7 +62,7 @@ Para saber mais, confira [Ofertas de conformidade da Microsoft](https://www\.mic
 ### <a name="youre-the-owner-of-your-data"></a>Você é o proprietário de seus dados
 
 - No Microsoft Cloud App Security, os administradores podem exibir os dados pessoais identificáveis armazenados no serviço por meio do portal usando a barra de Pesquisa.
-- Os administradores podem pesquisar os metadados de um usuário específico ou as atividades de usuários. Clicar em uma entidade abre [**Usuários e contas**](accounts.md). A página **Usuários e contas** fornece detalhes abrangentes sobre a entidade extraída dos aplicativos de nuvem conectados. Também fornece o histórico de atividades e os alertas de segurança relacionados ao usuário.
+- Os administradores podem pesquisar os metadados de um usuário específico ou as atividades do usuário. Clicar em uma entidade abre [**Usuários e contas**](accounts.md). A página **Usuários e contas** fornece detalhes abrangentes sobre a entidade extraída dos aplicativos de nuvem conectados. Também fornece o histórico de atividades e os alertas de segurança relacionados ao usuário.
 
 - Você possui seus dados e pode cancelar assinaturas e solicitar a exclusão de seus dados a qualquer momento. Se você não renovar sua assinatura, seus dados serão excluídos dentro da linha do tempo especificada nos  [Termos de Serviço Online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
@@ -85,7 +87,7 @@ Os dados pessoais sobre os usuários são derivados do objeto do usuário nos ap
 Atualmente, o Microsoft Cloud App Security opera em datacenters nos Estados Unidos e na Europa (cada um desses locais é considerado uma "Área geográfica"). Sua conta de locatário será criada em uma área geográfica baseada no país/região escolhido quando você se inscreveu. Especificamente, seus dados serão armazenados em um datacenter na área geográfica mais próxima desse local.
 
 > [!NOTE]
-> O Cloud App Security aproveita os data centers do Azure em todo o mundo para fornecer desempenho otimizado por meio de geolocalização. Isso significa que uma sessão de usuário pode ser hospedada fora de uma região específica, dependendo dos padrões de tráfego e da localização. No entanto, para proteger sua privacidade, nenhum dado de sessão é armazenado nesses data centers.
+> O Cloud App Security aproveita os data centers do Azure em todo o mundo para fornecer desempenho otimizado por meio de geolocalização. Isso significa que a sessão de um usuário pode ser hospedada fora de uma região específica, dependendo dos padrões de tráfego e da localização. No entanto, para proteger sua privacidade, nenhum dado de sessão é armazenado nesses data centers.
 
 [Saiba mais sobre privacidade](https://www\.microsoft\.com/trustcenter/privacy)
 
