@@ -14,24 +14,24 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 79b4bbd6e73a07820524df571ddf9cebe407c5af
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: c1e2296d9aba99304cd82ec42694db959e3b8862
+ms.sourcegitcommit: 58e41c5633e8d830a542918dafc4209aa5678004
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74666744"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88258906"
 ---
 # <a name="policy-template-reference"></a>Referência de modelo de política
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece informações sobre modelos de política incluídos no Microsoft Cloud App Security.
 
-## <a name="policy-templates"></a>Modelos de Política
+## <a name="policy-templates"></a>Modelos de política
 
 É recomendável iniciar a criação de políticas com base em um modelo existente sempre que possível para facilidade de uso. Esta tabela apresenta modelos de política existentes no Microsoft Cloud App Security.
 
-|Categoria de risco|Nome do modelo|Description|
+|Categoria de risco|Nome do modelo|Descrição|
 |-----|----|----|
 |Cloud Discovery|Comportamentos anormais em usuários descobertos|Alerta ao detectar comportamentos anormais em usuários e aplicativos descobertos, como: grandes quantidades de dados carregados em comparação com outros usuários, grandes transações de usuário em comparação com o histórico do usuário.|
 |Cloud Discovery|Comportamentos anormais de endereços IP descobertos|Alertas ao detectar comportamentos anômalos em endereços IP e aplicativos descobertos, como: grandes quantidades de dados carregados em comparação com outros endereços IP, transações grandes de aplicativo em comparação com o histórico do endereço IP.|
@@ -55,13 +55,11 @@ Este artigo fornece informações sobre modelos de política incluídos no Micro
 |DLP|Arquivo contendo PHI detectado na nuvem (mecanismo de DLP interno)|Alertar quando um arquivo com PHI (informações de saúde protegidas) for detectado pelo mecanismo DLP (prevenção contra perda de dados) integrado do Microsoft Cloud App Security em um aplicativo de nuvem sancionado.|
 |DLP|Arquivo contendo informações de integridade protegidas detectado na nuvem (mecanismo interno de DLP)|Alertar quando um arquivo contendo dados pessoais é detectado pelo mecanismo DLP (prevenção contra perda de dados) integrado do Microsoft Cloud App Security em um aplicativo de nuvem sancionado.|
 |Detecção de ameaças|Atividade administrativa de um endereço IP não corporativo|Alerta quando um usuário administrador executa uma atividade administrativa de um endereço IP que não está incluído na categoria de intervalo de endereços IP corporativos. Primeiro, configure os endereços IP corporativos; para fazer isso, vá até a página Configurações e defina **Intervalos de Endereços IP**.|
-|Detecção de ameaças|Detecção geral de anomalias|Alerta quando uma sessão anômala é detectada em um dos aplicativos sancionados, como: viagem impossível, padrão de entrada, conta inativa.|
 |Detecção de ameaças|Logon de um endereço IP com risco|Alerta quando um usuário entra em seus aplicativos sancionados de um endereço IP com risco. A categoria de endereço IP Arriscada contém, por padrão, endereços que têm marcas de endereço IP de proxy Anônimos, Tor ou Botnet. Você pode adicionar mais endereços IP para essa categoria na página de configurações de intervalos de endereço IP.|
 |Detecção de ameaças|Download em massa por um único usuário|Alerta quando um usuário executa mais de 50 downloads dentro de 1 minutos.|
 |Detecção de ameaças|Várias tentativas de logon do usuário com falha em um aplicativo|Alerta quando um único usuário tenta entrar em um aplicativo e falha de mais de 10 vezes em 5 minutos.|
 |Detecção de ameaças|Atividade de ransomware potencial|Alerta quando um usuário carrega arquivos para a nuvem que podem ser infectados com ransomware.|
-|Detecção de ameaças|Logon de usuário em um endereço IP não categorizado|Alerta quando um usuário faz logon de um endereço IP que não está incluído em uma categoria específica de intervalo de IP. Você pode categorizar os endereços IP indo para a página Configurações e selecionando os intervalos de endereços IP.|
-|Controle de compartilhamento|Arquivo compartilhado com endereços de email pessoal|Alerta quando um arquivo é compartilhado com o endereço de email pessoal do usuário.|
+|Controle de compartilhamento|Arquivo compartilhado com endereços de email pessoal|Alertar quando um arquivo for compartilhado com o endereço de email pessoal de um usuário.|
 |Controle de compartilhamento|Arquivo compartilhado com domínio não autorizado|Alertar quando um arquivo for compartilhado com um domínio não autorizado (por exemplo, de seu concorrente).|
 |Controle de compartilhamento|Certificados digitais compartilhados (extensões de arquivo)|Alerta quando um arquivo que contém os certificados digitais publicamente é compartilhado. Use este modelo para gerenciar o armazenamento do AWS.|
 |Controle de compartilhamento|Buckets do S3 acessíveis publicamente (AWS)|Alertar quando um bucket do S3 do AWS for compartilhado publicamente.|
