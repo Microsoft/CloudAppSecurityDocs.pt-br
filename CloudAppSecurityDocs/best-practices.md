@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0815432cf7410ab4e122ab52a136b978d6dec430
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: de72f525d7188b4fac360f3ad910c3078a8de2e7
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254594"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256758"
 ---
 # <a name="cloud-app-security-best-practices"></a>Práticas recomendadas de Cloud App Security
 
@@ -43,7 +43,7 @@ A integração do Cloud App Security à proteção avançada contra ameaças do 
 **Para obter mais informações**:
 
 * [Integração do Microsoft defender ATP com o Cloud App Security](wdatp-integration.md)
-* [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+* [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 * [Descubra e gerencie a ti de sombra em sua rede](tutorial-shadow-it.md)
 
 ---
@@ -270,7 +270,7 @@ Ao ignorar alertas, é importante investigar e entender por que eles não têm i
 ## <a name="secure-iaas-services-and-custom-apps"></a>Proteger serviços de IaaS (infraestrutura como serviço) e aplicativos personalizados
 
 **Prática recomendada**: conectar o Azure, AWS e GCP  
-**Detalhe**: conectar cada um desses aplicativos de armazenamento em nuvem para Cloud app Security ajuda a melhorar seus recursos de detecções de ameaças. Ao monitorar atividades administrativas e de entrada para esses serviços, você pode detectar e ser notificado sobre possíveis ataques de força bruta, uso mal-intencionado de uma conta de usuário com privilégios e outras ameaças em seu ambiente. Por exemplo, você pode identificar riscos como exclusões incomuns de VMs ou até mesmo atividades de representação nesses aplicativos.  
+**Detalhe**: conectar cada uma dessas plataformas de nuvem para Cloud app Security ajuda a melhorar seus recursos de detecções de ameaças. Ao monitorar atividades administrativas e de entrada para esses serviços, você pode detectar e ser notificado sobre possíveis ataques de força bruta, uso mal-intencionado de uma conta de usuário com privilégios e outras ameaças em seu ambiente. Por exemplo, você pode identificar riscos como exclusões incomuns de VMs ou até mesmo atividades de representação nesses aplicativos.  
 **Para obter mais informações**:
 
 * [Conectar o Azure ao Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
