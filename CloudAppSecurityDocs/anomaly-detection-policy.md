@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dff363a63cab2760cc953f7493a38b8ffda0d02f
-ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
+ms.openlocfilehash: 586836d517a458639c0b669108c7d359b8d02ba4
+ms.sourcegitcommit: 61e9579ebe2c1ca02c7a56e32781e145f6612879
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87296798"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88261429"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
 
@@ -76,12 +76,12 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
 
     > [!NOTE]
     >
-    > * Para detecção de malware do Office 365, você precisa de uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
-    > * O Cloud App Security dá suporte à detecção de malware dos seguintes aplicativos:
-    >   * Box
-    >   * Dropbox
-    >   * G Suite
-    >   * Office 365
+    > O Cloud App Security dá suporte à detecção de malware para os seguintes aplicativos:
+    >
+    > * Box
+    > * Dropbox
+    > * G Suite
+    > * Office 365 (requer uma licença válida para a proteção avançada contra ameaças do Office 365 P1)
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
 
