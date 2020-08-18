@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 6aa884bf83e71964173b69d9ca11a5a86e3cef9f
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: 842f29242a2b15cc6bf41b72f5b894c06400634b
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027033"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256788"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Segurança e privacidade de dados do Microsoft Cloud App Security
 
@@ -41,7 +41,6 @@ O Microsoft Cloud App Security atende a muitos padrões de conformidade internac
 |![Logotipo CSA](media/csastar-attest.png)|Atestado CSA STAR|Os serviços Azure e Intune receberam a certificação Cloud Security Alliance STAR Attestation com base em uma auditoria independente.|
 |![Logotipo CSA](media/csastar.png)|Certificação CSA STAR|Os serviços Azure, Intune e Power BI receberam a certificação Cloud Security Alliance STAR no nível Ouro.|
 |![Logotipo EU Model Clauses](media/eu-model-icon.png)|[Cláusulas de Modelos da UE](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|A Microsoft oferece Cláusulas Contratuais Padrão da EU, garantias para transferências de dados pessoais.|
-|![Logotipo Privacy Shield](media/privacy_shield.png)|UE-EUA. Privacy Shield|A Microsoft está em conformidade com essa estrutura para proteção de dados pessoais transferidos da UE para os EUA.|
 |![Logotipo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|A Microsoft oferece Acordos de Parceiro Comercial HIPAA/HITECH (Health Insurance Portability & Accountability Act).|
 |![Logotipo ISO 9001](media/iso-9001.png)|ISO 9001|A Microsoft é certificada pela implementação de padrões de gerenciamento de qualidade.|
 |![Logotipo ISO 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|A Microsoft é certificada pela implementação de padrões de gerenciamento de segurança das informações.|

@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 6d2996fb77912b04d5a6d4aefe7edc8c77f27a21
-ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
+ms.openlocfilehash: f9d29046b0a63b89926d3ba95bab75aba5964cad
+ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87377840"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88514347"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Solução de problemas de controles de acesso e de sessão
 
@@ -173,7 +173,7 @@ O mecanismo de identificação de dispositivos pode solicitar autenticação de 
     - instalado no armazenamento do usuário, não no armazenamento do dispositivo, do computador que você está usando para teste
 1. Reiniciar a sessão do navegador
 1. Ao fazer logon no aplicativo protegido
-    - Verifique se você é redirecionado para a URL`<https://*.managed.access-control.cas.ms/aad_login>`
+    - Verifique se você é redirecionado para a URL `<https://*.managed.access-control.cas.ms/aad_login>`
     - Se você estiver usando o iOS, verifique se está usando o navegador Safari
     - Se você estiver usando o Firefox, também deverá adicionar o certificado ao repositório de certificados do próprio Firefox. Todos os outros navegadores usam o mesmo repositório de certificados padrão. Saiba [como adicionar um certificado ao repositório de certificados do Firefox](http://www.jscape.com/blog/firefox-client-certificate).
 1. Valide se o certificado do cliente foi solicitado no navegador.
@@ -237,7 +237,7 @@ Ao integrar um aplicativo ao Controle de Aplicativos de Acesso Condicional, a et
 
 | Provedor de identidade | Validações |
 |---|---|
-| Azure AD | 1. Verifique se você tem uma licença válida para Azure AD Premium P1, além de uma licença de Cloud App Security<br />2. Certifique-se de que o aplicativo usa o SAML 2,0 ou o protocolo OpenID Connect<br />3. Verifique se o SSO do aplicativo no Azure AD |
+| AD do Azure | 1. Verifique se você tem uma licença válida para Azure AD Premium P1, além de uma licença de Cloud App Security<br />2. Certifique-se de que o aplicativo usa o SAML 2,0 ou o protocolo OpenID Connect<br />3. Verifique se o SSO do aplicativo no Azure AD |
 | Terceiros | 1. Verifique se você tem uma licença de Cloud App Security válida<br />2. criar um aplicativo duplicado<br />3. Verifique se o aplicativo usa o protocolo SAML<br />4. valide se você integrou totalmente o aplicativo e se o status do aplicativo está **conectado** |
 
 1. Na política do Azure AD, na **sessão**, verifique se a sessão é forçada a rotear para Cloud app Security, o que, por sua vez, permitirá que o aplicativo apareça na página **aplicativos controle de aplicativos de acesso condicional** , da seguinte maneira:
@@ -293,7 +293,7 @@ Depois de adicionar um aplicativo, você poderá ver a opção **solicitar contr
 1. Insira o nome principal do usuário ou o email para os usuários que estarão integrando o aplicativo e clique em **salvar**.
 1. Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
 
-    | Status do aplicativo | Descrição | Etapas |
+    | Status do aplicativo | Description | Etapas |
     | --- | --- | --- |
     | Não reconhecido | Você verá uma página aplicativo não reconhecido solicitando que você configure seu aplicativo. | 1. [adicione o aplicativo ao controle de aplicativos de acesso condicional](proxy-deployment-any-app.md#add-app).<br /> 2. [adicione os domínios para o aplicativo](proxy-deployment-any-app.md#add-domains)e, em seguida, retorne ao aplicativo e atualize a página.<br /> 3. [Instale os certificados para o aplicativo](proxy-deployment-any-app.md#install-certs). |
     | Reconhecido | Você verá uma página de integração solicitando que você continue o processo de configuração do aplicativo. | - [Instale os certificados para o aplicativo](proxy-deployment-any-app.md#install-certs). <br /><br /> **Observação:** Verifique se o aplicativo está configurado com todos os domínios necessários para que o aplicativo funcione corretamente. Para configurar domínios adicionais, vá para [adicionar os domínios do aplicativo](proxy-deployment-any-app.md#add-domains)e, em seguida, retorne à página do aplicativo. |
@@ -444,7 +444,7 @@ Se um usuário final estiver recebendo uma falha geral depois de fazer logon em 
 1. Na lista de aplicativos, na linha na qual o aplicativo que você não consegue acessar aparece, escolha os três pontos no final da linha e escolha **Editar** aplicativo.
     1. Validar se o certificado SAML que foi carregado está correto
     1. Verifique se as URLs de SSO válidas foram fornecidas na configuração do aplicativo
-    1. Valide se os atributos e valores no aplicativo personalizado são refletidos na captura de tela Configurações do provedor de identidade ![ mostrando a página coletar informações do SAML dos provedores de identidade](media/proxy-deploy-add-idp-ext-conf.png)
+    1. Valide se os atributos e valores no aplicativo personalizado são refletidos na captura de tela Configurações do provedor de identidade  ![ mostrando a página coletar informações do SAML dos provedores de identidade](media/proxy-deploy-add-idp-ext-conf.png)
 1. Se você ainda não conseguir acessar o aplicativo, abra um [tíquete de suporte](support-and-ts.md).
 
 ### <a name="something-went-wrong-page-appears"></a>Aparece uma página incorreta
@@ -508,7 +508,7 @@ Como um usuário final, o download de dados confidenciais em um dispositivo não
 
 Todos os proxies que as URLs de sufixo são suscetíveis à perda de contexto, um problema em que navegar até um link perde o caminho completo do link e normalmente atinge o home page do aplicativo. Cloud App Security está posicionado exclusivamente para resolver essa limitação e resolver a perda de contexto por meio de parceria com fornecedores da Microsoft e não Microsoft.
 
-Os aplicativos em nossa página de aplicativos em destaque marcados como **(versão prévia)** podem sofrer a perda de contexto. Para aplicativos que não estão em destaque experimentando perda de contexto, envie um tíquete de suporte. Estamos trabalhando com cada provedor de aplicativo individualmente para corrigir esses problemas principais.
+Os aplicativos em nossa página de aplicativos em destaque marcados como **(versão prévia)** podem sofrer a perda de contexto. Da mesma forma, a perda de contexto pode ser causada por políticas globais que bloqueiam cookies de terceiros ou rastreamento entre sites. Você pode corrigir o problema Desabilitando essas opções. Para aplicativos que não estão em destaque experimentando perda de contexto, envie um tíquete de suporte. Estamos trabalhando com cada provedor de aplicativo individualmente para corrigir esses problemas principais.
 
 Como uma mitigação temporária, você pode solucionar problemas de perda de contexto da seguinte maneira:
 
