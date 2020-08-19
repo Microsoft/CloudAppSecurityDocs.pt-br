@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b53977404f44c56fade4808e8d7668eb8b810373
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: dd474cdaec20738f5969b5deba20b3c54dc82acb
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88026999"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256823"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -186,7 +186,7 @@ Agora você pode controlar a gravidade dos alertas da Proteção de Identidade d
 Lançado em 1º de março de 2020
 
 - **Nova detecção para Workday**  
-Expandimos os nossos alertas atuais de comportamento anormal para o Workday. Os novos alertas incluem as seguintes detecções de localização geográfica de usuário:
+Expandimos os nossos alertas atuais de comportamento anormal para o Workday. Os novos alertas incluem as seguintes detecções de geolocalização de usuário:
   - [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)
   - [Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)
   - [Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)
