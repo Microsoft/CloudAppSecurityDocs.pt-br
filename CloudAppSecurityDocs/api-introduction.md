@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: df70a9408b88692b9faf789a00b5f307c0af24ee
-ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
+ms.openlocfilehash: aa5b3d4488a8e62f965900593169e899f90829b2
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84563892"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657638"
 ---
 # <a name="cloud-app-security-rest-api"></a>API REST do Cloud App Security
 
@@ -61,7 +61,7 @@ Para obter mais informações sobre tokens de API, consulte [Gerenciando tokens 
 ### <a name="example"></a>Exemplo
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
 ```
 
 ## <a name="what-actions-are-supported"></a>Há suporte para quais ações?
@@ -86,11 +86,11 @@ A tabela a seguir descreve os tipos de campo com suporte:
 |Campo|Descrição|
 |---|---|
 |string|Uma cadeia de caracteres textual|
-|booleano|Um valor booliano que representa true/false|
+|boolean|Um valor booliano que representa true/false|
 |inteiro|Inteiro com sinal de 32 bits|
 |timestamp|Milissegundos desde a época|
 
-## <a name="limits"></a>Limites
+## <a name="limits"></a>limites
 
 Você pode optar por limitar suas solicitações fornecendo um parâmetro Limit na solicitação.
 
@@ -118,7 +118,7 @@ A maioria dos filtros dá suporte a vários valores para fornecer a você consul
 ### <a name="example"></a>Exemplo
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
   "filters": {
     "some.field": {
       "eq": ["value1", "value2"],
@@ -151,8 +151,8 @@ A tabela a seguir descreve os operadores com suporte:
 | gt | valor único | Retorna todos os registros cujo valor é maior que o valor fornecido |
 | gte | valor único | Retorna todos os registros cujo valor é maior ou igual ao valor fornecido |
 | gte_ndays | número | Retorna todos os registros com data posterior a N dias atrás |
-| isnotset | booleano | Quando definido como "true", retorna todos os registros relevantes que não têm um valor no campo especificado |
-| isset | booleano | Quando definido como "true", retorna todos os registros relevantes que têm um valor no campo especificado |
+| isnotset | boolean | Quando definido como "true", retorna todos os registros relevantes que não têm um valor no campo especificado |
+| isset | boolean | Quando definido como "true", retorna todos os registros relevantes que têm um valor no campo especificado |
 | lt | valor único | Retorna todos os registros cujo valor é menor que o valor fornecido |
 | LTE | valor único | Retorna todos os registros cujo valor é menor ou igual ao valor fornecido |
 | lte_ndays | número | Retorna todos os registros com data anterior a N dias atrás |

@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 17e5d65219e883b5c89f5c799cf02e9825d20dc5
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 151edb2f763f55fa21f10b8b869703a31406dffb
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505635"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657654"
 ---
 # <a name="fetch---activities-api"></a>API de busca-atividades
 
@@ -42,7 +42,7 @@ GET /api/v1/activities/<pk>/
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/"
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/"
 ```
 
 ### <a name="response"></a>Resposta

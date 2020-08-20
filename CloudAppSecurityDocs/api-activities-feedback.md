@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: f95aa64c984484d62cea728def5efa729d22b185
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: cd6f32c85d0202264a951533a29c26d068337917
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505645"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657569"
 ---
 # <a name="feedback-on-activity---activities-api"></a>Comentários sobre a API de atividades de atividade
 
@@ -48,7 +48,7 @@ POST /api/v1/activities/<pk>/feedback
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/feedback" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/feedback" -d '{
   "feedbackValue": "0",
   "feedbackText": "Irrelevant",
   "allowContact": false,

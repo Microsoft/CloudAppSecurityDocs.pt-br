@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: dec1065d4e2559a6ae080e90f6634528ed2132b7
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: f6cea4b9697489aa979de029ab5d12e897a8f94b
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505255"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657630"
 ---
 # <a name="list---entities-api"></a>Listar API de entidades
 
@@ -41,7 +41,7 @@ POST /api/v1/entities/
 | Parâmetro | Descrição |
 | --- | --- |
 | filtros | Filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de entidade](api-entities.md#filters) para obter mais detalhes |
-| sortDirection | A direção da classificação. Os valores possíveis são: `asc` e`desc` |
+| sortDirection | A direção da classificação. Os valores possíveis são: `asc` e `desc` |
 | tipo de classificação | Campos usados para classificar entidades. Os valores possíveis são:<br /><br />**Data**: a data em que a entidade foi criada<br /><br />**severidade**: a severidade da entidade |
 | skip | Ignora o número especificado de registros |
 | limite | Número máximo de registros retornados pela solicitação |
@@ -53,7 +53,7 @@ POST /api/v1/entities/
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
   "filters": {
     // some filters
   },

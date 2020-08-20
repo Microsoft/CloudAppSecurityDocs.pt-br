@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: f3dad3e2e868af0399153b2b6995dcdb104be166
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 2f39f0541569b4f4c127c3c1d9602e097b56a82b
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505175"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657734"
 ---
 # <a name="fetch-entity-tree---entities-api"></a>Buscar árvore de entidade-API de entidades
 
@@ -45,7 +45,7 @@ GET /api/v1/entities/<pk>/retrieve_tree/
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/<pk>/retrieve_tree/"
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/<pk>/retrieve_tree/"
 ```
 
 ### <a name="response"></a>Resposta

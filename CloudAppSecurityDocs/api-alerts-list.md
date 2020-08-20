@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: ac3be42bfd076169a620a62566ed9cdad4e0c4a0
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: c47572c66633615e2e2d6da33641de1f23be2d73
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505535"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657841"
 ---
 # <a name="list---alerts-api"></a>API de alertas de lista
 
@@ -38,7 +38,7 @@ POST /api/v1/alerts/
 | Parâmetro | Descrição |
 | --- | --- |
 | filtros | Filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de alerta](api-alerts.md#filters) para obter mais detalhes |
-| sortDirection | A direção da classificação. Os valores possíveis são: `asc` e`desc` |
+| sortDirection | A direção da classificação. Os valores possíveis são: `asc` e `desc` |
 | tipo de classificação | Campos usados para classificar alertas. Os valores possíveis são:<br /><br />**Data**: a data em que o alerta foi criado<br /><br />**severidade**: a severidade do alerta |
 | skip | Ignora o número especificado de registros |
 | limite | Número máximo de registros retornados pela solicitação |
@@ -50,7 +50,7 @@ POST /api/v1/alerts/
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/" -d '{
   "filters": {
     // some filters
   },

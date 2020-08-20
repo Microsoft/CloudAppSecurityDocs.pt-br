@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 7013a7b079f39a88bc95d583622e2591a7c5a2af
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 509f0c1096d22492a93683a31309e5cf6584987c
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505395"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657819"
 ---
 # <a name="finalize-file-upload---cloud-discovery-api"></a>Finalizar upload de arquivo-API de Cloud Discovery
 
@@ -44,7 +44,7 @@ POST /api/v1/discovery/done_upload/
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/done_upload/" -d "uploadUrl=<initiate_file_upload_response_url>"
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/done_upload/" -d "uploadUrl=<initiate_file_upload_response_url>"
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]

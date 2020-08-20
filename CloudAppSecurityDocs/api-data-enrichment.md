@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 22f19d6d1b03cec31f36f37a0b1bd112927af781
-ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
+ms.openlocfilehash: 998fe96459147f621e407130fb0f726e26a5f1f1
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84563875"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657785"
 ---
 # <a name="create-ip-address-range---data-enrichment-api"></a>Criar intervalo de endereços IP-API de enriquecimento de dados
 
@@ -43,7 +43,7 @@ Atualmente, há suporte para as seguintes categorias:
 | Categoria | ID |
 | --- | -- |
 | Corporativo | 1 |
-| Administrativo | 2 |
+| Administrativa | 2 |
 | Situação | 3 |
 | VPN | 4 |
 | Provedor de nuvem | 5 |
@@ -56,7 +56,7 @@ Atualmente, há suporte para as seguintes categorias:
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",

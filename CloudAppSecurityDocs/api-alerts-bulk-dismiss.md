@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 7caef6711d8e8dd526e0c684cdec72bce785db93
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 0b8233a43feb374e7c2c98d1895e12d2550ff577
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505565"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657564"
 ---
 # <a name="bulk-dismiss---alerts-api"></a>API de descarte-alertas em massa
 
@@ -43,7 +43,7 @@ POST /api/v1/alerts/dismiss_bulk/
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/dismiss_bulk/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/dismiss_bulk/" -d '{
   "comment": "Irrelevant",
   "filters": {
     "id": {

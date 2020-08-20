@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: d4a27846fccbd09ac57de47460e2fe118728b818
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 55a5d50f8dbe0dbbe1a34fcca913bc25d3292e42
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505265"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657750"
 ---
 # <a name="generate-block-script---cloud-discovery-api"></a>Gerar script de bloco-API de Cloud Discovery
 
@@ -40,7 +40,7 @@ GET /api/discovery/discovery_block_scripts/
 
 Atualmente, há suporte para os seguintes formatos:
 
-| Dispositivos | Formatar |
+| Dispositivo | Formatar |
 | --- | --- |
 | BlueCoat ProxySG | 102 |
 | Cisco ASA | 104 |
@@ -64,7 +64,7 @@ Essa solicitação retorna o script de bloco como texto.
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery/discovery_block_scripts/?format=102&type=banned"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery/discovery_block_scripts/?format=102&type=banned"
 ```
 
 ### <a name="response"></a>Resposta

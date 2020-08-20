@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: b46b50b7e82c8fdab2a431489b6d6f57a0833952
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 262163c5063e856957477166c6989a9bc5ae8e72
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505425"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657799"
 ---
 # <a name="mark-as-unread---alerts-api"></a>Marcar como API de alertas não lidos
 
@@ -42,7 +42,7 @@ POST /api/v1/alerts/<pk>/unread/
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/unread/"
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/unread/"
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]
