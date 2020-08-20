@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 998fe96459147f621e407130fb0f726e26a5f1f1
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 8739566fb2bd9413651c9f1e14257e62e6f4589e
+ms.sourcegitcommit: c114a9e04589e1a3e0b5350862b3e6daf18e3d30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657785"
+ms.locfileid: "88658857"
 ---
 # <a name="create-ip-address-range---data-enrichment-api"></a>Criar intervalo de endereços IP-API de enriquecimento de dados
 
@@ -26,7 +26,7 @@ Execute a solicitação POST para adicionar um novo intervalo de endereços IP.
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```rest
-POST /api/subnet/
+POST /api/v1/subnet/
 ```
 
 ## <a name="request-body-parameters"></a>Parâmetros do corpo da solicitação
@@ -34,7 +34,7 @@ POST /api/subnet/
 | Parâmetro | Descrição |
 | --- | --- |
 | category | A ID da categoria do intervalo |
-| subredes | Uma matriz de máscaras como cadeias de caracteres (IPv4/IPv6) |
+| sub-redes | Uma matriz de máscaras como cadeias de caracteres (IPv4/IPv6) |
 | organização (opcional) | O ISP registrado |
 | marcas (opcional) | Uma matriz de marcas (objetos com a propriedade "text" definida com o nome da marca)-novo ou existente |
 
@@ -56,7 +56,7 @@ Atualmente, há suporte para as seguintes categorias:
 Veja um exemplo da solicitação.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",
