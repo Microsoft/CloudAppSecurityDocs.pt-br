@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 08/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 586836d517a458639c0b669108c7d359b8d02ba4
-ms.sourcegitcommit: 61e9579ebe2c1ca02c7a56e32781e145f6612879
+ms.openlocfilehash: 445465491a2f5a047cd73bd03bb467ce58e20e6b
+ms.sourcegitcommit: 02b91dd1c51161c9d627d977eb37fa925b0328d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88261429"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88647796"
 ---
-# <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias instantaneamente
+# <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-As políticas de detecção de anomalias do Microsoft Cloud App Security fornecem análises comportamentais de entidades e de usuários (UEBA) e aprendizado de máquina (ML) inovadores para que você execute imediatamente uma detecção avançada a ameaças em seu ambiente de nuvem. Por serem habilitadas automaticamente, as novas políticas de detecção de anomalias geram resultados imediatos ao fornecer detecções imediatas, visando inúmeras anomalias comportamentais nos usuários, máquinas e dispositivos conectados à sua rede.  Além disso, as novas políticas expõem mais dados do mecanismo de detecção do Cloud App Security para ajudar a agilizar o processo de investigação e conter as ameaças em andamento.
+As políticas de detecção de anomalias do Microsoft Cloud App Security fornecem UEBA (análise comportamental do usuário e entidade) e o ML (aprendizado de máquina) prontos para uso para que você esteja pronto desde o início para executar a detecção avançada de ameaças em seu ambiente de nuvem. Como elas são habilitadas automaticamente, as novas políticas de detecção de anomalias iniciam imediatamente o processo de detecção e agrupamento de resultados, direcionando várias anomalias comportamentais entre os usuários e os computadores e dispositivos conectados à sua rede. Além disso, as políticas expõem mais dados do mecanismo de detecção de Cloud App Security, para ajudá-lo a acelerar o processo de investigação e conter ameaças contínuas.
 
-As políticas de detecção de anomalias são habilitadas automaticamente, mas o Cloud App Security tem um período inicial de aprendizagem de sete dias, durante os quais nem todos os alertas de detecção de anomalias são disparados. Depois disso, cada sessão é comparada à atividade, quando os usuários estavam ativos, os endereços IP, os dispositivos, entre outros itens detectados ao longo do mês anterior e a pontuação de risco dessas atividades.  Essas detecções fazem parte do mecanismo de detecção de anomalias heurística que cria o perfil de seu ambiente e dispara alertas em relação a uma linha de base que foi aprendida na atividade da sua organização. As detecções também usam os algoritmos de aprendizado de máquina, desenvolvidos para analisar os usuários e o padrão de entrada para reduzir o número de falsos positivos.
+As políticas de detecção de anomalias são habilitadas automaticamente, mas o Cloud App Security tem um período inicial de aprendizagem de sete dias, durante os quais nem todos os alertas de detecção de anomalias são disparados. Depois disso, à medida que os dados são coletados de seus conectores de API configurados, cada sessão é comparada com a atividade, quando os usuários estavam ativos, endereços IP, dispositivos, etc. detectados no último mês e na pontuação de risco dessas atividades. Lembre-se de que pode levar várias horas para que os dados estejam disponíveis nos conectores de API. Essas detecções fazem parte do mecanismo de detecção de anomalias heurística que cria o perfil de seu ambiente e dispara alertas em relação a uma linha de base que foi aprendida na atividade da sua organização. As detecções também usam os algoritmos de aprendizado de máquina, desenvolvidos para analisar os usuários e o padrão de entrada para reduzir o número de falsos positivos.
 
 As anomalias são detectadas pela verificação da atividade do usuário. O risco é avaliado observando-se mais de 30 indicadores de risco diferentes, agrupados em fatores de risco, como:
 
