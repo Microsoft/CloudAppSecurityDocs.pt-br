@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ff18286f75a3f5a306f7ac1c08ecff3ad98a01a5
-ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
+ms.openlocfilehash: f31b8937d1eeb9781b677da154880ab699ef131e
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86046055"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780300"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtros e consultas do aplicativo descoberto
 

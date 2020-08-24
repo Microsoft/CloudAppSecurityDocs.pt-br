@@ -1,24 +1,24 @@
 ---
 title: Integração do Azure Sentinel com o Cloud App Security
-description: Este artigo fornece informações sobre como integrar o SIEM genérico com o Cloud App Security.
+description: Este artigo fornece informações sobre como integrar o Azure Sentinel ao Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/28/2019
-ms.topic: conceptual
+ms.date: 08/23/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5e291ec3e659b4c9a44f60f5ef05134951e94235
-ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
+ms.openlocfilehash: 4f0bf993a1e0306035c9b75a215873532eb17c5f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88514245"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779212"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Integração do Azure Sentinel (versão prévia)
 
@@ -88,25 +88,25 @@ No Azure Sentinel, em **logs**, em **informações de segurança**, você pode e
 
 A tabela a seguir descreve cada campo no esquema **McasShadowItReporting** :
 
-| Campo | Tipo | Descrição | Exemplos |
+| Campo | Type | Descrição | Exemplos |
 | --- | --- | --- | --- |
 | TenantId | String | ID do Workspace | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
 | SourceSystem | String | Sistema de origem – valor estático | Azure |
 | TimeGenerated [UTC] | Datetime | Data dos dados de descoberta | 2019-07-23T11:00:35.858 Z |
 | StreamName | String | Nome do fluxo específico | Departamento de marketing |
-| TotalEvents | Integer | Número total de eventos por sessão | 122 |
-| BlockedEvents | Integer | Número de eventos bloqueados | 0 |
-| UploadedBytes | Integer | Quantidade de dados carregados | 1.514.874 |
-| TotalBytes | Integer | Quantidade total de dados | 4.067.785 |
-| DownloadedBytes | Integer | Quantidade de dados baixados | 2.552.911 |
+| TotalEvents | Inteiro | Número total de eventos por sessão | 122 |
+| BlockedEvents | Inteiro | Número de eventos bloqueados | 0 |
+| UploadedBytes | Inteiro | Quantidade de dados carregados | 1.514.874 |
+| TotalBytes | Inteiro | Quantidade total de dados | 4.067.785 |
+| DownloadedBytes | Inteiro | Quantidade de dados baixados | 2.552.911 |
 | IpAddress | String | Endereço IP de origem | 127.0.0.0 |
 | UserName | String | Nome de usuário | `Raegan@contoso.com` |
 | EnrichedUserName | String | Nome de usuário aprimorado com username do Azure AD | `Raegan@contoso.com` |
 | AppName | String | Nome do aplicativo de nuvem | Microsoft OneDrive for Business |
-| AppId | Integer | Identificador do aplicativo de nuvem | 15600 |
+| AppId | Inteiro | Identificador do aplicativo de nuvem | 15600 |
 | AppCategory | String | Categoria do aplicativo de nuvem | Armazenamento em nuvem |
 | AppTags | Matriz de cadeia de caracteres | Marcas internas e personalizadas definidas para o aplicativo | ["aprovado"] |
-| AppScore | Integer | A pontuação de risco do aplicativo em uma escala de 0-10, 10 sendo uma pontuação para um aplicativo não arriscado | 10 |
+| AppScore | Inteiro | A pontuação de risco do aplicativo em uma escala de 0-10, 10 sendo uma pontuação para um aplicativo não arriscado | 10 |
 | Type | String | Tipo de logs – valor estático | McasShadowItReporting |
 
 ## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Usar Power BI com dados de Cloud App Security no Azure Sentinel

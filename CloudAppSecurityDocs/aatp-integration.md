@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aea4f3f290b75d9458dbf0009cb8c1dd3c1a79a6
-ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
+ms.openlocfilehash: 5a84b7989f357e58a1ee91e448a19c55dd85191c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80291174"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779552"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integração da proteção avançada contra ameaças do Azure
 
@@ -27,7 +27,7 @@ ms.locfileid: "80291174"
 
 O Microsoft Cloud App Security integra-se com o Azure ATP (proteção avançada contra ameaças do Azure) para fornecer UEBA (análise comportamental de entidade de usuário) em um ambiente híbrido – tanto no aplicativo de nuvem quanto no local, para obter mais informações, consulte [tutorial: investigar usuários arriscados](tutorial-ueba.md). Para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo Azure ATP, consulte [o que é o Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para fazer uma investigação completa em um ambiente híbrido, é necessário:
 
@@ -45,7 +45,7 @@ Para habilitar a integração de Cloud App Security com o Azure ATP:
 
 1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**.
 
-    ![Menu configurações](media/azip-system-settings.png)
+    ![Menu Configurações](media/azip-system-settings.png)
 
 1. Em **proteção contra ameaças**, selecione **Azure ATP**.
 
@@ -88,7 +88,7 @@ Esse problema afeta os alertas que são disparados mais de uma vez. A primeira i
 
 Não há solução conhecida.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md)

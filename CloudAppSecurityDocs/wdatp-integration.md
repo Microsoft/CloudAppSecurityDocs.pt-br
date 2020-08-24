@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c0bb1f5a3ff0241067d23bd455865d40c29c652
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0ea29fe115c4235f926ae2d64e3a377bc02949f0
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624809"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780045"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
 
@@ -36,7 +36,7 @@ Além disso, ao identificar um usuário arriscado, você pode verificar todos os
 Depois que as informações de tráfego forem coletadas, você estará pronto para se [aprofundar no uso do aplicativo de nuvem](discovered-apps.md#deep-dive-into-discovered-apps) em sua organização. Cloud App Security aproveita os recursos de proteção de rede do Microsoft defender ATP para bloquear o acesso de dispositivo de ponto de extremidade a aplicativos de nuvem. Você pode bloquear aplicativos [marcando-os como não **aprovados** ](governance-discovery.md#BKMK_SanctionApp) no Portal. Com base no uso abrangente e na avaliação de risco de cada aplicativo não aprovado, os domínios do aplicativo são usados para criar [indicadores de domínio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) no portal do Microsoft defender ATP. O Microsoft defender antivírus, em execução em dispositivos de ponto de extremidade, usa os indicadores de domínio para bloquear o acesso a esses aplicativos.
 
 > [!NOTE]
-> Quer experimentar o Microsoft defender ATP? [Inscreva-se para uma avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
+> Quer experimentar o Microsoft defender ATP? [Inscreva-se em uma avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

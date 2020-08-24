@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0aff022a162dc099b5a6402570a832de1afcb074
-ms.sourcegitcommit: c37923e69f52ee0e755cca16b4ce88cbc5b01c0b
+ms.openlocfilehash: ffc479ee603ddc6e38b7ba0167fff6f20d9decad
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86473498"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779467"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 

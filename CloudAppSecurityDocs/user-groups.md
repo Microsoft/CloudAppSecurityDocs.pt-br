@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,23 +14,23 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 777e672436220642df6ea739c0f2e381487dd9ee
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 0b61dbeb47b4f63a5dff01cc372b52a81a21dd01
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720366"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88778923"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importar grupos de usuários de aplicativos conectados
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Quando você conecta aplicativos usando conectores de API, o Microsoft Cloud App Security permite que você importe grupos de usuários, por exemplo do Office 365 e do Azure Active Directory. Há dois tipos de grupos de usuários:
 
 - Grupos automáticos  
 Grupos automáticos são criados por padrão pelo Microsoft Cloud App Security. Por exemplo, há um grupo de usuários automático chamado **Externo** que combina todos os usuários de todos os aplicativos que são externos à sua organização e que têm acesso a arquivos ou que estavam em atividades do usuário em seu locatário. Os seguintes grupos automáticos existem no Cloud App Security:
 
-  - Externa
+  - Externo
   - Administrador do Dropbox
   - Administrador do Office 365
   - Administrador do G Suite
@@ -48,7 +48,7 @@ Você pode importar qualquer grupo de seus aplicativos conectados. Por exemplo, 
 
 ## <a name="how-to-import-user-groups"></a>Como importar grupos de usuários
 
-1. Na barra de menus, clique no ícone configurações ícones ![configurações](media/settings-icon.png "ícone de configurações") e selecione **grupos de usuários**.
+1. Na barra de menus, clique no ícone configurações ícones ![configurações](media/settings-icon.png "Ícone de configurações") e selecione **grupos de usuários**.
 1. Clique em **Importar grupo de usuários**.
 
     ![Importar grupos de usuários](media/user-groups-add.png)
@@ -72,6 +72,6 @@ Para obter mais informações sobre como usar os filtros de grupo de usuários, 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

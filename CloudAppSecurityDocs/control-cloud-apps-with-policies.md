@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 09/26/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f38cf010aeaf2031a5e77d7c454b43458a084334
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 27378482ecc530890b66c930ec5ad60fcfa6cdc6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623251"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780657"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
@@ -35,7 +35,7 @@ Quando você observa a página **Política**, as várias políticas e modelos po
 
 Os seguintes tipos de políticas podem ser criados:
 
-|Ícone Tipo de política|Tipo de política|Use|
+|Ícone Tipo de política|Tipo de política|Uso|
 |-----|-----------------|---------|
 |![ícone de política de acesso](media/proxy-policy.png)|Política de acesso|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem.|
 |![ícone de política de atividade](media/activity_policy.png)|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|
@@ -183,7 +183,7 @@ Para exportar um log, execute as seguintes etapas:
 
 1. Especifique o intervalo de tempo necessário.
 
-1. Clique em **Exportar**. Esse processo pode levar algum tempo.
+1. Clique em **Exportar**. Esse processo pode demorar algum tempo.
 
 Para baixar o relatório exportado:
 

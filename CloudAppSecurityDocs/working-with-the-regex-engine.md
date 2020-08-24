@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c055cebf7bf63f50fcea997648316f25a7b4429
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5f418760ec40d8d93dce623acb81f5ebf015dc27
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721149"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779926"
 ---
-# <a name="working-with-the-regex-engine"></a>Trabalhando com o mecanismo RegEx
+# <a name="working-with-the-regex-engine"></a>Trabalhar com o mecanismo RegEx
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece instruções de uso do RegEx para correspondência de padrões em políticas do Cloud App Security.
 
@@ -35,9 +35,9 @@ As políticas de inspeção de conteúdo do Microsoft Cloud App Security usam o 
 
 Para testar expressões regulares, use os seguintes sites:
 
-- [https://regexpal.com/](https://regexpal.com/) – selecione **Sem distinção entre maiúsculas e minúsculas**.
+- [https://regexpal.com/](https://regexpal.com/) -Certifique-se de selecionar não diferenciar **maiúsculas de minúsculas**.
 
-- [https://regex101.com/](https://regex101.com/) – fornece uma análise detalhada do RegEx.
+- [https://regex101.com/](https://regex101.com/) -Fornece uma análise detalhada do RegEx.
 
 ### <a name="limitations-of-regular-expressions-in-cloud-app-security"></a>Limitações de expressões regulares no Cloud App Security
 
@@ -57,13 +57,13 @@ As limitações a seguir são impostas em expressões regulares personalizadas:
 
     Em vez de + use {1,9}
 
-- Referência inversa não permitida: \\<número\> ou \k\<nome>
+- Referências traseiras não permitidas: \\ número de<\> ou \k\<name>
 
 ### <a name="example-expressions"></a>Expressões de exemplo
 
 A tabela a seguir fornece expressões de exemplo e indica se elas são correspondentes ou não.
 
-|              Expressão regular              |                     Dados                     |      Corresponde a      |
+|              Expressão regular              |                     Dados                     |      Correspondências      |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
 |            Colou?r (?:black&#124;blue&#124;white)             |   Cor preta<br /><br /> Cor branca<br /><br /> Cor vermelha   | Sim<br /><br /> Sim<br /><br /> Não |
 |           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Sim<br /><br /> Sim<br /><br /> Não |

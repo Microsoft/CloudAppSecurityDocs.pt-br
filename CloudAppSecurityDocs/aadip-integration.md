@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13e1260fd86a4b252e56e43917fdd84fc67ebc01
-ms.sourcegitcommit: 7811a0d33e1756782222f20df02acae2f3ea4afe
+ms.openlocfilehash: 17c963eb51b5b90a6ab07ec3337600b463fd9684
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85795780"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779637"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Integração do Azure Active Directory Identity Protection
 
@@ -71,8 +71,8 @@ As seguintes políticas estão disponíveis:
 
 |Política|Descrição|Estado padrão|Gravidade padrão|
 |---|---|---|---|
-|Credenciais vazadas|Mostra alertas de credenciais vazadas, as credenciais válidas do usuário foram vazadas|habilitado|Todos os alertas de recebimento baixo|
-|Entrada arriscada|Agrega várias detecções de entrada arriscadas, entradas que não foram executadas pelo usuário|habilitado|Alto-receber alertas de alta severidade|
+|Credenciais vazadas|Mostra alertas de credenciais vazadas, as credenciais válidas do usuário foram vazadas|Habilitada|Todos os alertas de recebimento baixo|
+|Entrada arriscada|Agrega várias detecções de entrada arriscadas, entradas que não foram executadas pelo usuário|Habilitada|Alto-receber alertas de alta severidade|
 
 ## <a name="next-steps"></a>Próximas etapas
 

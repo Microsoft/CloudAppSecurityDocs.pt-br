@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ca393149f9a0ae9a87ec087c6e94baba63ed9c91
-ms.sourcegitcommit: 7811a0d33e1756782222f20df02acae2f3ea4afe
+ms.openlocfilehash: ba025bc688342c51cdb1ab7450b5cb3e02c288cb
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85795831"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779790"
 ---
 # <a name="additional-integrations-with-external-solutions"></a>Integrações adicionais com soluções externas
 

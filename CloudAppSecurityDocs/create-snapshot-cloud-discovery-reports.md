@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a5a2184cb908af4bff010fced5bd28d8b1d2504d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 4bfa89a9794df5cbce0c361e1b2a7d8071cd303c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720009"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780521"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 É importante carregar um log manualmente e permitir que o Microsoft Cloud App Security o analise antes de tentar usar o coletor de logs automático. Para saber mais sobre como o coletor de logs funciona e o formato esperado de log, confira [Usando logs de tráfego para Cloud Discovery](#log-format).
 
@@ -37,7 +37,7 @@ Para criar um relatório de instantâneo:
 
     ![Criar novo relatório de instantâneo](media/create-new-snapshot-report.png)
 
-3. Insira um **Nome do relatório** e uma **Descrição**
+3. Insira um **nome de relatório** e uma **Descrição**
 
     ![Novo relatório de instantâneo](media/new-snapshot-report.png)
 
@@ -45,13 +45,13 @@ Para criar um relatório de instantâneo:
 
 5. Verifique o formato do seu log para certificar-se de que ele foi formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e verificar** e, em seguida, **Baixar log de exemplo**. Compare seu log com o exemplo fornecido para verificar se ele é compatível.
 
-    ![Verifique o formato do seu log](media/cloud-discovery-snapshot-verify.png)
+    ![Verifique seu formato de log](media/cloud-discovery-snapshot-verify.png)
 
     > [!NOTE]
     > O formato de exemplo de FTP tem suporte em instantâneos e no carregamento automatizado, enquanto o syslog tem suporte somente no carregamento automatizado.  
     Baixar um exemplo de log também baixará um exemplo de log FTP.
 
-6. **Escolha os logs de tráfego** que você deseja carregar. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados.
+6. **Escolha os logs de tráfego** que você deseja carregar. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados e zipados.
 
 7. Clique em **Criar**.
 
@@ -70,18 +70,18 @@ Para criar um relatório de instantâneo:
 
     ![gerenciamento de relatório de instantâneo](media/snapshot-report-managment.png)
 
-## Usar os logs de tráfego para Cloud Discovery <a name="log-format"></a>
+## <a name="using-traffic-logs-for-cloud-discovery"></a>Usar os logs de tráfego para Cloud Discovery <a name="log-format"></a>
 
 O Cloud Discovery usa os dados em seus logs de tráfego. Quanto mais detalhado o log, melhor é a visibilidade obtida. O Cloud Discovery requer dados de tráfego da Web com os seguintes atributos:
 
 - Data da transação
-- IP de Origem
+- IP de origem
 - Usuário de origem ‑ altamente recomendado
 - Endereço IP de destino
 - URL de destino **recomendada** (URLs fornecem maior precisão para detecção de aplicativos de nuvem que endereços IP)
 - Quantidade total de dados (as informações dos dados são muito valiosas)
 - Quantidade de dados carregados ou baixados (fornece informações sobre os padrões de uso dos aplicativos de nuvem)
-- Ação executada (permitida/bloqueada)
+- Ação realizada (permitido/bloqueado)
 
 O Cloud Discovery não pode mostrar nem analisar atributos que não estão incluídos em seus logs.
 Por exemplo, o formato de log padrão do **Cisco ASA Firewall** não tem o **número de bytes carregados por transação**, **Nome de usuário** nem a **URL de destino** (somente o IP de destino).
@@ -92,7 +92,7 @@ Para gerar com êxito um relatório do Cloud Discovery, seus logs de tráfego de
 1. A [fonte de dados tem suporte](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. O formato de log corresponde ao formato padrão esperado (formato verificado após o upload da Ferramenta de log).
 3. Os eventos têm menos de 90 dias.
-4. O arquivo de log é válido e inclui informações de tráfego de saída.
+4. O arquivo de log é válido e inclui informações do tráfego de saída.
 
 ## <a name="next-steps"></a>Próximas etapas
 

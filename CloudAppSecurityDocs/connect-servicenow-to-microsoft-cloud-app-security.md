@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 6/24/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 476638af1bf346c6154b8b0f4a5665428bedde39
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 75bc58df1ea45eb4d00498cb9fb2d7a061dac9b4
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477468"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780844"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar o ServiceNow ao Microsoft Cloud App Security
 

@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9930a45593f4d2dfba0310228d4576ac2ffd42f2
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: a0b884f08fcf743faf2c37fe3ff065535aefb77a
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719156"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780589"
 ---
 # <a name="control"></a>Control
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Você pode aplicar ações de governança aos arquivos de usuários em seu ambiente de nuvem. Depois investigar completamente e aprender sobre sua nuvem, será possível usar ações de governança para ajudar a proteger sua organização.
 
@@ -57,9 +57,9 @@ Depois que você examinar os alertas abertos, vá para o Centro de políticas pa
 
 Você pode aplicar ações de governança de dentro de políticas, de dentro de alertas e do log **Arquivos**.
 
-A qualquer momento, você pode examinar e ver o status de todas as ações de governança aplicadas anteriormente acessando a engrenagem **Configurações** e escolhendo **Log de governança**. ![ícone de configurações](media/settings-icon.png "sícone de onfigurações ")
+A qualquer momento, você pode examinar e ver o status de todas as ações de governança aplicadas anteriormente acessando a engrenagem **Configurações** e escolhendo **Log de governança**. ![Ícone de configurações](media/settings-icon.png "Ícone de configurações")
 
-Para qualquer ação de governança com falha, escolha o ícone **Tentar novamente** para aplicá-la outra vez. ![Ícone de repetição](media/retry-icon.png "rícone de etry ")
+Para qualquer ação de governança com falha, escolha o ícone **Tentar novamente** para aplicá-la outra vez. ![Ícone de repetição](media/retry-icon.png "ícone de tentar novamente")
 
 Dependendo do tipo de política, violação e aplicativo, diferentes ações de governança estão disponíveis.
 
@@ -74,7 +74,7 @@ Uma vez que as ações de correção utilizam as APIs do provedor de nuvem, as a
 >
 > Para obter diretrizes, você pode usar o botão **Editar e visualizar resultados** na seção **Filtros**.
 
-![Resultados de edição e visualização da política de arquivo](media/file-policy-edit-and-preview-results.png "edição de política de arquivo e visualizar os resultados")
+![Editar e visualizar resultados da política de arquivos](media/file-policy-edit-and-preview-results.png "edição de política de arquivo e visualizar os resultados")
 
 ## <a name="migration"></a>Migração
 
@@ -90,7 +90,7 @@ Considere este cenário: você adquiriu recentemente o Office 365 e deseja que t
 
     1. No seu **Painel do Cloud Discovery**, clique em **Dropbox** e, em seguida, selecione a guia **Endereço IP** ou **Usuários**.
 
-    2. Escolha o ícone de seta **Exportar** e as opções de exportação. ![Ícone de seta](media/arrow-icon.png "aícone de RROW ")
+    2. Escolha o ícone de seta **Exportar** e as opções de exportação. ![Ícone de seta](media/arrow-icon.png "Ícone de seta")
 
 ### <a name="find-more-secure-alternatives"></a>Encontrar alternativas mais seguras
 
@@ -98,7 +98,7 @@ O catálogo de serviços do Cloud App Security pode ajudá-lo a encontrar altern
 
 Considere este cenário: você está pensando em comprar uma ferramenta de produtividade, mas não tem certeza se seus usuários a usariam.
 
-1. Vá para o **Cloud Discovery Dashboard (Painel do Cloud Discovery)** .
+1. Vá para o **Cloud Discovery Dashboard (Painel do Cloud Discovery)**.
 
 2. Em **Categorias**, filtre aplicativos por **Produtividade**.
 

@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 08/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 445465491a2f5a047cd73bd03bb467ce58e20e6b
-ms.sourcegitcommit: 02b91dd1c51161c9d627d977eb37fa925b0328d0
+ms.openlocfilehash: 4bc31fda0e2e647e386d2ce1d5b55e8d2fff6174
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88647796"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779722"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias
 
@@ -35,7 +35,7 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Falhas de logon
 * Atividade do administrador
 * Contas inativas
-* Location
+* Local
 * Viagem impossível
 * Agente de dispositivo e usuário
 * Taxa de atividade
@@ -204,11 +204,11 @@ Você pode triar rapidamente os vários alertas disparados pelas novas política
 
 1. No **Log de atividades**, você pode abrir uma atividade para exibir a gaveta Atividades. Clique em **usuário** para exibir a guia insights do usuário. Essa guia inclui informações como o número de alertas, atividades e o local em que eles se conectaram, o que é importante em uma investigação.
 
-    ![detecção de anomalias alert1 ](media/anomaly-alert-user1.png) ![ detecção de anomalias alert1](media/anomaly-alert-user2.png)
+    ![detecção de anomalias alert1 ](media/anomaly-alert-user1.png) ![ detecção de anomalias alert2](media/anomaly-alert-user2.png)
 
 1. Isso permite que você entenda quais são as atividades suspeitas que o usuário executou e ter maior confiança sobre o comprometimento da conta. Por exemplo, um alerta de vários logons com falha pode realmente ser suspeito e indicar um ataque de força bruta em potencial, mas também pode ser um erro de configuração do aplicativo, fazendo com que o alerta seja um verdadeiro positivo benigno. No entanto, se você vir um alerta de vários logons com falha com atividades suspeitas adicionais, então há uma grande probabilidade de que a conta foi comprometida. No exemplo a seguir, você pode ver que o alerta **Várias tentativas de logon com falha** foi seguido de uma **Atividade de um endereço IP TOR** e de uma **Atividade de viagem impossível**, ambas fortes indicadores de comprometimento (IOCs) por si próprias. Se isso não era suspeito, você pode ver que o mesmo usuário realizou uma **atividade de download em massa**, que é geralmente um indicador do invasor que executa vazamento de dados.
 
-    ![alerta de detecção de anomalias1](media/anomaly-alert-user3.png)
+    ![alert3 de detecção de anomalias](media/anomaly-alert-user3.png)
 
 1. Para arquivos infectados por malware, depois que os arquivos forem detectados, será exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo.
 

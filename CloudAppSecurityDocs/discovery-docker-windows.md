@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/19/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce6525373c8cb9be6a1e70085f5f3bda3dbd11fa
-ms.sourcegitcommit: 1f8f19312ce70e62b6aa0b94db06af07f881fefa
+ms.openlocfilehash: ae59702910ca7c36a03f3a05b73b9747906fce99
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84811266"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780249"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -73,14 +73,14 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
     1. No portal do Cloud App Security, clique no ícone de configurações antes de **Coletores de log**.
 
-    ![ícone de configurações](media/settings-icon.png)
+    ![Ícone de configurações](media/settings-icon.png)
 
 1. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
 
     1. Clique em **Adicionar fonte de dados**.  
     ![Adicionar uma fonte de dados](media/add-data-source.png)
     1. Atribua o **Nome** do proxy ou firewall.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Adicionar nome à fonte de dados](media/ubuntu1.png)
     1. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
     1. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
     1. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
@@ -99,7 +99,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     1. Dê um **nome**ao coletor de logs.
     1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
     1. Selecione todas as **fontes de dados** que você deseja conectar ao coletor e clique em **Atualizar** para salvar a configuração.
-    ![ubuntu2](media/ubuntu2.png)
+    ![Selecione a fonte de dados para se conectar](media/ubuntu2.png)
 
 1. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Você pode usar o ícone Copiar para área de transferência, ![ ícone Copiar para área de transferência ](media/copy-icon.png) . Você precisará dessas informações posteriormente.
 
@@ -119,15 +119,15 @@ As etapas a seguir descrevem a implantação no Windows. As etapas de implantaç
 
 1. Abra um terminal do PowerShell como administrador em seu computador Windows.
 
-1. Execute o seguinte comando para baixar o arquivo de script do Windows Docker Installer PowerShell:`Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Execute o seguinte comando para baixar o arquivo de script do Windows Docker Installer PowerShell: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
     Para validar que o instalador é assinado pela Microsoft, consulte [validar assinatura do instalador](#validate-signature)
 
-1. Para habilitar a execução de script do PowerShell, execute`Set-ExecutionPolicy RemoteSigned`
+1. Para habilitar a execução de script do PowerShell, execute `Set-ExecutionPolicy RemoteSigned`
 
 1. Executar: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` instala o cliente do Docker em seu computador. Durante a instalação do contêiner do coletor de logs, o computador será reiniciado duas vezes e você precisará fazer logon novamente. **Verifique se o cliente do Docker está definido para usar contêineres do Linux.**
 
-1. Após cada reinicialização, abra um terminal do PowerShell como administrador em seu computador e execute novamente:`& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Após cada reinicialização, abra um terminal do PowerShell como administrador em seu computador e execute novamente: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
 1. Antes da conclusão da instalação, você precisará colar o comando de execução que copiou anteriormente.
 
@@ -143,7 +143,7 @@ As etapas a seguir descrevem a implantação no Windows. As etapas de implantaç
 
 Você verá a mensagem: **concluído com êxito!**
 
-![ubuntu8](media/ubuntu8.png)
+![Verificar se o coletor está sendo executado corretamente](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
@@ -157,13 +157,13 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **Criado**, talvez a conexão do coletor de logs e a análise não tenham sido concluídas.
 
-![ubuntu9](media/ubuntu9.png)
+![Verificar se o coletor foi implantado com êxito](media/ubuntu9.png)
 
 Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
 
 Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### <a name="optional---create-custom-continuous-reports"></a>Opcional-criar relatórios contínuos personalizados<a name="continuous-reports"></a>
+### <a name="optional---create-custom-continuous-reports"></a>Opcional-criar relatórios contínuos personalizados <a name="continuous-reports"></a>
 
 Verifique se os logs estão sendo carregados no Cloud App Security e se os relatórios são gerados. Após a verificação, crie relatórios personalizados. Crie relatórios de descoberta personalizados com base em grupos de usuários do Azure Active Directory. Por exemplo, caso deseje ver o uso de nuvem de seu departamento de marketing, importe o grupo de marketing usando o recurso Importar grupo de usuários. Em seguida, crie um relatório personalizado para esse grupo. Você também pode personalizar um relatório com base na marca do endereço IP ou intervalos de endereços IP.
 

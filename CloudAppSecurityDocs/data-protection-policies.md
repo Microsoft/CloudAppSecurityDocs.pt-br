@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 10/7/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b833af37dae275ff9ecdf382eeacc12d59ef3aed
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: 6d2bcb47b7ac8876de1cceaba9b50c678925974f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402181"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780368"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 

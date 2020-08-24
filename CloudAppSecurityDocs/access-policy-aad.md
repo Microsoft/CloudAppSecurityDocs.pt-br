@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/31/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 88a86e60e632f781428f307c4e1cf6653f87836b
-ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
+ms.openlocfilehash: 2256703ee2c92774635f7ce04dfa0c08694bd627
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87296779"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779501"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
@@ -73,7 +73,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 > [!div class="nextstepaction"]
 > [PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando controles de sessão](use-case-proxy-block-session-aad.md)

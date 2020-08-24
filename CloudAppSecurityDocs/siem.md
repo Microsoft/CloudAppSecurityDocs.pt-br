@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9b2b4cfc8c3807f5acd7540390a3b44604e49d84
-ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
+ms.openlocfilehash: 32a4b3542a7abc7d96ae6ca111fbfba7a6a5fbff
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137974"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779127"
 ---
 # <a name="generic-siem-integration"></a>Integração genérica ao SIEM
 
@@ -78,16 +78,16 @@ A integração ao SIEM é realizada em três etapas:
     ![Captura de tela mostrando o menu Adicionar integração SIEM](media/siem0.png)
 
 1. No assistente, clique em **Iniciar Assistente**.
-1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Avançar**.
+1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Próximo**.
 
     ![Configurações gerais do SIEM](media/siem1.png)
 
 1. Digite o endereço IP ou nome de host do **Host do syslog remoto** e o **Número da porta do syslog**. Selecione TCP ou UDP como o protocolo do Syslog Remoto.
-    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Avançar**.
+    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Próximo**.
 
     ![Configurações do Syslog Remoto](media/siem2.png)
 
-1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Avançar**.
+1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Próximo**.
 
    ![Configurações de tipos de dados](media/siem3.png)
 
@@ -155,7 +155,7 @@ O texto a seguir é um exemplo de arquivo de log de alertas:
 
 | Aplicável a | Nome do campo CEF | Descrição |
 | --- | --- | --- |
-| Atividades/Alertas | iniciar | Carimbo de data/hora da atividade ou do alerta |
+| Atividades/Alertas | start | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | end | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | rt | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | msg | Descrição da atividade ou do alerta, conforme mostrado no portal |

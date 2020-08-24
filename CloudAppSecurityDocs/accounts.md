@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 05/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b9cde676dad0b86633124d1f485c1f2276cbb208
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: ed0d53a3a71e03dab31ad179e293ae1b7dbc43b6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624436"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779484"
 ---
 # <a name="accounts"></a>Contas
 
@@ -27,7 +27,7 @@ ms.locfileid: "85624436"
 
 O Microsoft Cloud App Security proporciona visibilidade das contas de seus aplicativos conectados. Depois que você conectar o Cloud App Security a um aplicativo usando o conector de aplicativos, o Cloud App Security lerá as informações da conta associadas aos aplicativos conectados. A página Contas permite que você investigue essas contas, as permissões, os grupos dos quais são membros, os aliases delas e os aplicativos que elas estão usando. Além disso, quando o Cloud App Security detecta uma nova conta que não foi vista anteriormente em um dos aplicativos conectados, como nas atividades ou no compartilhamento de arquivos, a conta é adicionada à lista de contas deste aplicativo. Isso permite que você tenha visibilidade sobre a atividade de usuários externos interagindo com seus aplicativos em nuvem.
 
-Os administradores podem pesquisar metadados de um usuário específico ou a atividade do usuário. A página **usuários e contas** fornece detalhes abrangentes sobre as entidades extraídas dos aplicativos de nuvem conectados. Ela também fornece o histórico de atividades e alertas de segurança do usuário.
+Os administradores podem pesquisar os metadados de um usuário específico ou as atividades de usuários. A página **usuários e contas** fornece detalhes abrangentes sobre as entidades extraídas dos aplicativos de nuvem conectados. Também fornece o histórico de atividades e os alertas de segurança relacionados ao usuário.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

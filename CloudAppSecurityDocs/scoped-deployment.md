@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 8/25/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5f0aa6f32f964d1f0bb5f2ad404bae65e9e95e0c
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 0d4d046b406e0849437d02f1abba87948e488473
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254730"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779178"
 ---
-# <a name="scoped-deployment"></a>Implantação com escopo<a name="scoped-deployment"></a> 
+# <a name="scoped-deployment"></a>Implantação com escopo <a name="scoped-deployment"></a> 
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -97,6 +97,6 @@ As seguintes atividades de usuário são monitoradas:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

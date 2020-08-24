@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 05/27/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6de413cc6067ea43f5c2d677e421c09ffddcd94d
-ms.sourcegitcommit: 3464ce8ed73d1bfaf02e4e78007766ea18350d9f
+ms.openlocfilehash: 0fbb487695c395fe7fddbd6bc84855d74e060497
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402670"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779977"
 ---
 # <a name="activity-privacy"></a>Privacidade da atividade
 

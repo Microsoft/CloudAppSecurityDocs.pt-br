@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0e7f32bd4f6213b4bce86232e40d15cf06e12c18
-ms.sourcegitcommit: c737a1ad67b4f7efa302d1aa92fce50f75c94d2d
+ms.openlocfilehash: 3cadc2f470065d9576dad94ac9139d122c986bee
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86926716"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88778855"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Integrar o Cloud App Security com o Zscaler
 

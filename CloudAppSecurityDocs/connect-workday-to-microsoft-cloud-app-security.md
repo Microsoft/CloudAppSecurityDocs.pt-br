@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0229d6ea079be49b9273840e628e1104c7dda53d
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: e10c3c838e52c3616a7bc550880526f722897e00
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623300"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780895"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
 
@@ -43,8 +43,8 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 | --- | --- | --- | --- | --- |
 | Sistema | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
 | Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
-| Sistema | Auditoria do sistema | | Exibir | Obter |
-| Pessoal | Dados de trabalho: pessoal | Dados do Trabalhador: Relatórios do Trabalhador Público | Exibir | Obter |
+| Sistema | Auditoria do sistema | | Visualizar | Obter |
+| Pessoal | Dados de trabalho: pessoal | Dados do Trabalhador: Relatórios do Trabalhador Público | Visualizar | Obter |
 
 > [!NOTE]
 >

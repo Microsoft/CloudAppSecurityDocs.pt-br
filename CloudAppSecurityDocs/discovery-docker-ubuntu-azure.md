@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b481ff78df6c563512f867d53e906df9a7cfd0fb
-ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
+ms.openlocfilehash: 135dd542bce61796d0de8bce81fd735f2c87df53
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84274590"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780436"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker no Linux no Azure
 
@@ -69,14 +69,14 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 
     1. No portal do Cloud App Security, clique no ícone de configurações antes de **Coletores de log**.
 
-    ![ícone de configurações](media/settings-icon.png)
+    ![Ícone de configurações](media/settings-icon.png)
 
 1. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
 
     1. Clique em **Adicionar fonte de dados**.  
     ![Adicionar uma fonte de dados](media/add-data-source.png)
     1. Atribua o **Nome** do proxy ou firewall.  
-      ![ubuntu1](media/ubuntu1.png)
+      ![Nome para proxy ou firewall](media/ubuntu1.png)
     1. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
     1. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
     1. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
@@ -95,7 +95,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
     1. Dê um **nome**ao coletor de logs.
     1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
     1. Selecione todas as **fontes de dados** que você deseja conectar ao coletor e clique em **Atualizar** para salvar a configuração.  
-    ![ubuntu2](media/ubuntu2.png)
+    ![Selecionar fontes de dados](media/ubuntu2.png)
 
 1. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Use o ícone Copiar para área de transferência. ![ícone Copiar para área de transferência](media/copy-icon.png)
 
@@ -119,7 +119,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 
     1. Na exibição do computador, acesse **Rede**, selecione a interface relevante clicando duas vezes nela.
     1. Acesse **Grupo de Segurança de Rede** e selecione o grupo de segurança de rede relevante.
-    1. Vá para **regras de segurança de entrada** e clique em **Adicionar**, ![ Ubuntu Azure](media/ubuntu-azure.png)
+    1. Vá para **regras de segurança de entrada** e clique em **Adicionar**, ![ adicionar regras de segurança de entrada](media/ubuntu-azure.png)
     1. Adicionar as seguintes regras (no modo **Avançado**):
 
     |Nome|Intervalos de portas de destino|Protocolo|Fonte|Destino|
@@ -145,7 +145,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 
 1. No portal do Cloud App Security, na janela **Criar novo coletor de log**, copie o comando para importar a configuração do coletor no computador de hospedagem:
 
-    ![Azure no Ubuntu](media/windows7.png)
+    ![Comando de cópia para importar a configuração do coletor no computador host](media/windows7.png)
 
 1. Execute o comando para implantar o coletor de logs.
 
@@ -157,7 +157,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 
 1. Para verificar se o coletor de logs está sendo executado corretamente, execute o seguinte comando: `Docker logs <collector_name>`. Você deve obter os resultados: **Concluído com êxito!**
 
-    ![ubuntu8](media/ubuntu8.png)
+    ![Comando para verificar se o coletor de logs está sendo executado corretamente](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
@@ -171,7 +171,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **Criado**, talvez a conexão do coletor de logs e a análise não tenham sido concluídas.
 
-![ubuntu9](media/ubuntu9.png)
+![Verificar o status do coletor no coletor de logs](media/ubuntu9.png)
 
 Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
 

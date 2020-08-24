@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cbd419984f5b3cca55727b7795210edd9b4d5afe
-ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
+ms.openlocfilehash: 6fa59bf106e41aa0f0dbc9ea2252c7053f22245f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84274607"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780334"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker no Linux local
 
@@ -66,14 +66,14 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
     1. No portal do Cloud App Security, clique no ícone de configurações antes de **Coletores de log**.
 
-    ![ícone de configurações](media/settings-icon.png)
+    ![Ícone de configurações](media/settings-icon.png)
 
 1. Para cada firewall ou proxy do qual você deseja fazer upload de logs, crie uma fonte de dados correspondente.
 
     1. Clique em **Adicionar fonte de dados**.  
     ![Adicionar uma fonte de dados](media/add-data-source.png)
     1. Atribua o **Nome** do proxy ou firewall.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Nome da fonte de dados](media/ubuntu1.png)
     1. Selecione o dispositivo na lista **Fonte**. Se você selecionar **Formato de log personalizado** para trabalhar com um dispositivo de rede que não esteja listado, confira [Trabalhando com o analisador de log personalizado](custom-log-parser.md) para obter instruções de configuração.
     1. Compare seu log com o exemplo do formato de log esperado. Se o formato de arquivo de log não corresponder a este exemplo, adicione sua fonte de dados como **Outros**.
     1. Definir o **Tipo de destinatário** como **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
@@ -93,7 +93,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
     1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
     1. Selecione todas as **fontes de dados** que você deseja conectar ao coletor e clique em **Atualizar** para salvar a configuração.
 
-    ![ubuntu2](media/ubuntu2.png)
+    ![Selecionar fontes de dados para se conectar](media/ubuntu2.png)
 
 1. Mais informações sobre a implantação serão exibidas. **Copiar** o comando de execução na caixa de diálogo. Use o ícone Copiar para área de transferência. ![ícone Copiar para área de transferência](media/copy-icon.png)
 
@@ -131,7 +131,7 @@ As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantaç�
     > [!NOTE]
     > Se esse comando não conseguir validar seu certificado de proxy, execute o comando usando `curl -k` no início.
 
-    ![ubuntu5](media/ubuntu5.png)
+    ![Comando para instalar o Docker](media/ubuntu5.png)
 
 1. Implante a imagem do coletor no computador de hospedagem importando a configuração do coletor. Importe a configuração copiando o comando de execução gerado no portal. Caso precise configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:
 
@@ -144,7 +144,7 @@ As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantaç�
 1. Verifique se o coletor está sendo executado corretamente com o seguinte comando: `docker logs <collector_name>`
 
 Você verá a mensagem: **concluído com êxito!** 
- ![ ubuntu8](media/ubuntu8.png)
+ ![ Comando para verificar se o Docker está sendo executado corretamente](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
@@ -158,7 +158,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Verifique o status do coletor na tabela **Coletor de logs** e verifique se o status é **Conectado**. Se for **Criado**, talvez a conexão do coletor de logs e a análise não tenham sido concluídas.
 
-![ubuntu9](media/ubuntu9.png)
+![Verificar a implantação bem-sucedida do coletor de logs](media/ubuntu9.png)
 
 Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
 

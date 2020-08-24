@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f50ff4ae3b3a5a04ab9ffe052b0fb1e8ecdb2f7d
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: 3a398d483d210ca607be939148616ef38e3f1e68
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912122"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780827"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conectar o Cisco WebEx ao Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do Cisco WebEx existente usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre usuários, atividades e arquivos WebEx. Para obter informações sobre como Cloud App Security protege o Cisco WebEx, consulte [proteger o Cisco WebEx](protect-webex.md).
 
