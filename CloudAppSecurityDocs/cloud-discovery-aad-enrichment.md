@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c288b153976f50851a72a54393c099b011521c33
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 1e6f89d896612c48b567435e06ecf2fa475e119e
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720154"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781269"
 ---
 # <a name="cloud-discovery-enrichment"></a>Aprimoramento do Cloud Discovery
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de usuário do Azure Active Directory. Quando você habilita esse recurso, o nome de usuário recebido nos logs de tráfego de descoberta é correspondido e substituído pelo nome de usuário do Azure AD. O aprimoramento do Cloud Discovery habilita os seguintes recursos:
 
@@ -38,7 +38,7 @@ Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de 
 
 ## <a name="enabling-user-data-enrichment"></a>Permitindo o aprimoramento de dados de usuário
 
-1. Na engrenagem Configurações, selecione **Configurações do Cloud Discovery**.
+1. Na engrenagem configurações, selecione **configurações de Cloud Discovery**.
 
 2. Na guia **Aprimoramento do usuário**, selecione **Aprimorar os identificadores descobertos do usuário com os nomes de usuários do Azure Active Directory**. Essa opção permite que o Cloud App Security use dados do Azure Active Directory para aprimorar os nomes de usuário padrão.
 

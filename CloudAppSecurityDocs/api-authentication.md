@@ -1,6 +1,6 @@
 ---
 title: Gerenciando tokens de API
-description: Este artigo fornece informações sobre como gerar tokens de API para o Cloud App Security.
+description: Este artigo fornece informações sobre como gerar e gerenciar tokens de API para Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: e4dba7ef7ff73c7e4b6b784bce68d4e71b0b854e
-ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
+ms.openlocfilehash: 7eeeea75c084acddac195021d7ee7a6f3d533da6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86122607"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781405"
 ---
 # <a name="managing-api-tokens"></a>Gerenciando tokens de API
 

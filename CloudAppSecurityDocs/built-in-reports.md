@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 88cf54f981ef02b76cd3286f3171e98f5f33752b
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: c4102b65899b9579d5aed5d719a6a0bbecb4ae2f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624315"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781286"
 ---
 # <a name="generate-data-management-reports"></a>Gerar relatórios de gerenciamento de dados
 
@@ -32,7 +32,7 @@ Como gerar esses relatórios
 1. Vá para **Arquivos**.
 2. No canto superior direito, clique nos três pontos e em **Relatórios de gerenciamento de dados**, selecione um dos seguintes relatórios.
 
-    ![relatórios](media/reports.png)
+    ![Captura de tela mostrando o menu relatórios de gerenciamento de dados](media/reports.png)
 
 ## <a name="data-sharing-overview"></a>Visão geral do compartilhamento de dados
 

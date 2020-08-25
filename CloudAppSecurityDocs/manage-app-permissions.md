@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 08/05/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: faf3be962650316a1c16f1b3db884dc16a0dc552
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: b9d3f26232a1d17478da50260904495a9881648c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027050"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781609"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
@@ -56,7 +56,7 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 |Estado do aplicativo|Um administrador pode marcar um aplicativo como aprovado, vetado ou deixar como indeterminado.|Office 365, G Suite, Salesforce|
 |Uso da comunidade|Mostra quão popular o aplicativo é entre todos os seus usuários (comum, incomum, raro)|Office 365, G Suite, Salesforce|
 |Última autorização|A data mais recente em que um usuário concedeu permissões para este aplicativo.|Office 365, Salesforce|
-|Editor|O nome do fornecedor que oferece o aplicativo.|Office 365|
+|Publicador|O nome do fornecedor que oferece o aplicativo.|Office 365|
 |Usado pela última vez|A data mais recente em que este aplicativo foi usado por alguém em sua organização.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Vetar ou aprovar um aplicativo
@@ -89,7 +89,7 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 
 Para G Suite e Salesforce, é possível revogar a permissão para um aplicativo ou notificar o usuário de que ele deve alterar a permissão. Quando você revoga a permissão, ele remove todas as permissões que foram concedidas ao aplicativo em "aplicativos empresariais" no Azure AD.
 
-1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *você autorizou o aplicativo para acessar sua conta do G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere a concessão ou a revogação das permissões que você deu a esse aplicativo em sua conta do G Suite. Para revogar o acesso ao aplicativo, acesse: https://security.google.com/settings/security/permissions?hl=en&pli=1 Selecione o aplicativo e clique em ' revogar acesso ' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
+1. Na página **Aplicativos OAuth**, clique nos três pontos no final da linha de aplicativo e selecione **Notificar usuário**. Por padrão, o usuário será notificado da seguinte maneira: *você autorizou o aplicativo para acessar sua conta do G Suite. Este aplicativo está em conflito com a política de segurança da sua organização. Reconsidere a concessão ou a revogação das permissões que você deu a esse aplicativo em sua conta do G Suite. Para revogar o acesso ao aplicativo, acesse: https://security.google.com/settings/security/permissions?hl=en&pli=1  Selecione o aplicativo e clique em ' revogar acesso ' na barra de menus à direita.* Você pode personalizar a mensagem que é enviada.
 2. Você também pode revogar permissões para usar o aplicativo para o usuário. Clique no ícone no final da linha de aplicativo na tabela e selecionando **Revogar aplicativo**.
 
     ![revogar aplicativo](media/revoke-app.png)

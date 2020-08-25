@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85cfe50bd9fefc2b7ace059340a8aea8ed39c2ac
-ms.sourcegitcommit: 61e9579ebe2c1ca02c7a56e32781e145f6612879
+ms.openlocfilehash: dbebb807cc04751057eeaa4c62b863dafc0096bc
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88261412"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781592"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 

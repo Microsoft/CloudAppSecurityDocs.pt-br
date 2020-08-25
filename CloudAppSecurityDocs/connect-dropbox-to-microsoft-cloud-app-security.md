@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cc1d0b563d7d155fdd9f0aab55b4fe117ddfd6bc
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: a2cc37a22d339b721111948b277135382a2c7c8a
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912067"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781082"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar o Dropbox ao Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do Dropbox usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre o uso do Dropbox. Para obter informações sobre como Cloud App Security protege o Dropbox, consulte [proteger o Dropbox](protect-dropbox.md).
 
@@ -33,7 +33,7 @@ Como Dropbox concede acesso aos arquivos de links compartilhados sem precisar en
 
 1. No console do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.
 
-2. Na página **Conectores de aplicativos**, clique no botão de mais após **Dropbox**.
+2. Na página **conectores de aplicativos** , clique no botão de adição seguido pelo **Dropbox**.
 
     ![conectar o Dropbox](media/connect-dropbox.png "conectar ao dropbox")
 

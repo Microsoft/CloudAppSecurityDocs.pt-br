@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 8/7/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aba19263cafbc1d91a4a650d4cb67e9e748947db
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 53eaa7b96a22c7574a63b6051dce64076fafaa39
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719904"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781660"
 ---
 # <a name="log-collector-ftp-configuration"></a>Configuração de FTP do coletor de logs
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo descreve como modificar a configuração do Docker do Cloud Discovery do Cloud App Security.
 
@@ -55,14 +55,14 @@ Siga este procedimento para personalizar os arquivos de certificado usados para 
 2. Navegue até o diretório `ssl_update`.
 3. Carregue novos arquivos de certificado no diretório `ssl_update` (os nomes são obrigatórios).
 
-    ![Alterar a senha do FTP](media/new-certs.png)
+    ![Carregar arquivos de certificado](media/new-certs.png)
 
     - **Para FTP:** apenas um arquivo é necessário. O arquivo tem os dados de chave e de certificado, nessa ordem, e é denominado **pure-ftpd.pem**.
-    - **Para Syslog:** três arquivos são necessários: **ca.pem**, **server-key.pem e **server-cert.pem**. Se um dos arquivos estiver ausente, a atualização não ocorrerá.
+    - **Para o syslog:** Três arquivos são necessários: **ca. pem**, * * Server-Key. pem e **Server-CERT. pem**. Se um dos arquivos estiver ausente, a atualização não ocorrerá.
 
 4. Em um terminal, execute: `docker exec -t <collector name> update_certs`. O comando deve produzir uma saída semelhante à mostrada na captura de tela a seguir.
 
-    ![Alterar a senha do FTP](media/update-certs.png)
+    ![Atualizar arquivos de certificado](media/update-certs.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 

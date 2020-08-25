@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f39ede3da1483acb4fd47c0708e3c244ff458aa5
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: bb3196fb47641fad788fda6c98777bbe2ce70a8c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623343"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781133"
 ---
 # <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>Conectar o GitHub Enterprise Cloud a Microsoft Cloud App Security
 

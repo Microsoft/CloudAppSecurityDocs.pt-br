@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c12e2d09d9ef9adff32907795c37a86183ded964
-ms.sourcegitcommit: 5cf263c4094f5ac91210b03d085ca3dbca50f32d
+ms.openlocfilehash: 58a8fad9c99fdf71c8ba17089083d02b15cdd8cf
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87388653"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781099"
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar o Azure ao Microsoft Cloud App Security
 
@@ -37,7 +37,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
 1. Na página **Aplicativos conectados**, clique no botão de mais e selecione **Microsoft Azure**.
 
-    ![Conectar o Azure](media/connect-azure-menu.png)
+    ![item de menu conectar do Azure](media/connect-azure-menu.png)
 
 2. No pop-up do Azure, clique em **Conectar o Microsoft Azure**.
 

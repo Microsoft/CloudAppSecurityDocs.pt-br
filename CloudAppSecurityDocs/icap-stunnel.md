@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/09/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 38b142121f4d14d2fb07017e764a2a57bd1ceee0
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: a80d54546b93545b65082115c939190f65b3801d
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402130"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781439"
 ---
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
@@ -253,7 +253,7 @@ Se o processo ainda não está funcionando, consulte o [documentação do stunne
     - **ICAP Genérico – REQMOD** – use outros dispositivos de DLP que usam [Solicitar Modificação](https://tools.ietf.org/html/rfc3507).
     - **ICAP Genérico – RESPMOD** – use outros dispositivos de DLP que usam [Modificação de Resposta](https://tools.ietf.org/html/rfc3507).
 
-        ![Conexão ICAP do Cloud App Security](media/icap-wizard1.png)
+        ![Tipo de conexão do Cloud App Security ICAP](media/icap-wizard1.png)
 
 5. Navegue para selecionar o certificado público que você gerou nas etapas anteriores, "CERT. pem", para se conectar ao seu stunnel. Clique em **Próximo**.
 
@@ -262,7 +262,7 @@ Se o processo ainda não está funcionando, consulte o [documentação do stunne
 
 6. Na tela **Configuração do servidor**, forneça o **Endereço IP** e a **Porta** do servidor stunnel que você configurou na Etapa 2. Para fins de balanceamento de carga, configure o **Endereço IP** e a **Porta** de um servidor adicional. Os endereços IP fornecidos devem ser os endereços IP estáticos externos dos seus servidores.
 
-    ![Conexão ICAP do Cloud App Security](media/icap-wizard2.png)
+    ![Endereço IP de conexão do Cloud App Security ICAP e porta](media/icap-wizard2.png)
 
 7. Clique em **Próximo**. O Cloud App Security testa a conectividade com o servidor configurado. Se você receber um erro, examine as instruções e as configurações de rede. Depois de conectado com êxito, clique em **Encerrar**.
 
@@ -305,7 +305,7 @@ O servidor de detecção usado pelo Cloud App Security é um Network Prevent pad
 
     1. Desabilite o **modo de avaliação**.
 
-        ![desabilite o modo de avaliação](media/icap-disable-trial-mode.png)
+        ![desabilitar pop-up do modo de avaliação](media/icap-disable-trial-mode.png)
 
 2. Em **ICAP**  >  **filtragem de resposta**do ICAP, altere o valor de **ignorar respostas menores que** para 1.
 
@@ -341,7 +341,7 @@ Adicione a regra criada a todas as políticas existentes:
 
 3. Salve a política.
 
-    ![desabilite o modo de avaliação](media/icap-add-policy.png)
+    ![desabilitar o modo de avaliação na política](media/icap-add-policy.png)
 
 Essa regra deve ser adicionada a todas as políticas existentes.
 

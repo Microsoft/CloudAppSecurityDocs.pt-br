@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f92d94c18ba8f91fd616fe00baeeb38b79a4354c
-ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
+ms.openlocfilehash: 0d821e574dc241097d70814cf854c46e4db2664b
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87296904"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781541"
 ---
 # <a name="security-configuration-for-azure"></a>Configuração de segurança para o Azure
 

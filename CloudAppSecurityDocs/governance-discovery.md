@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/12/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ad9f158a1e81a9aeaf7bb59a23da56e27260a6c5
-ms.sourcegitcommit: a76d7b8837a5ad17348eb1b2e1dcbe0bf8a2d0a2
+ms.openlocfilehash: c7e63522634f6048ad9ae13ce00298638fe7b070
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86282425"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781745"
 ---
 # <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
 
@@ -27,7 +27,7 @@ ms.locfileid: "86282425"
 
 Depois de examinar a lista de aplicativos descobertos em seu ambiente, você pode proteger seu ambiente aprovando aplicativos seguros (**aprovados**) ou proibindo aplicativos indesejados (não**aprovados**) das seguintes maneiras.
 
-## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a>Aprovar/desaprovar um aplicativo
+## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a> Aprovar/desaprovar um aplicativo
 
 Você pode cancelar a sanção um aplicativo de risco específico clicando nos três pontos no final da linha. Em seguida, selecione **Cancelar sanção**. O cancelamento de sanção de um aplicativo não bloqueia o uso, mas permite monitorar seu uso mais facilmente com os filtros do Cloud Discovery. Em seguida, você pode notificar os usuários do aplicativo não sancionado e sugerir um aplicativo alternativo seguro para seu uso.
 

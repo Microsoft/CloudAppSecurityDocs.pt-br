@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/31/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: eabbad5f2ce6ca4649f0923e9bce248a6d28781f
-ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
+ms.openlocfilehash: f7231db6910964dfb6fbaacb4467db7c89a2f681
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87296870"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781524"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -176,7 +176,7 @@ Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de 
 > [!div class="nextstepaction"]
 > [Solução de problemas de controles de acesso e de sessão](troubleshooting-proxy.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando o Azure AD Controle de Aplicativos de Acesso Condicional](use-case-proxy-block-session-aad.md)

@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/14/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 81c44eb4527b19e1f3f42929028791f1ae48715d
-ms.sourcegitcommit: b71546236cb97c0a22d0e82742a167f31555b275
+ms.openlocfilehash: 0748928a0d31e7486253c060609664061e3b8535
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86308234"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781354"
 ---
 # <a name="api-tokens"></a>Tokens de API
 

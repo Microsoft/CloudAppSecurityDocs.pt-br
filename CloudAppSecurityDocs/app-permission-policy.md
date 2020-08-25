@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/27/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c67e950b2d3227e8c0e261d346dcd1eec5f22d89
-ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
+ms.openlocfilehash: 6d3d281d8ad56e52f717125f62a7feb580b007b9
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87296704"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781337"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 

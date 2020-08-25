@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 8/6/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2b62a1344f4277f58ebff09dded12497238705bf
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 665d7435399c37a1d9683f004b0996f9ea5d263f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624669"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781694"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitar o coletor de logs por trás de um proxy
 
@@ -88,7 +88,7 @@ O contêiner está pronto.
 
 Execute o comando **collector_config** usando o token da API que você usou durante a criação de seu coletor de logs:
 
-![Token de API](media/docker-3.png "Token de API")
+![Token da API](media/docker-3.png "Token da API")
 
 Quando você executar o comando, especifique seu próprio token da API:
 
@@ -129,8 +129,8 @@ O coletor de logs consegue agora se comunicar com o Cloud App Security. Depois d
     > O alias do servidor padrão é *servidor*.
 
 1. Em um editor de texto, abra o arquivo *Server-install\conf\server\secured-installed.Properties* e, em seguida, adicione as linhas de código a seguir e salve as alterações:
-    1. Especifique a nova senha do repositório de chaves Java para o servidor:`server.keystore.password=newStorePassword`
-    1. Especifique a nova senha de certificado para o servidor:`server.key.password=newKeyPassword`
+    1. Especifique a nova senha do repositório de chaves Java para o servidor: `server.keystore.password=newStorePassword`
+    1. Especifique a nova senha de certificado para o servidor: `server.key.password=newKeyPassword`
 1. Inicie o servidor.
 
 ## <a name="next-steps"></a>Próximas etapas

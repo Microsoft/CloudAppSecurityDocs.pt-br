@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c8fc0a705a88d65922368356721d4c9b61b98cb6
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: b85d234a05741dd7a158259c111a60bed3e6f524
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719799"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781235"
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Política de detecção de anomalias do Cloud Discovery
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Este artigo fornece detalhes de referência sobre as políticas. São listadas explicações sobre cada tipo de política e os campos que podem ser configurados para cada política.
 
@@ -40,11 +40,11 @@ Para cada política, defina os seguintes parâmetros:
 2. Forneça o **Nome da política** e **Descrição**.
 
 3. Crie um filtro para os aplicativos que você deseja monitorar clicando em **Adicionar filtro**.
-   Você pode selecionar um aplicativo específico, uma **Categoria** de aplicativo ou filtrar por **Nome**, **Domínio e **Fator de risco** e clicar em **Salvar**.
+   Você pode selecionar um aplicativo específico, uma **categoria**de aplicativo ou filtrar por **nome**, * * domínio e **fator de risco**e clicar em **salvar**.
 
 4. Em **Aplicar a**, defina como deseja que o uso seja filtrado. O uso sendo monitorado pode ser filtrado de duas maneiras diferentes:
 
-    - **Relatórios contínuos** – selecione se deseja monitorar **Todos os relatórios contínuos** (padrão) ou escolha **Relatórios contínuos específicos** a serem monitorados.
+    - **Relatórios contínuos** – selecione se deseja monitorar **todos os relatórios contínuos** (padrão) ou escolha **relatórios contínuos específicos** a serem monitorados.
 
         - Ao selecionar **Todos os relatórios contínuos**, todo aumento no uso será comparado ao padrão de uso normal com base em todas as exibições de dados.
         - Ao selecionar **Relatórios contínuos específicos**, cada aumento no uso é comparado com o padrão de uso normal. O padrão é obtido na mesma exibição de dados na qual o aumento foi observado.
@@ -59,7 +59,7 @@ Para cada política, defina os seguintes parâmetros:
 
     - **Disparar alertas apenas para atividades suspeitas que ocorrerem após a data** – qualquer aumento no uso do aplicativo antes da data selecionada é ignorado. No entanto, a atividade anterior à data selecionada é obtida para estabelecer o padrão de uso normal.
 
-5. Em **Alertas**, você pode definir a sensibilidade do alerta. Há várias maneiras de controlar o número de alertas disparados pela política:
+5. Em **alertas**, você pode definir a sensibilidade do alerta. Há várias maneiras de controlar o número de alertas disparados pela política:
 
     - O controle deslizante **Selecionar a sensibilidade da detecção de anomalias** – dispare alertas para as principais X atividades anômalas por 1.000 usuários por semana. Os alertas são disparados para as atividades com o maior risco.
 
@@ -69,7 +69,7 @@ Para cada política, defina os seguintes parâmetros:
 
 6. Clique em **Criar**.
 
-7. Como em todas as políticas, é possível **Editar**, **Desabilitar** e **Habilitar** a política clicando nos três pontos ao final da linha na página **Políticas**. Por padrão, quando você cria uma política, ela é habilitada.
+7. Assim como com todas as políticas, você pode **Editar**, **desabilitar**e **habilitar** a política clicando nos três pontos no final da linha na página **políticas** . Por padrão, quando você cria uma política, ela é habilitada.
 
 ## <a name="next-steps"></a>Próximas etapas
 

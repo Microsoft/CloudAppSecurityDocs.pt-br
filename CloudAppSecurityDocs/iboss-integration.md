@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 2/2/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f60f4ec7dc9ff241cc4d4ba45bca9a50a2e50a00
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 8d849ed2b95577a805355eaae744ff81d2eb8176
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719955"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781711"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Integrar o Cloud App Security com o iboss
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 Se você trabalha com o Cloud App Security e o iboss, é possível integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. O iboss é um gateway de nuvem seguro e autônomo que monitora o tráfego da sua organização e permite que você defina políticas que bloqueiam as transações. Juntos, o Cloud App Security e o iboss oferecem os seguintes recursos:
 
@@ -39,7 +39,7 @@ Se você trabalha com o Cloud App Security e o iboss, é possível integrar os d
 ## <a name="deployment"></a>Implantação
 
 1. No portal do Cloud App Security, execute as seguintes etapas de integração:
-    1. Clique no ícone de configurações e selecione **Configurações do Cloud Discovery**.
+    1. Clique nas configurações engrenagem e selecione **configurações de Cloud Discovery**.
     2. Selecione a guia **Upload de log automático** e, em seguida, **Adicionar fonte de dados**.
     3. Na página **Adicionar fonte de dados**, insira as seguintes configurações:
 

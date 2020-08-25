@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6369646c8b4cd10e1b2c236369693f4e8c92d878
-ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
+ms.openlocfilehash: 05a2263427f30bcfcd1fdc0fb3b402e115dc3d9e
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84486290"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781320"
 ---
 # <a name="azure-information-protection-integration"></a>Integração à Proteção de Informações do Azure
 
@@ -84,10 +84,10 @@ Tudo que você precisa fazer para integrar a Proteção de Informações do Azur
 
 Para permitir que o Cloud App Security verifique arquivos com a inspeção de conteúdo habilitada para rótulos de classificação:
 
-1. No Cloud App Security, vá até a engrenagem de configurações, selecione a página **Configurações**, abaixo do título **Sistema**.
+1. No Cloud App Security, na engrenagem de configurações, selecione a página **Configurações** no título **Sistema**.
 
     ![Menu Configurações](media/azip-system-settings.png)
-1. Em **proteção de informações do Azure**, selecione **examinar automaticamente os novos arquivos para os rótulos de classificação da proteção de informações do Azure**.
+1. Em **Proteção de Informações do Azure**, selecione **Verificar automaticamente novos arquivos para os rótulos de classificação da Proteção de Informações do Azure**.
 
     ![habilitar a Proteção de Informações do Azure](media/enable-azip.png)
 

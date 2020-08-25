@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/14/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 84ba90f5959980815caa7170ab7bee9d11db263c
-ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
+ms.openlocfilehash: 2e37846ab6e3daea68358834df20a6ce2ee1ee8c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865485"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781473"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -73,15 +73,15 @@ A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com
 | **Listar privilégios** | | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
 | **Governança de usuário** | | ✔ | Em breve | Conexão do pacote G do assunto | ✔ | ✔ | | Em breve | ✔ | Em breve | Sem suporte pelo provedor |
 | **Atividade de logon** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Atividade do usuário** | Não se aplica | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
+| **Atividade do usuário** | Não aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
 | **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação periódica** | | ✔ | ✔ | Não se aplica | ✔ | ✔ | Não se aplica | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação quase em tempo real** | | ✔ | | Não se aplica | ✔-requer o Google Business Enterprise | ✔ | Não se aplica | | | ✔ | Sem suporte pelo provedor |
-| **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não se aplica | ✔ | ✔ | Não se aplica | Não se aplica | | ✔ | Sem suporte pelo provedor |
-| **Governança de arquivos** | ✔ | ✔ | ✔ | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | | Sem suporte pelo provedor |
-| **Exibir permissões de aplicativo** | Não se aplica | Sem suporte pelo provedor | Chegando em | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | Não se aplica | Não se aplica |
-| **Revogar permissões de aplicativo** | Não se aplica | Sem suporte pelo provedor | Ming em breve | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | Não se aplica | Não se aplica |
-| **Aplique os rótulos da Proteção de Informações do Azure** | Não se aplica | ✔ | | Não se aplica | ✔ | ✔ | Não se aplica | | | Não se aplica | Não se aplica |
+| **DLP – verificação periódica** | | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **DLP – verificação quase em tempo real** | | ✔ | | Não aplicável | ✔-requer o Google Business Enterprise | ✔ | Não aplicável | | | ✔ | Sem suporte pelo provedor |
+| **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | Não aplicável | | ✔ | Sem suporte pelo provedor |
+| **Governança de arquivos** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | | Sem suporte pelo provedor |
+| **Exibir permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Chegando em | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
+| **Revogar permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Ming em breve | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
+| **Aplique os rótulos da Proteção de Informações do Azure** | Não aplicável | ✔ | | Não aplicável | ✔ | ✔ | Não aplicável | | | Não aplicável | Não aplicável |
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

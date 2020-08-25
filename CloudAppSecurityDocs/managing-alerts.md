@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 01/22/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1ccd5a4bfedbad5edf1ee2e398b0da480f20fb38
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 41495095be323743f44d7822283cc08b8b9afbfb
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254747"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781558"
 ---
 # <a name="manage-alerts"></a>Gerenciar alertas
 
@@ -40,7 +40,7 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
     Esta seção do painel fornece uma visibilidade completa de qualquer atividade suspeita ou violação de suas políticas estabelecidas. Pode ajudá-lo a proteger a postura de segurança que você definiu para o seu ambiente de nuvem.
 
-    ![Alertas](media/alerts.png "alertas")
+    ![Página status da resolução de alertas](media/alerts.png "alertas")
 
 2. Para cada alerta, você precisa investigar e determinar a natureza da violação e a resposta necessária.
 

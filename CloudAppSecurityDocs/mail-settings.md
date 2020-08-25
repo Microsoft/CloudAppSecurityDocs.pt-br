@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 2/4/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 29e6fb15880f9d3c306acbe6e696dd96a73ac241
-ms.sourcegitcommit: 021914cf4b16ad3a5543f69958639dc670f09304
+ms.openlocfilehash: f9f2be5488be8b6f7431b146947545b80594a467
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2020
-ms.locfileid: "87514506"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781643"
 ---
 # <a name="email-notification-preferences"></a>Preferências de notificação por email
 
@@ -125,6 +125,6 @@ Veja abaixo um modelo de email de exemplo:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

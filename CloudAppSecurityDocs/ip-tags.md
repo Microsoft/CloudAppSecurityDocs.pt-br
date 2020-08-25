@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e79d605aa56afebea59088df43abb9894d6b409
-ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
+ms.openlocfilehash: c952539aaa864c6634bc45cdbb1589bec42a175e
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2020
-ms.locfileid: "88256744"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781677"
 ---
 #  <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Trabalhando com marcações e intervalos de IP
 

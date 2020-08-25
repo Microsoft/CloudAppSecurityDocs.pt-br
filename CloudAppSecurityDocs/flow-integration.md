@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/27/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d6491c27c5eeb4608f9712c3835194a9c252059
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: 991d71778e08aa7c5200a5f719d5df6867653367
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402215"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781490"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integre-se ao Microsoft Power Automate para automação de alerta personalizada
 
@@ -30,7 +30,7 @@ O Cloud App Security integra-se com a [automatização de energia da Microsoft](
 
 - Você precisa ter um plano válido do [Microsoft Power Automate](https://flow.microsoft.com/pricing)
 
-## <a name="how-it-works"></a>Como funciona
+## <a name="how-it-works"></a>Como ele funciona
 
 Por conta própria, Cloud App Security fornece opções de governança predefinidas, como suspender um usuário ou tornar um arquivo privado ao definir políticas. Ao criar um guia estratégico na automação de energia usando o conector de Cloud App Security, você pode criar fluxos de trabalho para habilitar opções de governança personalizadas para suas políticas. Depois que o guia estratégico é criado na automatização de energia, basta associá-lo a uma política no Cloud App Security para enviar alertas para a automatização de energia. A automatização de energia da Microsoft oferece vários conectores e condições para criar um fluxo de trabalho personalizado para sua organização.
 

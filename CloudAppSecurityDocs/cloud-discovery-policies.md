@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8a434520f3e0ca3baa01167cae13856085e9a318
-ms.sourcegitcommit: 859934f13d0f7f7a24a5fb21856d415ef0f6889a
+ms.openlocfilehash: e80e2530ec5f2a157287661403e429817f8e36a3
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87378226"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781201"
 ---
 # <a name="create-cloud-discovery-policies"></a>Criar políticas de Cloud Discovery
 
