@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 2eaa965e8925a67945b3524e9b0a61b0e139df26
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0f5fbf5668d49ced48b2a1afe0fc1893e077bf43
+ms.sourcegitcommit: f4ed1283e73af88201dd85fc6a59300cd31341d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779756"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88807618"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 
@@ -171,7 +171,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
 
-| Status do aplicativo | Descrição | Etapas |
+| Status do aplicativo | Description | Etapas |
 | --- | --- | --- |
 | Não reconhecido | Você verá uma página aplicativo não reconhecido solicitando que você configure seu aplicativo. | 1. [adicione o aplicativo ao controle de aplicativos de acesso condicional](#add-app).<br /> 2. [adicione os domínios para o aplicativo](#add-domains)e, em seguida, retorne ao aplicativo e atualize a página.<br /> 3. [Instale os certificados para o aplicativo](#install-certs). |
 | Reconhecido | Você verá uma página de integração solicitando que você continue o processo de configuração do aplicativo. | - [Instale os certificados para o aplicativo](#install-certs). <br /><br /> **Observação:** Verifique se o aplicativo está configurado com todos os domínios necessários para que o aplicativo funcione corretamente. Para configurar domínios adicionais, vá para [adicionar os domínios do aplicativo](#add-domains)e, em seguida, retorne à página do aplicativo. |
@@ -244,9 +244,11 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
 
 Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produção de sua organização, execute as etapas a seguir.
 
-1. Em Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
+1. Em Cloud App Security, clique no ícone configurações engrenagem ![ configurações ](media/settings-icon.png) e, em seguida, selecione **controle de aplicativos de acesso condicional**.
 1. Na lista de aplicativos, na linha na qual o aplicativo que você está implantando aparece, escolha os três pontos no final da linha e escolha **Editar aplicativo**.
 1. Selecione **usar com controle de aplicativos de acesso condicional** e, em seguida, clique em **salvar**.
+
+    ![Habilitar pop-up de controles de sessão](media/edit-app-enable-session-controls.png)
 
 ## <a name="step-6-update-the-azure-ad-policy-azure-ad-only"></a>Etapa 6: atualizar a política do Azure AD (somente Azure AD)<a name="update-azure-ad"></a>
 
@@ -262,7 +264,7 @@ Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produ�
 > [!div class="nextstepaction"]
 > [Em seguida: como criar uma política de sessão»](session-policy-aad.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)
