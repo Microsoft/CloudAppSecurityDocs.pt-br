@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 80ae1af2a0f40adbaa1e989de8ec644d721a7f88
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: fa42e9e481bd815d3bf8ebc8505bde8712eed59f
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88026982"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963829"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas do Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ Este artigo descreve as opções de suporte e solução de problemas disponívei
 
 A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para o Microsoft Cloud App Security. O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas. O suporte técnico online está disponível em inglês e japonês. O suporte telefônico e o suporte de cobrança online estão disponíveis em outros idiomas.
 
-Como administrador, você pode usar a opção **Ajuda + Suporte** para arquivar uma solicitação de suporte online do Cloud App Security por meio do portal do Azure. Para criar uma solicitação de suporte, a conta deve receber a atribuição de uma das seguintes [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+Como administrador, você pode usar a opção **Ajuda + Suporte** para arquivar uma solicitação de suporte online do Cloud App Security por meio do portal do Azure. Para criar uma solicitação de suporte, a conta deve receber a atribuição de uma das seguintes [funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
 * Administrador global
 
@@ -52,7 +52,7 @@ Selecione **solicitação de suporte** para criar uma nova solicitação de supo
 
     * **Tipo de problema**: **Técnico**
 
-    * **Assinatura**:\<*your subscription*\>
+    * **Assinatura**: \<*your subscription*\>
 
     * **Serviço**: **segurança de aplicativo de nuvem**
 
@@ -97,7 +97,7 @@ A equipe do Cloud App Security está sempre disponível para receber opiniões s
 
 * **Comentários sobre o produto**: enviar comentários para [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com) .
 
-* **Comentários**sobre a documentação: nosso novo sistema de comentários foi criado com base nos problemas do github. Para fornecer comentários sobre a documentação, primeiro crie uma conta do GitHub. Leia sobre essa alteração em nossa [postagem no blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+* **Comentários**sobre a documentação: nosso novo sistema de comentários foi criado com base nos problemas do github. Para fornecer comentários sobre a documentação, primeiro crie uma conta do GitHub. Leia sobre essa alteração em nossa [postagem no blog](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 ## <a name="next-steps"></a>Próximas etapas
 

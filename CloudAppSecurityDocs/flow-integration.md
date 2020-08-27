@@ -13,18 +13,18 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 991d71778e08aa7c5200a5f719d5df6867653367
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: c2d208fa3570f32719e247b006c831755ab80173
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781490"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963770"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integre-se ao Microsoft Power Automate para automação de alerta personalizada
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Cloud App Security integra-se com a [automatização de energia da Microsoft](https://docs.microsoft.com/flow/getting-started) para fornecer automação de alerta personalizada e guias estratégicos de orquestração. Usando o [ecossistema de conectores](https://docs.microsoft.com/connectors/) disponíveis na automatização de energia, você pode automatizar o disparo de guias estratégicos quando Cloud app Security gera alertas. Por exemplo, crie automaticamente um problema nos sistemas de tíquete usando o [conector do ServiceNow](https://docs.microsoft.com/connectors/service-now/) ou envie um email de aprovação para executar uma ação de governança personalizada quando um alerta é disparado no Cloud App Security.
+O Cloud App Security integra-se com a [automatização de energia da Microsoft](/flow/getting-started) para fornecer automação de alerta personalizada e guias estratégicos de orquestração. Usando o [ecossistema de conectores](/connectors/) disponíveis na automatização de energia, você pode automatizar o disparo de guias estratégicos quando Cloud app Security gera alertas. Por exemplo, crie automaticamente um problema nos sistemas de tíquete usando o [conector do ServiceNow](/connectors/service-now/) ou envie um email de aprovação para executar uma ação de governança personalizada quando um alerta é disparado no Cloud App Security.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -34,7 +34,7 @@ O Cloud App Security integra-se com a [automatização de energia da Microsoft](
 
 Por conta própria, Cloud App Security fornece opções de governança predefinidas, como suspender um usuário ou tornar um arquivo privado ao definir políticas. Ao criar um guia estratégico na automação de energia usando o conector de Cloud App Security, você pode criar fluxos de trabalho para habilitar opções de governança personalizadas para suas políticas. Depois que o guia estratégico é criado na automatização de energia, basta associá-lo a uma política no Cloud App Security para enviar alertas para a automatização de energia. A automatização de energia da Microsoft oferece vários conectores e condições para criar um fluxo de trabalho personalizado para sua organização.
 
-O [conector de Cloud app Security](https://docs.microsoft.com/connectors/cloudappsecurity/) no Power Automate dá suporte a gatilhos e ações automatizadas. A automatização de energia é disparada automaticamente quando Cloud App Security gera um alerta. As ações incluem a alteração do status de alerta no Cloud App Security.
+O [conector de Cloud app Security](/connectors/cloudappsecurity/) no Power Automate dá suporte a gatilhos e ações automatizadas. A automatização de energia é disparada automaticamente quando Cloud App Security gera um alerta. As ações incluem a alteração do status de alerta no Cloud App Security.
 
 ## <a name="how-to-create-playbooks-with-power-automate"></a>Como criar guias estratégicos com o Power Automate
 

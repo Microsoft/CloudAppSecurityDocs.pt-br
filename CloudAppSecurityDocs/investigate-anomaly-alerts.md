@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f117092ebdae230eae473bf4bbfd2d53b05fa3eb
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 7b93a60c42b024b03a048848d048f4ed93d13f17
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781371"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963464"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Como investigar alertas de detecção de anomalias
 
@@ -350,7 +350,7 @@ Atividades em uma única sessão que indica que um usuário realizou exclusões 
 - Examine todas as atividades do usuário para ver indicadores adicionais de comprometimento, como o alerta de [encaminhamento de caixa de entrada suspeito](#suspicious-inbox-forwarding) seguido por um alerta de [viagem impossível](#impossible-travel) . Procurar:
 
     1. Novas regras de encaminhamento de SMTP, da seguinte maneira:
-        - Verifique se há nomes de regra de encaminhamento mal-intencionado. Os nomes de regra podem variar de nomes simples, como "encaminhar todos os emails" e "encaminhamento automático" ou nomes enganosos, como um "." mal visível. Os nomes de regra de encaminhamento podem até estar vazios e o destinatário de encaminhamento pode ser uma única conta de email ou uma lista inteira. As regras mal-intencionadas também podem ser ocultadas da interface do usuário. Depois de detectado, você pode usar esta [postagem de blog](https://blogs.msdn.microsoft.com/hkong/2015/02/27/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi/) útil sobre como excluir regras ocultas de caixas de correio.
+        - Verifique se há nomes de regra de encaminhamento mal-intencionado. Os nomes de regra podem variar de nomes simples, como "encaminhar todos os emails" e "encaminhamento automático" ou nomes enganosos, como um "." mal visível. Os nomes de regra de encaminhamento podem até estar vazios e o destinatário de encaminhamento pode ser uma única conta de email ou uma lista inteira. As regras mal-intencionadas também podem ser ocultadas da interface do usuário. Depois de detectado, você pode usar esta [postagem de blog](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) útil sobre como excluir regras ocultas de caixas de correio.
         - Se você detectar uma regra de encaminhamento não reconhecida para um endereço de email interno ou externo desconhecido, poderá assumir que a conta da caixa de entrada foi comprometida.
     1. Novas regras de caixa de entrada, como "excluir tudo", "mover mensagens para outra pasta" ou aquelas com convenções de nomenclatura obscuras, por exemplo, "...".
     1. Um aumento nos emails enviados.
@@ -539,7 +539,7 @@ Atividades que indicam que um invasor obteve acesso à caixa de entrada de um us
 1. Examine todas as atividades do usuário para ver indicadores adicionais de comprometimento, como o alerta, seguido por um alerta de [viagem impossível](#impossible-travel) . Procurar:
 
     1. Novas regras de encaminhamento de SMTP, da seguinte maneira:
-        - Verifique se há nomes de regra de encaminhamento mal-intencionado. Os nomes de regra podem variar de nomes simples, como "encaminhar todos os emails" e "encaminhamento automático" ou nomes enganosos, como um "." mal visível. Os nomes de regra de encaminhamento podem até estar vazios e o destinatário de encaminhamento pode ser uma única conta de email ou uma lista inteira. As regras mal-intencionadas também podem ser ocultadas da interface do usuário. Depois de detectado, você pode usar esta [postagem de blog](https://blogs.msdn.microsoft.com/hkong/2015/02/27/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi/) útil sobre como excluir regras ocultas de caixas de correio.
+        - Verifique se há nomes de regra de encaminhamento mal-intencionado. Os nomes de regra podem variar de nomes simples, como "encaminhar todos os emails" e "encaminhamento automático" ou nomes enganosos, como um "." mal visível. Os nomes de regra de encaminhamento podem até estar vazios e o destinatário de encaminhamento pode ser uma única conta de email ou uma lista inteira. As regras mal-intencionadas também podem ser ocultadas da interface do usuário. Depois de detectado, você pode usar esta [postagem de blog](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) útil sobre como excluir regras ocultas de caixas de correio.
         - Se você detectar uma regra de encaminhamento não reconhecida para um endereço de email interno ou externo desconhecido, poderá assumir que a conta da caixa de entrada foi comprometida.
     1. Novas regras de caixa de entrada, como "excluir tudo", "mover mensagens para outra pasta" ou aquelas com convenções de nomenclatura obscuras, por exemplo, "...".
 1. Examine as atividades executadas do endereço IP usado para criar a regra para detectar outros usuários comprometidos.
@@ -673,7 +673,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. Examine as atividades de exclusão e crie uma lista de arquivos excluídos. Se necessário, recupere os arquivos excluídos.
 1. Opcionalmente, crie um guia estratégico usando a automatização de energia para contatar os usuários e seus gerentes para verificar a atividade.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Investigar usuários suspeitos](tutorial-ueba.md)

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed0d53a3a71e03dab31ad179e293ae1b7dbc43b6
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 6dbba6a8be8f0292d924baabb3fc670e3521c5b4
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779484"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963430"
 ---
 # <a name="accounts"></a>Contas
 
@@ -43,7 +43,7 @@ A página **Usuários e contas** permite que você investigue facilmente suas co
 * Você pode ver quais contas estão incluídas em cada grupo de usuários  
 * Você pode ver quais aplicativos são acessados por cada conta e quais aplicativos são excluídos para contas específicas
 
-    ![tela de contas](./media/accounts-page.png)
+    ![tela de contas](media/accounts-page.png)
 
 ## <a name="users-and-accounts-filters"></a>Filtros de usuários e contas
 
@@ -51,7 +51,7 @@ Veja a seguir uma lista de filtros de contas que podem ser aplicados. A maioria 
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-* **Afiliação**: a afiliação pode ser **interna** ou **externa**. Para definir quais usuários e contas são internos, em **configurações**, certifique-se de definir o **intervalo de endereços IP** da sua organização interna. Se a conta tiver permissões de administrador, o ícone na tabela Contas aparecerá com a adição da gravata vermelha. ![ícone de administrador de contas](./media/accounts-admin-icon.png)
+* **Afiliação**: a afiliação pode ser **interna** ou **externa**. Para definir quais usuários e contas são internos, em **configurações**, certifique-se de definir o **intervalo de endereços IP** da sua organização interna. Se a conta tiver permissões de administrador, o ícone na tabela Contas aparecerá com a adição da gravata vermelha. ![ícone de administrador de contas](media/accounts-admin-icon.png)
 
 * **Aplicativo**: você pode filtrar para qualquer aplicativo conectado de API que esteja sendo usado por contas em sua organização.
 * **Domínio**: permite que você filtre para usuários em domínios específicos.

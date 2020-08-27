@@ -14,22 +14,22 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dbebb807cc04751057eeaa4c62b863dafc0096bc
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 7480a6eb0fdcd887637a1ed98411b0496f3b312f
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781592"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963855"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security dá suporte ao controle de acesso baseado em função. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, consulte os artigos para [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+O Microsoft Cloud App Security dá suporte ao controle de acesso baseado em função. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, consulte os artigos para [Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](/office365/admin/add-users/assign-admin-roles).
 
 ## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Funções do Office 365 e do Azure AD com acesso ao Cloud App Security
 
-Por padrão, as seguintes funções de administrador do Office 365 e [do Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Cloud app Security:
+Por padrão, as seguintes funções de administrador do Office 365 e [do Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Cloud app Security:
 
 - **Administrador global e Administrador de segurança:** os administradores com **Acesso completo** têm permissões completas no Cloud App Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
 

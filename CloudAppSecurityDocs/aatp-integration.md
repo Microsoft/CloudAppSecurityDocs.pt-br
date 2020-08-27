@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5a84b7989f357e58a1ee91e448a19c55dd85191c
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 33ccea97fd5b41802d7f8b12fe7413c5bd76d8a6
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779552"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963583"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integração da proteção avançada contra ameaças do Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security integra-se com o Azure ATP (proteção avançada contra ameaças do Azure) para fornecer UEBA (análise comportamental de entidade de usuário) em um ambiente híbrido – tanto no aplicativo de nuvem quanto no local, para obter mais informações, consulte [tutorial: investigar usuários arriscados](tutorial-ueba.md). Para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo Azure ATP, consulte [o que é o Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+O Microsoft Cloud App Security integra-se com o Azure ATP (proteção avançada contra ameaças do Azure) para fornecer UEBA (análise comportamental de entidade de usuário) em um ambiente híbrido – tanto no aplicativo de nuvem quanto no local, para obter mais informações, consulte [tutorial: investigar usuários arriscados](tutorial-ueba.md). Para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo Azure ATP, consulte [o que é o Azure ATP?](/azure-advanced-threat-protection/what-is-atp)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -56,7 +56,7 @@ Para habilitar a integração de Cloud App Security com o Azure ATP:
 > [!NOTE]
 > Pode levar até 12 horas até que a integração entre em vigor.
 
-Depois de habilitar a integração do Azure ATP, você poderá ver as atividades locais para todos os usuários em sua organização. Você também obterá informações avançadas sobre seus usuários que combinam alertas e atividades suspeitas em seus ambientes de nuvem e locais. Além disso, as políticas do Azure ATP aparecerão na página políticas de Cloud App Security. Para obter uma lista de políticas do Azure ATP, consulte [alertas de segurança](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
+Depois de habilitar a integração do Azure ATP, você poderá ver as atividades locais para todos os usuários em sua organização. Você também obterá informações avançadas sobre seus usuários que combinam alertas e atividades suspeitas em seus ambientes de nuvem e locais. Além disso, as políticas do Azure ATP aparecerão na página políticas de Cloud App Security. Para obter uma lista de políticas do Azure ATP, consulte [alertas de segurança](/azure-advanced-threat-protection/suspicious-activity-guide).
 
 Você também deve usar os links de **configuração do Azure ATP** para definir as configurações do Azure ATP que são relevantes para Cloud app Security. Use as informações a seguir para saber mais sobre essas configurações:
 

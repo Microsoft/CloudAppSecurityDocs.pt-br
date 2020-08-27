@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ea29fe115c4235f926ae2d64e3a377bc02949f0
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 85a2c8a97406cd65ca5c60cfeac36b92660b2b1f
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780045"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963872"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security integra-se com o Microsoft defender com a ATP (proteção avançada contra ameaças) nativamente. A integração simplifica a distribuição do Cloud Discovery, estende as funcionalidades do Cloud Discovery para além da rede corporativa e permite a investigação baseada em computador. [O Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) é uma plataforma de segurança para proteção, detecção, investigação e resposta inteligentes. O Microsoft defender ATP protege pontos de extremidade contra ameaças cibernéticos, detecta ataques avançados e violações de dados, automatiza incidentes de segurança e melhora a postura de segurança.
+O Microsoft Cloud App Security integra-se com o Microsoft defender com a ATP (proteção avançada contra ameaças) nativamente. A integração simplifica a distribuição do Cloud Discovery, estende as funcionalidades do Cloud Discovery para além da rede corporativa e permite a investigação baseada em computador. [O Microsoft defender ATP](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) é uma plataforma de segurança para proteção, detecção, investigação e resposta inteligentes. O Microsoft defender ATP protege pontos de extremidade contra ameaças cibernéticos, detecta ataques avançados e violações de dados, automatiza incidentes de segurança e melhora a postura de segurança.
 
 Cloud App Security usa as informações de tráfego coletadas pelo Microsoft defender ATP sobre os aplicativos de nuvem e os serviços que estão sendo acessados por computadores Windows 10 gerenciados por ti. A integração nativa permite que você execute Cloud Discovery em qualquer computador na rede corporativa, usando Wi-Fi público, enquanto estiver em roaming e por meio de acesso remoto. Também permite a investigação baseada em computador.
 
@@ -33,7 +33,7 @@ A integração não exige nenhuma implantação adicional e funciona prontamente
 
 Além disso, ao identificar um usuário arriscado, você pode verificar todos os computadores que o usuário acessou para detectar possíveis riscos. Se você identificar um computador arriscado, verifique todos os usuários que o usaram para detectar possíveis riscos potenciais.
 
-Depois que as informações de tráfego forem coletadas, você estará pronto para se [aprofundar no uso do aplicativo de nuvem](discovered-apps.md#deep-dive-into-discovered-apps) em sua organização. Cloud App Security aproveita os recursos de proteção de rede do Microsoft defender ATP para bloquear o acesso de dispositivo de ponto de extremidade a aplicativos de nuvem. Você pode bloquear aplicativos [marcando-os como não **aprovados** ](governance-discovery.md#BKMK_SanctionApp) no Portal. Com base no uso abrangente e na avaliação de risco de cada aplicativo não aprovado, os domínios do aplicativo são usados para criar [indicadores de domínio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) no portal do Microsoft defender ATP. O Microsoft defender antivírus, em execução em dispositivos de ponto de extremidade, usa os indicadores de domínio para bloquear o acesso a esses aplicativos.
+Depois que as informações de tráfego forem coletadas, você estará pronto para se [aprofundar no uso do aplicativo de nuvem](discovered-apps.md#deep-dive-into-discovered-apps) em sua organização. Cloud App Security aproveita os recursos de proteção de rede do Microsoft defender ATP para bloquear o acesso de dispositivo de ponto de extremidade a aplicativos de nuvem. Você pode bloquear aplicativos [marcando-os como não **aprovados** ](governance-discovery.md#BKMK_SanctionApp) no Portal. Com base no uso abrangente e na avaliação de risco de cada aplicativo não aprovado, os domínios do aplicativo são usados para criar [indicadores de domínio](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) no portal do Microsoft defender ATP. O Microsoft defender antivírus, em execução em dispositivos de ponto de extremidade, usa os indicadores de domínio para bloquear o acesso a esses aplicativos.
 
 > [!NOTE]
 > Quer experimentar o Microsoft defender ATP? [Inscreva-se em uma avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
@@ -44,9 +44,9 @@ Depois que as informações de tráfego forem coletadas, você estará pronto pa
 - Licença do Microsoft defender ATP
 - Windows 10 versão 1709 (so Build 16299,1085 com KB4493441), Windows 10 versão 1803 (so Build 17134,704 com KB4493464), Windows 10 versão 1809 (so Build 17763,379 com KB4489899) ou versões posteriores do Windows 10
 - Microsoft Defender Antivírus
-  - [proteção em tempo real habilitada](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
-  - [proteção fornecida pela nuvem habilitada](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
-  - [Proteção de rede habilitada e configurada para o modo de bloqueio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
+  - [proteção em tempo real habilitada](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+  - [proteção fornecida pela nuvem habilitada](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+  - [Proteção de rede habilitada e configurada para o modo de bloqueio](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
 
 ## <a name="how-it-works"></a>Como ele funciona
 
@@ -120,7 +120,7 @@ Use as etapas a seguir para habilitar o controle de acesso para aplicativos de n
 
     ![Captura de tela mostrando como habilitar o bloqueio com o Microsoft defender ATP](media/defender-atp-integration.png)
 
-1. Na central de segurança do Microsoft defender, vá para **configurações**  >  **recursos avançados**e, em seguida, selecione **indicadores de rede personalizados**. Para obter informações sobre indicadores de rede, consulte [criar indicadores para IPS e URLs/domínios](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
+1. Na central de segurança do Microsoft defender, vá para **configurações**  >  **recursos avançados**e, em seguida, selecione **indicadores de rede personalizados**. Para obter informações sobre indicadores de rede, consulte [criar indicadores para IPS e URLs/domínios](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
     Isso permite que você aproveite os recursos de proteção de rede do Microsoft defender antivírus para bloquear o acesso a um conjunto predefinido de URLs usando Cloud App Security, seja atribuindo manualmente [marcas de aplicativo](governance-discovery.md#BKMK_SanctionApp) a aplicativos específicos ou usando uma política de [descoberta de aplicativo](cloud-discovery-policies.md#creating-an-app-discovery-policy)automaticamente.
 

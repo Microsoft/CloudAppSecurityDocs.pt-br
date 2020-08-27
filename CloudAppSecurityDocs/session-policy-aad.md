@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f7231db6910964dfb6fbaacb4467db7c89a2f681
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 3fc036277fac599f3075cd3c9cf765a0623e79a9
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781524"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963923"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -42,7 +42,7 @@ Por exemplo, é possível decidir que, de dispositivos não gerenciados ou, para
 * Azure AD Premium licença P1 ou a licença exigida pela sua solução IdP (provedor de identidade)
 * Os aplicativos relevantes devem ser [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)
 * Para verificar se você configurou sua solução de IdP para trabalhar com o Cloud App Security, faça o seguinte:
-  * Para [Acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  * Para [Acesso condicional do Azure AD](/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   * Para outras soluções do IdP, consulte [Configurar a integração com outras soluções de IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Criar uma política de sessão do Cloud App Security
@@ -110,7 +110,7 @@ Para exportar esses logs:
 1. Acesse a engrenagem de configurações e clique em **Controle de Aplicativo de Acesso Condicional**.
 2. No lado direito da tabela, clique no botão Exportar.
 
-    ![botão exportar](./media/export-button.png)
+    ![botão exportar](media/export-button.png)
 3. Selecione o intervalo do relatório e clique em **Exportar**. Esse processo pode demorar algum tempo.
 
 Para baixar o log exportado:
@@ -118,7 +118,7 @@ Para baixar o log exportado:
 1. Depois que o relatório estiver pronto, vá para **Configurações** e, em seguida **Relatórios exportados**.
 2. Na tabela, selecione o relatório relevante na lista de **Logs de tráfego do Controle de Aplicativos de Acesso Condicional** e clique em download.
 
-    ![botão download](./media/download-button.png)
+    ![botão download](media/download-button.png)
 
 ## <a name="block-all-downloads"></a><a name="block-download"></a>Bloquear todos os downloads
 
@@ -176,9 +176,9 @@ Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de 
 > [!div class="nextstepaction"]
 > [Solução de problemas de controles de acesso e de sessão](troubleshooting-proxy.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando o Azure AD Controle de Aplicativos de Acesso Condicional](use-case-proxy-block-session-aad.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]

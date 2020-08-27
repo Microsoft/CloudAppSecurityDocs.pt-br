@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1123002a60f5764a6a909932b0326217738a5ed8
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: e46982d06a21aa07625a00162893c2b52ecf841e
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781031"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963804"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar o Office 365 ao Microsoft Cloud App Security
 
@@ -46,7 +46,7 @@ O Cloud App Security oferece suporte aos seguintes aplicativos do Office 365:
 - Yammer
 
 > [!NOTE]
-> O Cloud App Security se integra diretamente aos [logs de auditoria do Office 365](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) e recebe todos os eventos auditados de **todos os serviços com suporte**, como PowerApps, Forms, Sway e Stream.
+> O Cloud App Security se integra diretamente aos [logs de auditoria do Office 365](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) e recebe todos os eventos auditados de **todos os serviços com suporte**, como PowerApps, Forms, Sway e Stream.
 
 ## <a name="how-to-connect-office-365-to-cloud-app-security"></a>Como conectar o Office 365 ao Cloud App Security  
 
@@ -54,11 +54,11 @@ O Cloud App Security oferece suporte aos seguintes aplicativos do Office 365:
 >
 >- Você deve ter pelo menos uma licença do Office 365 atribuída para conectar o Office 365 ao Cloud App Security.
 >- Para habilitar o monitoramento das atividades do Office 365 no Cloud App Security, é necessário habilitar a auditoria no [centro de conformidade e segurança do Office](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
->- O log de auditoria de administrador do Exchange, que é habilitado por padrão no Office 365, registra um evento no log de auditoria do Office 365 quando um administrador (ou um usuário que tenha recebido privilégios administrativos) faz uma alteração em sua organização do Exchange Online. As alterações feitas usando o centro de administração do Exchange ou executando um cmdlet do Windows PowerShell são registradas no log de auditoria de administrador do Exchange. Para ver informações detalhadas sobre o log de auditoria de administrador do Exchange, consulte [Log de auditoria de administrador](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
+>- O log de auditoria de administrador do Exchange, que é habilitado por padrão no Office 365, registra um evento no log de auditoria do Office 365 quando um administrador (ou um usuário que tenha recebido privilégios administrativos) faz uma alteração em sua organização do Exchange Online. As alterações feitas usando o centro de administração do Exchange ou executando um cmdlet do Windows PowerShell são registradas no log de auditoria de administrador do Exchange. Para ver informações detalhadas sobre o log de auditoria de administrador do Exchange, consulte [Log de auditoria de administrador](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
 >- O log de auditoria do Exchange Mailbox deve estar ativado para cada caixa de correio do usuário para que as atividades do usuário no Exchange Online sejam registrada em log, consulte [Atividades do Exchange Mailbox](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- Se os aplicativos do Office estiverem habilitados, os grupos que fazem parte do Office 365 também serão importados para o Cloud App Security nos aplicativos do Office; por exemplo, se o SharePoint estiver habilitado, os Grupos do Office 365 também serão importados como grupos do SharePoint.
 >- Você deve [habilitar a auditoria no Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) para obter os logs. Após a habilitação da auditoria, o Cloud App Security começará a obter os logs (com um atraso de 24 a 72 horas).
->- Você deve [habilitar a auditoria no Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) para obter os logs a partir daí. Após a habilitação da auditoria, o Cloud App Security começará a obter os logs (com um atraso de 24 a 72 horas).
+>- Você deve [habilitar a auditoria no Dynamics 365](/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) para obter os logs a partir daí. Após a habilitação da auditoria, o Cloud App Security começará a obter os logs (com um atraso de 24 a 72 horas).
 >- Se o Azure Active Directory estiver definido para sincronizar automaticamente com os usuários no seu ambiente local do Active Directory, as configurações no ambiente local substituirão as configurações do Azure AD e o uso da ação de governança **Suspender usuário** será revertida.
 >- Para atividades de entrada do Azure AD, Cloud App Security apenas superfícies atividades de entrada interativas e atividades de entrada de protocolos herdados, como o ActiveSync. As atividades de entrada não interativas podem ser exibidas no log de auditoria do Azure AD.
 > - Só há suporte para [implantações de várias regiões](/office365/enterprise/office-365-multi-geo) no onedrive

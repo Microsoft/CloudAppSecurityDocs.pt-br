@@ -12,14 +12,14 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 0f5fbf5668d49ced48b2a1afe0fc1893e077bf43
-ms.sourcegitcommit: f4ed1283e73af88201dd85fc6a59300cd31341d7
+ms.openlocfilehash: 830eae43a1bd33df1669bc05e9cbc125794af75b
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88807618"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964008"
 ---
-# <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
+# <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integrar e implantar o Controle de Aplicativos de Acesso Condicional em qualquer aplicativo
 
 *Aplica-se a: Microsoft Cloud App Security*
 
@@ -31,7 +31,7 @@ Para obter uma lista de aplicativos que são apresentados por Cloud App Security
 
 - Sua organização deve ter as seguintes licenças para usar Controle de Aplicativos de Acesso Condicional:
 
-  - [Azure Active Directory (Azure AD) Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) ou superior, ou a licença exigida pela sua solução IDP (provedor de identidade)
+  - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/license-users-groups) ou superior, ou a licença exigida pela sua solução IDP (provedor de identidade)
   - Microsoft Cloud App Security
 
 - Os aplicativos devem ser configurados com logon único
@@ -59,7 +59,7 @@ Siga estas etapas para configurar qualquer aplicativo a ser controlado pelo Clou
 **Etapa 6: [atualizar a política do Azure ad](#update-azure-ad)**
 
 > [!NOTE]
-> Para implantar Controle de Aplicativos de Acesso Condicional para aplicativos do Azure AD, você precisa de uma [licença válida para Azure Active Directory Premium P1 ou superior](https://docs.microsoft.com/azure/active-directory/license-users-groups) , bem como uma licença de Cloud app Security.
+> Para implantar Controle de Aplicativos de Acesso Condicional para aplicativos do Azure AD, você precisa de uma [licença válida para Azure Active Directory Premium P1 ou superior](/azure/active-directory/license-users-groups) , bem como uma licença de Cloud app Security.
 
 ## <a name="step-1--configure-your-idp-to-work-with-cloud-app-security"></a>Etapa 1: configurar seu IdP para trabalhar com Cloud App Security<a name="conf-idp"></a><a name="conf-azure-ad"></a>
 
@@ -171,7 +171,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
 
-| Status do aplicativo | Description | Etapas |
+| Status do aplicativo | Descrição | Etapas |
 | --- | --- | --- |
 | Não reconhecido | Você verá uma página aplicativo não reconhecido solicitando que você configure seu aplicativo. | 1. [adicione o aplicativo ao controle de aplicativos de acesso condicional](#add-app).<br /> 2. [adicione os domínios para o aplicativo](#add-domains)e, em seguida, retorne ao aplicativo e atualize a página.<br /> 3. [Instale os certificados para o aplicativo](#install-certs). |
 | Reconhecido | Você verá uma página de integração solicitando que você continue o processo de configuração do aplicativo. | - [Instale os certificados para o aplicativo](#install-certs). <br /><br /> **Observação:** Verifique se o aplicativo está configurado com todos os domínios necessários para que o aplicativo funcione corretamente. Para configurar domínios adicionais, vá para [adicionar os domínios do aplicativo](#add-domains)e, em seguida, retorne à página do aplicativo. |

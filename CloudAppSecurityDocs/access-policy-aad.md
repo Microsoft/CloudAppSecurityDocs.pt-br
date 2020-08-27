@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2256703ee2c92774635f7ce04dfa0c08694bd627
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 9fdea4bcf8db70a1f8eed023cb8af81d328b8771
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779501"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963515"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
@@ -35,7 +35,7 @@ As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento
 - Azure AD Premium licença P1 ou a licença exigida pela sua solução IdP (provedor de identidade)
 - Os aplicativos relevantes devem ser [implantados com o Controle de Aplicativo de Acesso Condicional](proxy-deployment-aad.md)
 - Para verificar se você configurou sua solução de IdP para trabalhar com o Cloud App Security, faça o seguinte:
-  - Para [Acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  - Para [Acesso condicional do Azure AD](/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configurar a integração com o Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   - Para outras soluções do IdP, consulte [Configurar a integração com outras soluções de IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Criar uma política de acesso do Cloud App Security
@@ -73,7 +73,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 > [!div class="nextstepaction"]
 > [PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando controles de sessão](use-case-proxy-block-session-aad.md)

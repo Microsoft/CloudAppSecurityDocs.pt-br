@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2e37846ab6e3daea68358834df20a6ce2ee1ee8c
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 2d3c3b7b3cc3b9984b19cfe1685ab8660d039e2d
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781473"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963787"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -99,21 +99,21 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 | Azure | | Administrador global |
 | AWS | | Usuário recém-criado |
 | Box | Enterprise | É altamente recomendável que você se conecte ao box como um administrador. Conectar-se como um coadministrador resultará em apenas visibilidade parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
-| Dropbox | Business/Enterprise | Admin |
+| Dropbox | Business/Enterprise | Administrador |
 | GitHub | GitHub Enterprise Cloud | Proprietário |
 | GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (não de avaliação) | Admin |
-| Salesforce | | Admin |
+| Okta | Enterprise (não de avaliação) | Administrador |
+| Salesforce | | Administrador |
 | ServiceNow | Eureka e superior | Função admin + RestAPI |
 | Webex | | Admin + administrador de conformidade |
 | Workday | | Consulte os [pré-requisitos do workday de conexão](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
 
-O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do **emparelhamento público** do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
-Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do **emparelhamento público** do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
+Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](/azure/expressroute/expressroute-circuit-peerings).
 
 ## <a name="disable-app-connectors"></a>Desabilitar conectores de aplicativos
 

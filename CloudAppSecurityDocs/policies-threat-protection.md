@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1fa2a1e9d0c46531284b674cf20dd512ecba292c
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 5efaa862e32264005fa3b469218c4aad041b12b7
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254781"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963991"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 
@@ -23,7 +23,7 @@ ms.locfileid: "87254781"
 Cloud App Security permite identificar o uso de alto risco e problemas de segurança na nuvem, detectar comportamento anormal do usuário e evitar ameaças em seus aplicativos de nuvem aprovados. Obtenha visibilidade das atividades de usuário e administrador e defina políticas para alertar automaticamente quando um comportamento suspeito ou atividades específicas consideradas arriscadas forem detectadas. Desenhe com a vasta quantidade de dados de pesquisa de ameaças e segurança da Microsoft para ajudar a garantir que seus aplicativos aprovados tenham todos os controles de segurança de que você precisa em vigor e o ajudem a manter o controle sobre eles.
 
 > [!NOTE]
-> Ao integrar Cloud App Security com o Azure ATP (proteção avançada contra ameaças) do Azure, as políticas do Azure ATP também aparecem na página políticas. Para obter uma lista de políticas do Azure ATP, consulte [alertas de segurança](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
+> Ao integrar Cloud App Security com o Azure ATP (proteção avançada contra ameaças) do Azure, as políticas do Azure ATP também aparecem na página políticas. Para obter uma lista de políticas do Azure ATP, consulte [alertas de segurança](/azure-advanced-threat-protection/suspicious-activity-guide).
 
 ## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>Detectar e controlar a atividade do usuário de locais desconhecidos
 

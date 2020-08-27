@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 05a2263427f30bcfcd1fdc0fb3b402e115dc3d9e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: b8bb6205a2e1e8e1e9f27a8e67158c9b25a4648b
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781320"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963498"
 ---
 # <a name="azure-information-protection-integration"></a>Integração à Proteção de Informações do Azure
 
@@ -28,7 +28,7 @@ ms.locfileid: "88781320"
 O Microsoft Cloud App Security permite aplicar rótulos de classificação da Proteção de Informações do Azure automaticamente, com ou sem proteção, a arquivos como uma ação de governança da política de arquivo. Também é possível investigar arquivos com a filtragem do rótulo de classificação aplicado no portal do Cloud App Security. O uso de classificações proporciona mais visibilidade e controle sobre os dados confidenciais na nuvem. A integração de Proteção de Informações do Azure ao Cloud App Security é tão fácil quanto marcar uma única caixa de seleção.
 
 > [!NOTE]
-> Este artigo também é relevante para rótulos de sensibilidade unificada do Office 365 se você já tiver [migrado seus rótulos de classificação para o centro de conformidade e segurança do office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Se você não migrou os rótulos de classificação existentes e começa a criar novos rótulos no centro de conformidade e segurança do Office 365, Cloud App Security usará somente os rótulos preexistentes configurados no portal da proteção de informações do Azure.
+> Este artigo também é relevante para rótulos de sensibilidade unificada do Office 365 se você já tiver [migrado seus rótulos de classificação para o centro de conformidade e segurança do office 365](/azure/information-protection/configure-policy-migrate-labels). Se você não migrou os rótulos de classificação existentes e começa a criar novos rótulos no centro de conformidade e segurança do Office 365, Cloud App Security usará somente os rótulos preexistentes configurados no portal da proteção de informações do Azure.
 
 Integrando a Proteção de Informações do Azure ao Cloud App Security, é possível usar todo o potencial dos dois serviços e proteger arquivos na nuvem, incluindo:
 
@@ -61,7 +61,7 @@ Os arquivos que foram rotulados com proteção fora do Cloud App Security não p
 
 ## <a name="how-it-works"></a>Como ele funciona
 
-Provavelmente, você já conhece os rótulos de classificação de arquivos da [Proteção de Informações do Azure](https://docs.microsoft.com/azure/information-protection/what-is-information-protection). As marcações de classificação da Proteção de Informações do Azure são exibidas no Cloud App Security. Assim que você integrar o Cloud App Security à Proteção de Informações do Azure, o Cloud App Security verificará os arquivos da seguinte maneira:
+Provavelmente, você já conhece os rótulos de classificação de arquivos da [Proteção de Informações do Azure](/azure/information-protection/what-is-information-protection). As marcações de classificação da Proteção de Informações do Azure são exibidas no Cloud App Security. Assim que você integrar o Cloud App Security à Proteção de Informações do Azure, o Cloud App Security verificará os arquivos da seguinte maneira:
 
 1. O Cloud App Security recupera a lista de todos os rótulos de classificação usados em seu locatário. Esta ação é executada a cada hora para manter a lista atualizada.
 
@@ -182,7 +182,7 @@ Siga estas instruções para criar a política de arquivo:
 Você também pode optar por definir alertas, notificação do usuário ou tomar ação imediata para essas políticas.
 Saiba mais sobre [ações de governança](governance-actions.md).
 
-Saiba mais sobre [Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) e confira o [tutorial de Início Rápido](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial) da Proteção de Informações do Azure.
+Saiba mais sobre [Proteção de Informações do Azure](/information-protection/understand-explore/what-is-information-protection) e confira o [tutorial de Início Rápido](/information-protection/get-started/infoprotect-quick-start-tutorial) da Proteção de Informações do Azure.
 
 ## <a name="next-steps"></a>Próximas etapas
 

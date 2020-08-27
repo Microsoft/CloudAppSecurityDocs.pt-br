@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a5c7411a893fd29c94f344a343423588dbb79bf9
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 80c189a094aff17eaaa489980fc492064bebbfae
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781456"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963736"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuração básica do Cloud App Security
 
@@ -66,9 +66,9 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
 1. Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **exportar configurações do portal** para criar um arquivo JSON de todas as configurações do portal, incluindo regras de política, grupos de usuários e intervalos de endereços IP.
 
 > [!NOTE]
-> Se você usa o ExpressRoute, o Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do **emparelhamento público** do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
+> Se você usa o ExpressRoute, o Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do **emparelhamento público** do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
 >
-> Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+> Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](/azure/expressroute/expressroute-circuit-peerings).
 
 ## <a name="next-steps"></a>Próximas etapas
 

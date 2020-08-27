@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 32a4b3542a7abc7d96ae6ca111fbfba7a6a5fbff
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 534c12f66d52c1085477c90fc36d43f004324fb1
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779127"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963906"
 ---
 # <a name="generic-siem-integration"></a>Integração genérica ao SIEM
 
@@ -31,7 +31,7 @@ Ao integrar o SIEM primeiro com o Cloud App Security, atividades e alertas dos �
 As soluções de integração adicionais incluem:
 
 * **Azure Sentinel** – um Siem escalonável, nativo de nuvem e disparar para integração nativa. Para obter informações sobre como integrar com o Azure Sentinel, consulte [integração do Azure Sentinel](siem-sentinel.md).
-* **Microsoft Security Graph API** -um serviço intermediário (ou agente) que fornece uma única interface programática para conectar vários provedores de segurança. Para obter mais informações, consulte [integrações de solução de segurança usando a API de segurança do Microsoft Graph](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Microsoft Security Graph API** -um serviço intermediário (ou agente) que fornece uma única interface programática para conectar vários provedores de segurança. Para obter mais informações, consulte [integrações de solução de segurança usando a API de segurança do Microsoft Graph](/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!IMPORTANT]
 > Se você estiver integrando a proteção avançada contra ameaças do Azure no Cloud App Security e os dois serviços estiverem configurados para enviar notificações de alerta para um SIEM, você começará a receber notificações de SIEM duplicadas para o mesmo alerta. Um alerta será emitido de cada serviço e eles terão diferentes IDs de alerta. Para evitar a duplicação e a confusão, certifique-se de lidar com o cenário. Por exemplo, decida onde você pretende executar o gerenciamento de alertas e, em seguida, interrompa as notificações do SIEM sendo enviadas do outro serviço.
@@ -78,16 +78,16 @@ A integração ao SIEM é realizada em três etapas:
     ![Captura de tela mostrando o menu Adicionar integração SIEM](media/siem0.png)
 
 1. No assistente, clique em **Iniciar Assistente**.
-1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Próximo**.
+1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Avançar**.
 
     ![Configurações gerais do SIEM](media/siem1.png)
 
 1. Digite o endereço IP ou nome de host do **Host do syslog remoto** e o **Número da porta do syslog**. Selecione TCP ou UDP como o protocolo do Syslog Remoto.
-    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Próximo**.
+    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Avançar**.
 
     ![Configurações do Syslog Remoto](media/siem2.png)
 
-1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Próximo**.
+1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Avançar**.
 
    ![Configurações de tipos de dados](media/siem3.png)
 

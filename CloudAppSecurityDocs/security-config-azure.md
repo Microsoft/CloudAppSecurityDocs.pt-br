@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0d821e574dc241097d70814cf854c46e4db2664b
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 1a066955c2a832f46f38c128a908c9f772f0dbe3
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781541"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963974"
 ---
 # <a name="security-configuration-for-azure"></a>Configuração de segurança para o Azure
 
@@ -63,7 +63,7 @@ Para habilitar as recomendações de configuração de segurança no Microsoft C
 
     ![configuração de segurança](media/security-configuration-azure.png)
 
-Para obter informações de como implementar as recomendações de segurança, confira [Gerenciando recomendações de segurança na Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
+Para obter informações de como implementar as recomendações de segurança, confira [Gerenciando recomendações de segurança na Central de Segurança do Azure](/azure/security-center/security-center-recommendations).
 
 ## <a name="next-steps"></a>Próximas etapas
 
