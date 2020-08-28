@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 484f075eab95703f4bfc514ea5e84f5cf4793403
-  ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+  ms.openlocfilehash: 4399b6b4191ed901adc17d4c8e0eaca9bc0d6b07
+  ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/24/2020
-  ms.locfileid: "88781388"
+  ms.lasthandoff: 08/27/2020
+  ms.locfileid: "88963447"
 landingContent:
 - title: Sobre o Cloud App Security
   linkLists:
@@ -148,7 +148,7 @@ landingContent:
     - text: Leia nossos livros eletrônicos
       url: e-books.md
     - text: Explorar o Microsoft 365, uma solução completa que inclui o Cloud App Security
-      url: https://docs.microsoft.com/microsoft-365/
+      url: /microsoft-365/
   - linkListType: video
     links:
     - text: Assista aos nossos webinars
