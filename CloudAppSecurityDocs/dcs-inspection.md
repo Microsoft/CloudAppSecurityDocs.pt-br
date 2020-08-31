@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 18e4aa471a5223234b961e62742f69b2f93d03ae
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 9d9032b0084a1c25290f8e067279f9ef7e66f8a6
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780317"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150070"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integração dos Serviços de Classificação de Dados da Microsoft
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security permite que você use nativamente o Serviço de Classificação de Dados da Microsoft para classificar os arquivos em seus aplicativos na nuvem. O Serviço de Classificação de Dados da Microsoft fornece uma experiência de proteção de informações unificada no Office 365, na Proteção de Informações do Azure e no Microsoft Cloud App Security. O serviço de classificação permite que você estenda seus esforços de classificação de dados para os aplicativos de nuvem de terceiros protegidos pelo Microsoft Cloud App Security usando as decisões que você já tomou em um número ainda maior de aplicativos.
+O Microsoft Cloud App Security permite que você use nativamente o Serviço de Classificação de Dados da Microsoft para classificar os arquivos em seus aplicativos na nuvem. O serviço de classificação de dados da Microsoft fornece uma experiência unificada de proteção de informações em Microsoft 365, proteção de informações do Azure e Microsoft Cloud App Security. O serviço de classificação permite que você estenda seus esforços de classificação de dados para os aplicativos de nuvem de terceiros protegidos pelo Microsoft Cloud App Security usando as decisões que você já tomou em um número ainda maior de aplicativos.
 
 >[!NOTE]
 > Esse recurso está disponível no momento nos EUA, Europa, Austrália, Índia, Canadá, Japão e na Austrália.
@@ -50,7 +50,7 @@ Você tem a opção de definir o **Método de inspeção** para usar o **Serviç
 
 6. Aproveitando as políticas de arquivo, você também pode definir alertas e ações de governança para a política. Para obter mais informações, confira [Políticas de arquivo](data-protection-policies.md) e [Ações de governança](governance-actions.md). Aproveitando as políticas de sessão, você também pode monitorar e controlar ações em tempo real quando um arquivo corresponde a um tipo de DCS. Para obter mais informações, consulte [política de sessão](session-policy-aad.md).
 
-Definir essas políticas permite que você amplie facilmente a força dos recursos de DLP do Office 365 para todos os seus outros aplicativos de nuvem sancionados e proteja os dados armazenados neles com o conjunto de ferramentas completo fornecido pelo Microsoft Cloud App Security, como a capacidade de [aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure](azip-integration.md) e a capacidade de controlar as permissões de compartilhamento.
+Definir essas políticas permite que você estenda facilmente a força do Microsoft 365 recursos de DLP para todos os seus aplicativos de nuvem aprovados e proteja os dados armazenados neles com o conjunto de ferramentas completo fornecido a você por Microsoft Cloud App Security – como a capacidade de [aplicar automaticamente rótulos de classificação da proteção de informações do Azure](azip-integration.md) e a capacidade de controlar permissões de compartilhamento.
 
 ## <a name="next-steps"></a>Próximas etapas
 

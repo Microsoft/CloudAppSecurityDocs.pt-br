@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4bc31fda0e2e647e386d2ce1d5b55e8d2fff6174
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 5bf75b479f3568b7c6451880f3a2774104d8115a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779722"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149629"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias
 
@@ -35,7 +35,7 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Falhas de logon
 * Atividade do administrador
 * Contas inativas
-* Local
+* Localização
 * Viagem impossível
 * Agente de dispositivo e usuário
 * Taxa de atividade
@@ -81,7 +81,7 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
     > * Box
     > * Dropbox
     > * G Suite
-    > * Office 365 (requer uma licença válida para a proteção avançada contra ameaças do Office 365 P1)
+    > * Microsoft 365 (requer uma licença válida para a proteção avançada contra ameaças do Office 365 P1)
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
 

@@ -73,7 +73,7 @@
           href: protect-gcp.md
         - name: Proteger o G Suite
           href: protect-gsuite.md
-        - name: Proteger o Office 365
+        - name: Proteger Microsoft 365
           href: protect-office-365.md
         - name: Proteger o Okta
           href: protect-okta.md
@@ -163,7 +163,7 @@
           href: connect-google-apps-to-microsoft-cloud-app-security.md
         - name: Conectar o GCP
           href: connect-google-gcp-to-microsoft-cloud-app-security.md
-        - name: Conectar o Office 365
+        - name: Conectar o Microsoft 365
           href: connect-office-365-to-microsoft-cloud-app-security.md
         - name: Conectar o Okta
           href: connect-okta-to-microsoft-cloud-app-security.md

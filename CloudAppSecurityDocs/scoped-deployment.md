@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0d4d046b406e0849437d02f1abba87948e488473
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 2f9a2d504eded5f57f415aac2841c4e78cda7e2a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779178"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149849"
 ---
 # <a name="scoped-deployment"></a>Implantação com escopo <a name="scoped-deployment"></a> 
 
@@ -33,7 +33,7 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
 
 - Para definir o escopo de sua implantação, primeiro [importe grupos de usuários](user-groups.md) no Microsoft Cloud App Security. Por padrão, você verá os seguintes grupos:
 
-  - Grupo de usuários de **aplicativo** – um grupo integrado que lhe permite ver as atividades executadas pelos aplicativos do Office 365 e do Azure AD.
+  - Grupo de usuários de **aplicativos** – um grupo interno que permite que você veja atividades executadas por Microsoft 365 e aplicativos do Azure AD.
 
   - Grupo de **usuários externos** – todos os usuários que não são membros de qualquer um dos domínios gerenciados que você configurou para sua organização.
 
@@ -77,7 +77,7 @@ As regras de inclusão e exclusão criadas por você funcionam juntas para defin
 Se você criar as seguintes regras:
 
 - Excluir o grupo de usuários "Alemanha todos os usuários"
-- Incluir no grupo de usuários "Vendas globais"somente as atividades do Office 365
+- Incluir para o grupo de usuários "vendas globais" apenas Microsoft 365 atividades
 - Incluir no grupo de usuário "Gerentes de vendas" somente atividades do Power BI
 - O Salesforce está conectado ao Microsoft Cloud App Security e não há regras definidas para ele
 
@@ -86,8 +86,8 @@ As seguintes atividades de usuário são monitoradas:
 |Usuário|Associação de grupo|Atividades monitoradas|
 |----|----|----|
 |Manuela|Alemanha todos os usuários<br />Vendas globais<br />Gerentes de vendas|Nenhum|
-|Davi|Vendas globais|Office 365 e todos os subaplicativos, exceto o Power BI|
-|Barros|Vendas globais<br />Gerentes de vendas|Office 365 e todos os subaplicativos|
+|Davi|Vendas globais|Microsoft 365 e todos os subaplicativos, exceto Power BI|
+|Barros|Vendas globais<br />Gerentes de vendas|Microsoft 365 e todos os subaplicativos|
 |Diogo|Gerentes de vendas|Apenas Power BI|
 
 > [!NOTE]

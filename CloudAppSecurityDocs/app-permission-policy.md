@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6d3d281d8ad56e52f717125f62a7feb580b007b9
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: dd6e6f00f39c4107884620d2514145022596c95c
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781337"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149747"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 
@@ -27,7 +27,7 @@ ms.locfileid: "88781337"
 
 Além da [investigação existente dos aplicativos OAuth](manage-app-permissions.md) conectados ao seu ambiente, você pode definir políticas de permissão para obter notificações automatizadas quando um aplicativo OAuth atender a determinados critérios. Por exemplo, você poderá receber um alerta automaticamente quando houver aplicativos que exijam um nível de permissão elevado e que tenham sido autorizados por mais de 50 usuários.
 
-As políticas de aplicativo OAuth permitem que você investigue quais permissões cada aplicativo solicitou e quais usuários as autorizaram para Office 365, G Suite e Salesforce. Você também poderá marcar essas permissões como aprovadas ou banidas. Marcá-las como banidas revogará as permissões de cada aplicativo de cada usuário que as autorizou.
+As políticas de aplicativo OAuth permitem investigar quais permissões cada aplicativo solicitou e quais usuários os autorizam por Microsoft 365, G Suite e Salesforce. Você também poderá marcar essas permissões como aprovadas ou banidas. Marcá-las como banidas revogará as permissões de cada aplicativo de cada usuário que as autorizou.
 
 ## <a name="create-a-new-oauth-app-policy"></a>Criar uma nova política de aplicativo OAuth
 

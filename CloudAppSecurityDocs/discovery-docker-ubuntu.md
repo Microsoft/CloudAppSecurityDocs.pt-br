@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6fa59bf106e41aa0f0dbc9ea2252c7053f22245f
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 575028a9df41f8340c4a7a398fb05b5264ee93bb
+ms.sourcegitcommit: 1554e381acc1e58de113d3b427f4e9de91b98488
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780334"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89148719"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker no Linux local
 
@@ -148,7 +148,7 @@ Você verá a mensagem: **concluído com êxito!**
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Etapa 3 — Configuração local de seus dispositivos de rede
 
-Configure os proxies e os firewalls de rede para periodicamente exportar logs para a porta do Syslog dedicada do diretório de FTP de acordo com as instruções na caixa de diálogo. Por exemplo:
+Configure seus firewalls de rede e proxies para exportar periodicamente os logs para a porta de syslog dedicada ou o diretório de FTP de acordo com as instruções na caixa de diálogo. Por exemplo:
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\

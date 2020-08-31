@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 534c12f66d52c1085477c90fc36d43f004324fb1
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: ab60b9237af0d2dadbfbe6c48b6e2f17ff80df3b
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963906"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150274"
 ---
 # <a name="generic-siem-integration"></a>Integração genérica ao SIEM
 
@@ -160,7 +160,7 @@ O texto a seguir é um exemplo de arquivo de log de alertas:
 | Atividades/Alertas | rt | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | msg | Descrição da atividade ou do alerta, conforme mostrado no portal |
 | Atividades/Alertas | suser | Usuário de entidade da atividade ou do alerta |
-| Atividades/Alertas | destinationServiceName | Aplicativo de origem da atividade ou do alerta; por exemplo, Office 365, SharePoint e Box. |
+| Atividades/Alertas | destinationServiceName | Aplicativo originador de atividade ou alerta, por exemplo, Microsoft 365, SharePoint, box. |
 | Atividades/Alertas | cs\<X>Label | Cada rótulo tem um significado diferente, mas o rótulo em si é autoexplicativo; por exemplo, targetObjects (objetos de destino). |
 | Atividades/Alertas | cs\<X> | As informações correspondentes ao rótulo (o usuário de destino da atividade ou do alerta, de acordo com o exemplo de rótulo). |
 | Atividades | EVENT_CATEGORY_* | Categoria de alto nível da atividade |

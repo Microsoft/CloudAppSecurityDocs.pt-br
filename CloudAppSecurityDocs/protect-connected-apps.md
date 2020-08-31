@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9130c75680ec6cb095d3995cd4a5aee3329f3189
-ms.sourcegitcommit: 9395620dfc916b0954207c4fe26f58c76cdfe0d0
+ms.openlocfilehash: 6e970d0ef3d2d89fecdbc224c9f56f5dbc29f33b
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2020
-ms.locfileid: "85953684"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150223"
 ---
 # <a name="protecting-connected-apps"></a>Protegendo aplicativos conectados
 
@@ -36,7 +36,7 @@ A amplitude do suporte para cada aplicativo depende da riqueza de suas APIs. Use
 - [Proteger o GitHub Enterprise Cloud](protect-github.md)
 - [Proteger o GCP](protect-gcp.md)
 - [Proteger o G Suite](protect-gsuite.md)
-- [Proteger o Office 365](protect-office-365.md)
+- [Proteger Microsoft 365](protect-office-365.md)
 - [Proteger o Okta](protect-okta.md)
 - [Proteger o Salesforce](protect-salesforce.md)
 - [Proteger o ServiceNow](protect-servicenow.md)

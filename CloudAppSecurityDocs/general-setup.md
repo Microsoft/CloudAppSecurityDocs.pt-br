@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 80c189a094aff17eaaa489980fc492064bebbfae
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 7540ac541f3a6c83191f54c2b4d2df773483299e
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963736"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150121"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuração básica do Cloud App Security
 
@@ -59,7 +59,7 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
 
 1. Se você estiver se integrando com a integração da Proteção de Informações do Azure, confira [Integração da Proteção de Informações do Azure](azip-integration.md) para obter informações.
 
-    * Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+    * Para trabalhar com a integração da proteção de informações do Azure, você deve habilitar o [conector de aplicativos para Microsoft 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 1. Se você estiver integrando com a integração da proteção avançada contra ameaças do Azure, consulte [integração da proteção avançada contra ameaças do Azure](azip-integration.md) para obter informações.
 

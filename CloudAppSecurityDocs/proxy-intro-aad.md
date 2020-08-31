@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a1d6abfc92a1678f954c4a332dc4c7e5e82536b8
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: a8793a96269f42dce827d101e717543ad873dacd
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963957"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150140"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -130,7 +130,7 @@ Cloud App Security identifica aplicativos usando as informações disponíveis e
 
 Muitas organizações que optam por usar controles de sessão para aplicativos de nuvem para controlar as atividades na sessão, também aplicam controles de acesso para bloquear o mesmo conjunto de aplicativos de cliente móvel e de desktop nativos, fornecendo, assim, segurança abrangente para os aplicativos.
 
-Você pode bloquear o acesso a aplicativos cliente móveis nativos e de desktop com políticas de acesso, definindo o filtro de **aplicativo cliente** como **móvel e área de trabalho**. Alguns aplicativos cliente nativos podem ser reconhecidos individualmente, enquanto outros que fazem parte de um pacote de aplicativos só podem ser identificados como seu aplicativo de nível superior. Por exemplo, aplicativos como o SharePoint Online só podem ser reconhecidos pela criação de uma política de acesso aplicada aos aplicativos do Office 365.
+Você pode bloquear o acesso a aplicativos cliente móveis nativos e de desktop com políticas de acesso, definindo o filtro de **aplicativo cliente** como **móvel e área de trabalho**. Alguns aplicativos cliente nativos podem ser reconhecidos individualmente, enquanto outros que fazem parte de um pacote de aplicativos só podem ser identificados como seu aplicativo de nível superior. Por exemplo, aplicativos como o SharePoint Online só podem ser reconhecidos pela criação de uma política de acesso aplicada a aplicativos Microsoft 365.
 
 > [!NOTE]
 > A menos que o filtro de **aplicativo cliente** seja definido especificamente como **móvel e área de trabalho**, a política de acesso resultante só se aplicará a sessões do navegador. O motivo para isso é evitar a proxy inadvertidamente de sessões de usuário, o que pode ser um subproduto do uso desse filtro. Embora a maioria dos principais navegadores dê suporte à execução de uma verificação de certificado de cliente, alguns aplicativos móveis e de área de trabalho usam navegadores internos que podem não dar suporte a essa verificação. Portanto, o uso desse filtro pode afetar a autenticação para esses aplicativos.
@@ -142,7 +142,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 > [!NOTE]
 >
 > - O Cloud app Security aproveita os protocolos do protocolo TLS 1.2 + para fornecer a melhor criptografia de classe. Aplicativos cliente nativos e navegadores que não dão suporte a TLS 1.2 +, não estarão acessíveis quando configurados com controle de sessão. No entanto, aplicativos SaaS que usam TLS 1.1 ou inferior aparecerão no navegador como usando TLS 1.2+ quando configurados com o Cloud App Security.
-> - Para aplicar controles de sessão ao portal.office.com, você deve integrar Microsoft Office centro de administração 365. Para obter mais informações sobre aplicativos de integração, consulte [integração e implantação controle de aplicativos de acesso condicional para qualquer aplicativo](proxy-deployment-any-app.md).
+> - Para aplicar controles de sessão ao portal.office.com, você deve carregar Microsoft 365 centro de administração. Para obter mais informações sobre aplicativos de integração, consulte [integração e implantação controle de aplicativos de acesso condicional para qualquer aplicativo](proxy-deployment-any-app.md).
 
 <a name="featured-apps"></a>Qualquer aplicativo Web configurado usando os [protocolos de autenticação mencionados anteriormente](#supported-apps-and-clients) pode ser integrado para trabalhar com controles de acesso e de sessão. Além disso, os aplicativos a seguir são apresentados por Cloud App Security e já estão integrados e prontos para uso em qualquer locatário:
 
@@ -167,7 +167,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Salesforce
 - ServiceNow
 - SharePoint online
-- Margem de atraso
+- Slack
 - Tableau
 - Microsoft Teams (versão prévia)
 - Workday
@@ -175,9 +175,9 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Workplace by Facebook
 - Yammer (versão prévia)
 
-### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Aplicativos em destaque do Office 365
+### <a name="microsoft-365-featured-apps"></a><a name="O365-apps"></a>Microsoft 365 aplicativos em destaque
 
-Veja a seguir uma lista de aplicativos em destaque com suporte no Office 365 Cloud App Security. Para usar esses aplicativos com Cloud App Security, você deve ter uma licença do Office 365 e5.
+A seguir está uma lista de aplicativos em destaque com suporte no Cloud App Security Microsoft 365. Para usar esses aplicativos com Cloud App Security, você deve ter uma licença do Office 365 e5.
 
 - Exchange Online
 - OneDrive for Business

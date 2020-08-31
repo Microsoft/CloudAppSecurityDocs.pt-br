@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 0f6528074003d43777d21e956961739a19584742
-ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
+ms.openlocfilehash: 73045177f79bb17c5adbf2d19c9c41875e135b51
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87377823"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149713"
 ---
 # <a name="activities-api"></a>API de atividades
 
@@ -35,15 +35,15 @@ Para obter informações sobre como os filtros funcionam, consulte [filtros](api
 
 A tabela a seguir descreve os filtros com suporte:
 
-| Filtrar | Type | Operadores | Descrição |
+| Filtrar | Tipo | Operadores | Descrição |
 | --- | --- | --- | --- |
 | serviço | inteiro | EQ, NEQ | Filtrar atividades relacionadas à appID de serviço especificada, por exemplo: 11770 |
 | instance | inteiro | EQ, NEQ | Filtrar atividades de instâncias especificadas |
 | User. orgUnit | string | EQ, NEQ, isset, isnotset | Filtrar atividades pela unidade organizacional do usuário em execução |
 | Activity. eventType | string | EQ, NEQ | Filtrar atividades por tipo de evento |
 | activity.id | string | eq | Localizar uma atividade por ID |
-| atividade. representada | boolean | eq | Se definido como "true", retorna apenas eventos representados, se definido como "false", retorna eventos não representados |
-| atividade. tipo | boolean | eq | Se definido como "true", retorna somente eventos admin, se definido como "false", retorna eventos regulares |
+| atividade. representada | booleano | eq | Se definido como "true", retorna apenas eventos representados, se definido como "false", retorna eventos não representados |
+| atividade. tipo | booleano | eq | Se definido como "true", retorna somente eventos admin, se definido como "false", retorna eventos regulares |
 | Activity. takeaction | string | EQ, NEQ | Filtrar atividades pelas ações executadas nelas. Os valores possíveis incluem:<br /><br />**bloco**: bloqueado<br />**proxy**: Redirecionado para controle de sessão<br />**BypassProxy**: ignorar controle de sessão<br />**criptografar**: criptografado<br />**descriptografar**: descriptografado<br />**verificado**: verificado<br />**encryptionFailed**: falha na criptografia<br />**proteger**: protegido<br />**verificar**: exigir autenticação step-up<br />**NULL**: nenhuma ação |
 | dispositivo. tipo | string | EQ, NEQ | Filtrar atividades por tipo de dispositivo. Os valores possíveis incluem:<br /><br />**área de trabalho**: PC<br />**Móvel**: móvel<br />**Tablet**: Tablet<br />**Outro**: outros<br />**NULL**: nenhum valor |
 | Device. Tags | string | EQ, NEQ | Filtrar atividades por IDs de marca de dispositivo |
@@ -53,7 +53,7 @@ A tabela a seguir descreve os filtros com suporte:
 | local. organizações | string | EQ, NEQ, isset, isnotset, contém | Filtrar atividades originadas da organização especificada |
 | IP. Address | string | EQ, StartsWith, doesnotstartwith, isset, isnotset, NEQ | Filtrar atividades provenientes do endereço IP fornecido |
 | fileseletor | file | EQ, NEQ | Filtrar atividades que contêm o arquivo/pasta especificado |
-| office365url | string | StartsWith, EQ, EndsWith | Filtrar atividades por URLs do Office 365 |
+| office365url | string | StartsWith, EQ, EndsWith | Filtrar atividades por URLs de Microsoft 365 |
 | fileId | string | eq | Localizar um arquivo por ID |
 | IP. categoria | inteiro | EQ, NEQ | Filtrar atividades com as categorias de sub-rede especificadas. Os valores possíveis incluem:<br /><br />**1**: corporativo<br />**2**: administrativo<br />**3**: arriscado<br />**4**: VPN<br />**5**: provedor de nuvem<br />**6**: outros |
 | IP. Tags | string | EQ, NEQ | Filtrar atividades por IDs de marca IP |

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b0e6f838435b84d285881353c6a7b0f371b7670
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 25020539ecc5a0ae48e8cb3d6b1c6ce0387a7d2a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779365"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149730"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividade
 
@@ -95,7 +95,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 - Usuário — o usuário que executou a atividade, que pode ser filtrado no domínio, grupo, nome ou na organização. Para filtrar atividades sem usuário específico, você pode usar o operador ' não está definido '.
   - Domínio do usuário — pesquise um domínio de usuário específico.
   - Organização do usuário – A unidade organizacional do usuário que executou a atividade, por exemplo, todas as atividades realizadas pelos usuários de EMEA_marketing. Isso só é relevante para instâncias conectadas do G Suite usando unidades organizacionais.
-  - Grupo de usuários – Grupos de usuários específicos que você pode importar de aplicativos conectados, por exemplo, administradores do Office 365.
+  - Grupo de usuários – grupos de usuários específicos que você pode importar de aplicativos conectados, por exemplo, Microsoft 365 administradores.
   - Nome de usuário — pesquise por um nome de usuário específico. Para ver uma lista de usuários em um grupo de usuários específico, clique no nome do grupo de usuários na **Gaveta de atividade**. Clicar levará você à página de contas, que lista todos os usuários no grupo. Dali você pode analisar os detalhes das contas de usuários específicos do grupo.
   - Os filtros **Grupo de usuários** e **Nome de usuário** podem passar por filtragem adicional, usando o filtro **Como** e selecionando a função do usuário, que pode ser qualquer uma das seguintes:
     - Apenas objeto de atividade – isso significa que o usuário ou o grupo de usuários selecionado não realizou a atividade em questão; eles eram o objeto da atividade.
@@ -132,7 +132,7 @@ O Cloud App Security também fornece **Consultas sugeridas**. As consultas suger
 
 - Atividades de download – filtra todas as atividades para exibir apenas as atividades que foram atividades de download, incluindo a lista de downloads do usuário como um arquivo .csv, download de conteúdo compartilhado e download de uma pasta.
 
-- Logon com falha – filtra todas as atividades para exibir apenas os logons e entradas com falha por SSO
+- Logon com falha – filtra todas as suas atividades para exibir apenas os logons com falha e entrar com falha via SSO
 
 - Atividades de arquivo e pasta – Filtra todas as atividades para exibir apenas as atividades que envolvem arquivos e pastas. O filtro inclui carregamento, download e acesso a pastas, além de criação, exclusão, carregamento, download, colocação em quarentena, acesso a arquivos e transferência de conteúdo.
 
@@ -146,7 +146,7 @@ O Cloud App Security também fornece **Consultas sugeridas**. As consultas suger
 
 - Atividades de compartilhamento – filtra todas as atividades para exibir apenas as atividades que envolvem compartilhamento pastas e arquivos, incluindo a criação de um vínculo da empresa, criação de um vínculo anônimo e concessão de permissões de leitura/gravação.
 
-- Login bem-sucedido – Filtra todas as atividades para exibir apenas as atividades que envolvem logins bem-sucedidos, inclusive representação da ação, representação do logon, logon único e logon de um novo dispositivo.
+- Logon bem-sucedido – filtra todas as suas atividades para exibir somente as atividades que envolvem logons bem-sucedidos, incluindo a ação de representar, representar o logon, o logon único e o logon do novo dispositivo.
 
 ![consultar atividades](media/queries-activity.png)
 
