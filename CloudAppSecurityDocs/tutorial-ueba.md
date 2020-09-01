@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 89da56403cbd6239094e58bebdd2a78ef3558edc
-ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
+ms.openlocfilehash: 7252a7c18278a6e536c26b3f84f5c51d09c72efe
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83579776"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964059"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
 
@@ -71,10 +71,10 @@ Para identificar quem são os usuários mais arriscados no Cloud App Security:
 1. Vá até o painel do Cloud App Security e procure as pessoas identificadas no bloco como **Principais usuários por prioridade de investigação**. Em seguida, acesse a página de usuário de cada uma delas para investigá-las.  
 O **número de prioridade de investigação**, exibido ao lado do nome de usuário, representa a soma de todas as atividades arriscadas do usuário ao longo da semana anterior.
 
-   ![Painel de principais usuários](./media/dashboard-top-users.png)
+   ![Painel de principais usuários](media/dashboard-top-users.png)
 
 1. Clique em um determinado usuário para acessar a página de **Usuário**.
-    ![Página de Usuário](./media/user-page.png)
+    ![Página de Usuário](media/user-page.png)
 
 1. Examine as informações na página Usuário para obter uma visão geral do usuário e ver se há pontos em que ele realizou atividades incomuns ou que foram realizadas em horários incomuns. A **Pontuação do usuário em comparação com a organização** representa o percentil em que ele está com base na classificação dele em sua organização. Ou seja, você deve investigar o nível em que ele está na lista de usuários, em relação a outros usuários da organização. O número será vermelho se o usuário estiver dentro ou acima do 90º percentil de usuários em risco na organização.  
 A página Usuário permite responder às seguintes questões:

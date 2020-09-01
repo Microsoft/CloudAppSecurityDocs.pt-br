@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 341bc297d31f53cf446baec553e3abd6eec1c6df
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 4f8e5c59de4dd05730dc6970ae1cbebe8f941356
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254713"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964042"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
 
@@ -93,7 +93,7 @@ Vamos configurar uma política que procure números de cartão de crédito em ar
 >[!NOTE]
 >
 > \* – O Cloud App Security atualmente dá suporte à aplicação automática de rótulos da Proteção de Informações do Azure no Box, no GSuite, no SharePoint e no OneDrive for Business.
-> \* – Quando um documento é rotulado usando o Cloud App Security, as marcações visuais não são aplicadas imediatamente, e sim quando esse documento é aberto em um aplicativo do Office e é salvo pela primeira vez. Para obter mais informações, consulte [Como configurar um rótulo para marcações visuais da Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
+> \* – Quando um documento é rotulado usando o Cloud App Security, as marcações visuais não são aplicadas imediatamente, e sim quando esse documento é aberto em um aplicativo do Office e é salvo pela primeira vez. Para obter mais informações, consulte [Como configurar um rótulo para marcações visuais da Proteção de Informações do Azure](/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
 ## <a name="next-steps"></a>Próximas etapas
 
