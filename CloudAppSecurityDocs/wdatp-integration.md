@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/29/2020
+ms.date: 09/02/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85a2c8a97406cd65ca5c60cfeac36b92660b2b1f
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 55c3a9f1edfadcaa686a54a3b69f95e319a55320
+ms.sourcegitcommit: 740357159d8bc405412ca3c36757647b5f1c7623
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963872"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316936"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
 
@@ -75,7 +75,7 @@ Para habilitar a integração do Microsoft defender ATP com o Cloud App Security
 
 Depois de integrar o Microsoft defender ATP com o Cloud App Security, você pode investigar os dados do computador descoberto no painel do Cloud Discovery.
 
-1. No portal do Cloud App Security, clique em **Cloud Discovery** e, em seguida, **Painel do Cloud Discovery**.
+1. Em Cloud App Security, clique em **Cloud Discovery** e, em seguida, **Cloud Discovery painel**.
 2. Na barra de navegação superior, em **Relatórios contínuos**, selecione **Usuários de ponto de extremidade do Win10**.
   ![Relatório do WD ATP](media/win10-dashboard-report.png)
 3. Na parte superior, você verá o número de computadores descobertos adicionados após a integração.
@@ -89,7 +89,7 @@ Depois de integrar o Microsoft defender ATP com o Cloud App Security, você pode
         - Carregamentos: informações sobre a quantidade total de tráfego (em MB) carregados pelo computador durante o período de tempo selecionado.
         - **Downloads**: informações sobre a quantidade total de tráfego (em MB) baixados pelo computador durante o período de tempo selecionado.
     - **Aplicativos Descobertos**  
-  Lista todos os aplicativos descobertos que foram acessados pelo computador.
+    Lista todos os aplicativos descobertos que foram acessados pelo computador.
     - **Histórico de usuários**  
     Lista todos os usuários que se conectaram ao computador.
     - **Histórico de endereços IP**  
@@ -104,11 +104,43 @@ Assim como acontece com qualquer outra fonte do Cloud Discovery, é possível ex
 > - Se o limite de 4 MB não for atingido em 1 hora, o Microsoft defender ATP relatará todas as transações executadas na última hora.
 > - Se o dispositivo de ponto de extremidade estiver protegido por um proxy de encaminhamento, os dados de tráfego não serão visíveis para o Microsoft defender ATP e, portanto, não serão incluídos nos relatórios do Cloud Discovery. Para obter mais informações, consulte [monitorando a conexão de rede por trás do proxy de encaminhamento](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
+## <a name="investigate-device-network-events-in-microsoft-defender-atp"></a>Investigar eventos de rede do dispositivo no Microsoft defender ATP
+
+Use as etapas a seguir para obter visibilidade mais granular da atividade de rede do dispositivo no Microsoft defender ATP:
+
+1. Em Cloud App Security, em **descoberta** e selecione **computadores**.
+1. Selecione o computador que você deseja investigar e, na parte superior direita, clique em **Exibir no Microsoft defender ATP**.
+1. Na central de segurança do Microsoft defender, em **dispositivos** > {dispositivo selecionado}, selecione **linha do tempo**.
+1. Em **filtros**, selecione **eventos de rede**.
+1. Investigue os eventos de rede do dispositivo, conforme necessário.
+
+![Captura de tela mostrando o cronograma do dispositivo na central de segurança do Microsoft defender](media/mdatp-selected-device.png)
+
+## <a name="investigate-app-usage-in-microsoft-defender-atp-with-advanced-hunting"></a>Investigar o uso do aplicativo no Microsoft defender ATP com busca avançada
+
+Use as etapas a seguir para obter visibilidade mais granular sobre eventos de rede relacionados ao aplicativo no Microsoft defender ATP:
+
+1. Em Cloud App Security, em **descoberta** e, em seguida, selecione **descoberto**.
+1. Clique no aplicativo que você deseja investigar para abrir sua gaveta.
+1. Clique na lista de **domínios** do aplicativo e copie a lista de domínios.
+1. Na central de segurança do Microsoft defender, em **dispositivos**, selecione **busca avançada**.
+1. Cole a consulta a seguir e substitua `<DOMAIN_LIST>` pela lista de domínios que você copiou anteriormente.
+
+    ```kusto
+    DeviceNetworkEvents
+    | where RemoteUrl in ("<DOMAIN_LIST>")
+    | order by Timestamp desc
+    ```
+
+1. Execute a consulta e investigue os eventos de rede para este aplicativo.
+
+![Captura de tela mostrando a busca avançada da central de segurança do Microsoft defender](media/mdatp-advanced-hunting.png)
+
 ## <a name="block-access-to-unsanctioned-cloud-apps"></a>Bloquear o acesso a aplicativos de nuvem não aprovados
 
 Cloud App Security usa a marca [**de aplicativo interna**](governance-discovery.md#BKMK_SanctionApp) não atestada para marcar os aplicativos de nuvem como proibidos para uso, disponíveis nas páginas Cloud Discovery e catálogo de aplicativos de nuvem. Ao habilitar a integração com o Microsoft defender ATP, você pode bloquear diretamente o acesso a aplicativos não aprovados com um único clique no portal de Cloud App Security.
 
-### <a name="how-it-works"></a>Como ele funciona
+### <a name="how-blocking-works"></a>Como o bloqueio funciona
 
 Os aplicativos marcados como não **aprovados** no Cloud app Security são sincronizados automaticamente com o Microsoft defender ATP, geralmente em alguns minutos. Mais especificamente, os domínios usados por esses aplicativos não aprovados são propagados para dispositivos de ponto de extremidade a serem bloqueados pelo Microsoft defender antivírus dentro do SLA de proteção de rede.
 
