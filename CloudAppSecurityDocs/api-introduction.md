@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: aa5b3d4488a8e62f965900593169e899f90829b2
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 31190fd4df5dc9c3bac19794ff1fd78c4982100d
+ms.sourcegitcommit: 5ace3437d49c7bbde2266a6f1565a65a379b9c2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657638"
+ms.lasthandoff: 09/06/2020
+ms.locfileid: "89499485"
 ---
 # <a name="cloud-app-security-rest-api"></a>API REST do Cloud App Security
 
@@ -86,7 +86,7 @@ A tabela a seguir descreve os tipos de campo com suporte:
 |Campo|Descrição|
 |---|---|
 |string|Uma cadeia de caracteres textual|
-|boolean|Um valor booliano que representa true/false|
+|booleano|Um valor booliano que representa true/false|
 |inteiro|Inteiro com sinal de 32 bits|
 |timestamp|Milissegundos desde a época|
 
@@ -104,6 +104,7 @@ Os métodos a seguir têm suporte para fornecer o parâmetro Limit:
 >
 > - Se nenhum limite for fornecido, um padrão de 100 será definido.
 > - As respostas para todas as solicitações feitas com o token de API são limitadas a um máximo de 100 itens.
+> - O limite de limitação para todas as solicitações de API é de 30 solicitações por minuto por locatário.
 
 ## <a name="filters"></a>Filtros
 
@@ -151,8 +152,8 @@ A tabela a seguir descreve os operadores com suporte:
 | gt | valor único | Retorna todos os registros cujo valor é maior que o valor fornecido |
 | gte | valor único | Retorna todos os registros cujo valor é maior ou igual ao valor fornecido |
 | gte_ndays | número | Retorna todos os registros com data posterior a N dias atrás |
-| isnotset | boolean | Quando definido como "true", retorna todos os registros relevantes que não têm um valor no campo especificado |
-| isset | boolean | Quando definido como "true", retorna todos os registros relevantes que têm um valor no campo especificado |
+| isnotset | booleano | Quando definido como "true", retorna todos os registros relevantes que não têm um valor no campo especificado |
+| isset | booleano | Quando definido como "true", retorna todos os registros relevantes que têm um valor no campo especificado |
 | lt | valor único | Retorna todos os registros cujo valor é menor que o valor fornecido |
 | LTE | valor único | Retorna todos os registros cujo valor é menor ou igual ao valor fornecido |
 | lte_ndays | número | Retorna todos os registros com data anterior a N dias atrás |
