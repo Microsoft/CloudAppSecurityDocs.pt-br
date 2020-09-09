@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4bfa89a9794df5cbce0c361e1b2a7d8071cd303c
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 8cfefb76ec1c464ace29717ba069f82a456554ad
+ms.sourcegitcommit: 30bd09cd5a05bf19818a3f3a7e1b2ac0dc25d420
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780521"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598265"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 
@@ -33,17 +33,17 @@ Para criar um relatório de instantâneo:
 
 1. Colete arquivos de log do firewall e do proxy por meio dos quais os usuários da sua organização acessam a Internet. Certifique-se de coletar logs durante os períodos de tráfego de pico que representam a atividade de todos os usuários na sua organização.
 
-2. No portal do Cloud App Security, clique em **Descobrir** e, em seguida, **Criar relatório de instantâneos**.
+1. No portal do Cloud App Security, clique em **Descobrir** e, em seguida, **Criar relatório de instantâneos**.
 
     ![Criar novo relatório de instantâneo](media/create-new-snapshot-report.png)
 
-3. Insira um **nome de relatório** e uma **Descrição**
+1. Insira um **nome de relatório** e uma **Descrição**
 
     ![Novo relatório de instantâneo](media/new-snapshot-report.png)
 
-4. Selecione a **Fonte de dados** da qual você deseja carregar os arquivos de log.
+1. Selecione a **Fonte de dados** da qual você deseja carregar os arquivos de log.
 
-5. Verifique o formato do seu log para certificar-se de que ele foi formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e verificar** e, em seguida, **Baixar log de exemplo**. Compare seu log com o exemplo fornecido para verificar se ele é compatível.
+1. Verifique o formato do seu log para certificar-se de que ele foi formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e verificar** e, em seguida, **Baixar log de exemplo**. Compare seu log com o exemplo fornecido para verificar se ele é compatível.
 
     ![Verifique seu formato de log](media/cloud-discovery-snapshot-verify.png)
 
@@ -51,22 +51,21 @@ Para criar um relatório de instantâneo:
     > O formato de exemplo de FTP tem suporte em instantâneos e no carregamento automatizado, enquanto o syslog tem suporte somente no carregamento automatizado.  
     Baixar um exemplo de log também baixará um exemplo de log FTP.
 
-6. **Escolha os logs de tráfego** que você deseja carregar. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados e zipados.
+1. **Escolha os logs de tráfego** que você deseja carregar. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados e zipados.
 
-7. Clique em **Criar**.
+1. Clique em **Criar**.
 
-8. Após o upload ser concluído, a mensagem de status será exibida no canto superior direito da tela avisando que o log foi carregado com êxito.
+1. Após o upload ser concluído, a mensagem de status será exibida no canto superior direito da tela avisando que o log foi carregado com êxito.
 
-9. Depois de carregar os arquivos de log, levará algum tempo para que eles possam ser analisados e examinados.
+1. Depois de carregar os arquivos de log, levará algum tempo para que eles possam ser analisados e examinados.
     Após o processamento dos arquivos de log ser concluído, você receberá um email para avisar que ele está pronto.
 
-10. Uma faixa de notificação será exibida na barra de status na parte superior do **painel do Cloud Discovery**. A faixa atualiza você sobre o status de processamento dos arquivos de log.
+1. Uma faixa de notificação será exibida na barra de status na parte superior do **painel do Cloud Discovery**. A faixa atualiza você sobre o status de processamento dos arquivos de log.
     ![processando a barra de menus do arquivo de log](media/processing-log-file-menu-bar.png)
 
-11. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, é possível exibir o relatório clicando no link na barra de status ou indo para a engrenagem de Configurações e selecionando **Configurações do Cloud Discovery**.
+1. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, você pode exibir o relatório clicando no link na barra de status ou clicando no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações")e, em seguida, selecione **configurações**.
 
-    ![Guia Configurações de descoberta](media/discovery-settings-tab.png)
-12. Em seguia, selecione **Relatórios de instantâneo** e seu relatório de instantâneo.
+1. Em **Cloud Discovery**, selecione **relatórios de instantâneo**e selecione seu relatório de instantâneo.
 
     ![gerenciamento de relatório de instantâneo](media/snapshot-report-managment.png)
 

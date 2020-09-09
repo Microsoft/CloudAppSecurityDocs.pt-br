@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a80d54546b93545b65082115c939190f65b3801d
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 4a774d5f642def30fffd4b29c9973f925257eb55
+ms.sourcegitcommit: 30bd09cd5a05bf19818a3f3a7e1b2ac0dc25d420
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781439"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598277"
 ---
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
@@ -27,7 +27,7 @@ ms.locfileid: "88781439"
 
 O Microsoft Cloud App Security pode integrar soluções DLP existentes para estender esses controles para a nuvem preservando uma política consistente e unificada entre locais e atividades na nuvem. A plataforma exporta interfaces fáceis de usar, incluindo API REST e ICAP, habilitando a integração com sistemas de classificação de conteúdo, como Symantec Data Loss Prevention (antigo Vontu Data Loss Prevention) ou Forcepoint DLP.
 
-A integração é obtida com o protocolo ICAP padrão, um protocolo semelhante ao HTTP descrito em [RFC 3507](https://tools.ietf.org/html/rfc3507). Para proteger o ICAP para transmissão dos dados, é necessário configurar um túnel SSL seguro (stunnel) entre a solução DLP e o Cloud App Security. A configuração de stunnel fornece funcionalidade de criptografia TLS para seus dados durante o tráfego entre o servidor DLP e Cloud App Security.
+A integração é obtida com o protocolo ICAP padrão, um protocolo semelhante ao HTTP descrito em [RFC 3507](https://tools.ietf.org/html/rfc3507). Para proteger ICAP para transmissão de seus dados, é necessário configurar um túnel TLS seguro (stunnel) entre sua solução de DLP e Cloud App Security. A configuração de stunnel fornece funcionalidade de criptografia TLS para seus dados durante o tráfego entre o servidor DLP e Cloud App Security.
 
 Este guia fornece as etapas necessárias para configurar a conexão ICAP no Cloud App Security e a instalação do stunnel para proteger a conexão passando por ele.
 
@@ -82,7 +82,7 @@ Consulte o [site do stunnel](https://www.stunnel.org/index.html) para obter deta
 
 4. Crie um certificado de uma das seguintes maneiras:
 
-    - Use o servidor de gerenciamento de certificados para criar um certificado SSL no servidor ICAP. Em seguida, copie as chaves para o servidor que você preparou para a instalação do stunnel.
+    - Use seu servidor de gerenciamento de certificados para criar um certificado TLS no seu servidor ICAP. Em seguida, copie as chaves para o servidor que você preparou para a instalação do stunnel.
     - Ou, no servidor stunnel, use os seguintes comandos do OpenSSL para gerar uma chave privada e um certificado autoassinado. Substitua essas variáveis:
         - **key.pem** pelo nome da sua chave privada
         - **CERT. pem** pelo nome do seu certificado
@@ -153,7 +153,7 @@ Certifique-se de criar a chave privada sem uma frase secreta para que stunnel po
 
 Você pode criar os certificados em uma das seguintes maneiras:
 
-- Use o servidor de gerenciamento de certificados para criar um certificado SSL no servidor ICAP. Em seguida, copie as chaves para o servidor que você preparou para a instalação do stunnel.
+- Use seu servidor de gerenciamento de certificados para criar um certificado TLS no seu servidor ICAP. Em seguida, copie as chaves para o servidor que você preparou para a instalação do stunnel.
 - Ou, no servidor stunnel, use os seguintes comandos do OpenSSL para gerar uma chave privada e um certificado autoassinado.
 Substitua essas variáveis:
   - **key.pem** pelo nome da sua chave privada
