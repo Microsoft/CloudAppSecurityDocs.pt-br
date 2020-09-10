@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 575028a9df41f8340c4a7a398fb05b5264ee93bb
-ms.sourcegitcommit: 1554e381acc1e58de113d3b427f4e9de91b98488
+ms.openlocfilehash: 706bdf5d49c044f5fe9015e65eb57bf34e325e32
+ms.sourcegitcommit: c31df5ab5f2c1ee1dbfdabc83294b425a48dba70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89148719"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89654388"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker no Linux local
 
@@ -109,7 +109,10 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Etapa 2 – Implantação local de seu computador
 
-As etapas a seguir descrevem a implantação no Ubuntu. As etapas de implantação para outras plataformas são ligeiramente diferentes.
+As etapas a seguir descrevem a implantação no Ubuntu.
+
+> [!NOTE]
+> As etapas de implantação para outras plataformas com suporte podem ser um pouco diferentes.
 
 1. Abra um terminal em seu computador Ubuntu.
 
