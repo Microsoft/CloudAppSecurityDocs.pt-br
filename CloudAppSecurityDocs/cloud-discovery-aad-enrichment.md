@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f7ce34e19fa1b4a62b8d3786eae6898a19a428f
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 2d6e950e55034f8a8ece413a1d5555f5131cfee9
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149594"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666934"
 ---
 # <a name="cloud-discovery-enrichment"></a>Aprimoramento do Cloud Discovery
 
@@ -34,7 +34,7 @@ Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 - A fonte de dados deve fornecer informações de nome de usuário
-- Conector de aplicativo Microsoft 365 conectado
+- [Conector de aplicativo do Office 365](connect-office-365-to-microsoft-cloud-app-security.md) conectado
 
 ## <a name="enabling-user-data-enrichment"></a>Permitindo o aprimoramento de dados de usuário
 
@@ -42,7 +42,7 @@ Os dados do Cloud Discovery agora podem ser aprimorados com os dados de nome de 
 
 2. Na guia **Aprimoramento do usuário**, selecione **Aprimorar os identificadores descobertos do usuário com os nomes de usuários do Azure Active Directory**. Essa opção permite que o Cloud App Security use dados do Azure Active Directory para aprimorar os nomes de usuário padrão.
 
-3. Clique em **Save** (Salvar).
+3. Clique em **Salvar**.
 
 ![Aprimorar o Cloud App Security Discovery com nomes de usuário do Azure AD](media/discovery-enrichment.png)
 

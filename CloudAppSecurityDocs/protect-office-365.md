@@ -1,32 +1,32 @@
 ---
-title: Como Cloud App Security ajuda a proteger seu ambiente de Microsoft 365
-description: Saiba mais sobre os benefícios de conectar seu aplicativo Microsoft 365 ao Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
+title: Como Cloud App Security ajuda a proteger seu ambiente do Office 365
+description: Saiba mais sobre os benefícios de conectar seu aplicativo do Office 365 para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b892d96b2cf7329613b21b6134e33ae6fd62ea29
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: e640fbd96b91bb19fa0f9b70ce4eff603d48308a
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150053"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667122"
 ---
-# <a name="how-cloud-app-security-helps-protect-your-microsoft-365-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente de Microsoft 365
+# <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente do Office 365
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-Como um pacote de produtividade importante que fornece armazenamento de arquivos em nuvem, ferramentas de colaboração, BI e CRM, a Microsoft 365 permite que os usuários compartilhem seus documentos em sua organização e parceiros de maneira simplificada e eficiente. O uso de Microsoft 365 pode expor seus dados confidenciais não apenas internamente, mas também para colaboradores externos, ou até mesmo pior disponibilizá-los publicamente por meio de um link compartilhado. Esses incidentes podem ocorrer devido a um ator mal-intencionado ou por um funcionário inconsciente. O Microsoft 365 também fornece um grande sistema de eco de aplicativo de terceiros para ajudar a aumentar a produtividade. O uso desses aplicativos pode expor sua organização ao risco de aplicativos mal-intencionados ou uso de aplicativos com permissões excessivas.
+Como um pacote de produtividade importante que fornece armazenamento de arquivos em nuvem, colaboração, BI e ferramentas de CRM, o Office 365 permite que os usuários compartilhem seus documentos em sua organização e parceiros de maneira simplificada e eficiente. Usar o Office 365 pode expor seus dados confidenciais não apenas internamente, mas também para colaboradores externos, ou ainda pior disponibilizá-los publicamente por meio de um link compartilhado. Esses incidentes podem ocorrer devido a um ator mal-intencionado ou por um funcionário inconsciente. O Office 365 também fornece um grande sistema de eco de aplicativos de terceiros para ajudar a aumentar a produtividade. O uso desses aplicativos pode expor sua organização ao risco de aplicativos mal-intencionados ou uso de aplicativos com permissões excessivas.
 
-Conectar Microsoft 365 ao Cloud App Security oferece informações aprimoradas sobre as atividades dos usuários, fornece detecção de ameaças usando detecções de anomalias baseadas em Machine Learning, detecções de proteção de informações (como detecção de compartilhamento de informações externas), habilita controles de correção automatizados e detecta ameaças de aplicativos de terceiros habilitados em sua organização.
+Conectar o Office 365 ao Cloud App Security oferece informações aprimoradas sobre as atividades dos usuários, fornece detecção de ameaças usando detecções de anomalias baseadas em Machine Learning, detecções de proteção de informações (como detecção de compartilhamento de informações externas), habilita controles de atualização automatizados e detecta ameaças de aplicativos de terceiros habilitados em sua organização.
 
-O uso do conector de Microsoft 365 fornece proteção para os seguintes produtos:
+O uso do conector do Office 365 fornece proteção para os seguintes produtos:
 
 - CRM do Dynamics 365
 - Exchange
-- Microsoft 365
+- Office 365
 - OneDrive
 - Power Automate
 - Power BI
@@ -36,7 +36,7 @@ O uso do conector de Microsoft 365 fornece proteção para os seguintes produtos
 - Yammer
 
 > [!NOTE]
-> Cloud App Security integra-se diretamente com os [logs de auditoria do Microsoft 365](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) e recebe todos os eventos auditados de **todos os serviços com suporte**, como PowerApps, Forms, Sway e Stream.
+> O Cloud App Security se integra diretamente aos [logs de auditoria do Office 365](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) e recebe todos os eventos auditados de **todos os serviços com suporte**, como PowerApps, Forms, Sway e Stream.
 
 ## <a name="main-threats"></a>Principais ameaças
 
@@ -58,7 +58,7 @@ O uso do conector de Microsoft 365 fornece proteção para os seguintes produtos
 - [Limitar a exposição de dados compartilhados e impor políticas de colaboração](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Usar a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## <a name="control-microsoft-365-with-built-in-policies-and-policy-templates"></a>Controle Microsoft 365 com políticas internas e modelos de política
+## <a name="control-office-365-with-built-in-policies-and-policy-templates"></a>Controlar o Office 365 com políticas internas e modelos de política
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
@@ -73,7 +73,7 @@ Para obter mais informações sobre como criar políticas, consulte [criar uma p
 
 ## <a name="automate-governance-controls"></a>Automatizar controles de governança
 
-Além de monitorar possíveis ameaças, você pode aplicar e automatizar as seguintes ações de governança de Microsoft 365 para corrigir ameaças detectadas:
+Além de monitorar possíveis ameaças, você pode aplicar e automatizar as seguintes ações de governança do Office 365 para corrigir ameaças detectadas:
 
 | Tipo | Ação |
 | ---- | ---- |
@@ -83,11 +83,11 @@ Além de monitorar possíveis ameaças, você pode aplicar e automatizar as segu
 
 Para obter mais informações sobre como corrigir ameaças de aplicativos, consulte [governando aplicativos conectados](governance-actions.md).
 
-## <a name="protect-microsoft-365-in-real-time"></a>Proteger Microsoft 365 em tempo real
+## <a name="protect-office-365-in-real-time"></a>Proteja o Office 365 em tempo real
 
 Examine nossas práticas recomendadas para [proteger e colaborar com usuários externos](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) e [bloquear e proteger o download de dados confidenciais para dispositivos não gerenciados ou arriscados](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Como conectar Microsoft 365 ao Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
+> [Como conectar o Office 365 ao Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)

@@ -14,22 +14,22 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1818697f5d5ad26d13cc2bf37e35cecc20f70fdb
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: d7bfc0fad445b242f9093cb109c6678e6d2542aa
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150104"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666818"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security dá suporte ao controle de acesso baseado em função. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, consulte os artigos para [Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) e [Microsoft 365](/office365/admin/add-users/assign-admin-roles).
+O Microsoft Cloud App Security dá suporte ao controle de acesso baseado em função. Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores. Para obter mais informações sobre como atribuir funções de administrador, consulte os artigos para [Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) e [Office 365](/office365/admin/add-users/assign-admin-roles).
 
-## <a name="microsoft-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Microsoft 365 e funções do Azure AD com acesso ao Cloud App Security
+## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Funções do Office 365 e do Azure AD com acesso ao Cloud App Security
 
-Por padrão, as seguintes funções de administrador Microsoft 365 e [Azure Active Directory (AD do Azure)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Cloud app Security:
+Por padrão, as seguintes funções de administrador do Office 365 e [do Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Cloud app Security:
 
 - **Administrador global e Administrador de segurança:** os administradores com **Acesso completo** têm permissões completas no Cloud App Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
 
@@ -56,7 +56,7 @@ Por padrão, as seguintes funções de administrador Microsoft 365 e [Azure Acti
 - **Leitor global:** Tem acesso completo somente leitura a todos os aspectos de Microsoft Cloud App Security. Não é possível alterar nenhuma configuração ou executar ações.
 
 > [!NOTE]
-> As funções do Microsoft 365 e do Azure AD não estão listadas na página **gerenciar acesso de administrador** .
+> As funções do Office 365 e do Azure AD não estão listadas na página **gerenciar acesso de administrador** .
 
 Além disso, as seguintes Cloud App Security funções de administrador específicas podem ser configuradas no portal de Cloud App Security:
 
@@ -109,7 +109,7 @@ Além disso, as seguintes Cloud App Security funções de administrador específ
 
 ## <a name="override-admin-permissions"></a>Substituir permissões de administrador
 
-Se você quiser substituir a permissão de um administrador de Azure Active Directory ou Microsoft 365, poderá fazer isso adicionando manualmente o usuário ao Cloud App Security e atribuindo as permissões de usuário. Por exemplo, caso deseje atribuir a Sara, um Leitor de segurança no Azure Active Directory, o **Acesso completo** no Cloud App Security, adicione-a manualmente ao Cloud App Security e atribua a ela o **Acesso completo** para substituir sua função e conceder a ela as permissões necessárias no Cloud App Security.
+Se você quiser substituir a permissão do administrador no Azure Active Directory ou no Office 365, faça isso manualmente adicionando o usuário ao Cloud App Security e atribuindo permissões de usuário. Por exemplo, caso deseje atribuir a Sara, um Leitor de segurança no Azure Active Directory, o **Acesso completo** no Cloud App Security, adicione-a manualmente ao Cloud App Security e atribua a ela o **Acesso completo** para substituir sua função e conceder a ela as permissões necessárias no Cloud App Security.
 
 ## <a name="add-additional-admins"></a>Adicionar administradores adicionais
 
@@ -154,4 +154,4 @@ Além disso, para permitir que os MSSPs forneçam serviços em vários locatári
 ## <a name="next-steps"></a>Próximas etapas  
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)

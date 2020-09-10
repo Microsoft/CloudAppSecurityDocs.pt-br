@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25020539ecc5a0ae48e8cb3d6b1c6ce0387a7d2a
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 8dd243af267de7bd598505771554675832560e37
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149730"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666855"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividade
 
@@ -95,7 +95,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 - Usuário — o usuário que executou a atividade, que pode ser filtrado no domínio, grupo, nome ou na organização. Para filtrar atividades sem usuário específico, você pode usar o operador ' não está definido '.
   - Domínio do usuário — pesquise um domínio de usuário específico.
   - Organização do usuário – A unidade organizacional do usuário que executou a atividade, por exemplo, todas as atividades realizadas pelos usuários de EMEA_marketing. Isso só é relevante para instâncias conectadas do G Suite usando unidades organizacionais.
-  - Grupo de usuários – grupos de usuários específicos que você pode importar de aplicativos conectados, por exemplo, Microsoft 365 administradores.
+  - Grupo de usuários – Grupos de usuários específicos que você pode importar de aplicativos conectados, por exemplo, administradores do Office 365.
   - Nome de usuário — pesquise por um nome de usuário específico. Para ver uma lista de usuários em um grupo de usuários específico, clique no nome do grupo de usuários na **Gaveta de atividade**. Clicar levará você à página de contas, que lista todos os usuários no grupo. Dali você pode analisar os detalhes das contas de usuários específicos do grupo.
   - Os filtros **Grupo de usuários** e **Nome de usuário** podem passar por filtragem adicional, usando o filtro **Como** e selecionando a função do usuário, que pode ser qualquer uma das seguintes:
     - Apenas objeto de atividade – isso significa que o usuário ou o grupo de usuários selecionado não realizou a atividade em questão; eles eram o objeto da atividade.

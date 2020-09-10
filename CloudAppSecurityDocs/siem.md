@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ab60b9237af0d2dadbfbe6c48b6e2f17ff80df3b
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: b0b928f095769a1051f825748941ed818401e6d3
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150274"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667081"
 ---
 # <a name="generic-siem-integration"></a>Integração genérica ao SIEM
 
@@ -78,21 +78,21 @@ A integração ao SIEM é realizada em três etapas:
     ![Captura de tela mostrando o menu Adicionar integração SIEM](media/siem0.png)
 
 1. No assistente, clique em **Iniciar Assistente**.
-1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Avançar**.
+1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Próximo**.
 
     ![Configurações gerais do SIEM](media/siem1.png)
 
 1. Digite o endereço IP ou nome de host do **Host do syslog remoto** e o **Número da porta do syslog**. Selecione TCP ou UDP como o protocolo do Syslog Remoto.
-    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Avançar**.
+    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Próximo**.
 
     ![Configurações do Syslog Remoto](media/siem2.png)
 
-1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Avançar**.
+1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Próximo**.
 
    ![Configurações de tipos de dados](media/siem3.png)
 
 1. Copie o token e salve-o para mais tarde.
-    Clique em Concluir e saia do Assistente. Volte à página SIEM para ver o agente SIEM adicionado na tabela. Ele exibirá que foi **Criado** até ser conectado posteriormente.
+    Clique em Concluir e saia do Assistente. Volte à página SIEM para ver o agente SIEM adicionado na tabela. Ele mostrará que ele será **criado** até que seja conectado posteriormente.
 
 > [!NOTE]
 > Tokens são associados ao administrador que os criaram. Isso significa que, se o usuário administrador for removido do Cloud App Security, o token não será mais válido.
@@ -160,7 +160,7 @@ O texto a seguir é um exemplo de arquivo de log de alertas:
 | Atividades/Alertas | rt | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | msg | Descrição da atividade ou do alerta, conforme mostrado no portal |
 | Atividades/Alertas | suser | Usuário de entidade da atividade ou do alerta |
-| Atividades/Alertas | destinationServiceName | Aplicativo originador de atividade ou alerta, por exemplo, Microsoft 365, SharePoint, box. |
+| Atividades/Alertas | destinationServiceName | Aplicativo de origem da atividade ou do alerta; por exemplo, Office 365, SharePoint e Box. |
 | Atividades/Alertas | cs\<X>Label | Cada rótulo tem um significado diferente, mas o rótulo em si é autoexplicativo; por exemplo, targetObjects (objetos de destino). |
 | Atividades/Alertas | cs\<X> | As informações correspondentes ao rótulo (o usuário de destino da atividade ou do alerta, de acordo com o exemplo de rótulo). |
 | Atividades | EVENT_CATEGORY_* | Categoria de alto nível da atividade |
