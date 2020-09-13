@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 80d7b83c49d3e2ebbd5ffc13ff82b414ccf67718
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 93b285abfbbffad4a9a033e39cb226100ecd519a
+ms.sourcegitcommit: c9b7aa05694a1825f0b32b677b5a6549b846c554
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89667167"
+ms.lasthandoff: 09/13/2020
+ms.locfileid: "90056737"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -148,7 +148,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
-- Portal do Azure (versão prévia)
+- Portal do Azure
 - Box
 - Concur
 - CornerStone on Demand
