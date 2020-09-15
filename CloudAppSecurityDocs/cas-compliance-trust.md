@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 202cdd57f4d2b56849f4a718de94e5197fb03d2b
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 457d52024796f6228cf57df6f9948ee575685209
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149577"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666977"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Segurança e privacidade de dados do Microsoft Cloud App Security
 
@@ -168,7 +168,7 @@ O Microsoft Cloud App Security permite limitar o acesso de administradores ao po
 
 ### <a name="permissions"></a>Permissões
 
-O Microsoft Cloud App Security dá suporte ao controle de acesso baseado em função. As funções de administrador global e de administrador da segurança do Microsoft 365 e do Azure Active Directory têm acesso completo ao Cloud App Security e os leitores de Segurança têm acesso de leitura. [Para saber mais](manage-admins.md).
+O Microsoft Cloud App Security dá suporte ao controle de acesso baseado em função. As funções de administrador global e de administrador de segurança do Office 365 e do Azure Active Directory têm acesso completo ao Cloud App Security, e os leitores de Segurança têm acesso de leitura. [Para saber mais](manage-admins.md).
 
 ## <a name="customer-controls-for-organizational-compliance"></a>Controles de cliente para a conformidade organizacional
 
