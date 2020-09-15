@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/29/2020
+ms.date: 09/15/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,38 +14,26 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a066955c2a832f46f38c128a908c9f772f0dbe3
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 31fb5ddc618ce1600e41a1437759b2558b3350c1
+ms.sourcegitcommit: 7d05b81a839286d2afae4cdad2c2d59e7becc1f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963974"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90524184"
 ---
 # <a name="security-configuration-for-azure"></a>Configuração de segurança para o Azure
 
 *Aplica-se a: Microsoft Cloud App Security*
 
-O Microsoft Cloud App Security fornece uma avaliação de configuração de segurança do seu ambiente do Azure. A avaliação, alimentada pela Central de Segurança do Azure, fornece recomendações para configuração ausente e controle de segurança.
+O Microsoft Cloud App Security fornece uma avaliação de configuração de segurança do seu ambiente do Azure. A avaliação, da plataforma da central de segurança do Azure, fornece recomendações para controles de segurança e configuração ausentes.
 
-## <a name="enable-security-configuration-recommendations"></a>Habilitar as recomendações de configuração de segurança
+## <a name="prerequisites"></a>Pré-requisitos
 
-Para usar esse recurso, você precisa ter as permissões apropriadas no Azure AD e no portal do Azure. Por padrão, a função de Administrador global do Azure AD não fornece acesso às assinaturas do Azure. Eleve as permissões para permitir acesso a assinaturas do Azure para você e outros usuários.
-
-> [!IMPORTANT]
-> É recomendado que você desabilite a elevação depois de concluir o processo a seguir.
+Sua organização deve ter licenças da central de segurança do Azure para todas as assinaturas para as quais você deseja fornecer avaliações de configuração de segurança do Azure.
 
 ## <a name="how-to-enable-azure-security-recommendations"></a>Como habilitar as recomendações de segurança do Azure
 
-Para habilitar as recomendações de configuração de segurança no Microsoft Cloud App Security:
-
-1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Obter visibilidade em todo o locatário para a central de segurança do Azure</a>. Esse processo inclui:
-
-    - Conceder a função de leitor para todas as assinaturas a si mesmo e a todos os outros administradores do Microsoft Cloud App Security aos quais você deseja permitir acesso a esta página.
-    - Atribuir a função ao grupo de gerenciamento raiz na Central de Segurança do Azure
-    - Elevar o seu administrador Global do Azure AD para permitir acesso a assinaturas do Azure.
-    - O artigo descreve o processo para tornar-se um administrador da segurança. Para que essa integração funcione, as permissões mínimas necessárias são **leitor**.
-
-1. Abra a <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Central de Segurança do Azure</a> para que as alterações entrem em vigor.
+Para habilitar as recomendações de configuração de segurança no Cloud App Security, ative sua assinatura da central de segurança do Azure navegando até o <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">portal</a>.
 
 ## <a name="how-to-view-azure-security-recommendations"></a>Como exibir as recomendações de segurança do Azure
 

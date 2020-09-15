@@ -5,18 +5,18 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: article
-ms.date: 12/04/2019
+ms.date: 09/15/2020
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f6638891b8a3dbd75fe103bac7042b572c647e1a
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 3fde8f4de6eaed15191f773562342195bbe41471
+ms.sourcegitcommit: 7d05b81a839286d2afae4cdad2c2d59e7becc1f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190056"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90524150"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-azure-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente do Azure
 
-*Aplica-se ao: Microsoft Cloud App Security*
+*Aplica-se a: Microsoft Cloud App Security*
 
 O Azure é um provedor de IaaS que permite que sua organização hospede e gerencie suas cargas de trabalho inteiras na nuvem. Junto com os benefícios de aproveitar a infraestrutura na nuvem, os ativos mais críticos de sua organização podem ser expostos a ameaças. Os ativos expostos incluem instâncias de armazenamento com informações potencialmente confidenciais, recursos de computação que operam alguns dos seus aplicativos, portas e redes virtuais privadas mais importantes que permitem o acesso à sua organização.
 
@@ -33,23 +33,32 @@ Conectar o Azure ao Cloud App Security ajuda a proteger seus ativos e detectar p
 
 - [Detecte ameaças à nuvem, contas comprometidas e pessoas mal-intencionadas](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Limitar a exposição de dados compartilhados e impor políticas de colaboração](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
-- [Use a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+- [Usar a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+- [Examinar as recomendações de configuração de segurança](security-config-azure.md)
 
 ## <a name="control-azure-with-built-in-policies-and-policy-templates"></a>Controlar o Azure com políticas internas e modelos de política
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Tipo | Nome |
+| Type | Nome |
 | ---- | ---- |
-| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Atividades administrativas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Várias atividades de exclusão de armazenamento incomum](anomaly-detection-policy.md#unusual-activities-by-user) (visualização)<br />[Várias atividades de exclusão de VM](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[Várias atividades de criação de VM incomuns](anomaly-detection-policy.md#unusual-activities-by-user) (versão prévia) |
+| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Atividade administrativas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Várias atividades de exclusão de armazenamento incomum](anomaly-detection-policy.md#unusual-activities-by-user) (visualização)<br />[Várias atividades de exclusão de VM](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[Várias atividades de criação de VM incomuns](anomaly-detection-policy.md#unusual-activities-by-user) (versão prévia) |
 
 Para obter mais informações sobre como criar políticas, consulte [criar uma política](control-cloud-apps-with-policies.md#create-a-policy).
+
+## <a name="security-recommendations"></a>Recomendações de Segurança
+
+Cloud App Security fornece uma exibição no nível de locatário da sua plataforma Azure, listando as recomendações de segurança de todas as assinaturas do Azure no locatário. Você pode usar as recomendações de segurança integradas do Azure para mais de 100 recursos do Azure no [benchmark de segurança do Azure](/azure/security/benchmarks/introduction), bem como [recomendações personalizadas](/azure/security-center/custom-security-policies). As recomendações integradas incluem os seguintes tipos de recursos: máquinas virtuais, identidade e acesso, dados e armazenamento, computação e aplicativos, redes, contêineres e serviços de aplicativos.
+
+Você deve examinar continuamente as recomendações de segurança para avaliar e avaliar o status atual da postura de segurança da sua plataforma e identificar lacunas de configuração importantes. Em seguida, você deve criar um plano para atenuar os problemas em sua plataforma Azure.
+
+Para obter mais informações, consulte o [Guia de recomendações do Azure](/azure/security-center/recommendations-reference) e as [recomendações de segurança do Azure](security-config-azure.md).
 
 ## <a name="automate-governance-controls"></a>Automatizar controles de governança
 
 Além de monitorar possíveis ameaças, você pode aplicar e automatizar as seguintes ações de governança do Azure para corrigir ameaças detectadas:
 
-| Tipo | Ação |
+| Type | Ação |
 | ---- | ---- |
 | Governança de usuário | -Notificar o usuário sobre o alerta (por meio do Azure AD)<br />-Exigir que o usuário entre novamente (por meio do Azure AD)<br />– Suspender usuário (por meio do Azure AD) |
 
