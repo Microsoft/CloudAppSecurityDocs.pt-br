@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 4399b6b4191ed901adc17d4c8e0eaca9bc0d6b07
-  ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+  ms.openlocfilehash: 1cbc621eb62c51375dd2e8b1ee7a3200005f0a41
+  ms.sourcegitcommit: 4b92203500955b3e12f751348725384615b671db
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/27/2020
-  ms.locfileid: "88963447"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "90721461"
 landingContent:
 - title: Sobre o Cloud App Security
   linkLists:
@@ -61,6 +61,8 @@ landingContent:
       url: tutorial-proxy.md
     - text: Bloquear o download de informações confidenciais
       url: use-case-proxy-block-session-aad.md
+    - text: Gerenciar segurança da plataforma de nuvem
+      url: tutorial-cloud-platform-security.md
     - text: Proteger arquivos com quarentena do administrador
       url: use-case-admin-quarantine.md
     - text: Aplicar os rótulos de classificação da Proteção de Informações do Azure

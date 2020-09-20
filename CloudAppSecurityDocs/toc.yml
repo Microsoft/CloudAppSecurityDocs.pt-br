@@ -39,6 +39,8 @@
       href: tutorial-proxy.md
     - name: Bloquear o download de informações confidenciais
       href: use-case-proxy-block-session-aad.md
+    - name: Gerenciar segurança da plataforma de nuvem
+      href: tutorial-cloud-platform-security.md
     - name: Proteger arquivos com quarentena do administrador
       href: use-case-admin-quarantine.md
     - name: Aplicar automaticamente os rótulos da Proteção de Informações do Azure
@@ -73,7 +75,7 @@
           href: protect-gcp.md
         - name: Proteger o G Suite
           href: protect-gsuite.md
-        - name: Proteger Microsoft 365
+        - name: Proteger o Office 365
           href: protect-office-365.md
         - name: Proteger o Okta
           href: protect-okta.md
@@ -163,7 +165,7 @@
           href: connect-google-apps-to-microsoft-cloud-app-security.md
         - name: Conectar o GCP
           href: connect-google-gcp-to-microsoft-cloud-app-security.md
-        - name: Conectar o Microsoft 365
+        - name: Conectar o Office 365
           href: connect-office-365-to-microsoft-cloud-app-security.md
         - name: Conectar o Okta
           href: connect-okta-to-microsoft-cloud-app-security.md
