@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f9f2be5488be8b6f7431b146947545b80594a467
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 5313745b303e6ff4e8dee19f7fe496c059b15288
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781643"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879315"
 ---
 # <a name="email-notification-preferences"></a>Preferências de notificação por email
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security para seus usuários quando uma violação é detectada.
 
@@ -125,6 +125,6 @@ Veja abaixo um modelo de email de exemplo:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6ea6a6c8d544fe3dbfc4ceaf63f7d5c91d98054a
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0c18810e5fc6c4aa94fecd2db5e6b8a03d82ae20
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780385"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880756"
 ---
 # <a name="use-a-custom-log-parser"></a>Usar o analisador de log personalizado
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Cloud App Security permite que você configure um analisador personalizado para corresponder e processar o formato de seus logs, de modo que eles possam ser usados para o Cloud Discovery. Normalmente, você usaria um analisador personalizado se o firewall ou o dispositivo não fosse explicitamente compatível com o Cloud App Security. Pode ser um analisador de CSV ou um analisador de valor de chave personalizado.
 
@@ -54,7 +54,7 @@ Para configurar um analisador personalizado:
 
     ![Preencher campos do analisador de log personalizado](media/custom-log-parser.png)
 
-7. Clique em **Salvar**. O formato de log personalizado configurado por você será salvo como o analisador personalizada padrão. Você pode editá-lo a qualquer momento clicando em **Editar**.
+7. Clique em **Save** (Salvar). O formato de log personalizado configurado por você será salvo como o analisador personalizada padrão. Você pode editá-lo a qualquer momento clicando em **Editar**.
 
 8. Em **Escolher os logs de tráfego**, selecione o arquivo de log que você modificou e carregue-o. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados e zipados.
 

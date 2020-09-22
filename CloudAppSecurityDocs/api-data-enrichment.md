@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 8739566fb2bd9413651c9f1e14257e62e6f4589e
-ms.sourcegitcommit: c114a9e04589e1a3e0b5350862b3e6daf18e3d30
+ms.openlocfilehash: 2da4b992d0c9eab2830793d026c0fd37ccd390be
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88658857"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880619"
 ---
 # <a name="create-ip-address-range---data-enrichment-api"></a>Criar intervalo de endereços IP-API de enriquecimento de dados
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Execute a solicitação POST para adicionar um novo intervalo de endereços IP.
 
@@ -47,7 +47,7 @@ Atualmente, há suporte para as seguintes categorias:
 | Situação | 3 |
 | VPN | 4 |
 | Provedor de nuvem | 5 |
-| Outros | 6 |
+| Outro | 6 |
 
 ## <a name="example"></a>Exemplo
 

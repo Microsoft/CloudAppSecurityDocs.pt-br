@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 81ad720b3230ab49a752671bcdc7d45cf789aad7
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 9809f3f2d95497b1813d44f82261cf0d2fb11213
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780878"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880849"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar o Salesforce ao Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece instruções para conectar o Microsoft Cloud App Security à sua conta existente do Salesforce usando a API do conector de aplicativos. Essa conexão fornece visibilidade e controle sobre o uso do Salesforce. Para obter informações sobre como Cloud App Security protege o Salesforce, consulte [proteger o Salesforce](protect-salesforce.md).
 
@@ -79,7 +79,7 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
         ![usuário do conteúdo crm do salesforce](media/salesforce-crm-content-user.png "usuário do conteúdo crm do salesforce")
 
-    1. Clique em **Salvar**.
+    1. Clique em **Save** (Salvar).
 
 1. No console do Cloud App Security, clique em **Investigar** e em **Aplicativos conectados**.
 

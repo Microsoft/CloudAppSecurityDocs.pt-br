@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8ce7a23e95bfaf0195453e22afe8f547ab8837b8
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 0f6aebe10c147a6be1250ce5f15a208570947edc
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149866"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879267"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Muitos aplicativos de produtividade de terceiros que podem ser instalados por usuários empresariais em sua organização solicitam permissão para acessar informações e dados do usuário e entrar em nome do usuário em outros aplicativos de nuvem, como Microsoft 365, G Suite e Salesforce. Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo. Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões de aplicativo Microsoft Cloud App Security permitem que você veja quais aplicativos OAuth instalados pelo usuário têm acesso a dados de Microsoft 365, dados do G Suite e dados do Salesforce. Cloud App Security informa quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso a suas contas Microsoft 365, G Suite e Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
+Muitos aplicativos de produtividade de terceiros, que podem ser instalados por usuários corporativos da sua organização, solicitam permissão para acessar dados e informações de usuário e entrar, em nome do usuário, em outros aplicativos de nuvem, como o Office 365, o G Suite e o Salesforce. Quando os usuários instalam esses aplicativos, eles geralmente clicam em aceitar sem examinar atentamente os detalhes na solicitação, incluindo a concessão de permissões para o aplicativo. Esse problema mistura-se ao fato de que o TI pode não ter informações suficientes para avaliar o risco de segurança de um aplicativo em relação aos benefícios de produtividade que ele oferece. Devido ao fato de que aceitar permissões de aplicativo de terceiros seja um risco de segurança para sua organização, monitorar as permissões de aplicativo que seus usuários concedem oferece a visibilidade e controle necessários para proteger os usuários e seus aplicativos. As permissões de aplicativo do Microsoft Cloud App Security permitem que você veja quais aplicativos OAuth instalados pelo usuário têm acesso a dados do Office 365, dados do G Suite e dados do Salesforce. Cloud App Security informa quais permissões os aplicativos têm e quais usuários concederam a esses aplicativos acesso às suas contas do Office 365, G Suite e Salesforce. As permissões de aplicativo ajudam na decisão de quais aplicativos você permite que os usuários acessem e quais você deseja vetar.
 
 Para obter mais informações sobre a investigação de aplicativos OAuth, consulte [investigar aplicativos OAuth arriscados](investigate-risky-oauth.md).
 
@@ -46,17 +46,17 @@ A página de aplicativos OAuth fornece as seguintes informações sobre cada apl
 
 |Item|O que significa|Aplica-se a|
 |-------|-------|-------|
-|Ícone básico na barra de consulta de aplicativo  |Alterne para a consulta no modo de exibição básico.|Microsoft 365, G Suite, Salesforce|
-|Ícone Avançado na barra de consulta de aplicativo  |Alterne para a consulta no modo de exibição Avançado.|Microsoft 365, G Suite, Salesforce|
+|Ícone básico na barra de consulta de aplicativo  |Alterne para a consulta no modo de exibição básico.|Office 365, G Suite, Salesforce|
+|Ícone Avançado na barra de consulta de aplicativo  |Alterne para a consulta no modo de exibição Avançado.|Office 365, G Suite, Salesforce|
 |Abrir ou fechar todos os ícones de detalhes na lista de aplicativos  |Exiba mais ou menos detalhes sobre cada aplicativo.|
-|Ícone de exportar na lista de aplicativos  |Exporte um arquivo CSV que contém uma lista de aplicativos, o número de usuários para cada aplicativo, as permissões associadas com o aplicativo, o nível das permissões, estado do aplicativo e nível de uso da comunidade.|Microsoft 365, G Suite, Salesforce|
-|Aplicativo|Nome do aplicativo. Selecione o nome para exibir mais informações, incluindo a descrição, o Publicador (por Microsoft 365), o site do aplicativo e a ID.|Microsoft 365, G Suite, Salesforce|
-|Autorizado por|O número de usuários que autorizaram esse aplicativo a acessar suas contas de aplicativo e concederam permissões ao aplicativo. Selecione o número para exibir mais informações, incluindo uma lista de emails de usuário e se um administrador consentiu ou não com o aplicativo anteriormente.|Microsoft 365, G Suite, Salesforce|
-|Nível de permissões  |O ícone de nível de permissões e o texto que indica Alto, Médio ou Baixo. O nível indica quanto acesso esse aplicativo tem aos dados do aplicativo. Por exemplo, Baixo pode indicar que o aplicativo acessa apenas nome e o perfil do usuário. Selecione o nível para exibir mais informações, incluindo as permissões concedidas ao aplicativo, uso da comunidade ou a atividade relacionada no [Log de governança](governance-actions.md).|Microsoft 365, G Suite|
-|Estado do aplicativo|Um administrador pode marcar um aplicativo como aprovado, vetado ou deixar como indeterminado.|Microsoft 365, G Suite, Salesforce|
-|Uso da comunidade|Mostra quão popular o aplicativo é entre todos os seus usuários (comum, incomum, raro)|Microsoft 365, G Suite, Salesforce|
-|Última autorização|A data mais recente em que um usuário concedeu permissões para este aplicativo.|Microsoft 365, Salesforce|
-|Publisher|O nome do fornecedor que oferece o aplicativo.|Microsoft 365|
+|Ícone de exportar na lista de aplicativos  |Exporte um arquivo CSV que contém uma lista de aplicativos, o número de usuários para cada aplicativo, as permissões associadas com o aplicativo, o nível das permissões, estado do aplicativo e nível de uso da comunidade.|Office 365, G Suite, Salesforce|
+|Aplicativo|Nome do aplicativo. Selecione o nome para exibir mais informações, incluindo a descrição, o editor (para Office 365), o site do aplicativo e a ID.|Office 365, G Suite, Salesforce|
+|Autorizado por|O número de usuários que autorizaram esse aplicativo a acessar suas contas de aplicativo e concederam permissões ao aplicativo. Selecione o número para exibir mais informações, incluindo uma lista de emails de usuário e se um administrador consentiu ou não com o aplicativo anteriormente.|Office 365, G Suite, Salesforce|
+|Nível de permissões  |O ícone de nível de permissões e o texto que indica Alto, Médio ou Baixo. O nível indica quanto acesso esse aplicativo tem aos dados do aplicativo. Por exemplo, Baixo pode indicar que o aplicativo acessa apenas nome e o perfil do usuário. Selecione o nível para exibir mais informações, incluindo as permissões concedidas ao aplicativo, uso da comunidade ou a atividade relacionada no [Log de governança](governance-actions.md).|Office 365, G Suite|
+|Estado do aplicativo|Um administrador pode marcar um aplicativo como aprovado, vetado ou deixar como indeterminado.|Office 365, G Suite, Salesforce|
+|Uso da comunidade|Mostra quão popular o aplicativo é entre todos os seus usuários (comum, incomum, raro)|Office 365, G Suite, Salesforce|
+|Última autorização|A data mais recente em que um usuário concedeu permissões para este aplicativo.|Office 365, Salesforce|
+|Publisher|O nome do fornecedor que oferece o aplicativo.|Office 365|
 |Usado pela última vez|A data mais recente em que este aplicativo foi usado por alguém em sua organização.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Vetar ou aprovar um aplicativo

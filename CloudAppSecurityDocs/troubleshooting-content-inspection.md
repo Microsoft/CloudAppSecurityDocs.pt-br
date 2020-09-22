@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2f4c9f5ddb7219356b808cf4d8829ea87ff795ee
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 9ac46552691fd3298ab8ffb81355aed48a680c45
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624762"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877226"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solução de problemas de inspeção de conteúdo
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece uma lista de status de inspeção de conteúdo e seus significados.
 
@@ -34,8 +34,8 @@ A tabela lista cada status de inspeção de conteúdo e sua descrição.
 |Status da inspeção de conteúdo|Descrição|
 |---|---|
 |Concluído|A inspeção de conteúdo foi concluída com êxito.|
-|Não Aplicável|A inspeção de conteúdo não era aplicável a este arquivo. Esse status pode aparecer porque nenhuma política requer a inspeção de conteúdo desse arquivo ou porque não há suporte para esse tipo de arquivo.|
-|Pendente|O arquivo está na fila de inspeção de conteúdo no momento.|
+|Não aplicável|A inspeção de conteúdo não era aplicável a este arquivo. Esse status pode aparecer porque nenhuma política requer a inspeção de conteúdo desse arquivo ou porque não há suporte para esse tipo de arquivo.|
+|Pending (Pendente)|O arquivo está na fila de inspeção de conteúdo no momento.|
 |Falha: Erro no download|O Microsoft Cloud App Security não pôde baixar o arquivo para inspeção.|
 |Falha: O arquivo está criptografado|O arquivo não pôde ser descriptografado.|
 |Falha: O arquivo está corrompido|O arquivo está corrompido de alguma forma e não pôde ser inspecionado.|

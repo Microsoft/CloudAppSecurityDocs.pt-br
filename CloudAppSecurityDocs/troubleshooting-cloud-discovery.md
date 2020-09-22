@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 082ca682594dbb8902605993d8ccfa1721d1c0ae
-ms.sourcegitcommit: c737a1ad67b4f7efa302d1aa92fce50f75c94d2d
+ms.openlocfilehash: fd54a610c074bc69b4d9f78dd46d32978f93a75e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86926733"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877204"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solução de problemas do Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo apresenta uma lista de erros do Cloud Discovery e as recomendações de resolução para cada um.
 
@@ -42,7 +42,7 @@ Você pode controlar o processamento dos registros do Cloud Discovery usando o l
 
 ### <a name="governance-log-errors"></a>Erros de log de governança
 
-|Erro do|Descrição|Resolução|
+|Erro|Descrição|Resolução|
 |----|----|----|
 |Tipo de arquivo sem suporte|O arquivo carregado não é um arquivo de log válido (por exemplo, um arquivo de imagem).|Carregue um arquivo de **texto**, * * zip ou **gzip** que foi exportado diretamente do seu firewall ou proxy.|
 |O formato de log não corresponde|O formato de log carregado não corresponde ao esperado para esta fonte de dados.|1. Verifique se o log não está corrompido. <br /> 2. Compare e corresponda ao seu log com o formato de exemplo mostrado na página carregar.|

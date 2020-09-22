@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 3a1d9ef4412ddecf2117722b6c060a9f86023814
-ms.sourcegitcommit: 04811ae308bcc3cd25b18c5e2379ca92920d9e60
+ms.openlocfilehash: 542f4a010aa5ca5051dedb5bc3ca8f97913c4a4e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88876557"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879819"
 ---
 # <a name="generate-block-script---cloud-discovery-api"></a>Gerar script de bloco-API de Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > Esta solicitação não está disponível para o Office 365 Cloud App Security.

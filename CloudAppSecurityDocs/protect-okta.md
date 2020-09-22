@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d62b7d9d91d5f627217caaccbec462aa20d2fcd2
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 4d62ee849743ebb520460844e22d8ef213efd2e8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190086"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880459"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-okta-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente Okta
 
-*Aplica-se ao: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Como uma solução de gerenciamento de acesso e identidade, o Okta mantém as chaves para as organizações que a maioria dos serviços críticos para os negócios. O Okta gerencia os processos de autenticação e autorização para seus usuários e clientes. Qualquer abuso de Okta por um ator mal-intencionado ou qualquer erro humano pode expor seus ativos e serviços mais críticos a ataques potenciais.
 
@@ -29,7 +29,7 @@ A conexão do Okta ao Cloud App Security oferece informações aprimoradas sobre
 ## <a name="how-cloud-app-security-helps-to-protect-your-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente
 
 - [Detecte ameaças à nuvem, contas comprometidas e pessoas mal-intencionadas](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
-- [Use a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+- [Usar a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
 ## <a name="control-okta-with-built-in-policies-and-policy-templates"></a>Controlar o Okta com políticas internas e modelos de política
 
@@ -37,7 +37,7 @@ Você pode usar os seguintes modelos de política interna para detectar e notifi
 
 | Tipo | Nome |
 | ---- | ---- |
-| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividades administrativas incomuns](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividade administrativas incomuns](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Modelo de política de atividade | Logon de um endereço IP com risco |
 
 Para obter mais informações sobre como criar políticas, consulte [criar uma política](control-cloud-apps-with-policies.md#create-a-policy).
