@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fa42e9e481bd815d3bf8ebc8505bde8712eed59f
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 938631506ee5a56ccc4b2349e560615169e995c2
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963829"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878530"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas do Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo descreve as opções de suporte e solução de problemas disponíveis do Cloud App Security.
 

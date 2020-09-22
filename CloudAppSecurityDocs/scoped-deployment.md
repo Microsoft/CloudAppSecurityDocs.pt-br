@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2f9a2d504eded5f57f415aac2841c4e78cda7e2a
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: d2074b58a4f0411f8272ff3f10241604d06a893b
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149849"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879020"
 ---
 # <a name="scoped-deployment"></a>Implantação com escopo <a name="scoped-deployment"></a> 
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Microsoft Cloud App Security permite definir o escopo da implantação. Escopo permite que você selecione alguns grupos de usuários a serem monitorados para aplicativos ou excluídos do monitoramento.
 
@@ -33,7 +33,7 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
 
 - Para definir o escopo de sua implantação, primeiro [importe grupos de usuários](user-groups.md) no Microsoft Cloud App Security. Por padrão, você verá os seguintes grupos:
 
-  - Grupo de usuários de **aplicativos** – um grupo interno que permite que você veja atividades executadas por Microsoft 365 e aplicativos do Azure AD.
+  - Grupo de usuários de **aplicativo** – um grupo integrado que lhe permite ver as atividades executadas pelos aplicativos do Office 365 e do Azure AD.
 
   - Grupo de **usuários externos** – todos os usuários que não são membros de qualquer um dos domínios gerenciados que você configurou para sua organização.
 
@@ -77,7 +77,7 @@ As regras de inclusão e exclusão criadas por você funcionam juntas para defin
 Se você criar as seguintes regras:
 
 - Excluir o grupo de usuários "Alemanha todos os usuários"
-- Incluir para o grupo de usuários "vendas globais" apenas Microsoft 365 atividades
+- Incluir no grupo de usuários "Vendas globais"somente as atividades do Office 365
 - Incluir no grupo de usuário "Gerentes de vendas" somente atividades do Power BI
 - O Salesforce está conectado ao Microsoft Cloud App Security e não há regras definidas para ele
 
@@ -86,8 +86,8 @@ As seguintes atividades de usuário são monitoradas:
 |Usuário|Associação de grupo|Atividades monitoradas|
 |----|----|----|
 |Manuela|Alemanha todos os usuários<br />Vendas globais<br />Gerentes de vendas|Nenhum|
-|Davi|Vendas globais|Microsoft 365 e todos os subaplicativos, exceto Power BI|
-|Barros|Vendas globais<br />Gerentes de vendas|Microsoft 365 e todos os subaplicativos|
+|Davi|Vendas globais|Office 365 e todos os subaplicativos, exceto o Power BI|
+|Barros|Vendas globais<br />Gerentes de vendas|Office 365 e todos os subaplicativos|
 |Diogo|Gerentes de vendas|Apenas Power BI|
 
 > [!NOTE]
@@ -97,6 +97,6 @@ As seguintes atividades de usuário são monitoradas:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

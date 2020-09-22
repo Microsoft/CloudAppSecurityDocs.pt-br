@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 41495095be323743f44d7822283cc08b8b9afbfb
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 2b4e87b1c1ceaf5f089eb67ff2f2b451d5759efd
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781558"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879054"
 ---
 # <a name="manage-alerts"></a>Gerenciar alertas
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
 

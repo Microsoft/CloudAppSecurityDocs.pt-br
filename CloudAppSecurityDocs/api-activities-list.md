@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 76dbe592fd827ebd5790d927f2dd2eb39946e536
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: f2a0f245994852c0e48f6c334a7172ffa14950a1
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657530"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880073"
 ---
 # <a name="list---activities-api"></a>API de atividades de lista
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Execute a solicitação GET ou POST para buscar uma lista de atividades que correspondem aos filtros especificados.
 

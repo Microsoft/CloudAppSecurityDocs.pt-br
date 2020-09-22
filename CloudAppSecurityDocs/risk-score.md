@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 074ff2ae9e23cdcb351a34f937103e311441aa7f
-ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
+ms.openlocfilehash: 4cbc15f85c40d8a36750df20c701900df7a0b8c8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137953"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879137"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabalhar com pontuações de risco do aplicativo
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Catálogo de Aplicativos de Nuvem fornece uma visão completa do que o Cloud Discovery identifica. O Cloud Discovery analisa seus logs de tráfego com base no catálogo de mais de 16.000 aplicativos de nuvem do Microsoft Cloud App Security. Os aplicativos são classificados e pontuados com base em mais de 80 fatores de risco para fornecer visibilidade contínua sobre o uso da nuvem, Shadow IT e a sombra de risco que ele representa para sua organização. Este artigo fornece instruções sobre como usar e personalizar a pontuação de risco do aplicativo Cloud App Security.
 
@@ -116,7 +116,7 @@ Cada uma das categorias é composta por várias propriedades específicas. De ac
 
 3. Além disso, você pode definir se determinados valores não estão disponíveis ou não são aplicáveis no cálculo da pontuação. Quando incluídos, valores N/A têm uma contribuição negativa para a pontuação calculada.
 
-    ![placar](media/score.png "métricas de Pontuação")
+    ![métricas de Pontuação](media/score.png)
 
 Todas as informações necessárias para compreender como as classificações de risco do Cloud App Security se comparam estão disponíveis no portal do Cloud App Security. Para entender melhor o peso de um fator de risco em uma categoria de risco específica, use o botão "i" à direita de cada nome de campo no perfil do aplicativo. Isso fornece informações sobre exatas como o Cloud App Security pontua um fator de risco específico. A pontuação é o valor do fator de risco em uma escala de 1 a 10 mais o seu peso na categoria de risco:
 

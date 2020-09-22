@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 0b8233a43feb374e7c2c98d1895e12d2550ff577
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 395691b7c21a788afc907a31817be2faf8ed56f4
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657564"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880020"
 ---
 # <a name="bulk-dismiss---alerts-api"></a>API de descarte-alertas em massa
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Execute a solicitação POST para ignorar vários alertas que correspondem aos filtros especificados.
 

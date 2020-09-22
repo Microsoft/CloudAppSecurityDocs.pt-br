@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 73045177f79bb17c5adbf2d19c9c41875e135b51
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 9ba5e83c10406308a1faf6e323fcfb9837da4b12
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149713"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880040"
 ---
 # <a name="activities-api"></a>API de atividades
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 A API de atividade fornece visibilidade de todas as ações executadas em seus aplicativos de nuvem. Os dados dessa API podem fornecer informações sobre quem faz logon em qual aplicativo e quando, quais arquivos estão sendo baixados de locais suspeitos e assim por diante.
 
@@ -37,8 +37,8 @@ A tabela a seguir descreve os filtros com suporte:
 
 | Filtrar | Tipo | Operadores | Descrição |
 | --- | --- | --- | --- |
-| serviço | inteiro | EQ, NEQ | Filtrar atividades relacionadas à appID de serviço especificada, por exemplo: 11770 |
-| instance | inteiro | EQ, NEQ | Filtrar atividades de instâncias especificadas |
+| serviço | Número inteiro | EQ, NEQ | Filtrar atividades relacionadas à appID de serviço especificada, por exemplo: 11770 |
+| instance | Número inteiro | EQ, NEQ | Filtrar atividades de instâncias especificadas |
 | User. orgUnit | string | EQ, NEQ, isset, isnotset | Filtrar atividades pela unidade organizacional do usuário em execução |
 | Activity. eventType | string | EQ, NEQ | Filtrar atividades por tipo de evento |
 | activity.id | string | eq | Localizar uma atividade por ID |
@@ -52,13 +52,13 @@ A tabela a seguir descreve os filtros com suporte:
 | localização. país | string | EQ, NEQ, isset, isnotset | Filtrar atividades originadas do código de país/região especificado |
 | local. organizações | string | EQ, NEQ, isset, isnotset, contém | Filtrar atividades originadas da organização especificada |
 | IP. Address | string | EQ, StartsWith, doesnotstartwith, isset, isnotset, NEQ | Filtrar atividades provenientes do endereço IP fornecido |
-| fileseletor | file | EQ, NEQ | Filtrar atividades que contêm o arquivo/pasta especificado |
-| office365url | string | StartsWith, EQ, EndsWith | Filtrar atividades por URLs de Microsoft 365 |
+| fileseletor | Arquivo  | EQ, NEQ | Filtrar atividades que contêm o arquivo/pasta especificado |
+| office365url | string | StartsWith, EQ, EndsWith | Filtrar atividades por URLs do Office 365 |
 | fileId | string | eq | Localizar um arquivo por ID |
-| IP. categoria | inteiro | EQ, NEQ | Filtrar atividades com as categorias de sub-rede especificadas. Os valores possíveis incluem:<br /><br />**1**: corporativo<br />**2**: administrativo<br />**3**: arriscado<br />**4**: VPN<br />**5**: provedor de nuvem<br />**6**: outros |
+| IP. categoria | Número inteiro | EQ, NEQ | Filtrar atividades com as categorias de sub-rede especificadas. Os valores possíveis incluem:<br /><br />**1**: corporativo<br />**2**: administrativo<br />**3**: arriscado<br />**4**: VPN<br />**5**: provedor de nuvem<br />**6**: outros |
 | IP. Tags | string | EQ, NEQ | Filtrar atividades por IDs de marca IP |
 | text | string | EQ, startswithsingle, texto | Filtrar atividades executando uma pesquisa de texto livre |
-| date | timestamp | LTE, GTE, Range, lte_ndays, gte_ndays | Filtrar atividades que ocorreram no intervalo de tempo especificado |
+| Data | timestamp | LTE, GTE, Range, lte_ndays, gte_ndays | Filtrar atividades que ocorreram no intervalo de tempo especificado |
 | policy | string | EQ, NEQ, isset, isnotset | Filtrar atividades relacionadas às políticas especificadas |
 | source | string | EQ, NEQ | Filtrar todas as atividades por tipo de origem ou ID de fluxo. Exemplo: `[{ "s:stream-id", "t:source-type" }]` possíveis valores de tipo de fonte incluem:<br /><br />**0**: controle de acesso<br />**1**: controle de sessão<br />**2**: conector de aplicativos<br />**3**: análise do conector de aplicativos<br />**5**: descoberta<br />**6**: MDATP |
 | atividade. Alertid | string | eq | Filtrar todas as atividades relevantes para uma ID de alerta |
