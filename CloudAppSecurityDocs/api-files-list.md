@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 7399ae14416afd1627b70c1eac27674a5cb2127f
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 2dac75e59e95e01f11e0dc2af0d4dc44ffb9a284
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657696"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879644"
 ---
 # <a name="list---files-api"></a>API de arquivos de lista
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > Esta solicitação não está disponível para o Office 365 Cloud App Security.

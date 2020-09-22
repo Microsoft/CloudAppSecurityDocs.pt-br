@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 653b9faef5819a1e2733091b7d2ca98d36334281
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: a77ff2f9cd7b814d755cec2d0087088cc71abbf0
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780011"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878943"
 ---
 # <a name="security-configuration-for-google-cloud-platform"></a>Configuração de segurança para Google Cloud Platform
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security fornece uma avaliação de configuração de segurança do seu ambiente Google Cloud Platform (GCP). Essa avaliação fornece recomendações de segurança fundamentais com base no parâmetro de [comparação de CIS (centro de segurança da Internet) para GCP](https://www.cisecurity.org/benchmark/google_cloud_computing_platform/), versão 1.1.0.
 

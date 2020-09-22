@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b61dbeb47b4f63a5dff01cc372b52a81a21dd01
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: ed844bd996cbf6b9b5a4119999f95ae6209c6207
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88778923"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878394"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importar grupos de usuários de aplicativos conectados
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Quando você conecta aplicativos usando conectores de API, o Microsoft Cloud App Security permite que você importe grupos de usuários, por exemplo do Office 365 e do Azure Active Directory. Há dois tipos de grupos de usuários:
 
@@ -72,6 +72,6 @@ Para obter mais informações sobre como usar os filtros de grupo de usuários, 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

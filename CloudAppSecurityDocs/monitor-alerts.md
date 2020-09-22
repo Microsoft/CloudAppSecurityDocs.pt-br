@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b7e74adea5ef8f314b1a4c43f3be018a1978468
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 6bb43764f9a8e200b79a81dfe0dc97db557b6fe0
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779450"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878010"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Monitorar alertas no Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais profundamente. Este artigo fornece uma lista e uma descrição de todos os alertas.
 

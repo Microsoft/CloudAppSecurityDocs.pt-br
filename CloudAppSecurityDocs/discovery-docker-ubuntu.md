@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 706bdf5d49c044f5fe9015e65eb57bf34e325e32
-ms.sourcegitcommit: c31df5ab5f2c1ee1dbfdabc83294b425a48dba70
+ms.openlocfilehash: f58beaaaf2bbc5aa50b138368ea5bed5cd7a65ea
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89654388"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877891"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker no Linux local
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Você pode configurar o upload de log automático para relatórios contínuos no Cloud App Security usando um Docker em um servidor Ubuntu, Red Hat Enterprise Linux (RHEL) ou CentOS local.
 

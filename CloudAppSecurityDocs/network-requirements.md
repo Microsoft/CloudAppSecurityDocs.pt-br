@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ffc479ee603ddc6e38b7ba0167fff6f20d9decad
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 1542e3c10adcb3df2c58fefb0e2e9e62ca985cb8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779467"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877991"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece uma lista de portas e endereços IP que você precisa para permitir e permitir que a lista funcione com Microsoft Cloud App Security.
 

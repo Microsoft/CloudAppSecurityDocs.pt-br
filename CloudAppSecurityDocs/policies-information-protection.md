@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b4be7d9e31f2fc0bf71175a9c7fb3d07c38262a4
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: d5b42984d8e0f1b16db5a92116e4d7835d3882b8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254798"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877870"
 ---
 # <a name="information-protection-policies"></a>Políticas de proteção de informações
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security políticas de arquivo permitem impor uma ampla variedade de processos automatizados. As políticas podem ser definidas para fornecer proteção de informações, incluindo verificações de conformidade contínuas, tarefas de eDiscovery legais e DLP para conteúdo confidencial compartilhado publicamente.
 
@@ -133,7 +133,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
     1. Opcional: você pode usar a abordagem oposta e definir o filtro como **local** igual a se sua organização bloquear o acesso de países/regiões específicos.
 
-4. Opcional: Crie ações de **governança** a serem aplicadas à violação detectada (a disponibilidade varia entre os serviços), como **suspender usuário**.
+4. Opcional: Crie ações de **governança** a serem aplicadas à violação detectada (a disponibilidade varia entre os serviços), como  **suspender usuário**.
 
 5. Crie a política de atividade.
 

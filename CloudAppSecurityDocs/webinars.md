@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/25/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 95df4dafcb38ce7b4fa041c7fc0e5ea6e600c6e1
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: dec6b380c300b994531fb4410c46d91135788d98
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624738"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878218"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Microsoft Cloud App Security webinars
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Veja esta série de Webinar de seis partes para saber mais sobre Microsoft Cloud App Security principais casos de uso e práticas recomendadas de implantação para ajudá-lo a proteger melhor seus ambientes de nuvem.
 

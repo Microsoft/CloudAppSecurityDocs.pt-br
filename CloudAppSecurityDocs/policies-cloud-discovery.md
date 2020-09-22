@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e8f60e2412ab32fd5cb22adb78e482d6359697f6
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 54df0eef56e31d8391d2bb7cfa80a98650dfdd9e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89667153"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877911"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas do Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece uma visão geral de como começar a usar o Cloud App Security para obter visibilidade em sua organização em Shadow IT usando Cloud Discovery.
 

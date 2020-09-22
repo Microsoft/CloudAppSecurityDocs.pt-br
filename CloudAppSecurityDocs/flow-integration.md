@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c2d208fa3570f32719e247b006c831755ab80173
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 6ea53492ebb2b3edbc08ebd7568b809953e8a6cb
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963770"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878208"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integre-se ao Microsoft Power Automate para automação de alerta personalizada
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Cloud App Security integra-se com a [automatização de energia da Microsoft](/flow/getting-started) para fornecer automação de alerta personalizada e guias estratégicos de orquestração. Usando o [ecossistema de conectores](/connectors/) disponíveis na automatização de energia, você pode automatizar o disparo de guias estratégicos quando Cloud app Security gera alertas. Por exemplo, crie automaticamente um problema nos sistemas de tíquete usando o [conector do ServiceNow](/connectors/service-now/) ou envie um email de aprovação para executar uma ação de governança personalizada quando um alerta é disparado no Cloud App Security.
 

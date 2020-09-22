@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b6ad9583cd250f438be0cf2d29e171777eaf8fb4
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: de58d785d221876ac92cd1d2b600def4e6c4a647
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150189"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879485"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O controle permite que você controle o que os usuários fazem, em tempo real, entre aplicativos. Para aplicativos conectados, você pode aplicar ações de controle a arquivos ou atividades. Ações de governança são ações integradas que você pode executar em arquivos ou atividades diretamente no Microsoft Cloud App Security. As ações de governança controlam o que os usuários fazem, em tempo real, nos aplicativos conectados. Para obter informações sobre onde você pode usar ações de governança, consulte [aplicar ações de governança](control.md#apply-governance-actions).
 
@@ -71,7 +71,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
 
     - **Colocar em quarentena do administrador** – o arquivo é movido para quarentena na unidade do administrador e o administrador precisa aprová-lo.
 
-  - **Herdar permissões do pai** – essa ação de governança permite remover permissões específicas definidas para um arquivo ou pasta no Microsoft 365. Em seguida, reverta para as permissões definidas para a pasta pai.
+  - **Herdar permissões do pai** – essa ação de governança permite remover o conjunto de permissões específicas para um arquivo ou uma pasta no Office 365. Em seguida, reverta para as permissões definidas para a pasta pai.
 
   - **Lixeira** – mova o arquivo para a pasta da lixeira. (Caixa, Dropbox, Google Drive, OneDrive, SharePoint)
 
@@ -122,7 +122,7 @@ Para exibir o log de governança, na barra de menus, clique no ícone configura�
 A tabela a seguir é a lista completa de ações que o portal do Cloud App Security permite que você execute. Essas ações são habilitadas em vários locais por todo o console, conforme descrito na coluna **Localização**. Cada ação de governança realizada é relacionada no Log de Governança.
 Para obter informações sobre como as ações de governança são tratadas quando há conflitos de política, consulte [Conflitos de política](control-cloud-apps-with-policies.md).
 
-| Localização | Tipo de objeto de destino | Ação de governança |Descrição| Conectores relacionados|
+| Location | Tipo de objeto de destino | Ação de governança |Descrição| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Contas |Arquivo |Remover colaborações do usuário | Remove todas as colaborações de um usuário específico para todos os arquivos - bom para as pessoas que estão saindo da empresa. |Box, G Suite|
 |Contas | Conta | Cancelar suspensão de usuário |Cancela a suspensão do usuário |G Suite, Box, Office, Salesforce|
@@ -132,10 +132,10 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Política de atividade, Contas | Conta |Exigir que o usuário entre novamente|Revoga todos os tokens de atualização e todas as emissões de cookie de sessão para aplicativos pelo usuário. Essa ação impedirá o acesso aos dados da organização e forçará o usuário a entrar novamente em todos os aplicativos.| G Suite, Office|
 |Política de atividade, Contas | Conta |Confirmar o usuário comprometido|Defina o nível de risco do usuário como alto. Isso faz com que as ações de política relevantes definidas no Azure AD sejam impostas. | Office |
 |Política de atividade, Contas | Conta | Revogar privilégios de administrador |Revoga os privilégios da conta do administrador. Por exemplo, definir uma política de atividade que revogue os privilégios de administrador depois de 10 tentativas de logon com falha. | G Suite|
-|Painel do aplicativo > Permissões de aplicativo |Permissões|Cancelar veto de aplicativo| No Google e no Salesforce: remove o veto do aplicativo e permite que os usuários concedam permissões ao aplicativo de terceiros com suas contas do Google ou do Salesforce. No Microsoft 365: restaura as permissões do aplicativo de terceiros para o Office. |G Suite, Salesforce, Office |
+|Painel do aplicativo > Permissões de aplicativo |Permissões|Cancelar veto de aplicativo| No Google e no Salesforce: remove o veto do aplicativo e permite que os usuários concedam permissões ao aplicativo de terceiros com suas contas do Google ou do Salesforce. No Office 365: restaura as permissões do aplicativo de terceiros para o Office. |G Suite, Salesforce, Office |
 |Painel do aplicativo > Permissões de aplicativo |Permissões| Desabilitar permissões de aplicativo | Revoga as permissões de um aplicativo de terceiros para o Google, o Salesforce ou o Office. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras.|G Suite, Salesforce, Office |
 |Painel do aplicativo > Permissões de aplicativo |Permissões| Habilitar permissões de aplicativo |Concede as permissões de um aplicativo de terceiros para o Google, o Salesforce ou o Office. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras.|G Suite, Salesforce, Office |
-|Painel do aplicativo > Permissões de aplicativo |Permissões| Vetar aplicativo | No Google e Salesforce: revoga as permissões de um aplicativo de terceiros para o Google ou Salesforce e impede que ele receba permissões no futuro. No Microsoft 365: o não permite a permissão de aplicativos de terceiros para acessar o Office, mas não os revoga. |G Suite, Salesforce, Office |
+|Painel do aplicativo > Permissões de aplicativo |Permissões| Vetar aplicativo | No Google e Salesforce: revoga as permissões de um aplicativo de terceiros para o Google ou Salesforce e impede que ele receba permissões no futuro. No Office 365: o não permite a permissão de aplicativos de terceiros para acessar o Office, mas não os revoga. |G Suite, Salesforce, Office |
 |Painel do aplicativo > Permissões de aplicativo |Permissões|Revogar o aplicativo|Revogue as permissões de um aplicativo de terceiros para o Google ou Salesforce. Essa é uma ação única que ocorrerá em todas as permissões existentes, mas não impedirá conexões futuras. | G Suite, Salesforce|
 |Painel do aplicativo > Permissões de aplicativo | Conta | Revogar o usuário do aplicativo|Você pode revogar usuários específicos ao clicar no número em Usuários. A tela exibirá os usuários específicos e você poderá usar o X para excluir permissões para qualquer usuário.| G Suite, Salesforce|
 |Descobrir > Aplicativos descobertos/Endereços IP/Usuários| Cloud Discovery | Exportar dados de descoberta | Cria um CSV dos dados de descoberta. | Descoberta |
@@ -143,16 +143,16 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Política de Arquivos|Arquivo | Notificar o último editor de arquivo |Envia um email para notificar a última pessoa que editou o arquivo que ele viola uma política. |G Suite, Box|
 |Política de Arquivos|Arquivo |Notificar o proprietário do arquivo|Envia um email para o proprietário do arquivo quando um arquivo viola uma política. No Dropbox, se nenhum proprietário estiver associado um arquivo, a notificação será enviada para o usuário específico que você definir. | Todos os aplicativos |
 |Política de arquivos, Atividade de política | Arquivo, Atividade | Notificar usuários específicos |Envia um email para notificar usuários específicos sobre um arquivo que viola uma política.| Todos os aplicativos |
-|Política de arquivo e Política de atividade | Arquivo, Atividade |Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação. |Todos |
+|Política de arquivo e Política de atividade | Arquivo, Atividade |Notificar o usuário|Envia um email aos usuários para notificá-los de que algo que eles fizeram ou um arquivo que têm viola uma política. Você pode adicionar uma notificação personalizada para que ele saiba qual foi a violação. |Tudo |
 |Política de arquivo e Arquivos|Arquivo | Remover a capacidade do editor de compartilhar|No Google Drive, as permissões de editor padrão de um arquivo permitem o compartilhamento também. Esta ação de governança restringe essa opção e também o compartilhamento de arquivos com o proprietário.| G Suite|
-|Política de arquivo e Arquivos|Arquivo | [Colocar em quarentena do administrador](use-case-admin-quarantine.md) |Remove todas as permissões do arquivo e move o arquivo para uma pasta de quarentena em um local para o administrador. Essa ação permite que o administrador examine o arquivo e remova-o.| Microsoft 365 SharePoint, OneDrive for Business, Box|
+|Política de arquivo e Arquivos|Arquivo | [Colocar em quarentena do administrador](use-case-admin-quarantine.md) |Remove todas as permissões do arquivo e move o arquivo para uma pasta de quarentena em um local para o administrador. Essa ação permite que o administrador examine o arquivo e remova-o.| Office 365 SharePoint, OneDrive for Business, Box|
 |Política de arquivo e Arquivos|Arquivo | Aplicar rótulo de classificação|Aplica um rótulo de classificação da Proteção de Informações do Azure a arquivos automaticamente de acordo com as condições definidas na política.| Box, One Drive, G Suite, SharePoint |
 |Política de arquivo e Arquivos|Arquivo | Remover rótulo de classificação | Remove um rótulo de classificação da Proteção de Informações do Azure de arquivos automaticamente de acordo com as condições definidas na política. É possível remover rótulos apenas quando eles não incluem proteção e são aplicados no Cloud App Security, exceto os aplicados diretamente na Proteção de Informações.| Box, One Drive, G Suite, SharePoint |
-|Política de arquivos, Política de atividade, Alertas | Aplicativo |Exigir que os usuários entrem novamente| Você pode exigir que os usuários entrem novamente em todos os Microsoft 365 e aplicativos do Azure AD como uma correção rápida e eficaz para alertas de atividade de usuário suspeitos e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário. | Microsoft 365, Azure AD |
+|Política de arquivos, Política de atividade, Alertas | Aplicativo |Exigir que os usuários entrem novamente| Você pode exigir que os usuários entrem novamente no Office 365 e em todos os aplicativos do Azure AD como uma correção rápida e eficaz para alertas de atividade do usuário suspeita e contas comprometidas. Você pode encontrar a nova governança nas configurações de política e nas páginas de alertas, ao lado da opção Suspender usuário. | Office 365, Azure AD |
 |Arquivos |Arquivo |Restaurar da quarentena do usuário |Restaura um usuário de ser colocado em quarentena. |Box |
 |Arquivos |Arquivo | Conceder permissões de leitura para mim| Concede permissões de leitura do arquivo para você mesmo, de forma que você possa acessar o arquivo e entender se ele tem uma violação ou não.| G Suite|
 |Arquivos |Arquivo | Permitir que os editores compartilhem | No Google Drive, a permissão de editor padrão de um arquivo permite o compartilhamento também. Essa ação de governança é o oposto da capacidade de remover o editor de compartilhar e permite que o editor Compartilhe o arquivo. | G Suite|
-|Arquivos |Arquivo | Proteger | Proteja um arquivo com a Proteção de Informações do Azure aplicando um modelo da organização. | Microsoft 365 (SharePoint e OneDrive) |
+|Arquivos |Arquivo | Proteger | Proteja um arquivo com a Proteção de Informações do Azure aplicando um modelo da organização. | Office 365 (SharePoint e OneDrive) |
 |Arquivos |Arquivo | Revogar formulário de permissões de leitura para mim | Revoga permissões de leitura do arquivo para você mesmo, útil após conceder permissão a si próprio para entender se um arquivo tem uma violação ou não.| G Suite|
 |Arquivos, Política de arquivo|Arquivo | Transferir a propriedade do arquivo | Altera o proprietário - na política em que você escolher um proprietário específico. | G Suite|
 |Arquivos, Política de arquivo|Arquivo | Reduzir o acesso público|Essa ação permite que você defina os arquivos disponíveis publicamente a serem disponibilizados somente com um link compartilhado.| G Suite|

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8dd243af267de7bd598505771554675832560e37
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: fa30bef49788834233a8aa44b9e6d165c1b83658
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89666855"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877779"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividade
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece descrições e instruções para consultas e filtros de atividades do Cloud App Security.
 

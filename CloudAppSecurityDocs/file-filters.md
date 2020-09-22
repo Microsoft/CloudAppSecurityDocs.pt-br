@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2cd1042c28ee35ee0afc77292ac523e521bc5b16
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 50e6d6855a6e1b94a4d10cb47b31321e0ee242ae
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780113"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879639"
 ---
 # <a name="files"></a>Arquivos
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Para oferecer proteção de dados, o Microsoft Cloud App Security proporciona visibilidade de todos os arquivos de seus aplicativos conectados. Depois que você conectar o Microsoft Cloud App Security a um aplicativo usando o conector de aplicativos, o Microsoft Cloud App Security examina todos os arquivos, por exemplo, todos os arquivos armazenados no OneDrive e no Salesforce. Em seguida, o Cloud App Security examina novamente cada arquivo sempre que ele é modificado – a modificação pode ser em conteúdo, metadados ou permissões de compartilhamento. Os tempos de verificação dependem do número de arquivos armazenados em seu aplicativo. Também é possível usar a página **Arquivos** para filtrar os arquivos a fim de investigar qual tipo de dados está salvo em seus aplicativos de nuvem.
 

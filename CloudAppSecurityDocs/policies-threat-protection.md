@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c6f43ef44d01f422bd0416ca99448e6f77ef6233
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 4860dc37a2d0ad8fab903ec852e5e21074672a81
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150240"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877830"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security permite identificar o uso de alto risco e problemas de segurança na nuvem, detectar comportamento anormal do usuário e evitar ameaças em seus aplicativos de nuvem aprovados. Obtenha visibilidade das atividades de usuário e administrador e defina políticas para alertar automaticamente quando um comportamento suspeito ou atividades específicas consideradas arriscadas forem detectadas. Desenhe com a vasta quantidade de dados de pesquisa de ameaças e segurança da Microsoft para ajudar a garantir que seus aplicativos aprovados tenham todos os controles de segurança de que você precisa em vigor e o ajudem a manter o controle sobre eles.
 
@@ -178,7 +178,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 2. É possível configurar o **escopo** da detecção e personalizar as ações de governança a serem executadas quando um alerta for disparado. Para obter mais informações sobre como Cloud App Security identifica ransomware, consulte [protegendo sua organização contra ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> Isso se aplica a Microsoft 365, G Suite, Box e dropbox.
+> Isso se aplica ao Office 365, G Suite, Box e dropbox.
 
 ## <a name="detect-malware-in-the-cloud"></a>Detectar malware na nuvem
 
@@ -186,7 +186,7 @@ Detecte arquivos que contenham malware em seus ambientes de nuvem utilizando a i
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-- Para Microsoft 365 detecção de malware, você deve ter uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
+- Para detecção de malware do Office 365, você deve ter uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
 - Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Etapas

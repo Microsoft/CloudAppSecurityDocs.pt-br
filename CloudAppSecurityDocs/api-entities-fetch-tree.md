@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 2f39f0541569b4f4c127c3c1d9602e097b56a82b
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 8d01066d6195b3541045b15094432999dab98cc5
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657734"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879736"
 ---
 # <a name="fetch-entity-tree---entities-api"></a>Buscar árvore de entidade-API de entidades
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > Esta solicitação não está disponível para o Office 365 Cloud App Security.
