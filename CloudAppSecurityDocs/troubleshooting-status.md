@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 56434a38c0eef24c9581db36c16b47ef7694dc1d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 9d8ecb2541e956a16c538850582914dd5fedb3a8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721184"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880964"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Solução de problemas de status do Microsoft Cloud App Security
 
-*Aplica-se ao: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece instruções e um link para acessar a página de status do Cloud App Security.
 
@@ -32,7 +32,7 @@ Este artigo fornece instruções e um link para acessar a página de status do C
 Você pode verificar o status atual do serviço Microsoft Cloud App Security das seguintes maneiras:
 
 - Acessando [status.cloudappsecurity.com](https://status.cloudappsecurity.com).
-- Clicando em **Ajuda** > **Status do sistema** diretamente no portal.
+- Clicar no **Help**  >  **status do sistema** de ajuda diretamente de dentro do Portal.
 
 ## <a name="next-steps"></a>Próximas etapas
 

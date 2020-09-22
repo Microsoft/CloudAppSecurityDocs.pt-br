@@ -15,16 +15,16 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bb3196fb47641fad788fda6c98777bbe2ce70a8c
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 3a6b0137fa50fecae56113c952031b998357d703
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781133"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881386"
 ---
 # <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>Conectar o GitHub Enterprise Cloud a Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua organização de nuvem empresarial do GitHub existente usando as APIs do conector de aplicativo. Essa conexão fornece visibilidade e controle sobre o uso de nuvem empresarial do GitHub de sua organização. Para obter mais informações sobre como Cloud App Security protege o GitHub Enterprise Cloud, consulte [proteger o GitHub Enterprise](protect-github.md).
 

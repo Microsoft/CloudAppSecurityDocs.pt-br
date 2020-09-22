@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9fdea4bcf8db70a1f8eed023cb8af81d328b8771
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 49f61cbad04b6c4f559ec47bc9bdc6047f016b1a
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963515"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877615"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As políticas de acesso do Microsoft Cloud App Security permitem o monitoramento em tempo real e controle sobre o acesso a aplicativos na nuvem baseados em usuário, localização, dispositivo e aplicativo. Você pode criar políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são uma junção híbrida do Azure AD e não são gerenciados pelo Microsoft Intune distribuindo certificados de cliente para dispositivos gerenciados ou usando certificados existentes, como certificados de MDM de terceiros. Por exemplo, implante certificados do cliente em dispositivos gerenciados e, em seguida, bloqueie o acesso em dispositivos sem um certificado.
 
@@ -73,7 +73,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 > [!div class="nextstepaction"]
 > [PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando controles de sessão](use-case-proxy-block-session-aad.md)

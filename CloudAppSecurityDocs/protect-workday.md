@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9ee405188d0f338bfe43ca9a08730baa6054a844
-ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
+ms.openlocfilehash: 2ff5f5ffb2dfe58833f556a6aebe1d4b99b8c061
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78274638"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880362"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente workday
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Como uma solução HCM principal, o workday mantém algumas das informações mais confidenciais em sua organização, como dados pessoais de funcionários, contratos, detalhes de fornecedores e muito mais. Impedir a exposição desses dados exige monitoramento contínuo para impedir que quaisquer atores maliciosos ou pessoas sem reconhecimento de segurança invasão as informações confidenciais.
 
@@ -32,16 +32,16 @@ Conectar o workday ao Cloud App Security oferece informações aprimoradas sobre
 ## <a name="how-cloud-app-security-helps-to-protect-your-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente
 
 - [Detecte ameaças à nuvem, contas comprometidas e pessoas mal-intencionadas](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
-- [Use a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+- [Usar a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
 ## <a name="control-workday-with-built-in-policies-and-policy-templates"></a>Controlar o workday com políticas internas e modelos de política
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Digite | Name |
+| Tipo | Nome |
 | ---- | ---- |
-| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de um país infrequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel) |
-| Modelo de política de atividade | Logon de um endereço IP arriscado |
+| Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel) |
+| Modelo de política de atividade | Logon de um endereço IP com risco |
 
 Para obter mais informações sobre como criar políticas, consulte [criar uma política](control-cloud-apps-with-policies.md#create-a-policy).
 

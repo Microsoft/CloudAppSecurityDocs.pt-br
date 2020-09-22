@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5ee11b6c97bc8aa5b0ec35394ac6f1f40bd3873a
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 1c813d804b2f9ef4df1ede9ea85542fdd22f38d9
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190206"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880415"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-cisco-webex-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente Cisco WebEx
 
-*Aplica-se ao: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Como uma plataforma de comunicação e colaboração, o Cisco WebEx permite a comunicação simplificada e a colaboração em toda a sua organização. Usar o Cisco WebEx para a troca de dados e ativos pode expor suas informações organizacionais confidenciais para usuários externos, por exemplo, em salas de bate-papo em que eles também podem participar de uma conversa com seus funcionários.
 
@@ -32,9 +32,9 @@ Conectar o Cisco WebEx ao Cloud App Security oferece informações aprimoradas s
 
 ## <a name="how-cloud-app-security-helps-to-protect-your-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente
 
-- [Impor políticas de conformidade e DLP para dados armazenados na nuvem](best-practices.md#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud)
+- [Impor políticas de conformidade e DLP (proteção contra perda de dados) para dados armazenados na nuvem](best-practices.md#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud)
 - [Limitar a exposição de dados compartilhados e impor políticas de colaboração](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
-- [Use a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+- [Usar a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
 ## <a name="control-cisco-webex-with-built-in-policies-and-policy-templates"></a>Controlar o Cisco WebEx com políticas internas e modelos de política
 
@@ -42,7 +42,7 @@ Você pode usar os seguintes modelos de política interna para detectar e notifi
 
 | Tipo | Nome |
 | ---- | ---- |
-| Política de detecção de anomalias interna | [Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividades de exclusão de arquivo incomum](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de compartilhamento de arquivos incomum](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades de download de vários arquivos incomuns](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Política de detecção de anomalias interna | [Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividades incomuns de exclusão de arquivos](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de compartilhamento de arquivos](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de download de vários arquivos](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Modelo de política de arquivo | Detectar um arquivo compartilhado com um domínio não autorizado<br />Detectar um arquivo compartilhado com endereços de email pessoais<br />Detectar arquivos com PII/PCI/PHI |
 | Modelo de política de atividade | Download em massa por um único usuário<br />Atividade de ransomware potencial |
 

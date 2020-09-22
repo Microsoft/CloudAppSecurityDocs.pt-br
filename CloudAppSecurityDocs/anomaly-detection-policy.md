@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5bf75b479f3568b7c6451880f3a2774104d8115a
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 7aa2b2ac172608d445860c1ddce4b9125657e18e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149629"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880133"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As políticas de detecção de anomalias do Microsoft Cloud App Security fornecem UEBA (análise comportamental do usuário e entidade) e o ML (aprendizado de máquina) prontos para uso para que você esteja pronto desde o início para executar a detecção avançada de ameaças em seu ambiente de nuvem. Como elas são habilitadas automaticamente, as novas políticas de detecção de anomalias iniciam imediatamente o processo de detecção e agrupamento de resultados, direcionando várias anomalias comportamentais entre os usuários e os computadores e dispositivos conectados à sua rede. Além disso, as políticas expõem mais dados do mecanismo de detecção de Cloud App Security, para ajudá-lo a acelerar o processo de investigação e conter ameaças contínuas.
 
@@ -35,7 +35,7 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Falhas de logon
 * Atividade do administrador
 * Contas inativas
-* Localização
+* Location
 * Viagem impossível
 * Agente de dispositivo e usuário
 * Taxa de atividade
@@ -81,7 +81,7 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
     > * Box
     > * Dropbox
     > * G Suite
-    > * Microsoft 365 (requer uma licença válida para a proteção avançada contra ameaças do Office 365 P1)
+    > * Office 365 (requer uma licença válida para a proteção avançada contra ameaças do Office 365 P1)
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
 

@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae59702910ca7c36a03f3a05b73b9747906fce99
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 8be4442c3fc01af52aec52fa6373a13405e55208
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780249"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880254"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Você pode configurar o upload automático de log para relatórios contínuos no Cloud App Security usando um Docker no Windows.
 

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 135dd542bce61796d0de8bce81fd735f2c87df53
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0b3dcf585f394b3e2752ac46ea799a34a13373db
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780436"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880346"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker no Linux no Azure
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Você pode configurar o upload de log automático para relatórios contínuos no Cloud App Security usando um Docker no Ubuntu, Red Hat Enterprise Linux (RHEL) ou CentOS no Azure.
 
@@ -122,7 +122,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
     1. Vá para **regras de segurança de entrada** e clique em **Adicionar**, ![ adicionar regras de segurança de entrada](media/ubuntu-azure.png)
     1. Adicionar as seguintes regras (no modo **Avançado**):
 
-    |Nome|Intervalos de portas de destino|Protocolo|Fonte|Destino|
+    |Name|Intervalos de portas de destino|Protocolo|Fonte|Destino|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Sub-rede do endereço IP do dispositivo>|Qualquer|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|Qualquer|

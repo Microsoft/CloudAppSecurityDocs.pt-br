@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8d849ed2b95577a805355eaae744ff81d2eb8176
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 69b70614bf62f91c6d0d9743e863239217542f1e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781711"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881046"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Integrar o Cloud App Security com o iboss
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Se você trabalha com o Cloud App Security e o iboss, é possível integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. O iboss é um gateway de nuvem seguro e autônomo que monitora o tráfego da sua organização e permite que você defina políticas que bloqueiam as transações. Juntos, o Cloud App Security e o iboss oferecem os seguintes recursos:
 

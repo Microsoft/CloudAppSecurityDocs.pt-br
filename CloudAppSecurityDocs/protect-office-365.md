@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e640fbd96b91bb19fa0f9b70ce4eff603d48308a
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 79d79cdbb62881b519c66718dbd66df563cfe676
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89667122"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877142"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente do Office 365
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Como um pacote de produtividade importante que fornece armazenamento de arquivos em nuvem, colaboração, BI e ferramentas de CRM, o Office 365 permite que os usuários compartilhem seus documentos em sua organização e parceiros de maneira simplificada e eficiente. Usar o Office 365 pode expor seus dados confidenciais não apenas internamente, mas também para colaboradores externos, ou ainda pior disponibilizá-los publicamente por meio de um link compartilhado. Esses incidentes podem ocorrer devido a um ator mal-intencionado ou por um funcionário inconsciente. O Office 365 também fornece um grande sistema de eco de aplicativos de terceiros para ajudar a aumentar a produtividade. O uso desses aplicativos pode expor sua organização ao risco de aplicativos mal-intencionados ou uso de aplicativos com permissões excessivas.
 
@@ -62,7 +62,7 @@ O uso do conector do Office 365 fornece proteção para os seguintes produtos:
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Type | Nome |
+| Tipo | Nome |
 | ---- | ---- |
 | Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o Azure ad como IDP)<br />[Detecção de malware](anomaly-detection-policy.md#malware-detection)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividade de exclusão de email suspeito (versão prévia)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Caixa de entrada suspeita encaminhando](anomaly-detection-policy.md#suspicious-inbox-forwarding)[atividades incomuns de exclusão de arquivo](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de compartilhamento de arquivos](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de download de vários arquivos](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Modelo de política de atividade | Logon de um endereço IP com risco<br />Download em massa por um único usuário<br />Atividade de ransomware potencial<br />Alteração no nível de acesso (equipes)<br />Usuário externo adicionado (equipes)<br />Exclusão em massa (equipes) |

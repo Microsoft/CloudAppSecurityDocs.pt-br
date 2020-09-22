@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b93a60c42b024b03a048848d048f4ed93d13f17
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 60314be5b2dba1ec3ff5a35eb7d4e836a2a9d34d
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963464"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881654"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Como investigar alertas de detecção de anomalias
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security fornece detecções de segurança e alertas para atividades mal-intencionadas. A finalidade deste guia é fornecer informações gerais e práticas sobre cada alerta, para ajudar com suas tarefas de investigação e correção. Neste guia, estão incluídas informações gerais sobre as condições para disparar alertas. No entanto, é importante observar que, como as detecções de anomalias são não determinísticas por natureza, elas são disparadas apenas quando há um comportamento que se desvia da norma. Por fim, alguns alertas podem estar em versão prévia, portanto, examine regularmente a documentação oficial para obter o status de alerta atualizado.
 
@@ -673,7 +673,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. Examine as atividades de exclusão e crie uma lista de arquivos excluídos. Se necessário, recupere os arquivos excluídos.
 1. Opcionalmente, crie um guia estratégico usando a automatização de energia para contatar os usuários e seus gerentes para verificar a atividade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 > [!div class="nextstepaction"]
 > [Investigar usuários suspeitos](tutorial-ueba.md)

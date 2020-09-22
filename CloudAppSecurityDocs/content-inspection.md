@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d740e69361eb1ebffe83ff2915216808a8ee124d
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0845fdb1e9258dfa84162c01daa52ec78f3c7e1f
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780759"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881224"
 ---
 # <a name="content-inspection"></a>Inspeção de conteúdo
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Ao habilitar a inspeção de conteúdo, você poderá escolher se deseja usar expressões predefinidas ou pesquisar outras expressões personalizadas.
 

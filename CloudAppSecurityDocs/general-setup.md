@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7540ac541f3a6c83191f54c2b4d2df773483299e
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: c2f478c48280fb9fce63d23af0662cec59d61abf
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150121"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881055"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuração básica do Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O procedimento a seguir fornece instruções para personalizar o portal do Microsoft Cloud App Security.
 
@@ -59,7 +59,7 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
 
 1. Se você estiver se integrando com a integração da Proteção de Informações do Azure, confira [Integração da Proteção de Informações do Azure](azip-integration.md) para obter informações.
 
-    * Para trabalhar com a integração da proteção de informações do Azure, você deve habilitar o [conector de aplicativos para Microsoft 365](connect-office-365-to-microsoft-cloud-app-security.md).
+    * Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 1. Se você estiver integrando com a integração da proteção avançada contra ameaças do Azure, consulte [integração da proteção avançada contra ameaças do Azure](azip-integration.md) para obter informações.
 
@@ -73,6 +73,6 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

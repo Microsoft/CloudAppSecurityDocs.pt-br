@@ -9,16 +9,16 @@ ms.date: 06/28/2020
 ms.topic: how-to
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 60710c450515b6cf7cf355b3dc370798df24cbe8
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 2729785ec2de681c422c0fd8b9442a7a41886307
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149883"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881397"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do Google Cloud Platform (GCP) existente usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre o uso do GCP. Para obter informações sobre como Cloud App Security protege o GCP, consulte [proteger o GCP](protect-gcp.md).
 

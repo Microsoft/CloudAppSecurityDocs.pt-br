@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a774d5f642def30fffd4b29c9973f925257eb55
-ms.sourcegitcommit: 30bd09cd5a05bf19818a3f3a7e1b2ac0dc25d420
+ms.openlocfilehash: fd2898fe31d9f282e0893aa0b689f4d86c8f2918
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598277"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881033"
 ---
 # <a name="external-dlp-integration"></a>Integração de DLP externa
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Microsoft Cloud App Security pode integrar soluções DLP existentes para estender esses controles para a nuvem preservando uma política consistente e unificada entre locais e atividades na nuvem. A plataforma exporta interfaces fáceis de usar, incluindo API REST e ICAP, habilitando a integração com sistemas de classificação de conteúdo, como Symantec Data Loss Prevention (antigo Vontu Data Loss Prevention) ou Forcepoint DLP.
 

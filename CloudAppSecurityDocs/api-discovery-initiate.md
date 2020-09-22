@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: a4b86ef7bdda32e66744960dd3902aaef7e3034a
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 027f9df535f3dc660879d622d0658587eef65338
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657768"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880577"
 ---
 # <a name="initiate-file-upload---cloud-discovery-api"></a>Iniciar o upload de arquivo-API de Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Execute a solicitação GET para iniciar o processo de carregamento. Essa chamada, a primeira das três, retorna uma URL que será usada posteriormente para executar a solicitação de upload (PUT).
 

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5f418760ec40d8d93dce623acb81f5ebf015dc27
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 87d08111ba38590dfa4c1b32986a15a556e258ae
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779926"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881116"
 ---
 # <a name="working-with-the-regex-engine"></a>Trabalhar com o mecanismo RegEx
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo fornece instruções de uso do RegEx para correspondência de padrões em políticas do Cloud App Security.
 
@@ -63,7 +63,7 @@ As limitações a seguir são impostas em expressões regulares personalizadas:
 
 A tabela a seguir fornece expressões de exemplo e indica se elas são correspondentes ou não.
 
-|              Expressão regular              |                     Dados                     |      Correspondências      |
+|              Expressão regular              |                     Dados                     |      Corresponde a      |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
 |            Colou?r (?:black&#124;blue&#124;white)             |   Cor preta<br /><br /> Cor branca<br /><br /> Cor vermelha   | Sim<br /><br /> Sim<br /><br /> Não |
 |           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Sim<br /><br /> Sim<br /><br /> Não |

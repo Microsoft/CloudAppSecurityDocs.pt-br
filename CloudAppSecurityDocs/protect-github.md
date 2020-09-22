@@ -8,16 +8,16 @@ ms.topic: article
 ms.date: 06/23/2020
 ROBOTS: NOINDEX
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a875328b6d47b0de5a3e71db1374dc89e26fe12e
-ms.sourcegitcommit: 3464ce8ed73d1bfaf02e4e78007766ea18350d9f
+ms.openlocfilehash: f9a9e8782e331e472d76da768366bab3c2278316
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402638"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877169"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-github-enterprise-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente corporativo do GitHub
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O GitHub Enterprise Cloud é um serviço que ajuda as organizações a armazenar e gerenciar seu código, bem como controlar e controlar as alterações em seu código. Junto com os benefícios da criação e do dimensionamento de repositórios de código na nuvem, os ativos mais críticos de sua organização podem ser expostos a ameaças. Os ativos expostos incluem repositórios com informações potencialmente confidenciais, detalhes de colaboração e de parceria e muito mais. Impedir a exposição desses dados exige o monitoramento contínuo para evitar que atores mal-intencionados ou pessoas sem reconhecimento de segurança invasão informações confidenciais.
 

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97430e2428a8ec87a7694bc98c662ec779385495
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: fb2086ea657b54ee5b8b072072779d88dd3031b4
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781167"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881484"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Adicionar aplicativos personalizados ao Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Cloud Discovery analisa os logs de tráfego no catálogo de aplicativos de nuvem do Microsoft Cloud App Security. Há mais de 16 mil aplicativos de nuvem no catálogo de aplicativos de nuvem. O catálogo contém apenas aplicativos de nuvem disponíveis publicamente, para os quais o Cloud App Security fornece visibilidade e informações sobre o risco.
 

@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d642a834111a1b8cadc3e997bdb63a19426aac1
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 89a5f95512a2cfd3eb64c181b5e805944c0275eb
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149900"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880926"
 ---
 # <a name="activity-privacy"></a>Privacidade da atividade
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Microsoft Cloud App Security fornece às empresas a capacidade de determinar de maneira granular quais usuários eles desejam monitorar com base na associação de grupo. A privacidade da atividade adiciona a capacidade de seguir os regulamentos de conformidade da sua organização sem comprometer a privacidade do usuário. Isso é feito permitindo que você monitore os usuários enquanto mantém sua privacidade ocultando suas atividades no log de atividades. Somente administradores autorizados têm a opção de exibir essas atividades privadas, com cada instância sendo auditada no log de governança.
 
@@ -32,7 +32,7 @@ Você pode ter usuários em Cloud App Security que deseja monitorar, mas, devido
 
 Para configurar os grupos de privacidade do usuário, você deve primeiro [importar grupos de usuários](user-groups.md) para Cloud app Security. Por padrão, você verá os seguintes grupos:
 
-- Grupo de usuários de **aplicativos** – um grupo interno que permite que você veja atividades executadas por Microsoft 365 e aplicativos do Azure AD.
+- Grupo de usuários de **aplicativo** – um grupo integrado que lhe permite ver as atividades executadas pelos aplicativos do Office 365 e do Azure AD.
 
 - Grupo de **usuários externos** – todos os usuários que não são membros de qualquer um dos domínios gerenciados que você configurou para sua organização.
 

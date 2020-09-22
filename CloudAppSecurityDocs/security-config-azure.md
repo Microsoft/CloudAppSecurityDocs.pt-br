@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 31fb5ddc618ce1600e41a1437759b2558b3350c1
-ms.sourcegitcommit: 7d05b81a839286d2afae4cdad2c2d59e7becc1f9
+ms.openlocfilehash: 6f1b55e3675b9419ca1e53ddeea9189e260b8022
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90524184"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880191"
 ---
 # <a name="security-configuration-for-azure"></a>Configuração de segurança para o Azure
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Microsoft Cloud App Security fornece uma avaliação de configuração de segurança do seu ambiente do Azure. A avaliação, da plataforma da central de segurança do Azure, fornece recomendações para controles de segurança e configuração ausentes.
 

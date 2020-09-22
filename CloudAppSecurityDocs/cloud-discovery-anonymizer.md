@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 44bc98ec887b8a2d601961a65115b7d7a50f3128
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: ec8e89711fbaea90237bf279633fef134a41eabc
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781218"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881532"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 A anonimização de dados do Cloud Discovery permite proteger a privacidade do usuário. Após o log de dados ser carregado no portal do Microsoft Cloud App Security, o log é limpo e todas as informações de nome de usuário são substituídas por nomes de usuário criptografados. Dessa forma, todas as atividades na nuvem são mantidas anônimas. Quando necessário, para uma investigação de segurança específica (por exemplo, devido a uma violação de segurança ou atividade de usuário suspeita), os administradores podem resolver o nome de usuário real. Se um administrador tiver algum motivo para suspeitar de um usuário específico, ele também poderá pesquisar o nome de usuário criptografado de um nome de usuário conhecido e começar a investigação usando o nome de usuário criptografado. Cada conversão de nome de usuário é auditada no **log de governança**do Portal.
 
@@ -48,7 +48,7 @@ Pontos principais:
     1. Na engrenagem configurações, selecione **configurações de Cloud Discovery**.
 
     2. Na guia Anonimização, para anonimizar os nomes de dados por padrão, escolha **Anonimizar informações privadas por padrão em novos relatórios e fontes de dados**. Você também pode selecionar **anônimos informações do computador por padrão no relatório ' usuários do ponto de extremidade Win10 '**.
-    3. Clique em **Salvar**.
+    3. Clique em **Save** (Salvar).
 
     ![Página de configurações de anonimato](media/anonymizer1.png)
 

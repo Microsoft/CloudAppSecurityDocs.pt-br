@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f31b8937d1eeb9781b677da154880ab699ef131e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: ef61d90f23eb9e15b8b84f926b0b4424f4b3b36b
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780300"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881679"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtros e consultas do aplicativo descoberto
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Quando você tiver um grande número de aplicativos descobertos, considerará útil filtrá-los e consultá-los. Este artigo descreve quais filtros estão disponíveis e como consultar os aplicativos descobertos.
 

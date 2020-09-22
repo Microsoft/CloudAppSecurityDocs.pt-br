@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 31190fd4df5dc9c3bac19794ff1fd78c4982100d
-ms.sourcegitcommit: 5ace3437d49c7bbde2266a6f1565a65a379b9c2c
+ms.openlocfilehash: cb66e8d45d74d57adf71a095851c40087d102ce4
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2020
-ms.locfileid: "89499485"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880548"
 ---
 # <a name="cloud-app-security-rest-api"></a>API REST do Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo descreve como interagir com Cloud App Security sobre HTTPS.
 
@@ -87,10 +87,10 @@ A tabela a seguir descreve os tipos de campo com suporte:
 |---|---|
 |string|Uma cadeia de caracteres textual|
 |booleano|Um valor booliano que representa true/false|
-|inteiro|Inteiro com sinal de 32 bits|
+|Número inteiro|Inteiro com sinal de 32 bits|
 |timestamp|Milissegundos desde a época|
 
-## <a name="limits"></a>limites
+## <a name="limits"></a>Limites
 
 Você pode optar por limitar suas solicitações fornecendo um parâmetro Limit na solicitação.
 

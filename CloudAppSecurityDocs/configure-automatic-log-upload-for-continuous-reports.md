@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ebbe2f53f184cf8668a9cf3443ade3dedb42733f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 8711209823bdb2ea010dbb734fc67c03561122ed
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623346"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881451"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!WARNING]
 > É altamente recomendável configurar o upload de logs usando o [Docker](discovery-docker.md) para obter uma implantação mais flexível.
@@ -49,7 +49,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Etapa 1 — Configuração do portal da Web: definir fontes de dados e vinculá-las a um coletor de logs
 
-1. Vá para a página configuração de carregamento automatizada: no portal de Cloud App Security, clique no ícone configurações ![ícones de configurações, seguido](media/settings-icon.png "Ícone de configurações")por **coletores de log**.
+1. Vá para a página configuração de carregamento automatizada: no portal de Cloud App Security, clique no ícone configurações ![ícones de configurações, seguido](media/settings-icon.png "Ícone de configurações")por  **coletores de log**.
 
 2. Para cada firewall ou proxy do qual você deseja carregar logs, crie uma fonte de dados correspondente:
 
@@ -107,7 +107,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 
 10. Clique na máquina virtual na tabela **Máquinas Virtuais** e clique em **Iniciar**.
 
-11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. O prompt de entrada será exibido. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, entre usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que você copiou quando criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando:`sudo network_config`
+11. Conecte-se à máquina virtual do Coletor de Logs para ver se há um endereço DHCP atribuído a ela: clique na máquina virtual e selecione **Conectar**. O prompt de entrada será exibido. Se você encontrar um endereço IP, poderá conectar-se à máquina virtual usando uma ferramenta SSH/terminal.  Se você não encontrar um endereço IP, entre usando as ferramentas de conexão do Hyper-V/VMWare com as credenciais que você copiou quando criou o Coletor de Logs anteriormente. Você pode alterar a senha e configurar a máquina virtual usando o utilitário de configuração de rede executando o seguinte comando: `sudo network_config`
     > [!NOTE]
     > A máquina virtual é pré-configurada para obter um endereço IP de um servidor DHCP. Se precisar configurar endereços IP estáticos, gateway padrão, nome do host, servidores DNS e NTPS, você poderá usar o utilitário **network_config** ou realizar alterações manualmente.
 
@@ -129,7 +129,7 @@ Na primeira vez que você entrar no coletor de logs e importar a configuração 
 
     c. Insira seu domínio de console, por exemplo: `contoso.portal.cloudappsecurity.com`
 
-    d. Insira o nome do coletor de logs que você deseja configurar, por exemplo:`CloudAppSecurityLogCollector01`
+    d. Insira o nome do coletor de logs que você deseja configurar, por exemplo: `CloudAppSecurityLogCollector01`
 
 ### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Etapa 4 — Configuração local de seus dispositivos de rede
 

@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9080e92adf919d0f6a96299db69ad34f55cee5d
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 0edf6ba292a992a7a3c4b7bc43552662cc375dca
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150138"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880991"
 ---
 #  <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Trabalhando com intervalos de IP e marcas
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Para identificar com facilidade endereços IP conhecidos, como os endereços IP de seu escritório físico, você precisa definir intervalos de endereços IP. Os intervalos de endereços IP permitem que você marque, categorize e personalize a maneira como os logs e os alertas são exibidos e investigados. Cada grupo de intervalos de IP pode ser categorizado com base em uma lista predefinida de categorias de IP. Você também pode criar marcas de IP personalizadas para seus intervalos de IP. Além disso, você pode substituir as informações de localização geográfica pública com base no seu conhecimento de rede interno. Há suporte para IPv4 e IPv6.
 
-Cloud App Security vem pré-configurado com intervalos de IP internos para provedores de nuvem populares, como o Azure e o Microsoft 365. Além disso, temos marcação interna baseada na inteligência contra ameaças da Microsoft, incluindo proxy anônimo, Botnet e Tor. Veja a lista completa no menu suspenso na página de intervalos de endereços IP.
+O Cloud App Security é pré-configurado com intervalos de IP internos de provedores de nuvem populares, como o Azure e o Office 365. Além disso, temos marcação interna baseada na inteligência contra ameaças da Microsoft, incluindo proxy anônimo, Botnet e Tor. Veja a lista completa no menu suspenso na página de intervalos de endereços IP.
 
 > [!NOTE]
 >
@@ -81,6 +81,6 @@ Na barra de menus, clique no ícone de configurações. Selecione **Intervalos d
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

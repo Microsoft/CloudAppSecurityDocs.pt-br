@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2afdf89e5ccbb42e9cdfb14673e07ce6e0e97de9
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 9b99e5477c96752f65e4b20a1f9d7f977a5b4ad7
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149186"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880982"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artigo apresenta uma lista de mensagens de erro do conector do Aplicativo de API, além das recomendações de resolução para cada erro.
 
@@ -36,7 +36,7 @@ Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do con
 > |Mensagem de erro|Aplicativo relevante|Descrição|Resolução|
 > |----|----|----|------------|
 > |HttpRequestFailure: O servidor retornou: 500 Erro interno do servidor|Todos os aplicativos|Ocorreu um erro no aplicativo.|Verificar o status do aplicativo|
-> |Tempo limite do serviço excedido|Todos os aplicativos|Foi detectado um tempo limite excedido de conexão entre o Cloud App Security e o aplicativo. Isso pode ocorrer devido a um problema com o aplicativo.|Tente novamente depois.|
+> |Tempo limite do serviço excedido|Todos os aplicativos|Foi detectado um tempo limite excedido de conexão entre o Cloud App Security e o aplicativo. Isso pode ocorrer devido a um problema com o aplicativo.|Tente novamente mais tarde.|
 > |NullPointerException|AWS|Erro interno|Contate o suporte|
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Box|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
 > |BoxRestException: Falha ao analisar a resposta.|Box|Erro interno|Clique no link “Teste agora” novamente para testar a conexão com o Box.|
@@ -52,7 +52,7 @@ Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do con
 > |IOException:|Okta|Erro interno|Contate o suporte|
 > |HttpRequestFailure: o servidor retornou: 404 não encontrado|Okta|Erro interno|Contate o suporte|
 > |HttpRequestFailure: O servidor retornou: 400 Solicitação inválida: {"error":{"code":"AF20012","message":"A ID de locatário especificada (insira Tenant_ID aqui) está configurada incorretamente no sistema."|Office 365 |Não foi encontrada nenhuma licença atribuída do Office 365. |Atribua pelo menos uma licença do Office 365 ao seu locatário.|
-> |Microsoft. Office. Compliance. Audit. DataServiceException: locatário 998cea7e-35cd-46a5-ab3c-8ec88a45d7d5 não existe ou {"erro": "código": "AF20023", "Message": "a assinatura foi desabilitada".|Office 365|O log de auditoria não está habilitado no Office 365|Habilite o log de auditoria no Office 365. [Saiba mais](connect-office-365-to-microsoft-cloud-app-security.md#how-to-connect-microsoft-365-to-cloud-app-security)|
+> |Microsoft. Office. Compliance. Audit. DataServiceException: locatário 998cea7e-35cd-46a5-ab3c-8ec88a45d7d5 não existe ou {"erro": "código": "AF20023", "Message": "a assinatura foi desabilitada".|Office 365|O log de auditoria não está habilitado no Office 365|Habilite o log de auditoria no Office 365. [Saiba mais](connect-office-365-to-microsoft-cloud-app-security.md#how-to-connect-office-365-to-cloud-app-security)|
 > |HttpRequestFailure: o servidor retornou: 401 não autorizado|Office 365|Problema interno|Clique no link “Testar agora” novamente|
 > |TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error ao validar as credenciais. AADSTS70008: O código de autorização ou token de atualização fornecido expirou. Envie uma nova solicitação de autorização interativa para esse usuário e recurso.|Office 365|Token expirado|Siga o processo para conectar o Office 365 ao Cloud App Security novamente.|
 > |SocketTimeoutException: tempo limite de leitura excedido|Office 365|Erro interno|Clique no link “Testar agora” novamente|

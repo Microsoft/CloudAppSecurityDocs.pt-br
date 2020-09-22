@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 93b285abfbbffad4a9a033e39cb226100ecd519a
-ms.sourcegitcommit: c9b7aa05694a1825f0b32b677b5a6549b846c554
+ms.openlocfilehash: 0964983a0e91ff7ee0b8fb33c0f42d6f76c08c1e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2020
-ms.locfileid: "90056737"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880315"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 No local de trabalho atual, geralmente não é suficiente saber o que está acontecendo em seu ambiente de nuvem após o fato. Você deseja interromper violações e vazamentos em tempo real antes que os funcionários intencional ou inadvertidamente coloquem seus dados e sua organização em risco. É importante permitir que os usuários em sua organização disponibilizem o máximo dos serviços e ferramentas disponíveis para eles em aplicativos de nuvem e permitem que eles tragam seus próprios dispositivos para funcionarem. Ao mesmo tempo, são necessárias ferramentas para ajudar a proteger sua organização contra vazamentos de dados e roubo de dados, em tempo real. O Microsoft Cloud App Security integra-se com qualquer provedor de identidade (IdP) para fornecer esses recursos com controles de acesso e sessão. Se você estiver usando o Azure Active Directory (Azure AD) como seu IdP, esses controles serão integrados e simplificados para uma implantação mais simples e mais personalizada criada na ferramenta de [acesso condicional](/azure/active-directory/conditional-access/overview)do Azure AD.
 
@@ -167,7 +167,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Salesforce
 - ServiceNow
 - SharePoint online
-- Margem de atraso
+- Slack
 - Tableau
 - Microsoft Teams (versão prévia)
 - Workday
