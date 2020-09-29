@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e3b170d932c66532d421604f63f956a891d17663
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: f145c8f76e205e24703742d4162c8766b2785588
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963821"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877044"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloquear o download de informações confidenciais
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O administrador de TI atual está em uma encruzilhada. Você deseja permitir que seus funcionários sejam produtivos. Isso significa permitir que os funcionários acessem os aplicativos para que possam trabalhar a qualquer momento, em qualquer dispositivo. No entanto, você deseja proteger os ativos da empresa, incluindo informações proprietárias e privilegiadas. Como você pode permitir que os funcionários acessem os aplicativos na nuvem enquanto os dados são protegidos? **Este tutorial permite bloquear o download por usuários que têm acesso a dados confidenciais em aplicativos na nuvem corporativos a partir de dispositivos não gerenciados ou locais de rede fora da empresa.**
 

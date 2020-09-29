@@ -11,16 +11,16 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b9da95ccef98320314ccedd646be757b29dced5
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 719da19742facca2cecd3cc1aba27046a05e00b3
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89667013"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879554"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: introdução ao Microsoft Cloud App Security
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Esse início rápido fornece etapas para pôr o Cloud App Security em funcionamento. O Microsoft Cloud App Security pode ajudar você a aproveitar os benefícios dos aplicativos na nuvem, mantendo o controle dos recursos corporativos. Ele atua na melhoria da visibilidade da atividade na nuvem e ajudando a aumentar a proteção dos dados corporativos. Nesse artigo, mostraremos cada etapa para configurar e trabalhar com o Microsoft Cloud App Security.
 

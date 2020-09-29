@@ -11,16 +11,16 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.suite: ems
-ms.openlocfilehash: 08271db964102cda85e424f5ef79bca025afaef7
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: a44d00c0d259cf2547b486727f805bdc31f9fb16
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "76912231"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877561"
 ---
 # <a name="microsoft-cloud-app-security-for-us-government-gcc-high"></a>Microsoft Cloud App Security para US Government GCC High
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 A oferta do Microsoft Cloud App Security para GCC High é baseada na nuvem do Microsoft Azure Governamental e projetada para interoperar com as ofertas do Office 365 para GCC High. A oferta GCC High usa as mesmas tecnologias e recursos subjacentes da instância comercial do Microsoft Cloud App Security. Portanto, a documentação pública da oferta comercial deve ser usada como um ponto de partida para implantar e usar o serviço.
 

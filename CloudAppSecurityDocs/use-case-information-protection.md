@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4f8e5c59de4dd05730dc6970ae1cbebe8f941356
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 33078d72d6bbcb5430f207a029c3352d776958ba
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88964042"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881125"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Em um mundo perfeito, todos os seus funcionários entendem a importância da proteção de informações e do trabalho em relação às suas políticas. Mas, no mundo real, é provável que um parceiro que trabalhe com contabilidade carregue um documento no seu repositório do Box com as permissões erradas. Uma semana depois, você percebe que as informações confidenciais da sua empresa foram vazadas para a concorrência. O Microsoft Cloud App Security ajuda a evitar que esse tipo de desastre ocorra. Esse recurso está disponível para Box, SharePoint e OneDrive for Business. A aplicação de um rótulo da Proteção de Informações do Azure faz parte de uma longa lista de [ações de governança](governance-actions.md) disponíveis.
 

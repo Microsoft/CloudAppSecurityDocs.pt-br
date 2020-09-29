@@ -13,32 +13,32 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 825a8532588cc479bcc37e5373bff23ccc841d8d
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: f507b287f04789967b04abbb804d6f2b406e2ca2
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74461026"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877643"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Quais são as diferenças nos recursos de descoberta para Azure Active Directory e Microsoft Cloud App Security?
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Esse artigo descreve as diferenças entre os recursos de descoberta no Microsoft Cloud App Security e no Azure AD (Azure Active Directory).
+Este artigo descreve as diferenças entre os recursos de descoberta do Microsoft Cloud App Security e do Azure AD (Azure Active Directory).
 
 Para obter mais informações sobre licenciamento, consulte a [folha de dados licenciamento do Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-O Microsoft Cloud App Security é uma solução de SaaS cruzada abrangente que fornece visibilidade profunda, controles de dados fortes e proteção aprimorada contra ameaças aos seus aplicativos na nuvem. O Cloud Discovery é um dos recursos do Cloud App Security, o qual permite que você tenha visibilidade para a TI Sombra, descobrindo aplicativos de nuvem em uso.
+O Microsoft Cloud App Security é uma solução entre SaaS completa que traz visibilidade profunda, controles de dados fortes e proteção contra ameaças aprimorada aos seus aplicativos de nuvem. O Cloud Discovery é um dos recursos do Cloud App Security, que permite que você ganhe visibilidade sobre TI Sombra descobrindo os aplicativos de nuvem em uso.
 
-## <a name="enhanced-cloud-app-discovery-in-azure-active-directory"></a>Cloud App Discovery aprimorado no Azure Active Directory
+## <a name="enhanced-cloud-app-discovery-in-azure-active-directory"></a>Cloud App Discovery avançado no Azure Active Directory
 
-O Azure Active Directory Premium P1 inclui o [Cloud App Discovery do Azure Active Directory](https://aka.ms/caddocsnew) sem custo adicional. Esse recurso se baseia nos recursos do Cloud Discovery do Microsoft Cloud App Security, os quais fornecem uma visibilidade mais profunda do uso do aplicativo de nuvem em suas organizações. [Atualize para o Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) para receber o pacote completo de recursos do CASB (Cloud App Security Broker) oferecidos pelo Microsoft Cloud App Security.
+O Azure Active Directory Premium P1 inclui o [Azure Active Directory Cloud App Discovery](https://aka.ms/caddocsnew) sem custo adicional. Esse recurso se baseia nas funcionalidades do Microsoft Cloud App Security Cloud Discovery que fornecem maior visibilidade do uso do aplicativo de nuvem em suas organizações. Escolha [Atualizar para o Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) para receber o pacote completo de funcionalidades CASB (Agente de Segurança de Aplicativo de Nuvem) oferecidas pelo Microsoft Cloud App Security.
 
 ### <a name="feature-comparison"></a>Comparação de recursos
 
-A tabela a seguir mostra uma comparação entre os recursos de descoberta no Microsoft Cloud App Security e no Azure AD.
+A tabela a seguir é uma comparação dos recursos de descoberta no Microsoft Cloud App Security e no Azure AD.
 
 |Funcionalidade|Recurso|Microsoft Cloud App Security|Cloud App Discovery do Azure AD|
 |----|----|----|----|

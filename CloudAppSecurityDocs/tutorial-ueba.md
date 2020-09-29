@@ -10,16 +10,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 7252a7c18278a6e536c26b3f84f5c51d09c72efe
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 48b5c30fe95e75a68e896b1d366f8a1bdeec4665
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88964059"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881138"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As equipes de operações de segurança enfrentam o desafio de monitorar atividades de usuários, suspeitas ou não, em todas as dimensões da superfície de ataque de identidade, usando diversas soluções de segurança que geralmente não estão conectadas. Embora muitas empresas agora tenham equipes de caça para identificar proativamente as ameaças em seus ambientes, pode ser um desafio saber o que procurar na grande quantidade de dados. Agora, o Microsoft Cloud App Security simplifica isso ao eliminar a necessidade de criar regras de correlação complexas e permitir que você procure por ataques que se estendam por toda a nuvem e pela rede local.
 

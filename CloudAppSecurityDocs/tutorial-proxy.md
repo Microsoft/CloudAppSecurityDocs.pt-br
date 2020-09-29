@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 01/01/2020
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fec6182d004b934f564291e4ca9f4fe06aa8d723
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: bb0ae32a16d9ea9a8f36a0bd0ae0405b1d28b273
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "75667556"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881200"
 ---
 # <a name="tutorial-protect-any-apps-in-use-in-your-organization-in-real-time"></a>Tutorial: Proteger em tempo real qualquer aplicativo usado em sua organização
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Os aplicativos que você aprova para uso dos funcionários geralmente armazenam alguns dos seus dados e segredos corporativos mais confidenciais. No local de trabalho moderno, os usuários acessam esses aplicativos em muitas situações arriscadas. Esses usuários podem ser parceiros da sua organização dos quais você tem pouca visibilidade ou funcionários que usam dispositivos não gerenciados ou provenientes de endereços IP públicos. Devido à ampla gama de riscos nesse cenário, é necessário empregar uma estratégia de confiança zero. Muitas vezes, não é suficiente saber sobre violações e perda de dados nesses aplicativos após o fato; portanto, muitos cenários de ameaça cibernética e de proteção de informações devem ser resolvidos ou impedidos em tempo real.
 
