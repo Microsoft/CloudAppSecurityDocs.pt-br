@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 38c342c56d808adf9737c5be25da88547b25ad69
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 38592b682d7ac0684fc7db6197b884530556333b
+ms.sourcegitcommit: 438ba105224aa2673a004e6ae2999d0bccfc47c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878593"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91450817"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -31,11 +31,12 @@ Há dois tipos de relatórios que você pode gerar:
 
 - **Relatórios contínuos** – analisam todos os logs que são encaminhados da sua rede usando o Cloud App Security. Eles oferecem maior visibilidade em todos os dados e identificam automaticamente usos anormais com o mecanismo de detecção de anomalias do Machine Learning ou por meio de políticas personalizadas que você definir. Esses relatórios podem ser criados conectando-se das seguintes maneiras:
 
-  - [Integração do Microsoft defender ATP: o](wdatp-integration.md)Cloud app Security integra-se com o Microsoft defender com segurança (ATP) nativamente, para simplificar a distribuição de Cloud Discovery, estender os recursos de Cloud Discovery além da rede corporativa e habilitar a investigação baseada em computador.
-  - [Coletor de logs](discovery-docker.md): os coletores de logs permitem automatizar facilmente o carregamento de logs da rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
-  - [Integração do Zscaler](zscaler-integration.md): se trabalha com o Cloud App Security e o Zscaler, você pode integrar os dois produtos para melhorar a experiência de segurança do Cloud Discovery. Juntos, o Cloud App Security e o Zscaler proporcionam uma implantação perfeita do Cloud Discovery, o bloqueio automático de aplicativos não sancionados e a avaliação de riscos diretamente no portal do Zscaler.
-  - [integração do iboss](iboss-integration.md): se você trabalha com o Cloud app Security e o iboss, você pode integrar os dois produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e iboss fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do iboss.
-  - [Integração do Corrata](corrata-integration.md): se você trabalha com o Cloud app Security e o Corrata, você pode integrar os dois produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e Corrata fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do Corrata.
+  - [**Integração do Microsoft defender ATP: o**](wdatp-integration.md)Cloud app Security integra-se com o Microsoft defender com segurança (ATP) nativamente, para simplificar a distribuição de Cloud Discovery, estender os recursos de Cloud Discovery além da rede corporativa e habilitar a investigação baseada em computador.
+  - [**Coletor de logs**](discovery-docker.md): os coletores de logs permitem automatizar facilmente o upload de log de sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
+  - **SWG (Secure Web Gateway)**: se você trabalha com Cloud app Security e um dos seguintes SWGs, você pode integrar os produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e SWGs fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do SWG.
+    - [Integração do Zscaler](zscaler-integration.md)
+    - [integração do iboss](iboss-integration.md)
+    - [Integração do Corrata](corrata-integration.md)
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Fluxo do processo de log: dos dados brutos a avaliação de riscos
 
