@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 84aed2a0a5fc96ee3c8ca06723fe3ee0028bf275
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 2f267febaa980964b26685fb7aa6d64af08a607a
+ms.sourcegitcommit: 9aae0f85debf0c9b8c3e26770c0c285ac251c008
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878415"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91570953"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
 
@@ -102,7 +102,7 @@ Assim como acontece com qualquer outra fonte do Cloud Discovery, é possível ex
 >
 > - O Microsoft defender ATP encaminha dados para Cloud App Security em partes de ~ 4 MB (~ 4000 transações de ponto de extremidade)
 > - Se o limite de 4 MB não for atingido em 1 hora, o Microsoft defender ATP relatará todas as transações executadas na última hora.
-> - Se o dispositivo de ponto de extremidade estiver protegido por um proxy de encaminhamento, os dados de tráfego não serão visíveis para o Microsoft defender ATP e, portanto, não serão incluídos nos relatórios do Cloud Discovery. Para obter mais informações, consulte [monitorando a conexão de rede por trás do proxy de encaminhamento](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Se o dispositivo de ponto de extremidade estiver protegido por um proxy de encaminhamento, os dados de tráfego não serão visíveis para o Microsoft defender ATP e, portanto, não serão incluídos nos relatórios do Cloud Discovery. Para obter uma maneira alternativa de exibir esse tráfego, consulte [monitorando a conexão de rede por meio do proxy de encaminhamento](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="investigate-device-network-events-in-microsoft-defender-atp"></a>Investigar eventos de rede do dispositivo no Microsoft defender ATP
 
