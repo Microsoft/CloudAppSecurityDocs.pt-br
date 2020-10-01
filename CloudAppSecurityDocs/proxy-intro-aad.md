@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0964983a0e91ff7ee0b8fb33c0f42d6f76c08c1e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d180b65125316fe4f5f630166002d0675589ae43
+ms.sourcegitcommit: d44833cbc0cb264a244819b8a3be67aa142d2cc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880315"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91614471"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -29,7 +29,7 @@ No local de trabalho atual, geralmente não é suficiente saber o que está acon
 
 > [!NOTE]
 >
-> - Para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você precisa de uma [licença Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)ou a licença exigida por sua solução IDP, bem como uma licença de Cloud app Security.
+> - Além de uma licença de Cloud App Security válida, para usar Cloud App Security Controle de Aplicativos de Acesso Condicional, você também precisa de uma [licença do Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)ou da licença exigida por sua solução IDP, bem como uma licença de Cloud app Security.
 
 ## <a name="how-it-works"></a>Como ele funciona
 
@@ -167,7 +167,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Salesforce
 - ServiceNow
 - SharePoint online
-- Slack
+- Margem de atraso
 - Tableau
 - Microsoft Teams (versão prévia)
 - Workday
