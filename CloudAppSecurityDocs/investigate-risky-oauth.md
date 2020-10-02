@@ -14,15 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2c6b6ffc3b2c89dc107f223e1f0177df4fa8155b
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 569fe064eed86a1778afffc08a4d35fc0a81d0de
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624689"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878140"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>Tutorial: Investigar aplicativos OAuth arriscados
 
-*Aplica-se a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O OAuth é um padrão aberto para autorização e autenticação baseadas em token. O OAuth permite que as informações de conta do usuário sejam usadas por serviços de terceiros, sem expor a senha do usuário. O OAuth age como um intermediário em nome do usuário, fornecendo ao serviço um token de acesso que autoriza o compartilhamento de informações específicas da conta.
 
@@ -32,9 +33,9 @@ Por exemplo, um aplicativo que analisa o calendário do usuário e fornece conse
 
 Muitos aplicativos de terceiros que podem ser instalados por usuários empresariais de sua organização solicitam permissão para acessar informações e dados do usuário e entram em nome do usuário em outros aplicativos na nuvem. Quando os usuários instalam esses aplicativos, eles geralmente clicam em **Aceitar** sem revisar detalhadamente as informações no prompt, incluindo a concessão de permissões para o aplicativo. Aceitar permissões de aplicativo de terceiros é um risco potencial para a segurança da sua organização.
 
-Por exemplo, a seguinte página de consentimento do aplicativo OAuth pode parecer legítima para o usuário médio, no entanto, o "Gerenciador de APIs do Google" não precisa solicitar permissões para o Google em si. Portanto, isso indica que o aplicativo pode ser uma tentativa de phishing sem relação alguma com o Google.
+Por exemplo, a página de consentimento do aplicativo OAuth a seguir pode parecer legítima para o usuário comum, no entanto, o "Gerenciador de APIs do Google" não precisa solicitar permissões para o Google em si. Portanto, isso indica que o aplicativo pode ser uma tentativa de phishing sem relação alguma com o Google.
 
-![Phishing OAuth](media/oauth-phishing.png)
+![Phishing OAuth no Google](media/oauth-phishing.png)
 
 Como administrador de segurança, você precisa de visibilidade e controle sobre os aplicativos em seu ambiente, o que inclui as permissões que eles têm. Você precisa ter a capacidade de evitar o uso de aplicativos que exijam permissões para recursos que você deseja revogar. Portanto, o Microsoft Cloud App Security fornece a capacidade de investigar e monitorar as permissões de aplicativos que seus usuários concederam. Este artigo é dedicado a ajudar você a investigar os aplicativos OAuth em sua organização e a concentrar-se nos aplicativos que têm mais probabilidade de serem suspeitos.
 
@@ -58,7 +59,7 @@ Você pode definir políticas para enviar automaticamente notificações quando 
     - Defina o filtro **Nível de permissão** em gravidade alta e **Uso da comunidade** em não é comum. Usando esse filtro, você pode se concentrar em aplicativos que são potencialmente muito arriscados e que talvez os usuários tenham subestimado o risco.
     - Em **Permissões**, selecione todas as opções que sejam particularmente arriscadas em um contexto específico. Por exemplo, você pode selecionar todos os filtros que fornecem permissão de acesso ao email, como **Acesso completo a todas as caixas de correio** e, em seguida, examinar a lista de aplicativos para se certificar de que todos eles realmente precisam de acesso relacionado à caixa de correio. Isso pode ajudá-lo a investigar em um contexto específico e encontrar aplicativos que parecem legítimos, mas com permissões desnecessárias. É provável que esses aplicativos sejam mais arriscados.
 
-        ![Phishing OAuth](media/oauth-filters.png)
+        ![Phishing OAuth suspeito](media/oauth-filters.png)
 
     - Selecione a consulta salva em **Aplicativos autorizados por usuários externos**. Ao usar esse filtro, você poderá encontrar aplicativos que talvez não estejam alinhados com os padrões de segurança da sua empresa.
 1. Depois de analisar seus aplicativos, você poderá se concentrar nos aplicativos nas consultas que parecem legítimos, mas que na verdade podem oferecer riscos. Use os filtros para encontrá-los:
@@ -74,11 +75,11 @@ Você pode definir políticas para enviar automaticamente notificações quando 
 Depois de determinar que um aplicativo é suspeito e que você quer investigá-lo, recomendamos os princípios-chave a seguir para garantir uma investigação eficiente:
 
 - Quanto mais comum e usado for um aplicativo, tanto pela sua organização ou online, maior a probabilidade de que ele seja seguro.
-- Um aplicativo deve exigir apenas as permissões relacionadas à finalidade dele. Se não for o caso, o aplicativo pode ser arriscado.
+- Um aplicativo deve exigir apenas as permissões relacionadas à finalidade dele. Se não esse for o caso, o aplicativo poderá ser arriscado.
 - Os aplicativos que exigem mais privilégios ou consentimento do administrador são os mais prováveis de oferecer riscos.
 
 1. Clique no aplicativo para abrir a gaveta dele e clique no link em **Atividades relacionadas**. Isso abre a página de Log de atividades filtrada para atividades executadas pelo aplicativo. Lembre-se de que alguns aplicativos executam atividades que estão registradas como realizadas por um usuário. Essas atividades são filtradas automaticamente nos resultados do Log de atividades. Confira mais investigações usando o log de atividades no [Log de atividades](activity-filters.md).
-1. Se um aplicativo parece suspeito, recomendamos investigar o nome e o editor do aplicativo nas diferentes lojas de aplicativos. Concentre-se nos seguintes aplicativos, que podem ser suspeitos:
+1. Se um aplicativo parece suspeito, recomendamos investigar o nome e o editor dele nas diferentes lojas de aplicativos. Concentre-se nos seguintes aplicativos, que podem ser suspeitos:
     - Aplicativos com um número baixo de downloads.
     - Aplicativos com baixa classificação ou pontuação ou comentários ruins.
     - Aplicativos com um editor ou site suspeito.
