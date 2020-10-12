@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6bb43764f9a8e200b79a81dfe0dc97db557b6fe0
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e5effef1c69cf3a8ce44218a8838bbb4d0ef1614
+ms.sourcegitcommit: b173d24dba412e81801c498cc0c3623ad9e31601
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878010"
+ms.lasthandoff: 10/11/2020
+ms.locfileid: "91941547"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Monitorar alertas no Cloud App Security
 
@@ -45,6 +45,37 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
   - **Marque-o como não lido** se você começou a investigar um problema, mas deseja garantir que se lembrará de continuar.
   - **Ajuste a política** que correspondeu ao alerta para melhorar as correspondências futuras de alerta.
   - Resolver um alerta oferece a opção de inserir um comentário e **Enviar comentários para a equipe do Cloud App Security**.
+
+## <a name="deployment-of-our-enhanced-alert-monitoring-and-management-experience"></a>Implantação de nossa experiência aprimorada de monitoramento e gerenciamento de alertas
+
+Como parte de nossos aprimoramentos contínuos no monitoramento e no gerenciamento de alertas, a página Cloud App Security alertas foi aprimorada com base em seus comentários. Na experiência aprimorada, os status **resolvidos** e **ignorados** são substituídos pelo status **fechado** e os alertas fechados têm um dos seguintes tipos de resolução:
+
+- **Verdadeiro positivo**: um alerta em uma atividade mal-intencionada confirmada
+- **Benigno**: um alerta sobre uma atividade suspeita, mas não mal-intencionada, como um teste de penetração ou outra ação suspeita autorizada
+- **Falso positivo**: um alerta em uma atividade não mal-intencionada
+
+> [!NOTE]
+> A experiência avançada só se aplica a novos alertas e não afeta o status de alertas existentes (herdados) que foram **resolvidos** ou **ignorados**.
+
+![Página de alertas avançados](media/monitor-alerts/enhanced-alerts.png)
+
+### <a name="enhanced-alert-monitoring"></a>Monitoramento de alertas aprimorado
+
+Na página alertas avançados, a coluna **status** mostra se um alerta é aberto ou fechado e a coluna **tipo de resolução** mostra o tipo de resolução usado ao fechar um alerta. Você pode usar o filtro de **status** para ajudá-lo a identificar alertas abertos ou fechados e, em seguida, usar o filtro **avançado** , você pode investigar ainda mais os alertas fechados por **tipo de resolução** usando os tipos de resolução avançada e herdada.
+
+![Página alertas avançados mostrando o filtro avançado](media/monitor-alerts/enhanced-alerts-advanced-filter.png)
+
+### <a name="enhanced-alert-management"></a>Gerenciamento de alertas aprimorado
+
+Ao fechar alertas, escolha uma das seguintes opções de resolução:
+
+- **Fechar como verdadeiro positivo**: se a atividade for confirmada como mal-intencionado
+- **Fechar como benigno**: se a atividade for suspeita, mas não uma atividade mal-intencionada, como um teste de penetração ou outra ação suspeita autorizada
+- **Fechar como falso positivo**: se a atividade for confirmada como não mal-intencionada
+
+No pop-up que aparece, forneça um motivo para fechar o alerta e preencher o restante dos detalhes conforme necessário e, em seguida, clique em **fechar alerta**.
+
+![Pop-up de fechamento de alertas avançados](media/monitor-alerts/enhanced-alerts-close-resolution.png)
 
 ## <a name="built-in-alerts"></a>Alertas internos
 
