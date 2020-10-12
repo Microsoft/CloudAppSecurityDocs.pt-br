@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/07/2020
+ms.date: 10/12/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e80f41434f5d8255bb1ebfb1f0cc73782ac1e39
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 804380fd242acd33f45176da0d1394c79ca5f24c
+ms.sourcegitcommit: 2602cae9e6b31c549e5232762beb136843c0d011
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879234"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947057"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -53,14 +53,14 @@ Por padrão, as seguintes funções de administrador do Office 365 e [do Azure A
   - Acessar e exibir a página Gerenciar relatórios de instantâneo
   - Acessando e editando o agente SIEM
 
-- **Leitor global:** Tem acesso completo somente leitura a todos os aspectos de Microsoft Cloud App Security. Não é possível alterar nenhuma configuração ou executar ações.
+- **Leitor global:** Tem acesso completo somente leitura a todos os aspectos de Cloud App Security. Não é possível alterar nenhuma configuração ou executar ações.
 
 > [!NOTE]
 > As funções do Office 365 e do Azure AD não estão listadas na página **gerenciar acesso de administrador** .
 
 Além disso, as seguintes Cloud App Security funções de administrador específicas podem ser configuradas no portal de Cloud App Security:
 
-- **Administrador de aplicativo/instância:** Tem permissões completas ou somente leitura para todos os dados em Microsoft Cloud App Security que lidam exclusivamente com o aplicativo ou instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas:
+- **Administrador de aplicativo/instância:** Tem permissões completas ou somente leitura para todos os dados em Cloud App Security que lidam exclusivamente com o aplicativo ou instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas:
 
   - Página de atividades – somente atividades sobre o aplicativo específico
   - Alertas – somente alertas relacionados ao aplicativo específico
@@ -74,7 +74,7 @@ Além disso, as seguintes Cloud App Security funções de administrador específ
   - Ações de governança – somente para a instância/o aplicativo específico
   - Recomendações de segurança para plataformas de nuvem-sem permissões
 
-- **Administrador do grupo de usuários:** Tem permissões completas ou somente leitura para todos os dados em Microsoft Cloud App Security que lidam exclusivamente com o grupo específico selecionado aqui. Por exemplo, se você conceder a permissão de administrador de usuários ao grupo "Alemanha – todos os usuários", o administrador poderá exibir e modificar as informações no Microsoft Cloud App Security somente para esse grupo de usuários:
+- **Administrador do grupo de usuários:** Tem permissões completas ou somente leitura para todos os dados em Cloud App Security que lidam exclusivamente com os grupos específicos atribuídos a eles. Por exemplo, se você atribuir permissões de administrador de usuário ao grupo "Alemanha-todos os usuários", o administrador poderá exibir e editar informações em Cloud App Security somente para esse grupo de usuários. O administrador do grupo de usuários tem o seguinte acesso:
 
   - Página de atividades – somente atividades relacionadas aos usuários do grupo
   - Alertas – somente alertas relacionados aos usuários do grupo
@@ -88,7 +88,12 @@ Além disso, as seguintes Cloud App Security funções de administrador específ
   - Ações de governança – somente para os usuários específicos do grupo
   - Recomendações de segurança para plataformas de nuvem-sem permissões
 
-- **Cloud Discovery administrador global:**  Tem permissão para exibir e editar todos os Cloud Discovery configurações e dados. O administrador de Descoberta Global tem acesso da seguinte maneira:
+    > [!NOTE]
+    >
+    > - Para atribuir grupos a administradores de grupo de usuários, você deve primeiro [importar grupos de usuários](user-groups.md) de aplicativos conectados.
+    > - Você só pode atribuir permissões de administradores de grupo de usuários a grupos do Azure AD importados.
+
+- **Cloud Discovery administrador global:** Tem permissão para exibir e editar todos os Cloud Discovery configurações e dados. O administrador de descoberta global tem o seguinte acesso:
 
   - Configurações
     - Configurações do sistema – somente exibição
