@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/12/2020
+ms.date: 10/13/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 804380fd242acd33f45176da0d1394c79ca5f24c
-ms.sourcegitcommit: 2602cae9e6b31c549e5232762beb136843c0d011
+ms.openlocfilehash: b95b38aadc1d8794b1c8cab927e2735415172421
+ms.sourcegitcommit: 56d63e09b48bb9d34218b30f1776e25499517e30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947057"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997086"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -58,7 +58,9 @@ Por padrão, as seguintes funções de administrador do Office 365 e [do Azure A
 > [!NOTE]
 > As funções do Office 365 e do Azure AD não estão listadas na página **gerenciar acesso de administrador** .
 
-Além disso, as seguintes Cloud App Security funções de administrador específicas podem ser configuradas no portal de Cloud App Security:
+## <a name="built-in-cloud-app-security-admin-roles"></a>Funções internas de administrador de Cloud App Security
+
+As seguintes Cloud App Security funções de administrador específicas podem ser configuradas no portal de Cloud App Security:
 
 - **Administrador de aplicativo/instância:** Tem permissões completas ou somente leitura para todos os dados em Cloud App Security que lidam exclusivamente com o aplicativo ou instância específica de um aplicativo selecionado. Por exemplo, você concede uma permissão de administrador de usuários à sua instância europeia do Box. O administrador verá apenas os dados relacionados à instância europeia do Box, sejam arquivos, atividades, políticas ou alertas:
 
@@ -111,6 +113,9 @@ Além disso, as seguintes Cloud App Security funções de administrador específ
   - Recomendações de segurança para plataformas de nuvem-sem permissões
 
 - **Administrador do relatório de Cloud Discovery:** Tem permissões para exibir todos os dados em Cloud App Security que lidam exclusivamente com os relatórios de Cloud Discovery específicos selecionados. Por exemplo, você pode conceder a alguém permissão de administrador para o relatório contínuo do Microsoft defender ATP. O administrador de descoberta verá apenas os dados Cloud Discovery relacionados a essa fonte de dados e ao catálogo de aplicativos. Esse administrador não terá acesso às páginas **atividades**, **arquivos**ou recomendações de **segurança** e acesso limitado às políticas.
+
+> [!NOTE]
+> As funções internas de administrador Cloud App Security fornecem permissões de acesso para Cloud App Security.
 
 ## <a name="override-admin-permissions"></a>Substituir permissões de administrador
 
