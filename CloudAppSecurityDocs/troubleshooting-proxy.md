@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: f9d29046b0a63b89926d3ba95bab75aba5964cad
-ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
+ms.openlocfilehash: b5efb0ebc30167f98c5361dbc037ef139836889f
+ms.sourcegitcommit: 52875173d3528cc8ae1121cf9f3acde2126d9e52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88514347"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91990825"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Solução de problemas de controles de acesso e de sessão
 
@@ -25,7 +25,7 @@ Este artigo fornece aos administradores diretrizes sobre como investigar e resol
 Antes de prosseguir, verifique se seu ambiente atende aos seguintes requisitos gerais mínimos para controles de acesso e sessão.
 
 - **Licenciamento**: Verifique se você tem uma [licença](https://aka.ms/mcaslicensing)válida.
-- **SSO (logon único)**: os aplicativos devem ser configurados com uma das soluções de SSO com suporte.
+- **SSO (Sign-On único)**: os aplicativos devem ser configurados com uma das soluções de SSO com suporte.
   - Azure Active Directory (AD do Azure) usando SAML 2,0 ou OpenID Connect 2,0
   - IdP de terceiros usando SAML 2,0
 - **Suporte a navegador**: os controles de sessão estão disponíveis para sessões baseadas em navegador nesses navegadores com suporte: Microsoft Edge (mais recente), Google Chrome (mais recente), Mozilla Firefox (mais recente) ou Apple Safari (mais recente)
@@ -191,9 +191,9 @@ Se você estiver enfrentando o certificado do cliente aparecendo depois de abrir
 | Navegador | Etapas |
 |---|---|
 | Microsoft Internet Explorer | 1. Abra o Internet Explorer<br />2. Selecione **ferramentas**  >  **Opções da Internet**  >  guia**Avançar**<br />3. em **segurança**, selecione **não solicitar a seleção de certificado de cliente quando apenas um certificado existir**<br />4. Selecione **aplicar**e, em seguida, selecione **OK**<br />5. Reinicie o navegador e verifique se você pode acessar o aplicativo sem os prompts adicionais |
-| Chromium de borda/borda da Microsoft | 1. Abra a pesquisa na barra de tarefas e procure "opções da Internet"<br />2. Selecione **Opções da Internet**<br />3. em **segurança**, selecione **não solicitar a seleção de certificado de cliente quando apenas um certificado existir**<br />4. Selecione **aplicar**e, em seguida, selecione **OK**<br />5. Reinicie o navegador e verifique se você pode acessar o aplicativo sem os prompts adicionais |
+| Chromium de borda/borda da Microsoft | 1. Abra a pesquisa na barra de tarefas e procure "opções da Internet"<br />2. Selecione **Opções da Internet**<br />3. Selecione **segurança**, selecione **intranet local**e clique em **nível personalizado**<br />4. em **diversos**  >  **não solicitar a seleção de certificado do cliente quando apenas um certificado existir**, selecione **desabilitar**<br />5. clique em **OK** para fechar a caixa de diálogo nível personalizado<br />6. clique em **aplicar**e selecione **OK** para fechar as opções da Internet<br />7. Reinicie o navegador e verifique se você pode acessar o aplicativo sem os prompts adicionais |
 
-<a name="device-identification-additional-considerations"></a>
+<a name="device-identification-additional-considerations"></a>s
 
 #### <a name="additional-considerations"></a>Considerações adicionais
 
@@ -293,7 +293,7 @@ Depois de adicionar um aplicativo, você poderá ver a opção **solicitar contr
 1. Insira o nome principal do usuário ou o email para os usuários que estarão integrando o aplicativo e clique em **salvar**.
 1. Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
 
-    | Status do aplicativo | Description | Etapas |
+    | Status do aplicativo | Descrição | Etapas |
     | --- | --- | --- |
     | Não reconhecido | Você verá uma página aplicativo não reconhecido solicitando que você configure seu aplicativo. | 1. [adicione o aplicativo ao controle de aplicativos de acesso condicional](proxy-deployment-any-app.md#add-app).<br /> 2. [adicione os domínios para o aplicativo](proxy-deployment-any-app.md#add-domains)e, em seguida, retorne ao aplicativo e atualize a página.<br /> 3. [Instale os certificados para o aplicativo](proxy-deployment-any-app.md#install-certs). |
     | Reconhecido | Você verá uma página de integração solicitando que você continue o processo de configuração do aplicativo. | - [Instale os certificados para o aplicativo](proxy-deployment-any-app.md#install-certs). <br /><br /> **Observação:** Verifique se o aplicativo está configurado com todos os domínios necessários para que o aplicativo funcione corretamente. Para configurar domínios adicionais, vá para [adicionar os domínios do aplicativo](proxy-deployment-any-app.md#add-domains)e, em seguida, retorne à página do aplicativo. |
@@ -432,7 +432,7 @@ Ao rotear um usuário por meio do Cloud App Security, você pode notificar o usu
     | Padrão | **Cabeçalho**:<br />O acesso a [nome do aplicativo aparecerá aqui] é monitorado<br />**Corpo**:<br />Para maior segurança, sua organização permite o acesso ao [o nome do aplicativo aparecerá aqui] no modo de monitor. O acesso só está disponível em um navegador da Web. |
     | Personalizado | **Cabeçalho**:<br />Use esta caixa para fornecer um título personalizado para informar os usuários que estão sendo monitorados.<br />**Corpo**:<br />Use esta caixa para adicionar informações personalizadas adicionais ao usuário, como a quem deve entrar em contato com perguntas e dá suporte às seguintes entradas: texto sem formatação, Rich Text, hiperlinks. |
 1. Clique em **Visualizar** para verificar a página de monitoramento de usuário que aparece antes de acessar um aplicativo.
-1. Clique em **Save** (Salvar).
+1. Clique em **Salvar**.
 
 ### <a name="not-able-to-access-app-from-a-third-party-identity-provider"></a>Não é possível acessar o aplicativo de um provedor de identidade de terceiros
 
