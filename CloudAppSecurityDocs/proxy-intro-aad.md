@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/09/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d180b65125316fe4f5f630166002d0675589ae43
-ms.sourcegitcommit: d44833cbc0cb264a244819b8a3be67aa142d2cc8
+ms.openlocfilehash: f9b273f2e89bd3cff380fbdcd2c183827f58f903
+ms.sourcegitcommit: 5041a8bfae9c9a1a3425c0a0fd75ac60ed1fe9cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91614471"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92053839"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -144,7 +144,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 > - O Cloud app Security aproveita os protocolos do protocolo TLS 1.2 + para fornecer a melhor criptografia de classe. Aplicativos cliente nativos e navegadores que não dão suporte a TLS 1.2 +, não estarão acessíveis quando configurados com controle de sessão. No entanto, aplicativos SaaS que usam TLS 1.1 ou inferior aparecerão no navegador como usando TLS 1.2+ quando configurados com o Cloud App Security.
 > - Para aplicar controles de sessão ao portal.office.com, você deve carregar Microsoft 365 centro de administração. Para obter mais informações sobre aplicativos de integração, consulte [integração e implantação controle de aplicativos de acesso condicional para qualquer aplicativo](proxy-deployment-any-app.md).
 
-<a name="featured-apps"></a>Qualquer aplicativo Web configurado usando os [protocolos de autenticação mencionados anteriormente](#supported-apps-and-clients) pode ser integrado para trabalhar com controles de acesso e de sessão. Além disso, os aplicativos a seguir são apresentados por Cloud App Security e já estão integrados e prontos para uso em qualquer locatário:
+<a name="featured-apps"></a>Qualquer aplicativo Web configurado usando os [protocolos de autenticação mencionados anteriormente](#supported-apps-and-clients) pode ser integrado para trabalhar com controles de acesso e de sessão. Além disso, os seguintes aplicativos já estão integrados com controles de sessão e acesso:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -167,7 +167,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Salesforce
 - ServiceNow
 - SharePoint online
-- Margem de atraso
+- Slack
 - Tableau
 - Microsoft Teams (versão prévia)
 - Workday
@@ -175,9 +175,9 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Workplace by Facebook
 - Yammer (versão prévia)
 
-### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Aplicativos em destaque do Office 365
+### <a name="office-365-cloud-app-security-featured-apps"></a><a name="O365-apps"></a>Office 365 Cloud App Security aplicativos em destaque
 
-Veja a seguir uma lista de aplicativos em destaque com suporte no Office 365 Cloud App Security. Para usar esses aplicativos com Cloud App Security, você deve ter uma licença do Office 365 e5.
+Veja a seguir uma lista de aplicativos em destaque com suporte no [Office 365 Cloud app Security](editions-cloud-app-security-o365.md).
 
 - Exchange Online
 - OneDrive for Business
