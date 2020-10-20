@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2e23caa4e0ca986bb17d9e5014b328b214d0aeef
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 729dec5de9bb349927e3cd60f331f61b31b65864
+ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880206"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92211993"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -99,13 +99,13 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 | Azure | | Administrador global |
 | AWS | | Usuário recém-criado |
 | Box | Enterprise | É altamente recomendável que você se conecte ao box como um administrador. conectar-se como um coadministrador resultará em apenas visibilidade parcial dos dados. Se você se conectar como Coadministrador, lembre-se de selecionar todas as permissões. |
-| Dropbox | Business/Enterprise | Administrador |
+| Dropbox | Business/Enterprise | Admin |
 | GitHub | GitHub Enterprise Cloud | Proprietário |
 | GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (não de avaliação) | Administrador |
-| Salesforce | | Administrador |
+| Okta | Enterprise (não de avaliação) | Admin |
+| Salesforce | | Admin |
 | ServiceNow | Eureka e superior | Função admin + RestAPI |
 | Webex | | Admin + administrador de conformidade |
 | Workday | | Consulte os [pré-requisitos do workday de conexão](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
@@ -121,6 +121,7 @@ Para obter mais informações sobre o emparelhamento público, consulte [Circuit
 >
 > - Antes de desabilitar um conector de aplicativo, verifique se você tem os detalhes de conexão disponíveis, pois você precisará deles se quiser reabilitar o conector.
 > - Essas etapas não podem ser usadas para desabilitar o conector do Azure.
+> - Essas etapas não podem ser usadas para desabilitar Controle de Aplicativos de Acesso Condicional aplicativos e aplicativos de configuração de segurança.
 
 Para desabilitar aplicativos conectados:
 

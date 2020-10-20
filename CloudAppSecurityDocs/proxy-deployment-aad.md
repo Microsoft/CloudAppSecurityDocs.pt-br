@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 4e47e58f3568fb8180359828d4b1a3cb0291880b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 0df2a20c1c8c8bb1aef440cf3eb8bf16634e6ce0
+ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880398"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92212010"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
@@ -76,7 +76,7 @@ Use as etapas a seguir para criar uma política de acesso condicional do Azure A
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configurar a integração com outras soluções IdP
 
-Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad).
+Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad). Para obter exemplos de como configurar soluções IdP, consulte [configurando seu IDP](proxy-idp-examples.md).
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 

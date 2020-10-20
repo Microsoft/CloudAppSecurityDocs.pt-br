@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 6ccaf32072dd012ab694457f7a4fb89a34a01965
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 13505c22de0751041bc42f2891248163a51e6239
+ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880386"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92212027"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integrar e implantar o Controle de Aplicativos de Acesso Condicional em qualquer aplicativo
 
@@ -87,7 +87,7 @@ Use as etapas a seguir para criar uma política de acesso condicional do Azure A
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configurar a integração com outras soluções IdP
 
-Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad).
+Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad). Para obter exemplos de como configurar soluções IdP, consulte [configurando seu IDP](proxy-idp-examples.md).
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
@@ -141,6 +141,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
         >
         > - Alguns provedores podem se referir a eles como *atributos de usuário* ou *declarações*.
         > - Ao criar um novo aplicativo SAML, o provedor de identidade Okta limita os atributos a 1024 caracteres. Para atenuar essa limitação, primeiro crie o aplicativo sem os atributos relevantes. Depois de criar o aplicativo, edite-o e, em seguida, adicione os atributos relevantes.
+
     1. Verifique se o identificador de nome está no formato de endereço de email.
     1. Salve suas configurações.
 1. Na página **alterações do aplicativo** , faça o seguinte e clique em **Avançar**. Você precisará das informações na próxima etapa.
@@ -152,8 +153,8 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 1. No portal do aplicativo, nas configurações de logon único, faça o seguinte:
     1. Aconselhável Crie um backup de suas configurações atuais.
-    1. No campo URL de logon único, insira a URL de logon único anotada anteriormente.
-    1. Carregue o Cloud App Security certificado SAML anotado anteriormente.
+    1. No campo URL de logon único, insira o Cloud App Security URL de logon único anotado anteriormente.
+    1. Carregue o Cloud App Security certificado SAML baixado anteriormente.
     > [!NOTE]
     > Depois de salvar as configurações, todas as solicitações de logon associadas a esse aplicativo serão roteadas por meio de Controle de Aplicativos de Acesso Condicional.
 
