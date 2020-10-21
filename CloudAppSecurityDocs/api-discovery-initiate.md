@@ -5,17 +5,17 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/27/2020
+ms.date: 10/21/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 027f9df535f3dc660879d622d0658587eef65338
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e9ce97ebd5a9bb3e57b6ed6d0a54d91ad54d6039
+ms.sourcegitcommit: ce4c0c03292c75a515938433951bdb78270d75a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880577"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92333580"
 ---
 # <a name="initiate-file-upload---cloud-discovery-api"></a>Iniciar o upload de arquivo-API de Cloud Discovery
 
@@ -53,6 +53,7 @@ Atualmente, há suporte para os seguintes tipos de origem:
 - CISCO_SCAN_SAFE
 - CLAVISTER
 - CORRATA
+- CUSTOM_PARSER
 - FORCEPOINT
 - FORCEPOINT_LEEF
 - FORTIGATE
@@ -84,7 +85,9 @@ Atualmente, há suporte para os seguintes tipos de origem:
 - ZSCALER_QRADAR
 
 > [!NOTE]
-> Se você não encontrar o formato de arquivo, execute um upload manual usando o Portal.
+>
+> - Ao usar um analisador personalizado, Cloud App Security usará o analisador personalizado anexado à fonte de dados selecionada.
+> - Se você não encontrar o formato de arquivo, execute um upload manual usando o Portal.
 
 ## <a name="response-parameters"></a>Parâmetros de resposta
 
