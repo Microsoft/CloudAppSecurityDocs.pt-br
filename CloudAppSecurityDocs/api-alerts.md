@@ -5,17 +5,17 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/27/2020
+ms.date: 10/20/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 54aa8efa3ad214ff55f3800ffb95126766e549e4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c5b927cf1cfaa1038b4b2ab1aa096978ec9c964c
+ms.sourcegitcommit: ee40375712d2cc4090bd4e9cb58df486ec02aa62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880652"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92326935"
 ---
 # <a name="alerts-api"></a>API de alertas
 
@@ -26,12 +26,25 @@ A API de alertas fornece informações sobre os riscos imediatos identificados p
 O seguinte lista as solicitações com suporte:
 
 - [Listar alertas](api-alerts-list.md)
-- [Ignorar em massa](api-alerts-bulk-dismiss.md)
-- [Resolver em massa](api-alerts-bulk-resolve.md)
+- [Próximo benigno](api-alerts-close-benign.md)
+- [Fechar falso positivo](api-alerts-close-false-positive.md)
+- [Fechar verdadeiro positivo](api-alerts-close-true-positive.md)
 - [Buscar alerta](api-alerts-fetch.md)
-- [Ignorar alerta](api-alerts-dismiss.md)
 - [Marcar alerta como lido](api-alerts-mark-read.md)
 - [Marcar alerta como não lido](api-alerts-mark-unread.md)
+
+## <a name="deprecated-requests"></a>Solicitações preteridas
+
+A tabela a seguir lista as solicitações preteridas como obsoletas e as solicitações que as substituem.
+
+| Solicitação obsoleta | Alternativa |
+| --- | --- |
+| Ignorar em massa | [Fechar falso positivo](api-alerts-close-false-positive.md) |
+| Resolver em massa | [Fechar verdadeiro positivo](api-alerts-close-true-positive.md) |
+| Ignorar alerta | [Fechar falso positivo](api-alerts-close-false-positive.md) |
+
+> [!NOTE]
+> As solicitações preteridas foram mapeadas para as alternativas para evitar interrupções. No entanto, se você estiver usando solicitações obsoletas em seu ambiente, é recomendável atualizá-las para suas alternativas.
 
 ## <a name="filters"></a>Filtros
 
@@ -39,7 +52,7 @@ Para obter informações sobre como os filtros funcionam, consulte [filtros](api
 
 A tabela a seguir descreve os filtros com suporte:
 
-| Filtrar | Tipo | Operadores | Descrição |
+| Filtrar | Type | Operadores | Descrição |
 | --- | --- | --- | --- |
 | entidade. entidade | CP de entidade | EQ, NEQ | Filtrar alertas relacionados a entidades especificadas. Exemplo: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | Entity. IP | string | EQ, NEQ | Filtrar alertas relacionados a endereços IP especificados |
@@ -50,8 +63,8 @@ A tabela a seguir descreve os filtros com suporte:
 | severidade | Número inteiro | EQ, NEQ | Filtrar por severidade. Os valores possíveis incluem:<br /><br />**0**: baixo<br />**1**: média<br/>**2**: alta |
 | resolutionStatus | Número inteiro | EQ, NEQ | Filtrar por status de resolução de alerta, os valores possíveis incluem:<br /><br />**0**: abrir<br />**1**: ignorado<br />**2**: resolvido |
 | read | booleano | eq | Se definido como "true", retorna somente alertas de leitura, se definido como "false", retorna alertas não lidos |
-| Data | timestamp | LTE, GTE, Range, lte_ndays, gte_ndays | Filtrar pela hora em que um alerta foi disparado |
-| resolutionDate | timestamp | LTE, GTE, Range | Filtrar pelo horário em que um alerta foi resolvido |
+| date |  timestamp | LTE, GTE, Range, lte_ndays, gte_ndays | Filtrar pela hora em que um alerta foi disparado |
+| resolutionDate |  timestamp | LTE, GTE, Range | Filtrar pelo horário em que um alerta foi resolvido |
 | ameaça | Número inteiro | EQ, NEQ | Filtrar por risco |
 | alertType | Número inteiro | EQ, NEQ | Filtrar por tipo de alerta |
 | ID | string | EQ, NEQ | Filtrar por IDs de alerta |
