@@ -334,14 +334,14 @@
               href: api-alerts.md
             - name: Listar alertas
               href: api-alerts-list.md
-            - name: Ignorar em massa
-              href: api-alerts-bulk-dismiss.md
-            - name: Resolver em massa
-              href: api-alerts-bulk-resolve.md
+            - name: Fechar benigno
+              href: api-alerts-close-benign.md
+            - name: Fechar falso positivo
+              href: api-alerts-close-false-positive.md
+            - name: Fechar verdadeiro positivo
+              href: api-alerts-close-true-positive.md
             - name: Buscar alerta
               href: api-alerts-fetch.md
-            - name: Ignorar alerta
-              href: api-alerts-dismiss.md
             - name: Marcar alerta como lido
               href: api-alerts-mark-read.md
             - name: Marcar alerta como não lido
