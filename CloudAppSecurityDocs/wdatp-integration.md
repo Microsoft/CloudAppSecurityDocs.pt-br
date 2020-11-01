@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 118f0047640b3b062ba5cd66d5601fec99ea8477
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
+ms.openlocfilehash: 11cba0aa39fc55ba8ce28544bcddc0d82afac467
+ms.sourcegitcommit: a9b26f2ef0db18910ae7cdf7b34e9028bff7b576
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/01/2020
-ms.locfileid: "93147485"
+ms.locfileid: "93147776"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
 
@@ -102,7 +102,7 @@ Assim como acontece com qualquer outra fonte do Cloud Discovery, é possível ex
 >
 > - O Microsoft defender for Endpoint encaminha dados para Cloud App Security em partes de ~ 4 MB (~ 4000 transações de ponto de extremidade)
 > - Se o limite de 4 MB não for atingido em 1 hora, o Microsoft defender for Endpoint relatará todas as transações executadas na última hora.
-> - É recomendável rotear os logs do proxy de encaminhamento para Cloud App Security usando o **upload de log automatizado** para obter visibilidade completa. Para obter uma maneira alternativa de exibir esse tráfego e investigar URLs acessadas por dispositivos por trás do proxy de encaminhamento, consulte [monitorando a conexão de rede por trás do proxy de encaminhamento](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Se o dispositivo de ponto de extremidade estiver protegido por um proxy de encaminhamento, os dados de tráfego não serão visíveis para o Microsoft defender para pontos de extremidade e, portanto, não serão incluídos em relatórios de Cloud Discovery. É recomendável rotear os logs do proxy de encaminhamento para Cloud App Security usando o **upload de log automatizado** para obter visibilidade completa. Para obter uma maneira alternativa de exibir esse tráfego e investigar URLs acessadas por dispositivos por trás do proxy de encaminhamento, consulte [monitorando a conexão de rede por trás do proxy de encaminhamento](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="investigate-device-network-events-in-microsoft-defender-for-endpoint"></a>Investigar eventos de rede do dispositivo no Microsoft defender para ponto de extremidade
 
