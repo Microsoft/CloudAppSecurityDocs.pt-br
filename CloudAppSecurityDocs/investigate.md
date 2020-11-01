@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 46a2493d86650a0040eb3a5664b99ed5fc9fe799
-ms.sourcegitcommit: ce4c0c03292c75a515938433951bdb78270d75a3
+ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "90879438"
 ---
 # <a name="investigate"></a>Investigar
@@ -55,13 +55,13 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
 - No console do Cloud App Security, acesse o Catálogo de aplicativos ou Aplicativos descobertos.
 
-- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](media/sanction-three-dots.png "Marcar como pontos aprovados") e selecione **Marcar como sancionado**.
+- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](media/sanction-three-dots.png "Marcar como pontos aprovados") e selecione **Marcar como sancionado** .
 
     ![Marcar como sancionado](media/mark-as-sanctioned.png "Marcar como aprovado")
 
 ## <a name="use-the-investigation-tools"></a>Usar as ferramentas de investigação
 
-1. No portal do Cloud App Security, vá para **Investigar**, examine o **Log de atividades** e filtre por um aplicativo específico. Verifique os seguintes itens:
+1. No portal do Cloud App Security, vá para **Investigar** , examine o **Log de atividades** e filtre por um aplicativo específico. Verifique os seguintes itens:
 
     - Quem está acessando o seu ambiente de nuvem?
 
@@ -95,9 +95,9 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
     - Você deseja revogar a permissão de um usuário a um aplicativo específico ou exigir que um usuário específico use a autenticação multifator?
 
-    - Faça uma busca detalhada na conta do usuário clicando nos três pontos no final da linha da conta do usuário e selecionando uma ação a ser executada. Execute uma ação, como **Suspender usuário** ou **Remover colaborações do usuário**. Se o usuário foi importado do Azure Active Directory, clique também em **Configurações de conta do Azure AD** para obter fácil acesso a recursos avançados de gerenciamento de usuários. Exemplos de recursos de gerenciamento incluem gerenciamento de grupo, MFA, detalhes sobre as entradas do usuário e a capacidade de bloquear a entrada.
+    - Faça uma busca detalhada na conta do usuário clicando nos três pontos no final da linha da conta do usuário e selecionando uma ação a ser executada. Execute uma ação, como **Suspender usuário** ou **Remover colaborações do usuário** . Se o usuário foi importado do Azure Active Directory, clique também em **Configurações de conta do Azure AD** para obter fácil acesso a recursos avançados de gerenciamento de usuários. Exemplos de recursos de gerenciamento incluem gerenciamento de grupo, MFA, detalhes sobre as entradas do usuário e a capacidade de bloquear a entrada.
 
-4. Acesse **Investigar**, seguido de **Aplicativos conectados**, e selecione um aplicativo. O painel do aplicativo se abre e fornece informações e insights. Você pode usar as guias na parte superior para verificar:
+4. Acesse **Investigar** , seguido de **Aplicativos conectados** , e selecione um aplicativo. O painel do aplicativo se abre e fornece informações e insights. Você pode usar as guias na parte superior para verificar:
 
     - Que tipo de dispositivos seus usuários estão usando para se conectar ao aplicativo?
 
@@ -133,15 +133,15 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
 Digamos que você supõe que não há nenhum acesso ao seu ambiente de nuvem por endereços IP de risco. Por exemplo, suponhamos o Tor. Mas você cria uma política de IP arriscado para garantir:
 
-1. No portal, acesse **Controle** e escolha **Modelos**.
+1. No portal, acesse **Controle** e escolha **Modelos** .
 
-2. Escolha a **Política de atividade** para o **Tipo**.
+2. Escolha a **Política de atividade** para o **Tipo** .
 
-3. No final da linha **Logon de um endereço IP de risco**, escolha o sinal de adição (**+**) para criar uma política.
+3. No final da linha **Logon de um endereço IP de risco** , escolha o sinal de adição ( **+** ) para criar uma política.
 
 4. Altere o nome da política para poder identificá-lo.
 
-5. Em **Atividades que correspondem a todos os seguintes**, escolha **+** para adicionar um filtro. Role a página para baixo até **Marca de IP** e, em seguida, escolha **Tor**.
+5. Em **Atividades que correspondem a todos os seguintes** , escolha **+** para adicionar um filtro. Role a página para baixo até **Marca de IP** e, em seguida, escolha **Tor** .
 
     ![Exemplo de política para IPs arriscados](media/example-policy-risky-ips.png "exemplo de ips arriscados de política")
 
