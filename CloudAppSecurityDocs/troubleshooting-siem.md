@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: effcab71a9b359aeb5d97ab2dc889e10133f7b9e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c7d2a5357273bcefd74db69208b874b21e8169a0
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877001"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186186"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Solucionando problemas do agente SIEM
 
@@ -40,9 +40,9 @@ Se você recebeu um alerta do sistema sobre um problema com a entrega de ativida
 
 1. No portal de Cloud App Security, acesse a página de extensões de segurança.
 1. Na guia agentes SIEM, clique em [Adicionar um novo agente Siem](siem.md)e use o assistente para configurar os detalhes de conexão para o Siem. Por exemplo, você pode criar um novo agente SIEM com a seguinte configuração:
-    - **Protocolo**: TCP
-    - **Host remoto**: qualquer computador em que você possa escutar uma porta. Por exemplo, uma solução simples seria usar o mesmo computador que o agente e definir o endereço IP do host remoto como 127.0.0.1
-    - **Porta**: qualquer porta que você possa escutar no computador host remoto
+    - **Protocolo** : TCP
+    - **Host remoto** : qualquer dispositivo em que você possa escutar uma porta. Por exemplo, uma solução simples seria usar o mesmo dispositivo que o agente e definir o endereço IP do host remoto como 127.0.0.1
+    - **Porta** : qualquer porta que você possa escutar no dispositivo de host remoto
 
     > [!NOTE]
     > Esse agente deve ser executado em paralelo ao existente, portanto, a configuração de rede pode não ser idêntica.
@@ -60,7 +60,7 @@ Use as etapas a seguir para validar sua configuração:
 > [!NOTE]
 > O agente só enviará atividades no período de tempo do problema em que você foi alertado.
 
-1. Se os dados não forem recebidos pelo seu SIEM, no novo computador do agente SIEM, tente escutar a porta que você configurou para encaminhar atividades para ver se os dados estão sendo enviados do agente para o SIEM. Por exemplo, execute `netcat -l <port>` onde `<port>` é o número da porta configurada anteriormente.
+1. Se os dados não forem recebidos pelo seu SIEM, no novo dispositivo do agente SIEM, tente escutar a porta que você configurou para encaminhar atividades para ver se os dados estão sendo enviados do agente para o SIEM. Por exemplo, execute `netcat -l <port>` onde `<port>` é o número da porta configurada anteriormente.
 
 > [!NOTE]
 > Se você estiver usando `ncat` o, certifique-se de especificar o sinalizador IPv4 `-4` .
@@ -71,7 +71,7 @@ Use as etapas a seguir para validar sua configuração:
 
 1. O agente SIEM de recuperação interromperá automaticamente o envio de dados e será desabilitado quando atingir a data de término.
 1. Valide em seu SIEM que nenhum dado novo é enviado pelo agente SIEM de recuperação.
-1. Pare a execução do agente em seu computador.
+1. Pare a execução do agente em seu dispositivo.
 1. No portal, vá para a página do agente SIEM e remova o agente SIEM de recuperação.
 1. Verifique se o agente SIEM original ainda está sendo executado corretamente.
 
@@ -88,7 +88,7 @@ Caso veja algum dos seguintes erros no prompt de comando ao executar o agente, u
 |Token inválido|O token fornecido não é válido.|Verifique se você copiou o token correto. Você pode usar o processo acima para regenerar o token.|
 |Endereço de proxy inválido|O endereço de proxy fornecido não é válido.|Verifique se você inseriu o proxy e a porta corretos.|
 
-Depois de criar o agente, verifique a página do agente SIEM no portal do Cloud App Security. Se aparecer uma das seguintes **Notificações do agente**, use as seguintes etapas para corrigir o problema:
+Depois de criar o agente, verifique a página do agente SIEM no portal do Cloud App Security. Se aparecer uma das seguintes **Notificações do agente** , use as seguintes etapas para corrigir o problema:
 
 |Erro|Descrição|Resolução|
 |----|----|----|

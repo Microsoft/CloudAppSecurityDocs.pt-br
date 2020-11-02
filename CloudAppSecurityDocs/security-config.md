@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3103a55484ec094948cef1bb457632d28e661c73
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c7906ca0ee69297e449f1f4b713a24e49a6befc6
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878824"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186135"
 ---
 # <a name="security-configuration-overview"></a>Visão geral da configuração de segurança
 
@@ -29,9 +29,20 @@ Microsoft Cloud App Security fornece avaliações de configuração de seguranç
 
 Use os links a seguir para obter mais detalhes sobre os diferentes tipos de avaliação.
 
-- **[Recomendações do Azure](security-config-azure.md)**: recomendações de segurança de práticas recomendadas do Azure consumidas na central de segurança do Azure.
-- **[Recomendações de AWS](security-config-aws.md)**: recomendações de segurança com base no benchmark de CIS (Center for Internet Security) para AWS, versão 1.2.0, consumido do hub de segurança AWS.
-- **[Recomendações de GCP](security-config-gcp.md)**: recomendações de segurança com base no parâmetro de comparação de CIS para GCP, versão 1.1.0, consumida no centro de comando de segurança do Google e análise de integridade de segurança.
+- **[Recomendações do Azure](security-config-azure.md)** : recomendações de segurança de práticas recomendadas do Azure consumidas na central de segurança do Azure.
+- **[Recomendações de AWS](security-config-aws.md)** : recomendações de segurança com base no benchmark de CIS (Center for Internet Security) para AWS, versão 1.2.0, consumido do hub de segurança AWS.
+- **[Recomendações de GCP](security-config-gcp.md)** : recomendações de segurança com base no parâmetro de comparação de CIS para GCP, versão 1.1.0, consumida no centro de comando de segurança do Google e análise de integridade de segurança.
+
+## <a name="security-recommendations-report"></a>Relatório de recomendações de segurança
+
+Cloud App Security permite exportar uma lista detalhada de recomendações de segurança para ajudá-lo a monitorar, compreender e personalizar seus ambientes de nuvem para proteger melhor sua organização.
+
+Para exportar uma lista de recomendações de segurança, execute as seguintes etapas:
+
+1. Em Cloud app Security, navegue para **investigar** a  >  **configuração de segurança** .
+
+1. Selecione a guia recomendações de segurança para a nuvem relevante.
+1. Na parte superior direita da tabela de recomendações, clique em **Exportar** .
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1542e3c10adcb3df2c58fefb0e2e9e62ca985cb8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c3551532dbd9e436369cae913e74a743bfadc8d6
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877991"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186167"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -32,7 +32,7 @@ Alguns dos requisitos abaixo dependem em que data center você está conectado.
 
 Para ver qual data center você está se conectando, execute as seguintes etapas:
 
-1. No portal do Cloud App Security, clique no **ícone de ponto de interrogação** na barra de menus. Em seguida, selecione **Sobre**.
+1. No portal do Cloud App Security, clique no **ícone de ponto de interrogação** na barra de menus. Em seguida, selecione **Sobre** .
 
     ![clique em Sobre](media/about-menu.png)
 
@@ -185,7 +185,7 @@ Para habilitar as notificações a serem enviadas do modelo e das configuraçõe
 - 111.221.26.0/27
 - 207.46.200.0/27
 
-Se você quiser personalizar a identidade do remetente do email, Microsoft Cloud App Security habilitar a personalização usando &reg; o MailChimp, um serviço de email de terceiros. Para facilitar o trabalho, no portal do Microsoft Cloud App Security, vá para **Configurações**. Selecione **configurações de email** e examine os termos de serviço e a política de privacidade do MailChimp. Em seguida, dê à Microsoft permissão para usar o MailChimp em seu nome.
+Se você quiser personalizar a identidade do remetente do email, Microsoft Cloud App Security habilitar a personalização usando &reg; o MailChimp, um serviço de email de terceiros. Para facilitar o trabalho, no portal do Microsoft Cloud App Security, vá para **Configurações** . Selecione **configurações de email** e examine os termos de serviço e a política de privacidade do MailChimp. Em seguida, dê à Microsoft permissão para usar o MailChimp em seu nome.
 
 Se você não personalizar a identidade do remetente, suas notificações de email serão enviadas usando todas as configurações padrão.
 
@@ -210,7 +210,7 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 
 > [!NOTE]
 >
-> - Se o firewall exigir uma lista de acesso de endereço IP estático e não for compatível com a lista de permissões baseada em URL, permita que o coletor de logs inicie o tráfego de saída para os [Intervalos de IP do datacenter do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=56519) na porta 443.
+> - Se o firewall exigir uma lista de acesso a endereços IP estáticos e não oferecer suporte à permissão com base na URL, permita que o coletor de logs inicie o tráfego de saída para os [intervalos de IP do datacenter Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=56519) na porta 443.
 > - Permita que o coletor de logs inicie o tráfego de saída no portal do Cloud App Security.
 > - Se você não especificou um proxy ao configurar o coletor de logs, precisará permitir conexões http http://ocsp.msocsp.com/ e OCSP.DigiCert.com na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 

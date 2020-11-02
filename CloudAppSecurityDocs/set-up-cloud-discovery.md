@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1744a906a89f8627f7d208b85a0ceda09edf0ae5
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
+ms.openlocfilehash: 706a90ff21e4dde66ed0b221e4fc5c94a7663368
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "93147451"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186133"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -31,7 +31,7 @@ Você pode gerar os seguintes tipos de relatórios:
 
 - **Relatórios contínuos** – analisam todos os logs que são encaminhados da sua rede usando o Cloud App Security. Eles oferecem maior visibilidade em todos os dados e identificam automaticamente usos anormais com o mecanismo de detecção de anomalias do Machine Learning ou por meio de políticas personalizadas que você definir. Esses relatórios podem ser criados conectando-se das seguintes maneiras:
 
-  - [**Integração do Microsoft defender para Endpoint: o**](wdatp-integration.md)Cloud app Security integra-se com o defender for Endpoint nativamente, para simplificar a distribuição de Cloud Discovery, estender os recursos de Cloud Discovery além da rede corporativa e habilitar a investigação baseada em computador.
+  - [**Integração do Microsoft defender para Endpoint: o**](mde-integration.md)Cloud app Security integra-se com o defender for Endpoint nativamente, para simplificar a distribuição de Cloud Discovery, estender os recursos de Cloud Discovery além da rede corporativa e habilitar a investigação baseada em computador.
   - [**Coletor de logs**](discovery-docker.md): os coletores de logs permitem automatizar facilmente o upload de log de sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
   - **SWG (Secure Web Gateway)** : se você trabalha com Cloud app Security e um dos seguintes SWGs, você pode integrar os produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e SWGs fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do SWG.
     - [Integração do Zscaler](zscaler-integration.md)
