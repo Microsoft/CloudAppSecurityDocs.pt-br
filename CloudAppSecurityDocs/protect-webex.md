@@ -1,26 +1,26 @@
 ---
-title: Como Cloud App Security ajuda a proteger seu ambiente Cisco WebEx
-description: Este artigo fornece informações sobre os benefícios de conectar seu aplicativo Cisco WebEx para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
+title: Como Cloud App Security ajuda a proteger seu ambiente de equipes do Cisco WebEx
+description: Este artigo fornece informações sobre os benefícios de conectar seu aplicativo de equipes do Cisco WebEx para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1c813d804b2f9ef4df1ede9ea85542fdd22f38d9
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 4061efcd3a0c03f8f57f8e9c0d36d7d1dfa5a678
+ms.sourcegitcommit: 9391853beca4bd62e0f05bd457faac97e7dec646
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880415"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93278522"
 ---
-# <a name="how-cloud-app-security-helps-protect-your-cisco-webex-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente Cisco WebEx
+# <a name="how-cloud-app-security-helps-protect-your-cisco-webex-teams-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente de equipes do Cisco WebEx
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Como uma plataforma de comunicação e colaboração, o Cisco WebEx permite a comunicação simplificada e a colaboração em toda a sua organização. Usar o Cisco WebEx para a troca de dados e ativos pode expor suas informações organizacionais confidenciais para usuários externos, por exemplo, em salas de bate-papo em que eles também podem participar de uma conversa com seus funcionários.
+Como uma plataforma de comunicação e colaboração, as equipes do Cisco WebEx permitem a comunicação simplificada e a colaboração em toda a sua organização. Usar o Cisco WebEx para a troca de dados e ativos pode expor suas informações organizacionais confidenciais para usuários externos, por exemplo, em salas de bate-papo em que eles também podem participar de uma conversa com seus funcionários.
 
-Conectar o Cisco WebEx ao Cloud App Security oferece informações aprimoradas sobre as atividades dos usuários, fornece detecções de proteção de informações e permite controles de governança automatizados.
+Conectar as equipes do Cisco WebEx ao Cloud App Security oferece informações aprimoradas sobre as atividades dos usuários, fornece detecções de proteção de informações e permite controles de governança automatizados.
 
 ## <a name="main-threats"></a>Principais ameaças
 
@@ -36,7 +36,7 @@ Conectar o Cisco WebEx ao Cloud App Security oferece informações aprimoradas s
 - [Limitar a exposição de dados compartilhados e impor políticas de colaboração](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Usar a trilha de auditoria das atividades para investigações forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## <a name="control-cisco-webex-with-built-in-policies-and-policy-templates"></a>Controlar o Cisco WebEx com políticas internas e modelos de política
+## <a name="control-cisco-webex-teams-with-built-in-policies-and-policy-templates"></a>Controlar as equipes do Cisco WebEx com políticas internas e modelos de política
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
@@ -50,7 +50,7 @@ Para obter mais informações sobre como criar políticas, consulte [criar uma p
 
 ## <a name="automate-governance-controls"></a>Automatizar controles de governança
 
-Além de monitorar possíveis ameaças, você pode aplicar e automatizar as seguintes ações de governança do Cisco WebEx para corrigir ameaças detectadas:
+Além de monitorar possíveis ameaças, você pode aplicar e automatizar as seguintes ações de governança de equipes do Cisco WebEx para corrigir ameaças detectadas:
 
 | Tipo | Ação |
 | ---- | ---- |
@@ -59,11 +59,11 @@ Além de monitorar possíveis ameaças, você pode aplicar e automatizar as segu
 
 Para obter mais informações sobre como corrigir ameaças de aplicativos, consulte [governando aplicativos conectados](governance-actions.md).
 
-## <a name="protect-cisco-webex-in-real-time"></a>Proteger o Cisco WebEx em tempo real
+## <a name="protect-cisco-webex-teams-in-real-time"></a>Proteger as equipes do Cisco WebEx em tempo real
 
 Examine nossas práticas recomendadas para [proteger e colaborar com usuários externos](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) e [bloquear e proteger o download de dados confidenciais para dispositivos não gerenciados ou arriscados](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Como conectar o Cisco WebEx ao Microsoft Cloud App Security](connect-webex-to-microsoft-cloud-app-security.md)
+> [Como conectar as equipes do Cisco WebEx ao Microsoft Cloud App Security](connect-webex-to-microsoft-cloud-app-security.md)

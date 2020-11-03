@@ -1,6 +1,6 @@
 ---
-title: Conectar WebEx a Cloud App Security
-description: Este artigo fornece informações sobre como conectar seu aplicativo WebEx para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
+title: Conectar equipes WebEx a Cloud App Security
+description: Este artigo fornece informações sobre como conectar seu aplicativo de equipes WebEx para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 21e882a513c0a35b32d4e993aa18877880852da3
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 6b995b6ec4e7ba4cf04407df9f4badb08b303931
+ms.sourcegitcommit: 9391853beca4bd62e0f05bd457faac97e7dec646
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881274"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93278505"
 ---
-# <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conectar o Cisco WebEx ao Microsoft Cloud App Security
+# <a name="connect-cisco-webex-teams-to-microsoft-cloud-app-security"></a>Conectar as equipes do Cisco WebEx ao Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do Cisco WebEx existente usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre usuários, atividades e arquivos WebEx. Para obter informações sobre como Cloud App Security protege o Cisco WebEx, consulte [proteger o Cisco WebEx](protect-webex.md).
+Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do Cisco WebEx existente usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre usuários, atividades e arquivos WebEx. Para obter informações sobre como Cloud App Security protege as equipes do Cisco WebEx, consulte [proteger as equipes do Cisco WebEx](protect-webex.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
