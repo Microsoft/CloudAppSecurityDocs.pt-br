@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/01/2019
+ms.date: 11/08/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c2f478c48280fb9fce63d23af0662cec59d61abf
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: ed63850fb9f2f9f5d949a1c5890a6a5b2d2c7be1
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881055"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94370872"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuração básica do Cloud App Security
 
@@ -45,7 +45,7 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
 
 1. No portal de Cloud App Security, na barra de menus, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações") e selecione **configurações** para configurar os detalhes da sua organização.
 
-1. Em **Detalhes da organização**, é importante que você forneça um **Nome de exibição da organização** para sua organização. Ele é exibido em emails e páginas da Web enviadas do sistema.
+1. Em **Detalhes da organização** , é importante que você forneça um **Nome de exibição da organização** para sua organização. Ele é exibido em emails e páginas da Web enviadas do sistema.
 
 1. Forneça um **Nome do ambiente** (locatário). Essa informação é especialmente importante se você gerencia mais de um locatário.
 
@@ -55,13 +55,13 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
 
     * Os usuários em domínios que não estão configurados como internos são marcados como externos. Os usuários externos não são verificados quanto a arquivos ou atividades.
 
-1. Em **saída automática**, especifique a quantidade de tempo que uma sessão pode permanecer inativa antes que a sessão seja desconectada automaticamente.
+1. Em **saída automática** , especifique a quantidade de tempo que uma sessão pode permanecer inativa antes que a sessão seja desconectada automaticamente.
 
 1. Se você estiver se integrando com a integração da Proteção de Informações do Azure, confira [Integração da Proteção de Informações do Azure](azip-integration.md) para obter informações.
 
     * Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-1. Se você estiver integrando com a integração da proteção avançada contra ameaças do Azure, consulte [integração da proteção avançada contra ameaças do Azure](azip-integration.md) para obter informações.
+1. Se você estiver integrando com o Microsoft defender para integração de identidade, consulte [integração do Microsoft defender para identidade](azip-integration.md) para obter informações.
 
 1. Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **exportar configurações do portal** para criar um arquivo JSON de todas as configurações do portal, incluindo regras de política, grupos de usuários e intervalos de endereços IP.
 
@@ -73,6 +73,6 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

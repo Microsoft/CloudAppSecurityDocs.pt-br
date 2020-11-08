@@ -3,18 +3,18 @@ title: Políticas de proteção contra ameaças-Cloud App Security
 description: Este tópico descreve as etapas para configurar muitas políticas de proteção contra ameaças no Cloud App Security.
 author: shsagir
 ms.author: shsagir
-ms.date: 06/13/2019
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 92a02c1810c427de10719193bd0b75249c9e6c21
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 50e9e52ba245520f25f3b014d6fc63325dd1dbb9
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186081"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371112"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 
@@ -23,7 +23,7 @@ ms.locfileid: "93186081"
 Cloud App Security permite identificar o uso de alto risco e problemas de segurança na nuvem, detectar comportamento anormal do usuário e evitar ameaças em seus aplicativos de nuvem aprovados. Obtenha visibilidade das atividades de usuário e administrador e defina políticas para alertar automaticamente quando um comportamento suspeito ou atividades específicas consideradas arriscadas forem detectadas. Desenhe com a vasta quantidade de dados de pesquisa de ameaças e segurança da Microsoft para ajudar a garantir que seus aplicativos aprovados tenham todos os controles de segurança de que você precisa em vigor e o ajudem a manter o controle sobre eles.
 
 > [!NOTE]
-> Ao integrar Cloud App Security com o Azure ATP (proteção avançada contra ameaças) do Azure, as políticas do Azure ATP também aparecem na página políticas. Para obter uma lista de políticas do Azure ATP, consulte [alertas de segurança](/azure-advanced-threat-protection/suspicious-activity-guide).
+> Ao integrar Cloud App Security com o Microsoft defender para identidade, as políticas do defender para identidade também aparecem na página políticas. Para obter uma lista de políticas do defender for Identity, consulte [alertas de segurança](/defender-for-identity/suspicious-activity-guide).
 
 ## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>Detectar e controlar a atividade do usuário de locais desconhecidos
 
@@ -44,6 +44,7 @@ Detecção automática de acesso de usuário ou atividade de 2 locais diferentes
 ### <a name="prerequisites"></a>Pré-requisitos
 
 Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou integrados usando o [controle de aplicativo de acesso condicional com controles de sessão](proxy-deployment-aad.md).
+
 ### <a name="steps"></a>Etapas
 
 1. Essa detecção é automaticamente configurada para alertar você quando houver acesso de locais impossíveis. Você não precisa realizar nenhuma ação para configurar essa política. Confira mais informações em [Políticas de detecção de anomalias](anomaly-detection-policy.md).
@@ -71,11 +72,11 @@ Detectar quando um usuário, quem está na licença não paga e não deve estar 
 
 1. Na tela [grupos de usuários](user-groups.md) , clique em **Criar grupo de usuários** e importe o grupo do Azure ad relevante.
 
-2. Na página **políticas** , crie uma nova **política de atividade** .
+2. Na página **políticas** , crie uma nova **política de atividade**.
 
 3. Defina o **grupo de usuários** de filtro igual ao nome dos grupos de usuários que você criou no Azure ad para os usuários de licença não paga.
 
-4. Opcional: defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Você pode escolher **suspender usuário** .
+4. Opcional: defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Você pode escolher **suspender usuário**.
 
 5. Crie a política de arquivo.
 
@@ -89,9 +90,9 @@ Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicati
 
 ### <a name="steps"></a>Etapas
 
-1. Na página **políticas** , crie uma nova **política de atividade** .
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2. Defina a **marca de agente de usuário** de filtro igual ao **navegador desatualizado** e ao **sistema operacional desatualizado** .
+2. Defina a **marca de agente de usuário** de filtro igual ao **navegador desatualizado** e ao **sistema operacional desatualizado**.
 
 3. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos** , selecione **notificar usuário** , para que os usuários possam agir sobre o alerta e atualizar os componentes necessários.
 
@@ -105,19 +106,19 @@ Detecte as atividades de administrador realizadas a partir de e o endereço IP q
 
 - Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Na engrenagem de configurações, selecione **intervalos de endereços IP** e clique em + para adicionar intervalos de endereços IP para suas sub-redes internas e seus endereços IP públicos de saída. Defina a **categoria** como **interna** .
+- Na engrenagem de configurações, selecione **intervalos de endereços IP** e clique em + para adicionar intervalos de endereços IP para suas sub-redes internas e seus endereços IP públicos de saída. Defina a **categoria** como **interna**.
 
 ### <a name="steps"></a>Etapas
 
-1. Na página **políticas** , crie uma nova **política de atividade** .
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2. Defina **agir** para **atividade única** .
+2. Defina **agir** para **atividade única**.
 
 3. Definir o **endereço IP** do filtro como **categoria** é igual a **arriscado**
 
 4. Defina a **atividade administrativa** do filtro como **true**
 
-5. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos** , selecione **notificar usuário** , para que os usuários possam agir sobre o alerta e atualizar os componentes necessários do **CC do gerente do usuário** .
+5. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos** , selecione **notificar usuário** , para que os usuários possam agir sobre o alerta e atualizar os componentes necessários do **CC do gerente do usuário**.
 
 6. Crie a política de atividade.
 
@@ -128,17 +129,17 @@ Detectar as atividades da conta de serviço provenientes de endereços IP não i
 ### <a name="prerequisites"></a>Pré-requisitos
 
 - Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-- Na engrenagem de configurações, selecione **intervalos de endereços IP** e clique em + para adicionar intervalos de endereços IP para suas sub-redes internas e seus endereços IP públicos de saída. Defina a **categoria** como **interna** .
+- Na engrenagem de configurações, selecione **intervalos de endereços IP** e clique em + para adicionar intervalos de endereços IP para suas sub-redes internas e seus endereços IP públicos de saída. Defina a **categoria** como **interna**.
 
 - Padronize uma Convenção de nomenclatura para contas de serviço em seu ambiente, por exemplo, defina todos os nomes de conta para começar com "svc".
 
 ### <a name="steps"></a>Etapas
 
-1. Na página **políticas** , crie uma nova **política de atividade** .
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
 2. Defina o **usuário** de filtro para **nomear** e, em seguida, **comece com** e insira sua Convenção de nomenclatura, como svc.
 
-3. Defina o filtro **endereço IP** como **categoria** não é igual a **outros** e **corporativos** .
+3. Defina o filtro **endereço IP** como **categoria** não é igual a **outros** e **corporativos**.
 
 4. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços.
 
@@ -154,9 +155,9 @@ Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicati
 
 ### <a name="steps"></a>Etapas
 
-1. Na página **políticas** , crie uma nova **política de atividade** .
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2. Defina os **endereços IP** de filtro como **marca** não é igual a **Microsoft Azure** . Isso excluirá as atividades não interativas baseadas em dispositivo.
+2. Defina os **endereços IP** de filtro como **marca** não é igual a **Microsoft Azure**. Isso excluirá as atividades não interativas baseadas em dispositivo.
 
 3. Defina os **tipos de atividade** de filtro igual a e selecione todas as atividades de download relevantes.
 
@@ -186,7 +187,7 @@ Detecte arquivos que contenham malware em seus ambientes de nuvem utilizando a i
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-- Para detecção de malware do Office 365, você deve ter uma licença válida para a proteção de ameaças avançadas do Office 365 P1.
+- Para detecção de malware do Office 365, você deve ter uma licença válida para o Microsoft defender para Office 365 P1.
 - Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Etapas
@@ -203,11 +204,11 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 ### <a name="steps"></a>Etapas
 
-1. Na página **políticas** , crie uma nova **política de atividade** .
+1. Na página **políticas** , crie uma nova **política de atividade**.
 
 2. Defina **agir** para a **atividade repetida** e personalize as **atividades repetidas mínimas** e defina um **período de tempo** para estar em conformidade com a política da sua organização.
 
-3. Defina o **usuário** de filtro para **do grupo** igual a e selecione todos os grupos de administradores relacionados como **ator apenas** .
+3. Defina o **usuário** de filtro para **do grupo** igual a e selecione todos os grupos de administradores relacionados como **ator apenas**.
 
 4. Defina o **tipo de atividade** de filtro igual a todas as atividades relacionadas a atualizações de senha, alterações e redefinições.
 

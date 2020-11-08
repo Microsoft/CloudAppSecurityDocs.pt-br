@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 73309d7edba1493c941af201aef300deed6b0314
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: dc6eb398526c416af306881d9fd17c71992b8c86
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185966"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94370930"
 ---
 # <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
 
@@ -29,7 +29,7 @@ Depois de examinar a lista de aplicativos descobertos em seu ambiente, você pod
 
 ## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a> Aprovar/desaprovar um aplicativo
 
-Você pode cancelar a sanção um aplicativo de risco específico clicando nos três pontos no final da linha. Em seguida, selecione **Cancelar sanção** . O cancelamento de sanção de um aplicativo não bloqueia o uso, mas permite monitorar seu uso mais facilmente com os filtros do Cloud Discovery. Em seguida, você pode notificar os usuários do aplicativo não sancionado e sugerir um aplicativo alternativo seguro para seu uso.
+Você pode cancelar a sanção um aplicativo de risco específico clicando nos três pontos no final da linha. Em seguida, selecione **Cancelar sanção**. O cancelamento de sanção de um aplicativo não bloqueia o uso, mas permite monitorar seu uso mais facilmente com os filtros do Cloud Discovery. Em seguida, você pode notificar os usuários do aplicativo não sancionado e sugerir um aplicativo alternativo seguro para seu uso.
 
 ![Marcar como não sancionado](media/tag-as-unsanctioned.png)
 
@@ -38,17 +38,17 @@ Se você tiver uma lista de aplicativos que deseja sancionar ou cancelar a sanç
 Para consultar uma lista de aplicativos não sancionados, você pode [gerar um script de bloco usando as APIs do Cloud App Security](api-discovery-script.md).
 
 > [!NOTE]
-> Se seu locatário usa a ATP (proteção avançada contra ameaças) do Microsoft defender, o Zscaler NSS ou o iboss, qualquer aplicativo marcado como não aprovado é bloqueado automaticamente pelo Cloud App Security, e as seções a seguir sobre a criação de scripts de bloqueio são desnecessárias. Para obter mais informações, consulte [integrar com o Microsoft defender ATP](mde-integration.md), [integrar com o Zscaler](zscaler-integration.md)e [integrar com o iboss](iboss-integration.md) , respectivamente.
+> Se seu locatário usar o Microsoft defender para EndPoint, Zscaler NSS ou iboss, qualquer aplicativo marcado como não aprovado será bloqueado automaticamente pelo Cloud App Security, e as seções a seguir sobre a criação de scripts de bloqueio serão desnecessárias. Para obter mais informações, consulte [integrar com o Microsoft defender para ponto de extremidade](mde-integration.md), [integrar com o Zscaler](zscaler-integration.md)e [integrar com o iboss](iboss-integration.md) , respectivamente.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporte um script de bloqueio para controlar aplicativos descobertos
 
 O Cloud App Security permite que você bloqueie o acesso a aplicativos não sancionados usando os dispositivos de segurança locais existentes. Gere um script de bloqueio dedicado e importe-o para seu dispositivo. Essa solução não exige o redirecionamento de todo o tráfego da Web da organização para um proxy.
 
-1. No painel do Cloud Discovery, marque quaisquer aplicativos que deseja bloquear como **Não sancionado** .
+1. No painel do Cloud Discovery, marque quaisquer aplicativos que deseja bloquear como **Não sancionado**.
 
     ![Marcar como não sancionado](media/tag-as-unsanctioned.png)
 
-2. Na barra de título, clique nos três pontos e selecione **Gerar script de bloqueio...** .
+2. Na barra de título, clique nos três pontos e selecione **Gerar script de bloqueio...**.
 
     ![Gerar script de bloco](media/generate-block-script.png)
 

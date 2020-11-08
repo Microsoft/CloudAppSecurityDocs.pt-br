@@ -1,6 +1,6 @@
 ---
 title: Integre o Microsoft defender for Endpoint ao Cloud App Security
-description: Este artigo descreve como integrar a proteção avançada contra ameaças do Microsoft defender com o Cloud App Security para obter visibilidade aprimorada de ti em sombra e gerenciamento de riscos.
+description: Este artigo descreve como integrar o Microsoft defender para ponto de extremidade com Cloud App Security para obter visibilidade aprimorada de ti em sombra e gerenciamento de riscos.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0812aba9855c61cfa4e34d336b7f3ec4624b03cc
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 95e8271a26828ad4e3adb73727e2692cac3a8d23
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186324"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371240"
 ---
-# <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integração da proteção avançada contra ameaças do Microsoft defender com o Microsoft Cloud App Security
+# <a name="microsoft-defender-for-endpoint-integration-with-microsoft-cloud-app-security"></a>Integração do Microsoft defender para EndPoint com o Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-O Microsoft Cloud App Security integra-se com o Microsoft defender para ponto de extremidade nativamente. A integração simplifica a distribuição de Cloud Discovery, amplia os recursos de Cloud Discovery além da rede corporativa e habilita a investigação baseada em dispositivo. [O Microsoft defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) é uma plataforma de segurança para proteção, detecção, investigação e resposta inteligentes. O defender for Endpoint protege pontos de extremidade de ameaças cibernéticos, detecta ataques avançados e violações de dados, automatiza incidentes de segurança e melhora a postura de segurança.
+O Microsoft Cloud App Security integra-se com o Microsoft defender para ponto de extremidade nativamente. A integração simplifica a distribuição de Cloud Discovery, amplia os recursos de Cloud Discovery além da rede corporativa e habilita a investigação baseada em dispositivo. [O Microsoft defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) é uma plataforma de segurança para proteção, detecção, investigação e resposta inteligentes. O defender for Endpoint protege pontos de extremidade de ameaças cibernéticos, detecta ataques avançados e violações de dados, automatiza incidentes de segurança e melhora a postura de segurança.
 
 Cloud App Security usa as informações de tráfego coletadas pelo defender para o ponto de extremidade sobre os aplicativos e serviços de nuvem que estão sendo acessados por dispositivos Windows 10 gerenciados por ti. A integração nativa permite que você execute Cloud Discovery em qualquer dispositivo na rede corporativa, usando Wi-Fi público, enquanto estiver em roaming e por meio de acesso remoto. Ele também habilita a investigação baseada em dispositivo.
 
@@ -56,14 +56,14 @@ Para permitir que você execute Cloud Discovery em outras plataformas, é melhor
 
 [Assista a nossos vídeos](#related-videos) mostrando os benefícios de usar o defender for Endpoint com Cloud app Security.
 
-## <a name="how-to-integrate-defender-for-endpoint-with-cloud-app-security"></a>Como integrar o defender for Endpoint ao Cloud App Security
+## <a name="how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security"></a>Como integrar o Microsoft defender for Endpoint ao Cloud App Security
 
 Para habilitar o defender para a integração de ponto de extremidade com o Cloud App Security:
 
-1. Na central de segurança do Microsoft defender, no painel de navegação, selecione **configurações** .
-2. Em **geral** , selecione **recursos avançados** .
-3. Alterne o **Microsoft Cloud App Security** para **Ativado** .
-4. Clique em **Aplicar** .
+1. Na central de segurança do Microsoft defender, no painel de navegação, selecione **configurações**.
+2. Em **geral** , selecione **recursos avançados**.
+3. Alterne o **Microsoft Cloud App Security** para **Ativado**.
+4. Clique em **Aplicar**.
 
 >[!NOTE]
 > Demora até duas horas para os dados serem exibidos no Cloud App Security após você habilitar a integração.
@@ -73,9 +73,9 @@ Para habilitar o defender para a integração de ponto de extremidade com o Clou
 
 Para configurar a severidade para alertas enviados ao Microsoft defender para ponto de extremidade:
 
-1. Em Cloud App Security, clique no ícone **configurações** e, em seguida, selecione **Microsoft defender para ponto de extremidade** .
+1. Em Cloud App Security, clique no ícone **configurações** e, em seguida, selecione **Microsoft defender para ponto de extremidade**.
 1. Em **alertas** , selecione o nível de severidade global para alertas.
-1. Clique em **Salvar** .
+1. Clique em **Salvar**.
 
 ![Configurações de alerta do defender for Endpoint](media/mde-alert-severity-settings.png)
 
@@ -83,11 +83,11 @@ Para configurar a severidade para alertas enviados ao Microsoft defender para po
 
 Depois de integrar o defender for Endpoint ao Cloud App Security, você pode investigar os dados de dispositivo descobertos no painel de Cloud Discovery.
 
-1. Em Cloud App Security, clique em **Cloud Discovery** e, em seguida, **Cloud Discovery painel** .
-2. Na barra de navegação superior, em **Relatórios contínuos** , selecione **Usuários de ponto de extremidade do Win10** .
+1. Em Cloud App Security, clique em **Cloud Discovery** e, em seguida, **Cloud Discovery painel**.
+2. Na barra de navegação superior, em **Relatórios contínuos** , selecione **Usuários de ponto de extremidade do Win10**.
   ![Relatório do defender for Endpoint](media/win10-dashboard-report.png)
 3. Na parte superior, você verá o número de dispositivos descobertos adicionados após a integração.
-4. Clique na guia **Dispositivos** .
+4. Clique na guia **Dispositivos**.
 5. Você pode fazer uma busca detalhada em cada dispositivo listado e usar as guias para exibir os dados de investigação. Encontre correlações entre os dispositivos, os usuários, os endereços IP e os aplicativos que estavam envolvidos em incidentes:
 
     - **Visão geral**
@@ -116,22 +116,22 @@ Assim como acontece com qualquer outra fonte do Cloud Discovery, é possível ex
 
 Use as etapas a seguir para obter visibilidade mais granular da atividade de rede do dispositivo no Microsoft defender para ponto de extremidade:
 
-1. Em Cloud App Security, em **descoberta** e selecione **dispositivos** .
-1. Selecione o computador que você deseja investigar e, na parte superior direita, clique em **Exibir no Microsoft defender para ponto de extremidade** .
-1. Na central de segurança do Microsoft defender, em **dispositivos** > {dispositivo selecionado}, selecione **linha do tempo** .
-1. Em **filtros** , selecione **eventos de rede** .
+1. Em Cloud App Security, em **descoberta** e selecione **dispositivos**.
+1. Selecione o computador que você deseja investigar e, na parte superior direita, clique em **Exibir no Microsoft defender para ponto de extremidade**.
+1. Na central de segurança do Microsoft defender, em **dispositivos** > {dispositivo selecionado}, selecione **linha do tempo**.
+1. Em **filtros** , selecione **eventos de rede**.
 1. Investigue os eventos de rede do dispositivo, conforme necessário.
 
-![Captura de tela mostrando o cronograma do dispositivo na central de segurança do Microsoft defender](media/mdatp-selected-device.png)
+![Captura de tela mostrando o cronograma do dispositivo na central de segurança do Microsoft defender](media/mde-selected-device.png)
 
 ## <a name="investigate-app-usage-in-defender-for-endpoint-with-advanced-hunting"></a>Investigar o uso do aplicativo no defender para ponto de extremidade com busca avançada
 
 Use as etapas a seguir para obter visibilidade mais granular sobre eventos de rede relacionados ao aplicativo no defender para ponto de extremidade:
 
-1. Em Cloud App Security, em **descoberta** e, em seguida, selecione **descoberto** .
+1. Em Cloud App Security, em **descoberta** e, em seguida, selecione **descoberto**.
 1. Clique no aplicativo que você deseja investigar para abrir sua gaveta.
 1. Clique na lista de **domínios** do aplicativo e copie a lista de domínios.
-1. Na central de segurança do Microsoft defender, em **dispositivos** , selecione **busca avançada** .
+1. Na central de segurança do Microsoft defender, em **dispositivos** , selecione **busca avançada**.
 1. Cole a consulta a seguir e substitua `<DOMAIN_LIST>` pela lista de domínios que você copiou anteriormente.
 
     ```kusto
@@ -142,7 +142,7 @@ Use as etapas a seguir para obter visibilidade mais granular sobre eventos de re
 
 1. Execute a consulta e investigue os eventos de rede para este aplicativo.
 
-![Captura de tela mostrando a busca avançada da central de segurança do Microsoft defender](media/mdatp-advanced-hunting.png)
+![Captura de tela mostrando a busca avançada da central de segurança do Microsoft defender](media/mde-advanced-hunting.png)
 
 ## <a name="block-access-to-unsanctioned-cloud-apps"></a>Bloquear o acesso a aplicativos de nuvem não aprovados
 
@@ -156,15 +156,15 @@ Os aplicativos marcados como não **aprovados** no Cloud app Security são sincr
 
 Use as etapas a seguir para habilitar o controle de acesso para aplicativos de nuvem:
 
-1. Em Cloud App Security, na engrenagem configurações, selecione **configurações** , em **Cloud Discovery** selecione **Microsoft defender para ponto de extremidade** e, em seguida, selecione **bloquear aplicativos não aprovados** .
+1. Em Cloud App Security, na engrenagem configurações, selecione **configurações** , em **Cloud Discovery** selecione **Microsoft defender para ponto de extremidade** e, em seguida, selecione **bloquear aplicativos não aprovados**.
 
-    ![Captura de tela mostrando como habilitar o bloqueio com o defender para ponto de extremidade](media/defender-atp-integration.png)
+    ![Captura de tela mostrando como habilitar o bloqueio com o defender para ponto de extremidade](media/mde-integration.png)
 
-1. Na central de segurança do Microsoft defender, vá para **configurações**  >  **recursos avançados** e, em seguida, selecione **indicadores de rede personalizados** . Para obter informações sobre indicadores de rede, consulte [criar indicadores para IPS e URLs/domínios](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
+1. Na central de segurança do Microsoft defender, vá para **configurações**  >  **recursos avançados** e, em seguida, selecione **indicadores de rede personalizados**. Para obter informações sobre indicadores de rede, consulte [criar indicadores para IPS e URLs/domínios](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
     Isso permite que você aproveite os recursos de proteção de rede do Microsoft defender antivírus para bloquear o acesso a um conjunto predefinido de URLs usando Cloud App Security, seja atribuindo manualmente [marcas de aplicativo](governance-discovery.md#BKMK_SanctionApp) a aplicativos específicos ou usando uma política de [descoberta de aplicativo](cloud-discovery-policies.md#creating-an-app-discovery-policy)automaticamente.
 
-    ![Captura de tela mostrando como habilitar indicadores de rede personalizados no defender para ponto de extremidade](media/defender-atp-custom-network-indicators.png)
+    ![Captura de tela mostrando como habilitar indicadores de rede personalizados no defender para ponto de extremidade](media/mde-custom-network-indicators.png)
 
 ## <a name="investigate-unsanctioned-apps-in-microsoft-defender-security-center"></a>Investigar aplicativos não aprovados na central de segurança do Microsoft defender
 
@@ -172,7 +172,7 @@ Cada tentativa de acessar um aplicativo não aprovado dispara um alerta na centr
 
 Às vezes, o acesso a um aplicativo não aprovado não é bloqueado, seja porque o dispositivo de ponto de extremidade não está configurado corretamente ou se a política de imposição ainda não foi propagada para o ponto de extremidade. Nessa instância, os administradores do defender for Endpoint receberão um alerta na central de segurança do Microsoft defender que o aplicativo não aprovado não foi bloqueado.
 
-![Captura de tela mostrando alerta do aplicativo defender para ponto de extremidade não aprovado](media/defender-atp-unsanctioned-app-alert.png)
+![Captura de tela mostrando alerta do aplicativo defender para ponto de extremidade não aprovado](media/mde-unsanctioned-app-alert.png)
 
 > [!NOTE]
 >
