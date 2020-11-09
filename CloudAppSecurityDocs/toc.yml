@@ -260,8 +260,8 @@
           href: governance-actions.md
         - name: Controlar aplicativos descobertos
           href: governance-discovery.md
-        - name: Integração do ATP do Azure
-          href: aatp-integration.md
+        - name: Integração do Microsoft Defender para Identidade
+          href: mdi-integration.md
         - name: Integração do Azure AD Identity Protection
           href: aadip-integration.md
         - name: Integração à Proteção de Informações do Azure
