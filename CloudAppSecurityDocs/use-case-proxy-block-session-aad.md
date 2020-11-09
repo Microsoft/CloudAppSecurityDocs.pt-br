@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f145c8f76e205e24703742d4162c8766b2785588
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3dec3c1729d63649a754098ace7f638ccc3029bc
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877044"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185937"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloquear o download de informações confidenciais
 
@@ -34,7 +34,7 @@ O administrador de TI atual está em uma encruzilhada. Você deseja permitir que
 
 ## <a name="the-threat"></a>A ameaça
 
-Um gerente de conta em sua organização deseja verificar algo no Salesforce em casa no fim de semana, em um laptop pessoal. Os dados do Salesforce podem incluir informações de cartão de crédito de clientes ou informações pessoais. O computador doméstico não é gerenciado. Se os documentos forem baixados do Salesforce para o computador, eles poderão ser infectados com malware do computador. Caso o computador seja perdido ou roubado e não esteja protegido por senha, qualquer pessoa que o encontre terá acesso a informações confidenciais.
+Um gerente de conta em sua organização deseja verificar algo no Salesforce em casa no fim de semana, em um laptop pessoal. Os dados do Salesforce podem incluir informações de cartão de crédito de clientes ou informações pessoais. O computador doméstico não é gerenciado. Se os documentos forem baixados do Salesforce para o computador, eles poderão ser infectados com malware do computador. Caso o dispositivo seja perdido ou roubado e não esteja protegido por senha, qualquer pessoa que o encontre terá acesso a informações confidenciais.
 
 ## <a name="the-solution"></a>A solução
 
@@ -66,43 +66,43 @@ Depois de concluir essa tarefa, vá para o portal do Cloud App Security e crie u
 
 ### <a name="step-2-create-a-session-policy"></a>Etapa 2: criar uma política de sessão
 
-1. No portal do Cloud App Security, selecione **Controle**, seguido por **Políticas**.
+1. No portal do Cloud App Security, selecione **Controle** , seguido por **Políticas**.
 
-2. Na página **Políticas**, clique em **Criar política**, seguido por **Política de sessão**.
+2. Na página **Políticas** , clique em **Criar política** , seguido por **Política de sessão**.
 
-3. Na página **Criar política de sessão**, dê um nome e uma descrição à sua política. Por exemplo, **Bloquear downloads do Salesforce em dispositivos não gerenciados**.
+3. Na página **Criar política de sessão** , dê um nome e uma descrição à sua política. Por exemplo, **Bloquear downloads do Salesforce em dispositivos não gerenciados**.
 
 4. Atribua a **Severidade da política** e a **Categoria**.
 
-5. Para o **Tipo de controle de sessão**, selecione **Controlar download de arquivo (com inspeção)** . Essa configuração oferece a capacidade de monitorar tudo o que os usuários fazem em uma sessão do Salesforce e proporciona controle para bloquear e proteger downloads em tempo real.
+5. Para o **Tipo de controle de sessão** , selecione **Controlar download de arquivo (com inspeção)** . Essa configuração oferece a capacidade de monitorar tudo o que os usuários fazem em uma sessão do Salesforce e proporciona controle para bloquear e proteger downloads em tempo real.
 
-6. Em **Origem da atividade**, na seção **Atividades correspondentes ao seguinte**, selecione os filtros:
+6. Em **Origem da atividade** , na seção **Atividades correspondentes ao seguinte** , selecione os filtros:
 
-   * **Marca do dispositivo**: Selecione **Não é igual a**. Em seguida, selecione **Em conformidade com o Intune**, **Ingressado no Azure AD híbrido** ou **Certificado de cliente válido**. Sua seleção depende do método usado na sua organização para identificar os dispositivos gerenciados.
+   * **Marca do dispositivo** : Selecione **Não é igual a**. Em seguida, selecione **Em conformidade com o Intune** , **Ingressado no Azure AD híbrido** ou **Certificado de cliente válido**. Sua seleção depende do método usado na sua organização para identificar os dispositivos gerenciados.
 
-   * **Aplicativo**: selecione o aplicativo que você deseja controlar.
+   * **Aplicativo** : selecione o aplicativo que você deseja controlar.
 
-   * **Usuários**: selecione os usuários que você deseja monitorar.
+   * **Usuários** : selecione os usuários que você deseja monitorar.
 
-7. Como alternativa, você pode bloquear os downloads para locais que não fazem parte de sua rede corporativa. Em **Origem da atividade**, na seção **Atividades correspondentes ao seguinte**, configure estes filtros:
+7. Como alternativa, você pode bloquear os downloads para locais que não fazem parte de sua rede corporativa. Em **Origem da atividade** , na seção **Atividades correspondentes ao seguinte** , configure estes filtros:
 
-   * **Endereço IP** ou **Local**: você pode usar qualquer um desses dois parâmetros para identificar locais não corporativos ou desconhecidos, dos quais um usuário pode estar tentando acessar dados confidenciais.
+   * **Endereço IP** ou **Local** : você pode usar qualquer um desses dois parâmetros para identificar locais não corporativos ou desconhecidos, dos quais um usuário pode estar tentando acessar dados confidenciais.
 
      > [!NOTE]
      > Se você deseja bloquear os downloads de dispositivos não gerenciados e de locais não corporativos, será necessário criar duas políticas de sessão. Uma política define a **Origem da atividade** usando o local. A outra política define a **Origem da atividade** como dispositivos não gerenciados.
 
-   * **Aplicativo**: selecione o aplicativo que você deseja controlar.
+   * **Aplicativo** : selecione o aplicativo que você deseja controlar.
 
-   * **Usuários**: selecione os usuários que você deseja monitorar.
+   * **Usuários** : selecione os usuários que você deseja monitorar.
 
-8. Em **Origem da atividade**, na seção **Arquivos correspondentes ao seguinte**, configure estes filtros:
+8. Em **Origem da atividade** , na seção **Arquivos correspondentes ao seguinte** , configure estes filtros:
 
-   * **Rótulos de classificação**: se você usar rótulos de classificação da Proteção de Informações do Azure, filtre os arquivos com base em um rótulo específico da Classificação da Proteção de Informações do Azure.
+   * **Rótulos de classificação** : se você usar rótulos de classificação da Proteção de Informações do Azure, filtre os arquivos com base em um rótulo específico da Classificação da Proteção de Informações do Azure.
 
    * Selecione **Nome do arquivo** ou **Tipo de arquivo** para aplicar as restrições com base no nome ou tipo de arquivo.
 9. Habilite a **Inspeção de conteúdo** para permitir que a DLP interna verifique os arquivos em busca de conteúdo confidencial.
 
-10. Em **Ações**, selecione **Bloquear**. Personalize a mensagem de bloqueio que os usuários recebem quando não conseguem baixar os arquivos.
+10. Em **Ações** , selecione **Bloquear**. Personalize a mensagem de bloqueio que os usuários recebem quando não conseguem baixar os arquivos.
 
 11. Defina os alertas que você deseja receber quando a política for correspondida. Você pode definir um limite para não receber muitos alertas. Selecione se deseja receber os alertas como mensagem de email, mensagem de texto ou ambos.
 
@@ -114,7 +114,7 @@ Depois de concluir essa tarefa, vá para o portal do Cloud App Security e crie u
 
 2. O arquivo deve estar bloqueado, e você deve receber a mensagem definida em **Personalizar mensagens de bloqueio**.
 
-3. No portal do Cloud App Security, clique em **Controlar**, seguido por **Políticas**, depois clique na política que você criou para exibir o relatório de política. Uma correspondência de política de sessão deve aparecer em breve.
+3. No portal do Cloud App Security, clique em **Controlar** , seguido por **Políticas** , depois clique na política que você criou para exibir o relatório de política. Uma correspondência de política de sessão deve aparecer em breve.
 
 4. No relatório de política, você pode ver quais logons são redirecionados ao Microsoft Cloud App Security para controle de sessão e quais arquivos foram baixados ou bloqueados nas sessões monitoradas.
 

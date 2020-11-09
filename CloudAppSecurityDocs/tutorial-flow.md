@@ -6,11 +6,12 @@ ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 04/27/2020
-ms.openlocfilehash: 2f06ed5a9eb5b029367b1ff05231b5a35fcc6d19
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 9b8cb1021c3aca223edf4f8b9b2e98d67e014480
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625007"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186256"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Estender a governança para correção de ponto de extremidade
 
@@ -45,8 +46,8 @@ Se você não tiver um plano do Power Automate, [inscreva-se para uma conta de a
 
 1. Na barra de menus do Cloud App Security, clique na engrenagem de configurações ![ícone de configurações](media/settings-icon.png "Ícone de configurações") e selecione **Extensões de segurança**.
 
-1. Na página **Extensões de segurança**, clique no botão de adição para gerar um novo token de API.
-1. No pop-up **Gerar novo token**, insira o nome do token (por exemplo, "Flow-Token") e, em seguida, clique em **Gerar**.
+1. Na página **Extensões de segurança** , clique no botão de adição para gerar um novo token de API.
+1. No pop-up **Gerar novo token** , insira o nome do token (por exemplo, "Flow-Token") e, em seguida, clique em **Gerar**.
 
     ![Captura de tela da janela de token mostrando a entrada de nome e o botão Gerar.](media/tutorial-flow-token-generate.png)
 1. Depois que o token for gerado, clique no ícone de cópia à direita do token gerado e, em seguida, clique em **Fechar**. Você precisará do token mais tarde.
@@ -79,13 +80,13 @@ Se você não tiver um plano do Power Automate, [inscreva-se para uma conta de a
 
     ![Captura de tela da página de modelos do Power Automate mostrando o botão Criar do Cloud App Security.](media/tutorial-flow-templates-create.png)
 
-1. No pop-up do **Cloud App Security**, insira o nome da conexão (por exemplo, "Token do Cloud App Security"), cole o token de API copiado e, em seguida, clique em **Criar**.
+1. No pop-up do **Cloud App Security** , insira o nome da conexão (por exemplo, "Token do Cloud App Security"), cole o token de API copiado e, em seguida, clique em **Criar**.
 
     ![Captura de tela da janela do Cloud App Security mostrando as entradas do nome e da chave e o botão Criar.](media/tutorial-flow-templates-create-window.png)
 
 1. Na lista de aplicativos, na linha na qual **HTTP com o Azure AD** aparece, clique em **Entrar**.
 
-1. No pop-up **HTTP com o Azure AD**, para ambos os campos **URL de Recurso de Base** e **URI de Recurso do Azure AD**, insira `https://graph.microsoft.com` e, em seguida, clique em **Entrar** e insira as credenciais de administrador que deseja usar com o conector HTTP com o Azure AD.
+1. No pop-up **HTTP com o Azure AD** , para ambos os campos **URL de Recurso de Base** e **URI de Recurso do Azure AD** , insira `https://graph.microsoft.com` e, em seguida, clique em **Entrar** e insira as credenciais de administrador que deseja usar com o conector HTTP com o Azure AD.
 
     ![Captura de tela da janela HTTP com o Azure AD mostrando os campos de recursos e o botão Entrar.](media/tutorial-flow-templates-azure.png)
 
@@ -93,7 +94,7 @@ Se você não tiver um plano do Power Automate, [inscreva-se para uma conta de a
 
     ![Captura de tela da janela de modelos do Power Automate mostrando as ações concluídas e o botão Continuar.](media/tutorial-flow-templates-continue.png)
 
-1. Depois que todos os conectores tiverem sido conectados com sucesso, na página do fluxo, em **Aplicar a cada computador**, opcionalmente modifique o comentário e o tipo de exame e, em seguida, clique em **Salvar**.
+1. Depois que todos os conectores tiverem sido conectados com sucesso, na página do fluxo, em **Aplicar a cada dispositivo** , você tem a opção de modificar o comentário e o tipo de exame e clicar em **Salvar**.
 
     ![Captura de tela da página de fluxo mostrando a seção de configuração do exame.](media/tutorial-flow-templates-scan.png)
 
@@ -103,7 +104,7 @@ Se você não tiver um plano do Power Automate, [inscreva-se para uma conta de a
 
 1. Na lista de políticas, na linha em que a política relevante é exibida, escolha os três pontos no final da linha e escolha **Editar política**.
 
-1. Em **Alertas**, selecione **Enviar alertas para o Flow** e, em seguida, selecione **Executar verificação antivírus usando o Windows Defender em um alerta do Cloud App Security**.
+1. Em **Alertas** , selecione **Enviar alertas para o Flow** e, em seguida, selecione **Executar verificação antivírus usando o Windows Defender em um alerta do Cloud App Security**.
 
     ![Captura de tela da página de política mostrando a seção de configurações de alertas.](media/tutorial-flow-templates-alerts.png)
 
