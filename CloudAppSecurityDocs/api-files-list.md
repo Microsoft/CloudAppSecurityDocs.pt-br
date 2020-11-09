@@ -10,19 +10,22 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 2dac75e59e95e01f11e0dc2af0d4dc44ffb9a284
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 4cfe5e15964be0a4add19f11b571254235e1a72c
+ms.sourcegitcommit: 288f3011c0ce0e5f2d8cbaa9057a63be044465f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879644"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94375033"
 ---
 # <a name="list---files-api"></a>API de arquivos de lista
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> Esta solicitação não está disponível para o Office 365 Cloud App Security.
+>
+> - Essa API em breve será preterida. Microsoft Cloud App Security está desenvolvendo uma nova solução para identificar e agir em arquivos que violam as políticas.
+> - Esse ponto de extremidade pode atingir o tempo limite ao filtrar e paginar coleções grandes.
+> - Esta API não está disponível para o Office 365 Cloud App Security.
 
 Execute a solicitação GET ou POST para buscar uma lista de arquivos que correspondem aos filtros especificados.
 
