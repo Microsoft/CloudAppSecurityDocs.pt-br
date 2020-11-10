@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 11/10/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3a6b0137fa50fecae56113c952031b998357d703
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 774fd931210f5e3303b94e5903a724811583e61e
+ms.sourcegitcommit: 98f1b892294beb74157cb3452aa5d489e78bbef4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881386"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94424513"
 ---
 # <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>Conectar o GitHub Enterprise Cloud a Microsoft Cloud App Security
 
@@ -32,7 +32,7 @@ Este artigo fornece instruções para conectar Microsoft Cloud App Security à s
 
 - Sua organização deve ter uma licença do GitHub Enterprise Cloud.
 - A conta do GitHub usada para se conectar ao Cloud App Security deve ter permissões de *proprietário* para sua organização.
-- Para verificar os proprietários da sua organização, navegue até a página da sua organização, selecione **pessoas**e, em seguida, filtre por *proprietário*.
+- Para verificar os proprietários da sua organização, navegue até a página da sua organização, selecione **pessoas** e, em seguida, filtre por *proprietário*.
 
 ## <a name="how-to-connect-github-enterprise-cloud-to-cloud-app-security"></a>Como conectar o GitHub Enterprise Cloud ao Cloud App Security
 
@@ -61,7 +61,7 @@ No GitHub, navegue até a página da sua organização e, na URL, anote o nome d
 1. **Crie um aplicativo OAuth para Cloud App Security para conectar sua organização do GitHub.**  
 Repita essa etapa para cada organização conectada adicional.
 
-    1. Navegue até **configurações**  >  **configurações do desenvolvedor**, selecione **aplicativos OAuth**e, em seguida, clique em **registrar um aplicativo**. Como alternativa, se você tiver aplicativos OAuth existentes, clique em **novo aplicativo OAuth**.
+    1. Navegue até **configurações**  >  **configurações do desenvolvedor** , selecione **aplicativos OAuth** e, em seguida, clique em **registrar um aplicativo**. Como alternativa, se você tiver aplicativos OAuth existentes, clique em **novo aplicativo OAuth**.
 
         ![Captura de tela mostrando a criação de um aplicativo OAuth](media/connect-github-create-oauth-app.png)
 
@@ -70,14 +70,17 @@ Repita essa etapa para cada organização conectada adicional.
         - Na caixa **URL da Home Page** , insira a URL para a página inicial do aplicativo.
         - Na caixa **URL de retorno de chamada de autorização** , insira o seguinte valor: `https://portal.cloudappsecurity.com/api/oauth/connect` .
 
+            > [!NOTE]
+            > Para clientes de GCC do governo dos EUA, insira o seguinte valor: `https://portal.cloudappsecurity.us/api/oauth/connect`
+
         ![Captura de tela mostrando o registro de um aplicativo OAuth](media/connect-github-register-oauth-app.png)
 
     > [!NOTE]
     >
-    > - Por padrão, o acesso ao aplicativo OAuth é restrito para organizações. Para habilitar o acesso, navegue até **configurações**  >  **acesso**de terceiros, clique em **remover restrições**e, em seguida, clique em **Sim, remover restrições de aplicativo**.
+    > - Por padrão, o acesso ao aplicativo OAuth é restrito para organizações. Para habilitar o acesso, navegue até **configurações**  >  **acesso** de terceiros, clique em **remover restrições** e, em seguida, clique em **Sim, remover restrições de aplicativo**.
     > - Os aplicativos pertencentes a uma organização têm acesso aos aplicativos da organização. Para obter mais informações, consulte [sobre as restrições de acesso do aplicativo OAuth](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-oauth-app-access-restrictions).
 
-1. Navegue até **configurações**  >  **aplicativos OAuth**, selecione o aplicativo OAuth que você acabou de criar e anote sua **ID do cliente** e o **segredo do cliente**.
+1. Navegue até **configurações**  >  **aplicativos OAuth** , selecione o aplicativo OAuth que você acabou de criar e anote sua **ID do cliente** e o **segredo do cliente**.
 
     ![Captura de tela mostrando detalhes de um aplicativo OAuth](media/connect-github-oauth-app-details.png)
 
@@ -87,7 +90,7 @@ Repita essa etapa para cada organização conectada adicional.
 
 1. Na página **conectores de aplicativos** , clique no botão de adição seguido pelo **GitHub**.
 
-1. No pop-up, preencha a ID do **cliente**, o **segredo do cliente**e o **nome de logon da organização** anotado anteriormente e clique em **conectar no GitHub**.
+1. No pop-up, preencha a ID do **cliente** , o **segredo do cliente** e o **nome de logon da organização** anotado anteriormente e clique em **conectar no GitHub**.
 
     ![Captura de tela mostrando a API do GitHub de conexão](media/connect-github-connect-app.png)
 

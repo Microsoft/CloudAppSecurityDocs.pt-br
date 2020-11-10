@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 11/10/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d06817890b94ddc5f37742fcff70654feb494d17
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c849aace75d1d4268a44e02feaecdcd032a53888
+ms.sourcegitcommit: 98f1b892294beb74157cb3452aa5d489e78bbef4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881291"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94424530"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
 
@@ -58,11 +58,11 @@ Para obter mais informações sobre como configurar usuários de integração do
 
 1. Entre no workday com uma conta que seja membro do grupo de segurança mencionado nos pré-requisitos.
 
-1. Pesquise "Editar configuração de locatário – sistema" e, em **log de atividades do usuário**, selecione **habilitar log de atividades do usuário**.
+1. Pesquise "Editar configuração de locatário – sistema" e, em **log de atividades do usuário** , selecione **habilitar log de atividades do usuário**.
 
     ![Captura de tela de permitir o log de atividades do usuário](media/connect-workday-enable-logging.png)
 
-1. Pesquise "Editar configuração de locatário – segurança" e, em **configurações do OAuth 2,0**, selecione **clientes OAuth 2,0 habilitados**.
+1. Pesquise "Editar configuração de locatário – segurança" e, em **configurações do OAuth 2,0** , selecione **clientes OAuth 2,0 habilitados**.
 
 1. Pesquise "registrar cliente de API" e selecione **registrar cliente de API – tarefa**.
 
@@ -73,7 +73,7 @@ Para obter mais informações sobre como configurar usuários de integração do
     | Nome do cliente | Microsoft Cloud App Security |
     | Tipo de concessão de cliente | Concessão de código de autorização |
     | Tipo de token de acesso | Portador |
-    | URI de redirecionamento | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | URI de redirecionamento | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Observação** : para clientes de gcc do governo dos EUA, insira o seguinte valor: `https://portal.cloudappsecurity.us/api/oauth/connect` |
     | Tokens de atualização sem expiração | Sim |
     | Escopos OAuth2 | **Equipe** e **sistema** |
     | Escopo (áreas funcionais) | **Equipe** e **sistema** |
