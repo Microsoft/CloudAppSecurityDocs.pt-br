@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fa30bef49788834233a8aa44b9e6d165c1b83658
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 8acd6889c8c5f3a1a8a1c4610b2ba990ec4cd13c
+ms.sourcegitcommit: 1349f6d9c8f4994cd2ec722d3def227153d93397
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877779"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94551622"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas e filtros de atividade
 
@@ -37,7 +37,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
   - ID de objeto de atividade – a ID do objeto (arquivo, pasta, usuário ou ID do aplicativo).
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
-  - Item – permite que você pesquise pelo nome ou ID de qualquer objeto de atividade (por exemplo: nomes de usuário, arquivos, parâmetros, sites). Para o filtro de **item de objeto de atividade** , você pode selecionar se deseja filtrar os itens que **contêm**, **iguais**ou **começam com** o item específico.
+  - Item – permite que você pesquise pelo nome ou ID de qualquer objeto de atividade (por exemplo: nomes de usuário, arquivos, parâmetros, sites). Para o filtro de **item de objeto de atividade** , você pode selecionar se deseja filtrar os itens que **contêm** , **iguais** ou **começam com** o item específico.
 
 - Tipo de atividade — pesquise a atividade do aplicativo.
 
@@ -53,14 +53,14 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Marca do dispositivo – Pesquisar por **compatível com o Intune**, **ingressado no Azure ad híbrido** ou **certificado de cliente válido**.
+- Marca do dispositivo – Pesquisar por **compatível com o Intune** , **ingressado no Azure ad híbrido** ou **certificado de cliente válido**.
 
 - Tipo de dispositivo – Pesquisa apenas as atividades realizadas por meio de um tipo de dispositivo específico. Por exemplo, pesquise todas as atividades em dispositivos móveis, PCs ou tablets.
 
 - Arquivos e pastas – pesquise arquivos e pastas nos quais a atividade foi executada.
   - ID do arquivo – permite que você pesquise pela ID do arquivo na qual a atividade foi executada.
-  - Nome – filtros no nome de arquivos ou pastas. Será possível selecionar se o nome **terminar com**, **for igual a** ou **começar com** seu valor de pesquisa.
-  - Arquivos ou pastas específicos – permite incluir ou excluir arquivos ou pastas específicos. Ao selecionar arquivos ou pastas, é possível filtrar a lista por **Aplicativo**, **Proprietário** ou **Nome do arquivo** parcial.
+  - Nome – filtros no nome de arquivos ou pastas. Será possível selecionar se o nome **terminar com** , **for igual a** ou **começar com** seu valor de pesquisa.
+  - Arquivos ou pastas específicos – permite incluir ou excluir arquivos ou pastas específicos. Ao selecionar arquivos ou pastas, é possível filtrar a lista por **Aplicativo** , **Proprietário** ou **Nome do arquivo** parcial.
 
 - Endereço IP – o endereço IP bruto, a categoria ou a marca do(a) qual a atividade foi executada.
   - Endereço IP bruto – Permite pesquisar atividades realizadas em ou por endereços IP brutos. Os IPs brutos podem ser iguais, não iguais, iniciar com ou não iniciar com uma sequência específica.
@@ -114,7 +114,7 @@ Abaixo está uma lista de filtros de atividades que podem ser aplicados. A maior
 
 Para simplificar ainda mais a investigação, agora você pode criar consultas personalizadas e salvá-las para uso posterior.
 
-1. Na página **Log de atividades**, use os filtros, conforme descrito acima, para fazer drill down em seus aplicativos, conforme necessário.
+1. Na página **Log de atividades** , use os filtros, conforme descrito acima, para fazer drill down em seus aplicativos, conforme necessário.
 
 2. Após concluir a criação da sua consulta, clique no botão **Salvar como** no canto superior direito dos filtros.
 
@@ -122,7 +122,7 @@ Para simplificar ainda mais a investigação, agora você pode criar consultas p
 
    ![nova consulta](media/new-activity-query.png)
 
-4. Para usar essa consulta novamente no futuro, em **Consultas**, role para baixo até **Consultas salvas** e selecione a consulta.
+4. Para usar essa consulta novamente no futuro, em **Consultas** , role para baixo até **Consultas salvas** e selecione a consulta.
 
    ![abrir consulta](media/select-activity-query.png)
 
@@ -130,7 +130,7 @@ O Cloud App Security também fornece **Consultas sugeridas**. As consultas suger
 
 - Atividades de administrador – filtra todas as atividades para exibir apenas as atividades que envolveram administradores.
 
-- Atividades de download – filtra todas as atividades para exibir apenas as atividades que foram atividades de download, incluindo a lista de downloads do usuário como um arquivo .csv, download de conteúdo compartilhado e download de uma pasta.
+- Baixar atividades – filtra todas as suas atividades para exibir somente as atividades que foram baixadas, incluindo baixar a lista de usuários como um arquivo. csv, baixar conteúdo compartilhado e baixar uma pasta.
 
 - Logon com falha – filtra todas as suas atividades para exibir apenas os logons com falha e entrar com falha via SSO
 
@@ -138,7 +138,7 @@ O Cloud App Security também fornece **Consultas sugeridas**. As consultas suger
 
 - Atividades de representação – filtra todas as atividades para exibir apenas as atividades de representação.
 
-- Atividades de caixa de correio – filtra todas as atividades para exibir apenas as atividades do Microsoft Exchange Online, como criação de itens, limpeza de mensagens da caixa de correio, atualização e envio de mensagens usando permissões Enviar Como (representação).
+- Atividades da caixa de correio – filtra todas as suas atividades para exibir somente atividades do Microsoft Exchange Online, como criar item, limpar mensagens da caixa de correio, atualizar mensagem e enviar mensagem usando as permissões Enviar como (representação).
 
 - Alterações de senha e solicitações e redefinição – Filtra todas as atividades para exibir apenas as atividades que envolvem redefinição de senha, alteração de senha e forçar o usuário a alterar a senha na entrada seguinte.
 
@@ -146,7 +146,7 @@ O Cloud App Security também fornece **Consultas sugeridas**. As consultas suger
 
 - Atividades de compartilhamento – filtra todas as atividades para exibir apenas as atividades que envolvem compartilhamento pastas e arquivos, incluindo a criação de um vínculo da empresa, criação de um vínculo anônimo e concessão de permissões de leitura/gravação.
 
-- Logon bem-sucedido – filtra todas as suas atividades para exibir somente as atividades que envolvem logons bem-sucedidos, incluindo a ação de representar, representar o logon, o logon único e o logon do novo dispositivo.
+- Logon bem-sucedido – filtra todas as suas atividades para exibir somente as atividades que envolvem logons bem-sucedidos, incluindo a ação de representar, representar o logon, o logon único e o logon por meio de um novo dispositivo.
 
 ![consultar atividades](media/queries-activity.png)
 
