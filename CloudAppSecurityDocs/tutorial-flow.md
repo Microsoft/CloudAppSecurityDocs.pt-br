@@ -1,23 +1,23 @@
 ---
 title: Estender a governança para correção de pontos de extremidade
-description: Este tutorial descreve o processo para configurar alertas de política do Microsoft Cloud App Security a fim de disparar os fluxos de trabalho do Microsoft Power Automate para executar ações de correção da Proteção Avançada contra Ameaças do Microsoft Defender.
+description: Este tutorial descreve o processo usado para configurar alertas de política do Microsoft Cloud App Security a fim de disparar fluxos de trabalho do Microsoft Power Automate e executar ações de correção do Microsoft Defender para Ponto de Extremidade.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 04/27/2020
-ms.openlocfilehash: 9b8cb1021c3aca223edf4f8b9b2e98d67e014480
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 213b041630a1367a4f505643e73482490456682d
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186256"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94370671"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Estender a governança para correção de ponto de extremidade
 
 O Cloud App Security fornece opções de governança predefinidas para políticas, como suspender um usuário ou tornar um arquivo privado. Usando a integração nativa com o Microsoft Power Automate, é possível usar um grande ecossistema de conectores SaaS (software como serviço) para criar fluxos de trabalho para automatizar processos, incluindo correção.
 
-Por exemplo, ao detectar uma possível ameaça de malware, é possível usar fluxos de trabalho para iniciar as ações de correção da ATP (Proteção Avançada contra Ameaças) do Microsoft defender, como a execução de uma verificação antivírus ou o isolamento de um ponto de extremidade.
+Por exemplo, ao detectar uma possível ameaça de malware, você pode usar fluxos de trabalho para iniciar ações de correção do Microsoft Defender para Ponto de Extremidade, como a execução de uma verificação antivírus ou o isolamento de um ponto de extremidade.
 
 Neste tutorial, você aprenderá a configurar uma ação de governança de política para usar um fluxo de trabalho para executar uma verificação antivírus em um ponto de extremidade em que um usuário mostra sinais de comportamento suspeito.
 
@@ -36,8 +36,8 @@ Se você não tiver um plano do Power Automate, [inscreva-se para uma conta de a
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * Você precisa ter um plano válido do [Microsoft Power Automate](https://flow.microsoft.com/pricing)
-* Você precisa ter um plano válido do Microsoft Defender ATP
-* O ambiente do Power Automate precisa ser sincronizado com o Azure AD, monitorado pelo Defender ATP e ingressado no domínio
+* Você precisa ter um plano válido do Microsoft Defender para Ponto de Extremidade
+* O ambiente do Power Automate precisa estar sincronizado com o Azure AD, ser monitorado pelo Defender para Ponto de Extremidade e estar conectado ao domínio
 
 ## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>Fase 1: Gerar um token de API do Cloud App Security<a name="generate-token"></a>
 
@@ -57,7 +57,7 @@ Se você não tiver um plano do Power Automate, [inscreva-se para uma conta de a
 ## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>Fase 2: Criar um fluxo para executar um exame antivírus<a name="create-flow"></a>
 
 > [!NOTE]
-> Se você tiver criado anteriormente um fluxo usando um conector do Defender ATP, o Power Automate reutilizará automaticamente o conector e você poderá ignorar a etapa **Entrar**.
+> Se você já tiver criado um fluxo usando um conector do Defender para Ponto de Extremidade, o Power Automate reutilizará automaticamente o conector e você poderá ignorar a etapa **Entrar**.
 
 1. Vá para o [portal do Power Automate](https://flow.microsoft.com/) e selecione **Modelos**.
 
@@ -67,7 +67,7 @@ Se você não tiver um plano do Power Automate, [inscreva-se para uma conta de a
 
     ![Captura de tela da página de modelos do Power Automate mostrando os resultados da pesquisa.](media/tutorial-flow-templates-search.png)
 
-1. Na lista de aplicativos, na linha na qual o **conector do Microsoft Defender ATP** aparece, clique em **Entrar**.
+1. Na lista de aplicativos, na linha em que o **conector do Microsoft Defender para Ponto de Extremidade** é exibido, clique em **Entrar**.
 
     ![Captura de tela da página de modelos do Power Automate mostrando o processo de conexão.](media/tutorial-flow-templates-signin.png)
 
@@ -110,7 +110,7 @@ Se você não tiver um plano do Power Automate, [inscreva-se para uma conta de a
 
 Agora, cada alerta gerado para essa política iniciará o fluxo para executar a verificação antivírus.
 
-É possível usar as etapas neste tutorial para criar uma ampla gama de ações baseadas em fluxo de trabalho para estender os recursos de correção do Cloud App Security, incluindo outras ações do Defender ATP. Para ver uma lista de fluxos de trabalho predefinidos do Cloud App Security, no Power Automate, [pesquise "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
+Use as etapas deste tutorial para criar uma ampla gama de ações baseadas em fluxo de trabalho e estender as funcionalidades de correção do Cloud App Security, incluindo outras ações do Defender para Ponto de Extremidade. Para ver uma lista de fluxos de trabalho predefinidos do Cloud App Security, no Power Automate, [pesquise "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
 
 ## <a name="see-also"></a>Consulte Também
 

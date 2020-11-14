@@ -1,21 +1,21 @@
 ---
 title: Investigar usuários arriscados | Microsoft Docs
-description: Este tutorial descreve o processo para investigar usuários arriscados no Microsoft Cloud App Security em ambientes híbridos, integrando-o com o ATP do Azure.
+description: Este tutorial descreve o processo usado para investigar usuários suspeitos no Microsoft Cloud App Security em ambientes híbridos, integrando-o ao Microsoft Defender para Identidade.
 keywords: ''
 author: shsagir
 ms.author: shsagir
-ms.date: 04/28/2020
+ms.date: 11/08/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 48b5c30fe95e75a68e896b1d366f8a1bdeec4665
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: b8dace138aeab11fdd334514bf0dd8850a983f37
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881138"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371312"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigar usuários arriscados
 
@@ -23,7 +23,7 @@ ms.locfileid: "90881138"
 
 As equipes de operações de segurança enfrentam o desafio de monitorar atividades de usuários, suspeitas ou não, em todas as dimensões da superfície de ataque de identidade, usando diversas soluções de segurança que geralmente não estão conectadas. Embora muitas empresas agora tenham equipes de caça para identificar proativamente as ameaças em seus ambientes, pode ser um desafio saber o que procurar na grande quantidade de dados. Agora, o Microsoft Cloud App Security simplifica isso ao eliminar a necessidade de criar regras de correlação complexas e permitir que você procure por ataques que se estendam por toda a nuvem e pela rede local.
 
-Para ajudar você a se concentrar na identidade do usuário, o Microsoft Cloud App Security oferece a UEBA (análise comportamental da entidade do usuário) na nuvem. Isso pode ser estendido para seu ambiente local por meio da integração da ATP (Proteção Avançada contra Ameaças do Azure). Após integrar o ATP do Azure, você também obterá contexto em torno da identidade do usuário com base em sua integração nativa com o Active Directory.
+Para ajudar você a se concentrar na identidade do usuário, o Microsoft Cloud App Security oferece a UEBA (análise comportamental da entidade do usuário) na nuvem. Isso pode ser estendido para seu ambiente local integrando-o ao Microsoft Defender para Identidade. Após a integração ao Defender para Identidade, você também obterá o contexto em relação à identidade do usuário da integração nativa ao Active Directory.
 
 Independentemente de o gatilho ser um alerta que você vê no painel do Cloud App Security ou de você ter informações de um serviço de segurança de terceiros, comece sua investigação no painel do Cloud App Security para se aprofundar nos usuários arriscados.
 
@@ -48,7 +48,7 @@ A pontuação de prioridade de investigação se baseia em alertas de segurança
 
 Quando clica no valor da pontuação de um alerta ou de uma atividade, você exibe a evidência que explica como o Cloud App Security pontuou a atividade.
 
-Todos os usuários do Azure AD têm uma pontuação de prioridade de investigação dinâmica constantemente atualizada com base em impacto e comportamento recentes, criada com base em dados avaliados do ATP do Azure e Cloud App Security. Agora você pode compreender de imediato quem são os usuários de maior risco filtrando de acordo com a **Pontuação de prioridade de investigação**, verificar diretamente o impacto sobre os negócios e investigar todas as atividades relacionadas, independentemente de estarem comprometidas, apropriando dados ou atuando como ameaças internas.
+Todos os usuários do Azure AD têm uma pontuação de prioridade de investigação dinâmica, constantemente atualizada baseada em impacto e comportamento recentes, criada com base nos dados avaliados do Defender para Identidade e do Cloud App Security. Agora você pode compreender de imediato quem são os usuários de maior risco filtrando de acordo com a **Pontuação de prioridade de investigação** , verificar diretamente o impacto sobre os negócios e investigar todas as atividades relacionadas, independentemente de estarem comprometidas, apropriando dados ou atuando como ameaças internas.
 
 O Cloud App Security usa os seguintes critérios para avaliar riscos:
 
@@ -62,14 +62,14 @@ A pontuação de atividade determina a probabilidade de um usuário específico 
 
 1. Conecte pelo menos um aplicativo ao Microsoft Cloud App Security usando os [conectores de API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). É recomendável que você comece conectando o [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 1. Conecte outros aplicativos usando o [proxy para obter controle de aplicativos de acesso condicional](proxy-deployment-aad.md).
-1. Para habilitar insights em seu ambiente local, configure o Cloud App Security para [integrar-se ao seu ambiente do ATP do Azure](aatp-integration.md).
+1. Para permitir insights no seu ambiente local, configure o Cloud App Security para [integrá-lo ao ambiente do Defender para Identidade](mdi-integration.md).
 
 ## <a name="phase-2-identify-top-risky-users"></a>Fase 2: Identificar os principais usuários arriscados<a name="identify"></a>
 
 Para identificar quem são os usuários mais arriscados no Cloud App Security:
 
 1. Vá até o painel do Cloud App Security e procure as pessoas identificadas no bloco como **Principais usuários por prioridade de investigação**. Em seguida, acesse a página de usuário de cada uma delas para investigá-las.  
-O **número de prioridade de investigação**, exibido ao lado do nome de usuário, representa a soma de todas as atividades arriscadas do usuário ao longo da semana anterior.
+O **número de prioridade de investigação** , exibido ao lado do nome de usuário, representa a soma de todas as atividades arriscadas do usuário ao longo da semana anterior.
 
    ![Painel de principais usuários](media/dashboard-top-users.png)
 
@@ -86,7 +86,7 @@ A página Usuário permite responder às seguintes questões:
     * Que risco o usuário representa para a organização?  
     Observe a lista no painel inferior, que fornece as atividades e os alertas relacionados ao usuário para ajudá-lo a compreender que tipo de risco ele representa. Na linha do tempo, clique em cada linha para analisar detalhadamente a atividade ou o alerta em si. Você também pode clicar no número ao lado da atividade para entender as evidências que influenciaram a pontuação.
     * Qual é o risco para os outros ativos em sua organização?  
-    Selecione a guia **Caminhos de movimento lateral** para entender quais caminhos um invasor pode usar para obter controle de outros ativos em sua organização. Por exemplo, mesmo que o usuário que você está investigando tenha uma conta não confidencial, um invasor poderá usar conexões com a conta para descobrir e tentar comprometer contas confidenciais em sua rede. Para obter mais informações, confira [Usar caminhos de movimento lateral](/azure-advanced-threat-protection/investigate-lateral-movement-path).
+    Selecione a guia **Caminhos de movimento lateral** para entender quais caminhos um invasor pode usar para obter controle de outros ativos em sua organização. Por exemplo, mesmo que o usuário que você está investigando tenha uma conta não confidencial, um invasor poderá usar conexões com a conta para descobrir e tentar comprometer contas confidenciais em sua rede. Para obter mais informações, confira [Usar caminhos de movimento lateral](/defender-for-identity/investigate-lateral-movement-path).
 
   >[!NOTE]
   >É importante lembrar que, embora a página Usuário forneça informações de todas as atividades sobre dispositivos, recursos e contas, a pontuação da prioridade de investigação é a soma de todos os alertas e as atividades arriscadas dos últimos sete dias.

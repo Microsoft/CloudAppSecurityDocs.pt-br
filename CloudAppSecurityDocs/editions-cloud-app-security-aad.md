@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f507b287f04789967b04abbb804d6f2b406e2ca2
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 7007f8aad61c1f504a73855360fad40f0c58bcc4
+ms.sourcegitcommit: 138d435905eaf29584f50d6dac30489d2104189a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877643"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93415412"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Quais são as diferenças nos recursos de descoberta para Azure Active Directory e Microsoft Cloud App Security?
 
@@ -34,7 +34,7 @@ O Microsoft Cloud App Security é uma solução entre SaaS completa que traz vis
 
 ## <a name="enhanced-cloud-app-discovery-in-azure-active-directory"></a>Cloud App Discovery avançado no Azure Active Directory
 
-O Azure Active Directory Premium P1 inclui o [Azure Active Directory Cloud App Discovery](https://aka.ms/caddocsnew) sem custo adicional. Esse recurso se baseia nas funcionalidades do Microsoft Cloud App Security Cloud Discovery que fornecem maior visibilidade do uso do aplicativo de nuvem em suas organizações. Escolha [Atualizar para o Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) para receber o pacote completo de funcionalidades CASB (Agente de Segurança de Aplicativo de Nuvem) oferecidas pelo Microsoft Cloud App Security.
+O Azure Active Directory Premium P1 inclui o [Azure Active Directory Cloud App Discovery](./set-up-cloud-discovery.md) sem custo adicional. Esse recurso se baseia nas funcionalidades do Microsoft Cloud App Security Cloud Discovery que fornecem maior visibilidade do uso do aplicativo de nuvem em suas organizações. Escolha [Atualizar para o Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) para receber o pacote completo de funcionalidades CASB (Agente de Segurança de Aplicativo de Nuvem) oferecidas pelo Microsoft Cloud App Security.
 
 ### <a name="feature-comparison"></a>Comparação de recursos
 
@@ -51,7 +51,7 @@ A tabela a seguir é uma comparação dos recursos de descoberta no Microsoft Cl
 ||Análises e relatórios contínuos|Sim|Sim|
 ||Detecção de anomalias para aplicativos descobertos|Sim||
 |Proteção de Informações|Suporte de DLP (prevenção contra perda de dados)|DLP de SaaS cruzado e controle de compartilhamento de dados||
-||Permissões de aplicativo e capacidade para revogar o acesso|Sim||
+||Permissões de aplicativo e capacidade para revogar o acesso (aplicativos OAuth)|Sim||
 ||Configuração de política e imposição|Sim||
 ||Integração à Proteção de Informações do Azure |Sim||
 ||Integração com soluções DLP de terceiros|Sim||

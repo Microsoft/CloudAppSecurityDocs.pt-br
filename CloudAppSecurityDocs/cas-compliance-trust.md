@@ -9,12 +9,12 @@ ms.date: 10/18/2020
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 411d3005a04949b083947a07d0c2a2c493e55f35
-ms.sourcegitcommit: 956139c1dbc47ab6c61b4a1725a174f41de58cae
+ms.openlocfilehash: eef7eaab53ddeb8ef26cb3c9f1603c1f66a17922
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2020
-ms.locfileid: "92163693"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371027"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Segurança e privacidade de dados do Microsoft Cloud App Security
 
@@ -127,7 +127,7 @@ A tabela a seguir mostra quais dados são exibidos para cada integração de pro
 
 | Produto | Dados expostos | Configuração |
 | --- | --- | --- |
-| Proteção contra Ameaças da Microsoft | Alertas e atividades do usuário | Habilitado automaticamente na Proteção contra Ameaças da Microsoft na integração |
+| Microsoft 365 Defender | Alertas e atividades do usuário | Habilitados automaticamente no Microsoft 365 Defender após a integração |
 | Azure Sentinel | Alertas e dados de descoberta | [Habilitado no Cloud App Security](siem-sentinel.md) e [configurado no Azure Sentinel](/azure/sentinel/connect-cloud-app-security) |
 | Centro de Conformidade e Segurança do Office | Alertas para o Office 365 | Transmitido automaticamente para o Centro de Conformidade e Segurança do Office |
 | Central de Segurança do Azure | Alertas para o Azure | Habilitado por padrão no Cloud App Security; pode ser desabilitado na Central de Segurança do Azure |
