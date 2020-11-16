@@ -115,7 +115,7 @@
           items:
             - name: Configurar o Cloud Discovery
               href: set-up-cloud-discovery.md
-            - name: Integrar-se com o Microsoft Defender ATP
+            - name: Fazer a integração ao Microsoft Defender para Ponto de Extremidade
               href: mde-integration.md
             - name: Integrar com o Zscaler
               href: zscaler-integration.md
