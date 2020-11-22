@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7eabf167dacf06a51a8c78951a89923a5c8d01bd
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 180c7fac97d4ff275c61da48e3f5125432d826d2
+ms.sourcegitcommit: d1bb3a7ecc062e452c051790898c59ee85689c82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879398"
+ms.lasthandoff: 11/22/2020
+ms.locfileid: "95216880"
 ---
 # <a name="investigate-activities-using-the-api"></a>Investigar atividades usando a API
 
@@ -41,7 +41,7 @@ O modo de API de atividades Cloud App Security é otimizado para verificação e
 
 **Parâmetros do corpo da solicitação**:
 
-- "filtros": filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de atividade](activity-filters.md) para obter mais informações. Para evitar que suas solicitações sejam limitadas, lembre-se de incluir uma limitação em sua consulta, por exemplo, consultar as atividades do último dia ou filtrar um aplicativo específico.
+- "filtros": filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de atividade](activity-filters-queries.md) para obter mais informações. Para evitar que suas solicitações sejam limitadas, lembre-se de incluir uma limitação em sua consulta, por exemplo, consultar as atividades do último dia ou filtrar um aplicativo específico.
 - "ISSCAN": booliano. Habilita o modo de verificação.
 - "sortDirection": a direção da classificação, os valores possíveis são "ASC" e "desc"
 - "SortField": campos usados para classificar atividades. Os valores possíveis são:
