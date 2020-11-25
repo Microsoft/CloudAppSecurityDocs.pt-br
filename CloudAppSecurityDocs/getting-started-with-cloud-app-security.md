@@ -12,11 +12,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d7e32b00bc555dd5c9fb58bc874a3f149521d390
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.sourcegitcommit: faf7c8f85721dd143ca81c6854ad5c4e8fa50e69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185884"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96025312"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: introdução ao Microsoft Cloud App Security
 
@@ -72,7 +72,7 @@ Tarefa obrigatória: Criar políticas
 1. Acesse **Controle** > **Modelos**.
 1. Selecione um modelo de política na lista e, depois, escolha (+) **Criar política**.
 1. Personalize a política (selecione filtros, ações e outras configurações) e, depois, escolha **Criar**.
-1. Na guia **Políticas** , escolha a política para ver as correspondências relevantes (atividades, arquivos, alertas).
+1. Na guia **Políticas**, escolha a política para ver as correspondências relevantes (atividades, arquivos, alertas).
  Dica: para abranger todos os seus cenários de segurança de ambiente na nuvem, crie uma política para cada **categoria de risco**.
 
 ### <a name="how-can-policies-help-your-organization"></a>Como as políticas podem ajudar sua organização?
@@ -89,8 +89,8 @@ Tarefa obrigatória: Habilitar o Cloud App Security para exibir o uso do aplicat
 
     1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
     1. Escolha **Carregamento de log automático**.
-    1. Na guia **Fontes de dados** , adicione suas fontes.
-    1. Na guia **Coletores de log** , configure o coletor de logs.
+    1. Na guia **Fontes de dados**, adicione suas fontes.
+    1. Na guia **Coletores de log**, configure o coletor de logs.
 
 ### <a name="to-create-a-snapshot-cloud-discovery-report"></a>Criar um relatório de instantâneos do Cloud Discovery
 
@@ -108,20 +108,20 @@ Tarefa recomendada: adicionar os detalhes da organização
 ### <a name="to-enter-email-settings"></a>Inserir as configurações de email
 
 1. Na engrenagem de configurações, selecione **Configurações de email**.
-1. Em **Identidade do remetente de email** , insira seus endereços de email e o nome de exibição.
-1. Em **Design de email** , carregue o modelo de email da sua organização.
+1. Em **Identidade do remetente de email**, insira seus endereços de email e o nome de exibição.
+1. Em **Design de email**, carregue o modelo de email da sua organização.
 
 ### <a name="to-set-admin-notifications"></a>Definir as notificações de administrador
 
 1. Na barra de navegação, escolha seu nome de usuário e vá para **Configurações de usuário**.
-1. Em **Notificações** , configure os métodos que você deseja definir para as notificações do sistema.
+1. Em **Notificações**, configure os métodos que você deseja definir para as notificações do sistema.
 1. Selecione **Salvar**.
 
 ### <a name="to-customize-the-score-metrics"></a>Personalizar as métricas de pontuação
 
 1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
 1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
-1. Em **Métricas de pontuação** , configure a importância de vários valores de risco.
+1. Em **Métricas de pontuação**, configure a importância de vários valores de risco.
 1. Selecione **Salvar**.
 
 Agora, as pontuações de risco dadas a aplicativos descobertos são configuradas precisamente de acordo com as necessidades e prioridades da sua organização.
@@ -140,7 +140,7 @@ Tarefa recomendada: configurar recursos importantes
 1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
 1. Na engrenagem de configurações, selecione **Intervalos de endereço IP**.
 1. Clique no sinal de mais para adicionar um intervalo de endereços IP.
-1. Insira os **detalhes** , o **local** , as **marcas** e a **categoria** do intervalo de IP.
+1. Insira os **detalhes**, o **local**, as **marcas** e a **categoria** do intervalo de IP.
 1. Escolha **Criar**.
 
     Agora você pode usar marcas de IP ao criar políticas e ao filtrar e criar relatórios contínuos.
@@ -148,7 +148,7 @@ Tarefa recomendada: configurar recursos importantes
 ### <a name="to-create-continuous-reports"></a>Para criar relatórios contínuos
 
 1. Na engrenagem de configurações, selecione **Configurações do Cloud Discovery**.
-1. Em **Relatórios contínuos** , escolha **Criar relatório**.
+1. Em **Relatórios contínuos**, escolha **Criar relatório**.
 1. Siga as etapas de configuração.
 1. Escolha **Criar**.
 
@@ -157,7 +157,7 @@ Agora você pode exibir dados descobertos com base em suas próprias preferênci
 ### <a name="to-add-domains"></a>Para adicionar domínios
 
 1. Na engrenagem de configurações, selecione **Configurações**.
-1. Em **Detalhes da organização** , adicione os domínios internos da sua organização.
+1. Em **Detalhes da organização**, adicione os domínios internos da sua organização.
 1. Selecione **Salvar**.
 
 ### <a name="why-should-you-configure-these-settings"></a>Por que você deve definir essas configurações?
