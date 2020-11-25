@@ -1,5 +1,5 @@
 ---
-title: Visibilidade das contas de aplicativo de nuvem-Cloud App Security
+title: Visibilidade em contas de aplicativo de nuvem
 description: Este artigo fornece informações sobre como examinar as contas de seus aplicativos conectados.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9d59c944fb2467eef98ac13f8d6a3673b2049a8c
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 434e68484dad0ef3d372760242282b5e5c5826af
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880251"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033218"
 ---
 # <a name="accounts"></a>Contas
 
@@ -76,7 +76,7 @@ Você pode aplicar manualmente a ação **confirmar o usuário comprometido** us
 
 * Na página **usuários e conta** , na linha em que o usuário ou conta relevante aparece, escolha os três pontos no final da linha e, em seguida, escolha **confirmar usuário comprometido**.
 
-* Na **página usuário**, selecione **ações do usuário**e, em seguida, escolha **confirmar usuário comprometido**.
+* Na **página usuário**, selecione **ações do usuário** e, em seguida, escolha **confirmar usuário comprometido**.
 
 * **Nome de usuário**: permite que você filtre para usuários específicos.
 

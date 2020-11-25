@@ -1,5 +1,5 @@
 ---
-title: Políticas de proteção de informações-Cloud App Security
+title: Políticas de proteção de informações
 description: Este tópico descreve as etapas para configurar muitas políticas de proteção de informações no Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d5b42984d8e0f1b16db5a92116e4d7835d3882b8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 379ff12d418ec6ec928817eff45da5b59b25f13f
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877870"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033847"
 ---
 # <a name="information-protection-policies"></a>Políticas de proteção de informações
 
@@ -127,7 +127,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 1. Na página **políticas** , crie uma nova **política de atividade**.
 
-2. Defina o **tipo de atividade** de filtro para as atividades de arquivo e pasta que lhe interessam, como **Exibir**, **baixar**, **acessar**e **Modificar**.
+2. Defina o **tipo de atividade** de filtro para as atividades de arquivo e pasta que lhe interessam, como **Exibir**, **baixar**, **acessar** e **Modificar**.
 
 3. Definir o **local** do filtro não é igual e, em seguida, inserir os países/regiões dos quais sua organização espera atividade.
 
@@ -193,7 +193,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 2. Em **agir em** selecione a **atividade repetida** e personalize as **atividades repetidas mínimas** e defina um **período de tempo** para estar em conformidade com a política da sua organização.
 
-3. Defina o **tipo de atividade** de filtro para as atividades de arquivo e pasta que lhe interessam, como **Exibir**, **baixar**, **acessar**e **Modificar**.
+3. Defina o **tipo de atividade** de filtro para as atividades de arquivo e pasta que lhe interessam, como **Exibir**, **baixar**, **acessar** e **Modificar**.
 
 4. Defina o filtro **usuário** como **do grupo** igual a e selecione os grupos de usuários relevantes.
 

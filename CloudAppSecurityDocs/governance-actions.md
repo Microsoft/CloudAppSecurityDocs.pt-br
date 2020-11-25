@@ -1,5 +1,5 @@
 ---
-title: Ações de governança para controlar aplicativos conectados-Cloud App Security
+title: Ações de governança para controlar aplicativos conectados
 description: Este artigo lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security e as mensagens de log que as rastreiam.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: de58d785d221876ac92cd1d2b600def4e6c4a647
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 7b507e8bb11be67fada9e0e29b6e50eb415a5459
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879485"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033287"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
@@ -122,7 +122,7 @@ Para exibir o log de governança, na barra de menus, clique no ícone configura�
 A tabela a seguir é a lista completa de ações que o portal do Cloud App Security permite que você execute. Essas ações são habilitadas em vários locais por todo o console, conforme descrito na coluna **Localização**. Cada ação de governança realizada é relacionada no Log de Governança.
 Para obter informações sobre como as ações de governança são tratadas quando há conflitos de política, consulte [Conflitos de política](control-cloud-apps-with-policies.md).
 
-| Location | Tipo de objeto de destino | Ação de governança |Descrição| Conectores relacionados|
+| Localização | Tipo de objeto de destino | Ação de governança |Description| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Contas |Arquivo |Remover colaborações do usuário | Remove todas as colaborações de um usuário específico para todos os arquivos - bom para as pessoas que estão saindo da empresa. |Box, G Suite|
 |Contas | Conta | Cancelar suspensão de usuário |Cancela a suspensão do usuário |G Suite, Box, Office, Salesforce|

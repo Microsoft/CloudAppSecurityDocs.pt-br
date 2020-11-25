@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b3dcf585f394b3e2752ac46ea799a34a13373db
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: b6c05885ea07834e0dd474bda08904dd364793a6
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880346"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033388"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker no Linux no Azure
 
@@ -92,7 +92,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 1. Vá para a guia **Coletores de logs** na parte superior.
 
     1. Clique em **Adicionar coletor de logs**.
-    1. Dê um **nome**ao coletor de logs.
+    1. Dê um **nome** ao coletor de logs.
     1. Insira o **Endereço IP de host** do computador que você usará para implantar o Docker. O endereço IP do host pode ser substituído pelo nome do computador, caso haja um servidor DNS (ou equivalente) que resolverá o nome do host.
     1. Selecione todas as **fontes de dados** que você deseja conectar ao coletor e clique em **Atualizar** para salvar a configuração.  
     ![Selecionar fontes de dados](media/ubuntu2.png)
@@ -107,7 +107,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
     >
     > * Um único coletor de logs pode lidar com várias fontes de dados.
     > * Copie o conteúdo da tela, pois você precisará das informações ao configurar o Coletor de Logs para se comunicar com o Cloud App Security. Se você selecionou Syslog, essa informação incluirá informações sobre qual porta o ouvinte do Syslog está escutando.
-    > * Para usuários que enviam dados de log via FTP pela primeira vez, é recomendável alterar a senha para o usuário de FTP. Para obter mais informações, consulte [alterando a senha de FTP](log-collector-ftp.md#changing-the-ftp-password).
+    > * Para usuários que enviam dados de log via FTP pela primeira vez, é recomendável alterar a senha para o usuário de FTP. Para obter mais informações, consulte [alterando a senha de FTP](log-collector-advanced-management.md#changing-the-ftp-password).
 
 ### <a name="step-2--deployment-of-your-machine-in-azure"></a>Etapa 2 – Implantação de seu computador no Azure
 
@@ -150,7 +150,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 1. Execute o comando para implantar o coletor de logs.
 
     ```bash
-    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
     ![Proxy do Ubuntu](media/ubuntu-proxy.png)
@@ -190,6 +190,6 @@ Verifique se os logs estão sendo carregados no Cloud App Security e se os relat
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configuração de FTP do coletor de logs](log-collector-ftp.md)
+> [Modificar a configuração de FTP do coletor de logs](log-collector-advanced-management.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

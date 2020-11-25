@@ -1,5 +1,5 @@
 ---
-title: Requisitos de rede-Cloud App Security
+title: Requisitos de rede
 description: Este artigo descreve os endereços IP e portas que você precisa abrir para trabalhar com o Cloud App Security.
 keywords: ''
 author: shsagir
@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c3551532dbd9e436369cae913e74a743bfadc8d6
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 5160d606c28bcd2d9f449f79785aca01a8250875
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186167"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033871"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -32,7 +32,7 @@ Alguns dos requisitos abaixo dependem em que data center você está conectado.
 
 Para ver qual data center você está se conectando, execute as seguintes etapas:
 
-1. No portal do Cloud App Security, clique no **ícone de ponto de interrogação** na barra de menus. Em seguida, selecione **Sobre** .
+1. No portal do Cloud App Security, clique no **ícone de ponto de interrogação** na barra de menus. Em seguida, selecione **Sobre**.
 
     ![clique em Sobre](media/about-menu.png)
 
@@ -185,7 +185,7 @@ Para habilitar as notificações a serem enviadas do modelo e das configuraçõe
 - 111.221.26.0/27
 - 207.46.200.0/27
 
-Se você quiser personalizar a identidade do remetente do email, Microsoft Cloud App Security habilitar a personalização usando &reg; o MailChimp, um serviço de email de terceiros. Para facilitar o trabalho, no portal do Microsoft Cloud App Security, vá para **Configurações** . Selecione **configurações de email** e examine os termos de serviço e a política de privacidade do MailChimp. Em seguida, dê à Microsoft permissão para usar o MailChimp em seu nome.
+Se você quiser personalizar a identidade do remetente do email, Microsoft Cloud App Security habilitar a personalização usando &reg; o MailChimp, um serviço de email de terceiros. Para facilitar o trabalho, no portal do Microsoft Cloud App Security, vá para **Configurações**. Selecione **configurações de email** e examine os termos de serviço e a política de privacidade do MailChimp. Em seguida, dê à Microsoft permissão para usar o MailChimp em seu nome.
 
 Se você não personalizar a identidade do remetente, suas notificações de email serão enviadas usando todas as configurações padrão.
 

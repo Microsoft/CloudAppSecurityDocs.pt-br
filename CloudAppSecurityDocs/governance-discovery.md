@@ -1,5 +1,5 @@
 ---
-title: Bloqueando aplicativos descobertos-Cloud App Security
+title: Bloqueando aplicativos descobertos
 description: Este artigo descreve o procedimento para exportar scripts de bloqueio para aplicativos descobertos.
 keywords: ''
 author: shsagir
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dc6eb398526c416af306881d9fd17c71992b8c86
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 6dcb55f70e96082c22504f692b8b441796293723
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94370930"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033320"
 ---
 # <a name="govern-discovered-apps"></a>Controlar aplicativos descobertos
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Depois de examinar a lista de aplicativos descobertos em seu ambiente, você pode proteger seu ambiente aprovando aplicativos seguros ( **aprovados** ) ou proibindo aplicativos indesejados (não **aprovados** ) das seguintes maneiras.
+Depois de examinar a lista de aplicativos descobertos em seu ambiente, você pode proteger seu ambiente aprovando aplicativos seguros (**aprovados**) ou proibindo aplicativos indesejados (não **aprovados**) das seguintes maneiras.
 
 ## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a> Aprovar/desaprovar um aplicativo
 
@@ -52,7 +52,7 @@ O Cloud App Security permite que você bloqueie o acesso a aplicativos não sanc
 
     ![Gerar script de bloco](media/generate-block-script.png)
 
-3. Em **Gerar script de bloqueio** , selecione o dispositivo para o qual deseja gerar o script de bloqueio.
+3. Em **Gerar script de bloqueio**, selecione o dispositivo para o qual deseja gerar o script de bloqueio.
 
     ![Pop-up de Gerar script de bloqueio](media/generate-block-script-pop-up.png)
 

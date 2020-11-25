@@ -1,5 +1,5 @@
 ---
-title: Definir preferências de notificação de email-Cloud App Security
+title: " Definir as preferências de notificação de email"
 description: Este artigo oferece informações sobre como personalizar as notificações de email enviadas pelo Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5313745b303e6ff4e8dee19f7fe496c059b15288
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c7aef2b281139b7bf2b50b5f92b5947e0e389580
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879315"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033915"
 ---
 # <a name="email-notification-preferences"></a>Preferências de notificação por email
 
@@ -125,6 +125,6 @@ Veja abaixo um modelo de email de exemplo:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

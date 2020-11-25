@@ -1,5 +1,5 @@
 ---
-title: Criar políticas em aplicativos Cloud Discovery-Cloud App Security
+title: Criar políticas em aplicativos Cloud Discovery
 description: Este artigo fornece informações sobre como trabalhar com políticas do Cloud Discovery.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2561017dec734db588b31789a078156fbe4bc59e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3daf44081471de230c0aca8db0fa0b8cc0257f6a
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881469"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033745"
 ---
 # <a name="create-cloud-discovery-policies"></a>Criar políticas de Cloud Discovery
 

@@ -1,5 +1,5 @@
 ---
-title: Leia nossos e-books-Cloud App Security
+title: Leia nossos livros eletrônicos
 description: Exibe uma lista de livros eletrônicos, incluindo uma descrição.
 author: shsagir
 ms.author: shsagir
@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/22/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d1d66c36d66ae27a91abb7081cc12170502458d9
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 0c4630bcff941e44dcbe290b1c4feaef4a475e05
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877626"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033354"
 ---
 # <a name="microsoft-cloud-app-security-e-books"></a>Livros eletrônicos do Microsoft Cloud App Security
 

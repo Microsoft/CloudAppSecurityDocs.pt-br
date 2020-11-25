@@ -1,5 +1,5 @@
 ---
-title: Implantar Cloud Discovery-Cloud App Security
+title: Implantar o Cloud Discovery
 description: Este artigo descreve o procedimento de configuração para colocar o Cloud Discovery em funcionamento.
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8a5d2d5ee97677482be80a44b33f832cfaee6ddf
-ms.sourcegitcommit: 288f3011c0ce0e5f2d8cbaa9057a63be044465f7
+ms.openlocfilehash: 72a1d6f1d7dfdf88460dceddf62a6277226cfe66
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94375084"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033949"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -33,7 +33,7 @@ Você pode gerar os seguintes tipos de relatórios:
 
   - [**Integração do Microsoft defender para Endpoint: o**](mde-integration.md)Cloud app Security integra-se com o defender for Endpoint nativamente, para simplificar a distribuição de Cloud Discovery, estender os recursos de Cloud Discovery além da rede corporativa e habilitar a investigação baseada em computador.
   - [**Coletor de logs**](discovery-docker.md): os coletores de logs permitem automatizar facilmente o upload de log de sua rede. O coletor de log é executado em sua rede e recebe logs por Syslog ou FTP.
-  - **SWG (Secure Web Gateway)** : se você trabalha com Cloud app Security e um dos seguintes SWGs, você pode integrar os produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e SWGs fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do SWG.
+  - **SWG (Secure Web Gateway)**: se você trabalha com Cloud app Security e um dos seguintes SWGs, você pode integrar os produtos para aprimorar sua experiência de Cloud Discovery de segurança. Juntos, Cloud App Security e SWGs fornecem uma implantação direta de Cloud Discovery, bloqueio automático de aplicativos não aprovados e avaliação de riscos diretamente no portal do SWG.
     - [Integração do Zscaler](zscaler-integration.md)
     - [integração do iboss](iboss-integration.md)
     - [Integração do Corrata](corrata-integration.md)
@@ -101,7 +101,7 @@ Se o log não tiver suporte ou se você estiver usando um formato de log recente
 
 Atributos de dados (de acordo com a documentação do fornecedor):
 
-| Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de Usuário | IP de Origem | Tráfego total | Bytes carregados |
+| Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de usuário | IP de Origem | Tráfego total | Bytes carregados |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | Não |
 | Blue Coat | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |

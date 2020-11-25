@@ -1,5 +1,5 @@
 ---
-title: Políticas de proteção contra ameaças-Cloud App Security
+title: Políticas de proteção contra ameaças
 description: Este tópico descreve as etapas para configurar muitas políticas de proteção contra ameaças no Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 50e9e52ba245520f25f3b014d6fc63325dd1dbb9
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 97bb8c60dfc04858d20ee4bc0a12236ea060eb65
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371112"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034153"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 
@@ -94,7 +94,7 @@ Você deve ter pelo menos um aplicativo conectado usando [conectores de aplicati
 
 2. Defina a **marca de agente de usuário** de filtro igual ao **navegador desatualizado** e ao **sistema operacional desatualizado**.
 
-3. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos** , selecione **notificar usuário** , para que os usuários possam agir sobre o alerta e atualizar os componentes necessários.
+3. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos**, selecione **notificar usuário**, para que os usuários possam agir sobre o alerta e atualizar os componentes necessários.
 
 4. Crie a política de atividade.
 
@@ -118,7 +118,7 @@ Detecte as atividades de administrador realizadas a partir de e o endereço IP q
 
 4. Defina a **atividade administrativa** do filtro como **true**
 
-5. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos** , selecione **notificar usuário** , para que os usuários possam agir sobre o alerta e atualizar os componentes necessários do **CC do gerente do usuário**.
+5. Defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Em **todos os aplicativos**, selecione **notificar usuário**, para que os usuários possam agir sobre o alerta e atualizar os componentes necessários do **CC do gerente do usuário**.
 
 6. Crie a política de atividade.
 

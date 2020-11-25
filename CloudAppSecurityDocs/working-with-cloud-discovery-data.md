@@ -1,5 +1,5 @@
 ---
-title: Usar dados de Cloud Discovery para detectar comportamento arriscado – Cloud App Security
+title: Usar dados de Cloud Discovery para detectar comportamento arriscado
 description: Este tópico fornece instruções sobre como trabalhar com os dados do Cloud Discovery, incluindo trabalhar com a pontuação de risco do aplicativo.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a2ea0158a6fb0a1c1b6252a2cf2e14a149d917c0
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 9f63783f2634770b37d4b97782454a15198c89de
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185922"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034051"
 ---
 # <a name="working-with-discovery-data"></a>Trabalhando com os dados de descoberta
 
@@ -33,16 +33,16 @@ O painel do Cloud Discovery foi projetado para fornecer mais informações sobre
 
 A primeira coisa que você deve fazer para obter uma visão geral de seus aplicativos do Cloud Discovery é examinar as seguintes informações no Painel do Cloud Discovery:
 
-1. Primeiro, examine o uso geral de aplicativos de nuvem em sua organização na **visão geral de alto nível de uso** .
+1. Primeiro, examine o uso geral de aplicativos de nuvem em sua organização na **visão geral de alto nível de uso**.
 
 2. Em seguida, aprofunde-se um nível para ver quais são as **principais categorias** usadas na sua organização para cada um dos diferentes parâmetros de uso. Você pode ver quanto dessa utilização é de aplicativos de Sanção.
 
-3. Vá ainda mais fundo e veja todos os aplicativos em uma categoria específica na guia **Aplicativos descobertos** .
+3. Vá ainda mais fundo e veja todos os aplicativos em uma categoria específica na guia **Aplicativos descobertos**.
 
 4. Você pode ver os **principais usuários e endereços IP** de origem para identificar quais usuários são os mais dominantes nos aplicativos de nuvem na sua organização.
-5. Verifique como os aplicativos descobertos se espalham acordo com a localização geográfica (segundo a Matriz) no **mapa de Matriz de Aplicativos** .
+5. Verifique como os aplicativos descobertos se espalham acordo com a localização geográfica (segundo a Matriz) no **mapa de Matriz de Aplicativos**.
 
-6. Por fim, não se esqueça de revisar a pontuação de risco do aplicativo descoberto na **visão geral de risco do aplicativo** . Verifique o **status de alertas de descoberta** para ver quantos alertas abertos você deve investigar.
+6. Por fim, não se esqueça de revisar a pontuação de risco do aplicativo descoberto na **visão geral de risco do aplicativo**. Verifique o **status de alertas de descoberta** para ver quantos alertas abertos você deve investigar.
 
 ## <a name="exclude-entities"></a>Excluir entidades
 
@@ -50,9 +50,9 @@ Se você tiver usuários do sistema, endereços IP ou dispositivos com ruídos, 
 
 Para criar uma exclusão:
 
-1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery** .
-2. Clique na guia **Excluir entidades** .
-3. Escolha a guia **usuários excluídos** , **endereços IP excluídos** ou **dispositivo excluído** e clique no botão + para adicionar sua exclusão.
+1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.
+2. Clique na guia **Excluir entidades**.
+3. Escolha a guia **usuários excluídos**, **endereços IP excluídos** ou **dispositivo excluído** e clique no botão + para adicionar sua exclusão.
 4. Adicione um alias de usuário, um endereço IP ou um nome de dispositivo. É recomendável adicionar informações sobre por que a exclusão foi feita.
 
     ![excluir usuário](media/exclude-user.png "excluir usuário")
@@ -67,17 +67,17 @@ Relatórios contínuos personalizados fornecem maior granularidade ao monitorar 
 
 Para criar um novo relatório contínuo:
 
-1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery** .
+1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.
 
-2. Clique na guia **Relatório contínuo** .
+2. Clique na guia **Relatório contínuo**.
 
-3. Clique no botão **Criar relatório** .
+3. Clique no botão **Criar relatório**.
 
 4. Insira um nome de relatório.
 
 5. Selecione as fontes de dados que você deseja incluir.
 
-6. Defina os filtros que você deseja nos dados. Esses filtros podem ser **grupos de usuários** , **marcas de endereço IP** ou **intervalos de endereços IP** . Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).
+6. Defina os filtros que você deseja nos dados. Esses filtros podem ser **grupos de usuários**, **marcas de endereço IP** ou **intervalos de endereços IP**. Para obter mais informações sobre como trabalhar com marcas de endereço IP e intervalos de endereço IP, consulte [Organizar os dados de acordo com suas necessidades](ip-tags.md).
 
     ![criar relatório contínuo personalizado](media/create-custom-continuous-report.png)
 
@@ -96,13 +96,13 @@ Há uma série de motivos pelos quais você pode desejar excluir seus dados do C
 
 Para excluir os dados do Cloud Discovery:
 
-1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery** .
+1. No portal, no ícone de configurações, selecione **Configurações de Cloud Discovery**.
 
-2. Clique na guia **Excluir dados** .
+2. Clique na guia **Excluir dados**.
 
     É importante ter certeza de que deseja excluir os dados antes de continuar. Isso não poderá ser desfeito e excluirá **todos** os dados do Cloud Discovery no sistema.
 
-3. Clique no botão **Excluir** .
+3. Clique no botão **Excluir**.
 
     ![excluir dados](media/delete-data.png "excluir dados")
 

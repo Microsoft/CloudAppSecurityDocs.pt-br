@@ -1,5 +1,5 @@
 ---
-title: Controlar o uso do aplicativo de nuvem criando políticas-Cloud App Security
+title: Controlar o uso do aplicativo de nuvem criando políticas
 description: Este artigo fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos na nuvem.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a701de6959bdaba8045c42d6317b62bd42645d0f
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 93b4acdbf27c39b0918fe6765ec33427e7050080
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880846"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033677"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
@@ -35,7 +35,7 @@ Quando você observa a página **Política**, as várias políticas e modelos po
 
 Os seguintes tipos de políticas podem ser criados:
 
-|Ícone Tipo de política|Tipo de política|Uso|
+|Ícone Tipo de política|Tipo de política|Usar|
 |-----|-----------------|---------|
 |![ícone de política de acesso](media/proxy-policy.png)|Política de acesso|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem.|
 |![ícone de política de atividade](media/activity_policy.png)|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|

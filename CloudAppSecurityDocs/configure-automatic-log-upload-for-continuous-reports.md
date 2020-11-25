@@ -1,5 +1,5 @@
 ---
-title: Configurar o upload de log automático para relatórios contínuos-Cloud App Security
+title: Configurar upload de log automático para relatórios contínuos
 description: Este artigo fornece informações sobre como fazer upload de logs para criar relatórios automáticos do Cloud Discovery.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8711209823bdb2ea010dbb734fc67c03561122ed
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 98e5a260a3b0af3e2aeb8998f3845fc9076c7cc3
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881451"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033777"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
@@ -103,7 +103,7 @@ O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na 
 
 8. Escolha **Usar um disco rígido virtual existente**. Selecione o arquivo **.vhd** que foi incluído no arquivo zip baixado.
 
-9. Clique em **Avançar** e clique em **Concluir**. A máquina é adicionada ao seu ambiente do Hyper-V.
+9. Clique em **Avançar** e em **Concluir**. A máquina é adicionada ao seu ambiente do Hyper-V.
 
 10. Clique na máquina virtual na tabela **Máquinas Virtuais** e clique em **Iniciar**.
 

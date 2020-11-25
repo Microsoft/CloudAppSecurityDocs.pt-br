@@ -1,5 +1,5 @@
 ---
-title: Visão geral do cenário de proteção contra ameaças-Cloud App Security
+title: Visão geral do cenário de proteção contra ameaças
 description: Este tópico descreve o cenário para proteger sua organização contra ameaças em seu ambiente de nuvem.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 63d4e269287f8f8f58722e11fe3b80cfe3252e5d
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 4097c0b6ea118a547acc2eb90c1be738fdf03523
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878438"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034034"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protegendo sua organização contra ransonware
 

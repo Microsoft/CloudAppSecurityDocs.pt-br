@@ -1,5 +1,5 @@
 ---
-title: Solução de problemas de integração do SIEM-Cloud App Security
+title: Solução de problemas de integração de SIEM
 description: Este artigo apresenta uma lista de possíveis problemas ao conectar o SIEM ao Cloud App Security e fornece resoluções para cada um.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7d2a5357273bcefd74db69208b874b21e8169a0
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: ae2f83f04557342122b733600daba11c3fbe7d58
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186186"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034068"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Solucionando problemas do agente SIEM
 
@@ -40,9 +40,9 @@ Se você recebeu um alerta do sistema sobre um problema com a entrega de ativida
 
 1. No portal de Cloud App Security, acesse a página de extensões de segurança.
 1. Na guia agentes SIEM, clique em [Adicionar um novo agente Siem](siem.md)e use o assistente para configurar os detalhes de conexão para o Siem. Por exemplo, você pode criar um novo agente SIEM com a seguinte configuração:
-    - **Protocolo** : TCP
-    - **Host remoto** : qualquer dispositivo em que você possa escutar uma porta. Por exemplo, uma solução simples seria usar o mesmo dispositivo que o agente e definir o endereço IP do host remoto como 127.0.0.1
-    - **Porta** : qualquer porta que você possa escutar no dispositivo de host remoto
+    - **Protocolo**: TCP
+    - **Host remoto**: qualquer dispositivo em que você possa escutar uma porta. Por exemplo, uma solução simples seria usar o mesmo dispositivo que o agente e definir o endereço IP do host remoto como 127.0.0.1
+    - **Porta**: qualquer porta que você possa escutar no dispositivo de host remoto
 
     > [!NOTE]
     > Esse agente deve ser executado em paralelo ao existente, portanto, a configuração de rede pode não ser idêntica.
@@ -88,7 +88,7 @@ Caso veja algum dos seguintes erros no prompt de comando ao executar o agente, u
 |Token inválido|O token fornecido não é válido.|Verifique se você copiou o token correto. Você pode usar o processo acima para regenerar o token.|
 |Endereço de proxy inválido|O endereço de proxy fornecido não é válido.|Verifique se você inseriu o proxy e a porta corretos.|
 
-Depois de criar o agente, verifique a página do agente SIEM no portal do Cloud App Security. Se aparecer uma das seguintes **Notificações do agente** , use as seguintes etapas para corrigir o problema:
+Depois de criar o agente, verifique a página do agente SIEM no portal do Cloud App Security. Se aparecer uma das seguintes **Notificações do agente**, use as seguintes etapas para corrigir o problema:
 
 |Erro|Descrição|Resolução|
 |----|----|----|

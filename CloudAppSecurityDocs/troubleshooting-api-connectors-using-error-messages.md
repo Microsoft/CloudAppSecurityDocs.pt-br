@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas de mensagens de erro do conector de aplicativo-Cloud App Security
+title: Solucionar problemas de mensagens de erro do conector do aplicativo
 description: Este artigo apresenta uma lista de mensagens de erro do conector do Aplicativo de API, além das recomendações de resolução para cada uma.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9b99e5477c96752f65e4b20a1f9d7f977a5b4ad7
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d0b9a0fe5bb74468c7f5bc149c4190e29f402869
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880982"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034136"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
 

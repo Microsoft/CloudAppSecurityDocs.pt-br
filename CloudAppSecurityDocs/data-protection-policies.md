@@ -1,5 +1,5 @@
 ---
-title: Monitorar e proteger arquivos em aplicativos de nuvem – Cloud App Security
+title: Monitorar e proteger arquivos em aplicativos de nuvem
 description: Este artigo descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e os arquivos em uso nos aplicativos na nuvem de sua organização.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e1d6285e4aa4f551f58af417c01e489ae4c19ed
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: f396b3f0319cf0bb4cc387fade0abc0624f0b4a5
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880741"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033507"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 

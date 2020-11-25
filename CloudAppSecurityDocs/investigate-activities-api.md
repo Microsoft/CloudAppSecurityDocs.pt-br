@@ -1,5 +1,5 @@
 ---
-title: Investigar atividades usando a API-Cloud App Security
+title: Investigar atividades usando a API
 description: Este artigo fornece informações sobre como usar a API para investigar a atividade do usuário no Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 180c7fac97d4ff275c61da48e3f5125432d826d2
-ms.sourcegitcommit: d1bb3a7ecc062e452c051790898c59ee85689c82
+ms.openlocfilehash: c4c522302c87342b10fb055cfd26e14a4b0c4e74
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2020
-ms.locfileid: "95216880"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033150"
 ---
 # <a name="investigate-activities-using-the-api"></a>Investigar atividades usando a API
 

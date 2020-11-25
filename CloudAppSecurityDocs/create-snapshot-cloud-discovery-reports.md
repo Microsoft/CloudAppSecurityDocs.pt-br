@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f74f1ad1cec5a8a3f57298378ef00e6f89c71ca
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e458859d0eea99efa6e99c0d1a2f97a50980fe59
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880786"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033524"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Criar instantâneo de relatórios do Cloud Discovery
 
@@ -33,7 +33,7 @@ Para criar um relatório de instantâneo:
 
 1. Colete arquivos de log do firewall e do proxy por meio dos quais os usuários da sua organização acessam a Internet. Certifique-se de coletar logs durante os períodos de tráfego de pico que representam a atividade de todos os usuários na sua organização.
 
-1. No portal do Cloud App Security, clique em **Descobrir** e, em seguida, **Criar relatório de instantâneos**.
+1. No portal de Cloud App Security, clique em **descobrir** e, em seguida, clique em **criar relatório de instantâneo**.
 
     ![Criar novo relatório de instantâneo](media/create-new-snapshot-report.png)
 
@@ -43,13 +43,12 @@ Para criar um relatório de instantâneo:
 
 1. Selecione a **Fonte de dados** da qual você deseja carregar os arquivos de log.
 
-1. Verifique o formato do seu log para certificar-se de que ele foi formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e verificar** e, em seguida, **Baixar log de exemplo**. Compare seu log com o exemplo fornecido para verificar se ele é compatível.
+1. Verifique o formato do seu log para certificar-se de que ele foi formatado corretamente de acordo com o exemplo que pode ser baixado. Clique em **Exibir e verifique e** clique em **baixar log de exemplo**. Compare seu log com o exemplo fornecido para verificar se ele é compatível.
 
     ![Verifique seu formato de log](media/cloud-discovery-snapshot-verify.png)
 
     > [!NOTE]
-    > O formato de exemplo de FTP tem suporte em instantâneos e no carregamento automatizado, enquanto o syslog tem suporte somente no carregamento automatizado.  
-    Baixar um exemplo de log também baixará um exemplo de log FTP.
+    > O formato de amostra de FTP tem suporte em instantâneos e upload automatizado, enquanto o syslog tem suporte apenas no upload automatizado. Baixar um exemplo de log também baixará um exemplo de log FTP.
 
 1. **Escolha os logs de tráfego** que você deseja carregar. Você pode carregar até 20 arquivos ao mesmo tempo. Também há suporte para arquivos compactados e zipados.
 
@@ -65,7 +64,7 @@ Para criar um relatório de instantâneo:
 
 1. Depois que os logs forem carregados com êxito, você deverá ver uma notificação informando que o processamento do arquivo de log foi concluído com êxito. Neste ponto, você pode exibir o relatório clicando no link na barra de status ou clicando no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações")e, em seguida, selecione **configurações**.
 
-1. Em **Cloud Discovery**, selecione **relatórios de instantâneo**e selecione seu relatório de instantâneo.
+1. Em **Cloud Discovery**, selecione **relatórios de instantâneo** e selecione seu relatório de instantâneo.
 
     ![gerenciamento de relatório de instantâneo](media/snapshot-report-managment.png)
 
