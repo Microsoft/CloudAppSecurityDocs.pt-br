@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd4138ad0bad611e38c382ab0151b8964a55ce3d
-ms.sourcegitcommit: 06471b9b3d20868d36e76e4b1cc9c61feab19f64
+ms.openlocfilehash: 0dc03caf55a6d45f2698d3e9c56d8d15bee42d11
+ms.sourcegitcommit: dbc41414e828f27ae9bee8dc057f2e15727ddad8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/26/2020
-ms.locfileid: "96231273"
+ms.locfileid: "96295784"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -45,26 +45,26 @@ Para ver qual data center você está se conectando, execute as seguintes etapas
 Para acessar o portal de Cloud App Security, adicione a **porta de saída 443** para os seguintes endereços IP e nomes DNS à lista de permissões do firewall:
 
 ```ini
-    portal.cloudappsecurity.com
-    *.portal.cloudappsecurity.com
-    cdn.cloudappsecurity.com
-    https://adaproddiscovery.azureedge.net
-    *.s-microsoft.com
-    *.msecnd.net
-    dev.virtualearth.net
-    *.cloudappsecurity.com
-    flow.microsoft.com
-    static2.sharepointonline.com
-    dc.services.visualstudio.com
-    *.blob.core.windows.net
+portal.cloudappsecurity.com
+*.portal.cloudappsecurity.com
+cdn.cloudappsecurity.com
+https://adaproddiscovery.azureedge.net
+*.s-microsoft.com
+*.msecnd.net
+dev.virtualearth.net
+*.cloudappsecurity.com
+flow.microsoft.com
+static2.sharepointonline.com
+dc.services.visualstudio.com
+*.blob.core.windows.net
 ```
 
 Para clientes de GCC do governo dos EUA, também é necessário adicionar os seguintes nomes DNS à lista de permissões do firewall para fornecer acesso ao portal do Cloud App Security GCC High:
 
 ```ini
-    portal.cloudappsecurity.us
-    *.portal.cloudappsecurity.us
-    cdn.cloudappsecurity.com
+portal.cloudappsecurity.us
+*.portal.cloudappsecurity.us
+cdn.cloudappsecurity.com
 ```
 
 Além disso, os itens a seguir devem ser permitidos, dependendo de qual data center você usa:
@@ -90,10 +90,10 @@ Configure o firewall para o proxy reverso usando as configurações relevantes p
 Para clientes comerciais, para habilitar Cloud App Security proxy reverso, adicione a **porta de saída 443** para os seguintes endereços IP e nomes DNS à lista de permissões do firewall:
 
 ```ini
-    *.cas.ms
-    *.mcas.ms
-    *.admin-mcas.ms
-    mcasproxy.azureedge.net
+*.cas.ms
+*.mcas.ms
+*.admin-mcas.ms
+mcasproxy.azureedge.net
 ```
 
 Além disso, os itens a seguir devem ser permitidos, dependendo de qual data center você usa:
@@ -111,9 +111,9 @@ Além disso, os itens a seguir devem ser permitidos, dependendo de qual data cen
 Para clientes do governo dos EUA GCC High, para habilitar Cloud App Security proxy reverso, adicione a **porta de saída 443** para os seguintes nomes DNS à lista de permissões do firewall:
 
 ```ini
-    *.mcas-gov.us
-    *.admin-mcas-gov.us
-    mcasproxy.azureedge.net
+*.mcas-gov.us
+*.admin-mcas-gov.us
+mcasproxy.azureedge.net
 ```
 
 ## <a name="siem-agent-connection"></a>Conexão do agente SIEM
@@ -130,7 +130,7 @@ Para permitir que Cloud App Security se conectem ao SIEM, adicione a **porta de 
 |Gov US1|13.72.19.4, 52.227.143.223|
 
 > [!NOTE]
-> Se você não especificou um proxy ao configurar o agente SIEM Cloud App Security, precisará permitir conexões http http://ocsp.msocsp.com/ e OCSP.DigiCert.com na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
+> Se você não especificou um proxy ao configurar o agente SIEM Cloud App Security, precisará permitir conexões http na porta 80 para as URLs listadas na página [alterações de certificado do Azure TLS](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) . Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 
 ## <a name="app-connector"></a>Conector de aplicativo
 
@@ -212,7 +212,7 @@ Para habilitar os recursos de Cloud Discovery usando um coletor de logs e detect
 >
 > - Se o firewall exigir uma lista de acesso a endereços IP estáticos e não oferecer suporte à permissão com base na URL, permita que o coletor de logs inicie o tráfego de saída para os [intervalos de IP do datacenter Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=56519) na porta 443.
 > - Permita que o coletor de logs inicie o tráfego de saída no portal do Cloud App Security.
-> - Se você não especificou um proxy ao configurar o coletor de logs, precisará permitir conexões http http://ocsp.msocsp.com/ e OCSP.DigiCert.com na porta 80. Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
+> - Se você não especificou um proxy ao configurar o coletor de logs, precisará permitir conexões http na porta 80 para as URLs listadas na página [alterações de certificado do Azure TLS](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) . Isso é usado para verificar o status de revogação de certificado ao se conectar ao portal do Cloud App Security.
 
 ## <a name="next-steps"></a>Próximas etapas
 
