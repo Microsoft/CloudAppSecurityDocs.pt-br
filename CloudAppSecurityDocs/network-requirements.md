@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5160d606c28bcd2d9f449f79785aca01a8250875
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: cd4138ad0bad611e38c382ab0151b8964a55ce3d
+ms.sourcegitcommit: 06471b9b3d20868d36e76e4b1cc9c61feab19f64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033871"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96231273"
 ---
 # <a name="network-requirements"></a>Requisitos de rede
 
@@ -67,7 +67,7 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
     cdn.cloudappsecurity.com
 ```
 
-Além disso, os itens a seguir devem estar na lista de permissões, dependendo do data center usado:
+Além disso, os itens a seguir devem ser permitidos, dependendo de qual data center você usa:
 
 |Data center|Endereços IP|Nome DNS|
 |----|----|----|
@@ -96,7 +96,7 @@ Para clientes comerciais, para habilitar Cloud App Security proxy reverso, adici
     mcasproxy.azureedge.net
 ```
 
-Além disso, os itens a seguir devem estar na lista de permissões, dependendo do data center usado:
+Além disso, os itens a seguir devem ser permitidos, dependendo de qual data center você usa:
 
 |Data center|Endereços IP|Nome DNS|
 |----|----|----|----|----|
@@ -154,7 +154,7 @@ Para se conectar a aplicativos de terceiros, habilite o Cloud App Security para 
 
 Para habilitar o Cloud App Security a enviar dados por meio de seu stunnel para seu servidor ICAP, abra o firewall de rede de perímetro para esses endereços IP com um número da porta de origem dinâmico.
 
-1. **Endereços de origem** – esses endereços devem ser colocados na lista de permissões conforme listado acima para aplicativos de terceiros de conector de API
+1. **Endereços de origem** -esses endereços devem ser permitidos como listados acima para aplicativos de terceiros do conector de API
 2. **Porta TCP de origem** – dinâmica
 3. **Endereços de destino** – um ou dois endereços IP do stunnel conectado ao servidor ICAP externo
 4. **Porta TCP de destino** – conforme definido em sua rede
