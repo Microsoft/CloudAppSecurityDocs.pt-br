@@ -133,10 +133,8 @@
               href: discovery-docker-ubuntu.md
             - name: Docker no Linux no Azure
               href: discovery-docker-ubuntu-azure.md
-            - name: Configuração de FTP do coletor de logs
-              href: log-collector-ftp.md
-            - name: Coletor de logs por trás de um proxy
-              href: log-collector-proxy.md
+            - name: Gerenciamento de coletor de logs avançado
+              href: log-collector-advanced-management.md
             - name: Usar o analisador de log personalizado
               href: custom-log-parser.md
         - name: Aprimoramento do Cloud Discovery

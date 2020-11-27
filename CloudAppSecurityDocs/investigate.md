@@ -1,5 +1,5 @@
 ---
-title: Investigue os riscos do aplicativo de nuvem & atividade suspeita-Cloud App Security
+title: Investigar riscos e atividades suspeitas do aplicativo na nuvem
 description: Este artigo fornece uma descrição do processo para investigar alertas, problemas e atividades suspeitas usando o Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 46a2493d86650a0040eb3a5664b99ed5fc9fe799
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
-ms.translationtype: MT
+ms.openlocfilehash: 0d4062a046d121e1698b7bc9bf5c1f9409a8f8f2
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "90879438"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033983"
 ---
 # <a name="investigate"></a>Investigar
 
@@ -34,34 +34,34 @@ Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos
 |Painel|Descrição|
 |---------------|-----------------|
 |Painel principal|Visão geral do status de nuvem (usuários, arquivos, atividades) e ações necessárias (alertas, violações de atividade e violações de conteúdo).|
-|Painel do aplicativo: visão geral|Visão geral do uso do aplicativo por local, gráficos de uso por número de usuários.|
+|Painel do aplicativo: visão geral|Visão geral do uso do aplicativo por localização e gráficos de uso por número de usuários.|
 |Painel do aplicativo: informações|Informações sobre detalhes, segurança e conformidade do aplicativo.|
 |Painel do aplicativo: insights  
-*(quando aplicável)*|Análise de dados armazenados no aplicativo, dividida por tipo de arquivo e nível de compartilhamento de arquivos.|
+*(se aplicável)*|Análise de dados armazenados no aplicativo, detalhada por tipo de arquivo e nível de compartilhamento de arquivos.|
 |Painel do aplicativo: arquivos  
-*(quando aplicável)*|Fazer uma busca detalhada nos arquivos; capacidade de filtrar de acordo com o proprietário, o nível de compartilhamento e muito mais. Execute ações de governança como quarentena.|
+*(se aplicável)*|Faça drill down dos arquivos; capacidade de filtrar de acordo com proprietário, nível de compartilhamento e muito mais. Execute ações de governança, como quarentena.|
 |Painel do aplicativo: contas|Visão geral de todas as contas/usuários vinculados ao aplicativo.|
 |Painel do aplicativo: aplicativos OAuth  
-*(quando aplicável)*|Faça uma busca detalhada nos aplicativos OAuth atualmente implantados, como G Suite, e defina políticas.|
-|Painel do aplicativo: log de atividades|Faça uma busca detalhada em todas as atividades do aplicativo; capacidade de filtrar de acordo com usuários, endereço IP e muito mais.|
-|Painel do aplicativo: alertas|Faça uma busca detalhada em todos os alertas de aplicativo; capacidade de filtrar de acordo com o status, a categoria, a severidade e muito mais.|
+*(se aplicável)*|Faça drill down dos aplicativos OAuth atualmente implantados, como G Suite, e defina políticas.|
+|Painel do aplicativo: log de atividades|Faça drill down de todas as atividades do aplicativo; capacidade de filtrar de acordo com usuários, endereço IP e muito mais.|
+|Painel do aplicativo: alertas|Faça drill down de todos os alertas do aplicativo; capacidade de filtrar de acordo com status, categoria, severidade e muito mais.|
 |Painel do aplicativo: contas com privilégios especiais  
 *(Somente Salesforce)*|Visão geral de usuários por tipo de usuário privilegiado.|
 |Painel do usuário|Uma visão geral completa do perfil do usuário na nuvem, locais, atividades recentes, alertas relacionados.|
 
-## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Marcar aplicativos como aprovados ou não aprovados
+## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Marcar aplicativos sancionados ou não sancionados
 
 Uma etapa importante para entender sua nuvem é marcar os aplicativos como sancionados ou não sancionados. Depois de sancionar um aplicativo, você poderá filtrar pelos aplicativos que não estão sancionados e iniciar a migração para aplicativos sancionadas do mesmo tipo.
 
 - No console do Cloud App Security, acesse o Catálogo de aplicativos ou Aplicativos descobertos.
 
-- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](media/sanction-three-dots.png "Marcar como pontos aprovados") e selecione **Marcar como sancionado** .
+- Na lista de aplicativos, na linha em que o aplicativo que você deseja sancionar é exibido, selecione os três pontos no final da linha ![Pontos de marcar como sancionado](media/sanction-three-dots.png "Pontos de Marcar como sancionado") e selecione **Marcar como sancionado**.
 
-    ![Marcar como sancionado](media/mark-as-sanctioned.png "Marcar como aprovado")
+    ![Marcar como sancionado](media/mark-as-sanctioned.png "marcar como sancionado")
 
 ## <a name="use-the-investigation-tools"></a>Usar as ferramentas de investigação
 
-1. No portal do Cloud App Security, vá para **Investigar** , examine o **Log de atividades** e filtre por um aplicativo específico. Verifique os seguintes itens:
+1. No portal do Cloud App Security, vá para **Investigar**, examine o **Log de atividades** e filtre por um aplicativo específico. Verifique os seguintes itens:
 
     - Quem está acessando o seu ambiente de nuvem?
 
@@ -95,9 +95,9 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
     - Você deseja revogar a permissão de um usuário a um aplicativo específico ou exigir que um usuário específico use a autenticação multifator?
 
-    - Faça uma busca detalhada na conta do usuário clicando nos três pontos no final da linha da conta do usuário e selecionando uma ação a ser executada. Execute uma ação, como **Suspender usuário** ou **Remover colaborações do usuário** . Se o usuário foi importado do Azure Active Directory, clique também em **Configurações de conta do Azure AD** para obter fácil acesso a recursos avançados de gerenciamento de usuários. Exemplos de recursos de gerenciamento incluem gerenciamento de grupo, MFA, detalhes sobre as entradas do usuário e a capacidade de bloquear a entrada.
+    - Faça uma busca detalhada na conta do usuário clicando nos três pontos no final da linha da conta do usuário e selecionando uma ação a ser executada. Execute uma ação, como **Suspender usuário** ou **Remover colaborações do usuário**. Se o usuário foi importado do Azure Active Directory, clique também em **Configurações de conta do Azure AD** para obter fácil acesso a recursos avançados de gerenciamento de usuários. Exemplos de recursos de gerenciamento incluem gerenciamento de grupo, MFA, detalhes sobre as entradas do usuário e a capacidade de bloquear a entrada.
 
-4. Acesse **Investigar** , seguido de **Aplicativos conectados** , e selecione um aplicativo. O painel do aplicativo se abre e fornece informações e insights. Você pode usar as guias na parte superior para verificar:
+4. Acesse **Investigar**, seguido de **Aplicativos conectados**, e selecione um aplicativo. O painel do aplicativo se abre e fornece informações e insights. Você pode usar as guias na parte superior para verificar:
 
     - Que tipo de dispositivos seus usuários estão usando para se conectar ao aplicativo?
 
@@ -127,21 +127,21 @@ Uma etapa importante para entender sua nuvem é marcar os aplicativos como sanci
 
     - Para a solução alternativa, deseja cancelar a sanção para algum aplicativo de nuvem na sua organização?
 
-    - Há aplicativos de nuvem que são usados, mas que não estão em conformidade com a política da sua organização?
+    - Há aplicativos na nuvem que são usados, mas que não estão em conformidade com a política da sua organização?
 
 ## <a name="sample-investigation"></a>Investigação de amostra
 
 Digamos que você supõe que não há nenhum acesso ao seu ambiente de nuvem por endereços IP de risco. Por exemplo, suponhamos o Tor. Mas você cria uma política de IP arriscado para garantir:
 
-1. No portal, acesse **Controle** e escolha **Modelos** .
+1. No portal, acesse **Controle** e escolha **Modelos**.
 
-2. Escolha a **Política de atividade** para o **Tipo** .
+2. Escolha a **Política de atividade** para o **Tipo**.
 
-3. No final da linha **Logon de um endereço IP de risco** , escolha o sinal de adição ( **+** ) para criar uma política.
+3. No final da linha **Logon de um endereço IP de risco**, escolha o sinal de adição (**+**) para criar uma política.
 
 4. Altere o nome da política para poder identificá-lo.
 
-5. Em **Atividades que correspondem a todos os seguintes** , escolha **+** para adicionar um filtro. Role a página para baixo até **Marca de IP** e, em seguida, escolha **Tor** .
+5. Em **Atividades que correspondem a todos os seguintes**, escolha **+** para adicionar um filtro. Role a página para baixo até **Marca de IP** e, em seguida, escolha **Tor**.
 
     ![Exemplo de política para IPs arriscados](media/example-policy-risky-ips.png "exemplo de ips arriscados de política")
 
