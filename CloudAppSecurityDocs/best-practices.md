@@ -1,18 +1,14 @@
 ---
 title: Melhores práticas para proteger sua organização
 description: Este artigo fornece um conjunto de melhores práticas para proteger sua organização.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: quickstart
 ms.date: 10/24/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 67212e07104db5abe75267b55df398dd5dad17d3
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.topic: quickstart
+ms.openlocfilehash: b0639bb79c9aed35086c3e8dea084f1e1c823628
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033711"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313637"
 ---
 # <a name="cloud-app-security-best-practices"></a>práticas recomendadas do Cloud App Security
 
@@ -23,6 +19,7 @@ Este artigo fornece melhores práticas para proteger sua organização usando o 
 As melhores práticas abordadas neste artigo incluem:
 
 > [!div class="checklist"]
+>
 > * [Descobrir e avaliar aplicativos de nuvem](#discover-and-assess-cloud-apps)
 > * [Aplicar políticas de governança de nuvem](#apply-cloud-governance-policies)
 > * [Limitar a exposição de dados compartilhados e impor políticas de colaboração](#limit-exposure-of-shared-data-and-enforce-collaboration-policies)

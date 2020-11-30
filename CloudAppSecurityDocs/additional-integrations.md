@@ -1,24 +1,14 @@
 ---
 title: Integração adicional com o Cloud App Security
 description: Este artigo fornece informações sobre como integrar soluções de terceiros com o Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 3d7d005940b032cd6e9b9f4bb5f1f3be13ababcb
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 024283d6a749287636b2fb5a618a85c1b1f10765
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880703"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314759"
 ---
 # <a name="additional-integrations-with-external-solutions"></a>Integrações adicionais com soluções externas
 

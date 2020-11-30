@@ -1,21 +1,14 @@
 ---
 title: API de busca-atividades
 description: Este artigo descreve a solicitação de busca na API de atividades do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 96d87db09134be35d5845c6b1755fdb24a26c2c7
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: dc26c22748aa2a03e7a59208b691c6a3a92527d6
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880105"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314708"
 ---
 # <a name="fetch---activities-api"></a>API de busca-atividades
 

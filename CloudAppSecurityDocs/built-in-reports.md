@@ -1,25 +1,14 @@
 ---
 title: Gerar relatórios-Microsoft Cloud App Security
 description: Este artigo fornece instruções para gerar relatórios de gerenciamento de dados no Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c08938f5317d5862b480a0498949df6930910e63
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 57c0642ec520ec53dbb78b5e036650fb3d47af97
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881569"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313552"
 ---
 # <a name="generate-data-management-reports"></a>Gerar relatórios de gerenciamento de dados
 

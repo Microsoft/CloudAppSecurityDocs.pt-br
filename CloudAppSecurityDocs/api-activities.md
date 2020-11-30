@@ -1,21 +1,14 @@
 ---
 title: API de atividades Cloud App Security
 description: Este artigo fornece informações sobre como usar a API de atividades.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 9ba5e83c10406308a1faf6e323fcfb9837da4b12
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 501d8a5ccaad1673c34aa0367f06531de94035b5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880040"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314674"
 ---
 # <a name="activities-api"></a>API de atividades
 
@@ -35,10 +28,10 @@ Para obter informações sobre como os filtros funcionam, consulte [filtros](api
 
 A tabela a seguir descreve os filtros com suporte:
 
-| Filtrar | Tipo | Operadores | Descrição |
+| Filtrar | Type | Operadores | Descrição |
 | --- | --- | --- | --- |
-| serviço | Número inteiro | EQ, NEQ | Filtrar atividades relacionadas à appID de serviço especificada, por exemplo: 11770 |
-| instance | Número inteiro | EQ, NEQ | Filtrar atividades de instâncias especificadas |
+| serviço | inteiro | EQ, NEQ | Filtrar atividades relacionadas à appID de serviço especificada, por exemplo: 11770 |
+| instance | inteiro | EQ, NEQ | Filtrar atividades de instâncias especificadas |
 | User. orgUnit | string | EQ, NEQ, isset, isnotset | Filtrar atividades pela unidade organizacional do usuário em execução |
 | Activity. eventType | string | EQ, NEQ | Filtrar atividades por tipo de evento |
 | activity.id | string | eq | Localizar uma atividade por ID |
@@ -52,13 +45,13 @@ A tabela a seguir descreve os filtros com suporte:
 | localização. país | string | EQ, NEQ, isset, isnotset | Filtrar atividades originadas do código de país/região especificado |
 | local. organizações | string | EQ, NEQ, isset, isnotset, contém | Filtrar atividades originadas da organização especificada |
 | IP. Address | string | EQ, StartsWith, doesnotstartwith, isset, isnotset, NEQ | Filtrar atividades provenientes do endereço IP fornecido |
-| fileseletor | Arquivo  | EQ, NEQ | Filtrar atividades que contêm o arquivo/pasta especificado |
+| fileseletor | file | EQ, NEQ | Filtrar atividades que contêm o arquivo/pasta especificado |
 | office365url | string | StartsWith, EQ, EndsWith | Filtrar atividades por URLs do Office 365 |
 | fileId | string | eq | Localizar um arquivo por ID |
-| IP. categoria | Número inteiro | EQ, NEQ | Filtrar atividades com as categorias de sub-rede especificadas. Os valores possíveis incluem:<br /><br />**1**: corporativo<br />**2**: administrativo<br />**3**: arriscado<br />**4**: VPN<br />**5**: provedor de nuvem<br />**6**: outros |
+| IP. categoria | inteiro | EQ, NEQ | Filtrar atividades com as categorias de sub-rede especificadas. Os valores possíveis incluem:<br /><br />**1**: corporativo<br />**2**: administrativo<br />**3**: arriscado<br />**4**: VPN<br />**5**: provedor de nuvem<br />**6**: outros |
 | IP. Tags | string | EQ, NEQ | Filtrar atividades por IDs de marca IP |
 | text | string | EQ, startswithsingle, texto | Filtrar atividades executando uma pesquisa de texto livre |
-| Data | timestamp | LTE, GTE, Range, lte_ndays, gte_ndays | Filtrar atividades que ocorreram no intervalo de tempo especificado |
+| date |  timestamp | LTE, GTE, Range, lte_ndays, gte_ndays | Filtrar atividades que ocorreram no intervalo de tempo especificado |
 | policy | string | EQ, NEQ, isset, isnotset | Filtrar atividades relacionadas às políticas especificadas |
 | source | string | EQ, NEQ | Filtrar todas as atividades por tipo de origem ou ID de fluxo. Exemplo: `[{ "s:stream-id", "t:source-type" }]` possíveis valores de tipo de fonte incluem:<br /><br />**0**: controle de acesso<br />**1**: controle de sessão<br />**2**: conector de aplicativos<br />**3**: análise do conector de aplicativos<br />**5**: descoberta<br />**6**: MDATP |
 | atividade. Alertid | string | eq | Filtrar todas as atividades relevantes para uma ID de alerta |

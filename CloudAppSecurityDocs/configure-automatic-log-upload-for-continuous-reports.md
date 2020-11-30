@@ -1,25 +1,14 @@
 ---
 title: Configurar upload de log automático para relatórios contínuos
 description: Este artigo fornece informações sobre como fazer upload de logs para criar relatórios automáticos do Cloud Discovery.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 98e5a260a3b0af3e2aeb8998f3845fc9076c7cc3
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 1cae2f61af80348156090afe7b1058462dcab58d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033777"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313059"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurar o carregamento de log automático para relatórios contínuos em uma solução de virtualização – Preterido
 
@@ -42,7 +31,7 @@ O coletor de logs pode lidar com êxito com a capacidade de logs de até 50 GB p
 Os principais gargalos no processo de coleta de logs são:
 
 - Largura de banda da rede: a largura de banda da rede determina a velocidade de upload do log.
-- Desempenho de E/S da máquina virtual: determina a velocidade em que os logs são gravados no disco do coletor de logs.
+- Desempenho de e/s da máquina virtual-determina a velocidade na qual os logs são gravados no disco do coletor de logs.
 O coletor de logs tem um mecanismo de segurança interno que monitora a taxa na qual os logs chegam e a compara à taxa de upload. Em casos de congestionamento, o coletor de logs começa a remover os arquivos de log. Se a configuração geralmente excede 50 GB por hora, recomendamos dividir o tráfego entre vários coletores de logs.
 
 ## <a name="set-up-and-configuration"></a>Instalação e configuração

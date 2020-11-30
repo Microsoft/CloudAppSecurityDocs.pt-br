@@ -1,25 +1,14 @@
 ---
 title: Criar políticas de detecção de anomalias no Cloud App Security
 description: Este artigo fornece uma descrição das Políticas de detecção de anomalias, bem como informações de referência sobre os blocos de construção de uma política de detecção de anomalias.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 1d2fb570be2c764bbd439821377e27f182d1fb60
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 6cddeb16149a61aa1099d4fe74c3423dbd45042f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371083"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314742"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias
 
@@ -166,9 +155,9 @@ Para afetar o mecanismo de detecção de anomalias para suprimir ou mostrar aler
 
 * Na política Viagem Impossível, você pode definir o controle deslizante de sensibilidade para determinar o nível de comportamento anormal necessário antes que um alerta seja disparado. Por exemplo, se você defini-lo como baixo, ele suprimirá os alertas de viagem impossíveis dos locais comuns de um usuário e, se você defini-lo como alto, ele causará a superfície desses alertas. Você pode escolher entre os seguintes níveis de sensibilidade:
 
-  * **Baixo** : supressões de sistema, locatário e usuário
-  * **Média** : supressões de sistema e usuário
-  * **Alta** : apenas supressões de sistema
+  * **Baixo**: supressões de sistema, locatário e usuário
+  * **Média**: supressões de sistema e usuário
+  * **Alta**: apenas supressões de sistema
 
     Sendo que:
 
@@ -181,7 +170,7 @@ Para afetar o mecanismo de detecção de anomalias para suprimir ou mostrar aler
 * Você também pode configurar se os alertas de atividade de um país/região não frequente, endereços IP anônimos, endereços IP suspeitos e viagens impossíveis devem analisar logons com falha e com êxito ou apenas logons bem-sucedidos.
 
 > [!NOTE]
-> Por padrão, protocolos de entrada herdados, como aqueles que não usam a autenticação multifator (por exemplo, WS-Trust), não são monitorados pela política de viagem impossível. Se sua organização usa protocolos herdados, para evitar atividades relevantes ausentes, edite a política e, em **Configuração avançada** , defina **analisar as atividades de entrada** para **todas as** entradas.
+> Por padrão, protocolos de entrada herdados, como aqueles que não usam a autenticação multifator (por exemplo, WS-Trust), não são monitorados pela política de viagem impossível. Se sua organização usa protocolos herdados, para evitar atividades relevantes ausentes, edite a política e, em **Configuração avançada**, defina **analisar as atividades de entrada** para **todas as** entradas.
 
 ## <a name="scope-anomaly-detection-policies"></a>Definir políticas de detecção de anomalias
 
@@ -192,7 +181,7 @@ Para definir uma política de detecção de anomalias:
 
 1. Clique em políticas de **controle**  >  **Policies** e defina o filtro de **tipo** como **política de detecção de anomalias**.
 1. Clique na política que você deseja definir.
-1. Em **Escopo** , altere o menu suspenso da configuração padrão de **Todos os usuários e grupos** para **Usuários e grupos específicos**.
+1. Em **Escopo**, altere o menu suspenso da configuração padrão de **Todos os usuários e grupos** para **Usuários e grupos específicos**.
 1. Selecione **Incluir** para especificar os usuários e grupos para os quais essa política será aplicada. Qualquer usuário ou grupo não selecionado aqui não será considerado uma ameaça e não gerará um alerta.
 1. Selecione **Excluir** para especificar usuários para os quais essa política não será aplicada. Qualquer usuário selecionado aqui não será considerado uma ameaça e não gerará um alerta, mesmo se eles forem membros de grupos selecionados em **Incluir**.
 
@@ -202,11 +191,11 @@ Para definir uma política de detecção de anomalias:
 
 Você pode triar rapidamente os vários alertas disparados pelas novas políticas de detecção de anomalias e decidir quais precisam ser tratados primeiro. Para isso, é necessário o contexto do alerta para ver o panorama geral e entender se algo mal-intencionado realmente está acontecendo.
 
-1. No **Log de atividades** , você pode abrir uma atividade para exibir a gaveta Atividades. Clique em **usuário** para exibir a guia insights do usuário. Essa guia inclui informações como o número de alertas, atividades e o local em que eles se conectaram, o que é importante em uma investigação.
+1. No **Log de atividades**, você pode abrir uma atividade para exibir a gaveta Atividades. Clique em **usuário** para exibir a guia insights do usuário. Essa guia inclui informações como o número de alertas, atividades e o local em que eles se conectaram, o que é importante em uma investigação.
 
     ![detecção de anomalias alert1 ](media/anomaly-alert-user1.png) ![ detecção de anomalias alert2](media/anomaly-alert-user2.png)
 
-1. Isso permite que você entenda quais são as atividades suspeitas que o usuário executou e ter maior confiança sobre o comprometimento da conta. Por exemplo, um alerta de vários logons com falha pode realmente ser suspeito e indicar um ataque de força bruta em potencial, mas também pode ser um erro de configuração do aplicativo, fazendo com que o alerta seja um verdadeiro positivo benigno. No entanto, se você vir um alerta de vários logons com falha com atividades suspeitas adicionais, então há uma grande probabilidade de que a conta foi comprometida. No exemplo a seguir, você pode ver que o alerta **Várias tentativas de logon com falha** foi seguido de uma **Atividade de um endereço IP TOR** e de uma **Atividade de viagem impossível** , ambas fortes indicadores de comprometimento (IOCs) por si próprias. Se isso não era suspeito, você pode ver que o mesmo usuário realizou uma **atividade de download em massa** , que é geralmente um indicador do invasor que executa vazamento de dados.
+1. Isso permite que você entenda quais são as atividades suspeitas que o usuário executou e ter maior confiança sobre o comprometimento da conta. Por exemplo, um alerta de vários logons com falha pode realmente ser suspeito e indicar um ataque de força bruta em potencial, mas também pode ser um erro de configuração do aplicativo, fazendo com que o alerta seja um verdadeiro positivo benigno. No entanto, se você vir um alerta de vários logons com falha com atividades suspeitas adicionais, então há uma grande probabilidade de que a conta foi comprometida. No exemplo a seguir, você pode ver que o alerta **Várias tentativas de logon com falha** foi seguido de uma **Atividade de um endereço IP TOR** e de uma **Atividade de viagem impossível**, ambas fortes indicadores de comprometimento (IOCs) por si próprias. Se isso não era suspeito, você pode ver que o mesmo usuário realizou uma **atividade de download em massa**, que é geralmente um indicador do invasor que executa vazamento de dados.
 
     ![alert3 de detecção de anomalias](media/anomaly-alert-user3.png)
 

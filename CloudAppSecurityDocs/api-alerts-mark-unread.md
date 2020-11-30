@@ -1,21 +1,14 @@
 ---
 title: Marcar como API de alertas não lidos
 description: Este artigo descreve a solicitação marcar como não lido na API de alertas do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: ef438a397c06b1232a90e9a6b291721f6d93a270
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 5fb1a23183d0077a945fdfb1cb8637151921e509
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880665"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314555"
 ---
 # <a name="mark-as-unread---alerts-api"></a>Marcar como API de alertas não lidos
 

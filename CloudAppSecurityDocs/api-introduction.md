@@ -1,21 +1,14 @@
 ---
 title: API REST do Cloud App Security
 description: Este artigo descreve como interagir com Cloud App Security sobre HTTPS.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: cb66e8d45d74d57adf71a095851c40087d102ce4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 468d039f6bc620616e86b98b4967a055c7d0e380
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880548"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313977"
 ---
 # <a name="cloud-app-security-rest-api"></a>API REST do Cloud App Security
 
@@ -87,8 +80,8 @@ A tabela a seguir descreve os tipos de campo com suporte:
 |---|---|
 |string|Uma cadeia de caracteres textual|
 |booleano|Um valor booliano que representa true/false|
-|Número inteiro|Inteiro com sinal de 32 bits|
-|timestamp|Milissegundos desde a época|
+|inteiro|Inteiro com sinal de 32 bits|
+| timestamp|Milissegundos desde a época|
 
 ## <a name="limits"></a>Limites
 
@@ -155,7 +148,7 @@ A tabela a seguir descreve os operadores com suporte:
 | isnotset | booleano | Quando definido como "true", retorna todos os registros relevantes que não têm um valor no campo especificado |
 | isset | booleano | Quando definido como "true", retorna todos os registros relevantes que têm um valor no campo especificado |
 | lt | valor único | Retorna todos os registros cujo valor é menor que o valor fornecido |
-| LTE | valor único | Retorna todos os registros cujo valor é menor ou igual ao valor fornecido |
+| lte | valor único | Retorna todos os registros cujo valor é menor ou igual ao valor fornecido |
 | lte_ndays | número | Retorna todos os registros com data anterior a N dias atrás |
 | ncontains | lista de cadeias de caracteres | Retorna todos os registros relevantes que não contêm uma das cadeias de caracteres fornecidas |
 | ndescendantof | lista de valores | Retorna todos os registros relevantes que não correspondem a valores ou descendentes deles |

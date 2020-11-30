@@ -1,21 +1,14 @@
 ---
 title: Listar API de entidades
 description: Este artigo descreve a solicitação de lista na API de entidades do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 389aa799595a0f3f2721f159df4399cea90dcbbd
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: bbe7e57bb50be9ca9b55fc48c1906811f8460d72
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881209"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314096"
 ---
 # <a name="list---entities-api"></a>Listar API de entidades
 

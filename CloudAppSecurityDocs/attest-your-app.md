@@ -1,25 +1,14 @@
 ---
 title: Atestar seus aplicativos
 description: Este artigo fornece instruções para atestar seus aplicativos no Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/30/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 59cdb1de028d0aed6c85d0df2a057b02d0489c0b
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 3c2c1b392bdd4f1640b76c80ce227ad9379f4902
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033830"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313739"
 ---
 # <a name="attest-your-app"></a>Atestar seu aplicativo
 
@@ -29,10 +18,10 @@ Se seu aplicativo já estiver listado no catálogo de aplicativos de nuvem ou se
 
 Siga os atributos de serviço descritos abaixo para concluir com êxito o envio do questionário:
 
-| Campo | Categoria de informações | Tipo | Valores aceitos | Descrição |
+| Campo | Categoria de informações | Type | Valores aceitos | Descrição |
 |------|-------|------|---------|----------|
 | Nome do aplicativo | Geral | String | Texto livre | O nome do seu aplicativo como deve aparecer no catálogo de aplicativos de nuvem. |
-| Description | Geral | String | Texto livre | Breve explicação do que seu aplicativo permite que os usuários façam ou alcancem. |
+| Descrição | Geral | String | Texto livre | Breve explicação do que seu aplicativo permite que os usuários façam ou alcancem. |
 | Categoria| Geral | String | Fechar lista – fornecido no questionário | Classificação do aplicativo de acordo com o campo ao qual ele se relaciona. |
 | Matriz | Geral | Código do país | Fechar lista – fornecido no questionário | O país/região da sede do provedor.|
 | Data center| Geral | Matriz de códigos do país * | Fechar lista – fornecida no questionário (seleção múltipla) | O país/região no qual o data center reside (pode ser vários locais) |

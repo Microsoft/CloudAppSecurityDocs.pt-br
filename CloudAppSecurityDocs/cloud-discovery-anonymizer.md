@@ -1,25 +1,14 @@
 ---
 title: Anonimizar dados de usuário no Cloud App Security
 description: Este artigo fornece informações sobre como proteger a privacidade do usuário anonimizando os nomes de usuários nos dados do Cloud Discovery.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/20/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: da5092903eb11d73726fe7f2f73da1ffd94b57b9
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: bb8befb8c65f766118f6a3221b382c6699b17a0e
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185897"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313518"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
@@ -37,7 +26,7 @@ Pontos principais:
 
 1. Há três maneiras de aplicar a anonimização de dados:
 
-    - Você pode definir que os dados de um arquivo de log específico sejam anonimizados [criando um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e selecionando **Anonimizar informações particulares** .  
+    - Você pode definir que os dados de um arquivo de log específico sejam anonimizados [criando um novo relatório de instantâneo](create-snapshot-cloud-discovery-reports.md) e selecionando **Anonimizar informações particulares**.  
     ![Anonimizar dados de instantâneo](media/anonymize-log.png)
 
     - Você pode definir a anonimização dos dados de um [upload automatizado para uma nova fonte de dados](configure-automatic-log-upload-for-continuous-reports.md) selecionando **Anonimizar informações particulares** ao adicionar a nova fonte de dados.  
@@ -45,10 +34,10 @@ Pontos principais:
 
     - Você pode definir no Cloud App Security que o padrão seja anonimizar todos os dados de relatórios de instantâneos de arquivos de log carregados e de relatórios contínuos dos coletores de log da seguinte maneira:
 
-    1. Selecione **configurações**  >  **Cloud Discovery configurações** .
+    1. Selecione **configurações**  >  **Cloud Discovery configurações**.
 
-    2. Na guia anonimização, para tornar os nomes de dados **anônimos** por padrão, selecione anonimamente **informações privadas por padrão em novos relatórios e fontes de dado** . Você também pode selecionar **anônimos informações do dispositivo por padrão no relatório ' usuários do ponto de extremidade Win10 '** .
-    3. Clique em **Salvar** .
+    2. Na guia anonimização, para tornar os nomes de dados **anônimos** por padrão, selecione anonimamente **informações privadas por padrão em novos relatórios e fontes de dado**. Você também pode selecionar **anônimos informações do dispositivo por padrão no relatório ' usuários do ponto de extremidade Win10 '**.
+    3. Clique em **Save** (Salvar).
 
     ![Página de configurações de anonimato](media/anonymizer1.png)
 
@@ -65,11 +54,11 @@ Pontos principais:
 
     **Para resolver um único nome de usuário**
 
-    1. Clique nos três pontos no final da linha do usuário que você deseja resolver e selecione **desanônimos do usuário** .
+    1. Clique nos três pontos no final da linha do usuário que você deseja resolver e selecione **desanônimos do usuário**.
 
         ![Tornar a tabela de usuário anônimo](media/anonymize-user-table.png)
 
-    1. No pop-up, insira a justificativa para resolver o nome de usuário e clique em **resolver** . Na linha relevante, o nome de usuário resolvido é exibido.
+    1. No pop-up, insira a justificativa para resolver o nome de usuário e clique em **resolver**. Na linha relevante, o nome de usuário resolvido é exibido.
 
         > [!NOTE]
         > Esta ação é auditada.
@@ -78,10 +67,10 @@ Pontos principais:
 
     A seguinte maneira alternativa de resolver nomes de usuário únicos também pode ser usada para pesquisar o nome de usu Encrypted de um nome de usuário conhecido.
 
-    1. Na engrenagem configurações, selecione **configurações de Cloud Discovery** .
+    1. Na engrenagem configurações, selecione **configurações de Cloud Discovery**.
 
-    1. Na guia **Anonimização** , em **Anonimizar e resolver nomes de usuário** , insira uma justificativa explicando porque você está executando a resolução.
-    1. Em **Inserir nome de usuário a ser resolvido** , selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver** .
+    1. Na guia **Anonimização**, em **Anonimizar e resolver nomes de usuário**, insira uma justificativa explicando porque você está executando a resolução.
+    1. Em **Inserir nome de usuário a ser resolvido**, selecione **De anonimizado** e insira o nome de usuário anonimizado ou selecione **Para anonimizar** e insira o nome de usuário original a ser resolvido. Clique em **Resolver**.
 
         ![Resolver pop-up de anonimato](media/anonymizer.png)
 
@@ -91,8 +80,8 @@ Pontos principais:
 
         ![Tornar anônimo a resolução em massa](media/anonymize-bulk-resolve.png)
 
-    1. Clique em **desanônimoize o usuário** .
-    1. No pop-up, insira a justificativa para resolver o nome de usuário e clique em **resolver** . Nas linhas relevantes, os nomes de userresolvedos são exibidos.
+    1. Clique em **desanônimoize o usuário**.
+    1. No pop-up, insira a justificativa para resolver o nome de usuário e clique em **resolver**. Nas linhas relevantes, os nomes de userresolvedos são exibidos.
 
         > [!NOTE]
         > Esta ação é auditada.

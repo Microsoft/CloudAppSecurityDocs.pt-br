@@ -1,25 +1,14 @@
 ---
 title: Conectar aplicativos para obter visibilidade e controle
 description: Este artigo descreve o processo para conexão de aplicativos com conectores de API aos aplicativos na nuvem de sua organização.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 07/14/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 02760754d13bfbf0cb0fea0866ae9049c7a191bd
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 3b6733e0addabf8db1064ff8b5f4e20a8eb76c93
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033371"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314930"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 

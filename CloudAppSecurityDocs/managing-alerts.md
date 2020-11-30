@@ -1,25 +1,14 @@
 ---
 title: Gerenciar alertas acionados no Cloud App Security
 description: Este artigo explica como trabalhar com alertas gerados no portal do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/22/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 2b4e87b1c1ceaf5f089eb67ff2f2b451d5759efd
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: cef0c80ff1494d36ea216f8b3d6c4c588d7167db
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879054"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314980"
 ---
 # <a name="manage-alerts"></a>Gerenciar alertas
 

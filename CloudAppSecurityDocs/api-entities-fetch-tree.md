@@ -1,21 +1,14 @@
 ---
 title: Buscar árvore de entidade-API de entidades
 description: Este artigo descreve a solicitação de busca de árvore de entidade na API de entidades do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 8d01066d6195b3541045b15094432999dab98cc5
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 70e01ffa31ddfe13434c0a1705f2af98b43de6b5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879736"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314283"
 ---
 # <a name="fetch-entity-tree---entities-api"></a>Buscar árvore de entidade-API de entidades
 

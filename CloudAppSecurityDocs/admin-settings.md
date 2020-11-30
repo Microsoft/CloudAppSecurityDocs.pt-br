@@ -1,25 +1,14 @@
 ---
 title: Definir preferências de administrador
 description: Este artigo fornece instruções para configurar as preferências do administrador em Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/19/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: f5172eb103c04726814068a01d57c459ebe46ba8
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 18b5940ad4365a31b7e344860c0f791e306d8890
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033864"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314776"
 ---
 # <a name="admin-user-settings"></a>Configurações do usuário administrador
 

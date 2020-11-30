@@ -1,21 +1,14 @@
 ---
 title: API de arquivos de lista
 description: Este artigo descreve a solicitação de lista na API de arquivos do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 4cfe5e15964be0a4add19f11b571254235e1a72c
-ms.sourcegitcommit: 288f3011c0ce0e5f2d8cbaa9057a63be044465f7
+ms.openlocfilehash: 644bfea227212e5b988eebc7e05aca8694a49f92
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94375033"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313994"
 ---
 # <a name="list---files-api"></a>API de arquivos de lista
 

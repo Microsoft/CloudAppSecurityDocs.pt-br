@@ -1,25 +1,14 @@
 ---
 title: Adicionar aplicativos personalizados ao Cloud Discovery no Cloud App Security
 description: Este tópico fornece informações sobre como adicionar aplicativos personalizados ao Cloud Discovery no Cloud App Security a fim de monitorar a TI Sombra.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: fb2086ea657b54ee5b8b072072779d88dd3031b4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c757d320b242a8cccdde312835ec9e35299f6bdf
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881484"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313246"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Adicionar aplicativos personalizados ao Cloud Discovery
 
@@ -45,7 +34,7 @@ Ao adicionar um novo aplicativo de nuvem personalizado, o Cloud App Security é 
 
     ![aplicativo personalizado](media/add-custom-app.png)
 
-4. Em **Domínios**, preencha os domínios exclusivos que são usados ao acessar o aplicativo personalizado. Esses domínios são usados para corresponder às mensagens do log de tráfego para esse aplicativo. Se a fonte de dados que você estiver usando não contiver informações sobre a URL do aplicativo, preencha os campos de endereço **IPv4** e **IPv6**.
+4. Em **Domínios**, preencha os domínios exclusivos que são usados ao acessar o aplicativo personalizado. Esses domínios são usados para corresponder às mensagens do log de tráfego para esse aplicativo. Se a fonte de dados que você está usando não tiver informações de URL do aplicativo, certifique-se de preencher os campos de endereço **IPv4** e **IPv6** .
 5. Adicione a **Plataforma de hospedagem** e a **ID da Assinatura do Azure**. Opcionalmente, especifique a **Unidade de negócios** do aplicativo.
 6. Atribua uma **Pontuação** de risco e adicione **Anotações do Aplicativo** para ajudá-lo a acompanhar as alterações deste registro.
 7. Clique em **Criar**.
@@ -56,7 +45,7 @@ A qualquer momento, você pode clicar nas reticências no final da linha para ed
 
 >[!NOTE]
 > Aplicativos personalizados são marcados automaticamente com a marca **Aplicativo personalizado** depois de adicioná-los. A marca desse aplicativo não pode ser removida.
-Para exibir todos os seus aplicativos personalizados, defina o filtro **Marca do aplicativo** igual a "Aplicativo personalizado".
+Para exibir todos os seus aplicativos personalizados, defina o filtro de **marca do aplicativo** como igual a ' aplicativo personalizado '.
 <!-- - By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
 
 ## <a name="next-steps"></a>Próximas etapas

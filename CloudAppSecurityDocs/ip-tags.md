@@ -1,27 +1,16 @@
 ---
 title: Definir intervalos de IP e marcas
 description: Este artigo fornece instruções sobre como trabalhar com marcas de IP e categorias de IP.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/09/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 4d0faa31b04294156265cbf5ccd5b7691cad93fd
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 80058d36ecf7496c9dad2fe8253efa9775076452
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033984"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315048"
 ---
-# <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Trabalhando com intervalos de IP e marcas
+# <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a>Trabalhando com intervalos de IP e marcas
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

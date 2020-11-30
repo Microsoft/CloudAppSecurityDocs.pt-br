@@ -1,21 +1,14 @@
 ---
 title: API de Cloud Discovery de Cloud App Security
 description: Este artigo fornece informações sobre como usar a API de Cloud Discovery.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: cdf70db4edd8b476a1915b9f54459a8d8b1a7bec
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: bf02c6a77cfaf165c4ae064c77012228846c44cf
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879762"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314300"
 ---
 # <a name="cloud-discovery-api"></a>API de Cloud Discovery
 

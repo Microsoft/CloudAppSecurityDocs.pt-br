@@ -1,21 +1,14 @@
 ---
 title: Fechar a API de alertas benignos
 description: Este artigo descreve o fechamento em massa de um alerta como uma solicitação benigno na API de alertas do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/20/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: aa28010c10702b917ebbfc3996b52161e0c66a46
-ms.sourcegitcommit: ee40375712d2cc4090bd4e9cb58df486ec02aa62
+ms.openlocfilehash: cf137f0476b588e66493fabde7bfae354cf41f15
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92327011"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314657"
 ---
 # <a name="close-benign---alerts-api"></a>Fechar a API de alertas benignos
 

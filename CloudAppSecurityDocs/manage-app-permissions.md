@@ -1,25 +1,14 @@
 ---
 title: Controlar quais aplicativos OAuth de nuvem de terceiros obtêm permissões
 description: Este artigo fornece informações sobre como você pode controlar, vetar e autorizar permissões de aplicativos OAuth de terceiros.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/05/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: e95e22231d54a83c2bc9e24159aaabaa432d6ffe
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: e83f65e562fc0a587a7e6169acae6d3930d03dce
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033932"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315014"
 ---
 # <a name="manage-oauth-apps"></a>Gerenciar aplicativos OAuth
 
