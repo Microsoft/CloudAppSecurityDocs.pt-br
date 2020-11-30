@@ -1,25 +1,14 @@
 ---
 title: Configurar o upload automático de logs usando o Docker no Azure
 description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Linux no Azure.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/02/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: b6c05885ea07834e0dd474bda08904dd364793a6
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 0e34ebfc6d4afcb8ecf0967ddecc7b8dbd0b885f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033388"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311869"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker no Linux no Azure
 
@@ -122,7 +111,7 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
     1. Vá para **regras de segurança de entrada** e clique em **Adicionar**, ![ adicionar regras de segurança de entrada](media/ubuntu-azure.png)
     1. Adicionar as seguintes regras (no modo **Avançado**):
 
-    |Name|Intervalos de portas de destino|Protocolo|Fonte|Destino|
+    |Nome|Intervalos de portas de destino|Protocolo|Fonte|Destino|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Sub-rede do endereço IP do dispositivo>|Qualquer|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Sub-rede do endereço IP do dispositivo>|Qualquer|

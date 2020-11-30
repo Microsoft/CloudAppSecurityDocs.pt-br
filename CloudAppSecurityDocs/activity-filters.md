@@ -1,25 +1,14 @@
 ---
 title: Visibilidade das atividades do aplicativo de nuvem
 description: Este artigo fornece uma lista de atividades, filtros e parâmetros de correspondência que podem ser aplicados às políticas de atividade.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/16/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 4e79fd469ea9f59d9c0c4c5428ea73f2e9a31d77
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 9ddac3a554c4697e095857302466d61b2f89c3e0
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033116"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311240"
 ---
 # <a name="activities"></a>Atividades
 

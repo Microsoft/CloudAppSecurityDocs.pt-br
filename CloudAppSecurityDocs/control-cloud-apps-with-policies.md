@@ -1,25 +1,14 @@
 ---
 title: Controlar o uso do aplicativo de nuvem criando políticas
 description: Este artigo fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos na nuvem.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/26/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 93b4acdbf27c39b0918fe6765ec33427e7050080
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 695737038f0c45e366581c0262550b4c769039a5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033677"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312284"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
@@ -38,7 +27,7 @@ Os seguintes tipos de políticas podem ser criados:
 |Ícone Tipo de política|Tipo de política|Usar|
 |-----|-----------------|---------|
 |![ícone de política de acesso](media/proxy-policy.png)|Política de acesso|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem.|
-|![ícone de política de atividade](media/activity_policy.png)|Política de atividade|As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|
+|![ícone de política de atividade](media/activity_policy.png)|Política de atividade|As políticas de atividade permitem impor uma ampla variedade de processos automatizados usando as APIs do provedor de aplicativos. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|
 |![ícone de política de detecção de anomalias](media/anomaly_detection_policy.png)|Política de detecção de anomalias|As políticas de detecção de anomalias permitem que você procure atividades incomuns na sua nuvem. A detecção baseia-se nos fatores de risco que você define para alertá-lo quando algo diferente da linha de base de sua organização ou da atividade regular do usuário acontece.|
 |![ícone de política do cloud discovery](media/discovery_policy.png)|Política de descoberta de aplicativo|As políticas de descoberta de aplicativo permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização.|
 |![ícone de política de detecção de anomalias](media/anomaly_detection_policy.png)|Política de detecção de anomalias do Cloud Discovery|As políticas de detecção de anomalias do Cloud Discovery analisam os logs usados para descobrir aplicativos de nuvem e pesquisa ocorrências incomuns. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico.|
@@ -93,7 +82,7 @@ Siga este processo para controlar o risco com políticas:
 
 ### <a name="create-a-policy"></a>Criar uma política
 
-Você pode usar os modelos de política do Cloud App Security como base para todas as suas políticas ou criar políticas de uma consulta.
+Você pode usar os modelos de política do Cloud App Security como uma base para todas as suas políticas ou criar políticas de uma consulta.
 
 Modelos de política ajudam você a definir os filtros corretos e as configurações necessárias para detectar eventos específicos de interesse em seu ambiente. Os modelos incluem políticas de todos os tipos e podem ser aplicados a vários serviços.
 
@@ -107,7 +96,7 @@ Para criar uma política de **Modelo de política**, execute estas etapas:
 
 1. Modifique o modelo conforme necessário para sua política personalizada. Todas as propriedades e campos dessa política baseada em modelo podem ser modificados de acordo com suas necessidades.
    > [!NOTE]
-   > Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se pesquisar *malware.exe*, você localizará TODOS os arquivos com malware ou exe em seu nome de arquivo, enquanto se pesquisar **"malware.exe"** (com aspas), localizará apenas arquivos que contêm exatamente "malware.exe".  
+   > Ao usar os filtros de política, **contém** pesquisa somente palavras inteiras: separadas por vírgulas, pontos, espaços ou sublinhados. Por exemplo, se você pesquisar **malware** ou **vírus**, ele localizará virus_malware_file.exe, mas não localizará malwarevirusfile.exe. Se você Pesquisar *malware.exe*, encontrará todos os arquivos com malware ou exe em seu nome de arquivo, enquanto se procurar por **"malware.exe"** (com as aspas), você encontrará apenas os arquivos que contêm exatamente "malware.exe".  
 **É igual a** pesquisa apenas a cadeia de caracteres completa, por exemplo, se você pesquisar *malware.exe*, ele localizará malware.exe, mas não malware.exe.txt.
 
 1. Depois de criar a nova política baseada em modelo, um link para a nova política aparece na coluna **Políticas vinculadas** na tabela de modelos de política ao lado do modelo por meio do qual a política foi criada.
@@ -115,7 +104,7 @@ Para criar uma política de **Modelo de política**, execute estas etapas:
 
 Como alternativa, você pode **criar uma política durante a investigação**. Se você estiver investigando o **Log de atividades**, os **Arquivos** ou as **Contas** e fizer uma busca detalhada para pesquisar algo específico, a qualquer momento você poderá criar uma nova política com base nos resultados da sua investigação.
 
-Por exemplo, se você estiver examinando o **Log de atividades** e encontrar uma atividade de administrador que não pertença aos endereços IP de seu escritório.
+Por exemplo, se você estiver olhando para o **log de atividades** e vir uma atividade de administrador fora dos endereços IP do seu escritório.
 
 Para criar uma política com base nos resultados da investigação, siga estas etapas:
 

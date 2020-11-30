@@ -1,18 +1,14 @@
 ---
 title: Como Cloud App Security ajuda a proteger seu ambiente do Salesforce
 description: Este artigo fornece informações sobre os benefícios de conectar seu aplicativo Salesforce para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: ca62a0deb82c5f81f0bcb200f425ab325d9720ab
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 477f7372bc65a704d6a68f6fd2c9e43de2a27da8
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880448"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310815"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-salesforce-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente do Salesforce
 
@@ -45,7 +41,7 @@ Conectar o Salesforce ao Cloud App Security oferece informações aprimoradas so
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Tipo | Nome |
+| Type | Nome |
 | ---- | ---- |
 | Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividade administrativas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de exclusão de arquivos](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de compartilhamento de arquivos](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades representadas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de download de vários arquivos](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Modelo de política de atividade | Logon de um endereço IP com risco<br />Download em massa por um único usuário<br />Atividade de ransomware potencial |
@@ -57,7 +53,7 @@ Para obter mais informações sobre como criar políticas, consulte [criar uma p
 
 Além de monitorar possíveis ameaças, você pode aplicar e automatizar as seguintes ações de governança do Salesforce para corrigir ameaças detectadas:
 
-| Tipo | Ação |
+| Type | Ação |
 | ---- | ---- |
 | Governança de usuário | -Notificar usuários de alertas pendentes<br />-Enviar resumo de violação de DLP para proprietários de arquivo<br />-Suspender usuário<br />-Notificar o usuário sobre o alerta (por meio do Azure AD)<br />-Exigir que o usuário entre novamente (por meio do Azure AD)<br />– Suspender usuário (por meio do Azure AD) |
 | Governança de aplicativo OAuth | -Revogar aplicativo OAuth para usuários |

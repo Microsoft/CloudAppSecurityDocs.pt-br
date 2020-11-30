@@ -1,25 +1,14 @@
 ---
 title: Consultas e filtros de aplicativos descobertos do Cloud App Security
 description: Este artigo fornece uma lista de consultas e filtros de aplicativos descobertos do Cloud App Security e explica como trabalhar com eles.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 07/07/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: ef61d90f23eb9e15b8b84f926b0b4424f4b3b36b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3503790663866ee737fe70937517ae2663cabf21
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881679"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311733"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtros e consultas do aplicativo descoberto
 
@@ -49,7 +38,7 @@ Você pode criar uma marca de aplicativo personalizada. Essas marcas podem ser u
 
 Para criar uma marca de aplicativo personalizada:
 
-1. Na engrenagem de **configurações** , selecione **configurações de Cloud Discovery**e, em seguida, a guia **marcas de aplicativo** . Clique no ícone de adição. ![ícone de mais](media/plus-icon.png)
+1. Na engrenagem de **configurações** , selecione **configurações de Cloud Discovery** e, em seguida, a guia **marcas de aplicativo** . Clique no ícone de adição. ![ícone de mais](media/plus-icon.png)
 
    ![criar marca de aplicativo personalizada](media/create-app-tag.png)
 

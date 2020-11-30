@@ -1,25 +1,14 @@
 ---
 title: Monitorar alertas acionados no Cloud App Security
 description: Este artigo fornece uma lista e uma descrição de todos os alertas.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: e5effef1c69cf3a8ce44218a8838bbb4d0ef1614
-ms.sourcegitcommit: b173d24dba412e81801c498cc0c3623ad9e31601
+ms.openlocfilehash: f6346180c3a45fb1c7ae2e885d90732f4a269be3
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2020
-ms.locfileid: "91941547"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311189"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Monitorar alertas no Cloud App Security
 
@@ -48,7 +37,7 @@ Os alertas são os pontos de entrada para compreender seu ambiente de nuvem mais
 
 ## <a name="deployment-of-our-enhanced-alert-monitoring-and-management-experience"></a>Implantação de nossa experiência aprimorada de monitoramento e gerenciamento de alertas
 
-Como parte de nossos aprimoramentos contínuos no monitoramento e no gerenciamento de alertas, a página Cloud App Security alertas foi aprimorada com base em seus comentários. Na experiência aprimorada, os status **resolvidos** e **ignorados** são substituídos pelo status **fechado** e os alertas fechados têm um dos seguintes tipos de resolução:
+Como parte de nossas melhorias contínuas no monitoramento e gerenciamento de alertas, a página Alertas do Cloud App Security foi aprimorada com base em seus comentários. Na experiência aprimorada, os status **resolvidos** e **ignorados** são substituídos pelo status **fechado** e os alertas fechados têm um dos seguintes tipos de resolução:
 
 - **Verdadeiro positivo**: um alerta em uma atividade mal-intencionada confirmada
 - **Benigno**: um alerta sobre uma atividade suspeita, mas não mal-intencionada, como um teste de penetração ou outra ação suspeita autorizada

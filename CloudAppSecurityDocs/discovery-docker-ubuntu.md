@@ -1,25 +1,14 @@
 ---
 title: Configurar o upload de log automático usando o Docker local
 description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Linux em um servidor local.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/02/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 886dd763aaf6213267f25ac65667cc9ba114e696
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 4a339361b232cee1ee85758f4545856d4674e847
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033439"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311852"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker no Linux local
 
@@ -30,9 +19,9 @@ Você pode configurar o upload de log automático para relatórios contínuos no
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * sistema operacional:
-    * Ubuntu 14, 4, 16, 4 e 18, 4
-    * RHEL 7,2 ou superior
-    * CentOS 7,2 ou superior
+  * Ubuntu 14, 4, 16, 4 e 18, 4
+  * RHEL 7,2 ou superior
+  * CentOS 7,2 ou superior
 
 * Espaço em disco: 250 GB
 

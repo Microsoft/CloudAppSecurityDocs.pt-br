@@ -1,18 +1,14 @@
 ---
 title: Como Cloud App Security ajuda a proteger seu ambiente de equipes do Cisco WebEx
 description: Este artigo fornece informações sobre os benefícios de conectar seu aplicativo de equipes do Cisco WebEx para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 4061efcd3a0c03f8f57f8e9c0d36d7d1dfa5a678
-ms.sourcegitcommit: 9391853beca4bd62e0f05bd457faac97e7dec646
+ms.topic: article
+ms.openlocfilehash: 49b62e54723df0e8fb16f3c34af2de93df353d12
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278522"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310832"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-cisco-webex-teams-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente de equipes do Cisco WebEx
 
@@ -40,7 +36,7 @@ Conectar as equipes do Cisco WebEx ao Cloud App Security oferece informações a
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Tipo | Nome |
+| Type | Nome |
 | ---- | ---- |
 | Política de detecção de anomalias interna | [Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detecção de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Atividades incomuns de exclusão de arquivos](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de compartilhamento de arquivos](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Atividades incomuns de download de vários arquivos](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Modelo de política de arquivo | Detectar um arquivo compartilhado com um domínio não autorizado<br />Detectar um arquivo compartilhado com endereços de email pessoais<br />Detectar arquivos com PII/PCI/PHI |
@@ -52,7 +48,7 @@ Para obter mais informações sobre como criar políticas, consulte [criar uma p
 
 Além de monitorar possíveis ameaças, você pode aplicar e automatizar as seguintes ações de governança de equipes do Cisco WebEx para corrigir ameaças detectadas:
 
-| Tipo | Ação |
+| Type | Ação |
 | ---- | ---- |
 | Governança de usuário | -Notificar o usuário sobre o alerta (por meio do Azure AD)<br />-Exigir que o usuário entre novamente (por meio do Azure AD)<br />– Suspender usuário (por meio do Azure AD) |
 | Governança de dados | -Arquivo de lixo |

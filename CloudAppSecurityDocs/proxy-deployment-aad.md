@@ -1,21 +1,14 @@
 ---
 title: Implantar o Controle de Aplicativos de Acesso Condicional do Cloud App Security em aplicativos do Azure AD
 description: Este artigo fornece informações sobre como implantar os recursos de proxy reverso do Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security para aplicativos do Azure AD.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 0df2a20c1c8c8bb1aef440cf3eb8bf16634e6ce0
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: 66063b54ce774612431d74aef2b1b045b7bf9d9f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92212010"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310934"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
@@ -161,7 +154,7 @@ As instruções acima ajudaram a criar uma política interna do Cloud App Securi
 
 1. No portal de Cloud App Security, clique no ícone configurações engrenagem ![configurações](media/settings-icon.png "Ícone de configurações")e, em seguida, selecione **controle de aplicativos de acesso condicional**.
 
-1. Na tabela Controle de Aplicativos de Acesso Condicional aplicativos, examine a coluna **controles disponíveis** e verifique se o controle de **acesso** ou o **acesso condicional do Azure ad**e o **controle de sessão** são exibidos para seus aplicativos.
+1. Na tabela Controle de Aplicativos de Acesso Condicional aplicativos, examine a coluna **controles disponíveis** e verifique se o controle de **acesso** ou o **acesso condicional do Azure ad** e o **controle de sessão** são exibidos para seus aplicativos.
 
     > [!NOTE]
     > Se o controle de sessão não aparecer para um aplicativo, ele ainda não estará disponível para esse aplicativo específico. Você pode adicioná-lo imediatamente como um [aplicativo personalizado](proxy-deployment-any-app.md)ou pode abrir uma solicitação para adicioná-lo como um aplicativo em destaque clicando em **solicitar controle de sessão**.

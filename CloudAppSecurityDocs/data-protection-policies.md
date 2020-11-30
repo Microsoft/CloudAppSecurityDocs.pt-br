@@ -1,25 +1,14 @@
 ---
 title: Monitorar e proteger arquivos em aplicativos de nuvem
 description: Este artigo descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e os arquivos em uso nos aplicativos na nuvem de sua organização.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/7/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: f396b3f0319cf0bb4cc387fade0abc0624f0b4a5
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 215606ce154ea47f850b247cbfa60c73a93ac676
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033507"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311954"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 

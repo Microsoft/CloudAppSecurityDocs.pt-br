@@ -1,25 +1,14 @@
 ---
 title: Criar políticas de acesso do Cloud App Security para permitir e bloquear o acesso
 description: Este artigo descreve o procedimento para configurar uma política de acesso do Controle de Aplicativos de Acesso Condicional do Cloud App Security para permitir e bloquear o acesso a aplicativos conectados por meio do Azure AD usando as funcionalidades de proxy reverso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 49f61cbad04b6c4f559ec47bc9bdc6047f016b1a
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 21ecae14e030b731028975cc4c72dcd3252adf81
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877615"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311495"
 ---
 # <a name="access-policies"></a>Políticas de acesso
 
@@ -73,7 +62,7 @@ Para criar uma nova política de acesso, siga este procedimento:
 > [!div class="nextstepaction"]
 > [PRÓXIMO: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando controles de sessão](use-case-proxy-block-session-aad.md)

@@ -1,18 +1,14 @@
 ---
 title: Como Cloud App Security ajuda a proteger seu ambiente do Azure
 description: Este artigo fornece informações sobre os benefícios de conectar seu aplicativo do Azure para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 09/15/2020
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 44e15814bf3a7017d44eb7fb3465245b8ad8e43b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 2eeaca28f55bd836774e0388923ddbdb1a40eadd
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877536"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310883"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-azure-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente do Azure
 
@@ -40,7 +36,7 @@ Conectar o Azure ao Cloud App Security ajuda a proteger seus ativos e detectar p
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Tipo | Nome |
+| Type | Nome |
 | ---- | ---- |
 | Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Atividade executada pelo usuário encerrado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requer o AAD como IDP)<br />[Várias tentativas de logon com falha](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Atividade administrativas incomuns](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Várias atividades de exclusão de armazenamento incomum](anomaly-detection-policy.md#unusual-activities-by-user) (visualização)<br />[Várias atividades de exclusão de VM](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[Várias atividades de criação de VM incomuns](anomaly-detection-policy.md#unusual-activities-by-user) (versão prévia) |
 
@@ -58,7 +54,7 @@ Para obter mais informações, consulte o [Guia de recomendações do Azure](/az
 
 Além de monitorar possíveis ameaças, você pode aplicar e automatizar as seguintes ações de governança do Azure para corrigir ameaças detectadas:
 
-| Tipo | Ação |
+| Type | Ação |
 | ---- | ---- |
 | Governança de usuário | -Notificar o usuário sobre o alerta (por meio do Azure AD)<br />-Exigir que o usuário entre novamente (por meio do Azure AD)<br />– Suspender usuário (por meio do Azure AD) |
 

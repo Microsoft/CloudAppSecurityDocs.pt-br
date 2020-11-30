@@ -1,25 +1,14 @@
 ---
 title: Conectar o workday ao Cloud App Security (versão prévia)
 description: Este artigo fornece informações sobre como conectar seu aplicativo WORKDAY para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/10/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c849aace75d1d4268a44e02feaecdcd032a53888
-ms.sourcegitcommit: 98f1b892294beb74157cb3452aa5d489e78bbef4
+ms.openlocfilehash: 5b9a1e75ab20999d36f18500dfb6037cdf1aeabd
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94424530"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312566"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
 
@@ -43,8 +32,8 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 | --- | --- | --- | --- | --- |
 | Sistema | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
 | Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
-| Sistema | Auditoria do sistema | | Exibir | Obter |
-| Pessoal | Dados de trabalho: pessoal | Dados do Trabalhador: Relatórios do Trabalhador Público | Exibir | Obter |
+| Sistema | Auditoria do sistema | | Visualizar | Obter |
+| Pessoal | Dados de trabalho: pessoal | Dados do Trabalhador: Relatórios do Trabalhador Público | Visualizar | Obter |
 
 > [!NOTE]
 >
@@ -58,11 +47,11 @@ Para obter mais informações sobre como configurar usuários de integração do
 
 1. Entre no workday com uma conta que seja membro do grupo de segurança mencionado nos pré-requisitos.
 
-1. Pesquise "Editar configuração de locatário – sistema" e, em **log de atividades do usuário** , selecione **habilitar log de atividades do usuário**.
+1. Pesquise "Editar configuração de locatário – sistema" e, em **log de atividades do usuário**, selecione **habilitar log de atividades do usuário**.
 
     ![Captura de tela de permitir o log de atividades do usuário](media/connect-workday-enable-logging.png)
 
-1. Pesquise "Editar configuração de locatário – segurança" e, em **configurações do OAuth 2,0** , selecione **clientes OAuth 2,0 habilitados**.
+1. Pesquise "Editar configuração de locatário – segurança" e, em **configurações do OAuth 2,0**, selecione **clientes OAuth 2,0 habilitados**.
 
 1. Pesquise "registrar cliente de API" e selecione **registrar cliente de API – tarefa**.
 
@@ -73,7 +62,7 @@ Para obter mais informações sobre como configurar usuários de integração do
     | Nome do cliente | Microsoft Cloud App Security |
     | Tipo de concessão de cliente | Concessão de código de autorização |
     | Tipo de token de acesso | Portador |
-    | URI de redirecionamento | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Observação** : para clientes de gcc do governo dos EUA, insira o seguinte valor: `https://portal.cloudappsecurity.us/api/oauth/connect` |
+    | URI de redirecionamento | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Observação**: para clientes de gcc do governo dos EUA, insira o seguinte valor: `https://portal.cloudappsecurity.us/api/oauth/connect` |
     | Tokens de atualização sem expiração | Sim |
     | Escopos OAuth2 | **Equipe** e **sistema** |
     | Escopo (áreas funcionais) | **Equipe** e **sistema** |

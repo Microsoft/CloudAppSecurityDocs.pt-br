@@ -1,20 +1,14 @@
 ---
 title: Políticas do Cloud Discovery
 description: Este artigo descreve as etapas para configurar muitas políticas de Cloud Discovery no Cloud App Security.
-author: shsagir
-ms.author: shsagir
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 6b4c5a06de1666c54d2542812c767b50e33fa066
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 5d96558ff1da3c42cd4acff559ca0ec6d7cd65a7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034170"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310951"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas do Cloud Discovery
 
