@@ -1,25 +1,14 @@
 ---
 title: Trabalhar com a pontuação de risco
 description: Este artigo fornece instruções sobre como usar e personalizar a pontuação de risco do aplicativo Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 1/27/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 769198b2adc7846e237d82c922c8dbd6a7faeead
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 45fa50a02ec9d1d10031920f90f0a516b32dc53d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034187"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315660"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabalhar com pontuações de risco do aplicativo
 

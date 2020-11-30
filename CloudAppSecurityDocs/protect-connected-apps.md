@@ -1,25 +1,14 @@
 ---
 title: Proteger aplicativos em seu ambiente usando APIs do provedor de serviços de nuvem
 description: Este artigo descreve como Cloud App Security protege seus aplicativos conectados.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 02/20/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: fa1dfb6cd91e0072503462ea4b91ccfebedab1cc
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: ac06786b3aa7dbe5fac1c9c3ee9be6a276d3c176
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185989"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315354"
 ---
 # <a name="protecting-connected-apps"></a>Protegendo aplicativos conectados
 

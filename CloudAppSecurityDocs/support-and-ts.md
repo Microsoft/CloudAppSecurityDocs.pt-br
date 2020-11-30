@@ -1,25 +1,14 @@
 ---
 title: Informações sobre suporte e solução de problemas do Cloud App Security
 description: Este artigo descreve as opções de suporte e solução de problemas do Microsoft Cloud App Security
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/14/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 938631506ee5a56ccc4b2349e560615169e995c2
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 5a7e3a184b99dcc3c1e1d763566c73cf3d9d700f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878530"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315371"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Suporte e solução de problemas do Microsoft Cloud App Security
 
@@ -97,7 +86,7 @@ A equipe do Cloud App Security está sempre disponível para receber opiniões s
 
 * **Comentários sobre o produto**: enviar comentários para [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com) .
 
-* **Comentários**sobre a documentação: nosso novo sistema de comentários foi criado com base nos problemas do github. Para fornecer comentários sobre a documentação, primeiro crie uma conta do GitHub. Leia sobre essa alteração em nossa [postagem no blog](/teamblog/a-new-feedback-system-is-coming-to-docs).
+* **Comentários** sobre a documentação: nosso novo sistema de comentários foi criado com base nos problemas do github. Para fornecer comentários sobre a documentação, primeiro crie uma conta do GitHub. Leia sobre essa alteração em nossa [postagem no blog](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 ## <a name="next-steps"></a>Próximas etapas
 

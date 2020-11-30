@@ -1,23 +1,14 @@
 ---
 title: Implantar Cloud App Security Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 description: Este artigo fornece informações sobre como implantar o Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional recursos de proxy reverso para qualquer aplicativo.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.openlocfilehash: 13505c22de0751041bc42f2891248163a51e6239
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: 32aa858eca58f8b76cc90bd96f5ebe17516af1e7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92212027"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315388"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integrar e implantar o Controle de Aplicativos de Acesso Condicional em qualquer aplicativo
 
@@ -170,7 +161,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Etapa 3: configurar o aplicativo que você está implantando<a name="conf-app"></a>
 
-Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
+Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize uma destas ações:
 
 | Status do aplicativo | Descrição | Etapas |
 | --- | --- | --- |
@@ -218,7 +209,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
 
 1. Repita as etapas a seguir para instalar a **autoridade de certificação atual** e os próximos certificados raiz autoassinados **da CA** .
     1. Selecione o certificado.
-    1. Clique em **abrir**e, quando solicitado, clique em **abrir** novamente.
+    1. Clique em **abrir** e, quando solicitado, clique em **abrir** novamente.
     1. Clique em **Instalar certificado**.
     1. Escolha o **usuário atual** ou o **computador local**.
     1. Selecione **Coloque todos os certificados no repositório a seguir** e clique em **procurar**.
@@ -265,7 +256,7 @@ Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produ�
 > [!div class="nextstepaction"]
 > [Em seguida: como criar uma política de sessão»](session-policy-aad.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)

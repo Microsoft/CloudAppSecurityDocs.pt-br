@@ -1,27 +1,20 @@
 ---
 title: Criar políticas para controlar atividades no Cloud App Security
 description: Este artigo fornece instruções para criar e trabalhar com políticas de atividade.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: how-to
 ms.date: 03/01/2020
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: fe73288981009f8fe1f94126d39522d2730d0a6d
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: how-to
+ms.openlocfilehash: 26f7b171f0a2addad3c480914c8c7845e452f9ac
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878427"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315711"
 ---
 # <a name="activity-policies"></a>Políticas de atividade
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-As políticas de atividade permitem que você aplique uma ampla gama de processos automatizados usando as APIs do provedor de aplicativo. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.
+As políticas de atividade permitem impor uma ampla variedade de processos automatizados usando as APIs do provedor de aplicativos. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.
 
 Depois de definir uma política de detecção de atividades, ele começará a gerar alertas, os quais são gerados apenas em atividades que ocorrem depois da criação da política.
 
@@ -50,7 +43,7 @@ Para criar uma nova política de atividade, siga este procedimento:
 
 4. Para definir quais ações ou outras métricas vão disparar essa política, trabalhe com os **filtros de atividade**.
     > [!NOTE]
-    > Para garantir que você inclua apenas os resultados em que o campo de filtro especificado tenha um valor, é recomendável adicionar o mesmo campo novamente usando o teste de **configuração** . Por exemplo, quando a filtragem por **local** *não é igual* a uma lista especificada de países, também *é*possível adicionar um filtro para **localização** . Você também pode visualizar os resultados do filtro selecionando **Editar e Visualizar resultados**.
+    > Para garantir que você inclua apenas os resultados em que o campo de filtro especificado tenha um valor, é recomendável adicionar o mesmo campo novamente usando o teste de **configuração** . Por exemplo, quando a filtragem por **local** *não é igual* a uma lista especificada de países, também *é* possível adicionar um filtro para **localização** . Você também pode visualizar os resultados do filtro selecionando **Editar e Visualizar resultados**.
     >
     > ![Captura de tela das configurações de filtro, a exibição do campo de localização é definida](media/activity-example-location-isset.png)
 

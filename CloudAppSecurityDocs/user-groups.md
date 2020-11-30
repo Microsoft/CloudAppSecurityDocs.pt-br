@@ -1,25 +1,14 @@
 ---
 title: Importar grupos de usuários de aplicativos conectados no Cloud App Security
 description: Este artigo fornece instruções sobre como importar os grupos de usuários de aplicativos conectados para o Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/17/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: ae8a3383cb1a7c56dae06217c372b2edb6027288
-ms.sourcegitcommit: faf7c8f85721dd143ca81c6854ad5c4e8fa50e69
+ms.openlocfilehash: d441e28280df81e8f34a73e28e56797b2826f867
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96025362"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315715"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importar grupos de usuários de aplicativos conectados
 

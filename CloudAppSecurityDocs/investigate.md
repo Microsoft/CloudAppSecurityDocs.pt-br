@@ -1,25 +1,14 @@
 ---
 title: Investigar riscos e atividades suspeitas do aplicativo na nuvem
 description: Este artigo fornece uma descrição do processo para investigar alertas, problemas e atividades suspeitas usando o Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/18/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 0d4062a046d121e1698b7bc9bf5c1f9409a8f8f2
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 8227ac61b16bcac8211e3714f19569e3924db7c6
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033983"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315116"
 ---
 # <a name="investigate"></a>Investigar
 

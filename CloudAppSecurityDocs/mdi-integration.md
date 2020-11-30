@@ -1,25 +1,14 @@
 ---
 title: Integre o Microsoft defender para identidade com o Cloud App Security
 description: Este artigo fornece informações sobre como aproveitar o Microsoft defender para informações de identidade no Cloud App Security para detecção de riscos híbridos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 0c5bb0d20a4e82280841d95352181739be8ea4fa
-ms.sourcegitcommit: 66d818441eaae1e07c4bb2ce35bbcb833febf622
+ms.openlocfilehash: 260effd5750af75e8ca5bc58d566c6cbb95b1cd3
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94428101"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315099"
 ---
 # <a name="microsoft-defender-for-identity-integration"></a>Integração do Microsoft Defender para Identidade
 
@@ -47,7 +36,7 @@ Para habilitar a integração de Cloud App Security com o defender para identida
 
     ![Menu Configurações](media/azip-system-settings.png)
 
-1. Em **proteção contra ameaças** , selecione **Microsoft defender para identidade**.
+1. Em **proteção contra ameaças**, selecione **Microsoft defender para identidade**.
 
     ![habilitar a proteção avançada contra ameaças do Azure](media/mdi-integration.png)
 
@@ -71,7 +60,7 @@ Para desabilitar a integração de Cloud App Security com o defender para identi
 
 1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**.
 
-1. Em **proteção contra ameaças** , selecione **Microsoft defender para identidade**.
+1. Em **proteção contra ameaças**, selecione **Microsoft defender para identidade**.
 
 1. Desmarque **habilitar Microsoft defender para integração de dados de identidade** e clique em **salvar**.
 

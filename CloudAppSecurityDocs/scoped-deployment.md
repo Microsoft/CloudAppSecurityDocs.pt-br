@@ -1,25 +1,14 @@
 ---
 title: Definir escopo da implantação do Microsoft Cloud App Security
 description: Este artigo fornece informações sobre como definir o escopo de sua implantação do Cloud App Security, incluir e excluir usuários ou grupos específicos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 8/25/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: d2074b58a4f0411f8272ff3f10241604d06a893b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 94aec27172d83c2884ea91c944ecd80898ae0381
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879020"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315558"
 ---
 # <a name="scoped-deployment"></a>Implantação com escopo <a name="scoped-deployment"></a> 
 
@@ -66,7 +55,7 @@ Não convém usar o Microsoft Cloud App Security para todos os usuários em sua 
 
     1. Em **Digitar nome da regra**, dê um nome descritivo para a regra.
     Em **Selecionar grupos de usuários**, selecione todos os grupos que você não quer que o Cloud App Security monitore.
-    2. Selecione se você quer aplicar esta regra a todos os aplicativos conectados ou apenas a **aplicativos específicos**. Se você selecionar **Aplicativos específicos**, o Cloud App Security deixará de monitorar o grupo selecionado apenas para os aplicativos selecionados. Isso significa que, se você selecionar os **usuários** e **Active Directory**da equipe de interface de usuário do grupo, Cloud app Security monitorará toda a atividade do usuário, exceto as atividades de Active Directory que são executadas por usuários da equipe da interface do usuário.
+    2. Selecione se você quer aplicar esta regra a todos os aplicativos conectados ou apenas a **aplicativos específicos**. Se você selecionar **Aplicativos específicos**, o Cloud App Security deixará de monitorar o grupo selecionado apenas para os aplicativos selecionados. Isso significa que, se você selecionar os **usuários** e **Active Directory** da equipe de interface de usuário do grupo, Cloud app Security monitorará toda a atividade do usuário, exceto as atividades de Active Directory que são executadas por usuários da equipe da interface do usuário.
 
        ![regra de exclusão](media/exclude-rule.png)
 
@@ -97,6 +86,6 @@ As seguintes atividades de usuário são monitoradas:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Configurar o Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

@@ -1,25 +1,14 @@
 ---
 title: Solucionando problemas de erros de Cloud Discovery
 description: Este artigo apresenta uma lista de erros frequentes do Cloud Discovery e as recomendações de resolução para cada um.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/19/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 7ec0338c725ccee9656984fbdcdd4bf2fd39d132
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 96ff00be024688a025d30c03dca8194a99413038
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034102"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315930"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solução de problemas do Cloud Discovery
 

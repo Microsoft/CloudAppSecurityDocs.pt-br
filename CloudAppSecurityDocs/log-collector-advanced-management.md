@@ -1,27 +1,16 @@
 ---
-title: Gerenciamento avançado do coletor de logs
+title: Gerenciamento de coletor de logs avançado
 description: Este artigo fornece informações sobre como as tarefas de gerenciamento avançadas para Cloud App Security coletores de log de Cloud Discovery.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/25/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: b003f47c33ef2ed749df3138ed1b6cd2a83232d3
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: f9edb4d76f105293574551ba1ef9c7d2ba7d1838
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034878"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315150"
 ---
-# <a name="advanced-log-collector-management"></a>Gerenciamento avançado do coletor de logs
+# <a name="advanced-log-collector-management"></a>Gerenciamento de coletor de logs avançado
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

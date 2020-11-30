@@ -1,25 +1,14 @@
 ---
 title: Proteger aplicativos com o Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security
 description: Este artigo fornece informações sobre como funciona o proxy reverso do Controle de Aplicativos de Acesso Condicional do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/14/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: ad681b763233a84d63cb11a98e6f709e72816080
-ms.sourcegitcommit: 138d435905eaf29584f50d6dac30489d2104189a
+ms.openlocfilehash: 04671ddb9225a3fc1330b7b33b1eb3010805a221
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93415446"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315337"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Controle de Aplicativo de Acesso Condicional do Microsoft Cloud App Security
 
@@ -37,19 +26,19 @@ Controle de Aplicativos de Acesso Condicional usa uma arquitetura de proxy rever
 
 O Controle de Aplicativo de Acesso Condicional permite o monitoramento e controle em tempo real do acesso e das sessões do aplicativo com base nas políticas de acesso e de sessão. As políticas de acesso e de sessão são utilizadas dentro do portal do Cloud App Security para refinar ainda mais os filtros e definir as ações a serem executadas em relação a um usuário. Com as políticas de acesso e de sessão, é possível:
 
-- **Impedir vazamento de dados** : você pode bloquear o download, recortar, copiar e imprimir documentos confidenciais em, por exemplo, dispositivos não gerenciados.
+- **Impedir vazamento de dados**: você pode bloquear o download, recortar, copiar e imprimir documentos confidenciais em, por exemplo, dispositivos não gerenciados.
 
-- **Proteger no download** : em vez de bloquear o download de documentos confidenciais, você pode exigir que os documentos sejam rotulados e protegidos com a proteção de informações do Azure. Essa ação garante que o documento esteja protegido e o acesso do usuário seja restrito em uma sessão potencialmente arriscada.
+- **Proteger no download**: em vez de bloquear o download de documentos confidenciais, você pode exigir que os documentos sejam rotulados e protegidos com a proteção de informações do Azure. Essa ação garante que o documento esteja protegido e o acesso do usuário seja restrito em uma sessão potencialmente arriscada.
 
-- **Impedir o carregamento de arquivos sem rótulo** : antes de um arquivo confidencial ser carregado, distribuído e usado por outros, é importante certificar-se de que o arquivo tem o rótulo e a proteção corretos. Você pode garantir que arquivos sem rótulo com conteúdo confidencial sejam impedidos de serem carregados até que o usuário classificar o conteúdo.
+- **Impedir o carregamento de arquivos sem rótulo**: antes de um arquivo confidencial ser carregado, distribuído e usado por outros, é importante certificar-se de que o arquivo tem o rótulo e a proteção corretos. Você pode garantir que arquivos sem rótulo com conteúdo confidencial sejam impedidos de serem carregados até que o usuário classificar o conteúdo.
 
-- **Bloquear possíveis malwares** : você pode proteger seu ambiente contra malware bloqueando o upload de arquivos potencialmente mal-intencionados. Qualquer arquivo carregado ou baixado pode ser verificado em relação à inteligência contra ameaças da Microsoft e bloqueado instantaneamente.
+- **Bloquear possíveis malwares**: você pode proteger seu ambiente contra malware bloqueando o upload de arquivos potencialmente mal-intencionados. Qualquer arquivo carregado ou baixado pode ser verificado em relação à inteligência contra ameaças da Microsoft e bloqueado instantaneamente.
 
-- **Monitorar sessões de usuário para fins de conformidade** : os usuários arriscados são monitorados quando entram em aplicativos e suas ações são registradas de dentro da sessão. É possível investigar e analisar o comportamento do usuário para compreender onde e sob quais condições as políticas de sessão deverão ser aplicadas no futuro.
+- **Monitorar sessões de usuário para fins de conformidade**: os usuários arriscados são monitorados quando entram em aplicativos e suas ações são registradas de dentro da sessão. É possível investigar e analisar o comportamento do usuário para compreender onde e sob quais condições as políticas de sessão deverão ser aplicadas no futuro.
 
-- **Bloquear o acesso** : você pode bloquear o acesso de maneira granular para aplicativos e usuários específicos, dependendo de vários fatores de risco. Por exemplo, você pode bloqueá-los se eles estiverem usando certificados de cliente como uma forma de gerenciamento de dispositivo.
+- **Bloquear o acesso**: você pode bloquear o acesso de maneira granular para aplicativos e usuários específicos, dependendo de vários fatores de risco. Por exemplo, você pode bloqueá-los se eles estiverem usando certificados de cliente como uma forma de gerenciamento de dispositivo.
 
-- **Bloquear atividades personalizadas** : alguns aplicativos têm cenários exclusivos que trazem risco, por exemplo, enviar mensagens com conteúdo confidencial em aplicativos como equipes da Microsoft ou margem de atraso. Nesses tipos de cenários, você pode verificar mensagens quanto ao conteúdo confidencial e bloqueá-los em tempo real.
+- **Bloquear atividades personalizadas**: alguns aplicativos têm cenários exclusivos que trazem risco, por exemplo, enviar mensagens com conteúdo confidencial em aplicativos como equipes da Microsoft ou margem de atraso. Nesses tipos de cenários, você pode verificar mensagens quanto ao conteúdo confidencial e bloqueá-los em tempo real.
 
 ### <a name="how-session-control-works"></a>Como funciona o controle de sessão
 
@@ -133,7 +122,7 @@ Muitas organizações que optam por usar controles de sessão para aplicativos d
 Você pode bloquear o acesso a aplicativos cliente móveis nativos e de desktop com políticas de acesso, definindo o filtro de **aplicativo cliente** como **móvel e área de trabalho**. Alguns aplicativos cliente nativos podem ser reconhecidos individualmente, enquanto outros que fazem parte de um pacote de aplicativos só podem ser identificados como seu aplicativo de nível superior. Por exemplo, aplicativos como o SharePoint Online só podem ser reconhecidos pela criação de uma política de acesso aplicada aos aplicativos do Office 365.
 
 > [!NOTE]
-> A menos que o filtro de **aplicativo cliente** seja definido especificamente como **móvel e área de trabalho** , a política de acesso resultante só se aplicará a sessões do navegador. O motivo para isso é evitar a proxy inadvertidamente de sessões de usuário, o que pode ser um subproduto do uso desse filtro. Embora a maioria dos principais navegadores dê suporte à execução de uma verificação de certificado de cliente, alguns aplicativos móveis e de área de trabalho usam navegadores internos que podem não dar suporte a essa verificação. Portanto, o uso desse filtro pode afetar a autenticação para esses aplicativos.
+> A menos que o filtro de **aplicativo cliente** seja definido especificamente como **móvel e área de trabalho**, a política de acesso resultante só se aplicará a sessões do navegador. O motivo para isso é evitar a proxy inadvertidamente de sessões de usuário, o que pode ser um subproduto do uso desse filtro. Embora a maioria dos principais navegadores dê suporte à execução de uma verificação de certificado de cliente, alguns aplicativos móveis e de área de trabalho usam navegadores internos que podem não dar suporte a essa verificação. Portanto, o uso desse filtro pode afetar a autenticação para esses aplicativos.
 
 ### <a name="session-controls"></a>Controles de sessão
 
@@ -167,7 +156,7 @@ Embora os controles de sessão sejam criados para funcionar com qualquer navegad
 - Salesforce
 - ServiceNow
 - SharePoint online
-- Slack
+- Margem de atraso
 - Tableau
 - Microsoft Teams (versão prévia)
 - Workday

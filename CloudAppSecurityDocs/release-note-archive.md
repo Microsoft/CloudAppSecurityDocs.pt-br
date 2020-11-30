@@ -1,25 +1,14 @@
 ---
 title: Arquivos de atualizações anteriores do Cloud App Security
 description: Este artigo é um arquivo que descreve as atualizações feitas em lançamentos anteriores do Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/25/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c279b64cd63152cdd8ec4c824926a9859dcd4803
-ms.sourcegitcommit: faf7c8f85721dd143ca81c6854ad5c4e8fa50e69
+ms.openlocfilehash: 50f8bc735743d1506ac9ad18e6b10b659de7ab6e
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96025345"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315541"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Arquivo Morto de atualizações anteriores do Microsoft Cloud App Security
 

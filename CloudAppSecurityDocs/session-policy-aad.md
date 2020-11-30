@@ -1,25 +1,14 @@
 ---
 title: Criar políticas de sessão no Cloud App Security
 description: Este artigo descreve o procedimento para configurar uma política de sessão de Controle de Aplicativos de Acesso Condicional do Cloud App Security para obter visibilidade profunda sobre atividades de sessão de usuário e bloquear downloads usando os recursos de proxy reverso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c1b33c82b74f9b7b648bcae3c9bdc20949319fc8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 9e755da569c6d90274a6fd347408587a1a6732f7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878787"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315417"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -153,7 +142,7 @@ Por exemplo, você pode criar uma política que verifica o conteúdo de um arqui
 
 ## <a name="block-malware-on-upload"></a>Bloquear malware ao carregar
 
-Quando o **carregamento de arquivo de controle (com inspeção)**   é definido como o **tipo de controle de sessão** e a **detecção de malware** é definida como o **método de inspeção** na política de sessão de Cloud app Security, controle de aplicativos de acesso condicional impede que um usuário carregue um arquivo em tempo real se for detectado malware. Os arquivos são verificados usando o mecanismo de inteligência contra ameaças da Microsoft.
+Quando o  **carregamento de arquivo de controle (com inspeção)**   é definido como o  **tipo de controle de sessão** e a **detecção de malware** é definida como o **método de inspeção** na política de sessão de Cloud app Security, controle de aplicativos de acesso condicional impede que um usuário carregue um arquivo em tempo real se for detectado malware. Os arquivos são verificados usando o mecanismo de inteligência contra ameaças da Microsoft.
 
 Você pode exibir os arquivos sinalizados como possíveis malwares usando o filtro **potencial detectado de malware** no log de atividades.
 
@@ -176,7 +165,7 @@ Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de 
 > [!div class="nextstepaction"]
 > [Solução de problemas de controles de acesso e de sessão](troubleshooting-proxy.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando o Azure AD Controle de Aplicativos de Acesso Condicional](use-case-proxy-block-session-aad.md)

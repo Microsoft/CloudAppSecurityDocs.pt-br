@@ -1,25 +1,14 @@
 ---
 title: Solucionando problemas de erros de inspeção de conteúdo
 description: Este artigo fornece uma lista de status de inspeção de conteúdo e seus significados.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/25/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 50c240d70492b9db22e584a1fdc2c438e982bb01
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 9b31c7d12dcd91d3f3aa2a0ccbc99a4b3497debd
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034085"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315915"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solução de problemas de inspeção de conteúdo
 

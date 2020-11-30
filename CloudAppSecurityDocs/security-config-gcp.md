@@ -1,25 +1,14 @@
 ---
 title: Obter recomendações de configuração de segurança para o GCP
 description: Este artigo fornece informações sobre como obter recomendações de configuração de segurança no Cloud App Security integrando com Google Cloud Platform.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: a77ff2f9cd7b814d755cec2d0087088cc71abbf0
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 15242c8a89aee5a9aa3edd1bf7a881f81734680a
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878943"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315490"
 ---
 # <a name="security-configuration-for-google-cloud-platform"></a>Configuração de segurança para Google Cloud Platform
 
@@ -36,7 +25,7 @@ Essa avaliação fornece uma exibição organizacional das recomendações de co
 
 ## <a name="how-to-view-gcp-security-recommendations"></a>Como exibir as recomendações de segurança do GCP
 
-1. Em Cloud app Security, navegue para **investigar**  >  **configuração de segurança**e, em seguida, selecione a guia **Google Cloud Platform** .
+1. Em Cloud app Security, navegue para **investigar**  >  **configuração de segurança** e, em seguida, selecione a guia **Google Cloud Platform** .
 
     > [!NOTE]
     > Pode levar até 15 minutos para que as alterações entrem em vigor.

@@ -1,24 +1,14 @@
 ---
 title: Integração do Azure Sentinel com o Cloud App Security
 description: Este artigo fornece informações sobre como integrar o Azure Sentinel ao Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/23/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 154cb0eda5a223c31813e1753b9dc0bcb8836436
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e30981259f1ee0c6894918f12ebfa2c370e72564
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878712"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315456"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Integração do Azure Sentinel (versão prévia)
 
@@ -68,7 +58,7 @@ Para integrar com o Azure Sentinel:
 
     ![Captura de tela mostrando a página inicial de configurar a integração do Azure Sentinel](media/siem-sentinel-configuration.png)
 
-1. Clique em **Avançar**e continue para o Azure Sentinel para finalizar a integração. Para obter informações sobre como configurar o Azure Sentinel, consulte [/Azure/Sentinel/Connect-Cloud-app-Security](/azure/sentinel/connect-cloud-app-security).
+1. Clique em **Avançar** e continue para o Azure Sentinel para finalizar a integração. Para obter informações sobre como configurar o Azure Sentinel, consulte [/Azure/Sentinel/Connect-Cloud-app-Security](/azure/sentinel/connect-cloud-app-security).
 
     ![Captura de tela mostrando a página concluir da integração de configurar o Azure Sentinel](media/siem-sentinel-configuration-complete.png)
 
@@ -88,25 +78,25 @@ No Azure Sentinel, em **logs**, em **informações de segurança**, você pode e
 
 A tabela a seguir descreve cada campo no esquema **McasShadowItReporting** :
 
-| Campo | Tipo | Descrição | Exemplos |
+| Campo | Type | Descrição | Exemplos |
 | --- | --- | --- | --- |
-| TenantId | String | ID do Workspace | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
+| TenantId | String | ID do workspace | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
 | SourceSystem | String | Sistema de origem – valor estático | Azure |
 | TimeGenerated [UTC] | Datetime | Data dos dados de descoberta | 2019-07-23T11:00:35.858 Z |
 | StreamName | String | Nome do fluxo específico | Departamento de marketing |
-| TotalEvents | Inteiro | Número total de eventos por sessão | 122 |
-| BlockedEvents | Inteiro | Número de eventos bloqueados | 0 |
-| UploadedBytes | Inteiro | Quantidade de dados carregados | 1.514.874 |
-| TotalBytes | Inteiro | Quantidade total de dados | 4.067.785 |
-| DownloadedBytes | Inteiro | Quantidade de dados baixados | 2.552.911 |
+| TotalEvents | Integer | Número total de eventos por sessão | 122 |
+| BlockedEvents | Integer | Número de eventos bloqueados | 0 |
+| UploadedBytes | Integer | Quantidade de dados carregados | 1.514.874 |
+| TotalBytes | Integer | Quantidade total de dados | 4.067.785 |
+| DownloadedBytes | Integer | Quantidade de dados baixados | 2.552.911 |
 | IpAddress | String | Endereço IP de origem | 127.0.0.0 |
 | UserName | String | Nome de usuário | `Raegan@contoso.com` |
 | EnrichedUserName | String | Nome de usuário aprimorado com username do Azure AD | `Raegan@contoso.com` |
 | AppName | String | Nome do aplicativo de nuvem | Microsoft OneDrive for Business |
-| AppId | Inteiro | Identificador do aplicativo de nuvem | 15600 |
+| AppId | Integer | Identificador do aplicativo de nuvem | 15600 |
 | AppCategory | String | Categoria do aplicativo de nuvem | Armazenamento em nuvem |
 | AppTags | Matriz de cadeia de caracteres | Marcas internas e personalizadas definidas para o aplicativo | ["aprovado"] |
-| AppScore | Inteiro | A pontuação de risco do aplicativo em uma escala de 0-10, 10 sendo uma pontuação para um aplicativo não arriscado | 10 |
+| AppScore | Integer | A pontuação de risco do aplicativo em uma escala de 0-10, 10 sendo uma pontuação para um aplicativo não arriscado | 10 |
 | Type | String | Tipo de logs – valor estático | McasShadowItReporting |
 
 ## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Usar Power BI com dados de Cloud App Security no Azure Sentinel
@@ -129,7 +119,7 @@ Você pode começar rapidamente usando as seguintes etapas:
 
 ### <a name="connect-the-cloud-app-security-app"></a>Conectar o aplicativo Cloud App Security
 
-1. Em Power BI, clique em **aplicativos**e, em seguida, clique no aplicativo **Shadow it Discovery** .
+1. Em Power BI, clique em **aplicativos** e, em seguida, clique no aplicativo **Shadow it Discovery** .
 
 1. Na página Introdução **ao novo aplicativo** , clique em **conectar**.
 

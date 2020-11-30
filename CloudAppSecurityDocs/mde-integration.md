@@ -1,25 +1,14 @@
 ---
 title: Integre o Microsoft defender for Endpoint ao Cloud App Security
 description: Este artigo descreve como integrar o Microsoft defender para ponto de extremidade com Cloud App Security para obter visibilidade aprimorada de ti em sombra e gerenciamento de riscos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/29/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 95e8271a26828ad4e3adb73727e2692cac3a8d23
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 9b41cc5ff69e9480e0ad7c3f9f4bc7562c27dea9
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371240"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315133"
 ---
 # <a name="microsoft-defender-for-endpoint-integration-with-microsoft-cloud-app-security"></a>Integração do Microsoft defender para EndPoint com o Microsoft Cloud App Security
 
@@ -61,7 +50,7 @@ Para permitir que você execute Cloud Discovery em outras plataformas, é melhor
 Para habilitar o defender para a integração de ponto de extremidade com o Cloud App Security:
 
 1. Na central de segurança do Microsoft defender, no painel de navegação, selecione **configurações**.
-2. Em **geral** , selecione **recursos avançados**.
+2. Em **geral**, selecione **recursos avançados**.
 3. Alterne o **Microsoft Cloud App Security** para **Ativado**.
 4. Clique em **Aplicar**.
 
@@ -74,8 +63,8 @@ Para habilitar o defender para a integração de ponto de extremidade com o Clou
 Para configurar a severidade para alertas enviados ao Microsoft defender para ponto de extremidade:
 
 1. Em Cloud App Security, clique no ícone **configurações** e, em seguida, selecione **Microsoft defender para ponto de extremidade**.
-1. Em **alertas** , selecione o nível de severidade global para alertas.
-1. Clique em **Salvar**.
+1. Em **alertas**, selecione o nível de severidade global para alertas.
+1. Clique em **Save** (Salvar).
 
 ![Configurações de alerta do defender for Endpoint](media/mde-alert-severity-settings.png)
 
@@ -84,18 +73,18 @@ Para configurar a severidade para alertas enviados ao Microsoft defender para po
 Depois de integrar o defender for Endpoint ao Cloud App Security, você pode investigar os dados de dispositivo descobertos no painel de Cloud Discovery.
 
 1. Em Cloud App Security, clique em **Cloud Discovery** e, em seguida, **Cloud Discovery painel**.
-2. Na barra de navegação superior, em **Relatórios contínuos** , selecione **Usuários de ponto de extremidade do Win10**.
+2. Na barra de navegação superior, em **Relatórios contínuos**, selecione **Usuários de ponto de extremidade do Win10**.
   ![Relatório do defender for Endpoint](media/win10-dashboard-report.png)
 3. Na parte superior, você verá o número de dispositivos descobertos adicionados após a integração.
 4. Clique na guia **Dispositivos**.
 5. Você pode fazer uma busca detalhada em cada dispositivo listado e usar as guias para exibir os dados de investigação. Encontre correlações entre os dispositivos, os usuários, os endereços IP e os aplicativos que estavam envolvidos em incidentes:
 
     - **Visão geral**
-        - **Nível de risco do dispositivo** : mostra o quão arriscado o perfil do dispositivo é relativo a outros dispositivos em sua organização, conforme indicado pela severidade (alta, média, baixa, informativa). Cloud App Security usa perfis de dispositivo do defender for Endpoint para cada dispositivo baseado na análise avançada. A atividade que é anômala para a linha de base de um dispositivo é avaliada e determina o nível de risco do dispositivo. Use o nível de risco do dispositivo para determinar quais dispositivos investigar primeiro.
-        - **Transações** : informações sobre o número de transações que ocorreram no dispositivo durante o período de tempo selecionado.
-        - **Tráfego total** : informações sobre a quantidade total de tráfego (em MB) durante o período de tempo selecionado.
+        - **Nível de risco do dispositivo**: mostra o quão arriscado o perfil do dispositivo é relativo a outros dispositivos em sua organização, conforme indicado pela severidade (alta, média, baixa, informativa). Cloud App Security usa perfis de dispositivo do defender for Endpoint para cada dispositivo baseado na análise avançada. A atividade que é anômala para a linha de base de um dispositivo é avaliada e determina o nível de risco do dispositivo. Use o nível de risco do dispositivo para determinar quais dispositivos investigar primeiro.
+        - **Transações**: informações sobre o número de transações que ocorreram no dispositivo durante o período de tempo selecionado.
+        - **Tráfego total**: informações sobre a quantidade total de tráfego (em MB) durante o período de tempo selecionado.
         - Carregamentos: informações sobre a quantidade total de tráfego (em MB) carregados pelo dispositivo durante o período de tempo selecionado.
-        - **Downloads** : informações sobre a quantidade total de tráfego (em MB) baixada pelo dispositivo durante o período de tempo selecionado.
+        - **Downloads**: informações sobre a quantidade total de tráfego (em MB) baixada pelo dispositivo durante o período de tempo selecionado.
     - **Aplicativos Descobertos**  
     Lista todos os aplicativos descobertos que foram acessados pelo dispositivo.
     - **Histórico de usuários**  
@@ -119,7 +108,7 @@ Use as etapas a seguir para obter visibilidade mais granular da atividade de red
 1. Em Cloud App Security, em **descoberta** e selecione **dispositivos**.
 1. Selecione o computador que você deseja investigar e, na parte superior direita, clique em **Exibir no Microsoft defender para ponto de extremidade**.
 1. Na central de segurança do Microsoft defender, em **dispositivos** > {dispositivo selecionado}, selecione **linha do tempo**.
-1. Em **filtros** , selecione **eventos de rede**.
+1. Em **filtros**, selecione **eventos de rede**.
 1. Investigue os eventos de rede do dispositivo, conforme necessário.
 
 ![Captura de tela mostrando o cronograma do dispositivo na central de segurança do Microsoft defender](media/mde-selected-device.png)
@@ -131,7 +120,7 @@ Use as etapas a seguir para obter visibilidade mais granular sobre eventos de re
 1. Em Cloud App Security, em **descoberta** e, em seguida, selecione **descoberto**.
 1. Clique no aplicativo que você deseja investigar para abrir sua gaveta.
 1. Clique na lista de **domínios** do aplicativo e copie a lista de domínios.
-1. Na central de segurança do Microsoft defender, em **dispositivos** , selecione **busca avançada**.
+1. Na central de segurança do Microsoft defender, em **dispositivos**, selecione **busca avançada**.
 1. Cole a consulta a seguir e substitua `<DOMAIN_LIST>` pela lista de domínios que você copiou anteriormente.
 
     ```kusto
@@ -156,7 +145,7 @@ Os aplicativos marcados como não **aprovados** no Cloud app Security são sincr
 
 Use as etapas a seguir para habilitar o controle de acesso para aplicativos de nuvem:
 
-1. Em Cloud App Security, na engrenagem configurações, selecione **configurações** , em **Cloud Discovery** selecione **Microsoft defender para ponto de extremidade** e, em seguida, selecione **bloquear aplicativos não aprovados**.
+1. Em Cloud App Security, na engrenagem configurações, selecione **configurações**, em **Cloud Discovery** selecione **Microsoft defender para ponto de extremidade** e, em seguida, selecione **bloquear aplicativos não aprovados**.
 
     ![Captura de tela mostrando como habilitar o bloqueio com o defender para ponto de extremidade](media/mde-integration.png)
 

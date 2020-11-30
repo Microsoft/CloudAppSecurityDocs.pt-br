@@ -1,20 +1,14 @@
 ---
 title: Políticas de proteção contra ameaças
 description: Este tópico descreve as etapas para configurar muitas políticas de proteção contra ameaças no Cloud App Security.
-author: shsagir
-ms.author: shsagir
 ms.date: 11/08/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 97bb8c60dfc04858d20ee4bc0a12236ea060eb65
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 0bb2b12a528569a8a444a2273ed34154b996804d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034153"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315320"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 

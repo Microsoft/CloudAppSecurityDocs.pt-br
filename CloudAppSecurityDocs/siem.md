@@ -1,24 +1,14 @@
 ---
 title: Integração de SIEM genérico com Cloud App Security
 description: Este artigo fornece informações sobre como integrar o SIEM genérico com o Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c5fc424ece0dd777760e3d63ab5c41219330f2fe
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: a0c4fffdec7c870254baf0d20cdbaf7f0e40b39c
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371297"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315405"
 ---
 # <a name="generic-siem-integration"></a>Integração genérica ao SIEM
 
@@ -78,16 +68,16 @@ A integração ao SIEM é realizada em três etapas:
     ![Captura de tela mostrando o menu Adicionar integração SIEM](media/siem0.png)
 
 1. No assistente, clique em **Iniciar Assistente**.
-1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Avançar**.
+1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Próximo**.
 
     ![Configurações gerais do SIEM](media/siem1.png)
 
 1. Digite o endereço IP ou nome de host do **Host do syslog remoto** e o **Número da porta do syslog**. Selecione TCP ou UDP como o protocolo do Syslog Remoto.
-    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Avançar**.
+    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Próximo**.
 
     ![Configurações do Syslog Remoto](media/siem2.png)
 
-1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Avançar**.
+1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Próximo**.
 
    ![Configurações de tipos de dados](media/siem3.png)
 
@@ -155,7 +145,7 @@ O texto a seguir é um exemplo de arquivo de log de alertas:
 
 | Aplicável a | Nome do campo CEF | Descrição |
 | --- | --- | --- |
-| Atividades/Alertas | start | Carimbo de data/hora da atividade ou do alerta |
+| Atividades/Alertas | iniciar | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | end | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | rt | Carimbo de data/hora da atividade ou do alerta |
 | Atividades/Alertas | msg | Descrição da atividade ou do alerta, conforme mostrado no portal |

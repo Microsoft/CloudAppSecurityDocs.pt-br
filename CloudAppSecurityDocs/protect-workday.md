@@ -1,18 +1,14 @@
 ---
 title: Como Cloud App Security ajuda a proteger seu ambiente workday
 description: Este artigo fornece informações sobre os benefícios de conectar seu aplicativo do WORKDAY para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 2ff5f5ffb2dfe58833f556a6aebe1d4b99b8c061
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 21c999d5f83392fdccb50d6ebe8996fcea95c5c2
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880362"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315167"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Como Cloud App Security ajuda a proteger seu ambiente workday
 
@@ -38,7 +34,7 @@ Conectar o workday ao Cloud App Security oferece informações aprimoradas sobre
 
 Você pode usar os seguintes modelos de política interna para detectar e notificá-lo sobre possíveis ameaças:
 
-| Tipo | Nome |
+| Type | Nome |
 | ---- | ---- |
 | Política de detecção de anomalias interna | [Atividade de endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Atividade de país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Atividade de endereços IP suspeitos](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viagem impossível](anomaly-detection-policy.md#impossible-travel) |
 | Modelo de política de atividade | Logon de um endereço IP com risco |

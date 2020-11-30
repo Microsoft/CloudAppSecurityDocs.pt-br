@@ -1,23 +1,14 @@
 ---
 title: Implantar Cloud App Security Controle de Aplicativos de Acesso Condicional para qualquer aplicativo Web usando PingOne
 description: Este artigo fornece informações sobre como implantar o Controle de Aplicativos de Acesso Condicional de Microsoft Cloud App Security para qualquer aplicativo Web usando o provedor de identidade PingOne.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/29/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.openlocfilehash: d0f36a9abb5b7a1fefed9b32683b926995d3dcd4
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: d49d7994e577321cfc276f642f77f7c81e4c9d9f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92214585"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315235"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-web-app-using-pingone-identity-provider-idp"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo Web usando o IdP (provedor de identidade PingOne)
 
@@ -68,13 +59,13 @@ Use as etapas a seguir para rotear suas sessões de aplicativo Web de PingOne pa
 
 ## <a name="step-1-get-your-apps-saml-single-sign-on-settings"></a>Etapa 1: obter as configurações de logon único do SAML do seu aplicativo
 
-1. No Salesforce, navegue até configurações de **configuração**  >  **Settings**  >  **identidade**de  >  **Sign-On único configurações**.
+1. No Salesforce, navegue até configurações de **configuração**  >  **Settings**  >  **identidade** de  >  **Sign-On único configurações**.
 
 1. Em **configurações de Sign-On único**, clique no nome do aplicativo SAML 2,0 que você deseja configurar.
 
     ![Selecione as configurações de SSO do Salesforce](media/proxy-idp-examples/idp-pingone-sf-select-sso-settings.png)
 
-1. Na página de **configuração de Sign-On única do SAML** , anote a URL de **logon**do Salesforce. Você precisará dessas informações posteriormente.
+1. Na página de **configuração de Sign-On única do SAML** , anote a URL de **logon** do Salesforce. Você precisará dessas informações posteriormente.
 
     ![Selecione a URL de logon SSO do Salesforce](media/proxy-idp-examples/idp-pingone-sf-copy-saml-sso-login-url.png)
 
@@ -197,13 +188,13 @@ De volta à página **alterações do aplicativo** Cloud app Security, faça o s
 
 ## <a name="step-7-complete-the-app-changes"></a>Etapa 7: concluir as alterações do aplicativo
 
-No Salesforce, navegue até configurações de **configuração**  >  **Settings**  >  **identidade**  >  **Sign-On configurações únicas**e faça o seguinte:
+No Salesforce, navegue até configurações de **configuração**  >  **Settings**  >  **identidade**  >  **Sign-On configurações únicas** e faça o seguinte:
 
 1. Recomendado: Crie um backup de suas configurações atuais.
 1. Substitua o valor do campo **URL de logon do provedor de identidade** pela URL de logon único do SAML Cloud app Security que você anotou anteriormente.
 1. Carregue o Cloud App Security certificado SAML baixado anteriormente.
 1. Substitua o valor do campo **ID da entidade** pela ID da entidade do aplicativo personalizado PingOne que você anotou anteriormente.
-1. Clique em **Salvar**.
+1. Clique em **Save** (Salvar).
 
     > [!NOTE]
     > O Cloud App Security certificado SAML é válido por um ano. Depois de expirar, será necessário gerar um novo certificado.
@@ -221,7 +212,7 @@ No Salesforce, navegue até configurações de **configuração**  >  **Settings
 > [!div class="nextstepaction"]
 > [«ANTERIOR: implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo](proxy-deployment-any-app.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 > [!div class="nextstepaction"]
 > [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)

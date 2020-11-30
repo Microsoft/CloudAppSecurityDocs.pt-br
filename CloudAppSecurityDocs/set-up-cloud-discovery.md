@@ -1,21 +1,14 @@
 ---
 title: Implantar o Cloud Discovery
 description: Este artigo descreve o procedimento de configuração para colocar o Cloud Discovery em funcionamento.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: how-to
 ms.date: 08/09/2020
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 72a1d6f1d7dfdf88460dceddf62a6277226cfe66
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.topic: how-to
+ms.openlocfilehash: bdb4438c18b82b7426de09b73e1ce8c2753d21a1
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033949"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315575"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -89,6 +82,7 @@ O processo de geração de uma avaliação de riscos consiste nas seguintes etap
 - Stormshield
 - Websense – soluções de segurança da Web – relatório de detalhes de investigação (CSV)
 - Websense – soluções de segurança da Web – log de atividades de Internet (CEF)
+- WatchGuard
 - Zscaler
 
 > [!NOTE]
@@ -101,7 +95,7 @@ Se o log não tiver suporte ou se você estiver usando um formato de log recente
 
 Atributos de dados (de acordo com a documentação do fornecedor):
 
-| Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de usuário | IP de Origem | Tráfego total | Bytes carregados |
+| Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de Usuário | IP de Origem | Tráfego total | Bytes carregados |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | Não |
 | Blue Coat | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
@@ -134,6 +128,7 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 | Stormshield | Não | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Websense – Relatório de detalhes investigativo (CSV) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Websense – log de atividades de Internet (CEF) | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
+| WatchGuard | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | Zscaler | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 
 \* Não há suporte para as versões 8,5 e posteriores do Forcepoint Web Security Cloud
