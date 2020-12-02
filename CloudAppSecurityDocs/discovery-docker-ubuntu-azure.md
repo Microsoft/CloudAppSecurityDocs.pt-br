@@ -1,14 +1,14 @@
 ---
 title: Configurar o upload automático de logs usando o Docker no Azure
 description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Linux no Azure.
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 0e34ebfc6d4afcb8ecf0967ddecc7b8dbd0b885f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: a8f82a550e7ea203b3144f995d3df33446a533c2
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311869"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509988"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker no Linux no Azure
 
@@ -163,6 +163,11 @@ Verifique o status do coletor na tabela **Coletor de logs** e verifique se o sta
 ![Verificar o status do coletor no coletor de logs](media/ubuntu9.png)
 
 Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
+
+Como alternativa, você pode verificar o status do coletor de log de dentro do contêiner do Docker usando os seguintes comandos:
+
+1. Faça logon no contêiner usando este comando: `docker exec -it <Container Name> bash`
+1. Verifique o status do coletor de logs usando este comando: `collector_status -p`
 
 Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 

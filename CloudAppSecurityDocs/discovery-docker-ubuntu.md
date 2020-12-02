@@ -1,14 +1,14 @@
 ---
 title: Configurar o upload de log automático usando o Docker local
 description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Linux em um servidor local.
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 4a339361b232cee1ee85758f4545856d4674e847
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 311839a4af2ba1c445253a094d07bdaf47cb8700
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311852"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509971"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker no Linux local
 
@@ -153,6 +153,11 @@ Verifique o status do coletor na tabela **Coletor de logs** e verifique se o sta
 ![Verificar a implantação bem-sucedida do coletor de logs](media/ubuntu9.png)
 
 Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
+
+Como alternativa, você pode verificar o status do coletor de log de dentro do contêiner do Docker usando os seguintes comandos:
+
+1. Faça logon no contêiner usando este comando: `docker exec -it <Container Name> bash`
+1. Verifique o status do coletor de logs usando este comando: `collector_status -p`
 
 Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 

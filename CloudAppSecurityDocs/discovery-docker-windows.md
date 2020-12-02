@@ -1,14 +1,14 @@
 ---
 title: Distribuir relatórios contínuos para Cloud App Security usando um Docker no Windows
 description: Este artigo descreve o processo de configuração de upload automático de log para relatórios contínuos no Cloud App Security usando um Docker no Windows em um servidor local.
-ms.date: 11/19/2019
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 3fe411948dd2f0fe64917d69047351d835744ac0
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 7164cdb91664e131915c489d00085c164321afbb
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311801"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509954"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker no Windows local
 
@@ -150,6 +150,11 @@ Verifique o status do coletor na tabela **Coletor de logs** e verifique se o sta
 ![Verificar se o coletor foi implantado com êxito](media/ubuntu9.png)
 
 Você também pode acessar o **Log de governança** e verificar se os logs estão sendo carregados periodicamente no portal.
+
+Como alternativa, você pode verificar o status do coletor de log de dentro do contêiner do Docker usando os seguintes comandos:
+
+1. Faça logon no contêiner usando este comando: `docker exec -it <Container Name> bash`
+1. Verifique o status do coletor de logs usando este comando: `collector_status -p`
 
 Se houver problemas durante a implantação, confira [Solução de problemas do Cloud Discovery](troubleshooting-cloud-discovery.md).
 
