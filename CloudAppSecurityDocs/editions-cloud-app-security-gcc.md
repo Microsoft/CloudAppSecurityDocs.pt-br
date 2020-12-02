@@ -1,22 +1,14 @@
 ---
 title: Microsoft Cloud App Security para US Government GCC High
 description: Neste artigo, você verá uma descrição das diferenças dos recursos entre o Microsoft Cloud App Security para US Government GCC High e a oferta comercial.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/30/2020
 ms.topic: overview
-ms.prod: ''
-ms.service: cloud-app-security
-ms.collection: M365-security-compliance
-ms.suite: ems
-ms.openlocfilehash: a44d00c0d259cf2547b486727f805bdc31f9fb16
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 5221b655e429e450f2fc2c44e70819f38e42496c
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877561"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311359"
 ---
 # <a name="microsoft-cloud-app-security-for-us-government-gcc-high"></a>Microsoft Cloud App Security para US Government GCC High
 

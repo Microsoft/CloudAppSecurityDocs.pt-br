@@ -1,24 +1,14 @@
 ---
 title: Descobrir e gerenciar a TI Sombra
 description: Este tutorial descreve o processo para aplicar automaticamente rótulos de classificação da proteção de informações do Azure no Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/29/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: dannyk
-ms.suite: ems
-ms.openlocfilehash: 76c94d5c3fa99b2135aed555f06407241f9900cb
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: d0b4e795aac071cb7583ed4851e2955a609e8d49
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186226"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316952"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar o Shadow IT na sua rede
 
@@ -44,7 +34,7 @@ Use esse processo para distribuir o Cloud Discovery do Shadow IT em sua organiza
 
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>Fase 1: Descobrir e identificar TI sombra
 
-1. **Descubra o Shadow IT** : identifique a postura de segurança de sua organização executando o Cloud Discovery em sua organização para ver o que realmente está acontecendo em sua rede. Para obter mais informações, confira [Configurar o Cloud Discovery](set-up-cloud-discovery.md). Isso pode ser feito usando qualquer um dos seguintes métodos:
+1. **Descubra o Shadow IT**: identifique a postura de segurança de sua organização executando o Cloud Discovery em sua organização para ver o que realmente está acontecendo em sua rede. Para obter mais informações, confira [Configurar o Cloud Discovery](set-up-cloud-discovery.md). Isso pode ser feito usando qualquer um dos seguintes métodos:
 
     * Coloque o Cloud Discovery em execução rapidamente integrando-o ao [Microsoft Defender ATP](mde-integration.md). Essa integração nativa permite que você inicie imediatamente a coleta de dados no tráfego de nuvem em seus dispositivos Windows 10 na rede e fora dela.
 
@@ -56,42 +46,42 @@ Como as políticas são diferentes entre grupos de usuários, regiões e grupos 
 
 Agora que o Cloud Discovery está em execução na sua rede, examine os relatórios contínuos que são gerados e o [painel do Cloud Discovery](working-with-cloud-discovery-data.md) para obter uma visão completa de quais aplicativos estão sendo usados em sua organização. É uma boa ideia vê-los por categoria, porque você geralmente descobrirá que aplicativos não sancionados estão sendo usados para fins legítimos relacionados ao trabalho que não foram atendidos por um aplicativo sancionado.
 
-1. **Identifique os níveis de risco de seus aplicativos** : use o catálogo de aplicativos de nuvem do Cloud App Security para aprofundar-se nos riscos envolvidos em cada aplicativo descoberto. O catálogo de risco do Cloud App Security inclui mais de 16 mil aplicativos que são avaliados usando mais de 80 fatores de risco. os fatores de risco começam com informações gerais sobre o aplicativo (em que local é a sede do aplicativo, quem é o editor) e, por meio de controles e medidas de segurança (suporte para criptografia em repouso), fornece um log de auditoria da atividade do usuário. Para saber mais, confira [Como trabalhar com pontuação de risco](risk-score.md).
+1. **Identifique os níveis de risco de seus aplicativos**: use o catálogo de aplicativos de nuvem do Cloud App Security para aprofundar-se nos riscos envolvidos em cada aplicativo descoberto. O catálogo de risco do Cloud App Security inclui mais de 16 mil aplicativos que são avaliados usando mais de 80 fatores de risco. os fatores de risco começam com informações gerais sobre o aplicativo (em que local é a sede do aplicativo, quem é o editor) e, por meio de controles e medidas de segurança (suporte para criptografia em repouso), fornece um log de auditoria da atividade do usuário. Para saber mais, confira [Como trabalhar com pontuação de risco](risk-score.md).
 
-    * No portal do Cloud App Security, em **Descobrir** , clique em **Aplicativos descobertos**. Filtre a lista de aplicativos descobertos na organização pelos fatores de risco com os quais você está preocupado. Por exemplo, você pode usar os filtros Avançados para localizar todos os aplicativos com uma pontuação de risco inferior a 8.
+    * No portal do Cloud App Security, em **Descobrir**, clique em **Aplicativos descobertos**. Filtre a lista de aplicativos descobertos na organização pelos fatores de risco com os quais você está preocupado. Por exemplo, você pode usar os filtros Avançados para localizar todos os aplicativos com uma pontuação de risco inferior a 8.
 
     * Para fazer drill down no aplicativo a fim de entender mais sobre a conformidade, clique no nome do aplicativo e, em seguida, clique na guia **Informações** para ver detalhes sobre os fatores de risco de segurança do aplicativo.
 
 ### <a name="phase-2-evaluate-and-analyze"></a>Fase 2: Avaliar e analisar
 
-1. **Avaliar a conformidade** : verifique se os aplicativos são certificados como em conformidade com os padrões da sua organização, como HIPAA, SOC2 e GDPR.
+1. **Avaliar a conformidade**: verifique se os aplicativos são certificados como em conformidade com os padrões da sua organização, como HIPAA, SOC2 e GDPR.
 
-    * No portal do Cloud App Security, em **Descobrir** , clique em **Aplicativos descobertos**. Filtre a lista de aplicativos descobertos na organização pelos fatores de risco de conformidade com os quais você está preocupado. Por exemplo, use a consulta sugerida para filtrar aplicativos que não estão sem conformidade.
+    * No portal do Cloud App Security, em **Descobrir**, clique em **Aplicativos descobertos**. Filtre a lista de aplicativos descobertos na organização pelos fatores de risco de conformidade com os quais você está preocupado. Por exemplo, use a consulta sugerida para filtrar aplicativos que não estão sem conformidade.
 
     * Para fazer drill down no aplicativo a fim de entender mais sobre a conformidade, clique no nome do aplicativo e, em seguida, clique na guia **Informações** para ver detalhes sobre os fatores de risco de conformidade do aplicativo.
 
     > [!TIP]
     > Seja notificado quando um aplicativo descoberto estiver associado a uma violação de segurança publicada recentemente usando o alerta interno **Violação de segurança de aplicativo descoberto**. Investigue todos os usuários, endereços IP e dispositivos que acessaram o aplicativo com violação nos últimos 90 dias e aplique os controles relevantes.
 
-1. **Analisar o uso** : agora que você sabe se deseja ou não que o aplicativo seja usado na sua organização, você quer investigar como e quem o está usando. Se ele for usado apenas de uma maneira limitada em sua organização, talvez esteja tudo bem. Porém, se o uso estiver aumentando, você deseja ser notificado sobre ele para que possa decidir se deve bloquear o aplicativo.
+1. **Analisar o uso**: agora que você sabe se deseja ou não que o aplicativo seja usado na sua organização, você quer investigar como e quem o está usando. Se ele for usado apenas de uma maneira limitada em sua organização, talvez esteja tudo bem. Porém, se o uso estiver aumentando, você deseja ser notificado sobre ele para que possa decidir se deve bloquear o aplicativo.
 
-    * No portal do Cloud App Security, em **Descobrir** , clique em **Aplicativos descobertos** e faça uma busca detalhada clicando no aplicativo específico que você deseja investigar. A guia **Usar** permite que você saiba quantos usuários ativos estão usando o aplicativo e a quantidade de tráfego que ele está gerando. Isso já pode dar uma visão muito boa do que está acontecendo com o aplicativo. Em seguida, se você quiser ver quem, especificamente, está usando o aplicativo, poderá fazer uma busca mais detalhada clicando em **Total de usuários ativos**. Essa etapa importante pode fornecer informações pertinentes. Por exemplo, se você descobrir que todos os usuários de um aplicativo específico são do departamento de marketing, talvez haja uma necessidade comercial para esse aplicativo e, se ele for arriscado, você deverá conversar com os funcionários sobre um alternativa antes de bloqueá-lo.
+    * No portal do Cloud App Security, em **Descobrir**, clique em **Aplicativos descobertos** e faça uma busca detalhada clicando no aplicativo específico que você deseja investigar. A guia **Usar** permite que você saiba quantos usuários ativos estão usando o aplicativo e a quantidade de tráfego que ele está gerando. Isso já pode dar uma visão muito boa do que está acontecendo com o aplicativo. Em seguida, se você quiser ver quem, especificamente, está usando o aplicativo, poderá fazer uma busca mais detalhada clicando em **Total de usuários ativos**. Essa etapa importante pode fornecer informações pertinentes. Por exemplo, se você descobrir que todos os usuários de um aplicativo específico são do departamento de marketing, talvez haja uma necessidade comercial para esse aplicativo e, se ele for arriscado, você deverá conversar com os funcionários sobre um alternativa antes de bloqueá-lo.
 
     * Aprofunde-se ainda mais investigando o uso de aplicativos descobertos. Exiba os subdomínios e recursos para saber mais sobre atividades específicas, acesso a dados e uso de recursos em seus serviços de nuvem. Para obter mais informações, confira [Ver mais sobre aplicativos descobertos](discovered-apps.md#deep-dive-into-discovered-apps) e [Descobrir recursos e aplicativos personalizados](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. **Identificar aplicativos alternativos** : Use o catálogo de aplicativos na nuvem para identificar os aplicativos mais seguros com funcionalidades empresariais semelhantes aos dos aplicativos suspeitos detectados, mas que estão em conformidade com a política da sua organização. Faça isso usando os filtros avançados para encontrar os aplicativos na mesma categoria e que estão de acordo com seus diferentes controles de segurança.
+1. **Identificar aplicativos alternativos**: Use o catálogo de aplicativos na nuvem para identificar os aplicativos mais seguros com funcionalidades empresariais semelhantes aos dos aplicativos suspeitos detectados, mas que estão em conformidade com a política da sua organização. Faça isso usando os filtros avançados para encontrar os aplicativos na mesma categoria e que estão de acordo com seus diferentes controles de segurança.
 
 ### <a name="phase-3-manage-your-apps"></a>Fase 3: Gerenciar seus aplicativos
 
-* **Gerenciar aplicativos de nuvem** : o Cloud App Security ajuda no processo de gerenciamento do uso do aplicativo em sua organização. Depois de identificar os diferentes padrões e comportamentos usados em sua organização, você pode criar marcas de aplicativo personalizadas para classificar cada aplicativo de acordo com o status ou justificativa comercial. Essas tags então podem ser usadas para fins de monitoramento específicos, por exemplo, identificar o alto tráfego que está indo para os aplicativos marcados como aplicativos de armazenamento em nuvem arriscados. As marcas de aplicativo podem ser gerenciadas em **Configurações do Cloud Discovery** > **Marcas de aplicativo**. Essas marcas podem ser usadas posteriormente para filtrar nas páginas do Cloud Discovery e criar políticas usando-as.
+* **Gerenciar aplicativos de nuvem**: o Cloud App Security ajuda no processo de gerenciamento do uso do aplicativo em sua organização. Depois de identificar os diferentes padrões e comportamentos usados em sua organização, você pode criar marcas de aplicativo personalizadas para classificar cada aplicativo de acordo com o status ou justificativa comercial. Essas tags então podem ser usadas para fins de monitoramento específicos, por exemplo, identificar o alto tráfego que está indo para os aplicativos marcados como aplicativos de armazenamento em nuvem arriscados. As marcas de aplicativo podem ser gerenciadas em **Configurações do Cloud Discovery** > **Marcas de aplicativo**. Essas marcas podem ser usadas posteriormente para filtrar nas páginas do Cloud Discovery e criar políticas usando-as.
 
 * **Gerencie aplicativos descobertos usando a galeria do Azure AD (Azure Active Directory)** <a name ="gallery-apps"></a>: O Cloud App Security também aproveita sua integração nativa com o Azure AD para permitir que você gerencie seus aplicativos descobertos na galeria do Azure AD. Para aplicativos que já aparecem nessa galeria, você pode aplicar o logon único e gerenciar o aplicativo com o Azure AD. Para fazer isso, na linha em que o aplicativo relevante é exibido, escolha os três pontos no final da linha e, em seguida, escolha **Gerenciar aplicativo com o Azure AD**.
 
     ![gerenciar aplicativo na galeria do azure ad](media/manage-app-in-azure-ad-gallery.png)
 
-* **Monitoramento contínuo** : agora que você investigou minuciosamente os aplicativos, talvez queira definir políticas que os monitorem e forneçam controle quando necessário.
+* **Monitoramento contínuo**: agora que você investigou minuciosamente os aplicativos, talvez queira definir políticas que os monitorem e forneçam controle quando necessário.
 
-Agora é hora de criar políticas para que você possa ser alertado automaticamente quando acontecer algo com que você esteja preocupado. Por exemplo, talvez você queira criar uma **Política de descoberta de aplicativo** que lhe permita saber quando há um pico nos downloads ou no tráfego de um aplicativo com o qual você esteja preocupado. Para fazer isso, você deve habilitar a **Política de comportamentos anormais em usuários descobertos** , a **Verificação de conformidade de aplicativo de armazenamento em nuvem** e **Novo aplicativo com risco**. Você também deve definir a política para ser notificado por email ou mensagem de texto. Para obter mais informações, confira [referência de modelo de política](policy-template-reference.md), saiba mais sobre as [Políticas do Cloud Discovery](cloud-discovery-policies.md) e configure [Políticas de descoberta de aplicativos](cloud-discovery-policies.md).
+Agora é hora de criar políticas para que você possa ser alertado automaticamente quando acontecer algo com que você esteja preocupado. Por exemplo, talvez você queira criar uma **Política de descoberta de aplicativo** que lhe permita saber quando há um pico nos downloads ou no tráfego de um aplicativo com o qual você esteja preocupado. Para fazer isso, você deve habilitar a **Política de comportamentos anormais em usuários descobertos**, a **Verificação de conformidade de aplicativo de armazenamento em nuvem** e **Novo aplicativo com risco**. Você também deve definir a política para ser notificado por email ou mensagem de texto. Para obter mais informações, confira [referência de modelo de política](policy-template-reference.md), saiba mais sobre as [Políticas do Cloud Discovery](cloud-discovery-policies.md) e configure [Políticas de descoberta de aplicativos](cloud-discovery-policies.md).
 
 Veja a página alertas e use o filtro **Tipo de política** para examinar os alertas de descoberta de aplicativos. Para aplicativos que corresponderam às políticas de descoberta de aplicativo, é recomendado que você faça uma investigação avançada para saber mais sobre a justificativa comercial do uso do aplicativo, por exemplo, você pode entrar em contato com os usuários dele. Em seguida, repita as etapas na Fase 2 para avaliar o risco do aplicativo. Em seguida, determine as próximas etapas para o aplicativo, se você aprova o uso dele no futuro ou deseja bloqueá-lo na próxima vez que um usuário o acessar, caso em que você deve marcá-lo como não sancionado para que ele possa ser bloqueado usando seu firewall, proxy ou gateway Web seguro. Para obter mais informações, confira [Integrar com o Microsoft Defender ATP](mde-integration.md#block-access-to-unsanctioned-cloud-apps), [Integrar com o Zscaler](zscaler-integration.md), [Integrar com o iboss](iboss-integration.md) e [Exportar um script de bloqueio para controlar os aplicativos descobertos](governance-discovery.md#export-a-block-script-to-govern-discovered-apps).
 
