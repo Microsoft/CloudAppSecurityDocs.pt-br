@@ -3,12 +3,12 @@ title: Configurar o upload automático de logs usando o Docker no Azure
 description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Linux no Azure.
 ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: a8f82a550e7ea203b3144f995d3df33446a533c2
-ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
+ms.openlocfilehash: 6c4f7243758dce46e5469d503ec572a18a7a2afe
+ms.sourcegitcommit: 53e485ed8460f1123b3b55277fa5991b427b5302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509988"
+ms.locfileid: "96512943"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker no Linux no Azure
 
@@ -124,13 +124,85 @@ O coletor de logs pode manipular com êxito a capacidade de log de até 50 GB po
 
 1. Altere para privilégios de raiz usando `sudo -i`.
 
-1. Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
+1. Se você aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando os comandos apropriados para o seu ambiente:
+
+#### <a name="centos"></a>[CentOS](#tab/centos)
+
+1. Remova versões antigas do Docker: `yum erase docker docker-engine docker.io`
+1. Instale os pré-requisitos do mecanismo do Docker: `yum install -y yum-utils`
+1. Adicionar repositório do Docker:
 
     ```bash
-    curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
     ```
 
-    ![Comando do Azure no Ubuntu](media/ubuntu-azure-command.png)
+1. Instalar o mecanismo do Docker: `yum -y install docker-ce`
+1. Iniciar o Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Testar a instalação do Docker: `docker run hello-world`
+
+#### <a name="red-hat"></a>[Red Hat](#tab/red-hat)
+
+1. Remova versões antigas do Docker: `yum erase docker docker-engine docker.io`
+1. Instale os pré-requisitos do mecanismo do Docker:
+
+    ```bash
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    ```
+
+1. Adicionar repositório do Docker:
+
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
+
+1. Instalar o mecanismo do Docker: `yum -y install docker-ce`
+1. Iniciar o Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Testar a instalação do Docker: `docker run hello-world`
+
+#### <a name="ubuntu"></a>[Ubuntu](#tab/ubuntu)
+
+1. Remova versões antigas do Docker: `apt-get remove docker docker-engine docker.io`
+1. Se você estiver instalando no Ubuntu 14, 4, instale o pacote linux-image-extra.
+
+    ```bash
+    apt-get update -y
+    apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+    ```
+
+1. Instale os pré-requisitos do mecanismo do Docker:
+
+    ```bash
+    apt-get update -y
+    (apt-get install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - )
+    ```
+
+1. Verifique se a UID de impressão digital da chave de apt é docker@docker.com:`apt-key fingerprint | grep uid`
+1. Instalar o mecanismo do Docker:
+
+    ```bash
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt-get update -y
+    apt-get install -y docker-ce
+    ```
+
+1. Testar a instalação do Docker: `docker run hello-world`
+
+---
 
 1. No portal do Cloud App Security, na janela **Criar novo coletor de log**, copie o comando para importar a configuração do coletor no computador de hospedagem:
 

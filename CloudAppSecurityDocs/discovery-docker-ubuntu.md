@@ -3,12 +3,12 @@ title: Configurar o upload de log automático usando o Docker local
 description: Este artigo descreve o processo de configuração do carregamento de log automático para relatórios contínuos no Cloud App Security usando um Docker no Linux em um servidor local.
 ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 311839a4af2ba1c445253a094d07bdaf47cb8700
-ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
+ms.openlocfilehash: 710afdc9c50ece74d9040b76e8a55d36651df0fd
+ms.sourcegitcommit: 53e485ed8460f1123b3b55277fa5991b427b5302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509971"
+ms.locfileid: "96512926"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker no Linux local
 
@@ -114,18 +114,87 @@ As etapas a seguir descrevem a implantação no Ubuntu.
     export https_proxy='<IP>:<PORT>'
     ```
 
-1. Se aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando o seguinte comando:
+1. Se você aceitar os [termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale as versões antigas e instale o Docker CE executando os comandos apropriados para o seu ambiente:
+
+#### <a name="centos"></a>[CentOS](#tab/centos)
+
+1. Remova versões antigas do Docker: `yum erase docker docker-engine docker.io`
+1. Instale os pré-requisitos do mecanismo do Docker: `yum install -y yum-utils`
+1. Adicionar repositório do Docker:
 
     ```bash
-    curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
     ```
 
-    > [!NOTE]
-    > Se esse comando não conseguir validar seu certificado de proxy, execute o comando usando `curl -k` no início.
+1. Instalar o mecanismo do Docker: `yum -y install docker-ce`
+1. Iniciar o Docker
 
-    ![Comando para instalar o Docker](media/ubuntu5.png)
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
 
-1. Implante a imagem do coletor no computador de hospedagem importando a configuração do coletor. Importe a configuração copiando o comando de execução gerado no portal. Caso precise configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:
+1. Testar a instalação do Docker: `docker run hello-world`
+
+#### <a name="red-hat"></a>[Red Hat](#tab/red-hat)
+
+1. Remova versões antigas do Docker: `yum erase docker docker-engine docker.io`
+1. Instale os pré-requisitos do mecanismo do Docker:
+
+    ```bash
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    ```
+
+1. Adicionar repositório do Docker:
+
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
+
+1. Instalar o mecanismo do Docker: `yum -y install docker-ce`
+1. Iniciar o Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Testar a instalação do Docker: `docker run hello-world`
+
+#### <a name="ubuntu"></a>[Ubuntu](#tab/ubuntu)
+
+1. Remova versões antigas do Docker: `apt-get remove docker docker-engine docker.io`
+1. Se você estiver instalando no Ubuntu 14, 4, instale o pacote linux-image-extra.
+
+    ```bash
+    apt-get update -y
+    apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+    ```
+
+1. Instale os pré-requisitos do mecanismo do Docker:
+
+    ```bash
+    apt-get update -y
+    (apt-get install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - )
+    ```
+
+1. Verifique se a UID de impressão digital da chave de apt é docker@docker.com:`apt-key fingerprint | grep uid`
+1. Instalar o mecanismo do Docker:
+
+    ```bash
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt-get update -y
+    apt-get install -y docker-ce
+    ```
+
+1. Testar a instalação do Docker: `docker run hello-world`
+
+---
+
+5. Implante a imagem do coletor no computador de hospedagem importando a configuração do coletor. Importe a configuração copiando o comando de execução gerado no portal. Caso precise configurar um proxy, adicione o endereço IP do proxy e o número da porta. Por exemplo, se os detalhes de proxy são 192.168.10.1:8080, seu comando de execução atualizado é:
 
     ```bash
     (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
