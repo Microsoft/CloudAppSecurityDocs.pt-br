@@ -1,25 +1,14 @@
 ---
 title: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
 description: Este tutorial descreve como aplicar automaticamente rótulos de classificação da proteção de informações do Azure no Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 3/5/2019
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 33078d72d6bbcb5430f207a029c3352d776958ba
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 997de343a151ccfc5e91f0935b63229a1afb389c
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881125"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315745"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure
 
@@ -46,7 +35,7 @@ Um usuário da sua organização salva os arquivos confidenciais de informaçõe
 
 ## <a name="the-solution"></a>A solução
 
-Use o Cloud App Security com a Proteção de Informações do Azure para inserir informações de classificação e proteção para uma proteção contínua que segue seus dados, fazendo com que eles permaneçam protegidos, independentemente de onde estejam armazenados ou com quem sejam compartilhados. Essa proteção permite que você compartilhe dados de modo seguro com colegas de trabalho, clientes e parceiros. Defina quem pode acessar os dados e o que eles podem fazer com eles. Por exemplo, você pode permitir que os usuários exibam e editem arquivos, mas não que os imprimam ou os encaminhem. Você também pode adicionar outras [ações de governança](governance-actions.md) com suporte do Cloud App Security aos arquivos, como remover colaboradores e remover recursos de compartilhamento.
+Use o Cloud App Security com a Proteção de Informações do Azure para inserir informações de proteção e de classificação para ter uma proteção contínua que segue seus dados, fazendo com que eles permaneçam seguros, independentemente de onde estejam armazenados ou com quem sejam compartilhados. Essa proteção permite que você compartilhe dados de modo seguro com colegas de trabalho, clientes e parceiros. Defina quem pode acessar os dados e o que eles podem fazer com eles. Por exemplo, você pode permitir que os usuários exibam e editem arquivos, mas não que os imprimam ou os encaminhem. Você também pode adicionar outras [ações de governança](governance-actions.md) com suporte do Cloud App Security aos arquivos, como remover colaboradores e remover recursos de compartilhamento.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

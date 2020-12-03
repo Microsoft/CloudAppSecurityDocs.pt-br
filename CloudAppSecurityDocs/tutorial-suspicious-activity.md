@@ -1,24 +1,14 @@
 ---
 title: Detectar atividade de usuário suspeita com análise comportamental (UEBA)
 description: Este tutorial descreve o processo de ajuste das detecções de atividade do usuário no Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/10/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: galz
-ms.suite: ems
-ms.openlocfilehash: bdf58b83e01dc6ab088d3956f2a71ef52f368438
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: b8b971af09a2ae245999ddcae5f503912aec4d9f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881179"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315779"
 ---
 # <a name="tutorial-detect-suspicious-user-activity-with-ueba"></a>Tutorial: detectar atividade de usuário suspeita com UEBA
 
@@ -93,7 +83,7 @@ Detecta várias atividades administrativas em uma única sessão em relação à
 
 Para obter uma lista completa de detecções e o que elas fazem, confira [Políticas de detecção de anomalias](anomaly-detection-policy.md#anomaly-detection-policies).
 
-Quando estiver familiarizado com as políticas, você deve considerar como deseja ajustá-las aos requisitos específicos da sua organização para direcionar melhor as atividades que você queira investigar ainda mais.
+Quando estiver familiarizado com as políticas, você deverá considerar como deseja ajustá-las aos requisitos específicos de sua organização para direcionar melhor as atividades que deseje investigar ainda mais.
 
 1. **Políticas de escopo para usuários ou grupos específicos**
 
@@ -110,7 +100,7 @@ Quando estiver familiarizado com as políticas, você deve considerar como desej
 
     O roubo de identidade é uma das principais fontes de comprometimento e representa um grande vetor de ameaça para sua organização. Nossos alertas de detecções de [viagem impossível](anomaly-detection-policy.md#impossible-travel), [endereços IP anônimos](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses) e [país não frequente](anomaly-detection-policy.md#activity-from-infrequent-country) ajudam a descobrir atividades que sugerem que uma conta está potencialmente comprometida. Convém personalizar essas políticas para se concentrarem apenas nas entradas bem-sucedidas que indicam uma ameaça iminente acionável e tomar medidas quanto a elas com rapidez. Por exemplo, você pode personalizar a política de país não frequente para alertar apenas sobre as entradas bem-sucedidas de locais que não foram visitados recentemente por nenhum usuário em sua organização. Para isso, [edite a política](anomaly-detection-policy.md#tune-anomaly-detection-policies) e, em Configuração avançada, defina Analisar as atividades de entrada para uma das opções de entrada bem-sucedidas.
 
-3. **Ajuste a sensibilidade de [viagem impossível](anomaly-detection-policy.md#impossible-travel)** [Configure o controle deslizante de sensibilidade](anomaly-detection-policy.md#tune-anomaly-detection-policies) que determina o nível de supressões aplicado ao comportamento anormal antes de disparar um alerta de viagem impossível. Por exemplo, as organizações interessadas em alta fidelidade devem considerar o aumento do nível de sensibilidade. Por outro lado, se sua organização tiver muitos usuários que viajam, considere reduzir o nível de sensibilidade para suprimir as atividades dos locais comuns de um usuário aprendidos com as atividades anteriores. Você pode escolher entre os seguintes níveis de sensibilidade:
+3. **Ajuste a sensibilidade de [viagem impossível](anomaly-detection-policy.md#impossible-travel)** [Configure o controle deslizante de sensibilidade](anomaly-detection-policy.md#tune-anomaly-detection-policies) que determina o nível de supressões aplicado ao comportamento anormal antes de disparar um alerta de viagem impossível. Por exemplo, as organizações interessadas em alta fidelidade devem considerar o aumento do nível de sensibilidade. Por outro lado, caso sua organização tenha muitos usuários que viajam, considere reduzir o nível de sensibilidade para suprimir as atividades dos locais comuns de um usuário aprendidos com as atividades anteriores. Você pode escolher entre os seguintes níveis de sensibilidade:
 
     * **Baixa**: supressões de sistema, locatário e usuário
     * **Média**: supressões de sistema e usuário
@@ -162,7 +152,7 @@ Escolha a preferência de entrega para receber alertas. Você pode recebê-los p
 2. **SIEM**  
 Há várias opções de integração do SIEM, incluindo o [Azure Sentinel](siem-sentinel.md), a [API de Segurança do Microsoft Graph](/graph/security-integration#list-of-connectors-from-microsoft) e outros [SIEMs genéricos](siem.md). Escolha a integração que melhor atende às suas necessidades.
 3. **Automação do Power Automate**  
-Crie os guias estratégicos de automação que você precisa e defina-os como o alerta da política para a ação do Power Automate.
+Crie os guias estratégicos de automação de que você precisa e defina-os como o alerta da política para a ação do Power Automate.
 
 ## <a name="phase-6-investigate-and-remediate"></a>Fase 6: investigar e corrigir
 

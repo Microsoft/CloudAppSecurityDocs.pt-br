@@ -1,18 +1,14 @@
 ---
 title: Proteger em tempo real qualquer aplicativo usado em sua organização
 description: Este tutorial fornece instruções para usar controles de acesso e de sessão para monitorar e controlar o acesso a aplicativos e seus dados.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: tutorial
 ms.date: 01/01/2020
-ms.collection: M365-security-compliance
-ms.openlocfilehash: bb0ae32a16d9ea9a8f36a0bd0ae0405b1d28b273
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: tutorial
+ms.openlocfilehash: 4024c0f0a3e06c028d5cdb6995137c7fadd6adf8
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881200"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315796"
 ---
 # <a name="tutorial-protect-any-apps-in-use-in-your-organization-in-real-time"></a>Tutorial: Proteger em tempo real qualquer aplicativo usado em sua organização
 
