@@ -3,12 +3,12 @@ title: Conectar aplicativos para obter visibilidade e controle
 description: Este artigo descreve o processo para conexão de aplicativos com conectores de API aos aplicativos na nuvem de sua organização.
 ms.date: 07/14/2020
 ms.topic: how-to
-ms.openlocfilehash: 3b6733e0addabf8db1064ff8b5f4e20a8eb76c93
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 3750fe01f774dd81ada1ebdb6b60c6bf6dfbb370
+ms.sourcegitcommit: 1bea874c7531c1926b6e46b96eac00ceeeeb69f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314930"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96749813"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -101,7 +101,7 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 
 ### <a name="expressroute"></a>ExpressRoute
 
-O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do **emparelhamento público** do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
+O Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
 Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](/azure/expressroute/expressroute-circuit-peerings).
 
 ## <a name="disable-app-connectors"></a>Desabilitar conectores de aplicativos

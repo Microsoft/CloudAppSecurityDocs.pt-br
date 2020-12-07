@@ -3,12 +3,12 @@ title: Defina as configurações da sua organização no Cloud App Security
 description: Este artigo explica como fornecer informações sobre sua organização no Cloud App Security.
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.openlocfilehash: d070b45db464c5789446dc87c4216b1e4e3370c8
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: e46b7c651d67fbd655d548f9d77228c29794ab74
+ms.sourcegitcommit: 1bea874c7531c1926b6e46b96eac00ceeeeb69f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314895"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96749812"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuração básica do Cloud App Security
 
@@ -55,7 +55,7 @@ Para clientes de GCC do governo dos EUA, também é necessário adicionar os seg
 1. Se a qualquer momento você desejar fazer o backup das suas configurações do portal, essa tela permitirá que você faça isso. Clique em **exportar configurações do portal** para criar um arquivo JSON de todas as configurações do portal, incluindo regras de política, grupos de usuários e intervalos de endereços IP.
 
 > [!NOTE]
-> Se você usa o ExpressRoute, o Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do **emparelhamento público** do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
+> Se você usa o ExpressRoute, o Cloud App Security é implantado no Azure e totalmente integrado com o [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas as interações com os aplicativos Cloud App Security e o tráfego enviados para Cloud App Security, incluindo o carregamento de logs de descoberta, são roteadas por meio do ExpressRoute para melhorar a latência, o desempenho e a segurança. Não há nenhuma etapa de configuração necessária do lado do cliente.
 >
 > Para obter mais informações sobre o emparelhamento público, consulte [Circuitos da Rota Expressa e domínios de roteamento](/azure/expressroute/expressroute-circuit-peerings).
 
