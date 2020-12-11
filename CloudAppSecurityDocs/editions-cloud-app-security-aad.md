@@ -1,14 +1,14 @@
 ---
 title: Diferenças de capacidade de descoberta do Cloud App Security e Azure AD
 description: Esse artigo descreve as diferenças entre os recursos de descoberta no Microsoft Cloud App Security e no Azure AD.
-ms.date: 8/29/2019
+ms.date: 12/03/2020
 ms.topic: overview
-ms.openlocfilehash: 4a5374294407d1b3011f4b7fcd4edca1254e0532
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: c66173dc28d0e0f9d349327583afa30a328912db
+ms.sourcegitcommit: 4177401f2f7948f230a6cb1f7af8ceeceb844fad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311478"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544693"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Quais são as diferenças nos recursos de descoberta para Azure Active Directory e Microsoft Cloud App Security?
 
@@ -33,7 +33,7 @@ A tabela a seguir é uma comparação dos recursos de descoberta no Microsoft Cl
 |Funcionalidade|Recurso|Microsoft Cloud App Security|Cloud App Discovery do Azure AD|
 |----|----|----|----|
 |Cloud Discovery|Aplicativos Descobertos|Mais de 16.000 aplicativos na nuvem|Mais de 16.000 aplicativos na nuvem|
-||Implantação para a análise de descoberta|Upload manual e automático de log|Upload manual e automático de log|
+||Implantação para a análise de descoberta|Upload manual e automático de log|Upload de log manual e automático. [Saiba mais sobre como configurar o Cloud Discovery](set-up-cloud-discovery.md)|
 ||Anonimização de log para a privacidade do usuário|Sim|Sim|
 ||Acesso ao catálogo completo de aplicativos de nuvem|Sim|Sim|
 ||Avaliação de risco dos aplicativos na nuvem|Sim|Sim|
