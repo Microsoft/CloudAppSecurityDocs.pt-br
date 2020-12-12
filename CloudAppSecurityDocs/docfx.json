@@ -40,9 +40,14 @@
         "MTE95",
         "Blank"
       ],
-      "searchScope": [
-        "Cloud App Security"
-      ]
+      "searchScope": ["Cloud App Security"],
+
+      "author": "shsagir",
+      "manager": "shsagir",
+      "ms.author": "shsagir",
+      "ms.collection": "M365-security-compliance",
+      "ms.service": "cloud-app-security",
+      "ms.suite": "ems"
     },
     "fileMetadata": {},
     "template": [],
