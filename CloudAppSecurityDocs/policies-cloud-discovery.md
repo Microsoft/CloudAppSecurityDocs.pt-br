@@ -3,12 +3,12 @@ title: Políticas do Cloud Discovery
 description: Este artigo descreve as etapas para configurar muitas políticas de Cloud Discovery no Cloud App Security.
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.openlocfilehash: 5d96558ff1da3c42cd4acff559ca0ec6d7cd65a7
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 1cdaec33791e601bc47108c88320c67ab42dad82
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96310951"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369883"
 ---
 # <a name="cloud-discovery-policies"></a>Políticas do Cloud Discovery
 
@@ -128,26 +128,26 @@ Configure o upload de log automático para relatórios Cloud Discovery contínuo
 
 ## <a name="detect-risky-oauth-apps"></a>Detectar aplicativos OAuth arriscados
 
-Obtenha visibilidade e controle sobre os [aplicativos OAuth](investigate-risky-oauth.md) instalados dentro de aplicativos como G Suite, Office 365 e Salesforce. Os aplicativos OAuth que solicitam permissões altas e têm um uso raro da Comunidade podem ser considerados arriscados.
+Obtenha visibilidade e controle sobre os [aplicativos OAuth](investigate-risky-oauth.md) que são instalados em aplicativos como Google Workspace, Office 365 e Salesforce. Os aplicativos OAuth que solicitam permissões altas e têm um uso raro da Comunidade podem ser considerados arriscados.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Você deve ter o G Suite, o Office 365 ou o aplicativo Salesforce conectado usando os [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+Você deve ter o aplicativo do Google Workspace, Office 365 ou Salesforce conectado usando os [conectores de aplicativos](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Etapas
 
 1. Na página **políticas** , crie uma nova **política de aplicativo OAuth**.
 
-2. Selecione o **aplicativo** de filtro e defina o aplicativo que a política deve abranger, G Suite, Office 365 ou Salesforce.
+2. Selecione o **aplicativo** de filtro e defina o aplicativo que a política deve abranger, Google Workspace, Office 365 ou Salesforce.
 
-3. Selecione filtro de **nível de permissão** é igual a **alto** (disponível para o G Suite e o Office 365).
+3. Selecione filtro de **nível de permissão** é igual a **alto** (disponível para o Google Workspace e o Office 365).
 
 4. Adicionar o filtro **uso da Comunidade** é igual a **raro**.
 
 5. Configure as ações a serem tomadas quando um alerta for disparado. Por exemplo, para o Office 365, marque **revogar aplicativo** para aplicativos OAuth detectados pela política.
 
 > [!NOTE]
-> Com suporte para o G Suite, o Office 365 e as lojas de aplicativos do Salesforce.
+> Com suporte para repositórios de aplicativos do Google Workspace, Office 365 e Salesforce.
 
 ## <a name="next-steps"></a>Próximas etapas
 

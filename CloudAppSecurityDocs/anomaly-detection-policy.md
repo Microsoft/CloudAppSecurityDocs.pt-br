@@ -1,14 +1,25 @@
 ---
 title: Criar políticas de detecção de anomalias no Cloud App Security
 description: Este artigo fornece uma descrição das Políticas de detecção de anomalias, bem como informações de referência sobre os blocos de construção de uma política de detecção de anomalias.
+keywords: ''
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.openlocfilehash: 6cddeb16149a61aa1099d4fe74c3423dbd45042f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.collection: M365-security-compliance
+ms.prod: ''
+ms.service: cloud-app-security
+ms.technology: ''
+ms.reviewer: reutam
+ms.suite: ems
+ms.custom: seodec18
+ms.openlocfilehash: 43490c416d1d19882321343c18e3e4417a6110f4
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314742"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369881"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias
 
@@ -24,7 +35,7 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Falhas de logon
 * Atividade do administrador
 * Contas inativas
-* Location
+* Local
 * Viagem impossível
 * Agente de dispositivo e usuário
 * Taxa de atividade
@@ -69,7 +80,7 @@ As seguintes políticas de detecção de anomalias estão disponíveis:
     >
     > * Box
     > * Dropbox
-    > * G Suite
+    > * Google Workspace
     > * Office 365 (requer uma licença válida para o Microsoft defender para Office 365 P1)
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Atividade de endereços IP anônimos
@@ -179,7 +190,7 @@ Por exemplo, você pode definir a detecção de Atividade de região pouco frequ
 
 Para definir uma política de detecção de anomalias:
 
-1. Clique em políticas de **controle**  >  **Policies** e defina o filtro de **tipo** como **política de detecção de anomalias**.
+1. Clique em políticas de **controle**  >  e defina o filtro de **tipo** como **política de detecção de anomalias**.
 1. Clique na política que você deseja definir.
 1. Em **Escopo**, altere o menu suspenso da configuração padrão de **Todos os usuários e grupos** para **Usuários e grupos específicos**.
 1. Selecione **Incluir** para especificar os usuários e grupos para os quais essa política será aplicada. Qualquer usuário ou grupo não selecionado aqui não será considerado uma ameaça e não gerará um alerta.

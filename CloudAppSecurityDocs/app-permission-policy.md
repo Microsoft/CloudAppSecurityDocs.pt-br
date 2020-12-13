@@ -3,12 +3,12 @@ title: Criar políticas para controlar aplicativos OAuth no Cloud App Security
 description: Este artigo oferece instruções para criar e trabalhar com políticas de permissão de aplicativo no Microsoft Cloud App Security.
 ms.date: 11/27/2019
 ms.topic: how-to
-ms.openlocfilehash: c97fbd615432b2c1579f406bc57427b261124848
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 53b3c8d10bdc11714cffcc4bcd9402ee3a0e0adb
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313824"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369927"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 
@@ -16,7 +16,7 @@ ms.locfileid: "96313824"
 
 Além da [investigação existente dos aplicativos OAuth](manage-app-permissions.md) conectados ao seu ambiente, você pode definir políticas de permissão para obter notificações automatizadas quando um aplicativo OAuth atender a determinados critérios. Por exemplo, você poderá receber um alerta automaticamente quando houver aplicativos que exijam um nível de permissão elevado e que tenham sido autorizados por mais de 50 usuários.
 
-As políticas de aplicativo OAuth permitem que você investigue quais permissões cada aplicativo solicitou e quais usuários as autorizaram para Office 365, G Suite e Salesforce. Você também poderá marcar essas permissões como aprovadas ou banidas. Marcá-las como banidas revogará as permissões de cada aplicativo de cada usuário que as autorizou.
+As políticas de aplicativo OAuth permitem investigar quais permissões cada aplicativo solicitou e quais usuários os autorizam para o Office 365, o Google Workspace e o Salesforce. Você também poderá marcar essas permissões como aprovadas ou banidas. Marcá-las como banidas revogará as permissões de cada aplicativo de cada usuário que as autorizou.
 
 ## <a name="create-a-new-oauth-app-policy"></a>Criar uma nova política de aplicativo OAuth
 

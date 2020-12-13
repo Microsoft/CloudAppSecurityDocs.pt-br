@@ -3,12 +3,12 @@ title: Políticas de proteção de informações
 description: Este tópico descreve as etapas para configurar muitas políticas de proteção de informações no Cloud App Security.
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.openlocfilehash: daa61b471ea37a7f3bb7c9271357ceebc8185936
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: baa218a101742f1c8e6188fd0771df16ce49cebd
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96310730"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370051"
 ---
 # <a name="information-protection-policies"></a>Políticas de proteção de informações
 
@@ -34,7 +34,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 3. Em **método de inspeção**, selecione **serviços de classificação de dados (DCS)** e, em **Selecionar tipo** , selecione o tipo de informações confidenciais que você deseja que os DCS inspecionem.
 
-4. Configure as ações de **governança** a serem tomadas quando um alerta for disparado. Por exemplo, você pode criar uma ação de governança que é executada em violações de arquivo detectadas no G Suite no qual você seleciona a opção para **remover usuários externos** e **remover o acesso público**.
+4. Configure as ações de **governança** a serem tomadas quando um alerta for disparado. Por exemplo, você pode criar uma ação de governança que é executada em violações de arquivo detectadas no Google Workspace, na qual você seleciona a opção para **remover usuários externos** e **remover o acesso público**.
 
 5. Crie a política de arquivo.
 
@@ -81,7 +81,7 @@ Detectar arquivos que contêm informações de identificação pessoal e outros 
 4. Crie a política de arquivo.
 
 > [!NOTE]
-> Atualmente, a capacidade de aplicar um rótulo de classificação diretamente no Cloud App Security só é compatível com o box, o G Suite, o SharePoint Online e o OneDrive for Business.
+> A capacidade de aplicar um rótulo de classificação diretamente no Cloud App Security tem suporte no momento apenas para o box, Google Workspace, SharePoint Online e OneDrive for Business.
 
 ## <a name="detect-stale-externally-shared-data"></a>Detectar dados compartilhados externamente obsoletos
 
@@ -101,7 +101,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 
 4. Opcional: defina as ações de **governança** a serem executadas nos arquivos quando uma violação for detectada. As ações de governança disponíveis variam de acordo com os serviços. Por exemplo:
 
-    - G Suite: tornar o arquivo privado e notificar o último editor de arquivo
+    - Google Workspace: tornar o arquivo privado e notificar o último editor de arquivo
 
     - Box: notificar o último editor de arquivo
 
@@ -239,7 +239,7 @@ Detectar arquivos compartilhados em aplicativos de armazenamento em nuvem e cont
 4. Criar a política de arquivo
 
 > [!NOTE]
-> Atualmente, o **rótulo aplicar classificação** só tem suporte para Box, G Suite, SharePoint Online e onedrive for Business.
+> Atualmente, o **rótulo aplicar classificação** só tem suporte para o box, Google Workspace, SharePoint Online e onedrive for Business.
 
 ## <a name="block-downloads-for-external-users-in-real-time"></a>Bloquear downloads para usuários externos em tempo real
 

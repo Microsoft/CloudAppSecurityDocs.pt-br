@@ -3,12 +3,12 @@ title: Proteger aplicativos em seu ambiente usando APIs do provedor de serviços
 description: Este artigo descreve como Cloud App Security protege seus aplicativos conectados.
 ms.date: 02/20/2020
 ms.topic: conceptual
-ms.openlocfilehash: ac06786b3aa7dbe5fac1c9c3ee9be6a276d3c176
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 4a707a5281179e6f16ef56fec801c667f4b69aeb
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315354"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369983"
 ---
 # <a name="protecting-connected-apps"></a>Protegendo aplicativos conectados
 
@@ -24,7 +24,7 @@ A amplitude do suporte para cada aplicativo depende da riqueza de suas APIs. Use
 - [Proteger o Dropbox](protect-dropbox.md)
 - [Proteger o GitHub Enterprise Cloud](protect-github.md)
 - [Proteger o GCP](protect-gcp.md)
-- [Proteger o G Suite](protect-gsuite.md)
+- [Proteger o Google Workspace](protect-google-workspace.md)
 - [Proteger o Office 365](protect-office-365.md)
 - [Proteger o Okta](protect-okta.md)
 - [Proteger o Salesforce](protect-salesforce.md)

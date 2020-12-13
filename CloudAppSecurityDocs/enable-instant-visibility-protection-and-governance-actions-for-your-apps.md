@@ -3,12 +3,12 @@ title: Conectar aplicativos para obter visibilidade e controle
 description: Este artigo descreve o processo para conexão de aplicativos com conectores de API aos aplicativos na nuvem de sua organização.
 ms.date: 07/14/2020
 ms.topic: how-to
-ms.openlocfilehash: 3750fe01f774dd81ada1ebdb6b60c6bf6dfbb370
-ms.sourcegitcommit: 1bea874c7531c1926b6e46b96eac00ceeeeb69f2
+ms.openlocfilehash: 1bbdf2933bc2495ba397e3d78fb1ca1efcd3ffff
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96749813"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369524"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -55,13 +55,13 @@ Dependendo do aplicativo ao qual você está se conectando, a conexão de API pe
 
 A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com os conectores de aplicativo:
 
-| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+| | AWS | Box | Dropbox | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
-| **Listar contas** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Listar grupos** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
-| **Listar privilégios** | | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **Governança de usuário** | | ✔ | Em breve | Conexão do pacote G do assunto | ✔ | ✔ | | Em breve | ✔ | Em breve | Sem suporte pelo provedor |
-| **Atividade de logon** | ✔ | ✔ | ✔ | Conexão do pacote G do assunto | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Listar contas** | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Listar grupos** | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
+| **Listar privilégios** | | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **Governança de usuário** | | ✔ | Em breve | Entidade de conexão do Google Workspace | ✔ | ✔ | | Em breve | ✔ | Em breve | Sem suporte pelo provedor |
+| **Atividade de logon** | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Atividade do usuário** | Não aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
 | **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
 | **DLP – verificação periódica** | | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
@@ -91,7 +91,7 @@ Para usar Conectores de Aplicativos, você precisa ter certeza de que tem os seg
 | Dropbox | Business/Enterprise | Administrador |
 | GitHub | GitHub Enterprise Cloud | Proprietário |
 | GCP | | Consulte os [pré-requisitos do Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
-| G Suite | G Suite Business ou Enterprise preferencial<br /><br />G Suite Enterprise (no mínimo) | Superadministrador |
+| Google Workspace | Do Google Workspace Business ou Enterprise preferido<br /><br />Google Workspace Enterprise (minimamente) | Superadministrador |
 | Office 365 | | Administrador global |
 | Okta | Enterprise (não de avaliação) | Administrador |
 | Salesforce | | Administrador |

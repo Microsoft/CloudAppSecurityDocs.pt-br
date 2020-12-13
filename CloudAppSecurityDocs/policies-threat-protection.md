@@ -3,12 +3,12 @@ title: Políticas de proteção contra ameaças
 description: Este tópico descreve as etapas para configurar muitas políticas de proteção contra ameaças no Cloud App Security.
 ms.date: 11/08/2020
 ms.topic: conceptual
-ms.openlocfilehash: 0bb2b12a528569a8a444a2273ed34154b996804d
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 9c394fae7ccb76e54a8b188129eaca0c3bff109a
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315320"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369915"
 ---
 # <a name="threat-protection-policies"></a>Políticas de proteção contra ameaças
 
@@ -173,7 +173,7 @@ Você deve ter pelo menos um aplicativo conectado usando os [conectores de aplic
 2. É possível configurar o **escopo** da detecção e personalizar as ações de governança a serem executadas quando um alerta for disparado. Para obter mais informações sobre como Cloud App Security identifica ransomware, consulte [protegendo sua organização contra ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> Isso se aplica ao Office 365, G Suite, Box e dropbox.
+> Isso se aplica ao Office 365, ao Google Workspace, ao box e ao dropbox.
 
 ## <a name="detect-malware-in-the-cloud"></a>Detectar malware na nuvem
 

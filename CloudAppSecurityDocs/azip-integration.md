@@ -3,12 +3,12 @@ title: Integrar a Proteção de Informações do Azure ao Cloud App Security
 description: Este artigo fornece informações sobre como utilizar os rótulos da Proteção de Informações do Azure no Cloud App Security para controle adicional sobre o uso de aplicativos de nuvem da sua organização.
 ms.date: 12/09/2019
 ms.topic: how-to
-ms.openlocfilehash: 864111ba6d1877c24a70f0de83aa66104fb8c1f4
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 32d157877fa71c12c4ea515316b160cbcfe59396
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313705"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369864"
 ---
 # <a name="azure-information-protection-integration"></a>Integração à Proteção de Informações do Azure
 
@@ -44,7 +44,7 @@ Atualmente, o Cloud App Security permite a aplicação de rótulos de classifica
   > [!NOTE]
   > Para PDF, você deve usar rótulos unificados.
 
-Atualmente, este recurso está disponível para arquivos armazenados nas plataformas Box, G Suite, SharePoint Online e OneDrive for Business. Mais aplicativos de nuvem serão compatíveis em versões futuras.
+Esse recurso está disponível no momento para arquivos armazenados no box, Google Workspace, SharePoint Online e OneDrive for Business. Mais aplicativos de nuvem serão compatíveis em versões futuras.
 
 Os arquivos que foram rotulados com proteção fora do Cloud App Security não podem ser alterados pelo Cloud App Security. No entanto, você pode verificar esses arquivos concedendo permissões para [inspecionar o conteúdo de arquivos protegidos](content-inspection.md#content-inspection-for-protected-files).
 

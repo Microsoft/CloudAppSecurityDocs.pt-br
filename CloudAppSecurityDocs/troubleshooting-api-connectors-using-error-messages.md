@@ -3,12 +3,12 @@ title: Solucionar problemas de mensagens de erro do conector do aplicativo
 description: Este artigo apresenta uma lista de mensagens de erro do conector do Aplicativo de API, além das recomendações de resolução para cada uma.
 ms.date: 01/29/2020
 ms.topic: conceptual
-ms.openlocfilehash: c4179f2d384b2fb7ee6eb9e450b07937c8c11160
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: bc15d27ce42d8bd691897d7b0a3eed78b7691d64
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315949"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370136"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
 
@@ -34,9 +34,9 @@ Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do con
 > |BoxServerException: não autorizado – Não é possível autorizar com este serviço|Box|O Administrador do Box excluiu o aplicativo do Cloud App Security no Box.|Siga o processo para conectar o Box ao Cloud App Security novamente.|
 > |HttpRequestFailure: o servidor retornou: 401 não autorizado|Exchange Online|Usuário ou senha incorretos|Verifique se o nome de usuário e a senha estão corretos e siga o processo para conectar o Exchange Online ao Cloud App Security novamente.|
 > |HttpRequestFailure: o servidor retornou: 404 não encontrado|Exchange Online|O usuário que você está usando para fazer logon no Exchange Online não tem uma caixa de correio principal no Exchange Online (por exemplo, um usuário que não existe no Azure AD ou um usuário existe no Azure AD, mas não tem uma licença do Exchange Online).|Siga o processo para conectar o Exchange Online ao Cloud App Security novamente usando uma nova conta de administrador.|
-> |GoogleJsonResponseException: 401 Não autorizado|G Suite|Acesso negado. Você não está autorizado a ler registros de atividade. O usuário de logon no G Suite deve ser um administrador.|Siga o processo para conectar o G Suite ao Cloud App Security novamente usando uma conta de administrador.|
-> |GoogleJsonResponseException: 403 Proibido|G Suite|Problemas durante a execução da API do G Suite.|Se você acabou de implantar o Conector de Aplicativos do Cloud App Security para G Suite, verifique o seguinte: se você clicou em Ilimitado, confira se sua conta do G Suite é realmente ilimitada. Caso contrário, execute o Conector de Aplicativos novamente e desmarque a opção de conta ilimitada. Verifique se os escopos definidos durante a instalação estão corretos. Se você não estiver realizando uma nova implantação e esse erro for exibido, pode ser que você tenha atingido o limite da API para o dia. Os eventos do G Suite serão renovados no dia seguinte.|
-> |TokenResponseException: 400 Solicitação inválida|G Suite|A conexão com o G Suite não foi concluída ou expirou.|Siga o processo para conectar o G Suite ao Cloud App Security novamente.|
+> |GoogleJsonResponseException: 401 Não autorizado|Google Workspace|Acesso negado. Você não está autorizado a ler registros de atividade. O usuário que você faz logon no Google Workspace com deve ser um usuário administrador.|Siga o processo para conectar o Google Workspace para Cloud App Security novamente usando uma conta de administrador.|
+> |GoogleJsonResponseException: 403 Proibido|Google Workspace|Problema ao executar a API do Google Workspace.|Se você acabou de implantar o conector de aplicativo Cloud App Security para o Google Workspace, verifique o seguinte: se você clicou em ilimitado, verifique se sua conta do Google Workspace é realmente ilimitada. Caso contrário, execute o Conector de Aplicativos novamente e desmarque a opção de conta ilimitada. Verifique se os escopos definidos durante a instalação estão corretos. Se essa não for uma nova implantação e você vir esse erro, talvez seja que você atingiu o limite de API para os eventos atuais e o Google Workspace será renovado amanhã.|
+> |TokenResponseException: 400 Solicitação inválida|Google Workspace|A conexão com o Google Workspace não foi concluída ou expirou.|Siga o processo para conectar o Google Workspace para Cloud App Security novamente.|
 > |HttpRequestFailure: o servidor retornou: 401 não autorizado|Okta|O token Okta não é válido.|Siga o processo para conectar o Okta ao Cloud App Security novamente.|
 > |IOException:|Okta|Erro interno|Contate o suporte|
 > |HttpRequestFailure: o servidor retornou: 404 não encontrado|Okta|Erro interno|Contate o suporte|

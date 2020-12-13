@@ -3,12 +3,12 @@ title: Conectar Google Cloud Platform ao Cloud App Security
 description: Este artigo fornece informações sobre como conectar seu Google Cloud Platform para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.openlocfilehash: bc000751610829d07e0ebd477a716255fdff2fa1
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: b6776796491d957a15a5246bac97144494e5789d
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313093"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369966"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security
 
@@ -16,7 +16,7 @@ ms.locfileid: "96313093"
 
 Este artigo fornece instruções para conectar Microsoft Cloud App Security à sua conta do Google Cloud Platform (GCP) existente usando as APIs do conector. Essa conexão fornece visibilidade e controle sobre o uso do GCP. Para obter informações sobre como Cloud App Security protege o GCP, consulte [proteger o GCP](protect-gcp.md).
 
-Recomendamos que você use um projeto dedicado para a integração e restrinja o acesso ao projeto para manter a integração estável e evitar exclusões/modificações do processo de instalação. Além disso, se sua instância do GCP fizer parte de uma instância do G Suite que já está conectada a Cloud App Security, recomendamos seguir o **para uma instância do GCP que faça parte de uma organização conectada do g Suite** quando você adicionar os detalhes de conexão do GCP.
+Recomendamos que você use um projeto dedicado para a integração e restrinja o acesso ao projeto para manter a integração estável e evitar exclusões/modificações do processo de instalação. Além disso, se sua instância do GCP fizer parte de uma instância do Google Workspace já conectada a Cloud App Security, recomendamos seguir o **para uma instância GCP que faça parte de uma etapa conectada da organização do Google Workspace** quando você adicionar os detalhes de conexão do GCP.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -125,7 +125,7 @@ Anote a ID da sua **organização**. você precisará dela mais tarde. Para obte
 1. Na página **conectores de aplicativos** , para fornecer as credenciais do conector AWS, siga um destes procedimentos:
 
     > [!NOTE]
-    > Recomendamos que você conecte sua instância do G Suite para obter governança e gerenciamento de usuários unificados. Isso é recomendado mesmo que você não use nenhum produto G Suite e os usuários do GCP sejam gerenciados por meio do sistema de gerenciamento de usuários do G Suite.
+    > Recomendamos que você conecte sua instância do Google Workspace para obter governança e gerenciamento de usuários unificados. Isso é recomendado mesmo se você não usar nenhum produto do Google Workspace e os usuários do GCP forem gerenciados por meio do sistema de gerenciamento de usuários do Google Workspace.
 
     **Para um novo conector**
 
@@ -167,7 +167,7 @@ Atualmente, desabilitar o coletor de exportação agregado só é possível por 
 
 #### <a name="to-disable-aggregated-export-sink"></a>Para desabilitar o coletor de exportação agregado
 
-| Etapa | script | Para obter mais informações |
+| Etapa | Script | Para obter mais informações |
 |-|-|-|
 | 1. iniciar uma sessão do Google Cloud Shell. | | [Usando Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
 | 2. defina o projeto atual. | `gcloud config set project {PROJECT_ID}` | [conjunto de configuração gcloud](https://cloud.google.com/sdk/gcloud/reference/config/set) |

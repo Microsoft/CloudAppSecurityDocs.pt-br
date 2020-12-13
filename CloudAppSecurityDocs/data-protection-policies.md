@@ -3,12 +3,12 @@ title: Monitorar e proteger arquivos em aplicativos de nuvem
 description: Este artigo descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e os arquivos em uso nos aplicativos na nuvem de sua organização.
 ms.date: 10/7/2019
 ms.topic: how-to
-ms.openlocfilehash: 215606ce154ea47f850b247cbfa60c73a93ac676
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 1fd1ae1d09838a9db5e481f3f34f546996e6a76c
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311954"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369541"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 
@@ -42,7 +42,7 @@ A seguir estão exemplos das políticas de arquivos que podem ser criadas:
 
 * **Compartilhando com domínios externos** – receba um alerta sobre qualquer arquivo compartilhado com as contas pertencentes a domínios externos específicos. Por exemplo, arquivos compartilhados com o domínio de um concorrente. Selecione o domínio externo com o qual você deseja limitar o compartilhamento.
 
-* **Arquivos compartilhados em quarentena não modificados durante o último período** – receba um alerta sobre arquivos compartilhados que ninguém modificou recentemente, para colocá-los em quarentena ou optar por ativar uma ação automatizada. Exclua todos os arquivos particulares que não foram modificados durante um intervalo de datas especificado. No G Suite, você pode optar por colocar esses arquivos em quarentena, usando a caixa de seleção ' arquivo de quarentena ' na página de criação de política.
+* **Arquivos compartilhados em quarentena não modificados durante o último período** – receba um alerta sobre arquivos compartilhados que ninguém modificou recentemente, para colocá-los em quarentena ou optar por ativar uma ação automatizada. Exclua todos os arquivos particulares que não foram modificados durante um intervalo de datas especificado. No Google Workspace, você pode optar por colocar esses arquivos em quarentena, usando a caixa de seleção ' arquivo de quarentena ' na página de criação de política.
 
 * **Compartilhando com usuários não autorizados** – receba um alerta sobre os arquivos compartilhados com um grupo de usuários não autorizados em sua organização. Selecione os usuários para os quais o compartilhamento não é autorizado.
 
