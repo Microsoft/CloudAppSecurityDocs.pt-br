@@ -1,14 +1,14 @@
 ---
 title: Gerenciamento de coletor de logs avançado
 description: Este artigo fornece informações sobre como as tarefas de gerenciamento avançadas para Cloud App Security coletores de log de Cloud Discovery.
-ms.date: 11/25/2020
+ms.date: 12/14/2020
 ms.topic: how-to
-ms.openlocfilehash: f9edb4d76f105293574551ba1ef9c7d2ba7d1838
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: dd8ab619f7284bde404bbe90a44d346595e2b99a
+ms.sourcegitcommit: d3f243593f86e0f13a1fbc67702a99c23af5a45a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315150"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386553"
 ---
 # <a name="advanced-log-collector-management"></a>Gerenciamento de coletor de logs avançado
 
@@ -257,13 +257,13 @@ Use estas etapas para baixar a imagem do coletor de logs usando um computador qu
 
 > [!NOTE]
 >
-> - A imagem baixada pode ser importada para um repositório privado ou diretamente no seu host. As etapas a seguir orientarão você no download da sua imagem do coletor de logs para seu computador Windows e, em seguida, usará o WinSCP para mover o coletor de logs para o host de destino.
+> - A imagem baixada pode ser importada em seu repositório privado ou diretamente em seu host. As etapas a seguir orientarão você no download da sua imagem do coletor de logs para seu computador Windows e, em seguida, usará o WinSCP para mover o coletor de logs para o host de destino.
 > - Para instalar o Docker em seu host, baixe o sistema operacional desejado:
 >   - https://download.docker.com/linux/ubuntu
 >   - https://download.docker.com/linux/centos/
 >   - https://download.docker.com/linux/rhel/
 >
-> Após o download, use o [Guia de instalação offline](https://docs.docker.com/datacenter/dtr/2.0/install/install-dtr-offline/#download-the-offline-package) para instalar o sistema operacional.
+> Após o download, use o [Guia de instalação offline](https://docs.docker.com/engine/install/binaries/) para instalar o sistema operacional.
 
 Inicie o processo [exportando a imagem do coletor de logs](#export-the-log-collector-image-from-your-docker-hub) e, em seguida, [importe a imagem para o host de destino](#import-and-load-the-log-collector-image-to-your-destination-host).
 
