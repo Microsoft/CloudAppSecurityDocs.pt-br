@@ -73,8 +73,8 @@
           href: protect-github.md
         - name: Proteger o GCP
           href: protect-gcp.md
-        - name: Proteger o G Suite
-          href: protect-gsuite.md
+        - name: Proteger o Google Workspace
+          href: protect-google-workspace.md
         - name: Proteger o Office 365
           href: protect-office-365.md
         - name: Proteger o Okta
@@ -165,8 +165,8 @@
           href: connect-dropbox-to-microsoft-cloud-app-security.md
         - name: Conectar o GitHub
           href: connect-github-ec-to-microsoft-cloud-app-security.md
-        - name: Conectar o G Suite
-          href: connect-google-apps-to-microsoft-cloud-app-security.md
+        - name: Conectar o Google Workspace
+          href: connect-google-workspace-to-microsoft-cloud-app-security.md
         - name: Conectar o GCP
           href: connect-google-gcp-to-microsoft-cloud-app-security.md
         - name: Conectar o Office 365
