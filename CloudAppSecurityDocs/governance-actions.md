@@ -1,14 +1,14 @@
 ---
 title: Ações de governança para controlar aplicativos conectados
 description: Este artigo lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security e as mensagens de log que as rastreiam.
-ms.date: 06/28/2020
+ms.date: 12/16/2020
 ms.topic: how-to
-ms.openlocfilehash: dfb0a829caf2e31ecd556c351fad8a5b95f19ae2
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 0742759a3a4f8c220123040b21f81886b9ef3276
+ms.sourcegitcommit: bc154649585ca95590e82423aa411ab6d922bf83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369558"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97582853"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
@@ -40,7 +40,7 @@ As ações de controle a seguir podem ser tomadas para aplicativos conectados em
     - **Remover rótulo** – Capacidade de remover um rótulo de classificação da Proteção de Informações do Azure.
   - **Alterar compartilhamento**
 
-    - **Remover compartilhamento público** – permitir acesso somente a colaboradores nomeados, por exemplo: remover acesso público para o Google Workspace e remover link compartilhado direto para Box.
+    - **Remover compartilhamento público** – permitir acesso somente a colaboradores nomeados, por exemplo: *Remover acesso público* para o Google Workspace e *remover link compartilhado direto* para Box e dropbox.
 
     - **Remover usuários externos** – permitir acesso somente aos usuários da empresa.
 
@@ -111,7 +111,7 @@ Para exibir o log de governança, na barra de menus, clique no ícone configura�
 A tabela a seguir é a lista completa de ações que o portal do Cloud App Security permite que você execute. Essas ações são habilitadas em vários locais por todo o console, conforme descrito na coluna **Localização**. Cada ação de governança realizada é relacionada no Log de Governança.
 Para obter informações sobre como as ações de governança são tratadas quando há conflitos de política, consulte [Conflitos de política](control-cloud-apps-with-policies.md).
 
-| Local | Tipo de objeto de destino | Ação de governança |Descrição| Conectores relacionados|
+| Localização | Tipo de objeto de destino | Ação de governança |Descrição| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Contas |Arquivo |Remover colaborações do usuário | Remove todas as colaborações de um usuário específico para todos os arquivos - bom para as pessoas que estão saindo da empresa. |Caixa, Google Workspace|
 |Contas | Conta | Cancelar suspensão de usuário |Cancela a suspensão do usuário |Google Workspace, Box, Office, Salesforce|
@@ -153,7 +153,7 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Arquivos|Arquivo|Expiração de link compartilhado| Define uma data de expiração para um link compartilhado, após a qual ele não estará mais ativo.|Box|
 |Arquivos|Arquivo|Alterar nível de acesso para compartilhamento de link|Altera o nível de acesso do link compartilhado entre "somente a empresa", "somente colaboradores" e "público".| Box|
 |Arquivos, Política de arquivo|Arquivo | Remover acesso público| Se um arquivo era seu e você o colocou no acesso público, ele se tornará acessível somente para quem tiver sido configurado com acesso ao arquivo (dependendo do tipo de acesso que o arquivo tinha). | Google Workspace|
-|Arquivos, Política de arquivo|Arquivo |Remover link compartilhado direto| Remove um link que foi criado para o arquivo que é público, mas só é compartilhado com pessoas específicas.|Box |
+|Arquivos, Política de arquivo|Arquivo |Remover link compartilhado direto| Remove um link que foi criado para o arquivo que é público, mas só é compartilhado com pessoas específicas.|Caixa, Dropbox |
 |Configurações > Configurações do Cloud Discovery| Cloud Discovery | Recalcular pontuações do Cloud Discovery |Recalcula as pontuações no catálogo de aplicativos de Nuvem após alterar uma métrica de pontuação.| Descoberta |
 |Configurações > Configurações do Cloud Discovery > Gerenciar exibições de dados| Cloud Discovery | Criar exibição personalizada de dados de filtro do Cloud Discovery|Cria uma nova exibição de dados para uma exibição mais detalhada dos resultados da descoberta. Por exemplo, intervalos de IP específicos. | Descoberta |
 |Configurações > Configurações do Cloud Discovery > Excluir dados| Cloud Discovery | Excluir os dados do Cloud Discovery |Exclui todos os dados coletados de fontes de descoberta.| Descoberta |
