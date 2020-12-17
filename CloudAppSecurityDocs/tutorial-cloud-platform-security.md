@@ -3,12 +3,12 @@ title: Gerenciar a segurança da plataforma de nuvem usada pela sua organizaçã
 description: Este tutorial descreve como usar o Microsoft Cloud App Security para proteger suas plataformas de nuvem do Azure, da AWS e da GCP.
 ms.date: 09/17/2020
 ms.topic: tutorial
-ms.openlocfilehash: 7711285b895d63e47e770a9079ef50bf8a091808
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: dfdff2b5b124ee9ea9d5fe4822196fa42cbe9f0a
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315864"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370153"
 ---
 # <a name="tutorial-manage-cloud-platform-security"></a>Tutorial: Gerenciar segurança da plataforma de nuvem
 
@@ -22,7 +22,7 @@ O trabalho remoto geralmente leva ao uso extensivo de aplicativos de nuvem e pla
 
 É crítico ter as ferramentas de segurança apropriadas em vigor para proteger os recursos que talvez não tenham sido adequadamente protegidos. As organizações precisam obter visibilidade sobre a postura dos recursos de nuvem delas, ter funcionalidades de descoberta para conhecer o uso real de cada plataforma, poder monitorar atividades suspeitas, avaliar e examinar configurações e status de conformidade e estarem habilitadas para implantar mecanismos de proteção em tempo real.
 
-O GPSN (Gerenciamento da Postura de Segurança na Nuvem) também se estende para além da postura de segurança de IaaS e PaaS a fim de abranger as configurações de SaaS também. Por exemplo, o repositório GitHub com um nível de acesso público ou aplicativos OAuth que têm acesso aos meus aplicativos SaaS como Office 365, G Suite ou Sales Force. O GPSN de SaaS é um domínio novo e crescente de GPSN, que é uma expansão nativa do produto Cloud App Security.
+O GPSN (Gerenciamento da Postura de Segurança na Nuvem) também se estende para além da postura de segurança de IaaS e PaaS a fim de abranger as configurações de SaaS também. Por exemplo, o repositório GitHub com um nível de acesso público ou aplicativos OAuth que têm acesso aos meus aplicativos SaaS como Office 365, Google Workspace ou Sales Force. O GPSN de SaaS é um domínio novo e crescente de GPSN, que é uma expansão nativa do produto Cloud App Security.
 
 ## <a name="protecting-multiple-clouds-from-a-single-management-portal"></a>Proteger várias nuvens em um único portal de gerenciamento
 
