@@ -3,12 +3,12 @@ title: Investigar riscos e atividades suspeitas do aplicativo na nuvem
 description: Este artigo fornece uma descrição do processo para investigar alertas, problemas e atividades suspeitas usando o Cloud App Security.
 ms.date: 11/18/2019
 ms.topic: how-to
-ms.openlocfilehash: 8227ac61b16bcac8211e3714f19569e3924db7c6
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 16e08a919af058ba3ee38f35fdc4af9a5e85aa8e
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315116"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370024"
 ---
 # <a name="investigate"></a>Investigar
 
@@ -31,7 +31,7 @@ Os painéis a seguir estão disponíveis para ajudá-lo a investigar aplicativos
 *(se aplicável)*|Faça drill down dos arquivos; capacidade de filtrar de acordo com proprietário, nível de compartilhamento e muito mais. Execute ações de governança, como quarentena.|
 |Painel do aplicativo: contas|Visão geral de todas as contas/usuários vinculados ao aplicativo.|
 |Painel do aplicativo: aplicativos OAuth  
-*(se aplicável)*|Faça drill down dos aplicativos OAuth atualmente implantados, como G Suite, e defina políticas.|
+*(se aplicável)*|Faça drill down dos aplicativos OAuth atualmente implantados, como o Google Workspace, e defina políticas.|
 |Painel do aplicativo: log de atividades|Faça drill down de todas as atividades do aplicativo; capacidade de filtrar de acordo com usuários, endereço IP e muito mais.|
 |Painel do aplicativo: alertas|Faça drill down de todos os alertas do aplicativo; capacidade de filtrar de acordo com status, categoria, severidade e muito mais.|
 |Painel do aplicativo: contas com privilégios especiais  
