@@ -3,12 +3,12 @@ title: Guia de investigação de alertas de detecção de anomalias Cloud App Se
 description: Este artigo explica como investigar os Cloud App Security alertas de detecção de anomalias emitidos quando são detectados ataques em sua organização.
 ms.date: 06/08/2020
 ms.topic: how-to
-ms.openlocfilehash: 69490396c2669307372c0073e8f0ad58e3bf09c5
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6c3a099153da4ac69961fd759a26c08a31e6867b
+ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315065"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808973"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Como investigar alertas de detecção de anomalias
 
@@ -158,7 +158,7 @@ Essa detecção usa um algoritmo de aprendizado de máquina que ignora as condi�
 
 ### <a name="misleading-oauth-app-name"></a>Nome do aplicativo OAuth enganoso
 
-O nome do aplicativo OAuth enganoso identifica aplicativos com caracteres, como cartas estrangeiras, que se assemelham a letras latinas. Isso pode indicar uma tentativa de disfarçar um aplicativo mal-intencionado como um aplicativo conhecido e confiável para que os invasores possam induzir os usuários a baixarem seus aplicativos mal-intencionados.
+Essa detecção identifica aplicativos com caracteres, como cartas estrangeiras, que se assemelham a letras latinas. Isso pode indicar uma tentativa de disfarçar um aplicativo mal-intencionado como um aplicativo conhecido e confiável para que os invasores possam induzir os usuários a baixarem seus aplicativos mal-intencionados.
 
 **TP**, **B-TP** ou **FP**?
 
@@ -180,7 +180,7 @@ Para proibir o acesso ao aplicativo, na página **aplicativos OAuth** , na linha
 
 ### <a name="misleading-publisher-name-for-an-oauth-app"></a>Nome do editor enganoso para um aplicativo OAuth
 
-O nome do editor OAuth enganoso para um aplicativo OAuth identifica aplicativos com caracteres, como cartas estrangeiras, que se assemelham a letras latinas. Isso pode indicar uma tentativa de disfarçar um aplicativo mal-intencionado como um aplicativo conhecido e confiável para que os invasores possam induzir os usuários a baixarem seus aplicativos mal-intencionados.
+Essa detecção identifica aplicativos com caracteres, como cartas estrangeiras, que se assemelham a letras latinas. Isso pode indicar uma tentativa de disfarçar um aplicativo mal-intencionado como um aplicativo conhecido e confiável para que os invasores possam induzir os usuários a baixarem seus aplicativos mal-intencionados.
 
 **TP**, **B-TP** ou **FP**?
 
@@ -201,6 +201,18 @@ O nome do editor OAuth enganoso para um aplicativo OAuth identifica aplicativos 
     - Aplicativos que não foram atualizados recentemente. Isso pode indicar um aplicativo que não tem mais suporte.
     - Aplicativos que têm permissões irrelevantes. Isso pode indicar que um aplicativo é arriscado.
 1. Se você ainda suspeitar que um aplicativo é suspeito, poderá pesquisar o nome do aplicativo, o editor e a URL online.
+
+### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Adição incomum de credenciais a um aplicativo OAuth
+
+Essa detecção identifica a adição suspeita de credenciais privilegiadas a um aplicativo OAuth. Isso pode indicar que um invasor comprometeu o aplicativo e o está usando para atividades mal-intencionadas.
+
+> [!NOTE]
+> Como o risco apresentado por um ataque bem-sucedido é alto, Cloud App Security também o notifica de que as detecções foram reproduzidas para meados de setembro de 2020.
+> Os alertas para eventos anteriores têm o título "alerta do sistema: adição incomum de credenciais a um aplicativo OAuth" e o tipo de alerta será MCAS_ALERT_MANAGEMENT_GENERIC.
+
+**Período de aprendizado**
+
+O aprendizado do ambiente da sua organização requer um período de sete dias durante o qual você pode esperar um alto volume de alertas.
 
 ## <a name="execution-alerts"></a>Alertas de execução
 
@@ -662,7 +674,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. Examine as atividades de exclusão e crie uma lista de arquivos excluídos. Se necessário, recupere os arquivos excluídos.
 1. Opcionalmente, crie um guia estratégico usando a automatização de energia para contatar os usuários e seus gerentes para verificar a atividade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 > [!div class="nextstepaction"]
 > [Investigar usuários suspeitos](tutorial-ueba.md)

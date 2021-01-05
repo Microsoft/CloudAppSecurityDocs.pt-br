@@ -3,12 +3,12 @@ title: Definir intervalos de IP e marcas
 description: Este artigo fornece instruções sobre como trabalhar com marcas de IP e categorias de IP.
 ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 80058d36ecf7496c9dad2fe8253efa9775076452
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 295b4b812679600254cb2a82b8efef57aa71757b
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315048"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855737"
 ---
 # <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a>Trabalhando com intervalos de IP e marcas
 
@@ -32,7 +32,7 @@ As marcas de endereço IP internas e as marcas de IP personalizadas são conside
 
 ## <a name="create-an-ip-address-range"></a>Criar um intervalo de endereços IP
 
-Na barra de menus, clique no ícone de configurações. Selecione **Intervalos de endereços IP**. Clique no sinal de adição para adicionar intervalos de endereços IP e defina os seguintes campos:
+Na barra de menus, clique no ícone de configurações. Selecione **Intervalos de endereços IP**. Clique no sinal de adição ( **+** ) para adicionar intervalos de endereços IP e defina os seguintes campos:
 
 1. Atribua um **Nome** ao seu intervalo de IP. O nome não é exibido no log de atividades; ele é usado apenas para gerenciar o intervalo de IP.
 

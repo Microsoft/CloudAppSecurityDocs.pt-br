@@ -1,14 +1,14 @@
 ---
 title: Monitorar e proteger arquivos em aplicativos de nuvem
 description: Este artigo descreve o procedimento para configurar uma política de dados para monitorar e controlar os dados e os arquivos em uso nos aplicativos na nuvem de sua organização.
-ms.date: 10/7/2019
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 1fd1ae1d09838a9db5e481f3f34f546996e6a76c
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: a69f618b324fcdcc93077e22e54c354bf3665082
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369541"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894668"
 ---
 # <a name="file-policies"></a>Políticas de arquivos
 
@@ -52,9 +52,11 @@ A seguir estão exemplos das políticas de arquivos que podem ser criadas:
 
 Para criar uma nova política de arquivos, siga este procedimento:
 
-1. No console, clique em **Controlar** seguido por **Políticas**.
+1. Vá para **controle**  >  **políticas**  >  **proteção de informações**.
 
-1. Clique em **criar política** e selecione política de **arquivo** .
+1. Clique em **Criar política** e selecione **Política de arquivos**.
+
+    ![Criar uma política de proteção de informações](media/create-policy-from-information-protection-tab.png)
 
 1. Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
 
@@ -114,6 +116,11 @@ Para simplificar ainda mais a investigação, agora você pode criar consultas p
 1. No pop-up **Salvar consulta** , nomeie sua consulta.
 
 1. Para usar essa consulta novamente no futuro, em **Consultas**, role para baixo até **Consultas salvas** e selecione a consulta.
+
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Webinar de proteção de informações](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Próximas etapas
 

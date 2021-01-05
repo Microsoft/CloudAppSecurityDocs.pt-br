@@ -3,12 +3,12 @@ title: Implantar o Controle de Aplicativos de Acesso Condicional do Cloud App Se
 description: Este artigo fornece informações sobre como implantar os recursos de proxy reverso do Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security para aplicativos do Azure AD.
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.openlocfilehash: 66063b54ce774612431d74aef2b1b045b7bf9d9f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 3fecc4eca9b867aba72dc625151ec915906075eb
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96310934"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855516"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
@@ -73,7 +73,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
-1. Clique no sinal de adição e, no pop-up, selecione o aplicativo que você deseja implantar e clique em **Iniciar assistente**.
+1. Clique no sinal de adição ( **+** ) e, no pop-up, selecione o aplicativo que você deseja implantar e clique em **Iniciar assistente**.
 1. Na página **informações do aplicativo** , preencha o formulário usando as informações da página de configuração de logon único do seu aplicativo e clique em **Avançar**.
     - Se o IdP fornecer um arquivo de metadados de logon único para o aplicativo selecionado, selecione **carregar arquivo de metadados do aplicativo** e carregue o arquivo de metadados.
     - Ou selecione **preencher dados manualmente** e forneça as seguintes informações:

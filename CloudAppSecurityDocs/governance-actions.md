@@ -3,12 +3,12 @@ title: Ações de governança para controlar aplicativos conectados
 description: Este artigo lista e descreve todas as ações de governança que podem ser executadas no Cloud App Security e as mensagens de log que as rastreiam.
 ms.date: 12/16/2020
 ms.topic: how-to
-ms.openlocfilehash: 0742759a3a4f8c220123040b21f81886b9ef3276
-ms.sourcegitcommit: bc154649585ca95590e82423aa411ab6d922bf83
+ms.openlocfilehash: 29acf61d6832f38c049eb7fa85f44d2e9e3075fe
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97582853"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855329"
 ---
 # <a name="governing-connected-apps"></a>Controlando aplicativos conectados
 
@@ -154,10 +154,10 @@ Para obter informações sobre como as ações de governança são tratadas quan
 |Arquivos|Arquivo|Alterar nível de acesso para compartilhamento de link|Altera o nível de acesso do link compartilhado entre "somente a empresa", "somente colaboradores" e "público".| Box|
 |Arquivos, Política de arquivo|Arquivo | Remover acesso público| Se um arquivo era seu e você o colocou no acesso público, ele se tornará acessível somente para quem tiver sido configurado com acesso ao arquivo (dependendo do tipo de acesso que o arquivo tinha). | Google Workspace|
 |Arquivos, Política de arquivo|Arquivo |Remover link compartilhado direto| Remove um link que foi criado para o arquivo que é público, mas só é compartilhado com pessoas específicas.|Caixa, Dropbox |
-|Configurações > Configurações do Cloud Discovery| Cloud Discovery | Recalcular pontuações do Cloud Discovery |Recalcula as pontuações no catálogo de aplicativos de Nuvem após alterar uma métrica de pontuação.| Descoberta |
-|Configurações > Configurações do Cloud Discovery > Gerenciar exibições de dados| Cloud Discovery | Criar exibição personalizada de dados de filtro do Cloud Discovery|Cria uma nova exibição de dados para uma exibição mais detalhada dos resultados da descoberta. Por exemplo, intervalos de IP específicos. | Descoberta |
-|Configurações > Configurações do Cloud Discovery > Excluir dados| Cloud Discovery | Excluir os dados do Cloud Discovery |Exclui todos os dados coletados de fontes de descoberta.| Descoberta |
-|Configurações > Configurações do Cloud Discovery > Carregar logs manualmente/Carregar logs automaticamente | Cloud Discovery | Analisar dados do Cloud Discovery| Notificação de que todos os dados de log foram analisados. | Descoberta |
+|Configurações> Cloud Discovery configurações| Cloud Discovery | Recalcular pontuações do Cloud Discovery |Recalcula as pontuações no catálogo de aplicativos de Nuvem após alterar uma métrica de pontuação.| Descoberta |
+|Configurações> Cloud Discovery configurações > gerenciar exibições de dados| Cloud Discovery | Criar exibição personalizada de dados de filtro do Cloud Discovery|Cria uma nova exibição de dados para uma exibição mais detalhada dos resultados da descoberta. Por exemplo, intervalos de IP específicos. | Descoberta |
+|Configurações> Cloud Discovery configurações > excluir dados| Cloud Discovery | Excluir os dados do Cloud Discovery |Exclui todos os dados coletados de fontes de descoberta.| Descoberta |
+|Configurações> Cloud Discovery configurações > carregar logs manualmente/carregar logs automaticamente | Cloud Discovery | Analisar dados do Cloud Discovery| Notificação de que todos os dados de log foram analisados. | Descoberta |
 
 ## <a name="next-steps"></a>Próximas etapas
 

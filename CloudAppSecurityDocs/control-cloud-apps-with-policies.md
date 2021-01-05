@@ -1,14 +1,14 @@
 ---
 title: Controlar o uso do aplicativo de nuvem criando políticas
 description: Este artigo fornece informações sobre como as políticas são usadas e configuradas para controlar o uso de aplicativos na nuvem.
-ms.date: 09/26/2019
+ms.date: 01/03/2021
 ms.topic: how-to
-ms.openlocfilehash: 695737038f0c45e366581c0262550b4c769039a5
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: d7d3bc90de1db4e2ec474c111b4799ad5a2078c8
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312284"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855369"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar aplicativos de nuvem com políticas
 
@@ -20,19 +20,21 @@ Por exemplo, se você quiser colocar uma ameaça de violação de dados em quare
 
 ## <a name="policy-types"></a>Tipos de política
 
-Quando você observa a página **Política**, as várias políticas e modelos podem ser diferenciados pelo tipo e ícone para ver quais políticas estão disponíveis. As políticas disponíveis dependem da fonte de dados e o que você tiver habilitado no Cloud App Security para sua organização. Por exemplo, se você carregar os logs do Cloud Discovery, as políticas relacionadas ao Cloud Discovery serão exibidas.
+Quando você observa a página **Política**, as várias políticas e modelos podem ser diferenciados pelo tipo e ícone para ver quais políticas estão disponíveis. As políticas podem ser exibidas juntas na guia **todas as políticas** ou nas respectivas guias de categoria. As políticas disponíveis dependem da fonte de dados e o que você tiver habilitado no Cloud App Security para sua organização. Por exemplo, se você carregar os logs do Cloud Discovery, as políticas relacionadas ao Cloud Discovery serão exibidas.
 
 Os seguintes tipos de políticas podem ser criados:
 
-|Ícone Tipo de política|Tipo de política|Usar|
-|-----|-----------------|---------|
-|![ícone de política de acesso](media/proxy-policy.png)|Política de acesso|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem.|
-|![ícone de política de atividade](media/activity_policy.png)|Política de atividade|As políticas de atividade permitem impor uma ampla variedade de processos automatizados usando as APIs do provedor de aplicativos. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade.|
-|![ícone de política de detecção de anomalias](media/anomaly_detection_policy.png)|Política de detecção de anomalias|As políticas de detecção de anomalias permitem que você procure atividades incomuns na sua nuvem. A detecção baseia-se nos fatores de risco que você define para alertá-lo quando algo diferente da linha de base de sua organização ou da atividade regular do usuário acontece.|
-|![ícone de política do cloud discovery](media/discovery_policy.png)|Política de descoberta de aplicativo|As políticas de descoberta de aplicativo permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização.|
-|![ícone de política de detecção de anomalias](media/anomaly_detection_policy.png)|Política de detecção de anomalias do Cloud Discovery|As políticas de detecção de anomalias do Cloud Discovery analisam os logs usados para descobrir aplicativos de nuvem e pesquisa ocorrências incomuns. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico.|
-|![ícone de política de arquivos](media/file_policy.png)|Política de arquivo|As políticas de arquivos permitem que você examine seus aplicativos de nuvem quanto a tipos de arquivo ou arquivos especificados (compartilhados, compartilhados com domínios externos), dados (informações proprietárias, dados pessoais, informações de cartão de crédito e outros tipos de dados) e aplique ações de governança aos arquivos (as ações de governança são específicas do aplicativo de nuvem).|
-|![Ícone de política de sessão](media/proxy-policy.png)|Política de sessão|As políticas de sessão fornecem monitoramento em tempo real e controle sobre a atividade do usuário em seus aplicativos de nuvem.|
+|Ícone Tipo de política|Tipo de política|Categoria|Use|
+|-----|---------|--------|---------|
+|![ícone de política de atividade](media/activity-policy.png)|Política de atividade|Detecção de ameaças|As políticas de atividade permitem impor uma ampla variedade de processos automatizados usando as APIs do provedor de aplicativos. Essas políticas permitem que você monitore atividades específicas realizadas por vários usuários ou siga altas taxas inesperadas de um determinado tipo de atividade. [Saiba mais](user-activity-policies.md)|
+|![ícone de política de detecção de anomalias](media/anomaly-detection-policy.png)|Política de detecção de anomalias|Detecção de ameaças|As políticas de detecção de anomalias permitem que você procure atividades incomuns na sua nuvem. A detecção baseia-se nos fatores de risco que você define para alertá-lo quando algo diferente da linha de base de sua organização ou da atividade regular do usuário acontece. [Saiba mais](anomaly-detection-policy.md)|
+|![Ícone de política de aplicativo OAuth](media/oauth-policy.png)|Política de aplicativo OAuth|Detecção de ameaças|As políticas de aplicativo OAuth permitem investigar quais permissões cada aplicativo OAuth solicitou e aprovar ou revogar automaticamente. Essas são políticas internas que acompanham Cloud App Security e não podem ser criadas. [Saiba mais](app-permission-policy.md)|
+|![Ícone da política de detecção de malware](media/malware-detection-policy.png)|Política de detecção de malware|Detecção de ameaças|As políticas de detecção de malware permitem identificar arquivos mal-intencionados em seu armazenamento em nuvem e aprová-los ou revogue-los automaticamente. Esta é uma política interna que vem com Cloud App Security e não pode ser criada. [Saiba mais](anomaly-detection-policy.md#malware-detection)|
+|![ícone de política de arquivos](media/file-policy.png)|Política de arquivo|Proteção das informações|As políticas de arquivos permitem que você examine seus aplicativos de nuvem quanto a tipos de arquivo ou arquivos especificados (compartilhados, compartilhados com domínios externos), dados (informações proprietárias, dados pessoais, informações de cartão de crédito e outros tipos de dados) e aplique ações de governança aos arquivos (as ações de governança são específicas do aplicativo de nuvem). [Saiba mais](data-protection-policies.md)|
+|![ícone de política de acesso](media/proxy-policy.png)|Política de acesso|Acesso condicional|Políticas de acesso fornecem monitoramento em tempo real e controle sobre logons de usuário para seus aplicativos de nuvem. [Saiba mais](access-policy-aad.md)|
+|![Ícone de política de sessão](media/proxy-policy.png)|Política de sessão|Acesso condicional|As políticas de sessão fornecem monitoramento em tempo real e controle sobre a atividade do usuário em seus aplicativos de nuvem. [Saiba mais](session-policy-aad.md)|
+|![ícone de política do cloud discovery](media/discovery-policy.png)|Política de descoberta de aplicativo|Sombra de ti|As políticas de descoberta de aplicativo permitem que você defina alertas que notificam quando novos aplicativos são detectados na sua organização. [Saiba mais](cloud-discovery-policies.md)|
+|![ícone de política de detecção de anomalias](media/anomaly-detection-policy.png)|Política de detecção de anomalias do Cloud Discovery|Sombra de ti|As políticas de detecção de anomalias do Cloud Discovery analisam os logs usados para descobrir aplicativos de nuvem e pesquisa ocorrências incomuns. Por exemplo, quando um usuário que nunca usou o Dropbox antes de repente carrega 600 GB para o Dropbox ou quando há muito mais transações que o normal em um aplicativo específico. [Saiba mais](cloud-discovery-anomaly-detection-policy.md)|
 
 ## <a name="identifying-risk"></a>Identificando o risco
 
@@ -90,9 +92,9 @@ Para criar uma política de **Modelo de política**, execute estas etapas:
 
 1. No console, clique em **Controlar** seguido por **Modelos**.
 
-    ![Criar a política com base em um modelo](media/create-policy-from-template.png)
+    ![Criar a política a partir de um modelo](media/create-policy-from-template.png)
 
-1. Clique na **+** extrema direita da linha do modelo que você deseja usar. Uma página de criação de política é aberta contendo a configuração predefinida do modelo.
+1. Clique no sinal de adição ( **+** ) na extrema direita da linha do modelo que você deseja usar. Uma página de criação de política é aberta contendo a configuração predefinida do modelo.
 
 1. Modifique o modelo conforme necessário para sua política personalizada. Todas as propriedades e campos dessa política baseada em modelo podem ser modificados de acordo com suas necessidades.
    > [!NOTE]

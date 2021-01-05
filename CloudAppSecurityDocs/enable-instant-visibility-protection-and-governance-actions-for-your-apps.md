@@ -1,14 +1,14 @@
 ---
 title: Conectar aplicativos para obter visibilidade e controle
 description: Este artigo descreve o processo para conexão de aplicativos com conectores de API aos aplicativos na nuvem de sua organização.
-ms.date: 07/14/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 1bbdf2933bc2495ba397e3d78fb1ca1efcd3ffff
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 1df724883ff1944e0ff5c1e62c1fe6fbcaef233a
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369524"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894647"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -16,7 +16,7 @@ ms.locfileid: "97369524"
 
 Os conectores de aplicativos usam as APIs de provedores de aplicativos para permitir maior visibilidade e controle pelo Microsoft Cloud App Security sobre os aplicativos aos quais você se conecta.
 
-O Microsoft Cloud App Security aproveita as APIs fornecidas pelo provedor de nuvem. Cada serviço tem a própria estrutura e limitações de API, como limitação, limites de API, janelas de API de mudança de tempo dinâmica e outros. O Microsoft Cloud App Security trabalhou com os serviços para otimizar o uso das APIs e garantir o melhor desempenho. Levando em conta diferentes limitações impostas pelos serviços sobre as APIs, os mecanismos do Cloud App Security usam a capacidade permitida. Algumas operações, como verificação de todos os arquivos no locatário, exigem várias APIs e, portanto, elas são distribuídas por um período mais longo. Espere algumas que algumas políticas sejam executadas por várias horas ou vários dias.
+O Microsoft Cloud App Security aproveita as APIs fornecidas pelo provedor de nuvem. Toda a comunicação entre Cloud App Security e aplicativos conectados é criptografada usando HTTPS. Cada serviço tem a própria estrutura e limitações de API, como limitação, limites de API, janelas de API de mudança de tempo dinâmica e outros. O Microsoft Cloud App Security trabalhou com os serviços para otimizar o uso das APIs e garantir o melhor desempenho. Levando em conta diferentes limitações impostas pelos serviços sobre as APIs, os mecanismos do Cloud App Security usam a capacidade permitida. Algumas operações, como verificação de todos os arquivos no locatário, exigem várias APIs e, portanto, elas são distribuídas por um período mais longo. Espere algumas que algumas políticas sejam executadas por várias horas ou vários dias.
 
 ## <a name="multi-instance-support"></a>Suporte de várias instâncias
 
@@ -55,22 +55,22 @@ Dependendo do aplicativo ao qual você está se conectando, a conexão de API pe
 
 A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com os conectores de aplicativo:
 
-| | AWS | Box | Dropbox | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
-|-|-|-|-|-|-|-|-|-|-|-|-|
-| **Listar contas** | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Listar grupos** | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
-| **Listar privilégios** | | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **Governança de usuário** | | ✔ | Em breve | Entidade de conexão do Google Workspace | ✔ | ✔ | | Em breve | ✔ | Em breve | Sem suporte pelo provedor |
-| **Atividade de logon** | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Atividade do usuário** | Não aplicável | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
-| **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação periódica** | | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação quase em tempo real** | | ✔ | | Não aplicável | ✔-requer o Google Business Enterprise | ✔ | Não aplicável | | | ✔ | Sem suporte pelo provedor |
-| **Controle de compartilhamento** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | Não aplicável | | ✔ | Sem suporte pelo provedor |
-| **Governança de arquivos** | ✔ | ✔ | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | | Sem suporte pelo provedor |
-| **Exibir permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Chegando em | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
-| **Revogar permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | Ming em breve | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
-| **Aplique os rótulos da Proteção de Informações do Azure** | Não aplicável | ✔ | | Não aplicável | ✔ | ✔ | Não aplicável | | | Não aplicável | Não aplicável |
+| | AWS | Box | Dropbox | GitHub | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| **Listar contas** | ✔ | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Listar grupos** | ✔ | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
+| **Listar privilégios** | | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **Governança de usuário** | | ✔ | Em breve | | Entidade de conexão do Google Workspace | ✔ | ✔ | | | ✔ | | Sem suporte pelo provedor |
+| **Atividade de logon** | ✔ | ✔ | ✔ | | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Atividade do usuário** | Não se aplica | ✔ | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
+| **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
+| **DLP – verificação periódica** | | ✔ | ✔ | | Não se aplica | ✔ | ✔ | Não se aplica | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **DLP – verificação quase em tempo real** | | ✔ | | | Não se aplica | ✔-requer o Google Business Enterprise | ✔ | Não se aplica | | | ✔ | Sem suporte pelo provedor |
+| **Controle de compartilhamento** | ✔ | ✔ | ✔ | | Não se aplica | ✔ | ✔ | Não se aplica | Não se aplica | | ✔ | Sem suporte pelo provedor |
+| **Governança de arquivos** | ✔ | ✔ | ✔ | | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | | Sem suporte pelo provedor |
+| **Exibir permissões de aplicativo** | Não se aplica | Sem suporte pelo provedor | Em breve | ✔ | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | Não se aplica | Não se aplica |
+| **Revogar permissões de aplicativo** | Não se aplica | Sem suporte pelo provedor | Em breve | | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | Não se aplica | Não se aplica |
+| **Aplique os rótulos da Proteção de Informações do Azure** | Não se aplica | ✔ | | | Não se aplica | ✔ | ✔ | Não se aplica | | | Não se aplica | Não se aplica |
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -126,14 +126,17 @@ Para reabilitar os aplicativos conectados:
 1. Na página **aplicativos conectados** , na linha relevante, clique nos três pontos e selecione **Editar aplicativo**. Isso inicia o processo para adicionar um conector.
 1. Adicione o conector usando as etapas no guia do conector de API relevante. Por exemplo, se você estiver reabilitando o GitHub, use as etapas em [conectar o GitHub Enterprise Cloud a Cloud app Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Conectando aplicativos de terceiros Webinar](webinars.md#on-demand-webinars)
+
+> [!div class="nextstepaction"]
+> [Microsoft Cloud App Security – APIs REST e tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Atividades diárias para proteger seu ambiente de nuvem](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
-## <a name="check-out-this-video"></a>Confira este vídeo!
-
-> [!div class="nextstepaction"]
-> [Microsoft Cloud App Security – APIs REST e tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

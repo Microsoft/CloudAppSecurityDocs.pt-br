@@ -3,12 +3,12 @@ title: Gerenciando tokens de API
 description: Este artigo fornece informações sobre como gerar e gerenciar tokens de API para Cloud App Security.
 ms.date: 03/27/2020
 ms.topic: reference
-ms.openlocfilehash: e42efe3d5f530772cfdb2ae4030c294ae054b1b4
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: cd577565cb67b51dd93c649e69cd00a551736789
+ms.sourcegitcommit: 421870fac566642809eff0a545ec1981be1c9165
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314521"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97705875"
 ---
 # <a name="managing-api-tokens"></a>Gerenciando tokens de API
 
@@ -51,7 +51,9 @@ A tabela fornece detalhes sobre quando o token foi gerado e quando ele foi usado
 Depois que um token é revogado, ele é removido da tabela e o software que ele estava usando não consegue fazer chamadas à API até que um novo token seja fornecido.
 
 > [!NOTE]
-> Conectores do SIEM e coletores de log também usam tokens de API. Esses tokens devem ser gerenciados das seções de agente SIEM e coletores de log e não aparecem nessa tabela.
+>
+> - Conectores do SIEM e coletores de log também usam tokens de API. Esses tokens devem ser gerenciados das seções de agente SIEM e coletores de log e não aparecem nessa tabela.
+> - Os tokens de API de usuários desprovisionados são mantidos em Cloud App Security, mas não podem ser usados. Qualquer tentativa de usá-los resultará em uma resposta de permissão negada. No entanto, recomendamos que esses tokens sejam revogados na página **tokens de API** .
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 

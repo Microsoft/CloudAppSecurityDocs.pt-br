@@ -1,14 +1,14 @@
 ---
 title: Integrar Azure Active Directory Identity Protection com Cloud App Security
 description: Este artigo fornece informações sobre como aproveitar os alertas de proteção de identidade no Cloud App Security para detecção de riscos híbridos.
-ms.date: 06/28/2020
+ms.date: 12/27/2020
 ms.topic: how-to
-ms.openlocfilehash: f699809c340dfbb45a5c6ee0aae98da13b815fff
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: f71e73dfd3ca8be7d6ed5e03847ac6e11e290818
+ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311376"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97857947"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Integração do Azure Active Directory Identity Protection
 
@@ -50,7 +50,9 @@ Para desabilitar a integração de Cloud App Security com a proteção de identi
 1. Desmarque **habilitar Azure ad Identity Protection integração de alertas** e clique em **salvar**.
 
 > [!NOTE]
-> Quando a integração está desabilitada, os alertas existentes de proteção de identidade são mantidos de acordo com as políticas de retenção de Cloud App Security.
+>
+> - Quando a integração está desabilitada, os alertas existentes de proteção de identidade são mantidos de acordo com as políticas de retenção de Cloud App Security.
+> - Como Cloud App Security consome apenas logons interativos do Azure AD, alguns alertas podem não mostrar atividades relacionadas. Você pode investigar essas atividades no portal do Azure AD.
 
 ## <a name="configure-identity-protection-policies"></a>Configurar políticas de proteção de identidade
 
@@ -62,6 +64,9 @@ As seguintes políticas estão disponíveis:
 |---|---|---|---|
 |Credenciais vazadas|Mostra alertas de credenciais vazadas, as credenciais válidas do usuário foram vazadas|habilitado|Todos os alertas de recebimento baixo|
 |Entrada arriscada|Agrega várias detecções de entrada arriscadas, entradas que não foram executadas pelo usuário|habilitado|Alto-receber alertas de alta severidade|
+
+> [!NOTE]
+> Cloud App Security não envia notificações por email para alertas de proteção de identidade. No entanto, você pode configurar notificações por email para eles no portal de proteção de identidade.
 
 ## <a name="next-steps"></a>Próximas etapas
 

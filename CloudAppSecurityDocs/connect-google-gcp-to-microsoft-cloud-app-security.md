@@ -3,12 +3,12 @@ title: Conectar Google Cloud Platform ao Cloud App Security
 description: Este artigo fornece informações sobre como conectar seu Google Cloud Platform para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.openlocfilehash: b6776796491d957a15a5246bac97144494e5789d
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 2421a679e86a9702cd3bcca5b22c56c3724234b8
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369966"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855601"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Conectar Google Cloud Platform ao Microsoft Cloud App Security
 
@@ -129,7 +129,7 @@ Anote a ID da sua **organização**. você precisará dela mais tarde. Para obte
 
     **Para um novo conector**
 
-    1. Clique no sinal de adição seguido por **Google Cloud Platform**.
+    1. Clique no sinal de adição ( **+** ) seguido por **Google Cloud Platform**.
 
         ![conectar GCP](media/connect-gcp-add.png)
 

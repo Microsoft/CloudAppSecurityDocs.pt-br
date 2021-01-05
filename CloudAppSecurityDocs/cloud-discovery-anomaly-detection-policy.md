@@ -1,14 +1,14 @@
 ---
 title: Criar política de detecção de anomalias do Cloud Discovery no Cloud App Security
 description: Estes tópico fornece informações sobre como trabalhar com as políticas de detecção de anomalias do Cloud Discovery.
-ms.date: 12/10/2018
+ms.date: 01/03/2021
 ms.topic: how-to
-ms.openlocfilehash: 371f7b53de7f77d4743df39f1957bb1c411ad14c
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 355512b116850d28beb2953315d30260ed0596d2
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313416"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855703"
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Política de detecção de anomalias do Cloud Discovery
 
@@ -18,20 +18,26 @@ Este artigo fornece detalhes de referência sobre as políticas. São listadas e
 
 ## <a name="cloud-discovery-anomaly-detection-policy-reference"></a>Referência de política de detecção de anomalias do Cloud Discovery
 
-Uma política de detecção de anomalias do Cloud Discovery permite instalar e configurar o monitoramento contínuo de aumentos incomuns no uso do aplicativo de nuvem. Aumentos de dados baixados, dados carregados, transações e usuários são considerados para cada aplicativo na nuvem. Cada aumento é comparado com o padrão de uso normal do aplicativo conforme aprendido com base no uso anterior. Os aumentos mais extremos disparam alertas de segurança.
+Uma política de detecção de anomalias Cloud Discovery permite que você configure e configure o monitoramento contínuo de aumentos incomuns no uso de aplicativos em nuvem. Aumentos de dados baixados, dados carregados, transações e usuários são considerados para cada aplicativo na nuvem. Cada aumento é comparado com o padrão de uso normal do aplicativo conforme aprendido com base no uso anterior. Os aumentos mais extremos disparam alertas de segurança.
 
 Para cada política, é possível definir filtros que permitem monitorar seletivamente o uso do aplicativo. Os filtros incluem um filtro de aplicativo, exibições de dados selecionadas e uma data de início selecionada. Você também pode definir a sensibilidade, a qual permite definir quantos alertas a política deve disparar.
+
+1. Vá para políticas de **controle**  >    >  **Shadow it**.
+
+1. Clique em **Criar política** e selecione **Política de detecção de anomalias de Cloud Discovery**.
+
+    ![Criar uma política de Cloud Discovery](media/create-policy-from-shadow-it-tab.png)
 
 Para cada política, defina os seguintes parâmetros:
 
 1. Decida se deseja basear a política em um modelo. Um modelo de política relevante é o modelo **Comportamento anormal de usuários descobertos**. Ele alerta quando comportamentos anormais são detectados em usuários e aplicativos descobertos, como grandes quantidades de dados carregados em comparação com outros usuários e transações grandes de usuário em comparação com o histórico do usuário. Selecione também o modelo **Comportamento anormal de endereços IP descobertos**. Esse modelo alerta quando comportamentos anormais são detectados em endereços IP e aplicativos descobertos, como grandes quantidades de dados carregados em comparação com outros endereços IP e transações grandes de aplicativo em comparação com o histórico do endereço IP.
 
-2. Forneça o **Nome da política** e **Descrição**.
+1. Forneça o **Nome da política** e **Descrição**.
 
-3. Crie um filtro para os aplicativos que você deseja monitorar clicando em **Adicionar filtro**.
-   Você pode selecionar um aplicativo específico, uma **categoria** de aplicativo ou filtrar por **nome**, * * domínio e **fator de risco** e clicar em **salvar**.
+1. Crie um filtro para os aplicativos que você deseja monitorar clicando em **Adicionar filtro**.
+   Você pode selecionar um aplicativo específico, uma **categoria** de aplicativo ou um filtro por **nome**, **domínio** e **fator de risco** e clicar em **salvar**.
 
-4. Em **Aplicar a**, defina como deseja que o uso seja filtrado. O uso sendo monitorado pode ser filtrado de duas maneiras diferentes:
+1. Em **Aplicar a**, defina como deseja que o uso seja filtrado. O uso sendo monitorado pode ser filtrado de duas maneiras diferentes:
 
     - **Relatórios contínuos** – selecione se deseja monitorar **todos os relatórios contínuos** (padrão) ou escolha **relatórios contínuos específicos** a serem monitorados.
 
@@ -48,7 +54,7 @@ Para cada política, defina os seguintes parâmetros:
 
     - **Disparar alertas apenas para atividades suspeitas que ocorrerem após a data** – qualquer aumento no uso do aplicativo antes da data selecionada é ignorado. No entanto, a atividade anterior à data selecionada é obtida para estabelecer o padrão de uso normal.
 
-5. Em **alertas**, você pode definir a sensibilidade do alerta. Há várias maneiras de controlar o número de alertas disparados pela política:
+1. Em **alertas**, você pode definir a sensibilidade do alerta. Há várias maneiras de controlar o número de alertas disparados pela política:
 
     - O controle deslizante **Selecionar a sensibilidade da detecção de anomalias** – dispare alertas para as principais X atividades anômalas por 1.000 usuários por semana. Os alertas são disparados para as atividades com o maior risco.
 
@@ -56,9 +62,9 @@ Para cada política, defina os seguintes parâmetros:
 
     - Selecione também a opção **Usar as configurações padrão de sua organização**. Essa opção preenche as configurações padrão de **Limite diário de alertas**, email e mensagem de texto de sua organização. Para definir o padrão, preencha as definições de **Configuração de alerta** e clique em **Salvar essas configurações de alerta como o padrão para a sua organização**.
 
-6. Clique em **Criar**.
+1. Clique em **Criar**.
 
-7. Assim como com todas as políticas, você pode **Editar**, **desabilitar** e **habilitar** a política clicando nos três pontos no final da linha na página **políticas** . Por padrão, quando você cria uma política, ela é habilitada.
+1. Assim como com todas as políticas, você pode **Editar**, **desabilitar** e **habilitar** a política clicando nos três pontos no final da linha na página **políticas** . Por padrão, quando você cria uma política, ela é habilitada.
 
 ## <a name="next-steps"></a>Próximas etapas
 

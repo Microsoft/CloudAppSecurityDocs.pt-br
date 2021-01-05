@@ -3,12 +3,12 @@ title: Listar API de entidades
 description: Este artigo descreve a solicitação de lista na API de entidades do Cloud App Security.
 ms.date: 03/27/2020
 ms.topic: reference
-ms.openlocfilehash: bbe7e57bb50be9ca9b55fc48c1906811f8460d72
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: a93fa00db40720d8b8bf31a8494ce949402bca0b
+ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314096"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97858962"
 ---
 # <a name="list---entities-api"></a>Listar API de entidades
 
@@ -35,7 +35,7 @@ POST /api/v1/entities/
 | --- | --- |
 | filtros | Filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de entidade](api-entities.md#filters) para obter mais detalhes |
 | sortDirection | A direção da classificação. Os valores possíveis são: `asc` e `desc` |
-| tipo de classificação | Campos usados para classificar entidades. Os valores possíveis são:<br /><br />**Data**: a data em que a entidade foi criada<br /><br />**severidade**: a severidade da entidade |
+| tipo de classificação | Campos usados para classificar entidades. Os valores possíveis são:<br />- **Data**: a data em que a entidade foi criada<br />- **severidade**: a severidade da entidade |
 | skip | Ignora o número especificado de registros |
 | limite | Número máximo de registros retornados pela solicitação |
 

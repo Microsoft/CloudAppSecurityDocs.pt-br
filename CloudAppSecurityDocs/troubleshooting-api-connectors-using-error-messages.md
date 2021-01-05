@@ -3,12 +3,12 @@ title: Solucionar problemas de mensagens de erro do conector do aplicativo
 description: Este artigo apresenta uma lista de mensagens de erro do conector do Aplicativo de API, além das recomendações de resolução para cada uma.
 ms.date: 01/29/2020
 ms.topic: conceptual
-ms.openlocfilehash: bc15d27ce42d8bd691897d7b0a3eed78b7691d64
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 5848e0286d6d99ed3699652e3a44ef5fe1cf359b
+ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97370136"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808990"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solução de problemas de conectores de aplicativos usando mensagens de erro
 
@@ -25,7 +25,7 @@ Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do con
 > |Mensagem de erro|Aplicativo relevante|Descrição|Resolução|
 > |----|----|----|------------|
 > |HttpRequestFailure: O servidor retornou: 500 Erro interno do servidor|Todos os aplicativos|Ocorreu um erro no aplicativo.|Verificar o status do aplicativo|
-> |Tempo limite do serviço excedido|Todos os aplicativos|Foi detectado um tempo limite excedido de conexão entre o Cloud App Security e o aplicativo. Isso pode ocorrer devido a um problema com o aplicativo.|Tente novamente mais tarde.|
+> |Tempo limite do serviço excedido|Todos os aplicativos|Foi detectado um tempo limite excedido de conexão entre o Cloud App Security e o aplicativo. Isso pode ocorrer devido a um problema com o aplicativo.|Tente novamente depois.|
 > |NullPointerException|AWS|Erro interno|Contate o suporte|
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Box|O token de atualização do Box não é válido|Siga o processo para conectar o Box ao Cloud App Security novamente.|
 > |BoxRestException: Falha ao analisar a resposta.|Box|Erro interno|Clique no link “Teste agora” novamente para testar a conexão com o Box.|
@@ -51,6 +51,7 @@ Os erros do conector de aplicativos podem ser vistos na caixa de diálogo do con
 > |HttpRequestFailure: o servidor retornou: 400 solicitação inválida|Office 365|Erro interno|Clique no link “Teste agora” dentro de alguns minutos; se não funcionar, siga o processo para conectar o Office 365 ao Cloud App Security novamente.|
 > |SocketTimeoutException: tempo limite de leitura excedido|Salesforce|Erro interno|Clique no link “Teste agora” novamente para testar a conexão com o Salesforce.|
 > |HttpRequestFailure: o servidor retornou: 400 solicitação inválida|Salesforce|A conexão com o Salesforce não foi concluída ou expirou.|Siga o processo para conectar o Salesforce ao Cloud App Security novamente.|
+> |Obter permissões: nohttpresponseexception: `*******.salesforce.com:443` falha ao responder|Salesforce|Restrição de IP no Customer ENV.|No portal do Salesforce, em   >  **configurações da sessão** de instalação, desmarque a caixa de seleção **Bloquear sessões para o endereço IP do qual foi originada** .|
 > |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: O servidor retornou: 403 Proibido|ServiceNow|As permissões estão incorretas|Siga o processo para conectar o ServiceNow ao Cloud App Security novamente usando uma conta de administrador.|
 > |Obter eventos: {"código": 403, "serverResponse"<br />Obter usuários: {"código": 403, "serverResponse"<br />…<br />"Body": "{" erro ":" permissão negada "}"|Workday|Permissão insuficiente para acessar os logs de auditoria e/ou os pontos de extremidade do usuário|Verifique se todas as permissões estão em vigor. [Saiba mais](connect-workday-to-microsoft-cloud-app-security.md#prerequisites)|
 > |"código": 400, "serverResponse"<br />…<br />corpo ":" {"erro": "invalid_grant"}|Workday|Problema de autenticação|A conta usada para configurar a instância pode estar bloqueada ou desabilitada. Para verificar, exiba a conta workday e selecione **Exibir histórico de logon**. Você pode ver uma mensagem de falha de autenticação no relatório especificando que a conta do sistema está desabilitada. [Saiba mais](connect-workday-to-microsoft-cloud-app-security.md#how-to-connect-workday-to-cloud-app-security-using-oauth)|

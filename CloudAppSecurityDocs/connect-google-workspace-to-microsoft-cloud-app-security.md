@@ -3,12 +3,12 @@ title: Conectar o Google Workspace ao Cloud App Security
 description: Este artigo fornece informações sobre como conectar seu Google Workspace ao Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
 ms.date: 11/27/2019
 ms.topic: how-to
-ms.openlocfilehash: 5c2385f59572434b07730213232c6701589a654f
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 0d9d99d650ab0d68f8bd6dd129f6b01c78fb2cc5
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97370376"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855551"
 ---
 # <a name="connect-google-workspace-to-microsoft-cloud-app-security"></a>Conectar o Google Workspace ao Microsoft Cloud App Security
 
@@ -116,7 +116,7 @@ Este artigo fornece instruções para conectar Microsoft Cloud App Security à s
 
     **Para uma organização do Google Workspace que ainda não tem uma instância GCP conectada**
 
-    - Na página **aplicativos conectados** , clique no sinal de adição e selecione **Google Workspace**.
+    - Na página **aplicativos conectados** , clique no sinal de adição ( **+** ) e selecione **Google Workspace**.
 
 1. No pop-up, preencha as seguintes informações:
 

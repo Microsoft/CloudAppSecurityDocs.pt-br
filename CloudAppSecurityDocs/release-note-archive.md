@@ -3,12 +3,12 @@ title: Arquivos de atualizações anteriores do Cloud App Security
 description: Este artigo é um arquivo que descreve as atualizações feitas em lançamentos anteriores do Cloud App Security.
 ms.date: 11/25/2020
 ms.topic: conceptual
-ms.openlocfilehash: 50f8bc735743d1506ac9ad18e6b10b659de7ab6e
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: d64c12289025ef7270ae94f922cea187e8ca5dbf
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315541"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855746"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Arquivo Morto de atualizações anteriores do Microsoft Cloud App Security
 
@@ -728,7 +728,7 @@ Lançado em 12 de novembro de 2017
 
 - Usando o novo ponto de interrogação azul no canto, é possível agora acessar a página de documentação relevante do Cloud App Security em docs.microsoft.com de dentro das páginas do portal. Cada link é sensível ao contexto, levando você para as informações necessárias com base na página em que você está.
 - Agora, você pode enviar comentários de qualquer página do portal do Cloud App Security. Os comentários permitem que você informe bugs, solicite novos recursos e compartilhe sua experiência diretamente com a equipe do Cloud App Security.
-- Foram feitas melhorias na capacidade de descoberta de nuvem de reconhecer subdomínios para investigações aprofundadas no uso da nuvem de sua organização. Para saber mais, confira [Trabalhando com aplicativos descobertos](discovered-apps.md).
+- Foram feitas melhorias na capacidade de Cloud Discovery de reconhecer subdomínios para investigações aprofundadas no uso de nuvem de sua organização. Para saber mais, confira [Trabalhando com aplicativos descobertos](discovered-apps.md).
 
 ### <a name="cloud-app-security-release-109"></a>Cloud App Security versão 109
 
@@ -745,7 +745,7 @@ Lançado em 29 de outubro de 2017
 
 - Estamos distribuindo gradualmente a capacidade de filtrar de acordo com os nomes de atividades de serviços específicos. Esse novo filtro de tipo de atividade é mais granular, para que você possa monitorar as atividades de aplicativos específicas, em vez de tipos de atividade mais gerais. Por exemplo, anteriormente, você podia filtrar por **Executar o comando**, e agora você pode filtrar para cmdlets EXO específicos. O nome da atividade também pode ser visto na gaveta de atividade em **Tipo (em aplicativo)**. Essa funcionalidade substituirá o filtro de tipo de atividade.
 
-- O Cloud Discovery agora é compatível a Cisco ASA com FirePOWER.
+- O Cloud Discovery agora dá suporte ao Cisco ASA com potência.
 
 - Foram feitas melhorias de desempenho nas páginas de Usuário de Discovery e IP para melhorar a experiência do usuário.
 
@@ -755,7 +755,7 @@ Lançadas em setembro/outubro de 2017
 
 - O Cloud App Security agora inclui um data center localizado na UE. Além de nosso data center dos EUA, o data center da UE permitirá que os clientes do Cloud App Security estejam em total conformidade com a nova e futura padronização e as certificações europeias.
 - Novos filtros foram adicionados à página de **Conectores de aplicativos**, que lhe fornecem filtragem mais simples e análise adicional.
-- O Cloud Discovery em arquivos de log que têm apenas informações de IP de destino foi aprimorado.
+- Cloud Discovery nos arquivos de log que têm apenas informações de IP de destino foram aprimoradas.
 
 ### <a name="cloud-app-security-release-104"></a>Cloud App Security versão 104
 
@@ -969,7 +969,7 @@ Lançado em 20 de março de 2017
 - O conector do aplicativo do Cloud App Security para ServiceNow foi expandido para incluir suporte para tokens de OAuth (como apresentado em Genebra, Helsinque, Istambul). Essa alteração fornece uma conexão de API mais robusta para o ServiceNow não depende do usuário que está implantando. Para obter mais informações, consulte [conectar o ServiceNow ao Microsoft Cloud app Security](connect-servicenow-to-microsoft-cloud-app-security.md). Os clientes existentes podem atualizar as configurações na página de conector do Aplicativo ServiceNow.
 - Se você tiver configurado scanners DLP adicionais de terceiros, o status de verificação de DLP agora mostrará o status de cada conector de forma independente para melhorar a visibilidade.
 - Agora, o Cloud App Security conta com suporte para atividades de Equipes da Microsoft que são suportadas no log de auditoria do Office 365. Esse recurso está sendo implantado gradativamente.
-- Para eventos de representação do Exchange Online, agora você pode filtrar pelo nível de permissão usado-delegado, administrador ou administrador delegado. Você pode pesquisar eventos que exibam o nível de representação que lhe interessa no **log de atividades** pesquisando o item objetos de **atividade**  >  **Item**.
+- Para eventos de representação do Exchange Online, agora você pode filtrar pelo nível de permissão usado-delegado, administrador ou administrador delegado. Você pode pesquisar eventos que exibam o nível de representação que lhe interessa no **log de atividades** pesquisando o item objetos de **atividade**  >  .
 - Na gaveta de aplicativos na guia **Permissões do Aplicativo** dos aplicativos do Office 365, você pode ver o **Editor** de cada aplicativo. Você também pode usar o Editor como um filtro para investigar outros aplicativos do mesmo editor.
 - Agora, os endereços IP com risco são exibidos como um fator de risco independente em vez de ponderados no fator de risco de **Localização** geral.
 - Quando os rótulos de Proteção de Informações do Azure estiverem desabilitados em um arquivo, os rótulos desabilitados serão exibidos como desabilitados no Cloud App Security. Rótulos excluídos não serão exibidos.

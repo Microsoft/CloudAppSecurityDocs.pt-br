@@ -1,20 +1,23 @@
 ---
 title: Integre o Microsoft defender para identidade com o Cloud App Security
 description: Este artigo fornece informações sobre como aproveitar o Microsoft defender para informações de identidade no Cloud App Security para detecção de riscos híbridos.
-ms.date: 11/08/2020
+ms.date: 12/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 260effd5750af75e8ca5bc58d566c6cbb95b1cd3
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: f1639d51b4d3bc82fe6002b96bdc62c983fe87d2
+ms.sourcegitcommit: cfa59a538167bd126d64dbd05f04a1957bc035c8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315099"
+ms.lasthandoff: 12/27/2020
+ms.locfileid: "97792663"
 ---
 # <a name="microsoft-defender-for-identity-integration"></a>Integração do Microsoft Defender para Identidade
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 O Microsoft Cloud App Security integra-se com o Microsoft defender for Identity para fornecer UEBA (análise comportamental de entidade de usuário) em um ambiente híbrido – tanto no aplicativo de nuvem quanto no local, para obter mais informações, consulte [tutorial: investigar usuários arriscados](tutorial-ueba.md). Para obter mais informações sobre o aprendizado de máquina e análise comportamental fornecidos pelo defender for Identity, consulte [o que é o defender for Identity?](/defender-for-identity/what-is)
+
+> [!NOTE]
+> Cloud App Security não envia notificações por email para os alertas do defender for Identity. No entanto, você pode configurar notificações por email para eles no portal do defender for Identity.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

@@ -3,12 +3,12 @@ title: API de atividades de lista
 description: Este artigo descreve a solicitação de lista na API de atividades do Cloud App Security.
 ms.date: 03/27/2020
 ms.topic: reference
-ms.openlocfilehash: d36f18f3cc19b726ce84ae75b4a19427a78dba17
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 277dfc0a42b258072a35c14d544ef9fbac4cdb7b
+ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314691"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97858996"
 ---
 # <a name="list---activities-api"></a>API de atividades de lista
 
@@ -32,7 +32,7 @@ POST /api/v1/activities/
 | --- | --- |
 | filtros | Filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de atividade](api-activities.md#filters) para obter mais detalhes |
 | sortDirection | A direção da classificação. Os valores possíveis são: `asc` e `desc` |
-| tipo de classificação | Campos usados para classificar atividades. Os valores possíveis são:<br /><br />**Data**: a data em que a atividade ocorreu<br /><br />**criado**: o carimbo de data/hora quando a atividade foi salva |
+| tipo de classificação | Campos usados para classificar atividades. Os valores possíveis são:<br />- **Data**: a data em que a atividade ocorreu<br />- **criado**: o carimbo de data/hora quando a atividade foi salva |
 | skip | Ignora o número especificado de registros |
 | limite | Número máximo de registros retornados pela solicitação |
 

@@ -3,12 +3,12 @@ title: Trabalhando com aplicativos descobertos no Cloud App Security
 description: Este artigo descreve o processo de identificação e correção de aplicativos de descoberta de nuvem que trazem riscos no Cloud App Security.
 ms.date: 09/25/2019
 ms.topic: conceptual
-ms.openlocfilehash: f23c7fff644a3f2d8572a91dea560cd6ffbe8457
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 4f3cae41623c352c957640ce2fc4002e0d1f09e0
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311767"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855388"
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
@@ -51,7 +51,7 @@ Por exemplo, se você quiser identificar aplicativos de colaboração e de armaz
 
 Depois que os resultados são filtrados, você pode [cancelar a sanção e bloqueá-los](governance-discovery.md) usando a caixa de seleção de ação em massa para cancelar a sanção de todos eles em uma ação só. Depois que eles tiverem a sanção cancelada, você poderá usar um script de bloqueio para impedir que sejam usados em seu ambiente.
 
-A descoberta de nuvem permite que você se aprofunde ainda mais no uso da nuvem da sua organização. Identifique instâncias específicas que estão em uso investigando os subdomínios descobertos.
+Cloud Discovery permite que você se aprofunde ainda mais no uso da nuvem da sua organização. Identifique instâncias específicas que estão em uso investigando os subdomínios descobertos.
 
 Por exemplo, você pode diferenciar entre os diferentes sites do SharePoint.
 

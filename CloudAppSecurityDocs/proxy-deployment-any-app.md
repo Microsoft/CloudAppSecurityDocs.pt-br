@@ -3,12 +3,12 @@ title: Implantar Cloud App Security Controle de Aplicativos de Acesso Condiciona
 description: Este artigo fornece informações sobre como implantar o Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional recursos de proxy reverso para qualquer aplicativo.
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.openlocfilehash: 32aa858eca58f8b76cc90bd96f5ebe17516af1e7
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 52eb9874a5b80fa22f957f855374a0f3444d7101
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315388"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855839"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integrar e implantar o Controle de Aplicativos de Acesso Condicional em qualquer aplicativo
 
@@ -82,7 +82,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
-1. Clique no sinal de adição e, no pop-up, selecione o aplicativo que você deseja implantar e clique em **Iniciar assistente**.
+1. Clique no sinal de adição ( **+** ) e, no pop-up, selecione o aplicativo que você deseja implantar e clique em **Iniciar assistente**.
 1. Na página **informações do aplicativo** , preencha o formulário usando as informações da página de configuração de logon único do seu aplicativo e clique em **Avançar**.
     - Se o IdP fornecer um arquivo de metadados de logon único para o aplicativo selecionado, selecione **carregar arquivo de metadados do aplicativo** e carregue o arquivo de metadados.
     - Ou selecione **preencher dados manualmente** e forneça as seguintes informações:
@@ -161,7 +161,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Etapa 3: configurar o aplicativo que você está implantando<a name="conf-app"></a>
 
-Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize uma destas ações:
+Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
 
 | Status do aplicativo | Descrição | Etapas |
 | --- | --- | --- |
@@ -219,7 +219,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
     > [!NOTE]
     > Para que os certificados sejam reconhecidos, depois de instalar o certificado, você deve reiniciar o navegador e ir para a mesma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Clique em **Continuar**.
+1. Clique em **Continue**.
 
 ## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Etapa 4: verificar se o aplicativo está funcionando corretamente<a name="verify-app"></a>
 
@@ -256,7 +256,7 @@ Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produ�
 > [!div class="nextstepaction"]
 > [Em seguida: como criar uma política de sessão»](session-policy-aad.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 > [!div class="nextstepaction"]
 > [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)

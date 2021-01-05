@@ -1,14 +1,14 @@
 ---
 title: Criar políticas para controlar atividades no Cloud App Security
 description: Este artigo fornece instruções para criar e trabalhar com políticas de atividade.
-ms.date: 03/01/2020
+ms.date: 01/03/2021
 ms.topic: how-to
-ms.openlocfilehash: 26f7b171f0a2addad3c480914c8c7845e452f9ac
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6619c9e0a39e2d59585a8c1b73df048840a646ad
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315711"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855856"
 ---
 # <a name="activity-policies"></a>Políticas de atividade
 
@@ -33,24 +33,24 @@ Você pode definir alertas de atividade a serem enviados para você mesmo ou par
 
 Para criar uma nova política de atividade, siga este procedimento:
 
-1. No console, clique em **Controlar** seguido por **Políticas**.
+1. Acesse **controlar**  >  **políticas**  >  **ameaças detecções**.
 
-2. Clique em **Criar política** e selecione **Política de atividade**.
+1. Clique em **Criar política** e selecione **Política de atividade**.
 
-     ![menu de política de atividade](media/activity-policy-menu.png)
+    ![Criar uma política de detecção de ameaças](media/create-policy-from-threat-detection-tab.png)
 
-3. Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
+1. Atribua um nome e uma descrição à sua política. Se desejar, poderá baseá-la em um modelo. Para obter mais informações sobre modelos de política, consulte [Controlar aplicativos de nuvem com políticas](control-cloud-apps-with-policies.md).
 
-4. Para definir quais ações ou outras métricas vão disparar essa política, trabalhe com os **filtros de atividade**.
+1. Para definir quais ações ou outras métricas vão disparar essa política, trabalhe com os **filtros de atividade**.
     > [!NOTE]
     > Para garantir que você inclua apenas os resultados em que o campo de filtro especificado tenha um valor, é recomendável adicionar o mesmo campo novamente usando o teste de **configuração** . Por exemplo, quando a filtragem por **local** *não é igual* a uma lista especificada de países, também *é* possível adicionar um filtro para **localização** . Você também pode visualizar os resultados do filtro selecionando **Editar e Visualizar resultados**.
     >
     > ![Captura de tela das configurações de filtro, a exibição do campo de localização é definida](media/activity-example-location-isset.png)
 
-5. Em **Parâmetros de correspondência de atividade**, selecione quando uma violação de política será disparada. Escolha disparar quando uma única atividade corresponde aos filtros ou somente quando um número especificado de **Atividades repetidas** é detectado.
+1. Em **Parâmetros de correspondência de atividade**, selecione quando uma violação de política será disparada. Escolha disparar quando uma única atividade corresponde aos filtros ou somente quando um número especificado de **Atividades repetidas** é detectado.
     - Se você escolher **Atividade repetida**, poderá definir **Em um único aplicativo**. Essa configuração disparará uma correspondência de política somente quando as atividades repetidas ocorrerem no mesmo aplicativo. Por exemplo, cinco downloads em 30 minutos no Box disparam uma correspondência de política.
 
-6. Configure as **Ações** que devem ser executadas quando uma correspondência for encontrada.
+1. Configure as **Ações** que devem ser executadas quando uma correspondência for encontrada.
 
 Veja esses exemplos:
 

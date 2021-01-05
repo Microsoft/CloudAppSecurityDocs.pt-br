@@ -1,14 +1,14 @@
 ---
 title: Criar políticas de sessão no Cloud App Security
 description: Este artigo descreve o procedimento para configurar uma política de sessão de Controle de Aplicativos de Acesso Condicional do Cloud App Security para obter visibilidade profunda sobre atividades de sessão de usuário e bloquear downloads usando os recursos de proxy reverso.
-ms.date: 03/31/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 9e755da569c6d90274a6fd347408587a1a6732f7
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 7d3c2c2fbea1b5cae9013b84b07e59ea1c07ee83
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315417"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894613"
 ---
 # <a name="session-policies"></a>Políticas de sessão
 
@@ -38,8 +38,12 @@ Por exemplo, é possível decidir que, de dispositivos não gerenciados ou, para
 
 Para criar uma nova política de sessão, siga este procedimento:
 
-1. No portal, selecione **Controle** e, em seguida, **Políticas**.
-1. Na página **Políticas**, clique em **Criar política** e selecione **Política de sessão**.
+1. Vá para **controle**  >  **políticas**  >  **acesso condicional**.
+
+1. Clique em **Criar política** e selecione **Política de sessão**.
+
+    ![Criar uma política de acesso condicional](media/create-policy-from-conditional-access-tab.png)
+
 1. Na janela **Política de sessão**, atribua um nome para a política, como *Bloquear o download de documentos confidenciais na caixa para usuários de marketing*.
 1. No campo **Tipo de controle de sessão**:
 
@@ -154,6 +158,11 @@ Você também pode configurar políticas de sessão para bloquear o malware no d
 
 Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de informações do Azure, uma mensagem poderá ser exibida explicando que o arquivo contém conteúdo confidencial que requer um rótulo apropriado. Da mesma forma, se um usuário tentar carregar um documento de um dispositivo não gerenciado, uma mensagem com instruções sobre como registrar esse dispositivo ou um que fornece mais explicações sobre por que o dispositivo deve ser registrado pode ser exibida.
 
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Controle de Aplicativos de Acesso Condicional Webinar](webinars.md#on-demand-webinars)
+
 ## <a name="next-steps"></a>Próximas etapas
 
 >[!div class="nextstepaction"]
@@ -165,7 +174,7 @@ Por exemplo, se um usuário carregar um arquivo sem um rótulo de proteção de 
 > [!div class="nextstepaction"]
 > [Solução de problemas de controles de acesso e de sessão](troubleshooting-proxy.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 > [!div class="nextstepaction"]
 > [Bloqueando downloads em dispositivos não gerenciados usando o Azure AD Controle de Aplicativos de Acesso Condicional](use-case-proxy-block-session-aad.md)

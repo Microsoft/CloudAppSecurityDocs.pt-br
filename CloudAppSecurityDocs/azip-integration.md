@@ -1,14 +1,14 @@
 ---
 title: Integrar a Proteção de Informações do Azure ao Cloud App Security
 description: Este artigo fornece informações sobre como utilizar os rótulos da Proteção de Informações do Azure no Cloud App Security para controle adicional sobre o uso de aplicativos de nuvem da sua organização.
-ms.date: 12/09/2019
+ms.date: 12/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 32d157877fa71c12c4ea515316b160cbcfe59396
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 2b5d3399479850d04caba7f6e7f0411c4429b4a6
+ms.sourcegitcommit: 243baad1adeb32d157c7f6165c08df2136b28db0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369864"
+ms.lasthandoff: 12/27/2020
+ms.locfileid: "97792766"
 ---
 # <a name="azure-information-protection-integration"></a>Integração à Proteção de Informações do Azure
 
@@ -26,10 +26,10 @@ Integrando a Proteção de Informações do Azure ao Cloud App Security, é poss
 - A capacidade de investigar de acordo com o nível de classificação e de quantificar a exposição de dados confidenciais sobre os aplicativos de nuvem
 - A capacidade de criar políticas para garantir que os arquivos confidenciais sejam tratados corretamente
 
-> [!NOTE]
-> Para habilitar esse recurso, você precisa de uma licença do Cloud App Security e de uma licença da Proteção de Informações do Azure Premium P1. Assim que as duas licenças estiverem em vigor, o Cloud App Security sincronizará os rótulos das organizações do serviço Proteção de Informações do Azure.
-
 ## <a name="prerequisites"></a>Pré-requisitos
+
+> [!NOTE]
+> Para habilitar esse recurso, você precisa de uma licença do Cloud App Security e de uma licença da Proteção de Informações do Azure Premium P1. Assim que ambas as licenças estiverem em vigor, o Cloud App Security sincronizará os rótulos da organização do serviço de proteção de informações do Azure.
 
 - Para trabalhar com a integração da Proteção de Informações do Azure, habilite o [Conector de aplicativos para o Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
@@ -45,8 +45,6 @@ Atualmente, o Cloud App Security permite a aplicação de rótulos de classifica
   > Para PDF, você deve usar rótulos unificados.
 
 Esse recurso está disponível no momento para arquivos armazenados no box, Google Workspace, SharePoint Online e OneDrive for Business. Mais aplicativos de nuvem serão compatíveis em versões futuras.
-
-Os arquivos que foram rotulados com proteção fora do Cloud App Security não podem ser alterados pelo Cloud App Security. No entanto, você pode verificar esses arquivos concedendo permissões para [inspecionar o conteúdo de arquivos protegidos](content-inspection.md#content-inspection-for-protected-files).
 
 ## <a name="how-it-works"></a>Como ele funciona
 
@@ -64,6 +62,11 @@ Provavelmente, você já conhece os rótulos de classificação de arquivos da [
 4. Depois de habilitar a proteção de informações do Azure no Cloud App Security, todos os novos arquivos adicionados aos seus aplicativos de nuvem conectados serão verificados em busca de rótulos de classificação.
 
 5. Crie novas políticas no Cloud App Security que aplicam os rótulos de classificação automaticamente.
+
+> [!NOTE]
+>
+> - Os arquivos que foram rotulados com proteção fora do Cloud App Security não podem ser alterados pelo Cloud App Security. No entanto, você pode verificar esses arquivos concedendo permissões para [inspecionar o conteúdo de arquivos protegidos](content-inspection.md#content-inspection-for-protected-files).
+> - Por outro lado, os arquivos rotulados por Cloud App Security e carregados no SharePoint ou OneDrive e o rótulo de criptografia aplicada usando uma conta de um nome da entidade de serviço, os arquivos não podem ser abertos no Office na Web. Os cenários de exemplo incluem Cloud App Security e um arquivo enviado para equipes por email.
 
 ## <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>Como integrar a Proteção de Informações do Azure ao Cloud App Security
 
@@ -128,7 +131,9 @@ Siga estas instruções para criar a política de arquivo:
     ![Aplicar rótulo](media/aip-gov-action.png)
 
 > [!NOTE]
-> A capacidade de aplicar automaticamente um rótulo de Proteção de Informações do Azure por meio da política de arquivo é um recurso poderoso. Para proteger os clientes da aplicação por engano de um rótulo a uma grande quantidade de arquivos, como precaução de segurança há um limite diário de 100 ações **Aplicar rótulo** por aplicativo, por locatário. Depois que o limite diário for atingido, a ação de aplicar rótulo pausa temporariamente e continua automaticamente no próximo dia (após 12h UTC). Para aumentar o limite do seu locatário, abra um tíquete de suporte.
+>
+> - A capacidade de aplicar automaticamente um rótulo de Proteção de Informações do Azure por meio da política de arquivo é um recurso poderoso. Para proteger os clientes da aplicação por engano de um rótulo a uma grande quantidade de arquivos, como precaução de segurança há um limite diário de 100 ações **Aplicar rótulo** por aplicativo, por locatário. Depois que o limite diário for atingido, a ação de aplicar rótulo pausa temporariamente e continua automaticamente no próximo dia (após 12h UTC). Para aumentar o limite do seu locatário, abra um tíquete de suporte.
+> - Quando uma política é desabilitada, todas as tarefas de rotulação pendentes para essa política são suspensas.
 
 ### <a name="control-file-exposure"></a>Controlar a exposição de arquivo
 

@@ -3,12 +3,12 @@ title: Conectar o Salesforce ao Cloud App Security
 description: Este artigo fornece informações sobre como conectar o Salesforce ao Cloud App Security usando o conector de API para obter visibilidade e controle sobre o uso.
 ms.date: 10/06/2019
 ms.topic: how-to
-ms.openlocfilehash: c2a1514fcb5fc02823f8d365a21fd1f154ab0e86
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 45c1a74e860c155662d4e7ff66e16bea956b94e6
+ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312498"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808939"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar o Salesforce ao Microsoft Cloud App Security
 
@@ -34,12 +34,12 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
     * Em **Gerenciar Usuários**, vá para a página **Perfis de Usuário**.
 
-        ![perfis do Salesforce Manage Users](media/salesforce-manageusers-profiles.png "perfis do Salesforce Manage Users")
+        ![perfis do Salesforce Manage Users](media/salesforce-manageusers-profiles.png)
 
     * Crie um novo perfil clicando em **Novo**.
     * Escolha o perfil que você acabou de criar para implantar o Cloud App Security e clique em **Editar**. Esse perfil será usado para a conta de serviço do Cloud App Security para configurar o conector do aplicativo.
 
-         ![editar perfil do salesforce](media/salesforce-edit-profile.png "editar perfil do salesforce")
+         ![editar perfil do salesforce](media/salesforce-edit-profile.png)
 
     * Certifique-se de ter as seguintes caixas de seleção habilitadas:
       * **API Habilitada**
@@ -54,11 +54,11 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
     1. Vá para a página de configuração do Salesforce.
 
-        ![configuração do Salesforce](media/salesforce-setup.png "configuração do salesforce")
+        ![configuração do salesforce](media/salesforce-setup.png)
 
     1. No menu lateral, selecione **Gerenciar Usuários** e clique em **Usuários**.
 
-        ![usuários do menu do salesforce](media/salesforce-menu-users.png "usuários do menu do salesforce")
+        ![usuários do menu do salesforce](media/salesforce-menu-users.png)
 
     1. Selecione o usuário administrativo atual para seu usuário do Cloud App Security dedicado.
 
@@ -66,7 +66,11 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
         Se ela não estiver selecionada, clique em **Editar** e, em seguida, marque a caixa de seleção.
 
-        ![usuário do conteúdo crm do salesforce](media/salesforce-crm-content-user.png "usuário do conteúdo crm do salesforce")
+        ![usuário do conteúdo crm do salesforce](media/salesforce-crm-content-user.png)
+
+    1. Em **configurações de sessão**, verifique se a caixa de seleção selecionar **sessões de bloqueio para o endereço IP da qual se originou** **não** está marcada.
+
+        ![configurações de sessão do Salesforce](media/salesforce-setup-session-settings.png)
 
     1. Clique em **Save** (Salvar).
 
@@ -74,13 +78,13 @@ Este artigo fornece instruções para conectar o Microsoft Cloud App Security à
 
 1. Na página **Conectores de aplicativos**, clique no botão de mais antes de **Salesforce**.
 
-    ![conectar o Salesforce](media/connect-salesforce.png "conectar o salesforce")
+    ![conectar o salesforce](media/connect-salesforce.png)
 
 1. Na página de configurações do Salesforce, na guia API, clique em **Seguir este link**, dependendo de qual instância que você deseja instalar.
 
 1. Isso abre a página de entrada do Salesforce. Insira suas credenciais para permitir que o Cloud App Security acesse o aplicativo do Salesforce da sua equipe.
 
-    ![entrada do Salesforce](media/salesforce-logon.png "logon do salesforce")
+    ![entrada do Salesforce](media/salesforce-logon.png)
 
 1. O Salesforce perguntará se você deseja permitir que o Cloud App Security acesse o log de atividades e as informações da sua equipe e realize quaisquer atividades como qualquer membro da equipe. Para continuar, clique em **Permitir**.
 

@@ -3,12 +3,12 @@ title: Implantar Cloud App Security Controle de Aplicativos de Acesso Condiciona
 description: Este artigo fornece informações sobre como implantar o Controle de Aplicativos de Acesso Condicional de Microsoft Cloud App Security para qualquer aplicativo Web usando o provedor de identidade PingOne.
 ms.date: 09/29/2020
 ms.topic: how-to
-ms.openlocfilehash: d49d7994e577321cfc276f642f77f7c81e4c9d9f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: ef55a9a52c67a4329533caaa2a7e5700cec87796
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315235"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855822"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-web-app-using-pingone-identity-provider-idp"></a>Integração e implantação de Controle de Aplicativos de Acesso Condicional para qualquer aplicativo Web usando o IdP (provedor de identidade PingOne)
 
@@ -59,7 +59,7 @@ Use as etapas a seguir para rotear suas sessões de aplicativo Web de PingOne pa
 
 ## <a name="step-1-get-your-apps-saml-single-sign-on-settings"></a>Etapa 1: obter as configurações de logon único do SAML do seu aplicativo
 
-1. No Salesforce, navegue até configurações de **configuração**  >  **Settings**  >  **identidade** de  >  **Sign-On único configurações**.
+1. No Salesforce, navegue até configurações de **configuração**  >    >  **identidade** de  >  **Sign-On único configurações**.
 
 1. Em **configurações de Sign-On único**, clique no nome do aplicativo SAML 2,0 que você deseja configurar.
 
@@ -75,7 +75,7 @@ Use as etapas a seguir para rotear suas sessões de aplicativo Web de PingOne pa
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
-1. Clique no sinal de adição e, no pop-up, selecione o aplicativo que você deseja implantar e clique em **Iniciar assistente**.
+1. Clique no sinal de adição ( **+** ) e, no pop-up, selecione o aplicativo que você deseja implantar e clique em **Iniciar assistente**.
 1. Na página **informações do aplicativo** , selecione **preencher dados manualmente**, na URL do **serviço do consumidor de asserção** , insira a URL de **logon** do Salesforce que você anotou anteriormente e clique em **Avançar**.
 
     > [!NOTE]
@@ -188,7 +188,7 @@ De volta à página **alterações do aplicativo** Cloud app Security, faça o s
 
 ## <a name="step-7-complete-the-app-changes"></a>Etapa 7: concluir as alterações do aplicativo
 
-No Salesforce, navegue até configurações de **configuração**  >  **Settings**  >  **identidade**  >  **Sign-On configurações únicas** e faça o seguinte:
+No Salesforce, navegue até configurações de **configuração**  >    >  **identidade**  >  **Sign-On configurações únicas** e faça o seguinte:
 
 1. Recomendado: Crie um backup de suas configurações atuais.
 1. Substitua o valor do campo **URL de logon do provedor de identidade** pela URL de logon único do SAML Cloud app Security que você anotou anteriormente.
@@ -212,7 +212,7 @@ No Salesforce, navegue até configurações de **configuração**  >  **Settings
 > [!div class="nextstepaction"]
 > [«ANTERIOR: implantar Controle de Aplicativos de Acesso Condicional para qualquer aplicativo](proxy-deployment-any-app.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 > [!div class="nextstepaction"]
 > [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)

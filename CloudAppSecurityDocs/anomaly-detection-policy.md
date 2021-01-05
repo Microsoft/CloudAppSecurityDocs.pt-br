@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/20/2020
+ms.date: 01/05/2021
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 43490c416d1d19882321343c18e3e4417a6110f4
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 1c84882ec04d72ef24d9fe044c0fabbb355a15bb
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369881"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894664"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias
 
@@ -35,7 +35,7 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Falhas de logon
 * Atividade do administrador
 * Contas inativas
-* Local
+* Localização
 * Viagem impossível
 * Agente de dispositivo e usuário
 * Taxa de atividade
@@ -211,6 +211,11 @@ Você pode triar rapidamente os vários alertas disparados pelas novas política
     ![alert3 de detecção de anomalias](media/anomaly-alert-user3.png)
 
 1. Para arquivos infectados por malware, depois que os arquivos forem detectados, será exibida uma lista de **Arquivos infectados**. Clique no nome do arquivo de malware na gaveta de arquivo para abrir um relatório de malware que oferece informações sobre o tipo de malware que infectou o arquivo.
+
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Webinar de proteção contra ameaças](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Próximas etapas
 

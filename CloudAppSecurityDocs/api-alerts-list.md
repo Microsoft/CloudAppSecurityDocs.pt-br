@@ -3,12 +3,12 @@ title: API de alertas de lista
 description: Este artigo descreve a solicitação de lista na API de alertas do Cloud App Security.
 ms.date: 03/27/2020
 ms.topic: reference
-ms.openlocfilehash: a4a24db5bab13a12fdeb7ecbe88ad45c41b90577
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 3c3dec04dff5369120decdfc6142d0517eca4e2a
+ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314572"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97859030"
 ---
 # <a name="list---alerts-api"></a>API de alertas de lista
 
@@ -32,7 +32,7 @@ POST /api/v1/alerts/
 | --- | --- |
 | filtros | Filtrar objetos com todos os filtros de pesquisa para a solicitação, consulte [filtros de alerta](api-alerts.md#filters) para obter mais detalhes |
 | sortDirection | A direção da classificação. Os valores possíveis são: `asc` e `desc` |
-| tipo de classificação | Campos usados para classificar alertas. Os valores possíveis são:<br /><br />**Data**: a data em que o alerta foi criado<br /><br />**severidade**: a severidade do alerta |
+| tipo de classificação | Campos usados para classificar alertas. Os valores possíveis são:<br />- **Data**: a data em que o alerta foi criado<br />- **severidade**: a severidade do alerta |
 | skip | Ignora o número especificado de registros |
 | limite | Número máximo de registros retornados pela solicitação |
 
