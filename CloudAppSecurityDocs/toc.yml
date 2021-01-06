@@ -229,20 +229,18 @@
         - name: Controlar aplicativos de nuvem com políticas
           href: control-cloud-apps-with-policies.md
           items:
-            - name: Políticas do Cloud Discovery
-              href: cloud-discovery-policies.md
+            - name: Detecção de ameaças
               items:
-                - name: Política de detecção de anomalias do Cloud Discovery
-                  href: cloud-discovery-anomaly-detection-policy.md
-            - name: Políticas de atividade
-              href: user-activity-policies.md
-            - name: Políticas de detecção de anomalias
-              href: anomaly-detection-policy.md
-            - name: Políticas OAuth
-              href: app-permission-policy.md
-            - name: Políticas de arquivos
-              href: data-protection-policies.md
+                - name: Políticas de atividade
+                  href: user-activity-policies.md
+                - name: Políticas de detecção de anomalias
+                  href: anomaly-detection-policy.md
+                - name: Políticas OAuth
+                  href: app-permission-policy.md
+            - name: Proteção das informações
               items:
+                - name: Políticas de arquivos
+                  href: data-protection-policies.md
                 - name: Inspeção de conteúdo
                   href: content-inspection.md
                   items:
@@ -252,12 +250,18 @@
                       href: dcs-inspection.md
                     - name: Trabalhar com o mecanismo RegEx
                       href: working-with-the-regex-engine.md
-            - name: Políticas de Controle de Aplicativos de Acesso Condicional
+            - name: Políticas de acesso condicional
               items:
                 - name: Políticas de acesso
                   href: access-policy-aad.md
                 - name: Políticas de sessão
                   href: session-policy-aad.md
+            - name: Políticas de TI de sombra
+              items:
+                - name: Política do Cloud Discovery
+                  href: cloud-discovery-policies.md
+                - name: Política de detecção de anomalias do Cloud Discovery
+                  href: cloud-discovery-anomaly-detection-policy.md
             - name: Referência de modelo de política
               href: policy-template-reference.md
         - name: Controlar aplicativos conectados
@@ -280,14 +284,8 @@
               href: icap-stunnel.md
             - name: Outras integrações
               href: additional-integrations.md
-        - name: Automatizar processos e fluxos de trabalho
-          items:
-            - name: Usar a API REST
-              href: api-tokens.md
-            - name: Investigar atividades com APIs
-              href: investigate-activities-api.md
-            - name: Usar o Microsoft Power Automate
-              href: flow-integration.md
+        - name: Automatizar processos usando o Microsoft Power Automate
+          href: flow-integration.md
 - name: Referência
   items:
     - name: Atestar seu aplicativo
@@ -318,14 +316,26 @@
               href: api-discovery-finalize.md
             - name: Gerar script de bloco
               href: api-discovery-script.md
-        - name: Aprimoramento de documento
+        - name: Enriquecimento de dados
           items:
-            - name: Criar intervalo de endereços IP
+            - name: Visão geral
               href: api-data-enrichment.md
+            - name: Gerenciar intervalos de endereços IP usando a API
+              href: api-data-enrichment-manage-script.md
+            - name: Listar intervalos de IP
+              href: api-data-enrichment-list.md
+            - name: Criar intervalo de endereços IP
+              href: api-data-enrichment-create.md
+            - name: Atualizar intervalo de endereços IP
+              href: api-data-enrichment-update.md
+            - name: Excluir intervalo de endereços IP
+              href: api-data-enrichment-delete.md
         - name: Atividades
           items:
             - name: Visão geral
               href: api-activities.md
+            - name: Investigar atividades com APIs
+              href: api-activities-investigate-script.md
             - name: Listar atividades
               href: api-activities-list.md
             - name: Buscar atividade

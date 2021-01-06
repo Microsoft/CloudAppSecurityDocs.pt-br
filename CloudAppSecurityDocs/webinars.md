@@ -3,12 +3,12 @@ title: Assista aos nossos webinars
 description: Exibe uma lista de webinars anteriores, incluindo uma descrição.
 ms.date: 01/05/2021
 ms.topic: conceptual
-ms.openlocfilehash: 147064103d1cf26bd94b2d03f7f0ed71444239c6
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 1429806209a84476c9219f18a67830b2c41729a7
+ms.sourcegitcommit: 3f148f3ecea57c0ce8623722a60bab593bd20282
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894630"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97930488"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Microsoft Cloud App Security webinars
 
@@ -20,7 +20,10 @@ Para saber mais sobre nosso futuro webinars e outros desenvolvimentos, junte-se 
 
 ## <a name="on-demand-webinars"></a>Webinars sob demanda
 
-Você pode observar as sessões gravadas a qualquer momento e, quando disponível, pode ativar legendas clicando em **legendas ocultas** e selecionando o idioma desejado.
+Você pode observar as sessões gravadas a qualquer momento.
+
+> [!NOTE]
+> Quando disponível, você pode ativar as legendas clicando em **legendas ocultas** e selecionando o idioma desejado.
 
 | Título | Saiba mais |
 | --- | --- |

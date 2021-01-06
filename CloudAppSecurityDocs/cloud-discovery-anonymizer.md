@@ -3,12 +3,12 @@ title: Anonimizar dados de usuário no Cloud App Security
 description: Este artigo fornece informações sobre como proteger a privacidade do usuário anonimizando os nomes de usuários nos dados do Cloud Discovery.
 ms.date: 04/20/2020
 ms.topic: how-to
-ms.openlocfilehash: bb8befb8c65f766118f6a3221b382c6699b17a0e
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: e17d837110028a7e252cf4092a09cc9bbd0ff7e1
+ms.sourcegitcommit: 3f148f3ecea57c0ce8623722a60bab593bd20282
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313518"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97930505"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimização de dados do Cloud Discovery
 
@@ -34,12 +34,12 @@ Pontos principais:
 
     - Você pode definir no Cloud App Security que o padrão seja anonimizar todos os dados de relatórios de instantâneos de arquivos de log carregados e de relatórios contínuos dos coletores de log da seguinte maneira:
 
-    1. Selecione **configurações**  >  **Cloud Discovery configurações**.
+        1. Selecione **configurações**  >  **Cloud Discovery configurações**.
 
-    2. Na guia anonimização, para tornar os nomes de dados **anônimos** por padrão, selecione anonimamente **informações privadas por padrão em novos relatórios e fontes de dado**. Você também pode selecionar **anônimos informações do dispositivo por padrão no relatório ' usuários do ponto de extremidade Win10 '**.
-    3. Clique em **Save** (Salvar).
+        2. Na guia anonimização, para tornar os nomes de dados **anônimos** por padrão, selecione anonimamente **informações privadas por padrão em novos relatórios e fontes de dado**. Você também pode selecionar **anônimos informações do dispositivo por padrão no relatório ' usuários do ponto de extremidade Win10 '**.
+        3. Clique em **Save** (Salvar).
 
-    ![Página de configurações de anonimato](media/anonymizer1.png)
+        ![Página de configurações de anonimato](media/anonymizer1.png)
 
 2. Quando a Anonimização está selecionada, o Cloud App Security analisa o log de tráfego e extrai atributos específicos de dados.
 3. O Cloud App Security substitui o nome de usuário por um nome de usuário criptografado.
