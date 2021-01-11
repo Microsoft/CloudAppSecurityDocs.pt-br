@@ -1,14 +1,14 @@
 ---
-title: Descobrir e gerenciar a TI Sombra
+title: Descobrir e gerenciar TI sombra
 description: Este tutorial descreve o processo para aplicar automaticamente rótulos de classificação da proteção de informações do Azure no Microsoft Cloud App Security.
 ms.date: 06/29/2020
 ms.topic: tutorial
-ms.openlocfilehash: d0b4e795aac071cb7583ed4851e2955a609e8d49
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: d7e3db3ca7f648b966ef9fbe3948eb345a710c10
+ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316952"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97857981"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar o Shadow IT na sua rede
 

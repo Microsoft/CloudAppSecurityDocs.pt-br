@@ -1,14 +1,14 @@
 ---
 title: Conformidade, segurança de dados, privacidade e relação de confiança do Cloud App Security
 description: Este artigo descreve a oferta de conformidade, a central de confiabilidade, a privacidade e a segurança de dados do Cloud App Security.
-ms.date: 10/18/2020
+ms.date: 01/04/2021
 ms.topic: overview
-ms.openlocfilehash: 33aa4d7693357cef452cee14974b6892e00f338a
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 752e5b8134179993076b2e61c2e5b44ab0d29b61
+ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313501"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97857964"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Segurança e privacidade de dados do Microsoft Cloud App Security
 
@@ -151,7 +151,7 @@ O Microsoft Cloud App Security proporciona a capacidade de [exportar](activity-f
 
 ### <a name="encryption"></a>Criptografia
 
-A Microsoft usa a tecnologia de criptografia para proteger seus dados em repouso em um banco de dados da Microsoft e quando eles são transferidos entre os dispositivos do usuário e os data centers do Cloud App Security.
+A Microsoft usa a tecnologia de criptografia para proteger seus dados em repouso em um banco de dados da Microsoft e quando eles são transferidos entre os dispositivos do usuário e os data centers do Cloud App Security. Além disso, toda a comunicação entre Cloud App Security e aplicativos conectados é criptografada usando HTTPS.
 
 > [!NOTE]
 > O Cloud App Security usa protocolos TLS 1.2+ para fornecer a melhor criptografia do setor. Aplicativos cliente nativos e navegadores que não são compatíveis com TLS 1.2+ não estarão acessíveis quando configurados com controle de sessão. No entanto, aplicativos SaaS que usam TLS 1.1 ou inferior aparecerão no navegador como usando TLS 1.2+ quando configurados com o Cloud App Security.
