@@ -3,12 +3,12 @@ title: Guia de investigação de alertas de detecção de anomalias Cloud App Se
 description: Este artigo explica como investigar os Cloud App Security alertas de detecção de anomalias emitidos quando são detectados ataques em sua organização.
 ms.date: 06/08/2020
 ms.topic: how-to
-ms.openlocfilehash: 6c3a099153da4ac69961fd759a26c08a31e6867b
-ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
+ms.openlocfilehash: 06920ce7812adc3d2a3ac98ecda86b9becbe7141
+ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808973"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062763"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Como investigar alertas de detecção de anomalias
 
@@ -201,18 +201,6 @@ Essa detecção identifica aplicativos com caracteres, como cartas estrangeiras,
     - Aplicativos que não foram atualizados recentemente. Isso pode indicar um aplicativo que não tem mais suporte.
     - Aplicativos que têm permissões irrelevantes. Isso pode indicar que um aplicativo é arriscado.
 1. Se você ainda suspeitar que um aplicativo é suspeito, poderá pesquisar o nome do aplicativo, o editor e a URL online.
-
-### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Adição incomum de credenciais a um aplicativo OAuth
-
-Essa detecção identifica a adição suspeita de credenciais privilegiadas a um aplicativo OAuth. Isso pode indicar que um invasor comprometeu o aplicativo e o está usando para atividades mal-intencionadas.
-
-> [!NOTE]
-> Como o risco apresentado por um ataque bem-sucedido é alto, Cloud App Security também o notifica de que as detecções foram reproduzidas para meados de setembro de 2020.
-> Os alertas para eventos anteriores têm o título "alerta do sistema: adição incomum de credenciais a um aplicativo OAuth" e o tipo de alerta será MCAS_ALERT_MANAGEMENT_GENERIC.
-
-**Período de aprendizado**
-
-O aprendizado do ambiente da sua organização requer um período de sete dias durante o qual você pode esperar um alto volume de alertas.
 
 ## <a name="execution-alerts"></a>Alertas de execução
 
@@ -448,6 +436,18 @@ Essa política se baseia em aprender o comportamento de logon normal de um usuá
 1. Identifique o endereço IP de origem ou o local em que ocorreu a tentativa de autenticação.
 1. Identifique se o usuário alterou recentemente sua senha e se todos os aplicativos e dispositivos têm a senha atualizada.
 
+### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Adição incomum de credenciais a um aplicativo OAuth
+
+Essa detecção identifica a adição suspeita de credenciais privilegiadas a um aplicativo OAuth. Isso pode indicar que um invasor comprometeu o aplicativo e o está usando para atividades mal-intencionadas.
+
+> [!NOTE]
+> Como o risco apresentado por um ataque bem-sucedido é alto, Cloud App Security também o notifica de que as detecções foram reproduzidas para meados de setembro de 2020.
+> Os alertas para eventos anteriores têm o título "alerta do sistema: adição incomum de credenciais a um aplicativo OAuth" e o tipo de alerta será MCAS_ALERT_MANAGEMENT_GENERIC.
+
+**Período de aprendizado**
+
+O aprendizado do ambiente da sua organização requer um período de sete dias durante o qual você pode esperar um alto volume de alertas.
+
 ## <a name="collection-alerts"></a>Alertas de coleta
 
 Esta seção descreve os alertas que indicam que um ator mal-intencionado pode estar tentando reunir dados de interesse para sua meta de sua organização.
@@ -674,7 +674,7 @@ O estabelecimento do padrão de atividade de um novo usuário requer um período
 1. Examine as atividades de exclusão e crie uma lista de arquivos excluídos. Se necessário, recupere os arquivos excluídos.
 1. Opcionalmente, crie um guia estratégico usando a automatização de energia para contatar os usuários e seus gerentes para verificar a atividade.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 > [!div class="nextstepaction"]
 > [Investigar usuários suspeitos](tutorial-ueba.md)

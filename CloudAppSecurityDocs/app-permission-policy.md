@@ -1,14 +1,14 @@
 ---
 title: Criar políticas para controlar aplicativos OAuth no Cloud App Security
 description: Este artigo oferece instruções para criar e trabalhar com políticas de permissão de aplicativo no Microsoft Cloud App Security.
-ms.date: 11/27/2019
+ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: 53b3c8d10bdc11714cffcc4bcd9402ee3a0e0adb
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 3fe565607f59834cf1b4a6931b087b597c3f5c8d
+ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369927"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062695"
 ---
 # <a name="oauth-app-policies"></a>Políticas de aplicativo OAuth
 
@@ -55,7 +55,9 @@ Além das políticas de aplicativo OAuth que você pode criar, há as seguintes 
 -->
 
 > [!NOTE]
-> As políticas de detecção de anomalias só estão disponíveis para aplicativos OAuth que são autorizados em seu Azure Active Directory.
+>
+> - As políticas de detecção de anomalias só estão disponíveis para aplicativos OAuth que são autorizados em seu Azure Active Directory.
+> - A severidade das políticas de detecção de anomalias do aplicativo OAuth não pode ser modificada.
 
 ## <a name="next-steps"></a>Próximas etapas
 
