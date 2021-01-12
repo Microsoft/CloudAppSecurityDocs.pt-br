@@ -3,12 +3,12 @@ title: Arquivos de atualizações anteriores do Cloud App Security
 description: Este artigo é um arquivo que descreve as atualizações feitas em lançamentos anteriores do Cloud App Security.
 ms.date: 11/25/2020
 ms.topic: conceptual
-ms.openlocfilehash: d64c12289025ef7270ae94f922cea187e8ca5dbf
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: bf9cc9d4d4a3e12931ba78b74eefb2ec04868d37
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855746"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114778"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Arquivo Morto de atualizações anteriores do Microsoft Cloud App Security
 
@@ -806,7 +806,7 @@ Lançado em 3 de julho de 2017
 
 - **Extensões de segurança:** extensões de segurança é um novo painel para gerenciamento centralizado de todas as extensões de segurança ao Cloud App Security.  Extensões incluem gerenciamento de token de API, agentes SIEM e conectores de DLP Externo. O novo painel está disponível em Cloud App Security em "configurações".
 
-  - Tokens de API – gere e gerencie seus próprios [tokens de API](api-tokens.md) para integrar o Cloud App Security com software de terceiros usando nossas APIs RESTful.
+  - Tokens de API – gere e gerencie seus próprios [tokens de API](api-authentication.md) para integrar o Cloud App Security com software de terceiros usando nossas APIs RESTful.
   - Agentes SIEM – a [integração do Siem](siem.md) foi localizada anteriormente diretamente em "configurações", agora disponível como uma guia em extensões de segurança.
   - DLP externo (Versão Prévia) – o Cloud App Security permite que você [utilize os investimentos existentes em sistemas de classificação de terceiros](icap-stunnel.md), como soluções de DLP (prevenção de perda de dados) e permite examinar o conteúdo de aplicativos usando as implantações existentes em execução no seu ambiente de nuvem. Entre em contato com seu gerente de conta para ingressar na versão prévia.
 
@@ -1196,7 +1196,7 @@ Lançado em 4 de setembro de 2016
 
 **Aperfeiçoamentos:**
 
-- Quando a verificação DLP falhar, agora você receberá uma explicação de por que o Cloud App Security não pôde verificar o arquivo. Para obter mais informações, consulte [Inspeção de Conteúdo](./content-inspection.md).
+- Quando a verificação DLP falhar, agora você receberá uma explicação de por que o Cloud App Security não pôde verificar o arquivo. Para obter mais informações, consulte [Inspeção de Conteúdo](content-inspection.md).
 - Melhorias implementadas nos mecanismos de detecção de anomalias, incluindo melhorias nos alertas de viagem impossível.
 - Foram feitas melhorias à experiência de dispensar alerta. Você também pode adicionar comentários para que possa informar a equipe do Cloud App Security se o alerta foi interessante e por quê. Seus comentários serão usados para aprimorar as detecções do Cloud App Security.
 - Os analisadores do Cloud Discovery do Cisco ASA foram aprimorados.

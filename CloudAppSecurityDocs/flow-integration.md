@@ -3,12 +3,12 @@ title: Integre a automatização de energia da Microsoft com o Microsoft Cloud A
 description: Este artigo fornece informações sobre como obter a automação de alertas personalizada integrando a automatização de energia da Microsoft com o Cloud App Security.
 ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: fc178428b74a77772e9d366bcdd8051fdc1a62b6
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 8b2575764470bb444c2bb7a36e37cf80dc6251ce
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894715"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114727"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integre-se ao Microsoft Power Automate para automação de alerta personalizada
 
@@ -28,7 +28,7 @@ O [conector de Cloud app Security](/connectors/cloudappsecurity/) no Power Autom
 
 ## <a name="how-to-create-playbooks-with-power-automate"></a>Como criar guias estratégicos com o Power Automate
 
-1. [Criar um token de API](api-tokens.md) no Cloud App Security.
+1. [Criar um token de API](api-authentication.md) no Cloud App Security.
 
 2. Navegue até o [portal de automatização de energia](https://flow.microsoft.com), selecione **meus fluxos**, selecione **novo** e, na lista suspensa, selecione **automatizado de em branco**.
 

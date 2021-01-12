@@ -3,18 +3,18 @@ title: API de enriquecimento de dados Cloud App Security
 description: Este artigo fornece informações sobre como usar a API de enriquecimento de dados.
 ms.date: 12/13/2020
 ms.topic: reference
-ms.openlocfilehash: 814f4e038c129576377aea9fe5e7c3e74a4b09d1
-ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
+ms.openlocfilehash: d2050afec68bc29b0f401188b60c3dbb631a4a1b
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97858998"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114744"
 ---
 # <a name="data-enrichment-api"></a>API de enriquecimento de dados
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-A API de enriquecimento de dados permite que você crie intervalos de endereços IP identificáveis, como seus endereços IP físicos do Office. Os intervalos de endereços IP permitem que você marque, categorize e personalize a maneira como os logs e os alertas são exibidos e investigados. Para obter mais informações, consulte [trabalhando com intervalos de IP e marcas](ip-tags.md).
+A API de enriquecimento de dados permite que você gerencie intervalos de endereços IP identificáveis, como seus endereços IP físicos do Office. Os intervalos de endereços IP permitem que você marque, categorize e personalize a maneira como os logs e os alertas são exibidos e investigados. Para obter mais informações, consulte [trabalhando com intervalos de IP e marcas](ip-tags.md).
 
 O seguinte lista as solicitações com suporte:
 
@@ -27,7 +27,7 @@ O seguinte lista as solicitações com suporte:
 
 O objeto de resposta define as propriedades a seguir.
 
-| Propriedade | Tipo | Descrição |
+| Propriedade | Type | Descrição |
 | --- | --- | --- |
 | total | INT | Número total de registros |
 | hasNext | bool | Indica se há registros adicionais |
@@ -47,7 +47,7 @@ Para obter informações sobre como os filtros funcionam, consulte [filtros](api
 
 A tabela a seguir descreve os filtros com suporte:
 
-| Filtrar | Tipo | Operadores | Descrição |
+| Filtrar | Type | Operadores | Descrição |
 | --- | --- | --- | --- |
 | category | inteiro | EQ, NEQ | Filtrar intervalos de IP por categoria. Os valores possíveis incluem:<br /><br />**1**: corporativo<br />**2**: administrativo<br />**3**: arriscado<br />**4**: VPN<br />**5**: provedor de nuvem<br />**6**: outros |
 | marcas | string | EQ, NEQ | Filtrar intervalos de IP por IDs de marca |
