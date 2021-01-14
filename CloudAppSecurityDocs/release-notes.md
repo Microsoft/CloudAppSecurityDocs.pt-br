@@ -1,14 +1,14 @@
 ---
 title: Novidades no Cloud App Security
 description: Este artigo é atualizado com frequência para você saber quais são as novidades na versão mais recente do Cloud App Security.
-ms.date: 10/25/2020
+ms.date: 01/10/2021
 ms.topic: overview
-ms.openlocfilehash: a98d6305b20b7cca12754edc8804781d20dd0f4e
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 891e01d44a8a76c3f3194ad817445690b80def8c
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315473"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114710"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novidades do Microsoft Cloud App Security
 
@@ -21,6 +21,25 @@ Feed RSS: Receba uma notificação quando esta página for atualizada copiando e
 > [!IMPORTANT]
 >
 > Os nomes dos produtos de proteção contra ameaças da Microsoft estão mudando. Leia mais sobre essa e outras atualizações [aqui](https://www.microsoft.com/security/blog/?p=91813). Usaremos os novos nomes em versões futuras.
+
+## <a name="cloud-app-security-release-189-190-and-191"></a>Cloud App Security versões 189, 190 e 191
+
+Lançado em 10 de janeiro de 2021
+
+- **Nova detecção de anomalia: Adição suspeita de credenciais a um aplicativo OAuth**  
+Ampliamos nossas detecções de anomalias para incluir adições suspeitas de credenciais privilegiadas a um aplicativo OAuth. A nova detecção está agora integrada e é habilitada automaticamente. A detecção pode indicar que um invasor comprometeu o aplicativo e o está usando para atividades mal-intencionadas. Para saber mais, confira [Adição incomum de credenciais a um aplicativo OAuth](investigate-anomaly-alerts.md#unusual-addition-of-credentials-to-an-oauth-app).
+
+- **Auditoria aprimorada para atividades de descoberta de TI sombra**  
+Atualizamos a auditoria para atividades de [TI Sombra](tutorial-shadow-it.md) para incluir ações executadas por administradores. As novas atividades a seguir agora estão disponíveis no log de atividades e podem ser usadas como parte de sua [experiência de investigação](investigate.md#use-the-investigation-tools) do Cloud App Security.
+  - Marcação ou desmarcação de aplicativos
+  - Criar, atualizar ou excluir coletores de logs
+  - Criar, atualizar ou excluir fontes de dados
+
+- **Novos pontos de extremidade da API REST de enriquecimento de dados**  
+Adicionamos os [pontos de extremidade da API de Enriquecimento de Dados](api-data-enrichment.md) a seguir, permitindo que você gerencie totalmente seus intervalos de endereços IP usando a API. Use nosso [script de gerenciamento de exemplos](api-data-enrichment-manage-script.md) para ajudá-lo a começar. Para saber mais sobre intervalos, confira [Trabalhar com intervalos de IP e marcações](ip-tags.md).
+  - [Listar o intervalo de endereços IP](api-data-enrichment-list.md)
+  - [Atualizar intervalo de endereços IP](api-data-enrichment-update.md)
+  - [Excluir intervalo de endereços IP](api-data-enrichment-delete.md)
 
 ## <a name="cloud-app-security-release-187-and-188"></a>Cloud App Security versões 187 e 188
 
