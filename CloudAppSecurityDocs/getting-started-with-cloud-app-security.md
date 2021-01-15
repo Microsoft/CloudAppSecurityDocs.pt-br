@@ -3,12 +3,12 @@ title: Implantar o Cloud App Security
 description: Esse início rápido descreve o processo para pôr o Cloud App Security em funcionamento e ter o uso, o insight e o controle do aplicativo na nuvem.
 ms.date: 06/07/2020
 ms.topic: quickstart
-ms.openlocfilehash: f17608329facabe6f48ae20938c44f3e8ef1b05a
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: 95f4d916fc60db4d8ddbe2a9a87dc1af580e4be9
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855526"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206484"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: introdução ao Microsoft Cloud App Security
 
@@ -75,7 +75,7 @@ Você pode usar políticas para ajudar você a monitorar tendências, ver ameaç
 
 Tarefa obrigatória: Habilitar o Cloud App Security para exibir o uso do aplicativo na nuvem
 
-1. [Integrar-se ao Microsoft Defender ATP](mde-integration.md) para habilitar automaticamente o Cloud App Security para monitorar seus dispositivos Windows 10 dentro e fora da sua empresa.
+1. [Integrar-se ao Microsoft Defender para Ponto de Extremidade](mde-integration.md) para habilitar automaticamente o Cloud App Security para monitorar seus dispositivos Windows 10 dentro e fora da sua empresa.
 1. Caso você use o [Zscaler, integre-o](zscaler-integration.md) com o Cloud App Security.
 1. Para obter cobertura completa, crie um relatório contínuo do Cloud Discovery
 
