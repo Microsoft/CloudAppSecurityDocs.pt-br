@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c84882ec04d72ef24d9fe044c0fabbb355a15bb
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 0fce6bbf6e13b34c904d88a34fe858f1586d9d90
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894664"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206467"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obter análise comportamental e detecção de anomalias
 
@@ -35,7 +35,7 @@ As anomalias são detectadas pela verificação da atividade do usuário. O risc
 * Falhas de logon
 * Atividade do administrador
 * Contas inativas
-* Localização
+* Location
 * Viagem impossível
 * Agente de dispositivo e usuário
 * Taxa de atividade
@@ -118,7 +118,7 @@ A detecção procura usuários cuja conta foi encerrada no Azure AD, mas ainda e
 * Essa política faz o perfil do seu ambiente e dispara alertas quando um usuário executa atividades suspeitas de exclusão de email em uma única sessão. Essa política pode indicar que as caixas de correio de um usuário podem ser comprometidas por possíveis vetores de ataque, como a comunicação de comando e controle (C&C/C2) por email.
 
 > [!NOTE]
-> O Cloud App Security integra-se ao Office ATP (proteção avançada contra ameaças do Office) para fornecer proteção para o Exchange Online, incluindo a URL denotação, a proteção contra malware e muito mais. Quando o Office ATP estiver habilitado, você começará a ver alertas no log de atividades do Cloud App Security.
+> O Cloud App Security integra-se com o Microsoft defender para Office 365 para fornecer proteção para o Exchange Online, incluindo URL denotação, proteção contra malware e muito mais. Depois que o defender para Office 365 estiver habilitado, você começará a ver os alertas no log de atividades Cloud App Security.
 
 ### <a name="suspicious-oauth-app-file-download-activities"></a>Atividades suspeitas de download do arquivo de aplicativo OAuth
 

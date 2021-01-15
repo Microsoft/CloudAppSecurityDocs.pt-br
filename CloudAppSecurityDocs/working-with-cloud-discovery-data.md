@@ -3,12 +3,12 @@ title: Usar dados de Cloud Discovery para detectar comportamento arriscado
 description: Este tópico fornece instruções sobre como trabalhar com os dados do Cloud Discovery, incluindo trabalhar com a pontuação de risco do aplicativo.
 ms.date: 05/06/2019
 ms.topic: conceptual
-ms.openlocfilehash: 0ae744dcdc777ab806654abb7862ec27730be143
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: df1cd5bb2a75f8d68c8ec6822960c96dfc848ea9
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315592"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206535"
 ---
 # <a name="working-with-discovery-data"></a>Trabalhando com os dados de descoberta
 
@@ -50,7 +50,7 @@ Para criar uma exclusão:
 
 Relatórios contínuos personalizados fornecem maior granularidade ao monitorar os dados de log do Cloud Discovery da sua organização. Ao criar relatórios personalizados, é possível filtrar por localizações geográficas, redes, sites ou unidades organizacionais específicas. Por padrão, somente os relatórios a seguir aparecem no seu seletor de relatório do Cloud Discovery:
 
-- O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  O relatório global não inclui dados do Microsoft defender ATP.
+- O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  O relatório global não inclui dados do Microsoft defender para ponto de extremidade.
 
 - O **Relatório específico de fonte de dados** mostra apenas informações para uma fonte de dados específica.
 

@@ -3,12 +3,12 @@ title: Trabalhando com aplicativos descobertos no Cloud App Security
 description: Este artigo descreve o processo de identificação e correção de aplicativos de descoberta de nuvem que trazem riscos no Cloud App Security.
 ms.date: 09/25/2019
 ms.topic: conceptual
-ms.openlocfilehash: 4f3cae41623c352c957640ce2fc4002e0d1f09e0
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: 72cc84a98f61649ba7b1f15251e001a372d3a56b
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855388"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206450"
 ---
 # <a name="working-with-discovered-apps"></a>Trabalhando com aplicativos descobertos
 
@@ -110,7 +110,7 @@ Para criar uma exclusão:
 
 Relatórios contínuos personalizados fornecem maior granularidade ao monitorar os dados de log do Cloud Discovery da sua organização. Ao criar relatórios personalizados, é possível filtrar por localizações geográficas, redes, sites ou unidades organizacionais específicas. Por padrão, somente os relatórios a seguir aparecem no seu seletor de relatório do Cloud Discovery:
 
-- O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  O relatório global não inclui dados do Microsoft defender ATP.
+- O **Relatório global** consolida todas as informações no portal de todas as fontes de dados incluídas em seus logs.  O relatório global não inclui dados do Microsoft defender para ponto de extremidade.
 
 - O **Relatório específico de fonte de dados** mostra apenas informações para uma fonte de dados específica.
 

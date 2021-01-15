@@ -3,12 +3,12 @@ title: Gerenciar o acesso de administrador ao portal do Cloud App Security
 description: Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores.
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: b715ccf3495978ab2c7359507562347091a100a6
-ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
+ms.openlocfilehash: a9ab36e788d74493059187bc043d701283b1969f
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062780"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206496"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -99,7 +99,7 @@ As seguintes Cloud App Security funções de administrador específicas podem se
   - Ações de governança – apenas ações relacionadas ao Cloud Discovery
   - Recomendações de segurança para plataformas de nuvem-sem permissões
 
-- **Cloud Discovery administrador de relatório**: tem permissões para exibir todos os dados em Cloud app Security que lidam exclusivamente com os relatórios de Cloud Discovery específicos selecionados. Por exemplo, você pode conceder a alguém permissão de administrador para o relatório contínuo do Microsoft defender ATP. O administrador de descoberta verá apenas os dados Cloud Discovery relacionados a essa fonte de dados e ao catálogo de aplicativos. Esse administrador não terá acesso às páginas **atividades**, **arquivos** ou recomendações de **segurança** e acesso limitado às políticas.
+- **Cloud Discovery administrador de relatório**: tem permissões para exibir todos os dados em Cloud app Security que lidam exclusivamente com os relatórios de Cloud Discovery específicos selecionados. Por exemplo, você pode conceder a alguém permissão de administrador para o relatório contínuo do Microsoft defender para ponto de extremidade. O administrador de descoberta verá apenas os dados Cloud Discovery relacionados a essa fonte de dados e ao catálogo de aplicativos. Esse administrador não terá acesso às páginas **atividades**, **arquivos** ou recomendações de **segurança** e acesso limitado às políticas.
 
 > [!NOTE]
 > As funções internas de administrador Cloud App Security fornecem permissões de acesso para Cloud App Security.
