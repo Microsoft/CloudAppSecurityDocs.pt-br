@@ -1,14 +1,14 @@
 ---
 title: Implantar o Cloud Discovery
 description: Este artigo descreve o procedimento de configuração para colocar o Cloud Discovery em funcionamento.
-ms.date: 08/09/2020
+ms.date: 01/17/2021
 ms.topic: how-to
-ms.openlocfilehash: e4ac4ce0e6148ca37c4c666b94da6779578ca77a
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: 2ac879d1cd4ac75aebdf080599f77b0bedba640e
+ms.sourcegitcommit: e9d295ba27d0797e970d10b3effaff4961cbf556
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855227"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98540889"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar o Cloud Discovery
 
@@ -95,7 +95,7 @@ Se o log não tiver suporte ou se você estiver usando um formato de log recente
 
 Atributos de dados (de acordo com a documentação do fornecedor):
 
-| Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de Usuário | IP de Origem | Tráfego total | Bytes carregados |
+| Fonte de dados | URL do aplicativo de destino | IP do aplicativo de destino | Nome de usuário | IP de Origem | Tráfego total | Bytes carregados |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Sim** | **Sim** | **Sim** | **Sim** | Não | Não |
 | Blue Coat | **Sim** | Não | **Sim** | **Sim** | **Sim** | **Sim** |
@@ -113,8 +113,8 @@ Atributos de dados (de acordo com a documentação do fornecedor):
 | Digital Arts i-FILTER | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
 | ForcePoint LEEF |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 | Nuvem do ForcePoint Web Security\* |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
-| FortiGate | Não | **Sim** | Não | **Sim** | **Sim** | **Sim** |
-| Fortinet FortiOS |**Sim**|**Sim**|Não|**Sim**|**Sim**|**Sim**|
+| Fortinet Fortigate | Não | **Sim** | Não | **Sim** | **Sim** | **Sim** |
+| FortiOS |**Sim**|**Sim**|Não|**Sim**|**Sim**|**Sim**|
 | iboss |**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|**Sim**|
 | Juniper SRX | Não | **Sim** | Não | **Sim** | **Sim** | **Sim** |
 | Juniper SSG | Não | **Sim** | **Sim** | **Sim** | **Sim** | **Sim** |
