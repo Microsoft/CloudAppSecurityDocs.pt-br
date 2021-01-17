@@ -1,16 +1,16 @@
 ---
 title: Integração de SIEM genérico com Cloud App Security
 description: Este artigo fornece informações sobre como integrar o SIEM genérico com o Cloud App Security.
-ms.date: 11/08/2020
+ms.date: 01/17/2021
 ms.topic: how-to
-ms.openlocfilehash: ed69404df787a9c439c3e433b00b0f06fbd8769a
-ms.sourcegitcommit: 605ab52545796cff9b0f6392ceff12c310c7fe2d
+ms.openlocfilehash: aa2ba2bf7a43f2140724e47e82e9f5018d79c342
+ms.sourcegitcommit: 7a7c0c0fa0ca78a1f3538933eb136a17c57dfb9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851863"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98537592"
 ---
-# <a name="generic-siem-integration-preview"></a>Integração de SIEM genérico (versão prévia)
+# <a name="generic-siem-integration"></a>Integração genérica ao SIEM
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -68,16 +68,16 @@ A integração ao SIEM é realizada em três etapas:
     ![Captura de tela mostrando o menu Adicionar integração SIEM](media/siem0.png)
 
 1. No assistente, clique em **Iniciar Assistente**.
-1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Avançar**.
+1. No assistente, preencha um nome, **Selecione o formato do seu SIEM** e defina as **Configurações avançadas** relevantes do formato. Clique em **Próximo**.
 
     ![Configurações gerais do SIEM](media/siem1.png)
 
 1. Digite o endereço IP ou nome de host do **Host do syslog remoto** e o **Número da porta do syslog**. Selecione TCP ou UDP como o protocolo do Syslog Remoto.
-    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Avançar**.
+    Você pode consultar seu administrador de segurança para obter esses detalhes caso ainda não os tenha. Clique em **Próximo**.
 
     ![Configurações do Syslog Remoto](media/siem2.png)
 
-1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Avançar**.
+1. Selecione quais tipos de dados você deseja exportar para o servidor SIEM para **Alertas** e **Atividades**. Use o controle deslizante para habilitar e desabilitá-los. Por padrão, todas as opções estão marcadas. Você pode usar a lista suspensa **aplicar a** para definir filtros para enviar apenas alertas e atividades específicas para o servidor Siem. Clique em **Editar e visualizar resultados** para verificar se o filtro funciona conforme o esperado. Clique em **Próximo**.
 
    ![Configurações de tipos de dados](media/siem3.png)
 
@@ -190,9 +190,6 @@ Para editar o agente SIEM, clique nos três pontos no final da linha do agente S
 Para excluir o agente SIEM, clique nos três pontos no final da linha do agente SIEM na tabela e selecione **Excluir**.
 
 ![SIEM – excluir](media/siem-delete.png)
-
-> [!NOTE]
-> Esse recurso está em uma versão prévia.
 
 ## <a name="next-steps"></a>Próximas etapas
 
