@@ -3,12 +3,12 @@ title: Descobrir e gerenciar TI sombra
 description: Este tutorial descreve o processo para aplicar automaticamente rótulos de classificação da proteção de informações do Azure no Microsoft Cloud App Security.
 ms.date: 06/29/2020
 ms.topic: tutorial
-ms.openlocfilehash: d7e3db3ca7f648b966ef9fbe3948eb345a710c10
-ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
+ms.openlocfilehash: 2f6da5a282aea312fa08be91be4b1195d36ffd50
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97857981"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206547"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: Descobrir e gerenciar o Shadow IT na sua rede
 
@@ -36,7 +36,7 @@ Use esse processo para distribuir o Cloud Discovery do Shadow IT em sua organiza
 
 1. **Descubra o Shadow IT**: identifique a postura de segurança de sua organização executando o Cloud Discovery em sua organização para ver o que realmente está acontecendo em sua rede. Para obter mais informações, confira [Configurar o Cloud Discovery](set-up-cloud-discovery.md). Isso pode ser feito usando qualquer um dos seguintes métodos:
 
-    * Coloque o Cloud Discovery em execução rapidamente integrando-o ao [Microsoft Defender ATP](mde-integration.md). Essa integração nativa permite que você inicie imediatamente a coleta de dados no tráfego de nuvem em seus dispositivos Windows 10 na rede e fora dela.
+    * Coloque o Cloud Discovery em execução rapidamente integrando-o ao [Microsoft Defender para Ponto de Extremidade](mde-integration.md). Essa integração nativa permite que você inicie imediatamente a coleta de dados no tráfego de nuvem em seus dispositivos Windows 10 na rede e fora dela.
 
     * Para cobertura em todos os dispositivos conectados à sua rede, é importante implantar o [coletor de logs do Cloud App Security](discovery-docker.md) em seus firewalls e outros proxies para coletar dados de seus pontos de extremidade e enviá-los para o Cloud App Security para análise.
 
@@ -83,7 +83,7 @@ Agora que o Cloud Discovery está em execução na sua rede, examine os relatór
 
 Agora é hora de criar políticas para que você possa ser alertado automaticamente quando acontecer algo com que você esteja preocupado. Por exemplo, talvez você queira criar uma **Política de descoberta de aplicativo** que lhe permita saber quando há um pico nos downloads ou no tráfego de um aplicativo com o qual você esteja preocupado. Para fazer isso, você deve habilitar a **Política de comportamentos anormais em usuários descobertos**, a **Verificação de conformidade de aplicativo de armazenamento em nuvem** e **Novo aplicativo com risco**. Você também deve definir a política para ser notificado por email ou mensagem de texto. Para obter mais informações, confira [referência de modelo de política](policy-template-reference.md), saiba mais sobre as [Políticas do Cloud Discovery](cloud-discovery-policies.md) e configure [Políticas de descoberta de aplicativos](cloud-discovery-policies.md).
 
-Veja a página alertas e use o filtro **Tipo de política** para examinar os alertas de descoberta de aplicativos. Para aplicativos que corresponderam às políticas de descoberta de aplicativo, é recomendado que você faça uma investigação avançada para saber mais sobre a justificativa comercial do uso do aplicativo, por exemplo, você pode entrar em contato com os usuários dele. Em seguida, repita as etapas na Fase 2 para avaliar o risco do aplicativo. Em seguida, determine as próximas etapas para o aplicativo, se você aprova o uso dele no futuro ou deseja bloqueá-lo na próxima vez que um usuário o acessar, caso em que você deve marcá-lo como não sancionado para que ele possa ser bloqueado usando seu firewall, proxy ou gateway Web seguro. Para obter mais informações, confira [Integrar com o Microsoft Defender ATP](mde-integration.md#block-access-to-unsanctioned-cloud-apps), [Integrar com o Zscaler](zscaler-integration.md), [Integrar com o iboss](iboss-integration.md) e [Exportar um script de bloqueio para controlar os aplicativos descobertos](governance-discovery.md#export-a-block-script-to-govern-discovered-apps).
+Veja a página alertas e use o filtro **Tipo de política** para examinar os alertas de descoberta de aplicativos. Para aplicativos que corresponderam às políticas de descoberta de aplicativo, é recomendado que você faça uma investigação avançada para saber mais sobre a justificativa comercial do uso do aplicativo, por exemplo, você pode entrar em contato com os usuários dele. Em seguida, repita as etapas na Fase 2 para avaliar o risco do aplicativo. Em seguida, determine as próximas etapas para o aplicativo, se você aprova o uso dele no futuro ou deseja bloqueá-lo na próxima vez que um usuário o acessar, caso em que você deve marcá-lo como não sancionado para que ele possa ser bloqueado usando seu firewall, proxy ou gateway Web seguro. Para obter mais informações, confira [Integrar com o Microsoft Defender para Ponto de Extremidade](mde-integration.md#block-access-to-unsanctioned-cloud-apps), [Integrar com o Zscaler](zscaler-integration.md), [Integrar com o iboss](iboss-integration.md) e [Exportar um script de bloqueio para controlar os aplicativos descobertos](governance-discovery.md#export-a-block-script-to-govern-discovered-apps).
 
 ### <a name="phase-4-advanced-shadow-it-discovery-reporting"></a>Fase 4: Relatório de descoberta de TI sombra avançado
 
