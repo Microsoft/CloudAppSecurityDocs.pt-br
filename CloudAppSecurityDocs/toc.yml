@@ -304,32 +304,6 @@
           href: api-introduction.md
         - name: Autenticação
           href: api-authentication.md
-        - name: Cloud Discovery
-          items:
-            - name: Visão geral
-              href: api-discovery.md
-            - name: Iniciar upload de arquivo
-              href: api-discovery-initiate.md
-            - name: Realizar upload de arquivo
-              href: api-discovery-perform.md
-            - name: Finalizar upload de arquivo
-              href: api-discovery-finalize.md
-            - name: Gerar script de bloco
-              href: api-discovery-script.md
-        - name: Enriquecimento de dados
-          items:
-            - name: Visão geral
-              href: api-data-enrichment.md
-            - name: Gerenciar intervalos de endereços IP usando a API
-              href: api-data-enrichment-manage-script.md
-            - name: Listar intervalos de IP
-              href: api-data-enrichment-list.md
-            - name: Criar intervalo de endereços IP
-              href: api-data-enrichment-create.md
-            - name: Atualizar intervalo de endereços IP
-              href: api-data-enrichment-update.md
-            - name: Excluir intervalo de endereços IP
-              href: api-data-enrichment-delete.md
         - name: Atividades
           items:
             - name: Visão geral
@@ -360,6 +334,36 @@
               href: api-alerts-mark-read.md
             - name: Marcar alerta como não lido
               href: api-alerts-mark-unread.md
+        - name: Cloud Discovery
+          items:
+            - name: Visão geral
+              href: api-discovery.md
+            - name: Iniciar upload de arquivo
+              href: api-discovery-initiate.md
+            - name: Realizar upload de arquivo
+              href: api-discovery-perform.md
+            - name: Finalizar upload de arquivo
+              href: api-discovery-finalize.md
+            - name: Listar relatórios contínuos
+              href: api-discovery-list-streams.md
+            - name: Listar categorias de relatórios contínuos
+              href: api-discovery-list-categories.md
+            - name: Gerar script de bloco
+              href: api-discovery-script.md
+        - name: Enriquecimento de dados
+          items:
+            - name: Visão geral
+              href: api-data-enrichment.md
+            - name: Gerenciar intervalos de endereços IP usando a API
+              href: api-data-enrichment-manage-script.md
+            - name: Listar intervalos de IP
+              href: api-data-enrichment-list.md
+            - name: Criar intervalo de endereços IP
+              href: api-data-enrichment-create.md
+            - name: Atualizar intervalo de endereços IP
+              href: api-data-enrichment-update.md
+            - name: Excluir intervalo de endereços IP
+              href: api-data-enrichment-delete.md
         - name: Entities
           items:
             - name: Visão geral
