@@ -1,14 +1,14 @@
 ---
 title: Implantar Cloud App Security Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 description: Este artigo fornece informações sobre como implantar o Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional recursos de proxy reverso para qualquer aplicativo.
-ms.date: 03/31/2020
+ms.date: 01/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 52eb9874a5b80fa22f957f855374a0f3444d7101
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: ac99dee3b145a8d77c4eaaba8c5624a572aec86b
+ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855839"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794998"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integrar e implantar o Controle de Aplicativos de Acesso Condicional em qualquer aplicativo
 
@@ -78,7 +78,13 @@ Use as etapas a seguir para criar uma política de acesso condicional do Azure A
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configurar a integração com outras soluções IdP
 
-Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad). Para obter exemplos de como configurar soluções IdP, consulte [configurando seu IDP](proxy-idp-examples.md).
+Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad).
+
+> [!NOTE]
+> Para obter exemplos de como configurar soluções IdP, consulte:
+>
+> - [Configurar seu IdP PingOne](proxy-idp-pingone.md)
+> - [Configurando seu AD FS IdP](proxy-idp-adfs.md)
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
@@ -256,7 +262,7 @@ Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produ�
 > [!div class="nextstepaction"]
 > [Em seguida: como criar uma política de sessão»](session-policy-aad.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 > [!div class="nextstepaction"]
 > [Introdução ao Controle de Aplicativos de Acesso Condicional](proxy-intro-aad.md)

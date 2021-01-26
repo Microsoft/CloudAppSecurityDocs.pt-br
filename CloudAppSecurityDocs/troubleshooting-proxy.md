@@ -3,12 +3,12 @@ title: Solução de problemas de controles de acesso e de sessão
 description: Este artigo fornece aos administradores diretrizes sobre como investigar e resolver o acesso comum e os controles de sessão.
 ms.date: 07/15/2020
 ms.topic: conceptual
-ms.openlocfilehash: 9d327449ba51871f2277f521ddd6ec6f1ba47ade
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6de4bfea4892328871661819411a2be5e8d4b568
+ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315881"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794882"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Solução de problemas de controles de acesso e de sessão
 
@@ -185,7 +185,7 @@ Se você estiver enfrentando o certificado do cliente aparecendo depois de abrir
 | Microsoft Internet Explorer | 1. Abra o Internet Explorer<br />2. Selecione **ferramentas**  >  **Opções da Internet**  >  guia **Avançar**<br />3. em **segurança**, selecione **não solicitar a seleção de certificado de cliente quando apenas um certificado existir**<br />4. Selecione **aplicar** e, em seguida, selecione **OK**<br />5. Reinicie o navegador e verifique se você pode acessar o aplicativo sem os prompts adicionais |
 | Chromium de borda/borda da Microsoft | 1. Abra a pesquisa na barra de tarefas e procure "opções da Internet"<br />2. Selecione **Opções da Internet**<br />3. Selecione **segurança**, selecione **intranet local** e clique em **nível personalizado**<br />4. em **diversos**  >  **não solicitar a seleção de certificado do cliente quando apenas um certificado existir**, selecione **desabilitar**<br />5. clique em **OK** para fechar a caixa de diálogo nível personalizado<br />6. clique em **aplicar** e selecione **OK** para fechar as opções da Internet<br />7. Reinicie o navegador e verifique se você pode acessar o aplicativo sem os prompts adicionais |
 
-<a name="device-identification-additional-considerations"></a>s
+<a name="device-identification-additional-considerations"></a>
 
 #### <a name="additional-considerations"></a>Considerações adicionais
 
@@ -283,7 +283,7 @@ Depois de adicionar um aplicativo, você poderá ver a opção **solicitar contr
 1. No Cloud App Security, na barra de menus, clique nas configurações engrenagem e selecione **configurações**.
 1. Em **controle de aplicativos de acesso condicional**, selecione **integração do aplicativo/manutenção**.
 1. Insira o nome principal do usuário ou o email para os usuários que estarão integrando o aplicativo e clique em **salvar**.
-1. Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize uma destas ações:
+1. Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
 
     | Status do aplicativo | Descrição | Etapas |
     | --- | --- | --- |

@@ -1,14 +1,14 @@
 ---
 title: Implantar o Controle de Aplicativos de Acesso Condicional do Cloud App Security em aplicativos do Azure AD
 description: Este artigo fornece informações sobre como implantar os recursos de proxy reverso do Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security para aplicativos do Azure AD.
-ms.date: 03/31/2020
+ms.date: 01/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 3fecc4eca9b867aba72dc625151ec915906075eb
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: e4a913c3da802b58180f3611f19ff62c6f0c4ad4
+ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855516"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794967"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
@@ -69,7 +69,13 @@ Use as etapas a seguir para criar uma política de acesso condicional do Azure A
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configurar a integração com outras soluções IdP
 
-Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad). Para obter exemplos de como configurar soluções IdP, consulte [configurando seu IDP](proxy-idp-examples.md).
+Use as etapas a seguir para rotear sessões de aplicativo de outras soluções IdP para Cloud App Security. Para o Azure AD, consulte [Configurar a integração com o Azure ad](#configure-integration-with-azure-ad).
+
+> [!NOTE]
+> Para obter exemplos de como configurar soluções IdP, consulte:
+>
+> - [Configurar seu IdP PingOne](proxy-idp-pingone.md)
+> - [Configurando seu AD FS IdP](proxy-idp-adfs.md)
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
