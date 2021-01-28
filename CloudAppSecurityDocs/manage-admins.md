@@ -3,12 +3,12 @@ title: Gerenciar o acesso de administrador ao portal do Cloud App Security
 description: Este artigo fornece instruções para definir o acesso ao portal do Cloud App Security para seus administradores.
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: a9ab36e788d74493059187bc043d701283b1969f
-ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
+ms.openlocfilehash: f25524e7190a8ac75bdf0b467bba2e98c0b23b10
+ms.sourcegitcommit: 2294a61e636b436ac96a02eb7d4969f445b4aebb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98206496"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98949513"
 ---
 # <a name="manage-admin-access"></a>Gerenciar acesso de administrador
 
@@ -20,7 +20,7 @@ O Microsoft Cloud App Security dá suporte ao controle de acesso baseado em fun�
 
 Por padrão, as seguintes funções de administrador do Office 365 e [do Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) têm acesso ao Cloud app Security:
 
-- Administrador **global e administrador de segurança**: os administradores com **acesso completo** têm permissões totais no Cloud app Security. Eles podem adicionar administradores, adicionar políticas e configurações, fazer upload de logs e executar ações de governança.
+- Administrador **global e administrador de segurança**: os administradores com **acesso completo** têm permissões totais no Cloud app Security. Eles podem adicionar administradores, adicionar políticas e configurações, carregar logs e executar ações de governança, acessar e gerenciar agentes SIEM.
 
 - **Administrador de conformidade**: tem permissões somente leitura e pode gerenciar alertas. Não é possível acessar as recomendações de segurança para plataformas de nuvem. Pode criar e modificar políticas de arquivo, permitir ações de governança de arquivo e exibir todos os relatórios internos em Gerenciamento de dados.
 
@@ -38,7 +38,7 @@ Por padrão, as seguintes funções de administrador do Office 365 e [do Azure A
   - Acessar e exibir a página de Conectores de aplicativo
   - Acessar e exibir o Log de controle
   - Acessar e exibir a página Gerenciar relatórios de instantâneo
-  - Acessando e editando o agente SIEM
+  - Acessando e exibindo agentes SIEM
 
 - **Leitor global**: tem acesso completo somente leitura a todos os aspectos de Cloud app Security. Não é possível alterar nenhuma configuração ou executar ações.
 

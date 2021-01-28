@@ -188,7 +188,9 @@
         - name: Integrar e implantar o Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
           href: proxy-deployment-any-app.md
         - name: Configurar seu IdP PingOne
-          href: proxy-idp-examples.md
+          href: proxy-idp-pingone.md
+        - name: Configurar seu AD FS IdP
+          href: proxy-idp-adfs.md
     - name: Investigação
       href: investigate.md
       items:
