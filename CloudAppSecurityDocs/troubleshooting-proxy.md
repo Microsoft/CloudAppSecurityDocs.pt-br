@@ -3,12 +3,12 @@ title: Solução de problemas de controles de acesso e de sessão
 description: Este artigo fornece aos administradores diretrizes sobre como investigar e resolver o acesso comum e os controles de sessão.
 ms.date: 07/15/2020
 ms.topic: conceptual
-ms.openlocfilehash: 6de4bfea4892328871661819411a2be5e8d4b568
-ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
+ms.openlocfilehash: 3dc2826de9e46eae43d3d4a2200f0a56ae3ee9da
+ms.sourcegitcommit: 2cb91556060d61fa378047aebf81b71dff5ff19d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794882"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99551718"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Solução de problemas de controles de acesso e de sessão
 
@@ -229,7 +229,7 @@ Ao integrar um aplicativo ao Controle de Aplicativos de Acesso Condicional, a et
 
 | Provedor de identidade | Validações |
 |---|---|
-| AD do Azure | 1. Verifique se você tem uma licença válida para Azure AD Premium P1, além de uma licença de Cloud App Security<br />2. Certifique-se de que o aplicativo usa o SAML 2,0 ou o protocolo OpenID Connect<br />3. Verifique se o SSO do aplicativo no Azure AD |
+| Azure AD | 1. Verifique se você tem uma licença válida para Azure AD Premium P1, além de uma licença de Cloud App Security<br />2. Certifique-se de que o aplicativo usa o SAML 2,0 ou o protocolo OpenID Connect<br />3. Verifique se o SSO do aplicativo no Azure AD |
 | Terceiros | 1. Verifique se você tem uma licença de Cloud App Security válida<br />2. criar um aplicativo duplicado<br />3. Verifique se o aplicativo usa o protocolo SAML<br />4. valide se você integrou totalmente o aplicativo e se o status do aplicativo está **conectado** |
 
 1. Na política do Azure AD, na **sessão**, verifique se a sessão é forçada a rotear para Cloud app Security, o que, por sua vez, permitirá que o aplicativo apareça na página **aplicativos controle de aplicativos de acesso condicional** , da seguinte maneira:
@@ -505,9 +505,9 @@ Os aplicativos em nossa página de aplicativos em destaque marcados como **(vers
 Como uma mitigação temporária, você pode solucionar problemas de perda de contexto da seguinte maneira:
 
 1. Navegue até uma URL na qual ocorra a perda de contexto.
-1. Anote o domínio da URL sufixada, incluindo o sufixo adicionado por Cloud App Security, por exemplo `https://www.yammer.com.us2.cas.ms` .
+1. Anote o domínio da URL sufixada, incluindo o sufixo adicionado por Cloud App Security, por exemplo `https://www.yammer.com.mcas.ms` .
 1. Copie o caminho da URL original, por exemplo, se a URL específica original era `https://www.yammer.com/organization/threads/threadnumber` , copie `/organization/threads/threadnumber` .
-1. Acrescente o caminho copiado para o domínio com sufixo, por exemplo `https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber` .
+1. Acrescente o caminho copiado para o domínio com sufixo, por exemplo `https://www.yammer.com.mcas.ms/organization/threads/threadnumber` .
 1. Navegue até a nova URL sufixada.
 
 <a name="app-additional-considerations"></a>

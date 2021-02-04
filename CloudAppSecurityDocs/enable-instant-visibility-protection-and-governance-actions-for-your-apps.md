@@ -1,14 +1,14 @@
 ---
 title: Conectar aplicativos para obter visibilidade e controle
 description: Este artigo descreve o processo para conexão de aplicativos com conectores de API aos aplicativos na nuvem de sua organização.
-ms.date: 01/05/2021
+ms.date: 02/04/2021
 ms.topic: how-to
-ms.openlocfilehash: 1df724883ff1944e0ff5c1e62c1fe6fbcaef233a
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 77343c172002accb7eaf7e657e518c5f0e0aaa10
+ms.sourcegitcommit: 2cb91556060d61fa378047aebf81b71dff5ff19d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894647"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99551709"
 ---
 # <a name="connect-apps"></a>Conectar aplicativos
 
@@ -55,22 +55,22 @@ Dependendo do aplicativo ao qual você está se conectando, a conexão de API pe
 
 A tabela a seguir lista por aplicativo de nuvem, quais recursos têm suporte com os conectores de aplicativo:
 
-| | AWS | Box | Dropbox | GitHub | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-| **Listar contas** | ✔ | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Listar grupos** | ✔ | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
-| **Listar privilégios** | | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **Governança de usuário** | | ✔ | Em breve | | Entidade de conexão do Google Workspace | ✔ | ✔ | | | ✔ | | Sem suporte pelo provedor |
-| **Atividade de logon** | ✔ | ✔ | ✔ | | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Atividade do usuário** | Não se aplica | ✔ | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
-| **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação periódica** | | ✔ | ✔ | | Não se aplica | ✔ | ✔ | Não se aplica | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
-| **DLP – verificação quase em tempo real** | | ✔ | | | Não se aplica | ✔-requer o Google Business Enterprise | ✔ | Não se aplica | | | ✔ | Sem suporte pelo provedor |
-| **Controle de compartilhamento** | ✔ | ✔ | ✔ | | Não se aplica | ✔ | ✔ | Não se aplica | Não se aplica | | ✔ | Sem suporte pelo provedor |
-| **Governança de arquivos** | ✔ | ✔ | ✔ | | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | | Sem suporte pelo provedor |
-| **Exibir permissões de aplicativo** | Não se aplica | Sem suporte pelo provedor | Em breve | ✔ | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | Não se aplica | Não se aplica |
-| **Revogar permissões de aplicativo** | Não se aplica | Sem suporte pelo provedor | Em breve | | Não se aplica | ✔ | ✔ | Não se aplica | | ✔ | Não se aplica | Não se aplica |
-| **Aplique os rótulos da Proteção de Informações do Azure** | Não se aplica | ✔ | | | Não se aplica | ✔ | ✔ | Não se aplica | | | Não se aplica | Não se aplica |
+| | AWS | Azure| Box | Dropbox | GitHub | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| **Listar contas** | ✔ | ✔ | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Listar grupos** | ✔ | ✔ | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | | Sem suporte pelo provedor |
+| **Listar privilégios** | | | ✔ | ✔ | ✔ | Entidade de conexão do Google Workspace | ✔ | ✔ | Sem suporte pelo provedor | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **Governança de usuário** | | | ✔ | Em breve | | Entidade de conexão do Google Workspace | ✔ | ✔ | | | ✔ | | Sem suporte pelo provedor |
+| **Atividade de logon** | ✔ | ✔ | ✔ | ✔ | | Entidade de conexão do Google Workspace | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Atividade do usuário** | Não aplicável | | ✔ | ✔ | ✔ | ✔ | ✔ – requer o Google Business ou Enterprise | ✔ | ✔ | Parcial | Com suporte com o Salesforce Shield | ✔ | ✔ |
+| **Atividade administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | Sem suporte pelo provedor |
+| **DLP – verificação periódica** | | | ✔ | ✔ | | Não aplicável | ✔ | ✔ | Não aplicável | ✔ | ✔ | ✔ | Sem suporte pelo provedor |
+| **DLP – verificação quase em tempo real** | | | ✔ | | | Não aplicável | ✔-requer o Google Business Enterprise | ✔ | Não aplicável | | | ✔ | Sem suporte pelo provedor |
+| **Controle de compartilhamento** | ✔ | | ✔ | ✔ | | Não aplicável | ✔ | ✔ | Não aplicável | Não aplicável | | ✔ | Sem suporte pelo provedor |
+| **Governança de arquivos** | ✔ | | ✔ | ✔ | | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | | Sem suporte pelo provedor |
+| **Exibir permissões de aplicativo** | Não aplicável | | Sem suporte pelo provedor | Em breve | ✔ | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
+| **Revogar permissões de aplicativo** | Não aplicável | Sem suporte pelo provedor | | Em breve | | Não aplicável | ✔ | ✔ | Não aplicável | | ✔ | Não aplicável | Não aplicável |
+| **Aplique os rótulos da Proteção de Informações do Azure** | Não aplicável | | ✔ | | | Não aplicável | ✔ | ✔ | Não aplicável | | | Não aplicável | Não aplicável |
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
