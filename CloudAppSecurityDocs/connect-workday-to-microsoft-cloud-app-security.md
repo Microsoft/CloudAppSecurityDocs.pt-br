@@ -1,14 +1,14 @@
 ---
 title: Conectar o workday ao Cloud App Security (versão prévia)
 description: Este artigo fornece informações sobre como conectar seu aplicativo WORKDAY para Cloud App Security usando o conector de API para visibilidade e controle sobre o uso.
-ms.date: 11/10/2020
+ms.date: 02/09/2021
 ms.topic: how-to
-ms.openlocfilehash: 5b9a1e75ab20999d36f18500dfb6037cdf1aeabd
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 482b606f5d21e53f4fe514ced0ebdee509146a93
+ms.sourcegitcommit: 91cd536019579c022b877ab7f0687cef8fb8209d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312566"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100105371"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conectar o workday ao Microsoft Cloud App Security
 
@@ -19,6 +19,9 @@ Este artigo fornece instruções para conectar Microsoft Cloud App Security à s
 ## <a name="quick-start"></a>Início rápido
 
 Assista ao nosso vídeo de início rápido mostrando como configurar os pré-requisitos e executar as etapas no workday. Depois de concluir as etapas no vídeo, você pode continuar a [Adicionar o conector workday](#add-connector).
+
+> [!NOTE]
+> O vídeo não mostra a etapa de pré-requisito para configurar o grupo de segurança **Configurar: configuração de locatário –** permissão do sistema. Certifique-se de configurá-lo também.
 
 <br />
 
@@ -31,6 +34,7 @@ A conta workday usada para se conectar a Cloud App Security deve ser membro de u
 | Área funcional | Política de segurança de domínio | Política de segurança de subdomínio | Permissões de relatório/tarefa | Permissões de integração |
 | --- | --- | --- | --- | --- |
 | Sistema | Configurar: configuração do locatário – geral | Configuração: configuração do locatário – segurança | Exibir, modificar | Obter, colocar |
+| Sistema | Configurar: configuração do locatário – geral | Configurar: configuração de locatário – sistema | Modificar | Nenhum |
 | Sistema | Administração de Segurança | | Exibir, modificar | Obter, colocar |
 | Sistema | Auditoria do sistema | | Visualizar | Obter |
 | Pessoal | Dados de trabalho: pessoal | Dados do Trabalhador: Relatórios do Trabalhador Público | Visualizar | Obter |
