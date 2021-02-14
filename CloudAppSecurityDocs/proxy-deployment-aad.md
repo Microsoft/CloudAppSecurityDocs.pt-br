@@ -1,14 +1,14 @@
 ---
 title: Implantar o Controle de Aplicativos de Acesso Condicional do Cloud App Security em aplicativos do Azure AD
 description: Este artigo fornece informações sobre como implantar os recursos de proxy reverso do Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security para aplicativos do Azure AD.
-ms.date: 01/26/2021
+ms.date: 02/14/2021
 ms.topic: how-to
-ms.openlocfilehash: e4a913c3da802b58180f3611f19ff62c6f0c4ad4
-ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
+ms.openlocfilehash: 85a29e73311116de86eb97dda76a982232c939a8
+ms.sourcegitcommit: 63a7e18c91371c91b920e6e09722eeee08bd2920
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794967"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515250"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
@@ -41,7 +41,9 @@ Siga estas etapas para configurar aplicativos em destaque para serem controlados
 
 **Etapa 3: [verificar se os aplicativos estão configurados para usar controles de acesso e sessão](#portal)**
 
-**Etapa 4: [testar a implantação](#test)**
+**Etapa 4: [habilitar o aplicativo para uso em sua organização](#enable-app)**
+
+**Etapa 5: [testar a implantação](#test)**
 
 ## <a name="step-1--configure-your-idp-to-work-with-cloud-app-security"></a>Etapa 1: configurar seu IdP para trabalhar com Cloud App Security<a name="conf-idp"></a><a name="add-azure-ad"></a>
 
@@ -75,7 +77,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 > Para obter exemplos de como configurar soluções IdP, consulte:
 >
 > - [Configurar seu IdP PingOne](proxy-idp-pingone.md)
-> - [Configurando seu AD FS IdP](proxy-idp-adfs.md)
+> - [Configurar seu AD FS IdP](proxy-idp-adfs.md)
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
@@ -167,7 +169,17 @@ As instruções acima ajudaram a criar uma política interna do Cloud App Securi
     >
     >![Solicitação de Controle de Aplicativos de Acesso Condicional](media/caac-request.png)
 
-## <a name="step-4-test-the-deployment"></a>Etapa 4: testar a implantação<a name="test"></a>
+## <a name="step-4-enable-the-app-for-use-in-your-organization"></a>Etapa 4: habilitar o aplicativo para uso em sua organização<a name="enable-app"></a>
+
+Quando estiver pronto para habilitar o aplicativo para uso no ambiente de produção de sua organização, execute as etapas a seguir.
+
+1. Em Cloud App Security, clique no ícone configurações engrenagem ![ configurações ](media/settings-icon.png) e, em seguida, selecione **controle de aplicativos de acesso condicional**.
+1. Na lista de aplicativos, na linha na qual o aplicativo que você está implantando aparece, escolha os três pontos no final da linha e escolha **Editar aplicativo**.
+1. Selecione **usar com controle de aplicativos de acesso condicional** e, em seguida, clique em **salvar**.
+
+    ![Habilitar pop-up de controles de sessão](media/edit-app-enable-session-controls.png)
+
+## <a name="step-5-test-the-deployment"></a>Etapa 5: testar a implantação<a name="test"></a>
 
 1. Primeiro saia das sessões existentes. Em seguida, tente entrar em cada aplicativo que foi implantado com êxito. Entre usando um usuário que corresponda à política configurada no Azure AD ou para um aplicativo SAML configurado com seu provedor de identidade.
 

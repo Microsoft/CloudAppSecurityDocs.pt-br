@@ -1,14 +1,14 @@
 ---
 title: Monitorar alertas acionados no Cloud App Security
 description: Este artigo fornece uma lista e uma descrição de todos os alertas.
-ms.date: 12/10/2018
+ms.date: 02/14/2021
 ms.topic: how-to
-ms.openlocfilehash: 23a1ea16cb0f733d82b38d0191fed929fbc515d4
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 380fa87acd1f85b842a9d0491e194a1dc6517b3f
+ms.sourcegitcommit: 63a7e18c91371c91b920e6e09722eeee08bd2920
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369949"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515233"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Monitorar alertas no Cloud App Security
 
@@ -72,11 +72,12 @@ Os seguintes tipos de alertas serão exibidos.
 
 |Nome do alerta|AlertID|Descrição|
 |----|----|----|
-|Novo local|ALERT_GEOLOCATION_NEW_COUNTRY|Um novo local foi detectado desde o início da verificação (até seis meses). Esse alerta só aparece uma vez para cada país/região de toda a organização. |
-|Novo usuário administrador|ALERT_ADMIN_USER|Um novo administrador foi detectado para um aplicativo específico. Esse administrador pode ser alguém que é administrador em um aplicativo e agora é administrador em outro. Este alerta relaciona-se ao tipo de administrador específico, por isso ele aparecerá sempre que o tipo de administrador for alterado. Se um usuário perder os privilégios de administrador e obtê-los novamente, esse alerta será exibido.|
-|Conta inativa|ALERT_ZOMBIE_USER|Se um usuário estiver inativo por 60 dias por aplicativo – por exemplo, se alguém estiver ativo no box, mas não tiver tocado o Google Workspace por 60 dias, o usuário será considerado inativo no Google Workspace. Uma marca é adicionada a esses usuários para que você possa pequisar contas inativas.|
-|Local de administrador inesperado|ALERT_NEW_ADMIN_LOCATION|Um novo local foi detectado para os administradores desde o início da verificação (até seis meses). Esse alerta aparece apenas uma vez para cada país/região para qualquer administrador em sua organização. |
 |Conta comprometida|ALERT_COMPROMISED_ACCOUNT|Se ocorreu uma violação em um aplicativo e a lista de contas violadas é publicada, o Cloud App Security baixa a lista e a compara com sua lista de usuários. A lista de usuários inclui usuários internos, usuários externos e contas pessoais. |
+|Novo usuário administrador|ALERT_ADMIN_USER|Um novo administrador foi detectado para um aplicativo específico. Esse administrador pode ser alguém que é administrador em um aplicativo e agora é administrador em outro. Este alerta relaciona-se ao tipo de administrador específico, por isso ele aparecerá sempre que o tipo de administrador for alterado. Se um usuário perder os privilégios de administrador e obtê-los novamente, esse alerta será exibido.|
+|Novo local|ALERT_GEOLOCATION_NEW_COUNTRY|Um novo local foi detectado desde o início da verificação (até seis meses). Esse alerta só aparece uma vez para cada país/região de toda a organização. |
+|Conta inativa|ALERT_ZOMBIE_USER|Se um usuário estiver inativo por 60 dias por aplicativo – por exemplo, se alguém estiver ativo no box, mas não tiver tocado o Google Workspace por 60 dias, o usuário será considerado inativo no Google Workspace. Uma marca é adicionada a esses usuários para que você possa pequisar contas inativas.|
+|Atividade de ransomware|ALERT_ANUBIS_DETECTION_RANSOMWARE|É detectado um padrão de atividade que é típico de um ataque de ransomware|
+|Local de administrador inesperado|ALERT_NEW_ADMIN_LOCATION|Um novo local foi detectado para os administradores desde o início da verificação (até seis meses). Esse alerta aparece apenas uma vez para cada país/região para qualquer administrador em sua organização. |
 
 ## <a name="custom-alerts"></a>Alertas Personalizados
 
