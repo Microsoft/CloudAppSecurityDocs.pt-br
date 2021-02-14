@@ -1,14 +1,14 @@
 ---
 title: Entendendo os dados de arquivo e os filtros disponíveis no Cloud App Security
 description: Este artigo de referência fornece informações sobre os tipos e filtros de arquivo usados pelo Cloud App Security.
-ms.date: 01/11/2021
+ms.date: 02/14/2021
 ms.topic: how-to
-ms.openlocfilehash: 381710d324dcb3e118a729d7c78c852c61351fbd
-ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
+ms.openlocfilehash: 106b3455811e0616c1594abc5f364241ea547cf3
+ms.sourcegitcommit: 97bb78d140be3e87ecfa29b7db67e8863f88a520
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062729"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100514851"
 ---
 # <a name="files"></a>Arquivos
 
@@ -104,7 +104,7 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
     | -application/vnd. openxmlformats-officeDocument. presentationml. Presentation<br />-application/vnd. ms-PowerPoint. Template. macroEnabled. 12<br />-Application/MSPowerPoint<br />-aplicativo/PowerPoint<br />-application/vnd. ms-PowerPoint<br />-application/x-MSPowerPoint<br />-Application/MSPowerPoint<br />-application/vnd. ms-PowerPoint<br />-application/vnd. Oasis. OpenDocument. Presentation<br />-Application/vnd.sun.xml. impress<br />-application/vnd. StarDivision. impress<br />-application/x-starimpress<br />-application/vnd. Google-Apps. Presentation | Apresentação |
     | -application/vnd. openxmlformats-officeDocument. SpreadsheetML. Sheet<br />-application/vnd. MS-Excel. Sheet. macroEnabled. 12<br />-aplicativo/Excel<br />-application/vnd. MS-Excel<br />-application/x-Excel<br />-application/x-MSExcel<br />-application/vnd. Oasis. OpenDocument. Spreadsheet<br />-Application/vnd.sun.xml. Calc<br />-application/vnd. StarDivision. Calc<br />-application/x-starcalc<br />-application/vnd. Google-Apps. Spreadsheet | Planilha |
     | - **começa com:** texto/ | Texto |
-    | Todos os outros tipos de MIME de arquivo | Outro |
+    | Todos os outros tipos de MIME de arquivo | Outras |
 
     ![tipo de filtros de policy_file](media/policy_file-filters-type.png)
 
@@ -123,6 +123,9 @@ Abaixo está uma lista de filtros de arquivos que podem ser aplicados. Para forn
 - **UO do proprietário** – inclua ou exclua proprietários de arquivos que pertencem a determinado grupo organizacional. Por exemplo, todos os arquivos públicos, exceto arquivos compartilhados por EMEA_marketing. Aplica-se somente aos arquivos armazenados no Google Drive.
 
 - **Pasta pai** – inclua ou exclua arquivos com base na pasta pai. Por exemplo, todos os arquivos compartilhados publicamente, exceto os arquivos nesta pasta.
+
+    > [!NOTE]
+    > Cloud App Security detecta apenas as novas pastas do SharePoint e do OneDrive depois que alguma atividade de arquivo é executada nelas.
 
 - Em **quarentena** – o arquivo é colocado em quarentena pelo serviço, por exemplo, mostre-me todos os arquivos que estão em quarentena.
 
