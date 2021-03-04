@@ -1,14 +1,14 @@
 ---
 title: Implantar Cloud App Security Controle de Aplicativos de Acesso Condicional para qualquer aplicativo
 description: Este artigo fornece informações sobre como implantar o Microsoft Cloud App Security Controle de Aplicativos de Acesso Condicional recursos de proxy reverso para qualquer aplicativo.
-ms.date: 01/26/2021
+ms.date: 02/18/2021
 ms.topic: how-to
-ms.openlocfilehash: ac99dee3b145a8d77c4eaaba8c5624a572aec86b
-ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
+ms.openlocfilehash: 2657bb5226ca0a0b33620a2d036535b42f1d8e09
+ms.sourcegitcommit: 859594eee0b0bdfab86930f91c994ce609f8debe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794998"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101829857"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Integrar e implantar o Controle de Aplicativos de Acesso Condicional em qualquer aplicativo
 
@@ -83,8 +83,9 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 > [!NOTE]
 > Para obter exemplos de como configurar soluções IdP, consulte:
 >
-> - [Configurar seu IdP PingOne](proxy-idp-pingone.md)
-> - [Configurando seu AD FS IdP](proxy-idp-adfs.md)
+> - [Configurar o IdP PingOne](proxy-idp-pingone.md)
+> - [Configurar seu AD FS IdP](proxy-idp-adfs.md)
+> - [Configurar o IdP Okta](proxy-idp-okta.md)
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
@@ -130,7 +131,8 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
     > [!NOTE]
     > As configurações normalmente são encontradas na página de configurações do aplicativo personalizado do portal IdP
 
-    1. No campo URL de logon único, insira a URL de logon único anotada anteriormente.
+    1. Aconselhável Crie um backup de suas configurações atuais.
+    1. Substitua o valor do campo URL de logon único pelo Cloud App Security URL de logon único do SAML que você anotou anteriormente.
         > [!NOTE]
         > Alguns provedores podem se referir à URL de logon único como a *URL de resposta*.
     1. Adicione os atributos e os valores anotados anteriormente nas propriedades do aplicativo.
@@ -153,7 +155,9 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
     1. No campo URL de logon único, insira o Cloud App Security URL de logon único anotado anteriormente.
     1. Carregue o Cloud App Security certificado SAML baixado anteriormente.
     > [!NOTE]
-    > Depois de salvar as configurações, todas as solicitações de logon associadas a esse aplicativo serão roteadas por meio de Controle de Aplicativos de Acesso Condicional.
+    >
+    > - Depois de salvar as configurações, todas as solicitações de logon associadas a esse aplicativo serão roteadas por meio de Controle de Aplicativos de Acesso Condicional.
+    > - O Cloud App Security certificado SAML é válido por um ano. Depois de expirar, será necessário gerar um novo certificado.
 
 ## <a name="step-2-configure-the-users-that-will-deploy-the-app"></a>Etapa 2: configurar os usuários que implantarão o aplicativo<a name="conf-users"></a>
 
@@ -167,7 +171,7 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Etapa 3: configurar o aplicativo que você está implantando<a name="conf-app"></a>
 
-Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize um dos seguintes procedimentos:
+Vá para o aplicativo que você está implantando. A página que você vê depende se o aplicativo é reconhecido. Realize uma destas ações:
 
 | Status do aplicativo | Descrição | Etapas |
 | --- | --- | --- |
@@ -225,7 +229,7 @@ Por exemplo, se você tiver configurado uma política que bloqueia o download de
     > [!NOTE]
     > Para que os certificados sejam reconhecidos, depois de instalar o certificado, você deve reiniciar o navegador e ir para a mesma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Clique em **Continue**.
+1. Clique em **Continuar**.
 
 ## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Etapa 4: verificar se o aplicativo está funcionando corretamente<a name="verify-app"></a>
 

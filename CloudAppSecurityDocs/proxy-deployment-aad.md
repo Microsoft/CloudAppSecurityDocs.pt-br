@@ -1,14 +1,14 @@
 ---
 title: Implantar o Controle de Aplicativos de Acesso Condicional do Cloud App Security em aplicativos do Azure AD
 description: Este artigo fornece informações sobre como implantar os recursos de proxy reverso do Controle de Aplicativos de Acesso Condicional do Microsoft Cloud App Security para aplicativos do Azure AD.
-ms.date: 02/14/2021
+ms.date: 02/18/2021
 ms.topic: how-to
-ms.openlocfilehash: 85a29e73311116de86eb97dda76a982232c939a8
-ms.sourcegitcommit: 63a7e18c91371c91b920e6e09722eeee08bd2920
+ms.openlocfilehash: a22ffdcf7f6d04c837e88cbca9de8af8a46216f4
+ms.sourcegitcommit: 859594eee0b0bdfab86930f91c994ce609f8debe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515250"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101829884"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implantar o Controle de Aplicativos de Acesso Condicional para aplicativos em destaque
 
@@ -76,8 +76,9 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 > [!NOTE]
 > Para obter exemplos de como configurar soluções IdP, consulte:
 >
-> - [Configurar seu IdP PingOne](proxy-idp-pingone.md)
+> - [Configurar o IdP PingOne](proxy-idp-pingone.md)
 > - [Configurar seu AD FS IdP](proxy-idp-adfs.md)
+> - [Configurar o IdP Okta](proxy-idp-okta.md)
 
 1. Em Cloud app Security, navegue para **investigar**  >  **aplicativos conectados**  >  **controle de aplicativos de acesso condicional aplicativos**.
 
@@ -142,10 +143,14 @@ Use as etapas a seguir para rotear sessões de aplicativo de outras soluções I
 
 1. No portal do aplicativo, nas configurações de logon único, faça o seguinte:
     1. Aconselhável Crie um backup de suas configurações atuais.
-    1. No campo URL de logon único, insira a URL de logon único anotada anteriormente.
-    1. Carregue o Cloud App Security certificado SAML anotado anteriormente.
+    1. Substitua o valor do campo **URL de logon do provedor de identidade** pela URL de logon único do SAML Cloud app Security que você anotou anteriormente.
+    1. Carregue o Cloud App Security certificado SAML baixado anteriormente.
+    1. Clique em **Save** (Salvar).
+
     > [!NOTE]
-    > Depois de salvar as configurações, todas as solicitações de logon associadas a esse aplicativo serão roteadas por meio de Controle de Aplicativos de Acesso Condicional.
+    >
+    > - Depois de salvar as configurações, todas as solicitações de logon associadas a esse aplicativo serão roteadas por meio de Controle de Aplicativos de Acesso Condicional.
+    > - O Cloud App Security certificado SAML é válido por um ano. Depois de expirar, será necessário gerar um novo certificado.
 
 ## <a name="step-2-sign-in-to-each-app-using-a-user-scoped-to-the-policy"></a>Etapa 2: entrar em cada aplicativo usando um escopo de usuário para a política<a name="sign-in-scoped"></a>
 
