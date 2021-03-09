@@ -3,12 +3,12 @@ title: Implantar o Cloud App Security
 description: Esse início rápido descreve o processo para pôr o Cloud App Security em funcionamento e ter o uso, o insight e o controle do aplicativo na nuvem.
 ms.date: 06/07/2020
 ms.topic: quickstart
-ms.openlocfilehash: 95f4d916fc60db4d8ddbe2a9a87dc1af580e4be9
-ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
+ms.openlocfilehash: 6f6298e5291b289f1f3cb8245c1671b0dce88a97
+ms.sourcegitcommit: db520402e669ac6c140eb3a67bdc8c9306ed4145
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98206484"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102512509"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Início Rápido: introdução ao Microsoft Cloud App Security
 
