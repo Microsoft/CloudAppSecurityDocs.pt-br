@@ -1,14 +1,14 @@
 ---
 title: Diferenças entre o Cloud App Security e o Office 365 Cloud App Security
 description: Esse artigo descreve as diferenças entre o Cloud App Security e o Office 365 Cloud App Security.
-ms.date: 11/17/2019
+ms.date: 02/22/2021
 ms.topic: overview
-ms.openlocfilehash: 945a7ccacbb3a9789490b63fecd02364ec259100
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 60ceb6a9d2415b66b371d24089f487163552750f
+ms.sourcegitcommit: db520402e669ac6c140eb3a67bdc8c9306ed4145
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311342"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102512373"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quais são as diferenças entre o Microsoft Cloud App Security e o Office 365 Cloud App Security?
 
@@ -53,6 +53,6 @@ O Office 365 Cloud App Security é um subconjunto do Microsoft Cloud App Securit
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).
+- Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].

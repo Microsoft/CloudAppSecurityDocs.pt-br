@@ -1,14 +1,14 @@
 ---
 title: Diferenças de capacidade de descoberta do Cloud App Security e Azure AD
 description: Esse artigo descreve as diferenças entre os recursos de descoberta no Microsoft Cloud App Security e no Azure AD.
-ms.date: 12/03/2020
+ms.date: 02/22/2021
 ms.topic: overview
-ms.openlocfilehash: c66173dc28d0e0f9d349327583afa30a328912db
-ms.sourcegitcommit: 4177401f2f7948f230a6cb1f7af8ceeceb844fad
+ms.openlocfilehash: 4df6d4c918267866083253c1a4154e58aab8b6d9
+ms.sourcegitcommit: db520402e669ac6c140eb3a67bdc8c9306ed4145
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544693"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102512492"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Quais são as diferenças nos recursos de descoberta para Azure Active Directory e Microsoft Cloud App Security?
 
@@ -53,6 +53,6 @@ A tabela a seguir é uma comparação dos recursos de descoberta no Microsoft Cl
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).
+- Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].

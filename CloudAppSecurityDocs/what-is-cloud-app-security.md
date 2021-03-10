@@ -1,14 +1,14 @@
 ---
 title: O que é o Cloud App Security?
 description: Este artigo descreve o Microsoft Cloud App Security e como ele funciona.
-ms.date: 09/23/2020
+ms.date: 02/22/2021
 ms.topic: overview
-ms.openlocfilehash: 58018c866c18a89f4114f0c69d763ba7dfc4f042
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: a28d4b18b98811d4c5d6806a1d086adf5880c3fb
+ms.sourcegitcommit: db520402e669ac6c140eb3a67bdc8c9306ed4145
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315643"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102512186"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Visão geral do Microsoft Cloud App Security
 
@@ -109,6 +109,6 @@ Você pode usar políticas para definir o comportamento dos usuários na nuvem. 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).
+- Saiba mais sobre as noções básicas em [Introdução ao Cloud App Security](getting-started-with-cloud-app-security.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].
